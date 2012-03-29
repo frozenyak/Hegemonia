@@ -1,0 +1,434 @@
+name       = "H_SCENARIO"
+panel      = "scenarios/data/scenario_hegemonia.bmp"
+header =
+{ name       = "HohenzollernLP"
+  startdate  = { year = 1936 }
+  selectable = { BRA U17 U18 U03 PRU PAR U14 UAU CMB ETH MOR U10 U08 LIB ANG ARA U06 U07 KOR SOM CON ROM SAF HAI IRE AUS VIC ENG GER SPA EGY RSI SCH TUR CYN CHI JAP PHI RUS SCA FIN LIT BHU GEO VEN USA CAN MEX CUB DOM PAN U00 U01 U02 U05 }
+  GER	     = { }
+  LIT	     = { }
+  ENG	     = { }
+  MEX	     = { }
+  VIC	     = { }
+  SPA	     = { }
+  USA	     = { }
+  RUS	     = { }
+  U00	     = { }
+  U02	     = { }
+}
+globaldata =
+{ startdate = { year = 1936 month = january day = 0 }
+  axis =
+  { id          = { type = 15000 id = 1 }
+    participant = { GER AUS SCH U14 LIT SCA ROM CON U08 } #LIB ANG
+  }
+  allies =
+  { id          = { type = 15000 id = 2 }
+    participant = { SPA ENG RUS SAF KOR U06 }
+  }
+  comintern =
+  { id          = { type = 15000 id = 3 }
+    participant = { U00 VIC RSI U07 U10 ARA }
+  }
+  alliance =
+  { id 		= { type = 15000 id = 5 }
+    participant = { MEX PAN }
+  }
+  alliance =
+  { id 		= { type = 15000 id = 6 }
+    participant = { USA CAN }
+  }
+  alliance =
+  { id 		= { type = 15000 id = 7 }
+    participant = { EGY SOM ETH }
+  }
+  alliance =
+  { id 		= { type = 15000 id = 8 }
+    participant = { PRU BRA }
+  }
+  treaty =
+  { id         = { type = 16384 id = 1 }
+    type       = non_aggression
+    country    = "SCA"
+    country    = "FIN"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 2 }
+    type       = non_aggression
+    country    = "GER"
+    country    = "U03"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 3 }
+    type       = non_aggression
+    country    = "SCA"
+    country    = "U03"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 4 }
+    type       = non_aggression
+    country    = "RUS"
+    country    = "U03"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 5 }
+    type       = non_aggression
+    country    = "USA"
+    country    = "VEN"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 6 }
+    type       = non_aggression
+    country    = "RUS"
+    country    = "TUR"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1939 month = april day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 7 }
+    type       = non_aggression
+    country    = "GER"
+    country    = "JAP"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 8 }
+    type       = non_aggression
+    country    = "GER"
+    country    = "UAU"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 9 }
+    type       = non_aggression
+    country    = "RUS"
+    country    = "GEO"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 10 }
+    type       = non_aggression
+    country    = "RUS"
+    country    = "CYN"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 11 }
+    type       = non_aggression
+    country    = "RUS"
+    country    = "JAP"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1938 month = august day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 12 }
+    type       = non_aggression
+    country    = "LIT"
+    country    = "FIN"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 13 }
+    type       = non_aggression
+    country    = "GER"
+    country    = "FIN"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 14 }
+    type       = non_aggression
+    country    = "LIT"
+    country    = "GEO"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 15 }
+    type       = non_aggression
+    country    = "ENG"
+    country    = "IRE"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 16 }
+    type       = non_aggression
+    country    = "SPA"
+    country    = "IRE"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 17 }
+    type       = non_aggression
+    country    = "U02"
+    country    = "BHU"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 18 }
+    type       = non_aggression
+    country    = "UAU"
+    country    = "PHI"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 19 }
+    type       = non_aggression
+    country    = "GER"
+    country    = "EGY"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 20 }
+    type       = non_aggression
+    country    = "SPA"
+    country    = "EGY"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 21 }
+    type       = non_aggression
+    country    = "RUS"
+    country    = "IRE"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 22 }
+    type       = non_aggression
+    country    = "SCA"
+    country    = "IRE"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 23 }
+    type       = non_aggression
+    country    = "MEX"
+    country    = "CUB"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 24 }
+    type       = non_aggression
+    country    = "MEX"
+    country    = "DOM"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 25 }
+    type       = non_aggression
+    country    = "MEX"
+    country    = "HAI"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 26 }
+    type       = non_aggression
+    country    = "USA"
+    country    = "DOM"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1945 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 27 }
+    type       = truce
+    country    = "USA"
+    country    = "MEX"
+    startdate  = { year = 1934 month = january day = 1 }
+    expirydate = { year = 1939 month = january day = 1 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 28 }
+    type       = non_aggression
+    country    = "EGY"
+    country    = "U00"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 29 }
+    type       = non_aggression
+    country    = "U00"
+    country    = "GEO"
+    startdate  = { year = 1933 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 30 }
+    type       = non_aggression
+    country    = "U02"
+    country    = "U08"
+    startdate  = { year = 1933 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 31 }
+    type       = non_aggression
+    country    = "CHI"
+    country    = "CMB"
+    startdate  = { year = 1933 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 32 }
+    type       = non_aggression
+    country    = "U08"
+    country    = "CMB"
+    startdate  = { year = 1933 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 33 }
+    type       = non_aggression
+    country    = "U05"
+    country    = "PAR"
+    startdate  = { year = 1933 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  treaty =
+  { id         = { type = 16384 id = 34 }
+    type       = non_aggression
+    country    = "U00"
+    country    = "AUS"
+    startdate  = { year = 1933 month = december day = 30 }
+    expirydate = { year = 1937 month = december day = 30 }
+  }
+  ####################### 1936 TRADES #####################
+  treaty =
+  { id         = { type = 16384 id = 302 }
+    type       = trade
+    country    = "SCA"
+    country    = "GER"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1948 month = december day = 30 }
+    metal      = -40
+    supplies   = 8
+    cancel     = no
+  }
+  treaty =
+  { id         = { type = 16384 id = 307 }
+    type       = trade
+    country    = "MEX"
+    country    = "JAP"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1948 month = december day = 30 }
+    # ## can cancel deal through the Oil Embargo event
+    oil        = -50
+    supplies   = 15
+    #cancel     = no
+  }
+  # treaty =
+  # { id         = { type = 16384 id = 308 }
+    # type       = trade
+    # country    = "GER"
+    # country    = "U14"
+    # startdate  = { year = 1935 month = december day = 30 }
+    # expirydate = { year = 1948 month = december day = 30 }
+    # energy     = -40
+    # supplies   = 4
+    # #cancel     = no
+  # }
+  enddate   = { year = 1964 month = january day = 0 }
+  
+  dormant_leaders = {
+  }
+  dormant_ministers = {
+  }
+  dormant_teams = {
+  }
+}
+
+# Includes for global data
+include = "db\events.txt"
+
+# Victory points distribution
+include = "scenarios\HohenzollernLP\!vp.inc"
+
+# Bases
+include = "scenarios\HohenzollernLP\!bases.inc"
+
+# Include files for each country tag used in the scenario
+include = "scenarios\HohenzollernLP\germany.inc"
+include = "scenarios\HohenzollernLP\korea.inc"
+include = "scenarios\HohenzollernLP\occitania.inc"
+include = "scenarios\HohenzollernLP\angola.inc"
+include = "scenarios\HohenzollernLP\friland.inc"
+include = "scenarios\HohenzollernLP\china yuan.inc"
+include = "scenarios\HohenzollernLP\china nationalist.inc"
+include = "scenarios\HohenzollernLP\japan.inc"
+include = "scenarios\HohenzollernLP\tagalog.inc"
+include = "scenarios\HohenzollernLP\russia.inc"
+include = "scenarios\HohenzollernLP\scandinavia.inc"
+include = "scenarios\HohenzollernLP\gotland.inc"
+include = "scenarios\HohenzollernLP\finland.inc"
+include = "scenarios\HohenzollernLP\lithuania.inc"
+include = "scenarios\HohenzollernLP\bhutan.inc"
+include = "scenarios\HohenzollernLP\vinland.inc"
+include = "scenarios\HohenzollernLP\tarrbitz.inc"
+include = "scenarios\HohenzollernLP\qtizi.inc"
+include = "scenarios\HohenzollernLP\mazula.inc"
+include = "scenarios\HohenzollernLP\fabur.inc"
+include = "scenarios\HohenzollernLP\union.inc"
+include = "scenarios\HohenzollernLP\georgia.inc"
+include = "scenarios\HohenzollernLP\crete.inc"
+include = "scenarios\HohenzollernLP\imperials.inc"
+include = "scenarios\HohenzollernLP\jadakal.inc"
+include = "scenarios\HohenzollernLP\ireland.inc"
+include = "scenarios\HohenzollernLP\mansur.inc"
+include = "scenarios\HohenzollernLP\france.inc"
+include = "scenarios\HohenzollernLP\austria.inc"
+include = "scenarios\HohenzollernLP\america.inc"
+include = "scenarios\HohenzollernLP\iberia.inc"
+include = "scenarios\HohenzollernLP\australasia.inc"
+include = "scenarios\HohenzollernLP\gustavia.inc"
+include = "scenarios\HohenzollernLP\greatbritain.inc"
+include = "scenarios\HohenzollernLP\swiss.inc"
+include = "scenarios\HohenzollernLP\lombardy.inc"
+include = "scenarios\HohenzollernLP\turkestan.inc"
+include = "scenarios\HohenzollernLP\arabia.inc"
+include = "scenarios\HohenzollernLP\egypt.inc"
+include = "scenarios\HohenzollernLP\ljansitar.inc"
+include = "scenarios\HohenzollernLP\somalia.inc"
+include = "scenarios\HohenzollernLP\congo.inc"
+include = "scenarios\HohenzollernLP\africa.inc"
+include = "scenarios\HohenzollernLP\romania.inc"
+include = "scenarios\HohenzollernLP\ostasien.inc"
+include = "scenarios\HohenzollernLP\italy.inc"
+include = "scenarios\HohenzollernLP\mongolia.inc"
+include = "scenarios\HohenzollernLP\morocco.inc"
+include = "scenarios\HohenzollernLP\tibet.inc"
+include = "scenarios\HohenzollernLP\holland.inc"
+include = "scenarios\HohenzollernLP\adal.inc"
+include = "scenarios\HohenzollernLP\cambodia.inc"
+include = "scenarios\HohenzollernLP\bengal.inc"
+include = "scenarios\HohenzollernLP\madura.inc"
+#include = "scenarios\HohenzollernLP\awadh.inc"
+#include = "scenarios\HohenzollernLP\nepal.inc"
+include = "scenarios\HohenzollernLP\afghanistan.inc"
+include = "scenarios\HohenzollernLP\nova aquitania.inc"
+include = "scenarios\HohenzollernLP\tarwajal.inc"
+include = "scenarios\HohenzollernLP\muhajedz.inc"
