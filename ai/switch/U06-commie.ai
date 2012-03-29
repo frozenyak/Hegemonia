@@ -1,0 +1,16 @@
+befriend = { VIC = 100 U00 = 100 }
+resistance = { SPA = 10 GER = 10 }
+trade = {
+	embargo = { SPA }
+}
+
+garrison = {
+	country_priorities = {
+		VIC = -1
+		RSI = -1
+		U00 = -1
+		SCH = 15
+		U14 = 25
+		SPA = 100
+	}
+}

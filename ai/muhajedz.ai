@@ -1,0 +1,16 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
+neutrality = 100
+war = 0
+
+befriend = { PRU = 100 }
+
+garrison = {
+	country_priorities = {
+		PAN = 10
+		VEN = 25
+		U05 = 100
+	}
+}

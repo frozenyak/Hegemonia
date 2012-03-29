@@ -1,0 +1,92 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+
+###################################
+# Diplomacy
+###################################
+war = 0
+neutrality = 150.000 
+claim_acceptance = -49
+
+combat = {
+}
+befriend = { 
+	U00 = 100
+	U07 = 100
+	VIC = 50
+}
+protect = { 
+	U07 = 100
+}
+target = { 
+	900 = 100
+} 
+demand_claims = { }
+liberate = { }
+resistance = {
+	EGY = 5
+	GER = 10
+	SPA = 10
+}
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 3
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { }
+	embargo = { }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		NumberOfSpies = 10
+		min_number_of_spies = 1
+		country = ARA
+	}
+	spyprefsdata = {
+		country_priorities	= 5
+		steal_blueprint 	= 0
+		minister_assassination  = 0
+		smear_campaign 		= 0
+		coup 			= 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans 	= 10
+		massmedia 		= 0
+		disrupt_techteam	= 5
+		country 		= EGY
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2041 2040 2039 2038 2455 2456 2457 2458 2459 2454 2453 2452 }
+}
+
+garrison = {
+	country_priorities = {
+		EGY = 200
+		U00 = -1
+	}
+	province_priorities = {
+		900 = 200
+		901 = 200
+	}	
+}

@@ -1,0 +1,66 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+neutrality = 100
+war = 0
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { }
+befriend = { MEX = 100 U05 = 25 VEN = 25 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { MEX = 50 }
+	embargo = { }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= CUB	
+		NumberOfSpies 			= 5
+		min_number_of_spies 		= 1
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2527 2579 2535 2536 2539 2524 2578 }
+}
+
+garrison = {
+	country_priorities = { }
+	province_priorities = { 
+		#654 = 200
+		#655 = 200
+		#657 = 100
+		#891 = 100
+	}	
+}

@@ -1,0 +1,77 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes }
+neutrality = 100
+war = 0
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { }
+befriend = { USA = 50 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { USA = 100 }
+	embargo = { }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= VEN	
+		NumberOfSpies 			= 5
+		min_number_of_spies 		= 1
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= U05
+		country_priorities		= 5
+		#Missions
+		steal_blueprint 		= 2
+		minister_assassination 		= 1
+		smear_campaign 			= 0
+		coup 				= 0
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 0
+		found_partisans 		= 0
+		massmedia 			= 5
+		disrupt_techteam		= 2
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2523 2522 2520 2518 2517 }
+}
+
+garrison = {
+	country_priorities = {
+		U05 = 200
+	}
+}

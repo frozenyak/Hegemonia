@@ -1,0 +1,91 @@
+#Base country AI file
+
+switch = no # [yes/no]
+
+###################################
+# Flags
+###################################
+flags = { }
+
+###################################
+# Diplomacy
+###################################
+war = 75
+neutrality = 25.000 
+claim_acceptance = -100
+
+combat = { }
+befriend = { SPA = 200 SCH = 50 AUS = 50 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { GER = 10 AUS = 10 LIT = 10 SCA = 10 U00 = 10 VIC = 10 }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { SPA = 100 }
+	embargo = { GER AUS LIT SCA }
+}
+tech_sharing = {
+	favored = { }
+	embargo = { }
+	not = { }
+	prioritized = {	}
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies 		= 0.15
+	percentage_foreign_mission 	= 0.35
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= U14	
+		NumberOfSpies 			= 10
+		min_number_of_spies 		= 2
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= RSI
+		country_priorities		= 5
+		#Missions
+		steal_blueprint 		= 3
+		minister_assassination 		= 1
+		smear_campaign 			= 1
+		coup 				= 0
+		sabotage_industry 		= 3
+		nuclear_sabotage 		= 0
+		found_partisans 		= 5
+		massmedia 			= 2
+		disrupt_techteam		= 3
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2438 2439 }
+}
+
+garrison = {
+	country_priorities = {
+		U00 = 200
+		U06 = 200		
+		SCH = 25
+		GER = 25
+		AUS = 25
+	}
+}

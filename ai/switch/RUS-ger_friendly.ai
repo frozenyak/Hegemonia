@@ -1,0 +1,8 @@
+befriend = { FIN = 75 TUR = 75 GEO = 50 SPA = 75 ENG = 75 GER = 100 }
+protect = { GEO = 50 TUR = 50 AFG = 25 GER = 50 AUS = 25 U14 = 25 SCH = 25 SCA = 25 }
+target = { } 
+liberate = { AUS KOR CHI ITA FIN GER SCH PER SPA ENG IRE ROM } #UKR POL GEO
+
+trade = {
+	embargo = { U00 }
+}

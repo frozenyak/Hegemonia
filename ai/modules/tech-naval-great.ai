@@ -1,0 +1,13 @@
+technology = { 
+	#preference 	= { 5470 5480 5490 5500 5510 5520 5530 7170 7180 7190 } 
+ 
+	armor 		= 6
+	infantry 	= 6
+	industry 	= 6
+	aircraft 	= 4
+	naval 		= 4
+	land_doctrines 	= 3
+	air_doctrines 	= 3
+	naval_doctrines = 4
+	secret_weapons 	= 2	
+}  

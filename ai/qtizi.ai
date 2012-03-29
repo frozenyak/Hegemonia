@@ -1,0 +1,81 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+neutrality = 100
+war = 0
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { }
+befriend = { MEX = 100 HAI = 50 SPA = 100 CUB = 50 ENG = 50 RUS = 50 }
+protect = { MEX = 50 PAN = 25 ENG = 25 SPA = 50 RUS = 25 }
+target = { } 
+demand_claims = { }
+liberate = { MEX }
+resistance = { U05 = 10 USA = 5 }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { MEX = 100 HAI = 25 SPA = 25 }
+	embargo = { }
+}
+tech_sharing = {
+	favored = { MEX = 100 }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= PAN	
+		NumberOfSpies 			= 6
+		min_number_of_spies 		= 2
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= U05
+		country_priorities		= 4
+		#Missions
+		steal_blueprint 		= 2
+		minister_assassination 		= 0
+		smear_campaign 			= 5
+		coup 				= 0
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 0
+		found_partisans 		= 0
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2525 2526 2527 2528 2529 2530 2531 2532 2533 2523 2576 2574 2573 2572 }
+}
+
+garrison = {
+	country_priorities = {
+		U05 = 200
+		MEX = 25
+	}
+}

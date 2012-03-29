@@ -1,0 +1,40 @@
+#Great power, builds whatever it likes
+
+construction = { 
+	max_factor = 0.100 
+
+	AA_batteries = no
+	max_AA_level = 4
+	AA_provs = { } 
+	
+	nuclear_reactor = yes
+	max_nuclear = 3 
+	
+	rocket_test = yes 
+	max_rocket = 2 	
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = { } 
+
+	radar_station = no #yes
+	max_radar = 5
+	radar_provs = { } 
+
+	air_base = no
+	max_air_base = 5
+	air_base_provs = { } 
+
+	naval_base = no
+	max_naval_base = 5
+	naval_base_provs = { } 
+
+	land_fort = no #yes
+	max_land_level = 2
+	fort_borders = { } 
+
+	ic_at_war = no #yes
+	force_ic_until = 1935 #1938
+	ic_end_year = 1937 #1945
+	IC_provs = { } 
+}

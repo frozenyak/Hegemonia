@@ -1,0 +1,5 @@
+befriend = { GER = 200 AUS = 100 U14 = 25 SCA = 25 GEO = 15 ROM = 100 RUS = 25 }
+
+trade = {
+	embargo = { }
+}

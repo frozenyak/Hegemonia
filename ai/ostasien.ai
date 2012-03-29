@@ -1,0 +1,79 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes reinf = yes }
+neutrality = 150.000 
+war = 0
+reinforcement = 0.10
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { }
+befriend = { UAU = 50 GER = 50 U02 = 50 JAP = 25 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { }
+	embargo = { }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies 		= 0.2
+	percentage_foreign_mission 	= 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= U08	
+		NumberOfSpies 			= 5
+		min_number_of_spies 		= 1
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2181 2169 2249 2172 1883 2144 2140 2146 2148 2060 2075 2081 2126 }
+}
+
+garrison = {
+	country_priorities = {
+		CYN = 100
+		CHI = 100
+		U02 = 200
+		UAU = 200
+		PHI = 200
+		BHU = -1
+		TIB = -1
+	}
+	province_priorities = {
+		#1628 = 200
+		#1358 = 200
+		#1296 = 200
+		#1343 = 200
+		#1640 = 200
+		#1321 = 200
+		#1624 = 200
+		#1672 = 200
+	}	
+}

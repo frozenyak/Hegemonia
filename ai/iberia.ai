@@ -1,0 +1,421 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+neutrality = 100
+war = 0
+exp_force_ratios = { }
+no_exp_forces_to = { }
+use_offensive_supply = yes
+
+###################################
+# Diplomacy
+###################################
+
+claim_acceptance = -49
+combat = { }
+befriend = { U06 = 50 RUS = 100 ENG = 100 MEX = 75 U01 = 50 GER = 25 EGY = 25 IRE = 10 GEO = 10 UAU = 10 SAF = 25 SCH = 75 }
+protect = { U01 = 10 U03 = 5 RUS = 25 ENG = 25 MEX = 25 }
+target = { 
+	#495 = 10 #narvik
+	475 = 10 #Baleares
+} 
+demand_claims = { }
+liberate = { ENG IRE MEX ITA KOR UKR RUS GEO DFR SCH PER } #FRA HOL U06
+resistance = { VIC = 10 }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { ENG = 10 SAF = 5 MEX = 10 PAN = 5 RUS = 10 }
+	embargo = { U00 }
+}
+tech_sharing = {
+	favored = { ENG = 5 SAF = 5 MEX = 10 PAN = 5 RUS = 5 }
+	embargo = { }
+	not = { }
+	prioritized = {
+		# Agriculture
+		5020 = 100
+		5030 = 100
+		5040 = 100
+
+		# Inf support
+		1310 = 100
+		1320 = 100
+		1330 = 100
+		1340 = 100
+		1350 = 100
+		1360 = 100
+
+		# Production
+		5050 = 100
+		5060 = 100
+		5070 = 100
+		5080 = 100
+		5090 = 100
+		5100 = 100
+		5110 = 100
+		5120 = 100
+		5130 = 100
+		5150 = 100
+		5180 = 100
+
+		# Naval Bomber
+		4190 = 100
+		4200 = 100
+		4210 = 100
+
+		# motorized
+		1230 = 100
+		1240 = 100
+		1250 = 100
+
+		# Medium tanks
+		2070 = 100
+		2080 = 100
+		2090 = 100
+
+		# Light tanks
+		2020 = 100
+		2030 = 100
+		2040 = 100
+		2050 = 100
+		2060 = 100
+
+		# Strategic bombers
+		4220 = 100
+		4230 = 100
+		4240 = 100
+	}
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies 		= 0.2
+	percentage_foreign_mission 	= 0.6
+	spyprefsdata =
+	{
+		#Domestic
+		country 			= SPA
+		NumberOfSpies 		= 10
+		min_number_of_spies = 3
+	}
+	spyprefsdata = {
+		country_priorities	= 10
+		NumberOfSpies		= 10
+		min_number_of_spies = 8
+		steal_blueprint 	= 10
+		minister_assassination = 1
+		smear_campaign 		= 0
+		coup 				= 1
+		sabotage_industry 	= 6
+		nuclear_sabotage 	= 0
+		found_partisans		= 4
+		massmedia 			= 2
+		counter_espionage 	= 6
+		disrupt_techteam 	= 5
+		country 			= GER
+	}
+	spyprefsdata = {
+		country_priorities	= 6
+		NumberOfSpies		= 9
+		min_number_of_spies = 8
+		steal_blueprint 	= 10
+		minister_assassination = 1
+		smear_campaign 		= 3
+		coup 				= 1
+		sabotage_industry 	= 6
+		nuclear_sabotage 	= 0
+		found_partisans		= 4
+		massmedia 			= 2
+		counter_espionage 	= 6
+		disrupt_techteam 	= 5
+		country 			= U00
+	}
+	spyprefsdata = {
+		country_priorities	= 0
+		NumberOfSpies		= 5
+		min_number_of_spies = 2
+		steal_blueprint 	= 10
+		minister_assassination = 0
+		smear_campaign 		= 3
+		coup 				= 1
+		sabotage_industry 	= 0
+		nuclear_sabotage 	= 0
+		found_partisans		= 4
+		massmedia 			= 2
+		counter_espionage 	= 6
+		disrupt_techteam 	= 5
+		country 			= VIC
+	}
+	spyprefsdata = {
+		country_priorities	= 0
+		NumberOfSpies		= 3
+		min_number_of_spies = 1
+		steal_blueprint 	= 10
+		minister_assassination = 0
+		smear_campaign 		= 1
+		coup 				= 2
+		sabotage_industry 	= 0
+		nuclear_sabotage 	= 0
+		found_partisans		= 4
+		massmedia 			= 1
+		counter_espionage 	= 6
+		disrupt_techteam 	= 5
+		country 			= LIT
+	}
+}
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	ic_at_war = no 
+	force_ic_until = 1935
+	ic_end_year = 1935
+	IC_provs = { } 
+}
+
+garrison = {
+	country_priorities = {
+		VIC = 100
+		#U06 = 50
+		U07 = 25
+		USA = 25
+		MEX = -1
+		PAN = -1
+		SAF = -1
+		U14 = 50
+		U00 = 100
+		GER = 100
+		ENG = -1
+	}
+	province_priorities = {
+		348 = 30 # Gibraltar
+	}
+	area_multiplier = {
+		348 = 2.0 # Gibraltar
+	}
+}
+
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1	#higher, avoid worst beaches.
+	distance	= 0.1	#higher = avoid long distance.
+	pocket		= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 0.1	#prioritise taking pure islands.
+	enemy		= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 2.0	#higher = much more vary of troops nearby
+	air_base	= 1.5
+	naval_base 	= 0.1
+	air_support 	= 3.0
+	redirect 	= nearest
+	ignore		= no
+
+	target = { 
+		#495	= 100	#Narvik
+	} 
+}
+admiral = {
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	ignore = {
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic"
+		"Bothnian Bay"
+
+		#Murmansk/Archangel
+		"Barents Sea"
+		"Arctic Ocean"
+
+		#Norway Coast (Denmark Coast)
+		"Norwegian Sea"
+		"East North Sea"
+		"Kattegat"
+
+		#North Sea, East Coast of England
+		"Central Northsea"
+		"West Northsea"
+		"Southeast Northsea"
+
+		#England/France border Sea Areas
+		"English Channel"
+
+		#Iceland
+		"Faroes Gap"
+		"Denmark Strait"
+
+		#Ireland/West Coast of England
+		"Irish Sea"
+		"The Hebreides"
+		"Irish West Coast"
+
+		#Greenland
+		"Greenland Coast"
+		"Northern Sea of Labrador"
+		"Southern Sea of Labrador"
+
+		#Canada East Coast
+		"Hudson Bay"
+		"Grand Banks"
+		"Canadian Maritimes"
+
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel"
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar"
+
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea"
+		"Coast of Ceylon"
+
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge"
+		"Ninetyeast Ridge"
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean"
+
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+
+		#Indo-China, Borneo, Phillipenes
+		"Gulf of Siam"
+		"Coast of Indochina"
+		"Spratly Sea"
+		"Coast of Brunei"
+		"Flores Sea"
+		"Sulu Sea"
+		"Celebes Sea"
+		"Luzon Strait"
+
+		#China Coast
+		"Taiwan Strait"
+		"Yellow Sea"
+
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk"
+		"East Sea of Okhotsk"
+
+		#Mariana Basin, Phillipenes
+		"Philipine Trench"
+		"Central Philippine Sea"
+		"Mariana Trench"
+		"East Mariana Basin"
+		"Mid-Pacific Mountains"
+		"North Bismarck Sea"
+
+		#New Guinea, East/North Australia and New Zealan
+		"Coast of New Guinea"
+		"Molucca Sea"
+		"Banda Sea"
+		"Arafura Sea"
+		"South Bismarck Sea"
+		"Solomon Sea"
+		"West Coral Sea"
+		"East Coral Sea"
+		"North Tasman Sea"
+		"South Tasman Sea"
+		"East Cost of New Zealand"
+
+		# South and West Australia
+		"Timor Sea"
+		"West Coast of Australia"
+		"East Great Australian Bight"
+		"West Great Australian Bight"
+
+		#North Pacific
+		"Coast of Kamchatka"
+		"East Bering Sea"
+		"West Bering Sea"
+		"Aleutians"
+		"Northwest Pacific Basin"
+		"North Northeast Pacific Basin"
+
+		#Central Pacific
+		"Hawaiian Rise"
+		"North East Pacific Ocean"
+		"Marshalls Sea"
+		"South East Pacific Ocean"
+		"Marianas"
+		"Western Solomons"
+		"Eastern Solomons"
+		"US Maritimes"
+		"Carolines"
+
+		#South Pacific
+		"Gilberts"
+		"Line Islands"
+		"Fiji Basin"
+		"Southwest Pacific Basin"
+
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+
+		# USA West Coast
+		"Gulf of Alaska"
+		"West Coast of the United States"
+
+		#West Coast of Mexico
+		"West Coast of Mexico"
+		"West Coast of Central America"
+	}
+	target = {
+		2267 = 50
+		2265 = 50
+		2277 = 50
+		2264 = 50
+
+	}
+	core = {
+		2285
+		2278
+		2195
+		2430
+		2196
+		2187
+		2190
+	}
+}

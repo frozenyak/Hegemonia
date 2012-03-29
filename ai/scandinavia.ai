@@ -1,0 +1,69 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+neutrality = 100
+war = 0
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { }
+befriend = { U03 = 50 GER = 100 AUS = 100 FIN = 50 ENG = 25 LIT = 50 CAN = 25 EGY = 25 CAN = 50 USA = 25 LIB = 25 }
+protect = { U03 = 50 GER = 25 AUS = 25 EGY = 10 USA = 15 LIT = 25 U14 = 15 }
+target = { } 
+demand_claims = { }
+liberate = { SCA }
+resistance = { }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { GER = 100 }
+	embargo = { }
+}
+tech_sharing = {
+	favored = { GER = 100 }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= SCA	
+		NumberOfSpies 			= 10
+		min_number_of_spies 		= 2
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2373 2375 2377 2482 2480 2483 2484 2491 2492 2493 2494 2489 2481 2477 2478 2479 2475 2476 290 2474 2473 2385 2386 2387 2388 2389 2390 2391 2392 2392 }
+}
+
+garrison = {
+	country_priorities = {
+		GER = 15
+		FIN = 15
+	}
+	province_priorities = {
+		#294 = 200
+	}	
+}

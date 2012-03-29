@@ -1,0 +1,20 @@
+befriend = { FIN = 75 TUR = 75 GEO = 50 }
+protect = { GEO = 100 U03 = 100 FIN = 100 TUR = 50 }
+liberate = { CZE KOR CHI ITA FIN DFR SCH PER SPA ENG IRE ROM } #UKR POL GEO
+resistance = { SPA = 10 ENG = 10 GER = 10 LIT = 10 }
+
+trade = {
+	embargo = { U00 LIT }
+}
+garrison = {
+	country_priorities = {
+		LIT = 200		
+		CYN = 50
+		KOR = 50		
+		JAP = 75
+		FIN = 50
+		TUR = 25
+		GEO = 50
+		ENG = 15
+	}
+}

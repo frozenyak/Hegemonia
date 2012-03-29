@@ -1,0 +1,125 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+neutrality = 100
+war = 50
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { CHL = 100 BRA = 60 PRU = 60 ARG = 100 URU = 100 }
+befriend = { DOM = 50 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { USA = 4 VEN = 2 MEX = 10 }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { }
+	embargo = { }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= U05	
+		NumberOfSpies 			= 10
+		min_number_of_spies 		= 2
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= VEN
+		country_priorities		= 3
+		#Missions
+		steal_blueprint 		= 5
+		minister_assassination 		= 0
+		smear_campaign 			= 0
+		coup 				= 0
+		sabotage_industry 		= 2
+		nuclear_sabotage 		= 0
+		found_partisans 		= 0
+		massmedia 			= 0
+		disrupt_techteam		= 5
+	}
+	spyprefsdata = {
+		#Nation
+		country 			= PAN
+		country_priorities		= 3
+		#Missions
+		steal_blueprint 		= 5
+		minister_assassination 		= 0
+		smear_campaign 			= 0
+		coup 				= 0
+		sabotage_industry 		= 2
+		nuclear_sabotage 		= 0
+		found_partisans 		= 0
+		massmedia 			= 0
+		disrupt_techteam		= 5
+	}
+	spyprefsdata = {
+		#Nation
+		country 			= MEX
+		country_priorities		= 5
+		#Missions
+		steal_blueprint 		= 5
+		minister_assassination 		= 0
+		smear_campaign 			= 0
+		coup 				= 0
+		sabotage_industry 		= 2
+		nuclear_sabotage 		= 5
+		found_partisans 		= 0
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= USA
+		country_priorities		= 5
+		#Missions
+		steal_blueprint 		= 5
+		minister_assassination 		= 0
+		smear_campaign 			= 0
+		coup 				= 0
+		sabotage_industry 		= 2
+		nuclear_sabotage 		= 5
+		found_partisans 		= 0
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2523 2522 2520 2518 2517 2523 2516 2515 2514 2513 2511 2508 2507 2505 2504 2503 2502 1910 1997 1996 1995 2550 2560 2551 2561 2559 2558 2556 1966 1965 1964 2574 }
+}
+
+garrison = {
+	country_priorities = {
+		PAN = 200
+		MEX = 200
+		USA = 200
+		VEN = 100
+	}
+}

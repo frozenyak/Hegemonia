@@ -1,0 +1,11 @@
+technology = { 
+	armor 		= 3
+	infantry 	= 6
+	industry 	= 6
+	aircraft 	= 3
+	naval 		= 1
+	land_doctrines 	= 2
+	air_doctrines 	= 2
+	naval_doctrines = 1
+	secret_weapons 	= 0	
+}  

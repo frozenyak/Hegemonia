@@ -1,0 +1,64 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes }
+neutrality = 150
+war = 0
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { }
+befriend = { ENG = 50 RUS = 100 SCA = 25 GER = 25 SPA = 25 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { RUS = 100 ENG = 50 }
+	embargo = { }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= IRE	
+		NumberOfSpies 			= 5
+		min_number_of_spies 		= 1
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2406 2405 2407 2408 2409 2410 }
+}
+
+garrison = {
+	province_priorities = {
+		#28 = 200
+		#27 = 200
+		#24 = 200
+	}
+}

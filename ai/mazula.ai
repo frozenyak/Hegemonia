@@ -1,0 +1,666 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+max_garrison_prop = 0.30
+min_garrison_prop = 0.20
+neutrality = 100
+war = 0
+desperation = 1.0
+strat_redeploy_threshold = 10
+max_redeploying = 0.10
+exp_force_ratio = 0.00
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { USA = 100 }
+befriend = { PAN = 50 HAI = 10 CUB = 10 DOM = 10 U05 = 40 SPA = 100 ENG = 50 RUS = 50 }
+protect = { HAI = 25 DOM = 25 CUB = 25 PAN = 50 TEX = 25 SPA = 50 ENG = 25 RUS = 25 }
+target = { 1789 = 100 } 
+demand_claims = { }
+liberate = { PAN SPA HAI DOM CUB ENG HOL U06 FRA SCA HUN CZE AUS ITA SCH DFR }
+resistance = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { SPA = 50 PAN = 100 }
+	embargo = { USA }
+}
+tech_sharing = {
+	favored = { PAN = 100 }
+	embargo = { }
+	not = { }
+	prioritized = {
+		# Agriculture
+		5020 = 100
+		5030 = 100
+		5040 = 100
+
+		# Inf support
+		1310 = 100
+		1320 = 100
+		1330 = 100
+		1340 = 100
+		1350 = 100
+		1360 = 100
+
+		# Production
+		5050 = 100
+		5060 = 100
+		5070 = 100
+		5080 = 100
+		5090 = 100
+		5100 = 100
+		5110 = 100
+		5120 = 100
+		5130 = 100
+		5150 = 100
+		5180 = 100
+
+		# Motorized
+		1230 = 100
+		1240 = 100
+		1250 = 100
+
+		# Mechanized
+		1260 = 100
+		1270 = 100
+		1280 = 100
+		1290 = 100
+
+		# Medium tanks
+		2070 = 100
+		2080 = 100
+		2090 = 100
+
+		# Light tanks
+		2020 = 100
+		2030 = 100
+		2040 = 100
+		2050 = 100
+		2060 = 100
+
+		# Marines
+		1150 = 100
+		1160 = 100
+		1170 = 100
+		1180 = 100
+
+		# Vehicle Assembly
+		5130 = 100
+		5140 = 100
+		5150 = 100
+		5160 = 100
+		5180 = 100
+
+		# Escort/Multirole Fighters
+		4040 = 100
+		4050 = 100
+		4070 = 100
+		4080 = 100
+		4100 = 100
+		4110 = 100
+
+		# Naval Bomber
+		4190 = 100
+		4200 = 100
+		4210 = 100
+
+		# Tactical Bomber
+		4140 = 100
+		4150 = 100
+		4160 = 100
+	}
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies 		= 0.2
+	percentage_foreign_mission 	= 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= MEX	
+		NumberOfSpies 		= 10
+		min_number_of_spies = 3
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= USA
+		country_priorities		= 10
+		#Missions
+		steal_blueprint 		= 5
+		minister_assassination 		= 1
+		smear_campaign 			= 5
+		coup 				= 0
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 2
+		found_partisans 		= 5
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}
+	spyprefsdata = {
+		#Nation
+		country 			= CAN
+		country_priorities		= 5
+		#Missions
+		steal_blueprint 		= 5
+		minister_assassination 		= 0
+		smear_campaign 			= 5
+		coup 				= 0
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 0
+		found_partisans 		= 0
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= U05
+		country_priorities		= 2
+		#Missions
+		steal_blueprint 		= 0
+		minister_assassination 		= 0
+		smear_campaign 			= 5
+		coup 				= 2
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 0
+		found_partisans 		= 2
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}
+	spyprefsdata = {
+		#Nation
+		country 			= VEN
+		country_priorities		= 2
+		#Missions
+		steal_blueprint 		= 0
+		minister_assassination 		= 0
+		smear_campaign 			= 5
+		coup 				= 2
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 0
+		found_partisans 		= 0
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}	
+}
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.0 
+
+	AA_batteries = atwar
+	max_AA_level = 4
+	AA_provs = {
+		658  # Hawaii
+		662  # Midway
+		1756 # Samoa
+		765 # San Francisco
+		762 # Los Angeles
+		761 # San Diego
+		780 # Seattle
+		600 # Boston
+		602 # New York
+		606 # Washington DC
+		651 # Miami
+	} 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = { } 
+
+	radar_station = no
+	max_radar = 3
+	radar_provs = {
+		663 # Pearl Harbor
+		658  # Hawaii
+		662  # Midway
+		1756 # Samoa
+		765 # San Francisco
+		761 # San Diego
+		780 # Seattle
+		549 # Anchorage
+	} 
+
+	air_base = no
+	max_air_base = 4
+	air_base_provs = {
+		658  # Hawaii
+		662  # Midway
+		1766 # Johnson Island
+		1762 # Phoenix Island
+		1756 # Samoa
+	} 
+
+	naval_base = no
+	max_naval_base = 5 
+	naval_base_provs = {
+		#1756 # Samoa
+	} 
+
+	land_fort = no
+	max_land_level = 1
+	fort_borders = { } 
+
+	ic_at_war = no
+	force_ic_until = 1935
+	ic_end_year = 1937
+	IC_provs = { } 
+}
+
+military = {
+	relative_build_scheme 	= no
+	max_batch_peace 		= 360
+	max_batch_war 			= 180
+	max_batch_home_front	= 180
+	extra_convoys_war		= 0.05
+	extra_convoys_peace		= 0.05
+
+	#### Divisions etc...
+	infantry 		= 25 #11
+	cavalry 		= 0
+	motorized 		= 10
+	mechanized 		= 10
+	light_armor 	= 5 #10
+	armor 			= 5
+	paratrooper 	= 0
+	marine 			= 1
+	bergsjaeger 	= 1
+	garrison		= 1
+    hq 				= 1
+	militia 		= 0
+#				59 %
+	interceptor 	= 5
+	multi_role 		= 7
+	cas 			= 0
+	strategic_bomber = 4
+	tactical_bomber = 8
+	naval_bomber 	= 2
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				26 %
+	battleship 		= 0
+	carrier 		= 5
+	escort_carrier	= 0
+	destroyer 		= 5
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	nuclear_submarine = 0
+	transports 		= 5
+#				15 %
+
+	#### Brigades
+	artillery 			= 20
+	sp_artillery 		= 10
+	rocket_artillery	= 0
+	sp_rct_artillery 	= 0
+	anti_tank 			= 0
+	tank_destroyer 		= 5
+	light_armor_brigade = 0
+	heavy_armor 		= 0
+	super_heavy_armor 	= 0
+	armored_car 		= 0
+	anti_air 			= 10
+	police 				= 0
+	engineer 			= 10
+
+	cag = 100.000
+	naval_torpedoes_s = 100
+
+	naval_asw = 10.0000 
+	naval_anti_air_s = 10.0000 
+	naval_radar_s = 10.0000 
+	naval_fire_controll_s = 10.0000 
+	naval_improved_hull_s = 0.0000 
+	naval_anti_air_l = 10.0000 
+	naval_radar_l = 10.0000 
+	naval_fire_controll_l = 10.0000 
+	naval_improved_hull_l = 0.0000 
+	naval_torpedoes_l = 0.0000
+}
+
+technology = {
+	endgoal 	= { } 
+	preference = {
+		# Tools
+		5050 5060 5070
+
+		# Engineering
+		5080 5090 5100
+		
+		# Production Control
+		5110 5120
+		
+		# Assembly Line
+		5130 5140 5160 5180
+		
+		# Cryptography
+		5310 5320 5330 5340
+		
+		# Multirole Fighters
+		4040 4070 4100
+
+		#Infantry
+		1010 1020 1030 1040 1050 1060
+
+		# Naval Bomber
+		4190 4200 4210
+
+		# Marines
+		#1150 1160 1170 1180
+
+		# Naval Doctrines
+		8200 8250 8140 8260
+
+		# Land Doctrines
+		6100
+
+		# Carrier
+		3320 3330 3340 3350 3360 3370 3380 3390
+
+		# Carrier Air Group
+		4900 4910 4920 4930 4940 4950 4960 7050 7280
+		
+		# Air Doctrines
+		9040 9050 9060 9070 9080 9090 9100 9110 9120 9130 9190 9210 9220 9230 9240 9250 9350
+
+		# Motorized
+		1230 1240 1250
+		
+		# Mechanized
+		1260 1270 1280 1290
+		
+		# Equipment Sturdy
+		5980 5990
+	} 
+	ignore 	= {
+		#  Rocket Assembly
+		5170
+
+		# Airborne
+		1070 1080 1090 1100
+
+		# Air Transports
+		4250 4260 4270
+
+		# Atomic Research
+		5470 5480 5490 5500 5510 5520 5530 5540
+
+		# Test and Research
+		5550 5560 5570 5580 5590
+
+		# Bas Decimetric
+		5410 5420 5430 5440 5450 5460
+
+		# Rocket Artillery
+		2370 2380 2390
+
+		# Heavy Tanks and Semi-Modern Tank
+		#2100 2110 2120 2140
+
+		# Tank destroyers
+		2170 2180 2190 2200 2210
+
+		# SP guns
+		2220 2230 2240 2250
+
+		# SP Rocket Artillery
+		2260 2270 2280 
+		
+		# Static Anti-Air
+		2450 2460 2470 2480 2490 2500
+		
+		# Anti Air Brigade
+		2510 2520 2530 2540
+
+		# Armoured Cars
+		2150 2160
+
+	}
+
+	armor 		= 4
+	infantry 	= 5
+	industry 	= 4
+	aircraft  	= 4
+	naval 		= 3
+	land_doctrines 	= 4
+	air_doctrines 	= 4
+	naval_doctrines = 2
+	secret_weapons  = 1
+}
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2525 2526 2527 2528 2529 2530 2531 2532 2533 2523 2576 2574 2573 2572 2568 2569 2570 2571 1913 1914 1921 1922 1923 1936 1937 1938 1939 1941 2525 2526 2527 2528 2529 2530 2531 2532 2533 2523 2576 2574 2573 2572 2568 2569 2570 2571 1980 2563 }
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+leader_ratio = {
+	land_field_marshal 	=0.02
+	land_general 		=0.36 #0.031
+	land_lt_general 	=0.60 #0.41
+
+	sea_grand_admiral 	=0.02
+	sea_admiral 		=0.061
+	sea_vice_admiral 	=0.401
+
+	air_marshal 		=0.02
+	air_general 		=0.091
+	air_lt_General 		=0.11
+}
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.1
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.3
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 30	# Beach level 2
+	capital			= 30	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		USA = 200
+		CAN = 25
+		PAN = -1
+	}
+	province_priorities = {
+		663 = 50 #Pearl Harbour
+	}
+	area_multiplier = {
+		663 = 2.5 #Pearl Harbour
+	}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+
+	strength 	= 1.0
+	organisation 	= 2.0
+	soft_attack 	= 1.0
+	hard_attack 	= 2.0
+	ground_defense 	= 1.0
+	dig_in 		= 1.25 # Against defender
+
+	frozen_attack 	= 1.0
+	snow_attack 	= 1.0
+	blizzard_attack = 1.0
+	storm_attack 	= 1.0
+	muddy_attack 	= 1.0
+
+	largefort 	= 2.0
+	smallfort 	= 1.5
+	occupied 	= 0.7
+	owned 		= 0.7
+
+	jungle_attack 	= 1.0
+	mountain_attack = 1.0
+	swamp_attack 	= 1.0
+	forest_attack 	= 1.0
+	hill_attack 	= 1.0
+	urban_attack 	= 1.0
+	river 		= 1.0
+
+	enemy_handicap = { CAN = 20 } 
+	passivity = { CAN = 70 } 
+} 
+###################################
+# Air bombardment and defense
+###################################
+# Air AI File For Strategic Bombings as priority
+# bomber is now obsolete and NOT USED AT ALL replace and use Air Marshal instead
+
+air_marshal = {
+	icxdayscostfactor 		= 10.0		# How to value true industrial cost when calculating expect causalties
+	manpowercostfactor		= 100.0		# How to value manpower cost when calculating expect causalties
+	destructionriskthreashold 	= 0.2		# when to fear a divisiopn might be destroyed
+
+	# desirability is a multiplier used when calcualting the mission desirability
+	airsuperioritydesirability 	= 10.0
+	groundattackdesirability 	= 10.0
+	inderdictiondesirability 	= 8.0
+	logisticalstrikedesirability 	= 30.0
+	runwaycrateringdesirability 	= 10.0
+	strategicstrikedesirability 	= 5.0
+	installationstrikedesirability 	= 2.0
+	navalstrikedesirability 	= 40.0
+	portstrikedesirability 		= 20.0
+
+	# tolerance is the required kill:loss ration expected to do 
+	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
+	airsuperioritylosstolerance 	= 1.0
+	groundattacklosstolerance 	= 1.0
+	interdictionlosstolerance 	= 1.5
+	logisticalstrikelosstolerance 	= 4.5
+	runwaycrateringlosstolerance 	= 1.5
+	strategicstriketolerance 	= 4.5
+	installationstriketolerance 	= 1.5
+	navalstriketolerance 		= 1.0
+	portstriketolerance 		= 1.0
+
+	# efficency is a tweakable param to adjust according to how 
+	#    much actual damage comes from doing this mission (not to be confused with desirability)
+	logisticalstrikeefficency 	= 0.01
+	runwaycrateringefficency 	= 0.01
+	strategicstrikeefficency 	= 0.01
+	installationstrikeefficency 	= 0.01
+
+	taskforcetype = { name = "Air Superiority" desiredratio = 0.300 rangeweight = 10.000 airkillpowerweight = 2000.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = -1000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes air_superiority = yes } 
+	taskforcetype = { name = "Soft Bombing" desiredratio = 0.200 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 2000.000 navalkillpowerweight = -1000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Hard Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 2000.000 softkillpowerweight = 0.000 navalkillpowerweight = -1000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Strategic Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = -1000.000 strategickillpowerweight = 2000.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -0.500 surfacevulnurabilityweight = -0.500 idle = yes reorganize = yes logistical_strike = yes runway_cratering = yes strategic_bombardment = yes installation_strike = yes } 
+	taskforcetype = { name = "Naval Bombing" desiredratio = 0.200 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 2000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes naval_strike = yes port_strike = yes convoy_air_raiding = yes } 
+	taskforcetype = { name = "Airlift" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = -2000.000 softkillpowerweight = -2000.000 navalkillpowerweight = -1000.000 strategickillpowerweight = -2000.000 transportcapacityweight = 1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes airborne_assault = yes air_supply = yes } 
+
+}
+
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1	#higher, avoid worst beaches.
+	distance	= 0.01	#higher = avoid long distance.
+	pocket		= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 0.1	#prioritise taking pure islands.
+	enemy		= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 2.0	#higher = much more vary of troops nearby
+	air_base	= 1.5 
+      	naval_base 	= 0.1 
+      	air_support 	= 3.0 
+      	redirect 	= priority
+	ignore		= no
+      
+	target = { } 
+} 
+admiral = { 
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	#Which provinces to use as bases..
+	base = {
+		1734 # Pearl harbour
+	     	1889 # San Francisco 
+     		1812 # Norfolk 
+     		1953 # Miami 
+     		1795 # New York 
+     		1789 # Boston 
+		1726 # Rabaul
+		1399 # Saigon
+		1432 # Singapore
+		1647 # Batavia
+		1565 # Manila
+		1683 # Guam
+		747 # Tunis
+		750 # Tripoli
+		348 # Gibraltar
+		17 # Liverpool/Manchester 
+		5	# Scapa Flow
+       		429 #Malta
+	}
+	target = { } 
+	core = {
+		2388 
+		2389 
+		2339 
+		2338 
+		2336 
+		2316 
+		2315 
+		2321 
+		2323 
+		2325 
+		#Panama/guantanamo
+		2346 
+		2575 
+		#Pearl
+		2637		
+	} 
+}

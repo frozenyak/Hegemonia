@@ -1,0 +1,74 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
+neutrality = 100
+war = 0
+exp_force_ratio = 0.0
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { U00 = 100 HUN = 40 }
+befriend = { LIT = 100 GER = 25 AUS = 50 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { U00 = 10 }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { }
+	embargo = { U00 }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= ROM	
+		NumberOfSpies 			= 5
+		min_number_of_spies 		= 1
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2465 = 100 2466 = 100 2467 = 100 2468 = 100 }
+}
+
+garrison = {
+	country_priorities = {
+		U00 = 100
+		AUS = -1
+		LIT = -1
+	}
+	province_priorities = {
+		307 = 5
+	}
+}
+
+front = {
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 	= defensive
+}

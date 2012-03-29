@@ -1,0 +1,96 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+neutrality = 100
+war = 0
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { }
+befriend = { VIC = 100 U00 = 100 ARA = 100 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { VIC }
+resistance = { LIB = 10 CON = 10 EGY = 10 SPA = 10 }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { U00 = 75 VIC = 100 }
+	embargo = { }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= U07	
+		NumberOfSpies 			= 5
+		min_number_of_spies 		= 1
+	}
+	spyprefsdata = {
+		#Nation
+		country 			= EGY
+		country_priorities		= 4
+		#Missions
+		steal_blueprint 		= 5
+		minister_assassination 		= 2
+		smear_campaign 			= 0
+		coup 				= 1
+		sabotage_industry 		= 3
+		nuclear_sabotage 		= 0
+		found_partisans 		= 2
+		massmedia 			= 0
+		disrupt_techteam		= 3
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= CON
+		country_priorities		= 2
+		#Missions
+		steal_blueprint 		= 5
+		minister_assassination 		= 2
+		smear_campaign 			= 0
+		coup 				= 1
+		sabotage_industry 		= 3
+		nuclear_sabotage 		= 0
+		found_partisans 		= 2
+		massmedia 			= 0
+		disrupt_techteam		= 3
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2280 2289 2290 2291 2292 2293 2294 2295 2296 2297 2301 2302 2303 }
+}
+
+garrison = {
+	country_priorities = {
+		EGY = 100
+		MOR = 15
+		SPA = 100		
+		LIB = 10
+		CON = 50
+	}	
+}

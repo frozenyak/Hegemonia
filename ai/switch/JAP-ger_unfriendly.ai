@@ -1,0 +1,98 @@
+#Base country AI file
+
+switch = no # [yes/no]
+
+###################################
+# Flags
+###################################
+flags = { }
+
+###################################
+# Diplomacy
+###################################
+war = 75
+neutrality = 50.000 
+claim_acceptance = -100
+
+combat = { U08 = 25 PHI = 50 UAU = 50 }
+befriend = { U02 = 100 }
+protect = { }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { CHI = 10 CYN = 10 KOR = 10 ENG = 6 GER = 10 }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { USA = 10 UAU = 5 U02 = 10 }
+	embargo = { CYN GER }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies 		= 0.15
+	percentage_foreign_mission 	= 0.35
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= JAP	
+		NumberOfSpies 			= 15
+		min_number_of_spies 		= 3
+	}
+	spyprefsdata = {
+		#Nation
+		country 			= KOR
+		country_priorities		= 5
+		#Missions
+		steal_blueprint 		= 0
+		minister_assassination 		= 2
+		smear_campaign 			= 0
+		coup 				= 2
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 0
+		found_partisans 		= 2
+		massmedia 			= 0
+		disrupt_techteam		= 5
+	}
+	spyprefsdata = {
+		#Nation
+		country 			= U08
+		country_priorities		= 3
+		#Missions
+		steal_blueprint 		= 2
+		minister_assassination 		= 2
+		smear_campaign 			= 2
+		coup 				= 0
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 0
+		found_partisans 		= 0
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}	
+	spyprefsdata = {
+		#Nation
+		country 			= CYN
+		country_priorities		= 3
+		#Missions
+		steal_blueprint 		= 2
+		minister_assassination 		= 2
+		smear_campaign 			= 2
+		coup 				= 0
+		sabotage_industry 		= 5
+		nuclear_sabotage 		= 0
+		found_partisans 		= 0
+		massmedia 			= 5
+		disrupt_techteam		= 5
+	}	
+}

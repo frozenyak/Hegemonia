@@ -1,0 +1,11 @@
+garrison = {
+	ignore = {
+		#baltic beaches
+		#152 #Kiel
+		153 #Rostock
+		158 #Stettin
+		226 #Gdynia
+		181 #Danzig
+		184 #Koenigsberg
+	}
+}

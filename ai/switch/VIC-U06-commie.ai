@@ -1,0 +1,15 @@
+befriend = { RSI = 75 U00 = 100 U07 = 100 ARA = 25 U10 = 25 U06 = 100 }
+protect = { U10 = 50 U06 = 50}
+
+garrison = {
+	country_priorities = {
+		GER = 100
+		SPA = 100
+		SCH = 30
+		U06 = 15
+		U10 = -1
+		U14 = 50
+		RSI = -1
+		U00 = -1
+	}
+}

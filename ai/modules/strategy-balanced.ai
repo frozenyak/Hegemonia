@@ -1,0 +1,131 @@
+###################################
+# Basics
+###################################
+
+max_front_ratio = 1.2 #Max friendly-to-enemy ratio on front
+max_garrison_prop = 0.30 #Max % of troops given garrison duty
+min_garrison_prop = 0.10 #Min % of troops given garrison duty
+evac_islands = yes #Evacuate low-value islands
+use_offensive_supply = yes #Whether AI uses offensive supply
+max_fuel_offensive = 100 #Max amount of fuel that should be used (divided by unit strength)
+max_redeploying = 0.25 #Max % of units that may be redeploying
+strat_redeploy_threshold = 5 #ETA where AI switches to strat redeploy
+exp_force_ratio = 0.50  #max percentage of army we will give in exp forces
+upgrading = 0.35		#max % of ic used on this slider.
+reinforcement = 0 #0.10	#max % of ic used on this slider.
+desperation = 0.3	#If more than this % of ic is occupied by enemy, panic and build militia hordes.
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+leader_ratio = {
+	land_field_marshal 	=0.02
+	land_general 		=0.05
+	land_lt_general 	=0.40
+
+	sea_grand_admiral 	=0.05
+	sea_admiral 		=0.10
+	sea_vice_admiral 	=0.40
+
+	air_marshal 		=0.02
+	air_general 		=0.08
+	air_lt_general 		=0.20
+}
+
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 	= 0.75
+	overseas_multiplier 	= 0.25
+	home_peace_cap 		= 50
+	war_zone_odds 		= 1.001
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 10	# Beach level 2
+	capital			= 40	# Our capital
+	human_border		= 25	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 25	# If we are neutral, countries with claims on us get this
+	unstable_border		= 25	# Bordering countries at war with someone else get this
+}
+
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+
+	frozen_attack 	= 1.0
+	snow_attack 	= 1.0
+	blizzard_attack = 1.0
+	storm_attack 	= 1.0
+	muddy_attack 	= 1.0
+	
+	occupied 	= 0.7
+	owned 		= 0.7
+
+	jungle_attack 	= 1.0
+	mountain_attack = 1.0
+	swamp_attack 	= 1.0
+	forest_attack 	= 1.0
+	hill_attack 	= 1.0
+	urban_attack 	= 1.0
+	river 		= 1.0
+
+	enemy_handicap = { }
+	passivity = { }
+} 
+###################################
+# Air bombardment and defense
+###################################
+# Air AI File For Ground Bombings as priority
+# bomber is now obsolete and NOT USED AT ALL replace and use Air Marshal instead
+
+air_marshal = { 
+	icxdayscostfactor = 10.0000 
+	manpowercostfactor = 100.0000 
+	destructionriskthreashold = 0.2000 
+	airsuperioritydesirability = 30.0000 
+	airsuperioritylosstolerance = 1.0000 
+	groundattacklosstolerance = 1.0000 
+	groundattackdesirability = 40.0000 
+	interdictionlosstolerance = 2.0000 
+	inderdictiondesirability = 20.0000 
+	logisticalstrikelosstolerance = 0.5000 
+	logisticalstrikeefficency = 0.0100 
+	logisticalstrikedesirability = 2.0000 
+	runwaycrateringlosstolerance = 1.5000 
+	runwaycrateringefficency = 0.0100 
+	runwaycrateringdesirability = 10.0000 
+	strategicstriketolerance = 4.5000 
+	strategicstrikeefficency = 0.0100 
+	strategicstrikedesirability = 10.0000 
+	nukestriketolerance = 1.0000 
+	nukestrikedesirability = 100.0000 
+	installationstriketolerance = 1.5000 
+	installationstrikeefficency = 0.0100 
+	installationstrikedesirability = 5.0000 
+	navalstriketolerance = 1.0000 
+	navalstrikedesirability = 15.0000 
+	portstriketolerance = 1.0000 
+	portstrikedesirability = 9.0000 
+	convoyraidtolerance = 1.0000 
+	convoyraiddesirability = 9.0000 
+	min_mission_strength_org = 0.8000 
+	taskforcetype = { name = "Air Superiority" desiredratio = 0.4000 rangeweight = 10.0000 airkillpowerweight = 2000.0000 hardkillpowerweight = 0.0000 softkillpowerweight = 0.0000 navalkillpowerweight = 0.0000 strategickillpowerweight = 0.0000 transportcapacityweight = -1000000.0000 airvulnurabilityweight = -1.0000 surfacevulnurabilityweight = 0.0000 idle = yes reorganize = yes air_superiority = yes } 
+	taskforcetype = { name = "Soft Bombing" desiredratio = 0.2500 rangeweight = 10.0000 airkillpowerweight = 0.0000 hardkillpowerweight = 0.0000 softkillpowerweight = 2000.0000 navalkillpowerweight = 0.0000 strategickillpowerweight = 0.0000 transportcapacityweight = -1000000.0000 airvulnurabilityweight = 0.0000 surfacevulnurabilityweight = -1.0000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Hard Bombing" desiredratio = 0.1000 rangeweight = 10.0000 airkillpowerweight = 0.0000 hardkillpowerweight = 2000.0000 softkillpowerweight = 0.0000 navalkillpowerweight = 0.0000 strategickillpowerweight = 0.0000 transportcapacityweight = -1000000.0000 airvulnurabilityweight = 0.0000 surfacevulnurabilityweight = -1.0000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Strategic Bombing" desiredratio = 0.1000 rangeweight = 10.0000 airkillpowerweight = 0.0000 hardkillpowerweight = 0.0000 softkillpowerweight = 0.0000 navalkillpowerweight = 0.0000 strategickillpowerweight = 2000.0000 transportcapacityweight = -1000000.0000 airvulnurabilityweight = -0.5000 surfacevulnurabilityweight = -0.5000 idle = yes reorganize = yes logistical_strike = yes runway_cratering = yes strategic_bombardment = yes installation_strike = yes } 
+	taskforcetype = { name = "Naval Bombing" desiredratio = 0.0500 rangeweight = 10.0000 airkillpowerweight = 0.0000 hardkillpowerweight = 0.0000 softkillpowerweight = 0.0000 navalkillpowerweight = 2000.0000 strategickillpowerweight = 0.0000 transportcapacityweight = -1000000.0000 airvulnurabilityweight = 0.0000 surfacevulnurabilityweight = -1.0000 idle = yes reorganize = yes naval_strike = yes port_strike = yes convoy_air_raiding = yes } 
+	taskforcetype = { name = "Airlift" desiredratio = 0.1000 rangeweight = 10.0000 airkillpowerweight = 0.0000 hardkillpowerweight = -2000.0000 softkillpowerweight = -2000.0000 navalkillpowerweight = 0.0000 strategickillpowerweight = -2000.0000 transportcapacityweight = 1000000.0000 airvulnurabilityweight = -1.0000 surfacevulnurabilityweight = 0.0000 idle = yes reorganize = yes airborne_assault = yes air_supply = yes } 
+}
+
+admiral = { 
+	min_org					= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg					= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 				= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 				= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+	min_core_attack_fleets  		= 1	# Minimum amount of attack fleets to defend CORE provinces (default 0)
+}

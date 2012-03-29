@@ -1,0 +1,39 @@
+invasion = { 
+ 	base		= 1.0	#Relative modifier. (lower = specific targets much more important.)
+	random		= 5.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 2.0	#increase to avoid coastal forts more.
+	beach		= 2.0	#higher, avoid worst beaches.
+	distance	= 0.5	#higher = avoid long distance.
+	max_distance	= 500.0 #max distance, 1=100km
+	max_staging_distance = 500.0  #max distance, 1=100km
+	pocket		= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 1.0	#prioritise taking pure islands.
+	enemy		= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 1.0	#higher = much more vary of troops nearby
+	air_base	= 2.0   #higher = attack air bases
+      	naval_base 	= 2.0   #higher = attack naval bases
+      	air_support 	= 2.0   #higher = attack provinces within air range
+      	redirect 	= priority #priority/nearest/home
+	ignore		= no #ignore home fronts
+      
+	staging_province = { }        
+	target = { 
+		1624 = 100
+		1625 = 100
+		1627 = 100
+		1631 = 100
+		1632 = 100
+	} 
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	core = {  }
+	target = {
+		2559 = 100
+		2553 = 100
+		2539 = 100
+		2541 = 100
+	}
+}

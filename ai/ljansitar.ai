@@ -1,0 +1,64 @@
+#Base country AI file
+
+switch = no # [yes/no]
+flags = { MOB2 = yes MOB3 = yes }
+neutrality = 100
+war = 0
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -49
+
+combat = { }
+befriend = { SPA = 50 CON = 25 SCH = 25 MEX = 100 RUS = 25 }
+protect = { SPA = 50 MEX = 50 SCH = 25 ENG = 25 RUS = 25 }
+target = { } 
+demand_claims = { }
+liberate = { }
+resistance = { }
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+trade = {
+	cancel_deal_threshold = 2
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+	favored = { }
+	embargo = { }
+}
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies = 0.2
+	percentage_foreign_mission = 0.6
+	spyprefsdata = 
+	{
+		#Domestic
+		country 			= SAF	
+		NumberOfSpies 			= 5
+		min_number_of_spies 		= 1
+	}	
+}
+
+admiral = { 
+	ignore = { }
+	base = { }
+	target = { } 
+	#core = { 2276 2275 2274 2273 2269 2268 2008 2011 2012 2016 2017 2018 2030 }
+}
+
+garrison = {
+	country_priorities = {
+		CON = 25
+		ANG = 25
+		SOM = 15
+	}
+}

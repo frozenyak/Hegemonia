@@ -1,0 +1,34 @@
+#Large nation, favors bases and other strategic building
+
+construction = { 
+	max_factor = 0.100 
+
+	AA_batteries = no
+	max_AA_level = 2
+	AA_provs = { } 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = { } 
+
+	radar_station = no #yes
+	max_radar = 5
+	radar_provs = { } 
+
+	air_base = no
+	max_air_base = 4
+	air_base_provs = { } 
+
+	naval_base = no
+	max_naval_base = 4
+	naval_base_provs = { } 
+
+	land_fort = no #yes
+	max_land_level = 2
+	fort_borders = { } 
+
+	ic_at_war = no
+	force_ic_until = 1935 #1937
+	ic_end_year = 1937 #1945
+	IC_provs = { } 
+}
