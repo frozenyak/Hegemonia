@@ -1,0 +1,146 @@
+U05;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+840001;Head of State;Alim Naifeh;36;SL;Stern Imperialist;High;M44001;x
+840002;Head of Government;Abdul-Ra'uf Kassis;36;SC;Naive Optimist;High;M44002;x
+840003;Minister of Armament;Qatadah Seif;36;SL;Resource Industrialist;High;M44004;x
+840004;Minister of Security;Alim Naifeh;36;SL;Compassionate Gentleman;Medium;M44001;x
+840005;Chief of Staff;Nu'man Essa;36;SL;School of Fire Support;Medium;M44007;x
+840006;Chief of Army;Zubayr Mikhail;36;SL;Static Defence Doctrine;Medium;M44008;x
+840007;Chief of Navy;Nu'man Essa;36;SL;Open Seas Doctrine;Medium;M44007;x
+840008;Chief of Air Force;Nabighah Ganim;36;SD;Air Superiority Doctrine;Medium;M44010;x
+840009;Head of State;Moosa Handal;42;SD;Weary Stiffneck;High;M44032;x
+840010;Head of State;Adnan Shamoon;46;SD;Popular Figurehead;High;M44033;x
+840011;Head of State;Fareeq Boulos;42;PA;Resigned Generalissimo;High;M44035;x
+840012;Head of State;Badi al Zaman Attia;38;FA;Autocratic Charmer;High;M44011;x
+840013;Head of Government;Moosa Handal;42;SD;Flamboyant Tough Guy;High;M44032;x
+840014;Head of Government;Adnan Shamoon;46;SD;Backroom Backstabber;High;M44033;x
+840015;Head of Government;Alim Naifeh;36;SL;Smiling Oilman;High;M44001;x
+840016;Head of Government;Fareeq Boulos;42;PA;Old General;High;M44035;x
+840017;Head of Government;Razin Qureshi;38;LE;Old Admiral;High;M44022;x
+840018;Foreign Minister;Taqiy Morcos;38;SD;Iron Fisted Brute;Medium;M44051;x
+840019;Foreign Minister;Shahir Koury;40;SD;Apologetic Clerk;Medium;M44052;x
+840020;Foreign Minister;Basim Almasi;42;SD;The Cloak N Dagger Schemer;Medium;M44057;x
+840021;Foreign Minister;Saif al Din Kassis;38;SL;Biased Intellectual;High;M44059;x
+840022;Foreign Minister;Siddiq Almasi;42;SC;General Staffer;Medium;M44062;x
+840023;Foreign Minister;Jalal Bazzi;43;SC;The Cloak N Dagger Schemer;Medium;M44063;x
+840024;Foreign Minister;Badi al Zaman Attia;38;FA;Ideological Crusader;Very Low;M44011;x
+840025;Foreign Minister;Nijad Botros;46;LWR;Apologetic Clerk;Medium;M44067;x
+840026;Minister of Armament;Numair Srour;38;SD;Theoretical Scientist;High;M44068;x
+840027;Minister of Armament;Wahid Nassar;38;SD;Resource Industrialist;High;M44069;x
+840028;Minister of Armament;Qutb Hajjar;41;SL;Military Entrepreneur;High;M44072;x
+840029;Minister of Armament;Musa Shammas;42;SD;Tank Proponent;Very High;M44073;x
+840030;Minister of Armament;Nasir al Din Kalb;36;SL;Air to Ground Proponent;High;M44076;x
+840031;Minister of Armament;Shahir Koury;38;SL;Administrative Genius;Medium;M44052;x
+840032;Minister of Armament;Junaid Baz;38;SC;laissez-faire capitalist;High;M44078;x
+840033;Minister of Armament;Siddiq Almasi;43;SC;Battle Fleet Proponent;Medium;M44062;x
+840034;Minister of Armament;Abdul-Ra'uf Kassis;46;SC;Administrative Genius;Medium;M44002;x
+840035;Minister of Armament;Razin Qureshi;38;LE;Theoretical Scientist;Very Low;M44022;x
+840036;Minister of Armament;Yoonus Khoury;42;LE;Air Superiority Proponent;Medium;M44089;x
+840037;Minister of Armament;Umayr Kattan;46;LWR;Strategic Air Proponent;High;M44090;x
+840038;Minister of Security;Nabighah Ganim;42;SD;Efficient Sociopath;Medium;M44010;x
+840039;Minister of Security;Moosa Handal;45;SD;Prince of Terror;High;M44032;x
+840040;Minister of Security;Siraj Moghadam;36;SL;Man of the People;High;M44095;x
+840041;Minister of Security;Taqiy Morcos;38;SL;Crime Fighter;Medium;M44051;x
+840042;Minister of Security;Saif al Din Kassis;42;SC;Crime Fighter;High;M44059;x
+840043;Minister of Security;Fareeq Boulos;39;PA;Man of the People;Medium;M44035;x
+840044;Minister of Security;Yahya Ganem;36;FA;Back Stabber;Low;M44015;x
+840045;Minister of Security;Shahir Koury;45;LWR;Prince of Terror;Medium;M44052;x
+840046;Head of Military Intelligence;Yazan Salib;38;SD;Logistics Specialist;Medium;M410626;x
+840047;Head of Military Intelligence;Wahid Nassar;41;SD;Dismal Enigma;High;M44069;x
+840048;Head of Military Intelligence;Qatadah Seif;42;SD;Naval Intelligence Specialist;High;M44004;x
+840049;Head of Military Intelligence;Nabighah Ganim;46;SD;Technical Specialist;Medium;M44010;x
+840050;Head of Military Intelligence;Qutb Hajjar;38;SL;Industrial Specialist;High;M44072;x
+840051;Head of Military Intelligence;Luqman Saliba;40;SL;Technical Specialist;High;M44087;x
+840052;Head of Military Intelligence;Mu'tasim Awad;43;SL;Industrial Specialist;High;M44115;x
+840053;Head of Military Intelligence;Bashshar Shammas;46;SC;Logistics Specialist;Medium;M44116;x
+840054;Head of Military Intelligence;Ariosto Herrera;38;FA;Logistics Specialist;High;M44016;x
+840055;Head of Military Intelligence;Nasih Hajjar;38;LE;Political Specialist;Medium;M44006;x
+840056;Chief of Staff;Wahab Mustafa;38;SD;School of Mass Combat;High;M44121;x
+840057;Chief of Staff;Safuh Bahar;45;SC;School of Fire Support;High;M44122;x
+840058;Chief of Staff;Luqman Saliba;38;SL;School of Mass Combat;High;M44087;x
+840059;Chief of Staff;Bashshar Shammas;42;SC;School of Psychology;Medium;M44116;x
+840060;Chief of Army;Zubayr Mikhail;42;PA;Static Defence Doctrine;Medium;M44008;x
+840061;Chief of Staff;Layth Kouri;38;FA;School of Defence;Very Low;M44017;x
+840062;Chief of Staff;Abdul-Majid Sabbagh;38;LE;School of Manoeuvre;Medium;M44027;x
+840063;Chief of Army;Qutb Hajjar;38;SL;Decisive Battle Doctrine;High;M44072;x
+840064;Chief of Army;Safuh Bahar;43;SC;Static Defence Doctrine;High;M44122;x
+840065;Chief of Army;Layth Kouri;38;FA;Static Defence Doctrine;Medium;M44017;x
+840066;Chief of Army;Nasih Hajjar;38;LE;Elastic Defence Doctrine;Medium;M44006;x
+840067;Chief of Navy;As'ad Touma;38;SD;Open Seas Doctrine;Medium;M44138;x
+840068;Chief of Navy;Siddiq Almasi;38;SL;Decisive Naval Battle Doctrine;Medium;M44062;x
+840069;Chief of Navy;Bassam Antar;46;SC;Base Control Doctrine;Medium;M44142;x
+840070;Chief of Navy;Abdul-Majid Sabbagh;38;LE;Indirect Approach Doctrine;Medium;M44027;x
+840071;Chief of Air Force;Rasil Shalhoub;38;SD;Air Superiority Doctrine;Medium;M44146;x
+840072;Chief of Air Force;Nasir al Din Kalb;36;SL;Carpet Bombing Doctrine;High;M44076;x
+840073;Chief of Air Force;As'ad Cham;42;SC;Vertical Envelopment Doctrine;High;M44149;x
+840074;Chief of Air Force;Ariosto Herrera;38;FA;Air Superiority Doctrine;Very High;M44016;x
+840075;Chief of Air Force;Abdul-Majid Sabbagh;45;LWR;Army Aviation Doctrine;Medium;M44027;x
+840076;Head of State;Abdul-Ra'uf Kassis;38;SC;Popular Figurehead;High;M44002;x
+840077;Head of Government;Fareeq Boulos;46;SC;Old General;High;M44035;x
+840078;Head of State;Kedar Antoun;41;SD;Stern Imperialist;High;M44157;x
+840079;Head of Government;Kedar Antoun;41;SD;Silent Workhorse;High;M44157;x
+840080;Head of State;Sayyar Qureshi;46;SD;Pig-headed Isolationist;High;M44159;x
+840081;Head of Government;Sayyar Qureshi;46;SD;Naive Optimist;High;M44159;x
+840082;Head of Government;Najjar Masih;52;SC;Corporate Suit;High;M44164;x
+840083;Head of State;Fakhri Koury;36;PA;Powerhungry Demagogue;High;M41001;x
+840084;Head of Government;Fakhri Koury;36;PA;Smiling Oilman;High;M41001;x
+840085;Foreign Minister;Masun Hakimi;36;PA;Iron Fisted Brute;Medium;M41003;x
+840086;Minister of Armament;Qassim Abdel;36;PA;Military Entrepreneur;Medium;M41004;x
+840087;Minister of Security;Umarah Hakimi;36;PA;Prince of Terror;Medium;M41005;x
+840088;Head of Military Intelligence;Taj al Din Halabi;36;PA;Logistics Specialist;Medium;M41006;x
+840089;Chief of Army;Abdul-Muqtadir Moghadam;36;PA;Static Defence Doctrine;Medium;M41008;x
+840090;Chief of Navy;Ali Naser;36;PA;Decisive Naval Battle Doctrine;Medium;M41009;x
+840091;Chief of Air Force;Hudad Asker;36;PA;Air Superiority Doctrine;Medium;M41010;x
+840092;Head of State;Mohammed III;36;PA;Stern Imperialist;High;M106211;x
+840093;Minister of Armament;Suraqah Haddad;36;FA;Infantry Proponent;Medium;M41014;x
+840094;Chief of Navy;Shahir Handal;36;FA;Base Control Doctrine;Medium;M41019;x
+840095;Chief of Air Force;Alim Hakimi;36;FA;Army Aviation Doctrine;Medium;M41020;x
+840096;Head of State;Tawfiq Haddad;36;LWR;Autocratic Charmer;High;M41021;x
+840097;Head of Government;Tawfiq Haddad;36;LWR;Ambitious Union Boss;High;M41021;x
+840098;Foreign Minister;Abdul-Badi Morcos;36;LE;Great Compromiser;Medium;M41023;x
+840099;Minister of Security;Jesús Menendez Súris;36;LWR;Back Stabber;Medium;M41025;x
+840100;Head of State;Qassim Abdel;38;PA;Resigned Generalissimo;High;M41004;x
+840101;Head of State;Sabeer Said;38;SD;Insignificant Layman;High;M41032;x
+840102;Head of State;Tariq Sarkis;43;ML;Benevolent Gentleman;High;M41033;x
+840103;Head of State;Hamal Nazari;43;SD;Weary Stiffneck;High;M41034;x
+840104;Head of Government;Qassim Abdel;36;PA;Old General;High;M41004;x
+840105;Head of Government;Sabeer Said;38;SD;Happy Amateur;High;M41032;x
+840106;Head of Government;Tariq Sarkis;43;ML;Corporate Suit;High;M41033;x
+840107;Head of Government;Hamal Nazari;43;SD;Old Admiral;High;M41034;x
+840108;Foreign Minister;Ghazwan Isa;38;SC;The Cloak N Dagger Schemer;Medium;M41043;x
+840109;Foreign Minister;Hamal Nazari;38;SD;Biased Intellectual;Medium;M41034;x
+840110;Foreign Minister;Khair al Din Isa;43;ML;Iron Fisted Brute;Medium;M41045;x
+840111;Foreign Minister;Fa'iz Nazari;47;SL;Apologetic Clerk;Medium;M41047;x
+840112;Foreign Minister;Hamdan Ganim;47;SD;Great Compromiser;Medium;M41048;x
+840113;Foreign Minister;Tawfiq Haddad;47;LWR;The Cloak N Dagger Schemer;Medium;M41021;x
+840114;Minister of Armament;Rafid Maalouf;36;PA;laissez-faire capitalist;Medium;M41050;x
+840115;Minister of Armament;Abdul-Muqtadir Moghadam;42;SC;Infantry Proponent;Medium;M41008;x
+840116;Minister of Armament;Hanbal Wasem;43;ML;Air to Ground Proponent;Medium;M41055;x
+840117;Minister of Armament;Ali Naser;43;PA;Battle Fleet Proponent;Medium;M41009;x
+840118;Minister of Armament;Bashir Tuma;44;SD;Air Superiority Proponent;Medium;M41057;x
+840119;Minister of Armament;Fakhir Botros;47;SL;Resource Industrialist;Medium;M41058;x
+840120;Minister of Armament;Jibran Sabbagh;36;LWR;Submarine Proponent;Medium;M41059;x
+840121;Minister of Security;Umayr Naifeh;38;SC;Man of the People;Medium;M41061;x
+840122;Minister of Security;Sabeer Said;38;SD;Prince of Terror;Medium;M41032;x
+840123;Minister of Security;Kadeer Mustafa;43;SD;Compassionate Gentleman;Medium;M41064;x
+840124;Minister of Security;Jihad Bahar;44;SL;Prince of Terror;Medium;M41065;x
+840125;Minister of Security;Sumrah Asker;47;SL;Efficient Sociopath;Medium;M41066;x
+840126;Minister of Security;Suhayl Hanania;47;SD;Crime Fighter;Medium;M41067;x
+840127;Head of Military Intelligence;Ma'ruf Boulos;36;PA;Industrial Specialist;Medium;M41068;x
+840128;Head of Military Intelligence;Khoury Maalouf;38;SC;Industrial Specialist;Medium;M41070;x
+840129;Head of Military Intelligence;Sa'dun Tahan;38;SD;Technical Specialist;Medium;M41026;x
+840130;Head of Military Intelligence;Hippolito Gallinal;43;SD;Logistics Specialist;Medium;M41073;x
+840131;Head of Military Intelligence;Murad Shamon;47;SL;Technical Specialist;Medium;M41074;x
+840132;Head of Military Intelligence;Dhul Fiqar Isa;47;LWR;Industrial Specialist;Medium;M41075;x
+840133;Chief of Staff;Ma'mun Masih;38;SD;School of Defence;Medium;M41077;x
+840134;Chief of Staff;Ja'far Maloof;43;ML;School of Manoeuvre;Medium;M41078;x
+840135;Chief of Army;Abdul-Ghafur Bazzi;36;SC;Elastic Defence Doctrine;Medium;M41081;x
+840136;Chief of Army;Ma'mun Masih;38;SD;Static Defence Doctrine;Medium;M41077;x
+840137;Chief of Army;Abdul-Haqq Srour;43;ML;Guns and Butter Doctrine;Medium;M41083;x
+840138;Chief of Army;Fayyad Hadad;47;SL;Decisive Battle Doctrine;Medium;M41085;x
+840139;Chief of Navy;Tareef Ganem;43;ML;Open Seas Doctrine;Medium;M41089;x
+840140;Chief of Navy;Jibran Sabbagh;43;SD;Indirect Approach Doctrine;Medium;M41059;x
+840141;Chief of Navy;Nayif Arian;47;SL;Power Projection Doctrine;Medium;M41091;x
+840142;Chief of Navy;Abdul-Muta'al Kanaan;47;SD;Open Seas Doctrine;Medium;M41092;x
+840143;Chief of Air Force;Zain Bahar;38;SD;Air Superiority Doctrine;Medium;M41030;x
+840144;Chief of Air Force;Bashir Tuma;43;SD;Army Aviation Doctrine;Medium;M41057;x
+840145;Chief of Air Force;Nayif Arian;47;SL;Naval Aviation Doctrine;Medium;M41091;x

@@ -1,0 +1,109 @@
+MEX;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+36001;Head of State;Hamid el-Hamman;36;ML;Barking Buffoon;High;M36001;x
+36002;Head of Government;Danial Mahmoud;36;ML;Naive Optimist;High;M36002;x
+36003;Foreign Minister;Tamid Navid;36;ML;Great Compromiser;Medium;M36003;x
+36004;Minister of Armament;Faraj Adnan;36;ML;Infantry Proponent;High;M36004;x
+36005;Minister of Security;Al Tayyib Darwish;36;ML;Man of the People;Medium;M36005;x
+36006;Head of Military Intelligence;Hana'i Umayyah;36;ML;Political Specialist;Medium;M36006;x
+36007;Chief of Staff;Irfan Kalb;36;ML;School of Defence;Very High;M36007;x
+36008;Chief of Army;Humam Shumayl Gerges;36;ML;Static Defence Doctrine;Medium;M36008;x
+36009;Chief of Navy;Hani Kardal Issa;36;ML;Open Seas Doctrine;Medium;M36009;x
+36010;Chief of Air Force;Abdul-Mu'min Bahar;36;ML;Air Superiority Doctrine;Medium;M36010;x
+36032;Head of State;Moosa Fath Khoury;36;SD;Stern Imperialist;High;M36032;x
+36033;Head of State;Issa Noor;46;SD;Benevolent Gentleman;High;M36033;x
+36034;Head of State;Khalifa Anwar;36;SC;Insignificant Layman;High;M36034;x
+36035;Head of State;Jibril Anass;46;SC;Powerhungry Demagogue;High;M36035;x
+36036;Head of State;Ataullah Hani;36;PA;Resigned Generalissimo;High;M36011;x
+36037;Head of State;Abdul Shihab;46;PA;Popular Figurehead;High;M36014;x
+36038;Head of State;Abd-Allah Mansur;36;LE;Barking Buffoon;High;M36021;x
+36039;Head of State;Nazih Shareef;46;LE;Die-hard Reformer;High;M36025;x
+36041;Head of Government;Moosa Fath Khoury;36;SD;Corporate Suit;High;M36032;x
+36042;Head of Government;Issa Noor;46;SD;Smiling Oilman;High;M36033;x
+36043;Head of Government;Khalifa Anwar;36;SC;Old General;High;M36034;x
+36044;Head of Government;Jibril Anass;46;SC;Silent Workhorse;High;M36035;x
+36045;Head of Government;Iman Imam;36;FA;Political Protege;High;M36012;x
+36046;Head of Government;Abdul Shihab;46;PA;Happy Amateur;High;M36014;x
+36047;Head of Government;Abd-Allah Mansur;36;LE;Happy Amateur;High;M36021;x
+36048;Head of Government;Nazih Shareef;46;LE;Naive Optimist;High;M36025;x
+36050;Foreign Minister;Mazin Qismat;36;SD;Iron Fisted Brute;Medium;M36050;x
+36051;Foreign Minister;Junaid Shukri;45;SD;General Staffer;Medium;M36051;x
+36052;Foreign Minister;Ihsan Adel;46;SD;Apologetic Clerk;Medium;M36052;x
+36053;Foreign Minister;Murad Khayrat;36;SC;Biased Intellectual;Medium;M36053;x
+36054;Foreign Minister;Ghassan Husayn;44;SC;Great Compromiser;Medium;M36054;x
+36055;Foreign Minister;Sayyid Mehmud;46;SC;Apologetic Clerk;Medium;M36055;x
+36056;Foreign Minister;Zayd Wafi;36;PA;Biased Intellectual;Very Low;M36011;x
+36057;Foreign Minister;Sharif Sa'di;46;PA;General Staffer;Medium;M36057;x
+36058;Foreign Minister;Farooq Sakhr;36;LE;The Cloak N Dagger Schemer;Very High;M36023;x
+36059;Foreign Minister;Abd-Allah Mansur;43;LE;Biased Intellectual;Very Low;M36021;x
+36060;Foreign Minister;Zia Izz-al-Din;46;LE;Apologetic Clerk;Medium;M36060;x
+36061;Minister of Armament;Wafai Muhsin;38;SD;Submarine Proponent;Medium;M36061;x
+36062;Minister of Armament;Nizar Wahid;36;SD;Battle Fleet Proponent;Medium;M36062;x
+36063;Minister of Armament;Anwer Najib;42;SD;Theoretical Scientist;Medium;M36063;x
+36064;Minister of Armament;Nagi Jamal;44;SD;Tank Proponent;Medium;M36064;x
+36065;Minister of Armament;Waqar Karim;46;SD;Administrative Genius;Medium;M36065;x
+36066;Minister of Armament;Sharif Sa'di;36;SC;Resource Industrialist;Medium;M36057;x
+36067;Minister of Armament;Bassam Jabir;46;SC;Oil baron;Medium;M36067;x
+36068;Minister of Armament;Abdul Shihab;36;FA;Corrupt Kleptocrat;Medium;M36014;x
+36069;Minister of Armament;Khalifa Anwar;43;PA;laissez-faire capitalist;Medium;M36034;x
+36070;Minister of Armament;Iman Imam;46;PA;Military Entrepreneur;Low;M36012;x
+36071;Minister of Armament;Murad Nasir;36;LE;Air to Ground Proponent;Medium;M36071;x
+36072;Minister of Armament;Abd-al-Hamid Mus'ad;43;LE;Administrative Genius;Medium;M36024;x
+36073;Minister of Security;Khaliq Rasheed;38;SD;Crime Fighter;Medium;M36073;x
+36074;Minister of Security;Riad Butrus;36;SD;Prince of Terror;High;M36074;x
+36075;Minister of Security;Aqil Gafar;42;SD;Back Stabber;Very High;M36075;x
+36076;Minister of Security;Issa Noor;43;SD;Man of the People;High;M36033;x
+36077;Minister of Security;Waqar Karim;45;SD;Silent Lawyer;Medium;M36065;x
+36078;Minister of Security;Hasim Jinan;46;SD;Compassionate Gentleman;Medium;M36078;x
+36079;Minister of Security;Harith Jabbar;36;SC;Compassionate Gentleman;Medium;M36017;x
+36080;Minister of Security;Majid Daud;46;SC;Man of the People;Medium;M36080;x
+36081;Minister of Security;Abdul Shihab;36;FA;Crooked Kleptocrat;Medium;M36014;x
+36082;Minister of Security;Hakeem Ruh;43;FA;Back Stabber;Medium;M36082;x
+36083;Minister of Security;Shareef Mus'ad;46;PA;Man of the People;Medium;M36083;x
+36084;Minister of Security;Nazih Shareef;36;LE;Efficient Sociopath;Very High;M36025;x
+36085;Minister of Security;Farooq Sakhr;46;LE;Back Stabber;Very Low;M36023;x
+36086;Head of Military Intelligence;Riaz Sa'id;38;SD;Naval Intelligence Specialist;High;M36001;x
+36087;Head of Military Intelligence;Moosa Fath Khoury;36;SD;Political Specialist;High;M36087;x
+36088;Head of Military Intelligence;Faraj Adnan;46;SD;Dismal Enigma;High;M36004;x
+36089;Head of Military Intelligence;Ghassan Husayn;36;SC;Logistics Specialist;Medium;M36054;x
+36090;Head of Military Intelligence;Jibril Anass;46;SC;Naval Intelligence Specialist;High;M36035;x
+36091;Head of Military Intelligence;Fadl 'Isam;36;PA;Industrial Specialist;Medium;M36091;x
+36092;Head of Military Intelligence;Zahi Ala al-Din;46;PA;Logistics Specialist;Medium;M36016;x
+36093;Head of Military Intelligence;Wafai Fakhri;36;LE;Dismal Enigma;Low;M36026;x
+36094;Head of Military Intelligence;Aziz Faris;46;LE;Political Specialist;Low;M36094;x
+36095;Chief of Staff;Humam Shumayl Gerges;36;SD;School of Mass Combat;Medium;M36008;x
+36096;Chief of Staff;Abdul-Mu'min Bahar;36;SD;school of fire support;Medium;M36010;x
+36098;Chief of Staff;Hani Kardal Issa;36;SC;School of Manoeuvre;Medium;M36009;x
+36100;Chief of Staff;Shariah Rusul;36;FA;School of Manoeuvre;Low;M36100;x
+36101;Chief of Staff;Hassan Tawfiq;46;PA;School of Psychology;Low;M36017;x
+36102;Chief of Staff;Irfan Aqil;36;LE;School of Defence;High;M36102;x
+36103;Chief of Staff;Wafai Fakhri;46;LE;School of Fire Support;Low;M36026;x
+36104;Chief of Army;Azhar Mus'ad;38;SD;Elastic Defence Doctrine;Medium;M36104;x
+36105;Chief of Army;Al Tayyib Darwish;36;SL;Armoured Spearhead Doctrine;Medium;M36005;x
+36107;Chief of Army;Haytham Ilyas;36;SC;Elastic Defence Doctrine;Medium;M36106;x
+36109;Chief of Army;Salih Muhammad;36;PA;decisive battle doctrine;Low;M36006;x
+36110;Chief of Army;Salim Ahmed;46;PA;Elastic Defence Doctrine;Medium;M36110;x
+36111;Chief of Army;Amin Ahmed;36;LE;Guns and Butter Doctrine;Medium;M36028;x
+36112;Chief of Army;Aziz Faris;46;LE;Armoured Spearhead Doctrine;High;M36094;x
+36113;Chief of Navy;Binyamin Fahim;38;SD;Base Control Doctrine;High;M36029;x
+36114;Chief of Navy;Farouk Irfan;46;SD;Power Projection Doctrine;High;M36114;x
+36115;Chief of Navy;Abdullah Salah;36;SC;Open Seas Doctrine;High;M36115;x
+36116;Chief of Navy;Ziya Salah;36;PA;Open Seas Doctrine;Low;M36116;x
+36117;Chief of Navy;Mazin Zaahir;46;PA;Open Seas Doctrine;Low;M36019;x
+36119;Chief of Air Force;Abdul-Hamid Wasi;38;SD;Army Aviation Doctrine;Medium;M36119;x
+36121;Chief of Air Force;Abdullah Salah;36;SC;Vertical Envelopment Doctrine;High;M36115;x
+36122;Chief of Air Force;Imad Sultan;36;FA;Air Superiority Doctrine;Medium;M36122;x
+36123;Chief of Air Force;Munir Sani;46;PA;Carpet Bombing Doctrine;Medium;M36123;x
+36124;Chief of Air Force;Abd-al-Malik Fakhri;36;LE;Vertical Envelopment Doctrine;Medium;M36030;x
+36020;Chief of Air Force;Zahi Ala al-Din;36;FA;Carpet Bombing Doctrine;Medium;M36016;x
+36125;Head of State;Waqar Karim;36;SD;Insignificant Layman;High;M36065;x
+36126;Head of State;Bassam Jabir;36;SC;Barking Buffoon;High;M36067;x
+36127;Head of Government;Waqar Karim;36;SD;Political Protege;High;M36065;x
+36128;Head of Government;Bassam Jabir;36;SC;Smiling Oilman;High;M36067;x
+36129;Foreign Minister;Abd-al-Hamid Mubin;36;SD;Iron Fisted Brute;Medium;M36129;x
+36130;Foreign Minister;Jibril Anass;36;SC;General Staffer;Medium;M36035;x
+36131;Minister of Armament;Hasim Jinan;36;SD;Military Entrepreneur;Medium;M36131;x
+36132;Minister of Armament;Wassim Nasib;36;SC;laissez-faire capitalist;High;M36132;x
+36133;Minister of Security;Jalal Haroun;36;SD;Crime Fighter;Medium;M36133;x
+6096;Minister of Armament;Kamil Shamoun;40;PA;Administrative Genius;Very High;M6014;x
+6145;Chief of Army;Fareeq Shadid;44;SD;Armoured Spearhead Doctrine;High;M6145;x
+6156;Chief of Navy;Rashad Nazari;41;SL;Power Projection Doctrine;High;M6156;x

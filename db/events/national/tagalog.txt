@@ -1,0 +1,24 @@
+###52000-52999###
+
+event = {
+	id = 52000
+	country = PHI
+	
+	name = "Alliance with Australasia?"
+	desc = "Australasia has come to us suggesting a defense pact to preserve the independence of both countries against the major powers in the region."
+	style = 1
+
+	action = {
+		name = "Good idea!"
+		ai_chance = 99
+		command = { type = relation which = UAU value = 100 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 24001 }
+	}
+	action = {
+		name = "We are stronger alone"
+		ai_chance = 1
+		command = { type = relation which = UAU value = -100 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}

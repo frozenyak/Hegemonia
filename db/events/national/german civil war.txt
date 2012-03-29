@@ -1,0 +1,950 @@
+#2052001 civil war
+#2052002 germany
+#2052003 republic
+#2052010 victory dfr
+#2052011 victory ger
+#2052020 spa suggest guarantee
+#2052025 u00 response
+#2052030 enforce intervention guarantee
+#2052040 enemy lost 80%, inherit
+#########################################################################
+#  German Civil War
+#########################################################################
+event = {
+	id = 2052001
+	country = GER
+
+	trigger = {
+		dissent = 30
+		NOT = {	exists = DFR }
+		atwar = no
+		OR = {
+			AND = {
+				headofstate = 36
+				NOT = { government = fascist }
+				OR = {
+					NOT = { local_flag = communists_minus_1 }
+					NOT = { local_flag = communists_minus_2 }
+					local_flag = communists_plus_1
+					local_flag = communists_plus_2
+				}
+			}
+			AND = {
+				NOT = { government = democratic }
+				OR = {
+					NOT = { local_flag = liberals_minus_1 }
+					NOT = { local_flag = liberals_minus_2 }
+					local_flag = liberals_plus_1
+					local_flag = liberals_plus_2
+				}
+			}
+			NOT = { government = communist }
+		}
+		
+		OR = { #coup
+			event = 35031
+			event = 35032
+		}
+		#strike
+		OR = {
+			event = 35033
+			NOT = { incabinet = 2 }
+			NOT = { incabinet = 40 }
+		}
+		NOT = { local_flag = strike }
+		NOT = { flag = german_civil_war }
+		local_flag = dublin_conference_end
+		NOT = { flag = great_war_by_event }
+	}
+
+	name = "The German Civil War"
+	desc = "Our attempts to maintain order have been in vain, as public dissent and ideological violence has spiralled out of control. Armed forces have already sprung up and are in control over several regions. Even in provinces nominally under our control people are arming. Civil war is now inevitable."
+	style = 2
+  	picture = "Warsaw_Uprising"
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 13
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "Dear lord no!"
+		command = { type = leave_alliance }
+		command = { trigger = { puppet = { country = CON country = GER } } type = end_mastery which = CON }
+		command = { trigger = { puppet = { country = U08 country = GER } } type = end_mastery which = U08 }
+		#command = { trigger = { puppet = { country = U14 country = GER } } type = end_mastery which = U14 }
+		#
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 3 }
+		#
+		command = { trigger = { headofstate = 1 minister = 37 } type = headofstate which = 37 }
+		command = { trigger = { headofstate = 37 } type = headofgovernment which = 214 }
+		command = { trigger = { headofstate = 37 } type = ministerofsecurity which = 5 }
+		#
+		command = { type = setflag which = german_civil_war }
+		command = { type = civil_war which = DFR }
+		command = { type = dissent value = -13 } #-30
+		#riots
+		command = { type = sleepevent which = 35022 }
+		command = { type = sleepevent which = 35023 }
+		command = { type = sleepevent which = 35024 }
+		#assassination
+		command = { type = sleepevent which = 35025 }
+		#ministers resign
+		command = { type = sleepevent which = 35026 }
+		command = { type = sleepevent which = 35027 }
+		#coup
+		command = { type = sleepevent which = 35031 }
+		command = { type = sleepevent which = 35032 }
+		#strike
+		command = { type = sleepevent which = 35033 }
+		command = { type = sleepevent which = 35034 }
+		command = { type = sleepevent which = 35035 }
+		command = { type = sleepevent which = 35036 }
+		command = { type = sleepevent which = 35037 }
+		command = { type = sleepevent which = 35038 }
+		command = { type = sleepevent which = 35039 }
+		#Order Restored
+		command = { type = sleepevent which = 35040 }
+		#backlash
+		command = { type = sleepevent which = 35041 }
+		#frederick takes over
+		command = { type = sleepevent which = 35042 }
+		#white terror
+		command = { type = sleepevent which = 35043 }
+
+		#command = { type = trigger which = 2052002 }
+		#command = { type = trigger which = 2052003 }
+		#
+		command = { type = resource which = energy value = -50 }
+		command = { type = resource which = metal value = -50 }
+		command = { type = resource which = rare_materials value = -50 }
+		command = { type = resource which = oil value = -50 }
+		command = { type = resource which = supplies value = -50 }
+		command = { type = money value = -30 }
+		#
+		command = { type = sleepteam which = 4 } #Junkers-Fokkerwerke
+		command = { type = sleepteam which = 8 } #MAN
+		command = { type = sleepteam which = 10 } #Messerschmitt
+		command = { type = sleepteam which = 14 } #Siemens
+		command = { type = sleepteam which = 15 } #Daimler-Benz AG
+		command = { type = sleepteam which = 33 } #Werner Heisenberg
+		#
+		command = { type = province_keypoints which = 104 value = 1 } #metz
+		command = { type = province_keypoints which = 110 value = 1 } #eupen
+		command = { type = province_keypoints which = 126 value = 1 } #
+		command = { type = province_keypoints which = 127 value = 1 } #saarbrucken
+		command = { type = province_keypoints which = 128 value = 1 } #
+		command = { type = province_keypoints which = 129 value = 1 } #
+		command = { type = province_keypoints which = 130 value = 1 } #
+		command = { type = province_keypoints which = 132 value = 1 } #
+		command = { type = province_keypoints which = 133 value = 1 } #
+		command = { type = province_keypoints which = 135 value = 1 } #
+		command = { type = province_keypoints which = 136 value = 1 } #
+		command = { type = province_keypoints which = 137 value = 1 } #
+		command = { type = province_keypoints which = 139 value = 1 } #
+		command = { type = province_keypoints which = 140 value = 1 } #fulda
+		command = { type = province_keypoints which = 141 value = 1 } #
+		command = { type = province_keypoints which = 142 value = 1 } #
+		command = { type = province_keypoints which = 143 value = 1 } #
+		command = { type = province_keypoints which = 144 value = 1 } #
+		command = { type = province_keypoints which = 147 value = 1 } #
+		command = { type = province_keypoints which = 148 value = 1 } #bremen
+		command = { type = province_keypoints which = 149 value = 1 } #
+		command = { type = province_keypoints which = 151 value = 1 } #
+		command = { type = province_keypoints which = 153 value = 1 } #rostock
+		command = { type = province_keypoints which = 155 value = 1 } #stolp
+		command = { type = province_keypoints which = 156 value = 1 } #
+		command = { type = province_keypoints which = 157 value = 1 } #potsdam
+		command = { type = province_keypoints which = 158 value = 1 } #stettin
+		command = { type = province_keypoints which = 159 value = 1 } #meseritz
+		command = { type = province_keypoints which = 160 value = 1 } #frankfurt/order
+		command = { type = province_keypoints which = 161 value = 1 } #deutsch-krone
+		command = { type = province_keypoints which = 162 value = 1 } #stralsund
+		command = { type = province_keypoints which = 169 value = 1 } #
+		command = { type = province_keypoints which = 171 value = 1 } #
+		command = { type = province_keypoints which = 172 value = 1 } #cottbus
+		command = { type = province_keypoints which = 174 value = 1 } #bayreuth
+		command = { type = province_keypoints which = 175 value = 1 } #
+		command = { type = province_keypoints which = 176 value = 1 } #
+		command = { type = province_keypoints which = 177 value = 1 } #nuremberg
+		command = { type = province_keypoints which = 178 value = 1 } #
+		command = { type = province_keypoints which = 180 value = 1 } #
+		command = { type = province_keypoints which = 182 value = 1 } #
+		command = { type = province_keypoints which = 183 value = 1 } #
+		command = { type = province_keypoints which = 185 value = 1 } #
+		command = { type = province_keypoints which = 222 value = 1 } #
+		command = { type = province_keypoints which = 224 value = 1 } #poznan
+		command = { type = province_keypoints which = 261 value = 1 } #
+		command = { type = province_keypoints which = 402 value = 1 } #bolzano
+		#
+		command = { type = construct which = land_fort where = 126 value = -10 }
+		command = { type = construct which = land_fort where = 127 value = -10 }
+		command = { type = construct which = land_fort where = 128 value = -10 }
+		command = { type = construct which = land_fort where = 129 value = -10 }
+		command = { type = construct which = land_fort where = 131 value = -10 }
+		command = { type = construct which = land_fort where = 104 value = -10 }
+		command = { type = construct which = land_fort where = 105 value = -10 }
+		command = { type = construct which = land_fort where = 106 value = -10 }
+		command = { type = construct which = land_fort where = 110 value = -10 }
+		command = { type = construct which = land_fort where = 141 value = -10 }
+		command = { type = construct which = land_fort where = 147 value = -10 }
+		command = { type = construct which = land_fort where = 402 value = -10 }
+	}
+}
+
+event = {
+	id = 2052002
+	country = GER
+
+	trigger = {
+		event = 2052003
+	}
+	
+	name = "A Nation Under Siege"
+	desc = "Socialist and liberal demagoguery have driven the people towards armed revolt against the fundamentals of our very society. They reject our values, the monarchy, and god himself. The very stability and prosperity and our way at live is at stake. The Kaiser asks for all to join him in the defense of the fatherland."
+	style = 2
+  	picture = "scw"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "Für Gott und Kaiser!"
+		#
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = cavalry when = 1 }
+		command = { type = add_division which = "Freikorps Friedrich" value = militia }
+		command = { type = add_division which = "Freiwilligenverband Kaisertreu" value = militia }
+		command = { type = add_division value = cavalry when = 1 }
+		command = { type = add_division value = interceptor when = 1 }
+		command = { type = add_division value = tactical_bomber when = 1 }
+		#
+		#command = { type = secedearea which = DFR value = "Brandenburg" }
+		#command = { type = secedearea which = DFR value = "Austria" }
+		}
+}
+
+#########################################################################
+#  German Civil War - Republic
+#########################################################################
+event = {
+	id = 2052003
+	country = DFR
+
+	trigger = {
+		event = 2052001
+	}
+
+	name = "The Republic of Germany"
+	desc = "The people have spoken. They will no longer tolerate the continued reactionary policies of an unelected and unaccountable government that has done gross injustice. The people's revolution is now in full force. To fight for our very freedom and liberty, a provisional unity government has been formed between liberals and socialists to see us through these difficult times until proper elections can be held."
+	style = 2
+	picture = "scw"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "To Victory!"
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 } #5
+		#command = { type = set_domestic which = freedom value = 8 }
+		#command = { type = set_domestic which = free_market value = 6 }
+		#command = { type = set_domestic which = professional_army value = 5 }
+		#command = { type = set_domestic which = defense_lobby value = 6 }
+		#command = { type = set_domestic which = interventionism value = 6 }
+        command = { type = peacetime_ic_mod value = -40 }
+		#
+		command = { type = headofstate which = 507034 } #le
+		command = { type = headofgovernment which = 506011 } #sd
+		command = { type = foreignminister which = 507012 } #sl
+		command = { type = armamentminister which = 506017 } #sc
+		command = { type = ministerofsecurity which = 507017 } #st
+		command = { type = ministerofintelligence which = 506028 } #sd
+		command = { type = chiefofstaff which = 506031 } #ml
+		command = { type = chiefofarmy which = 507029 } #le
+		command = { type = chiefofnavy which = 506034 } #sd
+		command = { type = chiefofair which = 506010 } #sc
+		#
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = cavalry }
+		command = { type = add_division value = interceptor }
+		command = { type = add_division value = tactical_bomber }
+		#
+		command = { type = add_corps which = "Roter Bund" value = land where = 142 } #dusseldorf
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = supplies value = 750 where = 142 }
+		command = { type = oilpool value = 100 where = 142 }
+		#
+		command = { type = add_corps which = "Freiwilligenkorps Brandenburg" value = land where = 163 } #berlin
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		#
+		command = { type = resource which = energy value = 25 }
+		command = { type = resource which = metal value = 25 }
+		command = { type = resource which = rare_materials value = 25 }
+		command = { type = resource which = oil value = 25 }
+		command = { type = supplies value = 2500 }
+		command = { type = money value = 30 } #important to let them set up trades in the beginning
+		#command = { type = manpowerpool value = 200 }
+		#
+		command = { type = construct which = land_fort where = 126 value = -10 }
+		command = { type = construct which = land_fort where = 127 value = -10 }
+		command = { type = construct which = land_fort where = 128 value = -10 }
+		command = { type = construct which = land_fort where = 129 value = -10 }
+		command = { type = construct which = land_fort where = 131 value = -10 }
+		command = { type = construct which = land_fort where = 104 value = -10 }
+		command = { type = construct which = land_fort where = 105 value = -10 }
+		command = { type = construct which = land_fort where = 106 value = -10 }
+		command = { type = construct which = land_fort where = 110 value = -10 }
+		command = { type = construct which = land_fort where = 141 value = -10 }
+		command = { type = construct which = land_fort where = 147 value = -10 }
+		command = { type = construct which = land_fort where = 402 value = -10 }
+	}
+}
+
+#########################################################################
+# DFR wins the Civil War
+#########################################################################
+event = {
+	id = 2052010
+	country = DFR
+
+	trigger = {
+		owned = { province = 138 data = DFR }
+		NOT = {
+			exists = GER
+			event = 2052011
+		}
+		event = 2052001
+	}
+
+	name = "German Civil War - Victory"
+	desc = "After a long and bloody struggle we have defeated the monarchists and Germany is unified once more."
+	style = 2
+	picture = "scw"
+
+	date = { day = 18 month = july year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "Victory!"
+		command = { type = capital which = 179 }
+		command = { type = belligerence which = DFR value = -10 }
+		#
+		#command = { trigger = { NOT = { ispuppet = CON } } type = make_puppet which = CON }
+		command = { trigger = { NOT = { ispuppet = U08 } } type = make_puppet which = U08 }
+		#
+		command = { type = industrial_multiplier which = total value = -20 }
+		# In case any units survive the war
+		command = { type = remove_division which = "Freikorps Friedrich" value = GER }
+		command = { type = remove_division which = "Freiwilligenverband Kaisertreu" value = GER }
+		# removing any surviving "Union" Units
+		command = { type = remove_division which = "I Bombardistiko Taktikos Sygkrotima" value = GER }
+		command = { type = remove_division which = "I Machitis Sygkrotima" value = GER }
+		command = { type = remove_division which = "Germania HQ" value = GER }
+		command = { type = remove_division which = "I Tethorakismeno Taxiarchia" value = GER }
+		command = { type = remove_division which = "I Stratiotis Merarkhia" value = GER }
+		# removing any surviving "French" Units
+		command = { type = remove_division which = "Armée des Allemagne GQ" value = GER }
+		command = { type = remove_division which = "106ème Div. d'Infanterie Motorisée" value = GER }
+		command = { type = remove_division which = "2ème Division d'Infanterie" value = GER }
+		command = { type = remove_division which = "1ère Division d'Infanterie" value = GER }
+		command = { type = remove_division which = "Groupe de Bombardement d'Assaut 30" value = GER }
+
+		command = { type = sleepevent which = 2052011 }	# Ger win event
+
+		command = { type = waketeam which = 630001 } #Blohm & Voss
+		command = { type = waketeam which = 630002 } #Konrad Zuse
+		command = { type = waketeam which = 630003 } #Krupp
+		command = { type = waketeam which = 630005 } #Mauser Werke
+		command = { type = waketeam which = 630007 } #Opel
+		command = { type = waketeam which = 630009 } #Rheinmetall
+		command = { type = waketeam which = 630013 } #Erich von Manstein
+		command = { type = waketeam which = 630015 } #Naval Academy Mürwik
+		command = { type = waketeam which = 630021 } #Wernher von Braun
+		command = { type = waketeam which = 630022 } #IG Farben
+		command = { type = waketeam which = 630023 } #Daimler-Benz
+		command = { type = waketeam which = 630024 } #Germaniawerft
+		command = { type = waketeam which = 630025 } #Focke-Wulf
+		command = { type = waketeam which = 630026 } #Heinkel
+		command = { type = sleepteam which = 625012 } #Helmut Gröttrup
+
+		#command = { type = strength which = militia when = 35 where = 1 value = 0.0 }
+		command = { type = clrflag which = german_civil_war }
+		#
+		command = { type = setflag which = HRE_crisis }
+		#
+		command = { type = province_keypoints which = 104 value = -1 } #metz
+		command = { type = province_keypoints which = 110 value = -1 } #eupen
+		command = { type = province_keypoints which = 126 value = -1 } #
+		command = { type = province_keypoints which = 127 value = -1 } #saarbrucken
+		command = { type = province_keypoints which = 128 value = -1 } #
+		command = { type = province_keypoints which = 129 value = -1 } #
+		command = { type = province_keypoints which = 130 value = -1 } #
+		command = { type = province_keypoints which = 132 value = -1 } #
+		command = { type = province_keypoints which = 133 value = -1 } #
+		command = { type = province_keypoints which = 135 value = -1 } #
+		command = { type = province_keypoints which = 136 value = -1 } #
+		command = { type = province_keypoints which = 137 value = -1 } #
+		command = { type = province_keypoints which = 139 value = -1 } #
+		command = { type = province_keypoints which = 140 value = -1 } #fulda
+		command = { type = province_keypoints which = 141 value = -1 } #
+		command = { type = province_keypoints which = 142 value = -1 } #
+		command = { type = province_keypoints which = 143 value = -1 } #
+		command = { type = province_keypoints which = 144 value = -1 } #
+		command = { type = province_keypoints which = 147 value = -1 } #
+		command = { type = province_keypoints which = 148 value = -1 } #bremen
+		command = { type = province_keypoints which = 149 value = -1 } #
+		command = { type = province_keypoints which = 151 value = -1 } #
+		command = { type = province_keypoints which = 153 value = -1 } #rostock
+		command = { type = province_keypoints which = 155 value = -1 } #stolp
+		command = { type = province_keypoints which = 156 value = -1 } #
+		command = { type = province_keypoints which = 157 value = -1 } #potsdam
+		command = { type = province_keypoints which = 158 value = -1 } #stettin
+		command = { type = province_keypoints which = 159 value = -1 } #meseritz
+		command = { type = province_keypoints which = 160 value = -1 } #frankfurt/order
+		command = { type = province_keypoints which = 161 value = -1 } #deutsch-krone
+		command = { type = province_keypoints which = 162 value = -1 } #stralsund
+		command = { type = province_keypoints which = 169 value = -1 } #
+		command = { type = province_keypoints which = 171 value = -1 } #
+		command = { type = province_keypoints which = 172 value = -1 } #cottbus
+		command = { type = province_keypoints which = 174 value = -1 } #bayreuth
+		command = { type = province_keypoints which = 175 value = -1 } #
+		command = { type = province_keypoints which = 176 value = -1 } #
+		command = { type = province_keypoints which = 177 value = -1 } #nuremberg
+		command = { type = province_keypoints which = 178 value = -1 } #
+		command = { type = province_keypoints which = 180 value = -1 } #
+		command = { type = province_keypoints which = 182 value = -1 } #
+		command = { type = province_keypoints which = 183 value = -1 } #
+		command = { type = province_keypoints which = 185 value = -1 } #
+		command = { type = province_keypoints which = 222 value = -1 } #
+		command = { type = province_keypoints which = 224 value = -1 } #poznan
+		command = { type = province_keypoints which = 261 value = -1 } #
+		command = { type = province_keypoints which = 402 value = -1 } #bolzano
+		#
+		command = { type = construct which = land_fort where = 126 value = 1 }
+		command = { type = construct which = land_fort where = 127 value = 1 }
+		command = { type = construct which = land_fort where = 128 value = 1 }
+		command = { type = construct which = land_fort where = 129 value = 3 }
+		command = { type = construct which = land_fort where = 131 value = 1 }
+		command = { type = construct which = land_fort where = 104 value = 3 }
+		command = { type = construct which = land_fort where = 105 value = 3 }
+		command = { type = construct which = land_fort where = 106 value = 3 }
+		command = { type = construct which = land_fort where = 110 value = 3 }
+		command = { type = construct which = land_fort where = 141 value = 1 }
+		command = { type = construct which = land_fort where = 147 value = 1 }
+		command = { type = construct which = land_fort where = 402 value = 3 }
+	}
+}
+
+#########################################################################
+# GER wins the Civil War
+#########################################################################
+event = {
+	id = 2052011
+	country = GER
+
+	trigger = {
+		owned = { province = 138 data = GER }
+		NOT = {
+			exists = DFR
+			event = 2052010
+		}
+		event = 2052001
+	}
+
+	name = "German Civil War - Victory"
+	desc = "After a long and bloody struggle we have defeated the rebels and Germany is unified once more."
+	style = 2
+	picture = "scw"
+
+
+	date = { day = 18 month = july year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	action = {
+		name = "Victory!"
+		command = { type = capital which = 138 }
+		command = { type = dissent value = -10 }
+		#
+		command = { trigger = { NOT = { ispuppet = CON } } type = make_puppet which = CON }
+		command = { trigger = { NOT = { ispuppet = U08 } } type = make_puppet which = U08 }
+		#command = { trigger = { NOT = { ispuppet = U14 } } type = make_puppet which = U14 }
+		#
+		command = { type = industrial_multiplier which = total value = -20 }
+		#command = { type = alliance where = 1 }
+		#
+		command = { type = remove_division which = "Freikorps Friedrich" value = GER }
+		command = { type = remove_division which = "Freiwilligenverband Kaisertreu" value = GER }
+		# removing any surviving "Union" Units
+		command = { type = remove_division which = "I Bombardistiko Taktikos Sygkrotima" value = GER }
+		command = { type = remove_division which = "I Machitis Sygkrotima" value = GER }
+		command = { type = remove_division which = "Germania HQ" value = GER }
+		command = { type = remove_division which = "I Tethorakismeno Taxiarchia" value = GER }
+		command = { type = remove_division which = "I Stratiotis Merarkhia" value = GER }
+		# removing any surviving "French" Units
+		command = { type = remove_division which = "Armée des Allemagne GQ" value = GER }
+		command = { type = remove_division which = "106ème Div. d'Infanterie Motorisée" value = GER }
+		command = { type = remove_division which = "2ème Division d'Infanterie" value = GER }
+		command = { type = remove_division which = "1ère Division d'Infanterie" value = GER }
+		command = { type = remove_division which = "Groupe de Bombardement d'Assaut 30" value = GER }
+		# remove logistic support
+		command = { type = transport_pool which = GER value = -30 }
+
+		Command = { type = sleepevent which = 2052010 } # DFR win event
+		Command = { type = sleepevent which = 2007048 } # Union Victory event
+		Command = { type = sleepevent which = 2002003 } # France Victory event
+		Command = { type = sleepevent which = 2001034 } # Iberian Victory event
+
+		command = { type = waketeam which = 4 } #Junkers-Fokkerwerke
+		command = { type = waketeam which = 8 } #MAN
+		command = { type = waketeam which = 10 } #Messerschmitt
+		command = { type = waketeam which = 14 } #Siemens
+		command = { type = waketeam which = 15 } #Daimler-Benz AG
+		command = { type = waketeam which = 33 } #Werner Heisenberg
+
+		#command = { type = strength which = militia when = 35 where = 1 value = 0.0 }
+		command = { type = clrflag which = german_civil_war }
+		#
+		command = { type = setflag which = HRE_restoration_attempt }
+		#
+		command = { type = province_keypoints which = 104 value = -1 } #metz
+		command = { type = province_keypoints which = 110 value = -1 } #eupen
+		command = { type = province_keypoints which = 126 value = -1 } #
+		command = { type = province_keypoints which = 127 value = -1 } #saarbrucken
+		command = { type = province_keypoints which = 128 value = -1 } #
+		command = { type = province_keypoints which = 129 value = -1 } #
+		command = { type = province_keypoints which = 130 value = -1 } #
+		command = { type = province_keypoints which = 132 value = -1 } #
+		command = { type = province_keypoints which = 133 value = -1 } #
+		command = { type = province_keypoints which = 135 value = -1 } #
+		command = { type = province_keypoints which = 136 value = -1 } #
+		command = { type = province_keypoints which = 137 value = -1 } #
+		command = { type = province_keypoints which = 139 value = -1 } #
+		command = { type = province_keypoints which = 140 value = -1 } #fulda
+		command = { type = province_keypoints which = 141 value = -1 } #
+		command = { type = province_keypoints which = 142 value = -1 } #
+		command = { type = province_keypoints which = 143 value = -1 } #
+		command = { type = province_keypoints which = 144 value = -1 } #
+		command = { type = province_keypoints which = 147 value = -1 } #
+		command = { type = province_keypoints which = 148 value = -1 } #bremen
+		command = { type = province_keypoints which = 149 value = -1 } #
+		command = { type = province_keypoints which = 151 value = -1 } #
+		command = { type = province_keypoints which = 153 value = -1 } #rostock
+		command = { type = province_keypoints which = 155 value = -1 } #stolp
+		command = { type = province_keypoints which = 156 value = -1 } #
+		command = { type = province_keypoints which = 157 value = -1 } #potsdam
+		command = { type = province_keypoints which = 158 value = -1 } #stettin
+		command = { type = province_keypoints which = 159 value = -1 } #meseritz
+		command = { type = province_keypoints which = 160 value = -1 } #frankfurt/order
+		command = { type = province_keypoints which = 161 value = -1 } #deutsch-krone
+		command = { type = province_keypoints which = 162 value = -1 } #stralsund
+		command = { type = province_keypoints which = 169 value = -1 } #
+		command = { type = province_keypoints which = 171 value = -1 } #
+		command = { type = province_keypoints which = 172 value = -1 } #cottbus
+		command = { type = province_keypoints which = 174 value = -1 } #bayreuth
+		command = { type = province_keypoints which = 175 value = -1 } #
+		command = { type = province_keypoints which = 176 value = -1 } #
+		command = { type = province_keypoints which = 177 value = -1 } #nuremberg
+		command = { type = province_keypoints which = 178 value = -1 } #
+		command = { type = province_keypoints which = 180 value = -1 } #
+		command = { type = province_keypoints which = 182 value = -1 } #
+		command = { type = province_keypoints which = 183 value = -1 } #
+		command = { type = province_keypoints which = 185 value = -1 } #
+		command = { type = province_keypoints which = 222 value = -1 } #
+		command = { type = province_keypoints which = 224 value = -1 } #poznan
+		command = { type = province_keypoints which = 261 value = -1 } #
+		command = { type = province_keypoints which = 402 value = -1 } #bolzano
+		#
+		command = { type = construct which = land_fort where = 126 value = 1 }
+		command = { type = construct which = land_fort where = 127 value = 1 }
+		command = { type = construct which = land_fort where = 128 value = 1 }
+		command = { type = construct which = land_fort where = 129 value = 3 }
+		command = { type = construct which = land_fort where = 131 value = 1 }
+		command = { type = construct which = land_fort where = 104 value = 3 }
+		command = { type = construct which = land_fort where = 105 value = 3 }
+		command = { type = construct which = land_fort where = 106 value = 3 }
+		command = { type = construct which = land_fort where = 110 value = 3 }
+		command = { type = construct which = land_fort where = 141 value = 1 }
+		command = { type = construct which = land_fort where = 147 value = 1 }
+		command = { type = construct which = land_fort where = 402 value = 3 }
+	}
+}
+
+#########
+#enforce intervention guarantee
+
+# event = {
+	# id = 2052020
+	# #random = no
+	# country = SPA
+	
+	# trigger = {
+		# flag = german_civil_war
+		# NOT = { war = { country = GER country = SPA } }
+		# NOT = { war = { country = GER country = U00 } }
+	# }
+
+	# name = "The German Civil War"
+	# desc = "Germany has erupted into civil war. This civil war could easily become the spark to something more if the various nations with interests in the HRE are permitted to intervene. Our advisors suggest that we approach the Union and suggest a non-intervention guarantee."
+	# style = 1
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 1963 }
+	
+	# action = {
+		# name = "Suggest a non-intervention guarantee to the Union"
+		# ai_chance = 99
+		# command = { type = trigger which = 2052025 }
+	# }
+	# action = {
+		# name = "No, we should intervene!"
+		# ai_chance = 1	
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = alliance which = DFR }
+		# command = { type = dissent value = 5 }
+		# command = { type = trigger which = 2052026 }
+	# }	
+# }
+
+# event = {
+	# id = 2052021
+	# #random = no
+	# country = SPA
+	
+	# trigger = {
+		# flag = german_intervention_guarantee
+		# ai = no
+	# }
+	
+	# name = "Non-Intervention Guarantee"
+	# desc = "Together with the Union we have established a guarantee of non-intervention in the German Civil War. Through this we ensure that any country attempting to intervene on any side will face the armies of both their alliance blocks."
+	# style = 1
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 3
+	# deathdate = { day = 1 month = january year = 1963 }
+
+	# action = {
+		# name = "ACTION_NAME_GOOD"
+		# command = { type = peace which = DFR value = 1 }
+		# command = { type = peace which = DDR value = 1 }
+		# command = { type = peace which = GER value = 1 }
+		# command = { type = non_aggression which = DFR }
+		# command = { type = non_aggression which = DDR }
+		# command = { type = non_aggression which = GER }
+	# }
+# }
+
+# event = {
+	# id = 2052022
+	# #random = no
+	# country = SPA
+	
+	# name = "Union Intervention"
+	# desc = "The Union has chosen to intervene, throwing its full support behind the German Republic. Many leading voices in our country are calling for us to support our republican allies in Germany, lest the country be overrun by the communists."
+	# style = 1
+	
+	# action = {
+		# name = "We must do something!"
+		# ai_chance = 99
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = alliance which = DFR }
+	# }
+	# action = {
+		# name = "We will stay neutral"
+		# ai_chance = 1	
+		# command = { type = domestic which = interventionism value = -1 }
+		# command = { type = dissent value = 5 }
+	# }	
+# }
+
+# event = {
+	# id = 2052025
+	# #random = no
+	# country = U00
+	
+	# name = "The German Civil War"
+	# desc = "Germany has erupted into civil war. This civil war could easily become the spark to something more if the various nations with interests in the HRE are permitted to intervene. Iberia has suggested that we should guarantee Germany against any foreign intervention to prevent the outbreak of war."
+	# style = 1
+	
+	# action = {
+		# name = "Agree to guarantee Germany against intervention"
+		# ai_chance = 99
+		# command = { type = relation which = SPA value = 50 }
+		# command = { type = relation which = GER value = 50 }
+		# command = { type = setflag which = german_intervention_guarantee }
+	# }
+	# action = {
+		# name = "No, we must intervene!"
+		# ai_chance = 1	
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = alliance which = DDR }
+		# command = { type = dissent value = 3 }
+		# command = { type = trigger which = 2052022 }
+	# }	
+# }
+
+# event = {
+	# id = 2052026
+	# #random = no
+	# country = U00
+	
+	# name = "The German Civil War"
+	# desc = "Germany has erupted into civil war. Iberia and the League have thrown their full support behind the bourgeoise side. Should we not follow their example and ally with our brothers among the German workers?"
+	# style = 1
+	
+	# action = {
+		# name = "Yes, intervene in Germany!"
+		# ai_chance = 99
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = alliance which = DDR }
+	# }
+	# action = {
+		# name = "No, this is a bad idea"
+		# ai_chance = 1	
+		# command = { type = domestic which = interventionism value = -1 }
+		# command = { type = dissent value = 5 }
+	# }	
+# }
+
+# event = {
+	# id = 2052027
+	# #random = no
+	# country = U00
+	
+	# trigger = {
+		# flag = german_intervention_guarantee
+		# ai = no
+	# }
+	
+	# name = "Non-Intervention Guarantee"
+	# desc = "Together with Iberia we have established a guarantee of non-intervention in the German Civil War. Through this we ensure that any country attempting to intervene on any side will face the armies of both their alliance blocks."
+	# style = 1
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 3
+	# deathdate = { day = 1 month = january year = 1963 }
+
+	# action = {
+		# name = "ACTION_NAME_GOOD"
+		# command = { type = peace which = DFR value = 1 }
+		# command = { type = peace which = DDR value = 1 }
+		# command = { type = peace which = GER value = 1 }
+		# command = { type = non_aggression which = DFR }
+		# command = { type = non_aggression which = DDR }
+		# command = { type = non_aggression which = GER }
+	# }
+# }
+
+# event = {
+	# id = 2052028
+	# #random = no
+	# country = U00
+	
+	# trigger = {
+		# flag = german_intervention_guarantee
+		# ai = yes
+	# }
+	
+	# name = AI_EVENT
+	# desc = AI_EVENT
+	# style = 1
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 3
+	# deathdate = { day = 1 month = january year = 1963 }
+
+	# action = {
+		# name = AI_EVENT
+		# command = { type = peace which = DFR value = 1 }
+		# command = { type = peace which = DDR value = 1 }
+		# command = { type = peace which = GER value = 1 }
+		# command = { type = non_aggression which = DFR }
+		# command = { type = non_aggression which = DDR }
+		# command = { type = non_aggression which = GER }
+	# }
+# }
+
+# event = {
+	# id = 2052030
+	# #random = no
+	# TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DEN EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UAU UPE VIC }
+
+	# trigger = {
+		# flag = german_intervention_guarantee
+		# ai = no
+	# }
+
+	# name = "The German Civil War"
+	# desc = "The Union and Iberia have made a guarantee of non-intervention in the German Civil War. They have made it clear that any countries attempting to intervene on any side will face the armies of both their alliance blocks."
+	# style = 1
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 3
+	# deathdate = { day = 1 month = january year = 1963 }
+
+	# action = {
+		# name = "We will not intervene"
+		# ai_chance = 100
+		# command = { type = relation which = SPA value = 10 }
+		# command = { type = relation which = U00 value = 10 }
+		# command = { type = peace which = DFR value = 1 }
+		# command = { type = peace which = DDR value = 1 }
+		# command = { type = peace which = GER value = 1 }
+		# command = { type = non_aggression which = DFR }
+		# command = { type = non_aggression which = DDR }
+		# command = { type = non_aggression which = GER }
+	# }
+	# action = { trigger = { ai = no }
+		# name = "Let them come!"
+		# ai_chance = 0
+		# command = { type = leave_alliance }
+		# command = { type = war which = SPA }
+		# command = { type = war which = U00 }
+	# }
+# }
+
+# event = {
+	# id = 2052031
+	# #random = no
+	# TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DEN EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UAU UPE VIC }
+
+	# trigger = {
+		# flag = german_intervention_guarantee
+		# ai = yes
+	# }
+
+	# name = AI_EVENT
+	# desc = AI_EVENT
+	# style = 1
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 3
+	# deathdate = { day = 1 month = january year = 1963 }
+
+	# action = {
+		# name = AI_EVENT
+		# ai_chance = 100
+		# command = { type = relation which = SPA value = 10 }
+		# command = { type = relation which = U00 value = 10 }
+		# command = { type = peace which = DFR value = 1 }
+		# command = { type = peace which = DDR value = 1 }
+		# command = { type = peace which = GER value = 1 }
+		# command = { type = non_aggression which = DFR }
+		# command = { type = non_aggression which = DDR }
+		# command = { type = non_aggression which = GER }
+	# }
+	# action = { trigger = { ai = no }
+		# name = "Let them come!"
+		# ai_chance = 0
+		# command = { type = leave_alliance }
+		# command = { type = war which = SPA }
+		# command = { type = war which = U00 }
+	# }
+# }
+
+event = {
+	id = 2052040
+	country = DFR
+
+	trigger = {
+		exists = GER
+		war = { country = GER country = DFR }
+		ai = GER
+		OR = {
+			AND = {
+				flag = german_civil_war
+				lost_national = { country = GER value = 90 }
+			}
+			AND = {
+				NOT = { flag = german_civil_war }
+				lost_national = { country = GER value = 80 }
+				region = { region = Germany country = -3 value = 70 }
+			}
+		}
+		control = { province = 138 data = -3 }
+	}
+	name = "The Reactionary Government Falls"
+	desc = "The reactionary oppressors have been defeated and offered us their unconditional surrender."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = inherit which = GER value = 1 }
+	}
+}
+# event = {
+	# id = 2052041
+	# country = GER
+	
+	# trigger = {
+		# exists = DFR
+		# war = { country = GER country = DFR }
+		# lost_national = { country = DFR value = 90 }
+		# NOT = { lost_national = { value = 50 } }
+		# ai = DFR
+		# ai = GER
+		# NOT = { ispuppet = yes }
+	# }
+
+	# name = "The German Government Falls"
+	# desc = "We have defeated the anarcho-communist alliance and they have offered us their unconditional surrender. Victory is ours!"
+	# style = 1
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 1963 }
+
+
+	# action = {
+		# name = ACTION_NAME_GREAT
+		# command = { type = inherit which = DFR value = 1}
+	# }	
+# }

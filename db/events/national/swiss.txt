@@ -1,0 +1,585 @@
+###59000-59999###
+
+event = {
+	id = 59000
+	country = SCH
+	
+	trigger = {
+		flag = GER_befriend_league
+		flag = GER_end_talks
+		participant = { value = 2 }
+	}
+
+	name = "The HRE-League Talks"
+	desc = "Germany has opened a dialogue with the League in the interests of seeking peaceful resolutions to the differences between the two power blocs, a measure strongly supported by our population. Unfortuantely, the talks have been cut short by an official protest from Lithuania. Shall we display our displeasure with the Kaiser's decision?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Lodge a protest with the Kaiser"
+		ai_chance = 60
+		command = { type = relation which = GER value = -50 }
+		command = { type = trigger which = 35007 }
+	}
+	action = {
+		name = "I'm sure the Kaiser knows best"
+		ai_chance = 30
+		command = { type = dissent value = 2 }
+	}
+	action = {
+		name = "Unacceptable! We withdraw from the HRE!"
+		ai_chance = 10
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }
+		command = { type = relation which = GER value = -200 }
+		command = { type = dissent value = 2 }
+		command = { type = trigger which = 35008 }
+		command = { type = setflag which = SCH_leaves_HRE }
+	}	
+}
+
+event = {
+	id = 59001
+	country = SCH
+	
+	trigger = {
+		flag = GER_white_terror
+		alliance = { country = GER }
+	}
+
+	name = "The German White Terror"
+	desc = "The German Kaiser has engaged in a campaign of terror to surpress dissent at home. Thousands of liberals and communists have been murdered or arrested, and thousands more have fled across the borders into our country. Parliament is demanding that we denounce Germany and withdraw from our alliance with them."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		name = "Barbarians! There can be no further alliances with Germany!"
+		ai_chance = 85
+		command = { type = dissent value = -5 }
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }		
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35045 }
+		command = { type = setflag which = SCH_leaves_HRE }
+	}
+	action = {
+		name = "Condemn these injustices but do nothing further"
+		ai_chance = 15
+		command = { type = dissent value = 15 }
+		command = { type = relation which = GER value = -50 }
+	}
+}
+
+
+event = {
+	id = 59002
+	country = SCH
+	one_action = yes
+	
+	trigger = {
+		government = democratic
+		alliance = { country = GER }
+		relation = { which = GER value = 100 }
+		NOT = { ispuppet = SCH }
+	}
+
+	name = "The 1936 Elections"
+	desc = "The 1936 election campaign is now in full swing. Three parties are vying for a majority: The sitting German-friendly Conservatives, the Iberia-aligned Liberals and the isolationist Nationalists. The voters are at the polls, and now the question is who the winner will be?"
+	style = 2
+	picture = "election"
+
+	date = { day = 29 month = june year = 1936 }
+
+	action = {
+		name = "The Conservatives"	
+		ai_chance = 40
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = U14 value = 25 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = domestic which = interventionism value = 1 }	
+		command = { type = local_setflag which = sc_win }
+	}
+	action = {
+		name = "The Liberals"
+		ai_chance = 40
+		command = { type = headofstate which = 17031 }
+		command = { type = headofgovernment which = 17045 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = ENG value = 25 }
+		command = { type = domestic which = political_left value = 2 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = local_setflag which = sl_win }
+	}
+	action = {
+		name = "The Nationalists"
+		ai_chance = 20
+		command = { type = headofstate which = 17035 }
+		command = { type = headofgovernment which = 17046 }		
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = GER value = -25 }
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = domestic which = interventionism value = -5 }
+		command = { type = local_setflag which = na_win }
+	}
+}
+
+event = {
+	id = 59003
+	country = SCH
+	one_action = yes
+	
+	trigger = {
+		government = democratic
+		alliance = { country = GER }
+		NOT = { relation = { which = GER value = 100 } }
+		relation = { which = GER value = 25 }
+		NOT = { ispuppet = SCH }
+		NOT = { event = 59004 }
+	}
+
+	name = "The 1936 Elections"
+	desc = "The 1936 Election Campaign is now in full force. Three parties are vying for a majority: The sitting German-friendly Conservatives, the Iberia-aligned Liberals and the isolationist Nationalists. The voters are at the polls, and now the question is who the winner will be?"
+	style = 2
+	picture = "election"
+
+	date = { day = 29 month = june year = 1936 }
+
+	action = {
+		name = "The Conservatives"	
+		ai_chance = 20
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = U14 value = 25 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = domestic which = interventionism value = 1 }	
+		command = { type = local_setflag which = sc_win }
+	}
+	action = {
+		name = "The Liberals"
+		ai_chance = 50
+		command = { type = headofstate which = 17031 }
+		command = { type = headofgovernment which = 17045 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = ENG value = 25 }
+		command = { type = domestic which = political_left value = 2 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = local_setflag which = sl_win }
+	}
+	action = {
+		name = "The Nationalists"
+		ai_chance = 30
+		command = { type = headofstate which = 17035 }
+		command = { type = headofgovernment which = 17046 }		
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = GER value = -25 }
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = domestic which = interventionism value = -5 }
+		command = { type = local_setflag which = na_win }
+	}
+}
+
+event = {
+	id = 59004
+	country = SCH
+	one_action = yes
+	
+	trigger = {
+		government = democratic
+		OR = {
+			NOT = { alliance = { country = GER } }
+			NOT = { relation = { which = GER value = 25 } }
+		}
+		NOT = { ispuppet = SCH }
+		NOT = { event = 59003 }
+	}
+
+	name = "The 1936 Elections"
+	desc = "The 1936 Election Campaign is now in full force. Three parties are vying for a majority: The sitting German-friendly Conservatives, the Iberia-aligned Liberals and the isolationist Nationalists. The voters are at the polls, and now the question is who the winner will be?"
+	style = 2
+	picture = "election"
+
+	date = { day = 29 month = june year = 1936 }
+
+	action = {
+		name = "The Conservatives"	
+		ai_chance = 5
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = U14 value = 25 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = local_setflag which = sc_win }
+	}
+	action = {
+		name = "The Liberals"
+		ai_chance = 60
+		command = { type = headofstate which = 17031 }
+		command = { type = headofgovernment which = 17045 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = ENG value = 25 }
+		command = { type = domestic which = political_left value = 2 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = local_setflag which = sl_win }
+	}
+	action = {
+		name = "The Nationalists"
+		ai_chance = 35
+		command = { type = headofstate which = 17035 }
+		command = { type = headofgovernment which = 17046 }		
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = GER value = -25 }
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = local_setflag which = na_win }
+	}
+}
+
+event = {
+	id = 59005
+	country = SCH
+	
+	trigger = {
+		local_flag = sc_win
+		participant = { value = 2 }
+		NOT = { event = 59006 }
+	}
+
+	name = "Conservative Policy"
+	desc = "The sitting Conservatives have won a renewed majority and must now decide on their future foreign policy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 8 month = july year = 1936 }
+
+	action = {
+		name = "Remain aligned with the HRE"	
+		ai_chance = 80
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = U14 value = 50 }
+		command = { type = relation which = LIT value = 50 }
+		command = { type = relation which = SCA value = 50 }
+		command = { type = relation which = AUS value = 50 }
+		command = { type = domestic which = interventionism value = 1 }
+		
+	}
+	action = {
+		name = "Break our alliances and pursue a neutral policy"
+		ai_chance = 20
+		command = { type = dissent value = 5 }
+		command = { type = leave_alliance }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = U14 value = -50 }
+		command = { type = relation which = LIT value = -50 }
+		command = { type = relation which = SCA value = -50 }
+		command = { type = relation which = AUS value = -50 }	
+		command = { type = domestic which = interventionism value = -5 }
+	}
+}
+
+event = {
+	id = 59006
+	country = SCH
+	
+	trigger = {
+		local_flag = sc_win
+		NOT = { event = 59005 }
+		NOT = { participant = { value = 2 } }
+	}
+
+	name = "Conservative Policy"
+	desc = "The sitting Conservatives have won a renewed majority and must now decide on their future foreign policy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 8 month = july year = 1936 }
+
+	action = {
+		trigger = { NOT = { flag = GER_white_terror } }
+		name = "Seek re-admittance into the HRE"
+		ai_chance = 20
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { trigger = { exists = GER } type = trigger which = 35048 }
+		command = { trigger = { NOT = { exists = GER } } type = trigger which = 25012 }
+		
+	}
+	action = {
+		name = "Pursue a neutral policy"
+		ai_chance = 75
+		command = { type = domestic which = interventionism value = -2 }
+	}
+	action = {
+		name = "Petition for League membership"
+		ai_chance = 5	
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 38014 }
+	}
+}
+
+
+event = {
+	id = 59007
+	country = SCH
+	
+	trigger = {
+		local_flag = sl_win
+		alliance = { country = GER }
+	}
+
+	name = "Liberal Policy"
+	desc = "The Liberals have won a majority and must now decide on their future foreign policy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 8 month = july year = 1936 }
+
+	action = {
+		name = "Remain aligned with Germany and the HRE"	
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = U14 value = 50 }
+		command = { type = relation which = LIT value = 50 }
+		command = { type = relation which = SCA value = 50 }
+		command = { type = relation which = AUS value = 50 }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	action = {
+		name = "Break our alliances and pursue a neutral policy"
+		ai_chance = 50
+		command = { type = leave_alliance }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = U14 value = -50 }
+		command = { type = relation which = LIT value = -50 }
+		command = { type = relation which = SCA value = -50 }
+		command = { type = relation which = AUS value = -50 }	
+		command = { type = domestic which = interventionism value = -2 }
+	}
+	action = {
+		name = "Leave the HRE and petition for League membership"
+		ai_chance = 40	
+		command = { type = leave_alliance }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = U14 value = -50 }
+		command = { type = relation which = LIT value = -50 }
+		command = { type = relation which = SCA value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 38014 }
+	}
+}
+
+event = {
+	id = 59008
+	country = SCH
+	
+	trigger = {
+		local_flag = sl_win
+		NOT = { participant = { value = 2 } }
+	}
+	
+	name = "Liberal Policy"
+	desc = "The Liberals have won a majority and must now decide on their future foreign policy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 8 month = july year = 1936 }
+
+	action = {
+		trigger = { NOT = { flag = GER_white_terror } }
+		name = "Seek re-admittance into the HRE"	
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { trigger = { exists = GER } type = trigger which = 35048 }
+		command = { trigger = { NOT = { exists = GER } } type = trigger which = 25012 }
+	}
+	action = {
+		name = "Pursue a neutral policy"
+		ai_chance = 20
+		command = { type = domestic which = interventionism value = -2 }
+	}
+	action = {
+		name = "Petition for League membership"
+		ai_chance = 75	
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 38014 }
+	}
+}
+
+event = {
+	id = 59009
+	country = SCH
+	
+	trigger = {
+		local_flag = na_win
+	}
+
+	name = "Nationalist Policy"
+	desc = "The Nationalists have won a majority and must now decide on their future foreign policy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 8 month = july year = 1936 }
+
+	action = {
+		name = "Keep things as they are"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		name = "Pursue a neutral policy"
+		ai_chance = 70
+		command = { type = relation which = GER value = -100 }
+		command = { type = leave_alliance }
+		command = { type = domestic which = interventionism value = -2 }
+	}
+	action = {
+		name = "Practice armed isolationism"
+		ai_chance = 25	
+		command = { type = relation which = GER value = -100 }
+		command = { type = leave_alliance }
+		command = { type = set_domestic which = defense_lobby value = 9 }
+		command = { type = set_domestic which = interventionism value = 1 }
+	}
+}
+
+event = {
+	id = 59010
+	country = SCH
+	
+	trigger = {
+		OR = {
+			event = 35031
+			event = 35042
+		}
+		alliance = { country = GER }
+	}
+
+	name = "Kaiser Frederick"
+	desc = "In Germany, Waldemar VII's younger, and liberal, brother Frederick has taken the throne. Conservatives across the Holy Roman Empire are unhappy, and many in the government are calling from us to withdraw from our alliance with Germany."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = GER value = 50 }
+	}
+}
+
+event = {
+	id = 59013
+	country = SCH
+	
+	trigger = {
+		flag = HRE_restoration
+		NOT = { flag = SCH_leaves_HRE }
+		participant = { value = 2 }
+	}
+	
+	name = "Restoring the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. Austria has stepped forward, claiming leadership of the alliance and asking our help in holding it together. Should we support them in their efforts to restore the alliance, or go our own way?"
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Accept Austrian leadership"
+		ai_chance = 20
+		command = { type = relation which = AUS value = 200 }
+		command = { type = relation which = GER value = 200 }
+	}
+	action = {
+		name = "No, the HRE is done for"
+		ai_chance = 80
+		command = { type = relation which = AUS value = -200 }
+		command = { type = relation which = GER value = -200 }		
+		command = { type = dissent value = 5 }
+		command = { type = leave_alliance }
+	}
+}
+
+event = {
+	id = 59014
+	country = SCH
+	
+	trigger = {
+		flag = HRE_dissolution
+		NOT = { flag = SCH_leaves_HRE }
+	}
+	
+	name = "Dissolution of the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. There seems to be no country able to fill the power vacuum and members are withdrawing from the alliance left and right. The HRE has effectively ceased to exist."
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Unfortunate..."
+		command = { type = leave_alliance }
+	}
+}
+
+event = {
+	id = 59015
+	country = SCH
+	
+	trigger = {
+		flag = general_strike_army
+		participant = { value = 2 }
+		government = democratic
+	}
+
+	name = "The German General Strike"
+	desc = "The German Kaiser has sent in the army to break up the general strike. Voices have been raised in parliament demanding that we condemn the German Kaiser for his actions."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Issue a protest!"
+		ai_chance = 95
+		command = { type = dissent value = -1 }
+		command = { type = relation which = GER value = -15 }
+	}
+	# action = {
+		# name = "Barbarians! No further alliances with Germany!"
+		# ai_chance = 5
+		# command = { type = dissent value = -3 }
+		# command = { type = leave_alliance }
+		# command = { type = end_access which = GER }		
+		# command = { type = relation which = GER value = -100 }
+		# command = { type = trigger which = 35110 }
+		# command = { type = setflag which = SCH_leaves_HRE }
+		# command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	# }
+	action = {
+		name = "Say nothing"
+		ai_chance = 5
+		command = { type = dissent value = 1 }
+	}
+}

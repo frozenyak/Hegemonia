@@ -1,0 +1,267 @@
+###46000-46400###
+##46400-46999 ITA###
+##46010 Communist joins Italy
+
+event = {
+	id = 46000
+	country = U14
+
+	trigger = {
+		OR = {
+			flag = GER_renounce_ITA
+			flag = HRE_comintern_pact
+		}
+	}
+
+	name = "Germany and the Comintern"
+	desc = "Germany has caved in to the Comintern, making concessions to Communists and sacrificing our rightful claim to Italy. This is unacceptable - can we really stay allied with such betrayers?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Withdraw from the HRE in protest"
+		ai_chance = 99
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }
+		command = { type = relation which = GER value = -200 }
+		command = { type = trigger which = 35088 }
+		command = { type = setflag which = RSI_leaves_HRE }
+	}
+	action = {
+		name = "I'm sure the Kaiser knows best"
+		ai_chance = 1
+		command = { type = dissent value = 20 }
+	}
+}
+
+event = {
+	id = 46002
+	country = U14
+
+	trigger = {
+		flag = RSI_leaves_HRE
+		NOT = { alliance = { country = U14 country = GER } }
+		NOT = { alliance = { country = U14 country = U00 } }
+		NOT = { alliance = { country = U14 country = SPA } }
+		NOT = { alliance = { country = ITA country = SPA } }
+		#random = 25
+	}
+
+	name = "Strange Bedfellows"
+	desc = "Our withdrawal from the HRE means that we now stand without allies and are in risk of being invaded by the Communists. Perhaps Iberia and the League would be interested in an anti-communist pact? It wouldn't be very popular among our population, but politics creates strange bedfellows..."
+	style = 1
+
+	date = { day = 28 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Let's reach out to Iberia"
+		ai_chance = 90
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 38035 }
+	}
+	action = {
+		name = "We'll be fine on our own"
+		ai_chance = 10
+		command = { type = dissent value = -2 }
+	}
+}
+
+event = {
+	id = 46003
+	country = U14
+
+	name = "Demands for Reform"
+	desc = "The Iberians have agreed to our proposal in principle, but have asked that we make a few face-saving reforms to our system of government."
+	style = 1
+
+	action = {
+		name = "Sure, whatever they ask!"
+		ai_chance = 80
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		#command = { type = domestic which = free_market value = 1 }
+		command = { type = trigger which = 38036 }
+	}
+	action = {
+		name = "They ask too much"
+		ai_chance = 20
+		command = { type = dissent value = -2 }
+	}
+}
+
+event = {
+	id = 46004
+	country = U14
+
+	name = "Demands for Reform"
+	desc = "The Iberians have agreed to our proposal in principle, but have demanded comprehensive democratic reform of our system of government."
+	style = 1
+
+	action = {
+		name = "We have no choice"
+		ai_chance = 50
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = democratic value = 3 }
+		command = { type = domestic which = freedom value = 3 }
+		#command = { type = domestic which = free_market value = 3 }
+		command = { type = trigger which = 38036 }
+	}
+	action = {
+		name = "They ask too much"
+		ai_chance = 50
+		command = { type = dissent value = -2 }
+	}
+}
+
+
+event = {
+	id = 46007
+	country = U14
+
+	trigger = {
+		flag = HRE_restoration
+		NOT = { flag = RSI_leaves_HRE }
+	}
+
+	name = "Restoring the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. Austria has stepped forward, claiming leadership of the alliance and asking our help in holding it together. Should we support them in their efforts to restore the alliance, or go our own way?"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Accept Austrian leadership"
+		ai_chance = 98
+		command = { type = relation which = AUS value = 200 }
+		command = { type = relation which = U10 value = 200 }
+	}
+	action = {
+		name = "No, the HRE is done for"
+		ai_chance = 2
+		command = { type = relation which = AUS value = -200 }
+		command = { type = relation which = U10 value = -200 }
+		command = { type = dissent value = 5 }
+		command = { type = leave_alliance }
+		command = { type = setflag which = RSI_leaves_HRE }
+	}
+}
+
+event = {
+	id = 46008
+	country = U14
+
+	trigger = {
+		flag = HRE_dissolution
+		NOT = { flag = LIT_leaves_HRE }
+	}
+
+	name = "Dissolution of the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. There seems to be no country able to fill the power vacuum and members are withdrawing from the alliance left and right. The HRE has effectively ceased to exist."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Unfortunate..."
+		command = { type = leave_alliance }
+	}
+}
+
+event = {
+	id = 46010
+	country = U14
+
+	trigger = {
+		ai = yes
+		government = communist
+		OR = {
+			exists = RSI
+			AND = {
+				exists = U00
+				owned = { province = 419 data = U00 }
+			}
+		}
+	}
+
+	name = "Italian Unification"
+	desc = "It is time for all Italian socialists to join their countrymen!"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 6
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Join with our brothers! (Game Over)"
+		command = { trigger = { exists = RSI } type = trigger which = 82005 }
+		command = { trigger = { NOT = { exists = RSI } } type = trigger which = 55061 }
+	}
+}
+
+event = {
+	id = 46011
+	country = U14
+
+	decision = {
+		NOT = { exists = ITA }
+	}
+	decision_trigger = {
+		control = { province = 407 data = -1 } #Milan
+		control = { province = 419 data = -1 } #Rome
+		NOT = { lost_national = { value = 25 } }
+		OR = {
+			region = { region = "Italy" data = 2 value = 75 }
+			AND = {
+				exists = RSI
+				ai = RSI
+				region = { region = "Italy" value = 75 }
+			}
+		}
+	}
+	trigger = {
+		NOT = { exists = ITA }
+		control = { province = 407 data = -1 } #Milan
+		control = { province = 419 data = -1 } #Rome
+		NOT = { government = communist }
+		NOT = { lost_national = { value = 25 } }
+		OR = {
+			region = { region = "Italy" data = 2 value = 75 }
+			AND = {
+				exists = RSI
+				ai = RSI
+				region = { region = "Italy" value = 75 }
+			}
+		}
+	}
+
+	name = "The Unification of Italy"
+	desc = "Finally Italy is united once again, free of all socialist influences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { type = dissent value = -5 }
+		command = { trigger = { ispuppet = U14 } type = end_puppet }
+		command = { trigger = { exists = RSI ai = RSI } type = inherit which = RSI value = 1 }
+		command = { type = capital which = 419 }
+		command = { type = country which = ITA }
+		#command = { type = trigger which = 46400 }
+	}
+}

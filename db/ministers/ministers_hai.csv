@@ -1,0 +1,90 @@
+HAI;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+;Replacements;;;;;;;x
+78001;Head of State;Rashid Bahar;36;SC;Pig-headed Isolationist;High;M78001;x
+78002;Head of Government;Rashid Bahar;36;SC;Corporate Suit;High;M78001;x
+78003;Foreign Minister;Baqir Saad;36;SC;Apologetic Clerk;High;M78003;x
+78004;Minister of Armament;Abdul-Musawwir Morcos;36;SC;Infantry Proponent;Medium;M78004;x
+78005;Minister of Security;Ahmad Samaha;36;SC;Crooked Kleptocrat;Medium;M78005;x
+78006;Head of Military Intelligence;Ya'qub Guirguis;36;SC;Political Specialist;Medium;M78006;x
+78007;Chief of Staff;Abdul-Musawwir Morcos;36;SC;School of Fire Support;Medium;M78004;x
+78008;Chief of Army;Abdul-Musawwir Morcos;36;SC;Static Defence Doctrine;Medium;M78004;x
+78009;Chief of Navy;Walif Abboud;36;SC;Open Seas Doctrine;Medium;M78009;x
+78010;Chief of Air Force;Ragheb Moghadam;36;SC;Army Aviation Doctrine;Medium;M78010;x
+78032;Head of State;Abdul-Musawwir Morcos;41;SC;Resigned Generalissimo;High;M78004;x
+78033;Head of State;Al Tufail Mikhail;46;SC;Die-hard Reformer;High;M78033;x
+78034;Head of State;Camil Zaki;36;ML;Popular Figurehead;High;M78034;x
+78035;Head of State;Faisal Halabi;46;PA;Resigned Generalissimo;High;M78035;x
+78036;Head of State;Badr al Din Kattan;37;LWR;Insignificant Layman;High;M78021;x
+78037;Head of State;Zarif Nazari;46;LWR;Popular Figurehead;High;M78037;x
+78039;Head of Government;Abdul-Musawwir Morcos;41;SC;Old General;High;M78004;x
+78040;Head of Government;Al Tufail Mikhail;46;SC;Backroom Backstabber;High;M78033;x
+78041;Head of Government;Baqir Saad;36;ML;Happy Amateur;High;M78003;x
+78042;Head of Government;Camil Zaki;38;ML;Flamboyant Tough Guy;High;M78034;x
+78043;Head of Government;Numair Atiyeh;46;PA;Old General;High;M78043;x
+78044;Head of Government;Badr al Din Kattan;37;LWR;Happy Amateur;High;M78021;x
+78045;Head of Government;Mansur Hadad;46;LWR;Political Protege;High;M78045;x
+78046;Foreign Minister;Saif Bishara;36;SC;The Cloak N Dagger Schemer;High;M78046;x
+78047;Foreign Minister;Mushtaq Naser;41;SC;Iron Fisted Brute;High;M78013;x
+78048;Foreign Minister;Abdul-Musawwir Morcos;43;SC;General Staffer;Medium;M78004;x
+78049;Foreign Minister;Fareed Sabbagh;46;SC;Biased Intellectual;Medium;M78049;x
+78050;Foreign Minister;Baqir Saad;37;ML;Apologetic Clerk;High;M78003;x
+78051;Foreign Minister;Mohammad Dagher;36;ML;Great Compromiser;High;M78051;x
+78052;Foreign Minister;Jamal Sabbag;43;ML;Iron Fisted Brute;Medium;M78052;x
+78053;Foreign Minister;Husam al Din Hakimi;46;ML;Ideological Crusader;Medium;M78053;x
+78054;Foreign Minister;Husam al Din Hakimi;46;PA;Ideological Crusader;Medium;M78053;x
+78055;Foreign Minister;Aladdin Shamoon;37;LWR;The Cloak N Dagger Schemer;Medium;M78023;x
+78056;Foreign Minister;Badr al Din Kattan;41;LWR;Biased Intellectual;High;M78021;x
+78057;Foreign Minister;Fikri Maalouf;46;LWR;Apologetic Clerk;High;M78057;x
+78058;Minister of Armament;Ahmad Samaha;37;SC;Corrupt Kleptocrat;Medium;M78005;x
+78059;Minister of Armament;Salamah Morcos;41;SC;Tank Proponent;Medium;M78014;x
+78060;Minister of Armament;Labib Atiyeh;45;SC;Administrative Genius;Low;M78015;x
+78061;Minister of Armament;Al Tufail Mikhail;46;SC;laissez-faire capitalist;Low;M78033;x
+78062;Minister of Armament;Mudar Ghanem;36;ML;Strategic Air Proponent;Low;M78062;x
+78063;Minister of Armament;Abdul-Latif Haddad;41;ML;Resource Industrialist;Low;M78063;x
+78064;Minister of Armament;Taim Allah Nazari;46;ML;Administrative Genius;Low;M78064;x
+78065;Minister of Armament;Badr al Din Kattan;46;PA;laissez-faire capitalist;High;M78021;x
+78066;Minister of Armament;Fikri Maalouf;37;LWR;Air Superiority Proponent;High;M78057;x
+78067;Minister of Armament;Ferran Asghar;41;LWR;Theoretical Scientist;Medium;M78024;x
+78068;Minister of Security;Rashid Bahar;37;SC;Crooked Kleptocrat;High;M78001;x
+78069;Minister of Security;Abraha Issa;41;SC;Silent Lawyer;High;M78069;x
+78070;Minister of Security;Abdul-Musawwir Morcos;45;SC;Man of the People;Medium;M78004;x
+78071;Minister of Security;Arfan Safar;46;SC;Back Stabber;Low;M78071;x
+78072;Minister of Security;Camil Zaki;36;ML;Back Stabber;High;M78034;x
+78073;Minister of Security;Mudar Ghanem;41;ML;Crooked Kleptocrat;Low;M78062;x
+78074;Minister of Security;Labib Atiyeh;46;ML;Efficient Sociopath;Low;M78015;x
+78075;Minister of Security;Fakih Khouri;46;PA;Silent Lawyer;High;M78075;x
+78076;Minister of Security;Ghazi Bishara;37;LWR;Back Stabber;Medium;M78076;x
+78077;Minister of Security;Muntasir Rahal;41;LWR;Efficient Sociopath;Medium;M78025;x
+78078;Minister of Security;Mansur Hadad;46;LWR;Silent Lawyer;High;M78045;x
+78079;Head of Military Intelligence;Azim Koury;37;SC;Technical Specialist;High;M78079;x
+78080;Head of Military Intelligence;Ahmad Samaha;41;SC;Industrial Specialist;Medium;M78005;x
+78081;Head of Military Intelligence;Fareed Sabbagh;45;SC;Logistics Specialist;Medium;M78049;x
+78082;Head of Military Intelligence;Arfan Safar;36;ML;Logistics Specialist;Low;M78071;x
+78083;Head of Military Intelligence;Jamal Sabbag;36;ML;Naval Intelligence Specialist;Medium;M78052;x
+78084;Head of Military Intelligence;Mudar Ghanem;46;ML;Technical Specialist;Low;M78062;x
+78085;Head of Military Intelligence;Fakih Khouri;46;PA;Logistics Specialist;High;M78075;x
+78086;Head of Military Intelligence;Hafiz Shadid;37;LWR;Technical Specialist;Medium;M78026;x
+78087;Head of Military Intelligence;Ghazi Bishara;41;LWR;Logistics Specialist;Medium;M78076;x
+78088;Head of Military Intelligence;Zarif Nazari;46;LWR;Political Specialist;Medium;M78037;x
+78090;Chief of Staff;Ya'qub Guirguis;39;SC;School of Manoeuvre;Medium;M78006;x
+78091;Chief of Staff;Faisal Halabi;41;SC;School of Psychology;Medium;M78035;x
+78092;Chief of Staff;Fakih Khouri;46;SC;School of Manoeuvre;High;M78075;x
+78093;Chief of Staff;Jamal Sabbag;36;ML;School of Manoeuvre;Medium;M78052;x
+78094;Chief of Staff;Numair Atiyeh;46;ML;School of Mass Combat;Medium;M78043;x
+78096;Chief of Staff;Antioche Benot;37;LWR;School of Defence;Medium;M78027;x
+78098;Chief of Army;Faisal Halabi;41;SC;Elastic Defence Doctrine;Medium;M78035;x
+78099;Chief of Army;Fakih Khouri;46;SC;Armoured Spearhead Doctrine;High;M78075;x
+78100;Chief of Army;Jamal Sabbag;37;ML;Decisive Battle Doctrine;Medium;M78052;x
+78101;Chief of Army;Numair Atiyeh;46;ML;Guns and Butter Doctrine;Medium;M78043;x
+78102;Chief of Army;Faisal Halabi;46;PA;Elastic Defence Doctrine;Medium;M78035;x
+78103;Chief of Army;Labeeb Antar;37;LWR;Guns and Butter Doctrine;Medium;M78028;x
+78104;Chief of Navy;Saif Bishara;37;SC;Base Control Doctrine;High;M78046;x
+78106;Chief of Navy;Abu Bakr Daher;36;ML;Power Projection Doctrine;Medium;M78106;x
+78107;Chief of Navy;Raymond Gassner;37;LWR;Power Projection Doctrine;Medium;M78029;x
+78109;Chief of Air Force;Abu Bakr Daher;41;SC;Naval Aviation Doctrine;Medium;M78106;x
+78110;Chief of Air Force;Shumayl Boutros;36;ML;Vertical Envelopment Doctrine;Medium;M78020;x
+78111;Chief of Air Force;Fakih Khouri;46;PA;Carpet Bombing Doctrine;High;M78075;x
+78112;Chief of Air Force;Ghazi Bishara;37;LWR;Vertical Envelopment Doctrine;Medium;M78076;x
+78113;Chief of Air Force;Charles H. Forbin;46;LWR;Air Superiority Doctrine;Medium;M78030;x
+78115;Foreign Minister;Leon Laleau;38;SC;Ideological Crusader;High;M78115;x
+78114;Head of State;Numair Atiyeh;50;PA;Ruthless Powermonger;High;M78043;x

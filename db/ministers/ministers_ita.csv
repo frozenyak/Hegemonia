@@ -1,0 +1,135 @@
+ITA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
+25001;Head of State;Guiseppe III Tittoni;1933;FA;Stern Imperialist;High;M508001;X
+25002;Head of Government;Achille Starace;36;PA;Political Protege;High;M3126;x
+25003;Foreign Minister;Gian Galeazzo Ciano;1933;FA;Ideological Crusader;Very High;M3003;X
+25005;Minister of Security;Guido Buffarini-Guidi;1933;FA;Man of the People;Very High;M3005;X
+25006;Head of Military Intelligence;Cesare Amé;1933;FA;Industrial Specialist;Very High;M3006;X
+25007;Chief of Staff;Francesco Grazioli;1933;FA;School of Mass Combat;Medium;M3007;X
+25008;Chief of Army;Alberto Pariani;1933;FA;Guns and Butter Doctrine;Medium;M3008;X
+25009;Chief of Navy;Domenico Cavagnari;1933;FA;Decisive Naval Battle Doctrine;Medium;M3009;X
+25010;Chief of Air Force;Giuseppe Valle;1933;FA;Army Aviation Doctrine;Medium;M3010;X
+25011;Minister of Armament;A. de Marinis de Ricia;1933;SL;Administrative Genius;High;M3014;X
+25012;Head of Military Intelligence;Umberto Ricci;1933;SC;Industrial Specialist;High;M3015;X
+25013;Chief of Army;Enrico Mattei;1943;SC;Decisive Battle Doctrine;High;M3018;X
+25014;Head of State;Guiseppe III Tittoni;1933;PA;Stern Imperialist;High;M508001;X
+25015;Head of State;Guiseppe III Tittoni;1933;SC;Stern Imperialist;High;M508001;X
+25017;Head of State;Paolo Thaon di Revel;1933;NS;Resigned Generalissimo;High;M3035;X
+25018;Head of State;Umberto II;1933;PA;Autocratic Charmer;High;M3011;X
+25019;Head of State;Umberto II;1933;SC;Autocratic Charmer;High;M3011;X
+25020;Head of State;Alcide de Gasperi;1933;SC;die-hard reformer;High;M3038;X
+25021;Head of State;Enrico de Nicola;1933;SC;Benevolent Gentleman;High;M3039;X
+25022;Head of State;Enrico de Nicola;1933;SL;Benevolent Gentleman;High;M3039;X
+25025;Head of Government;Junio Borghese;1943;NS;Political Protege;High;M3044;X
+25026;Head of Government;Pietro Badoglio;1933;PA;Old General;High;M3012;X
+25027;Head of Government;Conde Stefano Jacini;1933;SC;Happy Amateur;High;M3046;X
+25028;Head of Government;Alcide de Gasperi;1933;SC;Backroom Backstabber;High;M3038;X
+25029;Head of Government;Ivanoe Bonomi;1933;SL;Silent Workhorse;High;M3048;X
+25030;Head of Government;Ferruccio Parri;1933;SL;Naive Optimist;High;M3049;X
+25031;Head of Government;Luigi Longo;1933;LWR;Political Protege;High;M3022;X
+25033;Foreign Minister;Giuseppe Bastianini;1933;NS;Iron Fisted Brute;High;M3053;X
+25034;Foreign Minister;Pietro Conte Acquarone;1933;PA;The Cloak N Dagger Schemer;High;M3054;X
+25035;Foreign Minister;Pietro Badoglio;1933;PA;General Staffer;High;M3055;X
+25036;Foreign Minister;Dino Grandi;1933;PA;Great Compromiser;High;M3056;X
+25037;Foreign Minister;Pier Federico Martinetti;1933;SC;Apologetic Clerk;High;M3057;X
+25038;Foreign Minister;Bernardo Attolico;1941;SC;Biased Intellectual;High;M3058;X
+25039;Foreign Minister;Alcide de Gasperi;1933;SC;Ideological Crusader;High;M3038;X
+25040;Foreign Minister;Carlo Sforza;1943;SC;The Cloak N Dagger Schemer;High;M3013;X
+25041;Foreign Minister;Ivanoe Bonomi;1933;SL;Apologetic Clerk;High;M3048;X
+25042;Foreign Minister;Pietro Nenni;1933;SL;The Cloak N Dagger Schemer;High;M3062;X
+25044;Chief of Army;Federico Baistrocchi;1933;FA;Decisive Battle Doctrine;High;M3064;X
+25045;Minister of Armament;Alberto Pariani;1933;FA;Air Superiority Proponent;High;M3008;X
+25046;Minister of Armament;Ubaldo Soddu;1939;FA;Military Entrepreneur;Medium;M3066;X
+25047;Minister of Armament;Alfredo Guzzoni;1933;FA;Submarine Proponent;Low;M3067;X
+25048;Minister of Armament;Antonio Sorice;1933;FA;Corrupt Kleptocrat;High;M3068;X
+25049;Minister of Armament;Paolo Thaon di Revel;1933;NS;Battle Fleet Proponent;High;M3035;X
+25050;Minister of Armament;G. Imperiali de Francarillo;1943;NS;Administrative Genius;High;M3071;X
+25051;Minister of Armament;Romulo Paladini;1947;NS;Tank Proponent;High;M3072;X
+25052;Minister of Armament;Giacomo Acerbo;1946;NS;Resource Industrialist;High;M3073;X
+25053;Minister of Armament;Domenico Bartolini;1933;PA;Theoretical Scientist;High;M3075;X
+25054;Minister of Armament;Guido Jung;1933;PA;Administrative Genius;High;M3076;X
+25055;Minister of Armament;Alberto Theodoli;1933;SC;Infantry Proponent;High;M3077;X
+25056;Minister of Armament;Francesco Orestano;1939;SC;Military Entrepreneur;High;M3078;X
+25057;Minister of Armament;Fulberto Vivaldi;1941;SC;Air to Ground Proponent;High;M3079;X
+25058;Minister of Armament;Taddeo Orlando;1944;SC;Theoretical Scientist;High;M3080;X
+25059;Minister of Armament;Alessandro Marchese Casati;1941;SL;Tank Proponent;Medium;M3081;X
+25060;Minister of Armament;Manlio Brosio;1946;SC;Infantry Proponent;High;M3082;X
+25061;Minister of Armament;Cipriano Facchinetti;1943;SC;Resource Industrialist;High;M3083;X
+25062;Minister of Armament;Giovanni Ciraolo;1944;SL;Administrative Genius;High;M3084;X
+25063;Minister of Armament;Luigi Einaudi;1933;SL;Strategic Air Proponent;High;M3085;X
+25064;Minister of Armament;G. Barone Paulucci di Calboli;1947;SL;laissez-faire capitalist;High;M3086;X
+25065;Minister of Armament;Vittorio Vidali;1933;LE;Infantry Proponent;High;M3087;X
+25066;Minister of Armament;Mauro Scoccimarro;1941;LE;Air to Sea Proponent;High;M3088;X
+25067;Minister of Armament;Antonio Pesenti;1933;LWR;Resource Industrialist;High;M3024;X
+25068;Minister of Security;Umberto Albini;1933;FA;Prince of Terror;High;M3091;X
+25069;Minister of Security;Antonio Scuero;1933;NS;Back Stabber;High;M3092;X
+25071;Minister of Security;Piero Brandimarte;1945;NS;Efficient Sociopath;High;M3094;X
+25072;Minister of Security;Umberto Ricci;1933;PA;Silent Lawyer;High;M3015;X
+25073;Minister of Security;Robert Farinacci;1933;PA;Back Stabber;High;M3096;X
+25074;Minister of Security;Enrico de Nicola;1933;SC;Man of the People;High;M3039;X
+25075;Minister of Security;Conde Stefano Jacini;1939;SC;Silent Lawyer;High;M3046;X
+25076;Minister of Security;Alcide de Gasperi;1933;SC;Compassionate Gentleman;High;M3038;X
+25077;Minister of Security;Vito Reale;1941;SC;Crime Fighter;High;M3100;X
+25078;Minister of Security;Mario Scelba;1941;SC;Back Stabber;High;M3101;X
+25079;Minister of Security;Salvatore Aldisio;1941;SL;Prince of Terror;High;M3102;X
+25080;Minister of Security;Ivanoe Bonomi;1933;SL;Efficient Sociopath;High;M3048;X
+25081;Minister of Security;Ferruccio Parri;1933;SL;Man of the People;High;M3049;X
+25082;Minister of Security;Giuseppe Romita;1933;LWR;Compassionate Gentleman;High;M3105;X
+25084;Minister of Security;Julian Zugazagoitia Mendieta;1941;ST;Efficient Sociopath;High;M3107;X
+25085;Head of Military Intelligence;Enzo Galbiati;1933;FA;Political Specialist;Very High;M3108;X
+25086;Head of Military Intelligence;Dino Grandi;1939;FA;Logistics Specialist;High;M3056;X
+25087;Head of Military Intelligence;Alfredo de Marschio;1933;FA;Dismal Enigma;Low;M3110;X
+25088;Head of Military Intelligence;Giacomo Carboni;1933;NS;Industrial Specialist;Low;M3112;X
+25089;Head of Military Intelligence;Maggiorno Ferraris;1933;SC;Political Specialist;Very High;M3115;X
+25090;Head of Military Intelligence;Giuseppe Pella;1945;SC;Logistics Specialist;High;M3116;X
+25091;Head of Military Intelligence;Ezio Vanoni;1946;SC;Naval Intelligence Specialist;High;M3117;X
+25092;Head of Military Intelligence;Emilio Pagliano;1944;SL;Industrial Specialist;High;M3118;X
+25093;Head of Military Intelligence;A. de Marinis de Ricia;1933;SL;Technical Specialist;High;M3014;X
+25094;Head of Military Intelligence;Guiseppe di Vittorio;1933;LE;Political Specialist;High;M3120;X
+25096;Head of Military Intelligence;Antonio Pesenti;1933;LWR;Technical Specialist;High;M3024;X
+25097;Chief of Staff;Ugo Cavallero;1933;FA;School of Manoeuvre;High;M3124;X
+25098;Chief of Staff;Pietro Badoglio;1933;PA;School of Mass Combat;Medium;M3125;X
+25099;Chief of Staff;Achille Starace;1933;NS;School of Psychology;High;M3126;X
+25100;Chief of Staff;Vito Catastini;1945;NS;School of Manoeuvre;High;M3017;X
+25101;Chief of Staff;Vittorio Ambrosio;1933;PA;School of Psychology;Low;M3128;X
+25102;Chief of Staff;Mario Cingolani;1933;SC;School of Fire Support;High;M3130;X
+25103;Chief of Staff;Ettore Conti;1945;SC;School of Manoeuvre;High;M3132;X
+25104;Chief of Staff;Randolfo Pacciardi;1946;SC;School of Defence;High;M3133;X
+25105;Chief of Staff;Alessandro Casati;1941;SL;School of Defence;High;M3134;X
+25106;Chief of Staff;Cipriano Facchinetti;1943;SL;School of Mass Combat;High;M3083;X
+25107;Chief of Staff;Luigi Gasparotto;1943;SL;School of Manoeuvre;High;M3136;X
+25108;Chief of Staff;Luigi Longo;1933;LWR;School of Mass Combat;High;M3022;X
+25109;Chief of Army;Rodolfo Graziani;1933;FA;Decisive Battle Doctrine;Medium;M3139;X
+25110;Chief of Army;Mario Roatta;1933;FA;Armoured Spearhead Doctrine;High;M3140;X
+25111;Chief of Army;Junio Borghese;1943;NS;Decisive Battle Doctrine;High;M3044;X
+25112;Chief of Army;Vittorio Ambrosio;1933;SC;Static Defence Doctrine;Low;M3128;X
+25113;Chief of Army;Dionisio Ancelotti;1941;SC;Guns and Butter Doctrine;High;M3144;X
+25114;Chief of Army;Enrico Mattei;1943;SC;Decisive Battle Doctrine;High;M3018;X
+25115;Chief of Army;A. de Marinis de Ricia;1933;SL;Elastic Defence Doctrine;High;M3014;X
+25116;Chief of Army;Giancarlo Pajetta;1933;LWR;Guns and Butter Doctrine;High;M3028;X
+25117;Chief of Navy;Arturo Riccardi;1933;FA;Indirect Approach Doctrine;Medium;M3149;X
+25118;Chief of Navy;Paolo Thaon di Revel;1933;NS;Open Seas Doctrine;Medium;M3035;X
+25119;Chief of Navy;Alfredo Rocco;1933;NS;Decisive Naval Battle Doctrine;Medium;M3151;X
+25120;Chief of Navy;Dino Grandi;1933;PA;Power Projection Doctrine;High;M3153;X
+25121;Chief of Navy;Raffaele de Courten;1933;SC;Open Seas Doctrine;Medium;M3019;X
+25122;Chief of Navy;Allesandrino Ceresa;1933;SC;Open Seas Doctrine;High;M3155;X
+25123;Chief of Navy;Vittorio Scialoja;1946;SL;Power Projection Doctrine;High;M3157;X
+25124;Chief of Navy;Giancarlo Pajetta;1933;LWR;Open Seas Doctrine;High;M3028;X
+25125;Chief of Air Force;Francesco Pricolo;1933;FA;Naval Aviation Doctrine;High;M3160;X
+25126;Chief of Air Force;Rino Corso Fougier;1933;FA;Air Superiority Doctrine;Low;M3161;X
+25127;Chief of Air Force;Renato Sandalli;1943;PA;Army Aviation Doctrine;High;M3020;X
+25128;Chief of Air Force;Tomasso Tittoni;1933;SC;Army Aviation Doctrine;High;M3164;X
+25129;Chief of Air Force;Pietro Piacentini;1943;SC;Naval Aviation Doctrine;High;M3165;X
+25130;Chief of Air Force;Antonio Scialoja;1943;SC;Vertical Envelopment Doctrine;High;M3166;X
+25131;Chief of Air Force;Luigi Gasparotto;1943;SL;Army Aviation Doctrine;High;M3136;X
+25132;Head of State;Luigi Einaudi;1933;SC;Insignificant Layman;High;M3085;X
+25133;Head of State;Luigi Einaudi;1933;SL;Insignificant Layman;High;M3085;X
+25134;Head of Government;Giuseppe Pella;1945;SC;Silent Workhorse;High;M3116;X
+25135;Foreign Minister;Giuseppe Pella;1945;SC;Ideological Crusader;High;M3116;X
+25136;Minister of Armament;Randolfo Pacciardi;1933;SC;Military Entrepreneur;High;M3133;X
+25137;Minister of Armament;Emilio Paolo Taviani;1953;SC;Theoretical Scientist;High;M3173;X
+25138;Minister of Security;Amintore Fanfani;1953;SC;Compassionate Gentleman;High;M3174;X
+25237;Minister of Armament;Arturo Michelini;1954;FA;Laissez-Faire Capitalist;High;6080;x
+25238;Foreign Minister;Augusto De Marsanich;1944;FA;Great Compromiser;High;6081;X
+25239;Head of Government;Augusto De Marsanich;1955;FA;Silent Workhorse;High;6081;x
+25240;Minister of Security;Giorgio Almirante;1946;NS;Back Stabber;High;6082;x
+25241;Foreign Minister;Giorgio Almirante;1945;NS;The Cloak N Dagger Schemer;High;6082;x

@@ -1,0 +1,51 @@
+# 0 - Basic
+model = {
+	cost 				= 4
+	buildtime	 		= 100
+	manpower 			= 1.2
+	defensiveness 		= 1
+	toughness 			= 4
+	defaultorganisation = 6
+	softness			= -1
+	softattack			= 2
+	hardattack			= 2
+	suppression		= 2
+	supplyconsumption 	= 0.65
+	fuelconsumption		= 0.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved
+model = {
+	cost 				= 4.5
+	buildtime	 		= 100
+	manpower 			= 1.2
+	defensiveness 		= 3
+	toughness 			= 6
+	defaultorganisation = 8
+	softness			= -2
+	softattack			= 4
+	hardattack			= 3
+	suppression		= 3
+	supplyconsumption 	= 0.95
+	fuelconsumption		= 0.95
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Modern
+model = {
+	cost = 5
+	buildtime = 100
+	manpower = 1.2
+	defensiveness = 5
+	toughness = 9
+	defaultorganisation = 10
+	softness = -3
+	softattack = 6
+	hardattack = 5
+	suppression = 5
+	supplyconsumption = 1.55
+	fuelconsumption = 1.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

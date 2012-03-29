@@ -1,0 +1,99 @@
+CHI;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+52001;Head of State;Lin Sen;36;SC;Weary Stiffneck;High;M52001;x
+52002;Head of Government;Chiang Kai-shek;36;SC;Old General;High;M52002;x
+52003;Foreign Minister;Zhang Zun;36;SC;Great Compromiser;Very High;M52003;x
+52004;Minister of Armament;Yan Xishan;36;SC;Corrupt Kleptocrat;Low;M52004;x
+52005;Minister of Security;Chen Guofu;36;SC;Crooked Kleptocrat;Very High;M52005;x
+52006;Head of Military Intelligence;Chen Lifu;36;SC;Political Specialist;Very High;M52006;x
+52007;Chief of Staff;Chiang Kai-shek;36;SC;School of Manoeuvre;Undying;M52002;x
+52008;Chief of Army;Zhang Xueliang;36;SC;Guns and Butter Doctrine;Low;M52008;x
+52009;Chief of Navy;Chen Shaokuan;36;SC;Indirect Approach Doctrine;Medium;M52009;x
+52010;Chief of Air Force;Zhou Zhirou;36;SC;Army Aviation Doctrine;Very High;M52010;x
+52022;Head of State;Chiang Kai-shek;36;SC;Resigned Generalissimo;High;M52002;x
+52023;Head of State;Lin Sen;36;SL;Weary Stiffneck;High;M52001;x
+52024;Head of State;T. V. Soong;43;SL;Autocratic Charmer;High;M52024;x
+52025;Head of State;Wang Jingwei;39;PA;Local tyrant2;High;M52011;x
+52026;Head of Government;Wang Chonghui;36;SC;Flamboyant Tough Guy;High;M52026;x
+52027;Head of Government;Zhang Zun;39;SC;Happy Amateur;High;M52003;x
+52029;Head of Government;T. V. Soong;45;SC;Political Protege;High;M52024;x
+52030;Head of Government;Kong Xiangxi;38;SC;Silent Workhorse;High;M52030;x
+52031;Head of Government;Li Zongren;43;SL;Corporate Suit;High;M52031;x
+52032;Head of Government;Wang Kemin;39;PA;Backroom Backstabber;High;M52012;x
+52033;Foreign Minister;Wang Chonghui;36;SC;Ideological Crusader;Medium;M52026;x
+52035;Foreign Minister;Lin Wei;39;SC;General Staffer;High;M52035;x
+52036;Foreign Minister;Shen Zui;40;SC;Apologetic Clerk;Very High;M52036;x
+52037;Foreign Minister;Chen Guofu;41;SC;Great Compromiser;Low;M52005;x
+52038;Foreign Minister;Wang Shijie;45;SC;Iron Fisted Brute;Medium;M52038;x
+52039;Foreign Minister;Lin Sen;39;SL;Ideological Crusader;Medium;M52001;x
+52040;Foreign Minister;T. V. Soong;41;SC;The Cloak N Dagger Schemer;Medium;M52024;x
+52041;Foreign Minister;Wang JingWei;39;PA;Biased Intellectual;Medium;M52041;x
+52042;Foreign Minister;Chen Lu;38;SC;Apologetic Clerk;Medium;M52013;x
+52043;Foreign Minister;Yang Luchang;44;PA;Great Compromiser;Medium;M52043;x
+52045;Minister of Armament;Bai Chongxi;36;SC;Resource Industrialist;Low;M52045;x
+52046;Minister of Armament;Xu Yongchang;38;SC;Theoretical Scientist;High;M52046;x
+52047;Minister of Armament;Huang Chenzuo;39;SC;Military Entrepreneur;High;M52047;x
+52048;Minister of Armament;He Yingqin;39;SC;Air Superiority Proponent;High;M52048;x
+52049;Minister of Armament;Chen Guofu;40;SC;laissez-faire capitalist;Low;M52005;x
+52050;Minister of Armament;Cai Wenzhi;41;SC;Tank Proponent;High;M52050;x
+52051;Minister of Armament;He Guoguang;42;SC;Air to Ground Proponent;High;M52051;x
+52052;Minister of Armament;Chen Shaokuan;42;SC;Battle Fleet Proponent;Medium;M52009;x
+52053;Minister of Armament;Yu Feipeng;42;SC;Infantry Proponent;High;M52053;x
+52054;Minister of Armament;Wang Shuming;43;SC;Air to Sea Proponent;High;M52054;x
+52055;Minister of Armament;Jiang Jingguo;45;SC;Administrative Genius;High;M52055;x
+52056;Minister of Armament;Du Jianshi;46;SC;Strategic Air Proponent;High;M52056;x
+52057;Minister of Armament;Weng Wenhao;39;SL;laissez-faire capitalist;Medium;M52057;x
+52058;Minister of Armament;He Yingqin;43;SL;Infantry Proponent;Medium;M52058;x
+52059;Minister of Armament;Chen Gongbo;39;PA;laissez-faire capitalist;Medium;M52014;x
+52060;Minister of Armament;Yang Luchang;41;PA;Resource Industrialist;Medium;M52043;x
+52061;Minister of Armament;Chan Chak;43;PA;Submarine Proponent;High;M52061;x
+52063;Minister of Security;Dai Li;36;SC;Crime Fighter;Very High;M52063;x
+52064;Minister of Security;Walther Stennes;36;SC;Back Stabber;Very High;M52064;x
+52065;Minister of Security;Wu Zhongxin;38;SC;Compassionate Gentleman;High;M52065;x
+52066;Minister of Security;Huang Musong;39;SC;Efficient Sociopath;High;M52066;x
+52067;Minister of Security;Gu Zhenglun;40;SC;Crime Fighter;Very High;M52067;x
+52068;Minister of Security;Liu Fei;41;SC;Silent Lawyer;Medium;M52068;x
+52069;Minister of Security;Jiang Jingguo;43;SC;Man of the People;Very High;M52055;x
+52070;Minister of Security;Chen Lifu;39;SL;Back Stabber;Medium;M52006;x
+52071;Minister of Security;Kong Xiangxi;43;SL;Man of the People;High;M52030;x
+52072;Minister of Security;Kang Ze;44;SL;Prince of Terror;Medium;M52072;x
+52073;Minister of Security;Cai Yuanpei;45;SL;Compassionate Gentleman;Medium;M52073;x
+52074;Minister of Security;Ding Motun;39;PA;Crooked Kleptocrat;Medium;M52015;x
+52075;Minister of Security;Wang Kemin;41;PA;Man of the People;Medium;M52012;x
+52076;Minister of Security;Chan Hon-sam;43;PA;Prince of Terror;High;M52076;x
+52077;Minister of Security;Chen Fake;44;PA;Efficient Sociopath;High;M52077;x
+52078;Head of Military Intelligence;Dai Li;36;SC;Political Specialist;Very High;M52063;x
+52079;Head of Military Intelligence;He Yaozu;39;SC;Industrial Specialist;Low;M52079;x
+52080;Head of Military Intelligence;Mao Renfeng;40;SC;Logistics Specialist;Very High;M52080;x
+52081;Head of Military Intelligence;Jiang Yiying;44;SC;Dismal Enigma;Very High;M52064;x
+52082;Head of Military Intelligence;Yang Xuancheng;41;SC;Naval Intelligence Specialist;Very High;M52082;x
+52083;Head of Military Intelligence;Zheng Jiemin;42;SC;Technical Specialist;Very High;M52083;x
+52084;Head of Military Intelligence;Zhang Xueliang;39;SL;Logistics Specialist;Low;M52008;x
+52085;Head of Military Intelligence;Li Shiqun;39;PA;Political Specialist;Medium;M52016;x
+52086;Head of Military Intelligence;Chen Fake;43;PA;Logistics Specialist;High;M52077;x
+52088;Chief of Staff;Bai Chongxi;36;SC;School of Mass Combat;Low;M52045;x
+52089;Chief of Staff;Jiang Baili;39;SC;School of Psychology;High;M52089;x
+52090;Chief of Staff;Qian Dajun;41;SC;School of Defence;High;M52090;x
+52091;Chief of Staff;Lin Wei;43;SC;School of Manoeuvre;High;M52035;x
+52092;Chief of Staff;Xiao Yishu;45;SC;School of Fire Support;High;M52092;x
+52093;Chief of Staff;Xu Zuyi;39;SL;School of Defence;High;M52093;x
+52094;Chief of Staff;Qi Xieyuan;39;PA;School of Fire Support;Low;M52017;x
+52095;Chief of Army;Li Zongren;36;SC;Static Defence Doctrine;High;M52031;x
+52096;Chief of Army;Jiang Baili;36;SC;Guns and Butter Doctrine;High;M52089;x
+52097;Chief of Army;Gu Zhutong;39;SC;Decisive Battle Doctrine;Low;M52097;x
+52098;Chief of Army;Xu Tingyao;44;SC;Armoured Spearhead Doctrine;High;M52098;x
+52099;Chief of Army;He Yingqin;39;SL;Elastic Defence Doctrine;High;M52058;x
+52100;Chief of Army;Bao Wenyue;39;PA;Static Defence Doctrine;Low;M52018;x
+52101;Chief of Navy;Ouyang Ge;36;SC;Open Seas Doctrine;High;M52101;x
+52102;Chief of Navy;Zeng Yiding;39;SC;Base Control Doctrine;Medium;M52102;x
+52103;Chief of Navy;Chen Jiliang;36;SC;Indirect Approach Doctrine;Medium;M52103;x
+52104;Chief of Navy;Gui Yongqing;45;SC;Decisive Naval Battle Doctrine;Very High;M52104;x
+52105;Chief of Navy;Chen Cheng;45;SC;Power Projection Doctrine;Very High;M52105;x
+52106;Chief of Navy;Ren Shouxu;39;SL;Open Seas Doctrine;Low;M52106;x
+52107;Chief of Navy;Ren Yuandao;39;PA;Open Seas Doctrine;Low;M52019;x
+52108;Chief of Air Force;Huang Chenzuo;36;SC;Air Superiority Doctrine;High;M52047;x
+52109;Chief of Air Force;Shen Honglie;41;SC;Naval Aviation Doctrine;Very High;M52109;x
+52111;Chief of Air Force;Wang Shuming;45;SC;Vertical Envelopment Doctrine;High;M52054;x
+52112;Chief of Air Force;Qian Dajun;39;SL;Carpet Bombing Doctrine;Very High;M52090;x
+52113;Chief of Air Force;Chen Changchu;39;PA;Army Aviation Doctrine;Low;M52020;x
+52114;Head of Government;Yen Hsi-shan;49;SC;Old General;High;M52114;x
+52115;Head of Government;Ch'en Ch'eng;50;SC;Political Protege;High;M52115;x

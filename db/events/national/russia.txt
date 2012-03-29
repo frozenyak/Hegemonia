@@ -1,0 +1,1871 @@
+###56000-56999###
+#56024 elections
+#56070 Fate of Ukraine
+#56075 partition of georgia
+#56085 diplomatic offensive
+#
+event = {
+	id = 56008
+	country = RUS
+
+	decision = {
+		owned = { province = 553 data = FIN }
+		NOT = { owned = { province = 553 data = RUS } }
+		NOT = { owned = { province = 270 data = RUS } }
+	}
+	decision_trigger = {
+		OR = {
+			NOT = { war = { country = FIN } }
+			NOT = { war = { country = LIT } }
+		}
+		money = 500
+	}
+	trigger = {
+		NOT = { owned = { province = 553 data = RUS } }
+		NOT = { owned = { province = 270 data = RUS } }
+		owned = { province = 553 data = FIN }
+		OR = {
+			NOT = { war = { country = FIN } }
+			NOT = { war = { country = LIT } }
+		}
+	}
+
+	name = "Access to the Baltic"
+	desc = "Since the loss of our Estonian ports to Lithuania, we have lacked a warm water port to the west, a great blow to our national pride. We may be able to drum up support among the population for an eventual war to reclaim them, but our diplomats also inform us that the Finns may be open to leasing us Odinholm, an old port south of Viipuri."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	date = { day = 1 month = july year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Ask Finland about leasing Odinholm"
+		ai_chance = 79
+		command = { type = relation which = FIN value = 25 }
+		command = { type = trigger which = 32000 }
+	}
+	# action = {
+		# name = "Vow to take back our Estonian ports"
+		# ai_chance = 15
+		# command = { type = belligerence value = 3 }
+		# command = { type = addcore which = 275 }
+		# command = { type = addcore which = 274 }
+		# command = { type = addcore which = 273 }
+		# command = { type = addcore which = 272 }
+		# command = { type = addcore which = 271 }
+		# command = { type = addcore which = 270 }
+		# command = { type = relation which = LIT value = -100 }
+		# command = { type = relation which = GER value = -100 }
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = ai_prepare_war which = LIT }
+	# }
+	action = {
+		name = "Seize Odinholm by force"
+		ai_chance = 5
+		command = { type = belligerence value = 5 }
+		command = { type = addcore which = 553 }
+		command = { type = relation which = FIN value = -100 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 32004 }
+		#command = { type = ai_prepare_war which = FIN }
+	}
+	action = { trigger = { ai = yes }
+		name = "Warm water ports? Who needs them!"
+		ai_chance = 1
+		#command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 56009
+	country = RUS
+
+	name = "The Lease of Odinholm - Guarantees"
+	desc = "Finland has demanded diplomatic guarantees and the sum of $500 in exchange for a ten-year lease of Odinholm."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 95
+		command = { type = money value = -500 }
+		command = { type = non_aggression which = RUS where = FIN }
+		command = { type = guarantee which = RUS where = FIN }
+		command = { type = addcore which = 553 }
+		command = { type = trigger which = 32001 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 5
+		command = { type = dissent value = 2 }
+		command = { type = relation which = FIN value = -75 }
+	}
+}
+
+event = {
+	id = 56010
+	country = RUS
+
+	name = "The Lease of Odinholm - Guarantees"
+	desc = "Finland has demanded diplomatic guarantees and the sum of $300 in exchange for a ten-year lease of Odinholm."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 99
+		command = { type = money value = -300 }
+		command = { type = non_aggression which = RUS where = FIN }
+		command = { type = guarantee which = RUS where = FIN }
+		command = { type = addcore which = 553 }
+		command = { type = trigger which = 32002 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 1
+		command = { type = dissent value = 3 }
+		command = { type = relation which = FIN value = -150 }
+	}
+}
+
+event = {
+	id = 56011
+	country = RUS
+
+	name = "The Lease of Odinholm - League Membership"
+	desc = "Finland has requested sponsorship to the League of Democracies in exchange for a ten-year lease of Odinholm."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 90
+		command = { type = alliance which = FIN }
+		command = { type = addcore which = 553 }
+		command = { type = trigger which = 32003 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 10
+		command = { type = dissent value = 1 }
+		command = { type = relation which = FIN value = -250 }
+	}
+}
+
+event = {
+	id = 56012
+	country = RUS
+
+	name = "The Lease of Odinholm - Finnish Refusal"
+	desc = "Finland has rejected our proposal to lease Odinholm. Our failure to reach an agreement with such an insignificant country is a public embarrassment."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		ai_chance = 90
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = FIN_port_no }
+	}
+	action = {
+		name = "Seize Odinholm by force"
+		ai_chance = 10
+		command = { type = belligerence value = 5 }
+		command = { type = addcore which = 553 }
+		command = { type = relation which = FIN value = -100 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 32004 }
+	}
+}
+
+event = {
+	id = 56013
+	country = RUS
+	save_date = yes
+	
+	decision = {
+		control = { province = 553 }
+	}
+
+	decision_trigger = {
+		owned = { province = 553 }
+		atwar = no
+	}
+
+	trigger = {
+		control = { province = 553 }
+		owned = { province = 553 }
+		atwar = no
+	}
+
+	name = "Expanding the Odinholm Ports"
+	desc = "With Odinholm under our control, our Chief of the Navy has suggested an ambitious program to expand its capacity, scheudled to be finished at the end of the year."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	date = { day = 1 month = april year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Begin the building program!"
+		ai_chance = 100
+		command = { type = local_setflag which = odinholm_expansion }
+		command = { type = free_supplies value = -25 }
+		command = { type = free_ic value = -5 }
+	}
+}
+
+event = {
+	id = 56014
+	country = RUS
+	
+	trigger = {
+		NOT = { control = { province = 553 } }
+		local_flag = odinholm_expansion
+	}
+
+	name = "Odinholm Expansion Fails"
+	desc = "With Odinholm not under our control, the port expansion has to be abandoned."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	date = { day = 1 month = april year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = dissent value = 1 }
+		command = { type = free_supplies value = 25 }
+		command = { type = free_ic value = 5 }
+		command = { type = local_clrflag which = odinholm_expansion }
+		command = { type = local_clrflag which = odinholm_expansion_2 }
+	}
+}
+
+event = {
+	id = 56015
+	country = RUS
+	save_date = yes
+	
+	trigger = {
+		owned = { province = 553 }
+		control = { province = 553 }
+		local_flag = odinholm_expansion
+		atwar = no
+		event = { id = 56013 days = 180 }
+	}
+
+	name = "Odinholm Expansion - Phase Two"
+	desc = "Our program to expand Odinholm's ports is well underway, and the initial expansion of the ports is now complete. The plan now calls for Phase Two, with an additional expansion of the port's capacity and the construction of anti-aircraft artillery around it."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	date = { day = 1 month = october year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = april year = 1937 }
+
+	action = {
+		name = "Continue the building program!"
+		ai_chance = 95
+		command = { type = construct which = naval_base value = 3 where = 553 }
+		command = { type = local_setflag which = odinholm_expansion_2 }
+	}
+	action = {
+		name = "It is too expensive, discontinue it"
+		ai_chance = 5
+		command = { type = construct which = naval_base value = 3 where = 553 }
+		command = { type = free_supplies value = 25 }
+		command = { type = free_ic value = 5 }
+	}
+}
+
+
+event = {
+	id = 56016
+	country = RUS
+	
+	trigger = {
+		owned = { province = 553 }
+		control = { province = 553 }
+		local_flag = odinholm_expansion_2
+		event = { id = 56015 days = 180 }
+	}
+
+	name = "Odinholm Expansion - Completed"
+	desc = "Phase two of our program to expand Odinholm's ports has been completed on scheudle, and the port is now ready to service the Russian navy."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		name = ACTION_NAME_EXCELLENT
+		command = { type = construct which = naval_base value = 2 where = 553 }
+		command = { type = construct which = anti_air value = 2 where = 553 }
+		command = { type = free_supplies value = 25 }
+		command = { type = free_ic value = 5 }
+	}
+}
+
+
+event = {
+	id = 56017
+	country = RUS
+	
+	trigger = {
+		OR = {
+			war = { country = JAP country = CYN }
+			war = { country = JAP country = CHI }
+		}
+	}
+
+	name = "Japanese Invasion of China"
+	desc = "The Japanese have launched an invasion of China. Japan claims that it is simply intervening to stabilize the region, but few are fooled by this flimsy pretext for Imperial expansion. What should we do?"
+	style = 0
+	picture = "Japan_Invasion"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 6
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "Publically condemn Japan"
+		ai_chance = 85
+		command = { type = relation which = JAP value = -100 }
+		command = { type = relation which = CHI value = 50 }
+		command = { type = relation which = CYN value = 50 }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	action = {
+		name = "This is not our concern"
+		ai_chance = 10
+		command = { type = relation which = JAP value = 25 }
+		command = { type = relation which = CHI value = -50 }
+		command = { type = relation which = CYN value = -50 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+	action = {
+		trigger = { atwar = no }
+		name = "Intervene to protect China"
+		ai_chance = 5
+		command = { type = war which = JAP }
+		command = { type = relation which = CHI value = 100 }
+		command = { type = relation which = CYN value = 100 }
+		command = { type = domestic which = interventionism value = 2 }
+	}
+}
+
+event = {
+	id = 56018
+	country = RUS
+
+	trigger = {
+		flag = RUS_want_port
+		flag = FIN_port_no
+		NOT = { owned = { province = 553 data = RUS } }
+		owned = { province = 553 data = FIN }
+	}
+
+	name = "The Lease of Odinholm - Refusal"
+	desc = "Finland has refused our request to lease their old ports in Odinholm. Parliament is now proposing that we take direct action by sending troops to annex the province. Finland is unlikely to offer much resistance, but doing this might provoke outrage amongst our allies."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	date = { day = 4 month = april year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Send troops to annex Odinholm!"
+		ai_chance = 80
+		command = { type = belligerence value = 5 }
+		command = { type = addcore which = 553 }
+		command = { type = relation which = FIN value = -100 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 32004 }
+	}
+	action = {
+		name = "We do not need to resort to such methods"
+		ai_chance = 20
+		command = { type = dissent value = 2 }
+		command = { type = relation which = FIN value = 20 }
+	}
+}
+
+event = {
+	id = 56019
+	country = RUS
+
+	name = "The Annexation of Odinholm - Compensation"
+	desc = "Finland has protested our annexation of Odinholm to Germany, who are demanding that we pay compensation to Finland for what they call a violation of their sovereign territory."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_ACCEPT
+		ai_chance = 75
+		command = { type = money value = -200 }
+		command = { type = relation which = FIN value = 25 }
+		command = { type = relation which = GER value = 25 }
+		command = { type = trigger which = 32005 }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 25
+		command = { type = belligerence value = 5 }
+		command = { type = relation which = FIN value = -100 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35055 }
+	}
+}
+
+event = {
+	id = 56020
+	country = RUS
+
+	name = "The Annexation of Odinholm - Return"
+	desc = "Finland has protested our annexation of Odinholm to Germany, who are demanding that we return the territory we 'stole' from Finland."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 75
+		command = { type = belligerence value = 5 }
+		command = { type = relation which = FIN value = -100 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35056 }
+	}
+	action = {
+		name = ACTION_NAME_ACCEPT
+		ai_chance = 25
+		command = { type = belligerence value = -3 }
+		command = { type = removecore which = 553 }
+		command = { type = relation which = FIN value = 50 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = construct which = land_fort where = 553 value = -10 }
+		command = { type = secedeprovince which = FIN value = 553 }
+	}
+}
+
+event = {
+	id = 56021
+	country = RUS
+
+	name = "The Annexation of Odinholm - Compensation"
+	desc = "Finland has turned to Iberia to protest our annexation of Odinholm. Iberia is now demanding we pay compensation to Finland for what they call a violation of their sovereign territory."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_ACCEPT
+		ai_chance = 90
+		command = { type = money value = -200 }
+		command = { type = relation which = FIN value = 25 }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = trigger which = 32005 }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 10
+		command = { type = belligerence value = 5 }
+		command = { type = relation which = FIN value = -100 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = trigger which = 35055 }
+	}
+}
+
+event = {
+	id = 56022
+	country = RUS
+
+	name = "The Annexation of Odinholm - Return"
+	desc = "Finland has turned to Iberia to protest our annexation of Odinholm. Iberia is now demanding we return the territory we 'stole' from Finland."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 60
+		command = { type = belligerence value = 5 }
+		command = { type = relation which = FIN value = -100 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = trigger which = 35056 }
+	}
+	action = {
+		name = ACTION_NAME_ACCEPT
+		ai_chance = 40
+		command = { type = belligerence value = -3 }
+		command = { type = removecore which = 553 }
+		command = { type = relation which = FIN value = 50 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = construct which = land_fort value = -10 }
+		command = { type = secedeprovince which = FIN value = 553 }
+	}
+}
+
+event = {
+	id = 56023
+	country = RUS
+
+	name = "Iberia Expels us from the League"
+	desc = "We have been expelled from the League of Democracies for annexing Odinholm."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 5 }
+		command = { type = leave_alliance }
+		command = { type = setflag which = RUS_nationalist }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 56024
+	country = RUS
+	one_action = yes
+
+	trigger = {
+		government = democratic
+		alliance = { country = SPA }
+		relation = { which = SPA value = 50 }
+		NOT = { ispuppet = RUS }
+	}
+
+	name = "The 1937 Elections"
+	desc = "The 1937 elections are now in full swing. There are three major contenders: The sitting Social Democrats, the Orthodox conservatives and the nascent Communist Party. The Social Democrats are expected to be re-elected in a landslide, though anything can happen..."
+	style = 2
+	picture = "politics2"
+
+	date = { day = 2 month = june year = 1937 }
+
+	action = {
+		name = "The Social Democrats"
+		ai_chance = 80
+		#command = { type = domestic which = democratic value = 1 }
+		#command = { type = domestic which = political_left value = 1 }
+		#command = { type = set_domestic which = democratic value = 8 }
+		#command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 515001 }
+		command = { type = headofgovernment which = 515002 }
+		command = { type = relation which = SPA value = 25 }
+	}
+	action = {
+		name = "The Communist Party"
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = free_market value = 2 }
+		command = { type = domestic which = free_market value = -2 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofstate which = 515011 }
+		command = { type = headofgovernment which = 515015 }
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = U00 value = 50 }
+	}
+	action = {
+		name = "The Orthodox Conservatives"
+		ai_chance = 5
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = free_market value = 7 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 515012 }
+		command = { type = headofgovernment which = 515013 }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = relation which = GER value = 50 }
+	}
+}
+
+event = {
+	id = 56025
+	country = RUS
+	one_action = yes
+
+	trigger = {
+		government = democratic
+		OR = {
+			NOT = { alliance = { country = SPA } }
+			NOT = {	relation = { which = SPA value = 50 } }
+		}
+		relation = { which = GER value = 50 }
+		NOT = { relation = { which = U00 value = 50 } }
+		NOT = { ispuppet = RUS }
+	}
+
+	name = "The 1937 Elections"
+	desc = "The 1937 elections are now in full swing. There are three major contenders: The sitting Social Democrats, the Orthodox conservatives and the nascent Communist Party. The Orthodox Conservatives currently have the lead in the polls, but anything can happen..."
+	style = 2
+	picture = "politics2"
+
+	date = { day = 2 month = june year = 1937 }
+
+	action = {
+		name = "The Orthodox Conservatives"
+		ai_chance = 60
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = free_market value = 7 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 515012 }
+		command = { type = headofgovernment which = 515013 }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = relation which = GER value = 50 }
+	}
+	action = {
+		name = "The Social Democrats"
+		ai_chance = 35
+		#command = { type = domestic which = democratic value = 1 }
+		#command = { type = domestic which = political_left value = 1 }
+		#command = { type = set_domestic which = democratic value = 8 }
+		#command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 515001 }
+		command = { type = headofgovernment which = 515002 }
+		command = { type = relation which = SPA value = 25 }
+	}
+	action = {
+		name = "The Communist Party"
+		ai_chance = 5
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = free_market value = 2 }
+		command = { type = domestic which = free_market value = -2 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofstate which = 515011 }
+		command = { type = headofgovernment which = 515015 }
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = U00 value = 50 }
+	}
+}
+
+event = {
+	id = 56026
+	country = RUS
+	one_action = yes
+
+	trigger = {
+		government = democratic
+		OR = {
+			NOT = { alliance = { country = SPA } }
+			NOT = {	relation = { which = SPA value = 50 } }
+		}
+		NOT = { relation = { which = GER value = 50 } }
+		relation = { which = U00 value = 50 }
+		NOT = { ispuppet = RUS }
+	}
+
+	name = "The 1937 Elections"
+	desc = "The 1937 elections are now in full swing. There are three major contenders: The sitting Social Democrats, the Orthodox conservatives and the nascent Communist Party. The Communist Party currently have the lead in the polls, but anything can happen..."
+	style = 2
+	picture = "politics2"
+
+	date = { day = 2 month = june year = 1937 }
+
+	action = {
+		name = "The Communist Party"
+		ai_chance = 60
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = free_market value = 2 }
+		command = { type = domestic which = free_market value = -2 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 515011 }
+		command = { type = headofgovernment which = 515015 }
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = U00 value = 50 }
+	}
+	action = {
+		name = "The Social Democrats"
+		ai_chance = 35
+		#command = { type = domestic which = democratic value = 1 }
+		#command = { type = domestic which = political_left value = 1 }
+		#command = { type = set_domestic which = democratic value = 8 }
+		#command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 515001 }
+		command = { type = headofgovernment which = 515002 }
+		command = { type = relation which = SPA value = 25 }
+	}
+	action = {
+		name = "The Orthodox Conservatives"
+		ai_chance = 5
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = free_market value = 7 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 515012 }
+		command = { type = headofgovernment which = 515013 }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = relation which = GER value = 50 }
+	}
+}
+
+event = {
+	id = 56027
+	country = RUS
+	one_action = yes
+
+	trigger = {
+		government = democratic
+		OR = {
+			NOT = { alliance = { country = SPA } }
+			NOT = {	relation = { which = SPA value = 50 } }
+		}
+		OR = {
+			AND = {
+				NOT = { relation = { which = GER value = 50 } }
+				NOT = { relation = { which = U00 value = 50 } }
+			}
+			AND = {
+				relation = { which = GER value = 50 }
+			 	relation = { which = U00 value = 50 }
+			}
+		}
+		NOT = { ispuppet = RUS }
+	}
+
+	name = "The 1937 Elections"
+	desc = "The 1937 elections are now in full swing. There are three major contenders: The sitting Social Democrats, the Orthodox conservatives and the nascent Communist Party. The race is a dead heat, so anything can happen..."
+	style = 2
+	picture = "politics2"
+
+	date = { day = 2 month = june year = 1937 }
+
+	action = {
+		name = "The Social Democrats"
+		ai_chance = 34
+		#command = { type = domestic which = democratic value = 1 }
+		#command = { type = domestic which = political_left value = 1 }
+		command = { type = headofstate which = 515001 }
+		command = { type = headofgovernment which = 515002 }
+		command = { type = relation which = SPA value = 25 }
+	}
+	action = {
+		name = "The Orthodox Conservatives"
+		ai_chance = 33
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = free_market value = 7 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 515012 }
+		command = { type = headofgovernment which = 515013 }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = relation which = GER value = 50 }
+	}
+	action = {
+		name = "The Communist Party"
+		ai_chance = 33
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = free_market value = 2 }
+		command = { type = domestic which = free_market value = -2 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 515011 }
+		command = { type = headofgovernment which = 515015 }
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = U00 value = 50 }
+	}
+}
+
+event = {
+	id = 56028
+	country = RUS
+
+	trigger = {
+		headofstate = 515012
+		atwar = no
+	}
+
+	name = "Conservative Policy"
+	desc = "The Orthodox conservatives have won a majority of the votes and have now formed a new government. What should be Russia's future policy under conservative rule?"
+	style = 2
+	picture = "politics2"
+
+	date = { day = 15 month = june year = 1937 }
+
+	action = {
+		name = "Focus on internal reform"
+		ai_chance = 50
+		command = { type = domestic which = free_market value = 2 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = relation which = GER value = 25 }
+	}
+	action = {
+		name = "Break our alliances and pursue Russian interests"
+		ai_chance = 35
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = relation which = ENG value = -75 }
+		command = { type = leave_alliance }
+		command = { type = setflag which = RUS_nationalist }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+	action = { trigger = { NOT = { flag = german_civil_war } }
+		name = "Break our alliances and align with Germany"
+		ai_chance = 15
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = GER value = 200 }
+		command = { type = relation which = SPA value = -200 }
+		command = { type = relation which = ENG value = -150 }
+		command = { type = leave_alliance }
+		command = { type = setflag which = RUS_ger_friendly }
+	}
+}
+
+event = {
+	id = 56029
+	country = RUS
+
+	trigger = {
+		headofstate = 515011
+		atwar = no
+	}
+
+	name = "Communist Policy"
+	desc = "The Communist Party have won a majority of the votes and have now formed a new government. What should be Russia's future policy under communist rule?"
+	style = 2
+	picture = "politics2"
+
+	date = { day = 15 month = june year = 1937 }
+
+	action = {
+		name = "Break our alliances and align with the Comintern"
+		ai_chance = 65
+		command = { type = leave_alliance }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = democratic value = -2 }
+		command = { type = relation which = U00 value = 200 }
+		command = { type = relation which = VIC value = 100 }
+		command = { type = relation which = SPA value = -200 }
+		command = { type = relation which = ENG value = -150 }
+		command = { type = setflag which = RUS_com_friendly }
+	}
+	action = {
+		name = "Focus on internal reform"
+		ai_chance = 25
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = U00 value = 25 }
+	}
+	action = {
+		name = "Break our alliances and pursue Russian interests"
+		ai_chance = 10
+		command = { type = leave_alliance }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = relation which = ENG value = -75 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = U00 value = 50 }
+		command = { type = relation which = VIC value = 25 }
+		command = { type = setflag which = RUS_nationalist }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+		command = { type = domestic which = democratic value = -1 }
+	}
+}
+
+event = {
+	id = 56030
+	country = RUS
+
+	name = "The Union Attacks Georgia"
+	desc = "The Union of Rome has launched an invasion of the Republic of Georgia. The Georgians are begging us for assistance - what should we do?"
+	style = 2
+	picture = "war"
+
+	action = {
+		name = "We will defend Georgia!"
+		ai_chance = 95
+		command = { type = relation which = GEO value = 200 }
+		command = { type = relation which = U00 value = -200 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = alliance which = GEO }
+	}
+	action = {
+		name = "This is not our concern"
+		ai_chance = 5
+		command = { type = relation which = U00 value = 50 }
+		command = { type = relation which = GEO value = -200 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 56031
+	country = RUS
+
+	name = "Imperial India Attacks Turkestan"
+	desc = "Imperial India has launched an invasion of Turkestan. The Turks are begging us for assistance - what should we do?"
+	style = 2
+	picture = "war"
+
+	action = {
+		trigger = {
+			ai = no
+		}
+		name = "We will defend Turkestan!"
+		ai_chance = 75
+		command = { type = relation which = TUR value = 200 }
+		command = { type = relation which = U02 value = -200 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = alliance which = TUR }
+	}
+	action = {
+		trigger = {
+			NOT = { war = { country = LIT } }
+			ai = yes
+		}
+		name = "We will defend Turkestan!"
+		ai_chance = 75
+		command = { type = relation which = TUR value = 200 }
+		command = { type = relation which = U02 value = -200 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = alliance which = TUR }
+	}
+	action = {
+		name = "This is not our concern"
+		ai_chance = 25
+		command = { type = relation which = U02 value = 50 }
+		command = { type = relation which = TUR value = -200 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 56032
+	country = RUS
+
+	name = "Alliance with Turkestan?"
+	desc = "Turkestan has approached us about an alliance, fearful of being wedged inbetween the three alliance blocks if it comes to war. What is our response?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		trigger = {
+			ai = no
+		}
+		name = "Agree to the alliance"
+		ai_chance = 90
+		command = { type = alliance which = TUR }
+		command = { type = relation which = TUR value = 100 }
+	}
+	action = {
+		trigger = {
+			ai = yes
+			NOT = { war = { country = LIT } }
+		}
+		name = "Agree to the alliance"
+		ai_chance = 90
+		command = { type = alliance which = TUR }
+		command = { type = relation which = TUR value = 100 }
+	}
+	action = {
+		name = "I think not"
+		ai_chance = 10
+		command = { type = relation which = TUR value = -100 }
+	}
+}
+
+event = {
+	id = 56033
+	country = RUS
+
+	trigger = {
+		#war = { country = GER }
+		war = { country = LIT }
+		# OR = {
+			# control = { province = 572 data = LIT }
+			# AND = {
+				# control = { province = 572 data = FIN }
+				# alliance = { country = FIN }
+			# }
+			# AND = {
+				# control = { province = 572 data = GER }
+				# alliance = { country = LIT }
+			# }
+			# AND = {
+				# control = { province = 572 data = SCA }
+				# alliance = { country = SCA }
+			# }
+		# }
+		NOT = { control = { province = 572 } } #Moscow
+		NOT = { control = { province = 576 } } #Kaluga
+		#NOT = { control = { province = 676 } } #Rybnsk
+		#NOT = { control = { province = 542 } } #arkangelsk
+		OR = {
+			NOT = { control = { province = 663 } } #Stalingrad
+			NOT = { control = { province = 668 } } #Kujbysev
+		}
+		NOT = { control = { province = 553 } }
+	}
+
+	name = "Peace in the West"
+	desc = "Our western front has collapsed and the Lithuanians have seized control of all our major industrial centers in the region. Perhaps it would be best to cut our losses and sue for peace? The Lithuanian Czar has suggested they would accept peace in exchange for regions of Western and Southern Russia."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Very well, sue for peace"
+		ai_chance = 95
+		command = { type = trigger which = 44015 }
+	}
+	action = {
+		name = "No peace with the Lithuanians!"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 56035
+	country = RUS
+
+	name = "Peace with Lithuania"
+	desc = "Lithuania has agreed to our peace offer and we must now cede the territories agreed on."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { trigger = { alliance = { country = GER country = LIT } } type = peace which = GER value = 1 }
+		command = { trigger = { alliance = { country = GER country = LIT } } type = non_aggression which = GER where = RUS }
+		command = { trigger = { NOT = { alliance = { country = GER country = LIT } } } type = peace which = LIT value = 1 }
+		command = { trigger = { NOT = { alliance = { country = GER country = LIT } } } type = non_aggression which = LIT where = RUS }
+
+		command = { type = secederegion which = LIT value = "Western Russia" when = 1 }
+		command = { type = secederegion which = LIT value = "Southern Russia" when = 1 }
+		command = { trigger = {exists = GEO } type = secederegion which = GEO value = "Kaukasus" when = 1 }
+		command = { trigger = { NOT = { exists = GEO } } type = secederegion which = LIT value = "Kaukasus" when = 1 }
+		command = { type = construct which = land_fort where = 553 value = -10 }
+		command = { trigger = { alliance = { country = FIN country = LIT } } type = secedeprovince which = FIN value = 553 }
+		command = { trigger = { alliance = { country = FIN country = GER } } type = secedeprovince which = FIN value = 553 }
+		command = { type = secedearea which = LIT value = "Estonia" when = 1 }
+
+		command = { type = relation which = SPA value = -200 }
+		command = { type = relation which = ENG value = -200 }
+		command = { type = leave_alliance }
+		command = { type = setflag which = RUS_western_peace }
+	}
+}
+
+event = {
+	id = 56037
+	country = RUS
+	persistent = yes
+
+	trigger = {
+		flag = RUS_western_peace
+		#NOT = { flag = RUS_way_forward }
+		OR = {
+			war = { country = JAP }
+			war = { country = U00 }
+		}
+		NOT = { local_flag = RUS_way_forward_japan }
+		NOT = { local_flag = RUS_way_forward_union }
+	}
+
+	name = "The Way Forward"
+	desc = "With our defeat in the west we have lost both much in terms of industry and national spirit. Perhaps it would be best to seek peace with our other enemies and let the nation rebuild?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		trigger = {
+			war = { country = JAP }
+			war = { country = U00 }
+		}
+		name = "Seek peace with Japan and the Union"
+		ai_chance = 50
+		command = { type = trigger which = 42015 }
+		command = { type = trigger which = 55039 }
+		command = { type = setflag which = RUS_way_forward }
+		command = { type = local_setflag which = RUS_way_forward_japan }
+		command = { type = local_setflag which = RUS_way_forward_union }
+	}
+	action = { trigger = { war = { country = U00 } }
+		name = "Seek peace with the Union"
+		ai_chance = 35
+		command = { type = trigger which = 55039 }
+		command = { type = setflag which = RUS_way_forward }
+		command = { type = local_setflag which = RUS_way_forward_union }
+	}
+	action = { trigger = { war = { country = JAP } }
+		name = "Seek peace with Japan"
+		ai_chance = 10
+		command = { type = trigger which = 42015 }
+		command = { type = setflag which = RUS_way_forward }
+		command = { type = local_setflag which = RUS_way_forward_japan }
+	}
+	action = {
+		name = "No peace!"
+		ai_chance = 5
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = RUS_way_forward }
+		command = { type = local_setflag which = RUS_way_forward_union }
+		command = { type = local_setflag which = RUS_way_forward_japan }
+	}
+}
+
+event = {
+	id = 56038
+	country = RUS
+
+	name = "Peace with Japan"
+	desc = "Japan has agreed to our offer of separate peace."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = peace which = JAP value = 1 }
+		command = { type = non_aggression which = JAP where = RUS }
+		command = { type = dissent value = -5 }
+	}
+}
+
+event = {
+	id = 56039
+	country = RUS
+
+	name = "Japan Refuses Peace"
+	desc = "Japan has refused our offer of separate peace."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Drat!"
+		#command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 56040
+	country = RUS
+
+	name = "Peace with the Union"
+	desc = "The Union has agreed to our offer of separate peace."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = peace which = U00 value = 1 }
+		command = { type = non_aggression which = U00 where = RUS }
+		command = { type = dissent value = -5 }
+	}
+}
+
+event = {
+	id = 56041
+	country = RUS
+
+	name = "The Union Refuses Peace"
+	desc = "The Union has refused our offer of separate peace."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Drat!"
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 56044
+	country = RUS
+
+	name = "Peace with Japan?"
+	desc = "Japan has defeated us soundly in Manchuria and now demands our Chinese possessons. The pacific coast with Vladivostok would still say with us. The territory is mostly useless to us and would be no great loss."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Very well, accept the offer"
+		ai_chance = 95
+		command = { type = peace which = JAP value = 1 }
+		command = { type = non_aggression which = JAP where = RUS }
+		command = { type = secederegion which = JAP value = "China" when = 1 }
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		command = { type = trigger which = 42021 }
+		command = { type = setflag which = RUS_eastern_peace }
+	}
+	action = {
+		name = "No peace with the Japanese"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 56045
+	country = RUS
+
+	name = "Peace with Japan"
+	desc = "Japan has defeated us soundly in the far east and asks for our Chinese possessons and the pacific coast with Vladivostok."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = peace which = JAP value = 1 }
+		command = { type = non_aggression which = JAP where = RUS }
+		command = { type = secedearea which = JAP value = "Khabarovsk" when = 1 }
+		command = { type = secedearea which = JAP value = "Kamchatka" when = 1 }
+		command = { type = secedearea which = JAP value = "Primorski" when = 1 }
+		command = { type = secederegion which = JAP value = "China" when = 1 }
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1190 }
+		command = { type = secedeprovince which = JAP value = 1185 }
+		command = { type = setflag which = RUS_eastern_peace }
+	}
+}
+
+event = {
+	id = 56046
+	country = RUS
+
+	name = "Peace with Japan?"
+	desc = "Japan has approached us about suing for peace, offering up Korea and Sakhalin."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Accept the peace offer"
+		ai_chance = 75
+		command = { type = relation which = JAP value = 200 }
+		command = { type = trigger which = 42019 }
+	}
+	action = {
+		name = "No peace with the Japanese!"
+		ai_chance = 25
+		command = { type = relation which = JAP value = -100 }
+	}
+}
+
+# event = {
+	# id = 56050
+	# country = RUS
+
+	# trigger = {
+		# ai = yes
+		# OR = {
+			# flag = RUS_claim_border
+			# flag = RUS_belligerent_LIT
+		# }
+		# NOT = { alliance = { country = LIT country = GER } }
+		# NOT = { alliance = { country = LIT country = AUS } }
+		# NOT = { alliance = { country = LIT country = U00 } }
+		# NOT = { alliance = { country = LIT country = SPA } }
+		# NOT = { alliance = { country = LIT } }
+		# atwar = no
+		# NOT = { ispuppet = RUS }
+		# #domestic = { type = interventionism value = 6 }
+		# NOT = { dissent = 10 }
+		# NOT = { flag = german_civil_war }
+		
+		# NOT = { flag = RUS_western_peace }
+		# NOT = { flag = LIT_peace_east }
+		
+		# flag = RUS_nationalist
+		# NOT = { participant = { value = 1 } }
+	# }
+
+	# name = "War with Lithuania?"
+	# desc = "Lithuania is diplomatically isolated. This is would be a good moment to strike."
+	# style = 2
+	# picture = "news_paper"
+
+	# date = { day = 1 month = january year = 1937 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 1963 }
+
+	# action = {
+		# name = "We will crush them"
+		# ai_chance = 90
+		# #command = { type = leave_alliance }
+		# command = { type = war which = LIT }
+	# }
+	# action = {
+		# name = "Now is not the time"
+		# ai_chance = 10
+		# #command = { type = dissent value = 10 }
+	# }
+# }
+
+event = {
+	id = 56051
+	country = RUS
+
+	name = "Peace with Lithuania"
+	desc = "The Czar has offered peace; offering to withdraw from the HRE and give in to our territorial claims."
+	style = 2
+	picture = "news_paper"
+
+	action = { trigger = { NOT = { flag = RUS_belligerent_LIT } }
+		name = "Agree to the peace offer"
+		ai_chance = 95
+		command = { type = relation which = LIT value = 200 }
+		command = { type = trigger which = 44021 }
+	}
+	action = { trigger = { NOT = { flag = RUS_belligerent_LIT } }
+		name = "No peace with the Lithuanians!"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+	
+	action = { trigger = { flag = RUS_belligerent_LIT }
+		name = "No peace with the Lithuanians!"
+		ai_chance = 70
+		command = { type = dissent value = 5 }
+	}
+	action = { trigger = { flag = RUS_belligerent_LIT }
+		name = "Agree to the peace offer"
+		ai_chance = 30
+		command = { type = relation which = LIT value = 200 }
+		command = { type = trigger which = 44021 }
+	}
+}
+
+event = {
+	id = 56052
+	country = RUS
+
+	name = "Peace with Lithuania"
+	desc = "The Czar has offered peace; offering to withdraw from the HRE, give in to our territorial claims, and free the Ukraine."
+	style = 2
+	picture = "news_paper"
+
+	action = { trigger = { NOT = { flag = RUS_belligerent_LIT } }
+		name = "Agree to the peace offer"
+		ai_chance = 90
+		command = { type = relation which = LIT value = 200 }
+		command = { type = trigger which = 44022 }
+	}
+	action = { trigger = { NOT = { flag = RUS_belligerent_LIT } }
+		name = "No peace with the Lithuanians!"
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+	}
+	
+	action = { trigger = { flag = RUS_belligerent_LIT }
+		name = "No peace with the Lithuanians!"
+		ai_chance = 50
+		command = { type = dissent value = 5 }
+	}
+	action = { trigger = { flag = RUS_belligerent_LIT }
+		name = "Agree to the peace offer"
+		ai_chance = 50
+		command = { type = relation which = LIT value = 200 }
+		command = { type = trigger which = 44022 }
+	}
+}
+
+event = {
+	id = 56054
+	country = RUS
+
+	name = "Peace with Lithuania"
+	desc = "The Czar has offered peace; offering to withdraw from the HRE, give in to our territorial claims free the Ukraine, and even abdicate!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Agree to the peace offer"
+		ai_chance = 99
+		command = { type = relation which = LIT value = 200 }
+		command = { type = trigger which = 44022 }
+	}
+	action = {
+		name = "No peace with the Lithuanians!"
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 56055
+	country = RUS
+
+	name = "Alliance with the Union?"
+	desc = "The Union of Rome has offered us membership in the Comintern."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_ACCEPT"
+		ai_chance = 90
+		command = { type = alliance which = U00 }
+		command = { type = relation which = U00 value = 100 }
+	}
+	action = {
+		name = "ACTION_NAME_DECLINE"
+		ai_chance = 10
+		command = { type = relation which = U00 value = -50 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 56060
+	country = RUS
+
+	name = "The Sale of Manchuria"
+	desc = "The Japanese have offered us 500$ for Manchuria. But do we want to sell?"
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "It is not for sale!"
+		ai_chance = 65
+		command = { type = relation which = JAP value = -100 }
+		command = { type = trigger which = 42032 }
+	}
+	action = {
+		name = "Sell it"
+		ai_chance = 35
+		command = { type = relation which = JAP value = 100 }
+		command = { type = money value = 500 }
+		command = { type = secederegion which = JAP value = "China" when = 1 }
+		command = { type = trigger which = 42031 }
+	}
+}
+
+
+event = {
+	id = 56070
+	country = RUS
+
+	decision = {
+		NOT = { exists = UKR }
+		control = { province = 617 }
+	}
+
+	decision_trigger = {
+		region = { region = "Ukraine" data = 2 }
+		NOT = { war = { country = LIT } }
+		NOT = { war = { country = ROM } }
+		#atwar = no
+	}
+	
+	trigger = {
+		NOT = { exists = UKR }
+		region = { region = "Ukraine" data = 2 }
+		NOT = { war = { country = LIT } }
+		NOT = { war = { country = ROM } }
+		NOT = { war = { country = U00 } }
+		#atwar = no
+		NOT = { war = { country = U00 } }
+	}
+
+	name = "The Fate of the Ukraine"
+	desc = "We have liberated the Ukraine from Lithuania. They are an oppressed brother people, just like we were, and they would certainly be grateful to us if we were to free them."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 14
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Free our Ukrainian brothers"
+		ai_chance = 95
+		#command = { type = addcore which = 633 }
+		command = { type = independence which = UKR value = 1 }
+		command = { type = make_puppet which = UKR }
+		command = { type = alliance which = UKR }
+	}
+	action = { trigger = { ai = yes }
+		name = "Rule them directly"
+		ai_chance = 5
+		#command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 56071
+	country = RUS
+
+	decision = {
+		NOT = { exists = POL }
+		control = { province = 232 }
+	}
+
+	decision_trigger = {
+		area = { area = "Warsaw" data = 2 }
+		area = { area = "Krakow" data = 2 }
+		NOT = { war = { country = LIT } }
+		NOT = { war = { country = AUS } }
+		#atwar = no
+	}
+	
+	trigger = {
+		NOT = { exists = POL }
+		area = { area = "Warsaw" data = 2 }
+		area = { area = "Krakow" data = 2 }
+		NOT = { war = { country = LIT } }
+		NOT = { war = { country = AUS } }
+		#atwar = no
+	}
+
+	name = "The Fate of Poland"
+	desc = "We have liberated Poland from Lithuania. They are an oppressed brother people, just like we were, and they would certainly be grateful to us if we were to free them."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 14
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Free our Polish brothers!"
+		ai_chance = 95
+		command = { type = independence which = POL value = 1 }
+		command = { type = make_puppet which = POL }
+	}
+	action = { trigger = { ai = yes }
+		name = "Rule them directly"
+		ai_chance = 5
+		#command = { type = dissent value = 5 }
+	}
+}
+
+
+event = {
+	id = 56075
+	country = RUS
+	
+	decision = {
+		exists = U00
+		exists = GEO
+		NOT = {
+			OR = {
+				war = { country = U00 }
+				war = { country = GEO }
+				war = { country = LIT }
+				alliance = { country = GEO }
+				alliance = { country = SPA }
+				ispuppet = RUS
+				ispuppet = U00
+				ispuppet = GEO
+			}
+		}
+		NOT = { government = democratic }
+	}
+	decision_trigger = {
+		OR = {
+			flag = RUS_com_friendly
+			event = 44031
+			alliance = { country = U00 }
+		}
+	}
+	
+	trigger = {
+		exists = U00
+		exists = GEO
+		OR = {
+			flag = RUS_com_friendly
+			event = 44031
+			alliance = { country = U00 }
+		}
+		NOT = {
+			OR = {
+				war = { country = U00 }
+				war = { country = GEO }
+				war = { country = LIT }
+				alliance = { country = GEO }
+				alliance = { country = SPA }
+				ispuppet = RUS
+				ispuppet = U00
+				ispuppet = GEO
+			}
+		}
+		NOT = { government = democratic }
+	}
+	
+	name = "The Partition of Georgia"
+	desc = "Propose to partition Georgia with the Union of Rome."
+	style = 2
+	picture = "Mol_Rib"
+	decision_picture = "decision_MRPact"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 14
+	deathdate = { day = 1 month = january year = 1963 }
+	
+	action = {
+		name = "Propose it"
+		ai_chance = 95
+		command = { type = relation which = U00 value = 15 }
+		command = { type = set_relation which = GEO value = -75 }
+		#command = { type = relation which = TUR value = -50 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 55055 }
+	}
+	action = { trigger = { ai = yes }
+		name = "Better not"
+		ai_chance = 5
+	}
+}
+
+event = {
+	id = 56076
+	country = RUS
+	
+	name = "The Partition of Georgia - Accepted"
+	desc = "The Union of Rome has accepted our proposal."
+	style = 2
+	picture = "Mol_Rib"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = end_guarantee which = RUS where = GEO }
+		
+		command = { type = addcore which = 696 }
+		command = { type = addcore which = 698 }
+		command = { type = addcore which = 702 }
+		command = { type = addcore which = 706 }
+		command = { type = addcore which = 710 }
+	}
+}
+
+event = {
+	id = 56077
+	country = RUS
+	
+	name = "The Partition of Georgia - Declined"
+	desc = "The Union of Rome has declined our porposal"
+	style = 2
+	picture = "Mol_Rib"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = relation which = U00 value = -15 }
+	}
+}
+
+event = {
+	id = 56078
+	country = RUS
+	
+	trigger = {
+		NOT = { exists = GEO }
+		OR = {
+			control = { province = 709 data = -3 }
+			control = { province = 709 data = U00 }
+		}
+		NOT = { war = { country = U00 } }
+		event = 56075
+	}
+	
+	name = "The Partition of Georgia - Territory"
+	desc = "South Georgia to the Union of Rome"
+	style = 2
+	picture = "Mol_Rib"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 13
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = "Honour the agreement"
+		ai_chance = 95
+		command = { type = relation which = U00 value = 10 }
+		
+		command = { type = secedeprovince which = U00 value = 704 }
+		command = { type = secedeprovince which = U00 value = 707 }
+		command = { type = secedeprovince which = U00 value = 708 }
+		command = { type = secedeprovince which = U00 value = 709 }
+		
+		command = { type = trigger which = 55056 }
+		command = { type = sleepevent which = 55057 } #dishonors Pact
+	}
+	
+	action = {
+		trigger = {
+			NOT = { alliance = { country = U00 } }
+		}
+		name = "EVT_2018_ACTB"
+		ai_chance = 5
+		command = { type = relation which = U00 value = -30 }
+		command = { type = setflag which = Pact_Broken }
+		command = { type = belligerence value = 5 }
+	}
+}
+
+event = {
+	id = 56080
+	country = RUS
+	
+	decision = {
+		exists = GEO
+		event = 56076
+		NOT = {    
+			alliance = { country = GEO }
+			war = { country = GEO }
+		}
+	}
+	decision_trigger = {
+		NOT = {    
+			alliance = { country = GEO }
+			war = { country = GEO }
+		}
+	}
+	
+	trigger = {
+		event = 56076
+		exists = GEO
+		NOT = {    
+			alliance = { country = GEO }
+			war = { country = GEO }
+		}
+	}
+	
+	name = "Annexation of Georgia"
+	desc = "Demand that Georgia become a part of Russia"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = february year = 1939 }
+	offset = 13
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = "Send the Ultimatum"
+		command = { type = relation which = GEO value = -20 }
+		command = { type = relation which = TUR value = -5 }
+		command = { type = relation which = LIT value = -5 }
+		command = { type = end_non_aggression which = RUS where = GEO }
+		command = { type = trigger which = 34005 }
+	}
+}
+
+event = { 
+	id = 56081
+	country = RUS
+
+	name = "Annexation of Georgia - Refusal"
+	desc = "Georgia refuses our demand."
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "ACTIONNAME2903A" # Declare War
+		ai_chance = 100
+		command = { type = war which = GEO }
+		command = { type = relation which = TUR value = -10 }
+		command = { type = relation which = LIT value = -10 }
+	}
+}
+event = { 
+	id = 56082
+	country = RUS
+
+	name = "Annexation of Georgia - Success"
+	desc = "Georgia agreed to become part of our country."
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = inherit which = GEO }
+		command = { type = dissent value = -5 }
+		command = { type = relation which = TUR value = -5 }
+		command = { type = relation which = LIT value = -10 }
+	}
+}
+
+event = { 
+	id = 56085
+	country = RUS
+
+	name = "Lithuanian Diplomatic Offensive"
+	desc = "Lithuania has offered to resolve any outstanding territorial issues in exchange for a permanent peace treaty. Their terms are exceptionally generous. The Caucasus will be confirmed as our sphere of influence, and we shall receive all our claims there and in Western Russia. In exchange we will refrain from any further claims and hostile actions."
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		trigger = {
+			government = democratic
+		}
+		name = ACTION_NAME_AGREE
+		ai_chance = 85
+		command = { type = trigger which = 44031 }
+		command = { type = dissent value = -5 }
+		#
+		command = { type = removecore which = 274 }
+		command = { type = removecore which = 270 }
+		command = { type = removeclaim which = 275 }
+		command = { type = removeclaim which = 271 }
+		command = { type = removeclaim which = 272 }
+		command = { type = removeclaim which = 273 }
+		#
+		command = { type = clrflag which = RUS_claim_border }
+		command = { type = clrflag which = RUS_belligerent_LIT }
+		#
+		command = { type = domestic which = interventionism value = -1 }
+	}
+	action = {
+		trigger = {
+			government = democratic
+		}
+		name = "No, it is a sign of their weakness"
+		ai_chance = 15
+		command = { type = trigger which = 44032 }
+		command = { type = dissent value = 3 }
+		#
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+	
+	action = {
+		trigger = {
+			NOT = { government = democratic }
+		}
+		name = "No, it is a sign of their weakness"
+		ai_chance = 60
+		command = { type = trigger which = 44032 }
+		command = { type = dissent value = 3 }
+		#
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+	action = {
+		trigger = {
+			NOT = { government = democratic }
+		}
+		name = ACTION_NAME_AGREE
+		ai_chance = 40
+		command = { type = trigger which = 44031 }
+		command = { type = dissent value = -5 }
+		#
+		command = { type = removecore which = 274 }
+		command = { type = removecore which = 270 }
+		command = { type = removeclaim which = 275 }
+		command = { type = removeclaim which = 271 }
+		command = { type = removeclaim which = 272 }
+		command = { type = removeclaim which = 273 }
+		#
+		command = { type = clrflag which = RUS_claim_border }
+		command = { type = clrflag which = RUS_belligerent_LIT }
+		#
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}

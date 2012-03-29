@@ -1,0 +1,2382 @@
+####################################
+# Japan by Lothos
+#		Minister Change Events
+####################################
+# Who to invade flags
+#	AttackYuan		= Attack China
+#	AttackChina		= Attack Guang Clique
+
+# Where to invade Flags
+#	ChinaSouth		= Invade the South beaches
+#	ChinaNorth		= Invade the North beaches
+
+# Air AI Flags
+#	JAPAirAINaval	= Naval Priority for bombardment
+#	JAPAirAIGround	= Ground support is a priority
+
+# Misc. Flags
+#	ChinaBackoff	= Backoff from his attack on China
+#	ChinaBackoffSiam = Backoff from his attack on China
+
+# Pacific War Flags
+#	JAPStandardPacific	= Standard Pacific War AI
+#	JAPInvadePHI		= Invade the Phillipenese
+#	JAPInvadeNEPacific	= Invade the North East side of the Pacific
+#	JAPInvadeNEI		= Invade the Netherlands East Indies and Singapore
+#	JAPInvadeNewGuinea	= Invade New Guinea
+
+# Homeland Defense Flags
+#	JAPHomeland			= Homeland under attack
+
+# Unit building AI
+#	JAPBuildStandard	= Standard Building of units 
+#	JAPBuildLand		= Priority Building land units
+
+#############################################
+# Chinese Invasion AI
+#############################################
+event = {
+	id = 3011001 
+	country = JAP
+	
+	trigger = {
+		ai = yes
+		OR = {
+			war = { country = CYN }
+			war = { country = CHI }
+		}
+		not = { war = { country = MEX } }
+		not = { war = { country = RUS } }
+		not = { war = { country = ENG } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ai which = "switch/JAP_China.ai" }
+	}
+}
+################
+# Backoff from China AI
+#############################################
+event = {
+	id = 3011002 
+	country = JAP
+	
+	trigger = {
+		ai = yes
+		
+		ai = CYN
+		war = { country = CYN }
+		lost_national = { country = CYN value = 35 }
+		ai = CHI
+		war = { country = CHI }
+		
+		lost_national = { country = CHI value = 35 }
+		not = { war = { country = MEX } }
+		not = { war = { country = RUS } }
+		not = { war = { country = ENG } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ai which = "switch/JAP_Backoff.ai" }
+	}
+}
+################
+# Pacific war
+#############################################
+
+################
+# Japan does not attack China AI
+#############################################
+event = {
+	id = 3011003 
+	country = JAP
+	
+	trigger = {
+		ai = yes
+		event = 42000
+		NOT = { war = { country = CYN } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+        date = { day = 0 month = june year = 1937 }
+        offset = 5
+	deathdate = { day = 15 month = september year = 1937 }
+
+	action = {
+		command = { type = ai which = "switch/JAP_Backoff.ai" }
+	}
+}
+################
+# Japan release troops for Indo China
+#############################################
+# event = {
+	# id = 3011004
+	# #random = no 
+	# country = JAP
+	
+	# trigger = {
+		# ai = yes
+		# puppet = { country = U03 country = JAP }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0	
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 1
+	# deathdate = { day = 29 month = december year = 1963 }
+
+	# action = {
+		# command = { type = ai which = "switch/JAP_Vichy_IndoChina.ai" }
+	# }
+# }
+################
+# Japan loads backoff2 AI
+#############################################
+# event = {
+	# id = 3011005
+	# #random = no 
+	# country = JAP
+	# persistent = yes
+	
+	# trigger = {
+		# ai = yes
+		# ai = CYN
+		# NOT = { local_flag = ChinaBackoff }
+		# war = { country = CYN }
+		# OR = {
+			# AND = {
+				# year = 1937
+				# NOT = { year = 1939 }
+				# OR = {
+					# AND = {
+						# lost_national = { country = CYN value = 35 }
+						# NOT = { control = { province = 1367 data = JAP } }
+						# NOT = { control = { province = 1365 data = JAP } } # Haikou
+					# }
+					# AND = {
+						# lost_national = { country = CYN value = 40 }
+						# OR = {
+							# control = { province = 1367 data = JAP }
+							# control = { province = 1365 data = JAP } # Haikou
+						# }
+					# }
+				# }
+			# }
+			# AND = {
+				# year = 1939
+				# NOT = { year = 1941 }
+				# OR = {
+					# AND = {
+						# lost_national = { country = CYN value = 38 }
+						# NOT = { control = { province = 1367 data = JAP } }
+						# NOT = { control = { province = 1365 data = JAP } } # Haikou
+					# }
+					# AND = {
+						# lost_national = { country = CYN value = 43 }
+						# OR = {
+							# control = { province = 1367 data = JAP }
+							# control = { province = 1365 data = JAP } # Haikou
+						# }
+					# }
+				# }
+			# }
+			# AND = {
+				# year = 1941
+				# OR = {
+					# AND = {
+						# lost_national = { country = CYN value = 40 }
+						# NOT = { control = { province = 1367 data = JAP } }
+						# NOT = { control = { province = 1365 data = JAP } } # Haikou
+					# }
+					# AND = {
+						# lost_national = { country = CYN value = 45 }
+						# OR = {
+							# control = { province = 1367 data = JAP }
+							# control = { province = 1365 data = JAP } # Haikou
+						# }
+					# }
+				# }
+			# }
+		# }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0	
+	
+	# date = { day = 0 month = january year = 1936 }
+	# offset = 1
+	# deathdate = { day = 29 month = december year = 1963 }
+
+	# action = {
+		# command = { type = local_setflag which = ChinaBackoff }
+		# command = { type = local_clrflag which = ChinaBackoffSiam }
+		# command = { type = ai which = "switch/JAP_Backoff2.ai" }
+	# }
+# }
+################
+# Japan goes back on the attack in China
+#############################################
+# event = {
+	# id = 3011006
+	# #random = no 
+	# country = JAP
+	# persistent = yes
+	
+	# trigger = {
+		# ai = yes
+		# ai = CYN
+		# local_flag = ChinaBackoff
+		# war = { country = CYN }
+		# NOT = {
+			# AND = {
+				# year = 1937
+				# NOT = { year = 1939 }
+				# OR = {
+					# AND = {
+						# lost_national = { country = CYN value = 35 }
+						# NOT = { control = { province = 1367 data = JAP } }
+						# NOT = { control = { province = 1365 data = JAP } } # Haikou
+					# }
+					# AND = {
+						# lost_national = { country = CYN value = 40 }
+						# OR = {
+							# control = { province = 1367 data = JAP }
+							# control = { province = 1365 data = JAP } # Haikou
+						# }
+					# }
+				# }
+			# }
+			# AND = {
+				# year = 1939
+				# NOT = { year = 1941 }
+				# OR = {
+					# AND = {
+						# lost_national = { country = CYN value = 38 }
+						# NOT = { control = { province = 1367 data = JAP } }
+						# NOT = { control = { province = 1365 data = JAP } } # Haikou
+					# }
+					# AND = {
+						# lost_national = { country = CYN value = 43 }
+						# OR = {
+							# control = { province = 1367 data = JAP }
+							# control = { province = 1365 data = JAP } # Haikou
+						# }
+					# }
+				# }
+			# }
+			# AND = {
+				# year = 1941
+				# OR = {
+					# AND = {
+						# lost_national = { country = CYN value = 40 }
+						# NOT = { control = { province = 1367 data = JAP } }
+						# NOT = { control = { province = 1365 data = JAP } } # Haikou
+					# }
+					# AND = {
+						# lost_national = { country = CYN value = 45 }
+						# OR = {
+							# control = { province = 1367 data = JAP }
+							# control = { province = 1365 data = JAP } # Haikou
+						# }
+					# }
+				# }
+			# }
+		# }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0	
+	
+	# date = { day = 0 month = january year = 1936 }
+	# offset = 1
+	# deathdate = { day = 29 month = december year = 1963 }
+
+	# action = {
+		# command = { type = local_clrflag which = ChinaBackoff }
+		# command = { type = local_clrflag which = ChinaBackoffSiam }
+		# command = { type = ai which = "switch/JAP_Backoff_Remove.ai" }
+	# }
+# }
+################
+# Japan invades China from the North
+#############################################
+event = {
+	id = 3011007 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ChinaNorth }
+		war = { country = CYN }
+		NOT = { war = { country = MEX } }
+		NOT = { war = { country = ENG } }
+		NOT = { war = { country = RUS } }
+		OR = {
+			NOT = { control = { province = 1331 data = -3 } }
+			NOT = { control = { province = 1332 data = -3 } }
+			NOT = { control = { province = 1333 data = -3 } }
+			NOT = { control = { province = 1334 data = -3 } }
+		}
+		NOT = { # Southern Invasion
+			NOT = { ai = CYN }
+			AND = {
+				NOT = { control = { province = 1365 data = -3 } }
+				OR = {
+					NOT = { garrison = { country = CYN province = 1365 type = land size = 1 area = no } } 
+					AND = {
+						NOT = { ai = CYN }
+						NOT = { garrison = { country = CYN province = 1365 type = land size = 2 area = no } } 
+					}
+				}
+			}
+			AND = {
+				war = { country = CYN }
+				NOT = { control = { province = 1365 data = -3 } }
+				OR = {
+					NOT = { garrison = { country = CYN province = 1365 type = land size = 1 area = no } } 
+					AND = {
+						NOT = { ai = CYN }
+						NOT = { garrison = { country = CYN province = 1365 type = land size = 2 area = no } }
+					}
+				}
+			}
+			AND = {
+				NOT = { control = { province = 1367 data = -3 } }
+				OR = {
+					NOT = { garrison = { country = CYN province = 1367  type = land size = 1 area = no } }
+					AND = {
+						NOT = { ai = CYN }
+						NOT = { garrison = { country = CYN province = 1367  type = land size = 2 area = no } }
+					}
+				}
+			}
+			AND = {
+				war = { country = CYN }
+				NOT = { control = { province = 1367 data = -3 } }
+				OR = {
+					NOT = { garrison = { country = CYN province = 1367  type = land size = 1 area = no } }
+					AND = {
+						NOT = { ai = CYN }
+						NOT = { garrison = { country = CYN province = 1367  type = land size = 2 area = no } }
+					}
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = ChinaSouth }
+		command = { type = local_setflag which = ChinaNorth }
+		command = { type = ai which = "switch/JAP_China_North.ai" }
+	}
+}
+
+################
+# Japan invades China from the south
+#############################################
+event = {
+	id = 3011009 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { ai = CHI }
+		NOT = { local_flag = ChinaSouth }
+		war = { country = CHI }
+		NOT = { war = { country = MEX } }
+		NOT = { war = { country = U08 } }
+		NOT = { war = { country = GER } }
+		AND = {
+			control = { province = 1331 data = -3 }
+			control = { province = 1332 data = -3 }
+			control = { province = 1333 data = -3 }
+			control = { province = 1334 data = -3 }
+		}
+		OR = {
+			AND = {
+				control = { province = 1358 data = -3 }
+				control = { province = 1360 data = -3 }
+				control = { province = 1375 data = -3 }
+			}
+			AND = {
+				NOT = { control = { province = 1365 data = -3 } }
+				OR = {
+					NOT = { garrison = { country = CHI province = 1365 type = land size = 1 area = no } }  
+					AND = {
+						NOT = { ai = CHI }
+						NOT = { garrison = { country = CHI province = 1365 type = land size = 2 area = no } }  
+					}
+				}
+			}
+			AND = {
+				war = { country = CHI }
+				NOT = { control = { province = 1365 data = -3 } }
+				OR = {
+					NOT = { garrison = { country = CHI province = 1365 type = land size = 1 area = no } }  
+					AND = {
+						NOT = { ai = CHI }
+						NOT = { garrison = { country = CHI province = 1365 type = land size = 2 area = no } }  
+					}
+				}
+			}
+			AND = {
+				NOT = { control = { province = 1367 data = -3 } }
+				OR = {
+					NOT = { garrison = { country = CHI province = 1367  type = land size = 1 area = no } }
+					AND = {
+						NOT = { ai = CHI }
+						NOT = { garrison = { country = CHI province = 1367  type = land size = 2 area = no } }
+					}
+				}
+			}
+			AND = {
+				war = { country = CHI }
+				NOT = { control = { province = 1367 data = -3 } }
+				OR = {
+					NOT = { garrison = { country = CHI province = 1367  type = land size = 1 area = no } }
+					AND = {
+						NOT = { ai = CHI }
+						NOT = { garrison = { country = CHI province = 1367  type = land size = 2 area = no } }
+					}
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_setflag which = ChinaSouth }
+		command = { type = local_clrflag which = ChinaNorth }
+		command = { type = ai which = "switch/JAP_China_South.ai" }
+	}
+}
+################
+# Japanese Diplomacy section
+#
+# Japan watches China/Warlords Diplomacy
+#############################################
+# event = {
+	# id = 3011010
+	# #random = no 
+	# country = JAP
+	# persistent = yes
+	
+	# trigger = {
+		# ai = yes
+		# OR = {
+			# local_flag = AttackYuan
+			# war = { country = CYN }
+		# }
+		# OR = {
+			# local_flag = AttackChina
+			# war = { country = CHI }
+		# }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0	
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 4
+	# deathdate = { day = 29 month = december year = 1963 }
+
+	# action = {
+		# command = { type = local_clrflag which = AttackYuan }
+		# command = { type = local_clrflag which = AttackChina }
+	# }
+# }
+################
+# Japan watches Yuan Diplomacy
+#############################################
+# event = {
+	# id = 3011011
+	# #random = no 
+	# country = JAP
+	# persistent = yes
+	
+	# trigger = {
+		# ai = yes
+		# atwar = no
+		# NOT = { local_flag = AttackYuan }
+		# land_percentage = { country = CYN value = 1.0 }
+		# OR = {
+			# AND = {
+				# under_attack = CHI
+				# war = { country = CHI country = CYN }
+				# lost_national = { country = CHI value = 40 }
+			# }
+			# AND = {
+				# flag = CHI_Aggresion_Asia 
+				# OR = {
+					# AND = {
+						# war = { country = CHI country = CYN }
+						# lost_national = { country = CHI value = 50 }
+					# }
+					# NOT = { exists = CHI }
+				# }
+			# }
+		# }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0	
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 4
+	# deathdate = { day = 29 month = december year = 1963 }
+
+	# action = {
+		# command = { type = local_setflag which = AttackYuan }
+		# command = { type = ai_prepare_war which = CYN }
+	# }
+# }
+################
+# Japan watches NatChi Diplomacy
+#############################################
+# event = {
+	# id = 3011012
+	# #random = no 
+	# country = JAP
+	# persistent = yes
+	
+	# trigger = {
+		# ai = yes
+		# atwar = no
+		# NOT = { local_flag = AttackChina }
+		# land_percentage = { country = CHI value = 1.0 }
+		# AND = {
+			# under_attack = CYN
+			# war = { country = CHI country = CYN }
+			# lost_national = { country = CYN value = 50 }
+		# }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0	
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 4
+	# deathdate = { day = 29 month = december year = 1963 }
+
+	# action = {
+		# command = { type = local_setflag which = AttackChina }
+		# command = { type = ai_prepare_war which = CHI }
+	# }
+# }
+
+################
+# Japan Air AI Naval portion
+#############################################
+event = {
+	id = 3011014 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = JAPAirAINaval }
+
+		NOT = { lost_national = { country = JAP value = 2 } }
+		OR = {
+			war = { country = MEX }
+			war = { country = PHI }
+			war = { country = U08 }
+			war = { country = ENG }
+			war = { country = GER }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_setflag which = JAPAirAINaval }
+		command = { type = local_clrflag which = JAPAirAIGround }
+		command = { type = ai which = "switch/JAP_Air_Naval.ai" }
+	}
+}
+################
+# Japanese Air AI Ground portion
+#############################################
+event = {
+	id = 3011015 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = JAPAirAIGround }
+
+		OR = {
+			lost_national = { country = JAP value = 2 }
+			war = { country = CYN }
+			war = { country = CHC }
+			war = { country = CHI }
+			war = { country = RUS }
+		}
+		NOT = {
+			war = { country = MEX }
+			war = { country = PHI }
+			war = { country = U08 }
+			war = { country = ENG }
+			war = { country = GER }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = JAPAirAINaval }
+		command = { type = local_setflag which = JAPAirAIGround }
+		command = { type = ai which = "switch/JAP_Air_Ground.ai" }
+	}
+}
+
+
+################
+# Pacific War Flags
+#	JAPStandardPacific	= Standard Pacific War AI
+#	JAPInvadePHI		= Invade the Phillipenese
+#	JAPInvadeNEI		= Invade the Netherlands East Indies and Singapore
+#	JAPInvadeNEPacific	= Invade the North East side of the Pacific
+#	JAPInvadeNewGuinea	= Invade New Guinea
+################
+# Japanese Pacific War AIs JAPInvadePHI
+#############################################
+event = {
+	id = 3011016 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = JAPInvadePHI }
+		NOT = { local_flag = JAPHomeland }
+		NOT = { garrison = { country = PHI province = 1579  type = land size = 20 area = yes } } # Davao
+		#NOT = { garrison = { country = MEX province = 1579  type = land size = 20 area = yes } } # Davao
+		OR = {
+			# Philippines
+			AND = {
+				war = { country = PHI }
+				NOT = { lost_national = { country = PHI value = 60 } }
+			}
+			AND = {
+				owned = { province = 1572 data = JAP } # Palawan
+				NOT = { control = { province = 1572 data = JAP } } # Palawan
+			}
+			AND = {
+				owned = { province = 1571 data = JAP } # Mindoro
+				NOT = { control = { province = 1571 data = JAP } } # Mindoro
+			}
+			AND = {
+				owned = { province = 1575 data = JAP } # Samar
+				NOT = { control = { province = 1575 data = JAP } } # Samar
+			}
+			AND = {
+				owned = { province = 1573 data = JAP } # Palawan
+				NOT = { control = { province = 1573 data = JAP } } # Leyte
+			}
+			AND = {
+				owned = { province = 1578 data = JAP } # Cagayan
+				NOT = { control = { province = 1578 data = JAP } } # Cagayan
+			}
+			AND = {
+				owned = { province = 1574 data = JAP } # Negros
+				NOT = { control = { province = 1574 data = JAP } } # Bacolod
+			}
+			AND = {
+				owned = { province = 1579 data = JAP } # Davos
+				NOT = { control = { province = 1579 data = JAP } } # Davos
+			}
+			AND = {
+				owned = { province = 1576 data = JAP } # Panay
+				NOT = { control = { province = 1576 data = JAP } } # Panay
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_setflag which = JAPInvadePHI }
+		command = { type = local_clrflag which = JAPInvadeNEI }
+		command = { type = local_clrflag which = JAPInvadeNEPacific }
+		command = { type = local_clrflag which = JAPInvadeNewGuinea }
+		command = { type = local_clrflag which = JAPStandardPacific }
+		command = { type = ai which = "switch/JAP_Naval_PHI.ai" }
+	}
+}
+################
+# Japanese Pacific War AIs JAPInvadeNEI
+#############################################
+event = {
+	id = 3011017 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = JAPInvadeNEI }
+		NOT = { local_flag = JAPHomeland }
+		OR = {
+			#garrison = { country = MEX province = 1579  type = land size = 20 area = yes } # Davao
+			garrison = { country = PHI province = 1579  type = land size = 20 area = yes } # Davao
+			NOT = {
+				# Philippines
+				AND = {
+					war = { country = PHI }
+					NOT = { lost_national = { country = PHI value = 60 } }
+				}
+				AND = {
+					owned = { province = 1572 data = JAP } # Palawan
+					NOT = { control = { province = 1572 data = JAP } } # Palawan
+				}
+				AND = {
+					owned = { province = 1571 data = JAP } # Mindoro
+					NOT = { control = { province = 1571 data = JAP } } # Mindoro
+				}
+				AND = {
+					owned = { province = 1575 data = JAP } # Samar
+					NOT = { control = { province = 1575 data = JAP } } # Samar
+				}
+				AND = {
+					owned = { province = 1573 data = JAP } # Palawan
+					NOT = { control = { province = 1573 data = JAP } } # Leyte
+				}
+				AND = {
+					owned = { province = 1578 data = JAP } # Cagayan
+					NOT = { control = { province = 1578 data = JAP } } # Cagayan
+				}
+				AND = {
+					owned = { province = 1574 data = JAP } # Negros
+					NOT = { control = { province = 1574 data = JAP } } # Bacolod
+				}
+				AND = {
+					owned = { province = 1579 data = JAP } # Davos
+					NOT = { control = { province = 1579 data = JAP } } # Davos
+				}
+				AND = {
+					owned = { province = 1576 data = JAP } # Panay
+					NOT = { control = { province = 1576 data = JAP } } # Panay
+				}
+			}
+		}
+		OR = {
+			AND = {
+				war = { country = U08 }
+				NOT = { control = { province = 1648 data = JAP } }  #Dutch harbor provs?
+				NOT = { control = { province = 1653 data = JAP } }
+				NOT = { control = { province = 1638 data = JAP } }
+				NOT = { garrison = { country = U08 province = 1648  type = land size = 10 area = yes } }
+				NOT = { garrison = { country = U08 province = 1653  type = land size = 10 area = yes } }
+				NOT = { garrison = { country = U08 province = 1638  type = land size = 10 area = yes } }
+			}
+			AND = {
+				war = { country = GER }
+				NOT = { control = { province = 1432 data = JAP } }
+				NOT = { garrison = { country = GER province = 1432  type = land size = 10 area = yes } } # Singapore
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = JAPInvadePHI }
+		command = { type = local_setflag which = JAPInvadeNEI }
+		command = { type = local_clrflag which = JAPInvadeNEPacific }
+		command = { type = local_clrflag which = JAPInvadeNewGuinea }
+		command = { type = local_clrflag which = JAPStandardPacific }
+		command = { type = ai which = "switch/JAP_Naval_NEI.ai" }
+	}
+}
+################
+# Japanese Pacific War AIs JAPInvadeNEPacific
+#############################################
+event = {
+	id = 3011018 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = JAPInvadeNEPacific }
+		NOT = { local_flag = JAPHomeland }
+		OR = {
+			#garrison = { country = MEX province = 1579  type = land size = 20 area = yes } # Davao
+			garrison = { country = PHI province = 1579  type = land size = 20 area = yes } # Davao
+			NOT = {
+				# Philippines
+				AND = {
+					war = { country = PHI }
+					NOT = { lost_national = { country = PHI value = 60 } }
+				}
+				AND = {
+					owned = { province = 1572 data = JAP } # Palawan
+					NOT = { control = { province = 1572 data = JAP } } # Palawan
+				}
+				AND = {
+					owned = { province = 1571 data = JAP } # Mindoro
+					NOT = { control = { province = 1571 data = JAP } } # Mindoro
+				}
+				AND = {
+					owned = { province = 1575 data = JAP } # Samar
+					NOT = { control = { province = 1575 data = JAP } } # Samar
+				}
+				AND = {
+					owned = { province = 1573 data = JAP } # Palawan
+					NOT = { control = { province = 1573 data = JAP } } # Leyte
+				}
+				AND = {
+					owned = { province = 1578 data = JAP } # Cagayan
+					NOT = { control = { province = 1578 data = JAP } } # Cagayan
+				}
+				AND = {
+					owned = { province = 1574 data = JAP } # Negros
+					NOT = { control = { province = 1574 data = JAP } } # Negros
+				}
+				AND = {
+					owned = { province = 1579 data = JAP } # Davos
+					NOT = { control = { province = 1579 data = JAP } } # Davos
+				}
+				AND = {
+					owned = { province = 1576 data = JAP } # Panay
+					NOT = { control = { province = 1576 data = JAP } } # Panay
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				war = { country = U08 }
+				NOT = { control = { province = 1648 data = JAP } }
+				NOT = { control = { province = 1653 data = JAP } }
+				NOT = { control = { province = 1638 data = JAP } }
+				NOT = { garrison = { country = U08 province = 1648  type = land size = 10 area = yes } }
+				NOT = { garrison = { country = U08 province = 1653  type = land size = 10 area = yes } }
+				NOT = { garrison = { country = U08 province = 1638  type = land size = 10 area = yes } }
+			}
+			AND = {
+				war = { country = GER }
+				NOT = { control = { province = 1432 data = JAP } }
+				NOT = { garrison = { country = GER province = 1432  type = land size = 10 area = yes } } # Singapore
+			}
+		}
+		OR = {
+			#Outer Japanese Islands
+			NOT = { control = { province = 1661 data = JAP } } # Motoyama
+			NOT = { control = { province = 1686 data = JAP } } # Saipan
+			NOT = { control = { province = 1685 data = JAP } } # Tinian
+			NOT = { control = { province = 1684 data = JAP } } # Rota
+			NOT = { control = { province = 1670 data = JAP } } # Negrulmud
+			NOT = { control = { province = 1662 data = JAP } } # Oki-Mura
+			NOT = { control = { province = 1672 data = JAP } } # Marcus Island Minami
+			
+			#Far Outer Rim Japanese Islands
+			NOT = { control = { province = 1675 data = JAP } } # Eniwetok
+			NOT = { control = { province = 1674 data = JAP } } # Bikini
+			NOT = { control = { province = 1676 data = JAP } } # Kwajalein 
+			NOT = { control = { province = 1681 data = JAP } } # Wotje
+			NOT = { control = { province = 1677 data = JAP } } # Dejap
+			NOT = { control = { province = 1669 data = JAP } } # Ngulu
+			NOT = { control = { province = 1666 data = JAP } } # Totol
+			NOT = { control = { province = 1667 data = JAP } } # Ulithi Weno
+			NOT = { control = { province = 1665 data = JAP } } # Truk Kolonia
+			NOT = { control = { province = 1668 data = JAP } } # Woleai
+			AND = {
+				war = { country = MEX }
+				NOT = { control = { province = 1673 data = JAP } } # Wake Island
+			}
+			AND = {
+				war = { country = U08 }
+				NOT = { control = { province = 1683 data = JAP } } # Guam
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = JAPInvadePHI }
+		command = { type = local_clrflag which = JAPInvadeNEI }
+		command = { type = local_setflag which = JAPInvadeNEPacific }
+		command = { type = local_clrflag which = JAPInvadeNewGuinea }
+		command = { type = local_clrflag which = JAPStandardPacific }
+		command = { type = ai which = "switch/JAP_Naval_NEPacific.ai" }
+	}
+}
+################
+# Japanese Pacific War AIs JAPInvadeNewGuinea
+#############################################
+event = {
+	id = 3011019 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = JAPInvadeNewGuinea }
+		NOT = { local_flag = JAPHomeland }
+		OR = {
+			#garrison = { country = MEX province = 1579  type = land size = 20 area = yes } # Davao
+			garrison = { country = PHI province = 1579  type = land size = 20 area = yes } # Davao
+			NOT = {
+				# Philippines
+				AND = {
+					war = { country = PHI }
+					NOT = { lost_national = { country = PHI value = 60 } }
+				}
+				AND = {
+					owned = { province = 1572 data = JAP } # Palawan
+					NOT = { control = { province = 1572 data = JAP } } # Palawan
+				}
+				AND = {
+					owned = { province = 1571 data = JAP } # Mindoro
+					NOT = { control = { province = 1571 data = JAP } } # Mindoro
+				}
+				AND = {
+					owned = { province = 1575 data = JAP } # Samar
+					NOT = { control = { province = 1575 data = JAP } } # Samar
+				}
+				AND = {
+					owned = { province = 1573 data = JAP } # Palawan
+					NOT = { control = { province = 1573 data = JAP } } # Leyte
+				}
+				AND = {
+					owned = { province = 1578 data = JAP } # Cagayan
+					NOT = { control = { province = 1578 data = JAP } } # Cagayan
+				}
+				AND = {
+					owned = { province = 1574 data = JAP } # Negros
+					NOT = { control = { province = 1574 data = JAP } } # Negros
+				}
+				AND = {
+					owned = { province = 1579 data = JAP } # Davos
+					NOT = { control = { province = 1579 data = JAP } } # Davos
+				}
+				AND = {
+					owned = { province = 1576 data = JAP } # Panay
+					NOT = { control = { province = 1576 data = JAP } } # Panay
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				war = { country = U08 }
+				NOT = { control = { province = 1648 data = JAP } }
+				NOT = { control = { province = 1653 data = JAP } }
+				NOT = { control = { province = 1638 data = JAP } }
+				NOT = { garrison = { country = U08 province = 1648  type = land size = 10 area = yes } }
+				NOT = { garrison = { country = U08 province = 1653  type = land size = 10 area = yes } }
+				NOT = { garrison = { country = U08 province = 1638  type = land size = 10 area = yes } }
+			}
+			AND = {
+				war = { country = GER }
+				NOT = { control = { province = 1432 data = JAP } }
+				NOT = { garrison = { country = GER province = 1432  type = land size = 10 area = yes } } # Singapore
+			}
+		}
+		NOT = {
+			#Outer Japanese Islands
+			NOT = { control = { province = 1661 data = JAP } } # Motoyama
+			NOT = { control = { province = 1686 data = JAP } } # Saipan
+			NOT = { control = { province = 1685 data = JAP } } # Tinian
+			NOT = { control = { province = 1684 data = JAP } } # Rota
+			NOT = { control = { province = 1670 data = JAP } } # Negrulmud
+			NOT = { control = { province = 1662 data = JAP } } # Oki-Mura
+			NOT = { control = { province = 1672 data = JAP } } # Marcus Island Minami
+			
+			#Far Outer Rim Japanese Islands
+			NOT = { control = { province = 1675 data = JAP } } # Eniwetok
+			NOT = { control = { province = 1674 data = JAP } } # Bikini
+			NOT = { control = { province = 1676 data = JAP } } # Kwajalein 
+			NOT = { control = { province = 1681 data = JAP } } # Wotje
+			NOT = { control = { province = 1677 data = JAP } } # Dejap
+			NOT = { control = { province = 1669 data = JAP } } # Ngulu
+			NOT = { control = { province = 1666 data = JAP } } # Totol
+			NOT = { control = { province = 1667 data = JAP } } # Ulithi Weno
+			NOT = { control = { province = 1665 data = JAP } } # Truk Kolonia
+			NOT = { control = { province = 1668 data = JAP } } # Woleai
+			AND = {
+				war = { country = MEX }
+				NOT = { control = { province = 1673 data = JAP } } # Wake Island
+			}
+			AND = {
+				war = { country = U08 }
+				NOT = { control = { province = 1683 data = JAP } } # Guam
+			}
+		}
+		war = { country = UAU }
+		war = { country = GER } #ENG
+		OR = {
+			#North New Guinea
+			NOT = { control = { province = 1599 data = JAP } } # Sorong
+			NOT = { control = { province = 1641 data = JAP } } # Biak Island
+			NOT = { control = { province = 1600 data = JAP } } # Babo
+			NOT = { control = { province = 1642 data = JAP } } # Arare
+			NOT = { control = { province = 1595 data = JAP } } # Sarmi
+			NOT = { control = { province = 1596 data = JAP } } # Hollandia
+			NOT = { control = { province = 1602 data = JAP } } # Aitape
+			NOT = { control = { province = 1603 data = JAP } } # Wewak
+			NOT = { control = { province = 1604 data = JAP } } # Lae
+
+			#North Solomon Islands
+			NOT = { control = { province = 1724 data = JAP } } # Admirality Islands
+			NOT = { control = { province = 1725 data = JAP } } # New Ireland
+			NOT = { control = { province = 1605 data = JAP } } # Buka Island
+			NOT = { control = { province = 1587 data = JAP } } # Bougainville
+
+			#New Britain
+			NOT = { control = { province = 1726 data = JAP } } # Rabaul
+			NOT = { control = { province = 1727 data = JAP } } # Gasmata
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = JAPInvadePHI }
+		command = { type = local_clrflag which = JAPInvadeNEI }
+		command = { type = local_clrflag which = JAPInvadeNEPacific }
+		command = { type = local_setflag which = JAPInvadeNewGuinea }
+		command = { type = local_clrflag which = JAPStandardPacific }
+		command = { type = ai which = "switch/JAP_Naval_NewGuinea.ai" }
+	}
+}
+################
+# Japanese Pacific War AIs JAPStandardPacific
+#############################################
+event = {
+	id = 3011020 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = JAPStandardPacific }
+		NOT = { local_flag = JAPHomeland }
+		OR = {
+			war = { country = UAU }
+			war = { country = ENG }
+			war = { country = GER }
+			war = { country = PHI }
+			war = { country = MEX }
+			war = { country = U08 }
+		}
+		OR = {
+			garrison = { country = MEX province = 1579  type = land size = 20 area = yes } # Davao
+			garrison = { country = PHI province = 1579  type = land size = 20 area = yes } # Davao
+			NOT = {
+				# Philippines
+				AND = {
+					war = { country = PHI }
+					NOT = { lost_national = { country = PHI value = 60 } }
+				}
+				AND = {
+					owned = { province = 1572 data = JAP } # Palawan
+					NOT = { control = { province = 1572 data = JAP } } # Palawan
+				}
+				AND = {
+					owned = { province = 1571 data = JAP } # Mindoro
+					NOT = { control = { province = 1571 data = JAP } } # Mindoro
+				}
+				AND = {
+					owned = { province = 1575 data = JAP } # Samar
+					NOT = { control = { province = 1575 data = JAP } } # Samar
+				}
+				AND = {
+					owned = { province = 1573 data = JAP } # Palawan
+					NOT = { control = { province = 1573 data = JAP } } # Leyte
+				}
+				AND = {
+					owned = { province = 1578 data = JAP } # Cagayan
+					NOT = { control = { province = 1578 data = JAP } } # Cagayan
+				}
+				AND = {
+					owned = { province = 1574 data = JAP } # Negros
+					NOT = { control = { province = 1574 data = JAP } } # Negros
+				}
+				AND = {
+					owned = { province = 1579 data = JAP } # Davos
+					NOT = { control = { province = 1579 data = JAP } } # Davos
+				}
+				AND = {
+					owned = { province = 1576 data = JAP } # Panay
+					NOT = { control = { province = 1576 data = JAP } } # Panay
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				war = { country = U08 }
+				NOT = { control = { province = 1648 data = JAP } }
+				NOT = { control = { province = 1653 data = JAP } }
+				NOT = { control = { province = 1638 data = JAP } }
+				NOT = { garrison = { country = U08 province = 1648  type = land size = 10 area = yes } }
+				NOT = { garrison = { country = U08 province = 1653  type = land size = 10 area = yes } }
+				NOT = { garrison = { country = U08 province = 1638  type = land size = 10 area = yes } }
+			}
+			AND = {
+				war = { country = GER }
+				NOT = { control = { province = 1432 data = JAP } }
+				NOT = { garrison = { country = GER province = 1432  type = land size = 10 area = yes } } # Singapore
+			}
+		}
+		NOT = {
+			#Outer Japanese Islands
+			NOT = { control = { province = 1661 data = JAP } } # Motoyama
+			NOT = { control = { province = 1686 data = JAP } } # Saipan
+			NOT = { control = { province = 1685 data = JAP } } # Tinian
+			NOT = { control = { province = 1684 data = JAP } } # Rota
+			NOT = { control = { province = 1670 data = JAP } } # Negrulmud
+			NOT = { control = { province = 1662 data = JAP } } # Oki-Mura
+			NOT = { control = { province = 1672 data = JAP } } # Marcus Island Minami
+			
+			#Far Outer Rim Japanese Islands
+			NOT = { control = { province = 1675 data = JAP } } # Eniwetok
+			NOT = { control = { province = 1674 data = JAP } } # Bikini
+			NOT = { control = { province = 1676 data = JAP } } # Kwajalein 
+			NOT = { control = { province = 1681 data = JAP } } # Wotje
+			NOT = { control = { province = 1677 data = JAP } } # Dejap
+			NOT = { control = { province = 1669 data = JAP } } # Ngulu
+			NOT = { control = { province = 1666 data = JAP } } # Totol
+			NOT = { control = { province = 1667 data = JAP } } # Ulithi Weno
+			NOT = { control = { province = 1665 data = JAP } } # Truk Kolonia
+			NOT = { control = { province = 1668 data = JAP } } # Woleai
+			AND = {
+				war = { country = MEX }
+				NOT = { control = { province = 1673 data = JAP } } # Wake Island
+			}
+			AND = {
+				war = { country = U08 }
+				NOT = { control = { province = 1683 data = JAP } } # Guam
+			}
+		}
+		NOT = {
+			#North New Guinea
+			NOT = { control = { province = 1599 data = JAP } } # Sorong
+			NOT = { control = { province = 1641 data = JAP } } # Biak Island
+			NOT = { control = { province = 1600 data = JAP } } # Babo
+			NOT = { control = { province = 1642 data = JAP } } # Arare
+			NOT = { control = { province = 1595 data = JAP } } # Sarmi
+			NOT = { control = { province = 1596 data = JAP } } # Ostasien
+			NOT = { control = { province = 1602 data = JAP } } # Aitape
+			NOT = { control = { province = 1603 data = JAP } } # Wewak
+			NOT = { control = { province = 1604 data = JAP } } # Lae
+
+			#North Solomon Islands
+			NOT = { control = { province = 1724 data = JAP } } # Admirality Islands
+			NOT = { control = { province = 1725 data = JAP } } # New Ireland
+			NOT = { control = { province = 1605 data = JAP } } # Buka Island
+			NOT = { control = { province = 1587 data = JAP } } # Bougainville
+
+			#New Britain
+			NOT = { control = { province = 1726 data = JAP } } # Rabaul
+			NOT = { control = { province = 1727 data = JAP } } # Gasmata
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = JAPInvadePHI }
+		command = { type = local_clrflag which = JAPInvadeNEI }
+		command = { type = local_clrflag which = JAPInvadeNEPacific }
+		command = { type = local_clrflag which = JAPInvadeNewGuinea }
+		command = { type = local_setflag which = JAPStandardPacific }
+		command = { type = ai which = "switch/JAP_Naval_Pacific.ai" }
+	}
+}
+################
+# Japan loads Standard builds AI
+#############################################
+event = {
+	id = 3011021 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			event = 42000
+		}
+		NOT = { local_flag = JAPBuildStandard }
+		NOT = {
+			AND = {
+				war = { country = CYN }
+				NOT = { land_percentage = { country = CYN value = 1.25 } }
+			}
+			AND = {
+				war = { country = MEX }
+				NOT = { land_percentage = { country = MEX value = 0.55 } }
+			}
+			AND = {
+				war = { country = UAU }
+				NOT = { land_percentage = { country = UAU value = 1.05 } }
+			}
+			AND = {
+				war = { country = ENG }
+				NOT = { land_percentage = { country = ENG value = 1.05 } }
+			}
+			AND = {
+				war = { country = GER }
+				NOT = { land_percentage = { country = GER value = 1.05 } }
+			}
+			AND = {
+				war = { country = RUS }
+				NOT = { land_percentage = { country = RUS value = 0.45 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_setflag which = JAPBuildStandard }
+		command = { type = local_clrflag which = JAPBuildLand }
+		command = { type = ai which = "switch/JAP_Build_Standard.ai" }
+	}
+}
+################
+# Japan loads Land builds AI
+#############################################
+event = {
+	id = 3011022 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			event = 42000
+		}
+		NOT = { local_flag = JAPBuildLand }
+		OR = {
+			AND = {
+				war = { country = CYN }
+				NOT = { land_percentage = { country = CYN value = 1.2 } }
+			}
+			AND = {
+				war = { country = MEX }
+				NOT = { land_percentage = { country = MEX value = 0.5 } }
+			}
+			AND = {
+				war = { country = UAU }
+				NOT = { land_percentage = { country = UAU value = 1.0 } }
+			}
+			AND = {
+				war = { country = ENG }
+				NOT = { land_percentage = { country = ENG value = 1.0 } }
+			}
+			AND = {
+				war = { country = GER }
+				NOT = { land_percentage = { country = GER value = 1.0 } }
+			}
+			AND = {
+				war = { country = RUS }
+				NOT = { land_percentage = { country = RUS value = 0.4 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = JAPBuildStandard }
+		command = { type = local_setflag which = JAPBuildLand }
+		command = { type = ai which = "switch/JAP_Build_Land.ai" }
+	}
+}
+################
+# Homeland Defense Flags
+#	JAPHomeland			= Homeland under attack
+################
+# Japan Homeland defense AI
+#############################################
+event = {
+	id = 3011023 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			event = 42000
+		}
+		NOT = { local_flag = JAPHomeland }
+		OR = {
+			# Japan
+			AND = {
+				owned = { province = 1554 data = JAP } # Hiroshima
+				NOT = { control = { province = 1554 data = JAP } } # Hiroshima
+			}
+			AND = {
+				owned = { province = 1553 data = JAP } # Osaka
+				NOT = { control = { province = 1553 data = JAP } } # Osaka
+			}
+			AND = {
+				owned = { province = 1558 data = JAP } # Kanazawa
+				NOT = { control = { province = 1558 data = JAP } } # Kanazawa
+			}
+			AND = {
+				owned = { province = 1557 data = JAP } # Nagoya
+				NOT = { control = { province = 1557 data = JAP } } # Nagoya
+			}
+			AND = {
+				owned = { province = 1552 data = JAP } # Tokyo
+				NOT = { control = { province = 1552 data = JAP } } # Tokyo
+			}
+			AND = {
+				owned = { province = 1556 data = JAP } # Niigata
+				NOT = { control = { province = 1556 data = JAP } } # Niigata
+			}
+			AND = {
+				owned = { province = 1550 data = JAP } # Fukushima
+				NOT = { control = { province = 1550 data = JAP } } # Fukushima
+			}
+			AND = {
+				owned = { province = 1551 data = JAP } # Akita
+				NOT = { control = { province = 1551 data = JAP } } # Akita
+			}
+			AND = {
+				owned = { province = 1549 data = JAP } # Sendai
+				NOT = { control = { province = 1549 data = JAP } } # Sendai
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_setflag which = JAPHomeland }
+		command = { type = local_clrflag which = JAPBuildStandard }
+		command = { type = local_clrflag which = JAPBuildLand }
+		command = { type = local_clrflag which = JAPInvadePHI }
+		command = { type = local_clrflag which = JAPInvadeNEI }
+		command = { type = local_clrflag which = JAPInvadeNEPacific }
+		command = { type = local_clrflag which = JAPInvadeNewGuinea }
+		command = { type = local_clrflag which = JAPStandardPacific }
+		command = { type = ai which = "switch/JAP_Homeland.ai" }
+	}
+}
+################
+# Japan Rescinds Homelands defense AI
+#############################################
+event = {
+	id = 3011024 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			event = 42000
+		}
+		local_flag = JAPHomeland
+		NOT = {
+			# Japan
+			AND = {
+				owned = { province = 1554 data = JAP } # Hiroshima
+				NOT = { control = { province = 1554 data = JAP } } # Hiroshima
+			}
+			AND = {
+				owned = { province = 1553 data = JAP } # Osaka
+				NOT = { control = { province = 1553 data = JAP } } # Osaka
+			}
+			AND = {
+				owned = { province = 1558 data = JAP } # Kanazawa
+				NOT = { control = { province = 1558 data = JAP } } # Kanazawa
+			}
+			AND = {
+				owned = { province = 1557 data = JAP } # Nagoya
+				NOT = { control = { province = 1557 data = JAP } } # Nagoya
+			}
+			AND = {
+				owned = { province = 1552 data = JAP } # Tokyo
+				NOT = { control = { province = 1552 data = JAP } } # Tokyo
+			}
+			AND = {
+				owned = { province = 1556 data = JAP } # Niigata
+				NOT = { control = { province = 1556 data = JAP } } # Niigata
+			}
+			AND = {
+				owned = { province = 1550 data = JAP } # Fukushima
+				NOT = { control = { province = 1550 data = JAP } } # Fukushima
+			}
+			AND = {
+				owned = { province = 1551 data = JAP } # Akita
+				NOT = { control = { province = 1551 data = JAP } } # Akita
+			}
+			AND = {
+				owned = { province = 1549 data = JAP } # Sendai
+				NOT = { control = { province = 1549 data = JAP } } # Sendai
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = JAPHomeland }
+		command = { type = ai which = "switch/JAP_Homeland_Rescind.ai" }
+	}
+}
+################
+# Japan loads backoff2 AI
+#############################################
+# event = {
+	# id = 3011025
+	# #random = no 
+	# country = JAP
+	# persistent = yes
+	
+	# trigger = {
+		# ai = yes
+		# ai = CYN
+		# local_flag = ChinaBackoff
+		# NOT = { local_flag = ChinaBackoffSiam }
+		# OR = {
+			# alliance = { country = JAP country = SIA }
+			# AND = {
+				# owned = { province = 1392 data = JAP }
+				# control = { province = 1392 data = JAP }
+			# }
+			# AND = {
+				# owned = { province = 1404 data = JAP }
+				# control = { province = 1404 data = JAP }
+			# }
+		# }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0	
+	
+	# date = { day = 0 month = january year = 1936 }
+	# offset = 1
+	# deathdate = { day = 29 month = december year = 1963 }
+
+	# action = {
+		# command = { type = local_setflag which = ChinaBackoffSiam }
+		# command = { type = ai which = "switch/JAP_Backoff2_Siam.ai" }
+	# }
+# }
+################
+# Japan goes back on the attack in China
+#############################################
+# event = {
+	# id = 3011026
+	# #random = no 
+	# country = JAP
+	# persistent = yes
+	
+	# trigger = {
+		# ai = yes
+		# ai = CYN
+		# NOT = { local_flag = ChinaBackoff }
+		# NOT = { local_flag = ChinaBackoffSiam }
+		# OR = {
+			# alliance = { country = JAP country = SIA }
+			# AND = {
+				# owned = { province = 1392 data = JAP }
+				# control = { province = 1392 data = JAP }
+			# }
+			# AND = {
+				# owned = { province = 1404 data = JAP }
+				# control = { province = 1404 data = JAP }
+			# }
+		# }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0	
+	
+	# date = { day = 0 month = january year = 1936 }
+	# offset = 1
+	# deathdate = { day = 29 month = december year = 1963 }
+
+	# action = {
+		# command = { type = local_setflag which = ChinaBackoffSiam }
+		# command = { type = ai which = "switch/JAP_Backoff_Remove_Siam.ai" }
+	# }
+# }
+################
+# Japan builds Fortifications
+#############################################
+# event = {
+	# #id = 3011027
+	# #random = no
+	# country = JAP
+
+	# trigger = {
+		# ai = yes
+		# technology = 5100
+		# control = { province = 1665 data = JAP } # Truk
+		# control = { province = 1661 data = JAP } # Iwo Jima
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 7
+	# deathdate = { day = 29 month = december year = 1939 }
+
+	# action = {
+		# command = { type = ai which = "switch/JAP_Build_Fort.ai" }
+	# }
+# }
+################
+# Japan retools production
+#############################################
+# event = {
+	# #id = 3011028
+	# #random = no
+	# country = JAP
+
+	# trigger = {
+		# ai = yes
+		# OR = {
+			# war = { country = MEX }
+			# war = { country = RUS }
+			# war = { country = JAP country = PHI }
+			# war = { country = ENG }
+			# war = { country = JAP country = GER }
+		# }
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 7
+	# deathdate = { day = 29 month = december year = 1939 }
+
+	# action = {
+		# command = { type = ai which = "switch/JAP_Build_Fort_Stop.ai" }
+		# command = { type = sleepevent which = 3011027 }
+	# }
+# }
+################
+# Japan AI Slider manipulation
+#
+#	Free Market
+#############################################
+event = { # Free Market
+	id = 3011029
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = free_market value = 1 }
+		government = democratic
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = change_policy which = free_market value = 1 }
+	}
+}
+event = { # Free Market
+	id = 3011030
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = free_market value = -1 }
+		OR = {
+			government = fascist
+			government = communist
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = change_policy which = free_market value = -1 }
+	}
+}
+################
+#	Open Society
+#############################################
+event = { # Open Society
+	id = 3011031
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		can_change_policy = { type = freedom value = -1 }
+		AND = {
+			domestic = { type = freedom value = 0 }
+			OR = {
+				government = fascist
+				government = communist
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = change_policy which = freedom value = -1 }
+	}
+}
+event = { # Open Society
+	id = 3011032
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = no
+		can_change_policy = { type = freedom value = 1 }
+		AND = {
+			NOT = { domestic = { type = freedom value = 10 } }
+			government = democratic
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = change_policy which = freedom value = 1 }
+	}
+}
+
+################
+#	Hawk Lobby
+#############################################
+event = { # Hawk Lobby
+	id = 3011035
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = defense_lobby value = 1 }
+		OR = { 
+			atwar = yes
+			AND = {
+				NOT = { domestic = { type = defense_lobby value = 9 } }
+				OR = {
+					government = fascist
+					government = communist
+					}
+				}
+			}
+		}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+}
+
+################
+#	Interventionism
+#############################################
+event = { # Interventionism
+	id = 3011037
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = interventionism value = 1 }
+		OR = {
+			atwar = yes
+			AND = {
+				NOT = { domestic = { type = interventionism value = 9 } }
+				OR = { 
+					government = fascist
+					government = communist
+					}
+				}
+			}
+		}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+}
+
+####################################
+# Japan  Minister Change Events
+####################################
+# Minister of Security Section 
+####################################
+event = { # Ushio Shigenosuke takes power
+	id = 3011038 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 50086 # Ushio Shigenosuke
+		NOT = { InCabinet = 50086 }
+		OR = {
+			NOT = { war = { country = CYN } }
+			NOT = {
+				war = { country = CYN }
+				OR = {
+						minister = 50095 # Fujie Keisuke
+						minister = 50103 # Tojo Hideki
+				}
+				OR = {
+					lost_national = { country = CYN value = 10 }
+					control = { province = 1337 data = JAP } # Nanjing
+				}
+			}
+		}
+		OR = {
+			manpower = 200
+			NOT = { minister = 50081 } # Kawarada Kakichi
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ministerofsecurity which = 50086 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Goto Fumio takes power
+	id = 3011039 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { minister = 50086 } # Ushio Shigenosuke
+		minister = 50005 # Goto Fumio
+		NOT = { InCabinet = 50005 }
+		OR = {
+			NOT = { war = { country = CYN } }
+			NOT = {
+				war = { country = CYN }
+				OR = {
+						minister = 50095 # Fujie Keisuke
+						minister = 50103 # Tojo Hideki
+				}
+				OR = {
+					lost_national = { country = CYN value = 10 }
+					control = { province = 1337 data = JAP } # Nanjing
+				}
+			}
+		}
+		OR = {
+			manpower = 200
+			NOT = { minister = 50081 } # Kawarada Kakichi
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ministerofsecurity which = 50005 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Kawarada Kakichi takes power
+	id = 3011040 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { manpower = 200 }
+		minister = 50081 # Kawarada Kakichi
+		NOT = { InCabinet = 50081 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ministerofsecurity which = 50081 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Tojo Hideki takes power
+	id = 3011041 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 50103 # Tojo Hideki
+		NOT = { InCabinet = 50103 }
+		war = { country = CYN }
+		OR = {
+			lost_national = { country = CYN value = 10 }
+			control = { province = 1337 data = JAP } # Nanjing
+		}
+		OR = {
+			manpower = 200
+			NOT = { minister = 50081 } # Kawarada Kakichi
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ministerofsecurity which = 50103 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Fujie Keisuke takes power
+	id = 3011042 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 50095 # Fujie Keisuke
+		NOT = { InCabinet = 50095 }
+		NOT = { minister = 50103 } # Tojo Hideki
+		war = { country = CYN }
+		OR = {
+			lost_national = { country = CYN value = 10 }
+			control = { province = 1337 data = JAP } # Nanjing
+		}
+		OR = {
+			manpower = 200
+			NOT = { minister = 50081 } # Kawarada Kakichi
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ministerofsecurity which = 50095 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Kanichiro Tashiro takes power
+	id = 3011043 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 50129 # Kanichiro Tashiro
+		NOT = { InCabinet = 50129 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofstaff which = 50129 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Sugiyama Hajime takes power
+	id = 3011044 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { minister = 50129 } # Kanichiro Tashiro
+		minister = 50133 # Sugiyama Hajime
+		NOT = { InCabinet = 50133 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofstaff which = 50133 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Hirotsugu Hayashida takes power
+	id = 3011045 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		minister = 50128 # Hirotsugu Hayashida
+		NOT = { InCabinet = 50128 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofstaff which = 50128 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Takasu Shiro takes power
+	id = 3011046 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 50114 # Takasu Shiro
+		NOT = { InCabinet = 50114 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ministerofintelligence which = 50114 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Sugiyama Hajime takes power
+	id = 3011047 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 50142 # Sugiyama Hajime
+		NOT = { InCabinet = 50142 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofarmy which = 50142 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Inanba Satoru takes power
+	id = 3011048 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		minister = 50138 # Inanba Satoru
+		NOT = { InCabinet = 50138 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofarmy which = 50138 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Fujiwara Ginjiro takes power
+	id = 3011049 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 50066 # Fujiwara Ginjiro
+		NOT = { InCabinet = 50066 }
+		OR = {
+			war = { country = MEX }
+			war = { country = ENG }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = armamentminister which = 50066 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Hatta Yoshiaki takes power
+	id = 3011050 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 50064 # Hatta Yoshiaki
+		NOT = { InCabinet = 50064 }
+		OR = {
+			NOT = { minister = 50066 } # Fujiwara Ginjiro
+			AND = {
+				minister = 50066 # Fujiwara Ginjiro
+				NOT = { war = { country = MEX } }
+				NOT = { war = { country = ENG } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = armamentminister which = 50064 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Shoda Kazue takes power
+	id = 3011051 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 50072 # Shoda Kazue
+		NOT = { InCabinet = 50072 }
+		OR = {
+			AND = {
+				NOT = { minister = 50064 } # Hatta Yoshiaki
+				NOT = { minister = 50066 } # Fujiwara Ginjiro
+			}
+			AND = {
+				NOT = { minister = 50064 } # Hatta Yoshiaki
+				minister = 50066 # Fujiwara Ginjiro
+				NOT = { war = { country = MEX } }
+				NOT = { war = { country = ENG } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = armamentminister which = 50072 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+# Air AI Flags
+#	JAPAirAINaval	= Naval Priority for bombardment
+#	JAPAirAIGround	= Ground support is a priority
+#############################################
+event = { # Yamamoto Isoroku takes power
+	id = 3011052 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = JAPAirAINaval
+		minister = 50010 # Yamamoto Isoroku
+		NOT = { InCabinet = 50010 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofair which = 50010 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Inoue Shigeyoshi takes power
+	id = 3011053 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = JAPAirAINaval
+		minister = 50152 # Inoue Shigeyoshi
+		NOT = { InCabinet = 50152 }
+		NOT = { minister = 50010 } # Yamamoto Isoroku
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofair which = 50152 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Tojo Hideki takes power
+	id = 3011054 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = JAPAirAIGround
+		minister = 50159 # Tojo Hideki
+		NOT = { InCabinet = 50159 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofair which = 50159 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Tsukahara Nishizou takes power
+	id = 3011055 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = JAPAirAIGround
+		minister = 50153 # Tsukahara Nishizou
+		NOT = { InCabinet = 50153 }
+		NOT = { minister = 50159 } # Tojo Hideki
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = chiefofair which = 50153 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Production Queue
+#############################################
+event = {
+	id = 3011056 
+	country = JAP
+	
+	trigger = {
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1936 }
+
+	action = {
+		command = { type = build_division which = destroyer when = 100 cost = 0.1 where = 200 }
+		command = { type = build_division which = transport when = 40 cost = 0.1 where = 200 }
+		command = { type = build_division which = transport when = 40 cost = 0.1 where = 200 }
+	}
+}

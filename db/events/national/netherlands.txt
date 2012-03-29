@@ -1,0 +1,38 @@
+###78000-78999###
+
+event = {
+	id = 78000
+	country = HOL
+	persistent = yes 
+	
+	name = "The Kingdom of the Netherlands"
+	desc = "Our glorious nation has been born."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = name where = HOL which = "hol_roy" }
+		command = { trigger = { puppet = { country = HOL country = GER } } type = headofstate which = 8001 }
+	}
+}
+
+event = {
+	id = 78001
+	country = HOL
+	persistent = yes 
+	
+	name = "The Republic of the Netherlands"
+	desc = "Our glorious nation has been born."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = name where = HOL which = "" }
+	}
+}

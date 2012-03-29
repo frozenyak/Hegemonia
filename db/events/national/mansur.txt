@@ -1,0 +1,47 @@
+###47000-47999###
+
+event = {
+	id = 47000
+	country = HAI
+	
+	trigger = {
+		flag = CUB_claims_caribbean
+	}
+
+	name = "Tarrbitz Claims the Caribbean"
+	desc = "Our rivals, the Sultanate of Tarrbitz, have made the outrageous claim that they are the rightful rulers of the entire Caribbean. They are certainly stronger than us militarily, perhaps we should consider setting aside our rivalry with the Faburi Confederation and form an anti-Tarrbitz alliance?"
+	style = 1
+	picture = "Caribbean"
+	
+	date = { day = 22 month = october year = 1937 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Seek an alliance with the Confederation"
+		ai_chance = 95
+		command = { type = dissent value = 2 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 31000 }
+	}
+	action = {
+		name = "We're better off alone"
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 47001
+	country = HAI
+	
+	name = "The Mansur-Faburi Alliance"
+	desc = "The Confederation has agreed to our proposal for an alliance and now we stand together against Tarrbitz aggression."
+	style = 1
+	picture = "Caribbean"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = alliance which = DOM }
+	}
+}

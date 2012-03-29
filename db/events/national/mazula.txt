@@ -1,0 +1,446 @@
+###48000-48999###
+
+event = {
+	id = 48004
+	country = MEX
+
+	trigger = {
+		flag = USA_belligerent_MEX
+	}
+
+	name = "American Belligerence"
+	desc = "The news of American Federation's threatening posture against us at the Dublin Conference has spread quickly through the nation and served to rally support among the population against the Fascists."
+	picture = "news_paper"
+
+	date = { day = 28 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Stupid Americans!"
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 48010
+	country = MEX
+
+	trigger = {
+		NOT = { participant = { value = 1 } }
+		NOT = { ispuppet = SPA }
+		atwar = no
+		OR = {
+			NOT = { flag = MEX_rally_league }
+			flag = USA_befriend_MEX
+		}
+		random = 25
+		NOT = { event = 48011 }
+	}
+
+	name = "Join the League of Democracies?"
+	desc = "The issue of how to best defend Mazula from future American aggression is being hotly debated in parliament. Many members in the government believe that joining the League of Democracies would be the best defense, but are staunchly opposed by President Hamman, who wants Mazula to stand on her own two legs."
+	style = 1
+	picture = "politics4"
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 30
+	deathdate = { day = 31 month = december year = 1963 }
+
+	action = {
+		name = "No, we do not need the League"
+		ai_chance = 75
+		command = { type = dissent value = -2 }
+		command = { type = relation which = SPA value = -25 }
+		command = { trigger = { participant = { country = RUS value = 1 } } type = relation which = RUS value = -25 }
+		command = { trigger = { participant = { country = ENG value = 1 } } type = relation which = ENG value = -25 }
+	}
+	action = {
+		name = "Yes, we want League membership"
+		ai_chance = 25
+		command = { type = dissent value = 2 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { trigger = { participant = { country = RUS value = 1 } } type = relation which = RUS value = 50 }
+		command = { trigger = { participant = { country = ENG value = 1 } } type = relation which = ENG value = 50 }
+		command = { type = trigger which = 38016 }
+	}
+}
+
+event = {
+	id = 48011
+	country = MEX
+
+	trigger = {
+		NOT = { participant = { value = 1 } }
+		NOT = { ispuppet = SPA }
+		atwar = no
+		OR = {
+			flag = MEX_rally_league
+			#flag = MEX_claim_america
+			flag = USA_belligerent_MEX
+		}
+		random = 25
+		NOT = { event = 48010 }
+	}
+
+	name = "Join the League of Democracies?"
+	desc = "The issue of how to best defend Mazula from future American aggression is being hotly debated in parliament. Many members in the government believe that joining the League of Democracies would be the best defense, but are staunchly opposed by President Hamman, who wants Mazula to stand on her own two legs."
+	style = 1
+	picture = "politics4"
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 30
+	deathdate = { day = 31 month = december year = 1963 }
+	
+	action = {
+		name = "Yes, we want League membership"
+		ai_chance = 75
+		command = { type = dissent value = 2 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { trigger = { participant = { country = RUS value = 1 } } type = relation which = RUS value = 50 }
+		command = { trigger = { participant = { country = ENG value = 1 } } type = relation which = ENG value = 50 }
+		command = { type = trigger which = 38016 }
+	}
+	action = {
+		name = "No, we do not need the League"
+		ai_chance = 25
+		command = { type = dissent value = -2 }
+		command = { type = relation which = SPA value = -25 }
+		command = { trigger = { participant = { country = RUS value = 1 } } type = relation which = RUS value = -25 }
+		command = { trigger = { participant = { country = ENG value = 1 } } type = relation which = ENG value = -25 }
+	}
+}
+
+event = {
+	id = 48013
+	country = MEX
+
+	trigger = {
+		NOT = { war = { country = USA } }
+		random = 25
+	}
+
+	name = "Arming the Republic"
+	desc = "Mazula did very badly in her last war with the American Federation. The AF's armoured forces have taught us valuable lessons and it would do us good to learn them. While the old guard has agreed that static fortifications have become obsolete, they still resist creation of dedicated AFV divisions. We need to appoint a new army leadership to show our commitment."
+	style = 1
+	picture = "reinforcements"
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 15
+	deathdate = { day = 31 month = december year = 1937 }
+
+	action = {
+		name = "Armoured Warfare Proponents"
+		ai_chance = 60
+		#command = { type = domestic which = professional_army value = 2 }
+		command = { type = supplies value = -2000 }
+		#command = { type = add_division value = light_armor }
+		#command = { type = add_division value = light_armor }
+		#command = { type = add_division value = armor }
+		#command = { type = add_division value = armor }
+		command = { type = chiefofstaff which = 36098 }
+		command = { type = chiefofarmy which = 36105 }
+		command = { trigger = { technology = 6050 } type = gain_tech which = 6060 } #stand off
+		command = { trigger = { NOT = { technology = 6050 } } type = gain_tech which = 6050 } #mobile defense
+		command = { trigger = { technology = 2040 } type = gain_tech which = 2050 } #imp light tank
+		command = { trigger = { NOT = { technology = 2040 } } type = gain_tech which = 2040 } #basic light tank
+		command = { trigger = { NOT = { flag = MEX_claim_america } } type = peacetime_ic_mod value = 0.7 }
+	}	
+	action = {
+		name = "Decisive Battle Proponents"
+		ai_chance = 40
+		command = { type = supplies value = -1000 }
+		command = { type = chiefofstaff which = 36095 }
+		command = { type = chiefofarmy which = 36109 }
+		command = { trigger = { technology = 6050 } type = gain_tech which = 6060 } #stand off
+		command = { trigger = { NOT = { technology = 6050 } } type = gain_tech which = 6050 } #mobile defense	
+		command = { trigger = { NOT = { flag = MEX_claim_america } } type = peacetime_ic_mod value = 0.7 }
+	}
+}
+
+event = {
+	id = 48014
+	country = MEX
+	save_date = yes
+
+	trigger = {
+		OR = {
+			flag = MEX_claim_america
+			flag = great_war_by_event
+			event = 21012
+		}
+		NOT = { local_flag = MOB7 }
+		atwar = no
+	}
+
+	name = "Mobilization Orders"
+	desc = "As the ceasefire of 1934 ended, President Hamman gave orders to mobilize the Mazulan army today, citing the increasing threat from the American Federation. The Americans are sure to respond, and another war seems likely..."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = march year = 1939 }
+	offset = 30 
+	deathdate = { day = 1 month = january year = 1964 }	
+
+	action = {
+		name = "MOB7name"
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		command = { type = resource which = supplies value = -500 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002 }
+		command = { type = local_setflag which = MOB7 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB3 }
+	}
+}
+
+event = {
+	id = 48015
+	country = MEX
+
+	trigger = {
+		NOT = { exists = USA }
+		NOT = { exists = CAN }
+		owned = { province = 1789 data = MEX }
+		owned = { province = 2108 data = MEX }
+		event = 48018
+	}
+
+	name = "Masters of America"
+	desc = "We have defeated our ancient enemies in America and Vinland. Victory celebrations can be heard across the country, and now all that is left is to decide what to do with our defeated foes."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Restore autonomy of both"
+		ai_chance = 50
+		command = { type = independence which = CAN }
+		#command = { type = make_puppet which = CAN }
+		command = { type = alliance which = CAN }
+		command = { type = independence which = USA }
+		command = { type = make_puppet which = USA }
+		command = { type = alliance which = USA }
+	}
+	action = {
+		name = "Restore only Vinland"
+		ai_chance = 48
+		command = { type = independence which = CAN }
+		#command = { type = make_puppet which = CAN }
+		command = { type = alliance which = CAN }
+	}
+	action = {
+		name = "Only grant America autonomy"
+		ai_chance = 1
+		command = { type = independence which = USA }
+		command = { type = make_puppet which = USA }
+	}
+	action = {
+		name = "We will rule them both directly"
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 48018
+	country = MEX
+
+	trigger = {
+		NOT = { exists = USA }
+		owned = { province = 1931 data = MEX }
+	}
+
+	name = "The Liberation of Barasya"
+	desc = "Barasya is the bitterly contested Berber-speaking southeastern part of America. With our victory, this once-independent region is now entirely under our control, and we must now decide what to do with it."
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Barasya is an integral part of Mazula"
+		ai_chance = 65
+		command = { type = dissent value = 5 }
+		command = { type = addcore which = 1929 }
+		command = { type = addcore which = 1930 }
+		command = { type = addcore which = 1931 }
+		command = { type = addcore which = 1932 }
+		command = { type = addcore which = 1934 }
+		command = { type = addcore which = 1937 }
+		#arkansas
+		command = { type = addcore which = 1933 }
+		#mississippi
+		command = { type = addcore which = 1935 }
+		command = { type = addcore which = 1938 }
+		command = { type = addcore which = 1939 }
+		#alabama
+		command = { type = addcore which = 1944 }
+		command = { type = addcore which = 1945 }
+		command = { type = addcore which = 1946 }
+		command = { type = addcore which = 1947 }
+		#florida
+		command = { type = addcore which = 1948 }
+		command = { type = addcore which = 1949 }
+		command = { type = addcore which = 1950 }
+		command = { type = addcore which = 1951 }
+		command = { type = addcore which = 1952 }
+		command = { type = addcore which = 1953 }
+		#georgia
+		command = { type = addcore which = 1954 }
+		command = { type = addcore which = 1955 }
+		command = { type = addcore which = 1956 }
+		command = { type = addcore which = 1959 }
+		#S carolina
+		command = { type = addcore which = 1957 }
+		command = { type = addcore which = 1958 }
+		command = { type = addcore which = 1960 }
+		#N carolina
+		command = { type = addcore which = 1961 }
+		command = { type = addcore which = 1962 }
+		command = { type = addcore which = 1963 }
+		command = { type = addcore which = 1964 }
+	}
+	action = {
+		name = "Give them autonomy"
+		ai_chance = 30
+		command = { type = removecore which = 1930 }
+		command = { type = removecore which = 1932 }
+		command = { type = removecore which = 1934 }
+		command = { type = independence which = TEX }
+		command = { type = make_puppet which = TEX }
+		command = { type = alliance which = TEX }
+	}
+	action = {
+		name = "Grant them full independence"
+		ai_chance = 5
+		command = { type = dissent value = -5 }
+		command = { type = belligerence value = -10 }
+		command = { type = removecore which = 1930 }
+		command = { type = removecore which = 1932 }
+		command = { type = removecore which = 1934 }
+		command = { type = independence which = TEX }
+		command = { type = alliance which = TEX }
+	}
+}
+
+
+event = {
+	id = 48020
+	country = MEX
+
+	trigger = {
+		event = 48015
+		NOT = { event = 38016 }
+		atwar = no
+		NOT = { participant = { value = 1 } }
+		OR = {
+			war = { country = SPA country = GER }
+			war = { country = SPA country = U00 }
+		}
+		OR = {
+			NOT = { exists = ENG }
+			NOT = { exists = RUS }
+			lost_national = { country = ENG value = 5 }
+			lost_national = { country = SPA value = 5 }
+		}
+		OR = {
+			AND = {
+				participant = { country = RUS value = 1 }
+				lost_national = { country = RUS value = 5 }
+			}
+			NOT = { participant = { country = RUS value = 1 } }
+		}
+	}
+
+	name = "Supporting the League"
+	desc = "With the defeat of America, our hegemony over our continent is now uncontested. In Europe, however, the war is not going well for the League, and Iberian diplomats have come to us asking for military or material support."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 60
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Petition to join the League"
+		ai_chance = 70
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = RUS value = 100 }
+		command = { type = relation which = SPA value = 100 }
+		command = { type = relation which = ENG value = 100 }
+		command = { type = trigger which = 38016 }
+	}
+	action = {
+		name = "Give Iberia material support"
+		ai_chance = 25
+		command = { type = relation which = RUS value = 50 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = ENG value = 50 }
+		command = { type = free_supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 } #-20
+		command = { type = trigger which = 38032 }
+	}
+	action = {
+		name = "This is not our war"
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+# event = {
+	# id = 48021
+	# country = MEX
+
+	# trigger = {
+		# local_flag = MOB8
+		# NOT = { flag = MEX_USA_pact }
+	# }
+
+	# name = "Volunteer Troops"
+	# desc = "The news of our mobilization against America has stirred patriotic sentiment, and large numbers of volunteers are flooding to the recruitment offices. Should we equip these volunteers and form new infantry divisions?"
+	# style = 1
+	# picture = "reinforcements"
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 1963 }
+
+	# action = {
+		# name = "Put them under arms!"
+		# ai_chance = 100
+		# command = { type = money value = -200 }
+		# command = { type = supplies value = -2000 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+		# command = { type = add_division value = infantry when = 1 }
+	# }
+	# action = {
+		# name = "We don't need them!"
+		# ai_chance = 0
+		# command = { type = dissent value = 2 }
+	# }
+# }

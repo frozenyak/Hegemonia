@@ -1,0 +1,338 @@
+###27000-27999###
+
+event = {
+	id = 27000
+	country = CHI
+	trigger = {
+		NOT = { war = { country = CYN } }
+		owned = { province = 1375 data = CHI }
+	}
+
+	name = "Raiders in Shantou"
+	desc = "Yuan central authority is weak, and raiders crossing over the border from Yuan China into our territory has long been a problem. Recently a band of raiders hit Shantou particularily hard, burning down a major factory. Parliament is outraged and is demanding action against the raiders."
+	style = 1
+	picture = "Chinese Calvary2"
+
+	date = { day = 6 month = july year = 1936 }
+
+	action = {
+		name = "Send troops to retailiate!"
+		ai_chance = 70
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = construct which = ic value = -1 where = 1375 }
+		command = { type = manpowerpool value = -2 }
+		command = { type = event which = 64000 where = CYN when = 5 }
+	}
+	action = {
+		name = "Demand compensation from the Yuan"
+		ai_chance = 25
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = construct which = ic value = -1 where = 1375 }
+		command = { type = relation which = CYN value = -50 }
+		command = { type = event which = 64001 where = CYN when = 5 }
+	}
+	action = {
+		name = "This problem is beneath our notice"
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = construct which = ic value = -1 where = 1375 }
+		command = { type = relation which = CYN value = 25 }
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 27001
+	country = CHI
+
+	name = "Yuan China Mobilizes"
+	desc = "In response to the troops we sent to chase down the raiders, the Yuan have mobilized their army and increased their deployment along the border, undoubtedly to try and intimidate us."
+	style = 1
+	picture = "China_Army"
+
+	action = {
+		name = "Escalate our own mobilization!"
+		ai_chance = 95
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = CYN value = -100 }
+		command = { type = trigger which = 64002 }
+		
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = resource which = supplies value = -500 }
+		command = { type = resource which = supplies value = -700 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = dissent value = 5 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
+		command = { type = local_setflag which = MOB8 }
+		command = { type = local_setflag which = MOB7 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB3 }
+	}
+	action = {
+		name = "Call back our troops from their territory"
+		ai_chance = 5
+		command = { type = relation which = CYN value = 25 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 27002
+	country = CHI
+
+	name = "Yuan Insults"
+	desc = "The Yuan have sent back our emissaries with an insulting reply. If diplomacy will not do the trick, perhaps a show of force will?"
+	style = 1
+
+	action = {
+		name = "Escalate our mobilization along the Yuan border"
+		ai_chance = 95
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = CYN value = -100 }
+		command = { type = trigger which = 64002 }
+		
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = resource which = supplies value = -500 }
+		command = { type = resource which = supplies value = -700 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = dissent value = 5 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
+		command = { type = local_setflag which = MOB8 }
+		command = { type = local_setflag which = MOB7 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB3 }
+	}
+	action = {
+		name = "Let's not escalate this further"
+		ai_chance = 5
+		command = { type = relation which = CYN value = 25 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 27003
+	country = CHI
+
+	name = "Yuan Barbarism"
+	desc = "The Yuan have sent back our emissaries... without their heads. This is an unacceptable provocation and voices all over our country are calling for war."
+	style = 1
+
+	action = {
+		name = "Declare war!"
+		ai_chance = 99
+		command = { type = war which = CYN }
+		command = { type = setflag which = chinese_war }		
+	}
+	action = {
+		name = "Let's not escalate this further"
+		ai_chance = 1
+		command = { type = relation which = CYN value = 25 }
+		command = { type = dissent value = 20 }
+	}
+}
+
+
+
+event = {
+	id = 27004
+	country = CHI
+
+	name = "Yuan Compensation"
+	desc = "The Yuan have chosen to pay compensation for the raid on Kunming. Parliament is satisfied with this and the situation has been disarmed."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_GOOD"
+		command = { type = money value = 100 }
+	}
+}
+
+event = {
+	id = 27005
+	country = CHI
+	
+	trigger = {
+		local_flag = MOB7
+		NOT = { war = { country = CYN } }
+		#random = 10
+		event = 27000
+		NOT = { event = 64003 }
+	}
+
+	name = "The Spark in the Night"
+	desc = "A regiment of newly deployed troops along the border mistook Yuan soldiers for raiders during the night and opened fire. The ensuing firefight claimed several lives on both sides. As of this morning, we are at war with the Yuan."
+	style = 1
+	picture = "Chinese Dug-in"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 14
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		command = { type = war which = CYN }
+		command = { type = sleepevent which = 64003 }
+	}
+}
+
+event = {
+	id = 27006
+	country = CHI
+	
+	trigger = {
+		OR = {
+			event = 27005
+			event = 64003
+		}
+		NOT = { event = 64004 }
+		NOT = { event = 42004 }
+		owned = { province = 1337 data = -1 }
+		owned = { province = 1369 data = -1 }
+		NOT = { exists = CYN }
+		NOT = { war = { country = JAP } }
+	}
+
+	name = "Victory Celebrations in Nanjing"
+	desc = "The Chinese people are celebrating our victory over the Mongol heathens in Yuan. At long last, the bloody civil war is over."
+	style = 1
+	picture = "China_Rally"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = dissent value = -20 }
+		command = { type = capital which = 1337 }
+	}
+}
+
+# event = {
+	# id = 27007
+	# #random = no
+	# country = CHI
+	
+	# trigger = {
+		# NOT = { exists = JAP }
+		# owned = { province = 1552 data = CHI }
+	# }
+
+	# name = "Victory over Japan"
+	# desc = "We have thrown back the Japanese invaders and taken control over their homelands. What should we do with our newly conquered province?"
+	# style = 1
+	# picture = "China_Rally"
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 3
+	# deathdate = { day = 1 month = january year = 1963 }
+
+	# action = {
+		# name = "Install a puppet government"
+		# ai_chance = 90
+		# command = { type = independence which = JAP }
+		# command = { type = make_puppet which = JAP }
+	# }
+	# action = {
+		# name = "Rule them directly"
+		# ai_chance = 10
+		# command = { type = dissent value = 5 }
+	# }
+# }
+
+event = {
+	id = 27008
+	country = CHI
+
+	name = "Yuan China Surrenders"
+	desc = "The Yuan were unable to resist both the Japanese and us at the same time. The Emperor has fled the country. What is left of their government offered to join forces to defeat the Japanese invader."
+	style = 1
+	picture = "japan_celebrating"
+
+	action = {
+		name = "ACTION_NAME_EXCELLENT"
+		command = { type = inherit which = CYN } # value = 1
+		command = { type = alliance which = CHC }
+	}
+}
+
+
+event = {
+	id = 27009
+	country = CHI
+	
+	trigger = {
+		war = { country = JAP }
+		war = { country = CYN }
+		exists = CYN
+		lost_national = { value = 66 }
+		NOT = { control = { province = 1337 } }
+		NOT = { control = { province = 1247 } }
+		NOT = { control = { province = 1369 } }
+		ai = yes
+	}
+
+	name = "The Fall of the Nationalists"
+	desc = "We have lost control of most of our country and the government has fled. Yet the will of our people to resist the Japanese invader is high as ever. Perhaps it would be best to join forces with the Nationalists?"
+	style = 1
+	picture = "Japan_Invasion"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 13
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_AGREE"
+		ai_chance = 95
+		command = { type = secedearea which = JAP value = "Indochine" when = 1 }
+		command = { type = trigger which = 64008 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 5
+		command = { type = dissent value = 20 }
+	}
+}
+
+event = {
+	id = 27010
+	country = CHI
+
+	name = EVT_100_NAME
+	desc = EVT_100_DESC
+	style = 2
+  picture = "news_paper"
+
+	# triggered by ChiCom event 29001
+
+	action_a = {
+		name = EVT_100_ACTA
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = dissent value = 10 } # torn by civil war
+	}
+
+}

@@ -1,0 +1,30 @@
+U18;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
+905001;Head of State;Madan Saha;33;NS;Pig-headed Isolationist;High;M66021;X
+905002;Head of State;Sarat Porel;33;FA;Die-hard Reformer;High;M66024;X
+905003;Head of Government;Aharsi Deka;33;PA;Ambitious Union Boss;High;M66039;X
+905004;Head of Government;Madan Saha;33;NS;Ambitious Union Boss;High;M66021;X
+905005;Head of Government;Sarat Porel;33;FA;Corporate Suit;High;M66024;X
+905006;Foreign Minister;Ranjan Konwar;33;PA;Apologetic Clerk;High;M66045;X
+905007;Foreign Minister;Aharsi Deka;33;PA;Iron Fisted Brute;High;M66039;X
+905008;Foreign Minister;Madan Saha;33;NS;Biased Intellectual;Medium;M66021;X
+905009;Foreign Minister;Pratikrit Terang;33;FA;General Staffer;Very High;M66050;X
+905010;Minister of Armament;Ranjan Konwar;33;PA;Resource Industrialist;High;M66045;X
+905011;Minister of Armament;Rudrik Teron;33;PA;Infantry Proponent;Medium;M66055;X
+905012;Minister of Armament;Sarat Porel;33;NS;Infantry Proponent;Medium;M66024;X
+905013;Minister of Armament;Ranjan Hmar;33;FA;Military Entrepreneur;Medium;M66025;X
+905014;Minister of Security;Aharsi Deka;33;PA;Crime Fighter;Very High;M66039;X
+905015;Minister of Security;Madan Dhar;33;PA;Compassionate Gentleman;Medium;M66066;X
+905016;Minister of Security;Ranjan Hmar;33;NS;Man of the People;Medium;M66025;X
+905017;Minister of Security;Deb Hazarika;33;FA;Efficient Sociopath;High;M66070;X
+905018;Head of Military Intelligence;Madan Gohain;33;PA;Technical Specialist;Very High;M66073;X
+905019;Head of Military Intelligence;Pratikrit Terang;33;PA;Logistics Specialist;Very High;M66050;X
+905020;Head of Military Intelligence;Lokesh Buraghain;33;PA;Political Specialist;Very High;M66075;X
+905021;Head of Military Intelligence;Ranjan Hmar;33;NS;Industrial Specialist;Medium;M66025;X
+905022;Head of Military Intelligence;Samir Chaliha;33;FA;Dismal Enigma;Low;M66080;X
+905023;Chief of Staff;Rudrik Teron;33;PA;School of Fire Support;Medium;M66055;X
+905024;Chief of Staff;Pratikrit Terang;33;PA;School of Mass Combat;Very High;M66050;X
+905025;Chief of Staff;Sarat Porel;33;NS;School of Mass Combat;Medium;M66024;X
+905026;Chief of Army;Sarat Porel;33;NS;Elastic Defence Doctrine;Medium;M66024;X
+905027;Chief of Navy;Madan Saha;33;NS;Base Control Doctrine;Medium;M66021;X
+905028;Chief of Air Force;Monosij Ronghang;33;FA;Vertical Envelopment Doctrine;Medium;M66030;X
+905029;Head of State;Ainak III;33;PA;Benevolent Gentleman;Medium;M66114;X

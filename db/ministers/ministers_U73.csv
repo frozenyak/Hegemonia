@@ -1,0 +1,212 @@
+U73;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+;Replacements;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+1180001;Head of State;James VI;36;SC;Weary Stiffneck;High;M1001;x
+1180002;Head of Government;Stanley Baldwin;36;SC;Backroom Backstabber;High;M1002;x
+1180003;Foreign Minister;Anthony Eden;36;SC;Ideological Crusader;Medium;M1003;x
+1180004;Minister of Armament;Neville Chamberlain;36;SC;laissez-faire capitalist;High;M1004;x
+1180005;Minister of Security;Sir John Simon;36;SC;Crime Fighter;High;M1005;x
+1180006;Head of Military Intelligence;Sir Hugh Sinclair;36;SC;Logistics Specialist;Very High;M1006;x
+1180007;Chief of Staff;Sir A. Montgomery-Massingberd;36;ML;School of Fire Support;Very High;M1007;x
+1180008;Chief of Army;Sir A. Montgomery-Massingberd;36;ML;Static Defence Doctrine;Very High;M1007;x
+1180009;Chief of Navy;Sir Ernle Chatfield;36;ML;Decisive Naval Battle Doctrine;High;M1009;x
+1180010;Chief of Air Force;Sir Owen Boyd;36;ML;Air Superiority Doctrine;High;M1010;x
+1180011;Head of State;Edward VIII;36;SC;Autocratic Charmer;High;M1011;x
+1180012;Head of State;Edward VIII;36;SD;Autocratic Charmer;High;M1011;x
+1180013;Head of State;Edward VIII;36;FA;Autocratic Charmer;High;M1011;x
+1180014;Head of State;George VI;36;SC;Benevolent Gentleman;High;M1033;x
+1180015;Head of State;George VI;36;SD;Benevolent Gentleman;High;M1033;x
+1180016;Head of State;Aneurin Bevan;36;LWR;Pig-headed Isolationist;High;M1021;x
+1180017;Head of Government;Neville Chamberlain;36;SC;Naive Optimist;High;M1004;x
+1180018;Head of Government;Winston Churchill;36;SC;Bulldog;High;M1038;x
+1180019;Head of Government;Clement Attlee;37;SD;Silent Workhorse;High;M1040;x
+1180020;Head of Government;Oswald Mosley;36;FA;Flamboyant Tough Guy;High;M1012;x
+1180021;Head of Government;Harry Pollitt;36;LWR;Ambitious Union Boss;High;M1022;x
+1180022;Foreign Minister;Lord Halifax;38;SC;Apologetic Clerk;Very High;M1045;x
+1180023;Foreign Minister;John Selwyn Lloyd;44;SC;Biased Intellectual;High;M1046;x
+1180024;Foreign Minister;Ernest Bevin;37;SD;The Cloak N Dagger Schemer;High;M1047;x
+1180025;Foreign Minister;Herbert Morrison;40;SD;Biased Intellectual;High;M1048;x
+1180026;Foreign Minister;William Joyce;36;FA;General Staffer;Low;M1013;x
+1180027;Foreign Minister;Lord Arthur Wellesley;39;FA;Great Compromiser;Low;M1050;x
+1180028;Foreign Minister;Lord Josslyn Erroll;40;FA;The Cloak N Dagger Schemer;Medium;M1051;x
+1180029;Foreign Minister;Henry Williamson;41;FA;Biased Intellectual;Medium;M1052;x
+1180030;Foreign Minister;Duke of Westminster;42;FA;Apologetic Clerk;Medium;M1053;x
+1180031;Foreign Minister;Archibald Ramsay;43;FA;Iron Fisted Brute;Medium;M1054;x
+1180032;Foreign Minister;Rajani Palme Dutt;36;LWR;Biased Intellectual;Medium;M1023;x
+1180033;Foreign Minister;Phil Piratin;40;ST;The Cloak N Dagger Schemer;Medium;M1056;x
+1180034;Foreign Minister;D.N. Pritt;43;ST;Apologetic Clerk;Medium;M1057;x
+1180035;Foreign Minister;Dave Springhall;44;LWR;Iron Fisted Brute;Medium;M1058;x
+1180036;Foreign Minister;Ian Mikardo;45;LWR;Ideological Crusader;Medium;M1059;x
+1180037;Minister of Armament;Sir John Simon;37;SC;Resource Industrialist;High;M1005;x
+1180038;Minister of Armament;Sir John Anderson;39;SC;laissez-faire capitalist;High;M1061;x
+1180039;Minister of Armament;Sir Kingsley Wood;40;SC;Resource Industrialist;High;M1062;x
+1180040;Minister of Armament;Lord Beaverbrook;40;SC;Administrative Genius;Very High;M1063;x
+1180041;Minister of Armament;Richard A. Butler;45;SC;Theoretical Scientist;Very High;M1064;x
+1180042;Minister of Armament;Hugh Dalton;37;SD;Resource Industrialist;Medium;M1065;x
+1180043;Minister of Armament;Clement Attlee;41;SD;Air to Ground Proponent;Medium;M1040;x
+1180044;Minister of Armament;Stafford Cripps;42;SD;Air to Ground Proponent;Medium;M1024;x
+1180045;Minister of Armament;Oswald Mosley;36;FA;Resource Industrialist;Undying;M1012;x
+1180046;Minister of Armament;Alliott Vernon-Roe;38;FA;Air to Ground Proponent;High;M1069;x
+1180047;Minister of Armament;Neil Francis-Hawkins;39;FA;Submarine Proponent;High;M1070;x
+1180048;Minister of Armament;Alexander Raven-Thomson;41;FA;Strategic Air Proponent;High;M1071;x
+1180049;Minister of Armament;Jorian Jenks;42;FA;Battle Fleet Proponent;High;M1072;x
+1180050;Minister of Armament;A.J.P. Taylor;44;FA;laissez-faire capitalist;High;M1073;x
+1180051;Minister of Armament;Stafford Cripps;36;LWR;Theoretical Scientist;Medium;M1024;x
+1180052;Minister of Armament;Leslie Solley;38;ST;Resource Industrialist;Medium;M1075;x
+1180053;Minister of Armament;Arthur Horner;40;ST;Administrative Genius;Medium;M1076;x
+1180054;Minister of Armament;Jack Gaster;41;ST;Submarine Proponent;Medium;M1077;x
+1180055;Minister of Armament;Abe Moffatt;42;LWR;Tank Proponent;Medium;M1078;x
+1180056;Minister of Armament;William Rust;44;ST;Infantry Proponent;Medium;M1079;x
+1180057;Minister of Armament;Konnie Zilliacus;45;LWR;Air Superiority Proponent;Medium;M1080;x
+1180058;Minister of Security;Stanley Baldwin;36;SC;Man of the People;Medium;M1002;x
+1180059;Minister of Security;Sir Austen Chamberlain;36;SC;Efficient Sociopath;High;M1082;x
+1180060;Minister of Security;Viscount Templewood;37;SC;Man of the People;High;M1083;x
+1180061;Minister of Security;David Maxwell Fyfe;41;SC;Compassionate Gentleman;High;M1085;x
+1180062;Minister of Security;Donald Bradley Somervell;45;SC;Crime Fighter;High;M1086;x
+1180063;Minister of Security;Brendan Bracken;46;SC;Silent Lawyer;Very High;M1087;x
+1180064;Minister of Security;Herbert Morrison;37;SD;Man of the People;Very High;M1048;x
+1180065;Minister of Security;James Chuter Ede;45;SD;Prince of Terror;Very High;M1089;x
+1180066;Minister of Security;Arnold Spencer-Leese;36;FA;Prince of Terror;Low;M1015;x
+1180067;Minister of Security;John Beckett;40;FA;Compassionate Gentleman;Medium;M1091;x
+1180068;Minister of Security;Arthur Chesterton;41;FA;Back Stabber;Medium;M1092;x
+1180069;Minister of Security;Jeffrey Hamm;42;FA;Crime Fighter;Medium;M1093;x
+1180070;Minister of Security;Maxwell Knight;43;FA;Man of the People;Medium;M1094;x
+1180071;Minister of Security;Violet Lansbury;36;ST;Prince of Terror;Medium;M1095;x
+1180072;Minister of Security;Lester Hutchinson;38;ST;Back Stabber;Medium;M1096;x
+1180073;Minister of Security;John Platts-Mills;36;LWR;Silent Lawyer;Medium;M1097;x
+1180074;Minister of Security;Sydney Silvermann;41;ST;Man of the People;Medium;M1098;x
+1180075;Minister of Security;Barbara Castle;45;LWR;Crime Fighter;Medium;M1099;x
+1180076;Minister of Security;Kim Philby;46;ST;Compassionate Gentleman;Very High;M1025;x
+1180077;Head of Military Intelligence;Lord Cecil of Chelwood;36;SC;Industrial Specialist;Very High;M1102;x
+1180078;Head of Military Intelligence;Sir Robert Menzies;40;SC;Dismal Enigma;Very High;M1103;x
+1180079;Head of Military Intelligence;Kim Philby;46;SC;Technical Specialist;Very Low;M1105;x
+1180080;Head of Military Intelligence;Brendan Bracken;37;SD;Political Specialist;Very High;M1087;x
+1180081;Head of Military Intelligence;S.P. James;36;FA;Industrial Specialist;High;M1016;x
+1180082;Head of Military Intelligence;Sir Barry E. Domvile;40;FA;Naval Intelligence Specialist;High;M1019;x
+1180083;Head of Military Intelligence;Maxwell Knight;42;FA;Logistics Specialist;Medium;M1094;x
+1180084;Head of Military Intelligence;John Amery;44;FA;Dismal Enigma;Medium;M1110;x
+1180085;Head of Military Intelligence;William Gallacher;36;LWR;Industrial Specialist;High;M1111;x
+1180086;Head of Military Intelligence;Christopher Hill;41;ST;Naval Intelligence Specialist;High;M1112;x
+1180087;Head of Military Intelligence;Aneurin Bevan;43;LWR;Dismal Enigma;High;M1021;x
+1180088;Head of Military Intelligence;Anthony Blunt;45;LWR;Political Specialist;Very High;M1026;x
+1180089;Head of Military Intelligence;Kim Philby;46;ST;Technical Specialist;Very High;M1105;x
+1180090;Chief of Staff;Sir Cyril Deverell;36;ML;School of Defence;Very High;M1116;x
+1180091;Chief of Staff;Lord John Gort;36;ML;School of Manoeuvre;Very High;M1117;x
+1180092;Chief of Staff;Sir Edmund Ironside;38;ML;School of Psychology;Very High;M1118;x
+1180093;Chief of Staff;Sir John Dill;39;ML;School of Fire Support;Very High;M1119;x
+1180094;Chief of Staff;Sir Alan Brooke;40;ML;School of Mass Combat;Very High;M1120;x
+1180095;Chief of Staff;Sir Lionel Ismay;37;SD;School of Fire Support;Very High;M1121;x
+1180096;Chief of Staff;Archibald Nye;41;SD;School of Mass Combat;Very High;M1122;x
+1180097;Chief of Staff;Sir Bernard Montgomery;45;SL;School of Manoeuvre;Medium;M1123;x
+1180098;Chief of Staff;J.F.C. Fuller;36;NS;School of Manoeuvre;Medium;M1017;x
+1180099;Chief of Staff;Sir Barry E. Domvile;39;FA;School of Psychology;High;M1019;x
+1180100;Chief of Staff;Tom Wintringham;36;ST;School of Mass Combat;High;M1027;x
+1180101;Chief of Army;Sir Cyril Deverell;36;ML;Guns and Butter Doctrine;Very High;M1116;x
+1180102;Chief of Army;Lord John Gort;37;ML;Armoured Spearhead Doctrine;Very High;M1117;x
+1180103;Chief of Army;Sir Edmund Ironside;39;ML;Static Defence Doctrine;Very High;M1118;x
+1180104;Chief of Army;Sir Alan Brooke;41;ML;Decisive Battle Doctrine;Very High;M1120;x
+1180105;Chief of Army;Sir John Dill;37;ML;Elastic Defence Doctrine;Very High;M1119;x
+1180106;Chief of Army;Sir Bernard Montgomery;45;SL;Armoured Spearhead Doctrine;Medium;M1123;x
+1180107;Chief of Army;J.F.C. Fuller;36;NS;Armoured Spearhead Doctrine;Medium;M1017;x
+1180108;Chief of Army;Bill Alexander;36;ST;Static Defence Doctrine;High;M1028;x
+1180109;Chief of Navy;Sir Roger Backhouse;37;ML;Indirect Approach Doctrine;High;M1137;x
+1180110;Chief of Navy;Sir Andrew Cunningham;43;ML;Power Projection Doctrine;High;M1138;x
+1180111;Chief of Navy;Sir John Cunningham;45;ML;Open Seas Doctrine;Very High;M1139;x
+1180112;Chief of Navy;Sir Dudley Pound;37;ML;Decisive Naval Battle Doctrine;Very High;M1140;x
+1180113;Chief of Navy;Sir Barry E. Domvile;36;FA;Power Projection Doctrine;High;M1019;x
+1180114;Chief of Navy;E.H. Cole;42;NS;Open Seas Doctrine;High;M1143;x
+1180115;Chief of Navy;Fred Copeman;36;ST;Indirect Approach Doctrine;High;M1029;x
+1180116;Chief of Navy;Harry Pollitt;39;ST;Decisive Naval Battle Doctrine;High;M1022;x
+1180117;Chief of Air Force;Sir Charles Portal;36;ML;Carpet Bombing Doctrine;Very High;M1147;x
+1180118;Chief of Air Force;Sir Arthur Tedder;45;ML;Army Aviation Doctrine;Very High;M1148;x
+1180119;Chief of Air Force;Sir Cyril Newall;37;ML;Air Superiority Doctrine;Very High;M1149;x
+1180120;Chief of Air Force;Sir John Chamier;36;FA;Vertical Envelopment Doctrine;High;M1020;x
+1180121;Chief of Air Force;Lord Williams Sempill;39;FA;Carpet Bombing Doctrine;High;M1152;x
+1180122;Chief of Air Force;Donald Marendaz;41;FA;Air Superiority Doctrine;High;M1153;x
+1180123;Chief of Air Force;Railton Freeman;43;FA;Naval Aviation Doctrine;High;M1154;x
+1180124;Chief of Air Force;John Strachey;36;ST;Carpet Bombing Doctrine;High;M1030;x
+1180125;Head of Government;Lord Halifax;40;SC;Happy Amateur;Very High;M1045;x
+1180126;Foreign Minister;Viscount Templewood;36;SC;Apologetic Clerk;High;M1083;x
+1180127;Minister of Security;Sir John Anderson;39;SC;Compassionate Gentleman;High;M1061;x
+1180128;Head of Government;David Lloyd George;40;SD;Naive Optimist;Very High;M1160;x
+1180129;Foreign Minister;Sir Archibald Sinclair;40;SD;Great Compromiser;High;M1161;x
+1180130;Minister of Security;Leo Amery;40;SD;Crime Fighter;High;M1162;x
+1180131;Minister of Armament;Leslie Hore-Belisha;37;SC;Infantry Proponent;Low;M1163;x
+1180132;Chief of Army;Sir Harold Alexander;44;ML;Decisive Battle Doctrine;High;L1006;x
+1180133;Chief of Army;Miles Dempsey;44;ML;Armoured Spearhead Doctrine;High;L1099;x
+1180134;Chief of Staff;Hastings Ismay;45;ML;School of Defence;High;L1176;x
+1180135;Chief of Army;Lord Archibald Wavell;41;ML;Guns and Butter Doctrine;High;L1311;x
+1180136;Chief of Air Force;Sir Hugh Dowding;36;ML;Air Superiority Doctrine;Very High;L1435;x
+1180137;Chief of Air Force;Arthur Harris;41;ML;Carpet Bombing Doctrine;Very High;L1447;x
+1180138;Chief of Air Force;Sir Trafford Leigh-Mallory;42;ML;Air Superiority Doctrine;High;L1456;x
+1180139;Chief of Air Force;Sir William Sholto Douglas;44;SL;Air Superiority Doctrine;High;L1479;x
+1180140;Head of Military Intelligence;Sir Stewart Menzies;39;SC;Political Specialist;High;M1172;x
+1180141;Minister of Armament;Sir Ernle Chatfield;39;SC;Battle Fleet Proponent;High;M1009;x
+1180142;Minister of Armament;Sir Thomas Inskip;36;SC;Air Superiority Proponent;Very High;M1174;x
+1180143;Minister of Armament;Sir Andrew Duncan;40;SC;Resource Industrialist;High;M1175;x
+1180144;Minister of Armament;Sir John Moore-Brabazon;41;SC;Air Superiority Proponent;Medium;M1176;x
+1180145;Minister of Armament;Sir Hibbert Cross;39;SC;laissez-faire capitalist;High;M1177;x
+1180146;Minister of Armament;Alfred Duff Cooper;36;SC;Battle Fleet Proponent;Medium;M1178;x
+1180147;Minister of Armament;Oliver Stanley;40;SC;Military Entrepreneur;Very High;M1179;x
+1180148;Minister of Armament;Henry Margesson;40;SC;Resource Industrialist;Very High;M1180;x
+1180149;Minister of Armament;Sir Percy Grigg;42;SC;laissez-faire capitalist;High;M1181;x
+1180150;Head of State;Elisabeth II;52;SC;Popular Figurehead;High;M1182;x
+1180151;Head of State;Elisabeth II;52;SD;Popular Figurehead;High;M1182;x
+1180152;Minister of Armament;Albert V. Alexander;46;SD;Resource Industrialist;Medium;M1184;x
+1180153;Minister of Armament;Emanuel Shinwell;50;SD;Theoretical Scientist;Medium;M1185;x
+1180154;Minister of Armament;Winston Churchill;51;SC;Theoretical Scientist;Medium;M1038;x
+1180155;Minister of Armament;Sir Harold Alexander;52;SC;Tank Proponent;Medium;L1006;x
+1180156;Chief of Air Force;Sir Frederick Bowhill;36;ML;Naval Aviation Doctrine;High;L1417;x
+1180157;Head of State;George VI;36;SD;Benevolent Gentleman;High;M1033;x
+1180158;Head of State;Elisabeth II;52;SD;Popular Figurehead;High;M1182;x
+1180159;Head of Government;Anthony Eden;55;SC;Political Protege;High;M1003;x
+1180160;Head of Government;Harold MacMillan;57;SC;Corporate Suit;High;M1192;x
+1180161;Head of Government;Alec Douglas-Home;63;SC;Happy Amateur;High;M1193;x
+1180162;Head of Government;Hugh Gaitskell;54;SD;Naive Optimist;High;M1194;x
+1180163;Head of Government;Harold Wilson;63;SD;Ambitious Union Boss;High;M1195;x
+1180164;Foreign Minister;Harold MacMillan;55;SC;Biased Intellectual;Medium;M1192;x
+1180165;Foreign Minister;Alec Douglas-Home;60;SC;Great Compromiser;Medium;M1193;x
+1180166;Foreign Minister;Richard A. Butler;63;SC;The Cloak N Dagger Schemer;Medium;M1064;x
+1180167;Foreign Minister;Alfred Robens;53;SD;Apologetic Clerk;Medium;M1199;x
+1180168;Foreign Minister;Aneurin Bevan;56;SD;Ideological Crusader;Medium;M1021;x
+1180169;Foreign Minister;Denis Healey;59;SD;Iron Fisted Brute;Medium;M1201;x
+1180170;Foreign Minister;Harold Wilson;61;SD;Ideological Crusader;Medium;M1195;x
+1180171;Foreign Minister;Patrick Gordon Walker;63;SD;Apologetic Clerk;Medium;M1203;x
+1180172;Minister of Armament;Harold MacMillan;54;SC;Resource Industrialist;Medium;M1192;x
+1180173;Minister of Armament;Walter Monckton;55;SC;Air Superiority Proponent;Medium;M1205;x
+1180174;Minister of Armament;Antony Head;56;SC;Submarine Proponent;Medium;M1206;x
+1180175;Minister of Armament;Duncan Sandys;57;SC;laissez-faire capitalist;Medium;M1207;x
+1180176;Minister of Armament;Harold Watkinson;59;SC;Infantry Proponent;Medium;M1208;x
+1180177;Minister of Armament;Peter Thorneycroft;62;SC;Military Entrepreneur;Medium;M1209;x
+1180178;Minister of Armament;Harold Wilson;59;SD;Administrative Genius;Medium;M1195;x
+1180179;Minister of Armament;Denis Healey;61;SD;Resource Industrialist;Medium;M1201;x
+1180180;Minister of Security;Gwilym Lloyd-George;54;SC;Prince of Terror;High;M1212;x
+1180181;Minister of Security;Richard A. Butler;57;SC;Back Stabber;High;M1064;x
+1180182;Minister of Security;Henry Brooke;62;SC;Efficient Sociopath;High;M1214;x
+1180183;Minister of Security;Patrick Gordon Walker;56;SD;Silent Lawyer;High;M1203;x
+1180184;Minister of Security;Frank Pakenham;61;SD;Man of the People;High;M1216;x
+1180185;Head of Military Intelligence;Antony Head;51;SC;Industrial Specialist;High;M1206;x
+1180186;Head of Military Intelligence;John Hugh Hare;57;SC;Naval Intelligence Specialist;High;M1218;x
+1180187;Head of Military Intelligence;Christopher Soames;58;SC;Political Specialist;High;M1219;x
+1180188;Head of Military Intelligence;John Profumo;60;SC;Dismal Enigma;High;M1220;x
+1180189;Head of Military Intelligence;James Ramsden;63;SC;Technical Specialist;High;M1221;x
+1180190;Head of Military Intelligence;James Callaghan;52;SD;Industrial Specialist;Very High;M1222;x
+1180191;Chief of Staff;Sir William Slim;48;ML;School of Psychology;Medium;L1281;x
+1180192;Chief of Staff;Sir John Harding;52;ML;School of Manoeuvre;Medium;L1153;x
+1180193;Chief of Staff;Sir Gerald Templer;55;ML;School of Mass Combat;Medium;L1294;x
+1180194;Chief of Staff;Sir Francis Festing;58;ML;School of Defence;Medium;L1120;x
+1180195;Chief of Staff;Sir Richard Amyatt-Hull;61;ML;School of Fire Support;Medium;L1009;x
+1180196;Chief of Army;Sir William Slim;48;ML;Elastic Defence Doctrine;Medium;L1281;x
+1180197;Chief of Army;Sir John Harding;52;ML;Decisive Battle Doctrine;Medium;L1153;x
+1180198;Chief of Army;Sir Gerald Templer;55;ML;Guns and Butter Doctrine;Medium;L1294;x
+1180199;Chief of Army;Sir Francis Festing;58;ML;Static Defence Doctrine;Medium;L1120;x
+1180200;Chief of Army;Sir Richard Amyatt-Hull;61;ML;Armoured Spearhead Doctrine;Medium;L1009;x
+1180201;Chief of Navy;Sir R.B. Bruce-Fraser;48;ML;Base Control Doctrine;Very High;L1328;x
+1180202;Chief of Navy;Sir Rhoderick McGrigor;51;ML;Power Projection Doctrine;Very High;M1235;x
+1180203;Chief of Navy;Francis Earl Mountbatten;55;ML;Decisive Naval Battle Doctrine;Very High;M1236;x
+1180204;Chief of Navy;Sir David Luce;60;ML;Indirect Approach Doctrine;Very High;M1237;x
+1180205;Chief of Air Force;Sir William Sholto Douglas;44;SL;Air Superiority Doctrine;High;L1479;x
+1180206;Chief of Air Force;Sir John Slessor;48;ML;Air Superiority Doctrine;High;L1480;x
+1180207;Chief of Air Force;Sir William Dickson;53;ML;Carpet Bombing Doctrine;High;M1240;x
+1180208;Chief of Air Force;Sir Dermot Boyle;56;ML;Vertical Envelopment Doctrine;High;M1241;x
+1180209;Chief of Air Force;Sir Thomas Pike;59;ML;Naval Aviation Doctrine;High;M1242;x
+1180210;Chief of Air Force;Sir Charles Elworthy;63;ML;Army Aviation Doctrine;High;M1243;x

@@ -1,0 +1,94 @@
+CUB;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+33001;Head of State;Abdul-Tawwab Dagher;36;ML;Insignificant Layman;High;M33001;x
+33002;Head of Government;Nadim Mifsud;36;ML;Naive Optimist;High;M33002;x
+33003;Foreign Minister;Abdul-Tawwab Dagher;36;ML;Iron Fisted Brute;Medium;M33001;x
+33004;Minister of Armament;Shihab Shamon;36;ML;Administrative Genius;Low;M33004;x
+33005;Minister of Security;Ghiyath Mifsud;36;ML;Compassionate Gentleman;Medium;M33005;x
+33006;Head of Military Intelligence;Hamzah Ganim;36;ML;Dismal Enigma;Medium;M33006;x
+33007;Chief of Staff;Sayyar Bishara;36;ML;School of Defence;Medium;M33007;x
+33008;Chief of Army;Zain Naifeh;36;ML;Elastic Defence Doctrine;Medium;M33008;x
+33009;Chief of Navy;Rashad Handal;36;ML;Open Seas Doctrine;Medium;M33009;x
+33010;Chief of Air Force;Abdul-Fattah Basara;36;ML;Army Aviation Doctrine;High;M33010;x
+33031;Head of State;Nadim Mifsud;36;ML;Benevolent Gentleman;High;M33002;x
+33032;Head of State;Luqman Maalouf;40;ML;Die-hard Reformer;High;M33032;x
+33033;Head of State;Abbudin Kouri;36;SD;Insignificant Layman;High;M33014;x
+33034;Head of State;Karif Salim;36;SC;Resigned Generalissimo;High;M33034;x
+33035;Head of State;Ghassan Moghadam;44;PA;Popular Figurehead;High;M33011;x
+33036;Head of State;Munir Touma;36;LWR;Powerhungry Demagogue;High;M33021;x
+33037;Head of State;Shihab Shamon;44;LWR;Popular Figurehead;High;M33004;x
+33038;Head of Government;Luqman Maalouf;36;ML;Silent Workhorse;High;M33032;x
+33039;Head of Government;Aliyy Morcos;40;ML;Political Protege;High;M33013;x
+33040;Head of Government;Khaleel Bazzi;44;ML;Corporate Suit;High;M33040;x
+33041;Head of Government;Karif Salim;36;SD;Old General;High;M33034;x
+33042;Head of Government;Hudhayfah Kassis;40;SC;Flamboyant Tough Guy;High;M33042;x
+33043;Head of Government;Karif Salim;44;PA;Old General;High;M33034;x
+33044;Head of Government;Khuzaimah Sabbag;36;LWR;Naive Optimist;High;M33022;x
+33045;Head of Government;Mu'tazz Shamoon;41;LWR;Political Protege;High;M33023;x
+33046;Foreign Minister;Nuhayd Qureshi;36;ML;The Cloak N Dagger Schemer;High;M33046;x
+33047;Foreign Minister;Aliyy Morcos;40;ML;Biased Intellectual;High;M33013;x
+33048;Foreign Minister;Hudhayfah Kassis;44;ML;Iron Fisted Brute;Medium;M33042;x
+33049;Foreign Minister;Shawqi Ganem;36;SD;The Cloak N Dagger Schemer;Medium;M33049;x
+33050;Foreign Minister;Nash'ah Nader;37;SD;General Staffer;Medium;M33050;x
+33051;Foreign Minister;Ridwan Almasi;39;SD;Ideological Crusader;Medium;M33051;x
+33052;Foreign Minister;Shawqi Ganem;36;SC;The Cloak N Dagger Schemer;Medium;M33049;x
+33053;Foreign Minister;Abdul-Basit Kattan;42;SC;Biased Intellectual;Medium;M33053;x
+33054;Foreign Minister;Hajjaj Bishara;43;SC;Iron Fisted Brute;Medium;M33054;x
+33055;Foreign Minister;Dirar Fakhoury;44;SC;Apologetic Clerk;Medium;M33055;x
+33057;Foreign Minister;Shafiq Tahan;45;PA;Iron Fisted Brute;Medium;M33057;x
+33058;Foreign Minister;Baha al Din Srour;46;PA;Great Compromiser;Medium;M33058;x
+33059;Foreign Minister;Mu'tazz Shamoon;36;LWR;Biased Intellectual;Very Low;M33023;x
+33060;Foreign Minister;Shihab Shamon;44;LWR;Great Compromiser;Medium;M33004;x
+33061;Minister of Armament;Nawfal Essa;36;ML;Administrative Genius;Medium;M33061;x
+33062;Minister of Armament;Nadim Mifsud;40;ML;laissez-faire capitalist;Medium;M33002;x
+33063;Minister of Armament;Aliyy Morcos;44;ML;Theoretical Scientist;Low;M33013;x
+33064;Minister of Armament;Karif Salim;36;SD;Corrupt Kleptocrat;Medium;M33034;x
+33065;Minister of Armament;Abdul-Hamid Hanania;37;SD;Battle Fleet Proponent;Medium;M33065;x
+33066;Minister of Armament;Naif Na'il Sarraf;40;SC;Corrupt Kleptocrat;Medium;M33066;x
+33067;Minister of Armament;Anis Tahan;41;SC;Infantry Proponent;Low;M33014;x
+33068;Minister of Armament;Qais Gaber;43;SC;Air to Ground Proponent;Medium;M33068;x
+33069;Minister of Armament;Hamzah Ganim;44;PA;Corrupt Kleptocrat;Medium;M33006;x
+33070;Minister of Armament;Mihyar Koury;46;PA;Administrative Genius;Medium;M33070;x
+33071;Minister of Armament;Shihab Shamon;36;LWR;Administrative Genius;High;M33004;x
+33072;Minister of Armament;Haytham Shammas;40;LWR;Submarine Proponent;Medium;M33021;x
+33073;Minister of Armament;Ridwan Almasi;44;LWR;Air to Ground Proponent;Medium;M33051;x
+33074;Minister of Security;Khaleel Bazzi;36;ML;Crooked Kleptocrat;Medium;M33040;x
+33075;Minister of Security;Luqman Maalouf;40;ML;Efficient Sociopath;Medium;M33032;x
+33076;Minister of Security;Namir Hakimi;44;ML;Crime Fighter;High;M33015;x
+33077;Minister of Security;Al Tayyib Asker;36;SD;Back Stabber;Medium;M33077;x
+33078;Minister of Security;Ubaid Nazari;39;SD;Compassionate Gentleman;Medium;M33078;x
+33079;Minister of Security;Naif Na'il Sarraf;36;SC;Crooked Kleptocrat;Medium;M33066;x
+33080;Minister of Security;Muthanna Bitar;42;SC;Man of the People;Medium;M33080;x
+33081;Minister of Security;Sulaiman Bahar;36;SC;Back Stabber;Medium;M33081;x
+33082;Minister of Security;Karif Salim;44;PA;Crooked Kleptocrat;High;M33034;x
+33083;Minister of Security;Humam Haik;46;PA;Crime Fighter;Medium;M33083;x
+33084;Minister of Security;Lubayd Daher;36;LWR;Prince of Terror;Very Low;M33025;x
+33085;Minister of Security;Othman Hanania;44;LWR;Man of the People;Low;M33085;x
+33086;Head of Military Intelligence;Abdul-Tawwab Dagher;36;ML;Political Specialist;Medium;M33001;x
+33087;Head of Military Intelligence;Abdul-Fattah Bitar;40;ML;Logistics Specialist;Medium;M33016;x
+33088;Head of Military Intelligence;Jubair Hajjar;44;ML;Dismal Enigma;Medium;M33088;x
+33089;Head of Military Intelligence;Lablab Shalhoub;36;SD;Political Specialist;Low;M33011;x
+33090;Head of Military Intelligence;Namir Hakimi;38;SD;Industrial Specialist;Low;M33015;x
+33091;Head of Military Intelligence;Naif Na'il Sarraf;40;SC;Dismal Enigma;Medium;M33066;x
+33092;Head of Military Intelligence;Abbudin Kouri;44;PA;Technical Specialist;Medium;M33014;x
+33093;Head of Military Intelligence;Abdul-Fattah Bitar;46;PA;Logistics Specialist;Medium;M33016;x
+33094;Head of Military Intelligence;Khuzaimah Sabbag;36;LWR;Dismal Enigma;Very Low;M33022;x
+33095;Head of Military Intelligence;Mutawalli Amari;44;LWR;Political Specialist;Very Low;M33095;x
+33097;Chief of Staff;Karif Salim;36;SC;School of Mass Combat;Undying;M33097;x
+33100;Chief of Staff;Muzaffar Nazari;36;LWR;School of Manoeuvre;Medium;M33027;x
+33101;Chief of Staff;Mutawalli Amari;44;LWR;School of Mass Combat;Very Low;M33095;x
+33103;Chief of Army;Karif Salim;36;SC;Decisive Battle Doctrine;Undying;M33097;x
+33106;Chief of Army;Muzaffar Nazari;36;LWR;Elastic Defence Doctrine;Medium;M33027;x
+33107;Chief of Army;Adan Abadi;44;LWR;Static Defence Doctrine;Medium;M33107;x
+33109;Chief of Navy;Abraha Rahal;36;SC;Open Seas Doctrine;Medium;M33109;x
+33112;Chief of Navy;Lubayd Daher;36;LWR;Open Seas Doctrine;Medium;M33025;x
+33114;Chief of Air Force;Muyassar Abboud;36;ML;Naval Aviation Doctrine;Medium;M33020;x
+33115;Chief of Air Force;Ghiyath Mifsud;44;ML;Vertical Envelopment Doctrine;Medium;M33005;x
+33118;Chief of Air Force;Bushr Shammas;44;PA;Air Superiority Doctrine;High;M33118;x
+33119;Chief of Air Force;Adnan Haik;36;LWR;Air Superiority Doctrine;High;M33030;x
+33120;Head of Military Intelligence;Othman Hanania;41;LWR;Technical Specialist;Low;M33085;x
+33121;Head of Government;Rayyan Wasem;47;SC;Happy Amateur;High;M33121;x
+33122;Head of Government;Daoud Raja;36;SC;Flamboyant Tough Guy;High;M33122;x
+33123;Head of Government;Taim Allah Kattan;36;SC;Political Protege;High;M33123;x
+33124;Head of Government;Hud Almasi;51;SC;Naive Optimist;High;M33124;x
+33125;Foreign Minister;Shihab Shamon Soccares;47;SC;Ideological Crusader;Medium;M33125;x
+33126;Minister of Security;Afif Bitar;51;SC;Prince of Terror;Medium;M33126;x

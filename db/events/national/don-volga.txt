@@ -1,0 +1,21 @@
+###77000-77999###
+
+event = {
+	id = 77000
+	country = TRA
+	
+	name = "The Principiality of Don-Volga"
+	desc = "Our glorious nation has been born."
+	style = 1
+	picture = "cossacks5"
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = cavalry when = 2 }
+		command = { type = add_division value = cavalry when = 2 }
+		command = { type = add_division value = cavalry when = 2 }
+	}
+}

@@ -1,0 +1,35 @@
+###53000-53999###
+
+event = {
+	id = 53000
+	country = PAN
+	
+	trigger = {
+		alliance = { country = MEX country = SPA }
+		NOT = { alliance = { country = PAN country = SPA } }
+		NOT = { war = { country = PAN country = SPA } }
+	}
+
+	name = "Joining the League?"
+	desc = "Mazula, our ally and protector, has joined the League of Democracies. They are now willing to sponsor us for membership - should we join?"
+	style = 1
+	picture = "politics4"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3 
+	deathdate = { day = 1 month = january year = 1963 }	
+
+	action = {
+		name = "Yes, join the League"
+		ai_chance = 95
+		command = { type = relation which = RUS value = 50 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = ENG value = 50 }
+		command = { type = trigger which = 38017 }
+	}
+	action = {
+		name = "No, we do not want this"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}

@@ -1,0 +1,121 @@
+allowed_brigades =  escort
+
+#upgrade = { type = naval_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
+upgrade = { type = strategic_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
+upgrade = { type = tactical_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
+
+# 0 - Basic Naval Bomber 1938
+model = {
+	cost 						= 12.5 #13
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 50
+	manpower					= 1.3
+	maxspeed					= 200
+	surfacedetectioncapability	= 3 #1
+	airdetectioncapability		= 0
+	surfacedefence				= 6
+	airdefence					= 3
+	airattack					= 2
+	strategicattack				= 0
+	softattack					= 1
+	hardattack					= 1
+	navalattack					= 4
+	range						= 1250 #800
+	supplyconsumption 			= 1.5
+	fuelconsumption				= 3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved Naval Bomber 1940
+model = {
+	cost 						= 15.5 #16
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 50
+	manpower					= 1.3
+	maxspeed					= 300
+	surfacedetectioncapability	= 4 #2
+	airdetectioncapability		= 1
+	surfacedefence				= 7
+	airdefence					= 4
+	airattack					= 3
+	strategicattack				= 0
+	softattack					= 1
+	hardattack					= 2
+	navalattack					= 7
+	range						= 1500 #1000
+	supplyconsumption 			= 1.8
+	fuelconsumption				= 3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced Naval Bomber 1943
+model = {
+	cost 						= 16.5 #18
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 50
+	manpower					= 1.3
+	maxspeed					= 350
+	surfacedetectioncapability	= 4 #2
+	airdetectioncapability		= 1
+	surfacedefence				= 8
+	airdefence					= 4
+	airattack					= 3
+	strategicattack				= 0
+	softattack					= 2
+	hardattack					= 3
+	navalattack					= 9
+	range						= 2000 #1300
+	supplyconsumption 			= 2.1
+	fuelconsumption				= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 3 - Turbojet Naval Bomber 1945
+model = {
+	cost 						= 17.5 #21
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 50
+	manpower					= 1.3
+	maxspeed					= 400
+	surfacedetectioncapability	= 5 #2
+	airdetectioncapability		= 1
+	surfacedefence				= 9
+	airdefence					= 8 #4
+	airattack					= 4 #3
+	strategicattack				= 2
+	softattack					= 2
+	hardattack					= 4
+	navalattack					= 11
+	range						= 3000 #1300
+	supplyconsumption 			= 2.4
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 4 - Improved Turbojet Naval Bomber 1949
+model = {
+	cost 						= 18.5 #21
+	buildtime					= 190 #180
+	defaultorganisation 		= 30
+	morale						= 50
+	manpower					= 1.3
+	maxspeed					= 500
+	surfacedetectioncapability	= 5 #2
+	airdetectioncapability		= 1
+	surfacedefence				= 10
+	airdefence					= 10
+	airattack					= 5
+	strategicattack				= 3
+	softattack					= 3
+	hardattack					= 6
+	navalattack					= 15
+	range						= 3500 #1400
+	supplyconsumption 			= 2.7
+	fuelconsumption				= 3.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

@@ -1,0 +1,1108 @@
+###11000-17 rumours about nukes
+# Nuked capital events
+##11050- USA
+##11052- GER
+##11054- FRA
+##11056- ITA
+##11058- RUS
+##11060- JAP
+##11062- ENG
+##11064- CHI
+##11066- CHC
+##11068- U00
+##11070- MEX
+##11072- SPA
+##11074- LIT
+
+event = {
+	id = 11000
+	country = GER
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = GER_nukes }
+	}
+}
+
+event = {
+	id = 11001
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = GER_nukes
+		NOT = { local_flag = GER_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that Germany has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = GER_nukes_notify }
+	}
+}
+
+event = {
+	id = 11002
+	country = MEX
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = MEX_nukes }
+	}
+}
+
+event = {
+	id = 11003
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = MEX_nukes
+		NOT = { local_flag = MEX_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that Mazula has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = MEX_nukes_notify }
+	}
+}
+
+
+event = {
+	id = 11004
+	country = USA
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = USA_nukes }
+	}
+}
+
+event = {
+	id = 11005
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = USA_nukes
+		NOT = { local_flag = USA_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that America has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = USA_nukes_notify }
+	}
+}
+
+event = {
+	id = 11006
+	country = U00
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = U00_nukes }
+	}
+}
+
+event = {
+	id = 11007
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = U00_nukes
+		NOT = { local_flag = U00_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that the Union of Rome has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = U00_nukes_notify }
+	}
+}
+
+event = {
+	id = 11008
+	country = U02
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = U02_nukes }
+	}
+}
+
+event = {
+	id = 11009
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = U02_nukes
+		NOT = { local_flag = U02_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that Imperial India has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = U02_nukes_notify }
+	}
+}
+
+event = {
+	id = 11010
+	country = SPA
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = SPA_nukes }
+	}
+}
+
+event = {
+	id = 11011
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = SPA_nukes
+		NOT = { local_flag = SPA_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that Iberia has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = SPA_nukes_notify }
+	}
+}
+
+event = {
+	id = 11012
+	country = RUS
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = RUS_nukes }
+	}
+}
+
+event = {
+	id = 11013
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = RUS_nukes
+		NOT = { local_flag = RUS_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that Russia has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = RUS_nukes_notify }
+	}
+}
+
+event = {
+	id = 11014
+	country = JAP
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = JAP_nukes }
+	}
+}
+
+event = {
+	id = 11015
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = JAP_nukes
+		NOT = { local_flag = JAP_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that Japan has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = JAP_nukes_notify }
+	}
+}
+
+event = {
+	id = 11016
+	country = U05
+
+	trigger = {
+		ai = yes
+		technology = 7170
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = setflag which = U05_nukes }
+	}
+}
+
+event = {
+	id = 11017
+	persistent = yes
+
+	trigger = {
+		ai = no
+		flag = U05_nukes
+		NOT = { local_flag = U05_nukes_notify }
+	}
+
+	name = "A New Weapon?"
+	desc = "Our spies report that Jadakal has built and tested some kind of new type of bomb that is said to have destructive powers far beyond any current existing weaponry. It remains to see how they will use this new discovery..."
+	style = 1
+
+	date = { day = 1 month = january year = 1943 }
+	offset = 90
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Not good..."
+		command = { type = local_setflag which = U05_nukes_notify }
+	}
+}
+################################
+# Nuked capital events
+################################
+event = {
+	id = 11050
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = USA
+
+	trigger = {
+		nuked = { country = USA data = -1 where = 1789 } # Boston
+	}
+
+	date = { day = 1 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1805 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11051
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = USA
+
+	trigger = {
+		event = 11050
+		nuked = { country = USA data = -1 where = 1805 } # Philadelphia - Northeast US
+	}
+
+	date = { day = 1 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1832 } # Chicago
+		command = { type = dissent value = -1 }
+	}   
+}
+
+
+event = {
+	id = 11052
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = GER
+
+	trigger = {
+		nuked = { country = GER data = -1 where = 138 } # Frankfurt/Main
+	}
+
+	date = { day = 2 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 179 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11053
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = GER
+
+	trigger = {
+		event = 11052
+		nuked = { country = GER data = -1 where = 179 } # München - Germany
+	}
+
+	date = { day = 2 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 163 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+
+event = {
+	id = 11054
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = FRA
+
+	trigger = {
+		nuked = { country = FRA data = -1 where = 55 } # Paris - France
+	}
+
+	date = { day = 3 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 58 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11055
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = FRA
+
+	trigger = {
+		event = 11054
+		nuked = { country = FRA data = -1 where = 58 } #Le Mans
+	}
+
+	date = { day = 3 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 85 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+
+event = {
+	id = 11056
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = ITA
+
+	trigger = {
+		nuked = { country = ITA data = -1 where = 419 } # Roma - Italy
+	}
+
+	date = { day = 4 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 407 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11057
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = ITA
+
+	trigger = {
+		event = 11056
+		nuked = { country = ITA data = -1 where = 407 } # Milano - Italy
+	}
+
+	date = { day = 4 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 410 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+
+event = {
+	id = 11058
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = RUS
+
+	trigger = {
+		nuked = { country = RUS data = -1 where = 572 } # Moskva - Russia
+	}
+
+	date = { day = 5 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 663 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11059
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = RUS
+
+	trigger = {
+		event = 11058
+		nuked = { country = RUS data = -1 where = 663 } # Stalingrad - Russia
+	}
+
+	date = { day = 5 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 668 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+
+event = {
+	id = 11060
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = JAP
+
+	trigger = {
+		nuked = { country = JAP data = -1 where = 1552 } # Tokyo-to - Japan
+	}
+
+	date = { day = 6 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1558 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11061
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = JAP
+
+	trigger = {
+		event = 11060
+		nuked = { country = JAP data = -1 where = 1558 } # Kyoto-shi - Japan
+	}
+
+	date = { day = 6 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1557 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11062
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = ENG
+
+	trigger = {
+		nuked = { country = ENG data = -1 where = 29 } # London - England
+	}
+
+	date = { day = 7 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 17 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11063
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = ENG
+
+	trigger = {
+		event = 11062
+		nuked = { country = ENG data = -1 where = 17 } # Manchester - England
+	}
+
+	date = { day = 7 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 12 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11064
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = CHI
+
+	trigger = {
+		nuked = { country = CHI data = -1 where = 1337 } # Nanjing - China
+	}
+
+	date = { day = 8 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1369 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11065
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = CHI
+
+	trigger = {
+		event = 11064
+		nuked = { country = CHI data = -1 where = 1369 } # Guanzhou
+	}
+
+	date = { day = 8 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1357 }
+		command = { type = dissent value = -1 }
+	}   
+}
+event = {
+	id = 11066
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = CHC
+
+	trigger = {
+		nuked = { country = CHC data = -1 where = 1260 } # Yulin - China
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1337 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11067
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = CHC
+
+	trigger = {
+		event = 11066
+		nuked = { country = CHC data = -1 where = 1337 } # Nanjing - China
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1369 } #Guangzhou
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11068
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = U00
+
+	trigger = {
+		nuked = { country = U00 data = -1 where = 409 } # Istanbul
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 377 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11069
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = U00
+
+	trigger = {
+		event = 11068
+		nuked = { country = U00 data = -1 where = 377 } # Athens
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1075 } #Ankara
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11070
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = MEX
+
+	trigger = {
+		nuked = { country = MEX data = -1 where = 1974 } # Mexico City
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1889 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11071
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = MEX
+
+	trigger = {
+		event = 11070
+		nuked = { country = MEX data = -1 where = 1889 } # San Francisco
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1926 } # San Antonio
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11072
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = SPA
+
+	trigger = {
+		nuked = { country = SPA data = -1 where = 467 } # Cordoba
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 457 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11073
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = SPA
+
+	trigger = {
+		event = 11072
+		nuked = { country = SPA data = -1 where = 457 } # Toledo
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 476 } # Lisbon
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11074
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = LIT
+
+	trigger = {
+		nuked = { country = LIT data = -1 where = 599 } # Minsk
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 232 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11075
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = LIT
+
+	trigger = {
+		event = 11074
+		nuked = { country = LIT data = -1 where = 232 } # Warsaw
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 258 } # Wilno
+		command = { type = dissent value = -1 }
+	}   
+}

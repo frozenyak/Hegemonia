@@ -1,0 +1,31 @@
+###80000-80999###
+
+event = {
+	id = 80000
+	country = U73
+	
+	name = "The Kingdom of England"
+	desc = "Our glorious nation has been born."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+	}
+}
+
+event = {
+	id = 80001
+	country = U76
+	
+	name = "The Kingdom of Wales"
+	desc = "Our glorious nation has been born."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = add_division value = infantry when = 1 }
+	}
+}

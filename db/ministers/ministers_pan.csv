@@ -1,0 +1,64 @@
+PAN;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+405018;Foreign Minister;Azim Boulos;41;SD;The Cloak N Dagger Schemer;Medium;M95003;x
+405027;Head of State;Azim Boulos;45;SD;Powerhungry Demagogue;Medium;M95003;x
+405059;Chief of Navy;Ghazwan Bahar;30;PA;Decisive Naval Battle Doctrine;High;M95004;x
+405071;Foreign Minister;Sayyid Kalb;44;LWR;Iron Fisted Brute;High;M95005;x
+405005;Head of Military Intelligence;Najm al Din Koury;30;SL;Industrial Specialist;Very High;M95006;x
+405068;Chief of Air Force;Raja Sleiman;38;ML;Army Aviation Doctrine;High;M95007;x
+405063;Foreign Minister;Raja Sleiman;45;ML;General Staffer;Medium;M95007;x
+405052;Head of State;Imam Botros;30;PA;Popular Figurehead;High;M95008;x
+405067;Chief of Air Force;Murshid Hanania;30;ML;Carpet Bombing Doctrine;Medium;M95009;x
+405032;Foreign Minister;Abdel Saliba;38;SC;Apologetic Clerk;Medium;M95011;x
+405031;Head of Government;Abdel Saliba;39;SC;Silent Workhorse;Medium;M95011;x
+405034;Foreign Minister;Nuhaid Kouri;43;SC;General Staffer;Medium;M95013;x
+405028;Head of Government;Nuhaid Kouri;41;SC;Silent Workhorse;Medium;M95013;x
+405062;Foreign Minister;Munif Mikhail;42;ML;The Cloak N Dagger Schemer;Very High;M95015;x
+405033;Foreign Minister;Suhail Naser;30;SC;Apologetic Clerk;Very High;M95016;x
+405077;Minister of Security;Bashir Aswad;42;LE;Prince of Terror;Medium;M95017;x
+405053;Head of Government;Umair Boutros;43;PA;Old General;Very High;M95018;x
+405025;Head of State;Alim Kassis;30;SC;Insignificant Layman;Medium;M95019;x
+405051;Head of State;Mulham Amari;39;PA;Stern Imperialist;Very High;M95020;x
+405002;Foreign Minister;Youssef Asfour;36;SL;Great Compromiser;Low;M95021;x
+405076;Minister of Armament;Kardal Tahan;30;LE;Infantry Proponent;Low;M95023;x
+405020;Head of Military Intelligence;Radi Bazzi;43;SD;Political Specialist;Medium;M95025;x
+405008;Chief of Staff;Abdul-Bari Assaf;36;SL;School of Manoeuvre;High;M95025;x
+405010;Head of Government;Qadir Srour;36;SL;Naive Optimist;Medium;M95027;x
+405079;Chief of Air Force;Abdul-Khaliq Bazzi;40;LE;Army Aviation Doctrine;High;M95028;x
+405075;Head of Government;Abdul-Khaliq Bazzi;30;LE;old airmarshal;High;M95028;x
+405074;Head of State;Abdul-Khaliq Bazzi;30;LE;Resigned Generalissimo;High;M95028;x
+405012;Head of Military Intelligence;Uday Gerges;36;SL;Logistics Specialist;Medium;M95029;x
+405007;Chief of Navy;Uday Gerges;36;SL;Decisive Naval Battle Doctrine;Medium;M95029;x
+405078;Chief of Staff;Muntasir Handal;38;LE;School of Psychology;Medium;M95030;x
+405015;Minister of Security;Sameer Hadad;39;SL;Man of the People;High;M95031;x
+405003;Minister of Armament;Abdul-Quddus Safar;36;SL;Resource Industrialist;High;M95035;x
+405047;Chief of Staff;Muhannad Hakimi;47;SC;School of Manoeuvre;High;M95036;x
+405037;Minister of Armament;Muhannad Hakimi;42;SC;Administrative Genius;High;M95036;x
+405009;Foreign Minister;Omey Maarouf;36;SL;Iron Fisted Brute;Medium;M95038;x
+405011;Head of Government;Omey Maarouf;40;SL;Ambitious Union Boss;High;M95038;x
+405001;Head of State;Omey Maarouf;36;SL;Barking Buffoon;High;M95038;x
+405019;Minister of Security;Rasmi Abadi;46;SD;Compassionate Gentleman;Medium;M95039;x
+405054;Foreign Minister;Jawhar Hajjar;46;PA;General Staffer;Very High;M95041;x
+405042;Minister of Security;Jalal Tannous;40;SC;Efficient Sociopath;Very High;M95042;x
+405004;Minister of Security;Amjad Said;30;SL;Silent Lawyer;Medium;M95042;x
+405044;Head of Military Intelligence;Ahmed Hakimi;44;SC;Political Specialist;High;M95047;x
+405029;Head of Government;Moosa Sarkis;40;SC;Backroom Backstabber;High;M95048;x
+405055;Foreign Minister;Sariyah Kattan;39;PA;The Cloak N Dagger Schemer;High;M95049;x
+405030;Head of Government;Athil Gaber;46;SC;Naive Optimist;Very High;M95050;x
+405045;Head of Military Intelligence;Eisa Atiyeh;41;SC;Dismal Enigma;High;M95051;x
+405048;Chief of Army;Hakeem Issa;30;SC;Decisive Battle Doctrine;High;M95052;x
+405038;Minister of Armament;Hakeem Issa;38;SC;Infantry Proponent;High;M95052;x
+405022;Chief of Navy;Amir Haik;37;SD;Open Seas Doctrine;Medium;M95053;x
+405072;Chief of Army;Fadl Allah Sabbag;30;LWR;Armoured Spearhead Doctrine;Low;M95059;x
+405073;Chief of Navy;Alhasan Naser;30;LWR;Indirect Approach Doctrine;High;M95061;x
+405064;Minister of Armament;Abdul-Jabbar Zogby;41;ML;Administrative Genius;High;M95062;x
+405013;Minister of Armament;Abd al Touma;47;SL;Air to Sea Proponent;High;M95063;x
+405021;Chief of Staff;Amir Mustafa;45;SD;School of Manoeuvre;High;M95066;x
+405017;Head of Government;Abidin Abboud;30;SD;Political Protege;High;M95071;x
+405024;Head of State;Fadl Sarraf;30;SC;Powerhungry Demagogue;High;M95077;x
+405036;Foreign Minister;Ammar Assaf;39;SC;Ideological Crusader;High;M95082;x
+405006;Chief of Staff;Akif Srour;30;SL;School of Fire Support;Low;M95091;x
+405058;Chief of Army;Dani Shadid;37;PA;Decisive Battle Doctrine;Medium;M95093;x
+405069;Head of Government;Yassir Bachir;36;ML;Corporate Suit;High;M95095;x
+405070;Head of State;Yassir Bachir;38;ML;Insignificant Layman;High;M95095;x
+405046;Chief of Staff;Sa'eed Mansour;30;SC;School of Mass Combat;Very High;M95098;x
+405066;Chief of Army;Najm al Din Touma;44;ML;Static Defence Doctrine;High;M95100;x

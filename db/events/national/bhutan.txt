@@ -1,0 +1,37 @@
+###26000-26999###
+
+event = {
+	id = 26000
+	country = BHU
+	
+	decision = {
+		war = { country = CYN country = JAP }
+	}
+	decision_trigger = { }
+	
+	trigger = {
+		war = { country = CYN country = JAP }
+		#random = 25
+	}
+
+	name = "A Bhutanese Empire?"
+	desc = "Yuan China is embroiled in a war with Japan - this could be our chance to carve out an empire from the Yuan lands!"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 1
+		command = { type = domestic which = interventionism value = 3 }
+		command = { type = war which = CYN }
+	}
+	action = { trigger = { ai = yes }
+		name = ACTION_NAME_DECLINE
+		ai_chance = 99
+		#command = { type = domestic which = interventionism value = -1 }
+	}	
+}

@@ -1,0 +1,43 @@
+LIB;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+69001;Head of State;Tage Magnusson;36;SC;Barking Buffoon;High;M69001;x
+69003;Foreign Minister;Elvin Öberg;36;SC;Ideological Crusader;Medium;M69003;x
+69004;Minister of Armament;Anthon Björklund;36;SC;Infantry Proponent;Medium;M69004;x
+69005;Minister of Security;Mehdi Lund;36;SC;Crooked Kleptocrat;Medium;M69005;x
+69006;Head of Military Intelligence;Charlie Olofsson;36;SC;Industrial Specialist;Medium;M69006;x
+69007;Chief of Staff;Darin Nordström;36;SC;School of Mass Combat;Medium;M69007;x
+69008;Chief of Army;Egil Jansson;36;SC;Guns and Butter Doctrine;Medium;M69008;x
+69009;Chief of Navy;Sander Wallin;36;SC;Open Seas Doctrine;Medium;M530009;x
+69010;Chief of Air Force;Julius Bergqvist;36;SC;Air Superiority Doctrine;Medium;M69010;x
+69032;Head of State;Egil Forsberg;44;SC;Ruthless Powermonger;High;M69032;x
+69033;Head of State;Olof Ryd;36;SL;Benevolent Gentleman;High;M530006;x
+69034;Head of State;Erik Svärd;36;SL;Insignificant Layman;High;M69034;x
+69036;Head of Government;Egil Forsberg;36;SC;Silent Workhorse;High;M69032;x
+69037;Head of Government;Olof Ryd;36;SL;Ambitious Union Boss;High;M530006;x
+69038;Head of Government;Erik Svärd;44;SL;Corporate Suit;High;M69034;x
+69040;Foreign Minister;Eric Sjögren;44;SC;Iron Fisted Brute;Medium;M69040;x
+69041;Foreign Minister;Olof Ryd;36;SL;Great Compromiser;Medium;M530006;x
+69042;Foreign Minister;Peter Sandberg;44;SL;General Staffer;Medium;M530024;x
+69043;Foreign Minister;Mehdi Lund;46;SL;Biased Intellectual;Medium;M69005;x
+69045;Minister of Armament;Egil Forsberg;40;SC;Corrupt Kleptocrat;Medium;M69032;x
+69046;Minister of Armament;Bastian Lundin;42;SC;Administrative Genius;Medium;M69046;x
+69047;Minister of Armament;Momolo Duhuty;44;SC;laissez-faire capitalist;Medium;M69047;x
+69048;Minister of Armament;Peter Sandberg;36;SL;Corrupt Kleptocrat;Medium;M530024;x
+69049;Minister of Armament;Erik Svärd;40;SL;Tank Proponent;Medium;M69034;x
+69050;Minister of Armament;Charlie Olofsson;44;SL;Air to Sea Proponent;Medium;M69006;x
+69052;Minister of Security;Mohamad Åström;37;SC;Efficient Sociopath;Medium;M69052;x
+69053;Minister of Security;Ajdin Lundgren;38;SC;Silent Lawyer;Medium;M69053;x
+69054;Minister of Security;Daniel Blomqvist;40;SC;Man of the People;Medium;M69054;x
+69055;Minister of Security;Tage Magnusson;41;SC;Back Stabber;Medium;M69001;x
+69056;Minister of Security;Alen Jonasson;44;SC;Crime Fighter;Medium;M69056;x
+69057;Minister of Security;Bastian Lundin;46;SC;Compassionate Gentleman;Medium;M69046;x
+69058;Minister of Security;Ajdin Lundgren;36;SL;Silent Lawyer;Medium;M69053;x
+69059;Minister of Security;Abdullah Nilsson;40;SL;Man of the People;Medium;M69059;x
+69060;Minister of Security;Mohamad Åström;44;SL;Efficient Sociopath;Medium;M69052;x
+69062;Head of Military Intelligence;Abdullah Nilsson;40;SC;Political Specialist;Medium;M69059;x
+69063;Head of Military Intelligence;Adrian Göransson;42;SC;Logistics Specialist;Medium;M69007;x
+69064;Head of Military Intelligence;Roger Ivarsson;46;SC;Technical Specialist;Medium;M69064;x
+69065;Head of Military Intelligence;Bastian Lundin;36;SL;Dismal Enigma;Medium;M69046;x
+69066;Head of Military Intelligence;Adrian Göransson;42;SL;Logistics Specialist;Medium;M69007;x
+69067;Head of Military Intelligence;Villiam Björklund;46;SL;Technical Specialist;Medium;M69067;x
+69071;Chief of Army;Darin Nordström;42;SC;Armoured Spearhead Doctrine;Medium;M69007;x
+69072;Chief of Army;Atle Fransson;36;SL;Elastic Defence Doctrine;Medium;M530010;x

@@ -1,0 +1,51 @@
+# 0 - Basic Heavy Tank 1939
+model = {
+	cost 				= 8
+	buildtime	 		= 180
+	manpower 			= 2.4
+	maxspeed 			= -1
+	defensiveness 		= 3
+	toughness 			= 3
+	softness			= -6
+	hardattack			= 3
+	softattack			= 2
+	defaultorganisation	= 6
+	supplyconsumption 	= 1
+	fuelconsumption		= 1.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved Heavy Tank 1941
+model = {
+	cost 				= 9
+	buildtime	 		= 180
+	manpower 			= 2.4
+	maxspeed 			= -1
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -8
+	hardattack			= 4
+	softattack			= 3
+	defaultorganisation	= 8
+	supplyconsumption 	= 1.8
+	fuelconsumption		= 1.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced Heavy Tank 1943
+model = {
+	cost 				= 9
+	buildtime	 		= 180
+	manpower 			= 2.4
+	maxspeed 			= -1
+	defensiveness 		= 5
+	toughness 			= 5
+	softness			= -10
+	hardattack			= 5
+	softattack			= 4
+	defaultorganisation	= 10
+	supplyconsumption 	= 2.1
+	fuelconsumption		= 1.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

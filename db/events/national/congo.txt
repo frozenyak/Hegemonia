@@ -1,0 +1,70 @@
+###28000-28999###
+
+event = {
+	id = 28001
+	country = CON
+	
+	trigger = {
+		flag = HRE_dissolution
+	}
+	
+	name = "Dissolution of the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. There seems to be no country able to fill the power vacuum and members are withdrawing from the alliance left and right. The HRE has effectively ceased to exist."
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Unfortunate..."
+		command = { type = leave_alliance }
+	}
+}
+
+event = {
+	id = 28002
+	country = CON
+	
+	trigger = {
+		event = 2052003
+		NOT = { ispuppet = CON }
+		NOT = { event = 30010 }
+	}
+	
+	name = "The German Civil War - Choosing Sides"
+	desc = "Germany has been thrown into a civil war. We have to decide which side to support."
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "The Monarchy"
+		ai_chance = 60
+		#command = { type = leave_alliance }
+		command = { type = trigger which = 35105 } #ger
+		command = { type = trigger which = 66016 } #dfr
+	}
+	action = {
+		name = "The Republic"
+		ai_chance = 40
+		#command = { type = leave_alliance }
+		command = { type = trigger which = 66015 } #dfr
+		command = { type = trigger which = 35106 } #ger
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 574038 }
+	}
+	action = { trigger = { ai = no }
+		name = "Neither!"
+		ai_chance = 0
+		#command = { type = leave_alliance }
+		command = { type = trigger which = 66016 } #dfr
+		command = { type = trigger which = 35106 } #ger
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 574038 }
+	}
+}

@@ -1,0 +1,142 @@
+# 0 - large naval AA Brigade 1930 ( Capitals and Carriers )
+model = {
+	cost 				= 1.5
+	buildtime			= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 2
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack					= 2
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 1 - large naval AA Brigade 1938 ( Capitals and Carriers )
+model = {
+	cost 				= 1.5
+	buildtime			= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 3
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack					= 3
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 2 - large naval AA Brigade 1940 ( Capitals and Carriers )
+model = {
+	cost 						= 2
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 4
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 4
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 3 - large naval AA Brigade 1942 ( Capitals and Carriers )
+model = {
+	cost 						= 2
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 6
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 6
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 4 - large naval AA Brigade 1945 ( Capitals and Carriers )
+model = {
+	cost 						= 2.5
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 7
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 7
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 5 - large naval AA Brigade 1949 ( Capitals and Carriers ) rocket guided
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 8
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 8
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 6 - large naval AA Brigade Not used ( Capitals and Carriers )
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 8
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 24
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+########################################
+

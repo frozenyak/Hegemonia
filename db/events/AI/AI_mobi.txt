@@ -1,0 +1,1354 @@
+#### events are written in a generic patern, can/should be cleaned up for performance later
+
+#### generic events - for ai puppets
+
+event = { # medium sized puppets get some initial police forces to maintain control when they have no forces
+
+	id = 150000
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHC CHI CHL COL CRO CSA CSX CZE DDR DEN DFR ENG EST ETH FIN FLA FRA GEO GER GRE GUA HOL HON HUN IDC IND INO ISR ITA JAP KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SOV SPA SPR SWE TEX TRA TUR UKR USA VEN VIC VIE WLL YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U66 U67 U69 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UAU }
+
+	trigger = {
+			ispuppet = yes
+			ai = yes
+			NOT = { army = 3 }
+			NOT = { local_flag = guardforces }
+			}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = { ispuppet = yes }
+		ai_chance = 100
+        command = { type = add_division  value = militia when = 4 where = police }
+        command = { trigger = { NOT = { army = 3 } } type = add_division value = militia when = 4 where = police }
+        command = { trigger = { NOT = { army = 3 } } type = add_division  value = militia when = 4 where = police }
+		command = { type = local_setflag which = guardforces }
+	}
+}
+
+event = { # remove initial police forces again
+
+	id = 150001
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHC CHI CHL COL CRO CSA CSX CZE DDR DEN DFR ENG EST ETH FIN FLA FRA GEO GER GRE GUA HOL HON HUN IDC IND INO ISR ITA JAP KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SOV SPA SPR SWE TEX TRA TUR UKR USA VEN VIC VIE WLL YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U66 U67 U69 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UAU }
+
+	trigger = {
+			ispuppet = yes
+			ai = yes
+			army = 6
+			local_flag = guardforces
+			}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = { ispuppet = yes }
+		ai_chance = 100
+        command = { type = strength which = militia when = 0 where = 1 }
+	}
+}
+
+event = { # "colonies and minors don't mobilize at peace"
+
+	id = 150002
+	persistent = yes
+	TAG = { AFG ALB ALG ANG AZB BEN BHU BRU BUR BUT CAM CMB CON COS CUB CYP DOM EAF EGY EQA EUS GAB GLD GUI GUY HAI ICL IRE IRQ JOR KAZ KUR KYG LEB LBY LIB LUX MAD MAL MLY MOR MOZ NAM MTN NEP NIG OMN PAL PHI PAN RHO SAF SAL SAU SCH SIE SOM SYR TAJ TAN TIB TRA TRK TUN URU UZB YEM U03 U04 U06 U18 U26 U39 U49 U70 U71 U75 U79 U80 U83 U84 U85 U86 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UAU }
+
+	trigger = {
+			ai = yes
+			ispuppet = yes
+			NOT = { manpower = 25 }
+			OR = {
+				AND = {
+					atwar = no
+					NOT = { policy = { type = professional_army value = 2 }}
+					}
+				AND = {
+					atwar = yes
+					NOT = { policy = { type = professional_army value = 5 }}
+					}
+			}
+		}
+
+	name = "AI_EVENT"
+
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = { atwar = no }
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { type = local_setflag which = MOB2 }
+		command = { type = set_domestic which = professional_army value = 2 }
+	}
+
+	action = {
+		trigger = { atwar = yes }
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { type = local_setflag which = MOB2 }
+		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = set_domestic which = professional_army value = 5 }
+	}
+}
+
+event = { # "medium sized puppets mobilize"
+
+	id = 150003
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHC CHI CHL COL CRO CSA CSX CZE DDR DEN DFR ENG EST ETH FIN FLA FRA GEO GER GRE GUA HOL HON HUN IDC IND INO ISR ITA JAP KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SOV SPA SPR SWE TEX TRA TUR UKR USA VEN VIC VIE WLL YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49	U72 U73 U74 U76 U77 U78 U80 U81 U82 U83 U85 U86 U87 UAU }
+
+	trigger = {
+			ai = yes
+			ispuppet = yes
+			NOT = { manpower = 25 }
+			OR = {
+				AND = {
+					atwar = no
+					NOT = { policy = { type = professional_army value = 6 }}
+					}
+				AND = {
+					atwar = yes
+					NOT = { policy = { type = professional_army value = 8 }}
+					}
+			}
+		}
+
+	name = "AI_EVENT"
+
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = { atwar = no }
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { type = local_setflag which = MOB2 }
+		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = set_domestic which = professional_army value = 6 }
+	}
+
+	action = {
+		trigger = { atwar = yes }
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = local_setflag which = MOB2 }
+		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB7 }
+		command = { type = set_domestic which = professional_army value = 7 }
+	}
+
+	action = {
+		trigger = { atwar = yes local_flag = MOB7 }
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = local_setflag which = MOB8 }
+		command = { type = set_domestic which = professional_army value = 8 }
+	}
+}
+
+event = { # medium sized non-puppets mobilize
+
+	id = 150004
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHC CHI CHL COL CRO CSA CSX CZE DDR DEN DFR ENG EST ETH FIN FLA FRA GEO GER GRE GUA HOL HON HUN IDC IND INO ISR ITA JAP KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SOV SPA SPR SWE TEX TRA TUR UKR USA VEN VIC VIE WLL YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49	U72 U73 U74 U76 U77 U78 U80 U81 U82 U83 U85 U86 U87 UAU }
+
+	trigger = {
+			ai = yes
+			NOT = { ispuppet = yes }
+			NOT = { manpower = 25 }
+			OR = {
+				AND = {
+					atwar = no
+					NOT = { policy = { type = professional_army value = 5 }}
+					}
+				AND = {
+					atwar = yes
+					NOT = { policy = { type = professional_army value = 8 }}
+					}
+			}
+		}
+
+	name = "AI_EVENT"
+
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = { atwar = no }
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { type = local_setflag which = MOB2 }
+		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = set_domestic which = professional_army value = 5 }
+	}
+
+	action = {
+		trigger = { atwar = yes }
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = local_setflag which = MOB2 }
+		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB7 }
+		command = { type = set_domestic which = professional_army value = 7 }
+	}
+
+	action = {
+		trigger = { atwar = yes local_flag = MOB7 }
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = local_setflag which = MOB8 }
+		command = { type = set_domestic which = professional_army value = 8 }
+	}
+}
+
+#### generic events - partial mobilisation when war on the continent - not for asia/africa as those nation are either puppets, to small to matter mp wise or get specific aievents
+
+
+#### generic events for all countries at war
+
+event = { #high threat mobilisation, general mobilisation usually only kicks in when territory is lost historical participants of ww2 get extra events.
+
+	id = 130003
+	persistent = yes
+	TAG = { ENG FRA USA GER ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHL COL CRO CSA CSX CZE DDR DEN DFR ENG EST ETH FIN FLA FRA GEO GER GRE GUA HOL HON HUN IDC INO ISR ITA JAP KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SOV SPA SPR SWE TEX TRA TUR UKR USA VEN VIC VIE WLL YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49 U50 U51 U52 U53 U54 U55 U56 U66 U67 U69 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UAU }
+
+
+
+	trigger = {
+		NOT = { local_flag = MOB10 }
+		local_flag = MOB7
+		atwar = yes
+		ai = yes
+		OR = {
+				lost_national = { value = 25 }
+				AND = {	NOT = { manpower = 95 }	lost_national = { value = 15 }}
+			}
+		}
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "Wehrmacht"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = {
+			lost_national = { value = 25 }
+			policy = { type = professional_army value = 9 }
+			NOT = { policy = { type = professional_army value = 10 }}
+		}
+
+		name = "MOB10name"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = manpowerpool value = 15 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB9 } } type = manpowerpool value = 25 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 10 }
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_time which = militia value = -75 where = relative }
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_cost which = militia value = 50 where = relative }
+		command = { type = 	soft_attack which = militia value = -3 }
+		command = { type = 	hard_attack which = militia value = -2 }
+		command = { type = 	air_defense which = militia value = -1 }
+		command = { type = max_organization which = militia value = -5 }
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = ai which = "switch/Build_MIL.ai" }
+		command = { type = local_setflag which = MOB10 }
+		command = { type = local_setflag which = MOB9 }
+		command = { type = local_setflag which = MOB8 }
+	}
+
+	action = {
+		trigger = {
+			policy = { type = professional_army value = 7 }
+			NOT = { policy = { type = professional_army value = 8 }}
+		}
+
+		name = "MOB8name"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = local_setflag which = MOB8 }
+	}
+
+	action = {
+		trigger = {
+			lost_national = { value = 10 }
+			policy = { type = professional_army value = 8 }
+			NOT = { policy = { type = professional_army value = 9 }	}
+		}
+
+		name = "MOB9name"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB9 } } type = manpowerpool value = 25 when = 1 }
+		command = { type = set_domestic which = professional_army value = 9 }
+		command = { type = local_setflag which = MOB9 }
+	}
+}
+
+event = { #end of high threat mobilisation
+
+	id = 130004
+	persistent = yes
+
+	trigger = {
+		local_flag = MOB10
+		NOT = { local_flag = TOT }
+		lost_national = { value = 10 }
+		atwar = yes
+		ai = yes
+		}
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "Wehrmacht"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+		action = {
+
+		name = "MOB9name"
+		ai_chance = 100
+		command = { type = manpowerpool value = -15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 9 }
+		command = { type = 	build_time which = militia value = 75 where = relative }
+		command = { type = 	build_cost which = militia value = -50 where = relative }
+		command = { type = 	soft_attack which = militia value = 3 }
+		command = { type = 	hard_attack which = militia value = 2 }
+		command = { type = 	air_defense which = militia value = 1 }
+		command = { type = 	max_organization which = militia value = 5 }
+		command = { type = ai which = "switch/SOV_Build_Standard.ai" } #good enough as a rather balanced build. for most majors there own switshes should kick in soon after
+		command = { type = local_setflag which = TOT }
+		}
+}
+
+#### UK
+
+event = { #uk ai - mobilisation partial
+
+	id = 130011
+
+	country = ENG
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = MOB7 }
+		policy = { type = professional_army value = 3 }
+		NOT = { policy = { type = professional_army value = 7 }}
+		#OR = {
+		#	event = { id = 2003036 days = 75  } #danzig
+			under_attack = ENG
+		#	}
+		}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+
+	action = {
+
+		name = "MOB7name"
+		ai_chance = 100
+
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB7 }
+	}
+}
+
+event = { #ai uk - general mobilisation
+
+	id = 130012
+	
+	country = ENG
+	persistent = yes
+
+	trigger = {
+		NOT = { local_flag = MOB8 }
+		atwar = yes
+		year = 1942
+		ai = yes
+		NOT = { manpower = 95 }
+		}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+		action = {
+		name = "MOB8name"
+		ai_chance = 100
+
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = local_setflag which = MOB8 }
+	}
+}
+
+# event = { #USA ai - mobilisation partial
+
+	# id = 130492
+	# 
+	# country = USA
+	# persistent = yes
+
+	# trigger = {
+		# ai = yes
+		# atwar = yes
+		# }
+
+	# name = "AI_EVENT"
+
+	# style = 2
+	# picture = "Wehrmacht"
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 30
+	# deathdate = { day = 30 month = december year = 1963 }
+
+
+
+	# action = {
+
+		# name = "MOB7name"
+		# ai_chance = 100
+		# command = { type = local_setflag which = MOB2 }
+		# command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		# command = { type = set_domestic which = professional_army value = 7 }
+		# command = { type = local_setflag which = MOB3 }
+		# command = { type = local_setflag which = MOB4 }
+		# command = { type = local_setflag which = MOB5 }
+		# command = { type = local_setflag which = MOB6 }
+		# command = { type = local_setflag which = MOB7 }
+	# }
+# }
+
+# #### GER
+
+event = { #GER ai - 2 year conscription
+
+	id = 130030
+	
+	country = GER
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = MOB5 }
+		#OR = {
+		#	event = 2052002 #SPA fascist nation
+			NOT = { manpower = 25 }
+		#	}
+		}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+
+	action = {
+
+		name = "MOB5name"
+		ai_chance = 100
+		command = { type = local_setflag which = MOB2 }
+		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB4 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 5 }
+		command = { type = local_setflag which = MOB5 }
+	}
+}
+
+### France
+
+event = { #VIC ai - mobilisation partial
+
+	id = 130220
+	
+	country = VIC
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = MOB7 }
+		year = 1939
+	}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "MOB7name"
+		ai_chance = 100
+		command = { type = local_setflag which = MOB2 }
+		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB7 }
+	}
+}
+
+### U14 Lombardy
+
+event = { #U14 ai - mobilisation partial
+
+	id = 130061
+	
+	country = U14
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = MOB7 }
+		year = 1939
+	}
+   
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "MOB7name"
+		ai_chance = 100
+		command = { type = local_setflag which = MOB2 }
+		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB7 }
+	}
+} 
+
+### RUS
+
+event = { #high threat mobilisation, general mobilisation usually only kicks in when territory is lost historical participants of ww2 get extra events.
+
+	id = 130113
+	
+	country = RUS
+	persistent = yes
+
+	trigger = {
+		NOT ={ local_flag = MOB10 }
+		atwar = yes
+		ai = yes
+		NOT = { manpower = 95 }
+		lost_national = { value = 5 }
+		OR = {
+			AND = {
+				NOT = { control = { province = 553 data = -1 } } #leningrad/petrograd/st petersburg/odinholm
+				owned = { province = 553 data = -1 }
+			}
+			NOT = { control = { province = 572 data = -1 } } #moscow
+			NOT = { control = { province = 663 data = -1 } } #stalingrad/volgograd
+			#NOT = { control = { province = 713 data = -1 } } #Baku
+			}
+		}
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "Wehrmacht"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = {
+			lost_national = { value = 35 }
+			policy = { type = professional_army value = 7 }
+			NOT = { policy = { type = professional_army value = 10 }}
+		}
+
+		name = "MOB10name"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = manpowerpool value = 15 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB9 } } type = manpowerpool value = 25 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 10 }
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_time which = militia value = -75 where = relative }
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_cost which = militia value = 50 where = relative }
+		command = { type = 	soft_attack which = militia value = -3 }
+		command = { type = 	hard_attack which = militia value = -2 }
+		command = { type = 	air_defense which = militia value = -1 }
+		command = { type = 	max_organization which = militia value = -5 }
+		command = { type = local_setflag which = MOB10 }
+		command = { type = local_setflag which = MOB9 }
+		command = { type = local_setflag which = MOB8 }
+	}
+
+	action = {
+		trigger = {
+			policy = { type = professional_army value = 7 }
+			NOT = { policy = { type = professional_army value = 8 } }
+		}
+
+		name = "MOB8name"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = local_setflag which = MOB8 }
+	}
+
+	action = {
+		trigger = {
+			lost_national = { value = 15 }
+			policy = { type = professional_army value = 8 }
+			NOT = { policy = { type = professional_army value = 9 } }
+		}
+
+		name = "MOB9name"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB9 } } type = manpowerpool value = 25 when = 1 }
+		command = { type = set_domestic which = professional_army value = 9 }
+		command = { type = local_setflag which = MOB9 }
+	}
+}
+
+#### CHI
+
+event = { #CHI ai - mobilisation path
+	id = 130120
+	
+	#country = CHI
+	TAG = { CHI CYN }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { manpower = 120 }
+		NOT = { policy = { type = professional_army value = 8 } }
+	}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	action = { #Establish a professional military
+		trigger = {
+			NOT = { policy = { type = professional_army value = 2 }}
+		}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { type = set_domestic which = professional_army value = 2 }
+		command = { type = local_setflag which = MOB2 }
+
+	}
+
+	action = { #Enact Selective Conscription
+		trigger = {
+		policy = { type = professional_army value = 2 }
+		NOT = { policy = { type = professional_army value = 3 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 3 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB3 }
+	}
+
+		action = { #Enact One Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 3 }
+		NOT = { policy = { type = professional_army value = 4 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { type = set_domestic which = professional_army value = 4 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB4 }
+	}
+
+		action = { #Enact Two Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 4 }
+		NOT = { policy = { type = professional_army value = 5 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 5 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB5 }
+	}
+
+		action = { #Enact Three Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 5 }
+		NOT = { policy = { type = professional_army value = 6 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 6 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB6 }
+	}
+
+		action = { #Enact Partial Mobilisation
+		trigger = {
+		policy = { type = professional_army value = 6 }
+		NOT = { policy = { type = professional_army value = 7 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB7 }
+	}
+
+		action = { #Enact General Mobilisation
+		trigger = {
+		policy = { type = professional_army value = 7 }
+		NOT = { policy = { type = professional_army value = 8 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB8 }
+	}
+}
+
+event = { #CHI ai - mobilisation path
+	id = 130121
+	
+	country = CHC
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { manpower = 100 }
+		NOT = { policy = { type = professional_army value = 8 } }
+	}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	action = { #Establish a professional military
+		trigger = {
+			NOT = { policy = { type = professional_army value = 2 }}
+		}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { type = set_domestic which = professional_army value = 2 }
+		command = { type = local_setflag which = MOB2 }
+
+	}
+
+	action = { #Enact Selective Conscription
+		trigger = {
+		policy = { type = professional_army value = 2 }
+		NOT = { policy = { type = professional_army value = 3 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 3 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB3 }
+	}
+
+		action = { #Enact One Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 3 }
+		NOT = { policy = { type = professional_army value = 4 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB4 }  lost_national = { country = CHC value = 90 } } type = manpowerpool value = 4 when = 1 }
+		command = { type = set_domestic which = professional_army value = 4 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB4 }
+	}
+
+		action = { #Enact Two Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 4 }
+		NOT = { policy = { type = professional_army value = 5 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB5 }  lost_national = { country = CHC value = 80 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 5 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB5 }
+	}
+
+		action = { #Enact Three Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 5 }
+		NOT = { policy = { type = professional_army value = 6 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB6 }  lost_national = { country = CHC value = 70 } } type = manpowerpool value = 5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 6 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB6 }
+	}
+
+		action = { #Enact Partial Mobilisation
+		trigger = {
+		policy = { type = professional_army value = 6 }
+		NOT = { policy = { type = professional_army value = 7 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB7 }  lost_national = { country = CHC value = 60 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB7 }
+	}
+
+		action = { #Enact General Mobilisation
+		trigger = {
+		policy = { type = professional_army value = 7 }
+		NOT = { policy = { type = professional_army value = 8 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB8 }  lost_national = { country = CHC value = 50 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB8 }
+	}
+}
+
+#### RAJ
+
+event = { #IND ai - mobilisation path
+	id = 131850
+	
+	country = IND
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { manpower = 95 }
+		NOT = { policy = { type = professional_army value = 8 } }
+	}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	action = { #Establish a professional military
+		trigger = {
+			NOT = { policy = { type = professional_army value = 2 }}
+		}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { type = set_domestic which = professional_army value = 2 }
+		command = { type = local_setflag which = MOB2 }
+
+	}
+
+	action = { #Enact Selective Conscription
+		trigger = {
+		policy = { type = professional_army value = 2 }
+		NOT = { policy = { type = professional_army value = 3 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 3 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB3 }
+	}
+
+		action = { #Enact One Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 3 }
+		NOT = { policy = { type = professional_army value = 4 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB4 }  lost_national = { country = IND value = 10 } } type = manpowerpool value = 4 when = 1 }
+		command = { type = set_domestic which = professional_army value = 4 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB4 }
+	}
+
+		action = { #Enact Two Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 4 }
+		NOT = { policy = { type = professional_army value = 5 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB5 }  lost_national = { country = IND value = 15 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 5 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB5 }
+	}
+
+		action = { #Enact Three Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 5 }
+		NOT = { policy = { type = professional_army value = 6 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB6 }  lost_national = { country = IND value = 20 } } type = manpowerpool value = 5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 6 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB6 }
+	}
+
+		action = { #Enact Partial Mobilisation
+		trigger = {
+		policy = { type = professional_army value = 6 }
+		NOT = { policy = { type = professional_army value = 7 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB7 }  lost_national = { country = IND value = 30 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB7 }
+	}
+
+		action = { #Enact General Mobilisation
+		trigger = {
+		policy = { type = professional_army value = 7 }
+		NOT = { policy = { type = professional_army value = 8 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB8 }  lost_national = { country = IND value = 40 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB8 }
+	}
+}
+
+event = { #Imperial India ai - mobilisation path
+	id = 131852
+	
+	country = U02
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { manpower = 95 }
+		NOT = { policy = { type = professional_army value = 8 } }
+	}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	action = { #Enact Selective Conscription
+		trigger = {
+		policy = { type = professional_army value = 2 }
+		NOT = { policy = { type = professional_army value = 3 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 3 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB3 }
+	}
+
+		action = { #Enact One Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 3 }
+		NOT = { policy = { type = professional_army value = 4 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB4 }  lost_national = { country = U02 value = 10 } } type = manpowerpool value = 4 when = 1 }
+		command = { type = set_domestic which = professional_army value = 4 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB4 }
+	}
+
+		action = { #Enact Two Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 4 }
+		NOT = { policy = { type = professional_army value = 5 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB5 }  lost_national = { country = U02 value = 15 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 5 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB5 }
+	}
+
+		action = { #Enact Three Year Conscription
+		trigger = {
+		policy = { type = professional_army value = 5 }
+		NOT = { policy = { type = professional_army value = 6 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB6 }  lost_national = { country = U02 value = 20 } } type = manpowerpool value = 5 when = 1 }
+		command = { type = set_domestic which = professional_army value = 6 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB6 }
+	}
+
+		action = { #Enact Partial Mobilisation
+		trigger = {
+		policy = { type = professional_army value = 6 }
+		NOT = { policy = { type = professional_army value = 7 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB7 }  lost_national = { country = U02 value = 30 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB7 }
+	}
+
+		action = { #Enact General Mobilisation
+		trigger = {
+		policy = { type = professional_army value = 7 }
+		NOT = { policy = { type = professional_army value = 8 }
+		}}
+
+		name = "CHIMOBact"
+		ai_chance = 100
+		command = { trigger = { NOT = { local_flag = MOB8 }  lost_national = { country = U02 value = 40 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = build_time which = militia value = -5 where = relative }
+		command = { type = local_setflag which = MOB8 }
+	}
+}
+
+# event = { #RAJ won't turn down to volunteer army when national territory is lost.
+
+	# id = 131852
+	# 
+	# country = U02
+	# persistent = yes
+
+	# trigger = {
+			# ispuppet = yes
+			# NOT = { local_flag = MOB10 } #flag gets removed in end of high thread mobilisations
+			# NOT = { lost_national = { value = 3 } }
+
+			# ai = yes
+		# }
+
+	# name = "AI_EVENT"
+
+
+	# date = { day = 1 month = january year = 1914 }
+	# offset = 180
+	# deathdate = { day = 30 month = december year = 1963 }
+
+		# action = {
+		# ai_chance = 100
+		# command = { type = set_domestic which = professional_army value = 2 }
+	# }
+# }
+
+########### Swiss Mobilization
+
+### SCH 3 on end of cze 2 on danzig
+
+# event = { #SCH ai - general mobilisation
+
+	# id = 130170
+	# 
+	# country = SCH
+
+	# trigger = {
+		# NOT = { local_flag = MOB8 }
+		# ai = yes
+		# event = 2003015
+		# }
+
+	# name = "AI_EVENT"
+
+	# style = 2
+	# picture = "Wehrmacht"
+
+	# date = { day = 1 month = january year = 1914 }
+	# offset = 30
+	# deathdate = { day = 30 month = december year = 1963 }
+
+		# action = {
+		# name = "MOB8name"
+		# ai_chance = 100
+		# command = { type = local_setflag which = MOB2 }
+		# command = { type = local_setflag which = MOB3 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		# command = { type = set_domestic which = professional_army value = 8 }
+		# command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 }
+ 		# command = { type = local_setflag which = RES }
+		# command = { type = local_setflag which = MOB4 }
+		# command = { type = local_setflag which = MOB5 }
+		# command = { type = local_setflag which = MOB6 }
+		# command = { type = local_setflag which = MOB7 }
+		# command = { type = local_setflag which = MOB8 }
+	# }
+# }
+
+event = { #SCH ai - extended mobilisation
+
+	id = 130171
+	country = SCH
+	persistent = yes
+
+	trigger = {
+		NOT = { local_flag = MOB9 }
+		ai = yes
+		OR = {
+			atwar = VIC
+			atwar = GER
+			atwar = AUS
+			atwar = U14
+			under_attack = SCH
+		}
+	}
+
+	name = "AI_EVENT"
+
+	style = 2
+	picture = "Wehrmacht"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+		action = {
+		name = "MOB9name"
+		ai_chance = 100
+
+		command = { trigger = { NOT = { local_flag = MOB9 } } type = manpowerpool value = 40 when = 1 }
+		command = { type = set_domestic which = professional_army value = 9 }
+		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.8 }
+		command = { type = local_setflag which = MOB9 }
+		command = { type = local_setflag which = RES }
+	}
+}
+
+
+####### AI reinforcement
+
+event = {
+	id = 150024
+	
+	persistent = yes
+	TAG = { ENG FRA USA GER ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHL COL CRO CSA CSX CZE DDR DEN DFR ENG EST ETH FIN FLA FRA GEO GER GRE GUA HOL HON HUN IDC INO ISR ITA JAP KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SOV SPA SPR SWE TEX TRA TUR UKR USA VEN VIC VIE WLL YUG U01 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UAU }
+
+	
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = reinf }
+		}
+   
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1908 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = noreinf }
+		command = { type = local_setflag which = reinf }
+		command = { type = ai which = "switch/Reinforcement_Boost_Up.ai" }
+	}
+}	
+event = {
+	id = 150025
+	
+	persistent = yes
+	TAG = { ENG FRA USA GER ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHL COL CRO CSA CSX CZE DDR DEN DFR ENG EST ETH FIN FLA FRA GEO GER GRE GUA HOL HON HUN IDC INO ISR ITA JAP KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SOV SPA SPR SWE TEX TRA TUR UKR USA VEN VIC VIE WLL YUG U01 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UAU }
+
+	
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { local_flag = noreinf }
+		}
+   
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1908 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		command = { type = local_clrflag which = reinf }
+		command = { type = local_setflag which = noreinf }
+		command = { type = ai which = "switch/Reinforcement_Boost_Down.ai" }
+	}	
+}

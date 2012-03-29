@@ -1,0 +1,76 @@
+###24000-24999###
+
+event = {
+	id = 24000
+	country = UAU
+	
+	trigger = {
+		atwar = JAP
+		NOT = { war = { country = JAP } }
+		NOT = { participant = { value = 4 } }
+	}
+
+	name = "Foreign Initiatives"
+	desc = "With Japan at war, some members of our government are beginning to reconsider our position of neutrality. Perhaps we would be best off aligned with one of the major power blocs, or at least in a defense pact with our sister country, Tagalog?"
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = { trigger = { NOT = { war = { country = PHI } } }
+		name = "Offer an alliance to Tagalog"
+		ai_chance = 60
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 52000 }
+	}
+	action = { trigger = { NOT = { war = { country = SPA } } }
+		name = "Seek League membership"
+		ai_chance = 10
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = trigger which = 38021 }
+	}
+	action = { 
+		trigger = { 
+			exists = GER
+			NOT = { war = { country = GER } } 
+		}
+		name = "Seek an alliance with the HRE"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = trigger which = 35058 }
+	}
+	# action = { 
+		# trigger = { 
+			# exists = U00
+			# government = communist
+		# }
+		# name = "Seek an alliance with the Comintern"
+		# ai_chance = 5
+		# command = { type = dissent value = 5 }
+		# command = { type = domestic which = interventionism value = 2 }
+		# command = { type = trigger which = }
+	# }
+	action = { trigger = { atwar = no }
+		name = "Neutrality is still best!"
+		ai_chance = 25
+		command = { type = dissent value = -2 }
+		command = { type = domestic which = interventionism value = -2 }
+	}
+}
+
+event = {
+	id = 24001
+	country = UAU
+
+	name = "The Australasia-Tagalog Alliance"
+	desc = "The Tagalog Republic has agreed to our proposal for a defense pact."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = alliance which = PHI }
+	}
+}

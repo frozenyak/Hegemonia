@@ -1,0 +1,216 @@
+###60000-60999###
+
+event = {
+	id = 60000
+	country = CUB
+
+	name = "The Tarrbitz Miracle"
+	desc = "Favorable weather and the rising prices on sugar and copper have created an economic boom on Tarrbitz. Foreign investment is flocking here and we now have the capital and means to invest heavily in our industry and infrastructure."
+	style = 1
+	picture = "economic"
+	
+	date = { day = 14 month = august year = 1937 }
+
+	action = {
+		name = "Invest the profits in our industries"
+		ai_chance = 60
+		command = { type = construct which = infrastructure where = 1776 }
+		command = { type = construct which = infrastructure where = 1777 }
+		command = { type = construct which = infrastructure where = 1779 }
+		command = { type = construct which = ic where = 1776 }
+		command = { type = construct which = ic where = 1777 }
+		command = { type = domestic which = free_market value = -1 }
+	}
+	action = {
+		name = "Invest the profits in the military"
+		ai_chance = 20
+		command = { type = add_division value = infantry }
+		command = { type = add_division value = infantry }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+	action = {
+		name = "We need the money!"
+		ai_chance = 20
+		command = { type = money value = 200 }
+	}
+}
+
+event = {
+	id = 60001
+	country = CUB
+	
+	trigger = {
+		event = 60000
+		NOT = { alliance = { country = HAI } }
+		NOT = { alliance = { country = DOM } }
+	}
+
+	name = "Masters of the Caribbean"
+	desc = "Still riding the economic boom, Tarrbitz has emerged as the dominant power in the Caribbean. Is it not time we make them understand that we are the masters of this region?"
+	style = 1
+	picture = "Caribbean"
+	
+	date = { day = 22 month = october year = 1937 }
+
+	action = {
+		name = "Proclaim ourselves Masters of the Caribbean!"
+		ai_chance = 80
+		command = { type = relation which = HAI value = -100 }
+		command = { type = relation which = HAI value = -100 }		
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = setflag which = CUB_claims_caribbean }
+		command = { type = addclaim which = 1780 }
+		command = { type = addclaim which = 2309 }
+	}
+	action = {
+		name = "We prefer good relations with our neighbors"
+		ai_chance = 20
+		command = { type = relation which = HAI value = 50 }
+		command = { type = relation which = HAI value = 50 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 60002
+	country = CUB
+	
+	trigger = {
+		#random = 25
+		flag = CUB_claims_caribbean
+		exists = DOM
+		NOT = { war = { country = DOM } }
+		NOT = { alliance = { country = HAI } }
+		NOT = { alliance = { country = DOM } }
+		war = { country = MEX country = USA }
+		army = 5
+	}
+
+	name = "The Caribbean War"
+	desc = "Mazula and the American Federation have gone to war, and neither is paying much attention to the Caribbean. This is the moment we have been waiting for - our chance to unify the Caribbean under our rule."
+	style = 1
+	picture = "Caribbean"
+	
+	date = { day = 22 month = october year = 1937 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "We shall unify the Caribbean under our banner!"
+		ai_chance = 100
+		command = { type = war which = DOM }
+	}
+	action = {
+		name = "The time is not right..."
+		ai_chance = 0
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 60003
+	country = CUB
+	
+	trigger = {
+		flag = CUB_claims_caribbean
+		owned = { province = 1780 }
+		control = { province = 1776 }
+	}
+
+	name = "The Conquest of Mansur"
+	desc = "We have conquered our old rivals the Republic of Mansur. Their lands are now ours to rule."
+	style = 1
+	picture = "great_war_manifestion"
+	
+	date = { day = 22 month = october year = 1937 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = dissent value = -5 }
+		command = { type = addcore which = 1781 }
+		command = { type = addcore which = 1780 }
+	}
+}
+
+event = {
+	id = 60004
+	country = CUB
+	
+	trigger = {
+		flag = CUB_claims_caribbean
+		owned = { province = 2309 }
+		control = { province = 1776 }
+	}
+
+	name = "The Conquest of Fabur"
+	desc = "We have conquered our old rivals the Faburi Confederation. Their lands are now ours to rule."
+	style = 1
+	picture = "great_war_manifestion"
+	
+	date = { day = 22 month = october year = 1937 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = dissent value = -5 }
+		command = { type = addcore which = 2309 }
+		command = { type = addcore which = 1752 }
+		command = { type = addcore which = 1765 }
+		command = { type = addcore which = 1767 }
+		command = { type = addcore which = 1768 }
+		command = { type = addcore which = 1761 }
+		command = { type = addcore which = 1753 }
+		command = { type = addcore which = 1754 }
+		command = { type = addcore which = 1755 }
+		command = { type = addcore which = 1757 }
+		command = { type = addcore which = 1758 }
+		command = { type = addcore which = 1759 }
+		command = { type = addcore which = 1760 }
+		command = { type = addcore which = 1763 }
+		command = { type = addcore which = 1764 }
+		command = { type = addcore which = 1766 }
+		command = { type = addcore which = 1769 }
+		command = { type = addcore which = 1770 }
+		command = { type = addcore which = 1771 } 
+		command = { type = addcore which = 1772 }
+	}
+}
+
+event = {
+	id = 60005
+	country = CUB
+	
+	trigger = {
+		#random = 25
+		flag = CUB_claims_caribbean
+		exists = HAI
+		NOT = { war = { country = HAI } }
+		NOT = { alliance = { country = HAI } }
+		NOT = { alliance = { country = DOM } }
+	}
+
+	name = "The Caribbean War"
+	desc = "With the growing tension between Mazula and the Americans, neither is paying much attention to the Caribbean. This is the moment we have been waiting for - our chance to unify the Caribbean under our rule."
+	style = 1
+	picture = "Caribbean"
+	
+	date = { day = 13 month = october year = 1938 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "We shall unify the Caribbean under our banner!"
+		ai_chance = 99
+		command = { type = war which = HAI }
+	}
+	action = {
+		name = "The time is not right..."
+		ai_chance = 1
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+}

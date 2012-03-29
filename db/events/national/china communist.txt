@@ -1,0 +1,161 @@
+###29000-29999###
+# 29020 guerilla warfare tech
+
+event = {
+	id = 29000
+	country = CHC
+	persistent = yes 
+	
+	name = "Birth of a Nation"
+	desc = "Our glorious nation has been born."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		#
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = free_market value = 1 }
+		command = { type = set_domestic which = freedom value = 2 }
+		#command = { type = set_domestic which = professional_army value = 2 }
+		command = { type = set_domestic which = defense_lobby value = 10 }
+		command = { type = set_domestic which = interventionism value = 10 }
+		#
+		command = { type = headofstate which = 51001 }
+		command = { type = headofgovernment which = 51002 }
+		#
+		command = { type = add_division value = bergsjaeger when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = militia when = 1 }
+		command = { type = add_division value = militia when = 1 }
+		#
+		command = { type = metalpool value = 120 }
+		command = { type = energypool value = 240 }
+		command = { type = rarematerialspool value = 60 }
+		command = { type = money value = 50 }
+		command = { type = manpowerpool value = 220 }
+		command = { type = supplies value = 800 }
+		command = { type = oilpool value = 100 }
+		command = { type = extra_tc value = 7 }
+		#
+		command = { trigger = { control = { province = 1259 } } type = construct which = land_fort where = 1259 value = 5 }
+		command = { trigger = { control = { province = 1260 } } type = construct which = land_fort where = 1260 value = 5 }
+		command = { trigger = { control = { province = 1255 } } type = construct which = land_fort where = 1255 value = 5 }
+		#
+		#command = { type = alliance which = CHI }
+		#command = { trigger = { exists = U87 NOT = { war = { country = U87 } } } type = trigger which = 29011 }
+	}
+}
+
+#########################################################################
+#  New Chinese Civil War
+#########################################################################
+
+event = {
+	id = 29010
+	country = CHC
+
+	name = EVT_99_NAME
+	desc = EVT_99_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		event = 27007
+		exists = CHI
+		#random = 50
+		NOT = {
+			war = { country = CHI }
+			war = { country = RUS }
+			war = { country = SOV }
+			war = { country = USA }
+			war = { country = MEX }
+			war = { country = ENG }
+			war = { country = SPA }
+			war = { country = JAP }
+		}
+	}
+
+	date = { day = 1 month = january year = 1940 }
+	offset = 5
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action_a = {
+		ai_chance = 90
+		name = EVT_99_ACTA
+		command = { type = leave_alliance }
+		command = { type = money value = 10 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = war which = CHI }
+		command = { type = dissent value = -5 } # the time is ripe for the Revolution
+		command = { type = trigger which = 27010 }
+	}
+
+	action_b = {
+		ai_chance = 10
+		name = EVT_99_ACTB
+		command = { type = money value = -10 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 29011
+	country = CHC
+
+	trigger = {
+		#event = 29000
+		#event = 70005
+		exists = U87
+		NOT = { war = { country = U87 } }
+	}
+	
+	name = "Chinese War of Liberation"
+	desc = "Let's bring the fight to the Japanese invaders and their lackeys!"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		command = { type = war which = U87 }
+		command = { type = war which = CGX }
+		command = { type = war which = MEN }
+		command = { type = war which = MAN }
+		command = { type = war which = JAP }
+	}
+}
+
+# event = {
+	# id = 29020
+	# country = CHC
+	
+	# trigger = { 	
+		# war = { country = JAP }
+		# technology = 6300
+		# #NOT = { technology = 14080 }
+		# NOT = { technology = 6300 }
+	# }
+
+	# date = { day = 1 month = august year = 1937 }
+	# offset = 3 # Check for trigger conditions every 3 days
+	# deathdate = { day = 30 month = december year = 1964 }
+
+
+	# name = "Technical Blueprints"
+	# desc = "Mao Zedong and his allies Ho Chi Minh and Kim Il Sung observed the techniques of the Japanese, and developed the doctrine of guerrilla warfare."
+	# picture = "scientist"
+	# style = 1
+
+	# action = {
+		# name = "ACTIONNAME3201A" # OK # The blueprints should bias the AI
+		# #command = {  type = gain_tech which = 14080 } # Guerrilla Warfare
+		# command = {  type = gain_tech which = 6300 }
+		# command = {  type = gain_tech which = 6310 }
+	# }
+# }

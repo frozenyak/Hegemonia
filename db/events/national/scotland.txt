@@ -1,0 +1,16 @@
+###81000-81999###
+
+event = {
+	id = 81000
+	country = SCO
+	
+	name = "The Kingdom of Scotland"
+	desc = "Our glorious nation has been born."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+	}
+}

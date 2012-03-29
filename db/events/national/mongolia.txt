@@ -1,0 +1,17 @@
+###69000-69999###
+
+event = {
+	id = 69000
+	country = MON
+
+	name = "Mongolia is Born"
+	desc = "Our glorious state has achieved independence!"
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = add_division value = cavalry }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+	}
+}

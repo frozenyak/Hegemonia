@@ -1,0 +1,956 @@
+#This covers major powers starting 'off-the-rails' wars before the Great War begins, and allows AI major powers to intervene.
+#Punishes player for breaking history.
+
+###############
+## Great War ##
+###############
+
+event = {
+	id = 6101
+	country = SPA
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		war = { country = GER country = U00 }
+		NOT = { war = { country = U00 } }
+		NOT = { war = { country = GER } }
+		belligerence = { country = GER value = 10 }
+		NOT = { belligerence = { country = U00 value = 10 } }
+		NOT = { flag = HRE_league_pact }
+	}
+
+	name = "Germany Attacks Rome"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "To war!"
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+event = {
+	id = 6102
+	country = SPA
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		NOT = { war = { country = U00 } }
+		NOT = { war = { country = GER } }
+		war = { country = GER country = U00 }
+		belligerence = { country = U00 value = 10 }
+		NOT = { belligerence = { country = GER value = 10 } }
+		NOT = { flag = comintern_league_pact }
+	}
+
+	name = "Rome Attacks Germany"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "To war!"
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+
+event = {
+	id = 6103
+	country = SPA
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		NOT = { war = { country = U00 } }
+		NOT = { war = { country = GER } }
+		war = { country = GER country = U00 }
+		belligerence = { country = U00 value = 10 }
+		belligerence = { country = GER value = 10 }
+		NOT = { flag = HRE_league_pact }
+		NOT = { flag = comintern_league_pact }
+	}
+
+	name = "Rome-Germany War"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+event = {
+	id = 6104
+	country = U00
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		war = { country = GER country = SPA }
+		NOT = { war = { country = SPA } }
+		NOT = { war = { country = GER } }
+		belligerence = { country = GER value = 10 }
+		NOT = { belligerence = { country = SPA value = 10 } }
+	}
+
+	name = "Germany Attacks Iberia"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "To war!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = GER }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+event = {
+	id = 6105
+	country = U00
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		NOT = { war = { country = SPA } }
+		NOT = { war = { country = GER } }
+		war = { country = GER country = SPA }
+		belligerence = { country = SPA value = 10 }
+		NOT = { belligerence = { country = GER value = 10 } }
+	}
+
+	name = "Iberia Attacks Germany"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "To war!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = SPA }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+
+event = {
+	id = 6106
+	country = U00
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		NOT = { war = { country = SPA } }
+		NOT = { war = { country = GER } }
+		war = { country = GER country = SPA }
+		belligerence = { country = SPA value = 10 }
+		belligerence = { country = GER value = 10 }
+	}
+
+	name = "Iberia-Germany War"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "To war!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = GER }
+		command = { type = war which = SPA }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+event = {
+	id = 6107
+	country = GER
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		war = { country = U00 country = SPA }
+		NOT = { war = { country = SPA } }
+		NOT = { war = { country = U00 } }
+		belligerence = { country = U00 value = 10 }
+		NOT = { belligerence = { country = SPA value = 10 } }
+		NOT = { flag = german_civil_war }
+	}
+
+	name = "Rome Attacks Iberia"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "To war!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = U00 }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+event = {
+	id = 6108
+	country = GER
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		NOT = { war = { country = SPA } }
+		NOT = { war = { country = U00 } }
+		war = { country = U00 country = SPA }
+		belligerence = { country = SPA value = 10 }
+		NOT = { belligerence = { country = U00 value = 10 } }
+		NOT = { flag = german_civil_war }
+	}
+
+	name = "Iberia Attacks Rome"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "To war!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = SPA }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+
+event = {
+	id = 6109
+	country = GER
+
+	trigger = {
+		ai = yes
+		NOT = { flag = great_war_by_event }
+		NOT = { war = { country = SPA } }
+		NOT = { war = { country = U00 } }
+		war = { country = U00 country = SPA }
+		belligerence = { country = SPA value = 10 }
+		belligerence = { country = U00 value = 10 }
+		NOT = { flag = german_civil_war }
+	}
+
+	name = "Iberia-Rome War"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "To War!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = U00 }
+		command = { type = war which = SPA }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+########################
+## North American War ##
+########################
+
+event = {
+	id = 6110
+	country = U05
+
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { flag = north_american_war }
+		war = { country = USA country = MEX }
+		belligerence = { country = MEX value = 10 }
+		NOT = { belligerence = { country = USA value = 10 } }
+	}
+
+	name = "Mazula Attacks America"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = MEX }
+	}
+}
+
+event = {
+	id = 6111
+	country = SPA
+
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { flag = north_american_war }
+		war = { country = USA country = MEX }
+		belligerence = { country = USA value = 10 }
+		NOT = { belligerence = { country = MEX value = 10 } }
+	}
+
+	name = "America Attacks Mazula"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = USA }
+	}
+}
+
+#######################
+## German Aggression ##
+#######################
+
+event = {
+	id = 6112
+	country = SPA
+
+	trigger = {
+		ai = yes
+		NOT = { war = { country = GER } }
+		belligerence = { country = GER value = 5 }
+		#Germany has attacked an unaligned nation
+		OR = {
+			AND = {
+				war = { country = GER country = JAP }
+				NOT = { war = { country = JAP } }
+				NOT = { belligerence = { country = JAP value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = CHI }
+				NOT = { war = { country = CHI } }
+				NOT = { belligerence = { country = CHI value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = CYN }
+				NOT = { war = { country = CYN } }
+				NOT = { belligerence = { country = CYN value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = U02 }
+				NOT = { war = { country = U02 } }
+				NOT = { belligerence = { country = U02 value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = U05 }
+				NOT = { war = { country = U05 } }
+				NOT = { belligerence = { country = U05 value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = EGY }
+				NOT = { war = { country = EGY } }
+				NOT = { belligerence = { country = EGY value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = UAU }
+				NOT = { war = { country = UAU } }
+				NOT = { belligerence = { country = UAU value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = TUR }
+				NOT = { war = { country = TUR } }
+				NOT = { belligerence = { country = TUR value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = SCH }
+				NOT = { war = { country = SCH } }
+				NOT = { belligerence = { country = SCH value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = FIN }
+				NOT = { war = { country = FIN } }
+				NOT = { belligerence = { country = FIN value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = HAI }
+				NOT = { war = { country = HAI } }
+				NOT = { belligerence = { country = HAI value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = DOM }
+				NOT = { war = { country = DOM } }
+				NOT = { belligerence = { country = DOM value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = CUB }
+				NOT = { war = { country = CUB } }
+				NOT = { belligerence = { country = CUB value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = VEN }
+				NOT = { war = { country = VEN } }
+				NOT = { belligerence = { country = VEN value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = IRE }
+				NOT = { war = { country = IRE } }
+				NOT = { belligerence = { country = IRE value = 5 } }
+			}
+		}
+	}
+
+	name = "German Aggression"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = GER }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+event = {
+	id = 6113
+	country = U00
+
+	trigger = {
+		ai = yes
+		NOT = { war = { country = GER country = U00 } }
+		belligerence = { country = GER value = 5 }
+		#Germany has attacked an unaligned nation
+		OR = {
+			AND = {
+				war = { country = GER country = JAP }
+				NOT = { war = { country = U00 country = JAP } }
+				NOT = { belligerence = { country = JAP value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = CHI }
+				NOT = { war = { country = U00 country = CHI } }
+				NOT = { belligerence = { country = CHI value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = CYN }
+				NOT = { war = { country = U00 country = CYN } }
+				NOT = { belligerence = { country = CYN value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = U02 }
+				NOT = { war = { country = U00 country = U02 } }
+				NOT = { belligerence = { country = U02 value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = U05 }
+				NOT = { war = { country = U00 country = U05 } }
+				NOT = { belligerence = { country = U05 value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = EGY }
+				NOT = { war = { country = U00 country = EGY } }
+				NOT = { belligerence = { country = EGY value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = UAU }
+				NOT = { war = { country = U00 country = UAU } }
+				NOT = { belligerence = { country = UAU value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = TUR }
+				NOT = { war = { country = U00 country = TUR } }
+				NOT = { belligerence = { country = TUR value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = SCH }
+				NOT = { war = { country = U00 country = SCH } }
+				NOT = { belligerence = { country = SCH value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = FIN }
+				NOT = { war = { country = U00 country = FIN } }
+				NOT = { belligerence = { country = FIN value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = HAI }
+				NOT = { war = { country = U00 country = HAI } }
+				NOT = { belligerence = { country = HAI value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = DOM }
+				NOT = { war = { country = U00 country = DOM } }
+				NOT = { belligerence = { country = DOM value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = CUB }
+				NOT = { war = { country = U00 country = CUB } }
+				NOT = { belligerence = { country = CUB value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = VEN }
+				NOT = { war = { country = U00 country = VEN } }
+				NOT = { belligerence = { country = VEN value = 5 } }
+			}
+			AND = {
+				war = { country = GER country = IRE }
+				NOT = { war = { country = U00 country = IRE } }
+				NOT = { belligerence = { country = IRE value = 5 } }
+			}
+		}
+	}
+
+	name = "German Aggression"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = GER }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+########################
+## Iberian Aggression ##
+########################
+
+event = {
+	id = 6114
+	country = U00
+
+	trigger = {
+		ai = yes
+		NOT = { war = { country = SPA country = U00 } }
+		belligerence = { country = SPA value = 5 }
+		#Germany has attacked an unaligned nation
+		OR = {
+			AND = {
+				war = { country = SPA country = JAP }
+				NOT = { war = { country = U00 country = JAP } }
+				NOT = { belligerence = { country = JAP value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = CHI }
+				NOT = { war = { country = U00 country = CHI } }
+				NOT = { belligerence = { country = CHI value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = CYN }
+				NOT = { war = { country = U00 country = CYN } }
+				NOT = { belligerence = { country = CYN value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = U02 }
+				NOT = { war = { country = U00 country = U02 } }
+				NOT = { belligerence = { country = U02 value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = U05 }
+				NOT = { war = { country = U00 country = U05 } }
+				NOT = { belligerence = { country = U05 value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = EGY }
+				NOT = { war = { country = U00 country = EGY } }
+				NOT = { belligerence = { country = EGY value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = UAU }
+				NOT = { war = { country = U00 country = UAU } }
+				NOT = { belligerence = { country = UAU value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = TUR }
+				NOT = { war = { country = U00 country = TUR } }
+				NOT = { belligerence = { country = TUR value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = SCH }
+				NOT = { war = { country = U00 country = SCH } }
+				NOT = { belligerence = { country = SCH value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = FIN }
+				NOT = { war = { country = U00 country = FIN } }
+				NOT = { belligerence = { country = FIN value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = HAI }
+				NOT = { war = { country = U00 country = HAI } }
+				NOT = { belligerence = { country = HAI value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = DOM }
+				NOT = { war = { country = U00 country = DOM } }
+				NOT = { belligerence = { country = DOM value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = CUB }
+				NOT = { war = { country = U00 country = CUB } }
+				NOT = { belligerence = { country = CUB value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = VEN }
+				NOT = { war = { country = U00 country = VEN } }
+				NOT = { belligerence = { country = VEN value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = IRE }
+				NOT = { war = { country = U00 country = IRE } }
+				NOT = { belligerence = { country = IRE value = 5 } }
+			}
+		}
+	}
+
+	name = "Iberian Aggression"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = SPA }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+event = {
+	id = 6115
+	country = GER
+
+	trigger = {
+		ai = yes
+		NOT = { war = { country = SPA country = GER } }
+		belligerence = { country = SPA value = 5 }
+		#Germany has attacked an unaligned nation
+		OR = {
+			AND = {
+				war = { country = SPA country = JAP }
+				NOT = { war = { country = GER country = JAP } }
+				NOT = { belligerence = { country = JAP value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = CHI }
+				NOT = { war = { country = GER country = CHI } }
+				NOT = { belligerence = { country = CHI value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = CYN }
+				NOT = { war = { country = GER country = CYN } }
+				NOT = { belligerence = { country = CYN value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = U02 }
+				NOT = { war = { country = GER country = U02 } }
+				NOT = { belligerence = { country = U02 value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = U05 }
+				NOT = { war = { country = GER country = U05 } }
+				NOT = { belligerence = { country = U05 value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = EGY }
+				NOT = { war = { country = GER country = EGY } }
+				NOT = { belligerence = { country = EGY value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = UAU }
+				NOT = { war = { country = GER country = UAU } }
+				NOT = { belligerence = { country = UAU value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = TUR }
+				NOT = { war = { country = GER country = TUR } }
+				NOT = { belligerence = { country = TUR value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = SCH }
+				NOT = { war = { country = GER country = SCH } }
+				NOT = { belligerence = { country = SCH value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = FIN }
+				NOT = { war = { country = GER country = FIN } }
+				NOT = { belligerence = { country = FIN value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = HAI }
+				NOT = { war = { country = GER country = HAI } }
+				NOT = { belligerence = { country = HAI value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = DOM }
+				NOT = { war = { country = GER country = DOM } }
+				NOT = { belligerence = { country = DOM value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = CUB }
+				NOT = { war = { country = GER country = CUB } }
+				NOT = { belligerence = { country = CUB value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = VEN }
+				NOT = { war = { country = GER country = VEN } }
+				NOT = { belligerence = { country = VEN value = 5 } }
+			}
+			AND = {
+				war = { country = SPA country = IRE }
+				NOT = { war = { country = GER country = IRE } }
+				NOT = { belligerence = { country = IRE value = 5 } }
+			}
+		}
+		NOT = { flag = german_civil_war }
+	}
+
+	name = "Iberian Aggression"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = SPA }
+		command = { type = setflag which = great_war_by_event }
+
+	}
+}
+
+######################
+## Roman Aggression ##
+######################
+
+event = {
+	id = 6116
+	country = GER
+
+	trigger = {
+		NOT = { flag = german_civil_war }
+		ai = yes
+		NOT = { war = { country = U00 country = GER } }
+		belligerence = { country = U00 value = 5 }
+		#Germany has attacked an unaligned nation
+		OR = {
+			AND = {
+				war = { country = U00 country = JAP }
+				NOT = { war = { country = GER country = JAP } }
+				NOT = { belligerence = { country = JAP value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = CHI }
+				NOT = { war = { country = GER country = CHI } }
+				NOT = { belligerence = { country = CHI value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = CYN }
+				NOT = { war = { country = GER country = CYN } }
+				NOT = { belligerence = { country = CYN value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = U02 }
+				NOT = { war = { country = GER country = U02 } }
+				NOT = { belligerence = { country = U02 value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = U05 }
+				NOT = { war = { country = GER country = U05 } }
+				NOT = { belligerence = { country = U05 value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = EGY }
+				NOT = { war = { country = GER country = EGY } }
+				NOT = { belligerence = { country = EGY value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = UAU }
+				NOT = { war = { country = GER country = UAU } }
+				NOT = { belligerence = { country = UAU value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = TUR }
+				NOT = { war = { country = GER country = TUR } }
+				NOT = { belligerence = { country = TUR value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = SCH }
+				NOT = { war = { country = GER country = SCH } }
+				NOT = { belligerence = { country = SCH value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = FIN }
+				NOT = { war = { country = GER country = FIN } }
+				NOT = { belligerence = { country = FIN value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = HAI }
+				NOT = { war = { country = GER country = HAI } }
+				NOT = { belligerence = { country = HAI value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = DOM }
+				NOT = { war = { country = GER country = DOM } }
+				NOT = { belligerence = { country = DOM value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = CUB }
+				NOT = { war = { country = GER country = CUB } }
+				NOT = { belligerence = { country = CUB value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = VEN }
+				NOT = { war = { country = GER country = VEN } }
+				NOT = { belligerence = { country = VEN value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = IRE }
+				NOT = { war = { country = GER country = IRE } }
+				NOT = { belligerence = { country = IRE value = 5 } }
+			}
+		}
+	}
+
+	name = "Roman Aggression"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = U00 }
+		command = { type = setflag which = great_war_by_event }
+		command = { type = dissent value = -10 }
+	}
+}
+
+event = {
+	id = 6117
+	country = SPA
+
+	trigger = {
+		ai = yes
+		NOT = { war = { country = U00 country = SPA } }
+		belligerence = { country = U00 value = 5 }
+		#Germany has attacked an unaligned nation
+		OR = {
+			AND = {
+				war = { country = U00 country = JAP }
+				NOT = { war = { country = SPA country = JAP } }
+				NOT = { belligerence = { country = JAP value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = CHI }
+				NOT = { war = { country = SPA country = CHI } }
+				NOT = { belligerence = { country = CHI value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = CYN }
+				NOT = { war = { country = SPA country = CYN } }
+				NOT = { belligerence = { country = CYN value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = U02 }
+				NOT = { war = { country = SPA country = U02 } }
+				NOT = { belligerence = { country = U02 value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = U05 }
+				NOT = { war = { country = SPA country = U05 } }
+				NOT = { belligerence = { country = U05 value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = EGY }
+				NOT = { war = { country = SPA country = EGY } }
+				NOT = { belligerence = { country = EGY value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = UAU }
+				NOT = { war = { country = SPA country = UAU } }
+				NOT = { belligerence = { country = UAU value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = TUR }
+				NOT = { war = { country = SPA country = TUR } }
+				NOT = { belligerence = { country = TUR value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = SCH }
+				NOT = { war = { country = SPA country = SCH } }
+				NOT = { belligerence = { country = SCH value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = FIN }
+				NOT = { war = { country = SPA country = FIN } }
+				NOT = { belligerence = { country = FIN value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = HAI }
+				NOT = { war = { country = SPA country = HAI } }
+				NOT = { belligerence = { country = HAI value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = DOM }
+				NOT = { war = { country = SPA country = DOM } }
+				NOT = { belligerence = { country = DOM value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = CUB }
+				NOT = { war = { country = SPA country = CUB } }
+				NOT = { belligerence = { country = CUB value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = VEN }
+				NOT = { war = { country = SPA country = VEN } }
+				NOT = { belligerence = { country = VEN value = 5 } }
+			}
+			AND = {
+				war = { country = U00 country = IRE }
+				NOT = { war = { country = SPA country = IRE } }
+				NOT = { belligerence = { country = IRE value = 5 } }
+			}
+		}
+	}
+
+	name = "Roman Aggression"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = U00 }
+		command = { type = setflag which = great_war_by_event }
+	}
+}

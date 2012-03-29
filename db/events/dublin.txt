@@ -1,0 +1,2247 @@
+##38001 claims
+##38002 disarmament
+##38003 opportunities
+##38004 irish neutrality
+##38006 pacts spa
+##35015 pacts ger
+##55005 pacts u00
+##21005 pacts usa
+##38013 conference ends
+##35010 belligerence league
+##35013 belligerence comintern
+##
+##order countries, mostly by id
+##spa ire usa VIC ger mex u02 u00 rus eng u05
+
+event = {
+	id = 38000
+	country = SPA
+
+	trigger = {
+		NOT = { flag = dublin_conference }
+		NOT = { flag = dublin_conference_ends }
+	}
+
+	name = "The Dublin Conference"
+	desc = "With the world growingly increasingly unstable and radicalized in the keelwaters of the Great Depression, Prime Minister Azim intends to invite all the Great Powers to meet and discuss transnational issues in neutral Ireland."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 7 month = january year = 1936 }
+	offset = 8
+	deathdate = { day = 30 month = january year = 1936 }
+
+	action = {
+		name = "Invite the other Great Powers to Dublin"
+		ai_chance = 100
+		command = { type = relation which = ENG value = 10 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = RUS value = 10 }
+		command = { type = relation which = MEX value = 10 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = relation which = U00 value = 10 }
+		command = { type = relation which = U02 value = 10 }
+		command = { type = relation which = VIC value = 10 }
+		command = { type = relation which = U05 value = 10 }
+		command = { type = setflag which = dublin_conference }
+		command = { type = local_setflag which = dublin_attend }
+	}
+}
+
+event = {
+	id = 40000
+	country = IRE
+	trigger = {
+		flag = dublin_conference
+	}
+
+	name = "The Dublin Conference"
+	desc = "With the world growingly increasingly unstable and radicalized in the keelwaters of the Great Depression, Prime Minister Azim of Iberia has extended an invitation to all Great Powers to meet and discuss transnational issues in our capital. In addition to improved relations and prestige, we stand to gain from this by the increase in commerce as thousands of dignitaries from all across the world come to Dublin. This is a great day for our nation!"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "They are welcome!"
+		command = { type = dissent value = -1 }
+		command = { type = money value = 25 }
+		command = { type = relation which = ENG value = 10 }
+		command = { type = relation which = SPA value = 10 }
+		command = { type = relation which = RUS value = 10 }
+		command = { type = relation which = MEX value = 10 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = relation which = U00 value = 10 }
+		command = { type = relation which = U02 value = 10 }
+		command = { type = relation which = U05 value = 10 }
+		command = { type = relation which = VIC value = 10 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = local_setflag which = dublin_attend }
+	}
+}
+
+event = {
+	id = 62000
+	TAG = { ENG GER RUS MEX USA U00 U02 VIC U05 }
+	#all = yes #execute for all tags in the list
+	persistent = yes
+	#invention = yes
+	#country = ENG
+	trigger = {
+		flag = dublin_conference
+		NOT = { local_flag = dublin_attend }
+	}
+
+	name = "The Dublin Conference"
+	desc = "With the world growingly increasingly unstable and radicalized in the keelwaters of the Great Depression, Prime Minister Azim of Iberia has extended an invitation to all Great Powers to meet and discuss transnational issues in neutral Ireland. This is our chance to make new allies and clarify our diplomatic claims. To not attend would be foolish."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "We will attend"
+		command = { type = relation which = GER value = 5 }
+		command = { type = relation which = SPA value = 5 }
+		command = { type = relation which = RUS value = 5 }
+		command = { type = relation which = MEX value = 5 }
+		command = { type = relation which = USA value = 5 }
+		command = { type = relation which = U00 value = 5 }
+		command = { type = relation which = U02 value = 5 }
+		command = { type = relation which = ENG value = 5 }
+		command = { type = relation which = VIC value = 5 }
+		command = { type = relation which = U05 value = 5 }
+		command = { type = local_setflag which = dublin_attend }
+	}
+}
+##########################
+#Diplomatic Claims
+##########################
+event = {
+	id = 38001
+	country = SPA
+	trigger = {
+		flag = dublin_conference
+		NOT = { flag = dublin_conference_fp }
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make Iberia's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 14 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Maintain our support for the Status Quo"
+		ai_chance = 80
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = ENG value = 10 }
+		command = { type = relation which = RUS value = 10 }
+		command = { type = relation which = MEX value = 10 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = relation which = U00 value = 10 }
+		command = { type = relation which = U02 value = 10 }
+		command = { type = relation which = U05 value = 10 }
+		command = { type = relation which = VIC value = 10 }
+		command = { type = setflag which = dublin_conference_fp }
+	}
+	action = {
+		name = "Make threats towards the HRE and Comintern"
+		ai_chance = 19
+		command = { type = setflag which = SPA_belligerent }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = U00 value = -50 }
+		command = { type = relation which = VIC value = -50 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = dublin_conference_fp }
+		command = { type = peacetime_ic_mod value = 0.7 }
+	}
+}
+
+event = {
+	id = 21001
+	country = USA
+	trigger = {
+		flag = dublin_conference_fp
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make the American Federation's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Make veiled threats towards the Mazulans"
+		ai_chance = 79
+		command = { type = relation which = MEX value = -50 }
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = ENG value = -25 }
+		command = { type = belligerence value = 2 }
+	}
+	action = {
+		name = "We intend to take vengeance on Mazula"
+		ai_chance = 10
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = setflag which = USA_belligerent_MEX }
+		command = { type = relation which = MEX value = -200 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = -2 }
+		#command = { type = ai_prepare_war which = MEX }
+	}
+	action = {
+		name = "Seek reconcilliation with Mazula"
+		ai_chance = 1
+		command = { type = setflag which = USA_befriend_MEX }
+		command = { type = domestic which = interventionism value = -2 }
+		command = { type = relation which = MEX value = 25 }
+		command = { type = dissent value = 10 }
+	}
+}
+event = {
+	id = 33001
+	country = VIC
+	trigger = {
+		flag = dublin_conference_fp
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make France's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Reinforce our claim to Alsace-Lorraine"
+		ai_chance = 60
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = setflag which = FRA_claim_alsace }
+		command = { type = relation which = GER value = -100 }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "Germany will pay for its many crimes against France!"
+		ai_chance = 15
+		command = { type = domestic which = interventionism value = 3 }
+		command = { type = setflag which = FRA_belligerent_GER }
+		command = { type = relation which = GER value = -200 }
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = -5 }
+		#command = { type = ai_prepare_war which = GER }
+	}
+	action = {
+		name = "Make vague threats towards the enemies of the revolution"
+		ai_chance = 24
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = GER value = -25 }
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = RUS value = -25 }
+		command = { type = relation which = MEX value = -25 }
+		command = { type = relation which = USA value = -25 }
+		command = { type = relation which = U02 value = -25 }
+		command = { type = relation which = U05 value = -25 }
+		command = { type = relation which = ENG value = -25 }
+		command = { type = dissent value = 1 }
+	}
+	# action = {
+		# name = "Our only interest is socialism in France"
+		# ai_chance = 1
+		# command = { type = setflag which = FRA_isolationist }
+		# command = { type = domestic which = interventionism value = -5 }
+		# command = { trigger = { ai = yes } type = dissent value = 10 }
+		# command = { trigger = { ai = no } type = dissent value = 20 }
+		# command = { type = peacetime_ic_mod value = 0.8 }
+	# }
+	# action = {
+		# name = "Claim all of France"
+		# ai_chance = 
+		# command = { type = domestic which = interventionism value = 2 }
+		# command = { type = setflag which = FRA_claim_OCC }
+		# command = { type = relation which = SPA value = -200 }
+		# command = { type = relation which = U06 value = -200 }
+		# command = { type = belligerence value = 5 }
+		# command = { type = dissent value = -10 }
+		# #
+		# command = { type = addcore which = 67 }
+		# command = { type = addcore which = 68 }
+		# command = { type = addcore which = 69 }
+		# command = { type = addcore which = 70 }
+		# command = { type = addcore which = 73 }
+		# command = { type = addcore which = 75 }
+		# command = { type = addcore which = 76 }
+		# command = { type = addcore which = 77 }
+		# command = { type = addcore which = 79 }
+		# command = { type = addcore which = 80 }
+		# command = { type = addcore which = 81 }
+		# command = { type = addcore which = 82 }
+		# command = { type = addcore which = 83 }
+		# command = { type = addcore which = 84 }
+		# command = { type = addcore which = 86 }
+		# command = { type = addcore which = 87 }
+		# command = { type = addcore which = 89 }
+		# command = { type = addcore which = 90 }
+		# command = { type = addcore which = 93 }
+	# }
+}
+event = {
+	id = 35001
+	country = GER
+	trigger = {
+		flag = dublin_conference_fp
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make Germany's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Reinforce our claim to Italy"
+		ai_chance = 50
+		command = { type = setflag which = GER_claim_ITA }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = U14 value = 100 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = relation which = RSI value = -100 }
+		command = { type = belligerence value = 2 }
+		command = { type = dissent value = -2 }
+		#command = { type = addclaim which = 401 }
+		#command = { type = addclaim which = 393 }
+		#command = { type = addclaim which = 408 }
+		#command = { type = addclaim which = 395 }
+		#command = { type = addclaim which = 407 }
+	}
+	action = {
+		name = "Italy is rightfully ours but make no mention of it"
+		ai_chance = 49
+		command = { type = relation which = U00 value = 25 }
+		command = { type = relation which = U14 value = -25 }
+		command = { type = dissent value = 2 }
+	}
+	action = {
+		name = "Renounce our claims on Italy"
+		ai_chance = 1
+		command = { type = setflag which = GER_renounce_ITA }
+		command = { type = domestic which = interventionism value = -2 }
+		command = { type = relation which = U14 value = -200 }
+		command = { type = relation which = U00 value = 100 }
+		command = { type = relation which = RSI value = 100 }
+		command = { type = dissent value = 10 }
+		command = { type = peacetime_ic_mod value = 0.7 }
+	}
+}
+
+event = {
+	id = 39001
+	country = U02
+	trigger = {
+		flag = dublin_conference_fp
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make India's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Demand the return of Constantinople to the Emperor"
+		ai_chance = 80
+		command = { type = setflag which = U02_claim_constantinople }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = dissent value = -2 }
+	}
+	action = {
+		name = "Demand the return of Ceylon to India"
+		ai_chance = 15
+		command = { type = setflag which = U02_claim_ceylon }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "Remain noncommital on foreign affairs"
+		ai_chance = 5
+		#command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 48001
+	country = MEX
+	trigger = {
+		flag = dublin_conference_fp
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make Mazula's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Show our defiance to Hoover and the American Federation"
+		ai_chance = 70
+		command = { type = setflag which = MEX_defiance }
+		command = { type = relation which = USA value = -100 }
+		command = { type = dissent value = -2 }
+		command = { type = peacetime_ic_mod value = 0.7 }
+	}
+	action = {
+		name = "Rally support in the League against the Fascists"
+		ai_chance = 24
+		command = { type = setflag which = MEX_rally_league }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = relation which = RUS value = 25 }
+		command = { type = relation which = ENG value = 25 }
+		command = { type = peacetime_ic_mod value = 0.7 }
+	}
+	action = {
+		name = "Seek reconcilliation with the Americans"
+		ai_chance = 5
+		command = { type = setflag which = MEX_befriend_USA }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = relation which = USA value = 25 }
+		command = { type = dissent value = 10 }
+	}
+	action = {
+		name = "Claim all of North America"
+		ai_chance = 1
+		command = { type = setflag which = MEX_claim_america }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = relation which = USA value = -200 }
+		command = { type = relation which = CAN value = -200 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = PAN value = -100 }
+		command = { type = relation which = U05 value = -100 }
+		command = { type = relation which = VEN value = -100 }
+		command = { type = belligerence value = 5 }
+		command = { trigger = { ai = yes } type = dissent value = 10 }
+		command = { trigger = { ai = no } type = dissent value = 20 }
+		#command = { type = ai_prepare_war which = USA }
+		command = { type = peacetime_ic_mod value = 0.8 }
+	}
+}
+
+event = {
+	id = 55001
+	country = U00
+	trigger = {
+		flag = dublin_conference_fp
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make the Union of Rome's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "State our intent to spread socialism abroad"
+		ai_chance = 10
+		command = { type = setflag which = U00_socialist_war }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = relation which = MEX value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = U02 value = -100 }
+		command = { type = relation which = U05 value = -100 }
+		command = { type = relation which = VIC value = 50 }
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = -5 }
+		#command = { type = ai_prepare_war which = AUS }
+		command = { type = addclaim which = 347 }
+		command = { type = addclaim which = 352 }
+		#command = { type = addclaim which = 406 }
+		#RSI claims
+		#command = { type = addclaim which = 349 }
+		#command = { type = addcore which = 403 }
+		#command = { type = addcore which = 404 }
+		#command = { type = addcore which = 405 }
+	}
+	action = {
+		name = "State our claims on the Croatian 'land bridge'"
+		ai_chance = 60
+		command = { type = setflag which = U00_claim_croatia }
+		command = { type = relation which = AUS value = -100 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = addclaim which = 347 }
+		command = { type = addclaim which = 352 }
+		#command = { type = addclaim which = 406 }
+		#RSI claims
+		#command = { type = addclaim which = 349 }
+		#command = { type = addcore which = 403 }
+		#command = { type = addcore which = 404 }
+		#command = { type = addcore which = 405 }
+	}
+	action = {
+		name = "Offer noncommital praise for socialist nations"
+		ai_chance = 29
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = SPA value = -10 }
+		command = { type = relation which = RUS value = -10 }
+		command = { type = relation which = MEX value = -10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = U02 value = -10 }
+		command = { type = relation which = U05 value = -10 }
+		command = { type = relation which = VIC value = 10 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "Renounce violence as a means of spreading the revolution"
+		ai_chance = 1
+		command = { type = setflag which = U00_socialist_peace }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = RUS value = 50 }
+		command = { type = relation which = MEX value = 50 }
+		command = { type = relation which = ENG value = 50 }
+		command = { type = relation which = USA value = 50 }
+		command = { type = relation which = U02 value = 50 }
+		command = { type = relation which = U05 value = 50 }
+		command = { type = relation which = VIC value = -200 }
+		command = { type = domestic which = interventionism value = -5 }
+		command = { trigger = { ai = yes } type = dissent value = 10 }
+		command = { trigger = { ai = no } type = dissent value = 20 }
+		command = { type = peacetime_ic_mod value = 0.7 }
+	}
+}
+
+event = {
+	id = 56001
+	country = RUS
+	trigger = {
+		flag = dublin_conference_fp
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make Russia's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Emphasis our need for a Baltic port"
+		ai_chance = 20
+		command = { type = setflag which = RUS_want_port }
+		command = { type = relation which = LIT value = -25 }
+		command = { type = relation which = FIN value = -25 }
+	}
+	action = {
+		name = "Reinforce our territorial demands on Lithuania"
+		ai_chance = 79
+		command = { type = setflag which = RUS_claim_border }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = LIT value = -50 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "State our intent to depose the Lithuanian Czar"
+		ai_chance = 1
+		command = { type = setflag which = RUS_belligerent_LIT }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = relation which = LIT value = -200 }
+		command = { type = relation which = GER value = -200 }
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = -5 }
+		#command = { type = ai_prepare_war which = LIT }
+		command = { type = peacetime_ic_mod value = 0.8 }
+	}
+}
+
+event = {
+	id = 62001
+	country = ENG
+	trigger = {
+		flag = dublin_conference_fp
+	}
+
+	name = "The Dublin Conference - Diplomatic Claims"
+	desc = "Our foreign minister has taken the stand at the Dublin conference to make Britain's territorial and diplomatic claims to the other Great Powers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Maintain our support for the Status Quo"
+		ai_chance = 80
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = SPA value = 10 }
+		command = { type = relation which = RUS value = 10 }
+		command = { type = relation which = MEX value = 10 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = relation which = U00 value = 10 }
+		command = { type = relation which = U02 value = 10 }
+		command = { type = relation which = U05 value = 10 }
+		command = { type = relation which = VIC value = 10 }
+	}
+	action = {
+		name = "Make threats towards France and Germany"
+		ai_chance = 19
+		command = { type = setflag which = ENG_belligerent }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = U00 value = -50 }
+		command = { type = relation which = VIC value = -50 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -1 }
+		command = { type = peacetime_ic_mod value = 0.7 }
+	}
+	action = {
+		name = "Claim Ireland as our interest sphere"
+		ai_chance = 1
+		command = { type = setflag which = ENG_claim_IRE }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = relation which = IRE value = -200 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = 5 }
+		#command = { type = addclaim which = 30 }
+		#command = { type = addclaim which = 31 }
+		#command = { type = addclaim which = 32 }
+		#command = { type = addclaim which = 33 }
+		#command = { type = addclaim which = 34 }
+		#command = { type = addclaim which = 35 }
+		#command = { type = addclaim which = 36 }
+	}
+}
+
+# event = {
+	# id = 42001
+	# country = U05
+	# trigger = {
+		# flag = dublin_conference_fp
+	# }
+
+	# name = "The Dublin Conference - Diplomatic Claims"
+	# desc = "Our foreign minister has taken the stand at the Dublin conference to make Jadakal's territorial and diplomatic claims to the other Great Powers."
+	# style = 2
+	# picture = "news_paper"
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 2
+	# deathdate = { day = 1 month = january year = 1937 }
+
+	# action = {
+		# name = "Maintain our support for the Status Quo"
+		# ai_chance = 30
+		# command = { type = relation which = GER value = 10 }
+		# command = { type = relation which = SPA value = 10 }
+		# command = { type = relation which = PAR value = 10 }
+		# command = { type = relation which = BRA value = 10 }
+		# command = { type = relation which = PRU value = 10 }
+		# command = { type = relation which = GUS value = 10 }
+	# }
+	# action = {
+		# name = "Reinforce claims on Muhajedz and Tarwajal"
+		# ai_chance = 40
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = relation which = PRU value = -50 }
+		# command = { type = relation which = BRA value = -50 }
+		# command = { type = belligerence value = 1 }
+		# command = { type = dissent value = -1 }
+	# }
+	# action = {
+		# name = "Give up territorial claims"
+		# ai_chance = 30
+		# command = { type = domestic which = interventionism value = -1 }
+		# command = { type = relation which = PRU value = 100 }
+		# command = { type = relation which = BRA value = 100 }
+		# command = { type = dissent value = 5 }
+		# command = { type = removeclaim which =  }
+	# }
+# }
+
+############################
+#Military Disarmament
+############################
+event = {
+	id = 38002
+	country = SPA
+	trigger = {
+		flag = dublin_conference		
+		flag = dublin_conference_fp
+		
+		event = 21001
+		event = 33001
+		event = 35001
+		event = 39001
+		event = 48001
+		event = 55001
+		event = 56001
+		event = 62001
+		#event = 41001
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Next on the agenda is a proposal that all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement, but our advisors hope that the anti-war sentiment is strong enough that it may pass regardless."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 6
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Put forward the proposal!"
+		ai_chance = 99
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = setflag which = dublin_conference_md }
+	}
+	action = {
+		name = "Disarmament? That was just a joke!"
+		ai_chance = 1
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = RUS value = -10 }
+		command = { type = relation which = MEX value = -10 }
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = U00 value = -10 }
+		command = { type = relation which = U02 value = -10 }
+		command = { type = relation which = VIC value = -10 }
+		command = { type = relation which = U05 value = -10 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = setflag which = dublin_veto_disarmament }
+	}
+}
+
+event = {
+	id = 21002
+	country = USA
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 85
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 10
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 5
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = 10 }
+	}
+}
+event = {
+	id = 33002
+	country = VIC
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 89
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 10
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 1
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = 10 }
+	}
+}
+event = {
+	id = 35002
+	country = GER
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 50
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = dissent value = -2 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 40
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 10
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 39002
+	country = U02
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 15
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 85
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 5
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = {
+	id = 48002
+	country = MEX
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 5
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 85
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 10
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = {
+	id = 55002
+	country = U00
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 50
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = dissent value = -2 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 40
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 10
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 56002
+	country = RUS
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 5
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 85
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 10
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = {
+	id = 62002
+	country = ENG
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 5
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 15
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 80
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = {
+	id = 41002
+	country = U05
+	trigger = {
+		flag = dublin_conference_md
+	}
+
+	name = "The Dublin Conference - Military Disarmament"
+	desc = "Iberia has put forward a proposal for all Great Powers to demobilize their forces in the interests of peace. The proposal requires unanimous agreement and is extremely unlikely to pass, but we could foster closer relations with the League of Democracies by supporting it."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Publically oppose the proposal"
+		ai_chance = 15
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "Vote it down without comment"
+		ai_chance = 85
+		command = { type = setflag which = dublin_veto_disarmament }
+		command = { type = relation which = SPA value = -25 }
+	}
+	action = {
+		name = "Support the proposal"
+		ai_chance = 5
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = dissent value = -1 }
+	}
+}
+############################
+event = {
+	id = 38011
+	country =  SPA
+	trigger = {
+		flag = dublin_conference_md
+		NOT = { local_flag = dublin_md }
+		
+		event = 21002
+		event = 33002
+		event = 35002
+		event = 39002
+		event = 48002
+		event = 55002
+		event = 56002
+		event = 62002
+		event = 41002
+		flag = dublin_veto_disarmament
+	}
+
+	name = "Disarmament Agreement Fails"
+	desc = "Our agreement failed to get the unanimous support it required, and so no agreement on military disarmament will go forward between the Dublin Conference nations."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "At least we tried!"
+		command = { type = local_setflag which = dublin_md }
+		command = { type = sleepevent which = 38012 }
+	}
+}
+
+event = {
+	id = 33005
+	TAG = { ENG GER RUS MEX USA U00 U02 VIC U05 }
+	#all = yes #execute for all tags in the list
+	persistent = yes
+
+	trigger = {
+		flag = dublin_conference_md
+		NOT = { local_flag = dublin_md }
+		
+		event = 21002
+		event = 33002
+		event = 35002
+		event = 39002
+		event = 48002
+		event = 55002
+		event = 56002
+		event = 62002
+		event = 41002
+		flag = dublin_veto_disarmament
+	}
+
+	name = "Disarmament Agreement Fails"
+	desc = "Azim's agreement failed to get the unanimous support it required, and so no agreement on military disarmament will go forward between the Dublin Conference nations."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "It was an unrealistic proposal"
+		command = { type = local_setflag which = dublin_md }
+		command = { type = sleepevent which = 33006 }
+	}
+}
+
+event = {
+	id = 38012
+	country = SPA
+	trigger = {
+		flag = dublin_conference_md
+		NOT = { local_flag = dublin_md }
+		
+		event = 21002
+		event = 33002
+		event = 35002
+		event = 39002
+		event = 48002
+		event = 55002
+		event = 56002
+		event = 62002
+		event = 41002
+		NOT = { flag = dublin_veto_disarmament }
+	}
+
+	name = "Disarmament Agreement Passes"
+	desc = "In a stunning display of transnational unity, all powers attending the Dublin Conference voted for Azim's disarmament proposal, promising to disarm their armies and refrain from unilateral military buildup."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Peace in our time!"
+		command = { type = setflag which = peace_in_our_time }
+		command = { type = local_setflag which = dublin_md }
+		command = { type = sleepevent which = 38011 }
+	}
+}
+
+event = {
+	id = 33006
+	TAG = { ENG GER RUS MEX USA U00 U02 VIC U05 }
+	#all = yes #execute for all tags in the list
+	persistent = yes
+
+	trigger = {
+		flag = dublin_conference_md
+		NOT = { local_flag = dublin_md }
+		
+		event = 21002
+		event = 33002
+		event = 35002
+		event = 39002
+		event = 48002
+		event = 55002
+		event = 56002
+		event = 62002
+		event = 41002
+		NOT = { flag = dublin_veto_disarmament }
+	}
+
+	name = "Disarmament Agreement Passes"
+	desc = "In a stunning display of transnational unity, all powers attending the Dublin Conference voted for Azim's disarmament proposal, promising to disarm their armies and refrain from unilateral military buildup."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Peace in our time!"
+		command = { type = domestic which = interventionism value = -2 }
+		command = { type = local_setflag which = dublin_md }
+		command = { type = sleepevent which = 33005 }
+	}
+}
+############################
+#Diplomatic Opportunities
+############################
+event = {
+	id = 38003
+	country = SPA
+	trigger = {
+		flag = dublin_conference
+		NOT = { flag = dublin_conference_do }
+		
+		OR = {
+			local_flag = dublin_md
+			flag = peace_in_our_time
+		}
+	}
+
+	name = "The Dublin Conference - Diplomatic Opportunities"
+	desc = "With representatives from all three major power blocs meeting in Dublin, there is a unique opportunity to rethink our foreign policy. There have been suggestions that some politicians in Germany may be open to repproachment in the interest of preventing war, or perhaps we could even strike a deal with the Union of Rome?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 6
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "We have no interest in closer ties with either"
+		ai_chance = 70
+		command = { type = setflag which = dublin_conference_do }
+		command = { type = relation which = ENG value = 25 }
+		command = { type = relation which = RUS value = 25 }
+	}
+	action = {
+		name = "Seek closer ties with Germany"
+		ai_chance = 20
+		command = { type = setflag which = dublin_conference_do }
+		command = { type = setflag which = SPA_befriend_HRE }
+		command = { type = relation which = GER value = 25 }
+		command = { type = relation which = U14 value = 25 }
+		command = { type = relation which = LIT value = 25 }
+		command = { type = relation which = SCA value = 25 }
+		command = { type = relation which = SCH value = 25 }
+		command = { type = relation which = AUS value = 25 }
+	}
+	action = {
+		name = "Begin talks with the Comintern"
+		ai_chance = 10
+		command = { type = setflag which = dublin_conference_do }
+		command = { type = setflag which = SPA_befriend_comintern }
+		command = { type = relation which = U00 value = 25 }
+		command = { type = relation which = VIC value = 25 }
+	}
+}
+
+event = {
+	id = 35003
+	country = GER
+	trigger = {
+		flag = dublin_conference_do
+	}
+
+	name = "The Dublin Conference - Diplomatic Opportunities"
+	desc = "With representatives from all three major power blocs meeting in Dublin, there is a unique opportunity to rethink our foreign policy. There have been suggestions that some members in the League of Democracies may be open to repproachment in the interest of combatting communism, or perhaps we could even strike a deal with the Union of Rome?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Remain ideologically opposed to both the League and the Comintern"
+		ai_chance = 85
+		command = { type = relation which = U14 value = 25 }
+		command = { type = relation which = LIT value = 25 }
+		command = { type = relation which = SCA value = 25 }
+		command = { type = relation which = AUS value = 25 }
+	}
+	action = {
+		name = "Seek closer ties with Iberia and the League of Democracies"
+		ai_chance = 10
+		command = { type = setflag which = GER_befriend_league }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = ENG value = 50 }
+		command = { type = relation which = RUS value = 50 }
+	}
+	action = {
+		name = "Open secret negotiations with the Comintern leaders"
+		ai_chance = 5
+		command = { type = setflag which = GER_befriend_comintern }
+		command = { type = relation which = U00 value = 50 }
+		command = { type = relation which = RSI value = 50 }
+		command = { type = relation which = VIC value = 50 }
+	}
+}
+
+event = {
+	id = 55003
+	country = U00
+	trigger = {
+		flag = dublin_conference_do
+	}
+
+	name = "The Dublin Conference - Diplomatic Opportunities"
+	desc = "With representatives from all three major power blocs meeting in Dublin, there is a unique opportunity to rethink our foreign policy. There have been suggestions that some members in the League of Democracies may be open to repproachment in the interest of containing the monarchists, or perhaps we could even strike a deal with the reactionaries in Germany?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "We will not ally ourselves with liberals and reactionaries!"
+		ai_chance = 85
+		command = { type = relation which = VIC value = 25 }
+	}
+	action = {
+		name = "Seek a diplomatic understanding with the League"
+		ai_chance = 10
+		command = { type = setflag which = U00_befriend_league }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = relation which = ENG value = 25 }
+		command = { type = relation which = RUS value = 25 }
+	}
+	action = {
+		name = "Open secret negotiations with Germany"
+		ai_chance = 5
+		command = { type = setflag which = U00_befriend_HRE }
+		command = { type = relation which = GER value = 25 }
+		command = { type = relation which = U14 value = 25 }
+		command = { type = relation which = LIT value = 25 }
+		command = { type = relation which = SCA value = 25 }
+		command = { type = relation which = SCH value = 25 }
+		command = { type = relation which = AUS value = 25 }
+	}
+}
+############################
+#Pacts
+############################
+## ger-spa success
+event = {
+	id = 38008
+	country = SPA
+
+	trigger = {
+		flag = GER_befriend_league
+		flag = SPA_befriend_HRE
+	}
+
+	name = "Pact with the Holy Roman Empire"
+	desc = "After successful negotiations with the German representatives, the first steps towards a pact between the Holy Roman Empire and the League have been taken. A conference will be held in Bern to further discuss this topic during the summer. We are told that the political right in Iberia are happy with this news."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Splendid!"
+		command = { type = setflag which = HRE_league_pact }
+		command = { type = dissent value = -1 }
+	}
+}
+event = {
+	id = 35015
+	country = GER
+
+	trigger = {
+		flag = GER_befriend_league
+		flag = SPA_befriend_HRE
+	}
+
+	name = "Pact with the League"
+	desc = "After successful negotiations with Iberian representatives, the first steps towards a pact between the Holy Roman Empire and the League of Democracies have been taken. A conference will be held in Bern to further discuss the topic during the summer. This closening with the League has strengthened the liberals in Germany and has done much to win them over on our side."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Splendid!"
+		command = { type = setflag which = HRE_league_pact }
+		command = { type = dissent value = -2 }
+		command = { type = local_setflag which = liberals_plus_1 }
+	}
+}
+## ger-spa fail
+event = {
+	id = 38009
+	country = SPA
+
+	trigger = {
+		NOT = { flag = GER_befriend_league }
+		flag = SPA_befriend_HRE
+	}
+
+	name = "The Talks with Germany Fail"
+	desc = "Despite considerable efforts on our side, the discussions with Germany have ended as their representatives has made clear that they are not interested in a pact with the League. Leaked news from this debacle has only served to upset public opinion against us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Argh!"
+		command = { type = dissent value = 1 }
+	}
+}
+event = {
+	id = 35016
+	country = GER
+
+	trigger = {
+		flag = GER_befriend_league
+		NOT = { flag = SPA_befriend_HRE }
+	}
+
+	name = "The League Talks Fail"
+	desc = "Despite considerable efforts on our side, the discussions with the League have ended as the representatives from Iberia has made clear that they are not interested in a pact with the Holy Roman Empire. Leaked news from this debacle has only served to further upset public opinion against us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Argh!"
+		command = { type = dissent value = 2 }
+	}
+}
+## u00-ger success
+event = {
+	id = 35017
+	country = GER
+
+	trigger = {
+		flag = GER_befriend_comintern
+		flag = U00_befriend_HRE
+	}
+
+	name = "Pact with the Comintern"
+	desc = "After successful negotiations with the Union representatives, the first steps towards a pact between the Holy Roman Empire and the Comterin have been taken. The negotiations are scheudled to continue over the next few months. Despite the secrecy surrounding them, the friendlier posture taken by the Union towards Germany has helped strengthen the Communists and win them over on our side."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Splendid!"
+		command = { type = setflag which = HRE_comintern_pact }
+		command = { type = dissent value = -2 }
+		command = { type = local_setflag which = communists_plus_1 }
+	}
+}
+event = {
+	id = 55007
+	country = U00
+
+	trigger = {
+		flag = GER_befriend_comintern
+		flag = U00_befriend_HRE
+	}
+
+	name = "Pact with the Holy Roman Empire"
+	desc = "After successful negotiations with the German representatives, the first steps towards a pact between the Holy Roman Empire and the Comintern have been taken. The negotiations are scheudled to continue over the next few months. Despite our secrecy, some rumors of the talks have leaked out, resulting in a minor shift in public opinion against us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = may year = 1937 }
+
+	action = {
+		name = "Good news, nonetheless!"
+		command = { type = setflag which = HRE_comintern_pact }
+		command = { type = dissent value = 1 }
+	}
+}
+## u00-spa success
+event = {
+	id = 38006
+	country = SPA
+
+	trigger = {
+		flag = U00_befriend_league
+		flag = SPA_befriend_comintern
+	}
+
+	name = "Pact with the Comintern"
+	desc = "After successful negotiations with Union representatives, the first steps towards a pact between the Comintern and the League of Democracies have been taken. A conference will be held in Amsterdam to further discuss the topic during the summer. We are told that the political left in Iberia are happy with this news."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Splendid!"
+		command = { type = setflag which = comintern_league_pact }
+		command = { type = dissent value = -1 }
+	}
+}
+event = {
+	id = 55005
+	country = U00
+
+	trigger = {
+		flag = U00_befriend_league
+		flag = SPA_befriend_comintern
+	}
+
+	name = "Pact with the League"
+	desc = "After successful negotiations with Iberian representatives, the first steps towards a pact between the Comintern and the League of Democracies have been taken. A conference will be held in Amsterdam to further discuss the topic during the summer. We are told that the moderate elements in the Union are happy with this news."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = may year = 1937 }
+
+	action = {
+		name = "Splendid!"
+		command = { type = setflag which = comintern_league_pact }
+		command = { type = dissent value = -1 }
+	}
+}
+## u00-spa fail
+event = {
+	id = 38007
+	country = SPA
+
+	trigger = {
+		NOT = { flag = U00_befriend_league }
+		flag = SPA_befriend_comintern
+	}
+
+	name = "The Comintern Talks Fail"
+	desc = "Despite considerable efforts on our side, the discussions with the Comintern have ended as the Union representatives has made clear that they are not interested in a pact with the League. Leaked news from this debacle has only served to upset public opinion against us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Argh!"
+		command = { type = dissent value = 1 }
+	}
+}
+event = {
+	id = 55006
+	country = U00
+
+	trigger = {
+		flag = U00_befriend_league
+		NOT = { flag = SPA_befriend_comintern }
+	}
+
+	name = "The League Talks Fail"
+	desc = "Despite considerable efforts on our side, the discussions with the League have ended as the representatives from Iberia has made clear that they are not interested in a pact with the Comintern. Leaked news from this debacle has only served to upset public opinion against us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = may year = 1937 }
+
+	action = {
+		name = "Argh!"
+		command = { type = dissent value = 1 }
+	}
+}
+## u00-ger fail
+event = {
+	id = 35018
+	country = GER
+
+	trigger = {
+		flag = GER_befriend_comintern
+		NOT = { flag = U00_befriend_HRE }
+	}
+
+	name = "The Comintern Talks Fail"
+	desc = "Despite considerable efforts on our side, the discussions with the Comintern have ended as the representatives from the Union has made clear that they are not interested in a pact with the Holy Roman Empire. Leaked news from this debacle has only served to further upset public opinion against us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Argh!"
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 55008
+	country = U00
+
+	trigger = {
+		NOT = { flag = GER_befriend_comintern }
+		flag = U00_befriend_HRE
+	}
+
+	name = "The Talks with Germany Fail"
+	desc = "Despite considerable efforts on our side, the discussions with Germany have ended as their representatives has made clear that they are not interested in a pact with the Comintern. Leaked news from this debacle has only served to upset public opinion against us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = may year = 1937 }
+
+	action = {
+		name = "Argh!"
+		command = { type = dissent value = 2 }
+	}
+}
+## usa-mex fail
+event = {
+	id = 21005
+	country = USA
+
+	trigger = {
+		flag = USA_befriend_MEX
+		NOT = { flag = MEX_befriend_USA }
+	}
+
+	name = "The Mazulan Response"
+	desc = "Our attempts at seeking reconcilliation with Mazula were outright rejected by the Mazulan Prime Minister, who has sworn to destroy Fascism as a political system once and for all. News of this debacle has further inflamed public opinion against us."
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Argh!"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 48005
+	country = MEX
+
+	trigger = {
+		NOT = { flag = USA_befriend_MEX }
+		flag = MEX_befriend_USA
+	}
+
+	name = "The American Response"
+	desc = "Our attempts at seeking reconcilliation with American were outright rejected by Hoover. News of this debacle has further inflamed public opinion against us."
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Argh!"
+		command = { type = dissent value = 3 }
+	}
+}
+### usa-mex success
+event = {
+	id = 21006
+	country = USA
+
+	trigger = {
+		flag = USA_befriend_MEX
+		flag = MEX_befriend_USA
+	}
+
+	name = "The American-Mazulan Pact"
+	desc = "To the surprise of many, the Mazulans proved willing to discuss the possibility of reconcilliation in the interests of peace. A non-aggression pact was signed to widespread applause in Mazula City, though public opinion is less than happy at the news of us befriending the enemy."
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "ACTION_NAME_GOOD"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 48006
+	country = MEX
+
+	trigger = {
+		flag = USA_befriend_MEX
+		flag = MEX_befriend_USA
+	}
+
+	name = "The American-Mazulan Pact"
+	desc = "To the surprise of many, Hoover proved willing to discuss the possibility of reconcilliation in the interests of peace. A non-aggression pact was signed to widespread applause in Mazula City, though public opinion is less than happy at the news of us befriending the enemy."
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "ACTION_NAME_GOOD"
+		command = { type = dissent value = 3 }
+		command = { type = setflag which = MEX_USA_pact }
+		command = { type = non_aggression which = MEX where = USA }
+	}
+}
+############################
+#Irish Neutrality
+############################
+event = {
+	id = 38004
+	country = SPA
+	trigger = {
+		flag = dublin_conference
+		event = 35003
+		event = 55003
+		
+		flag = dublin_conference_do
+		
+		OR = {
+			local_flag = dublin_md
+			flag = peace_in_our_time
+		}
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "It has been suggested that we put forward a proposal urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 6
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Put forward the proposal!"
+		ai_chance = 99
+		command = { type = setflag which = dublin_conference_in }
+		command = { type = setflag which = SPA_guarantee_IRE }
+		command = { type = relation which = IRE value = 50 }
+	}
+	action = {
+		name = "Ireland doesn't need guarantees"
+		ai_chance = 1
+		command = { type = relation which = IRE value = -100 }
+	}
+}
+
+event = {
+	id = 21003
+	country = USA
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Guarantee Irish neutrality"
+		ai_chance = 50
+		command = { type = setflag which = USA_guarantee_IRE }
+		command = { type = relation which = IRE value = 50 }
+		command = { type = guarantee which = USA where = IRE }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "This is not in our interest"
+		ai_chance = 50
+		command = { type = relation which = IRE value = -25 }
+		command = { type = relation which = SPA value = -25 }
+	}
+}
+event = {
+	id = 33003
+	country = VIC
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Guarantee Irish neutrality"
+		ai_chance = 50
+		command = { type = setflag which = FRA_guarantee_IRE }
+		command = { type = relation which = IRE value = 50 }
+		command = { type = guarantee which = VIC where = IRE }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "This is not in our interest"
+		ai_chance = 50
+		command = { type = relation which = IRE value = -25 }
+		command = { type = relation which = SPA value = -25 }
+	}
+}
+event = {
+	id = 35004
+	country = GER
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Guarantee Irish neutrality"
+		ai_chance = 85
+		command = { type = setflag which = GER_guarantee_IRE }
+		command = { type = relation which = IRE value = 50 }
+		command = { type = guarantee which = GER where = IRE }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "This is not in our interest"
+		ai_chance = 15
+		command = { type = relation which = IRE value = -25 }
+		command = { type = relation which = SPA value = -25 }
+	}
+}
+event = {
+	id = 39003
+	country = U02
+	
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences. Given our distance to the place in question, the proposal has little to do with us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "A silly proposal!"
+		command = { type = relation which = IRE value = -5 }
+		command = { type = relation which = SPA value = -5 }
+	}
+}
+
+event = {
+	id = 48003
+	country = MEX
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Guarantee Irish neutrality"
+		ai_chance = 50
+		command = { type = setflag which = MEX_guarantee_IRE }
+		command = { type = relation which = IRE value = 50 }
+		command = { type = guarantee which = MEX where = IRE }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "This is not in our interest"
+		ai_chance = 50
+		command = { type = relation which = IRE value = -25 }
+		command = { type = relation which = SPA value = -25 }
+	}
+}
+event = {
+	id = 55004
+	country = U00
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Guarantee Irish neutrality"
+		ai_chance = 50
+		command = { type = setflag which = U00_guarantee_IRE }
+		command = { type = relation which = IRE value = 50 }
+		command = { type = guarantee which = U00 where = IRE }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "This is not in our interest"
+		ai_chance = 50
+		command = { type = relation which = IRE value = -25 }
+		command = { type = relation which = SPA value = -25 }
+	}
+}
+
+event = {
+	id = 56003
+	country = RUS
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Guarantee Irish neutrality"
+		ai_chance = 95
+		command = { type = setflag which = RUS_guarantee_IRE }
+		command = { type = relation which = IRE value = 50 }
+		command = { type = guarantee which = RUS where = IRE }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "This is not in our interest"
+		ai_chance = 5
+		command = { type = relation which = IRE value = -25 }
+		command = { type = relation which = SPA value = -25 }
+	}
+}
+event = {
+	id = 62003
+	country = ENG
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = { trigger = { NOT = { flag = ENG_claim_IRE } }
+		name = "Guarantee Irish neutrality"
+		ai_chance = 95
+		command = { type = setflag which = ENG_guarantee_IRE }
+		command = { type = relation which = IRE value = 50 }
+		command = { type = guarantee which = ENG where = IRE }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "This is not in our interest"
+		ai_chance = 5
+		command = { type = relation which = IRE value = -25 }
+		command = { type = relation which = SPA value = -25 }
+	}
+}
+
+event = {
+	id = 41003
+	country = U05
+	
+	trigger = {
+		flag = dublin_conference_in
+	}
+
+	name = "The Dublin Conference - Irish Neutrality"
+	desc = "One final proposal has been put forward urging all conference attendees to respect and guarantee Irish neutrality in the interests of maintaining a neutral platform where nations can discuss their political differences. Given our distance to the place in question, the proposal has little to do with us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "A silly proposal!"
+		command = { type = relation which = IRE value = -5 }
+		command = { type = relation which = SPA value = -5 }
+	}
+}
+
+############################
+#The Dublin Conference Ends
+############################
+event = {
+	id = 38013
+	country = SPA
+	trigger = {
+		event = 38004
+		OR = {
+			NOT = { flag = dublin_conference_in }
+			AND = {
+				flag = dublin_conference_in
+				event = 21003
+				event = 33003
+				event = 35004
+				event = 39003
+				event = 48003
+				event = 55004
+				event = 56003
+				event = 62003
+				event = 41003
+			}
+		}
+		NOT = { flag = dublin_conference_ends }
+	}
+
+	name = "The Dublin Conference Ends"
+	desc = "Diplomats and dignitaries from the entire world take their leave of Dublin as the conference comes to a close. As to whether it accomplished anything lasting remains to be seen."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 6
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "We're hopeful!"
+		command = { type = setflag which = dublin_conference_ends }
+		command = { type = local_setflag which = dublin_conference_end }
+	}
+}
+event = {
+	id = 39007
+	TAG = { ENG GER RUS MEX USA U00 U02 VIC U05 }
+	#all = yes #execute for all tags in the list
+	persistent = yes
+
+	trigger = {
+		flag = dublin_conference_ends
+		NOT = { local_flag = dublin_conference_end }
+	}
+
+	name = "The Dublin Conference Ends"
+	desc = "Diplomats and dignitaries from the entire world take their leave of Dublin as the conference comes to a close. As to whether it accomplished anything lasting remains to be seen."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 30 month = january year = 1937 }
+
+	action = {
+		name = "Farewell!"
+		command = { type = local_setflag which = dublin_conference_end }
+	}
+}
+
+############################
+#Belligerence
+############################
+event = {
+	id = 35010
+	TAG = { ENG GER RUS MEX USA U02 VIC U05 }
+	#all = yes #execute for all tags in the list
+	persistent = yes
+	#country = GER
+	trigger = {
+		flag = SPA_belligerent
+		OR = {
+			alliance = { country = GER }
+			alliance = { country = U00 }
+		}
+		NOT = { government = democratic }
+		NOT = { local_flag = SPA_belligerence }
+	}
+
+	name = "Iberian Belligerence"
+	desc = "The news of Iberia's threatening posture against us at the Dublin Conference has spread quickly through the nation and served to rally support among the population against the League."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Stupid Berbers!"
+		command = { trigger = { country = GER } type = local_setflag which = liberals_minus_1 }
+		command = { trigger = { country = GER } type = dissent value = -2 }
+		command = { trigger = { NOT = { country = GER } } type = dissent value = -1 }
+		command = { type = local_setflag which = SPA_belligerence }
+	}
+}
+
+event = {
+	id = 35009
+	TAG = { GER VIC }
+	persistent = yes
+	trigger = {
+		flag = ENG_belligerent
+		OR = {
+			alliance = { country = GER }
+			alliance = { country = U00 }
+		}
+		NOT = { government = democratic }
+		NOT = { local_flag = ENG_belligerence }
+	}
+
+	name = "British Belligerence"
+	desc = "The news of Britain's threatening posture against us at the Dublin Conference has spread quickly through the nation and served to rally support among the population against the League."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Stupid Englishmen!"
+		command = { trigger = { country = GER } type = local_setflag which = liberals_minus_1 }
+		command = { trigger = { country = GER } type = dissent value = -2 }
+		command = { trigger = { NOT = { country = GER } } type = dissent value = -1 }
+		command = { type = local_setflag which = ENG_belligerence }
+	}
+}
+
+event = {
+	id = 35013
+	TAG = { ENG GER RUS MEX USA SPA U02 VIC U05 }
+	#all = yes #execute for all tags in the list
+	persistent = yes
+	#country = GER
+	trigger = {
+		flag = U00_socialist_war
+		NOT = { government = communist }
+		OR = {
+			alliance = { country = GER }
+			alliance = { country = SPA }
+		}
+		NOT = { local_flag = U00_belligerence }
+	}
+
+	name = "Roman Belligerence"
+	desc = "The news of the Union's threatening posture against us at the Dublin Conference has spread quickly through the nation and served to rally support among the population against the Comintern."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Blasted socialists!"
+		command = { trigger = { country = GER } type = local_setflag which = communists_minus_1 }
+		command = { trigger = { country = GER } type = dissent value = -2 }
+		command = { trigger = { NOT = { country = GER } } type = dissent value = -1 }
+		command = { type = local_setflag which = U00_belligerence }
+	}
+}

@@ -1,0 +1,1291 @@
+# #####################################
+# NAVAL DOCTRINES	     	 #
+# #####################################
+technology =
+{ id          = 8
+  category    = naval_doctrines
+  name        = TECH_ND_NAME # Localized name
+  desc        = TECH_ND_DESC # Localized description
+  # Decisive Battle Doctrine
+  application =
+  { id        = 8010
+    name      = TECH_APP_ND_1_NAME
+    desc      = TECH_APP_ND_1_DESC
+    position  = { x = 224 y = 16 }
+    year      = 1890 #1936
+    # Capital Ship Focus
+    component = { id = 8011 name = TECH_CMP_ND_1_1_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Task Force Co-ordination
+    component = { id = 8012 name = TECH_CMP_ND_1_2_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Task Force Concentration
+    component = { id = 8013 name = TECH_CMP_ND_1_3_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Mahanian Theory
+    component = { id = 8014 name = TECH_CMP_ND_1_4_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Naval HQ Infrastructure
+    component = { id = 8015 name = TECH_CMP_ND_1_5_NAME type = centralized_execution difficulty = 8 }
+    required  = { }
+    effects =
+    { command = { type = max_positioning which = battleship value = 0.3 }
+      command = { type = min_positioning which = battleship value = 0.1 }
+      #command = { type = max_positioning which = battlecruiser value = 0.3 }
+      #command = { type = min_positioning which = battlecruiser value = 0.1 }
+      command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.05 }
+	  
+	  command = { type = enable_task which = naval_scramble }
+    }
+  }
+  # Naval Firepower Doctrine
+  application =
+  { id        = 8020
+    name      = TECH_APP_ND_2_NAME
+    desc      = TECH_APP_ND_2_DESC
+    year      = 1900 #1937
+    position  = { x = 224 y = 32 }
+    # Basic Gun Control
+    component = { id = 8021 name = TECH_CMP_ND_2_1_NAME type = naval_training difficulty = 8 }
+    # Basic Task Force Fire
+    component = { id = 8022 name = TECH_CMP_ND_2_2_NAME type = naval_training difficulty = 8 }
+    # Main Armament Focus
+    component = { id = 8023 name = TECH_CMP_ND_2_3_NAME type = naval_artillery difficulty = 8 }
+    # Basic Armament
+    component = { id = 8024 name = TECH_CMP_ND_2_4_NAME type = naval_artillery difficulty = 8 }
+    # Basic Gunnery Training
+    component = { id = 8025 name = TECH_CMP_ND_2_5_NAME type = naval_training difficulty = 8 }
+    required  = { }
+    effects =
+    { command = { type = max_positioning which = heavy_cruiser value = 0.15 } #0.3
+      command = { type = min_positioning which = heavy_cruiser value = 0.05 } #0.1
+      command = { type = max_positioning which = light_cruiser value = 0.3 }
+      command = { type = min_positioning which = light_cruiser value = 0.1 }
+    }
+  }
+  # Fleet Auxiliary Carrier Doctrine
+  application =
+  { id        = 8030
+    name      = TECH_APP_ND_3_NAME
+    desc      = TECH_APP_ND_3_DESC
+    position  = { x = 224 y = 48 }
+    year      = 1920 #1937
+    # Basic Flight Deck Operations
+    component = { id = 8031 name = TECH_CMP_ND_3_1_NAME type = naval_training difficulty = 8 }
+    # Aerial Reconnaissance
+    component = { id = 8032 name = TECH_CMP_ND_3_2_NAME type = carrier_tactics difficulty = 8 }
+    # Surface Combat Engagement Prioritization
+    component = { id = 8033 name = TECH_CMP_ND_3_3_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Carrier Maneouvring
+    component = { id = 8034 name = TECH_CMP_ND_3_4_NAME type = carrier_tactics difficulty = 8 }
+    # Carrier Aviation School
+    component = { id = 8035 name = TECH_CMP_ND_3_5_NAME type = piloting difficulty = 8 }
+    required  = { }
+    effects =
+    { command = { type = enable_task which = naval_port_strike }
+      command = { type = enable_task which = naval_airbase_strike }
+      command = { type = max_positioning which = escort_carrier value = 0.4 }
+      command = { type = min_positioning which = escort_carrier value = 0.15 }
+      command = { type = max_organization which = escort_carrier value = 10 }
+      command = { type = min_positioning which = carrier value = 0.15 }
+      command = { type = max_positioning which = carrier value = 0.4 }
+      command = { type = max_organization which = carrier value = 10 }
+    }
+  }
+  # Fleet Auxiliary Submarine Doctrine
+  application =
+  { id        = 8040
+    name      = TECH_APP_ND_4_NAME
+    desc      = TECH_APP_ND_4_DESC
+    position  = { x = 224 y = 64 }
+    year      = 1905 #1937
+    # Warship Targeting
+    component = { id = 8041 name = TECH_CMP_ND_4_1_NAME type = submarine_tactics difficulty = 8 }
+    # Submarine Reconnaissance Role
+    component = { id = 8042 name = TECH_CMP_ND_4_2_NAME type = submarine_tactics difficulty = 8 }
+    # Warship Patrol Routes Focus
+    component = { id = 8043 name = TECH_CMP_ND_4_3_NAME type = submarine_tactics difficulty = 8 }
+    # Surface Combat Engagement Prioritization
+    component = { id = 8044 name = TECH_CMP_ND_4_4_NAME type = submarine_tactics difficulty = 8 }
+    # Submarine Warfare School
+    component = { id = 8045 name = TECH_CMP_ND_4_5_NAME type = seamanship difficulty = 8 }
+    required  = { }
+    effects =
+    { command = { type = enable_task which = convoy_raiding }
+      command = { type = max_positioning which = submarine value = 0.3 }
+      command = { type = min_positioning which = submarine value = 0.1 }
+	  command = { type = max_organization which = submarine value = 2 }
+    }
+  }
+  # Convoy Sailing Doctrine
+  application =
+  { id        = 8050
+    name      = TECH_APP_ND_5_NAME
+    desc      = TECH_APP_ND_5_DESC
+    position  = { x = 224 y = 80 }
+    year      = 1880 #1937
+    # Basic Merchant Ship Direction
+    component = { id = 8051 name = TECH_CMP_ND_5_1_NAME type = naval_training difficulty = 8 }
+    # Wireless Ship-to-Ship Communication
+    component = { id = 8052 name = TECH_CMP_ND_5_2_NAME type = electronics difficulty = 8 }
+    # Co-ordinated Sailings
+    component = { id = 8053 name = TECH_CMP_ND_5_3_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Effective Merchant Captains
+    component = { id = 8054 name = TECH_CMP_ND_5_4_NAME type = seamanship difficulty = 8 }
+    # Basic Convoy Evasive Maneouvres
+    component = { id = 8055 name = TECH_CMP_ND_5_5_NAME type = large_taskforce_tactics difficulty = 8 }
+    required  = { }
+    effects =
+    { command = { type = allow_convoy_escorts }
+      command = { type = enable_task which = asw }
+      command = { type = max_positioning which = destroyer value = 0.3 }
+      command = { type = min_positioning which = destroyer value = 0.1 }
+      command = { type = convoy_def_eff value = 0.25 }
+      command = { type = max_organization which = destroyer value = 20 }
+    }
+  }
+  # Base Strike Doctrine
+  application =
+  { id        = 8060
+    name      = TECH_APP_ND_6_NAME
+    desc      = TECH_APP_ND_6_DESC
+    position  = { x = 208 y = 128 }
+    year      = 1900 #1938
+    # Offensive Posture
+    component = { id = 8061 name = TECH_CMP_ND_6_1_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Basic Forward Naval Bases
+    component = { id = 8062 name = TECH_CMP_ND_6_2_NAME type = naval_engineering difficulty = 8 }
+    # Targets of Opportunity
+    component = { id = 8063 name = TECH_CMP_ND_6_3_NAME type = seamanship difficulty = 8 }
+    # Offensive Weaponry Focus
+    component = { id = 8064 name = TECH_CMP_ND_6_4_NAME type = naval_training difficulty = 8 }
+    # Enemy Infrastructure Focus
+    component = { id = 8065 name = TECH_CMP_ND_6_5_NAME type = naval_training difficulty = 8 }
+    required  = { 8010 8020 8030 8040 8050 }
+    effects =
+    { #command = { type = max_organization which = naval value = 15 }
+	  #command = { type = max_organization which = battlecruiser value = 15 }
+	  command = { type = max_organization which = battleship    value = 15 }
+	  command = { type = max_organization which = transport     value = 15 }
+	  command = { type = max_organization which = heavy_cruiser value = 15 }
+	  command = { type = max_organization which = light_cruiser value = 15 }
+	  command = { type = max_organization which = destroyer     value = 5 }
+      command = { type = morale which = naval value = 20 }
+      command = { type = deactivate which = 8070 }
+      command = { type = deactivate which = 8080 }
+    }
+  }
+  # Fleet-in-Being Doctrine
+  application =
+  { id        = 8070
+    name      = TECH_APP_ND_7_NAME
+    desc      = TECH_APP_ND_7_DESC
+    position  = { x = 16 y = 16 }
+    year      = 1900 #1938
+    # Defensive Posture
+    component = { id = 8071 name = TECH_CMP_ND_7_1_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Naval Base Defenses
+    component = { id = 8072 name = TECH_CMP_ND_7_2_NAME type = naval_engineering difficulty = 8 }
+    # Risk Aversion
+    component = { id = 8073 name = TECH_CMP_ND_7_3_NAME type = seamanship difficulty = 8 }
+    # Defensive Weaponry Focus
+    component = { id = 8074 name = TECH_CMP_ND_7_4_NAME type = naval_training difficulty = 8 }
+    # Enemy Deployments Focus
+    component = { id = 8075 name = TECH_CMP_ND_7_5_NAME type = naval_training difficulty = 8 }
+    required  = { 8010 8020 8030 8040 8050 }
+    effects =
+    { 	  #command = { type = max_organization which = naval value = 10 } #20
+	  #command = { type = max_organization which = battlecruiser value = 20 }
+	  command = { type = max_organization which = battleship    value = 20 }
+	  command = { type = max_organization which = transport     value = 20 }
+	  command = { type = max_organization which = heavy_cruiser value = 20 }
+	  command = { type = max_organization which = light_cruiser value = 20 }
+	command = { type = max_organization which = destroyer     value = 5 }
+      command = { type = morale which = naval value = 10 }
+      command = { type = deactivate which = 8060 }
+      command = { type = deactivate which = 8080 }
+    }
+  }
+  # Sealane Interdiction Doctrine
+  application =
+  { id        = 8080
+    name      = TECH_APP_ND_8_NAME
+    desc      = TECH_APP_ND_8_DESC
+    position  = { x = 400 y = 16 }
+    year      = 1900 #1938
+    # Jeune École Theory
+    component = { id = 8081 name = TECH_CMP_ND_8_1_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Enemy Shipping Focus
+    component = { id = 8082 name = TECH_CMP_ND_8_2_NAME type = naval_training difficulty = 8 }
+    # Basic Evasion Techniques
+    component = { id = 8083 name = TECH_CMP_ND_8_3_NAME type = seamanship difficulty = 8 }
+    # Long-Distance Warships
+    component = { id = 8084 name = TECH_CMP_ND_8_4_NAME type = naval_engineering difficulty = 8 }
+    # Basic Sealane Intelligence
+    component = { id = 8085 name = TECH_CMP_ND_8_5_NAME type = centralized_execution difficulty = 8 }
+    required  = { 8010 8020 8030 8040 8050 }
+    effects =
+    { 	  # command = { type = max_organization which = naval value = 10 } #20
+	  #command = { type = max_organization which = battlecruiser value = 20 }
+	  command = { type = max_organization which = battleship    value = 20 }
+	  command = { type = max_organization which = transport     value = 20 }
+	  command = { type = max_organization which = heavy_cruiser value = 20 }
+	  command = { type = max_organization which = light_cruiser value = 20 }
+	command = { type = max_organization which = destroyer     value = 5 }
+      command = { type = morale which = naval value = 20 }
+      command = { type = deactivate which = 8060 }
+      command = { type = deactivate which = 8070 }
+    }
+  }
+  # Indirect Approach Doctrine
+  application =
+  { id          = 8090
+    name        = TECH_APP_ND_9_NAME
+    desc        = TECH_APP_ND_9_DESC
+    position    = { x = 224 y = 144 }
+    position    = { x = 416 y = 80 }
+    year        = 1910 #1939
+    position    = { x = 56 y = 136 }
+    # Torpedo Focus
+    component   = { id = 8091 name = TECH_CMP_ND_9_1_NAME type = naval_engineering difficulty = 8 }
+    # Independent Admiralship Mindset
+    component   = { id = 8092 name = TECH_CMP_ND_9_2_NAME type = decentralized_execution difficulty = 8 }
+    # Enemy Warship Avoidance Focus
+    component   = { id = 8093 name = TECH_CMP_ND_9_3_NAME type = naval_training difficulty = 8 }
+    # Selective Engagements
+    component   = { id = 8094 name = TECH_CMP_ND_9_4_NAME type = naval_training difficulty = 8 }
+    # Basic Night Combat Training
+    component   = { id = 8095 name = TECH_CMP_ND_9_5_NAME type = naval_training difficulty = 8 }
+    OR_required = { 8060 8190 8080 }
+    required    = { }
+    effects =
+    { command = { type = max_positioning which = battleship value = 0.1 }
+      command = { type = min_positioning which = battleship value = 0.1 }
+      #command = { type = max_positioning which = battlecruiser value = 0.1 }
+      #command = { type = min_positioning which = battlecruiser value = 0.1 }
+      command = { type = max_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = max_positioning which = light_cruiser value = 0.1 }
+      command = { type = min_positioning which = light_cruiser value = 0.1 }
+      command = { type = max_positioning which = destroyer value = 0.05 }
+      command = { type = min_positioning which = destroyer value = 0.05 }
+    }
+  }
+  # Subsidiary Carrier Role Doctrine
+  application =
+  { id          = 8100
+    name        = TECH_APP_ND_10_NAME
+    desc        = TECH_APP_ND_10_DESC
+    position    = { x = 224 y = 160 }
+    year        = 1925 #1939
+    position    = { x = 32 y = 48 }
+    position    = { x = 424 y = 232 }
+    # Task Force CAP
+    component   = { id = 8101 name = TECH_CMP_ND_10_1_NAME type = carrier_tactics difficulty = 8 }
+    # Defensive Carrier Mindset
+    component   = { id = 8102 name = TECH_CMP_ND_10_2_NAME type = carrier_tactics difficulty = 8 }
+    # Anti-Aircraft Role
+    component   = { id = 8103 name = TECH_CMP_ND_10_3_NAME type = carrier_tactics difficulty = 8 }
+    # Co-ordination with Battle Fleet
+    component   = { id = 8104 name = TECH_CMP_ND_10_4_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Improved Flight Deck Operations
+    component   = { id = 8105 name = TECH_CMP_ND_10_5_NAME type = naval_training difficulty = 8 }
+    OR_required = { 8060 8220 8070 }
+    required    = { }
+    effects =
+    {  command = { type = max_organization which = carrier value = 8 }
+	  command = { type = max_positioning which = carrier value = 0.05 }
+      command = { type = min_positioning which = carrier value = 0.05 }
+	  command = { type = task_efficiency which = naval_port_strike value = 0.1  }
+	  command = { type = task_efficiency which = naval_airbase_strike value = 0.1  }
+
+	  command = { type = max_positioning which = escort_carrier value = 0.05 }
+      command = { type = min_positioning which = escort_carrier value = 0.05 }
+      command = { type = max_organization which = escort_carrier value = 8 }
+
+	  command = { type = task_efficiency which = naval_scramble 	 value = 0.15 }
+    }
+  }
+  # Carrier Task Force Doctrine
+  application =
+  { id          = 8110
+    name        = TECH_APP_ND_11_NAME
+    desc        = TECH_APP_ND_11_DESC
+    position    = { x = 240 y = 176 }
+    position    = { x = 56 y = 152 }
+    year        = 1943 #1939
+    # Basic Carrier Co-ordination
+    component   = { id = 8111 name = TECH_CMP_ND_11_1_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Long-Range Aviation Strikes
+    component   = { id = 8112 name = TECH_CMP_ND_11_2_NAME type = carrier_tactics difficulty = 8 }
+    # Independent Carrier Operations
+    component   = { id = 8113 name = TECH_CMP_ND_11_3_NAME type = carrier_tactics difficulty = 8 }
+    # Offensive Carrier Mindset
+    component   = { id = 8114 name = TECH_CMP_ND_11_4_NAME type = carrier_tactics difficulty = 8 }
+    # Advanced Flight Deck Operations
+    component   = { id = 8115 name = TECH_CMP_ND_11_5_NAME type = naval_training difficulty = 8 }
+    OR_required = { 8060 8190 }
+    required    = { 8100 }
+    effects =
+    { command = { type = max_positioning which = carrier value = 0.1 }
+      command = { type = min_positioning which = carrier value = 0.1 }
+	  command = { type = max_positioning which = escort_carrier value = 0.1 }
+      command = { type = min_positioning which = escort_carrier value = 0.1 } 
+      command = { type = max_positioning which = heavy_cruiser value = 0.05 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.05 }
+      command = { type = max_positioning which = light_cruiser value = 0.05 }
+      command = { type = min_positioning which = light_cruiser value = 0.05 }
+      command = { type = max_positioning which = destroyer value = 0.05 }
+      command = { type = min_positioning which = destroyer value = 0.05 }
+      command = { type = task_efficiency which = naval_port_strike value = 0.1 }
+      command = { type = task_efficiency which = naval_airbase_strike value = 0.1 }
+    }
+  }
+  # Battlefleet Concentration Doctrine
+  application =
+  { id        = 8120
+    name      = TECH_APP_ND_12_NAME
+    desc      = TECH_APP_ND_12_DESC
+    position  = { x = 32 y = 32 }
+    year      = 1910 #1939
+    # Single Main Task Force
+    component = { id = 8121 name = TECH_CMP_ND_12_1_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Hierarchical Admiralship
+    component = { id = 8122 name = TECH_CMP_ND_12_2_NAME type = centralized_execution difficulty = 8 }
+    # Task Force Integration
+    component = { id = 8123 name = TECH_CMP_ND_12_3_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Improved Task Force Fire Co-ordination
+    component = { id = 8124 name = TECH_CMP_ND_12_4_NAME type = naval_training difficulty = 8 }
+    # Enemy Battlefield Intelligence Focus
+    component = { id = 8125 name = TECH_CMP_ND_12_5_NAME type = centralized_execution difficulty = 8 }
+    required  = { 8070 }
+    effects =
+    { command = { type = max_positioning which = battleship value = 0.2 }
+      command = { type = min_positioning which = battleship value = 0.2 }
+      #command = { type = max_positioning which = battlecruiser value = 0.2 }
+      #command = { type = min_positioning which = battlecruiser value = 0.2 }
+      command = { type = max_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = max_positioning which = light_cruiser value = 0.1 }
+      command = { type = min_positioning which = light_cruiser value = 0.1 }
+      command = { type = snow_attack which = battleship value = 5 }
+      command = { type = rain_attack which = battleship value = 5 }
+      #command = { type = snow_attack which = battlecruiser value = 5 }
+      #command = { type = rain_attack which = battlecruiser value = 5 }
+      command = { type = night_attack which = battleship value = 5 }
+      command = { type = night_defense which = battleship value = 5 }
+      #command = { type = night_attack which = battlecruiser value = 5 }
+      #command = { type = night_defense which = battlecruiser value = 5 }
+    }
+  }
+  # Hunter-Killer Group Doctrine
+  application =
+  { id          = 8130
+    name        = TECH_APP_ND_13_NAME
+    desc        = TECH_APP_ND_13_DESC
+    position    = { x = 32 y = 64 }
+    position    = { x = 224 y = 272 }
+    year        = 1925 #1939
+    # Destroyer ASW Role
+    component   = { id = 8131 name = TECH_CMP_ND_13_1_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Independent Submarine Hunting
+    component   = { id = 8132 name = TECH_CMP_ND_13_2_NAME type = decentralized_execution difficulty = 8 }
+    # Hunter-Killer Group Co-ordination
+    component   = { id = 8133 name = TECH_CMP_ND_13_3_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Basic Destroyer ASW Weaponry
+    component   = { id = 8134 name = TECH_CMP_ND_13_4_NAME type = naval_artillery difficulty = 8 }
+    # Aggressive Destroyer Captains
+    component   = { id = 8135 name = TECH_CMP_ND_13_5_NAME type = seamanship difficulty = 8 }
+    OR_required = { 8180 8070 }
+    required    = { }
+    effects =
+    { 	  command = { type = max_organization which = destroyer value = 20 }
+	  command = { type = max_positioning which = destroyer value = 0.1 }
+      command = { type = min_positioning which = destroyer value = 0.1 }
+      command = { type = convoy_def_eff value = 0.1 }
+      command = { type = task_efficiency which = asw value = 0.1 }
+    }
+  }
+  # Aerial Convoy Defence Doctrine
+  application =
+  { id          = 8140
+    name        = TECH_APP_ND_14_NAME
+    desc        = TECH_APP_ND_14_DESC
+    position    = { x = 224 y = 304 }
+    position    = { x = 56 y = 304 }
+    year        = 1944 #1942
+    # Coastal Airbases
+    component   = { id = 8141 name = TECH_CMP_ND_14_1_NAME type = aircraft_testing difficulty = 8 }
+    # Land-based Reconnaissance
+    component   = { id = 8142 name = TECH_CMP_ND_14_2_NAME type = aircraft_testing difficulty = 8 }
+    # Long-Range Naval Aircraft
+    component   = { id = 8143 name = TECH_CMP_ND_14_3_NAME type = aircraft_testing difficulty = 8 }
+    # Aircraft ASW Role
+    component   = { id = 8144 name = TECH_CMP_ND_14_4_NAME type = bomber_tactics difficulty = 8 }
+    # Basic Aerial ASW Weaponry
+    component   = { id = 8145 name = TECH_CMP_ND_14_5_NAME type = aircraft_testing difficulty = 8 }
+    OR_required = { 8180 8200 }
+    effects =
+    { 	  command = { type = max_organization which = destroyer value = 5 }
+	  command = { type = max_positioning which = destroyer value = 0.1 }
+      command = { type = min_positioning which = destroyer value = 0.1 }
+      command = { type = task_efficiency which = asw value = 0.1 }
+      command = { type = convoy_def_eff value = 0.1 }
+    }
+  }
+  # Raider Patrol Doctrine
+  application =
+  { id        = 8150
+    name      = TECH_APP_ND_15_NAME
+    desc      = TECH_APP_ND_15_DESC
+    position  = { x = 416 y = 32 }
+    year      = 1910 #1939
+    # Single Naval Sorties
+    component = { id = 8151 name = TECH_CMP_ND_15_1_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Improved Evasion Techniques
+    component = { id = 8152 name = TECH_CMP_ND_15_2_NAME type = seamanship difficulty = 8 }
+    # Surface Sea-Lane Patrol Focus
+    component = { id = 8153 name = TECH_CMP_ND_15_3_NAME type = naval_training difficulty = 8 }
+    # Cruiser Raiding
+    component = { id = 8154 name = TECH_CMP_ND_15_4_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Basic Raider Co-ordination
+    component = { id = 8155 name = TECH_CMP_ND_15_5_NAME type = centralized_execution difficulty = 8 }
+    required  = { 8080 }
+    effects =
+    { 	  command = { type = max_organization which = destroyer value = 5 }
+	  command = { type = task_efficiency which = convoy_raiding value = 0.05 }
+      command = { type = max_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = max_positioning which = light_cruiser value = 0.1 }
+      command = { type = min_positioning which = light_cruiser value = 0.1 }
+      command = { type = max_positioning which = destroyer value = 0.1 }
+      command = { type = min_positioning which = destroyer value = 0.1 }
+    }
+  }
+  # Trade Interdiction Submarine Doctrine
+  application =
+  { id          = 8160
+    name        = TECH_APP_ND_16_NAME
+    desc        = TECH_APP_ND_16_DESC
+    position    = { x = 416 y = 48 }
+    position    = { x = 56 y = 168 }
+    position    = { x = 224 y = 240 }
+    year        = 1916 #1939
+    # Merchant Targeting
+    component   = { id = 8161 name = TECH_CMP_ND_16_1_NAME type = submarine_tactics difficulty = 8 }
+    # Submarine Sea-Lane Patrol Focus
+    component   = { id = 8162 name = TECH_CMP_ND_16_2_NAME type = submarine_tactics difficulty = 8 }
+    # Skilled Submariners
+    component   = { id = 8163 name = TECH_CMP_ND_16_3_NAME type = seamanship difficulty = 8 }
+    # Basic Convoy Surveillance
+    component   = { id = 8164 name = TECH_CMP_ND_16_4_NAME type = centralized_execution difficulty = 8 }
+    # Independent Submarine Operations
+    component   = { id = 8165 name = TECH_CMP_ND_16_5_NAME type = submarine_tactics difficulty = 8 }
+    OR_required = { 8080 8190 8180 }
+    required    = { }
+    effects =
+    { command = { type = max_positioning which = submarine value = 0.1 }
+      command = { type = min_positioning which = submarine value = 0.1 }
+      command = { type = task_efficiency which = convoy_raiding value = 0.1 }
+    }
+  }
+  # Unrestricted Submarine Warfare Doctrine
+  application =
+  { id          = 8170
+    name        = TECH_APP_ND_17_NAME
+    desc        = TECH_APP_ND_17_DESC
+    position    = { x = 432 y = 64 }
+    position    = { x = 240 y = 256 }
+    year        = 1918 #1939
+    # Submarine Construction Focus
+    component   = { id = 8171 name = TECH_CMP_ND_17_1_NAME type = naval_engineering difficulty = 8 }
+    # Submarine Tactical Flexibility
+    component   = { id = 8172 name = TECH_CMP_ND_17_2_NAME type = submarine_tactics difficulty = 8 }
+    # Long-Range Submarine Operations
+    component   = { id = 8173 name = TECH_CMP_ND_17_3_NAME type = submarine_tactics difficulty = 8 }
+    # Targets of Opportunity Exploitation
+    component   = { id = 8174 name = TECH_CMP_ND_17_4_NAME type = submarine_tactics difficulty = 8 }
+    # Basic Submarine Evasion Techniques
+    component   = { id = 8175 name = TECH_CMP_ND_17_5_NAME type = submarine_tactics difficulty = 8 }
+    OR_required = { 8180 8080 }
+    required    = { 8160 }
+    effects =
+    { command = { type = max_positioning which = submarine value = 0.2 }
+      command = { type = min_positioning which = submarine value = 0.2 }
+      command = { type = task_efficiency which = convoy_raiding value = 0.1 }
+      command = { type = snow_attack which = submarine value = 5 }
+      command = { type = rain_attack which = submarine value = 5 }
+      command = { type = night_attack which = submarine value = 5 }
+      command = { type = night_defense which = submarine value = 5 }
+    }
+  }
+  # Indirect Strike Doctrine
+  application =
+  { id        = 8180
+    name      = TECH_APP_ND_18_NAME
+    desc      = TECH_APP_ND_18_DESC
+    position  = { x = 208 y = 208 }
+    year      = 1900 #1940
+    # Improved Night Combat Training
+    component = { id = 8181 name = TECH_CMP_ND_18_1_NAME type = naval_training difficulty = 8 }
+    # Basic Land-Air Co-ordination
+    component = { id = 8182 name = TECH_CMP_ND_18_2_NAME type = seamanship difficulty = 8 }
+    # Devolved Tactical Command
+    component = { id = 8183 name = TECH_CMP_ND_18_3_NAME type = decentralized_execution difficulty = 7 }
+    # Basic Forward Bases
+    component = { id = 8184 name = TECH_CMP_ND_18_4_NAME type = naval_engineering difficulty = 7 }
+    # Multiple Engagements Focus
+    component = { id = 8185 name = TECH_CMP_ND_18_5_NAME type = carrier_tactics difficulty = 10 }
+    required  = { 8060 8090 8100 8110 }
+    effects =
+    { 	  #command = { type = max_organization which = naval value = 10 }
+	  #command = { type = max_organization which = battlecruiser value = 10 }
+	  command = { type = max_organization which = battleship    value = 10 }
+	  command = { type = max_organization which = transport     value = 10 }
+	  command = { type = max_organization which = heavy_cruiser value = 10 }
+	  command = { type = max_organization which = light_cruiser value = 10 }
+	command = { type = max_organization which = destroyer     value = 5 }
+      command = { type = morale which = naval value = 20 }
+    }
+  }
+  # Naval Attrition Doctrine
+  application =
+  { id        = 8190
+    name      = TECH_APP_ND_19_NAME
+    desc      = TECH_APP_ND_19_DESC
+    position  = { x = 40 y = 120 }
+    year      = 1940
+    # Improved Armament
+    component = { id = 8191 name = TECH_CMP_ND_19_1_NAME type = naval_artillery difficulty = 8 }
+    # Improved Gunnery Training
+    component = { id = 8192 name = TECH_CMP_ND_19_2_NAME type = naval_training difficulty = 8 }
+    # Enemy Task Force Focus
+    component = { id = 8193 name = TECH_CMP_ND_19_3_NAME type = naval_training difficulty = 8 }
+    # Risk Assessment
+    component = { id = 8194 name = TECH_CMP_ND_19_4_NAME type = seamanship difficulty = 8 }
+    # Improved Gun Control
+    component = { id = 8195 name = TECH_CMP_ND_19_5_NAME type = naval_training difficulty = 8 }
+    required  = { 8070 8120 8100 8130 8310 }
+    effects =
+    { 	  #command = { type = max_organization which = naval value = 15 }
+	  #command = { type = max_organization which = battlecruiser value = 15 }
+	  command = { type = max_organization which = battleship    value = 15 }
+	  command = { type = max_organization which = transport     value = 15 }
+	  command = { type = max_organization which = heavy_cruiser value = 15 }
+	  command = { type = max_organization which = light_cruiser value = 15 }
+	command = { type = max_organization which = destroyer     value = 5 }
+      command = { type = morale which = naval value = 10 }
+    }
+  }
+  # Commerce Defence Doctrine
+  application =
+  { id        = 8200
+    name      = TECH_APP_ND_20_NAME
+    desc      = TECH_APP_ND_20_DESC
+    position  = { x = 40 y = 272 }
+    year      = 1916 #1941
+    # Improved Destroyer ASW Weaponry
+    component = { id = 8201 name = TECH_CMP_ND_20_1_NAME type = naval_artillery difficulty = 8 }
+    # Improved Merchant Ship Direction
+    component = { id = 8202 name = TECH_CMP_ND_20_2_NAME type = naval_training difficulty = 8 }
+    # Merchant Ship Construction Prioritization
+    component = { id = 8203 name = TECH_CMP_ND_20_3_NAME type = naval_engineering difficulty = 8 }
+    # Improved Convoy Evasive Maneouvres
+    component = { id = 8204 name = TECH_CMP_ND_20_4_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Emergency Convoy Dispersal
+    component = { id = 8205 name = TECH_CMP_ND_20_5_NAME type = small_taskforce_tactics difficulty = 8 }
+    required  = { 8070 8120 8100 8130 8310 }
+    effects =
+    { 	  #command = { type = max_organization which = naval value = 15 }
+	  #command = { type = max_organization which = battlecruiser value = 15 }
+	  command = { type = max_organization which = battleship    value = 15 }
+	  command = { type = max_organization which = carrier       value = 15 }
+      command = { type = max_organization which = escort_carrier value = 15 }
+	  command = { type = max_organization which = destroyer     value = 15 }
+	  command = { type = max_organization which = transport     value = 15 }
+	  command = { type = max_organization which = heavy_cruiser value = 15 }
+	  command = { type = max_organization which = light_cruiser value = 15 }
+      command = { type = morale which = naval value = 10 }
+      command = { type = convoy_def_eff value = 0.1 }
+      command = { type = task_efficiency which = asw value = 0.1 }
+    }
+  }
+  # Commerce Raider Doctrine
+  application =
+  { id        = 8210
+    name      = TECH_APP_ND_21_NAME
+    desc      = TECH_APP_ND_21_DESC
+    position  = { x = 408 y = 120 }
+    year      = 1916 #1940
+    # Improved Raider Co-ordination
+    component = { id = 8211 name = TECH_CMP_ND_21_1_NAME type = centralized_execution difficulty = 8 }
+    # Advanced Evasion Techniques
+    component = { id = 8212 name = TECH_CMP_ND_21_2_NAME type = seamanship difficulty = 8 }
+    # Improved Sealane Intelligence
+    component = { id = 8213 name = TECH_CMP_ND_21_3_NAME type = centralized_execution difficulty = 8 }
+    # Naval HQ Raider Focus
+    component = { id = 8214 name = TECH_CMP_ND_21_4_NAME type = centralized_execution difficulty = 8 }
+    # Raider School
+    component = { id = 8215 name = TECH_CMP_ND_21_5_NAME type = seamanship difficulty = 8 }
+    required  = { 8080 8150 8160 8170 8090 }
+    effects =
+    { 	  #command = { type = max_organization which = naval value = 15 }
+	  #command = { type = max_organization which = battlecruiser value = 15 }
+	  command = { type = max_organization which = battleship    value = 15 }
+	  command = { type = max_organization which = carrier       value = 15 }
+	  command = { type = max_organization which = destroyer     value = 15 }
+	  command = { type = max_organization which = transport     value = 15 }
+	  command = { type = max_organization which = heavy_cruiser value = 15 }
+	  command = { type = max_organization which = light_cruiser value = 15 }
+      command = { type = morale which = naval value = 25 }
+
+      command = { type = max_organization which = escort_carrier value = 15 }
+    }
+  }
+  # Decisive Interdiction Doctrine
+  application =
+  { id        = 8220
+    name      = TECH_APP_ND_22_NAME
+    desc      = TECH_APP_ND_22_DESC
+    position  = { x = 408 y = 200 }
+    year      = 1938 #1940
+    # Raider Concentration
+    component = { id = 8221 name = TECH_CMP_ND_22_1_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Disguised Resupply Vessels
+    component = { id = 8222 name = TECH_CMP_ND_22_2_NAME type = naval_engineering difficulty = 8 }
+    # Aircraft Interdiction Role
+    component = { id = 8223 name = TECH_CMP_ND_22_3_NAME type = aircraft_testing difficulty = 8 }
+    # Target Prioritization
+    component = { id = 8224 name = TECH_CMP_ND_22_4_NAME type = naval_training difficulty = 8 }
+    # Decisive Engagement Focus
+    component = { id = 8225 name = TECH_CMP_ND_22_5_NAME type = naval_training difficulty = 8 }
+    required  = { 8080 8150 8160 8170 }
+    effects =
+    { 	  #command = { type = max_organization which = naval value = 15 }
+	  #command = { type = max_organization which = battlecruiser value = 15 }
+	  command = { type = max_organization which = battleship    value = 15 }
+	  command = { type = max_organization which = carrier       value = 15 }
+	  command = { type = max_organization which = destroyer     value = 15 }
+	  command = { type = max_organization which = transport     value = 15 }
+	  command = { type = max_organization which = heavy_cruiser value = 15 }
+	  command = { type = max_organization which = light_cruiser value = 15 }
+
+      command = { type = max_organization which = escort_carrier value = 15 }
+      command = { type = morale which = naval value = 25 }
+
+	  command = { type = task_efficiency which = naval_scramble  value = 0.10 }
+    }
+  }
+  # Deep Operations Doctrine
+  application =
+  { id        = 8230
+    name      = TECH_APP_ND_23_NAME
+    desc      = TECH_APP_ND_23_DESC
+    position  = { x = 224 y = 224 }
+    year      = 1940
+    # Basic Underway-Refueling
+    component = { id = 8231 name = TECH_CMP_ND_23_1_NAME type = naval_engineering difficulty = 8 }
+    # Improved Land-Air Co-ordination
+    component = { id = 8232 name = TECH_CMP_ND_23_2_NAME type = combined_arms_focus difficulty = 8 }
+    # Basic Long-Range Aerial Recon
+    component = { id = 8233 name = TECH_CMP_ND_23_3_NAME type = aircraft_testing difficulty = 8 }
+    # Logistic Requirement Minimization
+    component = { id = 8234 name = TECH_CMP_ND_23_4_NAME type = technical_efficiency difficulty = 8 }
+    # Reliance on Naval Bases Reduction
+    component = { id = 8235 name = TECH_CMP_ND_23_5_NAME type = management difficulty = 8 }
+    required  = { 8180 }
+    effects =
+    { command = { type = max_positioning which = carrier value = 0.1 }
+      command = { type = min_positioning which = carrier value = 0.1 }
+      command = { type = max_positioning which = battleship value = 0.1 }
+      command = { type = min_positioning which = battleship value = 0.1 }
+      #command = { type = max_positioning which = battlecruiser value = 0.1 }
+      #command = { type = min_positioning which = battlecruiser value = 0.1 }
+      command = { type = max_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = max_positioning which = light_cruiser value = 0.1 }
+      command = { type = min_positioning which = light_cruiser value = 0.1 }
+      command = { type = max_positioning which = destroyer value = 0.05 }
+      command = { type = min_positioning which = destroyer value = 0.05 }
+
+      command = { type = max_positioning which = escort_carrier value = 0.1 }
+      command = { type = min_positioning which = escort_carrier value = 0.1 }
+
+
+      command = { type = snow_attack which = battleship value = 5 }
+      command = { type = rain_attack which = battleship value = 5 }
+      command = { type = night_attack which = battleship value = 5 }
+      command = { type = night_defense which = battleship value = 5 }
+      #command = { type = snow_attack which = battlecruiser value = 5 }
+      #command = { type = rain_attack which = battlecruiser value = 5 }
+      #command = { type = night_attack which = battlecruiser value = 5 }
+      #command = { type = night_defense which = battlecruiser value = 5 }
+
+	  #command = { type = max_organization which = naval value = 10 }
+	  #command = { type = max_organization which = battlecruiser value = 10 }
+	  command = { type = max_organization which = battleship    value = 10 }
+	  command = { type = max_organization which = transport     value = 10 }
+	  command = { type = max_organization which = heavy_cruiser value = 10 }
+	  command = { type = max_organization which = light_cruiser value = 10 }
+	command = { type = max_organization which = destroyer     value = 5 }
+
+      command = { type = task_efficiency which = naval_port_strike value = 0.05 }
+      command = { type = task_efficiency which = naval_airbase_strike value = 0.05 }
+      command = { type = task_efficiency which = convoy_raiding value = 0.05 }
+    }
+  }
+  # Carrier Aviation Doctrine
+  application =
+  { id          = 8240
+    name        = TECH_APP_ND_24_NAME
+    desc        = TECH_APP_ND_24_DESC
+    position    = { x = 56 y = 232 }
+    position    = { x = 384 y = 304 }
+    year        = 1943
+    # Co-ordinated Airstrikes
+    component   = { id = 8241 name = TECH_CMP_ND_24_1_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Integrated CAP
+    component   = { id = 8242 name = TECH_CMP_ND_24_2_NAME type = carrier_tactics difficulty = 8 }
+    # Improved Carrier Co-ordination
+    component   = { id = 8243 name = TECH_CMP_ND_24_3_NAME type = carrier_tactics difficulty = 8 }
+    # Improved Long-Range Aerial Recon
+    component   = { id = 8244 name = TECH_CMP_ND_24_4_NAME type = carrier_tactics difficulty = 8 }
+    # Sophisticated Carrier Damage Control
+    component   = { id = 8245 name = TECH_CMP_ND_24_5_NAME type = naval_engineering difficulty = 8 }
+    OR_required = { 8320 8330 }
+    required    = { 8110 }
+    effects =
+    { 	  command = { type = max_organization which = carrier value = 10 }
+
+	  command = { type = max_positioning which = carrier value = 0.1 }
+      command = { type = min_positioning which = carrier value = 0.1 }
+      command = { type = max_positioning which = heavy_cruiser value = 0.05 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.05 }
+      command = { type = max_positioning which = light_cruiser value = 0.05 }
+      command = { type = min_positioning which = light_cruiser value = 0.05 }
+      command = { type = max_positioning which = destroyer value = 0.05 }
+      command = { type = min_positioning which = destroyer value = 0.05 }
+
+      command = { type = max_positioning which = escort_carrier value = 0.1 }
+      command = { type = min_positioning which = escort_carrier value = 0.1 }
+      command = { type = max_organization which = escort_carrier value = 10 }
+      command = { type = snow_attack which = carrier value = 5 }
+      command = { type = rain_attack which = carrier value = 5 }
+      command = { type = night_attack which = carrier value = 5 }
+      command = { type = night_defense which = carrier value = 5 }
+      command = { type = snow_attack which = escort_carrier value = 5 }
+      command = { type = rain_attack which = escort_carrier value = 5 }
+      command = { type = night_attack which = escort_carrier value = 5 }
+      command = { type = night_defense which = escort_carrier value = 5 }
+      command = { type = task_efficiency which = naval_port_strike value = 0.1 }
+      command = { type = task_efficiency which = naval_airbase_strike value = 0.1 }
+
+	  command = { type = task_efficiency which = naval_scramble 	 value = 0.1 }
+    }
+  }
+  # Escort Carrier Role Doctrine
+  application =
+  { id          = 8250
+    name        = TECH_APP_ND_25_NAME
+    desc        = TECH_APP_ND_25_DESC
+    position    = { x = 56 y = 288 }
+    position    = { x = 224 y = 288 }
+    year        = 1944 #1942
+    # Convoy-Task Force Co-ordination
+    component   = { id = 8251 name = TECH_CMP_ND_25_1_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Rapid Carrier Construction
+    component   = { id = 8252 name = TECH_CMP_ND_25_2_NAME type = naval_engineering difficulty = 8 }
+    # Carrier ASW Role
+    component   = { id = 8253 name = TECH_CMP_ND_25_3_NAME type = carrier_tactics difficulty = 8 }
+    # Improved Aerial ASW Weaponry
+    component   = { id = 8254 name = TECH_CMP_ND_25_4_NAME type = aircraft_testing difficulty = 8 }
+    # Small Carrier Seamanship
+    component   = { id = 8255 name = TECH_CMP_ND_25_5_NAME type = seamanship difficulty = 8 }
+    required    = { }
+    OR_required = { 8200 8180 }
+    effects =
+    { 	  command = { type = max_organization which = carrier value = 10 }
+	  command = { type = task_efficiency which = asw value = 0.1 }
+      command = { type = convoy_def_eff value = 0.1 }
+
+      command = { type = max_organization which = escort_carrier value = 15 }
+    }
+  }
+  # Integrated Convoy Defence Doctrine
+  application =
+  { id        = 8260
+    name      = TECH_APP_ND_26_NAME
+    desc      = TECH_APP_ND_26_DESC
+    position  = { x = 68 y = 320 }
+    year      = 1946 #1943
+    # Advanced Destroyer ASW Weaponry
+    component = { id = 8261 name = TECH_CMP_ND_26_1_NAME type = naval_artillery difficulty = 8 }
+    # Advanced Convoy Evasive Measures
+    component = { id = 8262 name = TECH_CMP_ND_26_2_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Sophisticated Convoy Command HQ
+    component = { id = 8263 name = TECH_CMP_ND_26_3_NAME type = centralized_execution difficulty = 8 }
+    # Escort Construction Prioritization
+    component = { id = 8264 name = TECH_CMP_ND_26_4_NAME type = naval_engineering difficulty = 8 }
+    # Escort Co-ordination
+    component = { id = 8265 name = TECH_CMP_ND_26_5_NAME type = small_taskforce_tactics difficulty = 8 }
+    required  = { 8200 8140 }
+    effects =
+    { 	  command = { type = max_organization which = destroyer value = 20 }
+
+	  command = { type = max_positioning which = destroyer value = 0.1 }
+      command = { type = min_positioning which = destroyer value = 0.1 }
+      command = { type = task_efficiency which = asw value = 0.1 }
+      command = { type = convoy_def_eff value = 0.1 }
+      command = { type = snow_attack which = destroyer value = 5 }
+      command = { type = rain_attack which = destroyer value = 5 }
+      command = { type = night_attack which = destroyer value = 5 }
+      command = { type = night_defense which = destroyer value = 5 }
+    }
+  }
+  # Fleet Train Doctrine
+  application =
+  { id        = 8270
+    name      = TECH_APP_ND_27_NAME
+    desc      = TECH_APP_ND_27_DESC
+    position  = { x = 400 y = 320 }
+    year      = 1944
+    # Sophisticated Supply Bases
+    component = { id = 8271 name = TECH_CMP_ND_27_1_NAME type = technical_efficiency difficulty = 8 }
+    # Supply Chain Management
+    component = { id = 8272 name = TECH_CMP_ND_27_2_NAME type = centralized_execution difficulty = 8 }
+    # Integrated Merchant Timetable
+    component = { id = 8273 name = TECH_CMP_ND_27_3_NAME type = centralized_execution difficulty = 8 }
+    # Improved Underway-Refueling
+    component = { id = 8274 name = TECH_CMP_ND_27_4_NAME type = naval_engineering difficulty = 8 }
+    # War Material Prioritization
+    component = { id = 8275 name = TECH_CMP_ND_27_5_NAME type = technical_efficiency difficulty = 8 }
+    required  = { 8240 8320 }
+    effects =
+    { command = { type = max_positioning which = carrier value = 0.05 }
+      command = { type = min_positioning which = carrier value = 0.05 }
+      command = { type = max_positioning which = destroyer value = 0.05 }
+      command = { type = min_positioning which = destroyer value = 0.05 }
+
+      command = { type = max_positioning which = escort_carrier value = 0.05 }
+      command = { type = min_positioning which = escort_carrier value = 0.05 }
+
+      command = { type = snow_attack which = destroyer value = 5 }
+      command = { type = rain_attack which = destroyer value = 5 }
+      command = { type = night_attack which = destroyer value = 5 }
+      command = { type = night_defense which = destroyer value = 5 }
+    }
+  }
+  # Capital Ship Raider Group Doctrine
+  application =
+  { id        = 8280
+    name      = TECH_APP_ND_28_NAME
+    desc      = TECH_APP_ND_28_DESC
+    position  = { x = 422 y = 136 }
+    year      = 1930 #1940
+    # Advanced Raider Co-ordination
+    component = { id = 8281 name = TECH_CMP_ND_28_1_NAME type = centralized_execution difficulty = 8 }
+    # Battleship Raiding
+    component = { id = 8282 name = TECH_CMP_ND_28_2_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Co-ordinated Raider Sailings
+    component = { id = 8283 name = TECH_CMP_ND_28_3_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Independent Capital Ship Captains
+    component = { id = 8284 name = TECH_CMP_ND_28_4_NAME type = seamanship difficulty = 8 }
+    # Advanced Sealane Intelligence
+    component = { id = 8285 name = TECH_CMP_ND_28_5_NAME type = centralized_execution difficulty = 8 }
+    required  = { 8210 }
+    effects =
+    { 
+		command = { type = max_positioning which = battleship value = 0.1 }
+		command = { type = min_positioning which = battleship value = 0.1 }
+		#command = { type = max_positioning which = battlecruiser value = 0.1 }
+		#command = { type = min_positioning which = battlecruiser value = 0.1 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.1 }
+		command = { type = min_positioning which = heavy_cruiser value = 0.1 }
+		command = { type = task_efficiency which = convoy_raiding value = 0.05 }
+		command = { type = snow_attack which = battleship value = 5 }
+		command = { type = rain_attack which = battleship value = 5 }
+		command = { type = night_attack which = battleship value = 5 }
+		command = { type = night_defense which = battleship value = 5 }
+		#command = { type = snow_attack which = battlecruiser value = 5 }
+		#command = { type = rain_attack which = battlecruiser value = 5 }
+		#command = { type = night_attack which = battlecruiser value = 5 }
+		#command = { type = night_defense which = battlecruiser value = 5 }
+		command = { type = snow_attack which = heavy_cruiser value = 5 }
+		command = { type = rain_attack which = heavy_cruiser value = 5 }
+		command = { type = night_attack which = heavy_cruiser value = 5 }
+		command = { type = night_defense which = heavy_cruiser value = 5 }
+    }
+  }
+  # Wolfpack Doctrine
+  application =
+  { id        = 8290
+    name      = TECH_APP_ND_29_NAME
+    desc      = TECH_APP_ND_29_DESC
+    position  = { x = 422 y = 152 }
+    year      = 1940
+    # Submarine Co-ordination
+    component = { id = 8291 name = TECH_CMP_ND_29_1_NAME type = submarine_tactics difficulty = 8 }
+    # Timing of Engagement Discipline
+    component = { id = 8292 name = TECH_CMP_ND_29_2_NAME type = seamanship difficulty = 8 }
+    # Improved Submarine Evasion Techniques
+    component = { id = 8293 name = TECH_CMP_ND_29_3_NAME type = submarine_tactics difficulty = 8 }
+    # Improved Convoy Surveillance
+    component = { id = 8294 name = TECH_CMP_ND_29_4_NAME type = centralized_execution difficulty = 8 }
+    # Basic Submarine HQs
+    component = { id = 8295 name = TECH_CMP_ND_29_5_NAME type = centralized_execution difficulty = 8 }
+    required  = { 8210 }
+    effects =
+    { command = { type = max_positioning which = submarine value = 0.1 }
+      command = { type = min_positioning which = submarine value = 0.1 }
+      command = { type = task_efficiency which = convoy_raiding value = 0.1 }
+      command = { type = snow_attack which = submarine value = 5 }
+      command = { type = rain_attack which = submarine value = 5 }
+      command = { type = night_attack which = submarine value = 5 }
+      command = { type = night_defense which = submarine value = 5 }
+    }
+  }
+  # Advanced Submarine Operations Doctrine
+  application =
+  { id        = 8300
+    name      = TECH_APP_ND_30_NAME
+    desc      = TECH_APP_ND_30_DESC
+    position  = { x = 436 y = 168 }
+    year      = 1944 #1942
+    # Advanced Submarine Evasion Techniques
+    component = { id = 8301 name = TECH_CMP_ND_30_1_NAME type = submarine_tactics difficulty = 8 }
+    # Advanced Convoy Surveillance
+    component = { id = 8302 name = TECH_CMP_ND_30_2_NAME type = centralized_execution difficulty = 8 }
+    # Improved Submarine HQs
+    component = { id = 8303 name = TECH_CMP_ND_30_3_NAME type = centralized_execution difficulty = 8 }
+    # Turnaround Time Minimization
+    component = { id = 8304 name = TECH_CMP_ND_30_4_NAME type = management difficulty = 8 }
+    # Experienced Submariners
+    component = { id = 8305 name = TECH_CMP_ND_30_5_NAME type = seamanship difficulty = 8 }
+    required  = { 8290 }
+    effects =
+    { command = { type = max_positioning which = submarine value = 0.1 }
+      command = { type = min_positioning which = submarine value = 0.1 }
+      command = { type = task_efficiency which = convoy_raiding value = 0.1 }
+      command = { type = snow_attack which = submarine value = 5 }
+      command = { type = rain_attack which = submarine value = 5 }
+      command = { type = night_attack which = submarine value = 5 }
+      command = { type = night_defense which = submarine value = 5 }
+    }
+  }
+  # Floating Fortress Doctrine
+  application =
+  { id          = 8310
+    name        = TECH_APP_ND_31_NAME
+    desc        = TECH_APP_ND_31_DESC
+    position    = { x = 32 y = 80 }
+    position    = { x = 424 y = 216 }
+    position    = { x = 384 y = 288 }
+    year        = 1930 #1939
+    # Advanced Task Force Fire Co-ordination
+    component   = { id = 8311 name = TECH_CMP_ND_31_1_NAME type = naval_training difficulty = 8 }
+    # Advanced Armament
+    component   = { id = 8312 name = TECH_CMP_ND_31_2_NAME type = naval_artillery difficulty = 8 }
+    # Advanced Gunnery Training
+    component   = { id = 8313 name = TECH_CMP_ND_31_3_NAME type = naval_training difficulty = 8 }
+    # Advanced Gun Control
+    component   = { id = 8314 name = TECH_CMP_ND_31_4_NAME type = naval_training difficulty = 8 }
+    # Sophisticated Capital Ship Damage Control
+    component   = { id = 8315 name = TECH_CMP_ND_31_5_NAME type = naval_engineering difficulty = 8 }
+    OR_required = { 8220 8230 8070 }
+    effects =
+    { 	  #command = { type = max_organization which = naval value = 15 }
+	  #command = { type = max_organization which = battlecruiser value = 15 }
+	  command = { type = max_organization which = battleship    value = 15 }
+	  command = { type = max_organization which = carrier       value = 15 }
+	  command = { type = max_organization which = transport     value = 15 }
+	  command = { type = max_organization which = heavy_cruiser value = 15 }
+	  command = { type = max_organization which = light_cruiser value = 15 }
+	command = { type = max_organization which = destroyer     value = 5 }
+
+      command = { type = max_organization which = escort_carrier value = 15 }
+	  command = { type = morale which = naval value = 20 }
+	  command = { type = task_efficiency which = naval_port_strike value = 0.05  }
+	  command = { type = task_efficiency which =  naval_airbase_strike value = 0.05  }
+    }
+  }
+  # Massive Strike Doctrine
+  application =
+  { id        = 8320
+    name      = TECH_APP_ND_32_NAME
+    desc      = TECH_APP_ND_32_DESC
+    position  = { x = 368 y = 272 }
+    year      = 1940 #1943
+    # Advanced Night Combat Training
+    component = { id = 8321 name = TECH_CMP_ND_32_1_NAME type = naval_training difficulty = 8 }
+    # Advanced Land-Air Co-ordination
+    component = { id = 8322 name = TECH_CMP_ND_32_2_NAME type = combined_arms_focus difficulty = 8 }
+    # Improved Forward Bases
+    component = { id = 8323 name = TECH_CMP_ND_32_3_NAME type = naval_engineering difficulty = 8 }
+    # Strategic Concentration of Forces
+    component = { id = 8324 name = TECH_CMP_ND_32_4_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Overwhelming Attack Focus
+    component = { id = 8325 name = TECH_CMP_ND_32_5_NAME type = carrier_tactics difficulty = 8 }
+    required  = { 8230 8250 8140 }
+    effects =
+    { #command = { type = max_organization which = naval value = 15 }
+
+	  #command = { type = max_organization which = battlecruiser value = 15 }
+	  command = { type = max_organization which = battleship    value = 15 }
+	  command = { type = max_organization which = carrier       value = 15 }
+	  command = { type = max_organization which = transport     value = 15 }
+	  command = { type = max_organization which = heavy_cruiser value = 15 }
+	  command = { type = max_organization which = light_cruiser value = 15 }
+	  command = { type = max_organization which = destroyer value = 5 }
+
+      command = { type = max_organization which = escort_carrier value = 15 }
+
+      command = { type = morale which = naval value = 20 }
+      command = { type = task_efficiency which = naval_port_strike value = 0.05 }
+      command = { type = task_efficiency which = naval_airbase_strike value = 0.05 }
+    }
+  }
+  # Maritime Power Projection Doctrine
+  application =
+  { id        = 8330
+    name      = TECH_APP_ND_33_NAME
+    desc      = TECH_APP_ND_33_DESC
+    position  = { x = 40 y = 200 }
+    year      = 1943 #1944
+    # Advanced Underway-Refueling
+    component = { id = 8331 name = TECH_CMP_ND_33_1_NAME type = naval_engineering difficulty = 8 }
+    # Long-Distance Offensive Focus
+    component = { id = 8332 name = TECH_CMP_ND_33_2_NAME type = naval_training difficulty = 8 }
+    # Sophisticated Task Force Co-ordination
+    component = { id = 8333 name = TECH_CMP_ND_33_3_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Long-Range Naval Aircraft
+    component = { id = 8334 name = TECH_CMP_ND_33_4_NAME type = aircraft_testing difficulty = 8 }
+    # Multiple Avenues of Advance
+    component = { id = 8335 name = TECH_CMP_ND_33_5_NAME type = large_taskforce_tactics difficulty = 8 }
+    required  = { 8190 8090 8110 8160 }
+    effects =
+    { 	  #command = { type = max_organization which = naval value = 20 }
+	  #command = { type = max_organization which = battlecruiser value = 20 }
+	  command = { type = max_organization which = battleship    value = 20 }
+	  command = { type = max_organization which = carrier       value = 15 }
+	  command = { type = max_organization which = escort_carrier value = 15 }
+	  command = { type = max_organization which = transport     value = 20 }
+	  command = { type = max_organization which = light_cruiser value = 20 }
+	  command = { type = max_organization which = heavy_cruiser value = 20 }
+	command = { type = max_organization which = destroyer     value = 5 }
+      command = { type = morale which = naval value = 20 }
+	#command = { type = max_amphib_mod value = 6 }
+    }
+  }
+  # Floating Airbase Doctrine
+  application =
+  { id        = 8340
+    name      = TECH_APP_ND_34_NAME
+    desc      = TECH_APP_ND_34_DESC
+    position  = { x = 56 y = 216 }
+    year      = 1930 #1944
+    # Sophisticated CAP-TF Co-ordination
+    component = { id = 8341 name = TECH_CMP_ND_34_1_NAME type = carrier_tactics difficulty = 8 }
+    # Destroyer Picket Lines
+    component = { id = 8342 name = TECH_CMP_ND_34_2_NAME type = small_taskforce_tactics difficulty = 8 }
+    # Submarine Recon and Recovery Role
+    component = { id = 8343 name = TECH_CMP_ND_34_3_NAME type = submarine_tactics difficulty = 8 }
+    # Integrated Anti-Aircraft Weaponry
+    component = { id = 8344 name = TECH_CMP_ND_34_4_NAME type = naval_engineering difficulty = 8 }
+    # Capital Ship Support Role
+    component = { id = 8345 name = TECH_CMP_ND_34_5_NAME type = large_taskforce_tactics difficulty = 8 }
+    required  = { 8330 }
+    effects =
+    { command = { type = max_positioning which = battleship value = 0.1 }
+      command = { type = min_positioning which = battleship value = 0.1 }
+      #command = { type = max_positioning which = battlecruiser value = 0.1 }
+      #command = { type = min_positioning which = battlecruiser value = 0.1 }
+      command = { type = max_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = max_positioning which = light_cruiser value = 0.1 }
+      command = { type = min_positioning which = light_cruiser value = 0.1 }
+      command = { type = snow_attack which = carrier value = 5 }
+      command = { type = rain_attack which = carrier value = 5 }
+      command = { type = night_attack which = carrier value = 5 }
+      command = { type = night_defense which = carrier value = 5 }
+	  command = { type = snow_attack which = escort_carrier value = 5 }
+      command = { type = rain_attack which = escort_carrier value = 5 }
+      command = { type = night_attack which = escort_carrier value = 5 }
+      command = { type = night_defense which = escort_carrier value = 5 }
+    }
+  }
+  # Carrier Warfare Doctrine
+  application =
+  { id        = 8350
+    name      = TECH_APP_ND_35_NAME
+    desc      = TECH_APP_ND_35_DESC
+    position  = { x = 416 y = 336 }
+    year      = 1936 #1944
+    # Intensive Anti-Aircraft Defence
+    component = { id = 8351 name = TECH_CMP_ND_35_1_NAME type = naval_engineering difficulty = 8 }
+    # Carrier Fleet Train
+    component = { id = 8352 name = TECH_CMP_ND_35_2_NAME type = large_taskforce_tactics difficulty = 8 }
+    # Advanced Carrier Co-ordination
+    component = { id = 8353 name = TECH_CMP_ND_35_3_NAME type = carrier_tactics difficulty = 8 }
+    # Advanced Long-Range Aerial Recon
+    component = { id = 8354 name = TECH_CMP_ND_35_4_NAME type = carrier_tactics difficulty = 8 }
+    # Experienced Carrier Captains
+    component = { id = 8355 name = TECH_CMP_ND_35_5_NAME type = seamanship difficulty = 8 }
+    required  = { 8270 }
+    effects =
+    { command = { type = max_positioning which = carrier value = 0.1 }
+      command = { type = min_positioning which = carrier value = 0.1 }
+      command = { type = max_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = min_positioning which = heavy_cruiser value = 0.1 }
+      command = { type = max_positioning which = light_cruiser value = 0.1 }
+      command = { type = min_positioning which = light_cruiser value = 0.1 }
+	  command = { type = max_positioning which = escort_carrier value = 0.1 }
+	  command = { type = min_positioning which = escort_carrier value = 0.1 }
+	  
+	  command = { type = snow_attack which = escort_carrier value = 5 }
+	  command = { type = rain_attack which = escort_carrier value = 5 }
+	  command = { type = night_attack which = escort_carrier value = 5 }
+	  command = { type = night_defense which = escort_carrier value = 5 }
+
+      command = { type = snow_attack which = carrier value = 5 }
+      command = { type = rain_attack which = carrier value = 5 }
+      command = { type = night_attack which = carrier value = 5 }
+      command = { type = night_defense which = carrier value = 5 }
+      command = { type = task_efficiency which = naval_port_strike value = 0.1 }
+      command = { type = task_efficiency which = naval_airbase_strike value = 0.1 }
+    }
+  }
+  # Carrier group doctrine
+  application =
+  { id        = 18000
+    name      = TECH_APP_ND_100_NAME
+    desc      = TECH_APP_ND_100_DESC
+    position  = { x = 416 y = 353 }
+    year      = 1957 #1947
+    # ?
+    component = { id = 18001 name = TECH_CMP_ND_100_1_NAME type = naval_engineering difficulty = 8 }
+    # ?
+    component = { id = 18002 name = TECH_CMP_ND_100_2_NAME type = large_taskforce_tactics difficulty = 8 }
+    # ?
+    component = { id = 18003 name = TECH_CMP_ND_100_3_NAME type = carrier_tactics difficulty = 8 }
+    # ?
+    component = { id = 18004 name = TECH_CMP_ND_100_4_NAME type = carrier_tactics difficulty = 8 }
+    # ?
+    component = { id = 18005 name = TECH_CMP_ND_100_5_NAME type = seamanship difficulty = 8 }
+    required  = { 8350 }
+    effects =
+    { command = { type = max_positioning which = carrier value = 0.1 }
+      command = { type = min_positioning which = carrier value = 0.1 }
+	  command = { type = max_positioning which = escort_carrier value = 0.1 }
+      command = { type = min_positioning which = escort_carrier value = 0.1 }
+    }
+  }
+  # # Amphibious Operations Doctrine
+  # application =
+  # { id        = 18010
+    # name      = TECH_APP_ND_101_NAME
+    # desc      = TECH_APP_ND_101_DESC
+    # position  = { x = 416 y = 370 }
+    # year      = 1952
+    # # ?
+    # component = { id = 18011 name = TECH_CMP_ND_101_1_NAME type = naval_engineering difficulty = 8 }
+    # # ?
+    # component = { id = 18012 name = TECH_CMP_ND_101_2_NAME type = naval_training difficulty = 8 }
+    # # ?
+    # component = { id = 18013 name = TECH_CMP_ND_101_3_NAME type = management difficulty = 8 }
+    # # ?
+    # component = { id = 18014 name = TECH_CMP_ND_101_4_NAME type = naval_engineering difficulty = 8 }
+    # # ?
+    # component = { id = 18015 name = TECH_CMP_ND_101_5_NAME type = naval_training difficulty = 8 }
+    # required  = { 8270 } #18000
+    # effects =
+    # { command = { type = max_amphib_mod value = 8 }
+    # }
+  # }
+  
+  label =
+  { tag      = TECH_CAT_AMPHIBIOUS
+    position = { x = 16 y = 350 }
+  }
+  # Basic Amphibious Warfare
+  application =
+  { id        = 82300
+    name      = TECH_APP_ND_230_NAME
+
+    position  = { x = 24 y = 365 }
+	picture   = "8060"
+    year      = 1924
+    component = { id = 82301 name = TECH_CMP_ND_230_1_NAME type = general_equipment difficulty = 9 }
+    component = { id = 82302 name = TECH_CMP_ND_230_2_NAME type = naval_engineering difficulty = 9 }
+    component = { id = 82303 name = TECH_CMP_ND_230_3_NAME type = small_unit_tactics difficulty = 9 }
+    component = { id = 82304 name = TECH_CMP_ND_230_4_NAME type = infantry_focus difficulty = 9 }
+    component = { id = 82305 name = TECH_CMP_ND_230_5_NAME type = small_unit_tactics difficulty = 9 }
+    #required  = { 8080 }
+	OR_required = { 8060 8070 8080 }
+    effects =
+    { command = { type = task_efficiency which = amphibious_assault value = 0.05 }
+	  command = { type = task_efficiency which = shore_bombardment value = 0.05 }
+	  command = { type = max_amphib_mod value = 1 }
+	  command = { type = task_efficiency which = sea_transport value = 0.05 }
+    }
+  }
+  # Improved Naval Invasion
+  application =
+  { id        = 82310
+    name      = TECH_APP_ND_231_NAME
+
+    position  = { x = 157 y = 365 }
+	picture   = "1170"
+    year      = 1934
+    component = { id = 82311 name = TECH_CMP_ND_231_1_NAME type = naval_artillery difficulty = 9 }
+    component = { id = 82312 name = TECH_CMP_ND_231_2_NAME type = naval_engineering difficulty = 9 }
+    component = { id = 82313 name = TECH_CMP_ND_231_3_NAME type = small_unit_tactics difficulty = 9 }
+    component = { id = 82314 name = TECH_CMP_ND_231_4_NAME type = infantry_focus difficulty = 9 }
+    component = { id = 82315 name = TECH_CMP_ND_231_5_NAME type = naval_training difficulty = 9 }
+    required  = { 82300 }
+    effects =
+    { command = { type = task_efficiency which = amphibious_assault value = 0.05 }
+	  command = { type = task_efficiency which = shore_bombardment value = 0.10 }	
+	  command = { type = max_amphib_mod value = 3 }
+	  command = { type = task_efficiency which = sea_transport value = 0.10 }
+    }
+  }
+  # Advanced Naval Invasion 
+  application =
+  { id        = 82320
+    name      = TECH_APP_ND_232_NAME
+
+    position  = { x = 157 y = 392 }
+	picture   = "1180"
+    year      = 1938
+    component = { id = 82321 name = TECH_CMP_ND_232_1_NAME type = naval_engineering difficulty = 9 }
+    component = { id = 82322 name = TECH_CMP_ND_232_2_NAME type = naval_engineering difficulty = 9 }
+    component = { id = 82323 name = TECH_CMP_ND_232_3_NAME type = small_unit_tactics difficulty = 9 }
+    component = { id = 82324 name = TECH_CMP_ND_232_4_NAME type = mechanics difficulty = 9 }
+    component = { id = 82325 name = TECH_CMP_ND_232_5_NAME type = general_equipment difficulty = 9 }
+    required  = { 82310 }
+    effects =
+    { command = { type = task_efficiency which = amphibious_assault value = 0.10 }
+	  command = { type = task_efficiency which = shore_bombardment value = 0.10 }
+	  command = { type = max_amphib_mod value = 5 }
+	  command = { type = task_efficiency which = sea_transport value = 0.10 }
+    }
+  }
+  # Massive Naval Invasion
+  application =
+  { id        = 82330
+    name      = TECH_APP_ND_233_NAME
+
+    position = { x = 24 y = 392 }
+	picture   = "18010"
+    year      = 1942
+    component = { id = 82331 name = TECH_CMP_ND_233_1_NAME type = naval_artillery difficulty = 9 }
+    component = { id = 82332 name = TECH_CMP_ND_233_2_NAME type = naval_engineering difficulty = 9 }
+    component = { id = 82333 name = TECH_CMP_ND_233_3_NAME type = large_unit_tactics difficulty = 9 }
+    component = { id = 82334 name = TECH_CMP_ND_233_4_NAME type = technical_efficiency difficulty = 9 }
+    component = { id = 82335 name = TECH_CMP_ND_233_5_NAME type = naval_training difficulty = 9 }
+    required  = { 82320 }
+    effects =
+    { command = { type = task_efficiency which = amphibious_assault value = 0.10 }
+	  command = { type = task_efficiency which = shore_bombardment value = 0.15 }
+	  command = { type = max_amphib_mod value = 7 }
+	  command = { type = task_efficiency which = sea_transport value = 0.10 }
+    }
+  }
+}

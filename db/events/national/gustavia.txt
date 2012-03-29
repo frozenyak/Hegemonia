@@ -1,0 +1,100 @@
+###37000-37999###
+
+event = {
+	id = 37000
+	country = VEN
+	
+	name = "Jadakal Mobilizes"
+	desc = "The Jadakal Empire has mobilized its forces along our border. Our spies tell us that the government of Jadakal is trying to quell internal dissent by painting us as their enemy."
+	style = 1
+	picture = "militaryparade1"
+
+	action = {
+		name = "We will be ready - mobilize!"
+		ai_chance = 95
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = resource which = supplies value = -500 }
+		command = { type = resource which = supplies value = -700 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { type = dissent value = 5 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
+		command = { type = local_setflag which = MOB8 }
+		command = { type = local_setflag which = MOB7 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB3 }
+	}
+	action = {
+		name = "There is no need to escalate the situation"
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 37001
+	country = VEN
+	
+	trigger = {
+		war = { country = VEN country = U05 }
+		NOT = { belligerence = { country = VEN value = 5 } }
+		belligerence = { country = U05 value = 5 }
+		NOT = { war = { country = USA country = MEX } }
+		NOT = { war = { country = USA country = U05 } }
+	}
+	
+	name = "War with the Jadakal Empire"
+	desc = "We are now at war with the Jadakal Empire. It is doubtful that we can stand against them alone - should we ask the Americans for help?"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Appeal to America for help"
+		ai_chance = 99
+		command = { type = trigger which = 21011 }
+	}
+	action = {
+		name = "We will win this alone!"
+		ai_chance = 1
+		command = { }
+	}
+}
+
+
+event = {
+	id = 37002
+	country = VEN
+	
+	name = "Maracaibo or War?"
+	desc = "The Jadakal Empire has made an ultimatum, demanding we cede the oil fields of Maracaibo as recompense for a border incident where some Jadakalans were killed. If we refuse they are certain to declare war."
+	style = 1
+	picture = "war"
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 95
+		command = { type = trigger which = 41051 }
+	}
+	action = {
+		name = "Fold"
+		ai_chance = 5
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { type = secedeprovince which = U05 value = 1988 }
+	}
+}

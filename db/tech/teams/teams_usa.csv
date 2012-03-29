@@ -1,0 +1,25 @@
+USA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+101;Christie;T101;5;1930;1970;mechanics;artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+102;Grumman-Wright Aeronautical;T102;6;1930;1970;aeronautics;technical_efficiency;chemistry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+104;Robert Goddard;Robert_H_Goddard_T;6;1930;1944;rocketry;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+105;Higgins Industries Inc.;T105;7;1941;1946;naval_engineering;mechanics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+107;Martin-Bell Aircraft Corporation;T10500;8;1939;1970;rocketry;aeronautics;electronics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+108;Marmon-Herrington;T108;7;1930;1970;mechanics;technical_efficiency;chemistry;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110;New York Naval Yard;T110;7;1930;1970;naval_engineering;technical_efficiency;electronics;naval_artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+112;Norfolk Naval Yard;T112;8;1930;1970;naval_engineering;technical_efficiency;electronics;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+113;Raytheon;T113;7;1930;1970;electronics;mathematics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+114;Julian Oppenheimer;T114;8;1930;1953;nuclear_physics;nuclear_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+116;General Motors;T10503;7;1930;1970;mechanics;industrial_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+118;Standard Oil;T117;7;1930;1970;industrial_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+119;Winchester Repeating Arms Co.;T119;6;1930;1970;general_equipment;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+120;Carl Spaatz;T120;7;1930;1955;aircraft_testing;bomber_tactics;centralized_execution;aeronautics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+122;Curtis LeMay;T122;7;1930;1965;centralized_execution;bomber_tactics;aircraft_testing;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+123;Dwight Eisenhower;T123;7;1930;1952;small_unit_tactics;decentralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+124;Ernest King;T124;7;1930;1946;large_taskforce_tactics;carrier_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+125;Henry Arnold;T125;7;1930;1948;decentralized_execution;aircraft_testing;bomber_tactics;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+126;Hyman Rickover;T126;7;1947;1970;nuclear_engineering;chemistry;electronics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+128;General Electric;T128;8;1930;1970;electronics;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+129;Philadelphia Naval Shipyard;T129;6;1970;1970;naval_engineering;naval_artillery;electronics;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+130;Maxwell Taylor;T130;6;1953;1965;small_unit_tactics;centralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+131;Arthur Radford;T131;6;1953;1959;large_taskforce_tactics;carrier_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+132;IBM;T132;7;1930;1970;electronics;mathematics;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

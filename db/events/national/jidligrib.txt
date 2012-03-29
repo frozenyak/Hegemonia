@@ -1,0 +1,59 @@
+###73000-73999###
+
+event = {
+	id = 73000
+	country = ARG
+	
+	trigger = {
+		event = 41030
+	}
+	
+	name = "Jidligrib in Revolt"
+	desc = "We have risen against the Caliph and thrown off the shackles of the Jadakal Empire. Now we must fight for our freedom!"
+	style = 1
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = infantry when = 1 }		
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = cavalry when = 2 }
+		command = { type = war which = U05 }
+	}
+}
+
+event = {
+	id = 73001
+	country = ARG
+	
+	trigger = {
+		event = 73000
+		flag = jadakal_defeat
+		control = { province = 2050 }
+	}
+	
+	name = "The Revolt is Victorious"
+	desc = "The armies of the Caliph are retreating before us and victory is at hand. Should we seek peace with the Caliph in exchange for recognition of our independence and all our rightful lands - or should we fight on?"
+	style = 1
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Seek peace with the Caliph"
+		ai_chance = 99
+		command = { type = trigger which = 41031 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}

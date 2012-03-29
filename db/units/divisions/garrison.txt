@@ -1,0 +1,125 @@
+#represent 1 regiment
+allowed_brigades =  artillery
+allowed_brigades =  anti_tank		
+allowed_brigades =  anti_air		
+allowed_brigades =  rocket_artillery
+allowed_brigades =  sp_artillery	
+allowed_brigades =  sp_rct_artillery
+allowed_brigades =  tank_destroyer	
+allowed_brigades =  light_armor_brigade
+allowed_brigades =  heavy_armor	
+allowed_brigades =  super_heavy_armor
+allowed_brigades =  armored_car
+allowed_brigades =  engineer			
+allowed_brigades =  police
+
+max_allowed_brigades = 2
+
+upgrade = { type = infantry upgrade_time_factor = 1 upgrade_cost_factor = 1.34 }
+
+# 0 - Basic Garrison Division (1918)
+model = {
+	cost 					= 3
+	buildtime	 			= 90
+	manpower 				= 6.5
+	maxspeed 				= 1
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 21
+	toughness				= 6
+	softness				= 100
+	suppression				= 6
+	airdefence				= 3
+	softattack				= 7
+	hardattack				= 1
+	airattack				= 1
+	transportweight			= 10
+	supplyconsumption 		= 0.27
+	fuelconsumption			= 0
+	speed_cap_art			= 3
+	speed_cap_eng			= 3
+	speed_cap_at			= 3
+	speed_cap_aa			= 3
+	upgrade_time_factor = 1.0.0
+	upgrade_cost_factor = 0.5
+}
+# 1 - Improved Garrison Division (1939)
+model = {
+	cost 					= 3
+	buildtime	 			= 100
+	manpower 				= 6.5
+	maxspeed 				= 1
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 34
+	toughness				= 13
+	softness				= 100
+	suppression				= 8
+	airdefence				= 4
+	softattack				= 12
+	hardattack				= 4
+	airattack				= 4
+	transportweight			= 10
+	supplyconsumption 		= 0.378
+	fuelconsumption			= 0
+	speed_cap_art			= 3
+	speed_cap_eng			= 3
+	speed_cap_at			= 3
+	speed_cap_aa			= 3
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+}
+# 2 - Advanced Garrison Division (1943)
+model = {
+	cost 					= 3
+	buildtime	 			= 110
+	manpower 				= 6.5
+	maxspeed 				= 1
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 36
+	toughness				= 14
+	softness				= 100
+	suppression				= 4
+	airdefence				= 4
+	softattack				= 13
+	hardattack				= 4
+	airattack				= 4
+	transportweight			= 10
+	supplyconsumption 		= 0.486
+	fuelconsumption			= 0
+	speed_cap_art			= 3
+	speed_cap_eng			= 3
+	speed_cap_at			= 3
+	speed_cap_aa			= 3
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+}
+
+# 3 - Modern Garrison Division (1946)
+
+model = {
+	cost 				= 4
+	buildtime 			= 115
+	manpower 			= 6.5
+	maxspeed 			= 1
+	defaultorganisation = 30
+	morale = 30
+	defensiveness 			= 38
+	toughness 				= 15
+	softness 				= 100
+	suppression 			= 9
+	airdefence 				= 5
+	softattack				= 14
+	hardattack 				= 4
+	airattack 				= 4
+	transportweight 		= 10
+	supplyconsumption = 0.54
+	fuelconsumption = 0
+	speed_cap_art = 3
+	speed_cap_eng = 3
+	speed_cap_at = 3
+	speed_cap_aa = 3
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+}

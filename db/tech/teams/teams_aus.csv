@@ -1,0 +1,29 @@
+AUS;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+600;Austro-Daimler;T600;7;1930;1970;mechanics;industrial_engineering;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+601;Phönix Flugzeugwerke;T601;5;1930;1970;aeronautics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+602;Pintsch;T602;4;1970;1970;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+603;Steyr-Werke;T603;6;1930;1970;mechanics;general_equipment;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+604;Alexander Löhr;T604;7;1930;1970;bomber_tactics;combined_arms_focus;aircraft_testing;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+605;Johann Kubena;T605;4;1930;1945;large_unit_tactics;centralized_execution;individual_courage;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+606;Julius Yllam;T606;4;1970;1942;fighter_tactics;aircraft_testing;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+607;Lothar Rendulic;T607;6;1930;1970;small_unit_tactics;decentralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+608;Erwin Schrödinger;T608;6;1930;1970;nuclear_physics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+644;Skoda;kaiserreich_T16;8;1930;1965;mechanics;artillery;chemistry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+645;Aviatik;kaiserreich_T14;5;1910;1970;aeronautics;mechanics;chemistry;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+609;Kaiserliche Kriegshafen;kaiserreich_T17;6;1900;1970;naval_artillery;naval_engineering;technical_efficiency;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+610;Marineakademie Fiume;kaiserreich_T19;5;1930;1970;naval_training;centralized_execution;large_taskforce_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+611;Eugen Sänger;Kaiserreich_tech_Saenger;7;1930;1964;rocketry;aeronautics;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+614;Ede Teller;kaiserreich_teller;8;1970;1951;nuclear_physics;nuclear_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+615;Ganz-Mávag;T1602;6;1965;1970;technical_efficiency;electronics;artillery;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+617;János Neumann Margittai;kaiserreich_neumann;8;1930;1960;chemistry;electronics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+618;Kármán Tódor;kaiserreich_karman;6;1930;1963;aeronautics;rocketry;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+619;Günther Adolf Burstyn;100026;5;1911;1950;mechanics;electronics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+620;Feuerwerksanstalt;T601;5;1860;1970;artillery;fighter_design;general_equipment;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+621;Gebrüder Böhler & Cie;100031;4;1895;1970;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+622;Miklos Horthy;100505;7;1914;1945;centralized_execution;small_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+623;Stabilimento Tecnico Triestino;100025;5;1857;1970;naval_engineering;naval_artillery;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+635;Böhmische Waffenfabrik CZ;T1102;5;1930;1970;mechanics;chemistry;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+637;Skoda;T1105;8;1965;1970;mechanics;industrial_engineering;management;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+638;Porsche;T12;9;1970;1970;mechanics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+23;Manfred von Richtofen;kaiserreich_T10;6;1930;1960;fighter_tactics;piloting;aircraft_testing;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+31;Erwin von Witzleben;Kaiserreich tech-Witzleben;6;1930;1950;infantry_focus;small_unit_tactics;decentralized_execution;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -1,0 +1,78 @@
+# 0 - Basic 1930
+model = {
+	cost 				= 3
+	buildtime	 		= 70
+	manpower 			= 1.2
+	defensiveness 		= 1
+	softattack			= 1
+	hardattack			= 1
+	airattack			= 4
+	airdefence			= 5
+	defaultorganisation	= 4
+	maxspeed 			= -1
+	supplyconsumption 	= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved 1936
+model = {
+	cost 				= 3
+	buildtime	 		= 80
+	manpower 			= 1.2
+	defensiveness 		= 1
+	softattack			= 1
+	hardattack			= 3
+	airattack			= 5
+	airdefence			= 6
+	defaultorganisation	= 8
+	supplyconsumption 	= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced 1942
+model = {
+	cost 				= 3.5
+	buildtime	 		= 90
+	manpower 			= 1.2
+	defensiveness 		= 1
+	softattack			= 2
+	hardattack			= 5
+	airattack			= 5
+	airdefence			= 7
+	defaultorganisation	= 10
+	supplyconsumption 	= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 3 - Semi-Modern 1948
+model = {
+	cost 				= 4
+	buildtime	 		= 100
+	manpower 			= 1.2
+	defensiveness 		= 4
+	softattack			= 2
+	hardattack			= 6
+	airattack			= 6
+	airdefence			= 8
+	defaultorganisation	= 10
+	supplyconsumption 	= 0.45
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 4 - Modern 1956
+model = {
+	cost 				= 4.5
+	buildtime	 		= 110
+	manpower 			= 1.2
+	defensiveness 		= 5
+	softattack			= 2
+	hardattack			= 7
+	airattack			= 9
+	airdefence			= 9
+	defaultorganisation	= 10
+	supplyconsumption 	= 0.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+
+

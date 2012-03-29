@@ -1,0 +1,728 @@
+###39000-39999###
+##39025 turkestan obstacle
+
+event = {
+	id = 39008
+	country = U02
+
+	decision = {
+		NOT = { war = { country = GER } }
+		#claims = { province = 1509 }
+		#claims = { province = 1510 }
+		#claims = { province = 1511 }
+
+		owned = { province = 1509 data = GER }
+		owned = { province = 1510 data = GER }
+		owned = { province = 1511 data = GER }
+		flag = U02_claim_ceylon
+		flag = dublin_conference_ends
+	}
+
+	decision_trigger = {
+		money = 500
+	}
+
+	trigger = {
+		flag = U02_claim_ceylon
+		flag = dublin_conference_ends
+		owned = { province = 1509 data = GER }
+		owned = { province = 1510 data = GER }
+		owned = { province = 1511 data = GER }
+		NOT = { war = { country = GER country = U02 } }
+	}
+
+	name = "Our Claim to Ceylon"
+	desc = "The island of Ceylon is considered a natural part of India, and as such, we have a standing claim to it. The current controller of the territory is Germany, who use the island as a naval base. Perhaps they could be convinced to sell it to us?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = august year = 1936 }
+	offset = 180
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "Seek to purchase Ceylon from Germany"
+		ai_chance = 95
+		command = { type = trigger which = 35049 }
+	}
+	action = {
+		name = "Let the matter rest"
+		ai_chance = 5
+		command = { type = relation which = GER value = 25 }
+		command = { type = dissent value = 2 }
+	}
+	#action = { trigger = { ai = yes }
+	#	name = "We don't even want it anymore!"
+	#	ai_chance = 0
+	#	command = { type = relation which = GER value = 200 }
+	#	command = { type = dissent value = 10 }
+	#	command = { type = removecore which = 1509 }
+	#	command = { type = removecore which = 1510 }
+	#	command = { type = removecore which = 1511 }
+	#	#command = { type = domestic which = interventionism value = -1 }
+	#}
+}
+
+event = {
+	id = 39009
+	country = U02
+
+	decision = {
+		NOT = { war = { country = GER } }
+		#claims = { province = 1509 }
+		#claims = { province = 1510 }
+		#claims = { province = 1511 }
+
+		owned = { province = 1509 data = GER }
+		owned = { province = 1510 data = GER }
+		owned = { province = 1511 data = GER }
+		NOT = { flag = U02_claim_ceylon }
+		flag = dublin_conference_ends
+	}
+
+	decision_trigger = {
+		money = 500
+	}
+
+	trigger = {
+		NOT = { flag = U02_claim_ceylon }
+		flag = dublin_conference_ends
+		owned = { province = 1509 data = GER }
+		owned = { province = 1510 data = GER }
+		owned = { province = 1511 data = GER }
+		NOT = { war = { country = GER country = U02 } }
+	}
+
+	name = "Our Claim to Ceylon"
+	desc = "The island of Ceylon is considered a natural part of India, and as such, we have a standing claim to it. The current controller of the territory is Germany, who use the island as a naval base. Perhaps they could be convinced to sell it to us?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = august year = 1936 }
+	offset = 180
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "Seek to purchase Ceylon from Germany"
+		ai_chance = 50
+		command = { type = trigger which = 35049 }
+	}
+	action = {
+		name = "Let the matter rest"
+		ai_chance = 45
+		command = { type = relation which = GER value = 25 }
+		command = { type = dissent value = 2 }
+	}
+	#action = { trigger = { ai = yes }
+	#	name = "We don't even want it anymore!"
+	#	ai_chance = 5
+	#	command = { type = relation which = GER value = 200 }
+	#	command = { type = dissent value = 10 }
+	#	command = { type = removecore which = 1509 }
+	#	command = { type = removecore which = 1510 }
+	#	command = { type = removecore which = 1511 }
+	#	command = { type = domestic which = interventionism value = -1 }
+	#}
+}
+
+event = {
+	id = 39010
+	country = U02
+
+	name = "The Purchase of Ceylon"
+	desc = "The Germans have agreed to sell us Ceylon and now it is time to pay up."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { trigger = { ai = no } type = money value = -500 }
+	}
+}
+
+event = {
+	id = 39011
+	country = U02
+
+	name = "The Union Attacks Turkestan"
+	desc = "The Union of Rome has launched an invasion of Turkestan. The Turks are begging us for assistance - what should we do?"
+	style = 1
+	picture = "war"
+
+	action = {
+		name = "We will defend Turkestan!"
+		ai_chance = 75
+		command = { type = relation which = TUR value = 200 }
+		command = { type = relation which = U00 value = -200 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = alliance which = TUR }
+	}
+	action = {
+		name = "This is not our concern"
+		ai_chance = 25
+		command = { type = relation which = U00 value = 50 }
+		command = { type = relation which = TUR value = -200 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 39012
+	country = U02
+
+	name = "Russia Attacks Turkestan"
+	desc = "Russia has launched an invasion of Turkestan. The Turks are begging us for assistance - what should we do?"
+	style = 1
+	picture = "war"
+
+	action = {
+		name = "We will defend Turkestan!"
+		ai_chance = 75
+		command = { type = relation which = TUR value = 200 }
+		command = { type = relation which = RUS value = -200 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = alliance which = TUR }
+	}
+	action = {
+		name = "This is not our concern"
+		ai_chance = 25
+		command = { type = relation which = RUS value = 50 }
+		command = { type = relation which = TUR value = -200 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 39013
+	country = U02
+	trigger = {
+		#flag = U02_claim_ceylon
+		OR = {
+			owned = { province = 1509 data = GER }
+			owned = { province = 1510 data = GER }
+			owned = { province = 1511 data = GER }
+		}
+		NOT = { alliance = { country = GER } }
+		NOT = { alliance = { country = JAP } }
+		NOT = { war = { country = GER } }
+		NOT = { war = { country = JAP } }
+		
+		exists = GER
+		NOT = { event = 39014 }
+	}
+
+	name = "The Need for Allies"
+	desc = "It is becoming increasingly clear that war is on the horizon, a war that may give us a chance to reclaim our homeland in Greece. To do this, however, we will need allies. The Germans might be interested, or we could seek an alliance with Japan and form a new Oriental power block."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = november year = 1938 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = { 
+		trigger = { 
+			flag = U02_claim_ceylon 
+			NOT = { flag = german_civil_war }
+		}
+		name = "Offer Germany an alliance in exchange for Ceylon"
+		ai_chance = 50
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 35075 }
+	}
+	action = { 
+		trigger = { 
+			NOT = { flag = U02_claim_ceylon } 
+			NOT = { flag = german_civil_war }
+		}
+		name = "Offer an alliance to Germany"
+		ai_chance = 75
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 35101 }
+	}
+	action = {
+		trigger = {
+			ai = no
+			NOT = { alliance = { country = GER country = JAP } }
+		}
+		name = "Seek an alliance with Japan"
+		ai_chance = 40
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = trigger which = 42014 }
+	}
+	action = {
+		trigger = {
+			ai = yes
+			OR = { 
+				NOT = { war = { country = JAP country = SPA } }
+				AND = {
+					war = { country = SPA }
+					war = { country = JAP country = SPA }
+				}
+				NOT = { alliance = { country = GER country = JAP } }
+			}
+		}
+		name = "Seek an alliance with Japan"
+		ai_chance = 40
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = trigger which = 42014 }
+	}
+	action = {
+		name = "We don't need any allies"
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = -2 }
+	}
+}
+event = {
+	id = 39014
+	country = U02
+	
+	trigger = {
+		NOT = { alliance = { country = AUS } }
+		NOT = { alliance = { country = JAP } }
+		
+		NOT = { war = { country = AUS } }
+		NOT = { war = { country = JAP } }
+		
+		NOT = { exists = GER }
+		NOT = { event = 39013 }
+		
+		flag = HRE_restoration
+	}
+
+	name = "The Need for Allies"
+	desc = "It is becoming increasingly clear that war is on the horizon, a war that may give us a chance to reclaim our homeland in Greece. To do this, however, we will need allies. The HRE might be interested, or we could seek an alliance with Japan and form a new Oriental power block."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = november year = 1938 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "Offer an alliance to HRE"
+		ai_chance = 75
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 25010 }
+	}
+	action = {
+		trigger = {
+			ai = no
+		}
+		name = "Seek an alliance with Japan"
+		ai_chance = 40
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = trigger which = 42014 }
+	}
+	action = {
+		trigger = {
+			ai = yes
+			OR = { 
+				AND = {
+					NOT = { war = { country = SPA } }
+					NOT = { war = { country = JAP country = SPA } }
+				}
+				AND = {
+					war = { country = SPA }
+					war = { country = JAP country = SPA }
+				}
+			}
+		}
+		name = "Seek an alliance with Japan"
+		ai_chance = 40
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = trigger which = 42014 }
+	}
+	action = {
+		name = "We don't need any allies"
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = -2 }
+	}
+}
+
+event = {
+	id = 39015
+	country = U02
+
+	name = "Alliance with Turkestan?"
+	desc = "Turkestan has approached us about an alliance, fearful of being wedged inbetween the three alliance blocks if it comes to war. What is our response?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Agree to the alliance"
+		ai_chance = 60
+		command = { type = alliance which = TUR }
+		command = { type = relation which = TUR value = 100 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 40
+		command = { type = relation which = TUR value = -100 }
+	}
+}
+
+event = {
+	id = 39016
+	country = U02
+	
+	decision = {
+		flag = U02_claim_ceylon
+		NOT = { war = { country = GER  } }
+		NOT = { alliance = { country = GER } }
+		NOT = { non_aggression = { country = GER } }
+		alliance = { country = JAP country = U02 }
+		OR = {
+			owned = { province = 1509 data = GER }
+			owned = { province = 1510 data = GER }
+			owned = { province = 1511 data = GER }
+		}
+	}
+	decision_trigger = {
+		NOT = { war = { country = GER  } }
+		NOT = { alliance = { country = GER } }
+		NOT = { non_aggression = { country = GER } }
+		OR = {
+			owned = { province = 1509 data = GER }
+			owned = { province = 1510 data = GER }
+			owned = { province = 1511 data = GER }
+		}
+	}
+	
+	trigger = {
+		atwar = no
+		flag = U02_claim_ceylon
+		#random = 5
+		OR = {
+			owned = { province = 1509 data = GER }
+			owned = { province = 1510 data = GER }
+			owned = { province = 1511 data = GER }
+		}
+		OR = {
+			war = { country = GER country = SPA }
+			war = { country = GER country = U00 }
+		}
+		alliance = { country = JAP country = U02 }
+		NOT = { war = { country = GER country = U02 } }
+		NOT = { alliance = { country = GER country = U02 } }
+		NOT = { non_aggression = { country = GER country = U02 } }
+	}
+
+	name = "The Invasion of Ceylon"
+	desc = "Time and again Germany has refused to cede our rightful lands in Ceylon. With our new ally Japan at our back and Germany embroiled in war, this is our chance to take what is ours by force!"
+	style = 1
+	picture = "war"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1945 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 80
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = GER }
+	}
+	action = { trigger = { ai = yes }
+		name = "We do not wish war"
+		ai_chance = 20
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		#command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 39017
+	country = U02
+
+	decision = {
+		exists = U00
+		flag = great_war_by_event
+		NOT = { war = { country = U00 } }
+		NOT = { alliance = { country = U00 } }
+	}
+	decision_trigger = {
+		NOT = { alliance = { country = U00 } }
+		#NOT = { non_aggression = { country = U00 } }
+	}
+	
+	trigger = {
+		flag = great_war_by_event
+		NOT = { war = { country = U00 } }
+		NOT = { alliance = { country = U00 } }
+		NOT = { non_aggression = { country = U00 } }
+		# OR = {
+			# alliance = { country = RUS }
+			# alliance = { country = GER }
+			# alliance = { country = SPA }
+			# lost_national = { country = U00 value = 10 }
+			# #AND = {
+			# #	year = 1942
+			# #	atwar = no
+			# #}
+		# }
+		exists = U00
+		random = 50
+	}
+
+	name = "The Union at War"
+	desc = "The Union of Rome is embroiled in war with one of the other alliance blocks. This is our chance to attack and retake our homeland!"
+	style = 1
+	picture = "war"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1945 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 100
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = U00 }
+		#command = { type = setflag which = great_war_by_event }
+	}
+	action = { trigger = { ai = yes }
+		name = "We do not wish war"
+		ai_chance = 0
+	}
+}
+
+event = {
+	id = 39020
+	country = U02
+
+	name = "Byzantium Restored"
+	desc = "The Germans have restored to us our rightful lands and the Queen of Cities. This is a glorious day for all Greeks!"
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		#command = { type = inherit which = U09 }
+		command = { }
+	}
+}
+
+event = {
+	id = 39021
+	country = U02
+
+	name = "Greece for South India?"
+	desc = "The Germans, in control of our ancient homelands, have offered us an outrageous trade - German control over South India in exchange for Greece."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 60
+		command = { type = relation which = GER value = 25 }
+		command = { type = end_mastery which = U17 }
+		command = { type = trigger which = 35092 }
+	}
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 39
+		command = { type = war which = GER }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 39022
+	country = U02
+
+	name = "German Greece"
+	desc = "The treacherous Germans have claimed our homelands for themselves - an unacceptable move that can only be met by force!"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 99
+		command = { type = war which = GER }
+	}
+	action = {
+		name = "We dare not confront Germany..."
+		ai_chance = 1
+		command = { type = relation which = GER value = 25 }
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 39023
+	country = U02
+
+	name = "Greece for South India"
+	desc = "The Germans have ceded Greece to us, and we must now give them control over South India as agreed."
+	style = 1
+
+	action = {
+		name = "A high price..."
+		#command = { type = inherit which = U09 }
+		command = { type = secedearea which = GER value = "Western Ghat" when = 1}
+	}
+}
+
+event = {
+	id = 39024
+	country = U02
+
+	decision = {
+		owned = { province = 409 data = -1 }
+		NOT = { capital = { province = 409 } }
+	}
+	decision_trigger = {
+		owned = { province = 409 data = -1 }
+		NOT = { capital = { province = 409 } }
+		area = { area = "Bosporus" value = 60 data = 2 }
+	}
+	trigger = {
+		owned = { province = 409 data = U02 }
+		NOT = { capital = { province = 409 } }
+		area = { area = "Bosporus" value = 60 data = 2 }
+	}
+
+	name = "The Return to Constantinople"
+	desc = "We have relocated our capital back to Constantinople, Queen of Cities and retaken our rightful place as East Roman Emperors."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = addcore which = 409 }
+		command = { type = capital which = 409 }
+	}
+}
+
+event = {
+	id = 39025
+	country = U02
+
+	decision = {
+		war = { country = U00 }
+		#NOT = { war = { country = U00 country = TUR } }
+		NOT = { alliance = { country = U00 country = TUR } }
+		NOT = { alliance = { country = TUR } }
+		NOT = { access = { country = TUR } }
+		NOT = { war = { country = TUR } }
+	}
+	decision_trigger = {
+	}
+	
+	trigger = {
+		war = { country = U00 }
+		#NOT = { war = { country = U00 country = TUR } }
+		NOT = { alliance = { country = U00 country = TUR } }
+		NOT = { alliance = { country = TUR } }
+		NOT = { access = { country = TUR } }
+		NOT = { war = { country = TUR } }
+	}
+
+	name = "The Turkestan Obstacle"
+	desc = "The Sultanate of Turkestan stands between us and the land way to Constantinople. They should not be able to offer us much resistance - why not just march through them?"	
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1945 }
+
+	action = {
+		name = "Demand they let us pass"
+		ai_chance = 85
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = TUR value = -50 }
+		command = { type = trigger which = 61005 }
+	}
+	action = {
+		name = "Sweep them aside"
+		ai_chance = 15
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = TUR }
+	}
+}
+
+event = {
+	id = 39026
+	country = U02
+
+	name = "The Turkestan Obstacle - Access Granted"
+	desc = "Turkestan has granted our demand for military access!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = TUR value = 100 }
+		command = { trigger = { ai = TUR } type = access which = TUR }
+	}
+}
+
+event = {
+	id = 39027
+	country = U02
+
+	name = "The Turkestan Obstacle - Access Denied"
+	desc = "Turkestan has granted our demand for military access!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Then it is war"
+		ai_chance = 99
+		#command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = TUR }
+	}
+	action = {
+		name = "We don't dare follow through"
+		ai_chance = 1
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = TUR value = 25 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 39028
+	country = U02
+
+	trigger = {
+		ai = yes
+		#ai = RUS
+		
+		war = { country = U00 }
+		war = { country = U00 country = TUR }
+		war = { country = U00 country = RUS }
+		
+		NOT = { war = { country = RUS } }
+		NOT = { war = { country = SPA } }
+		NOT = { war = { country = TUR } }
+		OR = {
+			NOT = { participant = { value = 1 } }
+			NOT = { participant = { value = 2 } }
+			NOT = { participant = { value = 3 } }
+			NOT = { alliance = { country = RUS } }
+		}
+		#NOT = { alliance = { country = TUR } }
+		alliance = { country = TUR country = RUS }
+	}
+	
+	name = AI_EVENT
+	style = 2
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+	
+	action = {
+		command = { type = alliance which = RUS }
+	}
+}

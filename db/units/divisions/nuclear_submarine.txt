@@ -1,0 +1,30 @@
+#allowed_brigades = naval_torpedoes_l
+#allowed_brigades = naval_improved_hull_s
+#allowed_brigades = naval_torpedoes_s
+#max_allowed_brigades = 3
+# 0 - Nuclear
+model = {
+	cost						= 8
+	buildtime					= 320
+	defaultorganisation 		= 10 #30
+	morale						= 40
+	manpower					= 0.2
+	maxspeed					= 25
+	surfacedetectioncapability			= 8 #7
+	airdetectioncapability				= 2 #1
+	subdetectioncapability				= 2 #5
+	visibility					= 1
+	seadefence					= 13
+	airdefence					= 16
+	seaattack					= 7
+	convoyattack					= 14
+	subattack					= 15
+	airattack					= 1
+	shorebombardment				= 0
+	transportcapability				= 0
+	
+	range						= 40000 #8000
+	supplyconsumption				= 0.65
+	fuelconsumption					= 0
+	distance					= 0.2
+}

@@ -1,0 +1,515 @@
+###30000-30999###
+
+event = {
+	id = 30001
+	country = EGY
+	trigger = {
+		atwar = no
+		NOT = { participant = { value = 1 } } #league
+		NOT = { participant = { value = 2 } } #hre
+		NOT = { participant = { value = 3 } } #comintern
+		NOT = {
+			OR = {
+				war = { country = U00 country = GER }
+				war = { country = U00 country = SPA }
+				war = { country = U00 country = AUS }
+				war = { country = GER country = SPA }
+				war = { country = AUS country = SPA }
+			}
+		}
+		#exists = GER
+		exists = SPA
+		exists = U00
+		
+		owned = { province = 900 }
+		control = { province = 900 }
+		
+		#NOT = { flag = german_civil_war }
+		#NOT = { event = 30001 }
+		#random = 25
+	}
+
+	name = "The Suez Treaty"
+	desc = "The Suez Treaty was drawn up by Iberia in 1918 and stipulates that the Union of Rome, Germany and Iberia will all guarantee our independence in exchange for toll-free passage of ships of all nationalities through the canal. The treaty has now expired, and the great powers are gathering in Cairo to discuss the terms of a renewal. Since any agreement hinges on our cooperation, we have a good deal of leeway to demand better terms this time around."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = december year = 1937 }
+	offset = 30
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = { 
+		trigger = { 
+			exists = GER 
+			NOT = { flag = german_civil_war } 
+		}
+		name = "A great opportunity!"	
+		command = { type = trigger which = 38022 }
+		command = { type = trigger which = 55032 }
+		command = { type = trigger which = 35063 }
+		command = { type = setflag which = suez_conference }
+		#command = { type = sleepevent which = 30001 }
+	}
+
+	action = {
+		trigger = {
+			OR = {
+				NOT = { exists = GER }
+				flag = german_civil_war
+			}
+		}
+		name = "A great opportunity!"	
+		command = { type = trigger which = 38022 }
+		command = { type = trigger which = 55032 }
+		#germany
+		command = { type = sleepevent which = 35063 } #notification
+		command = { type = sleepevent which = 35067 } #tolls
+		command = { type = sleepevent which = 35068 } #territory
+		command = { type = sleepevent which = 35069 } #success
+		command = { type = sleepevent which = 35070 } #failure
+		command = { type = sleepevent which = 35071 } #round 1
+		command = { type = setflag which = suez_conference }
+	}
+}
+
+event = {
+	id = 30002
+	country = EGY
+	trigger = {
+		flag = suez_conference
+	}
+
+	name = "The Suez Conference - First Round"
+	desc = "After some initial squabbling, the representatives of the Great Powers are now seated and are discussing the renewal of the Suez Treaty. We could use this opportunity to make demands for our cooperation, though it may be wise to wait and see what they offer first."
+	style = 1
+	picture = "suez"
+
+	date = { day = 10 month = january year = 1938 }
+
+	action = {
+		name = "Wait and see..."
+		ai_chance = 80
+		command = { type = setflag which = suez_EGY_silence }
+	}
+	action = {
+		name = "Demand the right to collect tolls in Suez"
+		ai_chance = 15
+		command = { trigger = { exists = GER NOT = { flag = german_civil_war } } type = relation which = GER value = -25 }
+		command = { type = relation which = U00 value = -25 }
+		command = { type = relation which = SPA value = -25 }			
+		command = { type = setflag which = suez_EGY_wants_toll }
+	}
+	action = {
+		name = "Demand complete territorial rights over Suez"
+		ai_chance = 5
+		command = { trigger = { exists = GER NOT = { flag = german_civil_war } } type = relation which = GER value = -50 }
+		command = { type = relation which = U00 value = -50 }
+		command = { type = relation which = SPA value = -50 }		
+		command = { type = setflag which = suez_EGY_wants_rights }
+	}
+	action = {
+		trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { trigger = { exists = GER NOT = { flag = german_civil_war } } type = relation which = GER value = -200 }
+		command = { type = relation which = U00 value = -200 }
+		command = { type = relation which = SPA value = -200 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 30003
+	country = EGY
+	trigger = {
+		flag = suez_EGY_wants_toll
+		NOT = { flag = suez_conference_failure }
+		flag = suez_toll_SPA_yes
+		OR = {
+			flag = suez_toll_GER_yes
+			NOT = { exists = GER }
+			flag = german_civil_war
+		}
+		flag = suez_toll_U00_yes
+	}
+
+	name = "The Suez Conference - Toll Rights Recognized"
+	desc = "The Great Powers have agreed to our demands for toll rights and a new Suez Treaty has been signed. The revenue from the tolls will be a welcome investment."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "ACTION_NAME_GREAT"	
+		#command = { type = industrial_modifier which = total value = 10 }
+		command = { type = free_money value = 1 }
+		command = { type = setflag which = suez_conference_success }
+	}
+}
+
+event = {
+	id = 30004
+	country = EGY
+	trigger = {
+		flag = suez_EGY_wants_toll
+		NOT = { flag = suez_conference_failure }
+		AND = {
+			OR = {
+				flag = suez_toll_SPA_no
+				flag = suez_toll_SPA_yes
+			}
+		}
+		AND = {
+			OR = {
+				flag = suez_toll_GER_no
+				flag = suez_toll_GER_yes
+				NOT = { exists = GER }
+				flag = german_civil_war
+			}
+		}
+		AND = {
+			OR = {
+				flag = suez_toll_U00_no
+				flag = suez_toll_U00_yes
+			}
+		}
+		OR = {
+			flag = suez_toll_SPA_no
+			flag = suez_toll_GER_no
+			flag = suez_toll_U00_no
+		}
+	}
+
+	name = "The Suez Conference - Toll Rights Refused"
+	desc = "The Great Powers have refused our demands for toll rights and stipulated that we must accept a renewal on the same terms as before, or else there will be no renewal at all - a humiliating situation."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Fine, we accept the old terms"
+		ai_chance = 95
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = suez_conference_success }
+	}
+	action = {
+		name = "No! There will be no renewal!"
+		ai_chance = 5
+		command = { trigger = { exists = GER NOT = { flag = german_civil_war } } type = relation which = GER value = -100 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = relation which = SPA value = -100 }		
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 30005
+	country = EGY
+	trigger = {
+		flag = suez_EGY_wants_rights
+		NOT = { flag = suez_conference_failure }
+		flag = suez_rights_SPA_yes
+		OR = {
+			flag = suez_rights_GER_yes
+			NOT = { exists = GER }
+			flag = german_civil_war
+		}
+		flag = suez_rights_U00_yes
+	}
+
+	name = "The Suez Conference - Territorial Rights Recognized"
+	desc = "The Great Powers have agreed to our demands for territorial rights and a new Suez Treaty has been signed. The revenue from tolls and industries around the canal will be welcome and this should keep foreign powers from meddling in Suez. A diplomatic victory all around!"
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "ACTION_NAME_GREAT"	
+		#command = { type = industrial_modifier which = total value = 20 }
+		command = { type = addcore which = 900 }
+		command = { type = setflag which = suez_conference_success }
+	}
+}
+
+event = {
+	id = 30006
+	country = EGY
+	trigger = {
+		flag = suez_EGY_wants_rights
+		NOT = { flag = suez_conference_failure }
+		AND = {
+			OR = {
+				flag = suez_rights_SPA_no
+				flag = suez_rights_SPA_yes
+			}
+		}
+		AND = {
+			OR = {
+				flag = suez_rights_GER_no
+				flag = suez_rights_GER_yes
+				NOT = { exists = GER }
+				flag = german_civil_war
+			}
+		}
+		AND = {
+			OR = {
+				flag = suez_rights_U00_no
+				flag = suez_rights_U00_yes
+			}
+		}
+		OR = {
+			flag = suez_rights_SPA_no
+			flag = suez_rights_GER_no
+			flag = suez_rights_U00_no
+		}
+	}
+
+	name = "The Suez Conference - Territorial Rights Refused"
+	desc = "The Great Powers have refused our demands for territorial rights and stipulated that we must accept a renewal on the same terms as before, or else there will be no renewal at all - a humiliating situation."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Fine, we accept the old terms"
+		ai_chance = 80
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = suez_conference_success }
+	}
+	action = {
+		name = "No! There will be no renewal!"
+		ai_chance = 20
+		command = { trigger = { exists = GER NOT = { flag = german_civil_war } } type = relation which = GER value = -100 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = relation which = SPA value = -100 }		
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 30007
+	country = EGY
+	
+	trigger = {
+		flag = suez_conference_failure
+	}	
+	
+	name = "The Suez Conference - Failure"
+	desc = "No agreement has been reached for the renewal of the Suez Treaty and the Suez Conference can certainly be said have been a failure. Without a neutrality guarantee, it may very well come to war over Suez, now..."
+	style = 1
+	picture = "suez"
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "This could be bad"
+		command = { }
+	}
+}
+
+event = {
+	id = 30008
+	country = EGY	
+	
+	name = "The German Offer"
+	desc = "Germany has made it clear that they are interested in replacing the old Suez Treaty with a new alliance between Egypt and Germany, which would guarantee them control of the canal in case of war. They have asked us to name our price. What is our response?"
+	style = 1
+	picture = "suez"
+
+	action = {
+		name = "We want help to industrialize"
+		ai_chance = 35
+		command = { type = relation which = GER value = 50 }
+		command = { type = trigger which = 35072 }
+	}
+	action = {
+		name = "We want control over German Kongo"
+		ai_chance = 15
+		command = { type = relation which = GER value = 25 }
+		command = { type = trigger which = 35073 }
+	}
+	action = {
+		name = "No, this is too dangerous"
+		ai_chance = 50
+		command = { type = relation which = GER value = -50 }
+		command = { type = trigger which = 35074 }
+	}
+}
+
+event = {
+	id = 30009
+	country = EGY
+	
+	name = "German Payment - Industrial Aid"
+	desc = "The Germans have sent advisors to help us industrialize and offered us a number of technological blueprints to modernize our armies and industry."
+	style = 1
+	picture = "suez"
+	
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = money value = 100 }
+		command = { type = construct which = infrastructure where = 787 }
+		command = { type = construct which = infrastructure where = 788 }
+		command = { type = construct which = infrastructure where = 789 }
+		command = { type = construct which = infrastructure where = 790 }
+		command = { type = construct which = ic where = 787 value = 2 }
+		command = { type = construct which = ic where = 790 }
+		command = { type = construct which = ic where = 788 }
+		command = { type = construct which = ic where = 789 }
+		command = { type = addcore which = 900 }
+	}
+}
+
+event = {
+	id = 30010
+	country = EGY
+	
+	name = "German Payment - Kongo"
+	desc = "The Germans have granted us sovereignty over Kongo in exchange for an alliance."
+	style = 1
+	picture = "suez"
+	
+	action = {
+		name = "ACTION_NAME_GREAT"
+		#command = { type = make_puppet which = CON }
+		command = { type = inherit which = CON value = 1 }
+		command = { type = addcore which = 900 }
+	}
+}
+
+event = {
+	id = 30011
+	country = EGY
+	trigger = {
+		NOT = { flag = suez_conference_failure }
+		OR = {
+			flag = GER_round_1
+			NOT = { exists = GER }
+			flag = german_civil_war
+		}
+		flag = SPA_round_1
+		flag = U00_round_1
+	}
+
+	name = "The Suez Conference - Second Round"
+	desc = "The Great Powers have had their say, and now it is our turn to make our demands."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Demand the right to collect tolls in Suez"
+		ai_chance = 70
+		command = { trigger = { exists = GER NOT = { flag = german_civil_war } } type = relation which = GER value = -25 }
+		command = { type = relation which = U00 value = -25 }
+		command = { type = relation which = SPA value = -25 }			
+		command = { type = setflag which = suez_EGY_wants_toll }
+	}
+	action = {
+		name = "Demand complete territorial rights over Suez"
+		ai_chance = 20
+		command = {trigger = { exists = GER NOT = { flag = german_civil_war } }  type = relation which = GER value = -50 }
+		command = { type = relation which = U00 value = -50 }
+		command = { type = relation which = SPA value = -50 }		
+		command = { type = setflag which = suez_EGY_wants_rights }
+	}
+	action = {
+		name = "Accept a renewal of the old terms"
+		ai_chance = 10
+		command = { trigger = { exists = GER NOT = { flag = german_civil_war } } type = relation which = GER value = 50 }
+		command = { type = relation which = U00 value = 50 }
+		command = { type = relation which = SPA value = 50 }		
+		command = { type = setflag which = suez_conference_success }
+	}
+	action = {
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { trigger = { exists = GER NOT = { flag = german_civil_war } } type = relation which = GER value = -200 }
+		command = { type = relation which = U00 value = -200 }
+		command = { type = relation which = SPA value = -200 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 30012
+	country = EGY	
+
+	name = "The Ulema Revolt"
+	desc = "The Sunnis in Somalia have risen in revolt against us, proclaiming Abdulahi Issa Mohamud their new Sultan. We must send in the army to deal with these traitors!"
+	style = 1		
+
+	action = {
+		name = "We will crush this revolt!"
+		ai_chance = 95
+		command = { type = war which = SOM }
+	}
+	action = {
+		name = "We do not care for Somalia one way or the other"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = -2 }
+		command = { type = relation which = SOM value = 50 }
+	}
+}
+
+event = {
+	id = 30013
+	country = EGY
+	trigger = {
+		event = 30012
+		war = { country = EGY country = SOM }
+		lost_national = { country = EGY value = 50 }
+		control = { province = 810 data = SOM }
+	}
+
+	name = "The Ulema Revolt is Victorious"
+	desc = "We have been unable to defeat the rebellious armies of Somalia and they now control much of our country, including the southern capital of Khartoum. There is little will among our people to continue the fight - perhaps we should sue for peace?"
+	style = 1
+
+	date = { day = 8 month = august year = 1937 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Sue for peace"
+		ai_chance = 95
+		command = { type = trigger which = 58002 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 30014
+	country = EGY
+
+	name = "Peace with Somalia"
+	desc = "We have signed peace with Somalia, recognizing their independence and ceding lands along our border."
+	style = 1
+	action = {
+		name = "How humiliating!"
+		command = { type = peace which = SOM }
+		command = { type = secederegion which = SOM value = "Ethiopia" }
+	}
+}

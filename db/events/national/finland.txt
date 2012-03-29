@@ -1,0 +1,279 @@
+###32000-32999###
+### 32010-11  FIN  Switching sides
+
+event = {
+	id = 32000
+	country = FIN
+
+	name = "The Lease of Odinholm"
+	desc = "The Russians have approached us with a request for a 10-year lease of our ports at Odinholm, a largely untrafficked backwater south of Viipuri. The Russians are desperate for a Baltic port, and we should be able to demand a high price for it. What is our price?"
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Diplomatic guarantees and $300"
+		ai_chance = 20
+		command = { type = relation which = RUS value = 100 }
+		command = { type = trigger which = 56010 }
+	}
+	action = {
+		name = "Diplomatic guarantees and $500"
+		ai_chance = 20
+		command = { type = relation which = RUS value = 25 }
+		command = { type = trigger which = 56009 }
+	}
+	action = {
+		trigger = {
+			alliance = { country = SPA country = RUS }
+			NOT = { alliance = { country = SPA } }
+		}
+		name = "We want membership in the League"
+		ai_chance = 15
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = RUS value = 200 }
+		command = { type = trigger which = 56011 }
+	}
+	action = {
+		name = "It is not for sale!"
+		ai_chance = 25
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = trigger which = 56012 }
+	}
+}
+
+event = {
+	id = 32001
+	country = FIN
+
+	name = "The Lease of Odinholm - Payment"
+	desc = "The Russians have agreed to our terms of $500 and diplomatic guarantees in exchange for a 10-year lease of Odinholm."
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = money value = 500 }
+		command = { type = construct which = land_fort where = 553 value = -10 }
+		command = { type = secedeprovince which = RUS value = 553 }
+	}
+}
+
+event = {
+	id = 32002
+	country = FIN
+
+	name = "The Lease of Odinholm - Payment"
+	desc = "The Russians have agreed to our terms of $300 and diplomatic guarantees in exchange for a 10-year lease of Odinholm."
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = money value = 300 }
+		command = { type = construct which = land_fort where = 553 value = -10 }
+		command = { type = secedeprovince which = RUS value = 553 }
+	}
+}
+
+event = {
+	id = 32003
+	country = FIN
+
+	name = "The Lease of Odinholm - Payment"
+	desc = "The Russians have agreed to our terms of membership in the League of Democracies in exchange for a 10-year lease of Odinholm."
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = construct which = land_fort where = 553 value = -10 }
+		command = { type = secedeprovince which = RUS value = 553 }
+	}
+}
+
+event = {
+	id = 32004
+	country = FIN
+
+	name = "The Annexation of Odinholm"
+	desc = "Refusing to take no for an answer, the Russians have marched troops into our territory, annexing the province of Odinholm. What shall we do?"
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		trigger = {
+			alliance = { country = RUS country = SPA }
+		}
+		name = "Protest to the League"
+		ai_chance = 50
+		command = { type = construct which = land_fort where = 553 value = -10 }
+		command = { type = construct which = land_fort where = 530 value = 2 }
+		command = { type = secedeprovince which = RUS value = 553 }		
+		command = { type = trigger which = 38018 }
+		command = { type = relation which = RUS value = -25 }
+	}
+	action = {
+		name = "Seek support from Germany"
+		ai_chance = 35
+		command = { type = construct which = land_fort where = 553 value = -10 }
+		command = { type = construct which = land_fort where = 530 value = 2 }
+		command = { type = secedeprovince which = RUS value = 553 }		
+		command = { type = trigger which = 35054 }
+		command = { type = relation which = RUS value = -50 }
+	}
+	action = {
+		name = "We don't dare do anything!"
+		ai_chance = 15
+		command = { type = construct which = land_fort where = 553 value = -10 }
+		command = { type = construct which = land_fort where = 530 value = 2 }
+		command = { type = secedeprovince which = RUS value = 553 }
+		command = { type = dissent value = 10 }
+		command = { type = relation which = RUS value = 25 }
+	}
+	action = { trigger = { ai = no }
+		name = ACTION_NAME_FIGHT
+		ai_chance = 0
+		#command = { type = construct which = land_fort where = 553 value = -10 }
+		#command = { type = construct which = land_fort where = 530 value = 2 }
+		#command = { type = secedeprovince which = RUS value = 553 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = war which = RUS }
+		command = { type = dissent value = -15 }
+	}
+}
+
+event = {
+	id = 32005
+	country = FIN
+
+	name = "The Annexation of Odinholm - Compensation"
+	desc = "The Russians have agreed to pay compensation for their unlawful seizure of our territory."
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = money value = 200 }
+	}
+}
+
+event = {
+	id = 32006
+	country = FIN
+
+	name = "Germany Offers HRE Membership"
+	desc = "Germany has offered us membership in the HRE to better protect us from future Russian aggression. We would be required to reform our system of government to qualify, however."
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 50
+		command = { type = relation which = GER value = 100 }
+		command = { type = domestic which = democratic value = -2 }
+		command = { type = domestic which = political_left value = -2 }
+		#command = { type = domestic which = freedom value = -2 }
+		#command = { type = domestic which = professional_army value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 35057 }
+	}
+	action = {
+		name = "ACTION_NAME_DECLINE"
+		ai_chance = 50
+		command = { type = relation which = GER value = -25 }
+	}
+}
+
+#switching sides
+
+event = {
+	id = 32010
+	random = no
+	country = FIN
+
+	name = EVT_61_NAME
+	desc = "Russia has taken most of our territory!"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U20 }
+		#war = { country = GER country = RUS }
+		war = { country = RUS }
+		control = { province = 525 data = RUS } #Helsinki
+		control = { province = 531 data = RUS } #Vip
+		OR = {
+			control = { province = 521 data = RUS } #Vaasa
+			control = { province = 524 data = RUS } #Turku
+		}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 97
+		name = "Surrender!"
+		command = { type = end_puppet }
+		command = { type = set_relation which = RUS value = 0 }
+		# command = { type = set_relation which = GER value = -50 }
+		# command = { type = set_domestic which = democratic value = 8 }
+		# command = { type = set_domestic which = political_left value = 2 }
+		# command = { type = set_domestic which = defense_lobby value = 3 }
+		# command = { type = set_domestic which = interventionism value = 2 }
+		command = { type = trigger which = 32011 }
+		# command = { type = headofstate which = 145011 }
+		# command = { type = headofgovernment which = 145031 }
+		# command = { type = foreignminister which = 145046 }
+		# command = { type = armamentminister which = 145065 }
+		# command = { type = ministerofsecurity which = 145084 }
+		# command = { type = ministerofintelligence which = 145096 }
+		# command = { type = chiefofstaff which = 145102 }
+		# command = { type = chiefofarmy which = 145107 }
+		# command = { type = chiefofnavy which = 145111 }
+		# command = { type = chiefofair which = 145115 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Keep Fighting!"
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 32011
+	random = no
+	country = RUS
+
+	name = EVT_64_NAME
+	desc = "Finland is ready to surrender and become our client state!"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_64_ACTA
+		# command = { type = addcore which = 517 } # Petsamo - Finland
+		# command = { type = addcore which = 519 } # Salla - Finland
+		command = { type = addclaim which = 530 } # Terijoki - Finland
+		# command = { type = addcore which = 531 } # Viipuri - Finland 
+		# command = { type = addcore which = 532 } # Sortavala - Finland 
+		command = { type = addcore which = 553 } # Petrograd/Leningrad/Odinholm
+		command = { type = addcore which = 539 } # Petrozavodsk
+		command = { type = make_puppet which = FIN }
+		#command = { type = coup_nation which = FIN }
+		command = { type = money value = 500 }
+		
+		#command = { type = secedeprovince which = FIN value = 526 } # Maarianhamina - Finland 
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Destroy them"
+		command = { type = dissent value = 1 }
+	}
+}
+

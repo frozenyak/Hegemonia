@@ -1,0 +1,510 @@
+##66000 league alliance
+##66001 comintern alliance
+##66005 elections
+##66010 coup
+##66015 GCW colony support
+##66020 capital move
+##
+event = {
+	id = 66000
+	country = DFR
+	
+	trigger = {
+		atwar = no
+		event = 2052010 #victory
+		government = democratic
+		OR = {
+			event = 66005 #elections
+			event = 66006 #elections
+			event = 66010 #coup
+		}
+	}
+
+	name = "The Road Ahead"
+	desc = "Now that we have defeated the monarchist forces we have to decide on the road ahead."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30 
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Seek membership in the League"
+		ai_chance = 75
+		command = { type = trigger which = 38041 }
+		command = { type = setflag which = HRE_crisis }
+	}
+	action = {
+		name = "We will go our own path"
+		ai_chance = 25
+		command = { type = dissent value = -10 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = setflag which = HRE_crisis }
+	}	
+}
+
+event = {
+	id = 66001
+	country = DFR
+	
+	trigger = {
+		atwar = no
+		event = 2052010 #victory
+		government = communist
+		OR = {
+			event = 66005 #elections
+			event = 66010 #coup
+			event = 66011 #coup
+		}
+	}
+
+	name = "The Road Ahead"
+	desc = "Now that we have defeated the forces of the reactionaries we have to decide on the road ahead."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+
+	action = {
+		name = "Seek an alliance with the Comintern"
+		ai_chance = 75
+		command = { type = trigger which = 55051 }
+		command = { type = setflag which = HRE_crisis }
+	}
+	action = {
+		name = "Focus on socialism at home"
+		ai_chance = 25
+		command = { type = dissent value = -10 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = relation which = VIC value = -100 }
+		command = { type = setflag which = HRE_crisis }
+	}	
+}
+
+event = {
+	id = 66002
+	country = DFR
+	
+	trigger = {
+		atwar = no
+		NOT = { exists = GER }
+		NOT = { exists = DDR }
+		event = 2052010
+		government = communist
+	}
+
+	name = "The Road Ahead - Response"
+	desc = "The Union of Rome has received our request for admittance, but requires us to settle border issues with France first."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+
+	action = {
+		name = "Very well, give them Nancy"
+		ai_chance = 65
+		command = { type = dissent value = 1 }
+		command = { type = alliance where = 3 }
+		command = { type = secedeprovince which = VIC value = 104 }
+		command = { type = removeclaim which = VIC value = 104 }
+		command = { type = construct which = land_fort where = 104 value = -10 }
+		command = { type = relation which = U00 value = 100 }
+		command = { type = relation which = VIC value = 50 }
+	}
+	action = {
+		name = "Very well, give them Nancy and Metz"
+		ai_chance = 25
+		command = { type = dissent value = 3 }
+		command = { type = alliance where = 3 }
+		command = { type = secedeprovince which = VIC value = 104 }
+		command = { type = secedeprovince which = VIC value = 106 }
+		command = { type = removeclaim which = VIC value = 104 }
+		command = { type = removeclaim which = VIC value = 106 }
+		command = { type = construct which = land_fort where = 104 value = -10 }
+		command = { type = construct which = land_fort where = 106 value = -10 }
+		command = { type = relation which = U00 value = 150 }
+		command = { type = relation which = VIC value = 100 }
+	}
+	action = {
+		name = "Give them Alsace-Lorraine"
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+		command = { type = alliance where = 3 }
+		command = { type = secedearea which = VIC value = "Lorraine_Alsace" }
+		command = { type = removeclaim which = VIC value = 104 }
+		command = { type = removeclaim which = VIC value = 106 }
+		command = { type = relation which = U00 value = 200 }
+		command = { type = relation which = VIC value = 200 }
+		command = { type = construct which = land_fort where = 104 value = -10 }
+		command = { type = construct which = land_fort where = 105 value = -10 }
+		command = { type = construct which = land_fort where = 106 value = -10 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 9
+		command = { type = dissent value = -5 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = relation which = VIC value = -100 }
+	}	
+}
+#########################################################################
+#  Elections
+#########################################################################
+event = {
+	id = 66005
+	country = DFR
+	one_action = yes
+	
+	trigger = {
+		event = 2052010
+		NOT = { event = 66010 } #coup
+		NOT = { event = 66006 } #elections
+		atwar = no
+	}
+
+	name = "Post Civil-War Elections"
+	desc = "As agreed upon at the beginning of the civil war, with the cessation of hostilities, preperations are made for the first free elections in Germany. Three major parties have been formed. The polls show the Communists and Liberals neck on neck, the Conservatives far behind on third. But with history in the making, anything can happen."
+	style = 2
+	picture = "election"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "The Communists"	
+		ai_chance = 40
+		#
+		#command = { type = set_domestic which = democratic value = 5 } #3
+		command = { type = set_domestic which = political_left value = 9 }
+		#command = { type = set_domestic which = freedom value = 5 } #2
+		#command = { type = set_domestic which = free_market value = 1 }
+		command = { type = domestic which = free_market value = -2 }
+		#command = { type = set_domestic which = defense_lobby value = 6 }
+		#
+		command = { type = headofgovernment which = 507002 }
+		command = { type = foreignminister which = 507003 }
+		command = { type = armamentminister which = 507004 }
+		command = { type = ministerofintelligence which = 507006 }
+		command = { type = chiefofstaff which = 507007 }
+		command = { type = chiefofnavy which = 507009 }
+		command = { type = chiefofair which = 507010 }
+		#
+		command = { type = relation which = VIC value = 50 }
+		command = { type = relation which = U00 value = 50 }
+		#
+		#command = { type = local_setflag which = st_win }
+	}
+	action = {
+		name = "The Liberals"
+		ai_chance = 40
+		#
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		#
+		command = { type = headofstate which = 506051 }
+		command = { type = headofgovernment which = 506012 }
+		command = { type = armamentminister which = 506019 }
+		command = { type = ministerofsecurity which = 506024 }
+		command = { type = ministerofintelligence which = 506029 }
+		command = { type = chiefofarmy which = 506033 }
+		command = { type = chiefofnavy which = 506035 }
+		command = { type = chiefofair which = 506038 }
+		#
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = ENG value = 50 }
+		#
+		#command = { type = local_setflag which = sl_win }
+	}
+	action = {
+		name = "The Conservatives"
+		ai_chance = 20
+		#
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		#
+		command = { type = headofstate which = 506001 }
+		command = { type = headofgovernment which = 506002 }
+		command = { type = foreignminister which = 506013 }
+		command = { type = ministerofsecurity which = 506020 }
+		command = { type = ministerofintelligence which = 506026 }
+		command = { type = chiefofstaff which = 506007 }
+		command = { type = chiefofarmy which = 506008 }
+		command = { type = chiefofnavy which = 506009 }
+		#
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = U00 value = -25 }
+		#
+		#command = { type = local_setflag which = sc_win }
+	}
+}
+
+event = {
+	id = 66006
+	country = DFR
+	one_action = yes
+	
+	trigger = {
+		event = 2052010
+		NOT = { event = 66005 }
+		event = 66010 #coup
+		atwar = no
+		government = democratic
+	}
+
+	name = "Post Civil-War Elections"
+	desc = "As agreed upon at the beginning of the civil war, with the cessation of hostilities, preperations are made for the first free elections in Germany. Due to the recent coup attempt the communist party has been outlawed. The moderate social democratic wing has declined to run for leadership and decided to rebuild the trust of the people instead. Only two parties are now in the race. A thrilling election awaits with polls showing Liberals and Conservatives tied."
+	style = 2
+	picture = "election"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "The Liberals"
+		ai_chance = 50
+		#
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		#
+		command = { type = headofstate which = 506051 }
+		command = { type = headofgovernment which = 506012 }
+		command = { type = armamentminister which = 506019 }
+		command = { type = ministerofsecurity which = 506024 }
+		command = { type = ministerofintelligence which = 506029 }
+		command = { type = chiefofarmy which = 506033 }
+		command = { type = chiefofnavy which = 506035 }
+		command = { type = chiefofair which = 506038 }
+		#
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = ENG value = 50 }
+		#
+		#command = { type = local_setflag which = sl_win }
+	}
+	action = {
+		name = "The Conservatives"
+		ai_chance = 50
+		#
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		#
+		command = { type = headofstate which = 506001 }
+		command = { type = headofgovernment which = 506002 }
+		command = { type = foreignminister which = 506013 }
+		command = { type = ministerofsecurity which = 506020 }
+		command = { type = ministerofintelligence which = 506026 }
+		command = { type = chiefofstaff which = 506007 }
+		command = { type = chiefofarmy which = 506008 }
+		command = { type = chiefofnavy which = 506009 }
+		#
+		command = { type = relation which = SPA value = -25 }
+		command = { type = relation which = U00 value = -25 }
+		#
+		#command = { type = local_setflag which = sc_win }
+	}
+}
+#########################################################################
+#  Communist Coup
+#########################################################################
+event = {
+	id = 66010
+	country = DFR
+	one_action = yes
+
+	trigger = {
+		#random = 10
+		NOT = {	government = communist }
+		event = 2052010 # dfr victory
+		flag = gcw_comintern_intervention
+	}
+
+	name = "The Communist Coup"
+	desc = "Spurned on by foreign support, the communists have decided to break the unity government and take over themselves. Aided by foreign troops they entered the capital, surrounded the parliamentary building, and demanded the government step down."
+	style = 2
+	picture = "SPR_Communist Coup"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_THE_COUP_SUCCEEDS"
+		ai_chance = 66
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = free_market value = 1 }
+		#command = { type = set_domestic which = professional_army value = 3 }
+		command = { type = set_domestic which = defense_lobby value = 6 }
+		command = { type = set_domestic which = interventionism value = 6 }
+		#
+		#command = { type = headofstate which = 507001 }
+		command = { type = headofgovernment which = 507002 }
+		command = { type = foreignminister which = 507003 }
+		command = { type = armamentminister which = 507004 }
+		#command = { type = ministerofsecurity which = 507005 }
+		command = { type = ministerofintelligence which = 507006 }
+		command = { type = chiefofstaff which = 507007 }
+		#command = { type = chiefofarmy which = 507008 }
+		command = { type = chiefofnavy which = 507009 }
+		command = { type = chiefofair which = 507010 }
+		#
+		command = { type = relation which = U00 value = 100 }
+		command = { type = relation which = SPA value = -10 }
+		command = { type = relation which = VIC value = 75 }
+		command = { type = relation which = GER value = -20 }
+		command = { type = relation which = U14 value = -20 }
+		command = { type = relation which = USA value = -15 }
+		command = { type = relation which = AUS value = -15 }
+		command = { type = relation which = LIT value = -15 }
+		command = { type = relation which = SCA value = -15 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { type = flag_ext where = DFR which = "_com" }
+		command = { type = name where = DFR which = "dfr_com" }
+		#
+		command = { type = sleepevent which = 66000 } #league membership
+		command = { type = sleepevent which = 66005 } #elections
+		command = { type = sleepevent which = 66006 } #elections
+		command = { type = sleepevent which = 66011 } #coup
+	}
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 34
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		#
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { type = flag_ext where = DFR which = "" }
+		#
+		command = { type = headofstate which = 506001 }
+		command = { type = ministerofsecurity which = 506020 }
+		command = { type = chiefofarmy which = 506033 }
+		#
+		command = { type = sleepevent which = 66002 } #comintern membership
+		command = { type = sleepevent which = 66005 } #elections
+		command = { type = sleepevent which = 66011 } #coup
+	}
+}
+######
+# Colonies
+#
+
+event = {
+	id = 66015
+	country = DFR
+
+	name = "Congo supports us!"
+	desc = "The Colonial administration in Congo has thrown their support behind us!"
+	style = 1
+	
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = CON }
+	}	
+}
+
+event = {
+	id = 66016
+	country = DFR
+
+	name = "Congo refused support!"
+	desc = "The Colonial administration in Congo has refused to throw their support behind us!"
+	style = 1
+	
+	action = {
+		name = "Bastards!"
+		command = { type = dissent value = 1 }
+		command = { type = relation which = CON value = -50 }
+	}	
+}
+
+event = {
+	id = 66017
+	country = DFR
+
+	name = "Südostasien supports us!"
+	desc = "The Colonial administration in Südostasien has thrown their support behind us!"
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U08 }
+	}	
+}
+
+event = {
+	id = 66018
+	country = DFR
+
+	name = "Südostasien refused support!"
+	desc = "The Colonial administration in Südostasien has refused to throw their support behind us!"
+	style = 1
+	
+	action = {
+		name = "Bastards!"
+		command = { type = dissent value = 1 }
+		command = { type = relation which = U08 value = -50 }
+	}	
+}
+
+event = {
+	id = 66020
+	country = DFR
+	#persistent = yes 
+	
+	trigger = {
+		capital = { province = 179 }
+		NOT = { control = { province = 177 } }
+		NOT = { control = { province = 178 } }
+		NOT = { control = { province = 179 } }
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1963 }
+	
+	action = {
+		command = { type = capital which = 163 }
+	}	
+}
+
+# event = {
+	# id = 66021
+	# country = DFR
+	# persistent = yes 
+	
+	# trigger = {
+		# NOT = { capital = { province = 179 } }
+		# area = { area = "Bavaria" }
+		# ai = yes
+	# }
+
+	# name = "AI_EVENT"
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 2
+	# deathdate = { day = 1 month = january year = 1963 }
+	
+	# action = {
+		# command = { type = capital which = 179 }
+	# }	
+# }

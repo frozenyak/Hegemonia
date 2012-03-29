@@ -1,0 +1,133 @@
+VIC;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+870001;Minister of Armament;Vincent Auriol;33;LWR;Administrative Genius;High;M2004;X
+870002;Minister of Security;Marx Dormoy;33;LWR;Compassionate Gentleman;Medium;M2005;X
+870003;Head of Military Intelligence;Joseph Paganon;33;LWR;Political Specialist;Medium;M2006;X
+870004;Chief of Staff;Maurice Gamelin;33;LWR;School of Fire Support;Very High;M2007;X
+870005;Chief of Army;Maurice Gamelin;33;LWR;Static Defence Doctrine;Very High;M2007;X
+870006;Chief of Air Force;Victor Denain;33;LWR;Carpet Bombing Doctrine;Medium;M2010;X
+870007;Head of State;Vincent Auriol;33;LWR;Autocratic Charmer;High;M2004;X
+870008;Head of State;Daniel Mayer;33;LWR;Weary Stiffneck;High;M2023;X
+870009;Head of State;Maurice Thorez;33;ST;Powerhungry Demagogue;High;M2011;X
+870010;Head of Government;Leon Blum;33;LWR;Naive Optimist;High;M2033;X
+870011;Head of Government;Felix Gouin;33;LWR;Smiling Oilman;High;M2034;X
+870012;Head of Government;Paul Ramadier;33;LWR;Ambitious Union Boss;High;M2035;X
+870013;Head of Government;Paul Reynaud;33;LWR;Political Protege;High;M2038;X
+870014;Head of Government;Jacques Duclos;33;ST;Backroom Backstabber;High;M2012;X
+870015;Head of Government;Marcel Cachin;33;ST;Silent Workhorse;High;M2017;X
+870016;Foreign Minister;Joseph Paul Boncour;33;LWR;Ideological Crusader;Medium;M2049;X
+870017;Foreign Minister;Pierre Comert;33;LWR;The Cloak N Dagger Schemer;Medium;M2050;X
+870018;Foreign Minister;Leon Blum;33;LWR;Apologetic Clerk;Very High;M2033;X
+870019;Foreign Minister;Yvon Delbos;33;LWR;Biased Intellectual;Medium;M2048;X
+870020;Foreign Minister;Georges Bonnet;33;LWR;Iron Fisted Brute;Medium;M2053;X
+870021;Foreign Minister;Paul Reynaud;33;LWR;Ideological Crusader;Undying;M2038;X
+870022;Foreign Minister;Marcel Cachin;33;ST;Biased Intellectual;Very High;M2017;X
+870023;Foreign Minister;Marcel Gitton;33;ST;Apologetic Clerk;Medium;M2020;X
+870024;Foreign Minister;Laurent Casenove;33;ST;Great Compromiser;Medium;M2064;X
+870025;Foreign Minister;Jacques Duclos;33;ST;Ideological Crusader;Very High;M2012;X
+870026;Minister of Armament;Jean Louis Barthou;33;LWR;Military Entrepreneur;Medium;M2069;X
+870027;Minister of Armament;Leon Jouhaux;33;LWR;Strategic Air Proponent;Medium;M2070;X
+870028;Minister of Armament;Guy Mollet;33;LWR;Theoretical Scientist;Medium;M2071;X
+870029;Minister of Armament;André Le Troquer;33;LWR;Resource Industrialist;Medium;M2072;X
+870030;Minister of Armament;Raoul Dautry;33;LWR;Theoretical Scientist;High;M2073;X
+870031;Minister of Armament;Louis Loucheur;33;LWR;Air to Ground Proponent;Medium;M2074;X
+870032;Minister of Armament;Marcel Hoden;33;LWR;Air Superiority Proponent;Medium;M2076;X
+870033;Minister of Armament;Georges Bonnet;33;LWR;Resource Industrialist;Medium;M2053;X
+870034;Minister of Armament;George Levy;33;ST;Administrative Genius;Medium;M2014;X
+870035;Minister of Armament;Laurent Casenove;33;ST;Theoretical Scientist;Medium;M2064;X
+870036;Minister of Armament;Jean Jerome;33;ST;laissez-faire capitalist;Medium;M2093;X
+870037;Minister of Armament;Benoit Frachon;33;ST;Battle Fleet Proponent;Medium;M2094;X
+870038;Minister of Armament;Auguste Lecoeur;33;ST;Military Entrepreneur;Medium;M2095;X
+870039;Minister of Armament;Daniel Renoult;33;ST;Theoretical Scientist;Medium;M2096;X
+870040;Minister of Security;Pierre Auguste Chardigny;33;LWR;Prince of Terror;Low;M2098;X
+870041;Minister of Security;Julien Luchaire;33;LWR;Efficient Sociopath;Medium;M2099;X
+870042;Minister of Security;Adrien Tixier;33;LWR;Compassionate Gentleman;Very High;M2100;X
+870043;Minister of Security;Henri Bonnet;33;LWR;Back Stabber;Medium;M2101;X
+870044;Minister of Security;Paul Ramadier;33;LWR;Crime Fighter;High;M2035;X
+870045;Minister of Security;Jules Moch;33;LWR;Man of the People;High;M2104;X
+870046;Minister of Security;Pierre Pene;33;LWR;Silent Lawyer;Medium;M2105;X
+870047;Minister of Security;Arthur Fontaine;33;LWR;Efficient Sociopath;Medium;M2106;X
+870048;Minister of Security;Henri Roy;33;LWR;Man of the People;Medium;M2107;X
+870049;Minister of Security;Louis-Georges Mandel;33;LWR;Crime Fighter;Low;M2108;X
+870050;Minister of Security;Jean Maillet;33;LWR;Back Stabber;High;M2109;X
+870051;Minister of Security;Lucien Micol;33;ST;Crime Fighter;High;M2015;X
+870052;Minister of Security;Claudine Chomat;33;ST;Efficient Sociopath;Medium;M2118;X
+870053;Minister of Security;Henri Gourdeaux;33;ST;Silent Lawyer;High;M2119;X
+870054;Minister of Security;Jean-Marie Clamamus;33;ST;Man of the People;Medium;M2120;X
+870055;Minister of Security;Maurice Thorez;33;ST;Prince of Terror;Very High;M2011;X
+870056;Head of Military Intelligence;Roger Salengro;33;LWR;Industrial Specialist;Medium;M2123;X
+870057;Head of Military Intelligence;Felix Gouin;33;LWR;Technical Specialist;Medium;M2034;X
+870058;Head of Military Intelligence;Daniel Mayer;33;LWR;Logistics Specialist;Medium;M2023;X
+870059;Head of Military Intelligence;André Le Troquer;33;LWR;Dismal Enigma;Medium;M2072;X
+870060;Head of Military Intelligence;Maurice Delage;33;LWR;Technical Specialist;High;M2129;X
+870061;Head of Military Intelligence;Aime Lepercq;33;LWR;Industrial Specialist;High;M2130;X
+870062;Head of Military Intelligence;Waldeck Rochet;33;ST;Dismal Enigma;High;M2016;X
+870063;Head of Military Intelligence;Jean-Marie Clamamus;33;ST;Industrial Specialist;Medium;M2120;X
+870064;Head of Military Intelligence;Henri Gourdeaux;33;ST;Logistics Specialist;High;M2119;X
+870065;Head of Military Intelligence;Gustave Guehenneux;33;ST;Technical Specialist;Medium;M2141;X
+870066;Chief of Staff;Marcel Cachin;39;ST;School of Fire Support;Medium;M2017;X
+870067;Chief of Army;Pierre Auguste Chardigny;33;LWR;Elastic Defence Doctrine;Medium;M2098;X
+870068;Chief of Army;André Marty;33;ST;Guns and Butter Doctrine;Medium;M2018;X
+870069;Chief of Army;Pierre Fabien;33;ST;Decisive Battle Doctrine;Medium;M2167;X
+870070;Chief of Navy;Joseph Paul Boncour;33;LWR;Base Control Doctrine;High;M2170;X
+870071;Chief of Navy;Jean Gout;33;LWR;Power Projection Doctrine;High;M2171;X
+870072;Chief of Navy;André Marty;33;ST;Indirect Approach Doctrine;Medium;M2018;X
+870073;Chief of Navy;Charles Tillon;33;ST;Base Control Doctrine;High;M2180;X
+870074;Chief of Air Force;Pierre Cot;33;LWR;Army Aviation Doctrine;Very High;M2184;X
+870075;Chief of Air Force;Joseph Vuillemin;33;LWR;Air Superiority Doctrine;Very High;M2187;X
+870076;Chief of Air Force;Guy La Chambre;33;LWR;Vertical Envelopment Doctrine;Medium;M2188;X
+870077;Chief of Air Force;Marcel Gitton;33;ST;Air Superiority Doctrine;Medium;M2020;X
+870078;Chief of Air Force;Charles Tillon;33;ST;Army Aviation Doctrine;High;M2180;X
+870079;Head of Government;Louis-Georges Mandel;33;LWR;Backroom Backstabber;Medium;M2108;X
+870080;Minister of Security;Yvon Delbos;33;LWR;Silent Lawyer;High;M2048;X
+870081;Head of State;Edgar Faure;33;LWR;radical demagogue;High;M2219;X
+870082;Head of Government;Rene Mayer;33;LWR;Naive Optimist;High;M2221;X
+870083;Minister of Armament;Rene Mayer;33;LWR;Tank Proponent;Medium;M2221;X
+870084;Minister of Armament;Paul Ramadier;33;LWR;Resource Industrialist;Medium;M2035;X
+870085;Minister of Armament;Jules Moch;33;LWR;Battle Fleet Proponent;Medium;M2104;X
+870086;Minister of Security;Charles Brune;33;LWR;Silent Lawyer;Medium;M2229;X
+870087;Head of Military Intelligence;Rene Mayer;33;LWR;Logistics Specialist;Medium;M2221;X
+870088;Head of Military Intelligence;Edgar Faure;33;LWR;Dismal Enigma;Medium;M2219;X
+870101;Minister of Security;Eugène Soudan;33;LWR;Silent Lawyer;Very High;M15005;X
+870104;Foreign Minister;War van Overstraeten;33;ST;Biased Intellectual;Very High;M15118;X
+870105;Minister of Armament;Abraham Leon;33;ST;Resource Industrialist;Very High;M15023;X
+870106;Minister of Security;Adhemar Hennaut;33;ST;Crime Fighter;Very High;unknown;X
+870107;Head of Military Intelligence;Julien Lahaut;33;ST;Political Specialist;Very High;M15024;X
+870108;Chief of Staff;Georges Vereecken;37;ST;School of Mass Combat;Very High;unknown;X
+870109;Chief of Army;Georges Vereecken;33;ST;Elastic Defence Doctrine;Very High;unknown;X
+870112;Head of State;Julien Lahaut;33;ST;Ruthless Powermonger;NA;M15024;X
+870113;Head of Government;Paul-Henri Spaak;33;LWR;Ambitious Union Boss;NA;M15034;X
+870114;Head of Government;Camille Huysmans;33;LWR;Happy Amateur;NA;M15038;X
+870116;Head of Government;Achille Van Acker;33;LWR;Corporate Suit;NA;M15041;X
+870117;Head of Government;Julien Lahaut;33;ST;Backroom Backstabber;NA;M15024;X
+870118;Foreign Minister;Paul-Henri Spaak;33;LWR;Great Compromiser;Very High;M15034;X
+870119;Foreign Minister;Louis de Brouckère;33;LWR;Ideological Crusader;Very High;M15047;X
+870120;Foreign Minister;Eugène Soudan;33;LWR;Ideological Crusader;Very High;M15005;X
+870121;Foreign Minister;Jules Pire;33;LWR;General Staffer;Very High;M15051;X
+870122;Foreign Minister;Edgar Lalmand;33;ST;Biased Intellectual;Very High;M15022;X
+870123;Foreign Minister;Julien Lahaut;33;ST;Ideological Crusader;Very High;M15024;X
+870124;Minister of Armament;Hendrik de Man;33;LWR;Administrative Genius;Very High;M15056;X
+870125;Minister of Armament;Jules Merlot;33;LWR;Resource Industrialist;Very High;M15061;X
+870126;Minister of Armament;Paul-Henri Spaak;33;LWR;Resource Industrialist;Very High;M15034;X
+870127;Minister of Armament;Edgar Lalmand;33;ST;Resource Industrialist;Very High;M15022;X
+870128;Minister of Security;Paul Hymans;33;LWR;Compassionate Gentleman;Very High;M15073;X
+870129;Minister of Security;Jules Pire;33;LWR;Prince of Terror;Very High;M15051;X
+870130;Minister of Security;Victor de Laveleye;33;LWR;Crime Fighter;Very High;M15084;X
+870131;Minister of Security;Julien Lahaut;33;ST;Prince of Terror;Very High;M15024;X
+870132;Head of Military Intelligence;Victor de Laveleye;33;LWR;Logistics Specialist;Very High;M15084;X
+870133;Head of Military Intelligence;Jules Pire;33;LWR;Logistics Specialist;Very High;M15051;X
+870134;Head of Military Intelligence;Herman Vos;33;LWR;Political Specialist;Very High;M15099;X
+870135;Head of Military Intelligence;Pierre Vermeylen;33;LWR;Technical Specialist;Very High;M15102;X
+870136;Chief of Army;Charles Bastin;33;LWR;Static Defence Doctrine;Very High;M15112;X
+870137;Chief of Army;Jules Pire;33;LWR;Armoured Spearhead Doctrine;Very High;M15051;X
+870138;Minister of Armament;Guy Bouthillier;33;LWR;Theoretical Scientist;Very High;M15119;X
+870139;Minister of Armament;Charles Pomaret;33;LWR;Infantry Proponent;Very High;M15122;X
+870140;Minister of Armament;Albert Wauters;33;LWR;Military Entrepreneur;Very High;M15125;X
+870141;Head of State;Leopold III;33;LWR;Benevolent Gentleman;Very High;M15001;X
+870142;Head of State;Karel;33;LWR;Benevolent Gentleman;Very High;M15031;X
+870143;Head of State;Boudewijn I;33;LWR;Autocratic Charmer;High;M15158;X
+870144;Minister of Armament;B.E.M. de Fraiteur;33;LWR;Military Entrepreneur;High;M15101;X
+870145;Minister of Armament;Léon-Eli Troclet;33;LWR;Resource Industrialist;Very High;M15172;X
+870146;Minister of Armament;B.E.M. de Fraiteur;33;LWR;Infantry Proponent;High;M15101;X
+870147;Minister of Security;Pierre Vermeylen;33;LWR;Silent Lawyer;Very High;M15102;X
+870148;Chief of Navy;Etienne Schlumberger;40;LWR;Decisive Naval Battle Doctrine;High;M2174;X
+870149;Chief of Staff;Charles de Gaulle;39;LE;School of Manoeuvre;High;M2027;X

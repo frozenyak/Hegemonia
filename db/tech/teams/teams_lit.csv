@@ -1,0 +1,23 @@
+LIT;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+2100;ANBO;T2100;6;1930;1970;aeronautics;mechanics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2101;CCI;T2101;5;1930;1970;industrial_engineering;technical_efficiency;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2102;Povilas Plechavicius;T2102;6;1930;1955;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2103;Antanas Gustaitis;T2103;5;1930;1960;piloting;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2104;Lithuanian Railways;T2104;5;1930;1960;industrial_engineering;mechanics;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2105;University of Vilnius;T2105;5;1930;1970;mechanics;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2106;Lithuania Military Academy;T2106;6;1930;1970;small_unit_tactics;decentralized_execution;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2110;COP;T2700;6;1930;1970;mechanics;artillery;technical_efficiency;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2111;Stefan Banach;T2701;8;1930;1945;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2112;Stanislaw Ulam;T2702;7;1930;1970;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2113;Fab.Broni Radom;T2703;5;1930;1970;general_equipment;artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2114;Fab. Starachowice;T2704;5;1930;1970;artillery;general_equipment;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2115;PWS;T2705;4;1930;1970;aeronautics;chemistry;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2116;PZInz;T2706;6;1930;1970;mechanics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2117;PZL;T2707;5;1930;1970;aeronautics;chemistry;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2118;Stocznia Gdynia;T2708;4;1930;1970;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2119;Tadeusz Kutrzeba;T2709;4;1930;1944;centralized_execution;large_unit_tactics;training;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2120;Marian Rejewski;T2710;7;1930;1939;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2121;Ludomil Rayski;T2711;4;1930;1944;aircraft_testing;bomber_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2122;Jerzy Swirski;T2712;4;1930;1944;naval_training;small_taskforce_tactics;submarine_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2123;Ministry of National Defence;T2713;4;1944;1970;large_unit_tactics;centralized_execution;small_taskforce_tactics;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7245;Igor I. Sikorsky;T7244;8;1930;1970;aeronautics;technical_efficiency;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

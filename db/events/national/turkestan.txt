@@ -1,0 +1,263 @@
+###61000-61999###
+
+event = {
+	id = 61000
+	country = TUR
+	
+	trigger = {
+		#NOT = { belligerence = { country = TUR value = 5 } }
+		war = { country = U00 }
+		NOT = { war = { country = U02 } }
+		NOT = { alliance = { country = U02 } }
+		NOT = { alliance = { country = GER } }
+		NOT = { alliance = { country = SPA } }
+		NOT = { alliance = { country = RUS } }
+	}
+
+	name = "The Union Attacks Turkestan"
+	desc = "The Union of Rome has declared war on us. It is unlikely that we can resist their armies for long - perhaps the Byzantines in India will aid us?"
+	style = 1
+	picture = "war"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Beg Imperial India for assistance"
+		ai_chance = 80
+		command = { type = trigger which = 39011 }
+	}
+	action = {
+		name = "We will win this ourselves!"
+		ai_chance = 20
+		command = { }
+	}
+}
+
+event = {
+	id = 61001
+	country = TUR
+	
+	trigger = {
+		#NOT = { belligerence = { country = TUR value = 5 } }
+		war = { country = U02 }
+		NOT = { war = { country = RUS } }
+		NOT = { alliance = { country = U00 } }
+		NOT = { alliance = { country = GER } }
+		NOT = { alliance = { country = SPA } }
+		NOT = { alliance = { country = RUS } }
+		# OR = {
+			# flag = RUS_nationalist
+			# atwar = RUS
+		# }
+		#NOT = { government = communist }
+	}
+
+	name = "Imperial India Attacks Turkestan"
+	desc = "Imperial India has declared war on us. It is unlikely that we can resist their armies for long - perhaps someone will aid us?"
+	style = 1
+	picture = "war"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		# trigger = {
+			# NOT = { government = communist }
+		# }
+		name = "Beg Russia for assistance"
+		ai_chance = 80
+		command = { type = trigger which = 56031 }
+	}
+	# action = {
+		# trigger = {
+			# government = communist
+		# }
+		# name = "Beg Union for assistance"
+		# ai_chance = 80
+		# command = { type = trigger which = 55031 }
+	# }
+	action = {
+		name = "We will win this ourselves!"
+		ai_chance = 20
+		command = { }
+	}
+}
+
+event = {
+	id = 61002
+	country = TUR
+	
+	trigger = {
+		#NOT = { belligerence = { country = TUR value = 5 } }
+		war = { country = RUS }
+		NOT = { war = { country = U02 } }
+		NOT = { alliance = { country = U02 } }
+		NOT = { alliance = { country = GER } }
+		NOT = { alliance = { country = SPA } }
+		NOT = { alliance = { country = RUS } }
+	}
+
+	name = "Russia Attacks Turkestan"
+	desc = "Russia has declared war on us. It is unlikely that we can resist their armies for long - perhaps the Byzantines in India will aid us?"
+	style = 1
+	picture = "war"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Beg Imperial India for assistance"
+		ai_chance = 80
+		command = { type = trigger which = 39012 }
+	}
+	action = {
+		name = "We will win this ourselves!"
+		ai_chance = 20
+		command = { }
+	}
+}
+
+# event = {
+	# id = 61003
+	# country = TUR
+	
+	# trigger = {
+		# atwar = no
+		# NOT = { war = { country = RUS country = U02 } }
+		# NOT = { war = { country = RUS country = U00 } }
+		# NOT = { alliance = { country = U00 } }
+		# NOT = { alliance = { country = U02 } }
+		# NOT = { alliance = { country = GER } }
+		# NOT = { alliance = { country = SPA } }
+		# NOT = { alliance = { country = RUS } }
+		# OR = {
+			# NOT = { alliance = { country = RUS country = SPA }
+			# NOT = { alliance = { country = RUS country = U00 }
+			# NOT = { alliance = { country = GER country = U02 }
+		# }
+		# OR = {
+			# NOT = { participant = { country = RUS value = 4 } }
+			# NOT = { participant = { country = U02 value = 4 } }
+		# }
+	# }
+
+	# name = "Picking Our Poison"
+	# desc = "Our strategic situation - wedged between hostile power blocks - is fast becoming untenable. Perhaps it would be better to choose to align with one before we are simply overrun from all sides?"
+	# style = 1
+	
+	# date = { day = 19 month = january year = 1939 }
+	
+	# action = { 
+		# trigger = {
+			# ai = no
+			# NOT = { war = { country = RUS } }
+		# }
+		# name = "Seek an alliance with Russia"
+		# ai_chance = 45
+		# command = { type = dissent value = 2 }
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = domestic which = democratic value = 2 }
+		# command = { type = domestic which = freedom value = 2 }
+		# command = { type = domestic which = free_market value = 2 }
+		# command = { type = trigger which = 56032 }
+	# }	
+	# action = { 
+		# trigger = {
+			# ai = yes
+			# OR = {
+				# NOT = { alliance = { country = RUS country = U00 } }
+				# NOT = { alliance = { country = RUS country = SPA } }
+			# }
+			# NOT = { atwar = RUS }
+			# NOT = { war = { country = RUS } }
+		# }
+		# name = "Seek an alliance with Russia"
+		# ai_chance = 45
+		# command = { type = dissent value = 2 }
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = domestic which = democratic value = 2 }
+		# command = { type = domestic which = freedom value = 2 }
+		# command = { type = domestic which = free_market value = 2 }
+		# command = { type = trigger which = 56032 }
+	# }
+	# action = { 
+		# trigger = { 
+			# ai = no
+			# NOT = { war = { country = U02 } }
+		# }
+		# name = "Align with Imperial India"
+		# ai_chance = 25
+		# command = { type = dissent value = 5 }
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = domestic which = democratic value = -1 }
+		# command = { type = domestic which = freedom value = -1 }
+		# command = { type = domestic which = political_left value = -1 }
+		# command = { type = trigger which = 39015 }
+	# }
+	# action = { 
+		# trigger = { 
+			# ai = yes
+			# NOT = { alliance = { country = GER country = U02 } }
+			# NOT = { atwar = U02 }
+			# NOT = { war = { country = U02 } }
+		# }
+		# name = "Align with Imperial India"
+		# ai_chance = 25
+		# command = { type = dissent value = 5 }
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = domestic which = democratic value = -1 }
+		# command = { type = domestic which = freedom value = -1 }
+		# command = { type = domestic which = political_left value = -1 }
+		# command = { type = trigger which = 39015 }
+	# }
+	# action = {
+		# trigger = {
+			# government = communist
+			# NOT = { war = { country = U00 } }
+		# }
+		# name = "Seek the protection of the Union of Rome"
+		# ai_chance = 5
+		# command = { type = dissent value = 10 }
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = domestic which = free_market value = -3 }
+		# command = { type = domestic which = political_left value = 3 }
+		# command = { type = trigger which = 55031 }
+	# }
+	# action = {
+		# name = "We will remain neutral"
+		# ai_chance = 25
+		# #command = { type = domestic which = interventionism value = -1 }
+	# }	
+# }
+
+event = {
+	id = 61005
+	country = TUR
+
+	name = "The Turkestan Obstacle - Imperial Demand"
+	desc = "Imperial India demands we grant them access through our lands!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Grant them access"
+		ai_chance = 90
+		command = { type = access which = U02 }
+		command = { trigger = { ai = yes } type = secedeprovince which = U02 value = 1095 when = 1 } #birjand
+		command = { trigger = { ai = yes } type = secedeprovince which = U02 value = 1094 when = 1 } #kerman
+		command = { trigger = { ai = yes } type = secedeprovince which = U02 value = 1093 when = 1 } #zahedan
+		command = { type = relation which = U00 value = -100 }
+		command = { type = trigger which = 39026 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 10
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = U00 value = 50 }
+		command = { type = trigger which = 39027 }
+	}
+}

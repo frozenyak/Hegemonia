@@ -1,0 +1,895 @@
+#Events for minister deaths
+
+event = {
+	id = 35025
+	country = GER
+	#random = yes #persistent = yes
+
+	trigger = {
+		dissent = 10
+		OR = {
+			AND = {
+				NOT = { dissent = 15 }
+				random = 4
+			}
+			AND = {
+				dissent = 15
+				NOT = { dissent = 20 }
+				random = 6
+			}
+			AND = {
+				dissent = 20
+				NOT = { dissent = 25 }
+				random = 8
+			}
+			AND = {
+				dissent = 25
+				random = 10
+			}
+		}
+		atwar = no
+		local_flag = dublin_conference_end
+		#NOT = { headofstate = 36 }
+	}
+
+	name = "Assassination!"
+	desc = "A prominent officer was assassinated today on his way to work. This foul deed has served to further radicalize the political blocs."
+	style = 2
+	picture = "franz_ferdinand_assassination"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 60 #30
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "A black deed!"
+		command = { type = sleepleader which = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 2 }
+		command = { trigger = { ai = no } type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 35026
+	country = GER
+	trigger = {
+		OR = {
+			incabinet = 2
+			incabinet = 40
+		}
+		OR = {
+			headofstate = 1
+			headofstate = 37
+		}
+		OR = {
+			NOT = { domestic = { type = freedom value = 5 } }
+			NOT = { government = democratic }
+			#random = 25
+			#flag = general_strike_army
+		}
+		OR = {
+			event = { id = 35033 days = 30 }
+			flag = general_strike_army
+		}
+		NOT = { local_flag = strike }
+	}
+
+	name = "Schuman Resigns"
+	desc = "After bitter disagreements with Waldemar VII over policy, Robert Schuman has resigned his post as prime minister. His replacement will be Franz Xaver Ritter, a staunch monarchist from Bavaria."
+	style = 2
+	picture = "minister_resign"
+
+	date = { day = 1 month = march year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = headofgovernment which = 214 }
+		#command = { type = sleepminister which = 2 }
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 35027
+	country = GER
+	trigger = {
+		NOT = { government = fascist }
+		random = 25
+		incabinet = 61
+		local_flag = dublin_conference_end
+	}
+
+	name = "Von Papen Resigns"
+	desc = "After bitter disagreements with over government policy, Franz von Papen has resigned his post as foreign minister. His replacement will be the more moderate Ludwig Kastl."
+	style = 2
+	picture = "minister_resign"
+
+	date = { day = 1 month = march year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = foreignminister which = 60 }
+		command = { type = sleepminister which = 61 }
+		command = { type = dissent value = 1 }
+	}
+}
+
+
+### Erich Ludendorff passes away
+
+event = {
+	id = 2003094
+	country = GER
+	style = 2
+
+	trigger = {
+		minister = 179
+	}
+
+	date = { year = 1937 month = september day = 20 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { trigger = { incabinet = 179 minister = 180 } type = chiefofarmy which = 180 }
+		command = { trigger = { incabinet = 179 NOT = { minister = 180 } minister = 330 } type = chiefofarmy which = 330 }
+		command = { type = sleepminister which = 179 }
+	}
+}
+
+
+## ENG
+
+#Baldwin retires
+
+event = {
+	id = 2001080
+	country = ENG
+	style = 2
+
+	trigger = {
+		OR = {
+			minister = 1002
+			minister = 1081
+		}
+	}
+
+	date = { day = 28 month = may year = 1937 }
+
+	name = "EVT_105_NAME"
+	desc = "EVT_105_DESC"
+	picture = "minister_resign"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { trigger = { headofgovernment = 1002 } type = headofgovernment which = 1037 }
+		command = { type = sleepminister which = 1002 }
+		command = { type = sleepminister which = 1081 }
+	}
+}
+
+### Neville Chamberlain passes away
+event = {
+	id = 2001082
+	country = ENG
+	style = 2
+
+	trigger = {
+		OR = {
+			minister = 1004
+			minister = 1037
+		}
+	}
+
+	date = { day = 9 month = november year = 1940 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { trigger = { headofgovernment = 1037 atwar = no } type = headofgovernment which = 1157 }
+		command = { trigger = { headofgovernment = 1037 atwar = yes } type = headofgovernment which = 1038 }
+		command = { type = sleepminister which = 1004 }
+		command = { type = sleepminister which = 1037 }
+	}
+}
+
+	
+### Austen Chamberlain passes away
+
+event = {
+	id = 2001081
+	country = ENG
+	style = 2
+
+	trigger = {
+		minister = 1082
+	}
+
+	date = { year = 1937 month = march day = 17 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 1082 }
+		command = { type = sleepminister which = 1180059 }
+	}
+}
+
+### Sir John Dill retires because of poor health
+
+event = {
+	id = 2001083
+	country = ENG
+	style = 2
+
+	trigger = {
+		leader = 1105
+	}
+
+	date = { year = 1941 month = december day = 6 }
+
+	name = "EVT_108_NAME"
+	desc = "EVT_108_DESC"
+	picture = "minister_resign"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepleader which = 1105 }
+		command = { type = sleepminister which = 1119 }
+		command = { type = sleepminister which = 1132 }
+		command = { type = sleepminister which = 1180093 }
+		command = { type = sleepminister which = 1180105 }
+	}
+}
+
+### Sir Dudley Pound passes away
+
+event = {
+	id = 2001084
+	country = ENG
+	style = 2
+
+	trigger = {
+		leader = 1381
+	}
+
+	date = { year = 1943 month = october day = 20 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepleader which = 1381 }
+		command = { type = sleepminister which = 1140 }
+	}
+}
+
+### Sir Kingsley Wood passes away
+
+event = {
+	id = 2001086
+	country = ENG
+	style = 2
+
+	trigger = {
+		minister = 1062
+	}
+
+	date = { year = 1943 month = september day = 21 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 1062 }
+	}
+}
+
+
+### Wladyslaw Sikorski passes away
+
+event = {
+	id = 2013005
+	random = no
+	country = POL
+	style = 2
+
+	trigger = {
+		OR = {
+			minister = 13043
+			minister = 13116
+			minister = 13124
+		}
+	}
+
+	date = { year = 1943 month = july day = 4 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 13043 }
+		command = { type = sleepminister which = 13116 }
+		command = { type = sleepminister which = 13124 }
+	}
+}
+
+### Kemal Atatürk passes away
+
+event = {
+	id = 2010003
+	random = no
+	country = TUR
+	style = 2
+
+	trigger = {
+		minister = 12001
+		}
+
+	date = { year = 1938 month = november day = 10 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 12001 }
+		}
+	}
+
+### Giuseppe Motta passes away
+
+event = {
+	id = 2017001
+	country = SCH
+	style = 2
+
+	trigger = {
+		OR = {
+			minister = 17003
+			minister = 17031
+			minister = 17042
+		}
+	}
+
+	date = { year = 1940 month = january day = 3 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 17003 }
+		command = { type = sleepminister which = 17031 }
+		command = { type = sleepminister which = 17042 }
+	}
+}
+
+### John Curtin passes away
+
+event = {
+	id = 2046002
+	random = no
+	country = UAU
+	style = 2
+
+	trigger = {
+		minister = 65542
+	}
+
+	date = { year = 1945 month = july day = 5 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 65542 }
+	}
+}
+
+### Mikhail Kalinin retires after an age
+
+event = {
+	id = 2007077
+	country = SOV
+	style = 2
+
+	trigger = {
+		headofstate = 30001
+	}
+
+	date = { year = 1946 month = may day = 1 }
+
+	name = "EVT_372_NAME"
+	desc = "EVT_372_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTA"
+		command = { type = headofstate which = 30013 }
+		command = { type = sleepminister which = 30001 }
+		command = { type = sleepminister which = 515011 }
+		command = { type = sleepevent which = 2007078 }
+	}
+}
+
+event = {
+	id = 2007078
+	country = RUS
+	style = 2
+
+	trigger = {
+		headofstate = 515011
+	}
+
+	date = { year = 1946 month = may day = 1 }
+
+	name = "EVT_372_NAME"
+	desc = "EVT_372_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTA"
+		command = { type = headofstate which = 515014 }
+		command = { trigger = { headofgovernment = 515015 } type = headofgovernment which = 515036 }
+		command = { type = sleepminister which = 30001 }
+		command = { type = sleepminister which = 515011 }
+		command = { type = sleepevent which = 2007077 }
+	}
+}
+
+### Generaloberst Kurt von Hammerstein-Equord dies!
+
+event = {
+	id = 2003102
+	country = GER
+	style = 2
+
+	trigger = {
+		leader = 116
+	}
+
+	date = { year = 1943 month = april day = 18 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepleader which = 116 }
+		#command = { type = sleepminister which = 147 }
+	}
+}
+
+### Carl Friedrich von Siemens passes away!
+
+event = {
+	id = 2003106
+	country = GER
+	style = 2
+
+	trigger = {
+		minister = 208
+	}
+
+	date = { year = 1941 month = september day = 8 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 208 }
+	}
+}
+
+### Franz-Xaver Ritter von Epp
+
+event = {
+	id = 2003107
+	country = GER
+	style = 2
+
+	trigger = {
+		OR = {
+			minister = 214
+			minister = 219
+		}
+	}
+
+	date = { year = 1946 month = december day = 30 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { trigger = { headofgovernment = 214 } type = headofgovernment which = 313 }
+		command = { type = sleepminister which = 214 }
+		command = { type = sleepminister which = 219 }
+		command = { type = sleepleader which = 809 }
+	}
+}
+
+### David Lloyd George passes away!
+
+event = {
+	id = 2001087
+	country = ENG
+	style = 2
+
+	trigger = {
+		minister = 1160
+	}
+
+	date = { year = 1945 month = march day = 26 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 1160 }
+	}
+}
+
+
+### Kysti Kallio resigns from office (and dies soon thereafter)
+
+event = {
+	id = 2030007
+	country = FIN
+	style = 2
+
+	trigger = {
+		OR = {
+			minister = 29043
+			minister = 29053
+			minister = 29088
+			minister = 29162
+		}
+	}
+
+	date = { year = 1940 month = august day = 27 }
+
+	name = "EVT_105_NAME"
+	desc = "EVT_105_DESC"
+	picture = "minister_resign"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 29043 }
+		command = { type = sleepminister which = 29053 }
+		command = { type = sleepminister which = 29088 }
+		command = { type = sleepminister which = 29162 }
+	}
+}
+
+############################################################################
+### SOV - Kliment Voroshilov retires, Leonid Brezhnev replaces him
+############################################################################
+
+event = {
+	id = 2007074
+	country = SOV
+	style = 2
+
+	trigger = {
+		headofstate = 30077
+		}
+
+	date = { day = 7 month = may year = 1960 }
+
+	name = "EVT_105_NAME"
+	desc = "EVT_105_DESC"
+	picture = "minister_resign"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = headofstate which = 30084 }
+		command = { type = sleepminister which = 30008 }
+	}
+}
+
+### Jigme Wangchuk dies
+
+event = {
+	id = 2067001
+	country = BHU
+	style = 2
+
+	trigger = {
+		minister = 74001
+	}
+
+	date = { day = 16 month = march year = 1952 }
+
+	name = "EVT_101_NAME"
+	desc = "EVT_101_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = headofstate which = 74056 } # Jigme Dorji Wangchuk
+		command = { type = headofgovernment which = 74057 }
+		command = { type = sleepminister which = 74001 }
+		command = { type = sleepminister which = 74024 }
+		command = { type = sleepminister which = 74049 }
+	}
+}
+
+### Enrico de Nicola dies (SC/ML version)
+
+event = {
+	id = 2006021
+	country = U00
+	style = 2
+
+	trigger = {
+		headofstate = 102148
+	}
+
+	date = { day = 20 month = may year = 1948 }
+
+	name = "EVT_101_NAME"
+	desc = "EVT_101_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = headofstate which = 102149 }
+		command = { type = sleepminister which = 102148 }
+	}
+}
+
+### The Murder of Mahatma Gandhi
+
+event = {
+	id = 2051001
+	country = IND
+	style = 2
+
+	trigger = {
+		minister = 59037
+	}
+
+	date = { day = 30 month = january year = 1948 }
+
+	name = "EVT_419_NAME"
+	desc = "EVT_419_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 59037 }
+		command = { type = sleepminister which = 250002 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+### The death of Carl Mannerheim
+
+event = {
+	id = 2030008
+	country = FIN
+	style = 2
+
+	trigger = {
+		leader = 9750
+	}
+
+	date = { day = 28 month = january year = 1951 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepteam which = 1305 }
+		command = { type = sleepleader which = 9750 }
+		command = { type = sleepminister which = 29034 }
+		command = { type = sleepminister which = 29137 }
+		command = { type = sleepminister which = 29145 }
+		command = { type = sleepminister which = 29163 }
+	}
+}
+
+### Admiral Johans-Francés Darlan is assassinated!
+
+event = {
+	id = 2002029
+	country = U06
+
+	trigger = {
+		ispuppet = U06
+		NOT = { flag = comintern_league_pact }
+		NOT = { flag = U06_crackdown }
+		headofgovernment = 107002 #Darlan HoG
+        NOT = { event = 50004 } #coup
+		random = 25
+		NOT = { event = 50002 } #Second String of Bombings
+	}
+
+	date = { day = 1 month = february year = 1938 }
+	offset = 7
+	deathdate = { day = 1 month = march year = 1938 }
+
+	name = "EVT_355_NAME"
+	desc = "Our decision not to crack down on extremists has proven costly today. A bomb planted by OLF terrorists has managed to kill Johans-Francés Darlan!"
+	picture = "minister_died"
+	style = 2
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = headofgovernment which = 107058 }
+		command = { type = sleepteam which = 8161 }
+		command = { type = sleepleader which = 910034 }
+		command = { type = sleepminister which = 107002 }
+		command = { type = sleepminister which = 107009 }
+		command = { type = sleepminister which = 107012 }
+		command = { type = sleepminister which = 107025 }
+		command = { type = sleepminister which = 107033 }
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = setflag which = U06_crackdown }
+	}
+}
+
+### King Gustav V passes away
+
+event = {
+	id = 2009010
+	country = SCA
+	style = 2
+
+	trigger = {
+		OR = {
+			headofstate = 514001
+			headofstate = 514011
+		}
+	}
+
+	date = { day = 29 month = october year = 1950 }
+
+	name = "EVT_401_NAME"
+	desc = "EVT_401_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { trigger = { headofstate = 514001 } type = headofstate which = 514093 } # Gustav VI Adolf
+		command = { trigger = { headofstate = 514011 } type = headofstate which = 514095 } # Gustav VI Adolf
+		command = { type = sleepminister which = 514001 }
+		command = { type = sleepminister which = 514011 }
+	}
+}
+
+### Gustav Cassel
+
+event = {
+	id = 2009011
+	country = SCA
+	style = 2
+
+	trigger = {
+		minister = 514049
+	}
+
+	date = { day = 14 month = january year = 1945 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 514049 }
+	}
+}
+
+#theodor heuss
+
+event = {
+	id = 2127002
+	random = no
+	country = DFR
+	style = 2
+
+	trigger = {
+		OR = {
+			headofstate = 506001
+			headofstate = 506051
+		}
+	}
+
+	date = { day = 12 month = september year = 1959 }
+
+	name = "EVT_105_NAME"
+	desc = "EVT_105_DESC"
+	picture = "minister_resign"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { trigger = { headofstate = 506001 } type = headofstate which = 506041 } # Karl Heinrich Lübke
+		command = { trigger = { headofstate = 506051 } type = headofstate which = 506052 } # Karl Heinrich Lübke
+		command = { type = sleepminister which = 506001 }
+	}
+}
+
+
+### Jonas Vailokaitis dies
+
+event = {
+	id = 2067002
+	country = LIT
+
+	trigger = {
+		minister = 28063
+	}
+
+	date = { day = 16 month = december year = 1944 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	style = 2
+	picture = "minister_died"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = sleepminister which = 28063 }
+	}
+}
+
+
+### U14 Lombardy
+
+event = {
+	id = 3052001
+	random = no
+	country = U14
+	style = 2
+
+	trigger = {
+		headofgovernment = 508035 #emilio de bono
+	}
+
+	date = { day = 7 month = march year = 1941 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_resign"
+
+	action = {
+		name = "EVT_362_ACTC"
+		command = { type = headofgovernment which = 508002 } #Achille Starace
+		command = { type = sleepminister which = 508035 }
+	}
+}

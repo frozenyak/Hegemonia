@@ -1,0 +1,495 @@
+###########################################################################
+##########   Socialconservative Political Events by Greven	 ##########
+###########################################################################
+
+#############################
+## Defense Policy Initiative
+#############################
+###
+event = { 
+	id = 5001
+	random = yes
+	name = "EVT_5001_NAME"
+	desc = "EVT_5001_DESC"
+       picture = "defence"
+	style = 1
+	trigger = {
+		ideology = social_conservative
+		NOT = {
+			AND = {
+				 domestic = { type = professional_army value = 5 }
+				 domestic = { type = defense_lobby value = 5 }
+				}
+			}	
+	}
+	
+	action = { # Force it through
+		ai_chance = 25
+		name = "actioname5001A" 
+		#command = { type = domestic which = professional_army value = 2 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = dissent value = 10 }
+	}
+	action = { # Strike a bargain with the liberals
+		ai_chance = 25
+		name = "actioname5001B" 
+		#command = { type = domestic which = professional_army value = 1 }
+		command = { type = domestic	which = defense_lobby value = 1 }
+		command = { type = domestic	which = freedom value = 1 }
+		command = { type = domestic	which = political_left value = 1 }
+	}
+	action = { # Strike a bargain with the socialists
+		ai_chance = 25
+		name = "actioname5001C" 
+		#command = { type = domestic which = professional_army value = 1 }
+		command = { type = domestic	which = defense_lobby value = 1 }
+		command = { type = domestic	which = political_left value = 2 }
+	}
+	action = { # Backdown from initiative
+		ai_chance = 25
+		name = "actioname5001D" 
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = dissent value = -5 }
+	}
+}
+
+#############################
+## Defense Policy attacked by the opposition
+#############################
+###
+event = { 
+	id = 5002
+	random = yes
+	name = "EVT_5002_NAME"
+	desc = "EVT_5002_DESC"
+        picture = "defence"
+	style = 1
+	trigger = {
+		ideology = social_conservative
+			AND = {
+				domestic = { type = professional_army value = 7 }
+				domestic = { type = defense_lobby value = 7 }
+				}
+	}
+	
+	
+	action = { # Stand out the Storm
+		ai_chance = 25
+		name = "actioname5002A" 
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = dissent value = 10 }
+	}
+	action = { # Strike a bargain with the marketliberals
+		ai_chance = 25
+		name = "actioname5002B" 
+		command = { type = domestic	which = freedom value = 1 }
+		command = { type = domestic	which = free_market value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Strike a bargain with the leftists
+		ai_chance = 25
+		name = "actioname5002C" 
+		command = { type = domestic	which = free_market value = -1 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Revise the policy
+		ai_chance = 25
+		name = "actioname5002D" 
+		#command = { type = domestic which = professional_army value = -1 }
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = dissent value = -5 }
+	}
+}
+#############################
+## Economic Policy Initiative
+#############################
+###
+event = { 
+	id = 5003
+	random = yes
+	name = "EVT_5003_NAME"
+	desc = "EVT_5003_DESC"
+        picture = "economic"   
+	style = 1
+	trigger = {
+		ideology = social_conservative
+		domestic = { type = free_market value = 7 }	
+	}
+	
+	
+	action = { # Force it through
+		ai_chance = 25
+		name = "actioname5001A" 
+		command = { type = domestic	which = free_market value = -1 }
+		command = { type = domestic	which = freedom value = -1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Strike a bargain with the ultrarights
+		ai_chance = 25
+		name = "actioname5003B" 
+		command = { type = domestic	which = free_market value = -3 }
+		command = { type = domestic	which = freedom value = -1 }
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = domestic	which = democratic value = -1 }
+		command = { type = dissent value = 10 }
+		
+	}
+	action = { # Strike a bargain with the socialists
+		ai_chance = 25
+		name = "actioname5001C" 
+		command = { type = domestic	which = free_market value = -1 }
+		command = { type = domestic	which = political_left value = 2 }
+	}
+	action = { # Backdown from initiative
+		ai_chance = 25
+		name = "actioname5001D" 
+		command = { type = domestic	which = freedom value = 1 }
+		command = { type = dissent value = -5 }
+	}
+}
+#############################
+## Economic Policy attacked by the opposition
+#############################
+###
+event = { 
+	id = 5004
+	random = yes
+	name = "EVT_5004_NAME"
+	desc = "EVT_5004_DESC"
+        picture = "economic"   
+	style = 1
+	trigger = {
+		ideology = social_conservative
+			NOT = {
+			domestic = { type = free_market value = 5 }
+			}
+	}
+	
+	
+	action = { # Stand out the Storm
+		ai_chance = 25
+		name = "actioname5002A" 
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = dissent value = 10 }
+	}
+	action = { # Strike a bargain with the ultrarights
+		ai_chance = 25
+		name = "actioname5003B" 
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = domestic	which = free_market value = -1 }
+		command = { type = domestic	which = democratic value = -1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Strike a bargain with the leftist
+		ai_chance = 25
+		name = "actioname5002C" 
+		command = { type = domestic	which = free_market value = -1 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Revise the policy
+		ai_chance = 25
+		name = "actioname5002D" 
+		#command = { type = domestic which = professional_army value = -1 }
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = dissent value = -5 }
+	}
+}
+#############################
+## Foreign Policy Initiative
+#############################
+###
+event = { 
+	id = 5005
+	random = yes
+	name = "EVT_5005_NAME"
+	desc = "EVT_5005_DESC"
+        picture = "foreign_policy"
+	style = 1
+	trigger = {
+		ideology = social_conservative
+			NOT = {
+			domestic = { type = interventionism value = 5 }
+			}
+	}
+	
+	
+	action = { # Force it through
+		ai_chance = 25
+		name = "actioname5001A" 
+		command = { type = domestic	which = interventionism value = 2 }
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = dissent value = 10 }
+	}
+	action = { # Strike a bargain with the liberals
+		ai_chance = 25
+		name = "actioname5001B" 
+		command = { type = domestic	which = interventionism value = 1 }
+		command = { type = domestic	which = free_market value = 1 }
+		command = { type = domestic	which = freedom value = 1 }	
+		command = { type = dissent value = 5 }
+	}
+	action = { # Strike a bargain with the socialists
+		ai_chance = 25
+		name = "actioname5001C" 
+		command = { type = domestic	which = interventionism value = 2 }
+		#command = { type = domestic which = professional_army value = -1 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Backdown from initiative
+		ai_chance = 25
+		name = "actioname5001D" 
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = dissent value = -5 }
+	}
+}
+#############################
+## Foreign Policy attacked by the opposition
+#############################
+###
+event = { 
+	id = 5006
+	random = yes
+	name = "EVT_5006_NAME"
+	desc = "EVT_5006_DESC"
+        picture = "foreign_policy"
+	style = 1
+	trigger = {
+		ideology = social_conservative
+		domestic = { type = interventionism value = 7 }		
+	}
+	
+	
+	action = { # Stand out the Storm
+		ai_chance = 25
+		name = "actioname5002A" 
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = dissent value = 10 }
+	}
+	action = { # Strike a bargain with the ultrarights
+		ai_chance = 25
+		name = "actioname5003B" 
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = domestic	which = defense_lobby value = 1 }
+		command = { type = domestic	which = democratic value = -1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Strike a bargain with the leftists
+		ai_chance = 25
+		name = "actioname5002C" 
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Revise the policy
+		ai_chance = 25
+		name = "actioname5002D" 
+		command = { type = domestic	which = interventionism value = 1 }
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = dissent value = -5 }
+	}
+}
+#############################
+## Law Policy Initiative
+#############################
+###
+event = { 
+	id = 5007
+	random = yes
+	name = "EVT_5007_NAME"
+	desc = "EVT_5007_DESC"
+        picture = "law"
+	style = 1
+	trigger = {
+		ideology = social_conservative
+		domestic = { type = freedom value = 7 }		
+	}
+	
+	action = { # Force it through
+		ai_chance = 25
+		name = "actioname5001A" 
+		command = { type = domestic	which = freedom value = -2 }
+		command = { type = domestic	which = political_left value = -2 }
+		command = { type = dissent value = 10 }
+	}
+	action = { # Strike a bargain with the ultrarights
+		ai_chance = 25
+		name = "actioname5003B" 
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = domestic	which = interventionism value = 1 }
+		command = { type = domestic	which = democratic value = -1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Strike a bargain with the socialists
+		ai_chance = 25
+		name = "actioname5001C" 
+		#command = { type = domestic which = professional_army value = -1 }
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Backdown from initiative
+		ai_chance = 25
+		name = "actioname5001D" 
+		command = { type = domestic  which = freedom value = 1 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = dissent value = -5 }
+	}
+}
+
+#############################
+## Law Policy attacked by the opposition
+#############################
+###
+event = { 
+	id = 5008
+	random = yes
+	name = "EVT_5008_NAME"
+	desc = "EVT_5008_DESC"
+        picture = "law"
+	style = 1
+	trigger = {
+		ideology = social_conservative
+			NOT = {
+			domestic = { type = freedom value = 5 }
+			}
+	}
+	
+	
+	action = { # Stand out the Storm
+		ai_chance = 25
+		name = "actioname5002A" 
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = dissent value = 10 }
+	}
+	action = { # Strike a bargain with the ultrarights
+		ai_chance = 25
+		name = "actioname5003B" 
+		command = { type = domestic	which = freedom value = -1 }
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = domestic	which = democratic value = -1 }
+		command = { type = dissent value = 15 }
+	}
+	action = { # Strike a bargain with the leftist
+		ai_chance = 25
+		name = "actioname5002C" 
+		#command = { type = domestic which = professional_army value = -1 }
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Revise the policy
+		ai_chance = 25
+		name = "actioname5002D" 
+		command = { type = domestic	which = freedom value = 2 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = dissent value = -5 }
+	}
+}
+#############################
+## Constitutional Policy Initiative
+#############################
+###
+event = { 
+	id = 5009
+	random = yes
+	name = "EVT_5009_NAME"
+	desc = "EVT_5009_DESC"
+        picture = "constitutional"
+	style = 1
+	trigger = {
+		ideology = social_conservative
+		NOT = {
+		domestic = { type = democratic value = 7 }
+		}	
+	}
+	
+	action = { # Conservative Reform
+		ai_chance = 25
+		name = "actioname5009A" 
+		command = { type = domestic	which = democratic value = 1 }
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = dissent value = 5 }
+		
+	}
+	action = { # Bourgeoise Reform
+		ai_chance = 25
+		name = "actioname5009B" 
+		command = { type = domestic	which = democratic value = 2 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = domestic	which = interventionism value = 1 }
+		command = { type = domestic	which = free_market value = 1 }		
+		command = { type = dissent value = -5 }
+	}
+	action = { # Broad Coalition Reform
+		ai_chance = 25
+		name = "actioname5009C" 
+		command = { type = domestic	which = democratic value = 3 }
+		command = { type = domestic	which = political_left value = 2 }
+		command = { type = domestic	which = interventionism value = 1 }
+		#command = { type = domestic which = professional_army value = -1 }
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = dissent value = -10 }
+		
+	}
+	action = { # Backdown from initiative
+		ai_chance = 25
+		name = "actioname5001D" 
+		command = { type = domestic  which = freedom value = -1 }
+		command = { type = dissent value = 10 }
+	}
+}
+
+#############################
+## Constitutional Policy attacked by the opposition
+#############################
+###
+event = { 
+	id = 5010
+	random = yes
+	name = "EVT_5010_NAME"
+	desc = "EVT_5010_DESC"
+        picture = "constitutional"
+	style = 1
+	trigger = {
+		ideology = social_conservative
+		domestic = { type = democratic value = 8 }
+	}
+	
+	
+	action = { # Stand out the Storm
+		ai_chance = 25
+		name = "actioname5002A" 
+		command = { type = domestic	which = political_left value = -1 }
+		command = { type = dissent value = 10 }
+	}
+	action = { # Cave in to liberal demands
+		ai_chance = 25
+		name = "actioname5010B" 
+		command = { type = domestic	which = freedom value = 1 }
+		command = { type = domestic 	which = free_market value = 1 }
+		command = { type = domestic	which = political_left value = 1 }
+		command = { type = domestic	which = democratic value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Cave in to socialist demands
+		ai_chance = 25
+		name = "actioname5010C" 
+		#command = { type = domestic which = professional_army value = -1 }
+		command = { type = domestic	which = defense_lobby value = -1 }
+		command = { type = domestic	which = political_left value = 2 }
+		command = { type = domestic	which = democratic value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = { # Cave in to ultraright demands
+		ai_chance = 25
+		name = "actioname5010D" 
+		command = { type = domestic	which = freedom value = -2 }
+		command = { type = domestic	which = political_left value = -2 }
+		command = { type = domestic	which = democratic value = -2 }
+		command = { type = dissent value = 5 }
+	}
+}
+

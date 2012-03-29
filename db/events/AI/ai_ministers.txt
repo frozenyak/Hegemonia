@@ -1,0 +1,373 @@
+############# AI MINISTER SWITCHES ################
+
+# GERMANY
+
+### Franz Seldte
+
+event = {
+	id = 3003051
+	country = GER
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 220
+		NOT = { incabinet = 220 }
+		OR = {
+			incabinet = 77
+			incabinet = 78
+		}
+		NOT = { government = communist }
+	}
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 180
+	deathdate = { day = 1 month = january year = 1941 }
+
+	name = "AI_EVENT"
+
+	action = {
+		command = { type = armamentminister which = 220 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+### Speer
+
+event = {
+	id = 3003052
+	country = GER
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 86
+		NOT = { incabinet = 86 }
+		government = fascist
+		NOT = { event = 3003053 }
+		OR = {
+			lost_VP = { value = 10 }
+			lost_national = { value = 10 }
+			lost_IC = { value = 15 }
+			AND = {
+				local_flag = MOB8
+				NOT = { manpower = 100 }
+			}
+		}
+	}
+
+	date = { day = 1 month = january year = 1942 }
+	offset = 180
+	deathdate = { day = 1 month = january year = 1964 }
+
+	name = "AI_EVENT"
+
+	action = {
+		command = { type = armamentminister which = 86 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 3003053
+	country = GER
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 100
+		NOT = { incabinet = 100 }
+		government = democratic
+		NOT = { event = 3003052 }
+		OR = {
+			lost_VP = { value = 10 }
+			lost_national = { value = 10 }
+			lost_IC = { value = 15 }
+			AND = {
+				local_flag = MOB8
+				NOT = { manpower = 100 }
+			}
+		}
+	}
+
+	date = { day = 1 month = january year = 1942 }
+	offset = 180
+	deathdate = { day = 1 month = january year = 1964 }
+
+	name = "AI_EVENT"
+
+	action = {
+		command = { type = armamentminister which = 100 }
+		command = { type = dissent value = -1 }
+	}
+}
+	
+### Munzenberg
+
+event = {
+	id = 3003054
+	country = GER
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 106
+		NOT = { incabinet = 106 }
+		government = communist
+	}
+
+	date = { day = 1 month = january year = 1942 }
+	offset = 180
+	deathdate = { day = 1 month = january year = 1964 }
+
+	name = "AI_EVENT"
+
+	action = {
+		command = { type = armamentminister which = 106 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+# Lithuania
+
+### Jonas Vailokaitis into office
+
+event = {
+	id = 3003069
+	
+	country = LIT
+
+	trigger = {
+		ai = yes
+		OR = {
+			NOT = { participant = { value = 2 } }
+			NOT = { alliance = { country = GER } }
+			#NOT = { flag = RUS_western_peace }
+			flag = LIT_peace_east
+			flag = LIT_leaves_HRE
+		}
+		minister = 28063
+		NOT = { incabinet = 28063 }
+		#random = 25
+		#government = democratic
+		NOT = { government = communist }
+	}
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 180
+	deathdate = { day = 1 month = january year = 1944 }
+
+	name = "AI_EVENT"
+
+	action = {
+		command = { type = foreignminister which = 28063 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+#Juoza Barzda-Bradauskas
+event = {
+	id = 3003070
+	
+	country = LIT
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 28118
+		NOT = { incabinet = 28118 }
+		#government = democratic
+		NOT = { government = communist }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 1 month = january year = 1963 }
+
+	name = "AI_EVENT"
+
+	action = {
+		command = { type = chiefofstaff which = 28118 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+## Frederick III
+
+event = {
+	id = 3022024
+	country = CON
+
+	trigger = {
+		ai = yes
+		OR = {
+			event = 35031
+			event = 35042
+		}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1964 }
+
+	name = "AI_EVENT"
+
+	action = {
+		command = { type = headofstate which = 574036 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 3022025
+	country = U08
+
+	trigger = {
+		ai = yes
+		OR = {
+			event = 35031
+			event = 35042
+		}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1964 }
+
+	name = "AI_EVENT"
+
+	action = {
+		command = { type = headofstate which = 109000 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+### SCA
+
+event = { # Ernst Wigforss
+	id = 3009009
+	
+	country = SCA
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 514047
+		NOT = { InCabinet = 514047 }
+		OR = {
+			incabinet = 514048 #Gustav Mölle
+			incabinet = 514056 #Martin Skoglund
+			incabinet = 514014 #Arthur Lindén
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 16 month = january year = 1945 }
+
+	action_a = {
+		command = { type = armamentminister which = 514047 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+### Mazula
+
+event = { # 
+	id = 3035001
+	
+	country = MEX
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 36066
+		NOT = { InCabinet = 36066 }
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 36066 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+### France - VIC
+
+event = { # George Levy
+	id = 3002018
+	country = VIC
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 870034
+		NOT = { InCabinet = 870034 }
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 870034 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # De Gaulle
+	id = 3002019
+	country = VIC
+	
+	trigger = {
+		ai = yes
+		year = 1939
+		minister = 870149
+		NOT = { InCabinet = 870149 }
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 870149 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+### USA
+
+event = { # George H. Dern
+	id = 3049043
+	country = USA
+	
+	trigger = {
+		ai = yes
+		war = { country = MEX }
+		minister = 6004
+		NOT = { InCabinet = 6004 }
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 6004 }
+		command = { type = dissent value = -1 }
+	}
+}

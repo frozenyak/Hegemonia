@@ -1,0 +1,312 @@
+###25000-25999###
+
+event = {
+	id = 25001
+	country = AUS
+	
+	trigger = {
+		OR = {
+			event = 35031
+			event = 35042
+		}
+		NOT = { event = 25002 }
+	}
+
+	name = "Kaiser Frederick"
+	desc = "In Germany, Waldemar VII's younger, and liberal, brother Frederick has taken the throne. Conservatives across the Holy Roman Empire are unhappy, and many in the government are calling from us to withdraw from our alliance with Germany." #This could also be our chance to break free from German overlordship in exchange for our loyalty."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		name = "We need Germany for our defense"
+		ai_chance = 90
+		command = { trigger = { event = 35031 } type = dissent value = 5 }
+		command = { type = relation which = GER value = 25 }
+	}
+	action = {
+		trigger =  {
+			event = 35042
+		}
+		name = "He is too liberal"
+		ai_chance = 10
+		command = { type = dissent value = 2 }
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }		
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35061 }
+		command = { type = setflag which = AUS_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+	action = {
+		trigger =  {
+			event = 35031
+		}
+		name = "No deals with usurpers"
+		ai_chance = 10
+		command = { type = dissent value = 2 }
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }		
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35061 }
+		command = { type = setflag which = AUS_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 25002
+	country = AUS
+	
+	trigger = {
+		flag = german_civil_war
+		NOT = { event = 25001 }
+	}
+
+	name = "The German Civil War"
+	desc = "Germany has been thrown into civil war and have lost the ability to control anything beyond their own borders. Many are asking us to step in until the situation can be resolved to keep the alliance together."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		name = "Head the alliance"
+		ai_chance = 90
+		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = 10 }
+		command = { trigger = { alliance = { country = U14 } } type = relation which = U14 value = 10 }
+		command = { trigger = { alliance = { country = SCH } } type = relation which = SCH value = 10 }
+		command = { trigger = { alliance = { country = SCA } } type = relation which = SCA value = 10 }
+		command = { type = alliance_leader }
+	}
+	
+	action = {
+		name = "No, we will have nothing more to do with Germany"
+		ai_chance = 10
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }	
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35099 }
+		command = { type = setflag which = AUS_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 25003
+	country = AUS
+	
+	trigger = {
+		flag = GER_white_terror
+		participant = { value = 2 }
+	}
+
+	name = "The German White Terror"
+	desc = "The German Kaiser has engaged in a campaign of terror to surpress dissent at home. Thousands of liberals and communists have been murdered or arrested, and thousands more have fled across the borders into our country. Some of our more moderate politicans are demanding that we condemn Germany for these actions."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Say nothing"
+		ai_chance = 70
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = 25 }
+	}
+	action = {
+		name = "Publically protest Germany's actions"
+		ai_chance = 29
+		command = { type = dissent value = -2 }
+		command = { type = relation which = GER value = -50 }
+	}
+	action = {
+		name = "Barbarians! There can be no further alliances with Germany!"
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }		
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35099 }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 25008
+	country = AUS
+	
+	trigger = {
+		flag = HRE_crisis
+		NOT = { flag = AUS_leaves_HRE }
+		participant = { value = 2 }
+		OR = {
+			participant = { country = SCA value = 2 }
+			participant = { country = LIT value = 2 }
+			participant = { country = U14 value = 2 }
+			participant = { country = SCH value = 2 }
+		}
+	}
+	
+	name = "Crisis in the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. Without German leadership there is little holding together the various states, and there is now a significant risk that our allies will desert us. The Ortenburgs have an ancient claim to the title of Holy Roman Emperor - should we use this claim to attempt to hold the alliance together under our leadership?"
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "We will hold the alliance together!"
+		ai_chance = 95
+		command = { trigger = { NOT = { ispuppet = CON } } type = make_puppet which = CON }
+		command = { trigger = { NOT = { ispuppet = U08 } } type = make_puppet which = U08 }		
+		command = { type = setflag which = HRE_restoration }
+		command = { type = alliance_leader }
+		command = { type = sleepevent which = 35102 }
+	}
+	action = {
+		name = "There is no use trying to save it"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = leave_alliance }
+		command = { type = setflag which = HRE_dissolution }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 25009
+	country = AUS
+	
+	trigger = {
+		flag = HRE_restoration_attempt
+		NOT = { flag = AUS_leaves_HRE }
+		participant = { value = 2 }
+		OR = {
+			participant = { country = SCA value = 2 }
+			participant = { country = LIT value = 2 }
+			participant = { country = U14 value = 2 }
+			participant = { country = SCH value = 2 }
+		}
+	}
+	
+	name = "Restoring the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. The victorious royalists have approached us and petitioned us for help in restoring the HRE to what it was before the civil war. Their position is weak, and though Waldemar would remain nominal Emperor, the reality of the matter is that any restored HRE would be under our control."
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Together we will restore the alliance!"
+		ai_chance = 99
+		command = { trigger = { NOT = { ispuppet = CON } } type = make_puppet which = CON }
+		command = { trigger = { NOT = { ispuppet = U08 } } type = make_puppet which = U08 }
+		command = { type = relation which = GER value = 200 }
+		command = { type = alliance which = GER }
+		command = { type = setflag which = HRE_restoration }
+		command = { type = alliance_leader }
+		command = { type = sleepevent which = 35102 }
+	}
+	action = {
+		name = "No, the HRE is done for"
+		ai_chance = 1
+		command = { type = relation which = GER value = -100 }
+		command = { type = dissent value = 5 }
+		command = { type = leave_alliance }
+		command = { type = setflag which = HRE_dissolution }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 25010
+	country = AUS
+
+	name = "Alliance with Imperial India?"
+	desc = "Imperial India has offered us an alliance. What is our response?"
+	style = 1
+
+	action = {
+		name = "Agree to the alliance"
+		ai_chance = 95
+		command = { type = relation which = U02 value = 200 }
+		command = { type = alliance which = U02 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 5
+		command = { type = relation which = U02 value = -100 }
+	}
+}
+
+event = {
+	id = 25011
+	country = AUS
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "Citing a loss of focus of the alliance after the recent inclusion of India, Scandinavia has decided to leave and proclaim its neutrality."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}
+
+
+event = {
+	id = 25012
+	country = AUS
+
+	name = "Readmitting Switzerland"
+	desc = "After the conservative victory in the Swiss elections, the sitting Swiss government has approached us and asked for readmittance into the HRE. What is our answer?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Welcome back!"
+		ai_chance = 95
+		command = { type = alliance which = SCH }
+		command = { type = relation which = SCH value = 100 }
+		command = { type = clrflag which = SCH_leaves_HRE }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 5
+		command = { type = relation which = SCH value = -100 }
+		command = { type = setflag which = SCH_leaves_HRE }
+	}
+}
+
+event = {
+	id = 25013
+	country = AUS
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "Citing a loss of focus of the alliance after the recent inclusion of Japan, Scandinavia has decided to leave and proclaim its neutrality."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}

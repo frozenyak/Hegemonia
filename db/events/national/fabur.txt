@@ -1,0 +1,24 @@
+###31000-31999###
+
+event = {
+	id = 31000
+	country = DOM
+
+	name = "Alliance with Mansur?"
+	desc = "Our rivals, the Sultanate of Tarrbitz, have made the outrageous claim that they are the rightful rulers of the entire Caribbean. In response, the Republic of Mansur have come to us seeking an alliance to balance out the strong Tarrbitz military. What is our response?"
+	style = 1
+	picture = "Caribbean"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 95
+		command = { type = dissent value = 2 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 47001 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}

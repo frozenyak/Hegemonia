@@ -1,0 +1,19 @@
+# 0 - 1944
+model = {
+	cost 				= 10
+	buildtime	 		= 180
+	manpower 			= 3.0
+	defensiveness 		= 10
+	toughness 			= 10
+	maxspeed 			= -3
+	softness			= -15
+	hardattack			= 10
+	softattack			= 10
+	defaultorganisation	= 10
+	supplyconsumption 	= 2.5
+	fuelconsumption		= 2.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	#heavy_armor			= 4		# Upgrade to 1955 Heavy Armor Brigade
+	#upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
+}

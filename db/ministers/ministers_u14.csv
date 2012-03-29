@@ -1,0 +1,31 @@
+U14;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+508001;Head of State;Guiseppe III Tittoni;36;FA;Stern Imperialist;High;M508001;x
+508002;Head of Government;Achille Starace;36;PA;Political Protege;High;M3126;x
+508003;Foreign Minister;Eduardo Moroni;36;PA;Biased Intellectual;High;M508003;x
+508004;Minister of Armament;Giampietro Pellegrini;36;FA;Military Entrepreneur;Medium;M508004;x
+508005;Minister of Security;Guido Buffarini-Guidi;36;PA;Efficient Sociopath;Very High;M3005;x
+508006;Head of Military Intelligence;Carlo Sambruni;36;PA;Dismal Enigma;Medium;M508006;x
+508007;Chief of Staff;Gastone Gambara;36;PA;School of Mass Combat;Medium;L6074;x
+508008;Chief of Army;Rodolfo Graziani;36;PA;Decisive Battle Doctrine;Medium;M508008;x
+508009;Chief of Navy;Pier Angelo Brandimarte;36;PA;Open Seas Doctrine;Medium;L6280;x
+508010;Chief of Air Force;Arrigo Tessari;36;PA;Army Aviation Doctrine;Medium;L6283;x
+508011;Head of State;Paolo Thaon di Revel;45;NS;Resigned Generalissimo;High;M3035;x
+508012;Head of Government;Junio Borghese;45;FA;Corporate Suit;High;M508012;x
+508013;Foreign Minister;Mario Mangani;42;FA;The Cloak N Dagger Schemer;High;M508013;x
+508014;Minister of Armament;Romano Ruggero;36;FA;Theoretical Scientist;Medium;M508014;x
+508015;Minister of Armament;G. Imperiali de Francarillo;45;FA;Administrative Genius;High;M3071;x
+508016;Minister of Armament;Fernando Mezzasoma;43;PA;Infantry Proponent;High;M508016;x
+508017;Minister of Security;Alessandro Pavolini;36;FA;Prince of Terror;Very High;M508017;x
+508018;Minister of Security;Renzo Montagna;43;PA;Crime Fighter;Very High;L6265;x
+508019;Minister of Security;Luigi Pisenti;36;PA;Silent Lawyer;Very High;M508019;x
+508020;Head of Military Intelligence;Pio Filippani Ronconi;45;FA;Logistics Specialist;Medium;M508020;x
+508021;Head of Military Intelligence;Bruno Perego;40;PA;Technical Specialist;Medium;M508021;x
+508022;Head of Military Intelligence;Carlo Alberto Biggini;36;FA;Industrial Specialist;Medium;M508022;x
+508023;Chief of Staff;Alessandro Pavolini;36;FA;School of Defence;Medium;M508017;x
+508024;Chief of Army;Junio Borghese;36;FA;Decisive Battle Doctrine;High;M508012;x
+508025;Chief of Navy;Carlo di Cossata;36;PA;Indirect Approach Doctrine;Medium;L6164;x
+508026;Chief of Air Force;Rino Corso Fougier;45;FA;Air Superiority Doctrine;Low;M3161;x
+508027;Chief of Air Force;Ruggero Bonomi;43;PA;Vertical Envelopment Doctrine;Low;M508027;x
+508028;Minister of Armament;Karl Wolff;43;FA;Military Entrepreneur;High;M508028;x
+508036;Minister of Armament;Rodolfo Graziani;36;PA;Infantry Proponent;High;M508008;x
+508035;Head of Government;Emilio De Bono;36;FA;Old General;Very High;M508035;x

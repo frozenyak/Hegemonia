@@ -1,0 +1,90 @@
+SCA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+514001;Head of State;Gustav V;36;SC;Stern Imperialist;High;M7001;x
+514002;Head of Government;Axel Pehrsson-Bramstorp;36;SL;Happy Amateur;High;M7002;x
+514003;Foreign Minister;Karl G. Westman;36;SL;Apologetic Clerk;Very High;M7003;x
+514004;Minister of Armament;Vilmar Ljungdahl;36;SL;Tank Proponent;Very High;M7004;x
+514005;Minister of Security;Thorwald Bergquist;36;SL;Compassionate Gentleman;Very High;M7005;x
+514006;Head of Military Intelligence;Carlos Adlercreutz;36;SC;Political Specialist;High;M7068;x
+514007;Chief of Staff;Oscar Nygren;36;SC;School of Defence;Medium;M7007;x
+514008;Chief of Army;Oscar Nygren;36;SC;Guns and Butter Doctrine;Medium;M7007;x
+514009;Chief of Navy;Charles de Champs;36;SC;Decisive Naval Battle Doctrine;Very Low;M7009;x
+514010;Chief of Air Force;Torsten Friis;36;ML;Army Aviation Doctrine;Very High;M7010;x
+514033;Head of Government;Per Albin Hansson;36;SD;Ambitious Union Boss;High;M7033;x
+514034;Head of Government;Tage Erlander;46;SD;Political Protege;High;M7034;x
+514035;Head of Government;Gösta Bagge;42;SC;Corporate Suit;High;M7035;x
+514036;Head of Government;Axel Pehrsson-Bramstorp;38;SL;Happy Amateur;High;M7002;x
+514037;Head of Government;Bertil Ohlin;45;SL;Corporate Suit;High;M7037;x
+514038;Foreign Minister;Richard Sandler;36;SD;Biased Intellectual;Low;M7038;x
+514039;Foreign Minister;Christian Günther;36;SC;Apologetic Clerk;High;M7039;x
+514040;Foreign Minister;Östen Undén;45;SD;Great Compromiser;High;M7040;x
+514041;Foreign Minister;Per Edvin Sköld;36;SD;Ideological Crusader;Medium;M7041;x
+514042;Foreign Minister;Vilhelm Göran Lundvik;37;SL;Biased Intellectual;High;M7042;x
+514043;Foreign Minister;R. Reson Sohlmann;38;SL;Iron Fisted Brute;High;M7043;x
+514044;Foreign Minister;Per E.G. Insulander;39;SL;General Staffer;High;M7044;x
+514045;Foreign Minister;Georg Andrén;45;SC;Ideological Crusader;High;M7045;x
+514046;Foreign Minister;Axel Pehrsson-Bramstorp;40;SL;The Cloak N Dagger Schemer;Very High;M7002;x
+514047;Minister of Armament;Ernst Wigforss;36;SD;Resource Industrialist;Low;M7047;x
+514048;Minister of Armament;Gustav Möller;36;SC;laissez-faire capitalist;Medium;M7048;x
+514049;Minister of Armament;Gustav Cassel;37;ML;Administrative Genius;Medium;M7049;x
+514050;Minister of Armament;Erik Palmstierna;37;SD;Battle Fleet Proponent;Medium;M7050;x
+514051;Minister of Armament;Ernst Trygger;38;ML;Theoretical Scientist;Medium;M7051;x
+514052;Minister of Armament;Erik Einar Ekstrand;39;ML;Submarine Proponent;Medium;M7052;x
+514053;Minister of Armament;Gösta Bagge;40;ML;Resource Industrialist;Medium;M7035;x
+514054;Minister of Armament;Östen Undén;41;LWR;Infantry Proponent;Medium;M7054;x
+514055;Minister of Armament;Bertil Ohlin;44;SL;Military Entrepreneur;Medium;M7037;x
+514056;Minister of Armament;Martin Skoglund;40;ML;laissez-faire capitalist;High;M7056;x
+514057;Minister of Armament;Fritjof Domö;45;ML;Administrative Genius;High;M7057;x
+514058;Minister of Security;Karl Schlyter;36;SD;Silent Lawyer;High;M7058;x
+514059;Minister of Security;Gustav Andersson-Rasjön;40;SL;Compassionate Gentleman;Medium;M7059;x
+514060;Minister of Security;Axel T. Ädelsvärd;36;SL;Silent Lawyer;Very High;M7060;x
+514061;Minister of Security;Anders Lindstedt;37;SD;Compassionate Gentleman;Very High;M7061;x
+514063;Minister of Security;Peter G.A. Wijkman;38;ML;Back Stabber;Very High;M7063;x
+514064;Minister of Security;Richard J. Sandler;39;SD;Prince of Terror;Very High;M7038;x
+514065;Minister of Security;K.G. Westman;40;SL;Crime Fighter;Very High;M7003;x
+514066;Minister of Security;Arvid G. Richert;40;SD;Man of the People;Very High;M7066;x
+514068;Head of Military Intelligence;Helge Jung;42;SC;Political Specialist;Low;M7006;x
+514069;Head of Military Intelligence;Erik Palmstierna;39;SC;Naval Intelligence Specialist;Medium;M7050;x
+51405140;Head of Military Intelligence;Åke Hammerskiöld;41;SL;Dismal Enigma;High;M705140;x
+514072;Chief of Staff;Olof Thörnell;37;SC;School of Fire Support;Very High;M7072;x
+514073;Chief of Staff;Axel Rappe;40;SC;school of manoeuvre;Low;M7073;x
+514074;Chief of Staff;Samuel Åkerhielm;41;ML;School of Mass Combat;Medium;M7074;x
+514075;Chief of Staff;Axel Bredberg;42;ML;School of Psychology;High;M7075;x
+514076;Chief of Staff;Carl Gustav Ehrensvärd;44;SC;School of Manoeuvre;Medium;M7076;x
+514077;Chief of Staff;Nils Swedlund;46;ML;School of Psychology;Very High;M7077;x
+514079;Chief of Army;Per Sylvan;37;SC;Static Defence Doctrine;Medium;M7079;x
+514080;Chief of Army;Olof Thörnell;40;SC;Guns and Butter Doctrine;Very High;M7072;x
+514081;Chief of Army;Helge Jung;43;SD;Armoured Spearhead Doctrine;Medium;M7006;x
+514082;Chief of Army;Archibald Douglas;43;PA;Decisive Battle Doctrine;Medium;M7017;x
+514083;Chief of Army;Axel Rappe;43;SC;Elastic Defence Doctrine;Very Low;M7073;x
+514084;Chief of Army;Bengt Nordenskiöld;43;SD;Decisive Battle Doctrine;Low;M705140;x
+514085;Chief of Army;Axel Bredberg;43;SL;Static Defence Doctrine;High;M7075;x
+514086;Chief of Navy;Erik Palmstierna;36;SD;Base Control Doctrine;Medium;M7050;x
+514087;Chief of Navy;Gösta Ehrensvärd;42;ML;Decisive Naval Battle Doctrine;Medium;M7087;x
+514088;Chief of Navy;Fabian Tamm;44;SC;Open Seas Doctrine;High;M7088;x
+514089;Chief of Navy;Helge Strömbäck;45;SL;Indirect Approach Doctrine;High;M7089;x
+514091;Chief of Air Force;Bengt Nordenskiöld;42;ML;Air Superiority Doctrine;High;M705140;x
+514092;Chief of Air Force;Axel Ljungdahl;36;SL;Vertical Envelopment Doctrine;Very High;M7092;x
+514011;Head of State;Gustav V;36;PA;Stern Imperialist;High;M7001;x
+514012;Head of Government;Martin Ekström;36;PA;Naive Optimist;High;M7011;x
+514013;Foreign Minister;Erik von Rosen;36;PA;Ideological Crusader;Very High;M7013;x
+514014;Minister of Armament;Arthur Lindén;36;PA;laissez-faire capitalist;Medium;M7014;x
+514015;Minister of Security;Sven Hedín;36;FA;Back Stabber;Very High;M7015;x
+514016;Head of Military Intelligence;Hermann Nilsson-Ehle;36;PA;Technical Specialist;Very High;M7016;x
+514017;Chief of Staff;Archibald Douglas;36;PA;School of Manoeuvre;High;M7017;x
+514018;Chief of Army;Martin Ekström;36;PA;Decisive Battle Doctrine;Very High;M7011;x
+514019;Chief of Navy;Charles de Champs;36;FA;Decisive Naval Battle Doctrine;Very High;M7009;x
+514020;Chief of Air Force;Axel Gyllenkrok;36;PA;Army Aviation Doctrine;Low;M7020;x
+514021;Head of State;Sven Linderot;36;ST;Insignificant Layman;High;M7021;x
+514022;Head of Government;Sven Linderot;36;ST;Happy Amateur;High;M7021;x
+514023;Foreign Minister;Hugo Sellén;36;ST;Ideological Crusader;Very High;M7023;x
+514024;Minister of Armament;Hilding Hagberg;36;ST;Resource Industrialist;Very High;M7024;x
+514025;Minister of Security;Karl Kilbom;36;LE;Crime Fighter;High;M7025;x
+514026;Head of Military Intelligence;C.H. Hermansson;36;ST;Naval Intelligence Specialist;High;M7026;x
+514027;Chief of Staff;Gunnar Johansson;36;ST;School of Mass Combat;Very High;unknown;x
+514028;Chief of Army;Axel Pettersson;36;ST;Decisive Battle Doctrine;Very High;unknown;x
+514029;Chief of Navy;Per M. Eriksson;36;ST;Decisive Naval Battle Doctrine;Very High;unknown;x
+514030;Chief of Air Force;Krister Reuterswärd;36;LWR;Army Aviation Doctrine;Low;unknown;x
+514093;Head of State;Gustav VI Adolf;47;SD;Benevolent Gentleman;High;M7093;x
+514094;Minister of Armament;Per Edvin Sköld;49;SD;Infantry Proponent;High;M7041;x
+514095;Head of State;Gustav VI Adolf;47;PA;Benevolent Gentleman;High;M7093;x
+EOF;x

@@ -1,0 +1,1553 @@
+###55000-55999###
+##55016-18 elections
+##55019-22 divided governments
+##55023 old guard government
+##55024 radical government
+##55025 dimitrov coup
+##55027 radical coup
+##55029 georgian obstacle
+##55031 turkestan alliance
+##55032-37 suez
+##55038 india attacks turkestan
+##55041 fall of india
+##55044 greece lost
+##55045 exile in algeria
+##55046 fall of constantinople
+##55051 alliance dfr
+##55055 partition of georgia
+##55058 russia invades without blessing
+##55060 RSI/U00 unification
+
+event = {
+	id = 55009
+	country = U00
+
+	trigger = {
+		flag = U02_claim_constantinople
+	}
+
+	name = "Imperial Belligerence"
+	desc = "The exiles in India have had the audacity to openly challenge us at the Dublin conference, demanding the return of Constantinople to their foolish Emperor. This display of aggression has only served to further rally the population behind us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = may year = 1937 }
+
+	action = {
+		name = "Stupid Reactionaries!"
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 55015
+	country = U00
+
+	trigger = {
+		flag = GER_claim_ITA
+	}
+
+	name = "German Belligerence"
+	desc = "The news of Germany's threatening posture against us at the Dublin Conference has spread quickly through the nation and served to rally support among the population against the Holy Roman Empire."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = may year = 1937 }
+
+	action = {
+		name = "Stupid Germans!"
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 55016
+	country = U00
+
+	name = "The May Day Elections"
+	desc = "The 1937 elections have begun. The Union Party is meeting to elect a new Consul, and a public election is being held for the position of People's Tribune. The voters are divided between the Old Guard, who wish to preserve the current structure, the radical Italian Communists, who want stronger central authority, and the Russian Exiles, who want to spread the revolution into their former homeland."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = may year = 1937 }
+
+	action = {
+		name = "Let the people choose their leaders"
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 55017
+	country = U00
+	one_action = yes
+
+	name = "May Day Elections - Consul"
+	desc = "The Unionist Party has assembled to elect a new Consul. As Head of State, the Consul has sweeping powers to direct the country, though his power is checked by the veto of the People's Tribune. There are three major contenders: Nikos Zahariadis, representing the old guard, Palmiro Togliatto for the Italian radicals, and Georgi Dimitrov, the Russian exile. Zahariadis currently has the lead in the polls, but anything can happen..."
+	style = 1
+	picture = "politics3"
+
+	date = { day = 2 month = may year = 1937 }
+
+	action = {
+		name = "Nikos Zahariadis, the leader of the Old Guard"
+		ai_chance = 60
+		command = { type = headofstate which = 102045 }
+		command = { type = sleepminister which = 102044 }
+		command = { type = sleepminister which = 102052 }
+		command = { type = relation which = GER value = 25 }
+		command = { type = relation which = SPA value = 25 }
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		name = "Palmiro Togliatto, the Radical Demogogue"
+		ai_chance = 30
+		command = { type = headofstate which = 102134 }
+		command = { type = sleepminister which = 102044 }
+		command = { type = sleepminister which = 102052 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = U14 value = -100 }
+		command = { type = dissent value = 3 }
+	}
+	action = {
+		name = "Georgi Dimitrov, the Russian Exile"
+		ai_chance = 10
+		command = { type = headofstate which = 102188 }
+		command = { type = sleepminister which = 102044 }
+		command = { type = sleepminister which = 102052 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 55018
+	country = U00
+	one_action = yes
+
+	name = "May Day Elections - People's Tribune"
+	desc = "The masses are flocking to the voting booths to elect their People's Tribune. The People's Tribune has veto rights over all decisions of the central government, and acts as a check on their power. The two leading candidates for the post are Benito Mussolini, the Italian radical, and Evripidis Bakirtris, representing the old guard. Mussolini is expected to win, but anything can happen..."
+	style = 1
+	picture = "politics2"
+
+	date = { day = 5 month = may year = 1937 }
+
+	action = {
+		name = "Benito Mussolini, the Radical Man of the People"
+		ai_chance = 80
+		command = { type = headofgovernment which = 102001 }
+		command = { type = sleepminister which = 102046 }
+		command = { type = sleepminister which = 102063 }
+		command = { type = sleepminister which = 102084 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "Evripidis Bakirtris, the Old Guard Moderate"
+		ai_chance = 20
+		command = { type = headofgovernment which = 102065 }
+		command = { type = sleepminister which = 102046 }
+		command = { type = sleepminister which = 102063 }
+		command = { type = sleepminister which = 102084 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 55019
+	country = U00
+
+	trigger = {
+		headofstate = 102045
+		headofgovernment = 102001
+	}
+
+	name = "May Day Elections - Divided Government"
+	desc = "The May Day Elections have resulted in a divided government, with the Old Guard controlling the Consulate and a Radical as People's Tribune. This is likely to deadlock any important decisions unless the two sides can come to an arrangement."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = may year = 1937 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 55020
+	country = U00
+
+	trigger = {
+		headofstate = 102134
+		headofgovernment = 102065
+	}
+
+	name = "May Day Elections - Divided Government"
+	desc = "The May Day Elections have resulted in a divided government, with a Radical as Consul and the Old Guard controlling the People's Tribune. This is likely to deadlock any important decisions unless the two sides can come to an arrangement."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = may year = 1937 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 55021
+	country = U00
+
+	trigger = {
+		headofstate = 102188
+		headofgovernment = 102001
+	}
+
+	name = "May Day Elections - Divided Government"
+	desc = "The May Day Elections have resulted in a divided government, with the Russian Exile Georgi Dimitrov as Consul and a Radical as Tribune.  This is likely to deadlock any important decisions unless the two sides can come to an arrangement."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = may year = 1937 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 55022
+	country = U00
+
+	trigger = {
+		headofstate = 102188
+		headofgovernment = 102065
+	}
+
+	name = "May Day Elections - Divided Government"
+	desc = "The May Day Elections have resulted in a divided government, with the Russian Exile Georgi Dimitrov as Consul and a member of the Old Guard as Tribune.  This is likely to deadlock any important decisions unless the two sides can come to an arrangement."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = may year = 1937 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 55023
+	country = U00
+
+	trigger = {
+		headofstate = 102045
+		headofgovernment = 102065
+	}
+
+	name = "May Day Elections - Old Guard Government"
+	desc = "The May Day Elections have resulted in a sweeping victory for the Old Guard. The Union will continue to pursue preservation of the Status Quo and avoidance of armed conflict with the other power blocs."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = may year = 1937 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = foreignminister which = 102211 }
+		command = { type = armamentminister which = 102160 }
+		command = { type = ministerofsecurity which = 102051 }
+		command = { type = ministerofintelligence which = 102181 }
+		command = { type = chiefofstaff which = 102178 }
+		command = { type = chiefofarmy which = 102152 }
+		command = { type = chiefofnavy which = 102174 }
+		command = { type = chiefofair which = 102053 }
+		#
+		command = { trigger = { exists = RSI } type = trigger which = 82003 }
+	}
+}
+
+event = {
+	id = 55024
+	country = U00
+
+	trigger = {
+		headofstate = 102134
+		headofgovernment = 102001
+	}
+
+	name = "May Day Elections - Radical Government"
+	desc = "The May Day Elections have resulted in a sweeping victory for the Radicals. Consul Togliatti and Tribune Mussolini have vowed to work together to strengthen the armed forces of the Union and continue the revolution abroad by any means necessary."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = may year = 1937 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = set_domestic which = interventionism value = 7 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = foreignminister which = 102170 }
+		command = { type = armamentminister which = 102002 }
+		command = { type = ministerofsecurity which = 102131 }
+		command = { type = ministerofintelligence which = 102133 }
+		command = { type = chiefofstaff which = 102048 }
+		command = { type = chiefofarmy which = 102047 }
+		command = { type = chiefofnavy which = 102173 }
+		command = { type = chiefofair which = 102150  }
+		#
+		command = { trigger = { exists = RSI } type = trigger which = 82000 }
+	}
+}
+
+event = {
+	id = 55025
+	country = U00
+	one_action = yes
+
+	trigger = {
+		OR = {
+			event = 55022
+			event = 55021
+		}
+	}
+
+	name = "Consul Dimitrov Seizes Power"
+	desc = "Frustrated by the divided government, Consul Dimitrov has made his move along with party leaders and troops loyal to him and his exiles. The People's Tribune has been arrested along with a large number of Dimitrov's political opponents. A new government has been formed out of Dimitrov's political allies and cronies."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 21 month = june year = 1937 }
+
+	action = {
+		name = "ACTION_NAME_THE_COUP_SUCCEEDS"
+		ai_chance = 67
+		command = { trigger = { ai = yes } type = dissent value = 10 }
+		command = { trigger = { ai = no } type = dissent value = 20 }
+		command = { type = domestic which = democratic value = -2 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = set_domestic which = interventionism value = 7 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		#command = { type = domestic which = free_market value = -2 }
+		command = { type = headofgovernment which = 102187 }
+		command = { type = foreignminister which = 102185 }
+		command = { type = armamentminister which = 102200 }
+		command = { type = ministerofsecurity which = 102182 }
+		command = { type = ministerofintelligence which = 102181 }
+		command = { type = chiefofstaff which = 102179 }
+		command = { type = chiefofarmy which = 102176 }
+		command = { type = chiefofnavy which = 102174 }
+		command = { type = chiefofair which = 102172 }
+		#
+		command = { type = sleepminister which = 102132 }
+		command = { type = sleepminister which = 102134 }
+		command = { type = sleepminister which = 102143 }
+		command = { type = sleepminister which = 102001 }
+		command = { type = sleepminister which = 102002 }
+		command = { type = sleepminister which = 102003 }
+		#
+		#governments
+		command = { type = sleepevent which = 55023 } #old
+		command = { type = sleepevent which = 55024 } #radical
+		#coup
+		command = { type = sleepevent which = 55027 } #radical
+		#
+		command = { trigger = { exists = RSI } type = trigger which = 82001 }
+	}
+	action = {
+		trigger = { event = 55021 } #radical
+		name = "Radical Countercoup!"
+		ai_chance = 33
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		#
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = set_domestic which = interventionism value = 7 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = domestic which = free_market value = -1 }
+		#
+		command = { type = headofstate which = 102134 }
+		command = { type = headofgovernment which = 102001 }
+		#
+		command = { type = foreignminister which = 102170 }
+		command = { type = armamentminister which = 102002 }
+		command = { type = ministerofsecurity which = 102131 }
+		command = { type = ministerofintelligence which = 102133 }
+		command = { type = chiefofstaff which = 102048 }
+		command = { type = chiefofarmy which = 102047 }
+		command = { type = chiefofnavy which = 102173 }
+		command = { type = chiefofair which = 102150  }
+		#
+		command = { type = sleepminister which = 102184 }
+		command = { type = sleepminister which = 102187 }
+		command = { type = sleepminister which = 102188 }
+		#
+		command = { type = sleepevent which = 55019 }
+		command = { type = sleepevent which = 55020 }
+		command = { type = sleepevent which = 55021 }
+		command = { type = sleepevent which = 55022 }
+		command = { type = sleepevent which = 55023 }
+		command = { type = sleepevent which = 55024 }
+		command = { type = sleepevent which = 55027 }
+		#
+		command = { trigger = { exists = RSI } type = trigger which = 82000 }
+	}
+	action = {
+		trigger = { event = 55022 } #old guard
+		name = "Old Guard countercoup!"
+		ai_chance = 33
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		#
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = interventionism value = -1 }
+		#
+		command = { type = headofstate which = 102045 }
+		command = { type = headofgovernment which = 102065 }
+		#
+		command = { type = foreignminister which = 102211 }
+		command = { type = armamentminister which = 102160 }
+		command = { type = ministerofsecurity which = 102051 }
+		command = { type = ministerofintelligence which = 102181 }
+		command = { type = chiefofstaff which = 102178 }
+		command = { type = chiefofarmy which = 102152 }
+		command = { type = chiefofnavy which = 102174 }
+		command = { type = chiefofair which = 102053 }
+		#
+		command = { type = sleepminister which = 102184 }
+		command = { type = sleepminister which = 102187 }
+		command = { type = sleepminister which = 102188 }
+		#
+		command = { type = sleepevent which = 55019 }
+		command = { type = sleepevent which = 55020 }
+		command = { type = sleepevent which = 55021 }
+		command = { type = sleepevent which = 55022 }
+		command = { type = sleepevent which = 55023 }
+		command = { type = sleepevent which = 55024 }
+		command = { type = sleepevent which = 55027 }
+		#
+		command = { trigger = { exists = RSI } type = trigger which = 82002 }
+	}
+}
+
+# event = {
+	# id = 55026
+	# #random = no
+	# country = U00
+
+	# trigger = {
+		# event = 55025
+		# NOT = { local_flag = MOB8 }
+	# }
+
+	# name = "Arming the Union"
+	# desc = "With the Exiles now in full control of the government, Consul Dimitrov has ordered a general mobilization of the troops in preparation for war. The question now is whether to fully mobilize our troops, a step that will be seen as extremely belligerent by the other Great Powers, or just a partial mobilization, which would make us look weak to the people."
+	# style = 1
+	# picture = "soviet_strategic_victory"
+
+	# date = { day = 29 month = november year = 1937 }
+
+	# action = {
+		# name = "We must be ready, order a full mobilization!"
+		# ai_chance = 95
+		# command = { type = belligerence value = 5 }
+		# command = { type = dissent value = -5 }
+
+		# command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		# command = { trigger = { NOT = { local_flag = MOB7 } } type = resource which = supplies value = -500 }
+		# command = { type = resource which = supplies value = -700 }
+		# command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
+		# command = { type = set_domestic which = professional_army value = 8 }
+		# command = { type = dissent value = 5 }
+		# command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
+		# command = { type = local_setflag which = MOB8 }
+		# command = { type = local_setflag which = MOB7 }
+		# command = { type = local_setflag which = MOB6 }
+		# command = { type = local_setflag which = MOB5 }
+		# command = { type = local_setflag which = MOB4 }
+		# command = { type = local_setflag which = MOB3 }
+	# }
+	# action = {
+		# name = "We don't want war just yet, partial mobilization only..."
+		# ai_chance = 5
+		# command = { type = dissent value = 5 }
+		# command = { type = domestic which = interventionism value = -1 }
+
+		# command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		# command = { type = resource which = supplies value = -500 }
+		# command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		# command = { type = set_domestic which = professional_army value = 7 }
+		# command = { trigger = { atwar = no } type = belligerence value = 15 }
+		# command = { trigger = { NOT = { local_flag = MOB3 } atwar = no } type = dissent value = 4 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } atwar = no } type = dissent value = 4 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } atwar = no } type = dissent value = 4 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } atwar = no } type = dissent value = 4 }
+		# command = { trigger = { atwar = no } type = dissent value = 12 }
+		# command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
+		# command = { type = local_setflag which = MOB7 }
+		# command = { type = local_setflag which = MOB6 }
+		# command = { type = local_setflag which = MOB5 }
+		# command = { type = local_setflag which = MOB4 }
+		# command = { type = local_setflag which = MOB3 }
+	# }
+# }
+
+event = {
+	id = 55027
+	country = U00
+	one_action = yes
+
+	trigger = {
+		OR = {
+			event = 55019
+			event = 55020
+		}
+	}
+
+	name = "The Radicals Seize Power"
+	desc = "Frustrated with the deadlocked government, the radicals have staged a coup against the Old Guard and arrested their supporters. Benito Mussolini has taken the position of Tribune, and Palmiro Togliatti has taken the position of Consul. The Radicals are now in complete control of the government."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = may year = 1937 }
+
+	action = {
+		name = "ACTION_NAME_THE_COUP_SUCCEEDS"
+		ai_chance = 90
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		#
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = set_domestic which = interventionism value = 7 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = domestic which = free_market value = -1 }
+		#
+		command = { type = headofstate which = 102134 }
+		command = { type = headofgovernment which = 102001 }
+		command = { type = foreignminister which = 102170 }
+		command = { type = armamentminister which = 102002 }
+		command = { type = ministerofsecurity which = 102131 }
+		command = { type = ministerofintelligence which = 102133 }
+		command = { type = chiefofstaff which = 102048 }
+		command = { type = chiefofarmy which = 102047 }
+		command = { type = chiefofnavy which = 102173 }
+		command = { type = chiefofair which = 102150  }
+		#governments
+		command = { type = sleepevent which = 55021 } #dmitri
+		command = { type = sleepevent which = 55022 } #dmitri
+		command = { type = sleepevent which = 55023 } #old
+		command = { type = sleepevent which = 55024 } #radical
+		#coup
+		command = { type = sleepevent which = 55025 } #dimitri
+		#
+		command = { trigger = { exists = RSI } type = trigger which = 82000 }
+	}
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 10
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { type = headofstate which = 102045 }
+		command = { type = headofgovernment which = 102065 }
+		command = { type = sleepminister which = 102143 }
+		command = { type = sleepminister which = 102132 }
+		command = { type = sleepminister which = 102134 }
+		command = { type = sleepminister which = 102001 }
+		command = { type = sleepminister which = 102002 }
+		command = { type = sleepminister which = 102003 }
+		#
+		command = { type = sleepevent which = 55019 }
+		command = { type = sleepevent which = 55020 }
+		command = { type = sleepevent which = 55021 }
+		command = { type = sleepevent which = 55022 }
+		command = { type = sleepevent which = 55023 }
+		command = { type = sleepevent which = 55024 }
+		command = { type = sleepevent which = 55025 }
+		#
+		command = { trigger = { exists = RSI } type = trigger which = 82002 }
+	}
+}
+
+# event = {
+	# id = 55028
+	# #random = no
+	# country = U00
+
+	# trigger = {
+		# OR = {
+			# event = 55028
+			# event = 55027
+			# event = 55024
+		# }
+		# NOT = { local_flag = MOB7 }
+	# }
+
+	# name = "Arming the Union"
+	# desc = "With the Radicals now in full control of the government, Tribune Mussolini has proposed a partial mobilization of our forces in order to be ready for conflict with the other power blocs."
+	# style = 1
+	# picture = "soviet_strategic_victory"
+
+	# date = { day = 29 month = june year = 1937 }
+
+	# action = {
+		# name = "We must be ready, order a partial mobilization!"
+		# ai_chance = 100
+		# command = { type = belligerence value = 2 }
+		# command = { type = dissent value = -1 }
+		# command = { type = trigger which = 38015 }
+		# command = { type = trigger which = 34000 }
+		# command = { type = trigger which = 25000 }
+		# command = { type = trigger which = 35051 }
+
+		# command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		# command = { type = resource which = supplies value = -500 }
+		# command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		# command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		# command = { type = set_domestic which = professional_army value = 7 }
+		# command = { trigger = { atwar = no } type = belligerence value = 15 }
+		# command = { trigger = { NOT = { local_flag = MOB3 } atwar = no } type = dissent value = 4 }
+		# command = { trigger = { NOT = { local_flag = MOB4 } atwar = no } type = dissent value = 4 }
+		# command = { trigger = { NOT = { local_flag = MOB5 } atwar = no } type = dissent value = 4 }
+		# command = { trigger = { NOT = { local_flag = MOB6 } atwar = no } type = dissent value = 4 }
+		# command = { trigger = { atwar = no } type = dissent value = 12 }
+		# command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
+		# command = { type = local_setflag which = MOB7 }
+		# command = { type = local_setflag which = MOB6 }
+		# command = { type = local_setflag which = MOB5 }
+		# command = { type = local_setflag which = MOB4 }
+		# command = { type = local_setflag which = MOB3 }
+	# }
+	# action = {
+		# name = "No, we don't want to look belligerent"
+		# ai_chance = 0
+		# command = { type = domestic which = interventionism value = -1 }
+		# command = { type = dissent value = 2 }
+	# }
+# }
+
+event = {
+	id = 55029
+	country = U00
+
+	trigger = {
+		war = { country = RUS }
+		NOT = { war = { country = GEO } }
+		NOT = { alliance = { country = U00 country = GEO } }
+		exists = GEO
+		random = 30
+		OR ={
+			NOT = { war = { country = TUR } }
+			NOT = { war = { country = U02 } }
+		}
+		NOT = { war = { country = EGY } }
+		NOT = { flag = RUS_com_friendly }
+		#month = 4
+		#NOT = { month = 8 }
+		ai = yes
+		control = { province = 380 }
+		NOT = { war = { country = AUS } }
+		OR = {
+			NOT = { guarantee = { country = LIT country = GEO } }
+			war = { country = LIT }
+		}
+	}
+
+	name = "The Georgian Obstacle"
+	desc = "The neutral Republic of Georgia stands between us and our enemy in Russia. An offensive through Georgia would be ideal and they would be unlikely to offer much resistance."
+	style = 1
+	picture = "soviet_marginal_victory"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 99
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = GEO }
+	}
+	action = {
+		name = "Respect their neutrality"
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 55031
+	country = U00
+
+	name = "Alliance with Turkestan?"
+	desc = "Turkestan has approached us about an alliance, fearful of being wedged inbetween the three alliance blocks if it comes to war. What is our response?"
+	style = 1
+
+	action = {
+		name = "Agree to the alliance"
+		ai_chance = 20
+		command = { type = alliance which = TUR }
+		command = { type = relation which = TUR value = 100 }
+		command = { type = guarantee which = U00 where = TUR }
+	}
+	action = {
+		trigger = {
+			ai = no
+		}
+		name = "I think not"
+		ai_chance = 80
+		command = { type = relation which = TUR value = -100 }
+	}
+	action = {
+		trigger = {
+			ai = yes
+			NOT = { participant = { country = U02 value = 2 } }
+		}
+		name = "I think not"
+		ai_chance = 80
+		command = { type = relation which = TUR value = -100 }
+	}
+}
+
+event = {
+	id = 55032
+	country = U00
+	name = "The Suez Treaty"
+	desc = "The Suez Treaty was drawn up by Iberia in 1918 and stipulates that the Union of Rome, Germany and Iberia will all guarantee our independence in exchange for toll-free passage of ships of all nationalities through the canal. The treaty has now expired, and we have sent diplomats to Cairo to discuss its renewal."
+	style = 1
+	picture = "suez"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { }
+	}
+}
+
+event = {
+	id = 55033
+	country = U00
+
+	trigger = {
+		flag = suez_EGY_wants_toll
+		NOT = { flag = suez_toll_U00_yes }
+		NOT = { flag = suez_toll_U00_no }
+	}
+
+	name = "The Suez Conference - Toll Rights"
+	desc = "Egypt has opened the conference by demanding the right to collect tolls from ships passing Suez. While not desirable, it may be better to let them have their way rather than risk war over Suez if the conference fails."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Agree to toll rights"
+		ai_chance = 40
+		command = { type = relation which = EGY value = 25 }
+		command = { type = setflag which = suez_toll_U00_yes }
+	}
+	action = {
+		name = "ACTION_NAME_REFUSE"
+		ai_chance = 60
+		command = { type = relation which = EGY value = -50 }
+		command = { type = setflag which = suez_toll_U00_no }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = relation which = EGY value = -100 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 55034
+	country = U00
+
+	trigger = {
+		flag = suez_EGY_wants_rights
+		NOT = { flag = suez_rights_U00_yes }
+		NOT = { flag = suez_rights_U00_no }
+	}
+
+	name = "The Suez Conference - Territorial Rights"
+	desc = "Egypt has opened the conference by demanding complete territorial rights over Suez, to administrate as they see fit. This is a clear challenge to all three Great Powers, and we would look weak if we agree..."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Agree to terrorial rights"
+		ai_chance = 15
+		command = { type = relation which = EGY value = 25 }
+		command = { type = setflag which = suez_rights_U00_yes }
+	}
+	action = {
+		name = "ACTION_NAME_REFUSE"
+		ai_chance = 85
+		command = { type = relation which = EGY value = -50 }
+		command = { type = setflag which = suez_rights_U00_no }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = relation which = EGY value = -100 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 55035
+	country = U00
+
+	trigger = {
+		flag = suez_conference_success
+	}
+
+	name = "The Suez Conference - Success"
+	desc = "An agreement has been reached in the Suez Conference for a renewal of the Suez Treaty. Whatever conflicts should come, Suez will remain neutral."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = EGY value = 25 }
+		command = { type = non_aggression which = U00 where = EGY }
+		command = { type = guarantee which = U00 where = EGY }
+	}
+}
+
+event = {
+	id = 55036
+	country = U00
+
+	trigger = {
+		flag = suez_conference_failure
+	}
+
+	name = "The Suez Conference - Failure"
+	desc = "No agreement has been reached for the renewal of the Suez Treaty and the Suez Conference can certainly be said have been a failure. Without a neutrality guarantee, it may very well come to war over Suez, now..."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = relation which = EGY value = -25 }
+		command = { type = addclaim which = 900 }
+		command = { type = addclaim which = 1007 }
+		#command = { type = ai_prepare_war which = EGY }
+	}
+}
+
+event = {
+	id = 55037
+	country = U00
+
+	trigger = {
+		flag = suez_EGY_silence
+	}
+
+	name = "The Suez Conference - First Round"
+	desc = "After some initial squabbling, the diplomats from Iberia, Germany and Rome are now seated and are discussing the renewal of the Suez Treaty. Egypt has so far remained noncommital in the discussions, apparently waiting to see what terms we will offer them."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Seek a renewal with the old terms"
+		ai_chance = 90
+		command = { type = setflag which = U00_round_1 }
+	}
+	action = {
+		name = "Offer toll rights in Suez for Egypt"
+		ai_chance = 10
+		command = { type = relation which = EGY value = 50 }
+		command = { type = setflag which = suez_toll_U00_yes }
+		command = { type = setflag which = U00_round_1 }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 55038
+	country = U00
+
+	trigger = {
+		war = { country = U02 }
+		war = { country = TUR country = U02 }
+		NOT = { war = { country = TUR } }
+		NOT = { alliance = { country = TUR } }
+		#NOT = { access = { country = TUR } }
+	}
+
+	name = "Imperial India Attacks Turkestan"
+	desc = "Our enemy in India has declared war on Turkestan. They are marching their troops through the country, and if we do not do the same they will soon be in Persia."
+	style = 1
+	picture = "soviet_marginal_victory"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		trigger = {
+			NOT = { alliance = { country = RUS country = TUR } }
+		}
+		name = "Protect them!"
+		ai_chance = 70
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = alliance which = TUR }
+	}
+	action = {
+		trigger = {
+			alliance = { country = RUS country = TUR }
+		}
+		name = ACTION_NAME_FIGHT
+		ai_chance = 30
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = TUR }
+	}
+	action = {
+		name = "There is no need for such methods"
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 55039
+	country = U00
+
+	name = "Russia Offers Separate Peace"
+	desc = "Russia has offered us a separate peace, leaving us free to do as we wish with the rest of the League."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_ACCEPT
+		ai_chance = 75
+		command = { type = relation which = RUS value = 200 }
+		command = { type = trigger which = 56040 }
+	}
+	action = {
+		name = "ACTION_NAME_REFUSE"
+		ai_chance = 25
+		command = { type = relation which = RUS value = -100 }
+		command = { type = trigger which = 56041 }
+	}
+}
+
+event = {
+	id = 55040
+	country = U00
+
+	trigger = {
+		NOT = { exists = U02 }
+		owned = { province = 1517 data = U00 }
+		NOT = { event = 55040 }
+		war = { country = JAP country = U00 }
+		war = { country = GER country = U00 }
+		NOT = { alliance = { country = JAP country = GER } }
+	}
+
+	name = "The Fall of Imperial India"
+	desc = "We have defeated the reactionary regime in India and captured their so-called Emperor. Some of our advisors have suggested that Japan might be amenable to peace now that we stand at the doorstep to China. This would allow us to turn back and concentrate our forces on the real enemy in Japan. Any peace with Japan would be contingent of our treatment of their allied monarch, however..."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Seek peace with Japan"
+		ai_chance = 90
+		command = { type = trigger which = 42020 }
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		name = "Execute 'Emperor' Manuel and keep pushing east!"
+		ai_chance = 10
+		command = { type = belligerence value = 10 }
+		command = { type = dissent value = -5 }
+	}
+}
+
+event = {
+	id = 55041
+	country = U00
+
+	trigger = {
+		NOT = { exists = U02 }
+		owned = { province = 1517 data = U00 }
+		NOT = { event = 55039 }
+		OR = {
+			NOT = { war = { country = JAP country = U00 } }
+			NOT = { war = { country = GER country = U00 } }
+			NOT = { NOT = { alliance = { country = JAP country = GER } } }
+		}
+	}
+
+	name = "The Fall of Imperial India"
+	desc = "We have defeated the reactionary regime in India and captured their so-called Emperor. The people want a public execution of the false Emperor, but this of course would hurt our international reputation - though at this point that may not matter much!"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Publically execute the false Emperor"
+		ai_chance = 75
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = -5 }
+	}
+	action = {
+		name = "Send Manuel into exile"
+		ai_chance = 25
+		command = { type = belligerence value = -5 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 55044
+	country = U00
+
+	trigger = {
+		#50% of national territory and all viable capitals lost
+		lost_national = { country = U00 value = 75 }
+		NOT = { control = { province = 409 } } #Constantinople
+		NOT = { control = { province = 377 } } #Athens
+		NOT = { control = { province = 1075 } } #Ankara
+		puppet = { country = U07 country = U00 }
+		owned = { province = 734 data = U07 }
+	}
+
+	name = "Greece is Lost"
+	desc = "Our enemies have broken through into Greece, taking the three capitals Constantinople, Athens and Ankara in addition to much of our home territories. The fight in Greece is clearly lost, but we still control our African puppet and could continue the battle from there..."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Continue the fight from Africa"
+		ai_chance = 95
+		command = { type = dissent value = 10 }
+		command = { type = trigger which = 49001 }
+		command = { type = setflag which = U00_retreat }
+	}
+	action = {
+		name = "We will not abandon Greece!"
+		ai_chance = 5
+		command = { type = dissent value = -5 }
+	}
+}
+
+event = {
+	id = 55045
+	country = U00
+
+	name = "The Union in Exile"
+	desc = "We have taken up residence in Algeria, in the ancient city of Constantine. Let us hope we can reclaim our homelands from here!"
+	style = 1
+
+	action = {
+		name = "We are not yet defeated!"
+		command = { type = capital which = 734 }
+		command = { type = add_division value = infantry when = 2 }
+		command = { type = add_division value = infantry when = 2 }
+		command = { type = add_division value = infantry when = 2 }
+	}
+}
+
+event = {
+	id = 55046
+	country = U00
+
+	trigger = {
+		atwar = yes
+		NOT = { control = { province = 409 } }
+		OR = {
+			control = { province = 1075 }
+			control = { province = 377 }
+		}
+		ai = yes
+	}
+
+	name = "The Fall of Constantinople"
+	desc = "Our capital city is in the hands of our enemies. The government has been relocated to continue the fight."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 5 }
+		command = { trigger = { control = { province = 1075 } NOT = { control = { province = 377 } } } type = capital which = 1075 }
+		command = { trigger = { control = { province = 377 } control = { province = 1075 } } type = capital which = 377 }
+	}
+}
+
+event = {
+	id = 55051
+	country = U00
+
+	name = "Alliance with the Worker's Union?"
+	desc = "The Worker's Union has triumphed in the civil war and now they want to join the Comintern."
+	style = 1
+
+
+	action = {
+		name = "They are welcome!"
+		ai_chance = 75
+		command = { type = relation which = DFR value = 200 }
+		command = { type = alliance which = DFR }
+		command = { trigger = { alliance = { country = U00 country = VIC } } type = relation which = VIC value = -25 }
+	}
+	action = { trigger = { alliance = { country = U00 country = VIC } }
+		name = "Demand they settle border issues with France"
+		ai_chance = 25
+		command = { type = relation which = DFR value = 50 }
+		command = { type = relation which = VIC value = 75 }
+		command = { type = trigger which = 66002 }
+	}
+	action = {
+		name = "I think not"
+		ai_chance = 0
+		command = { type = relation which = DFR value = -100 }
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 55052
+	country = U00
+
+	trigger = {
+		flag = RUS_com_friendly
+
+		NOT = { participant = { country = RUS value = 1 } }
+		NOT = { participant = { country = RUS value = 2 } }
+
+		NOT = { alliance = { country = RUS } }
+		NOT = { war = { country = RUS } }
+
+		NOT = { ispuppet = RUS }
+		NOT = { ispuppet = U00 }
+	}
+
+	name = "Alliance with Russia?"
+	desc = "The Communists in Russia have triumphed in the recent elections and decided to align themselves with us. Should we offer Russia membership in the Comintern?"
+	style = 1
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_OF_COURSE"
+		ai_chance = 90
+		command = { type = trigger which = 56055 }
+		command = { type = relation which = RUS value = 50 }
+	}
+	action = {
+		trigger = {
+			NOT = { headofgovernment = 102187 }
+		}
+		name = "ACTION_NAME_NO"
+		ai_chance = 10
+		command = { type = relation which = RUS value = -50 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 55055
+	country = U00
+
+	name = "The Partition of Georgia"
+	desc = "Russia has proposed to split up Georgia. Do we accept?"
+	style = 2
+	picture = "Mol_Rib"
+
+	action = {
+		name = "ACTION_NAME_OF_COURSE"
+		ai_chance = 95
+		command = { type = trigger which = 56076 }
+		command = { type = end_guarantee which = U00 where = GEO }
+
+		#command = { type = addclaim which = 704 }
+		#command = { type = addclaim which = 707 }
+		#command = { type = addclaim which = 708 }
+		#command = { type = addclaim which = 709 }
+
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	action = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 5
+		command = { type = trigger which = 56077 }
+		command = { type = relation which = RUS value = -15 }
+		command = { type = relation which = GEO value = 25 }
+		command = { type = sleepevent which = 56078 } #southern georgia to union
+		command = { type = sleepevent which = 55057 } #dishonors Pact
+	}
+}
+
+event = {
+	id = 55056
+	random = no
+	country = U00
+
+	name = "The Partition of Georgia - Territory"
+	desc = "North Georgia to Russia"
+  	style = 2
+  	picture = "news_paper"
+	action = {
+		name = "ACTIONNAME2018A" # Honor the Pact
+		command = { type = relation which = RUS value = 10 }
+		command = { type = secedearea which = RUS value = "Astrakhan" }
+		command = { type = secedearea which = RUS value = "Nalchik" }
+
+		command = { type = secedeprovince which = RUS value = 710 }
+		command = { type = secedeprovince which = RUS value = 702 }
+		command = { type = secedeprovince which = RUS value = 700 }
+	}
+}
+
+event = {
+	id = 55057
+	random = no
+	country = U00
+
+	trigger = {
+		flag = Pact_Broken
+	}
+
+	name = "The Partition of Georgia - Russia Reneges!"
+	desc = "The Russians have reneged on the deal! They refuse to give us the promised territories!"
+	style = 2
+	picture = "Mol_Rib"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 25
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTIONNAME2605A" # We shall never forget this!
+		ai_chance = 70
+		command = { type = dissent value = 3 }
+		command = { type = relation which = RUS value = -30 }
+		command = { type = clrflag which = Pact_Broken }
+	}
+	action = {
+		name = "ACTIONNAME2605B" # This means war!
+		ai_chance = 30
+		command = { type = war which = RUS }
+		command = { type = dissent value = -3 }
+		command = { type = clrflag which = Pact_Broken }
+	}
+}
+
+event = {
+	id = 55058
+	random = no
+	country = U00
+
+	trigger = {
+		NOT = { event = 56076 }
+		OR = {
+			non_aggression = { country = RUS country = U00 }
+			guarantee = { country = U00 country = GEO }
+		}
+		atwar = no
+		OR = {
+			AND = {
+				under_attack = GEO
+				war = { country = RUS country = GEO }
+			}
+			AND = {
+				NOT = { exists = GEO }
+				control = { province = 709 data = RUS } #Tblisi
+			}
+		}
+	}
+
+	name = "Russia invades Georgia without our blessing!"
+	desc = "We will never forget this!"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 17
+	deathdate = { day = 28 month = january year = 1943 }
+
+	action = {
+		name = "EVT_2650_ACTA"
+		ai_chance = 90
+		command = { type = dissent value = 5 }
+		command = { type = relation which = RUS value = -40 }
+	}
+	action = {
+		name = "EVT_2650_ACTB"
+		ai_chance = 10
+		command = { type = relation which = GEO value = 50 }
+		command = { type = war which = RUS }
+		command = { type = dissent value = -5 }
+	}
+}
+
+event = {
+	id = 55060
+	country = U00
+
+	decision = {
+		exists = RSI
+		NOT = { ispuppet = U00 }
+	}
+	decision_trigger = {
+		puppet = { country = RSI country = U00 }
+		ai = RSI
+	}
+
+	trigger = {
+		NOT = { exists = U14 }
+		ai = RSI
+		exists = RSI
+		#NOT = { lost_national = { country = RSI value = 5 } }
+		puppet = { country = RSI country = U00 }
+		NOT = { ispuppet = U00 }
+
+		control = { province = 407 data = -3 } #Milan
+		control = { province = 400 data = -3 } #Venice
+		control = { province = 419 data = -3 } #Rome
+		#AUS
+		control = { province = 405 data = -3 }
+		control = { province = 403 data = -3 }
+		control = { province = 349 data = -3 }
+		control = { province = 347 data = -3 }
+		control = { province = 352 data = -3 }
+		#
+		control = { province = 409 } #Constantinople
+		control = { province = 377 } #Athens
+		control = { province = 355 } #Sarajevo
+		control = { province = 321 } #Sofia
+		control = { province = 1075 } #Ankara
+	}
+
+	name = "Roman Unification"
+	desc = "In 1890, a plebiscite was held in the Italian Commune, to formally become part of the Union of Rome. However, because the AI is not able to deal with split territories very well, a puppet was created. If you want you may now merge the countries again. You will receive all units, manpower, and resources of them."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { type = inherit which = RSI value = 1 }
+		command = { type = dissent value = -1 }
+		#AUS
+		command = { type = addcore which = 405 }
+		command = { type = addcore which = 404 }
+		command = { type = addcore which = 403 }
+		command = { type = addcore which = 349 }
+		command = { trigger = { event = 55001 } type = addcore which = 352 }
+		command = { trigger = { event = 55001 } type = addcore which = 347 }
+		#command = { trigger = { event = 55001 } type = addcore which = 406 }
+		#GER
+		command = { type = addcore which = 402 }
+		#ITA
+		command = { type = addcore which = 400 }
+		command = { type = addcore which = 411 }
+		command = { type = addcore which = 430 }
+		command = { type = addcore which = 431 }
+		command = { type = addcore which = 425 }
+		command = { type = addcore which = 422 }
+		command = { type = addcore which = 424 }
+		command = { type = addcore which = 421 }
+		command = { type = addcore which = 420 }
+		command = { type = addcore which = 416 }
+		command = { type = addcore which = 423 }
+		command = { type = addcore which = 415 }
+		command = { type = addcore which = 414 }
+		command = { type = addcore which = 419 }
+		command = { type = addcore which = 410 }
+		command = { type = addcore which = 412 }
+		command = { type = addcore which = 413 }
+		command = { type = addcore which = 393 }
+		command = { type = addcore which = 408 }
+		command = { type = addcore which = 396 }
+		command = { type = addcore which = 398 }
+		command = { type = addcore which = 407 }
+		command = { type = addcore which = 401 }
+		command = { type = addcore which = 434 }
+		command = { type = addcore which = 350 }
+		command = { type = addcore which = 343 }
+		command = { type = addcore which = 413 }
+		command = { type = addcore which = 417 }
+		command = { type = addcore which = 435 }
+		command = { type = addcore which = 432 }
+		command = { type = addcore which = 94 }
+		command = { type = addcore which = 399 }
+		command = { type = addcore which = 371 }
+		command = { type = addcore which = 429 }
+		command = { type = addcore which = 394 }
+		command = { type = addcore which = 395 }
+		command = { type = addcore which = 418 }
+		command = { type = addcore which = 426 }
+		command = { type = addcore which = 427 }
+		command = { type = addcore which = 428 }
+		command = { type = addcore which = 433 }
+		#FRA
+		command = { type = addcore which = 91 }
+		command = { trigger = { NOT = { exists = VIC } } type = addcore which = 87 }
+		command = { trigger = { NOT = { exists = VIC } } type = addcore which = 90 }
+		#
+		command = { trigger = { ai = no } type = supplies value = -500 }
+		command = { trigger = { ai = no } type = supplies value = 500 where = 422 } #taranto
+	}
+}
+
+event = {
+	id = 55061
+	country = U00
+
+	name = "Roman Unification"
+	desc = "The Socialist Lombard government wants to join us!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { type = inherit which = U14 value = 1 }
+		command = { type = dissent value = -1 }
+		#AUS
+		command = { type = addcore which = 405 }
+		command = { type = addcore which = 404 }
+		command = { type = addcore which = 403 }
+		command = { type = addcore which = 349 }
+		command = { trigger = { event = 55001 } type = addcore which = 352 }
+		command = { trigger = { event = 55001 } type = addcore which = 347 }
+		#command = { trigger = { event = 55001 } type = addcore which = 406 }
+		#GER
+		command = { type = addcore which = 402 }
+		#ITA
+		command = { type = addcore which = 400 }
+		command = { type = addcore which = 411 }
+		command = { type = addcore which = 430 }
+		command = { type = addcore which = 431 }
+		command = { type = addcore which = 425 }
+		command = { type = addcore which = 422 }
+		command = { type = addcore which = 424 }
+		command = { type = addcore which = 421 }
+		command = { type = addcore which = 420 }
+		command = { type = addcore which = 416 }
+		command = { type = addcore which = 423 }
+		command = { type = addcore which = 415 }
+		command = { type = addcore which = 414 }
+		command = { type = addcore which = 419 }
+		command = { type = addcore which = 410 }
+		command = { type = addcore which = 412 }
+		command = { type = addcore which = 413 }
+		command = { type = addcore which = 393 }
+		command = { type = addcore which = 408 }
+		command = { type = addcore which = 396 }
+		command = { type = addcore which = 398 }
+		command = { type = addcore which = 407 }
+		command = { type = addcore which = 401 }
+		command = { type = addcore which = 434 }
+		command = { type = addcore which = 350 }
+		command = { type = addcore which = 343 }
+		command = { type = addcore which = 413 }
+		command = { type = addcore which = 417 }
+		command = { type = addcore which = 435 }
+		command = { type = addcore which = 432 }
+		command = { type = addcore which = 94 }
+		command = { type = addcore which = 399 }
+		command = { type = addcore which = 371 }
+		command = { type = addcore which = 429 }
+		command = { type = addcore which = 394 }
+		command = { type = addcore which = 395 }
+		command = { type = addcore which = 418 }
+		command = { type = addcore which = 426 }
+		command = { type = addcore which = 427 }
+		command = { type = addcore which = 428 }
+		command = { type = addcore which = 433 }
+		#FRA
+		command = { type = addcore which = 91 }
+		command = { trigger = { NOT = { exists = VIC } } type = addcore which = 87 }
+		command = { trigger = { NOT = { exists = VIC } } type = addcore which = 90 }
+		#
+		command = { trigger = { ai = no NOT = { event = 55060 } } type = supplies value = -500 }
+		command = { trigger = { ai = no NOT = { event = 55060 } } type = supplies value = 500 where = 422 } #taranto
+	}
+}

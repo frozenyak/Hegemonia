@@ -1,0 +1,33 @@
+###63000-63999###
+
+event = {
+	id = 63000
+	country = CAN
+	
+	trigger = {
+		alliance = { country = USA country = GER }
+		NOT = { alliance = { country = CAN country = GER } }
+		NOT = { war = { country = CAN country = GER } }
+	}
+
+	name = "Allying with Germany?"
+	desc = "America, our ally and protector, has allied itself with Germany. Should we do the same?"
+	style = 1
+	picture = "politics4"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3 
+	deathdate = { day = 1 month = january year = 1963 }	
+
+	action = {
+		name = "Yes, join with Germany"
+		ai_chance = 95
+		command = { type = relation which = GER value = 50 }
+		command = { type = trigger which = 35053 }
+	}
+	action = {
+		name = "No, we do not want this"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}

@@ -1,0 +1,2615 @@
+###35000-35999###
+#list is incomplete and not completely accurate because the grouping
+#and numbering is an unordered mess. thanks a lot wiz.
+#35000 dublin
+#35022 riots commie
+#35023 riots liberal
+#35024 riots monarchist
+#35031 coup - success
+#35032 coup - failure
+#35033 general strike
+#35034 general strike escalates
+#35035 general strike subsides
+#35040 order restored
+#35041 backlash
+#35042 frederick iii
+#35043 white terror
+#35045 leaving HRE
+#35049 ceylon
+#35050 japan-china
+#35052 alliances
+#35054 odinholm
+#35063 suez
+#35078 fate of netherlands
+#35080 fate of france
+#35082 fate of britain
+#35102 hre restoration fails
+#35105 gcw colony support
+#
+event = {
+	id = 35005
+	country = GER
+
+	name = "Lithuania Leaves the HRE"
+	desc = "Lithuania has withdrawn from the HRE, citing our 'betrayal' by cooperating with the League as their reason. The loss of the entire Commonwealth to us has not gone over well with our reactionary power base..."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = relation which = LIT value = -200 }
+		command = { type = dissent value = 3 }
+		command = { type = setflag which = LIT_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35006
+	country = GER
+
+	name = "Lithuania Protests"
+	desc = "Lithuania has openly protested against our talks with the League, demanding that we end them and threatening to withdraw from the HRE. In addition to the diplomatic damage, this protest has given the matter public attention among our reactionary base, who are not amused..."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "What a disaster, end the talks!"
+		ai_chance = 85
+		command = { type = setflag which = GER_end_talks }
+		command = { type = relation which = LIT value = 25 }
+		command = { type = relation which = SPA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = RUS value = -50 }
+		command = { type = dissent value = 2 }
+		command = { type = trigger which = 44001 }
+	}
+	action = {
+		name = "Lithuania be damned, the talks continue!"
+		ai_chance = 15
+		command = { type = relation which = LIT value = -100 }
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 44002 }
+	}
+}
+
+event = {
+	id = 35007
+	country = GER
+
+	name = "Switzerland Protests"
+	desc = "Switzerland has protested our decision to cancel the talks with the League, stirring up the feelings of our liberal population in the process."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 35008
+	country = GER
+
+	name = "Switzerland Leaves the HRE"
+	desc = "Switzerland has withdrawn from the HRE, citing our inability to cooperate with the League as their reason. This has of course inflamed opinions among our liberal population."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = relation which = SCH value = -200 }
+		command = { type = dissent value = 1 }
+		command = { type = setflag which = SCH_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35011
+	country = GER
+
+	trigger = {
+		flag = FRA_belligerent_GER
+	}
+
+	name = "French Belligerence"
+	desc = "The news of France's threatening posture against us at the Dublin Conference has spread quickly through the nation and served to rally support among the population against the Comintern. The communists are weakened as a result."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 18 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Stupid Frenchmen!"
+		command = { type = local_setflag which = communists_minus_1 }
+		command = { type = dissent value = -2 }
+	}
+}
+
+
+event = {
+	id = 35012
+	country = GER
+
+	trigger = {
+		flag = FRA_claim_alsace
+	}
+
+	name = "France Claims Alsace-Lorraine"
+	desc = "France has reinforced its claim to Elsass-Lothringen at the Dublin Conference, an event that has served to rally some support for the Kaiser among the reactionary base."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 18 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "No ground to the commies!"
+		command = { type = dissent value = -1 } #-2
+	}
+}
+
+event = {
+	id = 35014
+	country = GER
+
+	trigger = {
+		event = 44002
+	}
+
+	name = "Monarchists Undermined"
+	desc = "Our decision to continue the talks with Iberia in face of opposition from Lithuania and our reactionary base has undermined both our support and the power of our base."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = local_setflag which = reactionaries_minus_1 }
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 35022
+	country = GER
+	persistent = yes
+	trigger = {
+		NOT = { government = communist }
+		OR = {
+			#Communists at +0: 15%
+			AND = {
+				NOT = { local_flag = communists_minus_1 }
+				NOT = { local_flag = communists_plus_1 }
+				NOT = { local_flag = communists_plus_2 }
+				NOT = { local_flag = communists_minus_2 }
+				random = 15
+			}
+			AND = {
+				local_flag = communists_minus_1
+				local_flag = communists_plus_2
+				random = 15
+			}
+			AND = {
+				local_flag = communists_minus_2
+				local_flag = communists_plus_1
+				random = 15
+			}
+			#Communists at -1: 10%
+			AND = {
+				local_flag = communists_minus_1
+				NOT = { local_flag = communists_plus_2 }
+				NOT = { local_flag = communists_minus_2 }
+				random = 10
+			}
+			AND = {
+				local_flag = communists_minus_2
+				NOT = { local_flag = communists_plus_1 }
+				NOT = { local_flag = communists_minus_1 }
+				random = 10
+			}
+			#Communists at -2: 5%
+			AND = {
+				local_flag = communists_minus_1
+				local_flag = communists_minus_2
+				random = 5
+			}
+			#Communists at +1: 20%
+			AND = {
+				local_flag = communists_plus_1
+				NOT = { local_flag = communists_plus_2 }
+				NOT = { local_flag = communists_minus_2 }
+				random = 20
+			}
+			AND = {
+				local_flag = communists_plus_2
+				NOT = { local_flag = communists_plus_1 }
+				NOT = { local_flag = communists_minus_1 }
+				random = 20
+			}
+			#Communists at +2: 25%
+			AND = {
+				local_flag = communists_plus_1
+				local_flag = communists_plus_2
+				random = 25
+			}
+		}
+
+		NOT = { local_flag = strike }
+		atwar = no
+		NOT = { dissent = 35 }
+		event = { id = 35033 days = 30 }
+	}
+
+	name = "Communist Riots!"
+	desc = "The communists have taken to the streets to protest the recent actions of the government, looting and burning. It took most of the day for the police to restore order."
+	style = 1
+	picture = "riot1"
+
+	date = { day = 1 month = february year = 1936 }
+	offset = 18
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "Damned reds!"
+		command = { type = dissent value = 3 }
+		command = { trigger = { flag = HRE_comintern_pact } type = dissent value = -1 }
+		command = { trigger = { OR = { incabinet = 2 incabinet = 40 incabinet = 36 incabinet = 110 incabinet = 329 } } type = dissent value = -1 }
+		command = { trigger = { event = 35034 } type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 35023
+	country = GER
+	persistent = yes
+	trigger = {
+		NOT = { government = democratic }
+		OR = {
+			#Liberals at +0: 15%
+			AND = {
+				NOT = { local_flag = liberals_minus_1 }
+				NOT = { local_flag = liberals_plus_1 }
+				NOT = { local_flag = liberals_plus_2 }
+				NOT = { local_flag = liberals_minus_2 }
+				random = 15
+			}
+			AND = {
+				local_flag = liberals_minus_1
+				local_flag = liberals_plus_2
+				random = 15
+			}
+			AND = {
+				local_flag = liberals_minus_2
+				local_flag = liberals_plus_1
+				random = 15
+			}
+			#Liberals at -1: 10%
+			AND = {
+				local_flag = liberals_minus_1
+				NOT = { local_flag = liberals_plus_2 }
+				NOT = { local_flag = liberals_minus_2 }
+				random = 10
+			}
+			AND = {
+				local_flag = liberals_minus_2
+				NOT = { local_flag = liberals_plus_1 }
+				NOT = { local_flag = liberals_minus_1 }
+				random = 10
+			}
+			#Liberals at -2: 5%
+			AND = {
+				local_flag = liberals_minus_1
+				local_flag = liberals_minus_2
+				random = 5
+			}
+			#Liberals at +1: 20%
+			AND = {
+				local_flag = liberals_plus_1
+				NOT = { local_flag = liberals_plus_2 }
+				NOT = { local_flag = liberals_minus_2 }
+				random = 20
+			}
+			AND = {
+				local_flag = liberals_plus_2
+				NOT = { local_flag = liberals_plus_1 }
+				NOT = { local_flag = liberals_minus_1 }
+				random = 20
+			}
+			#liberals at +2: 25%
+			AND = {
+				local_flag = liberals_plus_1
+				local_flag = liberals_plus_2
+				random = 25
+			}
+		}
+
+		NOT = { local_flag = strike }
+		atwar = no
+		NOT = { dissent = 35 }
+		event = { id = 35033 days = 30 }
+	}
+
+	name = "Anarchist Riots!"
+	desc = "Anarchists and liberals have taken to the streets to protest the recent actions of the government, looting and burning. It took most of the day for the police to restore order."
+	style = 1
+	picture = "riot2"
+
+	date = { day = 1 month = february year = 1936 }
+	offset = 18
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "A pack of rabble!"
+		command = { type = dissent value = 3 }
+		command = { trigger = { flag = HRE_league_pact } type = dissent value = -1 }
+		command = { trigger = { OR = { incabinet = 2 incabinet = 40 incabinet = 36 incabinet = 110 incabinet = 329 } } type = dissent value = -1 }
+		command = { trigger = { event = 35034 } type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 35024
+	country = GER
+	persistent = yes
+	trigger = {
+		NOT = { government = fascist }
+		OR = {
+			#Reactionaries at +0: 15%
+			AND = {
+				NOT = { local_flag = reactionaries_minus_1 }
+				NOT = { local_flag = reactionaries_plus_1 }
+				NOT = { local_flag = reactionaries_plus_2 }
+				NOT = { local_flag = reactionaries_minus_2 }
+				random = 15
+			}
+			AND = {
+				local_flag = reactionaries_minus_1
+				local_flag = reactionaries_plus_2
+				random = 15
+			}
+			AND = {
+				local_flag = reactionaries_minus_2
+				local_flag = reactionaries_plus_1
+				random = 15
+			}
+			#Reactionaries at -1: 10%
+			AND = {
+				local_flag = reactionaries_minus_1
+				NOT = { local_flag = reactionaries_plus_2 }
+				NOT = { local_flag = reactionaries_minus_2 }
+				random = 10
+			}
+			AND = {
+				local_flag = reactionaries_minus_2
+				NOT = { local_flag = reactionaries_plus_1 }
+				NOT = { local_flag = reactionaries_minus_1 }
+				random = 10
+			}
+			#Reactionaries at -2: 5%
+			AND = {
+				local_flag = reactionaries_minus_1
+				local_flag = reactionaries_minus_2
+				random = 5
+			}
+			#Reactionaries at +1: 20%
+			AND = {
+				local_flag = reactionaries_plus_1
+				NOT = { local_flag = reactionaries_plus_2 }
+				NOT = { local_flag = reactionaries_minus_2 }
+				random = 20
+			}
+			AND = {
+				local_flag = reactionaries_plus_2
+				NOT = { local_flag = reactionaries_plus_1 }
+				NOT = { local_flag = reactionaries_minus_1 }
+				random = 20
+			}
+			#Reactionaries at +2: 25%
+			AND = {
+				local_flag = reactionaries_plus_1
+				local_flag = reactionaries_plus_2
+				random = 25
+			}
+		}
+
+		NOT = { local_flag = strike }
+		atwar = no
+		NOT = { dissent = 35 }
+		event = { id = 35033 days = 30 }
+	}
+
+	name = "Monarchist Riots!"
+	desc = "Conservatives and reactionaries have taken to the streets to protest the recent actions of the government, looting and burning. It took most of the day for the police to restore order."
+	style = 1
+	picture = "riot3"
+
+	date = { day = 1 month = february year = 1936 }
+	offset = 18
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "Backwards-thinking fools!"
+		command = { type = dissent value = 3 }
+		command = { trigger = { NOT = { flag = HRE_league_pact } NOT = { flag = HRE_comintern_pact } } type = dissent value = -1 }
+		command = { trigger = { OR = { flag = HRE_league_pact flag = HRE_comintern_pact } } type = dissent value = 1 }
+		#command = { trigger = { flag = FRA_claim_alsace } type = dissent value = -1 }
+		command = { trigger = { OR = { incabinet = 37 incabinet = 61 incabinet = 214 } } type = dissent value = -1 }
+	}
+}
+
+#german cw
+#35028
+# id = 35029
+# id = 35030
+
+event = {
+	id = 35031
+	country = GER
+
+	trigger = {
+		dissent = 25
+		NOT = { government = democratic }
+		OR = {
+			headofstate = 1
+			headofstate = 37
+		}
+		OR = {
+			#Liberals at +0: 15%
+			AND = {
+				NOT = { local_flag = liberals_minus_1 }
+				NOT = { local_flag = liberals_plus_1 }
+				NOT = { local_flag = liberals_plus_2 }
+				NOT = { local_flag = liberals_minus_2 }
+				random = 15
+			}
+			AND = {
+				local_flag = liberals_minus_1
+				local_flag = liberals_plus_2
+				random = 15
+			}
+			AND = {
+				local_flag = liberals_minus_2
+				local_flag = liberals_plus_1
+				random = 15
+			}
+			#Liberals at -1: 10%
+			AND = {
+				local_flag = liberals_minus_1
+				NOT = { local_flag = liberals_plus_2 }
+				NOT = { local_flag = liberals_minus_2 }
+				random = 10
+			}
+			AND = {
+				local_flag = liberals_minus_2
+				NOT = { local_flag = liberals_plus_1 }
+				NOT = { local_flag = liberals_minus_1 }
+				random = 10
+			}
+			#Liberals at -2: 5%
+			AND = {
+				local_flag = liberals_minus_1
+				local_flag = liberals_minus_2
+				random = 5
+			}
+			#Liberals at +1: 20%
+			AND = {
+				local_flag = liberals_plus_1
+				NOT = { local_flag = liberals_plus_2 }
+				NOT = { local_flag = liberals_minus_2 }
+				random = 20
+			}
+			AND = {
+				local_flag = liberals_plus_2
+				NOT = { local_flag = liberals_plus_1 }
+				NOT = { local_flag = liberals_minus_1 }
+				random = 20
+			}
+			#liberals at +2: 25%
+			AND = {
+				local_flag = liberals_plus_1
+				local_flag = liberals_plus_2
+				random = 25
+			}
+		}
+		event = { id = 35033 days = 30 }
+		NOT = { local_flag = strike }
+		local_flag = dublin_conference_end
+		#flag = general_strike_army
+	}
+
+	name = "The Liberal Coup - Success"
+	desc = "Desperate in face of the growing social chaos and perceiving Waldemar VII as the source of it, Prince Frederick has staged a coup with the help of liberal officers in the military, dethroning Waldemar and seizing power. In his first public speech, Frederick has promised to bring the contesting factions together and find an acceptable way forward for all of Germany."
+	style = 2
+	picture = "coup"
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "A new way forward for Germany!"
+		command = { trigger = { NOT = { dissent = 30 } } type = dissent value = -10 }
+		command = { trigger = { dissent = 30 } type = dissent value = -15 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = set_domestic which = freedom value = 7 }
+		command = { type = set_domestic which = democratic value = 7 }
+		#command = { type = set_domestic which = free_market value = 5 }
+		command = { type = headofstate which = 36 }
+		command = { type = headofgovernment which = 2 }
+		command = { type = ministerofsecurity which = 116 }
+		command = { type = foreignminister which = 64 }
+		command = { type = armamentminister which = 95 }
+		command = { type = ministerofintelligence which = 306 }
+		#waldemar
+		command = { type = sleepminister which = 1 }
+		command = { type = sleepminister which = 37 }
+		command = { type = sleepminister which = 330 }
+		#
+		command = { type = sleepevent which = 35032 }
+		#riots
+		command = { type = sleepevent which = 35022 }
+		command = { type = sleepevent which = 35023 }
+		#
+		command = { type = local_setflag which = liberals_plus_2 }
+		command = { type = local_setflag which = reactionaries_minus_2 }
+	}
+}
+
+event = {
+	id = 35032
+	country = GER
+
+	trigger = {
+		dissent = 25
+		NOT = { government = democratic }
+		OR = {
+			headofstate = 1
+			headofstate = 37
+		}
+		OR = {
+			#Reactionaries at +0: 15%
+			AND = {
+				NOT = { local_flag = reactionaries_minus_1 }
+				NOT = { local_flag = reactionaries_plus_1 }
+				NOT = { local_flag = reactionaries_plus_2 }
+				NOT = { local_flag = reactionaries_minus_2 }
+				random = 15
+			}
+			AND = {
+				local_flag = reactionaries_minus_1
+				local_flag = reactionaries_plus_2
+				random = 15
+			}
+			AND = {
+				local_flag = reactionaries_minus_2
+				local_flag = reactionaries_plus_1
+				random = 15
+			}
+			#Reactionaries at -1: 10%
+			AND = {
+				local_flag = reactionaries_minus_1
+				NOT = { local_flag = reactionaries_plus_2 }
+				NOT = { local_flag = reactionaries_minus_2 }
+				random = 10
+			}
+			AND = {
+				local_flag = reactionaries_minus_2
+				NOT = { local_flag = reactionaries_plus_1 }
+				NOT = { local_flag = reactionaries_minus_1 }
+				random = 10
+			}
+			#Reactionaries at -2: 5%
+			AND = {
+				local_flag = reactionaries_minus_1
+				local_flag = reactionaries_minus_2
+				random = 5
+			}
+			#Reactionaries at +1: 20%
+			AND = {
+				local_flag = reactionaries_plus_1
+				NOT = { local_flag = reactionaries_plus_2 }
+				NOT = { local_flag = reactionaries_minus_2 }
+				random = 20
+			}
+			AND = {
+				local_flag = reactionaries_plus_2
+				NOT = { local_flag = reactionaries_plus_1 }
+				NOT = { local_flag = reactionaries_minus_1 }
+				random = 20
+			}
+			#Reactionaries at +2: 25%
+			AND = {
+				local_flag = reactionaries_plus_1
+				local_flag = reactionaries_plus_2
+				random = 25
+			}
+		}
+		event = { id = 35033 days = 30 }
+		NOT = { local_flag = strike }
+		local_flag = dublin_conference_end
+		#flag = general_strike_army
+	}
+
+	name = "The Liberal Coup - Failure"
+	desc = "Desperate in face of the growing social chaos and perceiving Waldemar VII as the source of it, Prince Frederick has staged a coup with the help of liberal officers in the military. Betrayed by a co-conspirator, he and his supporters are arrested by the secret police as Waldemar cracks down on his enemies."
+	style = 2
+	picture = "failed_coup"
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 9
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "Throw them in irons!"
+		command = { type = dissent value = -5 }
+		command = { type = ministerofsecurity which = 5 }
+		command = { type = sleepminister which = 110 }
+		command = { type = sleepminister which = 329 }
+		command = { type = set_domestic which = political_left value = 3 }
+		#command = { type = set_domestic which = freedom value = 3 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = set_domestic which = democratic value = 3 }
+		#command = { type = set_domestic which = free_market value = 3 }
+		command = { type = sleepevent which = 35031 }
+		#reactionary riots
+		command = { type = sleepevent which = 35024 }
+		#
+		command = { type = local_setflag which = reactionaries_plus_2 }
+		command = { type = local_setflag which = liberals_minus_1 }
+		command = { type = local_setflag which = communists_minus_1 }
+	}
+}
+
+event = {
+	id = 35033
+	country = GER
+	save_date = yes
+	trigger = {
+		government = fascist
+		local_flag = dublin_conference_end
+		#NOT = { domestic = { type = democratic value = 5 } }
+		#NOT = { domestic = { type = freedom value = 5 } }
+		atwar = no
+		#NOT = { incabinet = 2 }
+		NOT = { local_flag = strike }
+	}
+
+	name = "General Strike Called"
+	desc = "Unions throughout Germany have called a general strike to protest the lack of power enjoyed by the broad masses in favor of the entrenched aristocratic elite. There have been reports of several attacks on strike-breakers. This has the possibility of paralyzing our economy completely. Should we send in the army to protect the strike breakers or negotiate with the unions?"
+	style = 1
+	picture = "Strike1"
+
+	date = { day = 30 month = april year = 1936 }
+	offset = 5
+	deathdate = { day = 2 month = may year = 1937 }
+
+	action = {
+		name = "Negotiate!"
+		ai_chance = 60
+		command = { type = free_ic value = -50 } #-75
+		command = { type = free_energy value = -600 }
+		command = { type = setflag which = general_strike_negotiate }
+		command = { type = local_setflag which = strike }
+	}
+	action = {
+		name = "Send in the army!"
+		ai_chance = 40
+		command = { type = free_ic value = -25 } #-50
+		command = { type = free_energy value = -450 } #-600
+		command = { type = setflag which = general_strike_army }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = local_setflag which = strike }
+	}
+}
+
+event = {
+	id = 35034
+	country = GER
+
+	trigger = {
+		flag = general_strike_army
+		random = 30
+		event = { id = 35033 days = 10 }
+		NOT = { event = 35035 }
+	}
+
+	name = "General Strike Escalates"
+	desc = "Although the army has succeeded in protecting the strike breakers, violent clashes between soldiers and workers has only served to escalate the conflict, and a recent incident in which a colonel ordered his men to gun down a protesting mob has provoked outrage among workers across all of Germany."
+	style = 1
+	picture = "Strike1"
+
+	date = { day = 1 month = may year = 1936 }
+	offset = 8
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { trigger = { flag = general_strike_negotiate } type = free_ic value = 50 } #75
+		command = { trigger = { flag = general_strike_negotiate } type = free_energy value = 600 }
+		command = { trigger = { NOT = { flag = general_strike_negotiate } } type = free_ic value = 25 }
+		command = { trigger = { NOT = { flag = general_strike_negotiate } } type = free_energy value = 450 }
+		command = { type = local_setflag which = communists_plus_2 }
+		command = { type = domestic which = freedom value = -1 } #democratic
+		command = { type = sleepevent which = 35035 }
+		command = { type = local_clrflag which = strike }
+	}
+}
+
+event = {
+	id = 35035
+	country = GER
+
+	trigger = {
+		flag = general_strike_army
+		random = 10
+		event = { id = 35033 days = 10 }
+		NOT = { event = 35034 }
+	}
+
+	name = "General Strike Subsides"
+	desc = "After several clashes between workers and military, the workers have given up and returned to work. The strike has been successfully broken, though at the expense of some discontent in the political left."
+	style = 1
+	picture = "Strike1"
+
+	date = { day = 1 month = may year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -5 } #+5
+		command = { trigger = { flag = general_strike_negotiate } type = free_ic value = 50 } #75
+		command = { trigger = { flag = general_strike_negotiate } type = free_energy value = 600 }
+		command = { trigger = { NOT = { flag = general_strike_negotiate } } type = free_ic value = 25 }
+		command = { trigger = { NOT = { flag = general_strike_negotiate } } type = free_energy value = 450 }
+		command = { type = local_setflag which = communists_minus_2 }
+		command = { type = sleepevent which = 35034 }
+		command = { type = local_clrflag which = strike }
+	}
+}
+
+event = {
+	id = 35036
+	country = GER
+
+	trigger = {
+		flag = general_strike_negotiate
+		random = 30
+	}
+
+	name = "General Strike Negotiations"
+	desc = "The strike leaders have arrived in Frankfurt and presented their demands: Increased unemployment pay and pensions for workers, subsidized housing, and a reform of the government to allow public participation in the political process."
+	style = 1
+	picture = "Strike1"
+
+	date = { day = 1 month = may year = 1936 }
+	offset = 5
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Agree to the terms"
+		ai_chance = 35
+		command = { type = dissent value = -5 }
+		command = { type = free_ic value = 50 } #75
+		command = { type = free_energy value = 600 }
+		command = { trigger = { ai = no } type = money value = -200 }
+		#command = { type = set_domestic which = political_left value = 4 }
+		#command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = democratic value = 5 }
+		#command = { type = set_domestic which = free_market value = 4 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = domestic which = democratic value = 2 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = local_setflag which = communists_plus_2 }
+		command = { type = sleepevent which = 35037 }
+		command = { type = local_clrflag which = strike }
+	}
+	action = {
+		name = "Stall for better terms"
+		ai_chance = 50
+		#command = { type = dissent value = 2 }
+		command = { type = sleepevent which = 35037 }
+		command = { type = setflag which = general_strike_negotiate2 }
+	}
+	action = {
+		name = "Enough negotiations! Send in the army!"
+		ai_chance = 15
+		command = { type = sleepevent which = 35037 }
+		command = { type = setflag which = general_strike_army }
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+event = {
+	id = 35037
+	country = GER
+
+	trigger = {
+		flag = general_strike_negotiate
+		random = 10
+	}
+
+	name = "General Strike Negotiations"
+	desc = "The strike leaders have arrived in Frankfurt and presented their demands: Increased unemployment pay and pensions for workers as well as subsidized housing. The workers have been unable to agree on a political platform, and a few minor reforms should be enough to placate them."
+	style = 1
+	picture = "Strike1"
+
+	date = { day = 1 month = may year = 1936 }
+	offset = 4
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Agree to the terms"
+		ai_chance = 99
+		command = { type = dissent value = -5 }
+		command = { type = free_ic value = 50 } #75
+		command = { type = free_energy value = 600 }
+		command = { trigger = { ai = no } type = money value = -150 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = local_setflag which = communists_plus_2 }
+		command = { type = sleepevent which = 35036 }
+		command = { type = local_clrflag which = strike }
+	}
+	action = {
+		name = "Enough negotiations! Send in the army!"
+		ai_chance = 1
+		command = { type = setflag which = general_strike_army }
+		command = { type = sleepevent which = 35036 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+event = {
+	id = 35038
+	country = GER
+
+	trigger = {
+		flag = general_strike_negotiate2
+		random = 30
+	}
+
+	name = "General Strike Negotiations"
+	desc = "After several days of discussions, our attempt to get better terms have failed, and the strike leaders have made clear that they do not intent to back down. Our choices are now limited."
+	style = 1
+	picture = "Strike1"
+
+	date = { day = 1 month = may year = 1936 }
+	offset = 5
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Agree to the terms"
+		ai_chance = 60
+		command = { type = dissent value = -5 }
+		command = { type = free_ic value = 50 } #75
+		command = { type = free_energy value = 600 }
+		command = { trigger = { ai = no } type = money value = -200 }
+		#command = { type = set_domestic which = political_left value = 4 }
+		#command = { type = set_domestic which = freedom value = 5 }
+		#command = { type = set_domestic which = democratic value = 5 }
+		#command = { type = set_domestic which = free_market value = 4 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = domestic which = democratic value = 2 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = local_setflag which = communists_plus_2 }
+		command = { type = sleepevent which = 35039 }
+		command = { type = local_clrflag which = strike }
+	}
+	action = {
+		name = "Enough negotiations! Send in the army!"
+		ai_chance = 40
+		command = { type = setflag which = general_strike_army }
+		command = { type = sleepevent which = 35039 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+event = {
+	id = 35039
+	country = GER
+
+	trigger = {
+		flag = general_strike_negotiate2
+		random = 10
+	}
+
+	name = "General Strike Negotiations"
+	desc = "After several days of discussions, our attempt to get better terms have succeeded, and the strike leaders have backed down from most of their political demands. We should now be able to placate them with some economic concessions and a few symbolic reforms."
+	style = 1
+	picture = "Strike1"
+
+	date = { day = 1 month = may year = 1936 }
+	offset = 4
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Agree to the terms"
+		ai_chance = 99
+		command = { type = dissent value = -5 }
+		command = { type = free_ic value = 50 } #75
+		command = { type = free_energy value = 600 }
+		command = { trigger = { ai = no } type = money value = -150 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = local_setflag which = communists_plus_2 }
+		command = { type = sleepevent which = 35038 }
+		command = { type = local_clrflag which = strike }
+	}
+	action = {
+		name = "Enough negotiations! Send in the army!"
+		ai_chance = 1
+		command = { type = setflag which = general_strike_army }
+		command = { type = sleepevent which = 35038 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+event = {
+	id = 35040
+	country = GER
+
+	trigger = {
+		NOT = { dissent = 2 }
+		event = 35033
+		NOT = { local_flag = strike }
+		#NOT = { flag = general_strike_army }
+	}
+
+	name = "Order Restored"
+	desc = "After the last few months of riots and unrest, calm seems to finally have settled over Germany. The threat of civil war has passed."
+	style = 1
+	picture = "militaryparade1"
+
+	date = { day = 1 month = january year = 1937 } #1936
+	offset = 90 #180 #14
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = sleepevent which = 35022 }
+		command = { type = sleepevent which = 35023 }
+		command = { type = sleepevent which = 35024 }
+		command = { type = sleepevent which = 35025 }
+		command = { type = sleepevent which = 35026 }
+		command = { type = sleepevent which = 35027 }
+		command = { type = sleepevent which = 2052003 }
+		command = { type = sleepevent which = 35029 }
+		command = { type = sleepevent which = 35030 }
+		command = { type = sleepevent which = 35031 }
+		command = { type = sleepevent which = 35032 }
+		command = { type = sleepevent which = 35033 }
+		command = { type = sleepevent which = 35041 }
+		command = { type = sleepevent which = 35042 }
+		command = { type = sleepevent which = 35043 }
+		#command = { type = sleepevent which = 35044 }
+		command = { type = sleepevent which = 28002 }
+		command = { type = sleepevent which = 51002 }
+	}
+}
+
+event = {
+	id = 35041
+	country = GER
+
+	trigger = {
+		NOT = { government = fascist }
+		OR = {
+			headofstate = 1
+			headofstate = 37
+		}
+		random = 10
+		NOT = { local_flag = reactionaries_minus_2 }
+	}
+
+	name = "Reactionary Backlash"
+	desc = "In response to recent reforms, the monarchists have come out in force to protest government actions. Numerous conservative ministers and influential aristocrats are heavily critizing Waldemar VII for giving in to the unwashed masses. The liberals, meanwhile, are rallying behind Prince Frederick who has come out as a strong supporter of the reforms."
+	style = 1
+	picture = "Riot3"
+
+	date = { day = 1 month = march year = 1937 }
+	offset = 6
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 35042
+	country = GER
+
+	trigger = {
+		event = 35041
+		random = 30
+	}
+
+	name = "Frederick III Takes Power"
+	desc = "Abandoned by his supporters and reviled by his enemies, Waldemar VII has chosen to abdicate the throne in favor of his much more popular and liberal younger brother Frederick."
+	style = 2
+	picture = "Strike1"
+
+	date = { day = 1 month = march year = 1937 }
+	offset = 12
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "A new way forward for Germany!"
+		command = { trigger = { NOT = { dissent = 30 } } type = dissent value = -10 }
+		command = { trigger = { dissent = 30 } type = dissent value = -15 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = set_domestic which = freedom value = 7 }
+		command = { type = set_domestic which = democratic value = 7 }
+		#command = { type = set_domestic which = free_market value = 5 }
+		command = { type = headofstate which = 36 }
+		command = { type = headofgovernment which = 2 }
+		command = { type = ministerofsecurity which = 116 }
+		command = { type = foreignminister which = 64 }
+		command = { type = armamentminister which = 95 }
+		command = { type = ministerofintelligence which = 306 }
+		#waldemar
+		command = { type = sleepminister which = 1 }
+		command = { type = sleepminister which = 37 }
+		command = { type = sleepminister which = 330 }
+		#
+		command = { type = sleepevent which = 35043 }
+		#riots
+		command = { type = sleepevent which = 35022 }
+		command = { type = sleepevent which = 35023 }
+		#
+		command = { type = local_setflag which = liberals_plus_2 }
+		command = { type = local_setflag which = reactionaries_minus_2 }
+	}
+	# action = {
+		# name = "Institute sweeping liberal reforms"
+		# ai_chance = 35
+		# command = { type = dissent value = 2 }
+		# command = { type = domestic which = freedom value = 2 }
+		# command = { type = domestic which = democratic value = 3 } #2
+		# command = { type = domestic which = free_market value = 2 }
+		# command = { type = domestic which = political_left value = 2 }
+		# command = { type = headofstate which = 36 }
+		# command = { type = headofgovernment which = 2 }
+		# command = { type = foreignminister which = 64 }
+		# command = { type = ministerofsecurity which = 116 }
+		# command = { type = ministerofintelligence which = 306 }
+		# command = { type = armamentminister which = 95 }
+		# command = { type = chiefofarmy which = 185 }
+		# command = { type = sleepevent which = 35043 }
+		# command = { type = local_setflag which = reactionaries_minus_2 }
+		# command = { type = local_setflag which = liberals_plus_2 }
+	# }
+	# action = {
+		# name = "Favor liberal policies"
+		# ai_chance = 35
+		# command = { type = dissent value = -2 }
+		# command = { type = domestic which = freedom value = 1 }
+		# command = { type = domestic which = democratic value = 2 } #1
+		# command = { type = domestic which = free_market value = 1 }
+		# command = { type = domestic which = political_left value = 1 }
+		# command = { type = headofstate which = 36 }
+		# command = { type = headofgovernment which = 2 }
+		# command = { type = foreignminister which = 64 }
+		# command = { type = ministerofsecurity which = 116 }
+		# command = { type = ministerofintelligence which = 306 }
+		# command = { type = sleepevent which = 35043 }
+		# command = { type = local_setflag which = liberals_plus_2 }
+	# }
+	# action = {
+		# name = "Make token concessions to the conservatives"
+		# ai_chance = 25
+		# command = { type = dissent value = -2 }
+		# #command = { type = domestic which = political_left value = -1 }
+		# #command = { type = domestic which = freedom value = -1 }
+		# command = { type = domestic which = democratic value = 1 } #-1
+		# #command = { type = domestic which = free_market value = -1 }
+		# command = { type = headofstate which = 36 }
+		# command = { type = headofgovernment which = 2 }
+		# command = { type = foreignminister which = 64 }
+		# command = { type = sleepevent which = 35043 }
+		# command = { type = local_setflag which = reactionaries_plus_2 }
+	# }
+	# action = {
+		# name = "Vow to cooperate with the conservatives"
+		# ai_chance = 5
+		# command = { type = dissent value = 2 }
+		# #command = { type = domestic which = political_left value = -1 }
+		# #command = { type = domestic which = freedom value = -2 }
+		# #command = { type = domestic which = democratic value = -2 }
+		# #command = { type = domestic which = free_market value = -2 }
+		# command = { type = headofstate which = 36 }
+		# command = { type = sleepevent which = 35043 }
+		# command = { type = local_setflag which = reactionaries_plus_2 }
+		# command = { type = local_setflag which = liberals_minus_2 }
+	# }
+}
+
+event = {
+	id = 35043
+	country = GER
+
+	trigger = {
+		event = 35041
+		random = 10
+	}
+
+	name = "The White Terror"
+	desc = "Facing ever greater pressure from his allies and enemies alike, Emperor Waldemar has chosen to unleash the secret police and army on his enemies in a string of arrests, assassinations and public executions that came to be known as the White Terror. Thousands are dead or imprisoned and many more have fled the country. The open dissent in Germany has been surpessed, through a hidden resistance remains, disrupting our industries and recruitment efforts."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 12
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Such is the price of treason!"
+		command = { trigger = { NOT = { dissent = 30 } } type = dissent value = -15 }
+		command = { trigger = { dissent = 30 } type = dissent value = -20 }
+		command = { type = industrial_modifier which = total value = -5 } #-20
+		command = { type = relative_manpower value = -10 } #-20
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = set_domestic which = democratic value = 3 }
+		#command = { type = set_domestic which = free_market value = 3 }
+		command = { type = headofstate which = 37 }
+		command = { type = headofgovernment which = 214 }
+		command = { type = ministerofsecurity which = 5 }
+		command = { type = armamentminister which = 90 }
+		command = { type = sleepminister which = 110 }
+		command = { type = setflag which = GER_white_terror }
+		command = { type = sleepevent which = 35042 }
+		#riots
+		command = { type = sleepevent which = 35022 }
+		command = { type = sleepevent which = 35023 }
+		command = { type = sleepevent which = 35024 }
+		#backlash
+		#command = { type = sleepevent which = 35041 }
+		#
+		command = { type = local_setflag which = reactionaries_plus_2 }
+		command = { type = local_setflag which = liberals_minus_2 }
+		command = { type = local_setflag which = communists_minus_2 }
+	}
+}
+
+# event = {
+	# id = 35044
+	# #random = no
+	# country = GER
+	# trigger = {
+		# NOT = { exists = U10 }
+		# flag = german_civil_war
+		# NOT = { government = fascist }
+		# headofstate = 36
+		# NOT = {
+			# AND = {
+				# local_flag = reactionaries_minus_1
+				# local_flag = reactionaries_minus_2
+				# NOT = { local_flag = reactionaries_plus_1 }
+				# NOT = { local_flag = reactionaries_plus_2 }
+			# }
+		# }
+	# }
+
+	# name = "Royalist Germany"
+	# desc = "The German Monarchists have risen up in Stuttgart in support of the 'rightful' King, Waldemar VII. They seek to oust Frederick from the throne and return Germany to conservative royalist rule."
+	# style = 1
+	# picture = "Warsaw_Uprising"
+
+	# date = { day = 1 month = march year = 1936 }
+	# offset = 2
+	# deathdate = { day = 1 month = january year = 1938 }
+
+	# action = {
+		# name = "We will crush them!"
+		# command = { type = independence which = U10 value = 1 }
+		# command = { type = trigger which = 67000 }
+	# }
+# }
+
+event = {
+	id = 35045
+	country = GER
+
+	name = "Switzerland Leaves the HRE"
+	desc = "As a result of the recent campaign of terror against our political opponents, Switzerland has withdrawn from the HRE in protest."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Good riddance"
+		command = { type = relation which = SCH value = -100 }
+		command = { type = dissent value = 1 }
+		command = { type = setflag which = SCH_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35044
+	country = GER
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "As a result of our decision to sent in the army to break up the general strike, Scandinavia has withdrawn from the HRE in protest."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Good riddance"
+		command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35046
+	country = GER
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "As a result of the recent campaign of terror against our political opponents, Scandinavia has withdrawn from the HRE in protest."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Good riddance"
+		#command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35047
+	country = GER
+
+	name = "Lithuania Leaves the HRE"
+	desc = "As a result of the recent campaign of terror against our political opponents, Lithuania has withdrawn from the HRE in protest."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Good riddance"
+		command = { type = relation which = LIT value = -100 }
+		command = { type = dissent value = 3 }
+		command = { type = setflag which = LIT_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35048
+	country = GER
+
+	name = "Readmitting Switzerland"
+	desc = "After the conservative victory in the Swiss elections, the sitting Swiss government has approached us and asked for readmittance into the HRE. What is our answer?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Welcome back!"
+		ai_chance = 95
+		command = { type = alliance which = SCH }
+		command = { type = relation which = SCH value = 100 }
+		command = { type = clrflag which = SCH_leaves_HRE }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 5
+		command = { type = relation which = SCH value = -100 }
+		command = { type = setflag which = SCH_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35049
+	country = GER
+
+	name = "The Sale of Ceylon"
+	desc = "Imperial India has offered to purchase Ceylon from us for $500. While the money itself is hardly worth it, agreeing would be very good for relations and we have other naval bases in the region, regardless."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Agree to sell Ceylon"
+		ai_chance = 65
+		command = { type = money value = 500 }
+		command = { type = removeclaim which = 1509 }
+		command = { type = removeclaim which = 1510 }
+		command = { type = removeclaim which = 1511 }
+		command = { type = secedearea which = U02 value = "Ceylon" when = 1 }
+		command = { type = relation which = U02 value = 200 }
+		command = { type = trigger which = 39010 }
+	}
+	action = {
+		trigger = {
+			NOT = { flag = german_civil_war }
+		}
+		name = ACTION_NAME_REFUSE
+		ai_chance = 35
+		command = { type = relation which = U02 value = -50 }
+	}
+}
+
+event = {
+	id = 35050
+	country = GER
+
+	trigger = {
+		NOT = { flag = german_civil_war }
+		OR = {
+			war = { country = JAP country = CYN }
+			war = { country = JAP country = CHI }
+		}
+	}
+
+	name = "Japanese Invasion of China"
+	desc = "The Japanese have launched an invasion of China. Japan claims that it is simply intervening to stabilize the region, but few are fooled by this flimsy pretext for Imperial expansion. What should we do?"
+	style = 1
+	picture = "Japan_Invasion"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 6
+	deathdate = { day = 1 month = january year = 1939 }
+
+	action = {
+		name = "This is not our concern"
+		ai_chance = 25
+		command = { type = relation which = JAP value = 25 }
+		command = { type = relation which = CHI value = -50 }
+		command = { type = relation which = CYN value = -50 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+	action = {
+		name = "Publically support Japan"
+		ai_chance = 25
+		command = { type = belligerence value = 2 }
+		command = { type = dissent value = 2 }
+		command = { type = relation which = JAP value = 100 }
+		command = { type = relation which = CHI value = -200 }
+		command = { type = relation which = CYN value = -200 }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	action = {
+		name = "Publically condemn Japan"
+		ai_chance = 50
+		command = { type = relation which = JAP value = -100 }
+		command = { type = relation which = CHI value = 50 }
+		command = { type = relation which = CYN value = 50 }
+		command = { type = setflag which = GER_condemn_JAP }
+	}
+}
+
+event = {
+	id = 35051
+	country = GER
+
+	name = "The Union of Rome Mobilizes"
+	desc = "The new government in Constantinople have ordered a partial mobilization of their forces. Our general staff is suggesting that we do the same in order to be ready for all eventualities."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		command = { type = resource which = supplies value = -500 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { trigger = { atwar = no } type = belligerence value = 5 }
+		command = { trigger = { NOT = { local_flag = MOB3 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB4 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB5 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB6 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { atwar = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
+		command = { type = local_setflag which = MOB7 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB3 }
+	}
+}
+
+event = {
+	id = 35052
+	country = GER
+
+	name = "Alliance with the American Federation?"
+	desc = "The Americans have come to us seeking an alliance to counterbalance their enemies, Mazula, who have joined the League of Democracies. They could be an interesting ally in the case war breaks out with Iberia."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 75
+		command = { type = alliance which = USA }
+		command = { type = relation which = USA value = 100 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 25
+		command = { type = relation which = USA value = -100 }
+	}
+}
+
+event = {
+	id = 35053
+	country = GER
+
+	name = "Alliance with Vinland?"
+	desc = "The Americans wish us to admit their protectorate, Vinland, to our alliance. Saying no would greatly offend our new allies."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 99
+		command = { type = alliance which = CAN }
+		command = { type = relation which = CAN value = 100 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 1
+		command = { type = relation which = CAN value = -200 }
+		command = { type = relation which = USA value = -200 }
+	}
+}
+
+event = {
+	id = 35054
+	country = GER
+
+	name = "The Annexation of Odinholm"
+	desc = "Russia has sent troops to annex the Finnish port of Odinholm. Finland has appealed to us to put diplomatic pressure on Russia to return it, or at least pay compensation."
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Demand that Russia pay compensation"
+		ai_chance = 70
+		command = { type = relation which = FIN value = 50 }
+		command = { type = relation which = RUS value = -50 }
+		command = { type = trigger which = 56019 }
+	}
+	action = {
+		name = "Demand that Russia return the port"
+		ai_chance = 20
+		command = { type = relation which = FIN value = 100 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = trigger which = 56020 }
+	}
+	action = {
+		name = "This is not our concern"
+		ai_chance = 10
+		command = { type = relation which = FIN value = -100 }
+		command = { type = relation which = RUS value = 25 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 35055
+	country = GER
+
+	name = "Russia Refuses Compensation"
+	desc = "Russia has refused our demands to pay compensation to Finland. What should our next move be?"
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Offer Finland membership in the HRE for their future protection"
+		ai_chance = 60
+		command = { type = relation which = FIN value = 25 }
+		command = { type = trigger which = 32006 }
+	}
+	action = {
+		name = "We've done all we can"
+		ai_chance = 30
+		command = { type = relation which = FIN value = -25 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+	action = { trigger = { NOT = { flag = german_civil_war } }
+		name = "We shall teach Russia not to ignore us, declare WAR!"
+		ai_chance = 10
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = RUS }
+		command = { type = setflag which = great_war_by_event }
+	}
+}
+
+event = {
+	id = 35056
+	country = GER
+
+	name = "Russia Refuses Our Demands"
+	desc = "Russia has refused our demands to return Odinholm to Finland. What should our next move be?"
+	style = 1
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Offer Finland membership in the HRE for their future protection"
+		ai_chance = 70
+		command = { type = relation which = FIN value = 25 }
+		command = { type = trigger which = 32006 }
+	}
+	action = {
+		name = "We've done all we can"
+		ai_chance = 5
+		command = { type = relation which = FIN value = -25 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+	action = { trigger = { NOT = { flag = german_civil_war } }
+		name = "We shall teach Russia not to ignore us, declare WAR!"
+		ai_chance = 25
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = RUS }
+	}
+}
+
+event = {
+	id = 35057
+	country = GER
+
+	name = "Finland Joins the HRE"
+	desc = "Finland has agreed to join the Holy Roman Empire."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = alliance which = FIN }
+	}
+}
+
+event = {
+	id = 35058
+	country = GER
+
+	name = "Alliance with Australasia?"
+	desc = "The Australasian government, fearful of being invaded by one of the dominant powers in the Far East, have come seeking an alliance with the HRE. What is our response?"
+	style = 1
+
+	action = {
+		name = "Yes, this is a good idea"
+		ai_chance = 25
+		command = { type = alliance which = UAU }
+		command = { type = relation which = UAU value = 200 }
+	}
+	action = {
+		name = "No, we do not need them"
+		ai_chance = 75
+		command = { type = relation which = UAU value = -100 }
+	}
+}
+
+event = {
+	id = 35059
+	country = GER
+
+	name = "Lithuania Leaves the HRE"
+	desc = "As a result of Frederick taking the throne, Lithuania has withdrawn from the HRE in protest."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = relation which = LIT value = -100 }
+		command = { type = dissent value = 3 }
+		command = { type = setflag which = LIT_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35060
+	country = GER
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "As a result of Frederick taking the throne, Scandinavia has withdrawn from the HRE in protest."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35061
+	country = GER
+
+	name = "Austria Leaves the HRE"
+	desc = "As a result of Frederick taking the throne, Austria has withdrawn from the HRE in protest."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = relation which = AUS value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = AUS_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35063
+	country = GER
+	name = "The Suez Treaty"
+	desc = "The Suez Treaty was drawn up by Iberia in 1918 and stipulates that the Union of Rome, Germany and Iberia will all guarantee our independence in exchange for toll-free passage of ships of all nationalities through the canal. The treaty has now expired, and we have sent diplomats to Cairo to discuss its renewal."
+	style = 1
+	picture = "suez"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { }
+	}
+}
+
+event = {
+	id = 35067
+	country = GER
+
+	trigger = {
+		flag = suez_EGY_wants_toll
+		NOT = { flag = suez_toll_GER_yes }
+		NOT = { flag = suez_toll_GER_no }
+	}
+
+	name = "The Suez Conference - Toll Rights"
+	desc = "Egypt has opened the conference by demanding the right to collect tolls from ships passing Suez. While not desirable, it may be better to let them have their way rather than risk war over Suez if the conference fails."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Agree to toll rights"
+		ai_chance = 60
+		command = { type = relation which = EGY value = 25 }
+		command = { type = setflag which = suez_toll_GER_yes }
+	}
+	action = {
+		name = "ACTION_NAME_REFUSE"
+		ai_chance = 40
+		command = { type = relation which = EGY value = -50 }
+		command = { type = setflag which = suez_toll_GER_no }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = relation which = EGY value = -100 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 35068
+	country = GER
+
+	trigger = {
+		flag = suez_EGY_wants_rights
+		NOT = { flag = suez_rights_GER_yes }
+		NOT = { flag = suez_rights_GER_no }
+	}
+
+	name = "The Suez Conference - Territorial Rights"
+	desc = "Egypt has opened the conference by demanding complete territorial rights over Suez, to administrate as they see fit. This is a clear challenge to all three Great Powers, and we would look weak if we agree..."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Agree to terrorial rights"
+		ai_chance = 11
+		command = { type = relation which = EGY value = 25 }
+		command = { type = setflag which = suez_rights_GER_yes }
+	}
+	action = {
+		name = "ACTION_NAME_REFUSE"
+		ai_chance = 89
+		command = { type = relation which = EGY value = -50 }
+		command = { type = setflag which = suez_rights_GER_no }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = relation which = EGY value = -100 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = relation which = SPA value = -100 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 35069
+	country = GER
+
+	trigger = {
+		flag = suez_conference_success
+	}
+
+	name = "The Suez Conference - Success"
+	desc = "An agreement has been reached in the Suez Conference for a renewal of the Suez Treaty. Whatever conflicts should come, Suez will remain neutral."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = EGY value = 25 }
+		command = { type = guarantee which = GER where = EGY }
+		command = { type = non_aggression which = GER where = EGY }
+	}
+}
+
+event = {
+	id = 35070
+	country = GER
+
+	trigger = {
+		flag = suez_conference_failure
+		NOT = { alliance = { country = EGY } }
+	}
+
+	name = "The Suez Conference - Failure"
+	desc = "No agreement has been reached for the renewal of the Suez Treaty and the Suez Conference can certainly be said have been a failure. Without a neutrality guarantee, it may very well come to war over Suez, now..."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = relation which = EGY value = -25 }
+	}
+}
+
+event = {
+	id = 35071
+	country = GER
+
+	trigger = {
+		flag = suez_EGY_silence
+	}
+
+	name = "The Suez Conference - First Round"
+	desc = "After some initial squabbling, the diplomats from Iberia, Germany and Rome are now seated and are discussing the renewal of the Suez Treaty. Egypt has so far remained noncommital in the discussions, apparently waiting to see what terms we will offer them. Some of our advisors are suggesting that Egypt might be amenable to the offer of an alliance with Germany, something that would give us complete control over Suez."
+	style = 1
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Seek a renewal with the old terms"
+		ai_chance = 35
+		command = { type = setflag which = GER_round_1 }
+	}
+	action = {
+		name = "Offer toll rights in Suez for Egypt"
+		ai_chance = 15
+		command = { type = relation which = EGY value = 50 }
+		command = { type = setflag which = suez_toll_GER_yes }
+		command = { type = setflag which = GER_round_1 }
+	}
+	action = {
+		trigger = {
+			government = fascist
+		}
+		name = "Stall and open secret negotiations with Egypt"
+		ai_chance = 50
+		command = { type = trigger which = 30008 }
+	}
+	action = {
+		trigger = {
+			NOT = { government = fascist }
+		}
+		name = "Stall and open secret negotiations with Egypt"
+		ai_chance = 25
+		command = { type = trigger which = 30008 }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 35072
+	country = GER
+
+	name = "The Egyptian Response - Industrial Aid"
+	desc = "The Egyptians want help to industrialize in exchange for allying with us - a small price to pay for control over Suez..."
+	style = 1
+	picture = "suez"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 99
+		command = { trigger = { ai = no } type = money value = -200 }
+		command = { trigger = { NOT = { ai = EGY } } type = alliance which = EGY }
+		command = { trigger = { ai = EGY } type = make_puppet which = EGY }
+		command = { type = relation which = EGY value = 200 }
+		command = { type = trigger which = 30009 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+	action = {
+		name = "No, they ask too much"
+		ai_chance = 1
+		command = { type = relation which = EGY value = -50 }
+		command = { type = setflag which = GER_round_1 }
+	}
+}
+
+
+event = {
+	id = 35073
+	country = GER
+
+	name = "The Egyptian Response - Kongo"
+	desc = "The Egyptians have agreed to an alliance, but their price is high - they want German Kongo."
+	style = 1
+	picture = "suez"
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 25
+		#command = { type = end_mastery which = CON }
+		command = { trigger = { NOT = { ai = EGY } } type = alliance which = EGY }
+		command = { trigger = { ai = EGY } type = make_puppet which = EGY }
+		command = { type = relation which = EGY value = 200 }
+		command = { type = trigger which = 30010 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+	action = {
+		name = "No, they ask too much"
+		ai_chance = 75
+		command = { type = relation which = EGY value = -50 }
+		command = { type = setflag which = GER_round_1 }
+	}
+}
+
+
+event = {
+	id = 35074
+	country = GER
+
+	name = "The Egyptian Response - Refusal"
+	desc = "The Egyptians have politely refused our suggestion of an alliance, apparently preferring neutrality."
+	style = 1
+	picture = "suez"
+
+	action = {
+		name = "Oh well..."
+		command = { type = setflag which = GER_round_1 }
+	}
+}
+
+event = {
+	id = 35075
+	country = GER
+
+	name = "Alliance with Imperial India?"
+	desc = "Imperial India has offered us an alliance in exchange for a price - Ceylon."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 75
+		command = { type = removeclaim which = 1509 }
+		command = { type = removeclaim which = 1510 }
+		command = { type = removeclaim which = 1511 }
+		command = { type = secedearea which = U02 value = "Ceylon" when = 1 }
+		command = { type = relation which = U02 value = 200 }
+		command = { type = alliance which = U02 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 25
+		command = { type = relation which = U02 value = -100 }
+	}
+}
+
+
+event = {
+	id = 35078
+	country = GER
+
+	decision = {
+		NOT = { exists = HOL }
+		NOT = { exists = U10 }
+		control = { province = 122 }
+		#government = fascist
+	}
+
+	decision_trigger = {
+		#NOT = { war = { country = VIC } }
+		#NOT = { war = { country = SPA } }
+		#area = { area = "Netherlands" }
+		#region = { region = "Benelux" country = -3 }
+		OR = {
+			AND = {
+				NOT = { war = { country = VIC } }
+				owned = { province = 122 data = GER }
+			}
+			region = { region = "Benelux" }
+		}
+	}
+
+	trigger = {
+		NOT = { exists = HOL }
+		NOT = { exists = U10 }
+		#area = { area = "Netherlands" }
+		#government = fascist
+		#NOT = { exists = VIC }
+		#NOT = { war = { country = VIC } }
+		#NOT = { war = { country = SPA } }
+		OR = {
+			AND = {
+				NOT = { war = { country = VIC } }
+				owned = { province = 122 data = GER }
+			}
+			region = { region = "Benelux" }
+		}
+	}
+
+	name = "The Fate of the Netherlands"
+	desc = "We have liberated the Netherlands from France. They were an old ally of Germany, and they would be grateful to us if we were to give them autonomy."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Create a Dutch client state"
+		command = { type = independence which = HOL value = 1 }
+		command = { type = make_puppet which = HOL }
+		command = { type = alliance which = HOL }
+		command = { type = trigger which = 78000 }
+		command = { trigger = { government = fascist } type = flag_ext where = HOL which = "_ger" }
+	}
+}
+
+event = {
+	id = 35080
+	country = GER
+
+	decision = {
+		NOT = { exists = FRA }
+		NOT = { exists = VIC }
+		control = { province = 55 data = -3 }
+		#government = fascist
+	}
+
+	decision_trigger = {
+		OR = {
+			AND = {
+				NOT = { war = { country = SPA } }
+				owned = { province = 55 data = GER }
+				#owned = { province = 39 data = GER }
+			}
+			AND = {
+				area = { area = "Loire" }
+				area = { area = "Brittany" }
+				area = { area = "Normandy" }
+				area = { area = "Pas de Calais" }
+				area = { area = "Bourgogne_Champagne" }
+				area = { area = "Paris" }
+			}
+		}
+	}
+
+	trigger = {
+		NOT = { exists = FRA }
+		NOT = { exists = VIC }
+		OR = {
+			AND = {
+				NOT = { war = { country = SPA } }
+				owned = { province = 55 data = GER }
+				#owned = { province = 39 data = GER }
+			}
+			AND = {
+				area = { area = "Loire" }
+				area = { area = "Brittany" }
+				area = { area = "Normandy" }
+				area = { area = "Pas de Calais" }
+				area = { area = "Bourgogne_Champagne" }
+				area = { area = "Paris" }
+			}
+		}
+	}
+
+	name = "The Fate of France"
+	desc = "With the fall of the Communist regime in France, we must now decide what to do with our defeated enemy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Create a new French State"
+		ai_chance = 40
+		command = { trigger = { government = fascist } type = addclaim which = 96 } #longwy
+		command = { trigger = { government = fascist } type = addclaim which = 108 } #liege
+		command = { trigger = { government = fascist } type = addclaim which = 111 } #arlon
+		command = { trigger = { NOT = { government = fascist } } type = removeclaim which = 106 }
+		command = { type = independence which = FRA value = 1 }
+		command = { type = make_puppet which = FRA }
+		command = { type = alliance which = FRA }
+		command = { type = trigger which = 79000 }
+		#command = { trigger = { government = fascist } type = trigger which = 79000 }
+		#command = { trigger = { NOT = { government = fascist } } type = trigger which = 79001 }
+		command = { trigger = { government = fascist } type = flag_ext where = FRA which = "_ger" }
+	}
+	action = {
+		trigger = {
+			#government = fascist
+			OR = {
+				headofstate = 1
+				headofstate = 37
+			}
+			owned = { province = 39 data = GER }
+		}
+		name = "Partition them into France and Brittany"
+		ai_chance = 50
+		command = { type = independence which = U13 value = 1 }
+		command = { type = make_puppet which = U13 }
+		command = { type = alliance which = U13 }
+		command = { trigger = { government = fascist } type = trigger which = 79002 }
+		command = { trigger = { NOT = { government = fascist } } type = trigger which = 79003 }
+		command = { trigger = { government = fascist } type = addclaim which = 96 } #longwy
+		command = { trigger = { government = fascist } type = addclaim which = 108 } #liege
+		command = { trigger = { government = fascist } type = addclaim which = 111 } #arlon
+		command = { trigger = { NOT = { government = fascist } } type = removeclaim which = 106 }
+		command = { type = independence which = FRA value = 1 }
+		command = { type = make_puppet which = FRA }
+		command = { type = alliance which = FRA }
+		command = { trigger = { government = fascist } type = trigger which = 79000 }
+		command = { trigger = { NOT = { government = fascist } } type = trigger which = 79001 }
+		command = { trigger = { government = fascist } type = flag_ext where = FRA which = "_ger" }
+	}
+	action = { trigger = { ai = yes }
+		name = "Rule it directly"
+		ai_chance = 10
+		command = { }
+	}
+}
+
+event = {
+	id = 35082
+	country = GER
+
+	decision = {
+		NOT = { exists = ENG }
+		NOT = { exists = U73 }
+		NOT = { exists = SCO }
+		control = { province = 29 data = -3 }
+		control = { province = 10 data = -3 }
+	}
+
+	decision_trigger = {
+		owned = { province = 29 data = GER }
+		owned = { province = 10 data = GER }
+	}
+
+	trigger = {
+		owned = { province = 29 data = GER }
+		owned = { province = 10 data = GER }
+		NOT = { exists = ENG }
+		NOT = { exists = U73 }
+		NOT = { exists = SCO }
+	}
+
+	name = "The Fate of Britain"
+	desc = "With the fall of Britain, we must now decide what to do with our defeated enemy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		trigger = {
+			#government = fascist
+			OR = {
+				headofstate = 1
+				headofstate = 37
+			}
+		}
+		name = "Partition them into England and Scotland"
+		ai_chance = 70
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }
+		command = { type = alliance which = U73 }
+		command = { type = trigger which = 80000 }
+		command = { type = independence which = SCO value = 1 }
+		command = { type = make_puppet which = SCO }
+		command = { type = alliance which = SCO }
+		command = { type = trigger which = 80001 }
+	}
+	action = {
+		name = "Create a British client state"
+		ai_chance = 25
+		command = { type = independence which = ENG value = 1 }
+		command = { type = make_puppet which = ENG }
+		command = { type = alliance which = ENG }
+	}
+	action = { trigger = { ai = yes }
+		name = "Rule it directly"
+		ai_chance = 5
+		command = { }
+	}
+}
+
+event = {
+	id = 35085
+	country = GER
+
+	decision = {
+		NOT = { exists = U06 }
+		control = { province = 68 data = -1 }
+	}
+
+	decision_trigger = {
+		OR = {
+			AND = {
+				NOT = { war = { country = SPA } }
+				owned = { province = 68 data = GER }
+			}
+			AND = {
+				area = { area = "Pyrenees_Languedoc" value = 80 }
+				area = { area = "Limousin_Auvergne" value = 60 }
+				area = { area = "Alpes_Provence" value = 80}
+				area = { area = "Aquitaine" }
+			}
+		}
+	}
+
+	trigger = {
+		NOT = { exists = U06 }
+		OR = {
+			AND = {
+				NOT = { war = { country = SPA } }
+				owned = { province = 68 data = GER }
+			}
+			AND = {
+				area = { area = "Pyrenees_Languedoc" value = 80 }
+				area = { area = "Limousin_Auvergne" value = 60 }
+				area = { area = "Alpes_Provence" value = 80}
+				area = { area = "Aquitaine" }
+			}
+		}
+	}
+
+	name = "The Fate of Occitania"
+	desc = "We are in control of the lands of Occitania. The Occitains have traditionally been allies of Germany, and many of their leaders have petitioned us to establish an autonomous Occitain state."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Create an Occitain client state"
+		ai_chance = 85
+		#italian cores
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 87 }
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 90 }
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 91 }
+		#
+		command = { type = independence which = U06 value = 1 }
+		command = { type = make_puppet which = U06 }
+		command = { type = trigger which = 50006 }
+	}
+	action = {
+		trigger = {
+			NOT = { 
+				OR = {
+					headofstate = 1
+					headofstate = 37
+				}
+				government = fascist
+			}
+			puppet = { country = FRA country = GER }
+		}
+		name = "Give it to France"
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+		#italian cores
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 87 }
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 90 }
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 91 }
+		#
+		command = { type = secedearea which = FRA value = Aquitaine when = 1 }
+		command = { type = secedearea which = FRA value = Alpes_Provence when = 1 }
+		command = { type = secedearea which = FRA value = Limousin_Auvergne when = 1 }
+		command = { type = secedearea which = FRA value = Pyrenees_Languedoc when = 1 }
+	}
+	action = { trigger = { ai = yes }
+		name = "Rule it directly"
+		ai_chance = 5
+		command = { }
+	}
+}
+
+event = {
+	id = 35088
+	country = GER
+
+	name = "Lombardy Leaves the HRE"
+	desc = "The Lombard League has withdrawn from the HRE, citing our 'betrayal' by cooperating with the Comintern as their reason. The loss of Italy to us has not gone over well with our reactionary power base..."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = relation which = U14 value = -200 }
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = RSI_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35089
+	country = GER
+
+	trigger = {
+		OR = {
+			flag = U00_retreat
+			NOT = { exists = U00 }
+		}
+		control = { province = 377 data = -1 } #Athens
+		control = { province = 409 data = -1 } #Istanbul
+		control = { province = 1075 data = -1 } #Ankara
+		NOT = { flag = GER_east_roman_empire }
+	}
+
+	name = "The East Roman Empire"
+	desc = "With the defeat of the Union in Greece, we are now in control of Constantinople, Queen of Cities. Envoys from the Emperor Manuel in India have arrived to state their claims to the city where the Roman Emperors ruled for almost two milennia. If we choose to restore Rome to its Emperor, we would be in a position to make considerable demands in return. We could also realize the old dream of reuniting the Roman Empire by keeping it for ourselves."
+	style = 1
+	picture = "german_stratec_victory"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		trigger = {
+			exists = U02
+			NOT = { war = { country = U02 } }
+		}
+		name = "Restore Rome to Manuel"
+		ai_chance = 40
+		command = { type = belligerence value = -30 }
+		command = { type = relation which = U02 value = 400 }
+		command = { type = non_aggression which = U02 }
+		#command = { type = independence which = U09 value = 1 }
+		command = { type = secederegion which = U02 value = "Anatolia" when = 0 }
+		command = { type = secedearea which = U02 value = "Thrace" when = 0 }
+		command = { type = secedearea which = U02 value = "Palestine" when = 1 }
+		command = { type = secedearea which = U02 value = "Lebanon_Syria" when = 1 }
+		command = { type = secedearea which = U02 value = "Greek Island" when = 1 }
+		command = { type = trigger which = 39020 }
+		command = { type = setflag which = GER_east_roman_empire }
+	}
+	action = {
+		trigger = {
+			exists = U02
+			NOT = { war = { country = U02 } }
+			NOT = { alliance = { country = U02 } }
+			#NOT = { exists = U17 }
+			control = { province = 1500 data = U02 }
+			#control = { province = 1497 data = U02 }
+			OR = {
+				headofstate = 1
+				headofstate = 37
+			}
+		}
+		name = "Demand South India for Greece"
+		ai_chance = 35
+		command = { type = belligerence value = 10 }
+		command = { type = relation which = U02 value = -100 }
+		command = { type = trigger which = 39021 }
+		command = { type = setflag which = GER_east_roman_empire }
+	}
+	action = {
+		trigger = {
+			OR = {
+				NOT = { exists = U02 }
+				war = { country = U02 }
+				NOT = { alliance = { country = U02 } }
+			}
+		}
+		name = "Create a Greek client state"
+		ai_chance = 20
+		command = { type = independence which = GRE value = 1 }
+		command = { type = make_puppet which = GRE }
+		command = { trigger = { exists = U02 } type = relation which = U02 value = -200 }
+		command = { trigger = { exists = U02 } type = trigger which = 39022 }
+		command = { type = setflag which = GER_east_roman_empire }
+	}
+	action = {
+		trigger = {
+			OR = {
+				NOT = { exists = U02 }
+				NOT = { alliance = { country = U02 } }
+			}
+			NOT = { government = fascist }
+			# OR = {
+				# headofstate = 1
+				# headofstate = 37
+			# }
+		}
+		name = "Style ourselves the Roman Emperor"
+		ai_chance = 5
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { type = belligerence value = 20 }
+		command = { trigger = { exists = U02 } type = relation which = U02 value = -400 }
+		command = { trigger = { exists = U02 } type = trigger which = 39022 }
+		command = { type = setflag which = GER_east_roman_empire }
+	}
+}
+
+
+event = {
+	id = 35092
+	country = GER
+
+	name = "Greece for South India"
+	desc = "Imperial India has accepted our trade, and we must now cede Greece to them in exchange for India."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_GREAT
+		#command = { type = independence which = U09 value = 1 }
+		command = { type = secederegion which = U02 value = "Anatolia" when = 0 }
+		command = { type = secedearea which = U02 value = "Palestine" when = 0 }
+		command = { type = secedearea which = U02 value = "Lebanon_Syria" when = 0 }
+		command = { type = secedearea which = U02 value = "Thrace" when = 0 }
+		command = { type = secedearea which = U02 value = "Greek Island" when = 0 }
+		command = { type = make_puppet which = U17 }
+		command = { type = trigger which = 39023 }
+	}
+}
+
+event = {
+	id = 35099
+	country = GER
+
+	name = "Austria Leaves the HRE"
+	desc = "As a result of the recent campaign of terror against our political opponents, Lithuania has withdrawn from the HRE in protest." #"Taking advantage of the chaos of civil war, Austria has treacherously severed its bonds with us."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Traitors!"
+		command = { type = relation which = AUS value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = AUS_leaves_HRE }
+	}
+}
+
+#35100 now 2052011
+
+event = {
+	id = 35101
+	country = GER
+
+	name = "Alliance with Imperial India?"
+	desc = "Imperial India has offered us an alliance. What is our response?"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_AGREE
+		ai_chance = 95
+		command = { type = relation which = U02 value = 200 }
+		command = { type = alliance which = U02 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 5
+		command = { type = relation which = U02 value = -100 }
+	}
+}
+
+event = {
+	id = 35102
+	country = GER
+
+	trigger = {
+		flag = HRE_restoration_attempt
+		OR = {
+			flag = HRE_dissolution
+			flag = AUS_leaves_HRE
+			AND = {
+				participant = { country = AUS value = 2 }
+				participant = { country = SCA value = 2 }
+				participant = { country = LIT value = 2 }
+				participant = { country = U14 value = 2 }
+			}
+		}
+	}
+
+	name = "The Restoration Fails"
+	desc = "We have failed to win the necessary support to attempt an restoration of HRE. Germany will have to stand on its own from now on out."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 35105
+	country = GER
+
+	name = "Congo supports us!"
+	desc = "The Colonial administration in Congo has thrown their support behind us!"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = CON }
+	}
+}
+
+event = {
+	id = 35106
+	country = GER
+
+	name = "Congo refused support!"
+	desc = "The Colonial administration in Congo has refused to throw their support behind us!"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 1 }
+		command = { type = relation which = CON value = -50 }
+	}
+}
+
+event = {
+	id = 35107
+	country = GER
+
+	name = "Südostasien supports us!"
+	desc = "The Colonial administration in Südostasien has thrown their support behind us!"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U08 }
+	}
+}
+
+event = {
+	id = 35108
+	country = GER
+
+	name = "Südostasien refused support!"
+	desc = "The Colonial administration in Südostasien has refused to throw their support behind us!"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 1 }
+		command = { type = relation which = U08 value = -50 }
+	}
+}
+
+event = {
+	id = 35110
+	country = GER
+
+	name = "Switzerland Leaves the HRE"
+	desc = "As a result of our decision to sent in the army to break up the general strike, Switzerland has withdrawn from the HRE in protest."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Good riddance"
+		command = { type = relation which = SCH value = -100 }
+		command = { type = dissent value = 1 }
+		command = { type = setflag which = SCH_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35111
+	country = GER
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "Citing a loss of focus of the alliance after the recent inclusion of India, Scandinavia has decided to leave and proclaim its neutrality."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35112
+	country = GER
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "Citing a loss of focus of the alliance after the recent inclusion of Japan, Scandinavia has decided to leave and proclaim its neutrality."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35115
+	country = GER
+	
+	name = "The OLF Coup - Occitania joins France"
+	desc = "Not only has France supported a Communist coup in Occitania, but the mongrels have decided to reward them by strengthening our ancient enemy!"
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = dissent value = 5 }
+	}
+}

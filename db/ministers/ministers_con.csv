@@ -1,0 +1,42 @@
+CON;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+574001;Head of State;Mutara III Rudahigwa;36;ML;Autocratic Charmer;High;M574001;x
+574002;Head of Government;Felix Barall;36;ML;Silent Workhorse;High;M574002;x
+574003;Foreign Minister;Walther Zurin;36;ML;Apologetic Clerk;High;M574003;x
+574004;Minister of Armament;Gustav Wunderlich;36;ML;Resource Industrialist;Medium;M574004;x
+574005;Minister of Security;Andreas Gurran;36;ML;Crime Fighter;Medium;M574005;x
+574006;Head of Military Intelligence;Curt Schoelss;36;ML;Logistics Specialist;Medium;M574006;x
+574007;Chief of Staff;Curt Schoelss;36;ML;School of Psychology;Medium;M574006;x
+574008;Chief of Army;Paul von Reynden;36;ML;Elastic Defence Doctrine;Medium;M574008;x
+574009;Chief of Navy;Paul von Reynden;36;ML;Base Control Doctrine;Medium;M574008;x
+574010;Chief of Air Force;Gunther Huzel;36;ML;Army Aviation Doctrine;Medium;M574010;x
+574011;Head of State;Mwambutsa IV Bangiricenge;36;PA;Benevolent Gentleman;High;M574011;x
+574012;Head of State;Josef Kasavubu;36;LWR;Ruthless Powermonger;High;M574012;x
+574013;Head of Government;Heinz von Essen;36;PA;Corporate Suit;High;M15039;x
+574014;Head of Government;Patrick Lumumba;36;LWR;Ambitious Union Boss;High;M574014;x
+574015;Foreign Minister;Victor Harzer;36;PA;Biased Intellectual;High;M15075;x
+574016;Foreign Minister;Moishe Tshombe;36;LWR;The Cloak N Dagger Schemer;High;M574016;x
+574017;Foreign Minister;Fritz Gizenga;42;LWR;Ideological Crusader;High;M574017;x
+574018;Minister of Armament;August Preuss;36;PA;laissez-faire capitalist;Medium;M574018;x
+574019;Minister of Armament;Gregor Kayibanda;36;LWR;Corrupt Kleptocrat;Medium;M574019;x
+574020;Minister of Armament;Josef Bamina;43;LWR;Air to Ground Proponent;Medium;M574020;x
+574021;Minister of Security;Adalbert Nyamoya;36;PA;Crooked Kleptocrat;Medium;M574021;x
+574022;Minister of Security;Mikael Micombero;44;PA;Back Stabber;Medium;M574022;x
+574023;Minister of Security;Karl Ndizeye;36;LWR;Compassionate Gentleman;Medium;M574023;x
+574024;Head of Military Intelligence;Martin Bollmann;36;PA;Dismal Enigma;Medium;M574024;x
+574025;Head of Military Intelligence;Jan Muhirwa;36;LWR;Industrial Specialist;Medium;M574025;x
+574026;Chief of Staff;Rupert Schewior;36;PA;School of Defence;Medium;M574026;x
+574027;Chief of Staff;Josef Kasavubu;36;LWR;School of Manoeuvre;Medium;M574027;x
+574028;Chief of Army;Oswald Westphal;42;ML;Armoured Spearhead Doctrine;Medium;M574028;x
+574029;Chief of Army;Albrecht Kaeding;36;PA;Static Defence Doctrine;Medium;M574029;x
+574030;Chief of Army;Josef D. Mobutu;36;LWR;Guns and Butter Doctrine;Medium;M574030;x
+574031;Chief of Navy;Franz Braake;36;PA;Indirect Approach Doctrine;Medium;M574031;x
+574032;Chief of Navy;Helga Mbonyumutwa;43;PA;Power Projection Doctrine;Medium;M574032;x
+574033;Chief of Navy;Edmund Weger;36;LWR;Open Seas Doctrine;Medium;M574033;x
+574034;Chief of Air Force;Franz Braake;36;PA;Naval Aviation Doctrine;Medium;M574031;x
+574035;Chief of Air Force;Joachim Rwagasore;36;LWR;Carpet Bombing Doctrine;Medium;M574035;x
+574036;Head of State;Frederick III;36;SL;Benevolent Gentleman;High;M37;x
+574037;Head of State;Waldemar VII;36;SC;Autocratic Charmer;High;M36;x
+574038;Head of State;Gustav Wunderlich;36;ML;benevolent gentleman;Medium;M574004;x
+574039;Head of State;Michael Alexander;36;FA;Autocratic Charmer;High;M512013;x
+574040;Head of Government;Amil al-Husseini;38;FA;Local tyrant;High;M512059;x
+EOF;x

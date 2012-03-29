@@ -1,0 +1,16 @@
+model = {
+	cost 						= 2
+	buildtime					= 60 #30
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 650
+	surfacedefence				= 30
+	airdefence					= 15
+	strategicattack				= 90
+	softattack					= 1 #0
+	hardattack					= 1 #0
+	range						= 550 #300
+	supplyconsumption 			= 1.0
+	fuelconsumption				= 1.5
+}

@@ -1,0 +1,102 @@
+#allowed_brigades =  artillery
+#allowed_brigades =  anti_tank		
+allowed_brigades =  anti_air		
+#allowed_brigades =  rocket_artillery
+allowed_brigades =  sp_artillery	
+allowed_brigades =  sp_rct_artillery
+allowed_brigades =  tank_destroyer	
+#allowed_brigades =  light_armor_brigade
+allowed_brigades =  heavy_armor
+allowed_brigades =  super_heavy_armor
+#allowed_brigades =  armored_car
+allowed_brigades =  engineer			
+#allowed_brigades =  police
+
+upgrade = { type = infantry upgrade_time_factor = 0.24 upgrade_cost_factor = 0.46 }
+upgrade = { type = motorized upgrade_time_factor = 0.29 upgrade_cost_factor = 0.66 }
+upgrade = { type = mechanized upgrade_time_factor = 0.7 upgrade_cost_factor = 0.66 }
+#upgrade = { type = armor upgrade_time_factor = 1 upgrade_cost_factor = 0.81 }
+
+# 0 - Early Tank 1936
+model = {
+	cost 					= 20
+	buildtime	 			= 185
+	manpower 				= 17
+	maxspeed 				= 9
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 31
+	toughness				= 25
+	softness				= 30
+	suppression				= 1
+	airdefence				= 3
+	softattack				= 14
+	hardattack				= 12
+	airattack				= 3
+	transportweight			= 30
+	supplyconsumption 		= 3.8
+	fuelconsumption			= 5
+	no_fuel_combat_mod 		= -0.3
+	speed_cap_art			= 9
+	speed_cap_eng			= 10
+	speed_cap_at			= 9
+	speed_cap_aa			= 9
+	upgrade_time_factor = 2.0
+	upgrade_cost_factor = 0.75
+}
+# 1 - Basic Light Tank 1938
+model = {
+	cost 					= 20
+	buildtime	 			= 160 #155
+	manpower					= 17
+	maxspeed 				= 10
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 33
+	toughness				= 27
+	softness				= 30
+	suppression				= 1
+	airdefence				= 4
+	softattack				= 15
+	hardattack				= 14
+	airattack				= 4
+	transportweight			= 30
+	supplyconsumption 		= 4.1
+	fuelconsumption			= 5.4
+	no_fuel_combat_mod 		= -0.3
+	speed_cap_art			= 11
+	speed_cap_eng			= 12
+	speed_cap_at			= 11
+	speed_cap_aa			= 11
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+}
+# 2 - Improved Light Tank 1939
+model = {
+	cost 					= 21
+	buildtime	 			= 160 #170
+	manpower					= 17
+	maxspeed 				= 10
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 35
+	toughness				= 29
+	softness				= 30
+	suppression				= 1
+	airdefence				= 4
+	softattack				= 16
+	hardattack				= 16
+	airattack				= 5
+	transportweight			= 30
+	supplyconsumption 		= 4.6
+	fuelconsumption			= 6
+	no_fuel_combat_mod 		= -0.3
+	speed_cap_art			= 11
+	speed_cap_eng			= 12
+	speed_cap_at			= 11
+	speed_cap_aa			= 11
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+	armor				= 0		# Upgrade to 1939 Basic Medium Armored Division
+	upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
+}

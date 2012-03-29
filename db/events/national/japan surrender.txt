@@ -1,0 +1,220 @@
+
+#########################################################################
+#  Surrender events - Japan surrenders to China
+#########################################################################
+
+event = {
+	id = 2012004
+	#country = CHI
+	tag = { CHI CYN CHC }
+
+	name = "EVT_3823_NAME"
+	desc = "EVT_3823_DESC"
+	style = 2
+	picture = "news_paper"
+
+	decision = {
+		war = { country = JAP }
+	}
+	decision_trigger = {
+		# control = { province = 1214 data = CHI } # Shenyang
+		# control = { province = 1199 data = CHI } # Harbin
+		# control = { province = 1221 data = CHI } # Pyongyang
+		# control = { province = 1228 data = CHI } # Seoul
+		# control = { province = 1231 data = CHI } # Busan
+		control = { province = 1337 } # Nanjing
+		control = { province = 1247 } # Beiping
+		control = { province = 1369 } # Guangzhou
+		NOT = { region = { region = "China" country = JAP value = 10 } }
+		NOT = { exists = U87 }
+		NOT = { exists = CGX }
+		NOT = { exists = VIE }
+		NOT = { exists = MEN }
+		NOT = { exists = MAN }
+		OR = {
+			NOT = { exists = CHI }
+			NOT = { exists = CYN }
+		}
+	}
+	trigger = {
+		# control = { province = 1214 data = CHI } # Shenyang
+		# control = { province = 1199 data = CHI } # Harbin
+		# control = { province = 1221 data = CHI } # Pyongyang
+		# control = { province = 1228 data = CHI } # Seoul
+		# control = { province = 1231 data = CHI } # Busan
+		control = { province = 1337 } # Nanjing
+		control = { province = 1247 } # Beiping
+		control = { province = 1369 } # Guangzhou
+		NOT = { region = { region = "China" country = JAP value = 5 } }
+		NOT = { exists = U87 }
+		NOT = { exists = CGX }
+		NOT = { exists = VIE }
+		NOT = { exists = MEN }
+		NOT = { exists = MAN }
+		OR = {
+			NOT = { exists = CHI }
+			NOT = { exists = CYN }
+		}
+		#war = { country = CHI country = JAP }
+		war = { country = JAP }
+		#random = 50
+	}
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_3823_ACTA" #Humiliate the Japanese!
+		command = { type = dissent value = -20 }
+		command = { type = trigger which = 2011018 }
+	}
+	action_b = { trigger = { ai = yes }
+		ai_chance = 0
+		name = "EVT_3823_ACTB" #We push for total victory!
+		command = { type = dissent value = 5 }
+		command = { type = sleepevent which = 2011018 }
+	}
+}
+
+#########################################################################
+#  Surrender events - Japan surrenders to China
+#########################################################################
+event = {
+	id = 2011018
+	country = JAP
+
+	name = "EVT_3824_NAME"
+	desc = "EVT_3824_DESC"
+	style = 2
+ 	picture = "news_paper"
+
+	#Triggered by CHI 2012004
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_3824_ACTA" #
+		command = { type = leave_alliance }
+		command = { type = peace which = CHI value = 1 }
+		command = { type = peace which = CHC value = 1 }
+		command = { type = peace which = CGX value = 1 }
+		command = { type = peace which = SIK value = 1 }
+		command = { type = peace which = CXB value = 1 }
+		command = { type = peace which = CYN value = 1 }
+		command = { type = peace which = TIB value = 1 }
+		command = { type = dissent value = 10 }
+
+		command = { type = domestic which = democratic value = 4 }
+		command = { type = domestic which = political_left value = 4 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		#command = { type = set_domestic which = professional_army value = 2 }
+		command = { type = domestic which = defense_lobby value = -3 }
+		command = { type = domestic which = interventionism value = -3 }
+
+		command = { trigger = { exists = CYN } type = secederegion which = CYN value = "China" }
+		command = { trigger = { exists = CHI } type = secederegion which = CHI value = "China" }
+		command = { trigger = { exists = CHC } type = secederegion which = CHC value = "China" }
+
+		command = { type = end_mastery which = MAN } 
+		command = { type = end_mastery which = MEN } 
+		command = { type = end_mastery which = KOR } 
+		command = { type = end_mastery which = VIE } 
+		command = { type = end_mastery which = TIB } 
+
+		#Korea
+		command = { type = removecore which = 1234 } # Jeju - Korea
+		command = { type = removecore which = 1230 } # Gwangju - Korea
+		command = { type = removecore which = 1231 } # Daegu - Korea
+		command = { type = removecore which = 1232 } # Busan - Korea
+		command = { type = removecore which = 1233 } # Chuncheon - Korea
+		command = { type = removecore which = 1228 } # Seoul - Korea
+		command = { type = removecore which = 1229 } # Seoul - Korea
+		command = { type = removecore which = 1224 } # Sinuiju - Korea
+		command = { type = removecore which = 1226 } # Ganggye - Korea
+		command = { type = removecore which = 1225 } # Cheongjin - Korea
+		command = { type = removecore which = 1227 } # Hamheung - Korea
+		command = { type = removecore which = 1223 } # Wonsan - Korea
+		command = { type = removecore which = 1221 } # Pyeongyang - Korea
+		command = { type = removecore which = 1222 } # Sariwon - Korea
+		
+		command = { type = removeclaim which = 1216 }
+		command = { type = removeclaim which = 1219 }
+		command = { type = removeclaim which = 1235 }
+		command = { type = removeclaim which = 1236 }
+		command = { type = removeclaim which = 1245 }
+		
+		command = { type = removeclaim which = 1338 }
+		command = { type = removeclaim which = 1358 }
+		command = { type = removeclaim which = 1346 }
+		command = { type = removeclaim which = 1371 }
+		command = { type = removeclaim which = 1372 }
+		
+		command = { trigger = { exists = CHI } type = non_aggression which = JAP where = CHI }
+		command = { trigger = { exists = CYN } type = non_aggression which = JAP where = CYN }
+		command = { trigger = { exists = CHC } type = non_aggression which = JAP where = CHC }
+
+		command = { trigger = { ai = yes } type = ai which = "switch/Combat_off.ai" }
+		command = { type = trigger which = 2011019 }
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_3824_ACTB" #
+		command = { type = dissent value = 5 }
+	}
+}
+
+#########################################################################
+#  Surrender events - Japan surrenders to China
+#########################################################################
+
+event = {
+	id = 2011019
+	country = JAP
+
+	name = "EVT_3825_NAME"
+	desc = "EVT_3825_DESC"
+	style = 2
+ 	picture = "news_paper"
+
+	#Triggered by JAP 2011018
+
+	action_a = {
+		name = "EVT_3825_ACTA" #
+		command = { trigger = { NOT = { exists = KOR } } type = independence which = KOR value = 1 when = 0 }
+		#command = { type = trigger which = 2012005 }
+		command = { trigger = { exists = CHI } type = event which = 2012005 where = CHI }
+		command = { trigger = { exists = CYN } type = event which = 2012005 where = CYN }
+		command = { trigger = { exists = CHC } type = event which = 2012005 where = CHC }
+	}
+}
+
+#########################################################################
+#  Surrender events - Japan surrenders to China
+#########################################################################
+event = {
+	id = 2012005
+	#country = CHI
+	tag = { CHI CYN CHC }
+
+	name = "EVT_3825_NAME"
+	desc = "EVT_3825_DESC"
+	style = 2
+	picture = "news_paper"
+
+	#Triggered by JAP 2011018
+
+	action_a = {
+		name = "ACTION_NAME_HURRAH" #
+		command = { type = inherit which = MAN } 
+		command = { type = inherit which = MEN } 
+		command = { trigger = { NOT = { puppet = { country = KOR country = ENG } } } type = make_puppet which = KOR }
+		command = { type = secederegion which = KOR value = "Korea" }
+		command = { trigger = { puppet = { country = VIE country = JAP } } type = make_puppet which = VIE }
+		command = { trigger = { puppet = { country = VIE country = CHI } } type = secederegion which = VIE value = Indochine } 
+		command = { trigger = { puppet = { country = VIE country = CYN } } type = secederegion which = VIE value = Indochine } 
+		command = { trigger = { puppet = { country = VIE country = CHC } } type = secederegion which = VIE value = Indochine } 
+		#command = { trigger = { ai = yes } type = ai which = "switch/CHI_Wins_JAP.ai" }
+	}
+}

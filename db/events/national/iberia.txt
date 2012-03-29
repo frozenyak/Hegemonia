@@ -1,0 +1,801 @@
+###38000-38999###
+#38022 suez
+#38028 OLF coup
+#38035 lombard proposal
+#38050 fate of netherlands
+#38051 fate of france
+#38052 fate of occitania
+
+event = {
+	id = 38014
+	country = SPA
+
+	name = "Admitting Switzerland?"
+	desc = "Following the elections in Switzlernad, the Swiss government has approached us and asked for admittance into the League. What is our answer?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "They are welcome!"
+		ai_chance = 95
+		command = { type = alliance which = SCH }
+		command = { type = relation which = SCH value = 100 }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 5
+		command = { type = relation which = SCH value = -100 }
+	}
+}
+
+event = {
+	id = 38015
+	country = SPA
+
+	name = "The Union of Rome Mobilizes"
+	desc = "The new government in Constantinople have ordered a partial mobilization of their forces. Our general staff is suggesting that we do the same in order to be ready for all eventualities."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		command = { type = resource which = supplies value = -500 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { trigger = { atwar = no } type = belligerence value = 15 }
+		command = { trigger = { NOT = { local_flag = MOB3 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB4 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB5 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB6 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { atwar = no } type = dissent value = 12 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
+		command = { type = local_setflag which = MOB7 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB3 }
+	}
+}
+
+event = {
+	id = 38016
+	country = SPA
+
+	name = "Admitting Mazula?"
+	desc = "The Republic of Mazula has applied for membership in the League of Democracies, thereby hoping to avert war with the American Federation. Should we admit them?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "They are welcome!"
+		ai_chance = 99
+		command = { type = alliance which = MEX }
+		command = { type = relation which = MEX value = 100 }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 1
+		command = { type = relation which = MEX value = -100 }
+	}
+}
+
+event = {
+	id = 38017
+	country = SPA
+
+	name = "Admitting Qtizi?"
+	desc = "The Republic of Qtizi has applied for membership in the League of Democracies. They are sponsored by Mazula and refusing their application would offend the Mazulans."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "They are welcome!"
+		ai_chance = 99
+		command = { type = alliance which = PAN }
+		command = { type = relation which = PAN value = 100 }
+		command = { type = relation which = MEX value = 25 }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 1
+		command = { type = relation which = PAN value = -100 }
+		command = { type = relation which = MEX value = -100 }
+	}
+}
+
+event = {
+	id = 38018
+	country = SPA
+
+	name = "The Annexation of Odinholm"
+	desc = "Russia has sent troops to annex the Finnish port of Odinholm. Finland has appealed to us to put diplomatic pressure on Russia to return it, or at least pay compensation."
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Demand that Russia pay compensation"
+		ai_chance = 70
+		command = { type = relation which = FIN value = 50 }
+		command = { type = relation which = RUS value = -50 }
+		command = { type = trigger which = 56021 }
+	}
+	action = {
+		name = "Demand that Russia return the port"
+		ai_chance = 10
+		command = { type = relation which = FIN value = 100 }
+		command = { type = relation which = RUS value = -100 }
+		command = { type = trigger which = 56022 }
+	}
+	action = {
+		name = "This is not our concern"
+		ai_chance = 20
+		command = { type = relation which = FIN value = -100 }
+		command = { type = relation which = RUS value = 25 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 38019
+	country = SPA
+
+	name = "Russia Refuses Compensation"
+	desc = "Russia has refused our demands to pay compensation to Finland. What should our next move be?"
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Expel Russia from the League"
+		ai_chance = 50
+		command = { type = relation which = FIN value = 50 }
+		command = { type = trigger which = 56023 }
+	}
+	action = {
+		name = "We've done all we can"
+		ai_chance = 50
+		command = { type = relation which = FIN value = -50 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 38020
+	country = SPA
+
+	name = "Russia Refuses Our Demands"
+	desc = "Russia has refused our demands to return Odinholm to Finland. What should our next move be?"
+	style = 2
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Expel Russia from the League"
+		ai_chance = 75
+		command = { type = relation which = FIN value = 50 }
+		command = { type = trigger which = 56023 }
+	}
+	action = {
+		name = "We've done all we can"
+		ai_chance = 25
+		command = { type = relation which = FIN value = -50 }
+	}
+}
+
+event = {
+	id = 38021
+	country = SPA
+
+	name = "Admitting Australasia?"
+	desc = "The Australasian government, fearful of being invaded by one of the dominant powers in the Far East, have applied for League membership. What is our response?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "They are welcome!"
+		ai_chance = 90
+		command = { type = alliance which = UAU }
+		command = { type = relation which = UAU value = 100 }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 10
+		command = { type = relation which = UAU value = -100 }
+	}
+}
+
+event = {
+	id = 38022
+	country = SPA
+	name = "The Suez Treaty"
+	desc = "The Suez Treaty was drawn up by Iberia in 1918 and stipulates that the Union of Rome, Germany and Iberia will all guarantee our independence in exchange for toll-free passage of ships of all nationalities through the canal. The treaty has now expired, and we have sent diplomats to Cairo to discuss its renewal."
+	style = 2
+	picture = "suez"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { }
+	}
+}
+
+event = {
+	id = 38023
+	country = SPA
+
+	trigger = {
+		flag = suez_EGY_wants_toll
+		NOT = { flag = suez_toll_SPA_yes }
+		NOT = { flag = suez_toll_SPA_no }
+	}
+
+	name = "The Suez Conference - Toll Rights"
+	desc = "Egypt has opened the conference by demanding the right to collect tolls from ships passing Suez. While not desirable, it may be better to let them have their way rather than risk war over Suez if the conference fails."
+	style = 2
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Agree to toll rights"
+		ai_chance = 80
+		command = { type = relation which = EGY value = 25 }
+		command = { type = setflag which = suez_toll_SPA_yes }
+	}
+	action = {
+		name = "Refuse the demand"
+		ai_chance = 20
+		command = { type = relation which = EGY value = -50 }
+		command = { type = setflag which = suez_toll_SPA_no }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = relation which = EGY value = -100 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 38024
+	country = SPA
+
+	trigger = {
+		flag = suez_EGY_wants_rights
+		NOT = { flag = suez_rights_SPA_yes }
+		NOT = { flag = suez_rights_SPA_no }
+	}
+
+	name = "The Suez Conference - Territorial Rights"
+	desc = "Egypt has opened the conference by demanding complete territorial rights over Suez, to administrate as they see fit. This is a clear challenge to all three Great Powers, and we would look weak if we agree..."
+	style = 2
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Agree to terrorial rights"
+		ai_chance = 20
+		command = { type = relation which = EGY value = 25 }
+		command = { type = setflag which = suez_rights_SPA_yes }
+	}
+	action = {
+		name = "Refuse the demand"
+		ai_chance = 80
+		command = { type = relation which = EGY value = -50 }
+		command = { type = setflag which = suez_rights_SPA_no }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = relation which = EGY value = -100 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 38025
+	country = SPA
+
+	trigger = {
+		flag = suez_conference_success
+	}
+
+	name = "The Suez Conference - Success"
+	desc = "An agreement has been reached in the Suez Conference for a renewal of the Suez Treaty. Whatever conflicts should come, Suez will remain neutral."
+	style = 2
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = EGY value = 25 }
+		command = { type = non_aggression which = SPA where = EGY }
+		command = { type = guarantee which = SPA where = EGY }
+	}
+}
+
+event = {
+	id = 38026
+	country = SPA
+
+	trigger = {
+		flag = suez_conference_failure
+	}
+
+	name = "The Suez Conference - Failure"
+	desc = "No agreement has been reached for the renewal of the Suez Treaty and the Suez Conference can certainly be said have been a failure. Without a neutrality guarantee, it may very well come to war over Suez, now..."
+	style = 2
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = EGY value = -25 }
+	}
+}
+
+event = {
+	id = 38027
+	country = SPA
+
+	trigger = {
+		flag = suez_EGY_silence
+	}
+
+	name = "The Suez Conference - First Round"
+	desc = "After some initial squabbling, the diplomats from Iberia, Germany and Rome are now seated and are discussing the renewal of the Suez Treaty. Egypt has so far remained noncommital in the discussions, apparently waiting to see what terms we will offer them."
+	style = 2
+	picture = "suez"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 3
+	deathdate = { day = 1 month = march year = 1938 }
+
+	action = {
+		name = "Seek a renewal with the old terms"
+		ai_chance = 80
+		command = { type = setflag which = SPA_round_1 }
+	}
+	action = {
+		name = "Offer toll rights in Suez for Egypt"
+		ai_chance = 20
+		command = { type = relation which = EGY value = 50 }
+		command = { type = setflag which = suez_toll_SPA_yes }
+		command = { type = setflag which = SPA_round_1 }
+	}
+	action = { trigger = { ai = no }
+		name = "Walk out on the conference"
+		ai_chance = 0
+		command = { type = setflag which = suez_conference_failure }
+	}
+}
+
+event = {
+	id = 38028
+	country = SPA
+
+	name = "The OLF Coup"
+	desc = "Aided by French support, the OLF has seized control of the government of Occitania. We have lost control over our barricade against Europe, and the way for French troops to our border is now open."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Ready our forces for an intervention!"
+		ai_chance = 85
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = setflag which = SPA_intervene_U06 }
+		command = { type = ai_prepare_war which = U06 }
+	}
+	action = {
+		name = "It's best not to provoke France"
+		ai_chance = 15
+		#command = { type = domestic which = interventionism value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 38029
+	country = SPA
+
+	name = "The OLF Coup"
+	desc = "Aided by French support, the OLF has seized control of the government of Occitania. While we have lost control over our barricade against Europe, they have declared neutrality."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 70
+		#command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		name = "Ready our forces for an intervention!"
+		ai_chance = 30
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = setflag which = SPA_intervene_U06 }
+		command = { type = ai_prepare_war which = U06 }
+	}
+}
+
+event = {
+	id = 38030
+	country = SPA
+
+	name = "The OLF Coup - Occitania joins France"
+	desc = "Aided by French support, the OLF has seized control of the government of Occitania. To everyone's suprise they have decided to join France itself. We now have lost our barricade against Europe."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 38031
+	country = SPA
+
+	trigger = {
+		atwar = yes
+		NOT = { exists = ENG }
+		#ai = yes
+	}
+
+	name = "British Volunteers"
+	desc = "Our ally, Great Britain has fallen. All is not lost however - a large part of their military was stationed offshore and has joined up with us in the hopes of recapturing their homeland."
+	style = 2
+	picture = "reinforcements"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = manpowerpool value = 250 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+		# command = { type = add_division value = infantry when = 2 }
+	}
+}
+
+
+event = {
+	id = 38032
+	country = SPA
+
+	name = "Mazulan Aid"
+	desc = "The Republic of Mazula has sent us industrial and logistical support to aid the war effort."
+	style = 2
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = free_supplies value = 20 } #20
+		command = { type = industrial_modifier which = total value = 5 } #20
+	}
+}
+
+
+event = {
+	id = 38035
+	country = SPA
+
+	name = "The Lombard Proposal"
+	desc = "The Lombards have approached us about forging an anti-comintern pact that would give them effective League membership. Now that they have broken with Germany they need protectors, and they could be a useful ally against both the Union and germany. It would not be a popular move to ally ourselves with the reactionary Tittonis, but perhaps we can force some democratic reforms out of them?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Demand token democratic reforms"
+		ai_chance = 60
+		command = { type = dissent value = 5 }
+		command = { type = relation which = U14 value = -25 }
+		command = { type = trigger which = 46003 }
+	}
+	action = {
+		name = "Demand comprehensive democratic reforms"
+		ai_chance = 25
+		command = { type = dissent value = 2 }
+		command = { type = relation which = U14 value = -50 }
+		command = { type = trigger which = 46004 }
+	}
+	action = {
+		name = "Let them in unconditionally"
+		ai_chance = 10
+		command = { type = dissent value = 20 }
+		command = { type = relation which = U14 value = 100 }
+		command = { type = trigger which = 38036 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 5
+		command = { type = dissent value = -2 }
+		command = { type = relation which = U14 value = -200 }
+	}
+}
+
+event = {
+	id = 38036
+	country = SPA
+
+	name = "The Anti-Comintern Pact"
+	desc = "We have reached agreeable terms with the Lombards and under the terms of our new anti-comintern pact we have admitted them to the League."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = U14 value = 100 }
+		command = { type = relation which = U00 value = -100 }
+		command = { type = relation which = RSI value = -100 }
+		command = { type = relation which = FRA value = -100 }
+		command = { type = alliance which = U14 }
+		command = { type = setflag which = RSI_joins_league }
+	}
+}
+
+
+event = {
+	id = 38041
+	country = SPA
+
+	name = "Alliance with the Republic of Germany?"
+	desc = "The Republic of Germany has triumphed in the civil war and now they want to join the League."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "They are welcome!"
+		ai_chance = 95
+		command = { type = relation which = DFR value = 200 }
+		command = { type = alliance which = DFR }
+	}
+	action = {
+		name = ACTION_NAME_REFUSE
+		ai_chance = 5
+		command = { type = relation which = DFR value = -100 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+event = {
+	id = 38050
+	country = SPA
+
+	decision = {
+		NOT = { exists = HOL }
+		NOT = { exists = U10 }
+		control = { province = 122 }
+	}
+
+	decision_trigger = {
+		NOT = { war = { country = VIC } }
+		NOT = { war = { country = GER } }
+		area = { area = "Netherlands" }
+	}
+
+	trigger = {
+		NOT = { exists = HOL }
+		NOT = { exists = U10 }
+		area = { area = "Netherlands" }
+		NOT = { war = { country = VIC } }
+		NOT = { war = { country = GER } }
+	}
+
+	name = "The Fate of the Netherlands"
+	desc = "We have liberated the Netherlands from France. They would be grateful to us if we were to give them autonomy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Create a Dutch client state"
+		ai_chance = 100
+		command = { type = independence which = HOL value = 1 }
+		command = { type = make_puppet which = HOL }
+		command = { type = alliance which = HOL }
+		command = { type = trigger which = 78001 }
+	}
+	action = { trigger = { ai = yes }
+		name = "Rule it directly"
+		ai_chance = 0
+		command = { }
+	}
+}
+
+event = {
+	id = 38051
+	country = SPA
+
+	decision = {
+		NOT = { exists = FRA }
+		NOT = { exists = VIC }
+		control = { province = 55 data = -3 }
+		#government = fascist
+	}
+
+	decision_trigger = {
+		OR = {
+			AND = {
+				NOT = { war = { country = GER } }
+				owned = { province = 55 data = SPA }
+			}
+			AND = {
+				area = { area = "Loire" }
+				area = { area = "Brittany" }
+				area = { area = "Normandy" }
+				area = { area = "Pas de Calais" }
+				area = { area = "Bourgogne_Champagne" }
+				area = { area = "Paris" }
+			}
+		}
+	}
+
+	trigger = {
+		NOT = { exists = FRA }
+		NOT = { exists = VIC }
+		OR = {
+			AND = {
+				NOT = { war = { country = GER } }
+				owned = { province = 55 data = SPA }
+			}
+			AND = {
+				area = { area = "Loire" }
+				area = { area = "Brittany" }
+				area = { area = "Normandy" }
+				area = { area = "Pas de Calais" }
+				area = { area = "Bourgogne_Champagne" }
+				area = { area = "Paris" }
+			}
+		}
+	}
+
+	name = "The Fate of France"
+	desc = "With the fall of the communist regime in France, we must now decide what to do with our defeated enemy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Create a new French State"
+		ai_chance = 100
+		command = { type = independence which = FRA value = 1 }
+		command = { type = make_puppet which = FRA }
+		command = { type = alliance which = FRA }
+		command = { type = trigger which = 79001 }
+	}
+}
+
+
+event = {
+	id = 38052
+	country = SPA
+
+	decision = {
+		NOT = { exists = U06 }
+		control = { province = 68 data = -1 }
+	}
+
+	decision_trigger = {
+		OR = {
+			AND = {
+				NOT = { war = { country = GER } }
+				NOT = { war = { country = VIC } }
+				owned = { province = 68 data = SPA }
+			}
+			AND = {
+				area = { area = "Pyrenees_Languedoc" value = 80 }
+				area = { area = "Limousin_Auvergne" value = 60 }
+				area = { area = "Alpes_Provence" value = 80}
+				area = { area = "Aquitaine" }
+			}
+		}
+	}
+
+	trigger = {
+		NOT = { exists = U06 }
+		OR = {
+			AND = {
+				NOT = { war = { country = GER } }
+				NOT = { war = { country = VIC } }
+				owned = { province = 68 data = SPA }
+			}
+			AND = {
+				area = { area = "Pyrenees_Languedoc" value = 80 }
+				area = { area = "Limousin_Auvergne" value = 60 }
+				area = { area = "Alpes_Provence" value = 80}
+				area = { area = "Aquitaine" }
+			}
+		}
+	}
+
+	name = "The Fate of Occitania"
+	desc = "We are in control of the lands of Occitania. Occitania has traditionally been our protectorate, and many of their leaders have petitioned us to establish an autonomous Occitain state. However we could also give the region to France."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Create an Occitain client state"
+		ai_chance = 80
+		#italian cores
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 87 }
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 90 }
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 91 }
+		#
+		command = { type = independence which = U06 value = 1 }
+		command = { type = make_puppet which = U06 }
+		command = { type = trigger which = 50006 }
+	}
+	action = {
+		trigger = {
+			exists = FRA
+			puppet = { country = FRA country = SPA }
+		}
+		name = "Give it to France"
+		ai_chance = 15
+		command = { type = dissent value = 5 }
+		#italian cores
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 87 }
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 90 }
+		command = { trigger = { alliance = { country = U14 } } type = secedeprovince which = U14 value = 91 }
+		#
+		command = { type = secedearea which = FRA value = Aquitaine when = 1 }
+		command = { type = secedearea which = FRA value = Alpes_Provence when = 1 }
+		command = { type = secedearea which = FRA value = Limousin_Auvergne when = 1 }
+		command = { type = secedearea which = FRA value = Pyrenees_Languedoc when = 1 }
+	}
+}

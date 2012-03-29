@@ -1,0 +1,18 @@
+###49000-49999###
+
+event = {
+	id = 49001
+	country = U07
+	
+	name = "The Union in Exile"
+	desc = "The Union government has fled Greece and set themselves up in Algeria to be able to continue the fight."
+	style = 1
+
+	action = {
+		name = "Grim tidings..."
+		command = { type = secedearea which = U00 value = "East Atlas" when = 1 }
+		command = { type = secedearea which = U00 value = "Maghreb Coast" when = 1 }
+		command = { type = secedearea which = U00 value = "Oran" when = 1 }
+		command = { type = trigger which = 55045 }
+	}
+}

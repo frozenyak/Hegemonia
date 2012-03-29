@@ -1,0 +1,32 @@
+FRA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+5000;Chantiers de Penhoët;T1400;5;1930;1970;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5001;Félix Amiot;T1401;6;1930;1970;aeronautics;electronics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5002;Arsenal de Brest;T1402;6;1930;1970;naval_engineering;naval_artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5003;FAMH;T1404;4;1930;1970;mechanics;training;electronics;general_equipment;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5004;F. & I. Joliot-Curie;T1405;6;1930;1958;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5005;Jean-Jacques Barré;T1406;3;1930;1970;rocketry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5006;Kuhlmann;T1407;3;1930;1970;chemistry;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5007;Manufacture d'Armes de St.Etienne;T1408;4;1930;1970;mechanics;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5008;Morane-Saulnier;T1409;4;1930;1970;aeronautics;artillery;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5009;Renault;T1410;6;1930;1970;mechanics;industrial_engineering;general_equipment;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5010;Rhône-Poulenc;T1411;4;1930;1970;chemistry;industrial_engineering;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5011;Saint-Gobain;T1412;3;1930;1970;chemistry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5012;Schneider;T1413;5;1930;1970;artillery;mechanics;technical_efficiency;electronics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5013;SNPA;T1414;4;1970;1970;industrial_engineering;chemistry;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5014;SOMUA;T1415;5;1930;1970;mechanics;industrial_engineering;electronics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5015;Charles de Gaulle;T1416;8;1939;1970;combined_arms_focus;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5016;Étienne Schlumberger;T1417;5;1942;1970;large_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5017;François d'Astier de la Vigerie;T1419;3;1930;1970;fighter_tactics;piloting;aircraft_testing;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5018;Marcel Gensoul;T1420;4;1930;1970;large_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5019;Maurice Gamelin;T1422;2;1930;1958;centralized_execution;large_unit_tactics;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5021;Louis de Broglie;T1425;7;1930;1970;nuclear_physics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5022;Dassault Aviation;T1426;7;1946;1970;rocketry;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5023;Bertrand Goldschmidt;T1427;7;1946;1970;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5024;CEMA;T1430;4;1950;1970;fighter_tactics;bomber_tactics;piloting;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5025;Fabrique Nationale;T702;5;1930;1970;mechanics;general_equipment;artillery;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5026;Gevaert;T703;6;1930;1970;chemistry;general_equipment;industrial_engineering;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5027;Renard;T704;4;1930;1970;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5028;Solvay SA;T706;7;1930;1970;chemistry;industrial_engineering;mathematics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5029;Jules Iserentant;T709;3;1930;1970;fighter_tactics;aircraft_testing;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5030;Victor Strydonck de Burkel;T710;4;1930;1945;small_unit_tactics;centralized_execution;individual_courage;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5031;Forges de Clabecq;T712;6;1930;1970;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

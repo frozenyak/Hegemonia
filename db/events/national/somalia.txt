@@ -1,0 +1,88 @@
+###58000-58999###
+
+event = {
+	id = 58000
+	country = SOM
+	
+	trigger = {
+		puppet = { country = SOM country = EGY }
+	}	
+
+	name = "The Ulema Revolt"
+	desc = "After the region was subjugated by the Shiite Egypt, Sunni Islam was largely surpressed in our nation. Facing increasing taxes and demands from our Egyptian overlord, the Sunni Ulema have rallied around a leader, Abdulahi Issa Mohamud, and proclaimed him rightful Sultan of Somali, beginning the Ulema revolt against Egyptian rule."
+	style = 1		
+
+	date = { day = 8 month = august year = 1937 }
+
+	action = {
+		name = "We will throw off the Egyptian shackles!"
+		ai_chance = 95
+		command = { type = relation which = EGY value = -200 }
+		command = { type = headofstate which = 575011 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }		
+		command = { type = trigger which = 30012 }
+	}
+	action = {
+		name = "That all sounds much too violent!"
+		ai_chance = 5
+		command = { type = dissent value = 20 }
+	}
+}
+
+event = {
+	id = 58001
+	country = SOM
+	
+	trigger = {
+		war = { country = SOM country = EGY }
+	}
+
+	name = "The Army of the Faithful"
+	desc = "Those of the true Sunni faith have gathered to our banners to fight Egypt. Should we accept anyone who wishes to fight, and rely on numbers, or only the best, and aim for quality of troops?"
+	style = 1
+
+	date = { day = 12 month = august year = 1937 }
+
+	action = {
+		name = "Accept any that will fight"
+		ai_chance = 70
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = domestic which = professional_army value = -1 }
+	}
+	action = {
+		name = "Form an elite corps of professional soldiers"
+		ai_chance = 30
+		command = { type = add_division value = infantry value = 1 }
+		command = { type = add_division value = infantry value = 1 }
+		command = { type = domestic which = professional_army value = 2 }
+	}
+}
+
+event = {
+	id = 58002
+	country = SOM
+	
+	name = "The Ulema Revolt is Victorious"
+	desc = "Egypt has offered peace, recognizing our independence and offering us lands along their border. What is our response?"
+	style = 1
+
+	action = {
+		name = "Accept the peace offer"
+		ai_chance = 99
+		command = { type = trigger which = 30014 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+	}
+}

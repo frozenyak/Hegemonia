@@ -1,0 +1,475 @@
+##################################################################################################################################################
+# Note: This file works by trial and error, so the slider change event might fire several times in a row for an AI if it keeps picking something #
+# it cannot change. This is currently the best way of doing it however, as ways that check possibility of moving individual sliders would either #
+# require hundreds of events or allow the AI to move several sliders at once 								         #
+##################################################################################################################################################
+#edited 24/11/11 for DH
+#now doesn't work on puppets, longer offset, chance to loop back to top pick
+#only picks valid options, does not change dem/com/fas governments
+#############################################
+#####		  Democracy		#####
+#############################################
+event = {
+	id = 12100
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		government = democratic
+		OR = {
+			can_change_policy = { type = free_market value = 1 }
+			can_change_policy = { type = democratic value = 1 }
+			can_change_policy = { type = freedom value = 1 }
+			can_change_policy = { type = defense_lobby value = 1 }
+			can_change_policy = { type = interventionism value = 1 }
+			can_change_policy = { type = free_market value = -1 }
+			can_change_policy = { type = democratic value = -1 }
+			can_change_policy = { type = freedom value = -1 }
+			can_change_policy = { type = defense_lobby value = -1 }
+			can_change_policy = { type = interventionism value = -1 }
+		}
+		NOT = { ispuppet = yes }
+	}
+
+	name = AI_EVENT
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 60
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Political Policy"
+		ai_chance = 40
+		command = { type = trigger which = 12102 }
+	}
+	action = {
+		name = "Diplomatic Policy"
+		ai_chance = 35
+		command = { type = trigger which = 12103 }
+	}
+	action = {
+		name = "Economic Policy"
+		ai_chance = 25
+		command = { type = trigger which = 12104 }
+	}
+}
+
+#Domestic Policy Change - democratic
+event = {
+	id = 12102
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = freedom value = 1 } }
+		ai_chance = 25
+		command = { type = change_policy which = freedom value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = democratic value = 1 } }
+		ai_chance = 25
+		command = { type = change_policy which = democratic value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = freedom value = -1 } }
+		ai_chance = 24
+		command = { type = change_policy which = freedom value = -1 }
+	}
+	action = {
+		trigger = {
+			can_change_policy = { type = democratic value = -1 }
+			domestic = { type = democratic value = 6 }
+		}
+		ai_chance = 25
+		command = { type = change_policy which = democratic value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12100 }
+	}
+}
+
+#Diplomatic Policy Change - democratic
+event = {
+	id = 12103
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = 1 } }
+		ai_chance = 20
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = interventionism value = 1 } }
+		ai_chance = 20
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = -1 } }
+		ai_chance = 30
+		command = { type = change_policy which = defense_lobby value = -1 }
+	}
+	action = {
+		trigger = { 
+			can_change_policy = { type = interventionism value = -1 } 
+			OR = {
+				domestic = { type = interventionism value = 6 }
+				NOT = { participant = { value = 4 } }
+			}
+		}
+		ai_chance = 29
+		command = { type = change_policy which = interventionism value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12100 }
+	}
+}
+
+#Economic Policy Change - democratic
+event = {
+	id = 12104
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = free_market value = 1 } }
+		ai_chance = 39
+		command = { type = change_policy which = free_market value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = 1 } }
+		ai_chance = 25
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = free_market value = -1 } }
+		ai_chance = 10
+		command = { type = change_policy which = free_market value = -1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = -1 } }
+		ai_chance = 25
+		command = { type = change_policy which = defense_lobby value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12100 }
+	}
+}
+
+#############################################
+#####		  Fascist		#####
+#############################################
+event = {
+	id = 12110
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		government = fascist
+		OR = {
+			can_change_policy = { type = free_market value = 1 }
+			can_change_policy = { type = democratic value = 1 }
+			can_change_policy = { type = freedom value = 1 }
+			can_change_policy = { type = defense_lobby value = 1 }
+			can_change_policy = { type = interventionism value = 1 }
+			can_change_policy = { type = free_market value = -1 }
+			can_change_policy = { type = democratic value = -1 }
+			can_change_policy = { type = freedom value = -1 }
+			can_change_policy = { type = defense_lobby value = -1 }
+			can_change_policy = { type = interventionism value = -1 }
+		}
+		NOT = { ispuppet = yes }
+	}
+
+	name = AI_EVENT
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 60
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Political Policy"
+		ai_chance = 20
+		command = { type = trigger which = 12102 }
+	}
+	action = {
+		name = "Diplomatic Policy"
+		ai_chance = 40
+		command = { type = trigger which = 12103 }
+	}
+	action = {
+		name = "Economic Policy"
+		ai_chance = 40
+		command = { type = trigger which = 12104 }
+	}
+}
+
+#Domestic Policy Change - fascist
+event = {
+	id = 12112
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = freedom value = 1 } }
+		ai_chance = 5
+		command = { type = change_policy which = freedom value = 1 }
+	}
+	action = {
+		trigger = {
+			can_change_policy = { type = democratic value = 1 }
+			NOT = { domestic = { type = democratic value = 4 } }
+		}
+		ai_chance = 5
+		command = { type = change_policy which = democratic value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = freedom value = -1 } }
+		ai_chance = 44
+		command = { type = change_policy which = freedom value = -1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = democratic value = -1 } }
+		ai_chance = 45
+		command = { type = change_policy which = democratic value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12110 }
+	}
+}
+
+#Diplomatic Policy Change - fascist
+event = {
+	id = 12113
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = 1 } }
+		ai_chance = 35
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = interventionism value = 1 } }
+		ai_chance = 35
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = -1 } }
+		ai_chance = 10
+		command = { type = change_policy which = defense_lobby value = -1 }
+	}
+	action = {
+		trigger = { 
+			can_change_policy = { type = interventionism value = -1 } 
+			OR = {
+				domestic = { type = interventionism value = 6 }
+				NOT = { participant = { value = 4 } }
+			}
+		}
+		ai_chance = 19
+		command = { type = change_policy which = interventionism value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12110 }
+	}
+}
+
+#Economic Policy Change - fascist
+event = {
+	id = 12114
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = free_market value = 1 } }
+		ai_chance = 20
+		command = { type = change_policy which = free_market value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = 1 } }
+		ai_chance = 39
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = free_market value = -1 } }
+		ai_chance = 30
+		command = { type = change_policy which = free_market value = -1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = -1 } }
+		ai_chance = 10
+		command = { type = change_policy which = defense_lobby value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12110 }
+	}
+}
+
+#############################################
+#####		  Communist		#####
+#############################################
+event = {
+	id = 12120
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		government = communist
+		OR = {
+			can_change_policy = { type = free_market value = 1 }
+			can_change_policy = { type = democratic value = 1 }
+			can_change_policy = { type = freedom value = 1 }
+			can_change_policy = { type = defense_lobby value = 1 }
+			can_change_policy = { type = interventionism value = 1 }
+			can_change_policy = { type = free_market value = -1 }
+			can_change_policy = { type = democratic value = -1 }
+			can_change_policy = { type = freedom value = -1 }
+			can_change_policy = { type = defense_lobby value = -1 }
+			can_change_policy = { type = interventionism value = -1 }
+		}
+		NOT = { ispuppet = yes }
+	}
+
+	name = AI_EVENT
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 60
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Political Policy"
+		ai_chance = 25
+		command = { type = trigger which = 12102 }
+	}
+	action = {
+		name = "Diplomatic Policy"
+		ai_chance = 25
+		command = { type = trigger which = 12103 }
+	}
+	action = {
+		name = "Economic Policy"
+		ai_chance = 50
+		command = { type = trigger which = 12104 }
+	}
+}
+
+#Domestic Policy Change - communist
+event = {
+	id = 12122
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = freedom value = 1 } }
+		ai_chance = 10
+		command = { type = change_policy which = freedom value = 1 }
+	}
+	action = {
+		trigger = {
+			can_change_policy = { type = democratic value = 1 }
+			NOT = { domestic = { type = democratic value = 4 } }
+		}
+		ai_chance = 10
+		command = { type = change_policy which = democratic value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = freedom value = -1 } }
+		ai_chance = 39
+		command = { type = change_policy which = freedom value = -1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = democratic value = -1 } }
+		ai_chance = 40
+		command = { type = change_policy which = democratic value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12120 }
+	}
+}
+
+#Diplomatic Policy Change - communist
+event = {
+	id = 12123
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = 1 } }
+		ai_chance = 34
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = interventionism value = 1 } }
+		ai_chance = 35
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = -1 } }
+		ai_chance = 15
+		command = { type = change_policy which = defense_lobby value = -1 }
+	}
+	action = {
+		trigger = { 
+			can_change_policy = { type = interventionism value = -1 } 
+			OR = {
+				domestic = { type = interventionism value = 6 }
+				NOT = { participant = { value = 4 } }
+			}
+		}
+		ai_chance = 15
+		command = { type = change_policy which = interventionism value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12120 }
+	}
+}
+
+#Economic Policy Change - communist
+event = {
+	id = 12124
+	persistent = yes
+
+	name = "AI_EVENT"
+
+	action = {
+		trigger = { can_change_policy = { type = free_market value = 1 } }
+		ai_chance = 5
+		command = { type = change_policy which = free_market value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = 1 } }
+		ai_chance = 10
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = free_market value = -1 } }
+		ai_chance = 49
+		command = { type = change_policy which = free_market value = -1 }
+	}
+	action = {
+		trigger = { can_change_policy = { type = defense_lobby value = -1 } }
+		ai_chance = 35
+		command = { type = change_policy which = defense_lobby value = -1 }
+	}
+	action = {
+		ai_chance = 1
+		command = { type = trigger which = 12120 }
+	}
+}

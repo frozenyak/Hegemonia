@@ -1,0 +1,96 @@
+# 0 - Early 1939
+model = {
+	cost 				= 5
+	buildtime	 		= 100
+	manpower 			= 2.4
+	defensiveness 		= 3
+	toughness 			= 3
+	softness			= -2
+	softattack			= 4
+	hardattack			= 2
+	defaultorganisation	= 4
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Basic 1940
+model = {
+	cost 				= 5.5
+	buildtime	 		= 100
+	manpower 			= 2.4
+	defensiveness 		= 5
+	toughness 			= 4
+	softness			= -3
+	softattack			= 5
+	hardattack			= 2
+	defaultorganisation	= 6
+	supplyconsumption 	= 0.44
+	fuelconsumption		= 0.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Improved 1943
+model = {
+	cost 				= 6
+	buildtime	 		= 100
+	manpower 			= 2.4
+	defensiveness 		= 6
+	toughness 			= 5
+	softness			= -4
+	softattack			= 6
+	hardattack			= 3
+	defaultorganisation	= 8
+	supplyconsumption 	= 0.52
+	fuelconsumption		= 0.9
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 3 - Advanced 1945
+model = {
+	cost 				= 6
+	buildtime	 		= 100
+	manpower 			= 2.4
+	defensiveness 		= 7
+	toughness 			= 6
+	softness			= -5
+	softattack			= 7
+	hardattack			= 3
+	defaultorganisation	= 10
+	supplyconsumption 	= 0.64
+	fuelconsumption		= 0.9
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 4 - Semimodern 1949
+model = {
+	cost 				= 6.5
+	buildtime	 		= 100
+	manpower 			= 2.4
+	defensiveness 		= 8
+	toughness 			= 7
+	softness			= -5
+	softattack			= 8
+	hardattack			= 4
+	defaultorganisation	= 10
+	supplyconsumption 	= 0.72
+	fuelconsumption		= 0.9
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 5 - Modern 1953
+model = {
+	cost 				= 7
+	buildtime	 		= 100
+	manpower 			= 2.4
+	defensiveness 		= 9
+	toughness 			= 8
+	softness			= -6
+	softattack			= 9
+	hardattack			= 5
+	defaultorganisation	= 10
+	supplyconsumption 	= 0.84
+	fuelconsumption		= 0.9
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

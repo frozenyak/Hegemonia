@@ -1,0 +1,119 @@
+
+#############################################
+# Regular AI Events
+#############################################
+# Behavior Flags
+# Attack flags
+#	CYNAttackJAP		= Flag turned on means they are free to attack at will
+################
+################
+# Attack Japan controls
+#	CYNAttackJAP		= Flag turned on means they are free to attack at will
+#############################################
+event = {
+	id = 3124012
+	country = CYN
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CYNAttackJAP }
+		war = { country = JAP country = CYN }
+		OR = {
+			lost_national = { country = CHI value = 50 }
+			lost_national = { country = CYN value = 1 }
+		}
+	}
+
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		#command = { type = ai which = "switch/CYN_Attack_JAP.ai" }
+		command = { type = local_setflag which = CYNAttackJAP }
+	}
+}
+event = {
+	id = 3124013
+	country = CYN
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		local_flag = CGXAttackJAP
+		NOT = { war = { country = JAP country = CYN } }
+		NOT = { lost_national = { country = CHI value = 50 } }
+		NOT = { lost_national = { country = CYN value = 1 } }
+	}
+
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/CYN_Defend_JAP.ai" }
+		command = { type = local_clrflag which = CYNAttackJAP }
+	}
+}
+################
+# Yunnan  Backs off from Japan AI
+#############################################
+event = {
+	id = 3124014 
+	country = CYN
+	
+	trigger = {
+		ai = yes
+		war = { country = CYN country = JAP }
+		OR = {
+			event = 3011002
+			event = 2011025
+			lost_national = { country = CHI value = 35 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/WAR_Backoff.ai" }
+		command = { type = ai which = "switch/Air_Ground.ai" }
+	}
+}
+################
+# Yunnan changes to defensive AI vs Japan
+#############################################
+event = {
+	id = 3124015 
+	country = CYN
+	
+	trigger = {
+		ai = yes
+		war = { country = JAP country = CYN }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		#command = { type = ai which = "switch/CYN_Japan.ai" }
+		command = { type = ai which = "switch/Air_Ground.ai" }
+	}
+}

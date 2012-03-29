@@ -1,0 +1,26 @@
+###46400-46999###
+
+event = {
+	id = 46400
+	country = ITA
+	
+	name = "The Italian Nation"
+	desc = "Our glorious nation has been born."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = capital which = 419 }
+		#
+		command = { type = headofstate which = 25014 }
+		command = { type = headofgovernment which = 25002 }
+		command = { type = foreignminister which = 25034 }
+		command = { type = armamentminister which = 25054 }
+		command = { type = ministerofsecurity which = 25072 }
+		command = { type = ministerofintelligence which = 25006 }
+		command = { type = chiefofstaff which = 25101 }
+		command = { type = chiefofarmy which = 25110 }
+		command = { type = chiefofnavy which = 25120 }
+		command = { type = chiefofair which = 25127 }
+	}
+}

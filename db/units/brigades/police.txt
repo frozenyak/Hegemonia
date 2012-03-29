@@ -1,0 +1,10 @@
+model = {
+	cost 			= 3
+	buildtime	 	= 60
+	manpower 		= 1
+	defaultorganisation = 8
+	suppression		= 4
+	supplyconsumption = 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

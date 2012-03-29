@@ -1,0 +1,95 @@
+SOV;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
+30001;Head of State;Mikhail I. Kalinin;33;ST;Weary Stiffneck;High;3176;X
+30002;Head of State;Iosif V. Stalin;33;ST;Paranoid megalomaniac2;High;3177;X
+30003;Foreign Minister;Maksim M. Litvinov;33;ST;Biased Intellectual;Medium;3178;X
+30004;Minister of Armament;Lazar M. Kaganovich;33;ST;Resource Industrialist;High;3179;X
+30005;Minister of Security;Genrikh G. Yagoda;33;ST;Back Stabber;Low;3180;X
+30006;Head of Military Intelligence;Yan K. Berzin;33;ST;Technical Specialist;Medium;3181;X
+30007;Chief of Staff;Michail N. Tuchatchevskiy;33;LE;School of Manoeuvre;Low;3182;X
+30008;Chief of Army;Kliment Y. Voroshilov;33;ST;Guns and Butter Doctrine;Very High;3183;X
+30009;Chief of Navy;Vladimir M. Orlov;33;LE;Indirect Approach Doctrine;Very Low;M4009;X
+30010;Chief of Air Force;Yakov I. Alksnis;33;LE;Air Superiority Doctrine;High;3184;X
+30011;Head of State;Iosif V. Stalin;33;ST;Ruthless Powermonger;Very High;3177;X
+30012;Head of State;Vyacheslav M. Molotov;33;ST;Autocratic Charmer;High;3185;X
+30013;Head of State;Nikolay M. Shvernik;46;ST;Insignificant Layman;High;3186;X
+30014;Head of State;Alexander F. Kerensky;33;SL;Die-hard Reformer;High;3187;X
+30015;Head of State;Nikolai I. Yezhov;33;PA;Barking Buffoon;High;3188;X
+30016;Head of Government;Vyacheslav M. Molotov;33;ST;Silent Workhorse;High;3185;X
+30017;Head of Government;Lavrentiy P. Beria;38;ST;Backroom Backstabber;High;3189;X
+30018;Head of Government;Alexander F. Kerensky;33;SL;Happy Amateur;High;3187;X
+30019;Head of Government;Nikolai I. Yezhov;33;PA;Corporate Suit;High;3188;X
+30020;Foreign Minister;Andrey J. Vyshinsky;33;ST;The Cloak N Dagger Schemer;Very High;3190;X
+30021;Foreign Minister;Vyacheslav M. Molotov;38;ST;Iron Fisted Brute;High;3185;X
+30022;Foreign Minister;Ivan M. Maisky;43;ST;Apologetic Clerk;High;3191;X
+30023;Minister of Armament;Georgiy D. Bazilevich;38;ST;Infantry Proponent;High;M4036;X
+30024;Minister of Armament;Dimitry F. Ustinov;41;ST;Theoretical Scientist;High;3192;X
+30025;Minister of Armament;Boris L. Vannikov;42;ST;Military Entrepreneur;Very High;M4038;X
+30026;Minister of Security;Nikolai I. Yezhov;33;ST;Back Stabber;Medium;3188;X
+30027;Minister of Security;Sergej Uritskiy;37;ST;Crime Fighter;Medium;M4040;X
+30028;Minister of Security;Lavrentiy P. Beria;38;ST;Prince of Terror;Very High;3189;X
+30029;Minister of Security;Andriy G. Orlov;38;ST;Silent Lawyer;Medium;M4042;X
+30030;Minister of Security;Sergiy G. Gendin;38;ST;Efficient Sociopath;Medium;M4043;X
+30031;Minister of Security;Andriy P. Panfilov;41;ST;Man of the People;Medium;M4044;X
+30032;Head of Military Intelligence;Nikolai I. Yezhov;33;PA;Technical Specialist;Undying;3188;X
+30033;Head of Military Intelligence;Ivan I.Proskurov;37;ST;Dismal Enigma;High;3193;X
+30034;Head of Military Intelligence;Filip I. Golikov;40;ST;Political Specialist;Very High;3194;X
+30035;Head of Military Intelligence;Andriy P. Panfilov;41;ST;Logistics Specialist;High;M4044;X
+30036;Head of Military Intelligence;Igor I. Ilichev;42;ST;Industrial Specialist;Very High;M4049;X
+30037;Head of Military Intelligence;Fedor F. Kuznetsov;45;ST;Technical Specialist;Very High;M4050;X
+30038;Chief of Staff;Boris M. Shaposhnikov;37;ST;School of Mass Combat;Very High;3195;X
+30039;Chief of Staff;Kirill A. Meretskov;40;ST;School of Psychology;High;3196;X
+30040;Chief of Staff;Georgiy K. Zhukov;41;ST;School of Fire Support;Medium;3197;X
+30041;Chief of Staff;Alesandr M. Vasilevskiy;42;ST;School of Defence;High;3198;X
+30042;Chief of Staff;Nikolay A. Bulganin;44;ST;School of Mass Combat;Low;3199;X
+30043;Chief of Staff;Aleksei I. Antonov;45;ST;School of Psychology;Very High;3200;X
+30044;Chief of Staff;Sergei M. Shtemenko;46;ST;School of Manoeuvre;High;M4057;X
+30045;Chief of Army;Semen K. Timoshenko;41;ST;Elastic Defence Doctrine;High;3201;X
+30046;Chief of Army;Iosif V. Stalin;41;ST;Guns and Butter Doctrine;Undying;3177;X
+30047;Chief of Army;Rodion Y. Malinovsky;43;ST;Armoured Spearhead Doctrine;High;1171;X
+30048;Chief of Navy;Mikhail V. Viktorov;38;ST;Power Projection Doctrine;Very Low;M4061;X
+30049;Chief of Navy;Nikolai G. Kuznetsov;39;ST;Decisive Naval Battle Doctrine;High;3202;X
+30050;Chief of Navy;Ivan. S. Isakov;40;LE;Base Control Doctrine;Low;3203;X
+30051;Chief of Air Force;Aleksandr D. Loktionov;37;ST;Army Aviation Doctrine;Low;3204;X
+30052;Chief of Air Force;Pavel V. Rychagov;38;ST;Naval Aviation Doctrine;Medium;3205;X
+30053;Chief of Air Force;Yakov V. Smushkevich;33;LE;Army Aviation Doctrine;Medium;3206;X
+30054;Chief of Air Force;Aleksandr E. Golovanov;40;LE;Army Aviation Doctrine;High;3207;X
+30055;Chief of Air Force;Alexander A. Novikov;42;ST;Air Superiority Doctrine;Very High;3208;X
+30056;Chief of Air Force;Y.V. Vladimiroch;43;ST;Carpet Bombing Doctrine;Medium;M4069;X
+30057;Head of State;Andrey A. Vlasov;33;PA;Resigned Generalissimo;High;M4011;X
+30058;Head of Government;Gregori N. Zhilenkov;33;PA;Political Protege;High;3209;X
+30059;Foreign Minister;Fedor P. Bogatyrchuk;33;PA;Great Compromiser;Low;3210;X
+30060;Minister of Armament;Anton Scheglov;33;PA;Military Entrepreneur;Medium;M4014;X
+30061;Minister of Security;Vladimir Malyshkin;33;PA;Back Stabber;Very High;M4015;X
+30062;Head of Military Intelligence;Mikhail A. Meandrov;33;PA;Dismal Enigma;Very High;M4016;X
+30063;Chief of Staff;Fyodor Trikhin;33;PA;School of Mass Combat;High;M4017;X
+30064;Chief of Army;Vitaly Maltsev;33;PA;Decisive Battle Doctrine;Very High;M4018;X
+30065;Chief of Navy;P. Drozd;33;PA;Power Projection Doctrine;High;M4019;X
+30066;Chief of Air Force;S.A. Chernykh;33;PA;Army Aviation Doctrine;High;M4020;X
+30067;Foreign Minister;Dmitri P. Romanov;33;SC;Biased Intellectual;Medium;3211;X
+30068;Minister of Armament;Vladimir M. Smirnov;33;SL;laissez-faire capitalist;High;M4024;X
+30069;Minister of Security;Igor N. Troubetzkoy;33;SC;Man of the People;Medium;M4025;X
+30070;Head of Military Intelligence;Igor N. Troubetzkoy;33;SC;Technical Specialist;Medium;M4025;X
+30071;Chief of Staff;Konstantin K. Rokossovsky;40;LWR;School of Manoeuvre;High;M4027;X
+30072;Chief of Army;Georgiy K. Zhukov;33;PA;Decisive Battle Doctrine;Medium;3197;X
+30073;Chief of Navy;Nikolay G. Kuznetsov;33;PA;Decisive Naval Battle Doctrine;Medium;3202;X
+30074;Chief of Air Force;Pavel V. Rychagov;33;PA;Army Aviation Doctrine;Medium;3205;X
+30075;Minister of Armament;Nikolay A. Bulganin;53;ST;Resource Industrialist;High;3212;X
+30076;Minister of Armament;Iosif V. Stalin;33;ST;Military Entrepreneur;Very High;3177;X
+30077;Head of State;Kliment Y. Voroshilov;53;ST;Resigned Generalissimo;High;3183;X
+30078;Head of Government;Nikita S. Khrushchev;58;ST;Flamboyant Tough Guy;High;3213;X
+30079;Minister of Armament;Aleksandr Vasilevsky;49;ST;Infantry Proponent;High;3214;X
+30080;Minister of Security;Sergey N. Kruglov;53;ST;Back Stabber;Very High;3215;X
+30081;Head of Military Intelligence;Viktor S. Abakumov;46;ST;Logistics Specialist;Very High;3216;X
+30082;Head of Military Intelligence;Semyon D. Ignatyev;51;ST;Political Specialist;Very High;M4079;X
+30083;Head of Military Intelligence;Ivan A. Serov;53;ST;Technical Specialist;Very High;3025;X
+30084;Head of State;Leonid I. Brezhnev;60;ST;Stern Imperialist;High;3026;X
+30085;Head of Government;Georgy M. Malenkov;53;ST;Political Protege;High;3027;X
+30086;Head of Government;Nikolay A. Bulganin;55;ST;Old General;High;3212;X
+30087;Foreign Minister;Dmitriy T. Shepilov;56;ST;Apologetic Clerk;Medium;3028;X
+30088;Foreign Minister;Andrey A. Gromyko;57;ST;The Cloak N Dagger Schemer;Medium;3029;X
+30089;Minister of Armament;Georgiy K. Zhukov;55;ST;Military Entrepreneur;High;3197;X
+30090;Minister of Armament;Rodion Y. Malinovsky;59;ST;Tank Proponent;High;1171;X
+30091;Minister of Security;Nikolay Dudorov;56;ST;Back Stabber;Very High;M4091;X
+30092;Head of Military Intelligence;Aleksandr N. Shelepin;58;ST;Political Specialist;Very High;3030;X
+30093;Head of Military Intelligence;Vladimir Y. Semichastny;61;ST;Dismal Enigma;Very High;M4093;X
+30094;Head of Government;Nikolai I. Bukharin;36;LE;communist chairman;High;BukharinRUS;x    

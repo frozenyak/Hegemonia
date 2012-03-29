@@ -1,0 +1,118 @@
+#
+# The Events Database
+#
+
+# Global events
+event = "db\events\generic_decisions.txt"
+event = "db\events\genericevents.txt"
+event = "db\events\mobilization.txt"
+
+event = "db\events\RandomEvents.txt"
+#event = "db\events\political - sc events.txt"
+#event = "db\events\political - ml events.txt"
+#event = "db\events\political - sl events.txt"
+#event = "db\events\political - sd events.txt"
+
+event = "db\events\secret_weapon_events.txt"
+event = "db\events\balance_of_power.txt"
+event = "db\events\great_war.txt"
+event = "db\events\ministers.txt"
+#event = "db\events\nukes.txt"
+event = "db\events\dublin.txt"
+
+# AI Events
+event = "db\events\AI\AI_sliders.txt"
+#event = "db\events\AI\AI_invasions.txt"
+event = "db\events\AI\AI_files.txt"
+event = "db\events\AI\AI_mobi.txt"
+#event = "db\events\AI\AI_research.txt"
+event = "db\events\AI\AI_MinorShutInvasion.txt"
+#event = "db\events\AI\ai_jap.txt"
+event = "db\events\AI\ai_ministers.txt"
+event = "db\events\AI\ai_alliances.txt"
+
+# national events
+
+#europe
+event = "db\events\national\austria.txt"
+#event = "db\events\national\crete.txt"
+event = "db\events\national\finland.txt"
+event = "db\events\national\iberia.txt"
+event = "db\events\national\italian commune.txt"
+event = "db\events\national\lombardy.txt"
+event = "db\events\national\netherlands.txt"
+event = "db\events\national\lithuania.txt"
+event = "db\events\national\romania.txt"
+event = "db\events\national\russia.txt"
+event = "db\events\national\don-volga.txt"
+event = "db\events\national\georgia.txt"
+event = "db\events\national\scandinavia.txt"
+#event = "db\events\national\gotland.txt"
+event = "db\events\national\swiss.txt"
+event = "db\events\national\great britain.txt"
+event = "db\events\national\england.txt"
+event = "db\events\national\scotland.txt"
+event = "db\events\national\ireland.txt"
+
+#france
+event = "db\events\national\france.txt"
+event = "db\events\national\france communist.txt"
+event = "db\events\national\occitania.txt"
+
+#germany
+event = "db\events\national\germany.txt"
+event = "db\events\national\german civil war.txt"
+event = "db\events\national\german civil war intervention.txt"
+event = "db\events\national\german republic.txt"
+#event = "db\events\national\germany_royalists.txt"
+#event = "db\events\national\germany_commies.txt"
+
+#asia
+event = "db\events\national\union.txt"
+event = "db\events\national\japan.txt"
+event = "db\events\national\japan surrender.txt"
+event = "db\events\national\ostasien.txt"
+event = "db\events\national\tagalog.txt"
+event = "db\events\national\mongolia.txt"
+#event = "db\events\national\korea.txt"
+event = "db\events\national\australasia.txt"
+#event = "db\events\national\annam.txt"
+#event = "db\events\national\bhutan.txt"
+event = "db\events\national\turkestan.txt"
+#event = "db\events\national\arabia.txt"
+event = "db\events\national\imperials.txt"
+
+#china
+event = "db\events\national\china yuan.txt"
+event = "db\events\national\china nationalist.txt"
+event = "db\events\national\china puppets.txt"
+event = "db\events\national\china communist.txt"
+
+#america/caribbean
+event = "db\events\national\america.txt"
+event = "db\events\national\mazula.txt"
+event = "db\events\national\vinland.txt"
+
+event = "db\events\national\qtizi.txt"
+event = "db\events\national\mansur.txt"
+event = "db\events\national\tarrbitz.txt"
+event = "db\events\national\fabur.txt"
+
+#jadakal
+event = "db\events\national\jadakal.txt"
+event = "db\events\national\alusal.txt"
+#event = "db\events\national\asmunakal.txt"
+event = "db\events\national\jidligrib.txt"
+event = "db\events\national\muhajedz.txt"
+event = "db\events\national\nova_aquitania.txt"
+event = "db\events\national\tarwajal.txt"
+event = "db\events\national\gustavia.txt"
+
+#africa
+event = "db\events\national\egypt.txt"
+event = "db\events\national\africa.txt"
+#event = "db\events\national\somalia.txt"
+#event = "db\events\national\ljansitar.txt"
+#event = "db\events\national\friland.txt"
+event = "db\events\national\congo.txt"
+#event = "db\events\national\angola.txt"

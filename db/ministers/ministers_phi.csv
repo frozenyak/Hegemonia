@@ -1,0 +1,33 @@
+PHI;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+;Replacements;;;;;;;x
+215001;Head of State;William Gallacher;36;LWR;Benevolent Gentleman;High;M1111;x
+215002;Head of Government;Michael Morris;36;SL;Happy Amateur;High;M59038;x
+215003;Foreign Minister;Bernard Montgomery;36;SD;General Staffer;Very High;Montgomery;x
+215004;Minister of Armament;John Strachey;36;LWR;Air to Ground Proponent;High;M1030;x
+215005;Minister of Security;Eric Blair;36;LWR;Compassionate Gentleman;High;kaiserreich ericblair;x
+215006;Head of Military Intelligence;Archibald Angus;36;ML;Political Specialist;Very High;M59006;x
+215007;Chief of Staff;Victor Lord Linlithgow;36;ML;School of Defence;Medium;M59007;x
+215008;Chief of Army;Arthur A. Barrett;36;ML;Static Defence Doctrine;High;M59008;x
+215009;Chief of Navy;William E. Parry;36;ML;Power Projection Doctrine;Very High;L1378;x
+215010;Chief of Air Force;Joe Rogers;36;LWR;Carpet Bombing Doctrine;Medium;M50030;x
+215011;Head of State;Victor Lord Linlithgow;36;ML;Stern Imperialist;High;M59001;x
+215012;Head of Government;John Edward Golightly;36;ML;Silent Workhorse;High;M59002;x
+215013;Minister of Security;George H. Douglas;36;ML;Man of the People;Medium;M59005;x
+215014;Chief of Air Force;Bruce W. McPherson;36;ML;Vertical Envelopment Doctrine;High;M59010;x
+215015;Head of Military Intelligence;James Wilson;36;SL;Naval Intelligence Specialist;High;M50077;x
+215016;Head of Military Intelligence;Leslie Ailen Wheeler;38;SL;Technical Specialist;High;M50078;x
+215017;Head of Military Intelligence;John Gilbert Winant;43;SL;Industrial Specialist;Medium;M50081;x
+215018;Chief of Air Force;Edwin Andrews;44;SL;Vertical Envelopment Doctrine;Medium;M50086;x
+215019;Chief of Air Force;Victor H. Dizon;46;SC;Naval Aviation Doctrine;High;M50087;x
+215020;Head of State;Lord Louis Mountbatten;45;SL;Popular Figurehead;High;M59033;x
+215021;Head of State;Archibald Wavell;42;ML;Resigned Generalissimo;High;M59034;x
+215022;Minister of Security;Sir Henry Gidney;42;SL;Compassionate Gentleman;Very High;M59071;x
+215023;Head of Military Intelligence;Stephen Hope-Carlill;45;SL;Naval Intelligence Specialist;Medium;L1356;x
+215024;Head of Military Intelligence;Lindsey Stephenson;38;ML;Dismal Enigma;Medium;M59084;x
+215025;Chief of Staff;Charles T.M. Pizey;46;SD;School of Manoeuvre;High;M59090;x
+215026;Chief of Army;Sir Frank Messervy;45;SL;Armoured Spearhead Doctrine;Very Low;M59102;x
+215027;Chief of Army;Archibald Wavell;42;ML;Elastic Defence Doctrine;High;M59034;x
+215028;Chief of Navy;W.H. Gould-Bradford;42;ML;Open Seas Doctrine;Medium;L1349;x
+215029;Minister of Armament;Denis Healey;54;ST;Administrative Genius;Very High;M1201;x
+215030;Foreign Minister;Denis Healey;54;ST;Iron Fisted Brute;Very High;M1201;x
+215031;Foreign Minister;Jim Callaghan;54;LE;Biased Intellectual;Very High;M1222;x

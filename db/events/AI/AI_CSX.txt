@@ -1,0 +1,81 @@
+
+#############################################
+# Regular AI Events
+#############################################
+# Behavior Flags
+#	UPGPeace			= Upgrading of existing units flag
+################
+# Concetrate on upgrading while at peace
+#############################################
+event = {
+	id = 3122002
+	country = CSX
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { local_flag = UPGPeace }
+	}
+
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_Peace.ai" }
+		command = { type = local_setflag which = UPGPeace }
+	}
+}
+event = {
+	id = 3122003
+	country = CSX
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = UPGPeace
+	}
+
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_War.ai" }
+		command = { type = local_clrflag which = UPGPeace }
+	}
+}
+################
+# Shanxi changes to defensive AI vs Japan
+#############################################
+event = {
+	id = 3122004 
+	country = CSX
+	
+	trigger = {
+		ai = yes
+		war = { country = JAP country = CSX }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CSX_EXP_Change.ai" }
+		command = { type = ai which = "switch/Air_Ground.ai" }
+	}
+}

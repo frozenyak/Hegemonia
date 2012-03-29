@@ -1,0 +1,103 @@
+U00;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+102001;Head of Government;Benito Mussolini;37;ST;Imperialist buffoon;High;M3002;x
+102002;Minister of Armament;Benito Mussolini;37;ST;Resource Industrialist;Very High;M3002;x
+102003;Minister of Security;Benito Mussolini;36;ST;Media magnate;Very High;M3002;x
+102044;Head of State;Giorgis Siantos;36;LE;Insignificant Layman;High;M18021;x
+102045;Head of State;Nikos Zahariadis;45;LE;Autocratic Charmer;High;M18022;x
+102046;Chief of Navy;Militiades Porphyrogins;36;ST;Decisive Naval Battle Doctrine;High;M18029;x
+102047;Chief of Army;Aris Velouchiotis;36;ST;Decisive Battle Doctrine;High;M18028;x
+102048;Chief of Staff;Stephanos Sarafis;36;ST;School of Mass Combat;High;M18027;x
+102049;Head of Military Intelligence;Giannes Ioannides;36;LE;Political Specialist;High;M18025;x
+102050;Head of Military Intelligence;Evripidis Bakirtris;36;LWR;Industrial Specialist;High;M18065;x
+102051;Minister of Security;Giannes Ioannides;36;LE;Silent Lawyer;High;M18025;x
+102052;Minister of Armament;Giorgis Siantos;36;ST;Resource Industrialist;High;M18021;x
+102053;Chief of Air Force;Nikos Beloyannis;36;LE;Naval Aviation Doctrine;High;M18030;x
+102083;Foreign Minister;Nikos Zahariadis;36;LE;Great Compromiser;Very High;M18022;x
+102084;Foreign Minister;Militiades Porphyrogins;36;ST;General Staffer;Very High;M18029;x
+102063;Head of Government;Militiades Porphyrogins;36;LE;Ambitious Union Boss;High;M18029;x
+102064;Head of Government;Nikos Zahariadis;45;LE;Smiling Oilman;High;M18022;x
+102065;Head of Government;Evripidis Bakirtris;36;LWR;Happy Amateur;High;M18065;x
+102066;Head of Government;Markos Vaphiadis;46;ST;Backroom Backstabber;High;M18066;x
+102085;Foreign Minister;Petros Rousos;47;ST;Biased Intellectual;Very High;M18085;x
+102130;Minister of Security;Markos Vaphiadis;41;ST;Silent Lawyer;High;M18066;x
+102131;Minister of Security;Stratos Payioumtzis;36;ST;Efficient Sociopath;Medium;M18131;x
+102132;Head of Military Intelligence;Palmiro Togliatti;36;ST;Technical Specialist;High;M3021;x
+102133;Head of Military Intelligence;Guiseppe di Vittorio;36;ST;Political Specialist;High;M3120;x
+102134;Head of State;Palmiro Togliatti;37;ST;radical demagogue;High;M3021;x
+102135;Minister of Security;Ferruccio Parri;47;SL;Man of the People;High;M3049;x
+102136;Minister of Security;Ivanoe Bonomi;45;SL;Efficient Sociopath;High;M3048;x
+102137;Minister of Security;Salvatore Aldisio;44;SL;Prince of Terror;High;M3102;x
+102138;Minister of Armament;G. Barone Paulucci di Calboli;47;SL;laissez-faire capitalist;High;M3086;x
+102139;Minister of Armament;Vittorio Vidali;36;LE;Infantry Proponent;High;M3087;x
+102140;Minister of Armament;Giovanni Ciraolo;44;SL;Administrative Genius;High;M3084;x
+102141;Minister of Armament;Luigi Einaudi;45;SL;Strategic Air Proponent;High;M3085;x
+102142;Minister of Armament;Alessandro Marchese Casati;44;SL;Tank Proponent;Medium;M3081;x
+102143;Foreign Minister;Palmiro Togliatti;36;ST;Ideological Crusader;High;M3021;x
+102144;Foreign Minister;Pietro Nenni;45;SL;The Cloak N Dagger Schemer;High;M3062;x
+102145;Foreign Minister;Ivanoe Bonomi;44;SL;Apologetic Clerk;High;M3048;x
+102146;Head of Government;Ferruccio Parri;45;SL;Naive Optimist;High;M3049;x
+102147;Head of Government;Ivanoe Bonomi;44;SL;Silent Workhorse;High;M3048;x
+102148;Head of State;Enrico de Nicola;45;SL;Benevolent Gentleman;High;M3039;x
+102149;Head of State;Luigi Einaudi;45;SL;Insignificant Layman;High;M3085;x
+102150;Chief of Air Force;Luigi Gasparotto;36;ST;Army Aviation Doctrine;High;M3136;x
+102151;Chief of Navy;Vittorio Scialoja;46;SL;Power Projection Doctrine;High;M3157;x
+102152;Chief of Army;A. de Marinis de Ricia;36;LWR;Elastic Defence Doctrine;High;M3014;x
+102153;Chief of Staff;Alessandro Casati;44;SL;School of Defence;High;M3134;x
+102154;Head of Military Intelligence;A. de Marinis de Ricia;46;SL;Technical Specialist;High;M3014;x
+102155;Head of Military Intelligence;Emilio Pagliano;44;SL;Industrial Specialist;High;M3118;x
+102156;Minister of Security;Julian Zugazagoitia Mendieta;43;ST;Efficient Sociopath;High;M3107;x
+102157;Chief of Staff;Cipriano Facchinetti;45;SL;School of Mass Combat;High;M3083;x
+102158;Chief of Staff;Luigi Gasparotto;47;SL;School of Manoeuvre;High;M3136;x
+102159;Minister of Armament;A. de Marinis de Ricia;36;SL;Administrative Genius;High;M3014;x>
+102160;Minister of Armament;Mauro Scoccimarro;36;LE;Air to Sea Proponent;High;M3088;x
+102161;Head of State;Georgi Kulichev;45;LWR;Popular Figurehead;Very High;M19073;x
+102162;Chief of Army;Mikhail Mintchev;44;LWR;Guns and Butter Doctrine;Medium;M19134;x
+102163;Chief of Staff;Damjan Velchev;38;LWR;School of Psychology;Medium;M19122;x
+102164;Head of Military Intelligence;Georgi Kulichev;44;LWR;Naval Intelligence Specialist;Very High;M19073;x
+102165;Minister of Security;Georgi Kulichev;44;LWR;Crime Fighter;Very High;M19073;x
+102166;Foreign Minister;Petko Stainov;36;LWR;Biased Intellectual;Medium;M19072;x
+102167;Head of Government;Kimon Georgiev;44;LWR;Naive Optimist;High;M19059;x
+102168;Head of State;Kiril de Preslav;45;LWR;Stern Imperialist;High;M19042;x
+102169;Head of Government;Georgi Kulichev;46;LWR;Happy Amateur;Very High;M19073;x
+102170;Foreign Minister;Vasil Kolarov;36;ST;Ideological Crusader;High;M19031;x
+102171;Chief of Air Force;Vasil Vylkov;36;LWR;Vertical Envelopment Doctrine;Medium;M19149;x
+102172;Chief of Air Force;Zakhari Zakhariev;37;ST;Air Superiority Doctrine;Medium;M19150;x
+102173;Chief of Navy;Racho Batanov;36;LWR;Open Seas Doctrine;Medium;M19141;x
+102174;Chief of Navy;Stefan Tzanev;37;ST;Decisive Naval Battle Doctrine;Very High;M19143;x
+102175;Chief of Navy;Kiril Khalatchev;39;ST;Indirect Approach Doctrine;Medium;M19039;x
+102176;Chief of Army;Ivan Kinov;37;ST;Armoured Spearhead Doctrine;Medium;M19136;x
+102178;Chief of Staff;Assen Grekov;36;LE;School of Manoeuvre;Medium;M19124;x
+102179;Chief of Staff;Hristo Mikhailov;37;ST;School of Mass Combat;Medium;M19037;x
+102180;Head of Military Intelligence;Mincho Neychev;45;ST;Political Specialist;Medium;M19114;x
+102181;Head of Military Intelligence;Traicho Kostov;37;LE;Logistics Specialist;Medium;M19036;x
+102182;Minister of Security;Vulko Chervenkov;37;ST;Prince of Terror;High;M19103;x
+102183;Minister of Armament;Petko Kounin;38;ST;Air to Ground Proponent;High;M19090;x
+102184;Minister of Armament;Georgi Dimitrov;39;ST;Military Entrepreneur;Medium;M19032;x
+102185;Foreign Minister;Georgi Damianov;37;ST;Iron Fisted Brute;Very High;M19075;x
+102186;Foreign Minister;Vasil Kolarov;38;ST;Ideological Crusader;High;M19031;x
+102187;Head of Government;Georgi Dimitrov;37;ST;Backroom Backstabber;High;M19032;x
+102188;Head of State;Georgi Dimitrov;37;ST;Ruthless Powermonger;High;M19032;x
+102189;Head of State;Vasil Kolarov;45;LE;Weary Stiffneck;High;M19031;x
+102190;Head of State;Comrade Boris Coburg;45;ST;Autocratic Charmer;High;M19001;x
+102191;Foreign Minister;Kimon Georgiev;38;LE;General Staffer;Medium;M19059;x
+102192;Minister of Armament;Ivan Stefanov;44;LE;Battle Fleet Proponent;Low;M19034;x
+102193;Minister of Security;Anton Yugov;36;ST;Prince of Terror;High;M19035;x
+102194;Chief of Army;Tsvjatko Radojnov;36;ST;Decisive Battle Doctrine;High;M19038;x
+102195;Head of State;Vulko Chervenkov;45;ST;Stern Imperialist;High;M19103;x
+102196;Head of Government;Vasil Kolarov;49;ST;Flamboyant Tough Guy;High;M19031;x
+102197;Head of Government;Vulko Chervenkov;50;ST;Happy Amateur;High;M19103;x
+102198;Foreign Minister;Vladimir Poptomov;49;ST;Iron Fisted Brute;High;M19159;x
+102199;Foreign Minister;Mincho Neychev;40;ST;The Cloak N Dagger Schemer;High;M19114;x
+102200;Minister of Armament;Georgi Damyanov;37;ST;Tank Proponent;High;M19161;x
+102201;Minister of Armament;Petur Panchevski;49;ST;Military Entrepreneur;High;M19162;x
+102202;Minister of Security;Rusi Hristozov;49;ST;Back Stabber;High;M19163;x
+102203;Minister of Security;Georgi Chankov;51;ST;Crooked Kleptocrat;High;M19164;x
+102204;Head of Military Intelligence;Petko Kunin;50;ST;Industrial Specialist;Medium;M19165;x
+102205;Foreign Minister;Georgi Kulichev;45;LWR;The Cloak N Dagger Schemer;Very High;M19073;x
+102206;Minister of Armament;Petko Stoyanov;44;LWR;Theoretical Scientist;Low;M19086;x
+102207;Minister of Armament;Stancho Cholakov;45;LWR;Administrative Genius;Medium;M19087;x
+102208;Head of State;Avraam Benaroya;45;LWR;Die-Hard Reformer;High;M104208;x
+102209;Head of State;Pandelis Pouliopoulos;45;LE;Autocratic Charmer;High;M104209;x
+102210;Head of State;Antonio Gramsci;45;ST;Powerhungry Demagogue;High;M104210;x
+102211;Foreign Minister;Marietta Shaginyan;36;LE;Biased Intellectual;High;M104211;x
+EOF;x

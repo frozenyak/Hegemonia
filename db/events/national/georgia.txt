@@ -1,0 +1,80 @@
+###34000-34999###
+
+event = {
+	id = 34001
+	country = GEO
+	
+	trigger = {
+		NOT = { event = 56076 }
+		war = { country = U00 }
+		OR = {
+			AND = {
+				NOT = { war = { country = RUS } }
+				NOT = { alliance = { country = RUS } }
+			}
+			AND = {
+				NOT = { war = { country = LIT } }
+				NOT = { alliance = { country = LIT } }
+			}
+		}
+		NOT = { participant = { value = 1 } }
+		NOT = { participant = { value = 2 } }
+	}
+
+	name = "The Union Attacks Georgia"
+	desc = "The Union of Rome has declared war on us. It is unlikely that we can resist their armies for long."
+	style = 2
+	picture = "soviet_marginal_victory"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		trigger = {
+			NOT = { war = { country = RUS } }
+			NOT = { alliance = { country = RUS } }
+		}
+		name = "Ask Russia for assistance"
+		ai_chance = 55
+		command = { type = trigger which = 56030 }
+	}
+	action = {
+		trigger = {
+			NOT = { war = { country = LIT } }
+			NOT = { alliance = { country = LIT } }
+			NOT = { event = 44031 }
+		}
+		name = "Ask Lithuania for assistance"
+		ai_chance = 44
+		command = { type = trigger which = 44025 }
+	}
+	action = {
+		name = "We will win this ourselves!"
+		ai_chance = 1
+		command = { }
+	}
+}
+
+event = { 
+	id = 34005
+	random = no
+	country = GEO
+	
+	name = "Russian Ultimatum"
+	desc = "Russia delivered an ultimatum demanding we give up our sovereignty and become part of Russia."
+	style = 2
+	picture = "news_paper"
+	
+	action_a = {
+		name = "ACTION_NAME_NEVER"
+		ai_chance = 75
+		command = { trigger = { puppet = { country = GEO country = RUS } } type = end_puppet }
+		command = { type = trigger which = 56081 }
+	}
+	action_b = {
+		name = "ACTIONNAME3500B" # Very well. (Game Over)
+		ai_chance = 25
+		command = { type = trigger which = 56082 }
+	}
+}

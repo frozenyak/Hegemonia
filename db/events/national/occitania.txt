@@ -1,0 +1,317 @@
+###50000-50999###
+
+event = {
+	id = 50000
+	country = U06
+	
+	trigger = {
+		ispuppet = U06
+		NOT = { flag = comintern_league_pact }
+	}
+
+	name = "The Christmas Bombings"
+	desc = "As the citizens of Toulouse were celebrating christmas, a string of explosions erupted in the city as bombs went off at two police stations and a government building. Several dozen people are dead or missing, and we suspect the communist Occitain Liberation Front is behind this."
+	style = 1
+	
+	date = { day = 23 month = december year = 1937 }
+
+	action = {
+		name = "A black day!"
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 50001
+	country = U06
+	
+	trigger = {
+		ispuppet = U06
+		NOT = { flag = comintern_league_pact }
+		#random = 25
+	}
+
+	name = "Christmas Bomber Arrested"
+	desc = "The mastermind behind the Christmas Bombings, an Occitain communist leader by the name of Pierre Martineau, has been arrested. Upon interrogation he has revealed several more OLF plots targeting the Iberian loyal government. Secret police are suggesting that we take pre-emptive measures and begin arresting any and all suspected communists."
+	style = 1
+	
+	#date = { day = 18 month = january year = 1938 }
+	date = { day = 9 month = january year = 1938 }
+	offset = 14
+	deathdate = { day = 30 month = january year = 1938 }	
+
+
+	action = {
+		name = "Crack down on communists and nationalists"
+		ai_chance = 75
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = U06_crackdown }
+	}
+	action = {
+		name = "Let's not overreact..."
+		ai_chance = 25
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 50002
+	country = U06
+	
+	trigger = {
+		ispuppet = U06
+		NOT = { flag = comintern_league_pact }
+		NOT = { flag = U06_crackdown }
+		random = 50
+		NOT = { event = 2002029 } #darlan assassination
+	}
+
+	name = "Second String of Bombings"
+	desc = "Our choice not to react to the revealed bombing plots proved foolish today as a second string of bombings shook Toulouse, stirring up dissent and anti-government rhetoric across the nation. We now have no choice but to crack down on OLF and other suspected terrorist groups."
+	style = 2
+	picture = "news_paper"
+	
+	#date = { day = 7 month = february year = 1938 }
+	date = { day = 1 month = february year = 1938 }
+	offset = 7
+	deathdate = { day = 30 month = march year = 1938 }	
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = setflag which = U06_crackdown }
+	}
+}
+
+event = {
+	id = 50003
+	country = U06
+	
+	trigger = {
+		flag = FRA_support_OLF
+		#random = 25
+	}
+
+	name = "OLF Guerillas Formed"
+	desc = "After our crackdown, hundreds of OLF members fled across the border into France, where they have been given money and weapons by the French Communist Regime. Now they have returned across the border and formed guerilla bands in the forests around Bordeaux, emerging only to strike at police, military and government installations."
+	style = 1
+	
+	#date = { day = 17 month = november year = 1938 }
+	date = { day = 1 month = october year = 1938 }
+	offset = 18
+	date = { day = 30 month = november year = 1938 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 50004
+	country = U06
+	one_action = yes
+	
+	trigger = {
+		event = 50003
+		random = 25
+	}
+
+	name = "The OLF Coup"
+	desc = "Aided by disloyal elements of the military and French support, the OLF plans to arrest the Iberian-friendly government and seize control themselves. Should they fail, a harsh crackdown is sure to follow, dealing OLF a serious blow."
+	style = 2
+ 	picture = "news_paper"
+	
+	date = { day = 1 month = december year = 1938 } #date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1945 }	
+
+	action = {
+		trigger = { headofgovernment = 107002 }
+		name = "ACTION_NAME_THE_COUP_SUCCEEDS"
+		ai_chance = 67
+		command = { type = name where = U06 which = "" }
+		command = { type = industrial_modifier which = total value = 5 }
+		#
+		command = { type = dissent value = -30 }
+		#
+		command = { type = relation which = SPA value = -200 }
+		command = { type = relation which = RUS value = -200 }
+		command = { type = relation which = ENG value = -200 }
+		command = { type = relation which = U00 value = 400 }
+		command = { type = relation which = VIC value = 400 }
+		#
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = free_market value = 2 }
+		command = { type = set_domestic which = defense_lobby value = 7 }
+		#
+		command = { type = headofstate which = 107044 }
+		command = { type = headofgovernment which = 107047 }
+		command = { type = foreignminister which = 107041 }
+		command = { type = armamentminister which = 107051 }
+		command = { type = ministerofsecurity which = 107052 }
+		command = { type = ministerofintelligence which = 107053 }
+		command = { type = chiefofstaff which = 107054 }
+		command = { type = chiefofarmy which = 107055 }
+		command = { type = chiefofnavy which = 107056 }
+		command = { type = chiefofair which = 107057 }
+		#
+		command = { type = peace which = VIC value = 1 }
+		command = { type = peace which = U00 value = 1 }
+		command = { type = peace which = U02 value = 1 }
+		command = { type = peace which = JAP value = 1 }
+		command = { type = peace which = GER value = 1 }
+		command = { type = peace which = AUS value = 1 }
+		#
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = end_access which = SPA }
+	}
+	action = {
+		trigger = { headofgovernment = 107002 }
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 33
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+	action = {
+		trigger = { NOT = { headofgovernment = 107002 } }
+		name = "ACTION_NAME_THE_COUP_SUCCEEDS"
+		ai_chance = 75
+		command = { type = name where = U06 which = "" }
+		command = { type = industrial_modifier which = total value = 5 }
+		#
+		command = { type = dissent value = -30 }
+		#
+		command = { type = relation which = SPA value = -200 }
+		command = { type = relation which = RUS value = -200 }
+		command = { type = relation which = ENG value = -200 }
+		command = { type = relation which = U00 value = 400 }
+		command = { type = relation which = VIC value = 400 }
+		#
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = free_market value = 2 }
+		command = { type = set_domestic which = defense_lobby value = 7 }
+		#
+		command = { type = headofstate which = 107044 }
+		command = { type = headofgovernment which = 107047 }
+		command = { type = foreignminister which = 107041 }
+		command = { type = armamentminister which = 107051 }
+		command = { type = ministerofsecurity which = 107052 }
+		command = { type = ministerofintelligence which = 107053 }
+		command = { type = chiefofstaff which = 107054 }
+		command = { type = chiefofarmy which = 107055 }
+		command = { type = chiefofnavy which = 107056 }
+		command = { type = chiefofair which = 107057 }
+		#
+		command = { type = peace which = VIC value = 1 }
+		command = { type = peace which = U00 value = 1 }
+		command = { type = peace which = U02 value = 1 }
+		command = { type = peace which = JAP value = 1 }
+		command = { type = peace which = GER value = 1 }
+		command = { type = peace which = AUS value = 1 }
+		#
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = end_access which = SPA }
+	}
+	action = {
+		trigger = { NOT = { headofgovernment = 107002 } }
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 25
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 50005
+	country = U06
+	
+	trigger = {
+		event = 50004
+		government = communist
+	}
+
+	name = "The OLF Government - Foreign Policy"
+	desc = "Now that the government is safely in our hands we have to decide on our foreign policy."
+	style = 1
+	
+	date = { day = 1 month = december year = 1938 }
+	offset = 14
+	deathdate = { day = 1 month = january year = 1945 }	
+
+	action = {
+		name = "Join the Comintern"
+		ai_chance = 95
+		command = { type = set_domestic which = interventionism value = 7 }
+		#
+		command = { type = trigger which = 33009 }
+		command = { type = trigger which = 38028 }
+	}
+	action = {
+		name = "Strict Neutrality"
+		ai_chance = 4
+		command = { type = set_domestic which = interventionism value = 3 }
+		#
+		command = { type = trigger which = 33010 }
+		command = { type = trigger which = 38029 }
+	}
+	action = { 
+		trigger = { 
+			exists = VIC
+			# NOT = { flag = FRA_claim_OCC }
+		}
+		name = "Join France (Game Over)"
+		ai_chance = 1
+		#
+		command = { type = trigger which = 33011 } #vic
+		command = { type = trigger which = 38030 } #spa
+		command = { type = trigger which = 35115 } #ger
+	}
+	# action = { 
+		# trigger = { 
+			# exists = VIC 
+			# flag = FRA_claim_OCC
+		# }
+		# name = "Join France (Game Over)"
+		# ai_chance = 5
+		# #
+		# command = { type = trigger which = 33011 } #vic
+		# command = { type = trigger which = 38030 } #spa
+		# command = { type = trigger which = 35115 } #ger
+	# }
+}
+
+event = {
+	id = 50006
+	country = U06
+	persistent = yes 
+	
+	name = "Occitania"
+	desc = "Our glorious nation has been reborn."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = militia when = 1 }
+		command = { type = add_division value = militia when = 1 }
+		command = { type = add_division value = militia when = 1 }
+	}
+}

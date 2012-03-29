@@ -1,0 +1,75 @@
+U08;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+;Replacements;;;;;;;x
+109000;Head of State;Frederick III;36;SL;Benevolent Gentleman;High;M37;x
+109001;Head of State;Waldemar VII;36;SC;Autocratic Charmer;High;M36;x
+109002;Head of Government;Tjarda van Starkenborgh-Stachouwer;36;SC;Flamboyant Tough Guy;Very High;M577002;x
+109003;Foreign Minister;Hubertus Van Mook;36;SC;Biased Intellectual;High;M577003;x
+109004;Minister of Armament;Muhammad III Pontiak;36;SC;Air Superiority Proponent;Medium;M577004;x
+109005;Minister of Security;Fedde Schurer;36;SC;Crime Fighter;High;M8113;x
+109006;Head of Military Intelligence;Raymond Westerling;36;SC;Naval Intelligence Specialist;Medium;M577006;x
+109007;Chief of Staff;Murk Boerstra;36;SC;School of Manoeuvre;Very High;L7802;x
+109008;Chief of Army;Gerardus Berenschot;36;SC;Static Defence Doctrine;Very High;L7801;x
+109009;Chief of Navy;Conrad Helfrich;36;SC;Base Control Doctrine;Very High;L7839;x
+109010;Chief of Air Force;Ludolph van Oyen;36;SC;Army Aviation Doctrine;Very High;L7859;x
+109011;Head of State;Achmed Sukarno;36;PA;Weary Stiffneck;Very High;M577011;x
+109012;Head of State;Ferdinand Lumban Tobing;36;SD;Autocratic Charmer;Very High;M577012;x
+109013;Head of State;Kawan Musso;36;LE;Powerhungry Demagogue;Very High;M577013;x
+109014;Head of Government;Muhammad Hatta;36;PA;Political Protege;Very High;M577014;x
+109015;Head of Government;Muhammad Thamrin;36;SD;Smiling Oilman;Very High;M577015;x
+109016;Head of Government;Amir Sjarifuddin;36;LE;Naive Optimist;Medium;M577016;x
+109017;Foreign Minister;Ahmad Subandrio;36;PA;Ideological Crusader;Medium;M577017;x
+109018;Foreign Minister;Hamengkubowono IX Yopgya;43;PA;The Cloak N Dagger Schemer;Medium;M577018;x
+109019;Foreign Minister;Sutan Sjahrir;36;SD;Apologetic Clerk;Low;M577019;x
+109020;Foreign Minister;Sukarjo Wiryopranato;44;SD;Great Compromiser;Low;M577020;x
+109021;Foreign Minister;Suryono Suripno;36;LE;Iron Fisted Brute;High;M577021;x
+109022;Minister of Armament;Sjarifudin Prawiranegara;36;PA;Air to Sea Proponent;Low;M577022;x
+109023;Minister of Armament;Dodechismo Djuanda;44;PA;Tank Proponent;Low;M577023;x
+109024;Minister of Armament;Haj Agus Salim;45;PA;Administrative Genius;Low;M577024;x
+109026;Minister of Armament;Danudirjia Setiabudi;36;SD;Infantry Proponent;Low;M577026;x
+109027;Minister of Armament;Lukman Dan Sardjono;36;LE;Military Entrepreneur;High;M577027;x
+109028;Minister of Security;D.W. Cokroaminoto;36;PA;Prince of Terror;Medium;M577028;x
+109029;Minister of Security;Ngabehi van Jogakarta;46;SC;Man of the People;High;M577029;x
+109030;Minister of Security;Arie Frederick Lasut;36;SD;Back Stabber;Medium;M577030;x
+109031;Minister of Security;Adam Malik;45;SD;Compassionate Gentleman;Medium;M577031;x
+109032;Minister of Security;S.M. Kartosuwirjo;36;LE;Efficient Sociopath;High;M577032;x
+109033;Minister of Security;D.N. Aidit;45;LE;Silent Lawyer;High;M577033;x
+109034;Head of Military Intelligence;Besar Sudirman;36;PA;Logistics Specialist;High;M577034;x
+109035;Head of Military Intelligence;Dr. Cipto Mangunkusomo;38;PA;Technical Specialist;High;M577035;x
+109036;Head of Military Intelligence;Mohammed Yamin;36;SD;Industrial Specialist;High;M577036;x
+109037;Head of Military Intelligence;T.N. Supratman;36;LE;Political Specialist;Low;M577037;x
+109038;Chief of Staff;Besar Sudirman;36;PA;School of Mass Combat;High;M577034;x
+109039;Chief of Staff;Gerardus Berenschot;39;SC;School of Defence;Very High;L7801;x
+109040;Chief of Staff;Hein Ter Poorten;41;SC;School of Fire Support;Very High;L7819;x
+109041;Chief of Staff;Hamid II Pontiak;36;SD;School of Psychology;Low;M577041;x
+109042;Chief of Staff;Tan Malaka;36;LE;School of Mass Combat;High;M577042;x
+109043;Chief of Army;Abdul Harris Nasution;36;PA;Decisive Battle Doctrine;High;M577043;x
+109044;Chief of Army;Hein Ter Poorten;39;SC;Elastic Defence Doctrine;Very High;L7819;x
+109045;Chief of Army;Rudolph Bakker;41;SC;Armoured Spearhead Doctrine;Very High;L7800;x
+109046;Chief of Army;Simon Spoor;45;SC;Decisive Battle Doctrine;Very High;L7817;x
+109047;Chief of Army;Uyrip Sumoharjo;36;SD;Guns and Butter Doctrine;High;M577047;x
+109048;Chief of Army;Tan Malaka;36;LWR;Decisive Battle Doctrine;High;M577042;x
+109049;Chief of Navy;Amangwu Sawana;36;PA;Open Seas Doctrine;High;M577049;x
+109050;Chief of Navy;We Yohannes;36;SD;Indirect Approach Doctrine;Low;M577050;x
+109051;Chief of Navy;Ahmad Alimin;36;LE;Decisive Naval Battle Doctrine;Low;M577051;x
+109052;Chief of Air Force;Achmed Sukarno;36;PA;Naval Aviation Doctrine;High;M577011;x
+109053;Chief of Air Force;Mohammed Jusf;42;PA;Air Superiority Doctrine;High;M577053;x
+109054;Chief of Air Force;R.M. Suryo;36;SD;Vertical Envelopment Doctrine;High;M577054;x
+109055;Chief of Air Force;I.M. Najoan;36;LE;Carpet Bombing Doctrine;Low;M577055;x
+109056;Head of Government;Abdul Halim;50;PA;Naive Optimist;Very High;M577056;x
+109057;Head of Government;Mohammed Natsir;50;PA;Corporate Suit;Very High;M577057;x
+109058;Head of Government;Sukoman Wirjosandjojo;51;PA;Smiling Oilman;Very High;M577058;x
+109059;Head of Government;Siswanto Wilopo;52;PA;Ambitious Union Boss;Very High;M577059;x
+109060;Head of Government;Ali Sastromidjojo;53;PA;Silent Workhorse;Very High;M577060;x
+109061;Foreign Minister;Muhammad Hatta;51;PA;The Cloak N Dagger Schemer;Medium;M577014;x
+109062;Minister of Security;Abdul Halim;49;PA;Crime Fighter;Medium;M577056;x
+109063;Chief of Staff;Wakil Pakmehasan;50;PA;School of Manoeuvre;Low;M577063;x
+109064;Head of Government;Oskar Meissner;36;SC;Naive Optimist;High;M44;x
+109065;Minister of Security;Oskar Meissner;36;SC;Back Stabber;High;M44;x
+109066;Chief of Navy;Ludwig Fulda;36;SC;Decisive Naval Battle Doctrine;Medium;M45;x
+109067;Foreign Minister;Joachim von Ribbentrop;36;PA;Iron Fisted Brute;High;M55;x
+109068;Minister of Armament;Franz Xavier-Schwarz;36;PA;Resource Industrialist;Very High;M84;x
+109069;Chief of Staff;Kurt Zeitzler;36;PA;School of Defence;Medium;M163;x
+109070;Chief of Army;Kurt von Hammerstein-Equord;36;PA;Guns and Butter Doctrine;High;M175;x
+109071;Chief of Navy;Kurt Freiwald;36;PA;Base Control Doctrine;Medium;M194;x
+109072;Chief of Air Force;Wilhelm Oxenius;45;SC;Naval Aviation Doctrine;Medium;M210;x
+EOF;x

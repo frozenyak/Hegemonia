@@ -1,0 +1,143 @@
+TUR;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+65801;Head of State;Reza Pahlavi;36;ST;Stern Imperialist;High;M53001;x
+65802;Head of Government;Mahmud Jam;36;ST;Silent Workhorse;High;M53002;x
+65803;Foreign Minister;Mustafa Adil;36;ST;Biased Intellectual;Medium;M53042;x
+65804;Foreign Minister;Miria Muhsin Khan;36;ST;Ideological Crusader;Medium;M53043;x
+65805;Foreign Minister;Muzzafar Alam;36;ST;Apologetic Clerk;Medium;M53045;x
+65806;Foreign Minister;Ali Zohayli;36;ST;Iron Fisted Brute;Low;M53036;x
+65807;Foreign Minister;Mohammed Said Maraghei;36;ST;Great Compromiser;High;M53038;x
+65808;Foreign Minister;Khaslatam Narimanov;36;ST;General Staffer;High;M516014;x
+65809;Foreign Minister;Ali Zohayli;36;ST;The Cloak N Dagger Schemer;Medium;M53036;x
+65810;Minister of Armament;Anushirvan Sepahbody;36;ST;Administrative Genius;Medium;M53052;x
+65811;Minister of Armament;Ja'fer Pishevari;36;ST;Resource Industrialist;Medium;M53023;x
+65812;Minister of Armament;Zoka Dowleh;36;ST;Theoretical Scientist;Medium;M53065;x
+65813;Minister of Armament;Alfred Rudolph Zimmermann;36;ST;laissez-faire capitalist;Medium;M53014;x
+65814;Minister of Armament;Abdolreza Afkhami;36;ST;Military Entrepreneur;Medium;M53008;x
+65815;Minister of Armament;Sayyid al-Din Tabataba'i;36;ST;Battle Fleet Proponent;Medium;M53012;x
+65816;Minister of Armament;Gabiden Mustafin;36;ST;Submarine Proponent;Medium;M520020;x
+65817;Minister of Armament;Mohammed Nakhjavani;36;ST;Tank Proponent;Medium;M53062;x
+65818;Minister of Armament;Mirza Riza Arfa Dowleh;36;ST;Infantry Proponent;Medium;M53057;x
+65819;Minister of Armament;Morteza Yazdi;36;ST;Air Superiority Proponent;Medium;M53024;x
+65820;Minister of Armament;Rajib Kulbenzhian;36;ST;Corrupt Kleptocrat;High;M516011;x
+65821;Minister of Armament;Azilkhan Nurshaykov;36;ST;Air to Ground Proponent;Medium;M520004;x
+65822;Minister of Armament;Ahmad Khan Nakhjavan;36;ST;Air to Sea Proponent;High;M53004;x
+65823;Minister of Armament;Mohammed Bahrami;36;ST;Strategic Air Proponent;Medium;M53026;x
+65824;Minister of Security;Hussein Khan Ala;36;ST;Silent Lawyer;Medium;M53073;x
+65825;Minister of Security;Mohammed Bahrami;36;ST;Compassionate Gentleman;Medium;M53026;x
+65826;Minister of Security;Soleiman Mirza;36;ST;Crime Fighter;Medium;M53022;x
+65827;Minister of Security;Eraj Eskandari;36;ST;Prince of Terror;Medium;M53025;x
+65828;Minister of Security;Abolhassan Hakimi;36;ST;Back Stabber;Medium;M53078;x
+65829;Minister of Security;Ali Mansour;36;ST;Man of the People;Medium;M53034;x
+65830;Minister of Security;Aleksiyi Vagov;36;ST;Efficient Sociopath;Medium;M521031;x
+65831;Minister of Security;Edward G.V.S. Lord Derby;36;ST;Crooked Kleptocrat;Medium;M53076;x
+65832;Head of Military Intelligence;Dinshah Irani;36;ST;Technical Specialist;Medium;M53021;x
+65833;Head of Military Intelligence;Mohammed Mossadeq;36;ST;Logistics Specialist;Medium;M53013;x
+65834;Head of Military Intelligence;Muhammed Reza Pahlavi;36;ST;Political Specialist;Medium;M53011;x
+65835;Head of Military Intelligence;Ali Sepahbodi Qajar;36;ST;Dismal Enigma;Medium;M53084;x
+65836;Head of Military Intelligence;Sir Neville Grantleigh;36;ST;Industrial Specialist;Medium;M53085;x
+65837;Head of Military Intelligence;Ovassaq al-Doleh Noorie;36;ST;Naval Intelligence Specialist;Medium;M53088;x
+65838;Chief of Staff;Ali Khan Nakziam;36;ST;School of Manoeuvre;Medium;M53027;x
+65839;Chief of Staff;Hossein Afkhami;36;ST;School of Fire Support;Medium;M53017;x
+65840;Chief of Staff;Reza Mizani;36;ST;School of Mass Combat;Medium;M53006;x
+65841;Chief of Staff;Hassan Majid Firooz;36;ST;School of Defence;Medium;M53028;x
+65842;Chief of Staff;Ali Akbar Deiva;36;ST;School of Psychology;Medium;M53005;x
+65843;Chief of Army;Azram Mir Ghani;36;ST;Elastic Defence Doctrine;Medium;M53098;x
+65844;Chief of Army;Hassan Majid Firooz;36;ST;Static Defence Doctrine;Medium;M53028;x
+65845;Chief of Army;Hedayat Gilanshah;36;ST;Decisive Battle Doctrine;Medium;M53100;x
+65846;Chief of Army;Mohammed Nakhjavani;36;ST;Armoured Spearhead Doctrine;Medium;M53062;x
+65847;Chief of Army;Mir Afkhami;36;ST;Guns and Butter Doctrine;Medium;M53018;x
+65848;Chief of Navy;Schapur Khisrabadi;36;ST;Open Seas Doctrine;Medium;M53102;x
+65849;Chief of Navy;Ahmad Khan Nakhjaavan;36;ST;Decisive Naval Battle Doctrine;Medium;M53004;x
+65850;Chief of Navy;Mohammed Mir Mohanna;36;ST;Power Projection Doctrine;Medium;M53029;x
+65851;Chief of Navy;Mohammed Moini;36;ST;Indirect Approach Doctrine;Medium;M53020;x
+65852;Chief of Navy;Reza Mizani;36;ST;Base Control Doctrine;Medium;M53006;x
+65853;Chief of Air Force;Mohammed Nakhjavani;36;ST;Air Superiority Doctrine;Medium;M53062;x
+65854;Chief of Air Force;Mohammed Mir Mohanna;36;ST;Naval Aviation Doctrine;Medium;M53029;x
+65855;Chief of Air Force;Sadegh Khan Koopal;36;ST;Army Aviation Doctrine;High;M53106;x
+65856;Chief of Air Force;Hedayat Gilanshah;36;ST;Carpet Bombing Doctrine;Medium;M53100;x
+65857;Chief of Air Force;Mohammed Moini;36;ST;Vertical Envelopment Doctrine;Medium;M53020;x
+12001;Head of State;Kemal Atatürk;36;PA;Resigned Generalissimo;High;M12001;x
+12002;Head of Government;Mustafa Ismet Inönü;36;PA;Political Protege;High;M12031;x
+12003;Foreign Minister;Tewfik Rüstü Aras;36;PA;Biased Intellectual;Medium;M12003;x
+12004;Minister of Armament;Zekai Apaydin;36;SC;Resource Industrialist;Medium;M12004;x
+12005;Minister of Security;Sükrü Kaya;36;SC;Man of the People;Medium;M12005;x
+12006;Head of Military Intelligence;Sükrü Ali Ogel;36;PA;Industrial Specialist;Medium;M12006;x
+12007;Chief of Staff;Fevzi Cakmak;36;PA;School of Defence;Medium;M12007;x
+12008;Chief of Army;Mehmet Nuri Yamut;36;PA;Static Defence Doctrine;Medium;M12008;x
+12009;Chief of Navy;Mehmet Ali Üngen;36;PA;Base Control Doctrine;Medium;M12009;x
+12010;Chief of Air Force;Ali Örlungat;36;PA;Army Aviation Doctrine;Medium;M12010;x
+12031;Head of State;Mustafa Ismet Inönü;38;SC;Pig-headed Isolationist;High;M12031;x
+12032;Head of Government;Mahmud Celal Bayar;38;SC;Silent Workhorse;High;M12032;x
+12033;Head of Government;Refik Saydam;39;ML;Smiling Oilman;High;M12024;x
+12034;Head of Government;Sükrü Saracoglu;42;ML;Flamboyant Tough Guy;High;M12034;x
+12035;Foreign Minister;Sükrü Saracoglu;38;SC;Biased Intellectual;High;M12034;x
+12036;Foreign Minister;Said Menemencioglu;42;ML;Great Compromiser;Medium;M12036;x
+12038;Foreign Minister;Hassan Saka;44;SC;Ideological Crusader;Medium;M12038;x
+12039;Foreign Minister;Necmettin Sadik Sadak;47;SC;General Staffer;Medium;M12039;x
+12040;Foreign Minister;Refet Bele;36;PA;General Staffer;Medium;M12040;x
+12041;Foreign Minister;Mustafa Ismet Inönü;37;SC;Great Compromiser;Medium;M12031;x
+12042;Foreign Minister;Ali Fehti Okyar;37;ML;Biased Intellectual;Medium;M12013;x
+12043;Foreign Minister;Abdülhalik Renda;43;ML;Apologetic Clerk;Medium;M12043;x
+12045;Minister of Armament;Nurullah Esat Sümer;43;ML;Corrupt Kleptocrat;Medium;M12045;x
+12046;Minister of Armament;Adnan Menderes;46;ML;Theoretical Scientist;Medium;M12046;x
+12047;Minister of Armament;Mustafa Ismet Inönü;36;SC;Administrative Genius;Medium;M12031;x
+12048;Minister of Armament;Fuad Calistar;36;SC;Infantry Proponent;Medium;M12048;x
+12049;Minister of Armament;Kazim Özalp;36;SC;Military Entrepreneur;Medium;M12049;x
+12050;Minister of Armament;Tevfik Rüsta Aras;39;ML;Theoretical Scientist;Medium;M12050;x
+12051;Minister of Armament;Mehmet Günaltay;40;SC;Tank Proponent;Medium;M12051;x
+12052;Minister of Armament;Münir Bürsen;46;ML;laissez-faire capitalist;Medium;M12052;x
+12054;Minister of Armament;Mustafa Renda;38;ML;Military Entrepreneur;Medium;M12054;x
+12056;Minister of Security;Hüsnü Cakir;43;ML;Crooked Kleptocrat;Medium;M12056;x
+12057;Minister of Security;Hilmi Uran;44;ML;Crime Fighter;Medium;M12057;x
+12059;Minister of Security;Memduh Tagmac;46;ML;Prince of Terror;Medium;M12059;x
+12060;Minister of Security;Adnan Menderes;47;ML;Back Stabber;Medium;M12046;x
+12061;Minister of Security;Abdul Naci Tinaz;38;ML;Silent Lawyer;Medium;M12061;x
+12062;Minister of Security;Mahmud Celal Bayar;36;SC;Back Stabber;Medium;M12032;x
+12063;Minister of Security;Abbas Cevat;39;SD;Crooked Kleptocrat;Medium;M12025;x
+12064;Minister of Security;Saffet Arikan;40;SC;Crime Fighter;Medium;M12058;x
+12065;Minister of Security;Ali Riza Türel;40;ML;Efficient Sociopath;Medium;M12065;x
+12066;Minister of Security;Orhan Gökay;41;ML;Silent Lawyer;Medium;M12015;x
+12067;Minister of Security;Mehmet Recep Peker;41;SC;Compassionate Gentleman;Medium;M12067;x
+12068;Head of Military Intelligence;Mustafa Renda;38;SC;Dismal Enigma;High;M12054;x
+12069;Head of Military Intelligence;Ali Rüza Artunkal;43;ML;Logistics Specialist;Medium;M12069;x
+12070;Head of Military Intelligence;Mumtaz Ökmen;46;ML;Industrial Specialist;Medium;M12070;x
+12071;Head of Military Intelligence;Mehmet Recep Peker;47;ML;Industrial Specialist;High;M12067;x
+12072;Head of Military Intelligence;Fuad Köprülü;38;ML;Naval Intelligence Specialist;Medium;M12026;x
+12073;Chief of Staff;Abdul Naci Tinaz;38;SC;School of Fire Support;Medium;M12061;x
+12074;Chief of Staff;Ali Örlungat;43;ML;School of Mass Combat;Medium;M12010;x
+12075;Chief of Staff;Abdurrahman Gürman;46;ML;School of Manoeuvre;Medium;M12075;x
+12077;Chief of Army;Mustafa Eldelhun;43;ML;Armoured Spearhead Doctrine;Medium;M12077;x
+12078;Chief of Army;Cemil Toüdemür;46;ML;Decisive Battle Doctrine;Medium;M12078;x
+12079;Chief of Navy;Ali Fuat Cebesoy;38;SC;Indirect Approach Doctrine;Medium;M12079;x
+12080;Chief of Navy;Vehbi Koc;43;ML;Decisive Naval Battle Doctrine;Medium;M12080;x
+12081;Chief of Navy;Ahmet Aydam Bölak;46;ML;Base Control Doctrine;Medium;M12081;x
+12083;Chief of Air Force;Erkan Gataly;43;ML;Army Aviation Doctrine;Medium;M12083;x
+12084;Chief of Air Force;Memduh Tagmac;46;ML;Air Superiority Doctrine;Medium;M12059;x
+12011;Head of State;Nihal Atsiz;36;FA;Ruthless Powermonger;High;M12011;x
+12012;Head of Government;Zeki Velidi Togan;36;FA;Old General;High;M12012;x
+12013;Foreign Minister;Ali Fethi Okyar;36;PA;Ideological Crusader;Medium;M12013;x
+12014;Minister of Armament;Sadi Özbek;36;FA;Air to Sea Proponent;Medium;M12014;x
+12016;Head of Military Intelligence;Ali Fehti Okyar;36;SC;Dismal Enigma;Medium;M12013;x
+12017;Chief of Staff;Mustafa Ismet Inönü;36;PA;School of Defence;Medium;M12002;x
+12018;Chief of Army;Alparslan Türkes;36;FA;Guns and Butter Doctrine;Medium;M12018;x
+12019;Chief of Navy;Rauf Orbay;36;FA;Base Control Doctrine;Medium;M12019;x
+12020;Chief of Air Force;Sadi Özbek;36;PA;Naval Aviation Doctrine;Medium;M12014;x
+12021;Head of State;Sefik Hüsnü;36;ST;Stern Imperialist;High;M12021;x
+12022;Head of Government;Pertev Naili Boratav;36;ST;Naive Optimist;High;M12022;x
+12023;Foreign Minister;Nazim Hikmet Ran;36;ST;The Cloak N Dagger Schemer;Medium;M12023;x
+12024;Minister of Armament;Refik Saydam;36;LWR;Infantry Proponent;Medium;M12024;x
+12027;Chief of Staff;Abbas Cevat;36;LWR;School of Manoeuvre;Medium;M12025;x
+12028;Chief of Army;Pertev Naili Boratav;36;LWR;Elastic Defence Doctrine;Very Low;M12022;x
+12029;Chief of Navy;Ismael Erim;36;LE;Decisive Naval Battle Doctrine;Medium;M12029;x
+12030;Chief of Air Force;Refik Saydam;36;LE;Air Superiority Doctrine;Medium;M12024;x
+12085;Head of State;Mahmud Celal Bayar;50;ML;Barking Buffoon;High;M12032;x
+12086;Head of Government;Mehmet Recep Peker;46;SC;Political Protege;High;M12067;x
+12087;Head of Government;Hassan Saka;47;SC;Happy Amateur;High;M12038;x
+12088;Head of Government;Mehmet Günaltay;49;SC;Silent Workhorse;High;M12051;x
+12089;Head of Government;Adnan Menderes;50;ML;Ambitious Union Boss;High;M12046;x
+12090;Foreign Minister;Mehmet Fuat Köprülü;50;ML;Iron Fisted Brute;Medium;M12090;x
+12091;Minister of Armament;Faik Ahmet Barutcu;47;SC;Battle Fleet Proponent;Medium;M12091;x
+12092;Minister of Armament;Ismael Erim;49;SC;Resource Industrialist;Medium;M12029;x
+12093;Minister of Armament;Samet Agaoglu;50;ML;Theoretical Scientist;Medium;M12093;x
+12094;Minister of Armament;Fatim Rüstü Zorlu;52;ML;Administrative Genius;Medium;M12094;x
+12095;Minister of Security;Refik Koraltan;50;ML;Silent Lawyer;Medium;M12095;x

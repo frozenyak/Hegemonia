@@ -1,0 +1,570 @@
+#
+# HoI - Random Events
+#
+#		written by Henrik Fåhraeus
+#
+
+#########################################################################
+#  Fort Sabotaged
+#########################################################################
+event = {
+	id = 1020
+	random = yes
+	
+	trigger = {
+		atwar = yes
+		NOT = {
+			intel_diff = -5  # Intel Diff < -5
+		}
+	}
+	
+	name = "EVT_1020R_NAME"
+	desc = "EVT_1020R_DESC"
+	picture = "fort_sabotaged"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1020A"
+		command = { type = construct which = land_fort where = -1 value = -1 }
+	}
+}
+
+#########################################################################
+#  Coastal Fort Sabotaged
+#########################################################################
+event = {
+	id = 1030
+	random = yes
+	
+	trigger = {
+		atwar = yes
+		NOT = {
+			intel_diff = -5  # Intel Diff < -5
+		}
+	}
+	
+	name = "EVT_1030R_NAME"
+	desc = "EVT_1030R_DESC"
+	picture = "coastal_fort"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1030A"
+		command = { type = construct which = coastal_fort where = -1 value = -1 }
+	}
+}
+#########################################################################
+#  Commander Assassinated by Enemy Commandos
+#########################################################################
+event = {
+	id = 1050
+	random = yes
+	
+	trigger = {
+		atwar = yes
+		NOT = {
+			intel_diff = -10 # intel_diff < -10
+		}
+	}
+	
+	name = "EVT_1050R_NAME"
+	desc = "EVT_1050R_DESC"
+	picture = "comander_assasinated"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1050A"
+		command = { type = sleepleader which = -1 }
+	}
+}
+
+#########################################################################
+#  Parliamentary Scandal
+#########################################################################
+event = {
+	id = 1090
+	random = yes
+	
+	trigger = {
+		government = democratic
+		atwar = no
+	}
+	
+	name = "EVT_1090R_NAME"
+	desc = "EVT_1090R_DESC"
+	picture = "parliamentary_scandal"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1090A"
+		command = { type = dissent value = 1 } #5
+	}
+}
+
+#########################################################################
+#  Great War Manifestation
+#########################################################################
+event = {
+	id = 1110
+	random = yes
+	
+	trigger = {
+		atwar = no
+		government = democratic
+	}
+	
+	name = "EVT_1110R_NAME"
+	desc = "EVT_1110R_DESC"
+	picture = "great_war_manifestion"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1110A"
+		command = { type = domestic which = interventionism value = 1 }
+	}
+}
+#########################################################################
+#  Great Peace Manifestation
+#########################################################################
+event = {
+	id = 1120
+	random = yes
+	
+	trigger = {
+		atwar = no
+		government = democratic
+	}
+	
+	name = "EVT_1120R_NAME"
+	desc = "EVT_1120R_DESC"
+	picture = "peace_manifestation"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1120A"
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+#########################################################################
+#  Failed Coup d'Etat - Traitors executed
+#########################################################################
+event = {
+	id = 1140
+	random = yes
+	
+	trigger = {
+		dissent = 60 #30 # >= 30
+		NOT = {
+			OR = {
+				country = GER
+				country = DFR
+			}
+		}
+	}
+	
+	name = "EVT_1140R_NAME"
+	desc = "EVT_1140R_DESC"
+	picture = "failed_coup"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1140A"
+		command = { type = sleepminister which = -2 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = dissent value = -10 }
+	}
+}
+#########################################################################
+#  Successful Coup d'Etat - The Regime Falls
+#########################################################################
+event = {
+	id = 1150
+	random = yes
+	
+	trigger = {
+		dissent = 80 #60 # >= 60
+		NOT = {
+			OR = {
+				country = GER
+				country = DFR
+			}
+		}
+	}
+	
+	name = "EVT_1150R_NAME"
+	desc = "EVT_1150R_DESC"
+	picture = "regime_falls"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1150A"
+		command = { type = regime_falls }
+		command = { type = dissent value = -100 }
+	}
+}
+#########################################################################
+#  Famous War Hero publishes articles critizing the Conduct of War
+#########################################################################
+event = {
+	id = 1001
+	random = yes
+	
+	trigger = {
+		atwar = yes
+	}
+	
+	name = "EVT_1001R_NAME"
+	desc = "EVT_1001R_DESC"
+	picture = "news_paper"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1001A"
+		command = { type = dissent value = 1 } #5
+	}
+}
+#########################################################################
+#  Womens organisations donates material to the Army
+#########################################################################
+event = {
+	id = 1002
+	random = yes
+	
+	trigger = {
+		atwar = yes
+	}
+	
+	name = "EVT_1002R_NAME"
+	desc = "EVT_1002R_DESC"
+	picture = "womens_organisation"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1002A"
+		command = { type = resource which = supplies value = 300 } #200# % of max daily income
+	}
+}
+#########################################################################
+#  Youth Movement provides more volunteers
+#########################################################################
+event = {
+	id = 1003
+	random = yes
+	
+	trigger = {
+		atwar = yes
+		NOT = {
+			government = democratic
+			local_flag = MOB10
+		}
+	}
+	
+	name = "EVT_1003R_NAME"
+	desc = "EVT_1003R_DESC"
+	picture = "youth_movment"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1003A"
+		command = { type = manpowerpool value = 17 } #100
+	}
+}
+#########################################################################
+#  Women labour force tapped for factories.
+#########################################################################
+event = {
+	id = 1004
+	random = yes
+	
+	trigger = {
+		atwar = yes
+		government = democratic
+	}
+
+	name = "EVT_1004R_NAME"
+	desc = "EVT_1004R_DESC"
+	picture = "women_labour"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1004A"
+		command = { type = manpowerpool value = 17 } #100
+	}
+}
+#########################################################################
+#  Great Military Parade held in Capital
+#########################################################################
+event = {
+	id = 1005
+	random = yes
+	
+	name = "EVT_1005R_NAME"
+	desc = "EVT_1005R_DESC"
+	picture = "military_parade"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1005A"
+		command = { type = resource which = supplies value = -100 } # % of max daily income
+		command = { type = dissent value = -2 } #-5
+	}
+}
+#########################################################################
+#  Government nationalizes private sector
+#########################################################################
+event = {
+	id = 1006
+	random = yes
+	
+	trigger = {
+		NOT = {
+			government = democratic
+		}
+	}
+	
+	name = "EVT_1006R_NAME"
+	desc = "EVT_1006R_DESC"
+	picture = "private_sector"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1006A"
+		command = { type = industrial_modifier which = total value = 1 }
+		command = { type = dissent value = 1 }
+	}
+}
+#########################################################################
+#  Massflight of War Refugees
+#########################################################################
+event = {
+	id = 1007
+	random = yes
+	
+	trigger = {
+		atwar = yes
+	}
+	
+	name = "EVT_1007R_NAME"
+	desc = "EVT_1007R_DESC"
+	picture = "war_refugees"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1007A"
+		command = { type = manpowerpool value = 17 } #30
+	}
+}
+#########################################################################
+#  Major Worker Strike
+#########################################################################
+event = {
+	id = 1008
+	random = yes
+	
+	trigger = {
+		NOT = {
+			OR = {
+				ideology = nazi
+				ideology = stalinist
+				country = GER
+				country = DFR
+			}
+			#ideology = fascist
+		}
+	}
+	
+	name = "EVT_1008R_NAME"
+	desc = "EVT_1008R_DESC"
+	picture = "major_worker_strike"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1008A"
+		command = { type = dissent value = 2 } #3
+		command = { type = resource which = supplies value = -200 } # % of max daily income
+	}
+}
+#########################################################################
+#  Artist reflects popular emotions and records epic song
+#########################################################################
+event = {
+	id = 1009
+	random = yes
+	
+	trigger = {
+		atwar = yes
+	}
+	
+	name = "EVT_1009R_NAME"
+	desc = "EVT_1009R_DESC"
+	picture = "artist"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1009A"
+		command = { type = dissent value = -2 } #-3
+	}
+}
+#########################################################################
+#  Leading scientist defects to your country
+#########################################################################
+event = {
+	id = 1011
+	random = yes
+	
+	name = "EVT_1011R_NAME"
+	desc = "EVT_1011R_DESC"
+	picture = "scientist"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1011A"
+		command = { type = steal_tech which = -1 }
+	}
+}
+#########################################################################
+#  Accidental discovery. Miracular breaktrough in research
+#########################################################################
+event = {
+	id = 1012
+	random = yes
+	
+	name = "EVT_1012R_NAME"
+	desc = "EVT_1012R_DESC"
+	picture = "breaktroug_in_research"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1012A"
+		command = { type = gain_tech which = -2 }
+	}
+}
+#########################################################################
+#  Private initiative boost production
+#########################################################################
+event = {
+	id = 1013
+	random = yes
+	trigger = {
+		NOT = { government = communist }
+		#domestic = { type = free_market value = 4 }
+	}
+	name = "EVT_1013R_NAME"
+	desc = "EVT_1013R_DESC"
+    picture = "private_initiative2"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1013A"
+		command = { type = industrial_modifier which = total value = 1 }
+	}
+}
+#########################################################################
+#  Rogue Politician
+#########################################################################
+event = {
+	id = 1014
+	random = yes
+	
+	trigger = {
+		government = democratic
+	}
+	
+	name = "EVT_1014R_NAME"
+	desc = "EVT_1014R_DESC"
+	picture = "politician"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1014A"
+		command = { type = domestic	which = democratic value = -1 } #-2
+	}
+	action = {
+		name = "ACTIONNAME1014B"
+		command = { type = domestic	which = democratic value = 1 } #2
+	}
+}
+#########################################################################
+#  Rogue Politician
+#########################################################################
+event = {
+	id = 1015
+	random = yes
+	
+	trigger = {
+		NOT = { government = democratic }
+	}
+	
+	name = "EVT_1015R_NAME"
+	desc = "EVT_1015R_DESC"
+	picture = "politician"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1015A"
+		command = { type = dissent value = -1 }
+		command = { type = sleepminister which = -1 }
+	}
+	action = {
+		name = "ACTIONNAME1015B"
+		command = { type = dissent value = 1 }
+	}
+}
+#########################################################################
+#  Outlaw the Communist Parties
+#########################################################################
+event = {
+	id = 1016
+	random = yes
+	
+	trigger = {
+		government = democratic
+		NOT = { local_flag = parties_com }
+	}
+	
+	name = "EVT_1016R_NAME"
+	desc = "EVT_1016R_DESC"
+	picture = "outlaw_communist_party"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1016B"
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = local_setflag which = parties_com }
+	}
+	action = {
+		name = "ACTIONNAME1016A"
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = local_setflag which = parties_com }
+	}
+}
+#########################################################################
+#  Outlaw the Fascist Parties
+#########################################################################
+event = {
+	id = 1017
+	random = yes
+	
+	trigger = {
+		government = democratic
+		NOT = { local_flag = parties_fas }
+	}
+	
+	name = "EVT_1017R_NAME"
+	desc = "EVT_1017R_DESC"
+	picture = "outlaw_fascist_parties"
+	style = 1
+
+	action = {
+		name = "ACTIONNAME1017A"
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = local_setflag which = parties_fas }
+	}
+	action = {
+		name = "ACTIONNAME1017B"
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = local_setflag which = parties_fas }
+	}
+}

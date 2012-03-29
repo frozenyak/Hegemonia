@@ -1,0 +1,724 @@
+###
+###  Mutinies and other nasty things (NONE - 000)
+###
+### By Rhysaxiel
+###
+### 2000500	Mutinies !
+### 2000501	War weariness
+### 2000502	General Strikes for peace
+### 2000510  GER  The iron road is cut off (or the Baltic sea is not free)
+### 2000511  ENG  The iron road is cut off (or the Baltic sea is not free)
+### 2000512  VIC  The iron road is cut off (or the Baltic sea is not free)
+### 2000512  SPA  The iron road is cut off (or the Baltic sea is not free)
+### 2000515  GER  The iron road is opened (or the Baltic sea is free)
+### 2000516  GER  The iron road is cut off (or the Baltic sea is not free)
+### 2000520  SCA  The iron road is cut off (or the Baltic sea is not free)
+### 2000521  SCA  The iron road is opened (or the Baltic sea is free)
+### 2000525  RUS  The iron road is cut off (or the Baltic sea is not free)
+### 2000526  RUS  The Baltic is under soviet control
+### 2000527  RUS  The Baltic sea is no longer under Soviet control
+### 2022023  GER  The partitioning of Greece
+### 2022024  AUS  The partitioning of Greece
+### 2022025  LIT  The partitioning of Greece
+### 2022026  RUS  The partitioning of Greece
+### 2022027  SCA  The partitioning of Greece
+
+event = {
+	id = 2000500	# Mutinies !
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU }
+
+
+	trigger = {
+		atwar = yes
+		random = 10
+		army = 2
+		OR = {
+			dissent = 20
+			AND = {
+				dissent = 15
+				OR = {
+				lost_VP = { value = 5 }
+				lost_IC = { value = 5 }
+				}
+			}
+			AND = {
+				dissent = 10
+				OR = {
+				lost_VP = { value = 15 }
+				lost_IC = { value = 15 }
+				}
+			}
+			OR = {
+				lost_VP = { value = 25 }
+				lost_IC = { value = 25 }
+			}
+		}
+		NOT = { flag = german_civil_war }
+	}
+
+	name = "EVT1914_2000500_NAME"
+	desc = "EVT1914_2000500_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 31 month = june year = 1915 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = dissent value = 1 }
+		command = { type = disorg_division which = -1 where = 20 } #Minimum disorg value
+		command = { trigger = { army = 5 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 8 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 10 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 12 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 15 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 18 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 20 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 22 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 25 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 28 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 30 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 33 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 35 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 37 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 40 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 42 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 45 }	type = disorg_division which = -1 where = 20 }
+	}
+}
+event = {
+	id = 2000501 # War weariness
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU }
+
+	trigger = {
+		atwar = yes
+		random = 25 #50
+		NOT = { flag = german_civil_war }
+	}
+
+	name = "EVT1914_2000501_NAME"
+	desc = "EVT1914_2000501_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 25 month = december year = 1914 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { trigger = { NOT = {  OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } } }
+					type = dissent value = 2 }
+		command = { trigger = { OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } }
+					type = dissent value = 4 }
+		command = { trigger = { OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } }
+					type = domestic which = defense_lobby value = -1 }
+	}
+}
+event = {
+	id = 2000502 # General Strikes for peace
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU }
+
+	trigger = {
+		atwar = yes
+		random = 10
+		dissent = 15
+		NOT = { flag = german_civil_war }
+	}
+
+	name = "EVT1914_2000502_NAME"
+	desc = "EVT1914_2000502_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 30 month = december year = 1915 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = dissent value = 4 }
+	}
+}
+
+# Narvik/Iron route
+event = {
+	id = 2000510
+	#country = GER
+	tag = { DFR GER }
+
+	name = 9017name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	trigger = {
+		OR = {
+			AND = {
+				atwar = yes
+				NOT = { exists = SCA }
+				NOT = { control = { province = 495 data = -3 } }
+			}
+			AND = {
+				NOT = { control = { province = 495 data = -3 } }
+				war = { country = SCA }
+			}
+		}
+		OR = {
+			month = 10
+			AND = {
+				month = 0
+				NOT = { month = 3 }
+			}
+		} # november, december, january, february, march (frozen Baltic sea)
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1970 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 2 }
+		command = { type = supplies value = -50 }
+		command = { type = setflag which = NarvikNO }
+		command = { type = trigger which = 2000520 } # Embargo
+		command = { trigger = { OR = { owned = { province = 553 data = RUS } owned = { province = 270 data = RUS } } } type = trigger which = 2000525 } # Russia notifier
+	}
+}
+
+event = {
+	id = 2000511
+	country = ENG
+
+	name = 9017name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	trigger = {
+		control = { province = 495 data = ENG }
+		OR = {
+			war = { country = GER }
+			war = { country = DFR }
+		}
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -5 }
+		command = { type = supplies value = 100 }
+	}
+}
+
+event = {
+	id = 2000512
+	country = VIC
+
+	name = 9017name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	trigger = {
+		control = { province = 495 data = VIC }
+		OR = {
+			war = { country = GER }
+			war = { country = DFR }
+		}
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -5 }
+		command = { type = supplies value = 100 }
+	}
+}
+event = {
+	id = 2000513
+	country = SPA
+
+	name = 9017name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	trigger = {
+		control = { province = 495 data = SPA }
+		OR = {
+			war = { country = GER }
+			war = { country = DFR }
+		}
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -5 }
+		command = { type = supplies value = 100 }
+	}
+}
+
+event = {
+	id = 2000515
+	#country = GER
+	persistent = yes
+	tag = { DFR GER }
+
+	name = 9018name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	trigger = {
+		flag = NarvikNO
+		atwar = yes
+		control = { province = 495 data = -3 }
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -2 }
+		command = { type = supplies value = 50 }
+		command = { type = setflag which = NarvikOK }
+		command = { type = clrflag which = NarvikNO }
+		command = { type = trigger which = 2000521 } # End embargo
+	}
+}
+
+event = {
+	id = 2000516
+	#country = GER
+	persistent = yes
+	tag = { DFR GER }
+
+	name = 9017name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	trigger = {
+		flag = NarvikOK
+		atwar = yes
+		OR = {
+			flag = BaltiqueSOV
+			month = 10
+			AND = {
+				month = 0
+				NOT = { month = 3 }
+			}
+		}
+		NOT = { control = { province = 495 data = -3 } }
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 2 }
+		command = { type = supplies value = -50 }
+		command = { type = clrflag which = NarvikOK }
+		command = { type = setflag which = NarvikNO }
+		command = { type = trigger which = 2000520 } # Embargo
+	}
+}
+
+event = {
+	id = 2000520
+	country = SCA
+	persistent = yes
+
+	name = 9017name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { trigger = { exists = GER } type = embargo which = SCA where = GER value = 1 }
+		command = { trigger = { exists = DFR } type = embargo which = SCA where = DFR value = 1 }
+	}
+}
+
+event = {
+	id = 2000521
+	country = SCA
+	persistent = yes
+
+	name = 9018name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { trigger = { exists = GER } type = embargo which = SCA where = GER value = -1 }
+		command = { trigger = { exists = DFR } type = embargo which = SCA where = DFR value = -1 }
+	}
+}
+
+event = {
+	id = 2000525
+	random = no
+	country = RUS
+
+	name = 9017name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { }
+	}
+}
+
+# The Red fleet controls the Baltic sea
+event = {
+	id = 2000526
+	country = RUS
+	persistent = yes
+
+	name = 9025name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	trigger = {
+		OR = {
+			owned = { province = 553 data = RUS }
+			owned = { province = 270 data = RUS }
+		}
+		NOT = { flag = BaltiqueSOV }
+		war = { country = RUS country = GER }
+	    OR = {
+			garrison = { country = RUS province = 2728   type = naval size = 3 area = no }
+			AND = {
+				garrison = { country = RUS province = 2727   type = naval size = 3 area = no }
+				garrison = { country = RUS province = 2726   type = naval size = 3 area = no }
+			}
+			AND = {
+				garrison = { country = RUS province = 2722   type = naval size = 3 area = no }
+				garrison = { country = RUS province = 2723   type = naval size = 3 area = no }
+			}
+			AND = {
+				garrison = { country = RUS province = 2721   type = naval size = 3 area = no }
+				garrison = { country = RUS province = 2720   type = naval size = 3 area = no }
+			}
+			AND = {
+				garrison = { country = RUS province = 2719   type = naval size = 3 area = no }
+				garrison = { country = RUS province = 2718   type = naval size = 3 area = no }
+			}
+		}
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = setflag which = BaltiqueSOV }
+	}
+}
+
+event = {
+	id = 2000527
+	country = RUS
+	persistent = yes
+
+	name = 9026name
+	desc = 9017desc
+	style = 2
+	picture = "Narvik"
+
+	trigger = {
+		flag = BaltiqueSOV
+		OR = {
+			NOT = { war = { country = RUS country = GER } }
+			NOT = {
+				OR = {
+					garrison = { country = RUS province = 2728   type = naval size = 3 area = no }
+					AND = {
+						garrison = { country = RUS province = 2727   type = naval size = 3 area = no }
+						garrison = { country = RUS province = 2726   type = naval size = 3 area = no }
+					}
+					AND = {
+						garrison = { country = RUS province = 2722   type = naval size = 3 area = no }
+						garrison = { country = RUS province = 2723   type = naval size = 3 area = no }
+					}
+					AND = {
+						garrison = { country = RUS province = 2721   type = naval size = 3 area = no }
+						garrison = { country = RUS province = 2720   type = naval size = 3 area = no }
+					}
+					AND = {
+						garrison = { country = RUS province = 2719   type = naval size = 3 area = no }
+						garrison = { country = RUS province = 2718   type = naval size = 3 area = no }
+					}
+				}
+			}
+		}
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = clrflag which = BaltiqueSOV }
+	}
+}
+
+
+###### Partitioning of Greece
+event = {
+	id = 2022023
+	country = GER
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = GER value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = AUS }
+			alliance = { country = LIT }
+		}
+	}
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
+		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
+		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+	}
+}
+event = {
+	id = 2022024
+	country = AUS
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = AUS value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = GER }
+			alliance = { country = LIT }
+		}
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Thrace" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Greek Island" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = AUS value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+	}
+}
+event = {
+	id = 2022025
+	country = LIT
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = LIT value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = AUS }
+			alliance = { country = GER }
+		}
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Thrace" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Greek Island" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
+		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+	}
+}
+
+event = {
+	id = 2022026
+	country = RUS
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = RUS value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = AUS }
+			alliance = { country = GER }
+			alliance = { country = LIT }
+		}
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Thrace" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Greek Island" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
+		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+	}
+}
+
+event = {
+	id = 2022027
+	country = SCA
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = RUS value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = AUS }
+			alliance = { country = GER }
+			alliance = { country = LIT }
+		}
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Thrace" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Greek Island" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
+		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+	}
+}

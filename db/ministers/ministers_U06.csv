@@ -1,0 +1,55 @@
+U06;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+107001;Head of State;Peires Goloens;36;PA;Ruthless Powermonger;High;M10071;x
+107002;Head of Government;Johans-Francés Darlan;36;PA;Old Admiral;High;M57002;x
+107003;Foreign Minister;Paul Baudoïs;36;PA;Iron Fisted Brute;Medium;M57003;x
+107004;Minister of Armament;Martis Berliet;36;PA;laissez-faire capitalist;Medium;M57004;x
+107005;Minister of Security;Joseph Barthélemy;36;PA;Silent Lawyer;Medium;M57005;x
+107006;Head of Military Intelligence;Rene Barasc;36;PA;Technical Specialist;Medium;M57006;x
+107007;Chief of Staff;Aimerics de Bles;36;PA;School of Defence;Medium;M10202;x
+107008;Chief of Army;Maxime Weygand;36;PA;Elastic Defence Doctrine;Medium;M57008;x
+107009;Chief of Navy;Johans-Francés Darlan;36;PA;Decisive Naval Battle Doctrine;Low;M57002;x
+107010;Chief of Air Force;Johans Marie Bergeret;36;PA;Army Aviation Doctrine;Medium;M57010;x
+107012;Foreign Minister;Johans-Francés Darlan;36;PA;General Staffer;Low;M57002;x
+107013;Foreign Minister;Charles André Weiss;36;PA;Iron Fisted Brute;Low;M57013;x
+107014;Foreign Minister;Albert Thomas;36;PA;The Cloak N Dagger Schemer;Low;M57014;x
+107015;Foreign Minister;Peires Goloens;36;PA;Apologetic Clerk;Medium;M10071;x
+107016;Foreign Minister;Gabriel Hanotaux;36;PA;Ideological Crusader;Medium;M57016;x
+107017;Foreign Minister;Enric Jovenel;36;PA;Biased Intellectual;Medium;M57017;x
+107018;Foreign Minister;Arne Leroy;36;PA;Great Compromiser;Medium;M57018;x
+107019;Minister of Armament;Tulio Franco;36;PA;Resource Industrialist;Medium;M57019;x
+107020;Minister of Armament;Lucien Lacaze;36;PA;Military Entrepreneur;Medium;M57020;x
+107021;Minister of Armament;Robertz Haas;36;PA;laissez-faire capitalist;Medium;M57021;x
+107022;Minister of Armament;Isard Auphan;36;PA;Air to Sea Proponent;Medium;M57022;x
+107023;Minister of Armament;Paul Painleve;36;PA;Administrative Genius;Medium;M57023;x
+107024;Minister of Armament;Paul Luzia;36;PA;Theoretical Scientist;Medium;M57024;x
+107025;Minister of Security;Johans-Francés Darlan;36;PA;Back Stabber;Low;M57002;x
+107026;Minister of Security;Eduard Herriot;36;PA;Silent Lawyer;Low;M57026;x
+107027;Minister of Security;Peires Goloens;36;PA;Prince of Terror;Medium;M10071;x
+107028;Minister of Security;Martis Viple;36;PA;Man of the People;Medium;M57028;x
+107029;Minister of Security;Raolf Barasc;36;PA;Compassionate Gentleman;Medium;M57006;x
+107030;Minister of Security;Raphael Alibert;36;PA;Crime Fighter;Medium;M57030;x
+107031;Minister of Security;Jaufres de Berzi;36;PA;Efficient Sociopath;Medium;M57031;x
+107032;Head of Military Intelligence;Peires Goloens;36;PA;Political Specialist;Medium;M10071;x
+107033;Chief of Staff;Johans-Francés Darlan;36;PA;School of Psychology;Low;M57002;x
+107034;Chief of Staff;Eugene Mascaro;36;PA;School of Mass Combat;Medium;M57034;x
+107035;Chief of Army;Eugene Mascaro;36;PA;Decisive Battle Doctrine;Medium;M57034;x
+107036;Chief of Navy;Ramons Belarot;36;PA;Indirect Approach Doctrine;Medium;M57036;x
+107037;Chief of Navy;Johans Marie Abrial;36;PA;Open Seas Doctrine;Medium;M57037;x
+107038;Chief of Air Force;Maurice Jannekeyn;36;PA;Carpet Bombing Doctrine;Medium;M57038;x
+107039;Head of State;Enric Jovenel;36;PA;Insignificant Layman;High;M57017;x
+107040;Head of Military Intelligence;Jaufres de Berzi;36;PA;Industrial Specialist;Medium;M57031;x
+107041;Foreign Minister;Edgar Lalmand;36;ST;Biased Intellectual;Very High;M15022;x
+107044;Head of State;Julien Lahaut;36;ST;Ruthless Powermonger;NA;M15024;x
+107045;Minister of Security;Julien Lahaut;36;ST;Prince of Terror;Very High;M15024;x
+107047;Head of Government;Joseph Jaquemotte;36;ST;Political Protege;NA;M15020;x
+107048;Minister of Armament;Edgar Lalmand;36;ST;Administrative Genius;Very High;M15022;x
+107050;Foreign Minister;Jordas de Cabares;36;ST;Biased Intellectual;Very High;M15118;x
+107051;Minister of Armament;Simo Leon;36;ST;Resource Industrialist;Very High;M15119;x
+107052;Minister of Security;Azemars Henneaut;36;ST;Crime Fighter;Very High;M15120;x
+107053;Head of Military Intelligence;Julien Lahaut;36;ST;Political Specialist;Very High;M15024;x
+107054;Chief of Staff;Florismart Ménard;36;ST;School of Mass Combat;Very High;M15121;x
+107055;Chief of Army;Florismart Ménard;36;ST;Elastic Defence Doctrine;Very High;M15121;x
+107056;Chief of Navy;Hugues Robitaille;36;ST;Indirect Approach Doctrine;Very High;Kaiserreich Charles Atagana;x
+107057;Chief of Air Force;Alexandre Guernon;36;ST;Army Aviation Doctrine;Very High;Kaiserreich Epstein;x
+107058;Head of Government;Alexandre Varenne;38;SC;silent workhorse;Medium;Alexandre_Varenne;x
+EOF;x

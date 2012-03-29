@@ -1,0 +1,578 @@
+###44000-44999###
+##44020 peace with russia
+##44025 union attacks georgia
+##44030 diplomatic campaign
+
+event = {
+	id = 44000
+	country = LIT
+	
+	trigger = {
+		flag = GER_befriend_league
+		alliance = { country = GER }
+	}
+
+	name = "The HRE-League Talks"
+	desc = "Germany has opened a dialogue with the League in the interests of seeking peaceful resolutions to the differences between the two power blocs. Given our staunch enmity to Russia, such talks would be incredibly unpopular among our population and our advisors suggest that we lodge an official protest."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Lodge a protest with the Kaiser"
+		ai_chance = 85
+		command = { type = relation which = GER value = -50 }
+		command = { type = trigger which = 35006 }
+	}
+	action = {
+		name = "I'm sure the Kaiser knows best"
+		ai_chance = 14
+		command = { type = dissent value = 2 }
+	}
+	action = {
+		name = "Unacceptable! We withdraw from the HRE!"
+		ai_chance = 1
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }
+		command = { type = relation which = GER value = -200 }
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 35005 }
+		command = { type = setflag which = LIT_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}	
+}
+
+
+event = {
+	id = 44001
+	country = LIT
+
+	name = "Germany Ends the Talks"
+	desc = "Germany has caved in to our demands and ended the talks."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_GOOD
+		command = { type = dissent value = -1 }
+	}	
+}
+
+event = {
+	id = 44002
+	country = LIT
+
+	name = "Germany Ignores our Protest"
+	desc = "Germany has ignored our demands and are continuing the talks, causing widespread protesting in the streets of Minsk and calls for Lithuania's withdrawal from the HRE."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "We bow to the Kaiser's will"
+		ai_chance = 90
+		command = { type = dissent value = 10 }
+	}
+	action = {
+		name = "Unacceptable! We withdraw from the HRE!"
+		ai_chance = 10
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }
+		command = { type = relation which = GER value = -200 }
+		command = { type = dissent value = 2 }
+		command = { type = trigger which = 35005 }
+		command = { type = setflag which = LIT_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}	
+}
+
+
+event = {
+	id = 44003
+	country = LIT
+	
+	trigger = {
+		flag = GER_white_terror
+		alliance = { country = GER }
+	}
+
+	name = "The German White Terror"
+	desc = "The German Kaiser has engaged in a campaign of terror to surpress dissent at home. Thousands of liberals and communists have been murdered or arrested, and thousands more have fled across the borders into our country. Some of our more moderate politicans are demanding that we condemn Germany for these actions."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "To make an omelette..."
+		ai_chance = 84
+		command = { type = dissent value = 2 }
+		command = { type = relation which = GER value = 25 }
+	}
+	action = {
+		name = "Publically protest Germany's actions"
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = relation which = GER value = -50 }
+	}
+	action = {
+		name = "Barbarians! There can be no further alliances with Germany!"
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }		
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35047 }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+
+event = {
+	id = 44004
+	country = LIT
+	
+	trigger = {
+		OR = {
+			event = 35031
+			event = 35042
+		}
+		alliance = { country = GER }
+	}
+
+	name = "Kaiser Frederick"
+	desc = "In Germany, Waldemar VII's younger, and liberal, brother Frederick has taken the throne. Conservatives across the Holy Roman Empire are unhappy, and many in the government are calling from us to withdraw from our alliance with Germany."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		name = "We need Germany for our defense"
+		ai_chance = 90
+		command = { trigger = { event = 35031 } type = dissent value = 10 }
+		command = { type = relation which = GER value = 25 }
+	}
+	action = {
+		trigger =  {
+			event = 35042
+		}
+		name = "He is too liberal"
+		ai_chance = 10
+		command = { type = dissent value = 2 }
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }		
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35059 }
+		command = { type = setflag which = LIT_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+	action = {
+		trigger =  {
+			event = 35031
+		}
+		name = "No deals with usurpers"
+		ai_chance = 10
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }		
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35059 }
+		command = { type = setflag which = LIT_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 44005
+	country = LIT
+	
+	trigger = {
+		NOT = { exists = TRA }
+		flag = RUS_western_peace
+	}
+
+	name = "The Conquest of Don-Volga"
+	desc = "As part of our peace agreement with Russia, we have received all the land between the Don and the Volga. Our German advisors have suggested creating a client Cossack Principiality in the region to act as a buffer against Russia and the Union."
+	style = 1
+	picture = "cossacks4"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Create a Cossack Principiality"
+		ai_chance = 85
+		command = { type = independence which = TRA }
+		command = { type = make_puppet which = TRA }
+		command = { type = trigger which = 77000 }
+		command = { type = relation which = GER value = 25 }
+	}
+	action = {
+		name = "Rule the area directly"
+		ai_chance = 15
+		command = { type = dissent value = 5 }
+		command = { type = relation which = GER value = -50 }
+	}
+}
+
+event = {
+	id = 44012
+	country = LIT
+	
+	trigger = {
+		flag = HRE_restoration
+		NOT = { flag = LIT_leaves_HRE }
+	}
+	
+	name = "Restoring the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. Austria has stepped forward, claiming leadership of the alliance and asking our help in holding it together. Should we support them in their efforts to restore the alliance, or go our own way?"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Accept Austrian leadership"
+		ai_chance = 85
+		command = { type = relation which = AUS value = 200 }
+		command = { type = relation which = GER value = 200 }
+	}
+	action = {
+		name = "No, the HRE is done for"
+		ai_chance = 15
+		command = { type = relation which = AUS value = -200 }
+		command = { type = relation which = GER value = -200 }		
+		command = { type = dissent value = 5 }
+		command = { type = leave_alliance }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 44013
+	country = LIT
+	
+	trigger = {
+		flag = HRE_dissolution
+		NOT = { flag = LIT_leaves_HRE }
+	}
+	
+	name = "Dissolution of the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. There seems to be no country able to fill the power vacuum and members are withdrawing from the alliance left and right. The HRE has effectively ceased to exist."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Unfortunate..."
+		command = { type = leave_alliance }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 44015
+	country = LIT
+
+	name = "Peace in the East"
+	desc = "Russia has offered peace, offering to withdraw from the League and cede the regions of Western and Southern Russia to Lithuania."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Agree to the peace offer"
+		ai_chance = 95
+		command = { type = relation which = RUS value = 200 }
+		command = { type = trigger which = 56035 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 44020
+	country = LIT
+
+	trigger = {
+		war = { country = RUS }
+		OR = {
+			NOT = { war = { country = U00 } }
+			AND = {
+				region = { region = Balkan country = -3 }
+				NOT = { puppet = { country = ROM country = U00 } }
+			}
+		}
+		NOT = { control = { province = 264 } } #Riga
+		NOT = { control = { province = 599 } } #Minsk
+		NOT = { control = { province = 617 } } #Kiev
+		lost_national = { country = LIT value = 50 }
+		#NOT = { flag = RUS_western_peace }
+		OR = {
+			NOT = { participant = { value = 2 } }
+			NOT = { war = { country = GER country = RUS } }
+			AND = { 
+				participant = { value = 2 }
+				lost_national = { country = GER value = 40 }
+			}
+			lost_national = { country = LIT value = 75 }
+			#NOT = { control = { province = 232 } } #Warsaw
+		}
+		# OR = {
+			# NOT = { war = { country = GER } }
+			# AND = {
+				# war = { country = GER }
+				# area = { area = "East Prussia" }
+			# }
+		# }
+	}
+	
+	name = "Peace in the East"
+	desc = "The Russian front has collapsed and they control more than half our country. Perhaps it would be best to cut our losses and sue for peace? The foreign ministry has prepared several options. The one thing they all share is our exit of the HRE, and giving in to their territorial claims."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Exit HRE, give in to claims"
+		ai_chance = 65
+		command = { type = relation which = RUS value = 200 }
+		command = { type = trigger which = 56051 }
+	}
+	action = {
+		name = "Also offer the Ukraine"
+		ai_chance = 30
+		command = { type = trigger which = 56052 }
+	}
+	action = { trigger = { flag = RUS_belligerent_LIT }
+		name = "And prepare to abdicate"
+		ai_chance = 5
+		command = { type = trigger which = 56054 }
+	}
+}
+
+event = {
+	id = 44021
+	country = LIT
+
+	name = "Peace with Russia"
+	desc = "Russia has accepted our offer. We now have to hold up our end of the bargain."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = peace which = RUS value = 1 }
+		command = { type = non_aggression which = LIT where = RUS }
+		#command = { type = access which = RUS }
+		command = { type = leave_alliance }
+		#command = { trigger = { OR = { flag = RUS_claim_border flag = RUS_belligerent_LIT } } type = secedearea which = RUS value = "Estonia" when = 1 }
+		command = { type = secedearea which = RUS value = "Estonia" when = 1 }
+		command = { type = secederegion which = RUS value = "Western Russia" when = 1 }
+		command = { type = secedeprovince which = RUS value = 600 when = 1 }
+		command = { type = secederegion which = RUS value = "Kaukasus" when = 1 }
+		#
+		command = { type = secederegion which = RUS value = "Southern Russia" when = 1 }
+		command = { type = secedeprovince which = RUS value = 633 when = 1 }
+		#command = { type = secederegion which = RUS value = "Ukraine" when = 1 }
+		#command = { type = secederegion which = RUS value = "Poland" when = 1 }
+		#
+		command = { type = setflag which = LIT_peace_east }
+	}
+}
+
+event = {
+	id = 44022
+	country = LIT
+
+	name = "Peace with Russia"
+	desc = "Russia has accepted our offer. We now have to hold up our end of the bargain."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = peace which = RUS value = 1 }
+		command = { type = non_aggression which = LIT where = RUS }
+		#command = { type = access which = RUS }
+		command = { type = leave_alliance }
+		command = { trigger = { OR = { flag = RUS_claim_border flag = RUS_belligerent_LIT } } type = secedearea which = RUS value = "Estonia" when = 1 }
+		command = { type = secederegion which = RUS value = "Western Russia" when = 1 }
+		command = { type = secedeprovince which = RUS value = 600 when = 1 }
+		command = { type = secederegion which = RUS value = "Southern Russia" when = 1 }
+		command = { type = secederegion which = RUS value = "Kaukasus" when = 1 }
+		command = { type = secederegion which = RUS value = "Ukraine" when = 1 }
+		#command = { type = secederegion which = RUS value = "Poland" when = 1 }
+		
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = set_domestic which = freedom value = 7 }
+		command = { type = set_domestic which = free_market value = 7 }
+		
+		command = { type = headofstate which = 28037 }
+		command = { type = headofgovernment which = 28049 }
+		command = { type = sleepminister which = 28031 }
+	}
+}
+
+event = {
+	id = 44025
+	country = LIT
+
+	name = "The Union Attacks Georgia"
+	desc = "The Union of Rome has launched an invasion of the Republic of Georgia. The Georgians are asking us for assistance - what should we do?"
+	style = 2
+	picture = "war"
+
+	action = {
+		name = "We will defend Georgia!"
+		ai_chance = 90
+		command = { type = relation which = GEO value = 200 }
+		command = { type = relation which = U00 value = -200 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = alliance which = GEO }
+	}
+	action = {
+		name = "This is not our concern"
+		ai_chance = 10
+		command = { type = relation which = U00 value = 50 }
+		command = { type = relation which = GEO value = -200 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 44030
+	country = LIT
+
+	decision = {
+		NOT = { participant = { value = 2 } }
+		NOT = { alliance = { country = GER } }
+		NOT = { war = { country = RUS } }
+		NOT = { flag = RUS_western_peace }
+		NOT = { flag = LIT_peace_east }
+		minister = 28063
+	}
+	decision_trigger = {
+		atwar = no
+		incabinet = 28063
+	}
+	trigger = {
+		NOT = { flag = RUS_western_peace }
+		NOT = { flag = LIT_peace_east }
+		NOT = { participant = { value = 2 } }
+		NOT = { alliance = { country = GER } }
+		NOT = { war = { country = RUS } }
+		flag = LIT_leaves_HRE
+		random = 25
+		atwar = no
+		minister = 28063
+	}
+	
+	name = "Diplomatic Offensive in Russia"
+	desc = "Now that we left the HRE, we have to deal with the threat of Russia at our doorstep. We might be able to negotiate a solution with them, but it will certainly cost us the territories of Western Russia, the Caucasus, and any influence there. In exchange we shall ask them to give up any claims on Estonia and sign a non-aggression pact."
+  	style = 2
+  	picture = "news_paper"
+
+	date = { day = 1 month = july year = 1937 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1963 }
+	
+	action = {
+		name = "Start discussions"
+		ai_chance = 85
+		command = { type = foreignminister which = 28063 }
+		command = { type = relation which = RUS value = 50 }
+		command = { type = relation which = GEO value = -25 }
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 56085 }
+	}	
+	action = { trigger = { ai = yes }
+		name = "No, it is too much"
+		ai_chance = 15
+		command = { type = relation which = RUS value = -50 }
+		command = { type = relation which = GEO value = 25 }
+	}
+}
+
+event = {
+	id = 44031
+	country = LIT
+
+	name = "Diplomatic Offensive in Russia - Success"
+	desc = "Russia has accepted our offer. While it comes at a heavy price, this will guarantee peace now and forever."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_GOOD
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = relation which = RUS value = 100 }
+		command = { type = relation which = GEO value = -50 }
+		#
+		command = { type = non_aggression which = LIT where = RUS }
+		command = { type = end_non_aggression which = LIT where = GEO }
+		command = { type = end_guarantee which = LIT where = GEO }
+		#kupyansk
+		command = { type = secedeprovince which = RUS value = 633 when = 1 }
+		command = { type = removecore which = 633 }
+		#
+		command = { type = secederegion which = RUS value = "Kaukasus" when = 1 }
+		command = { type = removecore which = 691 }
+		command = { type = removecore which = 692 }
+		command = { type = removecore which = 693 }
+		command = { type = removecore which = 694 }
+		command = { type = removecore which = 695 }
+		#
+		command = { type = secederegion which = RUS value = "Western Russia" when = 1 }
+		#novgorod
+		command = { type = removecore which = 550 }
+		command = { type = removecore which = 552 }
+		#pskov
+		command = { type = removecore which = 566 }
+		command = { type = removecore which = 564 }
+		command = { type = removecore which = 565 }
+		command = { type = removecore which = 573 }
+		#smolensk
+		command = { type = removecore which = 586 }
+		command = { type = removecore which = 587 }
+		command = { type = removecore which = 589 }
+		command = { type = removecore which = 575 }
+		#mogilev
+		command = { type = secedeprovince which = RUS value = 600 when = 1 }
+		command = { type = removecore which = 600 }
+	}
+}
+
+event = {
+	id = 44032
+	country = LIT
+
+	name = "Diplomatic Offensive in Russia - Failure"
+	desc = "Russia has apparently have mistaken our offer as a sign of weakness and rejected it out of hand."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = RUS value = -100 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}

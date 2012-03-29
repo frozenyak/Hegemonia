@@ -1,0 +1,203 @@
+###70000-70999###
+
+event = {
+	id = 70000
+	country = U87
+
+	name = "China-Nanking Government"
+	desc = "Our glorious state has achieved independence!"
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 13
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		#command = { type = set_domestic which = democratic value = 3 }
+		#command = { type = set_domestic which = political_left value = 3 }
+		#command = { type = set_domestic which = freedom value = 1 }
+		#command = { type = set_domestic which = free_market value = 5 }
+		#command = { type = set_domestic which = interventionism value = 3 }
+		#
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }		
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = cavalry }
+		command = { type = add_division value = cavalry }
+		command = { type = add_division value = cavalry }
+		command = { type = add_division value = cavalry }
+		#port arthur
+		command = { type = secedeprovince which = JAP value = 1219 when = 1 }
+		#treaty ports
+		command = { type = secedeprovince which = JAP value = 1338 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1358 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1346 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1371 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1372 when = 1 }
+		#manchuko
+		command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+		command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+		#
+		command = { type = secedearea which = JAP value = "Taiwan" when = 1 }
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		#
+		command = { trigger = { ai = yes } type = ai which = "china u87.ai" }
+	}
+}
+
+event = {
+	id = 70001
+	country = CGX
+
+	name = "Guangxi Government"
+	desc = "Our glorious state has achieved independence!"
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 13
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		#command = { type = set_domestic which = democratic value = 3 }
+		#command = { type = set_domestic which = political_left value = 3 }
+		#command = { type = set_domestic which = freedom value = 1 }
+		#command = { type = set_domestic which = free_market value = 5 }
+		#command = { type = set_domestic which = interventionism value = 3 }
+		#
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }		
+		#command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }
+		command = { type = add_division value = cavalry }
+		#command = { type = add_division value = cavalry }
+		#command = { type = add_division value = cavalry }
+		#command = { type = add_division value = cavalry }
+		#port arthur
+		command = { type = secedeprovince which = JAP value = 1219 when = 1 }
+		#treaty ports
+		command = { type = secedeprovince which = JAP value = 1338 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1358 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1346 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1371 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1372 when = 1 }
+		#manchuko
+		command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+		command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+		#
+		command = { type = secedearea which = JAP value = "Taiwan" when = 1 }
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		#
+		command = { trigger = { ai = yes } type = ai which = "china u87.ai" }
+	}
+}
+
+event = {
+	id = 70002
+	country = MAN
+
+	name = "Manchuko Government"
+	desc = "Our glorious state has achieved independence!"
+	style = 1
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 13
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = set_domestic which = free_market value = 3 }
+		command = { type = set_domestic which = defense_lobby value = 8 }
+		command = { type = set_domestic which = interventionism value = 8 }
+		#
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }		
+		#command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }
+		#command = { type = add_division value = militia }
+		command = { type = add_division value = cavalry }
+		#command = { type = add_division value = cavalry }
+		#command = { type = add_division value = cavalry }
+		#command = { type = add_division value = cavalry }
+		#
+		command = { trigger = { ai = yes } type = ai which = "china manchuko.ai" }
+	}
+}
+
+event = {
+	id = 70005
+	country = U87
+
+	trigger = {
+		NOT = { exists = CHC }
+		NOT = { exists = CYN }
+		NOT = { exists = CHI }
+		random = 50
+		ispuppet = yes
+	}
+
+	name = "Communists Rebels!"
+	desc = "Communist Rebels have risen up in the countryside!"
+	style = 1
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = independence which = CHC }
+		command = { type = trigger which = 29000 }
+	}
+}
+
+event = {
+	id = 70006
+	country = CGX
+
+	trigger = {
+		exists = CHC
+		random = 50
+		ispuppet = yes
+	}
+
+	name = "Communists Rebels!"
+	desc = "Communist Rebels have risen up in the countryside!"
+	style = 1
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = secedearea which = CHC value = "Sichuan" when = 1 }
+		command = { type = secedearea which = CHC value = "Xikang" when = 1 }
+		command = { type = secedearea which = CHC value = "Hunan" when = 1 }
+		#command = { type = secedearea which = CHC value = "Yunnan" when = 1 }
+		command = { type = secedearea which = CHC value = "Guizhou" when = 1 }
+	}
+}

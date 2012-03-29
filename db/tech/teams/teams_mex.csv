@@ -1,0 +1,26 @@
+MEX;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+2200;Kaseem Aircraft Company;T103;7;1930;1970;aeronautics;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2201;RML;T2201;8;1930;1970;general_equipment;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2202;MCCI;T2202;7;1930;1970;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2203;Moosa Fath Khoury;T2203;6;1930;1970;large_unit_tactics;individual_courage;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2204;MMC;T2204;6;1930;1970;industrial_engineering;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2205;Abdul-Hamid Wasi;T2205;5;1940;1947;bomber_tactics;aircraft_testing;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2206;Faraj Adnan;T2206;6;1930;1970;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2207;Abdul-Mu'min Bahar;T2207;7;1930;1970;fighter_tactics;piloting;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2208;Mazulan Naval Services;T2208;6;1930;1970;large_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2209;Mazin Zaahir;T2209;5;1930;1943;large_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2210;Mazulan Defense Services;T2210;6;1930;1970;large_unit_tactics;centralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2211;UMC;T2211;9;1930;1970;mechanics;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2213;Kamil Shamoun;T104;8;1930;1970;mechanics;industrial_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2214;National Armories;T116;7;1930;1970;chemistry;mechanics;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2216;Barasyi Oil;T118;9;1930;1970;industrial_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2217;Mazulan Shipworks;T109;7;1930;1970;naval_engineering;technical_efficiency;electronics;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2218;Fareeq Shadid;T127;7;1938;1954;small_unit_tactics;decentralized_execution;training;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2219;Ede Teller;T111;8;1951;1970;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+100;Hammadid Aeronautics;T100;8;1930;1970;aeronautics;technical_efficiency;electronics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+115;Roupen Dadekian;T115;6;1930;1967;rocketry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+117;Union Carbide;Kaiserreich Union Carbide;8;1930;1970;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+121;Rashad Nazari;T121;8;1939;1950;small_taskforce_tactics;submarine_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EOF;x
+
+

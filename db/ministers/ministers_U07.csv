@@ -1,0 +1,46 @@
+U07;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+108001;Head of State;Georges Le Beau;36;SL;Benevolent Gentleman;High;M530001;x
+108002;Head of Government;Georges Le Beau;36;SL;Flamboyant Tough Guy;High;M530001;x
+108003;Foreign Minister;Jules de Koenigswarter;36;SL;Ideological Crusader;High;M530003;x
+108004;Minister of Armament;Antoine Masurel;36;SL;Tank Proponent;Medium;M530004;x
+108005;Minister of Security;Marcel Peyrouton;36;SL;Back Stabber;Medium;M530005;x
+108006;Head of Military Intelligence;Jean Revault d'Allonnes;36;SL;Industrial Specialist;Medium;M69033;x
+108007;Chief of Staff;Alfred Heurtaux;36;SL;School of Fire Support;Medium;M530007;x
+108008;Chief of Army;Pierre de Chevigné;36;SL;Decisive Battle Doctrine;Medium;M530008;x
+108009;Chief of Navy;Henri Manhés;36;SL;Indirect Approach Doctrine;Medium;M69009;x
+108010;Chief of Air Force;Francois Sommer;36;SL;Air Superiority Doctrine;Medium;M69072;x
+108011;Head of State;Jean Abrial;40;SL;Stern Imperialist;High;L24146;x
+108012;Head of State;Maxime Weygand;41;SL;Resigned Generalissimo;High;L24145;x
+108013;Head of State;Marcel Peyrouton;43;SL;Barking Buffoon;High;M530005;x
+108014;Head of State;Georges Catroux;43;SL;Pig-headed Isolationist;High;L24029;x
+108015;Head of State;Yves Chataigneau;44;SL;Die-hard Reformer;High;M528020;x
+108016;Head of State;Ferhat Abbas;36;ST;Autocratic Charmer;High;M530016;x
+108017;Head of Government;Jean Abrial;40;SL;Old Admiral;High;L24146;x
+108018;Head of Government;Maxime Weygand;41;SL;Happy Amateur;High;L24145;x
+108019;Head of Government;Marcel Peyrouton;43;SL;Corporate Suit;High;M530005;x
+108020;Head of Government;Georges Catroux;43;SL;Old General;High;L24029;x
+108021;Head of Government;Yves Chataigneau;44;SL;Corporate Suit;High;M528020;x
+108022;Head of Government;Ferhat Abbas;36;ST;Flamboyant Tough Guy;High;M530016;x
+108023;Foreign Minister;Pierre-Henri Teitgen;42;SL;The Cloak N Dagger Schemer;High;M530023;x
+108024;Foreign Minister;Saadi M'Barka;36;ST;Biased Intellectual;High;M69042;x
+108025;Foreign Minister;Yussef ben-Khedda;41;ST;Great Compromiser;High;M530025;x
+108026;Minister of Armament;Eugene Dechelette;41;SL;Air Superiority Proponent;Medium;M530026;x
+108027;Minister of Armament;Frantz Fanon;36;ST;Military Entrepreneur;Medium;M530027;x
+108028;Minister of Armament;Ahmed ben-Bella;45;ST;Administrative Genius;Medium;M530028;x
+108029;Minister of Security;Andre Jean Godin;42;SL;Compassionate Gentleman;Medium;M530029;x
+108030;Minister of Security;Yussef ben-Khedda;36;ST;Back Stabber;Medium;M530025;x
+108031;Minister of Security;Djamil Chirine;41;ST;Man of the People;Medium;M530031;x
+108032;Head of Military Intelligence;Pierre Julitte;41;SL;Logistics Specialist;Medium;M530032;x
+108033;Head of Military Intelligence;Djamil Chirine;36;ST;Industrial Specialist;Medium;M530031;x
+108034;Head of Military Intelligence;Saadi M'Barka;41;ST;Naval Intelligence Specialist;Medium;M69042;x
+108035;Chief of Staff;Jacques Bourdis;44;SL;School of Manoeuvre;Medium;M530035;x
+108036;Chief of Staff;Mustapha al-Ghani;36;ST;School of Psychology;Medium;M530036;x
+108037;Chief of Staff;Houari Boumedienne;44;ST;School of Mass Combat;Medium;M530037;x
+108038;Chief of Army;Paul Oddo;43;SL;Armoured Spearhead Doctrine;Medium;M530038;x
+108039;Chief of Army;Mustapha al-Ghani;36;ST;Elastic Defence Doctrine;Medium;M530036;x
+108040;Chief of Army;Houari Boumedienne;44;ST;Guns and Butter Doctrine;Medium;M530037;x
+108041;Chief of Navy;Pierre de Chevigné;43;SL;Base Control Doctrine;Medium;M530008;x
+108042;Chief of Navy;Kheireddine Dadci;36;ST;Open Seas Doctrine;Medium;M530042;x
+108043;Chief of Air Force;Alfred Heurtaux;39;SL;Army Aviation Doctrine;Medium;M530007;x
+108044;Chief of Air Force;Frantz Fanon;36;ST;Air Superiority Doctrine;Medium;M530027;x
+108045;Chief of Air Force;Bachra Baya;44;ST;Vertical Envelopment Doctrine;Medium;M530045;x

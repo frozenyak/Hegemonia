@@ -1,0 +1,27 @@
+DFR;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+625008;Gustav Hertz;T7107;7;1930;1970;nuclear_physics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625012;Helmut Gröttrup;T7111;6;1930;1970;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630001;Blohm & Voss;T1;6;1930;1970;naval_engineering;electronics;naval_artillery;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630002;Konrad Zuse;T5;7;2001;1970;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630003;Krupp;100089;8;2001;1970;industrial_engineering;mechanics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630004;MAN;T8;7;1930;1970;mechanics;chemistry;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630005;Mauser Werke;100090;7;2001;1970;general_equipment;mechanics;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630006;Messerschmitt;T10;8;1930;1970;aeronautics;rocketry;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630007;Opel;T11;6;2001;1970;mechanics;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630009;Rheinmetall;100004;7;2001;1970;artillery;mechanics;training;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630010;Siemens;T14;7;1900;1970;electronics;industrial_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630012;Werner Heisenberg;T16;6;1927;1976;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630013;Erich von Manstein;T20;7;1940;1970;combined_arms_focus;large_unit_tactics;centralized_execution;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630014;Heinz Guderian;T22;7;1930;1940;combined_arms_focus;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630015;Naval Academy Mürwik;T7014;6;2001;1970;seamanship;small_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630016;Alfred Bülowius;T7015;6;1930;1970;piloting;training;bomber_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630017;Josef Kammhuber;T7016;6;1930;1970;centralized_execution;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630018;Smilo von Lüttwitz;100604;6;1945;1960;training;small_unit_tactics;combined_arms_focus;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630019;Adolf Heusinger;100605;7;1954;1970;training;small_unit_tactics;combined_arms_focus;centralized_execution;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630020;Junkers-Fokkerwerke AG;kaiserreich_T2;8;1930;1970;aeronautics;artillery;technical_efficiency;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630021;Wernher von Braun;T17;8;2001;1976;rocketry;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630022;I.G. Farben;T3;8;2001;1970;chemistry;industrial_engineering;general_equipment;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630023;Daimler-Benz AG;T600;6;2001;1970;mechanics;industrial_engineering;technical_efficiency;management;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630024;Germaniawerft;kaiserreich_T7;7;2001;1970;naval_engineering;technical_efficiency;naval_artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630025;Focke-Wulf;T26;8;2001;1970;aeronautics;electronics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630026;Heinkel Flugzeugwerke;T2;7;2001;1970;aeronautics;chemistry;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

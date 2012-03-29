@@ -1,0 +1,61 @@
+###72000-72999###
+
+event = {
+	id = 72000
+	country = PRU
+	
+	trigger = {
+		event = 41020
+	}
+	
+	name = "Tarwajal in Revolt"
+	desc = "We have risen against the Caliph and thrown off the shackles of the Jadakal Empire. Now we must fight for our freedom!"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = infantry when = 1 }
+		command = { type = add_division value = cavalry when = 2 }
+		command = { type = add_division value = cavalry when = 2 }
+		command = { type = war which = U05 }
+	}
+}
+
+event = {
+	id = 72001
+	country = PRU
+	
+	trigger = {
+		event = 72000
+		flag = jadakal_defeat
+		control = { province = 2016 }
+	}
+	
+	name = "The Revolt is Victorious"
+	desc = "The armies of the Caliph are retreating before us and victory is at hand. Should we seek peace with the Caliph in exchange for recognition of our independence and all our rightful lands - or should we fight on?"
+	style = 1
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Seek peace with the Caliph"
+		ai_chance = 99
+		command = { type = trigger which = 41021 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}

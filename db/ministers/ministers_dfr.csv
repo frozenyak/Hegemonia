@@ -1,0 +1,88 @@
+DFR;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+506001;Head of State;Theodor Heuss;36;SC;Die-hard Reformer;High;M38;x
+506002;Head of Government;Konrad Adenauer;36;SC;Corporate Suit;High;M50;x
+506003;Foreign Minister;Konrad Adenauer;36;SC;Great Compromiser;Very High;M50;x
+506004;Minister of Armament;Franz Etzel;36;SC;Infantry Proponent;Medium;M506004;x
+506005;Minister of Security;Robert Lehr;36;SC;Man of the People;Medium;M506005;x
+506006;Head of Military Intelligence;Theodor Blank;36;SC;Political Specialist;Medium;M506006;x
+506007;Chief of Staff;Oskar Hansen;36;SC;School of Manoeuvre;Medium;L118;x
+506008;Chief of Army;Hans Speidel;36;SC;Armoured Spearhead Doctrine;Medium;L506191;x
+506009;Chief of Navy;Herrmann Mootz;36;SC;Indirect Approach Doctrine;Medium;L506297;x
+506010;Chief of Air Force;Alfred Bülowius;36;SC;Air Superiority Doctrine;Medium;L431;x
+506011;Head of Government;Kurt Schumacher;36;SD;Ambitious Union Boss;High;M506011;x
+506012;Head of Government;Franz Blücher;36;ML;Political Protege;High;M506012;x
+506013;Foreign Minister;Heinrich von Brentano;36;SC;Ideological Crusader;Very High;M506013;x
+506014;Foreign Minister;Erich Ollenhauer;36;SD;Iron Fisted Brute;Very High;M506014;x
+506015;Foreign Minister;Thomas Dehler;36;ML;Apologetic Clerk;Very High;M506015;x
+506016;Minister of Armament;Fritz Schäffer;36;SC;laissez-faire capitalist;Very High;M103;x
+506017;Minister of Armament;Ludwig Erhard;36;SC;Administrative Genius;Very High;M104;x
+506018;Minister of Armament;Heinrich Wilhelm Kopf;36;SD;Resource Industrialist;Very High;M506018;x
+506019;Minister of Armament;Heinz Starke;36;ML;Theoretical Scientist;Very High;M506019;x
+506020;Minister of Security;Karl Arnold;36;SC;Crime Fighter;High;M129;x
+506021;Minister of Security;Gustav Heinemann;36;SC;Silent Lawyer;High;M130;x
+506022;Minister of Security;Gerhard Schröder;36;SC;Back Stabber;High;M506022;x
+506023;Minister of Security;Georg August Zinn;36;SD;Prince of Terror;High;M506023;x
+506024;Minister of Security;Reinhold Maier;36;ML;Compassionate Gentleman;High;M506024;x
+506025;Head of Military Intelligence;Hans Ehard;36;SC;Logistics Specialist;High;M149;x
+506026;Head of Military Intelligence;Reinhard Gehlen;36;SC;Dismal Enigma;High;M506026;x
+506027;Head of Military Intelligence;Franz Josef Strauss;36;SC;Industrial Specialist;High;M506027;x
+506028;Head of Military Intelligence;Eugen Gerstenmaier;36;SD;Technical Specialist;High;M506028;x
+506029;Head of Military Intelligence;Hanns Seidel;36;ML;Naval Intelligence Specialist;High;M506029;x
+506030;Chief of Staff;Hans Speidel;36;SD;School of Fire Support;Medium;L506191;x
+506031;Chief of Staff;Josef Kammhuber;36;ML;School of Psychology;Medium;L448;x
+506032;Chief of Army;Oskar Hansen;36;SD;Decisive Battle Doctrine;Medium;L118;x
+506033;Chief of Army;Karl Heinrich Lübke;36;SL;Guns and Butter Doctrine;Medium;M506033;x
+506034;Chief of Navy;Conrad Patzig;36;SD;Decisive Naval Battle Doctrine;Medium;L506300;x
+506035;Chief of Navy;Erich Köhler;36;ML;Base Control Doctrine;Medium;M506035;x
+506036;Chief of Air Force;Franz Josef Strauss;36;SC;Vertical Envelopment Doctrine;Medium;M506027;x
+506037;Chief of Air Force;Josef Kammhuber;36;SD;Army Aviation Doctrine;Medium;L448;x
+506038;Chief of Air Force;Hermann Ehlers;36;SL;Naval Aviation Doctrine;Medium;M506038;x
+506039;Minister of Armament;Theodor Blank;51;SC;Military Entrepreneur;Very High;M506039;x
+506040;Minister of Security;Robert Lehr;51;SC;Man of the People;High;M506040;x
+506041;Head of State;Karl Heinrich Lübke;59;SC;Weary Stiffneck;High;M506033;x
+506042;Head of Government;Ludwig Erhard;63;SC;Flamboyant Tough Guy;High;M104;x
+506043;Head of Government;Erich Ollenhauer;52;SD;Political Protege;High;M506014;x
+506044;Head of Government;Willy Brandt;57;SD;Naive Optimist;High;M506044;x
+506045;Foreign Minister;Gerhard Schröder;61;SC;Biased Intellectual;Very High;M506022;x
+506046;Foreign Minister;Willy Brandt;57;SD;Great Compromiser;Very High;M50644;x
+506047;Minister of Armament;Franz Josef Strauss;56;SC;Resource Industrialist;Very High;M506027;x
+506048;Minister of Armament;Kai Uwe von Hassell;61;SC;Theoretical Scientist;Very High;M506048;x
+506049;Minister of Security;Hermann Höcherl;61;SC;Crime Fighter;High;M506049;x
+506050;Minister of Security;Ewald Bucher;57;SL;Efficient Sociopath;High;M506050;x
+506051;Head of State;Theodor Heuss;36;ML;Die-hard Reformer;High;M38;x
+506052;Head of State;Karl Heinrich Lübke;59;SD;Weary Stiffneck;High;M506033;x
+507034;Head of State;Wilhelm Pieck;36;LE;Insignificant Layman;High;M507016;x
+507002;Head of Government;Walter Ulbricht;36;ST;communist chairman;High;M53;x
+507003;Foreign Minister;Georg Derlinger;36;ST;Ideological Crusader;High;M507003;x
+507004;Minister of Armament;Willi Stoph;36;ST;laissez-faire capitalist;High;M507004;x
+507005;Minister of Security;Karl Steinhoff;36;ST;Crooked Kleptocrat;Low;M507005;x
+507006;Head of Military Intelligence;Wilhelm Zaisser;36;ST;Political Specialist;Very High;M507006;x
+507007;Chief of Staff;Ernst Wollweber;36;ST;School of Mass Combat;Very High;M27;x
+507008;Chief of Army;Hans Kahle;36;ST;Decisive Battle Doctrine;Very High;M28;x
+507009;Chief of Navy;Fritz Scheelen;36;ST;Base Control Doctrine;Very High;M29;x
+507010;Chief of Air Force;Willi Bredel;36;ST;Carpet Bombing Doctrine;Very High;M30;x
+507011;Foreign Minister;Walter Ulbricht;36;ST;The Cloak N Dagger Schemer;High;M53;x
+507012;Foreign Minister;Anton Ackermann;36;LE;Great Compromiser;High;M507012;x
+507013;Minister of Armament;Albert Kuntz;36;ST;Resource Industrialist;High;M105;x
+507014;Minister of Armament;Jakob Kaiser;36;LE;Military Entrepreneur;High;M507014;x
+507015;Minister of Armament;Andres Hermes;36;LE;Administrative Genius;High;M507015;x
+507016;Minister of Armament;Wilhelm Pieck;36;ST;Theoretical Scientist;High;M507016;x
+507017;Minister of Security;Julius Leber;36;ST;Compassionate Gentleman;High;M133;x
+507018;Minister of Security;Walter Ulbricht;36;ST;Prince of Terror;High;M53;x
+507019;Minister of Security;Wilhelm Külz;36;LE;Crime Fighter;High;M507019;x
+507020;Minister of Security;Otto Nuschke;36;LE;Silent Lawyer;High;M507020;x
+507021;Minister of Security;Otto Grotewohl;36;ST;Efficient Sociopath;High;M507021;x
+507022;Head of Military Intelligence;Heinrich Müller;36;ST;Dismal Enigma;Very High;M26;x
+507023;Head of Military Intelligence;Ernst Wollweber;36;ST;Industrial Specialist;Very High;M27;x
+507024;Head of Military Intelligence;Erich Mielke;36;ST;Logistics Specialist;Very High;M507024;x
+507025;Head of Military Intelligence;Fritz Scheelen;36;ST;Naval Intelligence Specialist;Very High;M29;x
+507026;Chief of Staff;Erich Weinert;36;ST;School of Psychology;High;M152;x
+507027;Chief of Staff;Erwin Jollasse;36;ST;School of Manoeuvre;High;L507120;x
+507028;Chief of Staff;Xaver Sattler;36;ST;School of Fire Support;High;L507227;x
+507029;Chief of Army;Otto Korfes;36;LE;Elastic Defence Doctrine;Very High;L169;x
+507030;Chief of Army;Walter Freytag;36;LE;Armoured Spearhead Doctrine;Very High;L77;x
+507031;Chief of Navy;Otto Groos;36;ST;Open Seas Doctrine;Very High;L507158;x
+507032;Chief of Air Force;Franz Nowak;36;LE;Air Superiority Doctrine;Very High;L507220;x
+507033;Chief of Air Force;Wilhelm Speidel;36;ST;Vertical Envelopment Doctrine;Very High;L507237;x
+507035;Minister of Armament;Karl Krauch;39;PA;Industrial chemist;High;5912;x
+507001;Head of State;Johannes Dieckmann;36;ST;Pig-headed Isolationist;High;M507001;x

@@ -1,0 +1,125 @@
+allowed_brigades =  artillery
+#allowed_brigades =  anti_tank		
+allowed_brigades =  anti_air		
+#allowed_brigades =  rocket_artillery
+#allowed_brigades =  sp_artillery	
+#allowed_brigades =  sp_rct_artillery
+#allowed_brigades =  tank_destroyer	
+#allowed_brigades =  light_armor_brigade
+#allowed_brigades =  heavy_armor	
+#allowed_brigades =  super_heavy_armor
+#allowed_brigades =  armored_car
+#allowed_brigades =  engineer			
+#allowed_brigades =  police
+
+upgrade = { type = garrison upgrade_time_factor = 1 upgrade_cost_factor = 0.46 }
+upgrade = { type = infantry upgrade_time_factor = 1 upgrade_cost_factor = 1.41 }
+#upgrade = { type = cavalry upgrade_time_factor = 1 upgrade_cost_factor = 1.89 }
+
+#0 - Regular Militia
+model = {
+	cost 					= 4
+	buildtime	 			= 50
+	manpower 				= 6.0
+	maxspeed 				= 4
+	defaultorganisation 	= 30
+	morale 					= 30
+	defensiveness 			= 12
+	toughness	 			= 6
+	softness	 			= 100
+	suppression				= 1
+	airdefence				= 2
+	softattack				= 8
+	hardattack				= 1
+	airattack				= 1
+	transportweight			= 10
+	supplyconsumption 		= 0.15
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+}
+
+#1 - Late War Militia 1942
+model = {
+	cost					= 4
+	buildtime				= 55
+	manpower 				= 6.0
+	maxspeed 				= 4
+	defaultorganisation		= 30
+	morale 					= 30
+	defensiveness 			= 19
+	toughness	 			= 12
+	softness	 			= 100
+	suppression				= 1
+	airdefence				= 3
+	softattack				= 13
+	hardattack				= 3
+	airattack				= 2
+	transportweight			= 10
+	supplyconsumption 		= 0.3
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 5
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+}
+
+#2 - Modern Militia Division (1948)
+model = {
+	cost 				= 4
+	buildtime 			= 60
+	manpower 			= 6.0
+	maxspeed 		= 4
+	defaultorganisation 	= 30
+	morale 			= 30
+	defensiveness 		= 22
+	toughness 			= 15
+	softness 			= 100
+	suppression 			= 1
+	airdefence 				= 3
+	softattack 				= 16
+	hardattack 				= 4
+	airattack 				= 3
+	transportweight 	= 10
+	supplyconsumption 	= 0.45
+	fuelconsumption 	= 0
+	speed_cap_art 		= 4
+	speed_cap_eng 		= 5
+	speed_cap_at 		= 4
+	speed_cap_aa 		= 4
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+}
+
+#3 - 54
+model = {
+	cost 				= 4
+	buildtime 			= 65
+	manpower 			= 6.0
+	maxspeed 			= 4
+	defaultorganisation = 30
+	morale 				= 30
+	defensiveness 		= 24
+	toughness 			= 17
+	softness 			= 100
+	suppression 		= 2
+	airdefence 			= 4
+	softattack 			= 18
+	hardattack 			= 4
+	airattack 			= 4
+	transportweight 	= 10
+	supplyconsumption 	= 0.6
+	fuelconsumption 	= 0
+	speed_cap_art 		= 4
+	speed_cap_eng 		= 5
+	speed_cap_at 		= 4
+	speed_cap_aa 		= 4
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+}

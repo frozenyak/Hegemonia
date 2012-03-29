@@ -1,0 +1,289 @@
+###57000-57999###
+##57010 india in the hre
+
+event = {
+	id = 57001
+	country = SCA
+
+	trigger = {
+		flag = general_strike_army
+		alliance = { country = SCA country = GER }
+		government = democratic
+	}
+
+	name = "The German General Strike"
+	desc = "The German Kaiser has sent in the army to break up the general strike. Voices have been raised in parliament demanding that we condemn the German Kaiser for his actions."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Issue a protest!"
+		ai_chance = 90
+		command = { type = dissent value = -1 }
+		command = { type = relation which = GER value = -15 }
+	}
+	# action = {
+		# name = "Barbarians! No further alliances with Germany!"
+		# ai_chance = 10
+		# command = { type = dissent value = -3 }
+		# command = { type = leave_alliance }
+		# command = { type = end_access which = GER }
+		# command = { type = relation which = GER value = -100 }
+		# command = { type = trigger which = 35044 }
+		# command = { type = setflag which = SCA_leaves_HRE }
+		# command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	# }
+	#action = {
+	#	name = "Well... maybe Germany has the right idea!"
+	#	ai_chance = 1
+	#	command = { type = dissent value = 25 }
+	#	command = { type = set_domestic which = political_left value = 3 }
+	#	command = { type = set_domestic which = freedom value = 3 }
+	#	command = { type = set_domestic which = democratic value = 3 }
+	#	command = { type = set_domestic which = free_market value = 3 }
+	#}
+	action = {
+		name = "Say nothing"
+		ai_chance = 10
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 57002
+	country = SCA
+
+	trigger = {
+		flag = GER_white_terror
+		alliance = { country = GER }
+	}
+
+	name = "The German White Terror"
+	desc = "The German Kaiser has engaged in a campaign of terror to surpress dissent at home. Thousands of liberals and communists have been murdered or arrested, and thousands more have fled across the borders into our country. Voices have been raised in parliament demanding that we condemn the German Kaiser for his actions."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1937 }
+
+	action = {
+		name = "Barbarians! No further alliances with Germany!"
+		ai_chance = 85
+		command = { type = dissent value = -5 }
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35046 }
+		command = { type = setflag which = SCA_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+	action = {
+		name = "Issue a protest!"
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = relation which = GER value = -50 }
+	}
+}
+
+event = {
+	id = 57003
+	country = SCA
+
+	trigger = {
+		OR = {
+			event = 35031
+			event = 35042
+		}
+		alliance = { country = GER }
+	}
+
+	name = "Kaiser Frederick"
+	desc = "In Germany, Waldemar VII's younger, and liberal, brother Frederick has taken the throne. Conservatives across the Holy Roman Empire are unhappy, and many in the government are calling from us to withdraw from our alliance with Germany."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1938 }
+
+	action = {
+		trigger =  {
+			event = 35042
+		}
+		name = ACTION_NAME_GREAT
+		ai_chance = 90
+		command = { type = relation which = GER value = 50 }
+	}
+	action = {
+		trigger =  {
+			event = 35042
+		}
+		name = "He is too liberal"
+		ai_chance = 10
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35060 }
+		command = { type = setflag which = SCA_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+
+	action = {
+		trigger =  {
+			event = 35031
+		}
+		name = "We need Germany for our defense"
+		ai_chance = 65
+		command = { type = dissent value = 5 }
+		command = { type = relation which = GER value = 25 }
+	}
+	action = {
+		trigger =  {
+			event = 35031
+		}
+		name = "No deals with usurpers"
+		ai_chance = 35
+		command = { type = leave_alliance }
+		command = { type = end_access which = GER }
+		command = { type = relation which = GER value = -100 }
+		command = { type = trigger which = 35060 }
+		command = { type = setflag which = SCA_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 57004
+	country = SCA
+
+	trigger = {
+		flag = HRE_restoration
+		NOT = { flag = SCA_leaves_HRE }
+	}
+
+	name = "Restoring the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. Austria has stepped forward, claiming leadership of the alliance and asking our help in holding it together. Should we support them in their efforts to restore the alliance, or go our own way?"
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Accept Austrian leadership"
+		ai_chance = 50
+		command = { type = relation which = AUS value = 200 }
+		command = { type = relation which = GER value = 200 }
+	}
+	action = {
+		name = "No, the HRE is done for"
+		ai_chance = 50
+		command = { type = relation which = AUS value = -200 }
+		command = { type = relation which = GER value = -200 }
+		command = { type = dissent value = 5 }
+		command = { type = leave_alliance }
+		command = { type = setflag which = SCA_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 57005
+	country = SCA
+
+	trigger = {
+		flag = HRE_dissolution
+		NOT = { flag = LIT_leaves_HRE }
+	}
+
+	name = "Dissolution of the HRE"
+	desc = "Germany's fall in the civil war has triggered a crisis within the HRE. There seems to be no country able to fill the power vacuum and members are withdrawing from the alliance left and right. The HRE has effectively ceased to exist."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Unfortunate..."
+		command = { type = leave_alliance }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+}
+
+event = {
+	id = 57010
+	country = SCA
+
+	trigger = {
+		participant = { value = 2 }
+		participant = { country = U02 value = 2 }
+		atwar = no
+	}
+
+	name = "Imperial India joins the HRE"
+	desc = "With the recent addition of Imperial India to the HRE, many in parliament feel the alliance as lost its focus. They call for us to leave and adopt strict neutrality."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Leave the HRE"
+		ai_chance = 75
+		command = { type = leave_alliance }
+		command = { trigger = { exists = GER } type = end_access which = GER }
+		command = { trigger = { exists = GER } type = trigger which = 35111 }
+		command = { trigger = { NOT = { exists = GER } } type = end_access which = AUS }
+		command = { trigger = { NOT = { exists = GER } } type = trigger which = 25011 }
+		command = { type = setflag which = SCA_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+	action = {
+		name = "Stay in"
+		ai_chance = 25
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 57011
+	country = SCA
+
+	trigger = {
+		participant = { value = 2 }
+		participant = { country = JAP value = 2 }
+		atwar = no
+	}
+
+	name = "Japan joins the HRE"
+	desc = "With the recent addition of Japan to the HRE, many in parliament feel the alliance as lost its focus. They call for us to leave and adopt strict neutrality."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Leave the HRE"
+		ai_chance = 85
+		command = { type = leave_alliance }
+		command = { trigger = { exists = GER } type = end_access which = GER }
+		command = { trigger = { exists = GER } type = trigger which = 35112 }
+		command = { trigger = { NOT = { exists = GER } } type = end_access which = AUS }
+		command = { trigger = { NOT = { exists = GER } } type = trigger which = 25013 }
+		command = { type = setflag which = SCA_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+	action = {
+		name = "Stay in"
+		ai_chance = 15
+		command = { type = dissent value = 5 }
+	}
+}

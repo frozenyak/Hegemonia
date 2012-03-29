@@ -1,0 +1,33 @@
+ENG;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+300;Alan Turing;T300;9;1930;1970;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+301;British Oil Company;T301;9;1930;1970;industrial_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+302;Avro;T302;6;1930;1970;aeronautics;electronics;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+303;Cammell Laird & Co.;T303;8;1930;1970;naval_engineering;electronics;general_equipment;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+304;De Havilland;T304;7;1930;1970;aeronautics;electronics;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+305;Enfield Arsenal;T305;7;1930;1970;mechanics;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+306;English Electric Company;T306;8;1930;1970;electronics;aeronautics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+307;Harland & Wolff;T307;8;1930;1970;naval_engineering;naval_artillery;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+308;Hawker;T308;7;1941;1970;aeronautics;electronics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+309;James Chadwick;T309;7;1930;1970;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+310;John Brown & Co.;T310;6;1930;1970;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+311;Leyland;T311;8;1941;1970;mechanics;technical_efficiency;artillery;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+312;Robert Watson-Watt;T312;7;1930;1970;electronics;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+313;Royal Small Arms Factory;T313;6;1930;1970;mechanics;general_equipment;training;artillery;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+314;Supermarine;T314;9;1930;1970;aeronautics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+315;Vauxhall;T315;6;1930;1970;mechanics;chemistry;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+316;Vickers-Armstrong;T316;9;1930;1970;mechanics;aeronautics;technical_efficiency;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+317;Alan Brooke;T317;6;1930;1963;centralized_execution;large_unit_tactics;combined_arms_focus;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+318;Andrew Cunningham;T318;8;1943;1963;naval_training;large_taskforce_tactics;centralized_execution;seamanship;carrier_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+319;Arthur Harris;T319;8;1941;1970;bomber_tactics;aircraft_testing;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+320;Basil Liddell-Hart;T320;8;1937;1940;decentralized_execution;small_unit_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+321;Charles Portal;T321;6;1930;1970;bomber_tactics;aircraft_testing;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+322;Dudley Clarke;T322;7;1939;1970;decentralized_execution;small_unit_tactics;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+323;Dudley Pound;T323;6;1930;1944;large_taskforce_tactics;seamanship;naval_training;centralized_execution;carrier_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+324;Hugh Dowding;T324;8;1930;1942;fighter_tactics;aircraft_testing;piloting;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+325;Max Horton;T325;6;1942;1951;small_taskforce_tactics;naval_training;decentralized_execution;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+326;Percy Hobart;T326;6;1938;1942;combined_arms_focus;large_unit_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+327;Percy Noble;T327;5;1930;1942;small_taskforce_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+328;Trafford Leigh-Mallory;T328;6;1942;1970;fighter_tactics;aircraft_testing;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+329;Frank Whittle;T329;7;1936;1970;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+330;George Paget Thomson;T330;5;1930;1970;nuclear_physics;nuclear_engineering;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+331;Earl Mountbatten;T331;5;1955;1965;small_taskforce_tactics;naval_training;decentralized_execution;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

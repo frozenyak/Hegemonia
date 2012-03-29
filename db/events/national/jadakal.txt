@@ -1,0 +1,777 @@
+###41000-41999###
+# 41000-10 dublin
+# 41010 Wet year
+# 41015 future of
+# 41020 tarwajal revolt
+# 41021 tarwajal offers peace
+# 41022 tarwajal lands
+# 41025 muhajedz revolt
+# 41030 jigligrib revolt
+# 41035 alusal revolt
+# 41040 nova aquitania revolt
+# 41045 in retreat
+# 41050 cucuta incident
+
+event = {
+	id = 41010
+	country = U05
+
+	name = "The Wet Year"
+	desc = "1937 was a bad year for Jadakal, with bad weather destroying much of the our sugar and tobacco crops. Many of our farmers are in risk of losing their farms and our wealthy plantation owners are complaining about their losses."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 5 month = january year = 1938 }
+
+	action = {
+		name = "That's unfortunate..."
+		ai_chance = 90
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		name = "Subsidize the farms and plantations!"
+		ai_chance = 10
+		command = { type = money value = -200 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = setflag which = farmers_paid_1 }
+	}
+}
+
+event = {
+	id = 41011
+	country = U05
+
+	name = "The Dry Year"
+	desc = "The wet year of 1937 was followed by an unusually dry year, further decreasing the already poor crop yields. Jadakal is now threatened with mass unemployment unless the government steps in and subsidizes the farmers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 5 month = january year = 1939 }
+
+	action = {
+		name = "What do you want us to do about it?"
+		ai_chance = 80
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		name = "We will subsidize the farmers"
+		ai_chance = 20
+		command = { type = money value = -300 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = setflag which = farmers_paid_2 }
+	}
+}
+
+
+event = {
+	id = 41012
+	country = U05
+
+	trigger = {
+		OR = {
+			NOT = { flag = farmers_paid_1 }
+			NOT = { flag = farmers_paid_2 }
+		}
+	}
+
+	name = "Rifts in the Empire"
+	desc = "The Jadakal Empire was formed through the violent conquest of states such as Tarwajal, Muhajedz and Jidligrib. Though they have come to accept our authority, they have not forgotten their national roots and nationalism is now spiring in wake of the disasterous weather. Rifts are beginning to show in our Empire."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 12 month = february year = 1939 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 41013
+	country = U05
+
+	trigger = {
+		flag = farmers_paid_1
+		flag = farmers_paid_2
+	}
+
+	name = "Rifts in the Empire"
+	desc = "The Jadakal Empire was formed by conquests of Muhajedz, Tarawajal, Jidligrib, and Alusal. Though the people have come to accept our authority, they have not forgotten their national roots and nationalism is now spiring in wake of the disasterous weather. Rifts are beginning to show in our Empire."
+	style = 1
+	picture = "riot1"
+
+	date = { day = 12 month = february year = 1939 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 41015
+	country = U05
+
+	name = "The Future of Jadakal"
+	desc = "Caliph Mohammed III summoned to court his senior advisors to discuss the future of the Empire amidst the growing dissent and nationalism. Some advise using force to crush the insurrectionists, while others suggest granting autonomy to the conquered regions. Others yet suggest looking outwards for a foe to unite the country against..."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 18 month = february year = 1939 }
+
+	action = {
+		name = "Crush the nationalist movements with force!"
+		ai_chance = 50
+		command = { type = dissent value = 15 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = local_setflag which = nationalists_crushed }
+	}
+	action = {
+		trigger = {
+			NOT = {
+				OR = {
+					exists = PRU
+					exists = ARG
+					exists = BRA
+					exists = PAR
+					exists = URU
+				}
+			}
+		}
+		name = "Grant autonomy to the conquered provinces"
+		ai_chance = 20
+		command = { type = dissent value = -10 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { trigger = { NOT = { exists = PRU } } type = local_setflag which = free_pru }
+		command = { trigger = { NOT = { exists = PRU } } type = independence which = PRU }
+		command = { trigger = { NOT = { exists = ARG } } type = local_setflag which = free_arg }
+		command = { trigger = { NOT = { exists = ARG } } type = independence which = ARG }
+		command = { trigger = { NOT = { exists = BRA } } type = local_setflag which = free_bra }
+		command = { trigger = { NOT = { exists = BRA } } type = independence which = BRA }
+		command = { trigger = { NOT = { exists = PAR } } type = local_setflag which = free_par }
+		command = { trigger = { NOT = { exists = PAR } } type = independence which = PAR }
+		command = { trigger = { NOT = { exists = URU } } type = local_setflag which = free_uru }
+		command = { trigger = { NOT = { exists = URU } } type = independence which = URU }
+		command = { type = trigger which = 41016 }
+	}
+	action = {
+		name = "Mobilize our forces"
+		ai_chance = 20
+		command = { type = dissent value = 5 }
+		command = { type = relation which = VEN value = -100 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = belligerence which = 3 }
+
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
+		command = { type = resource which = supplies value = -500 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { trigger = { atwar = no } type = belligerence value = 15 }
+		command = { trigger = { NOT = { local_flag = MOB3 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB4 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB5 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { NOT = { local_flag = MOB6 } atwar = no } type = dissent value = 4 }
+		command = { trigger = { atwar = no } type = dissent value = 12 }
+		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002 }
+		command = { type = local_setflag which = MOB7 }
+		command = { type = local_setflag which = MOB6 }
+		command = { type = local_setflag which = MOB5 }
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB3 }
+	}
+	action = {
+		name = "Do nothing for now..."
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 41016
+	country = U05
+
+	name = "Autonomy for the Provinces"
+	desc = "We have chosen to grant autonomy to Tarwajal, Muhajedz and Jidligrib in order to meet the demands of the nationalist movements."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { trigger = { local_flag = free_pru } type = make_puppet which = PRU }
+		command = { trigger = { local_flag = free_pru } type = alliance which = PRU }
+		#
+		command = { trigger = { local_flag = free_arg } type = make_puppet which = ARG }
+		command = { trigger = { local_flag = free_arg } type = alliance which = ARG }
+		#
+		command = { trigger = { local_flag = free_bra } type = make_puppet which = BRA }
+		command = { trigger = { local_flag = free_bra } type = alliance which = BRA }
+		#
+		command = { trigger = { local_flag = free_par } which = PAR }
+		command = { trigger = { local_flag = free_par } type = alliance which = PAR }
+		#
+		command = { trigger = { local_flag = free_uru } type = make_puppet which = URU }
+		command = { trigger = { local_flag = free_uru } type = alliance which = URU }
+		#
+		command = { type = trigger which = 41017 }
+	}
+}
+
+
+event = {
+	id = 41017
+	country = U05
+
+	name = "The Autonomous Provinces"
+	desc = "In accordance with our agreement we will restore the provinces to their owners."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_OK
+		#
+		command = { trigger = { local_flag = free_bra } type = secederegion which = BRA value = "Brazil" when = 1 }
+		command = { trigger = { local_flag = free_bra } type = secedeprovince which = BRA value = 2005 }
+		#
+		command = { trigger = { local_flag = free_pru } type = secederegion which = PRU value = "Amazonas" when = 1 }
+		command = { trigger = { local_flag = free_pru } type = secedearea which = PRU value = "Lima" when = 1 }
+		command = { trigger = { local_flag = free_pru } type = secedearea which = PRU value = "Quito" when = 1 }
+		command = { trigger = { local_flag = free_pru } type = secedearea which = PRU value = "Panaman Ridge" when = 1 }
+		command = { trigger = { local_flag = free_pru } type = secedeprovince which = PRU value = 1994 }
+		command = { trigger = { local_flag = free_pru } type = secedeprovince which = PRU value = 1991 }
+		#
+		command = { trigger = { local_flag = free_arg } type = secedearea which = ARG value = "Chilean Archipelago" when = 1 }
+		command = { trigger = { local_flag = free_arg } type = secedearea which = ARG value = "La Plata" when = 1 }
+		command = { trigger = { local_flag = free_arg } type = secedearea which = ARG value = "Lower Argentine" when = 1 }
+		#
+		command = { trigger = { local_flag = free_uru } type = secederegion which = URU value = "Brazilian Highlands" when = 1 }
+		command = { trigger = { local_flag = free_uru } type = secedearea which = URU value = "Sao Paulo" when = 1 }
+		#
+		command = { trigger = { local_flag = free_par } type = secedeprovince which = PAR value = 1997 }
+		command = { trigger = { local_flag = free_par } type = secedeprovince which = PAR value = 1999 }
+		command = { trigger = { local_flag = free_par } type = secedeprovince which = PAR value = 2000 }
+		command = { trigger = { local_flag = free_par } type = secedeprovince which = PAR value = 2006 }
+	}
+}
+
+event = {
+	id = 41020
+	country = U05
+
+	trigger = {
+		event = 41015
+		NOT = { exists = PRU }
+		owned = { province = 2016 data = -1 } #Lima
+		OR = {
+			dissent = 20
+			exists = ARG
+			exists = BRA
+			exists = PAR
+			exists = URU
+			#exists = PRU
+		}
+		random = 25
+	}
+
+	name = "Tarwajal in Revolt"
+	desc = "The people of Tarwajal have risen against us, seeking to break away from the Empire."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = independence which = PRU }
+		command = { type = trigger which = 72000 }
+	}
+}
+
+event = {
+	id = 41021
+	country = U05
+
+	name = "Tarwajal Offers Peace"
+	desc = "The revolters in Tarwajal have offered peace in exchange for recognition of their independence and the ceding of all their 'rightful' lands. What is our answer?"
+	style = 1
+
+	action = {
+		name = "Accept the peace offer"
+		ai_chance = 99
+		command = { type = peace which = PRU }
+		command = { type = trigger which = 41022 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 41022
+	country = U05
+
+	name = "The Lands of Tarwajal"
+	desc = "We have ceded our provinces in Tarwajal to its new regime, in accordance with our agreement."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = secederegion which = PRU value = "Amazonas" when = 1 }
+		command = { type = secedearea which = PRU value = "Lima" when = 1 }
+		command = { type = secedearea which = PRU value = "Quito" when = 1 }
+		command = { type = secedearea which = PRU value = "Panaman Ridge" when = 1 }
+		command = { type = secedeprovince which = PRU value = 1994 }
+		command = { type = secedeprovince which = PRU value = 1991 }
+	}
+}
+
+event = {
+	id = 41025
+	country = U05
+
+	trigger = {
+		event = 41015
+		NOT = { exists = BRA }
+		owned = { province = 2071 data = -1 } #Recife
+		OR = {
+			dissent = 20
+			exists = ARG
+			#exists = BRA
+			exists = PAR
+			exists = URU
+			exists = PRU
+		}
+		random = 25
+	}
+
+	name = "Muhajedz in Revolt"
+	desc = "The people of Muhajedz have risen against us, seeking to break away from the Empire."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = independence which = BRA }
+		command = { type = trigger which = 75000 }
+	}
+}
+
+event = {
+	id = 41026
+	country = U05
+
+	name = "Muhajedz Offers Peace"
+	desc = "The revolters in Muhajedz have offered peace in exchange for recognition of their independence and the ceding of all their 'rightful' lands. What is our answer?"
+	style = 1
+
+	action = {
+		name = "Accept the peace offer"
+		ai_chance = 99
+		command = { type = peace which = BRA }
+		command = { type = trigger which = 41027 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 41027
+	country = U05
+
+	name = "The Lands of Muhajedz"
+	desc = "We have ceded our provinces in Muhajedz to its new regime, in accordance with our agreement."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = secederegion which = BRA value = "Brazil" when = 1 }
+	}
+}
+
+
+event = {
+	id = 41030
+	country = U05
+
+	trigger = {
+		event = 41015
+		NOT = { exists = ARG }
+		owned = { province = 2050 data = -1 } #Buenos Aires
+		OR = {
+			dissent = 20
+			#exists = ARG
+			#exists = BRA
+			#exists = PAR
+			exists = URU
+			#exists = PRU
+		}
+		random = 5 #25
+		
+		OR = {
+			war = { country = BRA }
+			war = { country = PRU }
+		}
+	}
+
+	name = "Jidligrib in Revolt"
+	desc = "The people of Jidligrib have risen against us, seeking to break away from the Empire."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = independence which = ARG }
+		command = { type = trigger which = 73000 }
+	}
+}
+
+event = {
+	id = 41031
+	country = U05
+
+	name = "Jidligrib Offers Peace"
+	desc = "The revolters in Jidligrib have offered peace in exchange for recognition of their independence and the ceding of all their 'rightful' lands. What is our answer?"
+	style = 1
+
+	action = {
+		name = "Accept the peace offer"
+		ai_chance = 99
+		command = { type = peace which = ARG }
+		command = { type = trigger which = 41032 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 41032
+	country = U05
+
+	name = "The Lands of Jidligrib"
+	desc = "We have ceded our provinces in Jidligrib to its new regime, in accordance with our agreement."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = secedearea which = ARG value = "Chilean Archipelago" when = 1 }
+		command = { type = secedearea which = ARG value = "La Plata" when = 1 }
+		command = { type = secedearea which = ARG value = "Lower Argentine" when = 1 }
+	}
+}
+
+event = {
+	id = 41035
+	country = U05
+
+	trigger = {
+		event = 41015
+		NOT = { exists = URU }
+		owned = { province = 2075 data = -1 } #Rio de Janeiro
+		OR = {
+			dissent = 20
+			exists = ARG
+			exists = BRA
+			exists = PAR
+			#exists = URU
+			exists = PRU
+		}
+		random = 25
+	}
+
+	name = "Alusal in Revolt"
+	desc = "The people of Alusal have risen against us, seeking to break away from the Empire."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = independence which = URU }
+		command = { type = trigger which = 74000 }
+	}
+}
+
+event = {
+	id = 41036
+	country = U05
+
+	name = "Alusal Offers Peace"
+	desc = "The revolters in Alusal have offered peace in exchange for recognition of their independence and the ceding of all their 'rightful' lands. What is our answer?"
+	style = 1
+
+	action = {
+		name = "Accept the peace offer"
+		ai_chance = 99
+		command = { type = peace which = URU }
+		command = { type = trigger which = 41037 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 41037
+	country = U05
+
+	name = "The Lands of Alusal"
+	desc = "We have ceded our provinces in Alusal to its new regime, in accordance with our agreement."
+	style = 1
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = secederegion which = URU value = "Brazilian Highlands" when = 1 }
+		command = { type = secedearea which = URU value = "Sao Paulo" when = 1 }
+	}
+}
+
+event = {
+	id = 41040
+	country = U05
+
+	trigger = {
+		event = 41015
+		NOT = { exists = PAR }
+		owned = { province = 1999 data = -1 } #Paramaribo
+		OR = {
+			dissent = 20
+			exists = ARG
+			exists = BRA
+			exists = PRU
+			exists = URU
+		}
+		random = 25
+	}
+
+	name = "Nova Aquitania in Revolt"
+	desc = "The people of Nova Aquitania have risen against us, seeking to break away from the Empire."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_NO
+		command = { type = independence which = PAR }
+		command = { type = trigger which = 76000 }
+	}
+}
+
+event = {
+	id = 41041
+	country = U05
+
+	name = "Nova Aquitania Offers Peace"
+	desc = "The revolters in Nova Aquitania have offered peace in exchange for recognition of their independence and the ceding of all their 'rightful' lands. What is our answer?"
+	style = 1
+
+	action = {
+		name = "Accept the peace offer"
+		ai_chance = 99
+		command = { type = peace which = PAR }
+		command = { type = trigger which = 41042 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 41042
+	country = U05
+
+	name = "The Lands of Nova Aquitania"
+	desc = "We have ceded our provinces in Nova Aquitania to its new regime, in accordance with our agreement."
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = secedeprovince which = PAR value = 1997 }
+		command = { type = secedeprovince which = PAR value = 1999 }
+		command = { type = secedeprovince which = PAR value = 2000 }
+		command = { type = secedeprovince which = PAR value = 2006 }
+		#command = { type = secedeprovince which = PAR value = 2005 }
+	}
+}
+
+
+event = {
+	id = 41045
+	country = U05
+
+	trigger = {
+		lost_national = { country = U05 value = 30 } #25
+		OR = {
+			#war = { country = U05 country = PAR }
+			war = { country = U05 country = BRA }
+			#war = { country = U05 country = PRU }
+			war = { country = U05 country = ARG }
+			war = { country = U05 country = URU }
+		}
+	}
+
+	name = "Jadakal in Retreat"
+	desc = "We have been unable to gain the advantage against the revolters, and our armies are in full retreat. The rebels, sensing victory, will undoubtedly be sending us their demands for peace before long..."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = jadakal_defeat }
+	}
+}
+
+event = {
+	id = 41046
+	country = U05
+
+	trigger = {
+		atwar = no
+		ai = yes
+		exists = BRA
+		NOT = { puppet = { country = BRA country = U05 } }
+		exists = PRU
+		NOT = { puppet = { country = PRU country = U05 } }
+		exists = ARG
+		NOT = { puppet = { country = ARG country = U05 } }
+		#exists = PAR
+		#NOT = { puppet = { country = PAR country = U05 } }
+		exists = URU
+		NOT = { puppet = { country = URU country = U05 } }
+	}
+
+	name = "End of an Empire"
+	desc = "With the loss of our conquests, the era of the Jadakal Empire is over. We must accept becoming what we were before the Empire - the nation of Asmunakal."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "We will be great again - someday!"
+		ai_chance = 95
+		command = { type = relation which = PRU value = 100 }
+		#command = { type = relation which = PAR value = 100 }
+		command = { type = relation which = BRA value = 100 }
+		command = { type = relation which = ARG value = 100 }
+		command = { type = relation which = URU value = 100 }
+		#command = { type = country which = CHL }
+	}
+	action = {
+		name = "No, we are still imperial!"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = relation which = PRU value = -200 }
+		#command = { type = relation which = PAR value = -200 }
+		command = { type = relation which = BRA value = -200 }
+		command = { type = relation which = ARG value = -200 }
+		command = { type = relation which = URU value = -200 }
+	}
+}
+
+event = {
+	id = 41050
+	country = U05
+
+	trigger = {
+		atwar = no
+		NOT = { exists = PRU }
+		owned = { province = 1990 data = -1 }
+		random = 10
+		owned = { province = 1988 data = VEN } #cucuta
+		NOT = { puppet = { country = VEN country = U05 } }
+		NOT = { alliance = { country = VEN country = U05 } }
+	}
+
+	name = "The Maracaibo Incident"
+	desc = "A firefight broke out along the Gustavian border last night, and reports indicate it was started by the Gustavians. Gaining control of the oil fields of Maracaibo has long been a priority for us - perhaps we can use this incident to seize them and win a prestigious diplomatic victory?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 20
+	deathdate = { day = 1 month = january year = 1940 }
+
+	action = {
+		name = "Deliver the ultimatum - Maracaibo or war!"
+		ai_chance = 95
+		command = { type = relation which = VEN value = -200 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = addclaim which = 1990 }
+		command = { type = trigger which = 37002 }
+	}
+	action = {
+		name = "We do not need to resort to such methods"
+		ai_chance = 5
+		command = { type = relation which = VEN value = 50 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+event = {
+	id = 41051
+	country = U05
+
+	name = "Maracaibo or War?"
+	desc = "Gustavia has refused our demands for Maracaibo."
+	style = 1
+	picture = "war"
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 95
+		command = { type = war which = VEN }
+	}	
+	action = {
+		name = "Fold"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}

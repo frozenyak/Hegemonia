@@ -1,0 +1,138 @@
+CAN;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+220001;Head of State;Axel Sundberg;36;ML;Benevolent Gentleman;High;M45001;x
+220002;Head of Government;Algot Sjöberg;36;ML;Flamboyant Tough Guy;High;M45002;x
+220003;Foreign Minister;Algot Sjöberg;36;ML;Great Compromiser;Undying;M45002;x
+220004;Minister of Armament;Melvin Sandberg;36;ML;Administrative Genius;High;M45004;x
+220005;Minister of Security;Axel Norberg;36;ML;Crime Fighter;Very High;M45005;x
+220006;Head of Military Intelligence;Tim Abrahamsson;36;ML;Technical Specialist;High;M45006;x
+220007;Chief of Staff;Tage Bengtsson;36;ML;School of Fire Support;Very High;M45007;x
+220008;Chief of Army;Tage Bengtsson;36;ML;Guns and Butter Doctrine;Very High;M45007;x
+220009;Chief of Navy;Gordon Ekström;36;ML;Open Seas Doctrine;Very High;M45009;x
+220010;Chief of Air Force;Dennis Berglund;36;ML;Carpet Bombing Doctrine;Very High;M45010;x
+220011;Head of State;Tobias Strömberg;36;FA;Barking Buffoon;High;M45011;x
+220012;Head of State;Sigge Petersson;36;ST;Insignificant Layman;High;M45021;x
+220013;Head of Government;Stefan Carlsson;36;SC;Silent Workhorse;High;M45036;x
+220014;Head of Government;Per Svensson;36;SC;Naive Optimist;High;M45037;x
+220015;Head of Government;Sven Öberg;44;SC;Smiling Oilman;High;M45038;x
+220016;Head of Government;Tobias Strömberg;36;FA;Happy Amateur;High;M45011;x
+220017;Head of Government;Sigge Petersson;36;ST;Ambitious Union Boss;High;M45021;x
+220018;Foreign Minister;Martin Persson;46;ML;General Staffer;High;M45042;x
+220019;Foreign Minister;Stefan Carlsson;36;SC;Iron Fisted Brute;Undying;M45036;x
+220020;Foreign Minister;Bruno Bergman;38;SC;Ideological Crusader;High;M45044;x
+220021;Foreign Minister;Per Svensson;36;SC;Apologetic Clerk;Undying;M45037;x
+220022;Foreign Minister;Sven Öberg;44;SC;Biased Intellectual;Undying;M45038;x
+220023;Foreign Minister;Tobias Strömberg;36;FA;Ideological Crusader;Low;M45011;x
+220024;Foreign Minister;Karl Ström;44;PA;Iron Fisted Brute;Medium;M45016;x
+220025;Foreign Minister;Sigge Petersson;36;ST;The Cloak N Dagger Schemer;Very Low;M45021;x
+220026;Foreign Minister;Henning Sandström;42;LWR;Biased Intellectual;Medium;M45050;x
+220027;Foreign Minister;Albert Åberg;45;LE;Ideological Crusader;Medium;M45028;x
+220028;Minister of Armament;Viking Månsson;39;ML;Infantry Proponent;High;M45053;x
+220029;Minister of Armament;Arvin Blomqvist;44;ML;Submarine Proponent;Very High;M45054;x
+220030;Minister of Armament;Moltas Lundberg;36;ML;laissez-faire capitalist;Low;M45055;x
+220031;Minister of Armament;Johannes Sjögren;40;SC;Resource Industrialist;High;M45056;x
+220032;Minister of Armament;Henning Bergström;40;SC;railroad baron;Very High;M45057;x
+220033;Minister of Armament;Ludvig Andreasson;36;PA;Corrupt Kleptocrat;Very Low;M45014;x
+220034;Minister of Armament;Jonny Henriksson;39;PA;Air to Ground Proponent;Medium;M45059;x
+220035;Minister of Armament;Timmy Dahlberg;42;PA;Infantry Proponent;Medium;M45060;x
+220036;Minister of Armament;Gunnar Henriksson;44;PA;Battle Fleet Proponent;Medium;M45061;x
+220037;Minister of Armament;Thim Lundin;45;PA;Resource Industrialist;Medium;M45062;x
+220038;Minister of Armament;Christoffe Persson;36;LWR;Tank Proponent;Low;M45024;x
+220039;Minister of Armament;Oskar Söderberg;38;LE;Resource Industrialist;Low;M45064;x
+220040;Minister of Armament;Gabriel Axelsson;41;LWR;Infantry Proponent;Medium;M45065;x
+220041;Minister of Armament;Henning Svensson;43;LE;Air Superiority Proponent;Medium;M45030;x
+220042;Minister of Security;Anders Gustafsson;44;ML;Compassionate Gentleman;Medium;M45069;x
+220043;Minister of Security;Emanuel Ekström;36;ML;Man of the People;Very High;M45070;x
+220044;Minister of Security;Edvard Berg;40;SC;Silent Lawyer;High;M45071;x
+220045;Minister of Security;Nicolas Göransson;41;ML;Crime Fighter;High;M45042;x
+220046;Minister of Security;Tage Jonasson;44;SC;Man of the People;High;M45073;x
+220047;Minister of Security;Mikael Blomqvist;36;PA;Prince of Terror;Medium;M45015;x
+220048;Minister of Security;Caspar Olofsson;37;PA;Man of the People;Medium;M45075;x
+220049;Minister of Security;Victor Andreasson;41;PA;Compassionate Gentleman;Medium;M45076;x
+220050;Minister of Security;Thim Lundin;42;PA;Crime Fighter;Medium;M45062;x
+220051;Minister of Security;Finn Nyberg;43;PA;Silent Lawyer;Medium;M45078;x
+220052;Minister of Security;Harald Jonasson;45;PA;Back Stabber;Medium;M45079;x
+220053;Minister of Security;Holger Berggren;36;LE;Crime Fighter;Medium;M45025;x
+220054;Minister of Security;Mark Olsson;40;LWR;Man of the People;Medium;M45081;x
+220055;Minister of Security;Victor Göransson;41;LE;Efficient Sociopath;Medium;M45082;x
+220056;Minister of Security;Claes Jansson;43;LE;Compassionate Gentleman;Medium;M45083;x
+220057;Head of Military Intelligence;Malte Bergman;37;ML;Dismal Enigma;Very High;M45085;x
+220058;Head of Military Intelligence;Karl Carlsson;40;ML;Technical Specialist;Very High;M45086;x
+220059;Head of Military Intelligence;Sixten Fransson;44;ML;Industrial Specialist;High;M45087;x
+220060;Head of Military Intelligence;Marc Björk;36;SC;Political Specialist;High;M45088;x
+220061;Head of Military Intelligence;Harald Jonasson;44;SC;Naval Intelligence Specialist;Medium;M45079;x
+220062;Head of Military Intelligence;Karl Ström;36;PA;Political Specialist;Medium;M45016;x
+220063;Head of Military Intelligence;Anders Lundin;38;PA;Dismal Enigma;Medium;M45091;x
+220064;Head of Military Intelligence;Gunnar Henriksson;41;PA;Industrial Specialist;Medium;M45061;x
+220065;Head of Military Intelligence;Finn Nyberg;43;PA;Naval Intelligence Specialist;Medium;M45078;x
+220066;Head of Military Intelligence;Bruno Martinsson;36;LE;Political Specialist;Medium;M45094;x
+220067;Head of Military Intelligence;Albert Åberg;42;LE;Logistics Specialist;Medium;M45028;x
+220068;Head of Military Intelligence;Alfons Nilsson;43;LE;Naval Intelligence Specialist;Medium;M45096;x
+220069;Head of Military Intelligence;William Dees;45;LE;Technical Specialist;Medium;M45026;x
+220070;Chief of Staff;Thomas Anderson;40;ML;School of Defence;High;M45099;x
+220071;Chief of Staff;Tim Abrahamsson;42;ML;School of Psychology;High;M45006;x
+220072;Chief of Staff;Karl Carlsson;36;SC;School of Mass Combat;Very High;M45086;x
+220073;Chief of Staff;Max Magnusson;40;SC;School of Fire Support;High;M45102;x
+220074;Chief of Staff;Ludwig Fredriksson;44;SC;School of Manoeuvre;Very High;M45103;x
+220075;Chief of Staff;Mattias Eliasson;36;PA;School of Mass Combat;Medium;M45017;x
+220076;Chief of Staff;Gabriel Axelsson;36;LWR;School of Defence;Medium;M45065;x
+220077;Chief of Staff;Tim Norberg;43;LE;School of Fire Support;Medium;M45027;x
+220078;Chief of Army;Thomas Anderson;40;ML;Static Defence Doctrine;High;M45099;x
+220079;Chief of Army;Tim Abrahamsson;44;ML;Armoured Spearhead Doctrine;High;M45006;x
+220080;Chief of Army;Karl Carlsson;36;SC;Decisive Battle Doctrine;Very High;M45086;x
+220081;Chief of Army;Max Magnusson;40;SC;Armoured Spearhead Doctrine;High;M45102;x
+220082;Chief of Army;Ludwig Fredriksson;44;SC;Elastic Defence Doctrine;Very High;M45103;x
+220083;Chief of Army;Mattias Eliasson;44;PA;Guns and Butter Doctrine;Medium;M45017;x
+220084;Chief of Army;Bruno Martinsson;36;LE;Static Defence Doctrine;Medium;M45094;x
+220085;Chief of Army;Albert Åberg;42;LE;Elastic Defence Doctrine;Medium;M45028;x
+220086;Chief of Navy;Malcolm Sundberg;36;PA;Base Control Doctrine;Medium;M45019;x
+220087;Chief of Navy;Finn Nyberg;38;PA;Indirect Approach Doctrine;Medium;M45078;x
+220088;Chief of Navy;Nils Danielsson;36;LWR;Indirect Approach Doctrine;Medium;M45029;x
+220089;Chief of Navy;Alfons Nilsson;39;LE;Power Projection Doctrine;Medium;M45096;x
+220090;Chief of Air Force;Patrik Hellström;36;SC;Air Superiority Doctrine;Medium;M45123;x
+220091;Chief of Air Force;James Bergqvist;36;PA;Army Aviation Doctrine;Medium;M45020;x
+220092;Chief of Air Force;Victor Göransson;36;LE;Air Superiority Doctrine;Medium;M45082;x
+220093;Chief of Air Force;Henning Svensson;43;LE;Army Aviation Doctrine;Medium;M45030;x
+220094;Head of State;Axel Sundberg;36;SC;Benevolent Gentleman;High;M45001;x
+220095;Head of State;Nils Silverstierna;36;SC;Popular Figurehead;High;M45129;x
+220096;Head of State;Nils Silverstierna;36;ML;Popular Figurehead;High;M45129;x
+220097;Head of State;Walter Holmberg;40;ML;Stern Imperialist;High;M45131;x
+220098;Head of State;Walter Holmberg;40;SC;Stern Imperialist;High;M45131;x
+220099;Head of State;Nick Gustafsson;46;SC;Resigned Generalissimo;High;M45133;x
+220100;Head of State;Nick Gustafsson;46;ML;Resigned Generalissimo;High;M45133;x
+220101;Head of Government;Martin Persson;48;ML;Old General;High;M45042;x
+220102;Head of Government;Edvard Berg;48;SC;Silent Workhorse;High;M45071;x
+220103;Head of Government;Klas Björklund;52;SC;Silent Workhorse;High;M45137;x
+220104;Foreign Minister;Vilhelm Lundberg;48;ML;Ideological Crusader;High;M45138;x
+220105;Foreign Minister;Anton Eriksson;48;SC;Biased Intellectual;High;M45139;x
+220106;Minister of Armament;Dan Nyberg;48;ML;Air Superiority Proponent;High;M45140;x
+220107;Minister of Armament;Christian Nyström;48;SC;laissez-faire capitalist;High;M45141;x
+220108;Minister of Security;Gustav Ström;48;ML;Man of the People;Very High;M45142;x
+220109;Minister of Security;Egon Blom;48;SC;Compassionate Gentleman;Very High;M45143;x
+220110;Head of Military Intelligence;Rasmus Nordström;48;ML;Dismal Enigma;Very High;M45144;x
+220111;Head of Military Intelligence;Villiam Axelsson;51;SC;Logistics Specialist;Very High;M45145;x
+220112;Head of State;Sigge Hellström;52;SC;Autocratic Charmer;High;M45146;x
+220113;Head of State;Sigge Hellström;52;ML;Autocratic Charmer;High;M45146;x
+220114;Head of State;Edvard Lundin;59;SC;Popular Figurehead;High;M45170;x
+220115;Head of State;Edvard Lundin;59;ML;Popular Figurehead;High;M45170;x
+220116;Head of Government;Tage Jonasson;57;SC;Flamboyant Tough Guy;High;M45042;x
+220117;Head of Government;Vilhelm Lundberg;63;ML;Backroom Backstabber;High;M45138;x
+220118;Foreign Minister;Richard Lundberg;57;SC;Ideological Crusader;High;M45150;x
+220119;Foreign Minister;Adam Lindström;63;ML;Great Compromiser;High;M45151;x
+220120;Minister of Armament;Patrik Blomqvist;57;SC;Infantry Proponent;High;M45152;x
+220121;Minister of Armament;Jonas Nyman;60;SC;laissez-faire capitalist;High;M45153;x
+220122;Minister of Armament;Xander Persson;63;SC;Strategic Air Proponent;High;M45154;x
+220123;Minister of Armament;Theo Sundberg;63;ML;Military Entrepreneur;High;M45155;x
+220124;Minister of Security;Axel Lundgren;62;SC;Prince of Terror;Very High;M45156;x
+220125;Minister of Security;Patrik Forsberg;63;ML;Crime Fighter;Very High;M45157;x
+220126;Head of Military Intelligence;Pelle Hansson;49;ML;Political Specialist;High;M45158;x
+220127;Head of Military Intelligence;Axel Lundgren;57;SC;Dismal Enigma;High;M45156;x
+220128;Head of Military Intelligence;Frode Björklund;63;ML;Technical Specialist;High;M45160;x
+220129;Chief of Staff;Kristian Lindholm;51;ML;School of Manoeuvre;High;L52065;x
+220130;Chief of Staff;Sami Lundberg;55;ML;School of Fire Support;High;M45162;x
+220131;Chief of Staff;Karl Arvidsson;58;SC;School of Mass Combat;High;M45163;x
+220132;Chief of Army;Valter Olsson;52;ML;Guns and Butter Doctrine;High;L52030;x
+220133;Chief of Army;Levi Svensson;56;ML;Static Defence Doctrine;High;L52054;x
+220134;Chief of Army;Tobias Lundberg;61;SC;Elastic Defence Doctrine;High;M45166;x
+220135;Chief of Navy;Kaspar Strömberg;57;SC;Open Seas Doctrine;Medium;M45167;x
+220136;Chief of Air Force;Otto Sandberg;41;ML;Army Aviation Doctrine;Medium;M45168;x
+220137;Chief of Air Force;Walter Fredriksson;53;ML;Naval Aviation Doctrine;Medium;M45169;x

@@ -1,0 +1,75 @@
+###82000-82999###
+##82005 lombards join
+
+event = {
+	id = 82000
+	country = RSI
+
+	name = "New Government in Constantinople"
+	desc = "The Radical Italians have taken power after the May Day Elections. Palmiro Togliatti is now Consul of the Union."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = headofstate which = 885001 }	
+	}
+}
+
+event = {
+	id = 82001
+	country = RSI
+
+	name = "New Government in Constantinople"
+	desc = "The Russian Exiles have taken power after the May Day Elections. Georgi Dimitrov is now Consul of the Union."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = domestic which = democratic value = -2 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = domestic which = free_market value = -2 }
+		command = { type = headofstate which = 885036 }	
+	}
+}
+
+event = {
+	id = 82002
+	country = RSI
+
+	name = "New Government in Constantinople"
+	desc = "The Old Guard have retained their power in the May Day Elections. Nikos Zahariadis is now Consul of the Union."
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = headofstate which = 885037 }	
+	}
+}
+
+event = {
+	id = 82005
+	country = RSI
+
+	name = "Italian Unification"
+	desc = "The Socialist Lombard government wants to join us!"
+	style = 2	
+	picture = "news_paper"
+	
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { type = inherit which = U14 value = 1 }
+	}
+}

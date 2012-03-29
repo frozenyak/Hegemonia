@@ -1,0 +1,205 @@
+RUS;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+515001;Head of State;Viktor M. Chernov;36;SD;Die-hard Reformer;High;Mrus chernov;x
+515102;Head of Government;Lev B. Kamenev;36;SD;Happy Amateur;High;MRUS Kamenev;x
+515003;Foreign Minister;Nikolai Sukhanov;36;LWR;Ideological Crusader;Medium;sukhanov;x
+515004;Minister of Armament;Nikolai N. Krestinsky;36;LE;Administrative Genius;Very High;kaiserreich nkrestinsky;x
+515005;Minister of Security;Igor Troubetzkoy;36;SL;Man of the People;High;M4025;x
+515006;Head of Military Intelligence;Alexei I. Rykov;36;LWR;Dismal Enigma;Very High;Rykov;x
+515007;Chief of Staff;Feliks Romanovsky;36;SC;School of Fire Support;High;M4129;x
+515008;Chief of Army;Vasily von Blücher;36;SL;Armoured Spearhead Doctrine;Very High;M4136;x
+515009;Chief of Navy;Lev M. Galler;36;SC;Power Projection Doctrine;High;L10417;x
+515010;Chief of Air Force;Jevgennij Smushkevich;36;SL;Air Superiority Doctrine;High;M4147;x
+515011;Head of State;Mikhail Kalinin;36;ST;Weary Stiffneck;High;M4001;x
+515012;Head of State;Aleksandr F. Kerensky;36;SC;Stern Imperialist;High;M4092;x
+515013;Head of Government;Mikhail Pol'skii;36;PA;Ambitious Union Boss;High;Mrus polskii;x
+515014;Head of State;Nikolai I. Bukharin;36;LE;Die-hard Reformer;High;BukharinRUS;x    
+515015;Head of Government;Nikolai I. Bukharin;36;LE;communist chairman;High;BukharinRUS;x    
+515016;Head of Government;Abram Dragomirov;36;PA;Old General;Medium;kaiserreich Dragomirov;x
+515017;Minister of Security;Aleksandr D. Protopopov;36;SC;Back Stabber;Medium;M4302;x
+515018;Minister of Armament;Aleksandr I. Konovalov;36;ML;laissez-faire capitalist;High;M4102;x
+515019;Head of Military Intelligence;Aleksandr I. Solzhenitsyn;41;PA;Political Specialist;Very high;Alexandr_Solzhenitsyn;x
+515020;Chief of Army;Aleksandr I. Yegorov;36;FA;Armoured Spearhead Doctrine;Very High;M4131;x
+515021;Chief of Staff;Aleksandr I. Yegorov;36;SD;School of Defence;Very high;M4131;x
+515022;Minister of Security;Aleksandr P. Balk;36;FA;Prince of Terror;Medium;M4304;x
+515023;Chief of Army;Aleksandr Rodzyanko;36;PA;Guns and Butter Doctrine;Medium;M4303;x
+515024;Minister of Armament;Aleksandr Shlyapnikov;36;LWR;Resource Industrialist;High;MRUS Shlyapnikov;x
+515025;Chief of Air Force;Aleksandr V. Kolchak;60;PA;Naval Aviation Doctrine;High;Mrus Kolchak;x
+515026;Head of Military Intelligence;Aleksandr V. Kolchak;60;PA;Naval Intelligence Specialist;High;Mrus Kolchak;x
+515027;Chief of Staff;Aleksandr V. Kolchak;60;PA;School of Defence;High;Mrus Kolchak;x
+515028;Chief of Navy;Aleksandr V. Kolchak;60;FA;Power Projection Doctrine;High;Mrus Kolchak;x
+515029;Head of Government;Aleksandr V. Kolchak;60;PA;Flamboyant Tough Guy;Very High;Mrus kolchak;x
+515030;Head of State;Aleksandr V. Kolchak;60;PA;Ruthless Powermonger;Very High;Mrus kolchak;x
+515031;Foreign Minister;Aleksandra M. Kollontai;36;ST;Apologetic Clerk;High;MRUS Kollontai;x
+515032;Chief of Staff;Alexander F. Denikin;36;PA;School of Mass Combat;High;Mrus Denikin;x
+515033;Head of State;Alexander F. Denikin;36;PA;Resigned Generalissimo;High;Mrus Denikin;x
+515034;Head of Government;Alexander F. Denikin;36;PA;Old General;High;Mrus denikin;x
+515035;Chief of Army;Alexander F. Denikin;36;PA;Static Defence Doctrine;High;Mrus denikin;x
+515036;Head of Government;Alexei I. Rykov;36;LWR;Naive Optimist;High;Rykov;x
+515037;Minister of Security;Alexei I. Rykov;36;LWR;Silent Lawyer;Very high;Rykov;x
+515038;Head of State;Alexei P. Arkhangelskiy;36;PA;Resigned Generalissimo;High;Alexei_Archangelskiy;x
+515039;Chief of Army;Alexei P. Arkhangelskiy;38;PA;Decisive Battle Doctrine;High;Alexei_Archangelskiy;x
+515040;Minister of Armament;Alexei P. Arkhangelskiy;38;PA;Military Entrepreneur;High;Alexei_Archangelskiy;x
+515041;Minister of Armament;Andrei D. Sakharov;48;SL;Theoretical Scientist;High;MRUS Sakharov;x
+515042;Minister of Security;Andrei I. Shingarev;36;ML;Compassionate Gentleman;High;MRUS Shingarev;x
+515043;Head of State;Andrei Vlasov;45;FA;Resigned Generalissimo;High;M4090;x
+515044;Chief of Staff;Andrei Vlasov;36;FA;School of Fire Support;High;M4090;x
+515045;Chief of Army;Andrei Vlasov;36;FA;Elastic Defence Doctrine;Very High;M4090;x
+515046;Head of Government;Andrei Vlasov;36;FA;Political Protege;High;M4090;x
+515047;Head of State;Ariadna V. Tyrkova-Williams;45;SL;Die-hard Reformer;High;MRUS Tyrkova;x
+515048;Foreign Minister;Ariadna V. Tyrkova-Williams;36;SL;Apologetic Clerk;High;MRUS Tyrkova;x
+515049;Minister of Armament;Boris Komenenov;36;NS;Resource Industrialist;High;M4105;x
+515050;Chief of Navy;Boris Makaroff;60;FA;Decisive Naval Battle Doctrine;High;M4088;x
+515051;Minister of Armament;Boris Maltcheff;36;SC;Infantry Proponent;High;M4109;x
+515052;Minister of Security;Boris Savnikov;36;LWR;Prince of Terror;High;M4108;x
+515053;Head of Military Intelligence;Boris Savnikov;36;LWR;Dismal Enigma;High;M4108;x
+515054;Foreign Minister;Boris V. Stürmer;36;FA;Iron Fisted Brute;Medium;M4096;x
+515055;Minister of Armament;Dmitri Pavlovich Romanov;36;PA;Corrupt Kleptocrat;High;kaiserreich dmitripavlovich;x
+515056;Chief of Army;Dmitri Pavlovich Romanov;36;PA;Guns and Butter Doctrine;High;kaiserreich dmitripavlovich;x
+515057;Head of State;Dmitri Pavlovich Romanov;36;PA;Popular Figurehead;High;kaiserreich dmitripavlovich;x
+515058;Head of Military Intelligence;Dmitri Popov;36;LWR;Political Specialist;High;MRUS Popov;x
+515059;Head of State;Fanni Y. Kaplan;45;SD;Popular Figurehead;Very high;Fanni_kaplan;x
+515060;Foreign Minister;Fanni Y. Kaplan;36;SD;Ideological Crusader;High;Fanni_Kaplan;x
+515061;Foreign Minister;Fedor Chicherin;36;LE;Biased Intellectual;Medium;M4097;x
+515062;Head of Military Intelligence;Fedor I. Trukhin;44;NS;Logistics Specialist;Very High;Fedor_Trukhin;x
+515063;Minister of Security;Felix F. Yusupov;36;PA;Back Stabber;High;kaiserreich felixyusopov;x
+515064;Head of Military Intelligence;Felix F. Yusupov;36;PA;Political Specialist;Very High;kaiserreich felixyusopov;x
+515065;Head of Government;Felix F. Yusupov;36;PA;Happy Amateur;High;kaiserreich felixyusopov;x
+515066;Chief of Staff;Fyodor Trikhin;36;NS;School of Mass Combat;High;M4125;x
+515067;Minister of Security;Genrikh Yagoda;36;ST;Back Stabber;Medium;M4005;x
+515068;Foreign Minister;George Vernadsky;36;SL;Great Compromiser;Medium;M4292;x
+515069;Foreign Minister;Georgi Brassov;36;FA;The Cloak N Dagger Schemer;Medium;M4098;x
+515070;Minister of Armament;Georgi Brassov;36;FA;Resource Industrialist;High;M4098;x
+515071;Foreign Minister;Georgi M. Malenkov;38;LWR;Ideological Crusader;Medium;Georgy_Malenkov;x
+515072;Minister of Security;Georgi M. Malenkov;38;LWR;Silent Lawyer;Medium;Georgy_Malenkov;x
+515073;Foreign Minister;Georgi P. Ignatiev;43;SC;Great Compromiser;High;Georgi_Ignatiev;x
+515074;Chief of Army;Georgiy K. Zhukov;39;PA;Armoured Spearhead Doctrine;High;M4028;x
+515075;Chief of Staff;Georgiy K. Zhukov;39;PA;School of Fire Support;High;M4028;x
+515076;Minister of Security;Grigorij R. Semyonov;60;NS;Crime Fighter;Very High;M4111;x
+515077;Head of Military Intelligence;Grigory Gershuni;36;SD;Political Specialist;High;MRUS Gershuni;x
+515078;Minister of Security;Grigory Gershuni;36;SD;Prince of Terror;High;MRUS Gershuni;x
+515079;Foreign Minister;Grigory Y. Zinoviev;36;LWR;The Cloak N Dagger Schemer;High;MRUS Zinoviev;x
+515080;Head of State;H.R.H. Dmitri II Romanov;37;PA;Stern Imperialist;High;kaiserreich dmitripavlovich;x
+515081;Head of State;H.R.H. Ivan VII;36;PA;german aristocrat;High;kaiserreich Louis Ferdinand;x
+515082;Head of State;H.R.H. Kyril I Romanov;37;SC;Insignificant Layman;High;kaiserreich kyrilromanov;x
+515083;Head of State;H.R.H. Kyril l Romanov;36;SC;Weary Stiffneck;High;kaiserreich kyrilromanov;x
+515084;Head of State;H.R.H. Pavel II Romanov;41;PA;Insignificant Layman;High;kaiserreichpavel;x
+515085;Head of State;H.R.H. Petr IV Wrangel;45;NS;ruthless dictator;Very High;kaiserreich_Wrangelking-1;x
+515086;Head of State;H.R.H. Vladimir I Romanov;39;ML;Benevolent Gentleman;High;kaiserreich vladimirromanov;x
+515087;Head of State;H.R.H. Vladimir I Romanov;38;ML;Popular Figurehead;High;kaiserreich vladimirromanov;x
+515088;Chief of Army;Igor Belov;36;SC;Static Defence Doctrine;Very High;M4137;x
+515089;Chief of Air Force;Igor I. Sikorsky;36;SC;Carpet Bombing Doctrine;Medium;M4299;x
+515090;Head of Military Intelligence;Igor Troubetzkoy;36;SL;Technical Specialist;High;M4025;x
+515091;Head of Military Intelligence;Ilich Antonov;36;SC;Technical Specialist;Very High;M4122;x
+515092;Minister of Security;Iraklij G. Tsereteliy;36;SD;Silent Lawyer;High;MRUS Tsereteli;x
+515093;Minister of Security;Ivan A. Ilyin;36;SC;Silent Lawyer;Medium;M4300;x
+515094;Chief of Army;Ivan Romanovsky;36;SC;Decisive Battle Doctrine;High;M4129;x
+515095;Chief of Army;Ivan S. Konev;38;LE;Decisive Battle Doctrine;Medium;L10026;x
+515096;Chief of Air Force;Ivan Taube;36;FA;Air Superiority Doctrine;High;M4145;x
+515097;Chief of Staff;Jevgenij von Rommel;36;SC;School of Manoeuvre;High;M4130;x
+515098;Chief of Army;Jevgenij von Rommel;36;SC;Armoured Spearhead Doctrine;Very High;M4130;x
+515099;Chief of Air Force;Jurij Alksnis;36;PA;Vertical Envelopment Doctrine;High;M4146;x
+515100;Chief of Navy;Konstantin Dushenov;36;PA;Base Control Doctrine;High;L10520;x
+515101;Chief of Staff;Konstantin K. Rokossovsky;40;LWR;School of Manoeuvre;High;M4027;x
+515206;Head of Government;Konstantin K. Rokossovsky;50;LWR;Old General;Very high;M4027;x
+515103;Chief of Army;Konstantin K. Rokossovsky;40;LWR;Armoured Spearhead Doctrine;High;M4027;x
+515104;Chief of Staff;Lavr Kornilov;36;SC;School of Mass Combat;Very high;MRUS Kornilov;x
+515105;Chief of Army;Lavr Kornilov;36;SC;Decisive Battle Doctrine;Medium;MRUS Kornilov;x
+515106;Chief of Army;Lavrentij Kornilov;60;FA;Guns and Butter Doctrine;Very High;M4087;x
+515107;Minister of Armament;Lazer M. Kaganovich;36;LWR;Resource Industrialist;High;M4004;x
+515108;Head of Government;Lazer M. Kaganovich;44;LWR;Flamboyant Tough Guy;Very High;M4004;x
+515110;Minister of Armament;Lev B. Kamenev;36;SD;Administrative Genius;High;MRUS Kamenev;x
+515111;Foreign Minister;Lev N. Gumilov;38;FA;Iron Fisted Brute;High;Lev_Gumilov;x
+515112;Head of Government;Lev N. Gumilov;38;FA;Naive Optimist;High;Lev_Gumilov;x
+515113;Minister of Security;Maria A. Spiridonova;36;LWR;Prince of Terror;Very High;Mrus spiridanova;x
+515114;Head of Military Intelligence;Maria A. Spiridonova;36;LWR;Political Specialist;High;Mrus spiridanova;x
+515115;Minister of Armament;Matvey Skobelev;36;LWR;Administrative Genius;High;MRUS Skobelev;x
+515116;Foreign Minister;Maxim M. Litvinov;36;ST;Biased Intellectual;High;M4003;x
+515117;Head of Military Intelligence;Mikhail A. Meandrov;36;FA;Dismal Enigma;Very High;M4085;x
+515118;Chief of Staff;Mikhail Drozdovsky;36;FA;School of Psychology;Medium;M4294;x
+515119;Chief of Army;Mikhail Drozdovsky;36;FA;Armoured Spearhead Doctrine;Medium;M4294;x
+515120;Minister of Armament;Mikhail I. Tereshchenko;36;SL;Administrative Genius;High;MRUS Tereshchenko;x
+515121;Foreign Minister;Mikhail I. Tereshchenko;36;SL;Ideological Crusader;High;MRUS Tereshchenko;x
+515122;Head of Government;Mikhail Smirnov;38;ML;Corporate Suit;Medium;MRUS Smirnov;x
+515123;Foreign Minister;Mikhail Smirnov;36;ML;Great Compromiser;High;MRUS Smirnov;x
+515124;Chief of Staff;Mikhail Tukachevsky;40;PA;School of Manoeuvre;High;M4128;x
+515125;Minister of Security;Mikhail Tukachevsky;36;PA;Silent Lawyer;Very High;M4128;x
+515126;Minister of Armament;Mikhail V. Bernacki;36;ML;Administrative Genius;Medium;M4293;x
+515127;Minister of Armament;Nikolai A. Maklakov;36;FA;Military Entrepreneur;High;M4083;x
+515128;Head of Military Intelligence;Nikolai Berdyaev;36;LWR;Logistics Specialist;Medium;M4297;x
+515129;Minister of Armament;Nikolai D. Kondratiev;36;LWR;Resource Industrialist;High;MRUS Kondratiev;x
+515130;Chief of Staff;Nikolai F. Vatutin;42;SD;School of Psychology;High;L10354;x
+515131;Head of Military Intelligence;Nikolai F. Vatutin;43;SD;Logistics Specialist;High;L10354;x
+515132;Chief of Navy;Nikolai G. Kuznetsov;40;PA;Decisive Naval Battle Doctrine;High;M4029;x
+515133;Head of Government;Nikolai G. Kuznetsov;45;PA;Old Admiral;High;M4029;x
+515134;Foreign Minister;Nikolai G. Kuznetsov;43;PA;General Staffer;High;M4029;x
+515135;Minister of Security;Nikolai Gredeskul;36;SC;Efficient Sociopath;High;MRUS Gredeskul;x
+515136;Minister of Armament;Nikolai I. Bukharin;36;LE;Resource Industrialist;High;BukharinRUS;x
+515137;Head of Government;Nikolai I. Yezhov;40;NS;Backroom Backstabber;High;M4093;x
+515138;Minister of Security;Nikolai I. Yezhov;36;PA;Back Stabber;Undying;M4093;x
+515139;Chief of Air Force;Nikolai M. Kharlamov;36;PA;Army Aviation Doctrine;High;L10472;x
+515140;Head of Military Intelligence;Nikolai M. Kharlamov;36;PA;Technical Specialist;High;L10472;x
+515141;Minister of Armament;Nikolai P. Krasnov;36;NS;Administrative Genius;High;M4104;x
+515142;Head of Government;Nikolai S. Trubetskoy;36;SC;Naive Optimist;High;MRUS Trubetskoy;x
+515143;Foreign Minister;Nikolai S. Trubetskoy;36;SC;Biased Intellectual;High;MRUS Trubetskoy;x
+515144;Foreign Minister;Nikolai V. Nekrasov;36;SL;Apologetic Clerk;High;MRUS Nekrasov;x
+515145;Foreign Minister;Oleg Milyukov;36;SC;Great Compromiser;Medium;M4101;x
+515146;Chief of Navy;Oleg Mychelkin;36;NS;Indirect Approach Doctrine;High;M4139;x
+515147;Head of State;Pavel Bermondt-Avalov;36;PA;Ruthless Powermonger;Medium;kaiserreich Bermondt-Avalov;x
+515148;Head of Government;Pavel Bermondt-Avalov;36;PA;Old General;Medium;kaiserreich Bermondt-Avalov;x
+515149;Foreign Minister;Pavel Konovalov;36;SC;Apologetic Clerk;Medium;M4102;x
+515150;Minister of Security;Pavel N. Ignatiev;36;PA;Crime Fighter;Very high;Pavel_Ignatiev;x
+515151;Minister of Armament;Pavel N. Ignatiev;36;PA;Resource Industrialist;Very high;Pavel_Ignatiev;x
+515152;Head of Government;Pavel N. Milyukov;36;ML;Backroom Backstabber;Medium;MRUS Miliukov;x
+515153;Foreign Minister;Pavel N. Milyukov;36;ML;Great Compromiser;High;MRUS Miliukov;x
+515154;Chief of Air Force;Pavel V. Rychagov;36;PA;Army Aviation Doctrine;High;M4030;x
+515155;Chief of Navy;Petar Drozd;36;FA;Open Seas Doctrine;High;M4138;x
+515156;Foreign Minister;Pyotr B. Struve;36;SL;Ideological Crusader;High;Pyotr_Struve;x
+515157;Minister of Security;Pyotr Krasnov;60;FA;Crime Fighter;High;MRUS Krasnov;x
+515158;Chief of Staff;Pyotr Krasnov;60;FA;School of Manoeuvre;High;MRUS Krasnov;x
+515159;Chief of Army;Pyotr Krasnov;60;FA;Guns and Butter Doctrine;High;MRUS Krasnov;x
+515160;Chief of Staff;Pyotr N. Wrangel;36;NS;School of Manoeuvre;High;M4124;x
+515161;Head of State;Pyotr N. Wrangel;36;NS;ruthless dictator;High;M4124;x
+515162;Head of Government;Pyotr N. Wrangel;36;NS;Flamboyant Tough Guy;High;M4124;x
+515163;Minister of Security;Pyotr N. Wrangel;36;NS;Prince of Terror;Very High;M4124;x
+515164;Chief of Army;Pyotr N. Wrangel;36;NS;Decisive Battle Doctrine;Very high;M4124;x
+515165;Foreign Minister;Pyotr Plehanov;36;PA;Ideological Crusader;Medium;M4100;x
+515166;Chief of Navy;Robert von Wirén;36;SC;Decisive Naval Battle Doctrine;High;M4143;x
+515167;Head of Military Intelligence;Roman B. Gul;36;SC;Industrial Specialist;Medium;M4301;x
+515168;Minister of Armament;Sergei Bulgakov;36;SC;Resource Industrialist;Medium;M4296;x
+515169;Head of Military Intelligence;Sergei F. Oldenburg;36;SD;Technical Specialist;High;MRUS Oldenburg;x
+515170;Chief of Air Force;Sergei Korenev;36;SC;Vertical Envelopment Doctrine;High;M4150;x
+515171;Chief of Staff;Sergei L. Markov;36;PA;School of Manoeuvre;Very High;MRUS Markov;x
+515172;Head of State;Sergei L. Markov;36;PA;Stern Imperialist;Very high;MRUS Markov;x
+515173;Chief of Staff;Sergei L. Markov;36;PA;School of Manoeuvre;Very high;MRUS Markov;x
+515174;Minister of Armament;Sergei M. Kirov;36;ST;Resource Industrialist;High;kaiserreich sergeikirov;x
+515175;Minister of Armament;Sergei Rodzyanko;36;PA;Resource Industrialist;High;M4103;x
+515176;Minister of Security;Sergei Rodzyanko;36;PA;Silent Lawyer;Very High;M4103;x
+515177;Minister of Armament;Sergei Savinkov;36;SC;Theoretical Scientist;High;M4108;x
+515178;Minister of Security;Sergei Sazonov;36;FA;Compassionate Gentleman;Very High;M4110;x
+515179;Minister of Security;Sergius of Nizhny-Novgorod;36;PA;Man of the People;High;kaiserreich sergiusofnn;x
+515180;Head of State;The Senate;36;PA;Weary Stiffneck;Very high;MRUS Senate;x
+515181;Minister of Armament;Vadim V. Rudnev;36;SL;Military Entrepreneur;High;MRUS Rudnev;x
+515182;Head of State;Vasily A. Maklakov;36;ML;Benevolent Gentleman;High;MRUS Maklakov;x
+515183;Minister of Security;Vasily A. Maklakov;36;ML;Silent Lawyer;High;MRUS Maklakov;x
+515184;Chief of Army;Vasily I. Chuikov;42;LE;Elastic Defence Doctrine;High;L9881;x
+515185;Minister of Security;Vasily Shulgin;36;SC;Prince of Terror;High;MRUS Shulgin;x
+515186;Foreign Minister;Viktor M. Chernov;36;SD;Apologetic Clerk;High;Mrus chernov;x
+515187;Foreign Minister;Vladimir D. Nabokov;36;SC;General Staffer;High;kaiserreich VladimirDmitrievichNabokov;x
+515188;Minister of Security;Vladimir D. Nabokov;36;SC;Crime Fighter;Medium;kaiserreich VladimirDmitrievichNabokov;x
+515189;Foreign Minister;Vladimir Galitzine;38;PA;Great Compromiser;Very High;kaiserreich vladimirgallitzine;x
+515190;Minister of Security;Vladimir L. Burtsev;36;SD;Crime Fighter;High;Vladimir_Burtsev;x
+515191;Minister of Security;Vladimir M. Purishkevich;36;FA;Efficient Sociopath;High;kaiserreich VladimirPurishkevich;x
+515192;Head of Government;Vladimir M. Purishkevich;36;FA;Flamboyant Tough Guy;High;kaiserreich VladimirPurishkevich;x
+515193;Minister of Armament;Vladimir M. Smirnoff;36;SL;laissez-faire capitalist;High;M4024;x
+515194;Minister of Security;Vladimir Malyshkin;60;FA;Back Stabber;Very High;M4084;x
+515195;Head of State;Vladimir N. Kokovtsov;36;PA;Benevolent Gentleman;High;kaiserreich VladimirKokovtsov;x
+515196;Minister of Armament;Vladimir N. Kokovtsov;36;PA;Infantry Proponent;High;kaiserreich VladimirKokovtsov;x
+515197;Foreign Minister;Vladimir P. Paley;36;SC;Apologetic Clerk;Very high;MRUS Paley;x
+515198;Minister of Security;Vladimir Skobelev;36;SC;Prince of Terror;Very High;M4115;x
+515199;Head of Government;Vyacheslav M. Molotov;45;LE;Silent Workhorse;High;M4034;x
+515200;Foreign Minister;Vyacheslav M. Molotov;39;LE;Iron Fisted Brute;High;M4034;x
+515201;Minister of Armament;Wassily Leontief;36;ML;laissez-faire capitalist;Medium;M4298;x
+515202;Head of Military Intelligence;Yan K. Berzin;36;ST;Technical Specialist;High;M4006;x
+515203;Minister of Security;Yan K. Berzin;36;ST;Back Stabber;High;M4006;x
+515204;Minister of Armament;Yuri Rosenfeld;36;PA;Theoretical Scientist;High;M4107;x
+515205;Head of Military Intelligence;Yuri Rosenfeld;36;SC;Logistics Specialist;Very High;M4107;x

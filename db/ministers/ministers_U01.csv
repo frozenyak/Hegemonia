@@ -1,0 +1,22 @@
+U01;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+;Replacements;;;;;;;x
+103001;Head of State;Eleftherios Venizelos;36;ML;Resigned Generalissimo;Medium;M18010;x
+103002;Head of State;Archbishop Damaskinos;36;PA;Barking Buffoon;High;M18032;x
+103003;Head of Government;Ioannis Theotokis;36;SL;Happy Amateur;High;M18203;x
+103004;Head of Government;Archbishop Damaskinos;36;PA;Flamboyant Tough Guy;High;M18032;x
+103005;Minister of Armament;Eleftherios Venizelos;36;ML;Air to Ground Proponent;Medium;M18010;x
+103006;Minister of Armament;Markos Aganossos;36;SL;Corrupt Kleptocrat;Medium;M18086;x
+103007;Minister of Armament;Alexiou Tsamotos;36;SC;Submarine Proponent;High;M18091;x
+103008;Foreign Minister;Konstantinos Tsaldaris;36;ML;The Cloak N Dagger Schemer;Very High;M18053;x
+103009;Foreign Minister;Sophocles Venizelos;36;SC;Great Compromiser;Very High;M18012;x
+103010;Minister of Security;Archbishop Damaskinos;36;PA;Efficient Sociopath;High;M18032;x
+103011;Minister of Security;Markos Aganossos;36;SL;Silent Lawyer;Medium;M18086;x
+103012;Head of Military Intelligence;Anastassios Bardivilias;36;SC;Naval Intelligence Specialist;Medium;M18097;x
+103013;Head of Military Intelligence;Costas Moulas;36;SL;Naval Intelligence Specialist;Medium;M18133;x
+103014;Chief of Staff;Anastassios Sakellariou;36;SL;School of Psychology;Medium;M18009;x
+103015;Chief of Staff;Vassilios Tsounoukas;36;SC;School of Fire Support;Medium;M18153;x
+103016;Chief of Army;Georgios Streit;36;ML;Guns and Butter Doctrine;Low;M18136;x
+103017;Chief of Army;Theodor Pangalos;36;FA;Static Defence Doctrine;Low;M18008;x
+103018;Chief of Navy;Petros Voulgaris;36;SC;Indirect Approach Doctrine;Medium;M18061;x
+103019;Chief of Air Force;Anastassios Bardivilias;36;SC;Naval Aviation Doctrine;Medium;M18097;x
+EOF;x

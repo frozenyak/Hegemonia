@@ -1,0 +1,40 @@
+RUS;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+7200;Vladivostok Shipyards;T11003;7;1930;1970;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7201;Grabin Design Bureau;T3708;7;1930;1970;mechanics;artillery;technical_efficiency;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7202;Igor Kurchatov;T3704;7;1930;1970;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7203;Ilyushin Aircraft;T3709;6;1930;1970;aeronautics;electronics;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7204;Kalinin Machines Plant;T7204;6;1930;1970;general_equipment;rocketry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7205;Kirov Industries;T3710;8;1930;1970;mechanics;artillery;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7207;Mikulin Design Bureau;T7207;6;1944;1970;aeronautics;mechanics;rocketry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7208;Nevskoye Design Bureau;T3711;4;1930;1970;naval_engineering;technical_efficiency;naval_artillery;general_equipment;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7209;CKB Rubin;T7209;6;1930;1970;naval_engineering;naval_artillery;technical_efficiency;electronics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7210;Sergei Korolev;T3720;6;1930;1966;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7211;Tagil Industries;T3713;6;1960;1970;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7212;Sukhoi Design Bureau;T7212;5;1939;1970;aeronautics;electronics;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7213;Vasily A. Degtyarev;T7213;6;1930;1970;general_equipment;artillery;chemistry;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7214;Moscow Military Academy;T10401;4;1930;1970;centralized_execution;decentralized_execution;large_unit_tactics;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7215;Sankt Petersburg Naval Academy;T10402;5;1960;1970;naval_artillery;seamanship;submarine_tactics;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7216;Yakovlev Aeronautics;T3718;8;1930;1970;aeronautics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7219;J.I. Alksnis;T3716;5;1930;1970;aircraft_testing;piloting;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7220;Kompaniya Transsibirskoy Magistrali;T13005;6;1960;1970;industrial_engineering;general_equipment;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+7221;Amurskiy Verf;T12700;4;1960;1970;naval_engineering;naval_artillery;technical_efficiency;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7222;Primorsk Shipping Corporation;T12704;3;1960;1970;naval_engineering;naval_artillery;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7223;Vladivostok Naval Cadet School;T10402;4;1930;1970;decentralized_execution;small_taskforce_tactics;carrier_tactics;submarine_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7224;Chernomorsky Verf;T14004;6;1960;1970;naval_engineering;naval_artillery;technical_efficiency;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7225;Odessa Maritime Academy;T14011;4;1960;1970;naval_training;seamanship;submarine_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7226;Sergei L. Markov;Tmarkov;6;1960;1970;combined_arms_focus;small_unit_tactics;technical_efficiency;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7227;Anton I. Denikin;TDenikin;5;1930;1970;combined_arms_focus;large_unit_tactics;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7228;Pyotr N. Wrangel;TWrangel;5;1930;1970;infantry_focus;large_unit_tactics;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7229;Andrei A. Vlasov;Tvlasov;5;1960;1970;infantry_focus;small_unit_tactics;individual_courage;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7231;Vladimir N. Galkovsky;T7231;6;1938;1970;mechanics;rocketry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7232;Alexander A. Novikov;T3717;6;1940;1970;aircraft_testing;bomber_tactics;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7236;Nikolai G. Kuznetsov;T3715;6;1930;1970;naval_artillery;small_taskforce_tactics;submarine_tactics;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7237;Vasily G. Grabin;T7237;5;1930;1970;mechanics;artillery;technical_efficiency;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7238;Putilovskiy Zavod;T7238;6;1930;1970;mechanics;artillery;technical_efficiency;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7239;Fedor V. Tokarev;T7239;6;1930;1968;general_equipment;mechanics;management;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7240;Semyon A. Lavochkin;T7240;7;1930;1970;aeronautics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7243;Demidow Iron and Steel Works;T3712;6;1938;1970;mechanics;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7244;Moscow State Technical University;T7243;6;1930;1970;electronics;mathematics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7248;Lev Galler;Tkaiserreich_Galler;7;1970;1970;large_taskforce_tactics;carrier_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+7249;Konstantin Dushenov;Tkaiserreich_Dushenov;7;1970;1970;small_taskforce_tactics;submarine_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+7250;Robert Wiren;Tkaiserreich_RvW;6;1970;1970;large_taskforce_tactics;centralized_execution;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

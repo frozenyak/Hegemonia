@@ -1,0 +1,285 @@
+###33000-33999###
+##33008	OLF
+##33015 The Fate of Germany
+##33020 Destroying Westwall
+
+event = {
+	id = 33008
+	country = VIC
+	
+	# decision = {
+		# NOT = { flag = FRA_isolationist }
+		# flag = U06_crackdown
+		# control = { province = 55 data = -1 }
+		# exists = U06
+	# }
+	# decision_trigger ={
+		# money = 200
+		# supplies = 2000
+	# }
+	
+	trigger = {
+		NOT = { flag = FRA_isolationist }
+		flag = U06_crackdown
+		control = { province = 55 data = -1 }
+		exists = U06
+		#random = 25
+	}
+
+	name = "The Occitain Liberation Front"
+	desc = "After a string of bombings in Toulouse last christmas, the Iberian government in Occitania cracked down hard on communists and nationalists, particularily on the radical left-wing OLF. Hundreds of OLF members have fled across the border into France, asking for money and material support to begin a guerilla war in Occitania."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = august year = 1938 }
+	offset = 16
+	deathdate = { day = 1 month = october year = 1938 }
+
+	action = {
+		name = "Give them funding and weapons"
+		ai_chance = 99
+		command = { trigger = { ai = no } type = money value = -200 }
+		command = { trigger = { ai = no } type = supplies value = -2000 }
+		command = { type = setflag which = FRA_support_OLF }
+	}
+	action = { 
+		trigger = {
+			ai = no
+		}
+		name = ACTION_NAME_DECLINE
+		ai_chance = 1
+		command = { type = dissent value = 3 }
+	}
+	action = { 
+		trigger = {
+			ai = yes 
+			NOT = { war = { country = VIC country = U06 } } 
+		}
+		name = ACTION_NAME_DECLINE
+		ai_chance = 1
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 33009
+	country = VIC
+
+	name = "The OLF Coup"
+	desc = "Thanks to our support, the OLF has seized control of the government of Occitania. We have won a valuable new ally for the cause of the Comintern."
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { type = dissent value = -1 }
+		command = { type = alliance which = U06 }
+	}
+}
+
+event = {
+	id = 33010
+	country = VIC
+
+	name = "The OLF Coup"
+	desc = "Thanks to our support, the OLF has seized control of the government of Occitania. They expressed thanks for our support, but decided to stay neutral for the time being."
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = ACTION_NAME_DAMN
+		#command = { type = relation which = U06 value = 100 }
+		command = { type = dissent value = 5 }
+		command = { type = ai_prepare_war which = U06 }
+	}
+}
+
+event = {
+	id = 33011
+	country = VIC
+
+	name = "The OLF Coup - Occitania joins France"
+	desc = "Thanks to our support, the OLF has seized control of the government of Occitania. Unexpectedly they have voted to join our great nation."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { type = dissent value = -5 }
+		#command = { type = set_domestic which = freedom value = 2 }
+		#command = { type = set_domestic which = free_market value = 3 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = domestic which = free_market value = 1 }
+		#
+		command = { type = addcore which = 67 }
+		command = { type = addcore which = 68 }
+		command = { type = addcore which = 69 }
+		command = { type = addcore which = 70 }
+		command = { type = addcore which = 73 }
+		command = { type = addcore which = 75 }
+		command = { type = addcore which = 76 }
+		command = { type = addcore which = 77 }
+		command = { type = addcore which = 79 }
+		command = { type = addcore which = 80 }
+		command = { type = addcore which = 81 }
+		command = { type = addcore which = 82 }
+		command = { type = addcore which = 83 }
+		command = { type = addcore which = 84 }
+		command = { type = addcore which = 86 }
+		command = { type = addcore which = 87 }
+		command = { type = addcore which = 89 }
+		command = { type = addcore which = 90 }
+		command = { type = addcore which = 93 }
+		#
+		command = { type = inherit which = U06 value = 1 }
+		#unification of france
+		#command = { type = sleepevent which = 79005 }
+	}
+}
+
+event = {
+	id = 33012
+	country = VIC
+
+	trigger = {
+		exists = U06
+		ai = U06
+		alliance = { country = U06 }
+		war = { country = SPA }
+		OR = {
+			lost_national = { country = U06 value = 50 }
+			lost_VP = { country = U06 value = 50 }
+		}
+	}
+
+	name = "Occitania in Trouble"
+	desc = "Occitania is in dire straits and might not be able to save itself. It is obvious we must step in and seize control."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 8
+	deathdate = { day = 1 month = january year = 1963 }
+	
+	action = {
+		name = ACTION_NAME_DAMN
+		#
+		command = { type = addcore which = 67 }
+		command = { type = addcore which = 68 }
+		command = { type = addcore which = 69 }
+		command = { type = addcore which = 70 }
+		command = { type = addcore which = 73 }
+		command = { type = addcore which = 75 }
+		command = { type = addcore which = 76 }
+		command = { type = addcore which = 77 }
+		command = { type = addcore which = 79 }
+		command = { type = addcore which = 80 }
+		command = { type = addcore which = 81 }
+		command = { type = addcore which = 82 }
+		command = { type = addcore which = 83 }
+		command = { type = addcore which = 84 }
+		command = { type = addcore which = 86 }
+		command = { type = addcore which = 87 }
+		command = { type = addcore which = 89 }
+		command = { type = addcore which = 90 }
+		command = { type = addcore which = 93 }
+		#
+		command = { type = inherit which = U06 value = 1 }
+		#unification of france
+		#command = { type = sleepevent which = 79005 }
+	}
+}
+
+
+event = {
+	id = 33015
+	country = VIC
+
+	decision = {
+		NOT = { exists = GER }
+		NOT = { exists = DFR }
+		control = { province = 138 }
+	}
+
+	decision_trigger = {
+		OR = {
+			AND = {
+				NOT = { war = { country = LIT } }
+				owned = { province = 138 }
+			}
+			region = { region = "Germany" value = 60 }
+		}
+	}
+
+	trigger = {
+		NOT = { exists = GER }
+		NOT = { exists = DFR }
+		control = { province = 138 }
+		OR = {
+			AND = {
+				NOT = { war = { country = LIT } }
+				owned = { province = 138 }
+			}
+			region = { region = "Germany" value = 60 }
+		}
+	}
+
+	name = "The Fate of Germany"
+	desc = "With the fall of the despicable Germans, we must now decide what to do with our defeated enemy."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Create a German client state"
+		command = { type = independence which = DFR value = 1 }
+		command = { type = make_puppet which = DFR }
+		command = { type = alliance which = DFR }
+		command = { type = trigger which = 78000 }
+		command = { trigger = { government = fascist } type = flag_ext where = HOL which = "_ger" }
+	}
+	action = { trigger = { ai = yes }
+		name = "Rule them directly"
+		ai_chance = 10
+		command = { }
+	}
+}
+
+#########################################################################
+#  Destroying the Westwall
+#########################################################################
+event = { 
+	id = 33020
+	country = VIC
+
+	trigger = {
+		area = { area = "Lorraine_Alsace" }
+		area = { area = "Rhineland" }
+	}
+	
+	name = "Destruction of the Westwall"
+	desc = "As we now hold Alsace and the Rhineland beyond, the Germans' westward facing wall has become irrelevent."
+  	style = 2
+  	picture = "news_paper"
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 30 # Check for trigger conditions day
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK  #
+		command = { type = construct which = land_fort where = 107 value = -10 }
+		command = { type = construct which = land_fort where = 106 value = -10 }
+		command = { type = construct which = land_fort where = 105 value = -10 }
+		command = { type = construct which = land_fort where = 104 value = -10 }
+		#
+		command = { type = construct which = land_fort where = 126 value = -10 }
+		command = { type = construct which = land_fort where = 127 value = -10 }
+		command = { type = construct which = land_fort where = 128 value = -10 }
+		command = { type = construct which = land_fort where = 129 value = -10 }
+		command = { type = construct which = land_fort where = 131 value = -10 }
+		command = { type = construct which = land_fort where = 110 value = -10 }
+	}
+}

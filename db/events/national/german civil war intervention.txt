@@ -1,0 +1,1130 @@
+#2001000 league common trigger 55/15/30
+#2001001 league supplies
+#2001005 iberia
+#2001011 britain
+#2001015 russia
+#2001030 comintern common trigger 5/95/-
+#2001035 france 5/95/-
+#2001040 union 5/95/-
+#2001050 hre common trigger 10/60/30
+#2001051 hre supplies
+#2001055 lithuania
+#2001060 austria
+########################################################################
+#  German Civil War - League - Common
+#########################################################################
+event = {
+	id = 2001000
+	TAG = { SPA ENG RUS }
+	persistent = yes
+
+	decision = {
+		war = { country = DFR country = GER }
+		event = 2052003 # DFR nation
+		NOT = {
+			OR = {
+				alliance = { country = VIC country = DFR }
+				alliance = { country = U00 country = DFR }
+				alliance = { country = GER }
+				government = fascist
+			}
+		}
+		#flag = german_intervention_guarantee
+		NOT = { local_flag = gcw_intervention }
+	}
+
+	decision_trigger = {
+		manpower = 15
+		supplies = 2500
+		money = 200
+		atwar = no
+		OR = {
+			control = { province = 148 data = DFR } #Bremen
+			alliance = { country = U14 }
+			alliance = { country = SCH }
+			alliance = { country = SCA }
+		}
+	}
+
+	trigger = {
+		war = { country = DFR country = GER }
+		event = 2052003 # DFR nation
+		NOT = {
+			OR = {
+				government = fascist
+				alliance = { country = VIC country = GER }
+				alliance = { country = U00 country = GER }
+				alliance = { country = GER }
+			}
+		}
+		#flag = german_intervention_guarantee
+		atwar = no
+		#manpower = 15
+		#supplies = 2000
+		#money = 100
+		OR = {
+			control = { province = 148 data = DFR } #Bremen
+			alliance = { country = U14 }
+			alliance = { country = SCH }
+			alliance = { country = SCA }
+		}
+		NOT = { local_flag = gcw_intervention }
+	}
+
+	name = "The German Civil War - Intervention" 
+	desc = "The German Republic is fighting to replace the German monarchy with a democracy. There is much popular support among our people for their cause, and though we bound by treaty not to intervene directly, we could intervene indirectly by sending supplies and able volunteers through a neutral party..."
+	style = 2
+	picture = "scw"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = { ai = yes }
+		name = "We should not intervene"
+		ai_chance = 55
+		#command = { type = dissent value = 5 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = DFR value = -15 }
+		command = { type = relation which = U00 value = -5 }
+		command = { type = relation which = VIC value = -5 }
+		command = { trigger = { country = SPA } type = non_aggression which = SPA where = DFR }
+		command = { trigger = { country = ENG } type = non_aggression which = ENG where = DFR }
+		command = { trigger = { country = RUS } type = non_aggression which = RUS where = DFR }
+		command = { type = local_setflag which = gcw_intervention }
+	}
+	action = {
+		name = "ACTIONNAME3400B" # Send materiel and volunteers
+		ai_chance = 15
+		command = { type = money value = -200 }
+		command = { type = manpowerpool value = -15 }
+		command = { type = supplies value = -2500 }
+		command = { type = dissent value = 8 }
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = DFR value = 15 }
+		command = { type = relation which = U00 value = 5 }
+		command = { type = relation which = VIC value = 5 }
+		command = { type = relation which = U14 value = -10 }
+		command = { type = relation which = LIT value = -10 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = belligerence value = 1 }
+		command = { trigger = { country = SPA } type = trigger which = 2001005 } #DFR
+		command = { trigger = { country = ENG } type = trigger which = 2001011 } #DFR
+		command = { trigger = { country = RUS } type = trigger which = 2001015 } #DFR
+		command = { trigger = { country = SPA } type = non_aggression which = SPA where = DFR }
+		command = { trigger = { country = ENG } type = non_aggression which = ENG where = DFR }
+		command = { trigger = { country = RUS } type = non_aggression which = RUS where = DFR }
+		command	= { type = setflag which = gcw_league_intervention }
+		command = { type = local_setflag which = gcw_intervention }
+	}
+	action = {
+		name = "Send war materials only"
+		ai_chance = 30
+		command = { type = money value = -100 }
+		command = { type = supplies value = -2000 }
+		command = { type = trigger which = 2001001 } #DFR
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = GER value = -15 }
+		command = { type = relation which = DFR value = 20 }
+		command = { trigger = { country = SPA } type = non_aggression which = SPA where = DFR }
+		command = { trigger = { country = ENG } type = non_aggression which = ENG where = DFR }
+		command = { trigger = { country = RUS } type = non_aggression which = RUS where = DFR }
+		command	= { type = setflag which = gcw_league_intervention }
+		command = { type = local_setflag which = gcw_intervention }
+	}
+}
+
+event = {
+	id = 2001001
+	country = DFR
+	persistent = yes
+
+	name = "League Supplies Arrive"
+	desc = "War materials have arrived from the League to aid in our struggle."
+	style = 2
+	picture = "scw"
+
+	action = {
+		name = "ACTION_NAME_GOOD"
+		command = { type = money value = 100 }
+		command = { type = supplies value = 2000 }
+	}
+}
+
+########################################################################
+#  German Civil War - IBERIA
+#########################################################################
+
+event = {
+	id = 2001005
+	country = DFR
+
+	name = "Iberian Volunteers Arrive"
+	desc = "Volunteers from Iberia have arrived along with war materials to aid in our struggle."
+	style = 2
+	picture = "scw"
+	
+	action_a = {
+		name = ACTION_NAME_GREAT
+		command = { type = manpowerpool value = 15 }
+		command = { type = supplies value = 2000 }
+		command = { type = add_division value = infantry }
+		command = { type = relation which = SPA value = 20 }
+	}
+}
+
+event = {
+	id = 2001006
+	country = SPA
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2001005 # iberian intervention
+		event = 2052010 # dfr victory
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = SPA country = DFR }
+				war = { country = SPA country = GER }
+				war = { country = SPA country = U00 }
+				war = { country = SPA country = VIC }
+				government = fascist
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, victorious."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = DFR value = 20 }	#
+		command = { type = manpowerpool value = 8 }	 	# Soldiers return home
+		command = { type = dissent value = -1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+		command = { type = gain_tech which = -1 } 		# get random tech blueprints
+		command = { trigger = { local_flag = military_control_SPR } type = military_control which = SPA where = GER }
+		command	= { trigger = { local_flag = military_control_SPR } type = local_clrflag which = military_control }
+	}
+}
+
+event = {
+	id = 2001007
+	country = SPA
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2001001 #iberian intervention
+		event = 2052011 #monarchists win
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = SPA country = DFR }
+				war = { country = SPA country = GER }
+				war = { country = SPA country = U00 }
+				war = { country = SPA country = VIC }
+				government = fascist
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, defeated."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = manpowerpool value = 3 }	 	# Soldiers return home, after heavy casualties
+		command = { type = dissent value = 1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+	}
+}
+########################################################################
+#  German Civil War - Great Britain
+#########################################################################
+
+event = {
+	id = 2001011
+	country = DFR
+
+	name = "British Volunteers Arrive"
+	desc = "Volunteers from Great Britain have arrived along with war materials to aid in our struggle."
+	style = 2
+	picture = "scw"
+	
+	action_a = {
+		name = ACTION_NAME_GREAT
+		command = { type = manpowerpool value = 15 }
+		command = { type = supplies value = 2500 }
+		command = { type = add_division value = infantry }
+		command = { type = relation which = ENG value = 20 }
+	}
+}
+event = {
+	id = 2001012
+	country = ENG
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2052005 # british intervention
+		event = 2052010 # dfr victory
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = ENG country = DFR }
+				war = { country = ENG country = GER }
+				war = { country = ENG country = U00 }
+				war = { country = ENG country = VIC }
+				government = fascist
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, victorious."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = DFR value = 20 }	#
+		command = { type = manpowerpool value = 8 }	 	# Soldiers return home
+		command = { type = dissent value = -1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+		command = { type = gain_tech which = -1 } 		# get random tech blueprints
+		command = { trigger = { local_flag = military_control_SPR } type = military_control which = ENG where = GER }
+		command	= { trigger = { local_flag = military_control_SPR } type = local_clrflag which = military_control }
+	}
+}
+
+event = {
+	id = 2001013
+	country = ENG
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2052005 #british intervention
+		event = 2052011 #monarchists win
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = ENG country = DFR }
+				war = { country = ENG country = GER }
+				war = { country = ENG country = U00 }
+				war = { country = ENG country = VIC }
+				government = fascist
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, defeated."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = manpowerpool value = 3 }	 	# Soldiers return home, after heavy casualties
+		command = { type = dissent value = 1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+	}
+}
+
+########################################################################
+#  German Civil War - Russia
+#########################################################################
+
+event = {
+	id = 2001015
+	country = DFR
+
+	name = "Russian Volunteers Arrive"
+	desc = "Volunteers from Russia have arrived along with war materials to aid in our struggle."
+	style = 2
+	picture = "scw"
+	
+	action_a = {
+		name = ACTION_NAME_GREAT
+		command = { type = manpowerpool value = 15 }
+		command = { type = supplies value = 2500 }
+		command = { type = add_division value = infantry }
+		command = { type = relation which = RUS value = 20 }
+	}
+}
+event = {
+	id = 2001016
+	country = RUS
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2052015 # russian intervention
+		event = 2052010 # dfr victory
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = RUS country = DFR }
+				war = { country = RUS country = GER }
+				war = { country = RUS country = U00 }
+				war = { country = RUS country = VIC }
+				government = fascist
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, victorious."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = DFR value = 20 }	#
+		command = { type = manpowerpool value = 8 }	 	# Soldiers return home
+		command = { type = dissent value = -1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+		command = { type = gain_tech which = -1 } 		# get random tech blueprints
+		command = { trigger = { local_flag = military_control_SPR } type = military_control which = ENG where = GER }
+		command	= { trigger = { local_flag = military_control_SPR } type = local_clrflag which = military_control }
+	}
+}
+
+event = {
+	id = 2001017
+	country = RUS
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2052015 #russian intervention
+		event = 2052011 #monarchists win
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = RUS country = DFR }
+				war = { country = RUS country = GER }
+				war = { country = RUS country = U00 }
+				war = { country = RUS country = VIC }
+				government = fascist
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, defeated."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = manpowerpool value = 3 }	 	# Soldiers return home, after heavy casualties
+		command = { type = dissent value = 1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+	}
+}
+
+#########################################################################
+#  German Civil War - Comintern
+#########################################################################
+event = {
+	id = 2001030
+	TAG = { VIC U00 }
+	persistent = yes
+
+	decision = {
+		government = communist
+		war = { country = DFR country = GER }
+		event = 2052003 # DFR nation
+		NOT = {
+			OR = {
+				alliance = { country = SPA country = DFR }
+				alliance = { country = GER }
+				war = { country = U00 country = MEX }
+			}
+		}
+		#flag = german_intervention_guarantee
+		NOT = { local_flag = gcw_intervention }
+	}
+	decision_trigger = {
+		manpower = 10
+		supplies = 3000
+		money = 200
+		atwar = no
+	}
+	trigger = {
+		government = communist
+		war = { country = DFR country = GER }
+		event = 2052003 # DFR nation
+		NOT = {
+			OR = {
+				alliance = { country = SPA country = DFR }
+				alliance = { country = GER }
+				war = { country = U00 country = MEX }
+			}
+		}
+		#flag = german_intervention_guarantee
+		atwar = no
+		#manpower = 15
+		#supplies = 2000
+		#money = 100
+		NOT = { local_flag = gcw_intervention }
+	}
+
+	name = "The German Civil War - Intervention" 
+	desc = "The German Republic is fighting to depose the reactionary monarchy. There is much popular support among our people for their cause, and though we bound by treaty not to intervene directly, we could intervene indirectly by sending supplies and able volunteers through a neutral party..."
+	style = 30
+	picture = "Corpo_truppe_Volontarie"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = { trigger = { ai = yes }
+		name = "We should not intervene"
+		ai_chance = 5
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = DFR value = -15 }
+		command = { type = relation which = U00 value = -5 }
+		command = { type = relation which = VIC value = -5 }
+		command = { type = local_setflag which = gcw_intervention }
+	}
+	action = {
+		name = "ACTIONNAME2901A" # Send materiel and volunteers
+		ai_chance = 95
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = DFR value = 20 }
+		command = { type = relation which = GER value = -20 }
+		command = { type = relation which = VIC value = -5 }
+		command = { type = relation which = SPA value = -5 }
+		command = { type = relation which = U00 value = 15 }
+		command = { type = money value = -200 }
+		command = { type = supplies value = -3000 }
+		command = { type = belligerence value = 1 }
+		command = { trigger = { country = VIC } type = manpowerpool value = -50 }
+		command = { trigger = { country = VIC } type = trigger which = 2001035 } #DFR
+		command = { trigger = { country = VIC } type = trade which = DFR where = VIC supplies = 50 when = 1080 value = 1 }
+		command = { trigger = { country = U00 } type = manpowerpool value = -35 }
+		command = { trigger = { country = U00 } type = trigger which = 2001041 } #DFR
+		command	= { type = setflag which = gcw_comintern_intervention }
+		command = { type = local_setflag which = gcw_intervention }
+	}
+}
+
+#########################################################################
+#  German Civil War - FRANCE
+#########################################################################
+
+event = {
+	id = 2001035
+	country = DFR
+
+	name = "German Civil War - French Intervention"
+	desc = "Volunteers from the Comintern have arrived along with war materials to aid in our struggle."
+	style = 2
+	picture = "Corpo_truppe_Volontarie"
+
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = manpowerpool value = 10 }
+		command = { type = supplies value = 3000 }
+
+		#command = { type = wakeleader which = 35014 }
+		#command = { type = wakeleader which = 35017 }
+		#command = { type = wakeleader which = 35028 }
+		#command = { type = wakeleader which = 35056 }
+
+		command = { type = add_division which = "Armée des Allemagne GQ" value = hq when = 1 }
+		command = { type = add_division which = "106ème Div. d'Infanterie Motorisée" value = motorized when = 1 where = light_armor_brigade }
+		command = { type = add_division which = "2ème Division d'Infanterie" value = infantry when = 1 }
+		command = { type = add_division which = "1ère Division d'Infanterie" value = infantry when = 1 }
+		command = { type = add_division which = "Groupe de Bombardement d'Assaut 30" value = cas when = 1 }
+
+		command = { type = steal_tech which = VIC }
+	}
+}
+# returns home, victory
+event = {
+	id = 2001036
+	country = VIC
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		government = communist
+		event = 2001035 # french support
+		event = 2052010 # dfr victory
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+			war = { country = VIC country = DFR }
+			war = { country = VIC country = GER }
+			war = { country = VIC country = U00 }
+			war = { country = VIC country = SPA }
+			war = { country = VIC country = USA }
+			war = { country = VIC country = MEX }
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, victorious."
+	style = 2
+	picture = "Corpo_truppe_Volontarie" #
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = DFR value = 20 }		# Franco is pleased
+		command = { type = manpowerpool value = 40 }			# Heroes return home - after heavy casualties
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+		command = { type = gain_tech which = -1 } 		# get random tech blueprints
+        command = { type = end_trades which = VIC where = DFR } 	# to break the trade that gives free supplies to DFR
+		command	= { trigger = { local_flag = military_control } type = military_control which = VIC where = DFR }
+		command	= { trigger = { local_flag = military_control } type = local_clrflag which = military_control }
+	}
+}
+# returns home, defeat
+event = {
+	id = 2001037
+	country = VIC
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		government = communist
+		event = 2001035	# VIC intervention happened
+		event = 2052011 # GER victory
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+			war = { country = VIC country = DFR }
+			war = { country = VIC country = GER }
+			war = { country = VIC country = U00 }
+			war = { country = VIC country = SPA }
+			war = { country = VIC country = USA }
+			war = { country = VIC country = MEX }
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, defeated."
+	style = 2
+	picture = "Corpo_truppe_Volontarie" #
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = manpowerpool value = 30 }	# Soldiers return home - after very heavy casualties
+		command = { type = dissent value = 1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+		command = { trigger = { exists = DFR } type = end_trades which = VIC where = DFR } # to break the trade that gives free supplies to DFR (just to be sure)
+	}
+}
+#########################################################################
+#  German Civil War - Union
+#########################################################################
+event = {
+	id = 2001041
+	country = DFR
+
+	name = "German Civil War - Union Intervention"
+	desc = "Volunteers from the Comintern have arrived along with war materials to aid in our struggle."
+	style = 2
+	picture = "Condor_Legion"
+
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = supplies value = 3000 }
+		#command = { type = wakeleader which = 35067 }
+		#command = { type = wakeleader which = 35093 }
+		#command = { type = wakeleader which = 35094 }
+		#command = { type = wakeleader which = 35095 }
+
+		command = { type = add_division which = "I Bombardistiko Taktikos Sygkrotima" value = tactical_bomber when = 1 }
+		command = { type = add_division which = "I Machitis Sygkrotima" value = interceptor when = 1 }
+		command = { type = add_division which = "Germania HQ" value = hq when = 1 }
+		command = { type = add_division which = "I Tethorakismeno Taxiarchia" value = light_armor when = 1 }
+		command = { type = add_division which = "I Stratiotis Merarkhia" value = infantry when = 1 }
+
+		command = { type = transport_pool which = DFR value = 25 }
+		command = { type = steal_tech which = U00 }
+		command = { type = steal_tech which = U00 }
+	}
+}
+# returns home, victory
+event = {
+	id = 2001042
+	country = U00
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		government = communist
+		event = 2001041 # gcw union intervention
+		event = 2052010 # dfr victory
+
+		# conditions that prevent event:
+		# NOT = {
+			# OR = {
+			# war = { country = U00 country = SPA }
+			# war = { country = U00 country = DFR }
+			# war = { country = U00 country = VIC }
+			# war = { country = U00 country = GER }
+			# war = { country = U00 country = U14 }
+			# }
+		# }
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, victorious."
+	style = 2
+	picture = "scw"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = DFR value = 20 }	#
+		command = { type = manpowerpool value = 25 }		# Soldiers return home
+		command = { type = dissent value = -1 }
+		command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+		command = { type = gain_tech which = -1 } 		# get random tech blueprints
+		command = { type = money value = 250 }			# DFR purchased weapons from Union
+		command	= { trigger = { local_flag = military_control } type = military_control which = U00 where = DFR }
+		command	= { trigger = { local_flag = military_control } type = local_clrflag which = military_control }
+	}
+}
+# returns home, defeat
+event = {
+	id = 2001043
+	country = U00
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		government = communist
+		event = 2001041 # gcw union intervention
+		event = 2052011 #monarchists win
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+			war = { country = U00 country = SPA }
+			war = { country = U00 country = MEX }
+			war = { country = U00 country = VIC }
+			war = { country = U00 country = GER }
+			war = { country = U00 country = U14 }
+			war = { country = U00 country = RUS }
+			}
+		}
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, defeated."
+	style = 2
+	picture = "scw"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = manpowerpool value = 18 }	 	# Soldiers return home, after heavy casualties
+		command = { type = dissent value = 1 }
+		command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+		command = { type = money value = 250 }			# DFR purchased weapons from Union
+	}
+}
+########################################################################
+#  German Civil War - HRE - Common
+#########################################################################
+event = {
+	id = 2001050
+	TAG = { AUS LIT }
+	persistent = yes
+	
+	decision = {
+		war = { country = DFR country = GER }
+		event = 2052003 # DFR nation
+		NOT = {
+			OR = {
+				alliance = { country = VIC country = GER }
+				alliance = { country = U00 country = GER }
+				alliance = { country = SPA country = GER }
+				alliance = { country = DFR }
+			}
+		}
+		government = fascist
+		#flag = german_intervention_guarantee
+		NOT = { local_flag = gcw_intervention }
+		event = 25002
+	}
+
+	decision_trigger = {
+		manpower = 15
+		supplies = 2500
+		money = 200
+		atwar = no
+		
+		OR = {
+			AND = {
+				NOT = { flag = AUS_leaves_HRE }
+				country = AUS
+			}
+			AND = {
+				NOT = { flag = LIT_leaves_HRE }
+				country = LIT
+			}
+		}
+	}
+
+	trigger = {
+		war = { country = DFR country = GER }
+		event = 2052003 # DFR nation
+		NOT = {
+			OR = {
+				alliance = { country = VIC country = GER }
+				alliance = { country = U00 country = GER }
+				alliance = { country = SPA country = GER }
+				alliance = { country = DFR }
+			}
+		}
+		government = fascist
+		#flag = german_intervention_guarantee
+		atwar = no
+		#manpower = 15
+		#supplies = 2000
+		#money = 100
+		NOT = { local_flag = gcw_intervention }
+		event = 25002
+		
+		OR = {
+			AND = {
+				NOT = { flag = AUS_leaves_HRE }
+				country = AUS
+			}
+			AND = {
+				NOT = { flag = LIT_leaves_HRE }
+				country = LIT
+			}
+		}
+	}
+
+	name = "The German Civil War - Intervention" 
+	desc = "Germany is attempting to hold their country together in face of a civil war. There is some support among our people for their cause, and though we bound by treaty not to intervene directly, we could intervene indirectly by sending supplies and able volunteers through a neutral party..."
+	style = 2
+	picture = "scw"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		trigger = { ai = yes }
+		name = "We should not intervene"
+		ai_chance = 10
+		#command = { type = dissent value = 5 }
+		command = { type = relation which = DFR value = 10 }
+		command = { type = relation which = GER value = -15 }
+		command = { type = relation which = LIT value = -5 }
+		command = { type = relation which = AUS value = -5 }
+		command = { type = local_setflag which = gcw_intervention }
+	}
+	action = {
+		name = "ACTIONNAME3400B" # Send materiel and volunteers
+		ai_chance = 60
+		command = { type = money value = -200 }
+		command = { type = manpowerpool value = -30 }
+		command = { type = supplies value = -2500 }
+		command = { type = dissent value = 8 }
+		command = { type = relation which = DFR value = -10 }
+		command = { type = relation which = GER value = 15 }
+		command = { type = relation which = LIT value = 5 }
+		command = { type = relation which = AUS value = 5 }
+		command = { type = relation which = U00 value = -10 }
+		command = { type = relation which = SPA value = -10 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = belligerence value = 1 }
+		command = { trigger = { country = LIT } type = trigger which = 2001055 } #GER
+		command = { trigger = { country = AUS } type = trigger which = 2001060 } #GER
+		command = { trigger = { country = LIT } type = non_aggression which = LIT where = GER }
+		command = { trigger = { country = AUS } type = non_aggression which = AUS where = GER }
+		command	= { type = setflag which = gcw_hre_intervention }
+		command = { type = local_setflag which = gcw_intervention }
+	}
+	action = {
+		name = "Send war materials only"
+		ai_chance = 30
+		command = { type = money value = -100 }
+		command = { type = supplies value = -2500 }
+		command = { type = trigger which = 2001051 } #GER
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = DFR value = -15 }
+		command = { type = relation which = GER value = 20 }
+		command = { trigger = { country = LIT } type = non_aggression which = LIT where = GER }
+		command = { trigger = { country = AUS } type = non_aggression which = AUS where = GER }
+		command	= { type = setflag which = gcw_hre_intervention }
+		command = { type = local_setflag which = gcw_intervention }
+	}
+}
+
+event = {
+	id = 2001051
+	country = GER
+	persistent = yes
+
+	name = "HRE Supplies Arrive"
+	desc = "War materials have arrived from the HRE to aid in our struggle."
+	style = 2
+	picture = "scw"
+
+	action = {
+		name = "ACTION_NAME_GOOD"
+		command = { type = money value = 100 }
+		command = { type = supplies value = 2500 }
+	}
+}
+
+########################################################################
+#  German Civil War - Lithuania
+#########################################################################
+
+event = {
+	id = 2001055
+	country = GER
+
+	name = "Lithuanian Volunteers Arrive"
+	desc = "Volunteers from Lithuania have arrived along with war materials to aid in our struggle."
+	style = 2
+	picture = "scw"
+	
+	action_a = {
+		name = ACTION_NAME_GREAT
+		command = { type = manpowerpool value = 15 }
+		command = { type = supplies value = 2000 }
+		command = { type = add_division value = infantry }
+		command = { type = add_division value = infantry }
+		command = { type = relation which = LIT value = 20 }
+	}
+}
+
+event = {
+	id = 2001056
+	country = LIT
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2001055 # LIT intervention
+		event = 2052011 # GER victory
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = DFR }
+				war = { country = GER }
+				war = { country = U00 }
+				war = { country = VIC }
+			}
+		}
+		government = fascist
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, victorious."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = GER value = 20 }	#
+		command = { type = manpowerpool value = 8 }	 	# Soldiers return home
+		command = { type = dissent value = -1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+		command = { type = gain_tech which = -1 } 		# get random tech blueprints
+	}
+}
+
+event = {
+	id = 2001057
+	country = LIT
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2001055 #lit intervention
+		event = 2052010 #dfr win
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = DFR }
+				war = { country = GER }
+				war = { country = U00 }
+				war = { country = VIC }
+			}
+		}
+		government = fascist
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, defeated."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = manpowerpool value = 3 }	 	# Soldiers return home, after heavy casualties
+		command = { type = dissent value = 1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+	}
+}
+########################################################################
+#  German Civil War - Austria
+#########################################################################
+
+event = {
+	id = 2001060
+	country = GER
+
+	name = "Austrian Volunteers Arrive"
+	desc = "Volunteers from Austria have arrived along with war materials to aid in our struggle."
+	style = 2
+	picture = "scw"
+	
+	action_a = {
+		name = ACTION_NAME_GREAT
+		command = { type = manpowerpool value = 15 }
+		command = { type = supplies value = 2000 }
+		command = { type = add_division value = infantry }
+		command = { type = add_division value = infantry }
+		command = { type = relation which = AUS value = 20 }
+	}
+}
+
+event = {
+	id = 2001061
+	country = AUS
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2001060 # AUS intervention
+		event = 2052011 # GER victory
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = DFR }
+				war = { country = GER }
+				war = { country = U00 }
+				war = { country = VIC }
+			}
+		}
+		government = fascist
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, victorious."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = GER value = 20 }	#
+		command = { type = manpowerpool value = 8 }	 	# Soldiers return home
+		command = { type = dissent value = -1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+		command = { type = gain_tech which = -1 } 		# get random tech blueprints
+	}
+}
+
+event = {
+	id = 2001062
+	country = AUS
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		event = 2001060 #AUS intervention
+		event = 2052010 #dfr win
+
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+				war = { country = DFR }
+				war = { country = GER }
+				war = { country = U00 }
+				war = { country = VIC }
+			}
+		}
+		government = fascist
+	}
+
+	name = "German Civil War ends - An important experience"
+	desc = "Thousands volunteered to fight in the German Civil War to fight for a better world. Now they are returning home, defeated."
+	style = 2
+	picture = "SCW"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = manpowerpool value = 3 }	 	# Soldiers return home, after heavy casualties
+		command = { type = dissent value = 1 }
+		command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+	}
+}

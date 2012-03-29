@@ -1,0 +1,181 @@
+# 0 - 1922 Great War Carrier Air Group
+model = {
+	cost 				= 4 #2
+	buildtime			= 190
+	manpower 			= 0.2
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 3
+	subdetectioncapability		= 2 #1
+	airdefence			= 3
+	seaattack			= 2
+	convoyattack			= 2
+	subattack			= 0
+	airattack			= 3
+	shorebombardment		= 3 #5
+	distance			= 1.0
+	supplyconsumption 		= 0.5 #0.4
+	fuelconsumption			= 1
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 1 - 1930 Early Carrier Air Group
+model = {
+	cost 				= 5 #2.5
+	buildtime			= 190
+	manpower 			= 0.3
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 4
+	subdetectioncapability		= 3 #1
+	airdefence			= 5
+	seaattack			= 4
+	convoyattack			= 4
+	subattack			= 0
+	airattack			= 6
+	shorebombardment		= 5 #7
+	distance			= 1.2
+	supplyconsumption 		= 0.55 #0.4
+	fuelconsumption			= 1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - 1934 Basic Carrier Air Group
+model = {
+	cost 				= 6 #3
+	buildtime			= 190
+	manpower 			= 0.4
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 5
+	subdetectioncapability		= 4 #1
+	airdefence			= 6
+	seaattack			= 5
+	convoyattack			= 5
+	subattack			= 0
+	airattack			= 7
+	shorebombardment		= 8 #10
+	distance			= 1.4
+	supplyconsumption 		= 0.55 #0.5
+	fuelconsumption			= 1
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 3 - 1937 Improved Carrier Air Group
+model = {
+	cost 				= 7 #3.5
+	buildtime			= 190
+	manpower 			= 0.5
+	surfacedetectioncapability	= 13
+	airdetectioncapability		= 6
+	subdetectioncapability		= 6
+	airdefence			= 6
+	seaattack			= 6
+	convoyattack		= 6
+	subattack			= 0
+	airattack			= 7
+	shorebombardment		= 11
+	distance			= 1.6
+	supplyconsumption 		= 0.6 #0.5
+	fuelconsumption			= 1
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 4 - 1940 Advanced Carrier Air Group
+model = {
+	cost 				= 8 #4
+	buildtime			= 190
+	manpower 			= 0.6
+	surfacedetectioncapability	= 14
+	airdetectioncapability		= 7
+	subdetectioncapability		= 7
+	airdefence			= 8
+	seaattack			= 8
+	convoyattack		= 8
+	subattack			= 1
+	airattack			= 8
+	shorebombardment		= 13
+	distance			= 1.8
+	supplyconsumption 		= 0.7 #0.6
+	fuelconsumption			= 1
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 5 - 1943 Heavy Advanced Carrier Air Group
+model = {
+	cost 				= 9 #4.5
+	buildtime			= 190
+	manpower 			= 0.6
+	surfacedetectioncapability	= 15
+	airdetectioncapability		= 7
+	subdetectioncapability		= 7
+	airdefence			= 11
+	seaattack			= 10
+	convoyattack		= 10
+	subattack			= 3
+	airattack			= 11
+	shorebombardment		= 15
+	distance			= 2.0
+	supplyconsumption 		= 0.8 #0.6
+	fuelconsumption			= 1
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 6 - 1947 Semi-Modern Carrier Air Group
+model = {
+	cost 				= 10 #5.5
+	buildtime			= 190
+	manpower 			= 0.7
+	surfacedetectioncapability	= 17
+	airdetectioncapability		= 7 #8
+	subdetectioncapability		= 7 #8
+	airdefence			= 14
+	seaattack			= 12
+	convoyattack		= 12
+	subattack			= 5
+	airattack			= 15
+	shorebombardment		= 17
+	distance			= 2.4
+	supplyconsumption 		= 1 #0.7
+	fuelconsumption			= 1
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 7 - 1951 Turbojet Carrier Air Group
+model = {
+	cost 				= 11 #6
+	buildtime			= 190
+	manpower 			= 1
+	surfacedetectioncapability	= 20
+	airdetectioncapability		= 8 #10
+	subdetectioncapability		= 8 #10
+	airdefence			= 17
+	seaattack			= 15
+	convoyattack		= 15
+	subattack			= 8
+	airattack			= 19
+	shorebombardment		= 21
+	distance			= 2.5
+	supplyconsumption 		= 1.1 #1
+	fuelconsumption			= 1.5
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 8 - 1956 Improved Turbojet Carrier Air Group
+model = {
+	cost = 12 #6.5
+	buildtime = 190
+	manpower = 1
+	surfacedetectioncapability = 22
+	airdetectioncapability = 10 #12
+	subdetectioncapability = 10 #12
+	airdefence = 19
+	seaattack = 17
+	convoyattack = 17
+	subattack = 8
+	airattack = 20
+	shorebombardment = 23
+	distance = 2.5
+	supplyconsumption = 1.2 #1
+	fuelconsumption = 1.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+

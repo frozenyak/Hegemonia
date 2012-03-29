@@ -1,0 +1,208 @@
+#allowed_brigades =  artillery
+#allowed_brigades =  anti_tank		
+allowed_brigades =  anti_air		
+#allowed_brigades =  rocket_artillery
+allowed_brigades =  sp_artillery	
+allowed_brigades =  sp_rct_artillery
+allowed_brigades =  tank_destroyer	
+allowed_brigades =  light_armor_brigade
+allowed_brigades =  heavy_armor	
+allowed_brigades =  super_heavy_armor
+allowed_brigades =  armored_car
+allowed_brigades =  engineer			
+allowed_brigades =  police
+
+upgrade = { type = infantry upgrade_time_factor = 0.24 upgrade_cost_factor = 0.46 }
+upgrade = { type = motorized upgrade_time_factor = 0.34 upgrade_cost_factor = 0.66 }
+upgrade = { type = light_armor upgrade_time_factor = 1.0 upgrade_cost_factor = 0.57 }
+upgrade = { type = armor upgrade_time_factor = 1.0 upgrade_cost_factor = 1.18 }
+
+# Early Mechanized Division - 0 1939
+model = {
+	cost 					= 13 #14
+	buildtime	 			= 135 #125
+	manpower 				= 17
+	maxspeed 				= 8 #9
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 40
+	toughness				= 28
+	softness				= 68
+	suppression				= 2
+	airdefence				= 5
+	softattack				= 15
+	hardattack				= 5
+	airattack				= 5
+	transportweight			= 30
+	supplyconsumption 		= 3.15
+	fuelconsumption			= 4.3
+	no_fuel_combat_mod 		= -0.2
+	speed_cap_art			= 10
+	speed_cap_eng			= 11
+	speed_cap_at			= 10
+	speed_cap_aa			= 10
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+}
+# Basic Mechanized Division - 1 1942
+model = {
+	cost 					= 13 #14
+	buildtime	 			= 135 #125
+	manpower 				= 17
+	maxspeed 				= 8 #10
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 43
+	toughness				= 32
+	softness				= 64
+	suppression				= 2
+	airdefence				= 5
+	softattack				= 17 #16
+	hardattack				= 7
+	airattack				= 6
+	transportweight			= 30
+	supplyconsumption 		= 3.5
+	fuelconsumption			= 4.5
+	no_fuel_combat_mod 		= -0.2
+	speed_cap_art			= 11
+	speed_cap_eng			= 11
+	speed_cap_at			= 11
+	speed_cap_aa			= 11
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+}
+# Improved Mechanized Division - 2 1945
+model = {
+	cost 					= 13 #14
+	buildtime	 			= 135 #125
+	manpower 				= 17
+	maxspeed 				= 9 #10
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 46
+	toughness				= 36
+	softness				= 60
+	suppression				= 2
+	airdefence				= 6
+	softattack				= 20
+	hardattack				= 8
+	airattack				= 7
+	transportweight			= 30
+	supplyconsumption 		= 3.85
+	fuelconsumption			= 5
+	no_fuel_combat_mod 		= -0.2
+	speed_cap_art			= 11
+	speed_cap_eng			= 11
+	speed_cap_at			= 11
+	speed_cap_aa			= 11
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+}
+# Advanced Mechanized Division - 3 1948
+model = {
+	cost 					= 13.5 #14
+	buildtime	 			= 135 #125
+	manpower 				= 17
+	maxspeed 				= 9 #10
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 49
+	toughness				= 39
+	softness				= 57
+	suppression				= 2
+	airdefence				= 7
+	softattack				= 21
+	hardattack				= 9
+	airattack				= 8
+	transportweight			= 30
+	supplyconsumption 		= 4.1
+	fuelconsumption			= 5.3
+	no_fuel_combat_mod 		= -0.2
+	speed_cap_art			= 11
+	speed_cap_eng			= 11
+	speed_cap_at			= 11
+	speed_cap_aa			= 11
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+}
+# Semi-Modern Mechanized Division - 4 1952
+model = {
+	cost 					= 13.5 #14
+	buildtime	 			= 135 #125
+	manpower 				= 17
+	maxspeed 				= 9 #10
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 52
+	toughness				= 42
+	softness				= 55
+	suppression				= 2
+	airdefence				= 8
+	softattack				= 23
+	hardattack				= 10
+	airattack				= 9
+	transportweight			= 30
+	supplyconsumption 		= 4.36
+	fuelconsumption			= 5.6
+	no_fuel_combat_mod 		= -0.2
+	speed_cap_art			= 11
+	speed_cap_eng			= 11
+	speed_cap_at			= 11
+	speed_cap_aa			= 11
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+}
+# Modern Mechanized Division - 5 1956
+model = {
+	cost 					= 14
+	buildtime	 			= 135 #125
+	manpower 				= 17
+	maxspeed 				= 9 #10
+	defaultorganisation 	= 30
+	morale					= 35
+	defensiveness 			= 55
+	toughness				= 45 # was 37
+	softness				= 55
+	suppression				= 2
+	airdefence				= 9
+	softattack				= 25
+	hardattack				= 11
+	airattack				= 10
+	transportweight			= 30
+	supplyconsumption 		= 4.53
+	fuelconsumption			= 5.8
+	no_fuel_combat_mod 		= -0.2
+	speed_cap_art			= 11
+	speed_cap_eng			= 11
+	speed_cap_at			= 11
+	speed_cap_aa			= 11
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+}
+# Elite Mechanized Division - 6
+model = {
+	cost 					= 14
+	buildtime	 			= 135 #125
+	manpower 				= 17
+	maxspeed 				= 10
+	defaultorganisation 	= 30
+	morale					= 35
+	defensiveness 			= 58
+	toughness				= 48 # was 42
+	softness				= 55
+	suppression				= 2
+	airdefence				= 10
+	softattack				= 28
+	hardattack				= 12
+	airattack				= 11
+	transportweight			= 30
+	supplyconsumption 		= 5.22
+	fuelconsumption			= 6.7
+	no_fuel_combat_mod 		= -0.2
+	speed_cap_art			= 11
+	speed_cap_eng			= 11
+	speed_cap_at			= 11
+	speed_cap_aa			= 11
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.75
+}

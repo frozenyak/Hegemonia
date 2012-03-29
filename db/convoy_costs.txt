@@ -1,0 +1,16 @@
+# loosely MEM
+# typical tanker had 40 crew 
+# 1 build represents 10 ships
+
+transports = {
+	cost		= 4
+	buildtime 	= 75
+	manpower	= 0.4
+	size		= 10
+}
+escorts = {
+	cost		= 4
+	buildtime 	= 80
+	manpower	= 0.4
+	size		= 10
+}
