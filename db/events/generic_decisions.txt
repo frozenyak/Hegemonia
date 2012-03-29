@@ -1424,6 +1424,190 @@ event = {
 		command = { type = local_setflag which = foreign_volunteers }
 	}
 }
+#### Purchase Licensed Unit
+event = {
+	id = 9000026
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		NOT = { ic = 40 }
+		#NOT = { army = 20 }
+		manpower = 10
+	}
+
+	decision_trigger = {
+		NOT = { ic = 40 }
+		money = 4000
+		#NOT = { army = 20 }
+	}
+
+	trigger = {
+		random = 60
+		NOT = { ic = 40 }
+		money = 6000
+		#NOT = { army = 20 }
+	}
+   
+	name = "9000026name"
+	desc = "9000026desc" 
+	style = 2
+	picture = "licensed_unit"
+	decision_picture = "decision_licensed_unit"
+
+	date = { day = 1 month = january year = 1920 }
+	offset = 150
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {  trigger = { money = 4000 year = 1936 NOT = { motorized = { country = -1 value = 3 } } }
+		ai_chance = 25
+		name = "9000026a"
+		command = { type = money value = -4000 }
+		command = { type = manpowerpool value = -10 }
+	  	command = { trigger = { year = 1936 NOT = { year = 1940 } } type = add_division value = motorized when = 0 }
+		command = { trigger = { year = 1940 NOT = { year = 1943 } } type = add_division value = motorized when = 1 }
+		command = { trigger = { year = 1943 NOT = { year = 1946 } } type = add_division value = motorized when = 2 }
+		command = { trigger = { year = 1946 NOT = { year = 1949 } } type = add_division value = motorized when = 3 }
+		command = { trigger = { year = 1949 NOT = { year = 1953 } } type = add_division value = motorized when = 4 }
+		command = { trigger = { year = 1953 } type = add_division value = motorized when = 5 }
+	}
+	action = {  trigger = { money = 5000 year = 1937 NOT = { technology = { country = USA value = 2070 }} NOT = { light_armor = { country = -1 value = 3 } } }
+		ai_chance = 25
+		name = "9000026b"
+		command = { type = money value = -5000 }
+		command = { type = manpowerpool value = -10 }
+	  	command = { trigger = { year = 1937 NOT = { year = 1939 } } type = add_division value = light_armor when = 0 }
+	  	command = { trigger = { year = 1939 NOT = { year = 1940 } } type = add_division value = light_armor when = 1 }
+	  	command = { trigger = { year = 1940 } type = add_division value = light_armor when = 2 }
+	}
+	action = {  trigger = { money = 6000 year = 1940 NOT = { armor = { country = -1 value = 3 } } }
+		ai_chance = 25
+		name = "9000026b"
+		command = { type = money value = -6000 }
+		command = { type = manpowerpool value = -10 }
+	  	command = { trigger = { year = 1940 NOT = { year = 1942 } } type = add_division value = armor when = 0 }
+	  	command = { trigger = { year = 1942 NOT = { year = 1944 } } type = add_division value = armor when = 1 }
+	  	command = { trigger = { year = 1944 NOT = { year = 1946 } } type = add_division value = armor when = 2 }
+	  	command = { trigger = { year = 1946 NOT = { year = 1953 } } type = add_division value = armor when = 3 }
+	  	command = { trigger = { year = 1953 NOT = { year = 1957 } } type = add_division value = armor when = 4 }
+	  	command = { trigger = { year = 1957 } type = add_division value = armor when = 5 }
+	}
+	action = {  trigger = { money = 5000 year = 1925 NOT = { interceptor = { country = -1 value = 4 } } }
+		ai_chance = 25
+		name = "9000026c"
+		command = { type = money value = -5000 }
+		command = { type = manpowerpool value = -5 }
+	  	command = { trigger = { year = 1925 NOT = { year = 1931 } } type = add_division value = interceptor when = 0 }
+	  	command = { trigger = { year = 1931 NOT = { year = 1938 } } type = add_division value = interceptor when = 1 }
+	  	command = { trigger = { year = 1938 NOT = { year = 1941 } } type = add_division value = interceptor when = 2 }
+	  	command = { trigger = { year = 1941 NOT = { year = 1943 } } type = add_division value = interceptor when = 3 }
+	  	command = { trigger = { year = 1943 NOT = { year = 1945 } } type = add_division value = interceptor when = 4 }
+	  	command = { trigger = { year = 1945 NOT = { year = 1948 } } type = add_division value = interceptor when = 7 }
+	  	command = { trigger = { year = 1948 NOT = { year = 1951 } } type = add_division value = interceptor when = 8 }
+	  	command = { trigger = { year = 1951 } type = add_division value = interceptor when = 9 }
+	}
+	action = {  trigger = { money = 5000 year = 1925 NOT = { tactical_bomber = { country = -1 value = 4 } } }
+		ai_chance = 25
+		name = "9000026d"
+		command = { type = money value = -5000 }
+		command = { type = manpowerpool value = -5 }
+	  	command = { trigger = { year = 1925 NOT = { year = 1933 } } type = add_division value = tactical_bomber when = 0 }
+	  	command = { trigger = { year = 1933 NOT = { year = 1939 } } type = add_division value = tactical_bomber when = 1 }
+	  	command = { trigger = { year = 1939 NOT = { year = 1941 } } type = add_division value = tactical_bomber when = 2 }
+	  	command = { trigger = { year = 1941 NOT = { year = 1944 } } type = add_division value = tactical_bomber when = 3 }
+	  	command = { trigger = { year = 1944 NOT = { year = 1946 } } type = add_division value = tactical_bomber when = 4 }
+	  	command = { trigger = { year = 1946 NOT = { year = 1950 } } type = add_division value = tactical_bomber when = 5 }
+	  	command = { trigger = { year = 1950 } } type = add_division value = tactical_bomber when = 6 }
+	}
+	
+}
+#### Purchase outdated Unit
+
+event = {
+	id = 9000039
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		NOT = { ic = 40 }
+		#NOT = { army = 20 }
+		manpower = 10
+	}
+
+	decision_trigger = {
+		NOT = { ic = 40 }
+		money = 1500
+		#NOT = { army = 20 }
+	}
+
+	trigger = {
+		random = 60
+		NOT = { ic = 40 }
+		money = 2500
+		#NOT = { army = 20 }
+	}
+   
+	name = "9000039name"
+	desc = "9000039desc" 
+	style = 2
+	picture = "obs_unit"
+	decision_picture = "decision_obs_unit"
+
+	date = { day = 1 month = january year = 1920 }
+	offset = 150
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {  trigger = { money = 1500 year = 1943 NOT = { motorized = { country = -1 value = 3 } } }
+		ai_chance = 25
+		name = "9000039a"
+		command = { type = money value = -1500 }
+		command = { type = manpowerpool value = -10 }
+		command = { trigger = { year = 1943 NOT = { year = 1946 } } type = add_division value = motorized when = 0 }
+		command = { trigger = { year = 1946 NOT = { year = 1949 } } type = add_division value = motorized when = 1 }
+		command = { trigger = { year = 1949 NOT = { year = 1953 } } type = add_division value = motorized when = 2 }
+		command = { trigger = { year = 1953 } type = add_division value = motorized when = 3 }
+	}
+	action = {  trigger = { money = 2000 year = 1940 NOT = { technology = { country = USA value = 2090 }} NOT = { light_armor = { country = -1 value = 3 } } }
+		ai_chance = 25
+		name = "9000039b"
+		command = { type = money value = -2000 }
+		command = { type = manpowerpool value = -10 }
+	  	command = { trigger = { year = 1940 } type = add_division value = light_armor when = 0 }
+	}
+	action = {  trigger = { money = 2500 year = 1944 NOT = { armor = { country = -1 value = 3 } } }
+		ai_chance = 25
+		name = "9000039b"
+		command = { type = money value = -2500 }
+		command = { type = manpowerpool value = -10 }
+	  	command = { trigger = { year = 1944 NOT = { year = 1946 } } type = add_division value = armor when = 0 }
+	  	command = { trigger = { year = 1946 NOT = { year = 1953 } } type = add_division value = armor when = 1 }
+	  	command = { trigger = { year = 1953 NOT = { year = 1957 } } type = add_division value = armor when = 2 }
+	  	command = { trigger = { year = 1957 } type = add_division value = armor when = 3 }
+	}
+	action = {  trigger = { money = 2000 year = 1938 NOT = { interceptor = { country = -1 value = 4 } } }
+		ai_chance = 25
+		name = "9000039c"
+		command = { type = money value = -2000 }
+		command = { type = manpowerpool value = -5 }
+	  	command = { trigger = { year = 1938 NOT = { year = 1941 } } type = add_division value = interceptor when = 0 }
+	  	command = { trigger = { year = 1941 NOT = { year = 1943 } } type = add_division value = interceptor when = 1 }
+	  	command = { trigger = { year = 1943 NOT = { year = 1945 } } type = add_division value = interceptor when = 2 }
+	  	command = { trigger = { year = 1945 NOT = { year = 1948 } } type = add_division value = interceptor when = 3 }
+	  	command = { trigger = { year = 1948 NOT = { year = 1951 } } type = add_division value = interceptor when = 4 }
+	  	command = { trigger = { year = 1951 } type = add_division value = interceptor when = 5 }
+	}
+	action = {  trigger = { money = 2500 year = 1939 NOT = { tactical_bomber = { country = -1 value = 4 } } }
+		ai_chance = 25
+		name = "9000039d"
+		command = { type = money value = -2500 }
+		command = { type = manpowerpool value = -5 }
+	  	command = { trigger = { year = 1939 NOT = { year = 1941 } } type = add_division value = tactical_bomber when = 0 }
+	  	command = { trigger = { year = 1941 NOT = { year = 1944 } } type = add_division value = tactical_bomber when = 1 }
+	  	command = { trigger = { year = 1944 NOT = { year = 1946 } } type = add_division value = tactical_bomber when = 2 }
+	  	command = { trigger = { year = 1946 NOT = { year = 1950 } } type = add_division value = tactical_bomber when = 3 }
+	  	command = { trigger = { year = 1950 } type = add_division value = tactical_bomber when = 4 }
+	}
+}
 
 #### Press Censorship
 event = {

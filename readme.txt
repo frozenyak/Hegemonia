@@ -1,4 +1,4 @@
-Hegemonia 1.04, checksum LNXT
+Hegemonia 1.05, checksum 1234
 Requires Darkest Hour patch 1.02
 http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 
@@ -64,6 +64,10 @@ IC, resources, infra
 
 (probably incomplete) change list:
 
+1.05 - NOTE: You have to start a new game(?)
+	events
+		can purchase/license units one year after historical date
+		
 1.04 - NOTE: You have to start a new game
 	default mission/research efficiencies higher
 	GDE tech/default eff combo not unlike TRP, causes different levels of casualties
