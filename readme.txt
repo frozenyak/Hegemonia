@@ -1,6 +1,7 @@
 Hegemonia 1.05, checksum 1234
 Requires Darkest Hour patch 1.02
-http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
+Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
+Github https://github.com/frozenyak/Hegemonia
 
 Thanks to:
 Wiz & LP participants for creating and shaping the World
@@ -8,6 +9,7 @@ Multiplayer Enhancement Mod and Total Realism Project for combat tweaks
 Kaiserreich Mod for various graphics and ministers
 Peter Wiegel's Koch Fette Deutsche Schrift
 israelien for his initial work on LCAGs
+Akira for tech pictures, flags
 
 installation:
 extract into y:\our\path\to\Darkest Hour\mods
@@ -65,6 +67,13 @@ IC, resources, infra
 (probably incomplete) change list:
 
 1.05 - NOTE: You have to start a new game(?)
+	tech teams
+		muhajedz, tarwajal localised (mostly)
+		lombard, crete, gotland fixed
+		
+	gfx
+		added tech team pics
+		
 	events
 		can purchase/license units one year after historical date
 		

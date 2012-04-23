@@ -1,15 +1,15 @@
 U14;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
-1801;Beretta;T1801;4;1930;1970;training;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1802;Breda;T1802;5;1930;1970;aeronautics;general_equipment;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1803;Bruno de Finetti;T1803;4;1940;1970;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1804;Cantieri Ansaldo;T1804;4;1930;1970;naval_engineering;naval_artillery;electronics;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1805;Cantieri Navali Riuniti;T1805;5;1930;1970;naval_engineering;technical_efficiency;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1806;Caproni;T1806;3;1930;1970;aeronautics;electronics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1808;FIAT;T1808;5;1930;1970;mechanics;artillery;management;electronics;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1811;Savoia-Marchetti;T1811;4;1930;1970;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1812;Lancia;T1812;4;1930;1970;mechanics;industrial_engineering;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1813;Arturo Riccardi;T1813;3;1940;1970;large_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1814;Domenico Cavagnari;T1814;4;1930;1942;large_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1817;Pietro Badoglio;T1817;4;1930;1945;training;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1820;Societá Montecatini;T1820;4;1930;1970;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1821;Giulio Natta;T1821;4;1930;1970;chemistry;management;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1851;Beretta;T1801;4;1930;1970;training;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1852;Breda;T1802;5;1930;1970;aeronautics;general_equipment;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1853;Bruno de Finetti;T1803;4;1940;1970;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1854;Cantieri Ansaldo;T1804;4;1930;1970;naval_engineering;naval_artillery;electronics;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1855;Cantieri Navali Riuniti;T1805;5;1930;1970;naval_engineering;technical_efficiency;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1856;Caproni;T1806;3;1930;1970;aeronautics;electronics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1857;FIAT;T1808;5;1930;1970;mechanics;artillery;management;electronics;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1858;Savoia-Marchetti;T1811;4;1930;1970;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1859;Lancia;T1812;4;1930;1970;mechanics;industrial_engineering;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1860;Arturo Riccardi;T1813;3;1940;1970;large_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1861;Domenico Cavagnari;T1814;4;1930;1942;large_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1862;Pietro Badoglio;T1817;4;1930;1945;training;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1863;Societá Montecatini;T1820;4;1930;1970;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1850;Giulio Natta;T1821;4;1930;1970;chemistry;management;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
