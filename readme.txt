@@ -73,6 +73,7 @@ IC, resources, infra
 		
 	gfx
 		added tech team pics
+		mon flag now matches shield
 		
 	events
 		can purchase/license units one year after historical date
