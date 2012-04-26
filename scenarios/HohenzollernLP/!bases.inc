@@ -246,12 +246,6 @@ province =
    ic = -7 }
  province = { id = 1847   #  Minneapolis - Minnesota - Midwest US
    ic = -2 }
-province =
-{ id         = 1867
-  anti_air   = 1
-  air_base   = { size = 3 current_size = 3 }
-  Naval_base = { size = 5 current_size = 5 }
-}
 Province =
 { id       = 1962
   anti_air = 1

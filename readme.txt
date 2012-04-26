@@ -74,9 +74,14 @@ IC, resources, infra
 	gfx
 		added tech team pics
 		mon flag now matches shield
+		new jadakal flag
 		
 	events
 		can purchase/license units one year after historical date
+		
+	scenario
+		removed 1867 inland port
+		1912 AFE core
 		
 1.04 - NOTE: You have to start a new game
 	default mission/research efficiencies higher
