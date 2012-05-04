@@ -1,4 +1,4 @@
-Hegemonia 1.05, checksum 1234
+Hegemonia 1.05, checksum LNXT
 Requires Darkest Hour patch 1.02
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
@@ -68,7 +68,7 @@ IC, resources, infra
 
 1.05 - NOTE: You have to start a new game(?)
 	tech teams
-		muhajedz, tarwajal localised (mostly)
+		muhajedz, tarwajal, jadakal localised (mostly)
 		lombard, crete, gotland fixed
 		
 	gfx

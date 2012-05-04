@@ -3,7 +3,7 @@ U02;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 93001;Defence Research & Development Organisation;T11401;6;1930;1970;chemistry;mechanics;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 93002;Garden Reach Workshop;T11402;5;1930;1970;naval_engineering;electronics;general_equipment;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 93003;Hindustan Aircraft Limited;T11403;5;1930;1970;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-93004;Indian Academy of Sciences;T11404;5;1930;1970;mathematics;chemistry;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+93004;Imperial Academy of Sciences;T11404;5;1930;1970;mathematics;chemistry;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 93005;Imperial Atomic Energy Commission;T11405;3;1943;1970;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 93006;Imperial State Railways;T11406;5;1930;1970;mechanics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 93007;J.R.D. Tata;T11407;4;1930;1970;industrial_engineering;technical_efficiency;aeronautics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -21,4 +21,4 @@ U02;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 93019;Paulos Kountouriotis;100156;5;1930;1958;naval_training;large_taskforce_tactics;centralized_execution;seamanship;carrier_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 93020;Aspy Merwan Engineer;T11420;5;1930;1964;bomber_tactics;aircraft_testing;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 93021;R.D. Katri;T23021;4;1954;1965;small_taskforce_tactics;centralized_execution;seamanship;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-93022;K.M. Cariappa;T23022;5;1947;1965;centralized_execution;large_unit_tactics;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+93022;Kodandera Cariappa;T23022;5;1947;1965;centralized_execution;large_unit_tactics;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
