@@ -6,6 +6,10 @@
 #edited 24/11/11 for DH
 #now doesn't work on puppets, longer offset, chance to loop back to top pick
 #only picks valid options, does not change dem/com/fas governments
+#
+#12100-12104	democracy
+#12110-12114	fascist
+#12120-12124	communist
 #############################################
 #####		  Democracy		#####
 #############################################

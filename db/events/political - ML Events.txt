@@ -1,7 +1,16 @@
 ###########################################################################
 ##########   Marketliberal Political Events by Greven	 	 ##########
 ###########################################################################
-
+#5011	defense
+#5012	def opposition
+#5013	economy
+#5014	econ opposition
+#5015	foreign policy
+#5016	fp opposition
+#5017	law
+#5018	law opposition
+#5019	constitution
+#5020	constitution opposition
 #############################
 ## Defense Policy Initiative
 #############################

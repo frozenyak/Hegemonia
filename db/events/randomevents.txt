@@ -3,7 +3,30 @@
 #
 #		written by Henrik Fåhraeus
 #
-
+##1020	fort sabotaged
+##1030	coastal fort sabotaged
+##1050	enemy leader killed
+##1090	parliamentary scandal
+##1110	great war manifestation
+##1120	great peace demo
+##1140	failed coup
+##1150	successful coup
+##1001	war hero criticism
+##1002	women donate
+##1003	youth volunteers
+##1004	women labour
+##1005	military parade
+##1006	nationalisations
+##1007	war refugees
+##1008	major worker strike
+##1009	popular song
+##1011	scientist defects
+##1012	accidental discovery
+##1013	private initiative
+##1014	rogue politician - democratic
+##1015	rogue politician - undemocratic
+##1016	outlaw commies
+##1017	outlaw fascists
 #########################################################################
 #  Fort Sabotaged
 #########################################################################

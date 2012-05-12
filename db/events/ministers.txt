@@ -1,4 +1,36 @@
-#Events for minister deaths
+#Events for minister deaths/resignations/changes
+#35025	GER	random officer assassinated
+#35026	GER	Schuman
+#35027	GER	Von Papen
+#2003094	GER	Ludendorff
+#2001080	ENG	Baldwin
+#2001082	ENG	Neville Chamberlain
+#2001081	ENG	Austin Chamberlain
+#2001083	ENG	Dill
+#2001084	ENG	Dudley Pound
+#2001086	ENG	Kinglsey Wood
+#2013005	POL	Sikorsky
+#2010003	TUR	Ataturk
+#2017001	SCH	Motta
+#2046002	UAU John Curtin
+#2007077	SOV	Kalinin
+#2007078	RUS	Kalinin
+#2003102	GER	Hammerstein-Epquord
+#2003106	GER Carl Friedrich von Siemens
+#2003107	GER	Franz Xaver Ritter von Epp
+#2001087	ENG	David Lloyd George
+#2030007	FIN	Kallio
+#2007074	SOV	Voroshilov
+#2067001	BHU	Wangchuk
+#2006021	U00	de Nicola
+#2051001	IND	Gandhi
+#2030008	FIN	Mannerheim
+#2002029	U06	Darlan
+#2009010	SCA	Gustav V
+#2009011	SCA	Kassel
+#2127002	DFR	Heuss
+#2067002	LIT	Vailokaitis
+#3052001	U14	Emilio de Bono
 
 event = {
 	id = 35025
@@ -869,7 +901,7 @@ event = {
 }
 
 
-### U14 Lombardy
+### Emilio de Bono
 
 event = {
 	id = 3052001

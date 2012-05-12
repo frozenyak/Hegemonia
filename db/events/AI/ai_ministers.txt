@@ -1,5 +1,18 @@
 ############# AI MINISTER SWITCHES ################
-
+#3003051	ger	franz seldte
+#3003052	ger	speer fascist
+#3003053	ger	speer dem
+#3003054	ger	munzenberg
+#3003069	lit	vailokaitis
+#3003070	lit Barzda-Bradauskas
+#3022024	con	frederick iii
+#3022025	u08	frederick iii
+#3009009	sca	wigforss
+#3035001	mex	Sharif Sa'di
+#3002018	vic	george levy
+#3002019	vic	de gaulle
+#3049043	usa	george h dern
+#
 # GERMANY
 
 ### Franz Seldte
@@ -276,7 +289,7 @@ event = { # Ernst Wigforss
 
 ### Mazula
 
-event = { # 
+event = { # Sharif Sa'di
 	id = 3035001
 	
 	country = MEX

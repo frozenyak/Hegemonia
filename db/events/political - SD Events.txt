@@ -1,7 +1,16 @@
 ###########################################################################
 ##########   Socialdemocratic Political Events by Greven	 ##########
 ###########################################################################
-
+#5031	defense
+#5032	def opposition
+#5033	economy
+#5034	econ opposition
+#5035	foreign policy
+#5036	fp opposition
+#5037	law
+#5038	law opposition
+#5039	constitution
+#5040	constitution opposition
 #############################
 ## Defense Policy Initiative
 #############################

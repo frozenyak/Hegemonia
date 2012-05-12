@@ -1,3 +1,4 @@
+#6101-6117
 #This covers major powers starting 'off-the-rails' wars before the Great War begins, and allows AI major powers to intervene.
 #Punishes player for breaking history.
 

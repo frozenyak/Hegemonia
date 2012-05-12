@@ -1,3 +1,24 @@
+#150000	puppets militia
+#150001	remove militia
+#150002	no puppets mob at peace
+#150003	puppets mob
+#150004	non puppet mob
+#130003	high threat general mob
+#130004	high thread demob
+#130011	ENG	part mob
+#130012	ENG	gen mob
+#130030	GER	2 year conscription
+#130220	VIC	part mob
+#130061	U14 part mob
+#130113	RUS	high threat gen mob
+#130120	CHI	mob path
+#130121	CHC	mob path
+#131850	IND	mob path
+#131852	U02	mob path
+#130171	SCH extended mob
+#150024	ai reinforcement on
+#150025	ai reinf off
+
 #### events are written in a generic patern, can/should be cleaned up for performance later
 
 #### generic events - for ai puppets
@@ -829,7 +850,7 @@ event = { #CHI ai - mobilisation path
 	}
 }
 
-event = { #CHI ai - mobilisation path
+event = { #CHC ai - mobilisation path
 	id = 130121
 	
 	country = CHC

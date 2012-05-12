@@ -1,3 +1,24 @@
+#9000000-3	start equip production
+#9000010-3	stop equip prod
+#9000020	apply equipment boni
+#9000021	public jobs
+#9000040	public jobs pt II
+#9000022	issue currency
+#9000023	Money Devaluation
+#9000025	Foreign Volunteers
+#9000026	Purchase Licensed Unit
+#9000039	Purchase outdated Unit
+#9000027	Press Censorship
+#9000028	War Propaganda
+#9000029	Ersatz Conversion
+#9000030	Invest in National Infrastructures
+#9000031	Invest in National Research
+#9000032	Purge the Army
+#9000036	Purge the Army pt II
+#9000033	Wargames
+#9000037	War Bonds
+#9000050	volksturm
+
 ################################
 # Equipment decisions
 ################################

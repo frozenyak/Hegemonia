@@ -1,6 +1,7 @@
 ###46000-46400###
 ##46400-46999 ITA###
-##46010 Communist joins Italy
+##46010 Communists join Italy
+##46011 unification, tag ITA
 
 event = {
 	id = 46000

@@ -1,6 +1,6 @@
 ###35000-35999###
-#list is incomplete and not completely accurate because the grouping
-#and numbering is an unordered mess. thanks a lot wiz.
+#list is incomplete and not completely accurate because the grouping and numbering is an unordered mess. 
+#thanks a lot wiz.
 #35000 dublin
 #35022 riots commie
 #35023 riots liberal

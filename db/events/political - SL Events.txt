@@ -1,7 +1,16 @@
 ###########################################################################
 ##########      Socialliberal Political Events by Greven	 ##########
 ###########################################################################
-
+#5021	defense
+#5022	def opposition
+#5023	economy
+#5024	econ opposition
+#5025	foreign policy
+#5026	fp opposition
+#5027	law
+#5028	law opposition
+#5029	constitution
+#5030	constitution opposition
 #############################
 ## Defense Policy Initiative
 #############################

@@ -1,3 +1,31 @@
+#140000	setup
+#140001	reset
+#140002	generic invasion
+#140100	jap chi
+#140101	jap cyn
+#140102	jap phi
+#140103	jap rus
+#140104	jap kor
+#140105	jap eng taiwan
+#140106	jap u08
+#140108	jap uau
+#140109	jap india
+#140110	jap north america
+#140111	jap central america
+#140112	jap south america
+#140113	jap ceylon
+#140114	jap madagascar
+#140115	jap eng brunei
+#140200	u08 eng brunei
+#140201	u08 eng taiwan
+#140202	u08 phi
+#140300	rus jap
+#140301	rus eng
+#140303	rus sca
+#140304	rus mex
+#
+#141605	dfr jap
+
 #################
 ## Setup Event ##
 #################
@@ -301,7 +329,7 @@ event = {
 
 	trigger = {
 		ai = yes
-		war = { country = JAP country = AST }
+		war = { country = JAP country = UAU }
 		NOT = { local_flag = AI_invasion_war }
 		random = 25
 	}
@@ -728,7 +756,7 @@ event = {
 
 	trigger = {
 		ai = yes
-		war = { country = RUS country = AST }
+		war = { country = RUS country = UAU }
 		NOT = { local_flag = AI_invasion_war }
 		random = 15
 	}
@@ -1088,7 +1116,7 @@ event = {
 
 	trigger = {
 		ai = yes
-		war = { country = MEX country = AST }
+		war = { country = MEX country = UAU }
 		NOT = { local_flag = AI_invasion_war }
 		random = 15
 	}
@@ -1390,7 +1418,7 @@ event = {
 
 	trigger = {
 		ai = yes
-		war = { country = USA country = AST }
+		war = { country = USA country = UAU }
 		NOT = { local_flag = AI_invasion_war }
 		random = 15
 	}
@@ -1568,11 +1596,11 @@ event = {
 	id = 140600
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = CHI }
+		war = { country = UAU country = CHI }
 		NOT = { local_flag = AI_invasion_war }
 		random = 50
 	}
@@ -1595,11 +1623,11 @@ event = {
 	id = 140601
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = CYN }
+		war = { country = UAU country = CYN }
 		NOT = { local_flag = AI_invasion_war }
 		random = 50
 	}
@@ -1622,11 +1650,11 @@ event = {
 	id = 140602
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = PHI }
+		war = { country = UAU country = PHI }
 		NOT = { local_flag = AI_invasion_war }
 		random = 25
 	}
@@ -1648,11 +1676,11 @@ event = {
 	id = 140603
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = RUS }
+		war = { country = UAU country = RUS }
 		NOT = { local_flag = AI_invasion_war }
 		random = 25
 	}
@@ -1674,11 +1702,11 @@ event = {
 	id = 140604
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = KOR }
+		war = { country = UAU country = KOR }
 		NOT = { local_flag = AI_invasion_war }
 		random = 50
 	}
@@ -1700,11 +1728,11 @@ event = {
 	id = 140605
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = ENG }
+		war = { country = UAU country = ENG }
 		control = { province = 1322 data = ENG }
 		control = { province = 1323 data = ENG }
 		NOT = { local_flag = AI_invasion_war }
@@ -1729,11 +1757,11 @@ event = {
 	id = 140606
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = U08 }
+		war = { country = UAU country = U08 }
 		NOT = { local_flag = AI_invasion_war }
 		random = 25
 	}
@@ -1756,11 +1784,11 @@ event = {
 	id = 140608
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = JAP }
+		war = { country = UAU country = JAP }
 		NOT = { local_flag = AI_invasion_war }
 		random = 25
 	}
@@ -1783,13 +1811,13 @@ event = {
 	id = 140609
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
 		OR = {
-			war = { country = AST country = IND }
-			war = { country = AST country = U02 }
+			war = { country = UAU country = IND }
+			war = { country = UAU country = U02 }
 		}
 		NOT = { local_flag = AI_invasion_war }
 		random = 10
@@ -1813,13 +1841,13 @@ event = {
 	id = 140610
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
 		OR = {
-			war = { country = AST country = MEX }
-			war = { country = AST country = USA }
+			war = { country = UAU country = MEX }
+			war = { country = UAU country = USA }
 		}
 		NOT = { local_flag = AI_invasion_war }
 		random = 25
@@ -1843,13 +1871,13 @@ event = {
 	id = 140611
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
 		OR = {
-			war = { country = AST country = MEX }
-			war = { country = AST country = PAN }
+			war = { country = UAU country = MEX }
+			war = { country = UAU country = PAN }
 		}
 		NOT = { local_flag = AI_invasion_war }
 		random = 10
@@ -1873,11 +1901,11 @@ event = {
 	id = 140612
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = U05 }
+		war = { country = UAU country = U05 }
 		NOT = { local_flag = AI_invasion_war }
 		random = 10
 	}
@@ -1900,11 +1928,11 @@ event = {
 	id = 140613
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = GER }
+		war = { country = UAU country = GER }
 		NOT = { local_flag = AI_invasion_war }
 		random = 5
 	}
@@ -1927,11 +1955,11 @@ event = {
 	id = 140614
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = GER }
+		war = { country = UAU country = GER }
 		NOT = { local_flag = AI_invasion_war }
 		random = 5
 	}
@@ -1954,11 +1982,11 @@ event = {
 	id = 140615
 	random = no
 	persistent = yes
-	country = AST
+	country = UAU
 
 	trigger = {
 		ai = yes
-		war = { country = AST country = ENG }
+		war = { country = UAU country = ENG }
 		NOT = { local_flag = AI_invasion_war }
 		control = { province = 1646 data = ENG }
 		random = 25

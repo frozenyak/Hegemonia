@@ -1,7 +1,16 @@
 ###########################################################################
 ##########   Socialconservative Political Events by Greven	 ##########
 ###########################################################################
-
+#5001	defense
+#5002	def opposition
+#5003	economy
+#5004	econ opposition
+#5005	foreign policy
+#5006	fp opposition
+#5007	law
+#5008	law opposition
+#5009	constitution
+#5010	constitution opposition
 #############################
 ## Defense Policy Initiative
 #############################

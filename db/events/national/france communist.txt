@@ -260,7 +260,7 @@ event = {
 	}
 	
 	name = "Destruction of the Westwall"
-	desc = "As we now hold Alsace and the Rhineland beyond, the Germans' westward facing wall has become irrelevent."
+	desc = "As we now hold Alsace and the Rhineland beyond, the Germans' westward facing wall has become irrelevant."
   	style = 2
   	picture = "news_paper"
 

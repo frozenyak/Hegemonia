@@ -15,7 +15,8 @@
 #7115	Italian Liberation War
 #7116	Invasion of Austria
 #7117	Lithuanian opportunism
-#7119 SPA took Italy, U00 responds
+#7119	SPA took Italy, U00 responds
+
 #Set the great war flag
 event = {
 	id = 7100

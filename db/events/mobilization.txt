@@ -1,62 +1,64 @@
-##8300060 mob2
-##8300070 mob2 jap
-##8300061 choose conscription
-##8300087 choose conscription usa
-##8300071 choose conscription jap
-##8300081 mob through congress for dem usa
-##8300062 partial mob for all nations
-##8300072 mob7 jap
-##8300063 general mob for all nations
-##8300073 mob8 jap
-##8300064 total mob for all nations
-##8300074 mob10 jap
-##1350005 demob
-##13500051 demob usa
-##13500052 demob sch
-##1350000 highmob during peace troubles
-##1350001 military dictatorship
-##1350002 reserves
-##130173 Swiss Reserve Divisions
-##1350007 1914 scen mob
+##8300060	mob2
+##8300070	mob2 jap
+##8300061	choose conscription
+##8300087	choose conscription usa
+##8300071	choose conscription jap
+##8300081	mob through congress for dem usa
+##8300062	partial mob for all nations
+##8300072	mob7 jap
+##8300063	general mob for all nations
+##8300073	mob8 jap
+##8300064	total mob for all nations
+##8300074	mob10 jap
+##1350005	demob
+##13500051	demob usa
+##13500052	demob sch
+##1350000	highmob during peace troubles
+##1350001	military dictatorship
+##1350002	reserves
+##130173	Swiss Reserve Divisions
+##1350007	1914 scen mob
+##8300054	USA/MEX	extending draft
+##8300055	attached bills
 
 event = {
- 
+
 	id = 8300060
 	random = no
 	persistent = yes
 
 	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIA36 SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
-	
+
 	decision = {
 			atwar = no
-			policy = { type = professional_army value = 1 } 
+			policy = { type = professional_army value = 1 }
 			NOT = { policy = { type = professional_army value = 2 }}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 100
 	}
 
 	trigger = {
 			ai = no
-			policy = { type = professional_army value = 1 } 
+			policy = { type = professional_army value = 1 }
 			NOT = { policy = { type = professional_army value = 2 }}
 		}
-   
+
 	name = "MOB2name"
-	desc = "8300060desc" 
+	desc = "8300060desc"
 	decision_desc = "DEC_8300060_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = { #Establish a professional military
-		
+
 		name = "MOB2name"
 		ai_chance = 100
 		command = { type = resource which = supplies value = -100 }
@@ -66,11 +68,11 @@ event = {
 		command = { type = local_setflag which = MOB2 }
 
 	}
-	
+
 }
 
 event = {
- 
+
 	id = 8300070
 	random = no
 	persistent = yes
@@ -78,35 +80,35 @@ event = {
 
 	decision = {
 			atwar = no
-			policy = { type = professional_army value = 1 } 
+			policy = { type = professional_army value = 1 }
 			NOT = { policy = { type = professional_army value = 2 }}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 100
 	}
 
 	trigger = {
 			ai = no
-			policy = { type = professional_army value = 1 } 
+			policy = { type = professional_army value = 1 }
 			NOT = { policy = { type = professional_army value = 2 }}
 		}
-   
+
 	name = "MOB2name"
-	desc = "8300060desc" 
+	desc = "8300060desc"
 	decision_desc = "DEC_8300060_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = { #Establish a professional military
 		trigger = {	NOT = { region = { region = Korea country = JAP data = 2 value = 50 } } }
-		
+
 		name = "MOB2name"
 		ai_chance = 100
 		command = { type = resource which = supplies value = -100 }
@@ -116,10 +118,10 @@ event = {
 		command = { type = local_setflag which = MOB2 }
 
 	}
-	
+
 	action = { #Establish a professional military
 		trigger = {	region = { region = Korea country = JAP data = 2 value = 50 } }
-		
+
 		name = "MOB2name"
 		ai_chance = 100
 		command = { type = resource which = supplies value = -100 }
@@ -133,7 +135,7 @@ event = {
 }
 
 event = {
- 
+
 	id = 8300061
 	persistent = yes
 
@@ -141,11 +143,11 @@ event = {
 
 	decision = {
 			atwar = no
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 6 }}
 			}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 200
 		OR = {
 			AND = {
@@ -159,35 +161,35 @@ event = {
 				}
 			}
 		}
-	
+
 
 	trigger = {
 		ai = no
 		supplies = 100
 		atwar = no
-		policy = { type = professional_army value = 2 } 
+		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 6 }}
 		NOT = { manpower = 200 }
 		}
-   
+
 	name = "8300061name"
-	desc = "8300061desc" 
+	desc = "8300061desc"
 	decision_desc = "DEC_8300061_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = { #Enact Selective Conscription
 		trigger = {
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 3 }}
 			}
-		
+
 		name = "MOB3name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -196,13 +198,13 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
 	}
-	
+
 	action = { #Enact One Year Conscription
 			trigger = {
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			}
-		
+
 		name = "MOB4name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -215,36 +217,36 @@ event = {
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }
 	}
-	
+
 	action = { #Enact Two Year Conscription
 			trigger = {
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			}
-		
+
 		name = "MOB5name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 5 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }		
+		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB5 }
 	}
-	
+
 	action = { #Enact Three Year Conscription
 			trigger = {
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 6 }}
 			}
-	
+
 		name = "MOB6name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -252,8 +254,8 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }		
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
@@ -261,15 +263,15 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }		
-		command = { type = local_setflag which = MOB5 }		
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
 		command = { type = local_setflag which = MOB6 }
 	}
 
 }
 
 event = {
- 
+
 	id = 8300087
 	random = no
 	persistent = yes
@@ -278,43 +280,43 @@ event = {
 	decision = {
 			atwar = no
 			NOT = { government = democratic }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 6 }}
 			}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 200
 		NOT = { dissent = 8 }
 		}
-	
+
 
 	trigger = {
 		ai = no
 		supplies = 100
 		atwar = no
-		policy = { type = professional_army value = 2 } 
+		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 6 }}
 		NOT = { manpower = 200 }
 		}
-   
+
 	name = "8300061name"
-	desc = "8300061desc" 
+	desc = "8300061desc"
 	decision_desc = "DEC_8300061_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = { #Enact Selective Conscription
 		trigger = {
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 3 }}
 			}
-		
+
 		name = "MOB3name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -323,13 +325,13 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
 	}
-	
+
 	action = { #Enact One Year Conscription
 			trigger = {
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			}
-		
+
 		name = "MOB4name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -342,36 +344,36 @@ event = {
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }
 	}
-	
+
 	action = { #Enact Two Year Conscription
 			trigger = {
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			}
-		
+
 		name = "MOB5name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 5 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }		
+		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB5 }
 	}
-	
+
 	action = { #Enact Three Year Conscription
 			trigger = {
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 6 }}
 			}
-	
+
 		name = "MOB6name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -379,8 +381,8 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }		
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
@@ -388,15 +390,15 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }		
-		command = { type = local_setflag which = MOB5 }		
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
 		command = { type = local_setflag which = MOB6 }
 	}
 
 }
 
 event = {
- 
+
 	id = 8300071
 	random = no
 	persistent = yes
@@ -404,11 +406,11 @@ event = {
 
 	decision = {
 			atwar = no
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 6 }}
 			}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 200
 		OR = {
 			AND = {
@@ -422,36 +424,36 @@ event = {
 				}
 			}
 		}
-	
+
 
 	trigger = {
 		ai = no
 		supplies = 100
 		atwar = no
-		policy = { type = professional_army value = 2 } 
+		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 6 }}
 		NOT = { manpower = 200 }
 		}
-   
+
 	name = "8300061name"
-	desc = "8300061desc" 
+	desc = "8300061desc"
 	decision_desc = "DEC_8300061_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = { #Enact Selective Conscription
-		trigger = {	
+		trigger = {
 			NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 3 }}
 			}
-			
+
 		name = "MOB3name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -460,14 +462,14 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
 	}
-	
+
 	action = { #Enact One Year Conscription
-		trigger = {	
+		trigger = {
 			NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			}
-			
+
 		name = "MOB4name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -480,38 +482,38 @@ event = {
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }
 	}
-	
+
 	action = { #Enact Two Year Conscription
-		trigger = {	
+		trigger = {
 			NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			}
-			
+
 		name = "MOB5name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 5 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }		
+		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB5 }
 	}
-	
+
 	action = { #Enact Three Year Conscription
-		trigger = {	
+		trigger = {
 			NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 6 }}
 			}
-			
+
 		name = "MOB6name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -519,8 +521,8 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }		
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
@@ -528,19 +530,19 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }		
-		command = { type = local_setflag which = MOB5 }		
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
 		command = { type = local_setflag which = MOB6 }
 	}
-	
+
 	action = { #Enact Selective Conscription
-		trigger = {	
+		trigger = {
 			region = { region = Korea country = JAP data = 2 value = 50 }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 3 }}
 			}
-			
-		
+
+
 		name = "MOB3name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -549,14 +551,14 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
 	}
-	
+
 	action = { #Enact One Year Conscription
-		trigger = {	
+		trigger = {
 			region = { region = Korea country = JAP data = 2 value = 50 }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			}
-			
+
 		name = "MOB4name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -569,38 +571,38 @@ event = {
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }
 	}
-	
+
 	action = { #Enact Two Year Conscription
-		trigger = {	
+		trigger = {
 			region = { region = Korea country = JAP data = 2 value = 50 }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			}
-		
+
 		name = "MOB5name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 3.375 when = 1 }
 		command = { type = set_domestic which = professional_army value = 5 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }		
+		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB5 }
 	}
-	
+
 	action = { #Enact Three Year Conscription
-		trigger = {	
+		trigger = {
 			region = { region = Korea country = JAP data = 2 value = 50 }
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 6 }}
 			}
-	
+
 		name = "MOB6name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -608,8 +610,8 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }		
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 3.375 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 3.375 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 3.75 when = 1 }
 		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = dissent value = 3 }
@@ -617,15 +619,15 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }		
-		command = { type = local_setflag which = MOB5 }		
+		command = { type = local_setflag which = MOB4 }
+		command = { type = local_setflag which = MOB5 }
 		command = { type = local_setflag which = MOB6 }
-	}	
+	}
 
 }
 
 event = { # mob through congress for dem usa
- 
+
 	id = 8300081
 	random = no
 	persistent = yes
@@ -634,13 +636,13 @@ event = { # mob through congress for dem usa
 	decision = {
 			government = democratic
 			atwar = no
-			policy = { type = professional_army value = 2 } 
+			policy = { type = professional_army value = 2 }
 			NOT = { policy = { type = professional_army value = 6 }}
-			NOT = { local_flag = incon1 } 
-			NOT = { local_flag = incon2 } 
+			NOT = { local_flag = incon1 }
+			NOT = { local_flag = incon2 }
 			}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 200
 		OR = {
 			AND = {
@@ -654,48 +656,48 @@ event = { # mob through congress for dem usa
 				}
 			}
 		}
-	
+
 
 	trigger = {
 		ai = no
 		government = democratic
 		supplies = 100
 		atwar = no
-		policy = { type = professional_army value = 2 } 
+		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 6 }}
 		NOT = { manpower = 200 }
 		}
-   
+
 	name = "8300081name"
-	desc = "8300081desc" 
+	desc = "8300081desc"
 	decision_desc = "DEC_8300061_DESC"
-	
+
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = { #Enact Selective Conscription
-		trigger = {	
-		policy = { type = professional_army value = 2 } 
+		trigger = {
+		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 3 }}
 		}
-		
+
 		name = "MOB3name"
 		ai_chance = 100
 		command = { type = local_setflag which = incon1  }
 	}
 
 	action = { #call in more conscripts
-		trigger = {	
-		policy = { type = professional_army value = 3 } 
+		trigger = {
+		policy = { type = professional_army value = 3 }
 		NOT = { policy = { type = professional_army value = 6 }}
 		}
-		
+
 		name = "MOBUSact"
 		ai_chance = 100
 		command = { type = local_setflag which = incon2 }
@@ -703,19 +705,19 @@ event = { # mob through congress for dem usa
 }
 
 event = {  # partial mob for all nations
- 
+
 	id = 8300062
 	persistent = yes
-	
+
 	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIA36 SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	decision = {
 		NOT = { local_flag = demob }
-		policy = { type = professional_army value = 2 } 
+		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 7 }	}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 			supplies = 500
 			NOT = { dissent = 5}
 		OR = {
@@ -744,22 +746,22 @@ event = {  # partial mob for all nations
 			}
 		NOT = { manpower = 70 }
 		}
-   
+
 	name = "MOB7name"
-	desc = "8300062desc" 
+	desc = "8300062desc"
 	decision_desc = "DEC_8300062_DESC"
-	
+
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
 
 	action = { #Enact Partial Mobilisation
-		
+
 		name = "MOB7name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -786,23 +788,23 @@ event = {  # partial mob for all nations
 		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB3 }
 		}
-	
+
 }
 
 event = {
- 
+
 	id = 8300072
 	random = no
 	persistent = yes
 	country = JAP
-	
+
 	decision = {
 		NOT = { local_flag = demob }
-		policy = { type = professional_army value = 2 } 
+		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 7 }	}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 500
 		NOT = { dissent = 5}
 		OR = {
@@ -824,14 +826,14 @@ event = {
 			}
 		NOT = { manpower = 70 }
 	}
-   
+
 	name = "MOB7name"
-	desc = "8300062desc" 
+	desc = "8300062desc"
 	decision_desc = "DEC_8300062_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
@@ -839,7 +841,7 @@ event = {
 
 	action = { #Enact Partial Mobilisation
 		trigger = {	NOT = { region = { region = Korea country = JAP data = 2 value = 50 } } }
-		
+
 		name = "MOB7name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -866,10 +868,10 @@ event = {
 		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB3 }
 		}
-		
+
 	action = { #Enact Partial Mobilisation
 		trigger = {	region = { region = Korea country = JAP data = 2 value = 50 } }
-		
+
 		name = "MOB7name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -895,11 +897,11 @@ event = {
 		command = { type = local_setflag which = MOB5 }
 		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB3 }
-		}	
+		}
 }
 
 event = { # general mob for all nations
- 
+
 	id = 8300063
 	persistent = yes
 
@@ -910,11 +912,11 @@ event = { # general mob for all nations
 		NOT = { policy = { type = professional_army value = 8 }}
 		OR = {
 			atwar = yes
-			policy = { type = professional_army value = 7 } 
+			policy = { type = professional_army value = 7 }
 		}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 700
 		atwar = yes
 	}
@@ -924,24 +926,24 @@ event = { # general mob for all nations
 		NOT = { local_flag = demob }
 		NOT = { manpower = 70 }
 		supplies = 400
-		policy = { type = professional_army value = 7 } 
+		policy = { type = professional_army value = 7 }
 		NOT = { policy = { type = professional_army value = 8 }	}
 		atwar = yes
 		}
-   
+
 	name = "MOB8name"
-	desc = "8300063desc" 
+	desc = "8300063desc"
 	decision_desc = "DEC_8300063_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = { #Enact General Mobilisation
-		
+
 		name = "MOB8name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -966,11 +968,11 @@ event = { # general mob for all nations
 		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB3 }
 	}
-	
+
 }
 
 event = {
- 
+
 	id = 8300073
 	random = no
 	persistent = yes
@@ -981,11 +983,11 @@ event = {
 		NOT = { policy = { type = professional_army value = 8 }}
 		OR = {
 			atwar = yes
-			policy = { type = professional_army value = 7 } 
+			policy = { type = professional_army value = 7 }
 		}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 700
 		atwar = yes
 	}
@@ -995,25 +997,25 @@ event = {
 		NOT = { local_flag = demob }
 		NOT = { manpower = 70 }
 		supplies = 400
-		policy = { type = professional_army value = 7 } 
+		policy = { type = professional_army value = 7 }
 		NOT = { policy = { type = professional_army value = 8 }	}
 		atwar = yes
 		}
-   
+
 	name = "MOB8name"
-	desc = "8300063desc" 
+	desc = "8300063desc"
 	decision_desc = "DEC_8300063_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = { #Enact General Mobilisation
 			trigger = {	NOT = { region = { region = Korea country = JAP data = 2 value = 50 } } }
-		
+
 		name = "MOB8name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -1038,10 +1040,10 @@ event = {
 		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB3 }
 	}
-	
+
 	action = { #Enact General Mobilisation
 			trigger = {	region = { region = Korea country = JAP data = 2 value = 50 } }
-		
+
 		name = "MOB8name"
 		ai_chance = 100
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
@@ -1054,7 +1056,7 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 3.375 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 3.75 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 11.25 when = 1 }		
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 11.25 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 60 when = 1 }
 		command = { type = set_domestic which = professional_army value = 8 }
 		command = { type = dissent value = 5 }
@@ -1066,23 +1068,23 @@ event = {
 		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB3 }
 	}
-	
+
 }
 
 event = { # total mob for all nations
- 
+
 	id = 8300064
 	persistent = yes
 
-	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIA36 SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }	
-	
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIA36 SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
 	decision = {
 			atwar = yes
 			policy = { type = professional_army value = 8 }
 			NOT = { policy = { type = professional_army value = 10 }	}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 500
 		NOT = { manpower = 80 }
 	}
@@ -1091,29 +1093,29 @@ event = { # total mob for all nations
 		ai = no
 		NOT = { manpower = 70 }
 		supplies = 400
-		policy = { type = professional_army value = 8 } 
+		policy = { type = professional_army value = 8 }
 		NOT = { policy = { type = professional_army value = 10 }	}
 		atwar = yes
 	}
-   
+
 	name = "8300064name"
-	desc = "8300064desc" 
+	desc = "8300064desc"
 	decision_desc = "DEC_8300064_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = { #Enact Extended Mobilisation
-		trigger = {	
-		policy = { type = professional_army value = 8 } 
+		trigger = {
+		policy = { type = professional_army value = 8 }
 		NOT = { policy = { type = professional_army value = 9 }}
 		}
-		
+
 		name = "MOB9name"
 		ai_chance = 100
 		command = { type = resource which = supplies value = -500 }
@@ -1123,13 +1125,13 @@ event = { # total mob for all nations
 		command = { type = dissent value = 10 }
 		command = { type = local_setflag which = MOB9 }
 	}
-	
+
 	action = { #Enact Total Mobilisation
-		trigger = {	
-		policy = { type = professional_army value = 9 } 
+		trigger = {
+		policy = { type = professional_army value = 9 }
 		NOT = { policy = { type = professional_army value = 10 }}
 		}
-		
+
 		name = "MOB10name"
 		ai_chance = 0
 		command = { type = resource which = supplies value = -300 }
@@ -1137,7 +1139,7 @@ event = { # total mob for all nations
 		command = { type = set_domestic which = professional_army value = 10 }
 		command = { type = 	belligerence value = 10 }
 		command = { type = 	dissent value = 15 }
-		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_time which = militia value = -75 where = relative } 
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_time which = militia value = -75 where = relative }
 		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_cost which = militia value = 50 where = relative }
 		command = { type = 	soft_attack which = militia value = -1 }
 		command = { type = 	hard_attack which = militia value = -1 }
@@ -1146,11 +1148,11 @@ event = { # total mob for all nations
 		command = { type = dissent value = 15 }
 		command = { type = local_setflag which = MOB10 }
 	}
-	
+
 }
 
 event = {
- 
+
 	id = 8300074
 	random = no
 	persistent = yes
@@ -1162,40 +1164,40 @@ event = {
 			NOT = { policy = { type = professional_army value = 10 }	}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 		supplies = 500
 		NOT = { manpower = 80 }
 	}
 
 	trigger = {
 		ai = no
-		
+
 		supplies = 400
-		policy = { type = professional_army value = 8 } 
+		policy = { type = professional_army value = 8 }
 		NOT = { policy = { type = professional_army value = 10 }	}
 		atwar = yes
-		
+
 	}
-   
+
 	name = "8300064name"
-	desc = "8300064desc" 
+	desc = "8300064desc"
 	decision_desc = "DEC_8300064_DESC"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = { #Enact Extended Mobilisation
-		trigger = {	
-			policy = { type = professional_army value = 8 } 
+		trigger = {
+			policy = { type = professional_army value = 8 }
 			NOT = { policy = { type = professional_army value = 9 }}
-			NOT = { region = { region = Korea country = JAP data = 2 value = 50 } } 
+			NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
 		}
-		
+
 		name = "MOB9name"
 		ai_chance = 100
 		command = { type = resource which = supplies value = -500 }
@@ -1205,14 +1207,14 @@ event = {
 		command = { type = dissent value = 10 }
 		command = { type = local_setflag which = MOB9 }
 	}
-	
+
 	action = { #Enact Total Mobilisation
-		trigger = {	
-			policy = { type = professional_army value = 9 } 
+		trigger = {
+			policy = { type = professional_army value = 9 }
 			NOT = { policy = { type = professional_army value = 10 }}
 			NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
 		}
-		
+
 		name = "MOB10name"
 		ai_chance = 0
 		command = { type = resource which = supplies value = -300 }
@@ -1220,7 +1222,7 @@ event = {
 		command = { type = set_domestic which = professional_army value = 10 }
 		command = { type = 	belligerence value = 10 }
 		command = { type = 	dissent value = 15 }
-		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_time which = militia value = -75 where = relative } 
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_time which = militia value = -75 where = relative }
 		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_cost which = militia value = 50 where = relative }
 		command = { type = 	soft_attack which = militia value = -1 }
 		command = { type = 	hard_attack which = militia value = -1 }
@@ -1229,14 +1231,14 @@ event = {
 		command = { type = dissent value = 15 }
 		command = { type = local_setflag which = MOB10 }
 	}
-	
+
 	action = { #Enact Extended Mobilisation
-		trigger = {	
-			policy = { type = professional_army value = 8 } 
+		trigger = {
+			policy = { type = professional_army value = 8 }
 			NOT = { policy = { type = professional_army value = 9 }}
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 2 value = 50 }
 		}
-		
+
 		name = "MOB9name"
 		ai_chance = 100
 		command = { type = resource which = supplies value = -500 }
@@ -1246,14 +1248,14 @@ event = {
 		command = { type = dissent value = 10 }
 		command = { type = local_setflag which = MOB9 }
 	}
-	
+
 	action = { #Enact Total Mobilisation
-		trigger = {	
-			policy = { type = professional_army value = 9 } 
+		trigger = {
+			policy = { type = professional_army value = 9 }
 			NOT = { policy = { type = professional_army value = 10 }}
 			region = { region = Korea country = JAP data = 2 value = 50 }
 		}
-		
+
 		name = "MOB10name"
 		ai_chance = 0
 		command = { type = resource which = supplies value = -300 }
@@ -1261,7 +1263,7 @@ event = {
 		command = { type = set_domestic which = professional_army value = 10 }
 		command = { type = 	belligerence value = 10 }
 		command = { type = 	dissent value = 15 }
-		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_time which = militia value = -75 where = relative } 
+		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_time which = militia value = -75 where = relative }
 		command = { trigger = { NOT = { local_flag = MOB10 } } type = 	build_cost which = militia value = 50 where = relative }
 		command = { type = 	soft_attack which = militia value = -1 }
 		command = { type = 	hard_attack which = militia value = -1 }
@@ -1269,14 +1271,14 @@ event = {
 		command = { type = 	max_organization which = militia value = -5 }
 		command = { type = dissent value = 15 }
 		command = { type = local_setflag which = MOB10 }
-	}	
-	
+	}
+
 }
 
 ########################## Demobilisation ##################
 
 event = {
- 
+
 	id = 1350005
 	persistent = yes
 	TAG = { IND ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHC CHI CHL COL CRO CSA CSX CZE DDR DEN DFR ENG EST ETH FIN FLA FRA GEO GER GRE GUA HOL HON HUN IDC INO ISR ITA JAP KOR LAO LAT LIT MAN MEN MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SOV SPA SPR SWE TEX TRA TUR UKR VEN VIC VIE WLL YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 UAU }
@@ -1292,7 +1294,7 @@ event = {
 				}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 			OR = {
 				#local_flag = MOB9
 				AND = {
@@ -1306,23 +1308,23 @@ event = {
 		local_flag = MOB8
 		atwar = no
 		}
-   
+
 	name = "1350005name"
-	desc = "1350000desc" 
+	desc = "1350000desc"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 60
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = {
 		name = "1350000text8"
 		trigger = { local_flag = MOB8 }
 		ai_chance = 90
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.66 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
@@ -1336,9 +1338,9 @@ event = {
 		name = "1350000text7"
 		trigger = { local_flag = MOB7 }
 		ai_chance = 75
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.33 }
-		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }		
+		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
 		command = { trigger = { local_flag = MOB10 } type = manpowerpool value = -15 when = 1 }
@@ -1350,7 +1352,7 @@ event = {
 }
 
 event = {  # us demob
- 
+
 	id = 13500051
 	random = no
 	persistent = yes
@@ -1367,7 +1369,7 @@ event = {  # us demob
 				}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 			OR = {
 				#local_flag = MOB9
 				AND = {
@@ -1381,25 +1383,25 @@ event = {  # us demob
 		local_flag = MOB8
 		atwar = no
 		}
-   
+
 	name = "1350005name"
-	desc = "1350000desc" 
+	desc = "1350000desc"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 60
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = {
 		name = "1350000text8"
 		trigger = { local_flag = MOB8 }
 		ai_chance = 90
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.66 }
-		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }		
+		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
 		command = { trigger = { local_flag = MOB10 } type = manpowerpool value = -15 when = 1 }
@@ -1412,10 +1414,10 @@ event = {  # us demob
 		name = "1350000text7"
 		trigger = { local_flag = MOB7 }
 		ai_chance = 75
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.33 }
 		command = { trigger = { local_flag = MOB6 } type = manpowerpool value = -5 when = 1 }
-		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }		
+		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
 		command = { trigger = { local_flag = MOB10 } type = manpowerpool value = -15 when = 1 }
@@ -1427,7 +1429,7 @@ event = {  # us demob
 }
 
 event = { # sch demob
- 
+
 	id = 13500052
 	random = no
 	persistent = yes
@@ -1444,7 +1446,7 @@ event = { # sch demob
 				}
 	}
 
-	decision_trigger = { 
+	decision_trigger = {
 			OR = {
 				local_flag = MOB9
 				AND = {
@@ -1458,23 +1460,23 @@ event = { # sch demob
 		atwar = no
 		local_flag = MOB8
 		}
-   
+
 	name = "1350005name"
-	desc = "1350000desc" 
+	desc = "1350000desc"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 60
 	deathdate = { day = 30 month = december year = 1963 }
 
-	
+
 	action = {
 		name = "1350000text8"
 		trigger = { local_flag = MOB8 }
 		ai_chance = 90
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.66 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
@@ -1487,17 +1489,17 @@ event = { # sch demob
 }
 
 event = {
- 
+
 	id = 13500053
 	random = no
 	persistent = yes
 
 	name = "13500053name"
-	desc = "13500053desc" 
+	desc = "13500053desc"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	action = {
 		name = "13500053a"
 		command = { type = local_clrflag which = MOB8 }
@@ -1509,17 +1511,17 @@ event = {
 }
 
 event = {
- 
+
 	id = 13500054
 	random = no
 	persistent = yes
 
 	name = "13500053name"
-	desc = "13500053desc" 
+	desc = "13500053desc"
 	style = 2
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
-	
+
 	action = {
 		name = "13500053a"
 		command = { type = local_clrflag which = MOB7 }
@@ -1546,9 +1548,9 @@ event = {
 			local_flag = MOB8
 			random = 35
 	}
-   
+
 	name = "1350000name"
-	desc = "1350000desc" 
+	desc = "1350000desc"
 	style = 1
 	picture = "Wehrmacht"
 
@@ -1560,7 +1562,7 @@ event = {
 		name = "1350000text8"
 		trigger = { local_flag = MOB8 }
 		ai_chance = 90
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.66 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
@@ -1574,9 +1576,9 @@ event = {
 		name = "1350000text7"
 		trigger = { local_flag = MOB7 }
 		ai_chance = 75
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.33 }
-		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }		
+		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
 		command = { trigger = { local_flag = MOB10 } type = manpowerpool value = -15 when = 1 }
@@ -1586,12 +1588,12 @@ event = {
 		command = { type = local_clrflag which = MOB10 }
 		command = { type = local_clrflag which = MOB7 }
 		command = { type = local_clrflag which = RES }
-		
+
 	}
 	action = {
 		name = "1350000textno"
-		trigger = { 
-		local_flag = MOB7 
+		trigger = {
+		local_flag = MOB7
 		NOT ={ local_flag = MOB8 }
 		}
 		ai_chance = 25
@@ -1624,14 +1626,14 @@ event = {
 		command = { trigger = { local_flag = MIL2 } type = dissent value = 3 }
 		command = { trigger = { local_flag = MIL2 } type = change_policy which = democratic value = 1 }
 		command = { trigger = { local_flag = MIL2 } type = local_setflag which = MIL3 }
-		command = { trigger = { local_flag = MIL2 } type = local_setflag which = MIL4 }	
+		command = { trigger = { local_flag = MIL2 } type = local_setflag which = MIL4 }
 		command = { trigger = { local_flag = MIL4 } type = change_policy which = democratic value = 2 }
 		command = { trigger = { local_flag = MIL4 } type = local_setflag which = MIL5 }
 		command = { trigger = { local_flag = MIL4 } type = dissent value = 6 }
-		command = { trigger = { local_flag = MIL4 } type = local_setflag which = MIL6 }	
+		command = { trigger = { local_flag = MIL4 } type = local_setflag which = MIL6 }
 		command = { trigger = { local_flag = MIL6 } type = dissent value = 9 }
 		command = { trigger = { local_flag = MIL6 } type = change_policy which = democratic value = 3 }
-		command = { trigger = { local_flag = MIL6 } type = trigger which = 1350001 }		
+		command = { trigger = { local_flag = MIL6 } type = trigger which = 1350001 }
 	}
 }
 
@@ -1641,17 +1643,17 @@ event = {
 	one_action = yes
 
 	name = "1350001name"
-	desc = "1350001desc" 
+	desc = "1350001desc"
 	style = 1
 	picture = "Wehrmacht"
 
 	action = {
 		name = "1350001a" ## military dictatorship
 		ai_chance = 33
-		command = { type = local_setflag which = MIL7 }	
+		command = { type = local_setflag which = MIL7 }
 		command = { type = dissent value = 5 }
 		command = { type = change_policy which = democratic value = 10 }
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.66 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
@@ -1666,7 +1668,7 @@ event = {
 		ai_chance = 33
 		command = { type = change_policy which = democratic value = -2 }
 		command = { type = dissent value = -5 }
-		
+
 		command = { type = strength which = land when = 0 where = 0 value = 0.66 }
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
@@ -1689,9 +1691,9 @@ event = {
 		command = { type = local_clrflag which = MOB10 }
 		command = { type = set_domestic which = professional_army value = 7 }
 		command = { type = civil_war }
-		
+
 	}
-}	
+}
 
 ############ reserves arrive
 
@@ -1701,31 +1703,31 @@ event = {
 	one_action = yes
 
 	name = "1350002name"
-	desc = "1350002desc" 
+	desc = "1350002desc"
 	style = 1
 	picture = "Wehrmacht"
 
 	action = {
-		name = "1350002" 
+		name = "1350002"
 		ai_chance = 50
-		command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 }
  		command = { type = local_setflag which = RES }
 	}
-	
+
 	action = {
-		name = "1350002" 
+		name = "1350002"
 		ai_chance = 35
-		command = { type = strength which = land when = 1 where = 0 org = 0.3 value = 0.65 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.3 value = 0.65 }
 		command = { type = local_setflag which = RES }
 	}
-	
+
 	action = {
-		name = "1350002" 
+		name = "1350002"
 		ai_chance = 15
-		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.5 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.5 }
 		command = { type = local_setflag which = RES }
 	}
-}	
+}
 
 event = {
 	id = 1350003
@@ -1739,38 +1741,38 @@ event = {
 			random = 90
 			manpower = 150
 			policy = { type = professional_army value = 7 }
-	}	
-	
+	}
+
 	name = "1350002name"
-	desc = "1350002desc" 
+	desc = "1350002desc"
 	style = 1
 	picture = "Wehrmacht"
 
 	date = { day = 1 month = january year = 1914 }
 	offset = 12
-	deathdate = { day = 30 month = december year = 1963 }	
-	
+	deathdate = { day = 30 month = december year = 1963 }
+
 	action = {
-		name = "1350002name" 
+		name = "1350002name"
 		ai_chance = 50
-		command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 }
  		command = { type = local_setflag which = RES }
 	}
-	
+
 	action = {
-		name = "1350003name" 
+		name = "1350003name"
 		ai_chance = 35
-		command = { type = strength which = land when = 1 where = 0 org = 0.3 value = 0.65 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.3 value = 0.65 }
 		command = { type = local_setflag which = RES }
 	}
-	
+
 	action = {
-		name = "1350002name" 
+		name = "1350002name"
 		ai_chance = 15
-		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.5 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.5 }
 		command = { type = local_setflag which = RES }
 	}
-}	
+}
 
 event = {
 	id = 1350004
@@ -1784,35 +1786,35 @@ event = {
 			random = 80
 			manpower = 100
 			policy = { type = professional_army value = 7 }
-	}	
-	
+	}
+
 	name = "1350002name"
-	desc = "1350002desc" 
+	desc = "1350002desc"
 	style = 1
 	picture = "Wehrmacht"
 
 	date = { day = 1 month = january year = 1914 }
 	offset = 35
-	deathdate = { day = 30 month = december year = 1963 }	
-	
+	deathdate = { day = 30 month = december year = 1963 }
+
 	action = {
-		name = "1350002name" 
+		name = "1350002name"
 		ai_chance = 50
-		command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 }
  		command = { type = local_setflag which = RES }
 	}
-	
+
 	action = {
-		name = "1350002name" 
+		name = "1350002name"
 		ai_chance = 35
-		command = { type = strength which = land when = 1 where = 0 org = 0.3 value = 0.65 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.3 value = 0.65 }
 		command = { type = local_setflag which = RES }
 	}
-	
+
 	action = {
-		name = "1350002name" 
+		name = "1350002name"
 		ai_chance = 15
-		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.5 } 
+		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.5 }
 		command = { type = local_setflag which = RES }
 	}
 }
@@ -1830,35 +1832,35 @@ event = {
 #			random = 80
 #			manpower = 50
 #			policy = { type = professional_army value = 7 }
-#	}	
-#	
+#	}
+#
 #	name = "1350002name"
-#	desc = "1350002desc" 
+#	desc = "1350002desc"
 #	style = 1
 #	picture = "Wehrmacht"
 #
 #	date = { day = 1 month = january year = 1914 }
 #	offset = 70
-#	deathdate = { day = 30 month = december year = 1963 }	
-#	
+#	deathdate = { day = 30 month = december year = 1963 }
+#
 #	action = {
-#		name = "1350002name" 
+#		name = "1350002name"
 #		ai_chance = 50
-#		command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 } 
+#		command = { type = strength which = land when = 1 where = 0 org = 0.5 value = 0.8 }
 #		command = { type = local_setflag which = RES }
 #	}
-#	
+#
 #	action = {
-#		name = "1350002name" 
+#		name = "1350002name"
 #		ai_chance = 35
-#		command = { type = strength which = land when = 1 where = 0 org = 0.3 value = 0.65 } 
+#		command = { type = strength which = land when = 1 where = 0 org = 0.3 value = 0.65 }
 #		command = { type = local_setflag which = RES }
 #	}
-#	
+#
 #	action = {
-#		name = "1350002name" 
+#		name = "1350002name"
 #		ai_chance = 15
-#		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.5 } 
+#		command = { type = strength which = land when = 1 where = 0 org = 0.2 value = 0.5 }
 #		command = { type = local_setflag which = RES }
 #	}
 #}
@@ -1867,7 +1869,7 @@ event = {
 
 event = { # generates 16 militia divisions during war
 
-	id = 130173 
+	id = 130173
 	country = SCH
 	persistent = yes
 	one_action = yes
@@ -1876,25 +1878,25 @@ event = { # generates 16 militia divisions during war
 			NOT = { local_flag = RES2 }
 			atwar = yes
 		}
-   
+
 	name = "130173name"
 	desc = "130173desc"
-	
+
 	style = 2
 	picture = "Wehrmacht"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 15
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		 trigger = { 
+		 trigger = {
 			year = 1914
 			NOT = { year = 1921 }
 		 }
 		name = "130173a"
 		ai_chance = 100
-		
+
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_corps which = "1. Landswehr Corps" value = land where = 390 }
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_division value = militia when = 2 }
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_division value = militia when = 2 }
@@ -1919,13 +1921,13 @@ event = { # generates 16 militia divisions during war
 	}
 
 	action = {
-		 trigger = { 
+		 trigger = {
 			year = 1920
 			NOT = { year = 1936 }
 		 }
 		name = "130173a"
 		ai_chance = 100
-		
+
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_corps which = "1. Landswehr Corps" value = land where = 390 }
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_division value = militia when = 4 }
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_division value = militia when = 4 }
@@ -1948,12 +1950,12 @@ event = { # generates 16 militia divisions during war
 		command = { trigger ={ control = { province = 392 data = -3 }} type = add_division value = militia when = 4 }
 		command = { type = local_setflag which = RES2 }
 	}
-	
+
 	action = {
 		 trigger = { year = 1936 }
 		name = "130173a"
 		ai_chance = 100
-		
+
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_corps which = "1. Landswehr Corps" value = land where = 390 }
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_division value = militia when = 5 }
 		command = { trigger ={ control = { province = 390 data = -3 }} type = add_division value = militia when = 5 }
@@ -1976,7 +1978,7 @@ event = { # generates 16 militia divisions during war
 		command = { trigger ={ control = { province = 392 data = -3 }} type = add_division value = militia when = 5 }
 		command = { type = local_setflag which = RES2 }
 	}
-} 
+}
 
 # event = { # generates 3 Infantry Divisions
 
@@ -1990,21 +1992,21 @@ event = { # generates 16 militia divisions during war
 		# war = { country = GER  country = SCH }
 		# control = { province = 390 data = -3 }
 		# }
-   
+
 	# name = "130174name"
 	# desc = "130174desc"
-	
+
 	# style = 2
 	# picture = "Wehrmacht"
-	
+
 	# date = { day = 1 month = january year = 1936 }
 	# offset = 10
 	# deathdate = { day = 30 month = december year = 1963 }
 
 
-	
+
 	# action = {
-		
+
 		# name = "130174a"
 		# ai_chance = 100
 		# command = { type = add_corps which = "1. Volunteer Corps" value = land where = 390 }
@@ -2012,18 +2014,18 @@ event = { # generates 16 militia divisions during war
 		# command = { type = add_division which = "2. Volunteers Division (french)" value = infantry when = 9 }
 		# command = { type = add_division which = "3. Volunteers Division (polish)" value = infantry when = 9 }
 	# }
-# } 
+# }
 
-#### Specific event-driven mobilization for 1914 scenario 
+#### Specific event-driven mobilization for 1914 scenario
 event = {
 	id = 1350007 # Mobilize?
 	persistent = yes
-	
+
 	name = "EVT_1350007_NAME"
 	desc = "EVT_1350007_DESC"
 	style = 2
 	picture = "Wehrmacht"
-	
+
 	action = { #Enact Partial Mobilisation
 		name = "MOB7name"
 		ai_chance = 100
@@ -2063,7 +2065,7 @@ event = {
 		command = { type = local_setflag which = MOB6 }
 		command = { type = local_setflag which = MOB5 }
 		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }      
+		command = { type = local_setflag which = MOB3 }
 	}
 	action = {
 		name = "ACTINUTILE"
@@ -2077,47 +2079,47 @@ event = {
 	persistent = yes
 
 	name = "1350002name"
-	desc = "1350002desc" 
+	desc = "1350002desc"
 	style = 1
 	picture = "Wehrmacht"
 
 	action = {
-		name = "1350002" 
+		name = "1350002"
 		command = { type = strength which = land when = 0 where = 0 org = 0.5 value = 1.00 }
  		command = { type = local_setflag which = RES }
 	}
 }
 
 event = {
- 
+
 	id = 8300053
 	persistent = yes
 	one_action = yes
-	
+
 	TAG = { MEX USA }
-	
-	trigger = { 
+
+	trigger = {
 		local_flag = incon1
 		random = 70
-		
+
 	}
-	   
+
 	name = "USMOBname"
-	desc = "USMOBdesc" 
+	desc = "USMOBdesc"
 	style = 2
 	picture = "Peace_conference"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 60
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {  #yes at war
-		trigger = {	
+		trigger = {
 				atwar = yes
 				policy = { type = professional_army value = 2 }
 				NOT = { policy = { type = professional_army value = 3 }}
 		}
-		
+
 		name = "8300053a"
 		ai_chance = 65
 		command = { type = resource which = supplies value = -100 }
@@ -2130,12 +2132,12 @@ event = {
 	}
 
 	action = {  #yes at war piggy back
-		trigger = {	
+		trigger = {
 				atwar = yes
 				policy = { type = professional_army value = 2 }
 				NOT = { policy = { type = professional_army value = 3 }}
 		}
-		
+
 		name = "8300053a"
 		ai_chance = 75
 		command = { type = resource which = supplies value = -100 }
@@ -2147,9 +2149,9 @@ event = {
 		command = { type = local_clrflag which = incon1 }
 
 	}
-	
+
 	action = {  #yes - allies/neighbours at war
-		trigger = {	
+		trigger = {
 			OR = {
 					atwar = ENG
 					atwar = FRA
@@ -2162,7 +2164,7 @@ event = {
 		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 3 }}
 		}
-		
+
 		name = "8300053a"
 		ai_chance = 35
 		command = { type = resource which = supplies value = -100 }
@@ -2172,9 +2174,9 @@ event = {
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_clrflag which = incon1 }
 	}
-	
+
 	action = {  #yes - allies/neighbours at war - piggy back
-		trigger = {	
+		trigger = {
 			OR = {
 					atwar = ENG
 					atwar = FRA
@@ -2187,7 +2189,7 @@ event = {
 		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 3 }}
 		}
-		
+
 		name = "8300053a"
 		ai_chance = 45
 		command = { type = resource which = supplies value = -100 }
@@ -2198,20 +2200,20 @@ event = {
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon1 }
 
-	}	
+	}
 	action = {  # no
 		name = "8300053b"
 		ai_chance = 45
 		command = { type = dissent value = 2 }
 		command = { type = local_clrflag which = incon1 }
-	}	
+	}
 
 	action = { #yes at peace - piggy back
-		trigger = {	
+		trigger = {
 		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 3 }}
 		}
-		
+
 		name = "8300053a"
 		ai_chance = 15
 		command = { type = resource which = supplies value = -100 }
@@ -2222,13 +2224,13 @@ event = {
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon1 }
 	}
-	
+
 	action = { #yes at peace
-		trigger = {	
+		trigger = {
 		policy = { type = professional_army value = 2 }
 		NOT = { policy = { type = professional_army value = 3 }}
 		}
-		
+
 		name = "8300053a"
 		ai_chance = 10
 		command = { type = resource which = supplies value = -100 }
@@ -2239,68 +2241,68 @@ event = {
 		command = { type = local_clrflag which = incon1 }
 
 	}
-	
+
 	action = {  # no
-		
+
 		name = "8300053b"
 		ai_chance = 40
 		command = { type = dissent value = -1 }
 		command = { type = local_clrflag which = incon1 }
 	}
 	action = {  # no
-		
+
 		name = "8300053b"
 		ai_chance = 50
 		command = { type = dissent value = 1 }
 		command = { type = local_clrflag which = incon1 }
 	}
 	action = { # no
-		
+
 		name = "8300053b"
 		ai_chance = 35
 		command = { type = dissent value = -2 }
 		command = { type = local_clrflag which = incon1 }
 	}
 	action = { # no
-		
+
 		name = "8300053b"
 		ai_chance = 40
 		command = { type = dissent value = 3 }
 		command = { type = local_clrflag which = incon1 }
 	}
-	
+
 }
 
 event = {
- 
+
 	id = 8300054
 	persistent = yes
 	one_action = yes
 
 	TAG = { MEX USA }
 
-	trigger = { 
+	trigger = {
 		local_flag = incon2
 		random = 70
-		
+
 	}
-	
+
 	name = "8300054name" # Extending the draft
-	desc = "USMOBdesc" 
+	desc = "USMOBdesc"
 	style = 2
 	picture = "Peace_conference"
-	
+
 	date = { day = 1 month = january year = 1914 }
 	offset = 60
 	deathdate = { day = 30 month = december year = 1963 }
-	
+
 	action = { #Enact One Year Conscription
-		trigger = {	
-			policy = { type = professional_army value = 3 } 
+		trigger = {
+			policy = { type = professional_army value = 3 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			atwar = yes
 		}
-		
+
 		name = "MOB4name"
 		ai_chance = 60
 		command = { type = resource which = supplies value = -200 }
@@ -2310,14 +2312,14 @@ event = {
 		command = { type = local_setflag which = MOB4 }
 		command = { type = local_clrflag which = incon2 }
 	}
-	
+
 	action = { #Enact One Year Conscription - piggyback
-		trigger = {	
-			policy = { type = professional_army value = 3 } 
+		trigger = {
+			policy = { type = professional_army value = 3 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			atwar = yes
 		}
-		
+
 		name = "MOB4name"
 		ai_chance = 85
 		command = { type = resource which = supplies value = -200 }
@@ -2328,14 +2330,14 @@ event = {
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon2 }
 	}
-	
+
 	action = { #Enact One Year Conscription - piggyback
-		trigger = {	
-			policy = { type = professional_army value = 3 } 
+		trigger = {
+			policy = { type = professional_army value = 3 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			atwar = no
 		}
-		
+
 		name = "MOB4name"
 		ai_chance = 35
 		command = { type = resource which = supplies value = -200 }
@@ -2345,64 +2347,64 @@ event = {
 		command = { type = local_setflag which = MOB4 }
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon2 }
-	}	
-	
+	}
+
 	action = { #Enact One Year Conscription - no
-		trigger = {	
-			policy = { type = professional_army value = 3 } 
+		trigger = {
+			policy = { type = professional_army value = 3 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 40
 		command = { type = dissent value = 2 }
 		command = { type = local_clrflag which = incon2 }
 	}
 	action = { #Enact One Year Conscription - no
-		trigger = {	
-			policy = { type = professional_army value = 3 } 
+		trigger = {
+			policy = { type = professional_army value = 3 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 30
 		command = { type = dissent value = 5 }
 		command = { type = local_clrflag which = incon2 }
-	}	
+	}
 	action = { #Enact One Year Conscription - no
-		trigger = {	
-			policy = { type = professional_army value = 3 } 
+		trigger = {
+			policy = { type = professional_army value = 3 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 40
 		command = { type = dissent value = 1 }
 		command = { type = local_clrflag which = incon2 }
 	}
 	action = { #Enact One Year Conscription - no
-		trigger = {	
-			policy = { type = professional_army value = 3 } 
+		trigger = {
+			policy = { type = professional_army value = 3 }
 			NOT = { policy = { type = professional_army value = 4 }}
 			atwar = yes
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 15
 		command = { type = dissent value = 1 }
 		command = { type = local_clrflag which = incon2 }
 	}
-	
+
 	action = { #Enact Two Year Conscription
-		trigger = {	
-			policy = { type = professional_army value = 4 } 
+		trigger = {
+			policy = { type = professional_army value = 4 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			atwar = yes
 		}
-		
+
 		name = "MOB5name"
 		ai_chance = 45
 		command = { type = resource which = supplies value = -200 }
@@ -2412,14 +2414,14 @@ event = {
 		command = { type = local_setflag which = MOB5 }
 		command = { type = local_clrflag which = incon2 }
 	}
-	
+
 	action = { #Enact Two Year Conscription - piggyback
-		trigger = {	
-			policy = { type = professional_army value = 4 } 
+		trigger = {
+			policy = { type = professional_army value = 4 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			atwar = yes
 		}
-		
+
 		name = "MOB5name"
 		ai_chance = 75
 		command = { type = resource which = supplies value = -200 }
@@ -2429,15 +2431,15 @@ event = {
 		command = { type = local_setflag which = MOB5 }
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon2 }
-	}	
-	
+	}
+
 	action = { #Enact Two Year Conscription - piggyback
-		trigger = {	
-			policy = { type = professional_army value = 4 } 
+		trigger = {
+			policy = { type = professional_army value = 4 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			atwar = no
 		}
-		
+
 		name = "MOB5name"
 		ai_chance = 45
 		command = { type = resource which = supplies value = -200 }
@@ -2447,65 +2449,65 @@ event = {
 		command = { type = local_setflag which = MOB5 }
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon2 }
-	}	
+	}
 
 	action = { #Enact Two Year Conscription - no
-		trigger = {	
-			policy = { type = professional_army value = 4 } 
+		trigger = {
+			policy = { type = professional_army value = 4 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 42
 		command = { type = dissent value = 2 }
 		command = { type = local_clrflag which = incon2 }
 	}
 	action = { #Enact Two Year Conscription - no
-		trigger = {	
-		policy = { type = professional_army value = 4 } 
+		trigger = {
+		policy = { type = professional_army value = 4 }
 		NOT = { policy = { type = professional_army value = 5 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 34
 		command = { type = dissent value = 5 }
 		command = { type = local_clrflag which = incon2 }
-	}	
+	}
 	action = { #Enact Two Year Conscription - no
-		trigger = {	
-			policy = { type = professional_army value = 4 } 
+		trigger = {
+			policy = { type = professional_army value = 4 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 44
 		command = { type = dissent value = 1 }
 		command = { type = local_clrflag which = incon2 }
 	}
 	action = { #Enact Two Year Conscription - no
-		trigger = {	
-			policy = { type = professional_army value = 4 } 
+		trigger = {
+			policy = { type = professional_army value = 4 }
 			NOT = { policy = { type = professional_army value = 5 }}
 			atwar = yes
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 19
 		command = { type = dissent value = 1 }
 		command = { type = local_clrflag which = incon2 }
 	}
-	
-	
+
+
 	action = { #Enact Three Year Conscription
-		trigger = {	
-			policy = { type = professional_army value = 5 } 
+		trigger = {
+			policy = { type = professional_army value = 5 }
 			NOT = { policy = { type = professional_army value = 6 }}
 			atwar = yes
 		}
-	
+
 		name = "MOB6name"
 		ai_chance = 35
 		command = { type = resource which = supplies value = -250 }
@@ -2515,14 +2517,14 @@ event = {
 		command = { type = local_setflag which = MOB6 }
 		command = { type = local_clrflag which = incon2 }
 	}
-	
+
 	action = { #Enact Three Year Conscription - piggyback
-		trigger = {	
-		policy = { type = professional_army value = 5 } 
+		trigger = {
+		policy = { type = professional_army value = 5 }
 		NOT = { policy = { type = professional_army value = 6 }}
 			atwar = yes
 		}
-	
+
 		name = "MOB6name"
 		ai_chance = 45
 		command = { type = resource which = supplies value = -250 }
@@ -2533,14 +2535,14 @@ event = {
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon2 }
 	}
-	
+
 	action = { #Enact Three Year Conscription - piggyback
-		trigger = {	
-		policy = { type = professional_army value = 5 } 
+		trigger = {
+		policy = { type = professional_army value = 5 }
 		NOT = { policy = { type = professional_army value = 6 }}
 			atwar = no
 		}
-	
+
 		name = "MOB6name"
 		ai_chance = 12
 		command = { type = resource which = supplies value = -250 }
@@ -2553,70 +2555,70 @@ event = {
 	}
 
 	action = { #Enact Three Year Conscription - no
-		trigger = {	
-		policy = { type = professional_army value = 5 } 
+		trigger = {
+		policy = { type = professional_army value = 5 }
 		NOT = { policy = { type = professional_army value = 6 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 52
 		command = { type = dissent value = 2 }
 		command = { type = local_clrflag which = incon2 }
 	}
 	action = { #Enact Three Year Conscription - no
-		trigger = {	
-		policy = { type = professional_army value = 5 } 
+		trigger = {
+		policy = { type = professional_army value = 5 }
 		NOT = { policy = { type = professional_army value = 6 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 44
 		command = { type = dissent value = 5 }
 		command = { type = local_clrflag which = incon2 }
-	}	
+	}
 	action = { #Enact Three Year Conscription - no
-		trigger = {	
-		policy = { type = professional_army value = 5 } 
+		trigger = {
+		policy = { type = professional_army value = 5 }
 		NOT = { policy = { type = professional_army value = 6 }}
 			atwar = no
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 54
 		command = { type = dissent value = 1 }
 		command = { type = local_clrflag which = incon2 }
 	}
 	action = { #Enact Three Year Conscription - no
-		trigger = {	
-		policy = { type = professional_army value = 5 } 
+		trigger = {
+		policy = { type = professional_army value = 5 }
 		NOT = { policy = { type = professional_army value = 6 }}
 			atwar = yes
 		}
-		
+
 		name = "noMOB"
 		ai_chance = 19
 		command = { type = dissent value = 1 }
 		command = { type = local_clrflag which = incon2 }
 	}
-	
+
 }
 
 event = { # Attached Bills
- 
+
 	id = 8300055
 	persistent = yes
 	one_action = yes
 
-	   
+
 	name = "8300055name" # Attached Bills
-	desc = "8300055desc" 
+	desc = "8300055desc"
 	style = 2
 	picture = "Peace_conference"
-	
+
 	action = { #
-		
+
 		name = "8300055a"
 		ai_chance = 20
 		command = { type = resource which = money value = -8000 }
@@ -2627,141 +2629,141 @@ event = { # Attached Bills
 	}
 
 	action = { #
-		
+
 		name = "8300055b"
 		ai_chance = 20
 		command = { type = resource which = money value = -4000 }
 		command = { type = domestic which = free_market value = -1 }
 		command = { type = industrial_modifier which = supplies value = -2 } # does this give a 2% malus?
 
-	}	
-	
+	}
+
 	action = { #
-		
+
 		name = "8300055c"
 		ai_chance = 30
 		command = { type = resource which = money value = -5000 }
 		command = { type = industrial_modifier which = total value = -1 } # does this give a 1% malus?
 		command = { type = construct which = infrastructure where = -4 value = 1 }
 	}
-	
+
 		action = { #
-		
+
 		name = "8300055d"
 		ai_chance = 20
 		command = { type = resource which = money value = -8000 }
-		command = { type = industrial_modifier which = total value = 0.01 } # 
+		command = { type = industrial_modifier which = total value = 0.01 } #
 		command = { type = build_division which = destroyer value = naval_asw when = 3  }
 	}
-	
+
 	action = { #
-		
+
 		name = "8300055e"
 		ai_chance = 10
 		command = { type = resource which = money value = -2000 }
-		command = { type = industrial_modifier which = total value = 1 } # 
+		command = { type = industrial_modifier which = total value = 1 } #
 		command = { type = dissent value = 4 }
 		command = { type = add_prov_resource which = -1 value = 2 where = metal }
 		command = { type = add_prov_resource which = -1 value = 6 where = energy }
-	}	
+	}
 
 	action = { #
-		
+
 		name = "8300055f"
 		ai_chance = 20
 		command = { type = resource which = money value = -4000 }
-		command = { type = industrial_modifier which = total value = -1 } # 
+		command = { type = industrial_modifier which = total value = -1 } #
 	}
 
 	action = { #
-		
+
 		name = "8300055g"
 		ai_chance = 20
 		command = { type = resource which = money value = -2000 }
-		command = { type = industrial_modifier which = supplies value = -1 } # 
+		command = { type = industrial_modifier which = supplies value = -1 } #
 		command = { type = dissent value = 2 }
 	}
-	
+
 	action = { #
-		
+
 		name = "8300055h"
 		ai_chance = 20
 		command = { type = resource which = money value = -10000 }
-		command = { type = industrial_modifier which = supplies value = 3 } # 
+		command = { type = industrial_modifier which = supplies value = 3 } #
 		command = { type = dissent value = 2 }
 		command = { type = add_prov_resource which = -1 value = 6 where = oil }
-	}	
-	
+	}
+
 	action = { #
-		
+
 		name = "8300055i"
 		ai_chance = 20
 		command = { type = resource which = money value = -10000 }
-		command = { type = industrial_modifier which = total value = 1 } # 
+		command = { type = industrial_modifier which = total value = 1 } #
 		command = { type = dissent value = 2 }
 	}
-	
+
 	action = { #
-		
+
 		name = "8300055k"
 		ai_chance = 20
 		command = { type = resource which = money value = -10000 }
-		command = { type = industrial_modifier which = total value = -5 } # 
+		command = { type = industrial_modifier which = total value = -5 } #
 		command = { type = dissent value = -5 }
 	}
-	
+
 	action = { #
-		
+
 		name = "8300055l"
 		ai_chance = 20
 		command = { type = resource which = money value = -2000 }
 		command = { type = domestic which = democratic value = -1 }
 		command = { type = dissent value = 2 }
 		command = { type = research_mod value = -2 } # 2% malus?
-		
+
 	}
-	
+
 	action = { #
-		
+
 		name = "8300055m"
 		ai_chance = 20
 		command = { type = resource which = money value = 500 }
 		command = { type = domestic which = democratic value = -1 }
 		command = { type = dissent value = 4 }
 		command = { type = research_mod value = -5 } # 5% malus?
-		
+
 	}
-	
+
 	action = { #
-		
+
 		name = "8300055n"
 		ai_chance = 20
 		command = { type = resource which = money value = -5000 }
 		command = { type = build_time which = naval value = 2 }
 		command = { type = build_cost which = naval value = 2 }
 		command = { type = research_mod value = -1 } # 5% malus?
-		
+
 	}
-	
+
 	action = { #
-		
+
 		name = "8300055o"
 		ai_chance = 20
 		command = { type = resource which = money value = -5000 }
 		command = { type = build_time which = air value = 5 }
 		command = { type = build_cost which = air value = 5 }
 		command = { type = research_mod value = -1 } # 5% malus?
-		
+
 	}
 
 	action = { #
-		
+
 		name = "8300055p"
 		ai_chance = 20
 		command = { type = resource which = money value = -5000 }
 		command = { type = build_time which = land value = 3 }
 		command = { type = build_cost which = land value = 3 }
 		command = { type = research_mod value = -1 } # 5% malus?
-		
-	}	
-}		
+
+	}
+}
