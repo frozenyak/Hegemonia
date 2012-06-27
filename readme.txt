@@ -74,7 +74,7 @@ IC, resources, infra
 	gfx
 		added tech team pics
 		mon flag now matches shield
-		new jadakal flag
+		new jadakal/rsi/afg/rus flag
 		
 	events
 		can purchase/license units one year after historical date
