@@ -3,13 +3,14 @@ Requires Darkest Hour patch 1.02
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
 
-Thanks to:
+Thanks, but not limited, to:
 Wiz & LP participants for creating and shaping the World
 Multiplayer Enhancement Mod and Total Realism Project for combat tweaks
 Kaiserreich Mod for various graphics and ministers
 Peter Wiegel's Koch Fette Deutsche Schrift
 israelien for his initial work on LCAGs
 Akira for tech pictures, flags
+RRT877 flags
 
 installation:
 extract into y:\our\path\to\Darkest Hour\mods
