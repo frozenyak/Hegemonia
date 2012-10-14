@@ -47,7 +47,7 @@
 		1423
 	}
   techapps               = { 4010 2150 2290 1010 1190 }
-  peacetime_ic_mod = 0.6
+  
   diplomacy = 
    {  relation = {  tag = U08 value = 75  } 
      relation = {  tag = CHI value = 150  } 

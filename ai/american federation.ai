@@ -65,9 +65,6 @@ tech_sharing = {
 		5100 = 100
 		5110 = 100
 		5120 = 100
-		5130 = 100
-		5150 = 100
-		5180 = 100
 
 		# Motorized
 		1230 = 100
@@ -266,19 +263,19 @@ military = {
 	extra_convoys_peace		= 0
 
 	#### Divisions etc...
-	infantry 		= 14
+	infantry 		= 21
 	cavalry 		= 0
-	motorized 		= 10
-	mechanized 		= 10
-	light_armor 	= 8
-	armor 			= 8
+	motorized 		= 9
+	mechanized 		= 6
+	light_armor 	= 5
+	armor 			= 5
 	paratrooper 	= 0
 	marine 			= 0
 	bergsjaeger 	= 0
-	garrison		= 4
+	garrison		= 3
     hq 				= 1
 	militia 		= 0
-#				55 %
+#				50 %
 	interceptor 	= 8
 	multi_role 		= 8
 	cas 			= 0
@@ -292,14 +289,14 @@ military = {
 	battleship 		= 0
 	carrier 		= 0
 	escort_carrier	= 0
-	destroyer 		= 0
-	light_cruiser 	= 0
+	destroyer 		= 5
+	light_cruiser 	= 5
 	heavy_cruiser 	= 0
 	battlecruiser 	= 0
-	submarine 		= 10
+	submarine 		= 5
 	nuclear_submarine = 0
 	transports 		= 0
-#				10 %
+#				15 %
 
 	#### Brigades
 	artillery 			= 20

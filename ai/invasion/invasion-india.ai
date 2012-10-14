@@ -18,31 +18,31 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1533 = 100
-		1532 = 100
-		1518 = 100
-		1513 = 100
-		1495 = 100
-		1471 = 100
-		1472 = 100
-		1448 = 100
+		1533 = 100 #karachi
+		1532 = 100 #nawabshah
+		1518 = 100 #ahmedabad
+		1513 = 100 #panjim
+		1495 = 100 #trivandrum
+		1471 = 100 #bhubanesbar
+		1472 = 100 #jamshedbur
+		1448 = 100 #kharagpur
 		#
-		1494 = 100
-		1447 = 100
+		1494 = 100 #nellor
+		1447 = 100 #calcutta
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2208 = 100
-		2215 = 100
-		2216 = 100
-		2627 = 100
-		2643 = 100
-		#
-		2642 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2208 = 100
+		# 2215 = 100
+		# 2216 = 100
+		# 2627 = 100
+		# 2643 = 100
+		
+		# 2642 = 100
+	# }
+# }

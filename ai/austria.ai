@@ -21,8 +21,8 @@ use_offensive_supply = yes
 claim_acceptance = -49
 
 combat = { }
-befriend = { GER = 100 LIT = 75 U14 = 25 USA = 50 VIN = 50 SCH = 50 SCA = 50 U02 = 25 EGY = 50 }
-protect = { GER = 100 LIT = 75 SCA = 25 USA = 25 CAN = 15 U02 = 25 U14 = 25 EGY = 50 }
+befriend = { GER = 100 LIT = 50 U14 = 25 USA = 50 CAN = 50 SCH = 50 SCA = 50 U02 = 25 EGY = 50 }
+protect = { GER = 100 LIT = 50 SCA = 25 USA = 25 CAN = 15 U02 = 25 U14 = 25 EGY = 50 }
 target = { 
 	338 = 10 #Belgrad
 	355 = 10 #Sarajevo

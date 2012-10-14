@@ -11,7 +11,7 @@ war = 0
 claim_acceptance = -49
 
 combat = { }
-befriend = { U03 = 50 GER = 100 AUS = 100 FIN = 50 ENG = 25 LIT = 50 CAN = 25 EGY = 25 CAN = 50 USA = 25 LIB = 25 }
+befriend = { U03 = 50 GER = 100 AUS = 100 FIN = 50 ENG = 25 LIT = 50 EGY = 25 CAN = 50 USA = 25 LIB = 25 }
 protect = { U03 = 50 GER = 25 AUS = 25 EGY = 10 USA = 15 LIT = 25 U14 = 15 }
 target = { } 
 demand_claims = { }

@@ -18,13 +18,13 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		995 = 100
+		995 = 100 #azores
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2288 = 100 }
-}
+#admiral = { 
+#	ignore = { }
+#	base = { }
+#	core = {  }
+#	target = { 2288 = 100 }
+#}

@@ -61,10 +61,6 @@ country =
 		1872 1873 1874 1875 1876 1877
 		#oregon
 		1878 1879 1880 1881 1882
-		#washington
-		1872 1873 1874 1875 1876 1877
-		#oregon
-		1878 1879 1880 1881 1882
 		#new mexico
 		1903 1904 1905 1906
 		#idaho
@@ -330,7 +326,7 @@ country =
 	3420 #Med Range Sub
 	3430 #Long Range Sub
 	
-	12100 12110 #CVL
+	12100 12110 12120 #CVL
 	4900 4910 #CAG
 	3810 #Troopship
   }
@@ -1036,9 +1032,9 @@ country =
     division =
     { id     = { type = 10500 id = 805 }
       name   = "MSS Lqizt"
-      type   = escort_carrier
-      model  = 1
-      extra  = naval_torpedoes_s
+      type   = light_carrier
+      model  = 0
+      extra  = light_cag
       brigade_model = 2
     }
     division =
@@ -1240,9 +1236,9 @@ country =
     division =
     { id     = { type = 10500 id = 783 }
       name   = "MSS Dafi"
-      type   = escort_carrier
+      type   = light_carrier
       model  = 0
-      extra  = naval_torpedoes_s
+      extra  = light_cag
       brigade_model = 2
     }
     division =

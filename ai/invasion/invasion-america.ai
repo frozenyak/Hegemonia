@@ -26,26 +26,26 @@ invasion = {
 		1949 = 100 #Orlando
 		1953 = 100 #Miami
 		#
-		2131 = 100
-		2132 = 100
+		2131 = 100 #Moncton
+		2132 = 100 #halifax
 	} 
 } 
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 
-		2323 = 100 
-		2321 = 100 
-		2315 = 100 
-		2316 = 100
-		2336 = 100
-		2319 = 100
-		2320 = 100
-		2322 = 100
-		2325 = 100
-		2327 = 100
-		2326 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = { 
+		# 2323 = 100 #coast long island
+		# 2321 = 100 #chesapeake bay
+		# 2315 = 100 #blake plateau
+		# 2316 = 100 #florida coast
+		# 2336 = 100 #apalache bay
+		# #2319 = 100 #south hatteras
+		# #2320 = 100 #bahamas archipelago
+		# #2322 = 100 #north hatteras plain
+		# 2325 = 100 #bay of fundy
+		# #2327 = 100 #gulf of maine
+		# 2326 = 100 #coast nova scotia
+	# }
+# }

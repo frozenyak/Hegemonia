@@ -1,112 +1,134 @@
+# BRIG_MODEL_1_
+
 # 0 - Great War Light Field Artillery 1911
 model = {
-	cost 				= 3
-	buildtime	 		= 70
-	manpower 			= 1.5
-	defensiveness 		= 1
-	maxspeed 			= 0
+	cost 				= 5
+	buildtime	 		= 110
+	manpower 			= 3
+	defensiveness 		= -3
+	maxspeed 			= -1
 	softattack			= 1
-	hardattack			= 1
-	defaultorganisation	= 4
-	supplyconsumption 	= 0.3
+	hardattack			= 0
+	supplyconsumption 	= 0.24
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 16
+	equipment = { manpower = 3000 horses = 780 artillery = 22 }
 }
-# 1 - Great War Medium Field Artillery 1914
+
+# 1 - Great War Medium Field Artillery (1914)
 model = {
-	cost 				= 3
-	buildtime	 		= 80
-	manpower 			= 1.5
-	defensiveness 		= 1
-	maxspeed 			= 0
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= -3
+	maxspeed 			= -1
+	softness			= -5
+	softattack			= 1
+	hardattack			= 0
+	supplyconsumption 	= 0.32
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	speed_cap			= 16
+	equipment = { manpower = 3000 horses = 780 artillery = 42 }
+}
+
+# 2 - Great War Heavy Field Artillery (1916) 
+model = {
+	cost 				= 6
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= -3
+	maxspeed 			= -1
+	softness			= -5
 	softattack			= 2
-	hardattack			= 1
-	defaultorganisation	= 4
-	supplyconsumption 	= 0.33
+	hardattack			= 0
+	supplyconsumption 	= 0.44
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 16
+	equipment = { manpower = 3000 horses = 780 artillery = 48 }
 }
-# 2 - Great War Heavy Field Artillery 1916
+# 3 - Early Field Artillery  (1936)
 model = {
-	cost 				= 4.5
-	buildtime	 		= 100
-	manpower 			= 1.5
-	defensiveness 		= 2
-	maxspeed 			= 0
-	softattack			= 3
-	hardattack			= 1
-	defaultorganisation	= 4
-	supplyconsumption 	= 0.36
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
-# 3 - Early Field Artillery 1936
-model = {
-	cost 				= 3.5
-	buildtime	 		= 80
-	manpower 			= 1.5
-	defensiveness 		= 3
-	maxspeed 			= 0
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= -3
+	maxspeed 			= -1
+	softness			= -10
 	softattack			= 4
-	hardattack			= 1
-	defaultorganisation	= 4
-	supplyconsumption 	= 0.39
+	hardattack			= 2
+	supplyconsumption 	= 0.55
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 16
+	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 # 4 - Basic Field Artillery 1938
 model = {
-	cost 				= 3.5
-	buildtime	 		= 80
-	manpower 			= 1.5
-	defensiveness 		= 4
-	maxspeed 			= 0
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= -3
+	maxspeed 			= -1
+	softness			= -10
 	softattack			= 5
 	hardattack			= 2
-	defaultorganisation	= 4
-	supplyconsumption 	= 0.42
+	supplyconsumption 	= 0.55
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 16
+	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
+
 # 5 - Improved Field Artillery 1940
 model = {
-	cost 				= 4
-	buildtime	 		= 90
-	manpower 			= 1.5
-	defensiveness 		= 5
-	maxspeed 			= 0
+	cost 				= 6
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= -3
+	maxspeed 			= -1
+	softness			= -10
 	softattack			= 6
-	hardattack			= 3
-	defaultorganisation	= 8
-	supplyconsumption 	= 0.45
+	hardattack			= 2
+	supplyconsumption 	= 0.60
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 16
+	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
+
 # 6 - Advanced Field Artillery 1943
 model = {
-	cost 				= 4
-	buildtime	 		= 90
-	manpower 			= 1.5
-	defensiveness 		= 6
-	maxspeed 			= 0
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= -3
+	maxspeed 			= -1
+	softness			= -10
 	softattack			= 7
-	hardattack			= 4
-	defaultorganisation	= 8
-	supplyconsumption	= 0.48
+	hardattack			= 2
+	supplyconsumption	= 0.65
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 30
+	equipment = { manpower = 3000 trucks = 668 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
+
 # 7 - Semi-Modern Field Artillery 1945
 model = {
-	cost 				= 4.5
-	buildtime	 		= 90
-	manpower 			= 1.5
-	defensiveness 		= 7
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= -3
 	maxspeed 			= 0
-	softattack			= 8
-	hardattack			= 5
-	defaultorganisation	= 10
-	supplyconsumption 	= 0.51
+	softness			= -10
+	softattack			= 7
+	hardattack			= 3
+	supplyconsumption 	= 0.65
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 30
+	equipment = { manpower = 3000 trucks = 680 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }

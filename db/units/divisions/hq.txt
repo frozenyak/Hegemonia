@@ -1,3 +1,5 @@
+# MODEL_10_
+
 #allowed_brigades =  artillery
 #allowed_brigades =  anti_tank		
 allowed_brigades =  anti_air		
@@ -9,113 +11,108 @@ allowed_brigades =  anti_air
 #allowed_brigades =  heavy_armor	
 #allowed_brigades =  super_heavy_armor
 #allowed_brigades =  armored_car
-#allowed_brigades =  engineer			
+#allowed_brigades =  engineer
 allowed_brigades =  police
 
 # 0 - Basic HQ Division (1918)
 model = {
-	cost 					= 16
-	buildtime	 			= 270
-	manpower 				= 18.7
-	maxspeed 				= 2
-	defaultorganisation 	= 30
+	cost 					= 8
+	buildtime	 			= 290
+	manpower 				= 5
+	maxspeed 				= 6
+	defaultorganisation		= 5
 	morale					= 30
-	defensiveness 			= 50
-	toughness				= 20
+	defensiveness 			= 10
+	toughness				= 30
 	softness				= 100
 	suppression				= 2
 	airdefence				= 3
-	softattack			= 4
-	hardattack				= 1
+	softattack				= 0
+	hardattack				= 0
 	airattack				= 1
-	transportweight			= 10
-	supplyconsumption 		= 0.5
+	transportweight			= 15
+	supplyconsumption 		= 1.8
 	fuelconsumption			= 0
-	speed_cap_art			= 2
-	speed_cap_at			= 2
-	speed_cap_aa			= 2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 0.5
-}
-# 1 - Improved HQ Division (1939) #Motorized/Mechanized
-model = {
-	cost 					= 18
-	buildtime	 			= 250
-	manpower 				= 19
-	maxspeed 				= 4 #5
-	defaultorganisation 	= 30
-	morale					= 30
-	defensiveness 			= 50
-	toughness				= 20
-	softness				= 95
-	suppression				= 2
-	airdefence				= 4
-	softattack				= 9
-	hardattack				= 2
-	airattack				= 3
-	transportweight			= 10
-	supplyconsumption 		= 1.0
-	fuelconsumption			= 2
-	speed_cap_art			= 5
-	speed_cap_at			= 5
-	speed_cap_aa			= 5
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 0.5
-}
-# 2 - Advanced HQ Division (1943) #Armoured/Mechanized
-model = {
-	cost 					= 21
-	buildtime	 			= 270 #200
-	manpower 				= 19
-	maxspeed 				= 4 #10
-	defaultorganisation 	= 30
-	morale					= 30
-	defensiveness 			= 60
-	toughness				= 30
-	softness				= 90
-	suppression				= 2
-	airdefence				= 5
-	softattack				= 12
-	hardattack				= 4
-	airattack				= 4
-	transportweight			= 10
-	supplyconsumption 		= 1.5
-	fuelconsumption			= 4
-	speed_cap_art			= 10
-	speed_cap_at			= 10
-	speed_cap_aa			= 10
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 0.5
+	equipment = { manpower = 5000 }
 }
 
-# Enabled by and disabling the previous model (HQ model 2)
+# 1 - Improved HQ Division (1939) #Motorized/Mechanized
+model = {
+	cost 					= 9
+	buildtime	 			= 260
+	manpower 				= 5
+	maxspeed 				= 14
+	defaultorganisation		= 5
+	morale					= 30
+	defensiveness 			= 10
+	toughness				= 10
+	softness				= 82
+	suppression				= 2
+	airdefence				= 4
+	softattack				= 0
+	hardattack				= 0
+	airattack				= 3
+	transportweight			= 35
+	supplyconsumption 		= 2.4
+	fuelconsumption			= 4.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	equipment = { manpower = 5000 trucks = 250 halftracks = 250 }
+}
+
+# 2 - Advanced HQ Division (1943) #Armoured/Mechanized
+model = {
+	cost 					= 10
+	buildtime 				= 260
+	manpower				= 4
+	maxspeed 				= 16
+	defaultorganisation		= 5
+	morale					= 30
+	defensiveness 			= 8
+	toughness				= 8
+	softness				= 64
+	suppression				= 2
+	airdefence				= 5
+	softattack				= 0
+	hardattack				= 0
+	airattack				= 4
+	transportweight			= 35
+	supplyconsumption 		= 1.4
+	fuelconsumption			= 5 
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 }
+}
+
+#######################################################################
 # Modern Blitzkrieg (14100)
 # Assualt Concentration Doctrine (14070)
 # Mechanized Wave (14060)
 # Air Land Battle (14050)
 #######################################################################
+
 # 3 - Modern HQ Division (1946)
 model = {
-	cost 			= 27 #25
-	buildtime 		= 200
-	manpower 		= 19
-	maxspeed 		= 4 #10
-	defaultorganisation = 30
-	morale			= 30
-	defensiveness 		= 70
-	toughness		= 40
-	softness		= 85
-	suppression		= 2
-	airdefence 		= 6
-	softattack 		= 14
-	hardattack 		= 5
-	airattack 		= 4
-	transportweight		= 10
-	supplyconsumption 	= 2.0
-	fuelconsumption		= 4
-	speed_cap_art		= 10
-	speed_cap_at		= 10
-	speed_cap_aa		= 10
+	cost					= 10
+	buildtime				= 260
+	manpower				= 5
+	maxspeed				= 20
+	defaultorganisation		= 5
+	morale 					= 30
+	defensiveness 			= 6
+	toughness 				= 6
+	softness 				= 60
+	suppression 			= 2
+	airdefence				= 6
+	softattack				= 0
+	hardattack				= 0
+	airattack				= 4
+	transportweight			= 35
+	supplyconsumption		= 2.8
+	fuelconsumption			= 5 
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 }
 }

@@ -1,17 +1,19 @@
-# 0 - Troopship 1914
+# MODEL_30_
+
+# 0 - Troopship (1914)
 model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
 	morale						= 20
 	manpower					= 0.1
-	maxspeed					= 28
+	maxspeed					= 12
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
 	visibility					= 30
-	seadefence					= 2
-	airdefence					= 0
+	seadefence					= 38
+	airdefence					= 30
 	seaattack					= 0
 	convoyattack				= 0
 	airattack					= 0
@@ -21,22 +23,24 @@ model = {
 	range						= 2000
 	supplyconsumption			= 0.3
 	fuelconsumption				= 1
-	distance					= 0.01 #0.1
+	distance					= 0.1
+	equipment = { transport = 1 manpower = 100 }
 }
-# 1 - Troopship 1925
+
+# 1 - Troopship (1925)
 model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
 	morale						= 20
 	manpower					= 0.1
-	maxspeed					= 29
+	maxspeed					= 15
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
 	visibility					= 30
-	seadefence					= 3
-	airdefence					= 0
+	seadefence					= 37
+	airdefence					= 30
 	seaattack					= 0
 	convoyattack				= 0
 	airattack					= 0
@@ -46,22 +50,24 @@ model = {
 	range						= 3000
 	supplyconsumption			= 0.3
 	fuelconsumption				= 1
-	distance					= 0.001 #0.1
+	distance					= 0.1
+	equipment = { transport = 1 manpower = 100 }
 }
-# 2 - Troopship 1936
+
+# 2 - Troopship (1936)
 model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
 	morale						= 20
 	manpower					= 0.1
-	maxspeed					= 29
+	maxspeed					= 18
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
 	visibility					= 30
-	seadefence					= 4
-	airdefence					= 2
+	seadefence					= 36
+	airdefence					= 28
 	seaattack					= 0
 	convoyattack				= 0
 	airattack					= 0
@@ -71,22 +77,24 @@ model = {
 	range						= 4500
 	supplyconsumption			= 0.4
 	fuelconsumption				= 1.2
-	distance					= 0.001 #0.1
+	distance					= 0.1
+	equipment = { transport = 1 manpower = 100 }
 }
-# 3 - Troopship 1941
+
+# 3 - Troopship (1941)
 model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
 	morale						= 20
 	manpower					= 0.1
-	maxspeed					= 30
+	maxspeed					= 20
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
 	visibility					= 30
-	seadefence					= 6
-	airdefence					= 3
+	seadefence					= 34
+	airdefence					= 27
 	seaattack					= 0
 	convoyattack				= 0
 	airattack					= 2
@@ -96,22 +104,24 @@ model = {
 	range						= 6000
 	supplyconsumption			= 0.4
 	fuelconsumption				= 1.2
-	distance					= 0.001 #0.1
+	distance					= 0.1
+	equipment = { transport = 1 manpower = 100 }
 }
-# 4 - Troopship 1949
+
+# 4 - Troopship (1949)
 model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
 	morale						= 20
 	manpower					= 0.1
-	maxspeed					= 31
+	maxspeed					= 21
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
 	visibility					= 30
-	seadefence					= 7
-	airdefence					= 4
+	seadefence					= 33
+	airdefence					= 26
 	seaattack					= 0
 	convoyattack				= 0
 	airattack					= 2
@@ -121,22 +131,24 @@ model = {
 	range						= 8000
 	supplyconsumption			= 0.5
 	fuelconsumption				= 1.4
-	distance					= 0.001 #0.1
+	distance					= 0.1
+	equipment = { transport = 1 manpower = 100 }
 }
-# 5 - Troopship 1955
+
+# 5 - Troopship (1955)
 model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
 	morale						= 20
 	manpower					= 0.1
-	maxspeed					= 32
+	maxspeed					= 22
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
 	visibility					= 30
-	seadefence					= 8
-	airdefence					= 5
+	seadefence					= 32
+	airdefence					= 25
 	seaattack					= 0
 	convoyattack				= 0
 	airattack					= 2
@@ -146,5 +158,6 @@ model = {
 	range						= 10000
 	supplyconsumption			= 0.5
 	fuelconsumption				= 1.5
-	distance					= 0.001 #0.1
+	distance					= 0.1
+	equipment = { transport = 1 manpower = 100 }
 }

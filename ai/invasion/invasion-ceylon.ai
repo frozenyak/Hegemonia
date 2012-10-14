@@ -18,15 +18,15 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1509 = 100
-		1510 = 100
-		1511 = 100
+		1511 = 100 #colombo
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2047 = 100 2057 = 100 }
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = { 
+		# 2628 = 100 #gulf of mannar 
+	# }
+# }

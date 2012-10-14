@@ -454,7 +454,7 @@ garrison = {
 	overseas_multiplier = 0.5
 	home_peace_cap 		= 20
 	war_zone_odds 		= 2.0
-	key_point_prio_mult	= 1.0
+	key_point_prio_mult	= 1.0 #4
 	revolt_risk_mult	= 1.0
 	reserves 		= 40
 
@@ -491,7 +491,6 @@ garrison = {
 	}
 	area_multiplier = {
 	}
-	key_point_prio_mult = 4
 }
 front = { 
 	recklessness 		= 2 #1 # 0-3

@@ -18,14 +18,16 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		187 = 100
-		154 = 100
+		1191 = 100 #vladivostok
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2191 = 100 2218 = 100 2219 = 100 2226 = 100 2223 = 100 }
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = { 
+		# 2496 = 100 #east korean bay 
+		# 2493 = 100 #sikhote alin coast
+	# }
+# }

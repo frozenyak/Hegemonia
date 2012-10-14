@@ -407,9 +407,9 @@ country =
     division =
     { id     = { type = 10500 id = 651 }
       name   = "HKMS Kronan"
-      type   = escort_carrier
+      type   = light_carrier
       model  = 1
-      extra  = naval_torpedoes_s
+      extra  = light_cag
       brigade_model = 2
     }
     division =

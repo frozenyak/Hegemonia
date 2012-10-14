@@ -81,12 +81,15 @@ technology =
     effects =
     { command = { type = enable_task which = naval_port_strike }
       command = { type = enable_task which = naval_airbase_strike }
-      command = { type = max_positioning which = escort_carrier value = 0.4 }
-      command = { type = min_positioning which = escort_carrier value = 0.15 }
-      command = { type = max_organization which = escort_carrier value = 10 }
       command = { type = min_positioning which = carrier value = 0.15 }
       command = { type = max_positioning which = carrier value = 0.4 }
       command = { type = max_organization which = carrier value = 10 }
+      command = { type = max_positioning which = light_carrier value = 0.4 }
+      command = { type = min_positioning which = light_carrier value = 0.15 }
+      command = { type = max_organization which = light_carrier value = 10 }
+      command = { type = max_positioning which = escort_carrier value = 0.4 }
+      command = { type = min_positioning which = escort_carrier value = 0.15 }
+      command = { type = max_organization which = escort_carrier value = 10 }
     }
   }
   # Fleet Auxiliary Submarine Doctrine
@@ -299,6 +302,10 @@ technology =
 	  command = { type = max_positioning which = escort_carrier value = 0.05 }
       command = { type = min_positioning which = escort_carrier value = 0.05 }
       command = { type = max_organization which = escort_carrier value = 8 }
+	  
+	  command = { type = max_positioning which = light_carrier value = 0.05 }
+      command = { type = min_positioning which = light_carrier value = 0.05 }
+      command = { type = max_organization which = light_carrier value = 8 }
 
 	  command = { type = task_efficiency which = naval_scramble 	 value = 0.15 }
     }
@@ -328,6 +335,8 @@ technology =
       command = { type = min_positioning which = carrier value = 0.1 }
 	  command = { type = max_positioning which = escort_carrier value = 0.1 }
       command = { type = min_positioning which = escort_carrier value = 0.1 } 
+	  command = { type = max_positioning which = light_carrier value = 0.1 }
+      command = { type = min_positioning which = light_carrier value = 0.1 } 
       command = { type = max_positioning which = heavy_cruiser value = 0.05 }
       command = { type = min_positioning which = heavy_cruiser value = 0.05 }
       command = { type = max_positioning which = light_cruiser value = 0.05 }
@@ -598,6 +607,7 @@ technology =
 	  command = { type = max_organization which = battleship    value = 15 }
 	  command = { type = max_organization which = carrier       value = 15 }
       command = { type = max_organization which = escort_carrier value = 15 }
+      command = { type = max_organization which = light_carrier value = 15 }
 	  command = { type = max_organization which = destroyer     value = 15 }
 	  command = { type = max_organization which = transport     value = 15 }
 	  command = { type = max_organization which = heavy_cruiser value = 15 }
@@ -637,6 +647,7 @@ technology =
       command = { type = morale which = naval value = 25 }
 
       command = { type = max_organization which = escort_carrier value = 15 }
+      command = { type = max_organization which = light_carrier value = 15 }
     }
   }
   # Decisive Interdiction Doctrine
@@ -668,6 +679,7 @@ technology =
 	  command = { type = max_organization which = light_cruiser value = 15 }
 
       command = { type = max_organization which = escort_carrier value = 15 }
+      command = { type = max_organization which = light_carrier value = 15 }
       command = { type = morale which = naval value = 25 }
 
 	  command = { type = task_efficiency which = naval_scramble  value = 0.10 }
@@ -707,6 +719,8 @@ technology =
 
       command = { type = max_positioning which = escort_carrier value = 0.1 }
       command = { type = min_positioning which = escort_carrier value = 0.1 }
+      command = { type = max_positioning which = light_carrier value = 0.1 }
+      command = { type = min_positioning which = light_carrier value = 0.1 }
 
 
       command = { type = snow_attack which = battleship value = 5 }
@@ -766,14 +780,26 @@ technology =
       command = { type = max_positioning which = escort_carrier value = 0.1 }
       command = { type = min_positioning which = escort_carrier value = 0.1 }
       command = { type = max_organization which = escort_carrier value = 10 }
+	  
+      command = { type = max_positioning which = light_carrier value = 0.1 }
+      command = { type = min_positioning which = light_carrier value = 0.1 }
+      command = { type = max_organization which = light_carrier value = 10 }
+	  
       command = { type = snow_attack which = carrier value = 5 }
       command = { type = rain_attack which = carrier value = 5 }
       command = { type = night_attack which = carrier value = 5 }
       command = { type = night_defense which = carrier value = 5 }
+	  
       command = { type = snow_attack which = escort_carrier value = 5 }
       command = { type = rain_attack which = escort_carrier value = 5 }
       command = { type = night_attack which = escort_carrier value = 5 }
       command = { type = night_defense which = escort_carrier value = 5 }
+	  
+      command = { type = snow_attack which = light_carrier value = 5 }
+      command = { type = rain_attack which = light_carrier value = 5 }
+      command = { type = night_attack which = light_carrier value = 5 }
+      command = { type = night_defense which = light_carrier value = 5 }
+	  
       command = { type = task_efficiency which = naval_port_strike value = 0.1 }
       command = { type = task_efficiency which = naval_airbase_strike value = 0.1 }
 
@@ -806,6 +832,7 @@ technology =
       command = { type = convoy_def_eff value = 0.1 }
 
       command = { type = max_organization which = escort_carrier value = 15 }
+      command = { type = max_organization which = light_carrier value = 15 }
     }
   }
   # Integrated Convoy Defence Doctrine
@@ -865,6 +892,9 @@ technology =
 
       command = { type = max_positioning which = escort_carrier value = 0.05 }
       command = { type = min_positioning which = escort_carrier value = 0.05 }
+	  
+      command = { type = max_positioning which = light_carrier value = 0.05 }
+      command = { type = min_positioning which = light_carrier value = 0.05 }
 
       command = { type = snow_attack which = destroyer value = 5 }
       command = { type = rain_attack which = destroyer value = 5 }
@@ -1000,6 +1030,8 @@ technology =
 	command = { type = max_organization which = destroyer     value = 5 }
 
       command = { type = max_organization which = escort_carrier value = 15 }
+      command = { type = max_organization which = light_carrier value = 15 }
+	  
 	  command = { type = morale which = naval value = 20 }
 	  command = { type = task_efficiency which = naval_port_strike value = 0.05  }
 	  command = { type = task_efficiency which =  naval_airbase_strike value = 0.05  }
@@ -1035,6 +1067,7 @@ technology =
 	  command = { type = max_organization which = destroyer value = 5 }
 
       command = { type = max_organization which = escort_carrier value = 15 }
+      command = { type = max_organization which = light_carrier value = 15 }
 
       command = { type = morale which = naval value = 20 }
       command = { type = task_efficiency which = naval_port_strike value = 0.05 }
@@ -1065,6 +1098,7 @@ technology =
 	  command = { type = max_organization which = battleship    value = 20 }
 	  command = { type = max_organization which = carrier       value = 15 }
 	  command = { type = max_organization which = escort_carrier value = 15 }
+	  command = { type = max_organization which = light_carrier value = 15 }
 	  command = { type = max_organization which = transport     value = 20 }
 	  command = { type = max_organization which = light_cruiser value = 20 }
 	  command = { type = max_organization which = heavy_cruiser value = 20 }
@@ -1108,6 +1142,11 @@ technology =
       command = { type = rain_attack which = escort_carrier value = 5 }
       command = { type = night_attack which = escort_carrier value = 5 }
       command = { type = night_defense which = escort_carrier value = 5 }
+	  
+	  command = { type = snow_attack which = light_carrier value = 5 }
+      command = { type = rain_attack which = light_carrier value = 5 }
+      command = { type = night_attack which = light_carrier value = 5 }
+      command = { type = night_defense which = light_carrier value = 5 }
     }
   }
   # Carrier Warfare Doctrine
@@ -1137,6 +1176,13 @@ technology =
       command = { type = min_positioning which = light_cruiser value = 0.1 }
 	  command = { type = max_positioning which = escort_carrier value = 0.1 }
 	  command = { type = min_positioning which = escort_carrier value = 0.1 }
+	  
+	  command = { type = max_positioning which = light_carrier value = 0.1 }
+	  command = { type = min_positioning which = light_carrier value = 0.1 }
+	  command = { type = snow_attack which = light_carrier value = 5 }
+	  command = { type = rain_attack which = light_carrier value = 5 }
+	  command = { type = night_attack which = light_carrier value = 5 }
+	  command = { type = night_defense which = light_carrier value = 5 }
 	  
 	  command = { type = snow_attack which = escort_carrier value = 5 }
 	  command = { type = rain_attack which = escort_carrier value = 5 }
@@ -1174,6 +1220,8 @@ technology =
       command = { type = min_positioning which = carrier value = 0.1 }
 	  command = { type = max_positioning which = escort_carrier value = 0.1 }
       command = { type = min_positioning which = escort_carrier value = 0.1 }
+	  command = { type = max_positioning which = light_carrier value = 0.1 }
+      command = { type = min_positioning which = light_carrier value = 0.1 }
     }
   }
   # # Amphibious Operations Doctrine

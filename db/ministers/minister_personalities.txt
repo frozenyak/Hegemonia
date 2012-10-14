@@ -52,17 +52,36 @@
 #				/ transport_plane / flying_bomb / flying_rocket / battleship /light_cruiser
 #				/ heavy_cruiser / battlecruiser / destroyer (used also for convoy escorts) / carrier
 #				/ escort_carrier / submarine / nuclear_submarine / transport (used also for convoy transports)
+#				/ light_carrier / rocket_interceptor
+#				/ d_rsv_33 / d_rsv_34 / d_rsv_35 / d_rsv_36 / d_rsv_37 / d_rsv_38 / d_rsv_39 / d_rsv_40
+#				/ d_01 / d_02 / d_03 / d_04 / d_05 / d_06 / d_07 / d_08 / d_09 / d_10 / d_11 / d_12 / d_13 / d_14 / d_15 / d_16
+#				/ d_17 / d_18 / d_19 / d_20 / d_21 / d_22 / d_23 / d_24 / d_25 / d_26 / d_27 / d_28 / d_29 / d_30 / d_31 / d_32
+#				/ d_33 / d_34 / d_35 / d_36 / d_37 / d_38 / d_39 / d_40 / d_41 / d_42 / d_43 / d_44 / d_45 / d_46 / d_47 / d_48
+#				/ d_49 / d_50 / d_51 / d_52 / d_53 / d_54 / d_55 / d_56 / d_57 / d_58 / d_59 / d_60 / d_61 / d_62 / d_63 / d_64
+#				/ d_65 / d_66 / d_67 / d_68 / d_69 / d_70 / d_71 / d_72 / d_73 / d_74 / d_75 / d_76 / d_77 / d_78 / d_79 / d_80
+#				/ d_81 / d_82 / d_83 / d_84 / d_85 / d_86 / d_87 / d_88 / d_89 / d_90 / d_91 / d_92 / d_93 / d_94 / d_95 / d_96
+#				/ d_97 / d_98 / d_99
 #			when = all (default - means both cost and time bonus) / time / cost / organisation / morale
 #				/ attack / defence / speed (only for land units, no "which")
 #			value = (-)x.xxxx - Negative values are bonuses for time and cost, positive - for the rest.
 #
 #	  extra - various bonuses to brigades
 #			which = all (default)/ land / navy / air / artillery / sp_artillery / rocket_artillery
-#				/ sp_rct_artillery / anti_tank / tank_destroyer / light_armor_brigade / heavy_armor
+#				/ sp_rct_artillery / anti_tank / tank_destroyer / light_armor_brigade / heavy_armor#				/ sp_anti_air / medium_armor / cavalry_brigade
 #				/ super_heavy_armor / armored_car / anti_air / police / engineer / cag / escort
 #				/ naval_asw / naval_anti_air_s / naval_radar_s / naval_fire_controll_s / naval_improved_hull_s
 #				/ naval_torpedoes_s / naval_anti_air_l / naval_radar_l / naval_fire_controll_l
 #				/ naval_improved_hull_l / naval_torpedoes_l
+#				/ cavalry_brigade / sp_anti_air / medium_armor / floatplane
+#				/ light_cag / amph_armor / glider_armor / glider_artillery / super_heavy_artillery  
+#				/ b_rsv_36 / b_rsv_37 / b_rsv_38 / b_rsv_39 / b_rsv_40
+#				/ b_01 / b_02 / b_03 / b_04 / b_05 / b_06 / b_07 / b_08 / b_09 / b_10 / b_11 / b_12 / b_13 / b_14 / b_15 / b_16
+#				/ b_17 / b_18 / b_19 / b_20 / b_21 / b_22 / b_23 / b_24 / b_25 / b_26 / b_27 / b_28 / b_29 / b_30 / b_31 / b_32
+#				/ b_33 / b_34 / b_35 / b_36 / b_37 / b_38 / b_39 / b_40 / b_41 / b_42 / b_43 / b_44 / b_45 / b_46 / b_47 / b_48
+#				/ b_49 / b_50 / b_51 / b_52 / b_53 / b_54 / b_55 / b_56 / b_57 / b_58 / b_59 / b_60 / b_61 / b_62 / b_63 / b_64
+#				/ b_65 / b_66 / b_67 / b_68 / b_69 / b_70 / b_71 / b_72 / b_73 / b_74 / b_75 / b_76 / b_77 / b_78 / b_79 / b_80
+#				/ b_81 / b_82 / b_83 / b_84 / b_85 / b_86 / b_87 / b_88 / b_89 / b_90 / b_91 / b_92 / b_93 / b_94 / b_95 / b_96
+#				/ b_97 / b_98 / b_99
 #			when = all (default - means both cost and time bonus) / time / cost / organisation / morale / attack / defence
 #			value = (-)x.xxxx - Negative values are bonuses for time and cost, positive - for the rest.
 #
@@ -1620,11 +1639,205 @@
 		command		= { type = stockpile value = -0.1000 }
 	}
 
+	#new generic traits
+	minister =  { 
+		trait		= "Planned economy proponent"
+		id			= 106
+		name		= NPERSONALITY_PLANNED_ECONOMY_PROPONENT
+		desc		= DPERSONALITY_PLANNED_ECONOMY_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = consumer value = 0.0500 } 
+		command		= { type = province which = ic value = -0.1000 } 
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }		
+	}
+	minister =  { 
+		trait		= "Keynesian economy"
+		id			= 107
+		name		= NPERSONALITY_KEYNESIAN
+		desc		= DPERSONALITY_KEYNESIAN
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = money value = 0.1500 }
+		command		= { type = production which = consumer value = -0.1000 } 
+		command		= { type = province which = ic value = 0.1000 } 
+		command		= { type = production which = production value = -0.0500 }
+		command		= { type = resource which = energy value = -0.0500 }
+		command		= { type = resource which = metal value = -0.0500 }
+		command		= { type = resource which = rare_materials value = -0.0500 }		
+	}
+	minister =  { 
+		trait		= "Reformer"
+		id			= 108
+		name		= NPERSONALITY_REFORMER
+		desc		= DPERSONALITY_REFORMER
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = upgrading value = -0.0700 }
+		command		= { type = production which = production value = -0.0100 }
+		command		= { type = resource which = energy value = -0.0100 }
+		command		= { type = resource which = metal value = -0.0100 }
+		command		= { type = resource which = rare_materials value = -0.0100 }		
+	}
+	minister =  { 
+		trait		= "Construction magnate"
+		id			= 109
+		name		= NPERSONALITY_CONSTRUCTION_MAGNATE
+		desc		= DPERSONALITY_CONSTRUCTION_MAGNATE
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = province which = infra value = -0.1500 }
+		command		= { type = province which = air_base value = -0.1500 }
+		command		= { type = province which = naval_base value = -0.1500 }	
+		command		= { type = province which = radar_station value = -0.1500 }
+	}
+	minister =  { 
+		trait		= "Balanced budget economy"
+		id			= 110
+		name		= NPERSONALITY_BUDGET
+		desc		= DPERSONALITY_BUDGET
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = money value = -0.1000 }
+		command		= { type = production which = consumer value = 0.0200 } 
+		command		= { type = production which = production value = 0.0300 }
+		command		= { type = resource which = energy value = 0.0300 }
+		command		= { type = resource which = metal value = 0.0300 }
+		command		= { type = resource which = rare_materials value = 0.0300 }		
+	}
+	minister =  { 
+		trait		= "Mixed economy"
+		id			= 111
+		name		= NPERSONALITY_MIXED
+		desc		= DPERSONALITY_MIXED
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = consumer value = 0.0500 } 
+		command		= { type = province which = ic value = -0.1000 } 
+		command		= { type = production which = production value = 0.0300 }
+		command		= { type = resource which = energy value = 0.0300 }
+		command		= { type = resource which = metal value = 0.0300 }
+		command		= { type = resource which = rare_materials value = 0.0300 }		
+	}
+	minister =  { 
+		trait		= "Health and safety"
+		id			= 112
+		name		= NPERSONALITY_HEALTH
+		desc		= DPERSONALITY_HEALTH
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = consumer value = 0.1500 }
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = production which = production value = 0.0200 }
+		command		= { type = resource which = energy value = 0.0200 }
+		command		= { type = resource which = metal value = 0.0200 }
+		command		= { type = resource which = rare_materials value = 0.0200 }
+		command		= { type = populationgrowth value = 0.0200 }
+	}
+	minister =  { 
+		trait		= "Secret police chief"
+		id			= 113
+		name		= NPERSONALITY_POLICE
+		desc		= DPERSONALITY_POLICE
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = consumer value = 0.0500 }
+		command		= { type = unit which = garrison value = -0.0500 }
+		command		= { type = extra which = police value = -0.0500 }
+		command		= { type = dissent value = -0.0750 }
+	}
+	minister =  { 
+		trait		= "commando doctrine staff"
+		id			= 114
+		name		= NPERSONALITY_COMMANDO_DOCTRINE
+		desc		= DPERSONALITY_COMMANDO_DOCTRINE_STAFF
+		position	= ChiefOfStaff 
+		value		= 0
+		command		= { type = unit when = organisation which = bergsjaeger value = 0.0500 }
+		command		= { type = unit when = organisation which = paratrooper value = 0.0500 }
+		command		= { type = unit when = organisation which = marine value = 0.0500 }
+		command		= { type = unit when = morale which = bergsjaeger value = 0.0300 }
+		command		= { type = unit when = morale which = paratrooper value = 0.0300 }
+		command		= { type = unit when = morale which = marine value = 0.0300 }
+	}
+	minister =  { 
+		trait		= "commando doctrine army"
+		id			= 115
+		name		= NPERSONALITY_COMMANDO_DOCTRINE
+		desc		= DPERSONALITY_COMMANDO_DOCTRINE_ARMY
+		position	= chiefofarmy
+		value		= 0
+		command		= { type = unit which = bergsjaeger value = -0.0500 }
+		command		= { type = unit which = paratrooper value = -0.0500 }		
+		command		= { type = unit which = marine value = -0.0500 }
+		command		= { type = extra which = engineer value = -0.0300 }
+		command		= { type = unit which = bergsjaeger when = attack value = 0.0500 }
+		command		= { type = unit which = paratrooper when = attack value = 0.0500 }
+		command		= { type = unit which = marine when = attack value = 0.0500 }
+		command		= { type = extra which = engineer when = attack value = 0.0300 } 
+	}
+	minister =  { 
+		trait		= "Doctrine of autonomy"
+		id			= 116
+		name		= NPERSONALITY_AUTONOMY_DOCTRINE
+		desc		= DPERSONALITY_AUTONOMY_DOCTRINE
+		position	= ChiefOfArmy
+		value		= 0
+		command 	= { type = leader_skill value = 0.2000 }
+		command		= { type = unit when = morale value = 0.0700 }
+		
+	}
+	
+	minister =  { 
+		trait		= "Reichskommissar" 
+		id			= 117
+		name		= NPERSONALITY_REICHSKOMMISSAR
+		desc		= DPERSONALITY_REICHSKOMMISSAR
+		position	= headofstate
+		value		= 0
+		
+		command		= { type = production which = production value = -0.1000 }
+		command		= { type = resource which = energy value = 0.3000 }
+		command		= { type = resource which = metal value = 0.3000 }
+		command		= { type = resource which = rare_materials value = 0.3000 }
+		command		= { type = resource which = oil value = 0.3000 }
+		command		= { type = populationgrowth value = -0.2500 }
+		command		= { type = dissent value = 0.2500 }
+		command		= { type = research which = infantry value = -0.1500 }
+		command		= { type = research which = armor value = -0.1500 }
+		command		= { type = research which = land_doctrines value = -0.2500 }
+		command		= { type = research which = industry value = -0.2500 }
+		command		= { type = research which = aircraft value = -0.2500 }
+		command		= { type = research which = air_doctrines value = -0.2500 }
+		command		= { type = research which = naval value = -0.2500 }
+		command		= { type = research which = naval_doctrines value = -0.2500 }
+		command		= { type = research which = secret_weapons value = -0.5000 }		
+	}
+
+	minister = {
+		trait 		= "Old Lawyer"
+		id			= 13307001
+		name		= NPERSONALITY_SILENT_LAWYER
+		desc		= DPERSONALITY_SILENT_LAWYER
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = production which = consumer value = 0.1000 }
+		command		= { type = dissent value = -0.0100 }
+		command		= { type = resource which = money value = 0.0500 }
+		command		= { type = diplomacy_cost value = 0.0250 }
+		command		= { type = unit which = infantry value = 0.0500 }
+		command		= { type = unit which = militia value = 0.0500 }
+		command		= { type = unit which = garrison value = 0.0500 }
+	}
+
 #### Kaiserrerich-specific minister personalities
 
 	minister =  {
 		trait		= "mad baron" #Ungern von Sternberg (MON)
-		id			= 106
+		id			= 1106
 		name		= NPERSONALITY_MAD_BARON
 		desc		= DPERSONALITY_MAD_BARON
 		position	= headofstate
@@ -1648,7 +1861,7 @@
 
 	minister =  {
 		trait		= "radical demagogue" #Togliatti (RSI/U00), Faure (FRA/VIC)
-		id			= 108
+		id			= 1108
 		name		= NPERSONALITY_RADICAL_DEMAGOGUE
 		desc		= DPERSONALITY_RADICAL_DEMAGOGUE
 		position	= headofstate
@@ -1663,7 +1876,7 @@
 
 	minister =  {
 		trait		= "communist president" #
-		id			= 109
+		id			= 1109
 		name		= NPERSONALITY_COMMUNIST_PRESIDENT
 		desc		= DPERSONALITY_COMMUNIST_PRESIDENT
 		position	= headofstate
@@ -1680,7 +1893,7 @@
 
 	minister =  {
 		trait		= "communist chairman" #Bukharin (RUS/SOV), Foster (USA), Ulbricht DFR
-		id			= 110
+		id			= 1110
 		name		= NPERSONALITY_COMMUNIST_CHAIRMAN
 		desc		= DPERSONALITY_COMMUNIST_CHAIRMAN
 		position	= headofgovernment
@@ -1696,7 +1909,7 @@
 
 	minister =  {
 		trait		= "unpopular president" #
-		id			= 111
+		id			= 1111
 		name		= NPERSONALITY_UNPOPULAR_PRESIDENT
 		desc		= DPERSONALITY_UNPOPULAR_PRESIDENT
 		position	= headofstate
@@ -1716,7 +1929,7 @@
 
 	minister =  {
 		trait		= "ruthless dictator" #Wrangel (RUS)
-		id			= 112
+		id			= 1112
 		name		= NPERSONALITY_RUTHLESS_DICTATOR
 		desc		= DPERSONALITY_RUTHLESS_DICTATOR
 		position	= headofstate
@@ -1735,7 +1948,7 @@
 
 	minister =  {
 		trait		= "german aristocrat" # Otto (HOL), Philip V (FRA)
-		id			= 114
+		id			= 1114
 		name		= NPERSONALITY_GERMAN_ARISTOCRAT
 		desc		= DPERSONALITY_GERMAN_ARISTOCRAT
 		position	= headofstate
@@ -1754,7 +1967,7 @@
 
 	minister =  {
 		trait		= "lithuanian aristocrat" #
-		id			= 115
+		id			= 1115
 		name		= NPERSONALITY_LIT_ARISTOCRAT
 		desc		= DPERSONALITY_LIT_ARISTOCRAT
 		position	= headofstate
@@ -1772,7 +1985,7 @@
 	
 	minister =  {
 		trait		= "railroad baron" # Bergström, CAN
-		id			= 116
+		id			= 1116
 		name		= NPERSONALITY_RAILROAD
 		desc		= DPERSONALITY_RAILROAD
 		position	= ArmamentMinister

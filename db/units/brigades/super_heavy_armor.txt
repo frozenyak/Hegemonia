@@ -1,19 +1,21 @@
-# 0 - 1944
+# BRIG_MODEL_35_
+
+# 0 - WW2 Super heavy (1944)
 model = {
 	cost 				= 10
 	buildtime	 		= 180
-	manpower 			= 3.0
-	defensiveness 		= 10
-	toughness 			= 10
-	maxspeed 			= -3
-	softness			= -15
+	manpower 			= 2
+	defensiveness 		= -5
+	toughness 			= -5
+	maxspeed 			= 0
+	softness			= -10
+	defaultorganisation = 10
 	hardattack			= 10
-	softattack			= 10
-	defaultorganisation	= 10
-	supplyconsumption 	= 2.5
-	fuelconsumption		= 2.5
+	softattack			= 7
+	supplyconsumption 	= 4.6
+	fuelconsumption		= 5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	#heavy_armor			= 4		# Upgrade to 1955 Heavy Armor Brigade
-	#upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
+	speed_cap			= 17
+	equipment = { manpower = 2500 medium_armor = 84 heavy_armor = 4 }
 }

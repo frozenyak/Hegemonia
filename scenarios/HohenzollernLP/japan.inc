@@ -146,7 +146,7 @@ country =
 	3410 #Short Range Sub
 
 	3340 #CV
-	12100 12110 #CVL
+	12100 12110 12120 #CVL
 	3090 3100 #CL
 	3150 #CA
 	3420 3430 #SS
@@ -823,9 +823,9 @@ country =
     division =
     { id    = { type = 10500 id = 572 }
       name  = "IJN Ryujo"
-      type  = escort_carrier
-      model = 1
-      extra  = naval_torpedoes_s
+      type  = light_carrier
+      model = 0
+      extra  = light_cag
       brigade_model = 2
     }
   }
@@ -843,9 +843,9 @@ country =
     division =
     { id     = { type = 10500 id = 547 }
       name	= "IJN Hosho"
-      type	= escort_carrier
+      type	= light_carrier
       model	= 0
-      extra  = naval_torpedoes_s
+      extra  = light_cag
       brigade_model = 2
     }
     division =

@@ -1,181 +1,237 @@
-# 0 - 1922 Great War Carrier Air Group
+# BRIG_MODEL_14_
+
+detachable = yes
+
+# 0 - Great War Carrier Air Group (1922)
 model = {
-	cost 				= 4 #2
-	buildtime			= 190
-	manpower 			= 0.2
-	surfacedetectioncapability	= 7
-	airdetectioncapability		= 3
-	subdetectioncapability		= 2 #1
-	airdefence			= 3
-	seaattack			= 2
-	convoyattack			= 2
-	subattack			= 0
-	airattack			= 3
-	shorebombardment		= 3 #5
-	distance			= 1.0
-	supplyconsumption 		= 0.5 #0.4
-	fuelconsumption			= 1
+	cost 						= 2
+	buildtime					= 170
+	manpower 					= 0.15
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 4
+	subdetectioncapability		= 2
+	airdefence					= -12
+	seaattack					= 4
+	convoyattack				= 4
+	subattack					= 0
+	airattack					= 4
+	shorebombardment			= 4
+	distance					= 1.0
+	supplyconsumption 			= 0.4
+	fuelconsumption				= 1
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
 }
-# 1 - 1930 Early Carrier Air Group
+
+# 1 - Early Carrier Air Group (1930)
 model = {
-	cost 				= 5 #2.5
-	buildtime			= 190
-	manpower 			= 0.3
-	surfacedetectioncapability	= 9
+	cost 						= 2.5
+	buildtime					= 170
+	manpower 					= 0.15
+	surfacedetectioncapability	= 10
 	airdetectioncapability		= 4
-	subdetectioncapability		= 3 #1
-	airdefence			= 5
-	seaattack			= 4
-	convoyattack			= 4
-	subattack			= 0
-	airattack			= 6
-	shorebombardment		= 5 #7
-	distance			= 1.2
-	supplyconsumption 		= 0.55 #0.4
-	fuelconsumption			= 1
+	subdetectioncapability		= 2
+	airdefence					= -13
+	seaattack					= 8
+	convoyattack				= 8
+	subattack					= 0
+	airattack					= 6
+	shorebombardment			= 6
+	distance					= 1.2
+	supplyconsumption 			= 0.4
+	fuelconsumption				= 1
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
 }
-# 2 - 1934 Basic Carrier Air Group
+
+# 2 - Basic Carrier Air Group (1934) 
 model = {
-	cost 				= 6 #3
-	buildtime			= 190
-	manpower 			= 0.4
-	surfacedetectioncapability	= 10
-	airdetectioncapability		= 5
-	subdetectioncapability		= 4 #1
-	airdefence			= 6
-	seaattack			= 5
-	convoyattack			= 5
-	subattack			= 0
-	airattack			= 7
-	shorebombardment		= 8 #10
-	distance			= 1.4
-	supplyconsumption 		= 0.55 #0.5
-	fuelconsumption			= 1
-	upgrade_time_factor 		= 0.5
-	upgrade_cost_factor 		= 1.0
-}
-# 3 - 1937 Improved Carrier Air Group
-model = {
-	cost 				= 7 #3.5
-	buildtime			= 190
-	manpower 			= 0.5
-	surfacedetectioncapability	= 13
+	cost 						= 3
+	buildtime					= 170
+	manpower 					= 0.15
+	surfacedetectioncapability	= 12
 	airdetectioncapability		= 6
-	subdetectioncapability		= 6
-	airdefence			= 6
-	seaattack			= 6
-	convoyattack		= 6
-	subattack			= 0
-	airattack			= 7
-	shorebombardment		= 11
-	distance			= 1.6
-	supplyconsumption 		= 0.6 #0.5
-	fuelconsumption			= 1
+	subdetectioncapability		= 2
+	airdefence					= -14
+	seaattack					= 10
+	convoyattack				= 10
+	subattack					= 0
+	airattack					= 8
+	shorebombardment			= 8
+	distance					= 1.4
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
 }
-# 4 - 1940 Advanced Carrier Air Group
+
+# 3 - Improved Carrier Air Group (1937)
 model = {
-	cost 				= 8 #4
-	buildtime			= 190
-	manpower 			= 0.6
+	cost 						= 3.5
+	buildtime					= 170
+	manpower 					= 0.15
 	surfacedetectioncapability	= 14
-	airdetectioncapability		= 7
-	subdetectioncapability		= 7
-	airdefence			= 8
-	seaattack			= 8
-	convoyattack		= 8
-	subattack			= 1
-	airattack			= 8
-	shorebombardment		= 13
-	distance			= 1.8
-	supplyconsumption 		= 0.7 #0.6
-	fuelconsumption			= 1
+	airdetectioncapability		= 8
+	subdetectioncapability		= 6
+	airdefence					= -15
+	seaattack					= 12
+	convoyattack				= 12
+	subattack					= 0
+	airattack					= 10
+	shorebombardment			= 10
+	distance					= 1.6
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
 }
-# 5 - 1943 Heavy Advanced Carrier Air Group
+
+# 4 - Advanced Carrier Air Group (1940)
 model = {
-	cost 				= 9 #4.5
-	buildtime			= 190
-	manpower 			= 0.6
-	surfacedetectioncapability	= 15
-	airdetectioncapability		= 7
-	subdetectioncapability		= 7
-	airdefence			= 11
-	seaattack			= 10
-	convoyattack		= 10
-	subattack			= 3
-	airattack			= 11
-	shorebombardment		= 15
-	distance			= 2.0
-	supplyconsumption 		= 0.8 #0.6
-	fuelconsumption			= 1
+	cost 						= 4
+	buildtime					= 170
+	manpower 					= 0.15
+	surfacedetectioncapability	= 14
+	airdetectioncapability		= 10
+	subdetectioncapability		= 8
+	airdefence					= -16
+	seaattack					= 14
+	convoyattack				= 14
+	subattack					= 2
+	airattack					= 12
+	shorebombardment			= 12
+	distance					= 1.8
+	supplyconsumption 			= 0.6
+	fuelconsumption				= 1
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
 }
-# 6 - 1947 Semi-Modern Carrier Air Group
+
+# 5 - Heavy Advanced Carrier Air Group (1943)
 model = {
-	cost 				= 10 #5.5
-	buildtime			= 190
-	manpower 			= 0.7
-	surfacedetectioncapability	= 17
-	airdetectioncapability		= 7 #8
-	subdetectioncapability		= 7 #8
-	airdefence			= 14
-	seaattack			= 12
-	convoyattack		= 12
-	subattack			= 5
-	airattack			= 15
-	shorebombardment		= 17
-	distance			= 2.4
-	supplyconsumption 		= 1 #0.7
-	fuelconsumption			= 1
+	cost 						= 4.5
+	buildtime					= 170
+	manpower 					= 0.15
+	surfacedetectioncapability	= 16
+	airdetectioncapability		= 12
+	subdetectioncapability		= 10
+	airdefence					= -17
+	seaattack					= 16
+	convoyattack				= 16
+	subattack					= 4
+	airattack					= 14
+	shorebombardment			= 14
+	distance					= 2.0
+	supplyconsumption 			= 0.6
+	fuelconsumption				= 1
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
 }
-# 7 - 1951 Turbojet Carrier Air Group
+
+# 6 - Semi-Modern Carrier Air Group (1947)
 model = {
-	cost 				= 11 #6
-	buildtime			= 190
-	manpower 			= 1
+	cost 						= 5.5
+	buildtime					= 170
+	manpower 					= 0.15
+	surfacedetectioncapability	= 18
+	airdetectioncapability		= 14
+	subdetectioncapability		= 10
+	airdefence					= -18
+	seaattack					= 18
+	convoyattack				= 18
+	subattack					= 6
+	airattack					= 16
+	shorebombardment			= 16
+	distance					= 2.4
+	supplyconsumption 			= 0.7
+	fuelconsumption				= 1
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
+}
+
+# 7 - Turbojet Carrier Air Group (1951)
+model = {
+	cost 						= 6
+	buildtime					= 190
+	manpower 					= 0.15
 	surfacedetectioncapability	= 20
-	airdetectioncapability		= 8 #10
-	subdetectioncapability		= 8 #10
-	airdefence			= 17
-	seaattack			= 15
-	convoyattack		= 15
-	subattack			= 8
-	airattack			= 19
-	shorebombardment		= 21
-	distance			= 2.5
-	supplyconsumption 		= 1.1 #1
-	fuelconsumption			= 1.5
+	airdetectioncapability		= 16
+	subdetectioncapability		= 14
+	airdefence					= -19
+	seaattack					= 20
+	convoyattack				= 20
+	subattack					= 8
+	airattack					= 18
+	shorebombardment			= 18
+	distance					= 2.5
+	supplyconsumption 			= 1
+	fuelconsumption				= 1.5
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
 }
-# 8 - 1956 Improved Turbojet Carrier Air Group
+
+# 8 - Improved Turbojet Carrier Air Group (1956)
 model = {
-	cost = 12 #6.5
-	buildtime = 190
-	manpower = 1
-	surfacedetectioncapability = 22
-	airdetectioncapability = 10 #12
-	subdetectioncapability = 10 #12
-	airdefence = 19
-	seaattack = 17
-	convoyattack = 17
-	subattack = 8
-	airattack = 20
-	shorebombardment = 23
-	distance = 2.5
-	supplyconsumption = 1.2 #1
+	cost 						= 6.5
+	buildtime 					= 190
+	manpower 					= 0.15
+	surfacedetectioncapability	= 22
+	airdetectioncapability 		= 18
+	subdetectioncapability		= 16
+	airdefence					= -20
+	seaattack					= 22
+	convoyattack				= 22
+	subattack					= 10
+	airattack					= 20
+	shorebombardment			= 20
+	distance					= 2.5
+	supplyconsumption			= 1
 	fuelconsumption = 1.5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
 }
-

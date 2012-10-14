@@ -18,27 +18,56 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1640 = 100
-		1628 = 100
-		1353 = 100
-		1343 = 100
-		1299 = 100
-		1358 = 100
-		1665 = 100
-		1672 = 100
-		1679 = 100
-		1668 = 100
-		1321 = 100
-		1786 = 100
-		1608 = 100
-		1670 = 100
-		1624 = 100
+		#Netherlands East Indies
+		1639  = 3250  #Bagka Island
+		1647  = 3000  #Batavia		
+		1649  = 3000  #Semarang
+		1653  = 3000  #Soerabaja
+		1656  = 3000  #Madura
+		1636  = 2750  #Palembang
+		1635  = 2750  #Dumai
+		1642  = 2750  #Medan
+
+		#Singapore
+		1436  = 2500  #Kota Bahru
+		1435  = 2500  #Alor Star
+		1432  = 2500  #Singapore
+
+		#Indonesia
+		1659  = 2000  #Menado
+		1657  = 2000  #Makassar
+
+		#North New Guinea
+		1600  = 1750  #Babo
+		1596  = 1750  #Hollandia
+		1604  = 1750  #Lae
+
+		#North Solomon Islands
+		1724  = 1750  #Admirality Islands
+		1725  = 1750  #New Ireland
+		1607  = 1750  #Buka Island
+		1587  = 1750  #Bougainville
+
+		# NEI Last Remaining Islands
+		1643  = 1500  #Bali
+		1619  = 1500  #Lombok
+		1644  = 1500  #Sumbawa
+		1615  = 1500  #Flores
+		1645  = 1500  #Sumba
+		1616  = 1500  #West Timor
+
+		# South Solomon Islands
+		1589  = 1250  #Shortland Island
+		1588  = 1250  #Vella Lavella
+		1590  = 1250  #Kolombangara
+		1591  = 1250  #New Georgia
+		1592  = 1250  #Guadalcanal
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2181 = 100 2169 = 100 2249 = 100 2172 = 100 2144 = 100 2140 = 100 2146 = 100 2148 = 100 2060 = 100 2075 = 100 2081 = 100 2126 = 100 1927 = 100 2203 = 100 2267 = 100 2177 = 100 2247 = 100 2121 = 100 2118 = 100 2115 = 100 1883 = 100 2164 = 100 2138 = 100 2142 = 100 }
-}
+#admiral = { 
+#	ignore = { }
+#	base = { }
+#	core = {  }
+#	target = { 2181 = 100 2169 = 100 2249 = 100 2172 = 100 2144 = 100 2140 = 100 2146 = 100 2148 = 100 2060 = 100 2075 = 100 2081 = 100 2126 = 100 1927 = 100 2203 = 100 2267 = 100 2177 = 100 2247 = 100 2121 = 100 2118 = 100 2115 = 100 1883 = 100 2164 = 100 2138 = 100 2142 = 100 }
+#}

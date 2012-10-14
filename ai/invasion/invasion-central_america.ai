@@ -18,17 +18,24 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		716 = 100
-		748 = 100
-		756 = 100
-		760 = 100
-		759 = 100
+		1986 = 100 #barranquilla
+		2078 = 100 #ciudad de panama
+		889 = 100 #balboa
+		2077 = 100 #san jose de david
+		2083 = 100 #puerto lemon
+		2081 = 100 #san jose
+		2080 = 100 #managua
+		2082 = 100 #bluefields
+		2084 = 100 #san pedro sula
+		2085 = 100 #tegucigalpa
+		2079 = 100 #san salvador
+		2088 = 100 #ciudad de guatemala
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2525 = 100 2526 = 100 2527 = 100 2528 = 100 2529 = 100 2530 = 100 2531 = 100 2532 = 100 2533 = 100 2523 = 100 2576 = 100 2574 = 100 2573 = 100 2572 = 100 2569 = 100 2570 = 100 }
-}
+#admiral = { 
+#	ignore = { }
+#	base = { }
+#	core = {  }
+#	target = { 2525 = 100 2526 = 100 2527 = 100 2528 = 100 2529 = 100 2530 = 100 2531 = 100 2532 = 100 2533 = 100 2523 = 100 2576 = 100 2574 = 100 2573 = 100 2572 = 100 2569 = 100 2570 = 100 }
+#}

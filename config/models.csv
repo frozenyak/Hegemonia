@@ -1,3 +1,6 @@
+#######################;;;;;;;;;;;X
+# muster; -1- ; -2- ; -3- ; -4- ; -5- ; -6- ;; -8- ;;;X
+#######################;;;;;;;;;;;X
 MODEL_AFG_4_0;CV-33;CV-33;CV-33;CV-33;CV-33;CV-33;;CV-33;;;X
 MODEL_AFG_4_1;LT vs.35;LT vs.35;LT vs.35;LT vs.35;LT vs.35;LT vs.35;;LT vs.35;;;X
 MODEL_AFG_4_2;BT-7;BT-7;BT-7;BT-7;BT-7;BT-7;;¡“-7;;;X
@@ -52,8 +55,8 @@ MODEL_UAU_13_1;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I
 MODEL_UAU_13_2;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;;Hawker Hurricane Mk.II;;;X
 MODEL_UAU_13_3;CAC CA-12 Boomerang;CAC CA-12 Boomerang;CAC CA-12 Boomerang;CAC CA-12 Boomerang;CAC CA-12 Boomerang;CAC CA-12 Boomerang;;CAC CA-12 Boomerang;;;X
 MODEL_UAU_13_4;CAC CA-19 Boomerang;CAC CA-19 Boomerang;CAC CA-19 Boomerang;CAC CA-19 Boomerang;CAC CA-19 Boomerang;CAC CA-19 Boomerang;;CAC CA-19 Boomerang;;;X
-MODEL_UAU_13_5;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
-MODEL_UAU_13_6;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
+MODEL_UAU_32_0;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
+MODEL_UAU_32_1;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
 MODEL_UAU_13_7;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;;Gloster Meteor Mk.I;;;X
 MODEL_UAU_13_8;Commonwealth Sabre;Commonwealth Sabre;Commonwealth Sabre;Commonwealth Sabre;Commonwealth Sabre;Commonwealth Sabre;;Commonwealth Sabre;;;X
 MODEL_UAU_13_9;Dassault Mirage III;Dassault Mirage III;Dassault Mirage III;Dassault Mirage III;Dassault Mirage III;Dassault Mirage III;;Dassault Mirage III;;;X
@@ -205,8 +208,8 @@ MODEL_CAN_13_1;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I
 MODEL_CAN_13_2;Grumman F4F Martlet;Grumman F4F Martlet;Grumman F4F Martlet;Grumman F4F Martlet;Grumman F4F Martlet;Grumman F4F Martlet;;Grumman F4F Martlet;;;X
 MODEL_CAN_13_3;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;;Hawker Typhoon;;;X
 MODEL_CAN_13_4;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;;Hawker Tempest;;;X
-MODEL_CAN_13_5;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
-MODEL_CAN_13_6;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
+MODEL_CAN_32_0;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
+MODEL_CAN_32_1;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
 MODEL_CAN_13_7;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;;Gloster Meteor Mk.I;;;X
 MODEL_CAN_13_8;Canadair CL-13 Sabre;Canadair CL-13 Sabre;Canadair CL-13 Sabre;Canadair CL-13 Sabre;Canadair CL-13 Sabre;Canadair CL-13 Sabre;;Canadair CL-13 Sabre;;;X
 MODEL_CAN_13_9;Avro Canada CF-105 Arrow;Avro Canada CF-105 Arrow;Avro Canada CF-105 Arrow;Avro Canada CF-105 Arrow;Avro Canada CF-105 Arrow;Avro Canada CF-105 Arrow;;Avro Canada CF-105 Arrow;;;X
@@ -308,8 +311,8 @@ MODEL_CHC_13_1;Polikarpov I-16;Polikarpov I-16;Polikarpov I-16;Polikarpov I-16;P
 MODEL_CHC_13_2;Cant Z.813;Cant Z.813;Cant Z.813;Cant Z.813;Cant Z.813;Cant Z.813;;À‡√√-3;;;X
 MODEL_CHC_13_3;Sarigiannis Sar-7;Sarigiannis Sar-7;Sarigiannis Sar-7;Sarigiannis Sar-7;Sarigiannis Sar-7;Sarigiannis Sar-7;;ﬂÍ-7;;;X
 MODEL_CHC_13_4;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;;ﬂÍ-3;;;X
-MODEL_CHC_13_5;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;;¡Ë-1;;;X
-MODEL_CHC_13_6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;;¡Ë-6;;;X
+MODEL_CHC_32_0;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;;¡Ë-1;;;X
+MODEL_CHC_32_1;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;;¡Ë-6;;;X
 MODEL_CHC_13_7;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;;ﬂÍ-15;;;X
 MODEL_CHC_13_8;Shenyang J-5 Fresco;Shenyang J-5 Fresco;Shenyang J-5 Fresco;Shenyang J-5 Fresco;Shenyang J-5 Fresco;Shenyang J-5 Fresco;;—Û-9;;;X
 MODEL_CHC_13_9;Shenyang J-6 Farmer;Shenyang J-6 Farmer;Shenyang J-6 Farmer;Shenyang J-6 Farmer;Shenyang J-6 Farmer;Shenyang J-6 Farmer;;ÿÂÌ¸ˇÌ J-6 Farmer;;;X
@@ -422,8 +425,8 @@ MODEL_CSA_13_1;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I
 MODEL_CSA_13_2;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;;Hawker Hurricane Mk.II;;;X
 MODEL_CSA_13_3;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;;Hawker Typhoon;;;X
 MODEL_CSA_13_4;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;;Hawker Tempest;;;X
-MODEL_CSA_13_5;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
-MODEL_CSA_13_6;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
+MODEL_CSA_32_0;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
+MODEL_CSA_32_1;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
 MODEL_CSA_13_7;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;;Gloster Meteor Mk.I;;;X
 MODEL_CSA_13_8;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;;de Havilland Vampire;;;X
 MODEL_CSA_13_9;English Electric Lightning;English Electric Lightning;English Electric Lightning;English Electric Lightning;English Electric Lightning;English Electric Lightning;;English Electric Lightning;;;X
@@ -653,8 +656,8 @@ MODEL_EGY_13_1;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I
 MODEL_EGY_13_2;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;;Hawker Hurricane Mk.II;;;X
 MODEL_EGY_13_3;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;;Hawker Typhoon;;;X
 MODEL_EGY_13_4;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;;Hawker Tempest;;;X
-MODEL_EGY_13_5;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
-MODEL_EGY_13_6;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
+MODEL_EGY_32_0;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
+MODEL_EGY_32_1;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
 MODEL_EGY_13_7;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;;Gloster Meteor Mk.I;;;X
 MODEL_EGY_13_8;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;;de Havilland Vampire;;;X
 MODEL_EGY_14_0;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;;Armstrong-Whitworth Whitley;;;X
@@ -698,8 +701,8 @@ MODEL_ENG_13_1;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I
 MODEL_ENG_13_2;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;;Hawker Hurricane Mk.II;;;X
 MODEL_ENG_13_3;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;;Hawker Typhoon;;;X
 MODEL_ENG_13_4;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;;Hawker Tempest;;;X
-MODEL_ENG_13_5;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
-MODEL_ENG_13_6;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
+MODEL_ENG_32_0;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
+MODEL_ENG_32_1;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
 MODEL_ENG_13_7;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;;Gloster Meteor Mk.I;;;X
 MODEL_ENG_13_8;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;;de Havilland Vampire;;;X
 MODEL_ENG_13_9;English Electric Lightning;English Electric Lightning;English Electric Lightning;English Electric Lightning;English Electric Lightning;English Electric Lightning;;English Electric Lightning;;;X
@@ -840,7 +843,7 @@ MODEL_FRA_13_1;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.
 MODEL_FRA_13_2;Bloch MB.152;Bloch MB.152;Bloch MB.152;Bloch MB.152;Bloch MB.152;Bloch MB.152;;Bloch MB.152;;;X
 MODEL_FRA_13_3;Arsenal VG.33;Arsenal VG.33;Arsenal VG.33;Arsenal VG.33;Arsenal VG.33;Arsenal VG.33;;Arsenal VG.33;;;X
 MODEL_FRA_13_4;Bloch MB.157;Bloch MB.157;Bloch MB.157;Bloch MB.157;Bloch MB.157;Bloch MB.157;;Bloch MB.157;;;X
-MODEL_FRA_13_5;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;;Arsenal VG.70;;;X
+MODEL_FRA_32_0;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;;Arsenal VG.70;;;X
 MODEL_FRA_13_7;Sud-Est SE.530 Mistral;Sud-Est SE.530 Mistral;Sud-Est SE.530 Mistral;Sud-Est SE.530 Mistral;Sud-Est SE.530 Mistral;Sud-Est SE.530 Mistral;;Sud-Est SE.530 Mistral;;;X
 MODEL_FRA_13_8;Dassault Mystere IVA;Dassault Mystere IVA;Dassault Mystere IVA;Dassault Mystere IVA;Dassault Mystere IVA;Dassault Mystere IVA;;Dassault Mystere IVA;;;X
 MODEL_FRA_13_9;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;;Dassault Mirage IIIC;;;X
@@ -923,8 +926,8 @@ MODEL_GER_13_1;Messerschmitt Bf-109D;Messerschmitt Bf-109D;Messerschmitt Bf-109D
 MODEL_GER_13_2;Messerschmitt Bf-109E Emil;Messerschmitt Bf-109E Emil;Messerschmitt Bf-109E Emil;Messerschmitt Bf-109E Emil;Messerschmitt Bf-109E Emil;Messerschmitt Bf-109E Emil;;Messerschmitt Bf-109E Emil;;;X
 MODEL_GER_13_3;Focke-Wulf Fw-190A;Focke-Wulf Fw-190A;Focke-Wulf Fw-190A;Focke-Wulf Fw-190A;Focke-Wulf Fw-190A;Focke-Wulf Fw-190A;;Focke-Wulf Fw-190A;;;X
 MODEL_GER_13_4;Messerschmitt Bf-109K Kurf¸rst;Messerschmitt Bf-109K Kurf¸rst;Messerschmitt Bf-109K Kurf¸rst;Messerschmitt Bf-109K Kurf¸rst;Messerschmitt Bf-109K Kurf¸rst;Messerschmitt Bf-109K Kurf¸rst;;Messerschmitt Bf-109K Kurfuerst;;;X
-MODEL_GER_13_5;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;;Messerschmitt Me-163 Komet;;;X
-MODEL_GER_13_6;Messerschmitt Me-263;Messerschmitt Me-263;Messerschmitt Me-263;Messerschmitt Me-263;Messerschmitt Me-263;Messerschmitt Me-263;;Messerschmitt Me-263;;;X
+MODEL_GER_32_0;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;Messerschmitt Me-163 Komet;;Messerschmitt Me-163 Komet;;;X
+MODEL_GER_32_1;Messerschmitt Me-263;Messerschmitt Me-263;Messerschmitt Me-263;Messerschmitt Me-263;Messerschmitt Me-263;Messerschmitt Me-263;;Messerschmitt Me-263;;;X
 MODEL_GER_13_7;Heinkel He-162 Salamander;Heinkel He-162 Salamander;Heinkel He-162 Salamander;Heinkel He-162 Salamander;Heinkel He-162 Salamander;Heinkel He-162 Salamander;;Heinkel He-162 Salamander;;;X
 MODEL_GER_13_8;Focke-Wulf Ta-183;Focke-Wulf Ta-183;Focke-Wulf Ta-183;Focke-Wulf Ta-183;Focke-Wulf Ta-183;Focke-Wulf Ta-183;;Focke-Wulf Ta-183;;;X
 MODEL_GER_13_9;Lippish Li.P13a;Lippish Li.P13a;Lippish Li.P13a;Lippish Li.P13a;Lippish Li.P13a;Lippish Li.P13a;;Lippish Li.P13a;;;X
@@ -1098,8 +1101,8 @@ MODEL_IND_13_1;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I
 MODEL_IND_13_2;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;;Hawker Hurricane Mk.II;;;X
 MODEL_IND_13_3;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;;Hawker Typhoon;;;X
 MODEL_IND_13_4;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;;Hawker Tempest;;;X
-MODEL_IND_13_5;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
-MODEL_IND_13_6;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
+MODEL_IND_32_0;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
+MODEL_IND_32_1;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
 MODEL_IND_13_7;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;;Gloster Meteor Mk.I;;;X
 MODEL_IND_13_8;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;;de Havilland Vampire;;;X
 MODEL_IND_14_0;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;;Armstrong-Whitworth Whitley;;;X
@@ -1201,8 +1204,8 @@ MODEL_ITA_13_1;Macchi MC.200 Saetta;Macchi MC.200 Saetta;Macchi MC.200 Saetta;Ma
 MODEL_ITA_13_2;Reggiane Re.2000 Falco;Reggiane Re.2000 Falco;Reggiane Re.2000 Falco;Reggiane Re.2000 Falco;Reggiane Re.2000 Falco;Reggiane Re.2000 Falco;;Reggiane Re.2000 Falco;;;X
 MODEL_ITA_13_3;Reggiane RE.2001 Ariete;Reggiane RE.2001 Ariete;Reggiane RE.2001 Ariete;Reggiane RE.2001 Ariete;Reggiane RE.2001 Ariete;Reggiane RE.2001 Ariete;;Reggiane Re.2001 Falco II;;;X
 MODEL_ITA_13_4;Fiat G.55 Centauro;Fiat G.55 Centauro;Fiat G.55 Centauro;Fiat G.55 Centauro;Fiat G.55 Centauro;Fiat G.55 Centauro;;Fiat G.55 Centauro;;;X
-MODEL_ITA_13_5;Campini Caproni CC.2;Campini Caproni CC.2;Campini Caproni CC.2;Campini Caproni CC.2;Campini Caproni CC.2;Campini Caproni CC.2;;Campioni CC.2;;;X
-MODEL_ITA_13_6;Caproni Ca.183bis;Caproni Ca.183bis;Caproni Ca.183bis;Caproni Ca.183bis;Caproni Ca.183bis;Caproni Ca.183bis;;Caproni Ca.183bis;;;X
+MODEL_ITA_32_0;Campini Caproni CC.2;Campini Caproni CC.2;Campini Caproni CC.2;Campini Caproni CC.2;Campini Caproni CC.2;Campini Caproni CC.2;;Campioni CC.2;;;X
+MODEL_ITA_32_1;Caproni Ca.183bis;Caproni Ca.183bis;Caproni Ca.183bis;Caproni Ca.183bis;Caproni Ca.183bis;Caproni Ca.183bis;;Caproni Ca.183bis;;;X
 MODEL_ITA_13_7;Reggiane Re.2007;Reggiane Re.2007;Reggiane Re.2007;Reggiane Re.2007;Reggiane Re.2007;Reggiane Re.2007;;Reggiane Re.2007;;;X
 MODEL_ITA_13_8;Fiat G-91R;Fiat G-91R;Fiat G-91R;Fiat G-91R;Fiat G-91R;Fiat G-91R;;Fiat G-91R;;;X
 MODEL_ITA_13_9;Aerfer Leone;Aerfer Leone;Aerfer Leone;Aerfer Leone;Aerfer Leone;Aerfer Leone;;Aerfer Leone;;;X
@@ -1272,8 +1275,8 @@ MODEL_JAP_13_1;Nakajima Ki-27 Kyuunana sen;Nakajima Ki-27 Kyuunana sen;Nakajima 
 MODEL_JAP_13_2;Nakajima Ki-43 Hayabusa;Nakajima Ki-43 Hayabusa;Nakajima Ki-43 Hayabusa;Nakajima Ki-43 Hayabusa;Nakajima Ki-43 Hayabusa;Nakajima Ki-43 Hayabusa;;Nakajima Ki-43 Haybusa;;;X
 MODEL_JAP_13_3;Kawasaki Ki-61 Hien;Kawasaki Ki-61 Hien;Kawasaki Ki-61 Hien;Kawasaki Ki-61 Hien;Kawasaki Ki-61 Hien;Kawasaki Ki-61 Hien;;Kawasaki Ki-61 Hien;;;X
 MODEL_JAP_13_4;Nakajima Ki-84 Hayate;Nakajima Ki-84 Hayate;Nakajima Ki-84 Hayate;Nakajima Ki-84 Hayate;Nakajima Ki-84 Hayate;Nakajima Ki-84 Hayate;;Nakajima Ki-84 Hayate;;;X
-MODEL_JAP_13_5;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;;Mitsubishi J8M Shusui;;;X
-MODEL_JAP_13_6;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;;Nakashima Ki-202 Shusui-Kai;;;X
+MODEL_JAP_32_0;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;Mitsubishi J8M Shusui;;Mitsubishi J8M Shusui;;;X
+MODEL_JAP_32_1;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;Nakashima Ki-202 Shusui-Kai;;Nakashima Ki-202 Shusui-Kai;;;X
 MODEL_JAP_13_7;Kyushu J7W2 Shinden;Kyushu J7W2 Shinden;Kyushu J7W2 Shinden;Kyushu J7W2 Shinden;Kyushu J7W2 Shinden;Kyushu J7W2 Shinden;;Kyushu J7W2 Shinden;;;X
 MODEL_JAP_13_8;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;;Nakajima Ki-201 Karyu;;;X
 MODEL_JAP_13_9;Mitsubishi F-1;Mitsubishi F-1;Mitsubishi F-1;Mitsubishi F-1;Mitsubishi F-1;Mitsubishi F-1;;Mitsubishi F-1;;;X
@@ -1474,8 +1477,8 @@ MODEL_NZL_13_1;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I
 MODEL_NZL_13_2;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;Hawker Hurricane Mk.II;;Hawker Hurricane Mk.II;;;X
 MODEL_NZL_13_3;Grumman F6F Hellcat;Grumman F6F Hellcat;Grumman F6F Hellcat;Grumman F6F Hellcat;Grumman F6F Hellcat;Grumman F6F Hellcat;;Grumman F6F Hellcat;;;X
 MODEL_NZL_13_4;Vought F4U Corsair;Vought F4U Corsair;Vought F4U Corsair;Vought F4U Corsair;Vought F4U Corsair;Vought F4U Corsair;;Vought F4U Corsair;;;X
-MODEL_NZL_13_5;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
-MODEL_NZL_13_6;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
+MODEL_NZL_32_0;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;Hawker P.1052;;Hawker P.1052;;;X
+MODEL_NZL_32_1;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;SARO SR.177;;SARO SR.177;;;X
 MODEL_NZL_13_7;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;Gloster Meteor Mk.I;;Gloster Meteor Mk.I;;;X
 MODEL_NZL_13_8;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;de Havilland Vampire;;de Havilland Vampire;;;X
 MODEL_NZL_14_0;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;Armstrong-Whitworth Whitley;;Armstrong-Whitworth Whitley;;;X
@@ -1856,8 +1859,8 @@ MODEL_SOV_13_1;Polikarpov I-16;Polikarpov I-16;Polikarpov I-16;Polikarpov I-16;P
 MODEL_SOV_13_2;Cant Z.813;Cant Z.813;Cant Z.813;Cant Z.813;Cant Z.813;Cant Z.813;;À‡√√-3;;;X
 MODEL_SOV_13_3;Sarigiannis Sar-7;Sarigiannis Sar-7;Sarigiannis Sar-7;Sarigiannis Sar-7;Sarigiannis Sar-7;Sarigiannis Sar-7;;ﬂÍ-7;;;X
 MODEL_SOV_13_4;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;Sarigiannis Sar-3;;ﬂÍ-3;;;X
-MODEL_SOV_13_5;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;;¡Ë-1;;;X
-MODEL_SOV_13_6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;;¡Ë-6;;;X
+MODEL_SOV_32_0;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;Bereznyak-Isayev Bi-1;;¡Ë-1;;;X
+MODEL_SOV_32_1;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;Bereznyak-Isayev Bi-6;;¡Ë-6;;;X
 MODEL_SOV_13_7;Sarigiannis Sar-15 Feather;Sarigiannis Sar-15 Feather;Sarigiannis Sar-15 Feather;Sarigiannis Sar-15 Feather;Sarigiannis Sar-15 Feather;Sarigiannis Sar-15 Feather;;ﬂÍ-15;;;X
 MODEL_SOV_13_8;Sarigiannis Sar-23 Flora;Sarigiannis Sar-23 Flora;Sarigiannis Sar-23 Flora;Sarigiannis Sar-23 Flora;Sarigiannis Sar-23 Flora;Sarigiannis Sar-23 Flora;;—Û-9;;;X
 MODEL_SOV_13_9;Sukhoi Su-9 Fishpot;Sukhoi Su-9 Fishpot;Sukhoi Su-9 Fishpot;Sukhoi Su-9 Fishpot;Sukhoi Su-9 Fishpot;Sukhoi Su-9 Fishpot;;—Û-11;;;X
@@ -2122,8 +2125,8 @@ MODEL_USA_13_1;Curtiss P-36;Curtiss P-36;Curtiss P-36;Curtiss P-36;Curtiss P-36;
 MODEL_USA_13_2;Grumman F4F Wildcat;Grumman F4F Wildcat;Grumman F4F Wildcat;Grumman F4F Wildcat;Grumman F4F Wildcat;Grumman F4F Wildcat;;Grumman F4F Wildcat;;;X
 MODEL_USA_13_3;Grumman F6F Hellcat;Grumman F6F Hellcat;Grumman F6F Hellcat;Grumman F6F Hellcat;Grumman F6F Hellcat;Grumman F6F Hellcat;;Grumman F6F Hellcat;;;X
 MODEL_USA_13_4;Vought F4U Corsair;Vought F4U Corsair;Vought F4U Corsair;Vought F4U Corsair;Vought F4U Corsair;Vought F4U Corsair;;Vought F4U Corsair;;;X
-MODEL_USA_13_5;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;;Northrop P-79A Flying Ram;;;X
-MODEL_USA_13_6;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;;Republic F-91 Thunderceptor;;;X
+MODEL_USA_32_0;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;Northrop P-79A Flying Ram;;Northrop P-79A Flying Ram;;;X
+MODEL_USA_32_1;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;Republic F-91 Thunderceptor;;Republic F-91 Thunderceptor;;;X
 MODEL_USA_13_7;North American F-86A Sabre;North American F-86A Sabre;North American F-86A Sabre;North American F-86A Sabre;North American F-86A Sabre;North American F-86A Sabre;;North American F-86A Sabre;;;X
 MODEL_USA_13_8;Northrop F-89D Scorpion;Northrop F-89D Scorpion;Northrop F-89D Scorpion;Northrop F-89D Scorpion;Northrop F-89D Scorpion;Northrop F-89D Scorpion;;Northrop F-89D Scorpion;;;X
 MODEL_USA_13_9;Convair F-102 Delta Dagger;Convair F-102 Delta Dagger;Convair F-102 Delta Dagger;Convair F-102 Delta Dagger;Convair F-102 Delta Dagger;Convair F-102 Delta Dagger;;Convair F-102 Delta Dagger;;;X
@@ -2227,7 +2230,7 @@ MODEL_VIC_13_1;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.
 MODEL_VIC_13_2;Bloch MB.152;Bloch MB.152;Bloch MB.152;Bloch MB.152;Bloch MB.152;Bloch MB.152;;Bloch MB.152;;;X
 MODEL_VIC_13_3;Arsenal VG.33;Arsenal VG.33;Arsenal VG.33;Arsenal VG.33;Arsenal VG.33;Arsenal VG.33;;Arsenal VG.33;;;X
 MODEL_VIC_13_4;Bloch MB.157;Bloch MB.157;Bloch MB.157;Bloch MB.157;Bloch MB.157;Bloch MB.157;;Bloch MB.157;;;X
-MODEL_VIC_13_6;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;;Arsenal VG.70;;;X
+MODEL_VIC_32_1;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;Arsenal VG.70;;Arsenal VG.70;;;X
 MODEL_VIC_14_0;Bloch MB.162;Bloch MB.162;Bloch MB.162;Bloch MB.162;Bloch MB.162;Bloch MB.162;;Bloch MB.162;;;X
 MODEL_VIC_14_1;Farman NC.223;Farman NC.223;Farman NC.223;Farman NC.223;Farman NC.223;Farman NC.223;;Farman NC.223;;;X
 MODEL_VIC_14_2;Farman F.420;Farman F.420;Farman F.420;Farman F.420;Farman F.420;Farman F.420;;Farman F.420;;;X

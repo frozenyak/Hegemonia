@@ -19,14 +19,6 @@ reinforcement = 0 #0.10
 ###################################
 combat = { }
 claim_acceptance = -49
-# Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
-resistance = { 
-	GER = 10 
-	RUS = 6
-	ENG = 6
-	CHI = 6
-	CYN = 6
-}
 befriend = { }
 protect = { }
 target = {
@@ -616,10 +608,6 @@ technology = {
 
 		# Rocket Artillery
 		2370 2380 2390
-
-		# Mechanized
-		1260 1270 1280 1290
-
 
 		# Armoured Cars
 		2150 2160

@@ -234,8 +234,7 @@ military = {
 	police 				= 0
 	engineer 			= 0 
 
-	cag = 100.000 
-	escort = 0
+	cag = 100.000
 	naval_torpedoes_s = 100
 
 	naval_asw = 10.0000 

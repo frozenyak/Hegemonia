@@ -1,3 +1,5 @@
+# MODEL_8_
+
 allowed_brigades =  artillery
 allowed_brigades =  anti_tank		
 allowed_brigades =  anti_air		
@@ -9,190 +11,171 @@ allowed_brigades =  anti_air
 #allowed_brigades =  heavy_armor	
 #allowed_brigades =  super_heavy_armor
 #allowed_brigades =  armored_car
-allowed_brigades =  engineer			
+allowed_brigades =  engineer
 allowed_brigades =  police
 
 #upgrade = { type = infantry upgrade_time_factor = 0.3 upgrade_cost_factor = 0.46 }
 
 # Early Mountain Division - 0 1918
 model = {
-	cost 					= 8
-	buildtime	 			= 120
-	manpower 				= 17
-	maxspeed 				= 4.5
-	defaultorganisation 	= 40
+	cost 					= 6
+	buildtime	 			= 420
+	manpower 				= 13
+	maxspeed 				= 6
+	defaultorganisation 	= 35
 	morale					= 40
-	defensiveness 			= 18
-	toughness				= 18
-	softness				= 100
-	suppression				= 2 #3
-	airdefence				= 2
-	softattack				= 10
-	hardattack				= 2
-	airattack				= 2
-	transportweight			= 8
-	supplyconsumption 		= 1.1
-	fuelconsumption			= 0
-	speed_cap_art			= 5
-	speed_cap_eng			= 6
-	speed_cap_at			= 5
-	speed_cap_aa			= 5
-	upgrade_time_factor = 1.0
-	upgrade_cost_factor = 0.5
-}
-# Basic Mountain Division - 1 1935
-model = {
-	cost 					= 8
-	buildtime	 			= 125
-	manpower 				= 17
-	maxspeed 				= 4.5
-	defaultorganisation 	= 40
-	morale					= 40
-	defensiveness 			= 26
-	toughness				= 26
-	softness				= 100
-	suppression				= 3
-	airdefence				= 4
-	softattack				= 14
-	hardattack				= 4
-	airattack				= 4
-	transportweight			= 8
-	supplyconsumption 		= 1.32
-	fuelconsumption			= 0
-	speed_cap_art			= 5
-	speed_cap_eng			= 6
-	speed_cap_at			= 5
-	speed_cap_aa			= 5
-	upgrade_time_factor = 1.0
-	upgrade_cost_factor = 0.5
-}
-# Improved Mountain Division - 2 1939
-model = {
-	cost 					= 8
-	buildtime	 			= 130
-	manpower 				= 17
-	maxspeed 				= 4.5
-	defaultorganisation 	= 40
-	morale					= 40
-	defensiveness 			= 28
+	defensiveness 			= 24
 	toughness				= 28
 	softness				= 100
 	suppression				= 3
-	airdefence				= 4
-	softattack				= 15
-	hardattack				= 5
-	airattack				= 4
+	airdefence				= 14
+	softattack				= 8
+	hardattack				= 0
+	airattack				= 1
 	transportweight			= 8
-	supplyconsumption 		= 1.54
+	supplyconsumption 		= 0.8
 	fuelconsumption			= 0
-	speed_cap_art			= 5
-	speed_cap_eng			= 6
-	speed_cap_at			= 5
-	speed_cap_aa			= 5
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 13000 trucks = 87 horses = 5842 artillery = 36 heavy_artillery = 8 anti_tank = 6  }
 }
+# Basic Mountain Division - 1 1935
+model = {
+	cost 					= 6
+	buildtime	 			= 420
+	manpower 				= 13
+	maxspeed 				= 11
+	defaultorganisation 	= 35
+	morale					= 40
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 100
+	suppression				= 3
+	airdefence				= 14
+	softattack				= 11
+	hardattack				= 2
+	airattack				= 2
+	transportweight			= 8
+	supplyconsumption 		= 0.9
+	fuelconsumption			= 0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+	equipment = { manpower = 13000 trucks = 680 horses = 5230 artillery = 48 heavy_artillery = 12 anti_tank = 12 anti_air = 8 }
+}
+# Improved Mountain Division - 2 1939
+model = {
+	cost 					= 6
+	buildtime	 			= 420
+	manpower 				= 13
+	maxspeed 				= 11
+	defaultorganisation 	= 35
+	morale					= 40
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 95
+	suppression				= 3
+	airdefence				= 14
+	softattack				= 12
+	hardattack				= 2
+	airattack				= 2
+	transportweight			= 8
+	supplyconsumption 		= 0.9
+	fuelconsumption			= 0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 0.5
+	equipment = { manpower = 13000 trucks = 700 horses = 4687 artillery = 54 heavy_artillery = 12 anti_tank = 27 anti_air = 12 }
+}
+
 # Advanced Mountain Division - 3 1942
 model = {
-	cost 					= 8
-	buildtime	 			= 135
-	manpower 				= 17
-	maxspeed 				= 4.5
-	defaultorganisation 	= 40
+	cost 					= 6
+	buildtime	 			= 420
+	manpower 				= 13
+	maxspeed 				= 11
+	defaultorganisation 	= 35
 	morale					= 40
-	defensiveness 			= 30
-	toughness				= 30
-	softness				= 100
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 95
 	suppression				= 3
-	airdefence				= 5
-	softattack				= 16
-	hardattack				= 5
-	airattack				= 5
+	airdefence				= 14
+	softattack				= 13
+	hardattack				= 3
+	airattack				= 2
 	transportweight			= 8
-	supplyconsumption 		= 1.76
+	supplyconsumption 		= 0.9
 	fuelconsumption			= 0
-	speed_cap_art			= 5
-	speed_cap_eng			= 6
-	speed_cap_at			= 5
-	speed_cap_aa			= 5
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 13000 trucks = 726 horses = 4678 artillery = 62 heavy_artillery = 18 anti_tank = 32 anti_air = 18 }
 }
+
 # Semimodern Mountain Division - 4 1945
 model = {
-	cost 					= 8
-	buildtime	 			= 135
-	manpower 				= 17
-	maxspeed 				= 4.5
-	defaultorganisation 	= 40
+	cost 					= 6
+	buildtime	 			= 420
+	manpower 				= 13
+	maxspeed 				= 11
+	defaultorganisation 	= 35
 	morale					= 40
-	defensiveness 			= 32
-	toughness				= 32
-	softness				= 100
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 95
 	suppression				= 3
-	airdefence				= 6
-	softattack				= 17
-	hardattack				= 6
-	airattack				= 5
+	airdefence				= 14
+	softattack				= 13
+	hardattack				= 3
+	airattack				= 3
 	transportweight			= 8
-	supplyconsumption 		= 1.98
+	supplyconsumption 		= 0.9
 	fuelconsumption			= 0
-	speed_cap_art			= 5
-	speed_cap_eng			= 6
-	speed_cap_at			= 5
-	speed_cap_aa			= 5
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 13000 trucks = 746 horses = 4860 artillery = 72 heavy_artillery = 34 anti_tank = 36 anti_air = 18 }
 }
 # Modern Mountain Division - 5 1951
 model = {
-	cost 					= 8
-	buildtime	 			= 135
-	manpower 				= 17
-	maxspeed 				= 4.5
-	defaultorganisation 	= 40
+	cost 					= 6
+	buildtime	 			= 420
+	manpower 				= 13
+	maxspeed 				= 11
+	defaultorganisation 	= 35
 	morale					= 40
-	defensiveness 			= 36
-	toughness				= 36
-	softness				= 100
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 95
 	suppression				= 3
-	airdefence				= 6
-	softattack				= 20
-	hardattack				= 7
-	airattack				= 6
+	airdefence				= 14
+	softattack				= 14
+	hardattack				= 4
+	airattack				= 3
 	transportweight			= 9
-	supplyconsumption 		= 2.2
+	supplyconsumption 		= 1.1
 	fuelconsumption			= 0
-	speed_cap_art			= 5
-	speed_cap_eng			= 6
-	speed_cap_at			= 5
-	speed_cap_aa			= 5
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 13000 trucks = 1867 horses = 2486 artillery = 80 heavy_artillery = 44 anti_tank = 38 anti_air = 24  }
 }
 # 1955 Elite Mountain Division - 6
 model = {
-	cost 					= 8
-	buildtime	 			= 135
-	manpower 				= 17
-	maxspeed 				= 4.5
-	defaultorganisation 	= 40
+	cost 					= 6
+	buildtime	 			= 420
+	manpower 				= 13
+	maxspeed 				= 11
+	defaultorganisation 	= 35
 	morale					= 40
-	defensiveness 			= 38
-	toughness				= 38
-	softness				= 100
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 95
 	suppression				= 3
-	airdefence				= 7
-	softattack				= 22
-	hardattack				= 7
-	airattack				= 7
+	airdefence				= 14
+	softattack				= 14
+	hardattack				= 5
+	airattack				= 3
 	transportweight			= 9
-	supplyconsumption 		= 2.42
+	supplyconsumption 		= 1.1
 	fuelconsumption			= 0
-	speed_cap_art		= 5
-	speed_cap_eng		= 6
-	speed_cap_at		= 5
-	speed_cap_aa		= 5
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 13000 trucks = 2684 horses = 684 artillery = 120 heavy_artillery = 48 anti_tank = 36 anti_air = 24 }
 }

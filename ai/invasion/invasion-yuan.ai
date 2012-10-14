@@ -18,22 +18,26 @@ invasion = {
       
 	staging_province = { }        
 	target = {
-		1241  = 100  #Tianjin
+		#1241  = 100  #Tianjin
+		#
 		1338  = 100  #Shanghai
-		1335  = 100  #Nanton
 		1333  = 100 #Huaiyin
+		#
+		1334  = 100  #nantong
 		1328  = 100 #Qindao
+		#
+		#1358  = 100  #fuzhou
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2514 = 100
-		2516 = 100
-		2517 = 100
-		2518 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2514 = 100 #huangzhou bay
+		# 2516 = 100 #coast of shandong
+		# #2517 = 100 #yellow sea
+		# #2518 = 100 #bohai sea
+	# }
+# }

@@ -473,7 +473,7 @@ garrison = {
 	overseas_multiplier = 0.5
 	home_peace_cap 		= 20
 	war_zone_odds 		= 2.0
-	key_point_prio_mult	= 1.0
+	key_point_prio_mult	= 1.0 #4
 	revolt_risk_mult	= 1.0
 	reserves 		= 40
 
@@ -524,10 +524,10 @@ garrison = {
 		1378 = 100 #guilin
 		1365 = 120 #haikou
 		1367 = 150
-		1373 = 100 #jiangmen
+		#1373 = 100 #jiangmen
 		1352 = -1 #nanchang
 		1370 = -1 #lufeng
-		1373 = -1 #jiangmen
+		#1373 = -1 #jiangmen
 		1346 = -1 #ningbo
 		1347 = -1 #wenzhou
 		1348 = -1
@@ -541,7 +541,6 @@ garrison = {
 		1365 = 4
 		1367 = 4
 	}
-	key_point_prio_mult = 4
 }
 
 front = { 

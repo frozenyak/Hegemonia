@@ -1,44 +1,43 @@
+# BRIG_MODEL_18_
+
 # 0 - Early Search Radar
 model = {
-	cost 				= 0.5
-	buildtime			= 100
-	manpower 			= 0.0
+	cost 						= 2
+	buildtime					= 190
+	manpower 					= 0.01
 	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
 	subdetectioncapability		= 0
-	airdefence			= 0
-	seaattack			= 0
-	convoyattack			= 0
-	subattack			= 0
-	airattack			= 0
-	shorebombardment		= 0
-	distance			= 0
-	supplyconsumption 		= 0
-	fuelconsumption			= 0
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
+
 # 1 - Late Search Radar
 model = {
-	cost 				= 1.0
-	buildtime			= 100
-	manpower 			= 0.0
-	surfacedetectioncapability	= 2
-	airdetectioncapability		= 2
+	cost 						= 3.0
+	buildtime					= 190
+	manpower 					= 0.01
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 3
 	subdetectioncapability		= 0
-	airdefence			= 0
-	seaattack			= 0
-	convoyattack			= 0
-	subattack			= 0
-	airattack			= 0
-	shorebombardment		= 0
-	distance			= 0
-	supplyconsumption 		= 0.0
-	fuelconsumption			= 0
+	airdefence					= -1
+	seaattack					= 1
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 1
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
-
-
-########################################
-

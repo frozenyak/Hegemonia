@@ -406,17 +406,17 @@ technology =
     component = { id = 5145 name = TECH_CMP_INDUSTRY_14_5_NAME type = management difficulty = 10 double_time = yes }
     required  = { 5130 }
     effects =
-    { command = { type = build_time which = interceptor when = now where = relative value = -20 }
-      command = { type = build_time which = multi_role when = now where = relative value = -20 }
-      command = { type = build_time which = escort when = now where = relative value = -20 }
-      command = { type = build_time which = cas when = now where = relative value = -20 }
-      command = { type = build_time which = naval_bomber when = now where = relative value = -20 }
-      command = { type = build_time which = strategic_bomber when = now where = relative value = -20 }
-      command = { type = build_time which = tactical_bomber when = now where = relative value = -20 }
-      command = { type = build_time which = transport_plane when = now where = relative value = -20 }
-      command = { type = build_time which = cag when = now where = relative value = -20 }
+    { command = { type = build_time which = interceptor when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = multi_role when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = escort when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = cas when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = naval_bomber when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = strategic_bomber when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = tactical_bomber when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = transport_plane when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = cag when = on_upgrade where = relative value = -20 }
 	  
-      command = { type = build_time which = naval_torpedoes_s when = now where = relative value = -20 }
+      command = { type = build_time which = light_cag when = on_upgrade where = relative value = -20 }
     }
   }
   # Ship Assembly Line
@@ -438,16 +438,16 @@ technology =
     component = { id = 5155 name = TECH_CMP_INDUSTRY_15_5_NAME type = management difficulty = 10 double_time = yes }
     required  = { 5130 }
     effects =
-    { #command = { type = build_time which = battlecruiser when = now where = relative value = -20 }
-      command = { type = build_time which = battleship when = now where = relative value = -20 }
-      command = { type = build_time which = carrier when = now where = relative value = -20 }
-      command = { type = build_time which = escort_carrier when = now where = relative value = -20 }
-      command = { type = build_time which = destroyer when = now where = relative value = -20 }
-      command = { type = build_time which = heavy_cruiser when = now where = relative value = -20 }
-      command = { type = build_time which = light_cruiser when = now where = relative value = -20 }
-      command = { type = build_time which = submarine when = now where = relative value = -20 }
-      #command = { type = build_time which = nuclear_submarine when = now where = relative value = -20 }
-      command = { type = build_time which = transport when = now where = relative value = -33 }
+    { #command = { type = build_time which = battlecruiser when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = battleship when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = carrier when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = escort_carrier when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = destroyer when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = heavy_cruiser when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = light_cruiser when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = submarine when = on_upgrade where = relative value = -20 }
+      #command = { type = build_time which = nuclear_submarine when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = transport when = on_upgrade where = relative value = -33 }
       command = { type = convoy_prod_mod which = transports value = 20 }
       command = { type = convoy_prod_mod which = escorts value = 20 }
 
@@ -480,17 +480,17 @@ technology =
     component = { id = 5165 name = TECH_CMP_INDUSTRY_16_5_NAME type = management difficulty = 10 double_time = yes }
     required  = { 5130 }
     effects =
-    { command = { type = build_time which = armor when = now where = relative value = -20 }
-      command = { type = build_time which = light_armor when = now where = relative value = -20 }
-      command = { type = build_time which = light_armor_brigade when = now where = relative value = -20 }
-      command = { type = build_time which = mechanized when = now where = relative value = -13 }
-      command = { type = build_time which = motorized when = now where = relative value = -13 }
-      command = { type = build_time which = armored_car when = now where = relative value = -20 }
-      command = { type = build_time which = heavy_armor when = now where = relative value = -20 }
-      command = { type = build_time which = super_heavy_armor when = now where = relative value = -20 }
-      command = { type = build_time which = tank_destroyer when = now where = relative value = -20 }
-      command = { type = build_time which = sp_artillery when = now where = relative value = -20 }
-      #command = { type = build_time which = sp_rct_artillery when = now where = relative value = -20 }
+    { command = { type = build_time which = armor when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = light_armor when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = light_armor_brigade when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = mechanized when = on_upgrade where = relative value = -13 }
+      command = { type = build_time which = motorized when = on_upgrade where = relative value = -13 }
+      command = { type = build_time which = armored_car when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = heavy_armor when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = super_heavy_armor when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = tank_destroyer when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = sp_artillery when = on_upgrade where = relative value = -20 }
+      #command = { type = build_time which = sp_rct_artillery when = on_upgrade where = relative value = -20 }
     }
   }
   # Rocket Assembly Line
@@ -512,8 +512,8 @@ technology =
     component = { id = 5175 name = TECH_CMP_INDUSTRY_17_5_NAME type = management difficulty = 10 double_time = yes }
     required  = { 5130 5580 }
     effects =
-    { command = { type = build_time which = flying_bomb when = now where = relative value = -20 }
-      command = { type = build_time which = flying_rocket when = now where = relative value = -20 }
+    { command = { type = build_time which = flying_bomb when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = flying_rocket when = on_upgrade where = relative value = -20 }
     }
   }
   # Small Arms Assembly Line
@@ -535,21 +535,21 @@ technology =
     component = { id = 5185 name = TECH_CMP_INDUSTRY_18_5_NAME type = management difficulty = 10 double_time = yes }
     required  = { 5130 }
     effects =
-    { command = { type = build_time which = infantry when = now where = relative value = -20 }
-      command = { type = build_time which = cavalry when = now where = relative value = -20 }
-      command = { type = build_time which = militia when = now where = relative value = -20 }
-      command = { type = build_time which = garrison when = now where = relative value = -20 }
-      command = { type = build_time which = police when = now where = relative value = -10 }
-      command = { type = build_time which = paratrooper when = now where = relative value = -10 }
-      command = { type = build_time which = bergsjaeger when = now where = relative value = -10 }
-      command = { type = build_time which = marine when = now where = relative value = -10 }
-      command = { type = build_time which = engineer when = now where = relative value = -10 }
-      command = { type = build_time which = mechanized when = now where = relative value = -7 }
-      command = { type = build_time which = motorized when = now where = relative value = -7 }
-      #command = { type = build_time which = anti_tank when = now where = relative value = -20 }
-      command = { type = build_time which = anti_air when = now where = relative value = -20 }
-      command = { type = build_time which = artillery when = now where = relative value = -20 }
-      #command = { type = build_time which = rocket_artillery when = now where = relative value = -20 }
+    { command = { type = build_time which = infantry when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = cavalry when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = militia when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = garrison when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = police when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = paratrooper when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = bergsjaeger when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = marine when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = engineer when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = mechanized when = on_upgrade where = relative value = -7 }
+      command = { type = build_time which = motorized when = on_upgrade where = relative value = -7 }
+      #command = { type = build_time which = anti_tank when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = anti_air when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = artillery when = on_upgrade where = relative value = -20 }
+      #command = { type = build_time which = rocket_artillery when = on_upgrade where = relative value = -20 }
     }
   }
   # Basic Oil Refining

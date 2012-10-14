@@ -1,145 +1,157 @@
+# MODEL_14_
+
 allowed_brigades =  escort
 
 upgrade = { type = naval_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
 #upgrade = { type = strategic_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
 upgrade = { type = tactical_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
 
-# 0 - Basic Strategic Bomber
+# 0 - Basic Strategic Bomber 1937
 model = {
-	cost 					= 24 #20
-	buildtime				= 210 #208
+	cost 						= 20
+	buildtime					= 250
 	defaultorganisation 		= 30
-	morale					= 60
-	manpower				= 1.4
-	maxspeed				= 250
-	surfacedetectioncapability	= 2 #3
+	morale						= 20
+	manpower					= 3
+	maxspeed					= 250
+	surfacedetectioncapability	= 3
 	airdetectioncapability		= 2
-	surfacedefence				= 9
-	airdefence				= 8
-	airattack			= 2
-	strategicattack				= 12
-	softattack				= 2
-	hardattack			= 2
-	navalattack				= 2
-	range					= 1000 #800
+	surfacedefence				= 4
+	airdefence					= 30
+	airattack					= 2
+	strategicattack				= 6
+	softattack					= 1
+	hardattack					= 0
+	navalattack					= 0
+	range						= 1000 
 	supplyconsumption 			= 2.0
-	fuelconsumption				= 4
+	fuelconsumption				= 3.0
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { heavy_bomber = 100 manpower = 3000 }
 }
-# 1 - Improved Strategic Bomber
-model = {
-	cost 					= 26 #22
-	buildtime				= 210 #220
-	defaultorganisation 		= 30
-	morale					= 60
-	manpower				= 1.4
-	maxspeed				= 300
-	surfacedetectioncapability	= 3 #4
-	airdetectioncapability		= 3
-	surfacedefence				= 12
-	airdefence				= 10
-	airattack				= 2
-	strategicattack				= 16
-	softattack				= 3
-	hardattack				= 2
-	navalattack				= 3
-	range					= 1500 #1000
-	supplyconsumption 			= 2.6
-	fuelconsumption				= 4.5
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
-# 2 - Advanced Strategic Bomber
-model = {
-	cost 					= 28 #24
-	buildtime				= 210 #228
-	defaultorganisation 		= 30
-	morale					= 60
-	manpower				= 1.4
-	maxspeed				= 350
-	surfacedetectioncapability	= 3 #4
-	airdetectioncapability		= 3
-	surfacedefence				= 16
-	airdefence				= 12
-	airattack				= 3
-	strategicattack				= 22
-	softattack				= 5
-	hardattack				= 3
-	navalattack				= 5
-	range					= 2000 #1300
-	supplyconsumption 			= 3.2
-	fuelconsumption				= 4.6
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
 
-}
-# 3 - Turbojet Strategic Bomber
+# 1 - Improved Strategic Bomber 1940
 model = {
-	cost 					= 34 #27
-	buildtime				= 210 #234
+	cost 						= 22
+	buildtime					= 270
 	defaultorganisation 		= 30
-	morale					= 60
-	manpower				= 1.4
-	maxspeed				= 650
-	surfacedetectioncapability	= 3 #4
+	morale						= 20
+	manpower					= 3
+	maxspeed					= 300
+	surfacedetectioncapability	= 4
 	airdetectioncapability		= 3
-	surfacedefence				= 20
-	airdefence				= 18
-	airattack				= 4
-	strategicattack				= 28
-	softattack				= 6
-	hardattack				= 4
-	navalattack				= 6
-	range					= 4000 #1300
-	supplyconsumption 			= 3.8
-	fuelconsumption				= 5
+	surfacedefence				= 3
+	airdefence					= 18
+	airattack					= 3
+	strategicattack				= 7
+	softattack					= 2
+	hardattack					= 1
+	navalattack					= 0
+	range						= 1500
+	supplyconsumption 			= 2.2
+	fuelconsumption				= 3.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { heavy_bomber = 100 manpower = 3000 }
 }
-# 4 - Improved Turbojet Strategic Bomber
+
+# 2 - Advanced Strategic Bomber 1943
 model = {
-	cost 					= 37 #30
-	buildtime				= 210 #234
+	cost 						= 24
+	buildtime					= 270
 	defaultorganisation 		= 30
-	morale					= 60
-	manpower				= 1.4
-	maxspeed				= 800
-	surfacedetectioncapability	= 3 #4
+	morale						= 20
+	manpower					= 3
+	maxspeed					= 350
+	surfacedetectioncapability	= 4
 	airdetectioncapability		= 3
-	surfacedefence				= 23
-	airdefence				= 20
-	airattack				= 5
-	strategicattack				= 30
-	softattack				= 7
-	hardattack				= 5
-	navalattack				= 7
-	range					= 5000 #1400
-	supplyconsumption 			= 4.4
-	fuelconsumption				= 5.5
+	surfacedefence				= 3
+	airdefence					= 18
+	airattack					= 3
+	strategicattack				= 8
+	softattack					= 2
+	hardattack					= 1
+	navalattack					= 0
+	range						= 2000
+	supplyconsumption 			= 2.5
+	fuelconsumption				= 3.5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { heavy_bomber = 100 manpower = 3000 }
 }
-# 5 - Intercontinental Strategic Bomber
+
+# 3 - Turbojet Strategic Bomber 1945
+model = {
+	cost 						= 27
+	buildtime					= 280
+	defaultorganisation 		= 30
+	morale						= 20
+	manpower					= 3
+	maxspeed					= 650
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	surfacedefence				= 2
+	airdefence					= 8
+	airattack					= 2
+	strategicattack				= 8
+	softattack					= 1
+	hardattack					= 0
+	navalattack					= 0
+	range						= 4000
+	supplyconsumption 			= 3.0
+	fuelconsumption				= 4.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { heavy_bomber = 100 manpower = 3000 }
+}
+
+# 4 - Improved Turbojet Strategic Bomber 1949
+model = {
+	cost 						= 30
+	buildtime					= 280
+	defaultorganisation 		= 30
+	morale						= 20
+	manpower					= 3.5
+	maxspeed					= 800
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	surfacedefence				= 1
+	airdefence					= 8
+	airattack					= 2
+	strategicattack				= 10
+	softattack					= 2
+	hardattack					= 1
+	navalattack					= 0
+	range						= 5000
+	supplyconsumption 			= 3.5
+	fuelconsumption				= 4.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { heavy_bomber = 100 manpower = 3500 }
+}
+
+# 5 - Intercontinental Strategic Bomber 1950
 model = {
 	cost 						= 40
-	buildtime					= 210 #234
+	buildtime					= 280
 	defaultorganisation 		= 30
-	morale					= 60
-	manpower					= 1.4
+	morale						= 20
+	manpower					= 3.5
 	maxspeed					= 800
-	surfacedetectioncapability	= 3 #4
+	surfacedetectioncapability	= 4
 	airdetectioncapability		= 3
-	surfacedefence				= 27
-	airdefence					= 25
-	airattack					= 5
-	strategicattack				= 35
-	softattack					= 7
-	hardattack					= 5
-	navalattack					= 7
-	range						= 6000 #3000
-	supplyconsumption 			= 5
-	fuelconsumption				= 6
+	surfacedefence				= 1
+	airdefence					= 6
+	airattack					= 4
+	strategicattack				= 14
+	softattack					= 2
+	hardattack					= 1
+	navalattack					= 0
+	range						= 6000
+	supplyconsumption 			= 4.5
+	fuelconsumption				= 5.0
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { heavy_bomber = 100 manpower = 3500 }
 }

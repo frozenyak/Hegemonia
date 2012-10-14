@@ -22,13 +22,13 @@ invasion = {
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2720 = 100
-		2721 = 100
-		2722 = 100
-	}
-}
+#admiral = { 
+#	ignore = { }
+#	base = { }
+#	core = {  }
+#	target = {
+#		2720 = 100
+#		2721 = 100
+#		2722 = 100
+#	}
+#}

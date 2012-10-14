@@ -1,96 +1,109 @@
+# BRIG_MODEL_6_
+
 # 0 - Early 1940
 model = {
-	cost 				= 7
-	buildtime	 		= 100
-	manpower 			= 2.4
-	defensiveness 		= 4
-	toughness 			= 2
-	softness			= -2
-	softattack			= 1
-	hardattack			= 3
-	defaultorganisation	= 4
-	supplyconsumption 	= 0.4
-	fuelconsumption		= 0.8
+	cost 				= 6
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -3
+	softattack			= 0
+	hardattack			= 2
+	supplyconsumption 	= 0.2
+	fuelconsumption		= 1.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 30
+	equipment = { manpower = 3000 medium_armor = 116 }
 }
+
 # 1 - Basic 1942
 model = {
+	cost 				= 6
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -3
+	softattack			= 0
+	hardattack			= 3
+	supplyconsumption 	= 0.24
+	fuelconsumption		= 1.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	speed_cap			= 31
+	equipment = { manpower = 3000 medium_armor = 116 }
+}
+
+# 2 - Improved 1944
+model = {
+	cost 				= 6
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -3
+	softattack			= 0
+	hardattack			= 4
+	supplyconsumption 	= 0.28
+	fuelconsumption		= 1.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	speed_cap			= 34
+	equipment = { manpower = 3000 medium_armor = 116 }
+}
+
+# 3 - Advanced 1945
+model = {
 	cost 				= 7
-	buildtime	 		= 100
-	manpower 			= 2.4
-	defensiveness 		= 6
-	toughness 			= 3
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -3
+	softattack			= 1
+	hardattack			= 4
+	supplyconsumption 	= 0.3
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	speed_cap			= 26
+	equipment = { manpower = 3000 medium_armor = 116 }
+}
+
+# 4 - Semi-Modern 1949
+model = {
+	cost 				= 7
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
 	softness			= -3
 	softattack			= 1
 	hardattack			= 5
-	defaultorganisation	= 6
-	supplyconsumption 	= 0.4
-	fuelconsumption		= 0.8
+	supplyconsumption 	= 0.3
+	fuelconsumption		= 1.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 30
+	equipment = { manpower = 3000 medium_armor = 116 }
 }
-# 2 - Improved 1944
-model = {
-	cost 				= 7
-	buildtime	 		= 100
-	manpower 			= 2.4
-	defensiveness 		= 8
-	toughness 			= 4
-	softness			= -4
-	softattack			= 2
-	hardattack			= 7
-	defaultorganisation	= 8
-	supplyconsumption 	= 0.45
-	fuelconsumption		= 0.9
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
-# 3 - Advanced 1945
-model = {
-	cost 				= 8
-	buildtime	 		= 100
-	manpower 			= 2.4
-	defensiveness 		= 10
-	toughness 			= 5
-	softness			= -5
-	softattack			= 3
-	hardattack			= 9
-	defaultorganisation	= 10
-	supplyconsumption 	= 0.45
-	fuelconsumption		= 0.9
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
-# 4 - Semi-Modern 1949
-model = {
-	cost 				= 8
-	buildtime	 		= 100
-	manpower 			= 2.4
-	defensiveness 		= 12
-	toughness 			= 6
-	softness			= -6
-	softattack			= 4
-	hardattack			= 11
-	defaultorganisation	= 12
-	supplyconsumption 	= 0.5
-	fuelconsumption		= 1
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
+
 # 5 - Modern 1953
 model = {
-	cost 				= 8
-	buildtime	 		= 100
-	manpower 			= 2.4
-	defensiveness 		= 14
-	toughness 			= 7
-	softness			= -7
-	softattack		= 5
-	hardattack		= 13
-	defaultorganisation	= 14
-	supplyconsumption 	= 0.5
-	fuelconsumption		= 1
+	cost 				= 7
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -3
+	softattack			= 2
+	hardattack			= 5
+	supplyconsumption 	= 0.32
+	fuelconsumption		= 1.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	speed_cap			= 32
+	equipment = { manpower = 3000 medium_armor = 116 }
 }

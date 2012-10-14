@@ -262,7 +262,6 @@ military = {
 	engineer 			= 1	#5
 
 	cag 				= 100.000
-	escort 				= 100.0000
 	naval_torpedoes_s = 100
 
 	naval_asw = 10.0000 
@@ -300,7 +299,7 @@ technology = {
 		1560 1570 1580 1590 1600 1610 1620 1630 1640 1650 1660
 
 		# Mechanized
-		1470 1480 1490 1510 1510 1520
+		1470 1480 1490 1510 1520
 		
 		#Light armor brigades only techs / advanced Light armor
 		2010 2630 2640 2646 2650 2060
@@ -348,7 +347,7 @@ technology = {
 		5150 5160 5170
 
 		# Agriculture
-		5010 5700 5710 5010 5020 5030 5040 5720 53000 53010
+		5700 5710 5010 5020 5030 5040 5720 53000 53010
 
 		# Rocketry
 		7550 5550 5560 5570 5580 5590

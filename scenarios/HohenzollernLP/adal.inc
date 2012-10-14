@@ -15,7 +15,7 @@
    supplies               = 100
    money                  = 500
    capital                = 825
-   manpower               = 75
+   manpower               = 87
 
    policy =
    {  date              = {  year = 0 month = january day = 0  }
@@ -52,7 +52,7 @@
   # ######################
   # GW fighter
   techapps               = { 4010 2150 2290 1010 1190 1110 }
- peacetime_ic_mod = 0.6
+  
 	SpyInfo                = {  country = "ETH" NumberOfSpies = 2  }
 	headofstate            = { type = 9 id = 65001 }
 	headofgovernment       = { type = 9 id = 65002 }

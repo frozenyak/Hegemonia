@@ -18,32 +18,32 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		310 = 100
-		626 = 100
-		307 = 100
-		325 = 100
-		1076 = 100
-		1068 = 100
-		710 = 100
-		641 = 100
-		409 = 100
-		637 = 100
-		624 = 100
-		625 = 100
-		623 = 100
-		644 = 100
+		307 = 100 #dobrich
+		310 = 100 #constanza
+		626 = 100 #odessa
+		625 = 100 #ochakov
+		624 = 100 #kherson
+		637 = 100 #yevpatoria
+		641 = 100 #sevastopol
+		#623 = 100 #melitopol
+		#644 = 100 #rostov-on-don
+		710 = 100 #sukhumi
+		1068 = 100 #zonguldak
+		1076 = 100 #izmit
+		409 = 100 #istanbul
+		325 = 100 #burgas
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2732 = 100
-		2730 = 100
-		2729 = 100
-		2731 = 100
-		2733 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2732 = 100
+		# 2730 = 100
+		# 2729 = 100
+		# 2731 = 100
+		# 2733 = 100
+	# }
+# }

@@ -274,20 +274,20 @@ military = {
 	extra_convoys_peace		= 0.05
 
 	#### Divisions etc...
-	infantry 		= 25 #11
+	infantry 		= 30 #11
 	cavalry 		= 0
 	motorized 		= 10
 	mechanized 		= 10
 	light_armor 	= 5 #10
 	armor 			= 5
 	paratrooper 	= 0
-	marine 			= 1
+	marine 			= 0
 	bergsjaeger 	= 1
-	garrison		= 1
+	garrison		= 0
     hq 				= 1
 	militia 		= 0
-#				59 %
-	interceptor 	= 5
+#				62 %
+	interceptor 	= 4
 	multi_role 		= 7
 	cas 			= 0
 	strategic_bomber = 4
@@ -296,7 +296,7 @@ military = {
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				26 %
+#				25 %
 	battleship 		= 0
 	carrier 		= 5
 	escort_carrier	= 0
@@ -306,8 +306,8 @@ military = {
 	battlecruiser 	= 0
 	submarine 		= 0
 	nuclear_submarine = 0
-	transports 		= 5
-#				15 %
+	transports 		= 3
+#				17 %
 
 	#### Brigades
 	artillery 			= 20
@@ -447,12 +447,6 @@ technology = {
 	air_doctrines 	= 4
 	naval_doctrines = 2
 	secret_weapons  = 1
-}
-admiral = { 
-	ignore = { }
-	base = { }
-	target = { } 
-	#core = { 2525 2526 2527 2528 2529 2530 2531 2532 2533 2523 2576 2574 2573 2572 2568 2569 2570 2571 1913 1914 1921 1922 1923 1936 1937 1938 1939 1941 2525 2526 2527 2528 2529 2530 2531 2532 2533 2523 2576 2574 2573 2572 2568 2569 2570 2571 1980 2563 }
 }
 
 ###################################

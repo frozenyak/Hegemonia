@@ -631,7 +631,7 @@ country =
       name   = "HMS Hermes"
       type   = escort_carrier
       model  = 0
-      extra  = naval_torpedoes_s
+      extra  = light_cag
       brigade_model = 2
     }
     division =
@@ -847,7 +847,7 @@ country =
       name   = "HMS Eagle"
       type   = escort_carrier
       model  = 2
-      extra  = naval_torpedoes_s
+      extra  = light_cag
       brigade_model = 2
     }
     division =

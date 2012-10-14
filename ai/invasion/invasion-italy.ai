@@ -17,29 +17,37 @@ invasion = {
 	ignore		= no #ignore home fronts
       
 	staging_province = { }        
-	target = { 
-		419 = 100
-		418 = 100
-		427 = 100
-		430 = 100
-		433 = 100
-		422 = 100
-		400 = 100
-		412 = 100
+	target = {
+		# MEDITERRANEAN SEA
+		# -----------------
+		# Italy
+		430	= 8000  #Palermo
+		433	= 8000  #Syracuse
+		434	= 4000  #Cagliari
+		94	= 4000  #Corsica
+		422	= 8000  #Taranto
+		427	= 8000  #Salerno
+		416	= 8000  #Anzio
+		419	= 8000  #Rome
+		412	= 4000  #Ancona
+		400	= 4000  #Venice
+
+		429 = 8000  #Malta
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2182 = 100
-		2184 = 100
-		2180 = 100
-		2186 = 100
-		2737 = 100
-		2734 = 100
-		2735 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# #2180 = 100 #cape passero
+		# #2184 = 100 #gulf of naples
+		# #2182 = 100 #gulf of gaeta
+		# #2186 = 100 #gulf of taranto
+		# #adriatic
+		# #2737 = 100 #strait of otranto
+		# #2734 = 100 #western adriatic
+		# #2735 = 100 #gulf of venice
+	# }
+# }

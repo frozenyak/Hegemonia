@@ -18,18 +18,14 @@ invasion = {
       
 	staging_province = { }       
 	target = { 
-		1008 = 100
-		988 = 100
-		1002 = 100
-		981 = 100
-		972 = 100
-		958 = 100		
+		978 = 100 #dakar
+		988 = 100 #villa cisneros
+		963 = 100 #bissau
+		964 = 100 #freetown
+		969 = 100 #monrovia
+		962 = 100 #abidjan
+		956 = 100 #accra
+		929 = 100 #lagos
+		930 = 100 #port harcourt
 	} 
-}
-
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2280 = 100 2289 = 100 2290 = 100 2291 = 100 2292 = 100 2293 = 100 2294 = 100 2295 = 100 2296 = 100 2297 = 100 2301 = 100 2302 = 100 2303 = 100 }
 }

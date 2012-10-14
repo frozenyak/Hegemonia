@@ -18,33 +18,33 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		152 = 100 #Kiel
-		153 = 100 #Rostock
-		158 = 100 #Stettin
-		226 = 100 #Gdynia
-		181 = 100 #Danzig
-		184 = 100 #Koenigsberg
+		# 152 = 100 #Kiel
+		# 153 = 100 #Rostock
+		# 158 = 100 #Stettin
+		# 226 = 100 #Gdynia
+		# 181 = 100 #Danzig
+		# 184 = 100 #Koenigsberg
 		#LIT
-		269 = 100
-		264 = 100
-		270 = 100
-		275 = 100
+		269 = 100 #jelgava
+		264 = 100 #riga
+		270 = 100 #tallinn
+		275 = 100 #kuressaare
 		#
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2696 = 100
-		290 = 100
-		2718 = 100
-		2719 = 100
-		#
-		2720 = 100
-		2724 = 100
-		2725 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2696 = 100
+		# 290 = 100
+		# 2718 = 100
+		# 2719 = 100
+		# #
+		# 2720 = 100
+		# 2724 = 100
+		# 2725 = 100
+	# }
+# }

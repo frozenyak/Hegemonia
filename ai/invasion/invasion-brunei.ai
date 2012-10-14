@@ -18,22 +18,22 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1624 = 100
-		1625 = 100
-		1627 = 100
-		1631 = 100
-		1632 = 100
+		1624 = 100 #kuching
+		1625 = 100 #bandar seri begawan
+		1627 = 100 #tarakan
+		1632 = 100 #belikpapan
+		1631 = 100 #poentianak
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2559 = 100
-		2553 = 100
-		2539 = 100
-		2541 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2559 = 100
+		# 2553 = 100
+		# 2539 = 100
+		# 2541 = 100
+	# }
+# }

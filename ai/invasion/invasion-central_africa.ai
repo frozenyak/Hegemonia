@@ -18,16 +18,17 @@ invasion = {
       
 	staging_province = { }       
 	target = { 
-		1094 = 100
-		1095 = 100
-		1092 = 100
-		1101 = 100
+		893 = 100 #cabinda
+		894 = 100 #matadi
+		913 = 100 #bata
+		909 = 100 #yaounde
+		892 = 100 #lobito
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2276 = 100 2277 = 100 2278 = 100 2279 = 100 }
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = { 2276 = 100 2277 = 100 2278 = 100 2279 = 100 }
+# }

@@ -1,51 +1,58 @@
-# 0 - Basic
+# BRIG_MODEL_10_
+
+# 0 - Basic 1936
 model = {
-	cost 				= 4
-	buildtime	 		= 100
-	manpower 			= 1.2
-	defensiveness 		= 1
-	toughness 			= 4
-	defaultorganisation = 6
-	softness			= -1
-	softattack			= 2
-	hardattack			= 2
-	suppression		= 2
-	supplyconsumption 	= 0.65
-	fuelconsumption		= 0.8
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
-# 1 - Improved
-model = {
-	cost 				= 4.5
-	buildtime	 		= 100
-	manpower 			= 1.2
-	defensiveness 		= 3
-	toughness 			= 6
-	defaultorganisation = 8
+	cost 				= 3.5
+	buildtime	 		= 90
+	manpower 			= 3
+	defensiveness 		= -4
+	toughness 			= -4
+	defaultorganisation = 3
 	softness			= -2
-	softattack			= 4
-	hardattack			= 3
-	suppression		= 3
-	supplyconsumption 	= 0.95
-	fuelconsumption		= 0.95
+	softattack			= 2
+	hardattack			= 0
+	suppression			= 3
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.3
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { manpower = 3000 armored_car = 126 }
 }
-# 2 - Modern
+
+# 1 - Improved 1942
 model = {
-	cost = 5
-	buildtime = 100
-	manpower = 1.2
-	defensiveness = 5
-	toughness = 9
-	defaultorganisation = 10
-	softness = -3
-	softattack = 6
-	hardattack = 5
-	suppression = 5
-	supplyconsumption = 1.55
-	fuelconsumption = 1.1
+	cost 				= 3.5
+	buildtime	 		= 90
+	manpower 			= 3
+	defensiveness 		= -5
+	toughness 			= -5
+	defaultorganisation = 4
+	softness			= -2
+	softattack			= 2
+	hardattack			= 0
+	suppression		= 3
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.3
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { manpower = 3000 armored_car = 126 }
+}
+
+# 2 - Modern 1954
+model = {
+	cost 				= 3.5
+	buildtime = 100
+	manpower 			= 3
+	defensiveness 		= -5
+	toughness 			= -5
+	defaultorganisation = 5
+	softness 			= -2
+	softattack 			= 3
+	hardattack 			= 1
+	suppression			= 4
+	supplyconsumption 	= 0.5
+	fuelconsumption 	= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { manpower = 3000 armored_car = 126 }
 }

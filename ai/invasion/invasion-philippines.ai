@@ -17,27 +17,30 @@ invasion = {
 	ignore		= no #ignore home fronts
       
 	staging_province = { }        
-	target = { 
-		1579 = 100
-		1573 = 100
-		1571 = 100
-		1565 = 100
-		1566 = 100
-		1567 = 100
+	target = {
+		1579 = 100 #davao
+		1573 = 100 #leyte
+		#1574 = 100 #cebu
+		#1575 = 100 #samar
+		#1568 = 100 #legazpi
+		1571 = 100 #mindoro
+		1565 = 100 #manila
+		1566 = 100 #cabanatuan
+		1567 = 100 #baguio
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2485 = 100
-		2486 = 100
-		2554 = 100
-		2557 = 100
-		2555 = 100
-		2553 = 100
-		2558 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2485 = 100 #lingayen gulf
+		# 2486 = 100 #polillo islands
+		# #2554 = 100 #halmahera sea
+		# 2557 = 100 #surigao strait
+		# 2555 = 100 #leyte gulf
+		# #2553 = 100 #celebes sea
+		# 2558 = 100 #sibuyan sea
+	# }
+# }

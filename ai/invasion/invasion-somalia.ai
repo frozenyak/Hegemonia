@@ -18,15 +18,17 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1037 = 100
-		1056 = 100
-		1061 = 100
+		842 = 100 #mombasa
+		836 = 100 #mogadishu
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2031 = 100 2032 = 100 2461 = 100 2460 = 100 2459 = 100 2458 = 100 2457 = 100 }
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = { 
+		# 2199 = 100 #coast of somalia
+		# 2222 = 100 #ungama bay
+	# }
+# }

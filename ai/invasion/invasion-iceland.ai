@@ -18,16 +18,15 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1 = 100
+		1 = 100 #reykjavik
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2664 = 100
-		2665 = 50
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2664 = 100 #the westman islands
+	# }
+# }

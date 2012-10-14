@@ -33,7 +33,7 @@ country =
 		#pyrenees languagedoc
 		77 78 79 80 81 82 83 84 #85
 		#alpes provence
-		86 87 89 90 91 92 93 87
+		86 87 89 90 91 92 93
 	}
 	ownedprovinces = {
 		#aquitaine

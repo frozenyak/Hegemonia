@@ -24,19 +24,19 @@ invasion = {
 		226 = 100 #Gdynia
 		181 = 100 #Danzig
 		184 = 100 #Koenigsberg
-		147 = 100
+		147 = 100 #wilhelmshaven
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2696 = 100
-		#290 = 100
-		2718 = 100
-		2719 = 100
-		2692 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2696 = 100
+		# #290 = 100
+		# 2718 = 100
+		# 2719 = 100
+		# 2692 = 100
+	# }
+# }

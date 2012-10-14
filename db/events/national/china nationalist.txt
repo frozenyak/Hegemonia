@@ -57,27 +57,7 @@ event = {
 		command = { type = relation which = CYN value = -100 }
 		command = { type = trigger which = 64002 }
 		
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = resource which = supplies value = -500 }
-		command = { type = resource which = supplies value = -700 }
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
-		command = { type = set_domestic which = professional_army value = 8 }
-		command = { type = dissent value = 5 }
-		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
-		command = { type = local_setflag which = MOB8 }
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
+		command = { type = trigger which = 8300108 }
 	}
 	action = {
 		name = "Call back our troops from their territory"
@@ -102,27 +82,7 @@ event = {
 		command = { type = relation which = CYN value = -100 }
 		command = { type = trigger which = 64002 }
 		
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = resource which = supplies value = -500 }
-		command = { type = resource which = supplies value = -700 }
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
-		command = { type = set_domestic which = professional_army value = 8 }
-		command = { type = dissent value = 5 }
-		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
-		command = { type = local_setflag which = MOB8 }
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
+		command = { type = trigger which = 8300108 }
 	}
 	action = {
 		name = "Let's not escalate this further"

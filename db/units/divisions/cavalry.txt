@@ -1,3 +1,5 @@
+# MODEL_1_
+
 allowed_brigades =  artillery
 #allowed_brigades =  anti_tank		
 allowed_brigades =  anti_air		
@@ -9,7 +11,7 @@ allowed_brigades =  sp_artillery
 #allowed_brigades =  heavy_armor	
 #allowed_brigades =  super_heavy_armor
 allowed_brigades =  armored_car
-allowed_brigades =  engineer			
+allowed_brigades =  engineer
 allowed_brigades =  police
 
 #upgrade = { type = infantry upgrade_time_factor = 1 upgrade_cost_factor = 0.46 }
@@ -20,160 +22,147 @@ upgrade = { type = armor upgrade_time_factor = 1 upgrade_cost_factor = 1.6 }
 
 # Great War Cavalry Division - 0 1918
 model = {
-	cost 					= 8
-	buildtime	 			= 120
-	manpower 				= 15.3
-	maxspeed 				= 7
+	cost 					= 6
+	buildtime	 			= 330
+	manpower 				= 6
+	maxspeed 				= 12
 	defaultorganisation 	= 30
 	morale					= 30
-	defensiveness 			= 18
-	toughness				= 8
-	softness				= 100
+	defensiveness 			= 16
+	toughness				= 19
+	softness				= 70
 	suppression				= 4
-	airdefence				= 3
-	softattack				= 11
+	airdefence				= 7
+	softattack				= 8
 	hardattack             	= 0
-	airattack				= 2
-	transportweight			= 30
-	supplyconsumption 		= 1
+	airattack				= 0
+	transportweight			= 35
+	supplyconsumption 		= 3.0
 	fuelconsumption			= 0
-	speed_cap_art			= 7
-	speed_cap_eng			= 7
-	speed_cap_at			= 7
-	speed_cap_aa			= 7
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 6000 horses = 6000 artillery = 21 heavy_artillery = 6 }
 }
+
 # Early Cavalry Division - 1 1928
 model = {
-	cost 					= 8
-	buildtime	 			= 120
-	manpower 				= 15.3
-	maxspeed 				= 7
+	cost 					= 6
+	buildtime	 			= 330
+	manpower 				= 11
+	maxspeed 				= 16
 	defaultorganisation 	= 30
 	morale					= 30
-	defensiveness 			= 24
-	toughness				= 16
-	softness				= 100
-	suppression				= 4
-	airdefence				= 3
-	softattack				= 14
-	hardattack           	= 2
-	airattack				= 4
-	transportweight			= 30
-	supplyconsumption 		= 1.1
+	defensiveness 			= 16
+	toughness				= 19
+	softness				= 70
+	suppression				= 5
+	airdefence				= 7
+	softattack				= 9
+	hardattack           	= 1
+	airattack				= 1
+	transportweight			= 35
+	supplyconsumption 		= 3.0
 	fuelconsumption			= 0
-	speed_cap_art			= 7
-	speed_cap_eng			= 7
-	speed_cap_at			= 7
-	speed_cap_aa			= 7
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 11000 horses = 10246 artillery = 32 heavy_artillery = 12 anti_tank = 2 }
 }
+
 # Basic Cavalry Division - 2 1936
 model = {
-	cost 					= 8
-	buildtime	 			= 120
-	manpower 				= 15.3
-	maxspeed 				= 7
+	cost 					= 6
+	buildtime	 			= 330
+	manpower 				= 11
+	maxspeed 				= 16
 	defaultorganisation 	= 30
 	morale					= 30
-	defensiveness 			= 28
-	toughness				= 20
-	softness				= 100
-	suppression				= 4
-	airdefence				= 5
-	softattack				= 18
-	hardattack            	= 4
-	airattack				= 5
-	transportweight			= 30
-	supplyconsumption 		= 1.2
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 70
+	suppression				= 5
+	airdefence				= 7
+	softattack				= 11
+	hardattack            	= 2
+	airattack				= 1
+	transportweight			= 35
+	supplyconsumption 		= 3.0
 	fuelconsumption			= 0
-	speed_cap_art			= 7
-	speed_cap_eng			= 7
-	speed_cap_at			= 7
-	speed_cap_aa			= 7
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 0.5
+	equipment = { manpower = 11000 trucks = 600 horses = 9000 artillery = 42 anti_tank = 6 anti_air = 3 }
 }
+
 # Semi-Motorized Cavalry Division - 3 1939
 model = {
-	cost 					= 11 #9
-	buildtime	 			= 120
-	manpower 				= 15.3
-	maxspeed 				= 7
+	cost 					= 10
+	buildtime	 			= 330
+	manpower 				= 11
+	maxspeed 				= 20
 	defaultorganisation 	= 30
 	morale					= 30
-	defensiveness 			= 30
-	toughness				= 22
-	softness				= 95
-	suppression				= 4
-	airdefence				= 5
-	softattack				= 20
-	hardattack          	= 5
-	airattack				= 5
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 70
+	suppression				= 6
+	airdefence				= 7
+	softattack				= 12
+	hardattack          	= 2
+	airattack				= 1
 	transportweight			= 30
 	supplyconsumption 		= 1.5
-	fuelconsumption			= 1.5
+	fuelconsumption			= 2.5
 	no_fuel_combat_mod 		= -0.15
-	speed_cap_art			= 7
-	speed_cap_eng			= 10
-	speed_cap_at			= 7
-	speed_cap_aa			= 7
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.8
+	equipment = { manpower = 11000 trucks = 1100 horses = 8080 artillery = 58 anti_tank = 12 anti_air = 9 armored_car = 52 }
 }
+
 # Armored Cavalry Division - 4 1946
 model = {
-	cost 					= 14
-	buildtime	 			= 135
-	manpower 				= 15.3
-	maxspeed 				= 10
+	cost 					= 15
+	buildtime	 			= 350
+	manpower 				= 11
+	maxspeed 				= 36
 	defaultorganisation 	= 30
-	morale					= 30
-	defensiveness 			= 38
-	toughness				= 38
-	softness				= 50
+	morale					= 35
+	defensiveness 			= 18
+	toughness				= 14
+	softness				= 49
 	suppression				= 4
-	airdefence				= 8
-	softattack				= 24
-	hardattack           	= 10
-	airattack				= 7
+	airdefence				= 7
+	softattack				= 15
+	hardattack           	= 5
+	airattack				= 4
 	transportweight			= 30
-	supplyconsumption 		= 2
-	fuelconsumption			= 2.8
+	supplyconsumption 		= 2.2
+	fuelconsumption			= 12
 	no_fuel_combat_mod 		= -0.3
-	speed_cap_art			= 10
-	speed_cap_eng			= 10
-	speed_cap_at			= 10
-	speed_cap_aa			= 10
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.9
+	equipment = { manpower = 11000 trucks = 2386 horses = 1600 artillery = 76 heavy_artillery = 12 anti_tank = 42 anti_air = 12 armored_car = 83 halftracks = 386  medium_armor = 117 }
 }
+
 # Air Cavalry Division - 5 1951
 model = {
-	cost 					= 25
-	buildtime	 			= 155
-	manpower 				= 15.3
-	maxspeed 				= 14
+	cost 					= 22
+	buildtime	 			= 390
+	manpower 				= 5
+	maxspeed 				= 80
 	defaultorganisation 	= 40
 	morale					= 40
-	defensiveness 			= 18
-	toughness				= 20
+	defensiveness 			= 14
+	toughness				= 14
 	softness				= 95
-	suppression				= 4
-	airdefence				= 8
-	softattack				= 26
+	suppression				= 5
+	airdefence				= 7
+	softattack				= 22
 	hardattack              = 16
 	airattack				= 12
 	transportweight			= 30
-	supplyconsumption 		= 3.8
-	fuelconsumption			= 7
+	supplyconsumption 		= 2.8
 	no_fuel_combat_mod 		= -0.9
-	speed_cap_art			= 14
-	speed_cap_eng			= 14
-	speed_cap_at			= 14
-	speed_cap_aa			= 14
+	fuelconsumption			= 6
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 1.1
+	equipment = { manpower = 5000 trucks = 600 horses = 150 artillery = 86 heavy_artillery = 24 anti_tank = 32 anti_air = 14 armored_car = 74 halftracks = 426 medium_armor = 66 fighter = 100 }
 }

@@ -18,16 +18,16 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1361 = 100		
-		1362 = 100
+		1361 = 100 #gaoxiong
+		1362 = 100 #taipai
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2515 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2515 = 100 #formosa strait
+	# }
+# }

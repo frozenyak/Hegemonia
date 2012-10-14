@@ -272,6 +272,10 @@ event = {
 	trigger = {
 		NOT = { government = democratic }
 		OR = {
+			NOT = { headofgovernment = 2 }
+			NOT = { headofgovernment = 40 }
+		}
+		OR = {
 			#Liberals at +0: 15%
 			AND = {
 				NOT = { local_flag = liberals_minus_1 }
@@ -360,6 +364,7 @@ event = {
 	persistent = yes
 	trigger = {
 		NOT = { government = fascist }
+		NOT = { headofgovernment = 214 }
 		OR = {
 			#Reactionaries at +0: 15%
 			AND = {
@@ -1010,6 +1015,7 @@ event = {
 			headofstate = 1
 			headofstate = 37
 		}
+		#NOT = { headofgovernment = 214 }
 		random = 10
 		NOT = { local_flag = reactionaries_minus_2 }
 	}
@@ -1405,29 +1411,7 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_OK"
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
-		command = { type = resource which = supplies value = -500 }
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
-		command = { type = set_domestic which = professional_army value = 7 }
-		command = { trigger = { atwar = no } type = belligerence value = 5 }
-		command = { trigger = { NOT = { local_flag = MOB3 } atwar = no } type = dissent value = 4 }
-		command = { trigger = { NOT = { local_flag = MOB4 } atwar = no } type = dissent value = 4 }
-		command = { trigger = { NOT = { local_flag = MOB5 } atwar = no } type = dissent value = 4 }
-		command = { trigger = { NOT = { local_flag = MOB6 } atwar = no } type = dissent value = 4 }
-		command = { trigger = { atwar = no } type = dissent value = 3 }
-		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
+		command = { type = trigger which = 8300107 }
 	}
 }
 
@@ -2000,11 +1984,20 @@ event = {
 
 	action = {
 		name = "Create a Dutch client state"
+		ai_chance = 99
 		command = { type = independence which = HOL value = 1 }
 		command = { type = make_puppet which = HOL }
 		command = { type = alliance which = HOL }
 		command = { type = trigger which = 78000 }
 		command = { trigger = { government = fascist } type = flag_ext where = HOL which = "_ger" }
+	}
+	action = {
+		name = "Rule it ourselves"
+		trigger = {
+			headofstate = 37
+		}
+		ai_chance = 1
+		command = { type = dissent value = 5 }
 	}
 }
 
@@ -2090,7 +2083,7 @@ event = {
 			}
 			owned = { province = 39 data = GER }
 		}
-		name = "Partition them into France and Brittany"
+		name = "Partition them" #into France and Brittany"
 		ai_chance = 50
 		command = { type = independence which = U13 value = 1 }
 		command = { type = make_puppet which = U13 }
@@ -2111,7 +2104,7 @@ event = {
 	action = { trigger = { ai = yes }
 		name = "Rule it directly"
 		ai_chance = 10
-		command = { }
+		command = { type = dissent value = 5 }
 	}
 }
 
@@ -2157,7 +2150,7 @@ event = {
 				headofstate = 37
 			}
 		}
-		name = "Partition them into England and Scotland"
+		name = "Partition them" #into England and Scotland"
 		ai_chance = 70
 		command = { type = independence which = U73 value = 1 }
 		command = { type = make_puppet which = U73 }
@@ -2178,7 +2171,7 @@ event = {
 	action = { trigger = { ai = yes }
 		name = "Rule it directly"
 		ai_chance = 5
-		command = { }
+		command = { type = dissent value = 5 }
 	}
 }
 
@@ -2202,6 +2195,7 @@ event = {
 				area = { area = "Limousin_Auvergne" value = 60 }
 				area = { area = "Alpes_Provence" value = 80}
 				area = { area = "Aquitaine" }
+				area = { area = "New Hampshire" }
 			}
 		}
 	}
@@ -2218,6 +2212,7 @@ event = {
 				area = { area = "Limousin_Auvergne" value = 60 }
 				area = { area = "Alpes_Provence" value = 80}
 				area = { area = "Aquitaine" }
+				area = { area = "New Hampshire" }
 			}
 		}
 	}
@@ -2266,11 +2261,12 @@ event = {
 		command = { type = secedearea which = FRA value = Alpes_Provence when = 1 }
 		command = { type = secedearea which = FRA value = Limousin_Auvergne when = 1 }
 		command = { type = secedearea which = FRA value = Pyrenees_Languedoc when = 1 }
+		command = { type = secedearea which = FRA value = "New Hampshire" when = 1 }
 	}
 	action = { trigger = { ai = yes }
 		name = "Rule it directly"
 		ai_chance = 5
-		command = { }
+		command = { type = dissent value = 5 }
 	}
 }
 

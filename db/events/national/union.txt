@@ -1132,10 +1132,10 @@ event = {
 	trigger = {
 		atwar = yes
 		NOT = { control = { province = 409 } }
-		OR = {
-			control = { province = 1075 }
-			control = { province = 377 }
-		}
+		#OR = {
+		#	control = { province = 1075 }
+		#	control = { province = 377 }
+		#}
 		ai = yes
 	}
 
@@ -1150,8 +1150,8 @@ event = {
 	action = {
 		name = ACTION_NAME_NO
 		command = { type = dissent value = 5 }
-		command = { trigger = { control = { province = 1075 } NOT = { control = { province = 377 } } } type = capital which = 1075 }
-		command = { trigger = { control = { province = 377 } control = { province = 1075 } } type = capital which = 377 }
+		#command = { trigger = { control = { province = 1075 } NOT = { control = { province = 377 } } } type = capital which = 1075 }
+		#command = { trigger = { control = { province = 377 } control = { province = 1075 } } type = capital which = 377 }
 	}
 }
 

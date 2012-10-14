@@ -31,9 +31,10 @@ event = {
 
 	trigger = {
 		atwar = yes
-		random = 10
 		army = 2
+		NOT = { local_flag = mutinies }
 		OR = {
+			losses = 1000000
 			dissent = 20
 			AND = {
 				dissent = 15
@@ -68,7 +69,7 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_DAMN"
-		command = { type = dissent value = 1 }
+		command = { type = dissent value = 3 }
 		command = { type = disorg_division which = -1 where = 20 } #Minimum disorg value
 		command = { trigger = { army = 5 } 	type = disorg_division which = -1 where = 20 }
 		command = { trigger = { army = 8 } 	type = disorg_division which = -1 where = 20 }
@@ -87,6 +88,7 @@ event = {
 		command = { trigger = { army = 40 }	type = disorg_division which = -1 where = 20 }
 		command = { trigger = { army = 42 }	type = disorg_division which = -1 where = 20 }
 		command = { trigger = { army = 45 }	type = disorg_division which = -1 where = 20 }
+		command = { type = local_setflag which = mutinies }
 	}
 }
 event = {
@@ -95,8 +97,9 @@ event = {
 	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU }
 
 	trigger = {
+		losses = 500000
 		atwar = yes
-		random = 25 #50
+		NOT = { local_flag = war_weariness }
 		NOT = { flag = german_civil_war }
 	}
 
@@ -111,12 +114,8 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_DAMN"
-		command = { trigger = { NOT = {  OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } } }
-					type = dissent value = 2 }
-		command = { trigger = { OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } }
-					type = dissent value = 4 }
-		command = { trigger = { OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } }
-					type = domestic which = defense_lobby value = -1 }
+		command = { type = dissent value = 3 }	
+		command = { type = local_setflag which = war_weariness }
 	}
 }
 event = {
@@ -126,8 +125,8 @@ event = {
 
 	trigger = {
 		atwar = yes
-		random = 10
-		dissent = 15
+		losses = 2000000
+		NOT = { local_flag = general_strikes }
 		NOT = { flag = german_civil_war }
 	}
 
@@ -142,7 +141,326 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_DAMN"
-		command = { type = dissent value = 4 }
+		command = { type = dissent value = 5 }
+		command = { type = local_setflag which = general_strikes }	
+	}
+}
+event = {
+	id = 2000503 #War weariness (20% Territory Lost) - VIC, ENG, GER, AUS, U00, RUS, SPA, ITA, MEX, USA
+	persistent = yes
+	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA }
+
+	trigger = {
+		or = {
+			and = {
+				country = VIC
+				region = { region = "France" country = -2 data = 1 value = 21 } # GER starts off with soome territory.
+			}
+			and = {
+				country = ENG
+				or = {
+					region = { region = "Scotland" country = -2 data = 1 value = 10 }
+					region = { region = "England" country = -2 data = 1 value = 10 }
+				}
+			}
+			and = {
+				country = GER
+				region = { region = "Germany" country = -2 data = 1 value = 19 }
+			}
+			and = {
+				country = AUS
+				lost_national = { value = 19 }
+			}
+			and = {
+				country = U00
+				lost_national = { value = 20 }
+			}
+			and = {
+				country = RUS
+				lost_national = { value = 20 }
+			}
+			and = {
+				country = SPA
+				lost_national = { value = 20 }
+			}
+			and = {
+				country = ITA
+				region = { region = "Italy" country = -2 data = 1 value = 21 } # AUS starts off with some territory
+			}
+			and = {
+				country = MEX
+				lost_national = { value = 20 }
+			}
+			and = {
+				country = USA
+				lost_national = { value = 20 }
+			}
+		}
+		atwar = yes
+		NOT = { local_flag = lost_20 }
+		not = { lost_national = { value = 35 } }
+		not = { dissent = 40 } # No death spirals on nation formation
+	}
+
+	name = "EVT1914_2000501_NAME"
+	desc = "EVT1914_2000503_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 25 month = december year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 1 }
+		command = { trigger = { country = RUS } type = dissent value = 1 }
+		command = { type = local_setflag which = lost_20 }
+	}
+}
+
+event = {
+	id = 2000504 #War weariness (30% Territory Lost) - VIC, ENG, GER, AUS, U00, RUS, SPA, ITA, MEX, USA
+	persistent = yes
+	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA }
+
+	trigger = {
+		or = {
+			and = {
+				country = VIC
+				region = { region = "France" country = -2 data = 1 value = 31 }
+			}
+			and = {
+				country = ENG
+				or = {
+					region = { region = "Scotland" country = -2 data = 1 value = 15 }
+					region = { region = "England" country = -2 data = 1 value = 15 }
+				}
+			}
+			and = {
+				country = GER
+				region = { region = "Germany" country = -2 data = 1 value = 29 }
+			}
+			and = {
+				country = AUS
+				lost_national = { value = 29 }
+			}
+			and = {
+				country = U00
+				lost_national = { value = 30 }
+			}
+			and = {
+				country = RUS
+				lost_national = { value = 30 }
+			}
+			and = {
+				country = SPA
+				lost_national = { value = 30 }
+			}
+			and = {
+				country = ITA
+				region = { region = "Italy" country = -2 data = 1 value = 31 }
+			}
+			and = {
+				country = MEX
+				lost_national = { value = 30 }
+			}
+			and = {
+				country = USA
+				lost_national = { value = 30 }
+			}
+		}
+		atwar = yes
+		NOT = { local_flag = lost_30 }
+		not = { lost_national = { value = 45 } }
+		not = { dissent = 40 }
+	}
+
+	name = "EVT1914_2000501_NAME"
+	desc = "EVT1914_2000503_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 25 month = december year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 2 }
+		command = { trigger = { country = RUS } type = dissent value = 1 }
+		command = { type = local_setflag which = lost_30 }
+		command = { type = local_setflag which = lost_20 }
+	}
+}
+
+event = {
+	id = 2000505 #War weariness (40% Territory Lost) - VIC, ENG, GER, AUS, U00, RUS, SPA, ITA, SER, BUL, ROM, GRE, MEX, USA
+	persistent = yes
+	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA SER BUL ROM GRE MEX USA }
+
+	trigger = {
+		or = {
+			and = {
+				country = VIC
+				region = { region = "France" country = -2 data = 1 value = 41 }
+			}
+			and = {
+				country = ENG
+				or = {
+					region = { region = "Scotland" country = -2 data = 1 value = 20 }
+					region = { region = "England" country = -2 data = 1 value = 20 }
+				}
+			}
+			and = {
+				country = GER
+				region = { region = "Germany" country = -2 data = 1 value = 39 }
+			}
+			and = {
+				country = AUS
+				lost_national = { value = 39 }
+			}
+			and = {
+				country = U00
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = RUS
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = SPA
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = ITA
+				region = { region = "Italy" country = -2 data = 1 value = 41 }
+			}
+			and = {
+				country = SER
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = BUL
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = ROM
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = GRE
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = MEX
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = USA
+				lost_national = { value = 40 }
+			}
+		}
+		atwar = yes
+		NOT = { local_flag = lost_40 }
+		not = { dissent = 40 }
+	}
+
+	name = "EVT1914_2000501_NAME"
+	desc = "EVT1914_2000503_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 25 month = december year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 2 }
+		command = { trigger = { country = RUS } type = dissent value = 1 }
+		command = { trigger = { country = ENG } type = dissent value = 1 }
+		command = { type = local_setflag which = lost_40 }
+		command = { type = local_setflag which = lost_30 }
+		command = { type = local_setflag which = lost_20 }
+	}
+}
+
+event = {
+	id = 2000506 #War weariness (50% Territory Lost) - VIC, ENG, GER, AUS, U00, RUS, SPA, ITA, MEX, USA
+	persistent = yes
+	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA }
+
+	trigger = {
+		or = {
+			and = {
+				country = VIC
+				region = { region = "France" country = -2 data = 1 value = 51 }
+			}
+			and = {
+				country = ENG
+				or = {
+					region = { region = "Scotland" country = -2 data = 1 value = 25 }
+					region = { region = "England" country = -2 data = 1 value = 25 }
+				}
+			}
+			and = {
+				country = GER
+				region = { region = "Germany" country = -2 data = 1 value = 49 }
+			}
+			and = {
+				country = AUS
+				lost_national = { value = 49 }
+			}
+			and = {
+				country = U00
+				lost_national = { value = 50 }
+			}
+			and = {
+				country = RUS
+				lost_national = { value = 50 }
+			}
+			and = {
+				country = SPA
+				lost_national = { value = 50 }
+			}
+			and = {
+				country = ITA
+				region = { region = "Italy" country = -2 data = 1 value = 51 }
+			}
+			and = {
+				country = MEX
+				lost_national = { value = 50 }
+			}
+			and = {
+				country = USA
+				lost_national = { value = 50 }
+			}
+		}
+		atwar = yes
+		NOT = { local_flag = lost_50 }
+		not = { dissent = 40 }
+	}
+
+	name = "EVT1914_2000501_NAME"
+	desc = "EVT1914_2000503_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 25 month = december year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 2 }
+		command = { trigger = { not = { dissent = 20 } } type = dissent value = 10 }
+		command = { trigger = { not = { dissent = 30 } } type = dissent value = 10 }
+		command = { trigger = { not = { dissent = 35 } } type = dissent value = 5 }
+		command = { type = local_setflag which = lost_50 }
+		command = { type = local_setflag which = lost_40 }
+		command = { type = local_setflag which = lost_30 }
+		command = { type = local_setflag which = lost_20 }
 	}
 }
 
@@ -511,6 +829,7 @@ event = {
 			alliance = { country = AUS }
 			alliance = { country = LIT }
 		}
+		NOT = { alliance = { country = U02 } }
 	}
 
     date = { day = 1 month = january year = 1936 }
@@ -550,6 +869,7 @@ event = {
 			alliance = { country = GER }
 			alliance = { country = LIT }
 		}
+		NOT = { alliance = { country = U02 } }
 	}
 
 
@@ -562,11 +882,9 @@ event = {
 		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
 		command = { type = dissent value = -1 }
 		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Thrace" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Greek Island" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secederegion which = AUS value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
 		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
 	}
 	action = {
@@ -594,6 +912,7 @@ event = {
 			alliance = { country = AUS }
 			alliance = { country = GER }
 		}
+		NOT = { alliance = { country = U02 } }
 	}
 
 
@@ -606,10 +925,8 @@ event = {
 		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
 		command = { type = dissent value = -1 }
 		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Thrace" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Greek Island" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
@@ -643,6 +960,7 @@ event = {
 			alliance = { country = GER }
 			alliance = { country = LIT }
 		}
+		NOT = { alliance = { country = U02 } }
 	}
 
 
@@ -655,10 +973,8 @@ event = {
 		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
 		command = { type = dissent value = -1 }
 		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Thrace" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Greek Island" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
@@ -692,6 +1008,7 @@ event = {
 			alliance = { country = GER }
 			alliance = { country = LIT }
 		}
+		NOT = { alliance = { country = U02 } }
 	}
 
 
@@ -704,10 +1021,8 @@ event = {
 		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
 		command = { type = dissent value = -1 }
 		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Thrace" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Greek Island" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }

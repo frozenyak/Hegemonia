@@ -6,6 +6,7 @@
 event = "db\events\generic_decisions.txt"
 event = "db\events\genericevents.txt"
 event = "db\events\mobilization.txt"
+event = "db\events\mobilization_events.txt"
 
 event = "db\events\RandomEvents.txt"
 #event = "db\events\political - sc events.txt"
@@ -22,7 +23,7 @@ event = "db\events\dublin.txt"
 
 # AI Events
 event = "db\events\AI\AI_sliders.txt"
-#event = "db\events\AI\AI_invasions.txt"
+event = "db\events\AI\AI_invasions.txt"
 event = "db\events\AI\AI_files.txt"
 event = "db\events\AI\AI_mobi.txt"
 #event = "db\events\AI\AI_research.txt"

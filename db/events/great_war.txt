@@ -84,7 +84,7 @@ event = {
 		atwar = no
 		#domestic = { type = interventionism value = 5 }
 		NOT = { ispuppet = yes }
-		month = 4
+		month = 3 #4
 		NOT = { month = 7 }
 		NOT = { dissent = 5 }
 	}
@@ -96,12 +96,13 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "To Moscow!"
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = RUS }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = RUS }
+		command = { type = ai_prepare_war which = RUS }
 		#command = { type = dissent value = -5 }
 		command = { type = setflag which = great_war_by_event }
 	}
@@ -175,13 +176,14 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We go to war!"
 		ai_chance = 99
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = MEX }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = MEX }
+		command = { type = ai_prepare_war which = MEX }
 		#command = { type = setflag which = great_war_by_event }
 	}
 	action = { trigger = { ai = yes }
@@ -254,13 +256,14 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We go to war!"
 		ai_chance = 99
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = USA }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = USA 
+		command = { type = ai_prepare_war which = USA }
 		#command = { type = setflag which = great_war_by_event }
 		command = { trigger = { ai = yes } type = dissent value = -10 }
 	}
@@ -337,13 +340,14 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 30
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We will reclaim what is ours!"
 		ai_chance = 99
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = U01 }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = U01 }
+		command = { type = ai_prepare_war which = U01 }
 	}
 	action = { trigger = { ai = yes }
 		name = "We're not interested in Crete"
@@ -374,12 +378,12 @@ event = {
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 5
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "The League will defend Crete!"
 		ai_chance = 75
-		#command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = interventionism value = 1 }
 		command = { type = alliance which = U01 }
 		command = { type = setflag which = great_war_by_event }
 	}
@@ -452,13 +456,14 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 30
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "Yes, to war!"
 		ai_chance = 99
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = U06 }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = U06 }
+		command = { type = ai_prepare_war which = U06 }
 		command = { type = setflag which = great_war_by_event }
 	}
 	action = { trigger = { ai = yes }
@@ -491,7 +496,7 @@ event = {
 		NOT = { puppet = { country = GER country = VIC } }
 		NOT = { flag = HRE_comintern_pact }
 		NOT = { ispuppet = yes }
-		month = 3
+		month = 2 #3
 		NOT = { month = 8 }
 		NOT = { dissent = 5 }
 		domestic = { type = interventionism value = 5 }
@@ -504,12 +509,13 @@ event = {
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We will crush them!"
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = GER }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = GER }
+		command = { type = ai_prepare_war which = GER }
 	}
 }
 
@@ -535,7 +541,7 @@ event = {
 		#NOT = { flag = comintern_league_pact }
 		NOT = { event = 2052003 }
 		NOT = { ispuppet = yes }
-		month = 3
+		month = 2 #3
 		NOT = { month = 8 }
 		NOT = { dissent = 5 }
 		domestic = { type = interventionism value = 5 }
@@ -548,12 +554,13 @@ event = {
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We will crush them!"
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = DFR }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = DFR }
+		command = { type = ai_prepare_war which = DFR }
 	}
 }
 
@@ -617,7 +624,7 @@ event = {
 				NOT = { exists = GEO }
 			}
 		}
-		month = 4
+		month = 3 #4
 		NOT = { month = 7 }
 		#NOT = { government = democratic }
 		NOT = { dissent = 5 }
@@ -631,12 +638,13 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We will crush them!"
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = LIT }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = LIT }
+		command = { type = ai_prepare_war which = LIT }
 	}
 }
 
@@ -653,6 +661,7 @@ event = {
 		OR = {
 			random = 5
 			NOT = { control = { province = 460 data = SPA } }  #Madrid
+			lost_national = { country = SPA value = 25 }
 		}
 		NOT = { flag = peace_in_our_time }
 		NOT = { flag = HRE_comintern_pact }
@@ -662,14 +671,14 @@ event = {
 		NOT = { alliance = { country = VIC } }
 		NOT = { non_aggression = { country = VIC } }
 		NOT = { ispuppet = yes }
-		month = 3
+		month = 2 #3
 		NOT = { month = 8 }
 		lost_national = { country = SPA value = 5 }
 		NOT = { 
 			control = { province = 440 data = SPA } #Barcelona
 			control = { province = 443 data = SPA } #Bilbao
 		}
-		government = fascist
+		#government = fascist
 	}
 
 	name = AI_EVENT #"France at War"
@@ -678,7 +687,7 @@ event = {
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We will crush them!"
@@ -727,13 +736,14 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 30
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We must secure control of Suez by any means!"
 		ai_chance = 99
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = EGY }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = EGY }
+		command = { type = ai_prepare_war which = EGY }
 		command = { type = setflag which = great_war_by_event }
 	}
 	# action = { trigger = { ai = yes }
@@ -793,13 +803,14 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 30
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We must secure control of Suez by any means!"
 		ai_chance = 99
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = EGY }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = EGY }
+		command = { type = ai_prepare_war which = EGY }
 		command = { type = setflag which = great_war_by_event }
 	}
 	#action = { trigger = { ai = yes }
@@ -836,12 +847,13 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 10
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We will reclaim what is ours!"
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = U01 }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = U01 }
+		command = { type = ai_prepare_war which = U01 }
 	}
 }
 
@@ -900,7 +912,7 @@ event = {
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "Seek a ceasefire with Iberia"
@@ -1011,10 +1023,10 @@ event = {
 				NOT = { war = { country = U00 } }
 			}
 		}
-		OR = {
-			NOT = { flag = GER_renounce_ITA }
-			participant = { value = 1 }
-		}
+		#OR = {
+		#	NOT = { flag = GER_renounce_ITA }
+		#	participant = { value = 1 }
+		#}
 		OR = {
 			alliance = { country = GER }
 			participant = { value = 1 }
@@ -1048,14 +1060,16 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "To Rome! Attack!"
 		ai_chance = 100
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { trigger = { exists = RSI } type = war which = RSI }
-		command = { trigger = { NOT = { exists = RSI } } type = war which = U00 }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { trigger = { exists = RSI } type = war which = RSI }
+		#command = { trigger = { NOT = { exists = RSI } } type = war which = U00 }
+		command = { trigger = { exists = RSI } type = ai_prepare_war which = RSI }
+		command = { trigger = { NOT = { exists = RSI } } type = ai_prepare_war which = U00 }
 		command = { type = setflag which = great_war_by_event }
 	}
 	action = { trigger = { ai = yes }
@@ -1114,7 +1128,7 @@ event = {
 		NOT = { flag = HRE_comintern_pact }
 		#domestic = { type = interventionism value = 5 }
 		NOT = { ispuppet = yes }
-		month = 3
+		month = 2 #3
 		NOT = { month = 8 }
 		OR = {
 			NOT = { headofstate = 102188 }
@@ -1133,13 +1147,14 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "The reactionaries will fall, to war!"
 		ai_chance = 99
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = AUS }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = AUS }
+		command = { type = ai_prepare_war which = AUS }
 	}
 	# action = { trigger = { ai = yes }
 		# name = "We don't want war"
@@ -1184,7 +1199,7 @@ event = {
 				NOT = { flag = HRE_comintern_pact }
 			}
 		}
-		month = 4
+		month = 3 #4
 		NOT = { month = 7 }
 		
 		NOT = { flag = RUS_western_peace }
@@ -1200,12 +1215,13 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 20
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "We will crush them!"
-		#command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = RUS }
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = war which = RUS }
+		command = { type = ai_prepare_war which = RUS }
 	}
 }
 
@@ -1248,9 +1264,10 @@ event = {
 
 	date = { day = 1 month = january year = 1939 }
 	offset = 30
-	deathdate = { day = 1 month = january year = 1945 }
+	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
-		command = { type = war which = SPA }
+		#command = { type = war which = SPA }
+		command = { type = ai_prepare_war which = SPA }
 	}
 }

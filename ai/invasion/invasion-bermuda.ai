@@ -18,15 +18,15 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1773 = 100
+		1773 = 100 #bermudas
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2312 = 100
-	}
-}
+#admiral = { 
+#	ignore = { }
+#	base = { }
+#	core = {  }
+#	target = {
+#		2312 = 100
+#	}
+#}

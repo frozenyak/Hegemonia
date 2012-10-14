@@ -840,9 +840,9 @@ country =
     division =
     { id     = { type = 10003 id = 581 }
       name   = "CNS Augustinas IV"
-      type   = escort_carrier
-      model  = 2
-      extra  = naval_torpedoes_s
+      type   = light_carrier
+      model  = 0
+      extra  = light_cag
       brigade_model = 1      
     }   
     division =

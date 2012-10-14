@@ -18,30 +18,31 @@ invasion = {
       
 	staging_province = { }        
 	target = {
-		1051 = 100
-		1052 = 100
-		1039 = 100
-		1043 = 100
-		1038 = 100
-		1048 = 100
-		1041 = 100
-		1032 = 100
+		1051 = 100 #el mukalla
+		1052 = 100 #masqat
+		1039 = 100 #abu dhabi
+		1040 = 100 #dammam
+		1043 = 100 #khasab
+		1038 = 100 #doha
+		#1048 = 100 #medina
+		1041 = 100 #kuwait
+		1032 = 100 #basrah
 	} 
 } 
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2212 = 100
-		2211 = 100
-		2210 = 100
-		2200 = 100
-		2198 = 100
-		2197 = 100
-		2201 = 100
-		2206 = 100
-		2207 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2212 = 100 #persian gulf
+		# 2211 = 100 #gulf of oman
+		# 2210 = 100 #coast of oman
+		# #2200 = 100 #gulf of aden
+		# #2198 = 100 #bab-el mandeb strait
+		# #2197 = 100 #red sea
+		# #2201 = 100 #suqutra archipelago
+		# #2206 = 100 #owen fracture zone
+		# #2207 = 100 #gwatar bay
+	# }
+# }

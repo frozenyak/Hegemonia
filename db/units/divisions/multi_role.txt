@@ -1,158 +1,173 @@
+# MODEL_12_
+
 upgrade = { type = cas upgrade_time_factor = 0.52 upgrade_cost_factor = 2.32 }
 upgrade = { type = interceptor upgrade_time_factor = 0.52 upgrade_cost_factor = 2.32 }
 #upgrade = { type = multi_role upgrade_time_factor = 0.52 upgrade_cost_factor = 2.32 }
 
-model = { # Early Fighter - 0
-	cost 					= 14
-	buildtime	 			= 180
+model = { # Early Fighter - 0 1930
+	cost 						= 18
+	buildtime	 				= 210
 	defaultorganisation 		= 30
-	morale				= 30
-	manpower				= 0.8
-	maxspeed				= 350
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 350
 	surfacedetectioncapability	= 1
-	airdetectioncapability		= 2
-	surfacedefence				= 5
-	airdefence				= 5 #6
-	airattack			= 7 #8
-	strategicattack			= 0
-	softattack			= 3
-	hardattack			= 0 #1
-	navalattack			= 0
-	range					= 350 #400
-	supplyconsumption 			= 2.025
-	fuelconsumption				= 2.325
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
-model = { # Basic Multi-Role Fighter - 1
-	cost 					= 15.5 #14
-	buildtime	 			= 180 #150
-	defaultorganisation 		= 30
-	morale					= 50
-	manpower				= 0.8
-	maxspeed				= 500
-	surfacedetectioncapability	= 2 #4
-	airdetectioncapability		= 3
-	surfacedefence				= 7
-	airdefence				= 5
-	airattack			= 10
+	airdetectioncapability		= 6
+	surfacedefence				= 6
+	airdefence					= 14
+	airattack					= 3
 	strategicattack				= 0
-	softattack				= 3
-	hardattack				= 1
-	navalattack				= 0
-	range					= 475 #350
-	supplyconsumption 		= 2.25
-	fuelconsumption				= 2.4
+	softattack					= 1
+	hardattack					= 1
+	navalattack					= 0
+	range						= 400
+	supplyconsumption 			= 1.1
+	fuelconsumption				= 1.8
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { fighter = 100 manpower = 1000 }
 }
-model = { # Improved Multi-Role Fighter - 2
-	cost 					= 19.5 #16
-	buildtime	 			= 180 #150
+
+model = { # Basic Multi-Role Fighter - 1 1938
+	cost 						= 19
+	buildtime	 				= 210
 	defaultorganisation 		= 30
-	morale					= 50
-	manpower				= 0.8
-	maxspeed				= 600
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 500
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 7
+	surfacedefence				= 6
+	airdefence					= 10
+	airattack					= 5
+	strategicattack				= 0
+	softattack					= 2
+	hardattack					= 1
+	navalattack					= 0
+	range						= 475
+	supplyconsumption 			= 1.1
+	fuelconsumption				= 1.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { fighter = 100 manpower = 1000 }
+}
+
+model = { # Improved Multi-Role Fighter - 2 1940
+	cost 						= 20
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 600
 	surfacedetectioncapability	= 6
-	airdetectioncapability		= 2 #6
-	surfacedefence				= 8
-	airdefence				= 6
-	airattack				= 12
+	airdetectioncapability		= 8
+	surfacedefence				= 6
+	airdefence					= 9
+	airattack					= 6
 	strategicattack				= 0
-	softattack				= 3
-	hardattack				= 3
-	navalattack				= 1
-	range					= 550 #400
-	supplyconsumption 		= 2.475
-	fuelconsumption				= 2.6
+	softattack					= 4
+	hardattack					= 1
+	navalattack					= 1
+	range						= 550
+	supplyconsumption 			= 1.2
+	fuelconsumption				= 1.9
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { fighter = 100 manpower = 1000 }
 }
-model = { # Advanced Multi-Role Fighter - 3
-	cost 					= 21.5 #19
-	buildtime	 			= 180 #150
+
+model = { # Advanced Multi-Role Fighter - 3 1945
+	cost 						= 22
+	buildtime	 				= 210
 	defaultorganisation 		= 30
-	morale					= 50
-	manpower				= 0.8
-	maxspeed				= 650
-	surfacedetectioncapability	= 3 #8
-	airdetectioncapability		= 8
-	surfacedefence				= 10
-	airdefence				= 9
-	airattack				= 15
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 650
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 10
+	surfacedefence				= 6
+	airdefence					= 7
+	airattack					= 7
 	strategicattack				= 0
-	softattack				= 5
-	hardattack				= 5
-	navalattack				= 2
-	range					= 650 #500
-	supplyconsumption 		= 2.925
+	softattack					= 5
+	hardattack					= 3
+	navalattack					= 2
+	range						= 650
+	supplyconsumption 			= 1.3
+	fuelconsumption				= 2.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { fighter = 100 manpower = 1000 }
+}
+
+model = { # Basic Turbojet Multi-Role Fighter - 4 1948
+	cost 						= 24
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 850
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 11
+	surfacedefence				= 3
+	airdefence					= 6
+	airattack					= 6
+	strategicattack				= 0
+	softattack					= 5
+	hardattack					= 2
+	navalattack					= 2
+	range						= 700
+	supplyconsumption 			= 1.6
+	fuelconsumption				= 2.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { fighter = 100 manpower = 1000 }
+}
+
+model = { # Improved Turbojet Multi-Role Fighter - 5 1950
+	cost 						= 25
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 950
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 11
+	surfacedefence				= 3
+	airdefence					= 6
+	airattack					= 7
+	strategicattack				= 0
+	softattack					= 5
+	hardattack					= 3
+	navalattack					= 3
+	range						= 850
+	supplyconsumption 			= 1.6
+	fuelconsumption				= 2.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { fighter = 100 manpower = 1000 }
+}
+
+model = { # Supersonic Turbojet Multi-Role Fighter - 6 1954
+	cost 						= 27
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 1600
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 12
+	surfacedefence				= 2
+	airdefence					= 3
+	airattack					= 7
+	strategicattack				= 0
+	softattack					= 6
+	hardattack					= 6
+	navalattack					= 6
+	range						= 1100
+	supplyconsumption 			= 1.8
 	fuelconsumption				= 2.8
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-}
-model = { # Basic Turbojet Multi-Role Fighter - 4
-	cost 					= 26.5 #22
-	buildtime	 			= 180 #150
-	defaultorganisation 		= 30
-	morale					= 50
-	manpower				= 0.8
-	maxspeed				= 950
-	surfacedetectioncapability	= 3 #7
-	airdetectioncapability		= 7
-	surfacedefence				= 16
-	airdefence				= 15
-	airattack				= 22
-	strategicattack				= 0
-	softattack				= 6
-	hardattack				= 6
-	navalattack				= 2
-	range					= 850 #550
-	supplyconsumption 		= 3.375
-	fuelconsumption				= 3.5
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
-model = { # Improved Turbojet Multi-Role Fighter - 5
-	cost 					= 30.5 #25
-	buildtime	 			= 180 #150
-	defaultorganisation 		= 30
-	morale					= 50
-	manpower				= 0.8
-	maxspeed				= 1100
-	surfacedetectioncapability	= 3 #8
-	airdetectioncapability		= 10
-	surfacedefence				= 18
-	airdefence				= 18
-	airattack				= 27
-	strategicattack				= 0
-	softattack				= 7
-	hardattack				= 7
-	navalattack				= 4
-	range					= 1000 #600
-	supplyconsumption 		= 3.825
-	fuelconsumption				= 3.7
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-}
-model = { # Supersonic Turbojet Multi-Role Fighter - 6
-	cost 					= 35.5 #30
-	buildtime	 			= 180 #150
-	defaultorganisation 		= 30
-	morale					= 50
-	manpower				= 0.8
-	maxspeed				= 1600
-	surfacedetectioncapability	= 3 #9
-	airdetectioncapability		= 10 #12
-	surfacedefence				= 19
-	airdefence				= 20
-	airattack				= 32
-	strategicattack				= 0
-	softattack				= 8
-	hardattack				= 8
-	navalattack				= 4
-	range					= 1100 #650
-	supplyconsumption 		= 4.275
-	fuelconsumption				= 4.2
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
+	equipment = { fighter = 100 manpower = 1000 }
 }

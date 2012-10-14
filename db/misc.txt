@@ -164,7 +164,21 @@ economy = {
 # Modifier on dissent taken from nukes in national provinces. Dissent = (MP + IC*0.5) * Nuke Power * THIS.
 	0.5 #0.5
 # Max daily dissent that can be added to player controlled countries when not enough supplies are produced (and the same time more then required IC is used on CG or on any other slider then on Supplies). 0.0 - Disabled, 1.0 - No restriction
-	1 #0
+	1.0
+# Nukes production rate modifier. Higher this is, longer it takes to get a new nuke.
+	200.0 #80.0
+# Convoy system options for allied (own country and friendly nations controlled land connected provinces) and own (own country controlled and land connected provinces) areas: 
+#	0 - Ignore allied areas, work on own areas only. Default (old) behavior
+#	1 - Convoys can be to/from own country controlled provinces only, but allied area is used too (so there's only one convoy to allied area per country)
+#	2 - Convoys can use allied provinces as start/end destinations as long as the country controls at least one province in the allied area
+#	Note 1: Convoys can start from oversea puppet provinces regardless of this setting (required to transport puppet's resources to master's capital)
+#	Note 2: Options 1 and 2 work best if "Merge and relocate provincial depots to the best province in the area." option is enabled too.
+	2 #1
+# Resource convoys can ship back to capital unneeded supplies (and oil) from oversea depots. 
+#	-1.0 - Disabled (only oil is shipped back)
+#	>= 0.0 - Percentage of the current needs that should be left in the province. 
+#	Examples: 0.0 - take all exceeding supplies and oil, 0.5 - leave currently needed + 50% buffer, 1.0 - leave currently needed + 100% buffer etc.
+	0.2 # -1.0
 }
 
 intelligence = {
@@ -364,12 +378,18 @@ combat = {
 	6 #1.0
 # Damage factor versus resources from bombing
 	3 #1.0
-# How effective is ground-def efficiency when applied to defence chance rolls.
-	1.5 #1.0
-# Base chance to avoid hit if defences left.
-	0.9 #0.8
-# Base chance to avoid hit if no defences left.
-	0.7 #0.6
+# Base chance of Land units to avoid hit if defences left, gets multiplied with Ground Defense Efficiency.
+	0.9 #0.6
+# Base chance of Air units to avoid hit if defences left
+	0.9 #0.6
+# Base chance of Naval units to avoid hit if defences left
+	0.9 #0.6
+# Base chance of Land units to avoid hit if no defences left.
+	0.9
+# Base chance of Air units to avoid hit if no defences left.
+	0.9
+# Base chance of Naval units to avoid hit if no defences left.
+	0.9
 # CHANCE TO GET TERRAIN TRAIT 
 	3600 #1200
 # CHANCE TO GET EVENT TRAIT 
@@ -378,20 +398,62 @@ combat = {
 	0.1
 # Combat bonus for terrain trait on similar terrain (Ranger in Jungles for example)
 	0.05 #0.0
+# Combat bonus per leader skill point - Land commanders.
+	0.03 #0.05
+# Combat bonus per leader skill point - Air commanders.
+	0.02
+# Combat bonus per leader skill point - Naval commanders.
+	0.02
 # BONUS_ON_EVENT_TRAIT_
 	0.05
 # Chance of leaders dying while in combat per day
 	0.0003
+# Land unit - Min inflicted ORG damage - starting value, it is modified before being used.
+	1.0 #1.0
+# Land unit - Additional inflicted ORG damage (random) for Hard vs Hard or Soft vs Soft units - starting value, it is modified before being used. Don't use fractions!
+	2 #2	
+# Land unit - Additional inflicted ORG damage (random) for Hard vs Soft units - starting value, it is modified before being used. Don't use fractions!
+	4 #4
+# Land unit - Min inflicted STR damage - starting value, it is modified before being used.
+	1.0 #1.0
+# Land unit - Additional inflicted STR damage (random) for Hard vs Hard or Soft vs Soft units - starting value, it is modified before being used. Don't use fractions!
+	2 #2
+# Land unit - Additional inflicted STR damage (random) for Hard vs Soft units - starting value, it is modified before being used. Don't use fractions!
+	1 #1	
+# Air unit - Min inflicted ORG damage - starting value, it is modified before being used.
+	2.0 #2.0
+# Air unit - Additional inflicted ORG damage (random) - starting value, it is modified before being used. Don't use fractions!
+	5 #5	
+# Air unit - Min inflicted STR damage - starting value, it is modified before being used.
+	1.0 #1.0
+# Air unit - Additional inflicted STR damage (random) - starting value, it is modified before being used. Don't use fractions!
+	2 #2
+# Air unit - STR damage modifier vs entrenched Land units (modified by current entrenchment level). Lower THIS to reduce taken STR damage by entrenched Land units.
+	2.0 #2.0
+# Naval unit - Min inflicted ORG damage - starting value, it is modified before being used.
+	3.0 #3.0
+# Naval unit - Additional inflicted ORG damage (random) - starting value, it is modified before being used. Don't use fractions!
+	6 #6	
+# Naval unit - Min inflicted STR damage - starting value, it is modified before being used.
+	1.0 #1.0
+# Naval unit - Additional inflicted STR damage (random) - starting value, it is modified before being used. Don't use fractions!
+	2 #2
 # Land vs. Air - Str dmg air units takes from land units will increase by land unit org/ this value [multiplier]
-	25 #75.0 #25.0
+	25.0 #75.0 #25.0
 # Land vs. Air - Org dmg - Increasing this value will increase the org dmg air units takes from land units [multiplier]
 	0.4 #0.015
 # Land vs. Air - Str dmg 2 - Increasing this value will increase the str dmg air units takes from land units [multiplier]
-	0.1 #0.15 #0.18 #2
+	0.10 #0.15 #0.18 #2
 # Land vs. Land - Org dmg - Increasing this will increase ORG damage land unit takes in battle with other land units [multiplier]
-	0.03 #0.6
+	0.039 #0.6
+# Land vs. Land - Org dmg in Urban provinces [(0.0 = no Org dmg) to (1.0 = no effect)] - Increasing this will increase ORG damage land unit takes in battle with other land units in Urban provinces. Applied as to both sides [multiplier]
+	0.6 #1.0
+# Land vs. Land - Org dmg if Land Fort [(0.0 = no Org dmg) to (1.0 = no effect)] - Increasing this will increase ORG damage land unit takes in battle with other land units if there's Land Fort in the province. Applied as to both sides [multiplier]
+	0.5 #1.0
+# Land vs. Land - Org dmg if Land Fort - Required Land Fort current size for the above ORG multiplier to trigger [absolute value from 0.01 to 10.0; 10.0+ effectively disables the modifier]
+	1.0 #100.0
 # Land vs. Land - Str dmg - Increasing this will increase STR damage land unit takes in battle with other land units [multiplier]
-	0.017 #0.1
+	0.0175 #0.1
 # Air vs. Air - Org dmg - Increasing this will increase ORG damage air unit takes in battle with other air units [multiplier]
 	2.0
 # Air vs. Air - Str dmg - Increasing this will increase STR damage air unit takes in battle with other air units [multiplier]
@@ -498,6 +560,106 @@ combat = {
 	50 #10 #100
 # Screen or Capital ships targeting in naval combats. -1 : Use both fleets positioning;  >0 : Use a random number up to (THIS-1) and compare it to other fleet's positioning (target capital ships if positioning is lesser)
 	-1 #100
+# Fleet positioning  in naval combat - Daytime bonus
+	0.4 #0.4
+# Fleet positioning  in naval combat - Leader skill modifier per skill point
+	0.1 #0.1
+# Fleet positioning  in naval combat - Fleet size modifier (per ship)
+	-0.02 #-0.02
+# Fleet positioning  in naval combat - Fleet composition [Screens vs Capitals ratio; It can be between 0.0 (enough screens) and 1.0 (only capital ships)] modifier 
+	-0.5 #-0.5
+# Land and Coastal forts damage modifier for every 100 STR points of attacking units, hourly applied.
+	0.00021 #0.00042
+# Max damage Land and Coastal forts could take per hour in combat.
+	0.002 #0.01
+# Min. Softness for a land division, including added by brigades.
+	20.0	#0.0
+# Auto-retreat from combat when average ORG for own or controlled units drop below THIS
+	5.0 #5.0
+# ORG modifier for land units after naval transportation. [ORG = ORG * THIS]
+	0.2 #0.5
+# Max Land units dig in level.
+	30.0 #15.0
+# Dig in level increase per day.
+	1.5 #1.0
+# Breakthrough and Encirclement combat events chance modifiers by average unit speed (sum of the speed of all attacking divisions / attacking divisions count). 
+	# Min. average unit speed for chance bonus to be applied (Avrg. Unit Speed - THIS > 0.0):
+	10.0 #3.0
+	# Maximum chance bonus reached with THIS remaining speed point (Avrg. Unit Speed - Value above <= THIS)
+	24.0 #4.0
+	# Chance modifier per remaining speed point (higher THIS is, higher the chance bonus will be)
+	0.025 #0.1
+# Combat events duration in hours.
+	8 #8
+# Counterattack combat event modifiers
+	#Attacker ORG damage
+		1.5 #1.5
+	#Attacker STR damage
+		1.0 #1.0
+	#Defender ORG damage
+		1.0 #1.0
+	#Defender STR damage
+		1.25 #1.25
+# Assualt combat event modifiers
+	#Attacker ORG damage
+		1.0 #1.0
+	#Attacker STR damage
+		1.25 #1.25
+	#Defender ORG damage
+		1.5 #1.5
+	#Defender STR damage
+		1.0 #1.0
+# Encirclement combat event modifiers
+	#Attacker ORG damage
+		0.9 #0.9
+	#Attacker STR damage
+		1.0 #1.0
+	#Defender ORG damage
+		1.0 #1.0
+	#Defender STR damage
+		1.75 #1.75
+# Ambush combat event modifiers
+	#Attacker ORG damage
+		0.8 #0.8
+	#Attacker STR damage
+		0.8 #0.8
+	#Defender ORG damage
+		1.2 #1.2
+	#Defender STR damage
+		1.2 #1.2
+# Delay combat event modifiers
+	#Attacker ORG damage
+		1.0 #1.0
+	#Attacker STR damage
+		1.0 #1.0
+	#Defender ORG damage
+		1.0 #1.0
+	#Defender STR damage
+		0.5 #0.5
+# Tactical Withdrawal combat event modifiers
+	#Attacker ORG damage
+		0.75 #0.75
+	#Attacker STR damage
+		0.5 #0.5
+	#Defender ORG damage
+		0.25 #0.25
+	#Defender STR damage
+		0.5 #0.5
+# Breakthrough combat event modifiers
+	#Attacker ORG damage
+		1.0 #1.0
+	#Attacker STR damage
+		0.8 #0.8
+	#Defender ORG damage
+		1.5 #1.5
+	#Defender STR damage
+		1.0 #1.0
+# HQ units can take STR damage only during Breakthrough combat event. 1 - Yes, 0 - No
+	0 #1
+# Combat mode. Note: This setting controls only full names, short names and descriptions of some unit stats.
+# 0 - Use old (DH 1.02 and older) mode: Defensiveness, Toughness, Air Defence, Surface Defence, Sea Defence
+# 1 - Use new (DH 1.03) mode: Defensive Vulnerability, Offensive Vulnerability, Air Vulnerabilty, Ground Vulnerabilty, Naval Vulnerabilty
+	1 #0
 }
 
 mission = {
@@ -627,6 +789,8 @@ mission = {
 	0 	# 0 = disabled by default, 1 = enabled by default
 	0.75 #0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
 	0.5	# Speed bonus: (Move time * This / mission_efficiency). Lower the better
+# Use Attack and Support Attack mission efficiencies as land combat modifiers for attackers. 0 – Disable, 1 - Enable
+	0
 }
 
 country = {
@@ -722,12 +886,24 @@ research = {
 	2 #4
 # Use new Technology page layout - allow for more techs and better view. 0 - use vanilla; 1 - use new
 	0
+# Tech overview panel style: 0 - use old style; 1 - Use new style (unit and brigade models moved to new panels: "Units" and "Brigades")
+	0
 # Max active tech teams at a time (cannot be more then 50). Note: New Technology page layout will be auto-set for values above 5!
 	5 #5
 # Min active tech teams at a time (available teams regardles of current IC)
 	1 #1
 # Required IC for each tech team above the min
 	20 #20
+# On new country release - allow known techs with rocketry component to be given to the new country: 0 - No, 1 - Yes
+	0 #0
+# On new country release - allow known techs with nuclear_physics component to be given to the new country: 0 - No, 1 - Yes
+	0 #0
+# On new country release - allow known techs with nuclear_engineering component to be given to the new country: 0 - No, 1 - Yes
+	0 #0
+# On new country release - allow known secret techs to be given to the new country: 0 - No, 1 - Yes	
+	0 #0
+# Max tech team skill
+	10 #10
 }
 
 trade = {
@@ -823,7 +999,8 @@ ai = {
 	0.6 #0.6
 # AI influence modifier. Reduce or increase number of Influence missions AI does: 1 = no change; 0 = No influence missions; 2 = doubled.
 	0.25 #1.0
-# New DoW rules (AI only) - disallow DoW between alliance members if alliance leaders have NAP. Disallow DoW to or by puppets. 1 - Enabled, 0 - Disabled.
+# New DoW rules - disallow DoW between alliance members if alliance leaders have NAP. Disallow DoW to or by puppets (except when already at war with Master).
+# 2 - Enabled for all, 1 - Enabled for AI only, 0 - Disabled.
 	0 #1 #0
 # Puppets should join Master's war if AI Neutrality is equal or greater then THIS. Note: this works only if puppet is not part of Master's alliance! 0 = always join Master's wars
 	150 #0
@@ -922,6 +1099,10 @@ mod = {
 	30 #1000000 (never)
 # Use new minister files format and End years for ministers; All minister files should have End Year column (after "Pool"); Pool should use absolute year (1936 instead of 36): 0 - Disabled, 1 - Enabled
 	0
+# Enable Retirement Year for ministers (auto-retire ministers once the year is reached in-game); All minister files should have Retirement Year column (before "Ideology"); All years should be absolute (1936 instead of 36):  0 - Disabled, 1 - Enabled
+	0
+# Enable Retirement Year for leaders (auto-retire leaders once the year is reached in-game); All leader files should have Retirement Year column (after "End Year"); All years should be absolute (1936 instead of 36): 0 - Disabled, 1 - Enabled
+	0
 # Load sprites from Moddir only. Setting this to 1 prevents reading of sprite files from the main game folder. 
 	0 #0
 # Load unit icons from Moddir only. Setting this to 1 prevents reading of unit icon files from the main game folder. 
@@ -934,6 +1115,16 @@ mod = {
 	0 #0
 # Use old (pre DH 1.02) save-game format for divisions. NOT RECOMMENDED as newly introduced parameters won't be saved!!! 1 – Use old format, 0 – Use DH new format (less used space, higher precision of saved values)
 	0 #0
+# UI - Production panel UI style: 0 - use old style, 1 - switch to the new style (better utilization of the space, required when bigger unit pictures are used)
+	0
+# UI - Unit pictures size: 0 - use old size (192 x 104 pixels), 1 - enable the use of pictures up to 360 x 160 pixels [NOTE: Requires switch to the new production panel UI style too!]
+	0 #0
+# UI - Enable pictures instead of icons for naval brigades in the production panel: 0 - use icons for naval brigades, 1 - use pictures for all brigade types
+	0
+# Set buildings to be buildable only in provinces (from game map view). 0 – Disable, 1 - Enable (Ports, Air Bases, Nuclear Reactors, Rocket Test Sites), 2 - Enable ( 1 +  provincial AA and Radars)
+	0 #0
+# Unit modifiers statistics page - switch to new style when more then THIS unit types are used per group (land/navy/air)
+	15 #15
 }
 
 map = {

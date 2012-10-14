@@ -18,21 +18,21 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		350 = 100
-		343 = 100
-		406 = 100
-		359 = 100
+		350 = 100 #split
+		343 = 100 #dubrovnik
+		406 = 100 #pola
+		359 = 100 #tirana
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 
-		2734 = 100
-		2735 = 100
-		2736 = 100
-		2737 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = { 
+		# 2734 = 100
+		# 2735 = 100
+		# 2736 = 100
+		# 2737 = 100
+	# }
+# }

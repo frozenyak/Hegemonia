@@ -552,7 +552,7 @@ PROV549;Luga;Luga;Luga;Luga;Luga;Luga;Luga;Луга;;;X
 PROV550;Kingisepp;Kingisepp;Kingisepp;Kingisepp;Kingisepp;Kingisepp;Kingisepp;Кингисепп;;;X
 PROV551;Gatchina;Gatchina;Gatchina;Gatchina;Gatchina;Gatchina;Gatchina;Гатчина;;;X
 PROV552;Gdov;Gdov;Gdov;Gdov;Gdov;Gdov;Gdov;Гдов;;;X
-PROV553;Odinholm;Leningrad;Leningrad;Leningrado;Leningrad;Leningrad;Leningrad;Ленинград;;;X
+PROV553;Odinholm;Odinholm;Odinholm;Odinholm;Odinholm;Odinholm;Odinholm;Ленинград;;;X
 PROV554;Kinry;Kinry;Kinry;Kinry;Kinry;Kinry;Kinry;Кимры;;;X
 PROV555;Cherepovets;Cherepovets;Cherepovets;Cherepovets;Cherepovets;Cherepovets;Cherepovets;Череповец;;;X
 PROV556;Vytegra;Vytegra;Vytegra;Vytegra;Vytegra;Vytegra;Vytegra;Вытегра;;;X
@@ -580,7 +580,7 @@ PROV577;Nelidovo;Nelidovo;Nelidovo;Nelidovo;Nelidovo;Nelidovo;Nelidovo;Нелидово;
 PROV578;Sasovo;Sasovo;Sasovo;Sasovo;Sasovo;Sasovo;Sasovo;Сасово;;;X
 PROV579;Ryazan;Ryazan;Ryazan;Riazбn;Ryazan;Ryazan;Ryazan;Рязань;;;X
 PROV580;Yelets;Yelets;Yelets;Yelets;Yelets;Yelets;Yelets;Елец;;;X
-PROV581;Oryol;Oryol;Oryol;Oriol;Oryol;Oryol;Oryol;Орел;;;X
+PROV581;Orel;Orel;Orel;Oriol;Orel;Orel;Orel;Орел;;;X
 PROV582;Livny;Livny;Livny;Livny;Livny;Livny;Livny;Ливны;;;X
 PROV583;Efremov;Efremov;Efremov;Efremov;Efremov;Efremov;Efremov;Ефремов;;;X
 PROV584;Tula;Tula;Tula;Tula;Tula;Tula;Tula;Тула;;;X
@@ -662,7 +662,7 @@ PROV659;Kalach-on-Don;Kalach-on-Don;Kalach-on-Don;Kalach-on-Don;Kalach-on-Don;Ka
 PROV660;Volzhsky;Volzhsky;Volzhsky;Volzhsky;Volzhsky;Volzhsky;Volzhsky;Волжский;;;X
 PROV661;Kamyshin;Kamyshin;Kamyshin;Kamyshin;Kamyshin;Kamyshin;Kamyshin;Камышин;;;X
 PROV662;Kotelnikovo;Kotelnikovo;Kotelnikovo;Kotelnikovo;Kotelnikovo;Kotelnikovo;Kotelnikovo;Котельниково;;;X
-PROV663;Volgograd;Stalingrad;Stalingrad;Stalingrado;Stalingrad;Stalingrad;Stalingrad;Сталинград;;;X
+PROV663;Volgograd;Volgograd;Volgogrado;Volgogrado;Volgograd;Volgograd;Volgograd;Сталинград;;;X
 PROV664;Naberezhnye Chelny;Naberezhnye Chelny;Naberezhnye Chelny;Naberezhnye Chelny;Naberezhnye Chelny;Naberezhnye Chelny;Naberezhnye Chelny;Набережные Челны;;;X
 PROV665;Volsk;Volsk;Volsk;Volsk;Volsk;Volsk;Volsk;Вольск;;;X
 PROV666;Balakowo;Balakowo;Balakowo;Balakowo;Balakowo;Balakowo;Balakowo;Балаково;;;X
@@ -1690,7 +1690,7 @@ PROV1687;Funafuti;Funafuti;Funafuti;Funafuti;Funafuti;Funafuti;Funafuti;Фунафути
 PROV1688;Carnarvon;Carnarvon;Carnarvon;Carnarvon;Carnarvon;Carnarvon;Carnarvon;Карнарвон;;;X
 PROV1689;Northam;Northam;Northam;Northam;Northam;Northam;Northam;Нортам;;;X
 PROV1690;Perth;Perth;Perth;Perth;Perth;Perth;Perth;Перт;;;X
-PROV1691;Albany;Albany;Albany;Albany;Albany;Albany;Albany;Олбани;;;X
+PROV1691;Mount Barker;Mount Barker;Mount Barker;Mount Barker;Mount Barker;Mount Barker;Mount Barker;Олбани;;;X
 PROV1692;Geraldton;Geraldton;Geraldton;Geraldton;Geraldton;Geraldton;Geraldton;Джералдтон;;;X
 PROV1693;Kalgoorlie;Kalgoorlie;Kalgoorlie;Kalgoorlie;Kalgoorlie;Kalgoorlie;Kalgoorlie;Калгурли;;;X
 PROV1694;Collie;Collie;Collie;Collie;Collie;Collie;Collie;Колли;;;X
@@ -1799,7 +1799,7 @@ PROV1796;Providence;Providence;Providence;Providence;Providence;Providence;Provi
 PROV1797;Newark;Newark;Newark;Newark;Newark;Newark;Newark;Ньюарк;;;X
 PROV1798;Warren;Warren;Warren;Warren;Warren;Warren;Warren;Уоррен;;;X
 PROV1799;Newburgh;Newburgh;Newburgh;Newburgh;Newburgh;Newburgh;Newburgh;Ньюбург;;;X
-PROV1800;Binghampton ;Binghampton ;Binghampton ;Binghampton ;Binghampton ;Binghampton ;Binghampton ;Бингемтон;;;X
+PROV1800;Binghampton;Binghampton;Binghampton;Binghampton;Binghampton;Binghampton;Binghampton;Бингемтон;;;X
 PROV1801;Harrisburg;Harrisburg;Harrisburg;Harrisburg;Harrisburg;Harrisburg;Harrisburg;Гаррисберг;;;X
 PROV1802;Altoona;Altoona;Altoona;Altoona;Altoona;Altoona;Altoona;Алтуна;;;X
 PROV1803;Williamsport;Williamsport;Williamsport;Williamsport;Williamsport;Williamsport;Williamsport;Уильямспорт;;;X
@@ -1858,7 +1858,7 @@ PROV1855;Fargo;Fargo;Fargo;Fargo;Fargo;Fargo;Fargo;Фарго;;;X
 PROV1856;Bismarck;Bismarck;Bismarck;Bismarck;Bismarck;Bismarck;Bismarck;Бисмарк;;;X
 PROV1857;Sioux Falls;Sioux Falls;Sioux Falls;Sioux Falls;Sioux Falls;Sioux Falls;Sioux Falls;Су-Фолс;;;X
 PROV1858;Rapid City;Rapid City;Rapid City;Rapid City;Rapid City;Rapid City;Rapid City;Рапид-Сити;;;X
-PROV1859;Lincoln;Lincoln;Lincoln;Lincoln;Lincoln;Lincoln;Lincoln;Линкольн;;;X
+PROV1859;Nebraska City;Nebraska City;Nebraska City;Nebraska City;Nebraska City;Nebraska City;Nebraska City;Линкольн;;;X
 PROV1860;Omaha;Omaha;Omaha;Omaha;Omaha;Omaha;Omaha;Омаха;;;X
 PROV1861;Coeur d'Alene;Coeur d'Alene;Coeur d'Alene;Coeur d'Alene;Coeur d'Alene;Coeur d'Alene;Coeur d'Alene;Кер-д'Ален;;;X
 PROV1862;Bozeman;Bozeman;Bozeman;Bozeman;Bozeman;Bozeman;Bozeman;Бозмен;;;X
@@ -2825,7 +2825,7 @@ AREA_BOHEMIA;Bohemia;Bohиme;Boemia;Bohemia;Bцhmen/Mдhren;Czechy;;Богемия;;;X
 AREA_BOMBAY;Bombay;Bombai;Bombay;Bombay;Bombay;Bombaj;;Бомбей;;;X
 AREA_BONIN;Bonin;Bonin;Bonin;Bonin;Bonininseln;Wyspy Bonin;;о-ва Бонин;;;X
 AREA_BOSNIA;Bosnia;Bosnie;Bosnia;Bosnia;Bosnien;Boњnia;;Босния;;;X
-AREA_BOSPORUS;Bosporus;Bosphore;Bosforo;Bуsforo;Bosporus;Bosfor;;Босфор;;;X
+AREA_BOSPORUS;Bosphorus;Bosphore;Bosforo;Bуsforo;Bosphorus;Bosfor;;Босфор;;;X
 AREA_BOUGAINVILLE;North Solomons;Bougainville;Bougainville;Bougainville;Nцrdl. Salomon-Inseln;Bougainville;;Северные Соломонова о-ва;;;X
 AREA_BOURGOGNE_CHAMPAGNE;Bourgogne-Champagne;Bourgogne-Champagne;Bourgogne-Champagne;Borgoсa-Champagne;Bourgogne/Champagne;Burgundia-Szampania;;Бургундия_Шампань;;;X
 AREA_BRANDENBURG;Brandenburg;Brandebourg;Brandeburgo;Brandeburgo;Brandenburg/Pommern;Brandenburgia;;Бранденбург;;;X
@@ -2856,7 +2856,7 @@ AREA_CENTRAL_RAINFORESTS;Central Rainforests;Forкt Tropicale Centrale;Foreste pl
 AREA_CENTRAL_SERBIA;Central Serbia;Serbie Centrale;Serbia centrale;Serbia central;Zentralserbien;Њrodkowa Serbia;;Центральная Сербия;;;X
 AREA_CENTRAL_SOLOMONS;Central Solomons;Centre des Salomon;Isole Salomone centrali;Salomуn centrales;Mittl. Salomon-Inseln;Њrodkowe Wyspy Salomona;;Центр Соломоновых островов;;;X
 AREA_CENTRAL_SPAIN;Central Iberia;Espagne centrale ;Spagna centrale;Espaсa central;Zentralspanien;Њrodkowa Hiszpania;;Центральная Испания;;;X
-AREA_CENTRAL_TURKEY;Central Turkey;Turquie centrale;Turchia centrale;Turquнa central;Zentraltьrkei;Њrodkowa Turcja;;Центральная Турция;;;X
+AREA_CENTRAL_TURKEY;Central Anatolia;Anatolie centrale;Anatolia centrale;Anatolia central;Zentralanatolien;Њrodkowa Anatolia;;Central Anatolia;;;X
 AREA_CEYLON;Ceylon;Ceylan;Ceylon;Ceilбn;Westl. Aleuten;Cejlon;;Цейлон;;;X
 AREA_CHAHAR;Chahar;Chahar;Chahar;Chahar;Chahar;Chahar;;Чахар;;;X
 AREA_CHIHUAHUA;Chihuahua;Chihuahua;Chihuahua;Chihuahua;Chihuahua;Chihuahua;;Чиуауа;;;X
@@ -2906,7 +2906,7 @@ AREA_GEORGIA;Georgia;Gйorgie;Georgia;Georgia;Georgia;Georgia;;Джорджия;;;X
 AREA_GEORGIEN;Georgia;Gйorgie;Georgia;Georgia;Georgien;Gruzja;;Грузия;;;X
 AREA_GOETALAND;Goetaland;Gцtaland;Goetaland;Gotland;Gцtaland;Gotlandia;;Геталанд;;;X
 AREA_GOLD_COAST;Gold Coast;Rйpublique du Ghana;Costa d'Oro;Costa de Oro;Goldkьste;Zіote Wybrzeїe;;Золотой Берег;;;X
-AREA_GREEK_ISLAND;Greek Island;Ile grecque;Isola di Grecia;Archipiйlago de Grecia;Griechische Inseln;Grecja;;Греческий архипелаг;;;X
+AREA_GREEK_ISLAND;Greek Islands;Ile grecque;Isola di Grecia;Archipiйlago de Grecia;Griechische Inseln;Grecja;;Греческий архипелаг;;;X
 AREA_GREENLAND;Greenland;Groenland;Groenlandia;Groenlandia;Westl. Aleuten;Grenlandia;;Гренландия;;;X
 AREA_GRODNO;Grodno;Grodno;Grodno;Grodno;Grodno;Grodno;;Гродно;;;X
 AREA_GROZNYI;Grozny;Grozny;Groznyi;Groznyi;Grozny;Grozny;;Грозный;;;X
@@ -2940,7 +2940,7 @@ AREA_INTERIOR_ALGERIA;Interior Algeria;Algйrie Intйrieure;Entroterra dell'Algeri
 AREA_INTERIOR_LIBYA;Interior Libya;Libye Intйrieure;Entroterra della Libia;Libia interior;Libyisches Hinterland;Libia Wewnкtrzna;;Внутренняя Ливия;;;X
 AREA_IOWA;Iowa;Iowa;Iowa;Iowa;Iowa;Iowa;;Айова;;;X
 AREA_IQUITOS;Iquitos;Iquitos;Iquitos;Iquitos;Iquitos;Iquitos;;Икитос;;;X
-AREA_IRAQ;Iraq;Irak;Iraq;Irak;Irak;Irak;;Ирак;;;X
+AREA_IRAQ;Mesopotamia;Mesopotamia;Mesopotamia;Mesopotamia;Mesopotamien;Mesopotamia;;Mesopotamia;;;X
 AREA_IRKUTSK;Irkutsk;Irkoutsk;Irkutsk;Irkutsk;Irkutsk;Irkuck;;Иркутск;;;X
 AREA_IVORY_COAST;Ivory Coast;Cфte d’Ivoire;Costa d'avorio;Costa de Marfil;Elfenbeinkьste;Wybrzeїe Koњci Sіoniowej;;Берег Слоновой Кости;;;X
 AREA_JIANGSU;Jiangsu;Jiangsu;Jiangsu;Jiangsu;Jiangsu;Ciangsu;;Цзянсу;;;X
@@ -2979,8 +2979,8 @@ AREA_LAKE;Lake;Lac;Lago;Lago;See;Jezioro;;Озеро;;;X
 AREA_LAKES;Lakes;Les Lacs;Laghi;Los Lagos;Seen;Jeziora;;Озера;;;X
 AREA_LAPLAND;Lapland;Laponie;Lapponia;Laponia;Lappland;Laponia;;Лапландия;;;X
 AREA_LATVIA;Latvia;Lettonie;Lettonia;Letonia;Lettland;Јotwa;;Латвия;;;X
-AREA_LEBANON_SYRIA;Lebanon-Syria;Liban-Syrie;Libano-Siria;Lнbano-Siria;Libanon/Syrien;Liban-Syria;;Ливан_Сирия;;;X
-AREA_LENINGRAD;Leningrad;Leningrad;Leningrado;Leningrado;Leningrad;Leningrad;;Ленинград;;;X
+AREA_LEBANON_SYRIA;Syria;Syrie;Siria;Siria;Syrien;Syria;;Сирия;;;X
+AREA_LENINGRAD;Odinholm;Odinholm;Odinholm;Odinholm;Odinholm;Odinholm;;Ленинград;;;X
 AREA_LEVANT;Levant;Le Levant;Levante;Levante;Levant;Bliski Wschуd;;Левант;;;X
 AREA_LEYTE_ISLAND_GROUP;Eastern Tagalog;Groupe des Iles Leyte;Gruppo isole di Leyte;Islas de Leyte;Golf von Leyte;Wyspy Leyte;;Восточные Филиппины;;;X
 AREA_LIAONING;Liaoning;Liaoning;Liaoning;Liaoning;Liaoning;Liaoning;;Ляонин;;;X
@@ -3040,8 +3040,8 @@ AREA_NETHERLANDS;Netherlands;Pays-Bas;Paesi Bassi;Paнses Bajos;Niederlande;Holan
 AREA_NEVADA;Nevada;Nevada;Nevada;Nevada;Nevada;Newada;;Невада;;;X
 AREA_NEW_BRUNSWICK;New Brunswick;Nouveau-Brunswick;New Brunswick;New Brunswick;Neubraunschweig;Nowy Brunszwik;;Нью-Брансуик;;;X
 AREA_NEW_FOUNDLAND;Newfoundland;Terre-Neuve;New Foundland;Terranova y Labrador;Neufundland;Nowa Funlandia;;Ньюфаундленд;;;X
-AREA_NEW_HAMPSHIRE;New Hampshire;New Hampshire;New Hampshire;New Hampshire;New Hampshire;New Hampshire;;Нью-Гемпшир;;;X
-AREA_NEW_JERSEY;New Jersey;New Jersey;New Jersey;Nueva Jersey;New Jersey;New Jersey;;Нью-Джерси;;;X
+AREA_NEW_HAMPSHIRE;Burgundy;Burgundy;Burgundy;Burgundy;Burgundy;Burgundy;;Burgundy;;;X
+AREA_NEW_JERSEY;Trieste;Trieste;Trieste;Trieste;Triest;Trieste;;Нью-Джерси;;;X
 AREA_NEW_MEXICO;New Mazula;Nouveau Mexique;Nuovo Messico;Nuevo Mйxico;Neu Mexiko;Nowy Meksyk;;Нью-Мексико;;;X
 AREA_NEW_YORK;New York;New York;New York;Nueva York;New York;Nowy Jork;;Нью-Йорк;;;X
 AREA_NEW_ZEALAND;New Zealand;Nouvelle-Zйlande;Nuova Zelanda;Nueva Zelanda;Neuseeland;Nowa Zelandia;;Новая Зеландия;;;X
@@ -3059,8 +3059,8 @@ AREA_NORTH_DAKOTA;North Dakota;Dakota du Nord;Nord Dakota;Dakota del Norte;Nord-
 AREA_NORTH_ENGLAND;North England;Nord de l’Angleterre;Inghilterra settentrionale;Inglaterra septentrional;Nordengland;Pуіnocna Anglia;;Северная Англия;;;X
 AREA_NORTH_ETHIOPIA;North Ethiopia;Йthiopie septentrionale;Etiopia settentrionale;Etiopнa septentrional;Nordдthiopien;Pуіnocna Etiopia;;Северная Эфиопия;;;X
 AREA_NORTH_GILBERTS;Gilberts;Iles Gilbert septentrionales;Gilberti settentrionale;Islas Gilbert del norte;Nцrdl. Gilbertinseln;Pуіnocne Wyspy Gilberta;;Острова Гилберта;;;X
-AREA_NORTH_IRELAND;Northern Ireland;Irlande du Nord;Irlanda settentrionale;Irlanda del Norte;Nordirland;Irlandia Pуіnocna;;Северная Ирландия;;;X
-AREA_NORTH_ITALY;North Italy;Italie septentrionale;Italia settentrionale;Italia septentrional;Norditalien;Pуіnocne Wіochy;;Северная Италия;;;X
+AREA_NORTH_IRELAND;Tyrol;Tyrol;Tyrol;Tyrol;Tirol;Tyrol;;Северная Ирландия;;;X
+AREA_NORTH_ITALY;Lombardy;Lombardy;Lombardy;Lombardy;Lombardei;Lombardy;;Северная Италия;;;X
 AREA_NORTH_KRASNOYARSK;North Krasnoyarsk;Krasnoпarsk septentrional;Krasnoyarsk settentrionale;Krasnoiarsk septentrional;Nord Krasnoyarsk;Pуіnocny Krasnojarsk;;Северный Красноярск;;;X
 AREA_NORTH_MARIANES;Marianas;Iles Mariannes septentrionales;Mariane settentrionali;Marianas del norte;Nord-Marianen;Pуіnocne Mariany;;Марианские о-ва;;;X
 AREA_NORTH_NEW_HEBRIDES;North New Hebrides;Les Nouvelles Hйbrides du Nord;Nuove Ebridi settentrionali;Norte de las Nuevas Hйbridas;Nцrdliche Neue Hebriden;Pуіnocne Nowe Hebrydy;;Север Новых Гебридов;;;X
@@ -3168,7 +3168,7 @@ AREA_SOUTH_SCOTLAND;South Scotland;Sud de l’Йcosse;Scozia meridionale;Escocia me
 AREA_SOUTHCENTRAL_NORWAY;Southcentral Norway;Centre-sud Norvиge;Norvegia centro-meridionale;Centro-sur de Noruega;Sьdl. Mittelnorwegen;Poіudniowo-њrodkowa Norwegia;;Юго-центральная Норвегия;;;X
 AREA_SOUTHERN_NORWAY;Southern Norway;Norvиge mйridionale;Norvegia meridionale;Noruega meridional;Sьdnorwegen;Poіudniowa Norwegia;;Южная Норвегия;;;X
 AREA_ST.HELENA;St.Helena;Sainte Hйlиne;St. Elena;Santa Elena;St.Helena;Wyspa Њwiкtej Heleny;;о-в Св. Елены;;;X
-AREA_STALINGRAD;Stalingrad;Stalingrad;Stalingrado;Stalingrado;Stalingrad;Stalingrad;;Сталинград;;;X
+AREA_STALINGRAD;Volgograd;Volgograd;Volgogrado;Volgogrado;Volgograd;Volgograd;;Сталинград;;;X
 AREA_SUEZ_CHANNEL_AREA;Suez Channel Area;Zone du Canal de Suez;Area del canale di Suez;Zona del Canal de Suez;Suezkanal;Rejon Kanaіu Sueskiego;;Суэцкий канал;;;X
 AREA_SUIYUAN_NINGXIA;Suiyuan-Ningxia;Suiyuan Ningxia;Suiyuan-Ningxia;Suiyьan-Ningxia;Suiyuan/Ningxia;Sujuan-Ningsia-Huej;;Суйюань_Нинся;;;X
 AREA_SUMATRA;Sumatra;Sumatra;Sumatra;Sumatra;Sumatra;Sumatra;;Суматра;;;X
@@ -3192,7 +3192,7 @@ AREA_TIERRA_DEL_FUEGO;Tierra del Fuego;Tierra del Fuego;Terra del Fuoco;Tierra d
 AREA_TOBRUK;Tobruk;Tobrouk;Tobruk;Tobruk;Tobruk;Tobruk;;Тобрук;;;X
 AREA_TOHOKU;Tohoku;Tohoku;Tohoku;Tohoku;Tohoku;Tohoku;;Тохоку;;;X
 AREA_TOMSK;Tomsk;Tomsk;Tomsk;Tomsk;Tomsk;Tomsk;;Томск;;;X
-AREA_TRANSJORDAN;Transjordan;Transjordanie;Transjordan;Transjordania;Transjordanien;Transjordania;;Трансиордания;;;X
+AREA_TRANSJORDAN;Jordan;Jordanie;Jordan;Jordania;Jordanien;Jordania;;Трансиордания;;;X
 AREA_TRANSNISTRIA;Zhitomir;Jitomir;Zhitomir;Zhitomir;Zhitomir;Їytomierz;;Житомир;;;X
 AREA_TRANSVAAL_NATAL;Transvaal-Natal;Transvaal Natal;Transvaal-Natal;Transvaal-Natal;Transvaal/Natal;Transwal-Natal;;Трансвааль_Наталь;;;X
 AREA_TRANSYLVANIA;Transylvania;Transylvanie;Transilvania;Transilvania;Transsilvanien;Transylwania;;Трансильвания;;;X
@@ -3398,7 +3398,7 @@ REGION_ALASKA;Alaska;Alaska;Alaska;Alaska;Alaska;Alaska;;Аляска;;;X
 REGION_ALGERIA;Algeria;Algйrie;Algeria;Argelia;Algerien;Algieria;;Алжир;;;X
 REGION_AMAZONAS;Amazonas;Amazonas;Amazzonie;Amazonas;Amazonas;Amazonka;;Амазонка;;;X
 REGION_AMERICAN_PACIFIC;American Pacific;Pacifique amйricain;Pacifico americano;Pacнfico americano;Amerikanischer Pazifik;Amerykaсska Czкњж Pacyfiku;;Восточный Тихий океан;;;X
-REGION_ANATOLIA;Anatolia;Anatolie;Anatolia;Penнnsula de Anatolia;Anatolien;Anatolia;;Анатолия;;;X
+REGION_ANATOLIA;Greece;Grиce;Grecia;Grecia;Griechenland;Grecja;;Греция;;;X
 REGION_ANDES;Andes;Andes;Ande;Los Andes;Anden;Andy;;Анды;;;X
 REGION_ASIAN_PACIFIC;Asian Pacific;Asie-Pacifique;Pacifico asiatico;Pacнfico asiбtico;Asiatischer Pazifik;Azjatycka Czкњж Pacyfiku;;Западный Тихий океан;;;X
 REGION_AUSTRALIA;Australia;Australie;Australia;Australia;Australien;Australia;;Австралия;;;X
@@ -3410,7 +3410,7 @@ REGION_BENELUX;Benelux;Benelux;Benelux;El Benelux;Benelux;Beneluks;;Бенилюкс;;;X
 REGION_BISMARCK_ARCHIPELAGO;Bismarck Archipelago;Archipel de Bismarck;Arcipelago di Bismark;Archipiйlago de Bismarck;Bismarck-Archipel;Archipelag Bismarcka;;Архипелаг Бисмарка;;;X
 REGION_BRAZIL;Brazil;Brйsil;Brasile;Brasil;Brasilien;Brazylia;;Бразилия;;;X
 REGION_BRAZILIAN_HIGHLANDS;Brazilian Highlands;Hautes terres du Brйsil;Altipiani del Brasile;Tierras Altas de Brasil;Brasilianisches Hochland;Wyїyny Brazylii;;Бразильское нагорье;;;X
-REGION_CANADA;Central Vinland;Canada;Canada;Canadб;Kanada;Kanada;;Центральная Канада;;;X
+REGION_CANADA;Central Vinland;Vinland;Vinland;Canadб;Kanada;Kanada;;Центральная Канада;;;X
 REGION_CARIBBEAN;Caribbean;Caraпbes;Caraibi;El Caribe;Karibik;Karaiby;;Карибы;;;X
 REGION_CENTRAL_AFRICA;Central Africa;Afrique centrale;Africa centrale;Бfrica Central;Zentralafrika;Њrodkowa Afryka;;Центральная Африка;;;X
 REGION_CENTRAL_AMERICA;Central America;Amйrique centrale;America centrale;Centroamйrica;Mittelamerika;Њrodkowa Ameryka;;Центральная Америка;;;X
@@ -3420,7 +3420,7 @@ REGION_CZECHOSLOVAKIA;Czechoslovakia;Tchйcoslovaquie;Cecoslovacchia;Checoslovaqu
 REGION_DENMARK;Denmark;Danemark;Danimarca;Dinamarca;Dдnemark;Dania;;Дания;;;X
 REGION_DIEGO_GARCIA_ISLAND;Diego Garcia Island;Ile de Diego Garcia;Isola di Diego Garcia;Isla de Diego Garcнa;Diego Garcia;Wyspy Diego Garcii;;о-в Диего-Гарсия;;;X
 REGION_EAST_AFRICA;East Africa;Afrique orientale;Africa orientale;Бfrica del Este;Ostafrika;Wschodnia Afryka;;Восточная Африка;;;X
-REGION_EASTERN_CANADA;Eastern Vinland;Le Canada de l'Est;Canada orientale;Canadб oriental;Ostkanada;Wschodnia Kanada;;Восточная Канада;;;X
+REGION_EASTERN_CANADA;Eastern Vinland;Le Vinland de l'Est;Vinland orientale;Canadб oriental;Ostkanada;Wschodnia Kanada;;Восточная Канада;;;X
 REGION_EASTERN_RUSSIA;Eastern Russia;Russie Orientale;Russia Orientale;Rusia Oriental;Ost-Russland;Wschodnia Rosja;;Восточная Россия;;;X
 REGION_EGYPT;Egypt;Йgypte;Egitto;Egipto;Дgypten;Egipt;;Египет;;;X
 REGION_ENGLAND;England;Angleterre;Inghilterra;Inglaterra;England;Anglia;;Англия;;;X
@@ -3451,13 +3451,13 @@ REGION_LIBYA;Libya;Libye;Libia;Libia;Libyen;Libia;;Ливия;;;X
 REGION_MADAGASCAR;Madagascar;Madagascar;Madagascar;Madagascar;Madagaskar;Madagaskar;;Мадагаскар;;;X
 REGION_MAGADAN;Magadan;Magadan;Magadan;Magadan;Magadan;Magadan;;Магадан;;;X
 REGION_MEXICO;Mazula;Mexique;Messico;Mйxico;Mexiko;Meksyk;;Мексика;;;X
-REGION_MIDDLE_EAST;Middle East;Moyen-Orient;Medio Oriente;Oriente Prуximo;Mittlerer Osten;Bliski Wschуd;;Ближний Восток;;;X
+REGION_MIDDLE_EAST;Near East;Moyen-Orient;Medio Oriente;Oriente Prуximo;Nahe Osten;Bliski Wschуd;;Ближний Восток;;;X
 REGION_MIDWEST_US;Midwest AF;Midwest Йtats-Unis;Stati Uniti centro-occidentali;Medio Oeste de Estados Unidos ;Nцrdl. Mittl. USA;Њrodkowo-zachodnie Stany Zjednoczone;;Средний Запад США;;;X
 REGION_MOROCCO;Morocco;Maroc;Marocco;Marruecos;Marokko;Maroko;;Марокко;;;X
 REGION_NEW_GUINEA;New Guinea;Nouvelle Guinйe;Nuova Guinea;Nueva Guinea;Neu Guinea;Nowa Gwinea;;Новая Гвинея;;;X
 REGION_NORTH_SOLOMON_ISLANDS;Solomons;Iles Salomon Nord ;Isole Salomone settentrionali;Islas Salomуn septentrionales;Salomon-Inseln;Pуіnocne Wyspy Salomona;;Соломоновы о-ва;;;X
 REGION_NORTHEAST_US_;Northeast AF;Nord-est des Йtats-Unis;Stati Uniti nord-orientali;Noreste de los Estados Unidos;Nordцstl. USA;Pуіnocno-wschodnie Stany Zjednoczone;;Северо-Восток США;;;X
-REGION_NORTHERN_CANADA;Northern Vinland;Le Canada du Nord;Canada settentrionale;Canadб septentrional;Nordkanada;Pуіnocna Kanada;;Северная Канада;;;X
+REGION_NORTHERN_CANADA;Northern Vinland;Le Vinland du Nord;Vinland settentrionale;Canadб septentrional;Nordkanada;Pуіnocna Kanada;;Северная Канада;;;X
 REGION_NORTHERN_PERMAFROST;Northern Permafrost;Pergйlisol Nord;Ghiacciaio settentrionale;Permafrost septentrional;Nцrdliches Permafrost;Pуіnocna Wieczna Zmarzlina;;Северная вечная мерзлота;;;X
 REGION_NORTHERN_RUSSIA;Northern Russia;Russie septentrionale;Russia Settentrionale;Rusia del Norte;Nord-Russland;Pуіnocna Rosja;;Северная Россия;;;X
 REGION_NORTHWEST_US;Northwest Mazula;Nord-ouest des Йtats-Unis;Stati Uniti nord-occidentali;Noroeste de los Estados Unidos;Nordwestl. USA;Pуіnocno-zachodnie Stany Zjednoczone;;Северо-Запад США;;;X
@@ -3465,7 +3465,7 @@ REGION_NORWAY;Norway;Norvиge;Norvegia;Noruega;Norwegen;Norwegia;;Норвегия;;;X
 REGION_NOVOSIBIRSK;Novosibirsk;Novossibirsk;Novosibirsk;Novosibirsk;Nowosibirsk;Nowosybirsk;;Новосибирск;;;X
 REGION_PATAGONIA;Patagonia;Patagonie;Patagonia;Patagonia;Patagonien;Patagonia;;Патагония;;;X
 REGION_PERSIA;Persia;Perse;Persia;Persia;Persien;Persja;;Персия;;;X
-REGION_PHILIPPINES;Philippines;Philippines;Filippine;Filipinas;Philippinen;Filipiny;;Филиппины;;;X
+REGION_PHILIPPINES;Tagalog;Philippines;Filippine;Filipinas;Philippinen;Filipiny;;Филиппины;;;X
 REGION_POLAND;Poland;Pologne;Polonia;Polonia;Polen;Polska;;Польша;;;X
 REGION_PORTUGAL;Portugal;Portugal;Portogallo;Portugal;Portugal;Portugalia;;Португалия;;;X
 REGION_RIO_DE_LA_PLATA;Rio de la Plata;Rio de la Plata;Rio de la Plata;Rнo de la Plata;Rio de la Plata;Rio de la Plata;;Рио-де-ла-Плата;;;X
@@ -3489,7 +3489,7 @@ REGION_TUNISIA;Tunisia;Tunisie;Tunisia;Tъnez;Tunesien;Tunezja;;Тунис;;;X
 REGION_UKRAINE;Ukraine;Ukraine;Ucraina;Ucrania;Ukraine;Ukraina;;Украина;;;X
 REGION_URALS;Urals;Oural;Urali;Los Urales;Ural;Ural;;Урал;;;X
 REGION_WEST_AFRICA;West Africa;Afrique occidentale;Africa occidentale;Бfrica del Oeste;Westafrika;Zachodnia Afryka;;Западная Африка;;;X
-REGION_WESTERN_CANADA;Western Vinland;Le Canada de l'Ouest;Canada occidentale;Canadб occidental;Westkanada;Zachodnia Kanada;;Западная Канада;;;X
+REGION_WESTERN_CANADA;Western Vinland;Le Vinland de l'Ouest;Vinland occidentale;Canadб occidental;Westkanada;Zachodnia Kanada;;Западная Канада;;;X
 REGION_WESTERN_RUSSIA;Western Russia;Russie Occidentale;Russia Occidentale;Rusia Occidental;West-Russland;Zachodnia Rosja;;Западная Россия;;;X
 REGION_WHITE_SEA_TUNDRA;Eastern Karelia;Carйlie orientale;Carelia orientale;Carelia Oriental;Ostkareliens;Wschodniej Karelii;;Восточная Карелия;;;X
 ##;;;;;;;;;;;X

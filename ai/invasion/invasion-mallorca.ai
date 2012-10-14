@@ -18,16 +18,16 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		475 = 100
+		475 = 100 #palma de mallorca
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2190 = 100
-		2191 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {
+		# 2190 #balearic sea
+	# }
+	# target = {
+	# }
+# }

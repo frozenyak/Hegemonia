@@ -1,54 +1,58 @@
-model = { #Model 0#Flying Rocket V2A5
-	cost 						= 2 #3
-	buildtime					= 120 #40
+# MODEL_20_
+
+# 0 - Flying Rocket V2A4 (1943)
+model = { 
+	cost 						= 4
+	buildtime					= 40
 	defaultorganisation 		= 100
 	morale						= 100
 	manpower					= 0
-	maxspeed					= 5000
+	maxspeed					= 4800
 	surfacedefence				= 100
 	airdefence					= 100
 	strategicattack				= 126
-	softattack					= 1 #0
-	hardattack					= 1 #0
-	range						= 650 #380
+	softattack					= 0
+	hardattack					= 0
+	range						= 300
 	supplyconsumption 			= 0.5
-	fuelconsumption				= 1
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
+	fuelconsumption				= 2
+	flying_rocket				= -2
 }
-model = { #Model 1#Ballistic Missile V2A9
-	cost 						= 3
-	buildtime					= 120 #60
+
+# 1 - Ballistic Missile V2A9 (1944)
+model = { 
+	cost 						= 5
+	buildtime					= 60
 	defaultorganisation 		= 100
 	morale						= 100
 	manpower					= 0
-	maxspeed					= 6000
+	maxspeed					= 3400
 	surfacedefence				= 100
 	airdefence					= 100
 	strategicattack				= 180
-	softattack					= 1 #0
-	hardattack					= 1 #0
-	range						= 2400
-	supplyconsumption 			= 1.0
-	fuelconsumption				= 1.2
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
+	softattack					= 0
+	hardattack					= 0
+	range						= 1200
+	supplyconsumption 			= 1
+	fuelconsumption				= 2.5
+	flying_rocket				= -2
 }
-model = { #Model 2#Inter Continental Ballistic Missile V2A10
-	cost 						= 4
-	buildtime					= 160 #90
+
+# 2 - Inter Continental Ballistic Missile V2A10 (1956)
+model = { 
+	cost 						= 6
+	buildtime					= 90
 	defaultorganisation 		= 100
 	morale						= 100
 	manpower					= 0
-	maxspeed					= 8000
+	maxspeed					= 4000
 	surfacedefence				= 100
 	airdefence					= 100
 	strategicattack				= 360
-	softattack					= 1 #0
-	hardattack					= 1 #0
+	softattack					= 0
+	hardattack					= 0
 	range						= 8000
-	supplyconsumption 			= 1.5
-	fuelconsumption				= 2
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
+	supplyconsumption 			= 2
+	fuelconsumption				= 5
+	flying_rocket				= -2
 }

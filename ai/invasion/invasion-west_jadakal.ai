@@ -18,16 +18,20 @@ invasion = {
       
 	staging_province = { }       
 	target = { 
-		814 = 100
-		839 = 100
-		830 = 100
-		860 = 100
+		2031 = 100 #temuco
+		2032 = 100 #talcahuano
+		2023 = 100 #santiago de chile
+		2022 = 100 #valparaiso
+		#2024 = 100 #iquique
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 2511 = 100 2508 = 100 2507 = 100 2505 = 100 2504 = 100 2503 = 100 2502 = 100 1910 = 100 1997 = 100 1996 = 100 1995 = 100 }
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = { 
+		# 2358 = 100 #atacma trench
+		# 2359 = 100 #south chilean coast
+	# }
+# }

@@ -33,8 +33,8 @@ technology =
       command = { type = max_organization which = cag value = 2 }
       command = { type = morale which = cag value = 2 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 2 }
-      command = { type = morale which = naval_torpedoes_s value = 2 }
+      command = { type = max_organization which = light_cag value = 2 }
+      command = { type = morale which = light_cag value = 2 }
 	  
 	  command = { type = task_efficiency which = air_superiority value = 0.15 }
 	  
@@ -76,8 +76,8 @@ technology =
       command = { type = max_organization which = cag value = 2 }
       command = { type = morale which = cag value = 2 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 2 }
-      command = { type = morale which = naval_torpedoes_s value = 2 }
+      command = { type = max_organization which = light_cag value = 2 }
+      command = { type = morale which = light_cag value = 2 }
 	  
 	  command = { type = task_efficiency which = air_superiority value = 0.05 }
     }
@@ -109,8 +109,8 @@ technology =
       command = { type = max_organization which = cag value = 2 }
       command = { type = morale which = cag value = 2 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 2 }
-      command = { type = morale which = naval_torpedoes_s value = 2 }
+      command = { type = max_organization which = light_cag value = 2 }
+      command = { type = morale which = light_cag value = 2 }
 	  
 	  command = { type = task_efficiency which = air_superiority value = 0.05 }
     }
@@ -212,8 +212,8 @@ technology =
       #command = { type = snow_attack which = cag value = 10 }
       #command = { type = rain_attack which = cag value = 10 }
 	  
-      #command = { type = snow_attack which = naval_torpedoes_s value = 10 }
-      #command = { type = rain_attack which = naval_torpedoes_s value = 10 }
+      #command = { type = snow_attack which = light_cag value = 10 }
+      #command = { type = rain_attack which = light_cag value = 10 }
     }
   }
   # Night Strikes Doctrine
@@ -435,7 +435,7 @@ technology =
       command = { type = morale which = strategic_bomber value = 5 }
       command = { type = max_organization which = transport_plane value = 5 }
       command = { type = morale which = transport_plane value = 5 }
-      command = { type = build_cost which = escort when = now value = -2 where = relative }
+      command = { type = build_cost which = escort when = on_upgrade value = -2 where = relative }
     }
   }
   # Combat-Bombardment Groups Doctrine
@@ -547,8 +547,8 @@ technology =
       command = { type = max_organization which = cag value = 3 }
       command = { type = morale which = cag value = 3 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 3 }
-      command = { type = morale which = naval_torpedoes_s value = 3 }
+      command = { type = max_organization which = light_cag value = 3 }
+      command = { type = morale which = light_cag value = 3 }
     }
   }
   # Dispersed Fighting Doctrine
@@ -577,8 +577,8 @@ technology =
       command = { type = max_organization which = cag value = 3 }
       command = { type = morale which = cag value = 3 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 3 }
-      command = { type = morale which = naval_torpedoes_s value = 3 }
+      command = { type = max_organization which = light_cag value = 3 }
+      command = { type = morale which = light_cag value = 3 }
     }
   }
   # Frontal Missions Doctrine
@@ -607,8 +607,8 @@ technology =
       command = { type = max_organization which = cag value = 3 }
       command = { type = morale which = cag value = 3 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 3 }
-      command = { type = morale which = naval_torpedoes_s value = 3 }
+      command = { type = max_organization which = light_cag value = 3 }
+      command = { type = morale which = light_cag value = 3 }
     }
   }
   # Fighter Veteran Initiative
@@ -643,10 +643,10 @@ technology =
       #command = { type = snow_attack which = cag value = 10 }
       #command = { type = rain_attack which = cag value = 10 }
 	  
-      #command = { type = snow_attack which = naval_torpedoes_s value = 10 }
-      #command = { type = rain_attack which = naval_torpedoes_s value = 10 }
-      command = { type = max_organization which = naval_torpedoes_s value = 3 }
-      command = { type = morale which = naval_torpedoes_s value = 3 }
+      #command = { type = snow_attack which = light_cag value = 10 }
+      #command = { type = rain_attack which = light_cag value = 10 }
+      command = { type = max_organization which = light_cag value = 3 }
+      command = { type = morale which = light_cag value = 3 }
     }
   }
   # Perimeter Defence Doctrine
@@ -678,8 +678,8 @@ technology =
       command = { type = max_organization which = cag value = 3 }
       command = { type = morale which = cag value = 3 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 3 }
-      command = { type = morale which = naval_torpedoes_s value = 3 }
+      command = { type = max_organization which = light_cag value = 3 }
+      command = { type = morale which = light_cag value = 3 }
     }
   }
   # Formation Fighting Doctrine
@@ -707,10 +707,10 @@ technology =
       command = { type = morale which = multi_role value = 3 }
       command = { type = max_organization which = cag value = 3 }
       command = { type = morale which = cag value = 3 }
-      command = { type = build_cost which = escort when = now value = -10 where = relative }
+      command = { type = build_cost which = escort when = on_upgrade value = -10 where = relative }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 3 }
-      command = { type = morale which = naval_torpedoes_s value = 3 }
+      command = { type = max_organization which = light_cag value = 3 }
+      command = { type = morale which = light_cag value = 3 }
 	  
 	  command = { type = task_efficiency which = air_superiority value = 0.25 }
     }
@@ -743,8 +743,8 @@ technology =
 
 	  command = { type = task_efficiency which = air_scramble value = 0.25 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 3 }
-      command = { type = morale which = naval_torpedoes_s value = 3 }
+      command = { type = max_organization which = light_cag value = 3 }
+      command = { type = morale which = light_cag value = 3 }
     }
   }
   # Recon Skirmisher Doctrine
@@ -773,8 +773,8 @@ technology =
       command = { type = max_organization which = cag value = 3 }
       command = { type = morale which = cag value = 3 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 3 }
-      command = { type = morale which = naval_torpedoes_s value = 3 }
+      command = { type = max_organization which = light_cag value = 3 }
+      command = { type = morale which = light_cag value = 3 }
     }
   }
   # Combat Unit Destruction Doctrine
@@ -823,7 +823,7 @@ technology =
     effects =
     { command = { type = max_organization which = cas value = 10 }
       command = { type = morale which = cas value = 10 }
-      command = { type = build_cost which = cas when = now value = -10 where = relative }
+      command = { type = build_cost which = cas when = on_upgrade value = -10 where = relative }
     }
   }
   # Low Echelon CAS Doctrine
@@ -847,7 +847,7 @@ technology =
     effects =
     { command = { type = max_organization which = cas value = 10 }
       command = { type = morale which = cas value = 10 }
-      command = { type = build_cost which = cas when = now value = -10 where = relative }
+      command = { type = build_cost which = cas when = on_upgrade value = -10 where = relative }
     }
   }
   # Bomber Ace Initiative
@@ -871,14 +871,14 @@ technology =
     effects =
     { command = { type = max_organization which = cas value = 10 }
       command = { type = morale which = cas value = 10 }
-      command = { type = build_cost which = cas when = now value = -10 where = relative }
+      command = { type = build_cost which = cas when = on_upgrade value = -10 where = relative }
       command = { type = snow_attack which = cas value = 10 }
       command = { type = rain_attack which = cas value = 10 }
       #command = { type = snow_attack which = cag value = 10 }
       #command = { type = rain_attack which = cag value = 10 }
 	  
-      #command = { type = snow_attack which = naval_torpedoes_s value = 10 }
-      #command = { type = rain_attack which = naval_torpedoes_s value = 10 }
+      #command = { type = snow_attack which = light_cag value = 10 }
+      #command = { type = rain_attack which = light_cag value = 10 }
     }
   }
   # Offensive Fighter Box doctrine
@@ -907,8 +907,8 @@ technology =
       command = { type = max_organization which = cag value = 5 }
       command = { type = morale which = cag value = 5 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 5 }
-      command = { type = morale which = naval_torpedoes_s value = 5 }
+      command = { type = max_organization which = light_cag value = 5 }
+      command = { type = morale which = light_cag value = 5 }
     }
   }
   # Fighter Baiting Doctrine
@@ -936,10 +936,10 @@ technology =
       command = { type = morale which = multi_role value = 5 }
       command = { type = max_organization which = cag value = 5 }
       command = { type = morale which = cag value = 5 }
-      command = { type = build_cost which = interceptor when = now value = -10 where = relative }
+      command = { type = build_cost which = interceptor when = on_upgrade value = -10 where = relative }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 5 }
-      command = { type = morale which = naval_torpedoes_s value = 5 }
+      command = { type = max_organization which = light_cag value = 5 }
+      command = { type = morale which = light_cag value = 5 }
     }
   }
   # Dogfight Experiment Doctrine
@@ -967,10 +967,10 @@ technology =
       command = { type = morale which = multi_role value = 5 }
       command = { type = max_organization which = cag value = 5 }
       command = { type = morale which = cag value = 5 }
-      command = { type = build_cost which = interceptor when = now value = -10 where = relative }
+      command = { type = build_cost which = interceptor when = on_upgrade value = -10 where = relative }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 5 }
-      command = { type = morale which = naval_torpedoes_s value = 5 }
+      command = { type = max_organization which = light_cag value = 5 }
+      command = { type = morale which = light_cag value = 5 }
     }
   }
   # Fighter Ace Initiative
@@ -998,7 +998,7 @@ technology =
       command = { type = morale which = multi_role value = 5 }
       command = { type = max_organization which = cag value = 5 }
       command = { type = morale which = cag value = 5 }
-      command = { type = build_cost which = interceptor when = now value = -10 where = relative }
+      command = { type = build_cost which = interceptor when = on_upgrade value = -10 where = relative }
       command = { type = snow_attack which = interceptor value = 5 }
       command = { type = rain_attack which = interceptor value = 5 }
       command = { type = snow_attack which = multi_role value = 10 }
@@ -1006,10 +1006,10 @@ technology =
       #command = { type = snow_attack which = cag value = 10 }
       #command = { type = rain_attack which = cag value = 10 }
 	  
-      #command = { type = snow_attack which = naval_torpedoes_s value = 10 }
-      #command = { type = rain_attack which = naval_torpedoes_s value = 10 }
-      command = { type = max_organization which = naval_torpedoes_s value = 5 }
-      command = { type = morale which = naval_torpedoes_s value = 5 }
+      #command = { type = snow_attack which = light_cag value = 10 }
+      #command = { type = rain_attack which = light_cag value = 10 }
+      command = { type = max_organization which = light_cag value = 5 }
+      command = { type = morale which = light_cag value = 5 }
     }
   }
   # Infrastructure Destruction Doctrine
@@ -1066,8 +1066,8 @@ technology =
       command = { type = morale which = tactical_bomber value = 10 }
       command = { type = max_organization which = naval_bomber value = 10 }
       command = { type = morale which = naval_bomber value = 10 }
-      command = { type = build_cost which = tactical_bomber when = now value = -10 where = relative }
-      command = { type = build_cost which = naval_bomber when = now value = -5 where = relative }
+      command = { type = build_cost which = tactical_bomber when = on_upgrade value = -10 where = relative }
+      command = { type = build_cost which = naval_bomber when = on_upgrade value = -5 where = relative }
       command = { type = task_efficiency which = airborne_assault value = 0.05 } #-0.05
     }
   }
@@ -1094,8 +1094,8 @@ technology =
       command = { type = morale which = tactical_bomber value = 10 }
       command = { type = max_organization which = naval_bomber value = 10 }
       command = { type = morale which = naval_bomber value = 10 }
-      command = { type = build_cost which = tactical_bomber when = now value = -10 where = relative }
-      command = { type = build_cost which = naval_bomber when = now value = -5 where = relative }
+      command = { type = build_cost which = tactical_bomber when = on_upgrade value = -10 where = relative }
+      command = { type = build_cost which = naval_bomber when = on_upgrade value = -5 where = relative }
       command = { type = task_efficiency which = airborne_assault value = 0.05 } #-0.05
     }
   }
@@ -1122,8 +1122,8 @@ technology =
       command = { type = morale which = tactical_bomber value = 10 }
       command = { type = max_organization which = naval_bomber value = 10 }
       command = { type = morale which = naval_bomber value = 10 }
-      command = { type = build_cost which = tactical_bomber when = now value = -10 where = relative }
-      command = { type = build_cost which = naval_bomber when = now value = -5 where = relative }
+      command = { type = build_cost which = tactical_bomber when = on_upgrade value = -10 where = relative }
+      command = { type = build_cost which = naval_bomber when = on_upgrade value = -5 where = relative }
       command = { type = task_efficiency which = airborne_assault value = 0.05 } #-0.05
     }
   }
@@ -1153,8 +1153,8 @@ technology =
       command = { type = max_organization which = cag value = 5 }
       command = { type = morale which = cag value = 5 }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 5 }
-      command = { type = morale which = naval_torpedoes_s value = 5 }
+      command = { type = max_organization which = light_cag value = 5 }
+      command = { type = morale which = light_cag value = 5 }
     }
   }
   # Multi-altitude Group Doctrine
@@ -1182,11 +1182,11 @@ technology =
       command = { type = morale which = multi_role value = 5 }
       command = { type = max_organization which = cag value = 5 }
       command = { type = morale which = cag value = 5 }
-      command = { type = build_cost which = multi_role when = now value = -10 where = relative }
-      command = { type = build_cost which = escort when = now value = -5 where = relative }
+      command = { type = build_cost which = multi_role when = on_upgrade value = -10 where = relative }
+      command = { type = build_cost which = escort when = on_upgrade value = -5 where = relative }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 5 }
-      command = { type = morale which = naval_torpedoes_s value = 5 }
+      command = { type = max_organization which = light_cag value = 5 }
+      command = { type = morale which = light_cag value = 5 }
     }
   }
   # Filter Room System Doctrine
@@ -1214,11 +1214,11 @@ technology =
       command = { type = morale which = multi_role value = 5 }
       command = { type = max_organization which = cag value = 5 }
       command = { type = morale which = cag value = 5 }
-      command = { type = build_cost which = multi_role when = now value = -10 where = relative }
-      command = { type = build_cost which = escort when = now value = -5 where = relative }
+      command = { type = build_cost which = multi_role when = on_upgrade value = -10 where = relative }
+      command = { type = build_cost which = escort when = on_upgrade value = -5 where = relative }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 5 }
-      command = { type = morale which = naval_torpedoes_s value = 5 }
+      command = { type = max_organization which = light_cag value = 5 }
+      command = { type = morale which = light_cag value = 5 }
     }
   }
   # Air Reserve Doctrine
@@ -1246,11 +1246,11 @@ technology =
       command = { type = morale which = multi_role value = 5 }
       command = { type = max_organization which = cag value = 5 }
       command = { type = morale which = cag value = 5 }
-      command = { type = build_cost which = multi_role when = now value = -10 where = relative }
-      command = { type = build_cost which = escort when = now value = -5 where = relative }
+      command = { type = build_cost which = multi_role when = on_upgrade value = -10 where = relative }
+      command = { type = build_cost which = escort when = on_upgrade value = -5 where = relative }
 	  
-      command = { type = max_organization which = naval_torpedoes_s value = 5 }
-      command = { type = morale which = naval_torpedoes_s value = 5 }
+      command = { type = max_organization which = light_cag value = 5 }
+      command = { type = morale which = light_cag value = 5 }
     }
   }
   # Mass Destruction Doctrine
@@ -1304,8 +1304,8 @@ technology =
       command = { type = morale which = strategic_bomber value = 10 }
       command = { type = max_organization which = transport_plane value = 10 }
       command = { type = morale which = transport_plane value = 10 }
-      command = { type = build_cost which = strategic_bomber when = now value = -5 where = relative }
-      command = { type = build_cost which = escort when = now value = -10 where = relative }
+      command = { type = build_cost which = strategic_bomber when = on_upgrade value = -5 where = relative }
+      command = { type = build_cost which = escort when = on_upgrade value = -10 where = relative }
     }
   }
   # Carpet Bombing Doctrine
@@ -1331,7 +1331,7 @@ technology =
       command = { type = morale which = strategic_bomber value = 10 }
       command = { type = max_organization which = transport_plane value = 10 }
       command = { type = morale which = transport_plane value = 10 }
-      command = { type = build_cost which = strategic_bomber when = now value = -5 where = relative }
+      command = { type = build_cost which = strategic_bomber when = on_upgrade value = -5 where = relative }
       command = { type = task_efficiency which = strategic_bombardment value = 0.1 } #ZS
     }
   }
@@ -1358,7 +1358,7 @@ technology =
       command = { type = morale which = strategic_bomber value = 10 }
       command = { type = max_organization which = transport_plane value = 10 }
       command = { type = morale which = transport_plane value = 10 }
-      command = { type = build_cost which = strategic_bomber when = now value = -5 where = relative }
+      command = { type = build_cost which = strategic_bomber when = on_upgrade value = -5 where = relative }
       command = { type = task_efficiency which = strategic_bombardment value = 0.1 } #ZS
     }
   }

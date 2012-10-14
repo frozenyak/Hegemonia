@@ -264,7 +264,7 @@ country =
       model  = 0
 	  strength = 40
 	  extra = light_armor_brigade
-	  model = 1
+	  brigade_model = 1
     }
     division =
     { id     = { type = 10000 id = 327 }

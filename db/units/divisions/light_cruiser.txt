@@ -1,3 +1,5 @@
+# MODEL_22_
+
 allowed_brigades = naval_anti_air_s
 allowed_brigades = naval_radar_s
 allowed_brigades = naval_fire_controll_s
@@ -6,200 +8,206 @@ allowed_brigades = naval_improved_hull_s
 
 # 0 - Great War 1903
 model = {
-	cost						= 3
-	buildtime 					= 200
-	defaultorganisation 		= 30
-	morale						= 35
+	cost						= 0.7
+	buildtime 					= 960
+	defaultorganisation 		= 20
+	morale						= 20
 	manpower					= 0.3
-	maxspeed					= 22
+	maxspeed					= 25
 	surfacedetectioncapability	= 2
 	airdetectioncapability		= 2
-	subdetectioncapability		= 4 #3
-	visibility					= 55 #60
-	seadefence					= 3
-	airdefence					= 2
+	subdetectioncapability		= 1
+	visibility					= 60
+	seadefence					= 37
+	airdefence					= 28
 	seaattack					= 4
-	convoyattack					= 4
+	convoyattack				= 4
 	subattack					= 1
 	airattack					= 1
 	shorebombardment			= 1
 	transportcapability			= 0
-	
-	range						= 3000 #1500
+	range						= 3000
 	supplyconsumption			= 0.36
 	fuelconsumption				= 0.38
 	distance					= 0.16
+	equipment = { light_cruiser = 1 manpower = 300 }
 }
+
 # 1 - Early 1912
 model = {
-	cost						= 4
-	buildtime 					= 200 #220
-	defaultorganisation 		= 30
-	morale						= 35
-	manpower					= 0.3
-	maxspeed					= 25
-	surfacedetectioncapability	= 3 #2
+	cost						= 0.8
+	buildtime 					= 980
+	defaultorganisation 		= 20
+	morale						= 20
+	manpower					= 0.4
+	maxspeed					= 26
+	surfacedetectioncapability	= 2
 	airdetectioncapability		= 3
-	subdetectioncapability		= 5 #4
-	visibility					= 52 #60
-	seadefence					= 4
-	airdefence					= 2
+	subdetectioncapability		= 4
+	visibility					= 60
+	seadefence					= 36
+	airdefence					= 28
 	seaattack					= 6
-	convoyattack					= 6
+	convoyattack				= 6
 	subattack					= 1
 	airattack					= 2
 	shorebombardment			= 2
 	transportcapability			= 0
-	
-	range						= 5000 #2000
+	range						= 5000
 	supplyconsumption			= 0.36
 	fuelconsumption				= 0.38
 	distance					= 0.18
+	equipment = { light_cruiser = 1 manpower = 400 }
 }
+
 # 2 - Basic 1922
 model = {
-	cost						= 5
-	buildtime 					= 210 #220
-	defaultorganisation 		= 30
-	morale						= 35
-	manpower					= 0.3
-	maxspeed					= 26
-	surfacedetectioncapability	= 3 #2
+	cost						= 1
+	buildtime 					= 1000
+	defaultorganisation 		= 20
+	morale						= 20
+	manpower					= 0.55
+	maxspeed					= 34
+	surfacedetectioncapability	= 2
 	airdetectioncapability		= 4
-	subdetectioncapability		= 6 #5
-	visibility					= 51 #60
-	seadefence					= 5
-	airdefence					= 3
+	subdetectioncapability		= 5
+	visibility					= 60
+	seadefence					= 35
+	airdefence					= 27
 	seaattack					= 8
-	convoyattack					= 8
+	convoyattack				= 8
 	subattack					= 2
 	airattack					= 4
 	shorebombardment			= 3
 	transportcapability			= 0
-	
-	range						= 7500 #2500
+	range						= 7500
 	supplyconsumption			= 0.38
 	fuelconsumption				= 0.38
 	distance					= 0.20
+	equipment = { light_cruiser = 1 manpower = 550 }
 }
+
 # 3 - Improved 1930
 model = {
-	cost						= 6
-	buildtime 					= 210 #220
-	defaultorganisation 		= 30
-	morale						= 35
-	manpower					= 0.4
-	maxspeed					= 29
-	surfacedetectioncapability	= 4 #2
+	cost						= 1
+	buildtime 					= 1030
+	defaultorganisation 		= 20
+	morale						= 20
+	manpower					= 0.575
+	maxspeed					= 35
+	surfacedetectioncapability	= 2
 	airdetectioncapability		= 5
-	subdetectioncapability		= 8 #6
-	visibility					= 49 #60
-	seadefence					= 6
-	airdefence					= 4
+	subdetectioncapability		= 6
+	visibility					= 60
+	seadefence					= 34
+	airdefence					= 26
 	seaattack					= 9
-	convoyattack					= 9
+	convoyattack				= 9
 	subattack					= 2
 	airattack					= 8
 	shorebombardment			= 4
 	transportcapability			= 0
-	
-	range						= 8000 #3000
+	range						= 8000
 	supplyconsumption			= 0.38
 	fuelconsumption				= 0.4
 	distance					= 0.22
+	equipment = { light_cruiser = 1 manpower = 575 }
 }
+
 # 4 - Advanced 1935
 model = {
-	cost						= 7
-	buildtime 					= 210 #230
-	defaultorganisation 		= 30
-	morale						= 35
-	manpower					= 0.4
-	maxspeed					= 30
-	surfacedetectioncapability	= 4 #2
+	cost						= 1.2
+	buildtime 					= 1060
+	defaultorganisation 		= 20
+	morale						= 20
+	manpower					= 0.75
+	maxspeed					= 35
+	surfacedetectioncapability	= 2
 	airdetectioncapability		= 7
-	subdetectioncapability		= 10 #7
-	visibility					= 47 #60
-	seadefence					= 7
-	airdefence					= 4
+	subdetectioncapability		= 7
+	visibility					= 60
+	seadefence					= 33
+	airdefence					= 26
 	seaattack					= 10
-	convoyattack					= 10
+	convoyattack				= 10
 	subattack					= 3
 	airattack					= 10
 	shorebombardment			= 4
 	transportcapability			= 0
-	
-	range						= 8500 #3500
+	range						= 8500
 	supplyconsumption			= 0.4
 	fuelconsumption				= 0.4
 	distance					= 0.23
+	equipment = { light_cruiser = 1 manpower = 750 }
 }
+
 # 5 - Semi-Modern 1940
 model = {
-	cost						= 8
-	buildtime 					= 220 #230
-	defaultorganisation 		= 30
-	morale						= 35
-	manpower					= 0.4
-	maxspeed					= 30
-	surfacedetectioncapability	= 4 #3
+	cost						= 1.4
+	buildtime 					= 1090
+	defaultorganisation 		= 20
+	morale						= 20
+	manpower					= 0.85
+	maxspeed					= 35
+	surfacedetectioncapability	= 3
 	airdetectioncapability		= 9
-	subdetectioncapability		= 12 #8
-	visibility					= 45 #60
-	seadefence					= 8
-	airdefence					= 5
+	subdetectioncapability		= 8
+	visibility					= 60
+	seadefence					= 32
+	airdefence					= 25
 	seaattack					= 11
-	convoyattack					= 11
+	convoyattack				= 11
 	subattack					= 3
 	airattack					= 12
 	shorebombardment			= 4
 	transportcapability			= 0
-	
-	range						= 9000 #4000
+	range						= 9000
 	supplyconsumption			= 0.4
 	fuelconsumption				= 0.4
 	distance					= 0.24
+	equipment = { light_cruiser = 1 manpower = 850 }
 }
+
 # 6 - Modern 1945
 model = {
-	cost						= 8
-	buildtime 					= 220 #230
-	defaultorganisation 		= 30
-	morale						= 35
-	manpower					= 0.5
-	maxspeed					= 30
+	cost						= 1.4
+	buildtime 					= 1110
+	defaultorganisation 		= 20
+	morale						= 20
+	manpower					= 0.85
+	maxspeed					= 35
 	surfacedetectioncapability	= 4
 	airdetectioncapability		= 11
-	subdetectioncapability		= 13 #9
-	visibility					= 43 #60
-	seadefence					= 9
-	airdefence					= 7
+	subdetectioncapability		= 9
+	visibility					= 60
+	seadefence					= 31
+	airdefence					= 23
 	seaattack					= 12
-	convoyattack					= 12
+	convoyattack				= 12
 	subattack					= 4
 	airattack					= 15
 	shorebombardment			= 4
 	transportcapability			= 0
-	
-	range						= 9500 #4300
+	range						= 9500
 	supplyconsumption			= 0.4
 	fuelconsumption				= 0.4
 	distance					= 0.24
+	equipment = { light_cruiser = 1 manpower = 850 }
 }
 # 7 - Nuclear 1948
 model = {
-	cost						= 8
-	buildtime 					= 220
-	defaultorganisation 		= 30
-	morale						= 35
-	manpower					= 0.5
-	maxspeed					= 30
+	cost						= 2
+	buildtime 					= 1120
+	defaultorganisation 		= 20
+	morale						= 20
+	manpower					= 0.85
+	maxspeed					= 34
 	surfacedetectioncapability	= 4
 	airdetectioncapability		= 11
-	subdetectioncapability		= 13
-	visibility					= 41
-	seadefence					= 9
-	airdefence					= 9
+	subdetectioncapability		= 9
+	visibility					= 60
+	seadefence					= 31
+	airdefence					= 21
 	seaattack					= 14
 	convoyattack				= 14
 	subattack					= 5
@@ -207,7 +215,8 @@ model = {
 	shorebombardment			= 4
 	transportcapability			= 0
 	range						= 40000
-	supplyconsumption			= 1.3
+	supplyconsumption			= 0.8
 	fuelconsumption				= 0.0
 	distance					= 0.26
+	equipment = { light_cruiser = 1 manpower = 850 }
 }

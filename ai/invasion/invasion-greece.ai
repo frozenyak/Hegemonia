@@ -18,21 +18,21 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		370 = 100
-		372 = 100
-		384 = 100
-		377 = 100
-		1078 = 100
+		# Greece
+		#382  = 2000  #Crete
+		372  = 500  #Patras
+		377  = 500  #Athens
+		370  = 500   #Alexandroupoli
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2739 = 100
-		2742 = 100
-		2743 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2739 = 100
+		# 2742 = 100
+		# 2743 = 100
+	# }
+# }

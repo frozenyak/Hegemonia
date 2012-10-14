@@ -27,8 +27,6 @@ target = { }
 demand_claims = { }
 liberate = { }
 resistance = { }
-exp_force_ratios = { } 
-no_exp_forces_to = { }
 
 trade = {
 	cancel_deal_threshold = 2

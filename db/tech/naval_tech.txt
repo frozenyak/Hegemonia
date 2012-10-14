@@ -1062,9 +1062,8 @@ technology =
     required  = { }
     effects =
     { command = { type = activate_unit_type which = escort_carrier }
-      command = { type = new_model which = escort_carrier value = 0 }
-		command = { type = activate_unit_type which = naval_torpedoes_s }
-		command = { type = new_model which = naval_torpedoes_s value = 0 }
+		command = { type = new_model which = escort_carrier value = 1 }
+		command = { type = scrap_model which = escort_carrier value = 0 }
     }
   }
   # Basic escort carrier
@@ -1086,7 +1085,9 @@ technology =
     component = { id = 12115 name = TECH_CMP_NAVAL_111_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
     required  = { 12100 }
     effects =
-    { command = { type = new_model which = escort_carrier value = 1 }
+    { 
+		command = { type = new_model which = escort_carrier value = 2 }
+		command = { type = scrap_model which = escort_carrier value = 0 }
     }
   }
   # Improved escort carrier
@@ -1108,8 +1109,8 @@ technology =
     component = { id = 12125 name = TECH_CMP_NAVAL_112_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
     required  = { 12110 }
     effects =
-    { command = { type = new_model which = escort_carrier value = 2 }
-      command = { type = scrap_model which = escort_carrier value = 0 }
+    { command = { type = activate_unit_type which = light_carrier }
+	  command = { type = new_model which = light_carrier value = 0 }
     }
   }
   # Advanced escort carrier
@@ -1131,8 +1132,9 @@ technology =
     component = { id = 12135 name = TECH_CMP_NAVAL_113_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
     required  = { 12120 }
     effects =
+    effects =
     { command = { type = new_model which = escort_carrier value = 3 }
-      command = { type = scrap_model which = escort_carrier value = 1 }
+   	  command = { type = new_model which = light_carrier value = 1 }
     }
   }
   # semi modern escort carrier
@@ -1156,6 +1158,8 @@ technology =
     effects =
     { command = { type = new_model which = escort_carrier value = 4 }
       command = { type = scrap_model which = escort_carrier value = 2 }
+	  command = { type = new_model which = light_carrier value = 2 }
+	  command = { type = scrap_model which = light_carrier value = 0 }
     }
   }
   # modern escort carrier
@@ -1177,8 +1181,8 @@ technology =
     component = { id = 12155 name = TECH_CMP_NAVAL_115_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
     required  = { 12140 }
     effects =
-    { command = { type = new_model which = escort_carrier value = 5 }
-      command = { type = scrap_model which = escort_carrier value = 3 }
+    { command = { type = new_model which = light_carrier value = 3 }
+      command = { type = scrap_model which = light_carrier value = 1 }
     }
   }
   
@@ -1209,8 +1213,9 @@ technology =
     effects =
     { command = { type = activate_unit_type which = cag }
 	  command = { type = new_model which = cag value = 0 }
-	command = { type = new_model which = naval_torpedoes_s value = 1 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 0 }
+		command = { type = activate_unit_type which = light_cag }
+	command = { type = new_model which = light_cag value = 1 }
+	  command = { type = scrap_model which = light_cag value = 0 }
     }
   }
   # Carrier Air Group 1930
@@ -1230,8 +1235,8 @@ technology =
     effects =
     { command = { type = new_model which = cag value = 1 }
 	  command = { type = scrap_model which = cag value = 0 }
-	command = { type = new_model which = naval_torpedoes_s value = 2 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 1 }
+	command = { type = new_model which = light_cag value = 2 }
+	  command = { type = scrap_model which = light_cag value = 1 }
     }
   }
   # Carrier Air Group 1934
@@ -1251,8 +1256,8 @@ technology =
     effects =
     { command = { type = new_model which = cag value = 2 }
       command = { type = scrap_model which = cag value = 1 }
-	command = { type = new_model which = naval_torpedoes_s value = 3 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 2 }
+	command = { type = new_model which = light_cag value = 3 }
+	  command = { type = scrap_model which = light_cag value = 2 }
     }
   }
   # Carrier Air Group 1937
@@ -1272,8 +1277,8 @@ technology =
     effects =
     { command = { type = new_model which = cag value = 3 }
       command = { type = scrap_model which = cag value = 2 }
-	command = { type = new_model which = naval_torpedoes_s value = 4 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 3 }
+	command = { type = new_model which = light_cag value = 4 }
+	  command = { type = scrap_model which = light_cag value = 3 }
     }
   }
   # Carrier Air Group 1940
@@ -1293,8 +1298,8 @@ technology =
     effects =
     { command = { type = new_model which = cag value = 4 }
       command = { type = scrap_model which = cag value = 3 }
-	command = { type = new_model which = naval_torpedoes_s value = 5 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 4 }
+	command = { type = new_model which = light_cag value = 5 }
+	  command = { type = scrap_model which = light_cag value = 4 }
     }
   }
   # Carrier Air Group 1943
@@ -1314,8 +1319,8 @@ technology =
     effects =
     { command = { type = new_model which = cag value = 5 }
       command = { type = scrap_model which = cag value = 4 }
-	command = { type = new_model which = naval_torpedoes_s value = 6 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 5 }
+	command = { type = new_model which = light_cag value = 6 }
+	  command = { type = scrap_model which = light_cag value = 5 }
     }
   }
   # Carrier Air Group 1947
@@ -1335,8 +1340,8 @@ technology =
     effects =
     { command = { type = new_model which = cag value = 6 }
       command = { type = scrap_model which = cag value = 5 }
-	command = { type = new_model which = naval_torpedoes_s value = 7 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 6 }
+	command = { type = new_model which = light_cag value = 7 }
+	  command = { type = scrap_model which = light_cag value = 6 }
     }
   }
     # Turbojet Carrier Air Group
@@ -1360,8 +1365,8 @@ technology =
     effects =
     { command = { type = new_model which = cag value = 7 }
       command = { type = scrap_model which = cag value = 6 }
-	command = { type = new_model which = naval_torpedoes_s value = 8 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 7 }
+	command = { type = new_model which = light_cag value = 8 }
+	  command = { type = scrap_model which = light_cag value = 7 }
     }
   }
 # Imp. Turbojet Carrier Air Group
@@ -1385,8 +1390,8 @@ technology =
     effects =
     { command = { type = new_model which = cag value = 8 }
       command = { type = scrap_model which = cag value = 7 }
-	command = { type = new_model which = naval_torpedoes_s value = 9 }
-	  command = { type = scrap_model which = naval_torpedoes_s value = 8 }
+	command = { type = new_model which = light_cag value = 9 }
+	  command = { type = scrap_model which = light_cag value = 8 }
 	}
   }
   

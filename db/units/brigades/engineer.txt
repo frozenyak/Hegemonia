@@ -1,27 +1,35 @@
+# BRIG_MODEL_13_
+
 ### 0 - Engineer '36
 model = { 
-	cost 				= 3.5 #5
-	buildtime	 		= 70
-	manpower 			= 0.7
-	toughness 			= 3
-	defensiveness 			= 5
-	maxspeed 			= 0.5
-	defaultorganisation	= 6
-	supplyconsumption		= 0.3
+	cost 				= 3.5
+	buildtime	 		= 90
+	manpower			= 3.5
+	toughness			= 0
+	defensiveness		= 0
+	softattack			= 0
+	morale				= 1
+	supplyconsumption	= 0.1
+	fuelconsumption		= 0.09
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { manpower = 3500 horses = 368}
 }
 
 ### 1 - Engineer '43
 model = {
-	cost = 5
-	buildtime = 70
-	manpower = 0.7
-	toughness = 6
-	defensiveness = 10
-	maxspeed = 0.7
-	defaultorganisation	= 10
-	supplyconsumption = 0.6
+	cost				= 4
+	buildtime			= 90
+	manpower			= 3.5
+	toughness			= 0
+	defensiveness		= 0
+	softattack			= 0
+	hardattack			= 1
+	maxspeed			= 0
+	morale				= 3
+	supplyconsumption	= 0.14
+	fuelconsumption		= 0.1
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { manpower = 3500 trucks = 368}
 }

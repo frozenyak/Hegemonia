@@ -256,15 +256,19 @@ event = {
 
 	action = {
 		name = "Join the Comintern"
-		ai_chance = 95
+		ai_chance = 59
 		command = { type = set_domestic which = interventionism value = 7 }
+		#
+		command = { type = removecore which = 71 }
+		command = { type = removecore which = 78 }
+		command = { type = removecore which = 92 }
 		#
 		command = { type = trigger which = 33009 }
 		command = { type = trigger which = 38028 }
 	}
 	action = {
 		name = "Strict Neutrality"
-		ai_chance = 4
+		ai_chance = 2
 		command = { type = set_domestic which = interventionism value = 3 }
 		#
 		command = { type = trigger which = 33010 }
@@ -273,27 +277,14 @@ event = {
 	action = { 
 		trigger = { 
 			exists = VIC
-			# NOT = { flag = FRA_claim_OCC }
 		}
 		name = "Join France (Game Over)"
-		ai_chance = 1
+		ai_chance = 39
 		#
 		command = { type = trigger which = 33011 } #vic
 		command = { type = trigger which = 38030 } #spa
 		command = { type = trigger which = 35115 } #ger
 	}
-	# action = { 
-		# trigger = { 
-			# exists = VIC 
-			# flag = FRA_claim_OCC
-		# }
-		# name = "Join France (Game Over)"
-		# ai_chance = 5
-		# #
-		# command = { type = trigger which = 33011 } #vic
-		# command = { type = trigger which = 38030 } #spa
-		# command = { type = trigger which = 35115 } #ger
-	# }
 }
 
 event = {

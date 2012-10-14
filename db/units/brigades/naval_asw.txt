@@ -1,44 +1,43 @@
-# 0 - Early ASW Suite
+# BRIG_MODEL_16_
+
+# 0 - Early ASW Suite 1937
 model = {
-	cost 				= 0.5
-	buildtime			= 100
-	manpower 			= 0
+	cost 						= 1.0
+	buildtime					= 100
+	manpower 					= 0.0
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
-	subdetectioncapability		= 1
-	airdefence			= 0
-	seaattack			= 0
-	convoyattack			= 0
-	subattack					= 4
-	airattack			= 0
-	shorebombardment		= 0
-	distance			= 0
-	supplyconsumption 		= 0
-	fuelconsumption			= 0
+	subdetectioncapability		= 3
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 2
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
 	upgrade_time_factor 		= 1.0
 	upgrade_cost_factor 		= 1.0
 }
-# 1 - Late ASw Suite
+
+# 1 - Late ASw Suite 1944
 model = {
-	cost 				= 1.5
-	buildtime			= 100
-	manpower 			= 0
+	cost 						= 1.5
+	buildtime					= 100
+	manpower 					= 0.0
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
-	subdetectioncapability		= 2
-	airdefence			= 0
-	seaattack			= 0
-	convoyattack			= 0
-	subattack			= 10
-	airattack			= 0
-	shorebombardment		= 0
-	distance			= 0
-	supplyconsumption 		= 0
-	fuelconsumption			= 0
+	subdetectioncapability		= 5
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 4
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
-
-
-########################################
-

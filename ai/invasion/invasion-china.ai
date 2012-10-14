@@ -23,18 +23,19 @@ invasion = {
 		1367 = 100 #Naoming
 		#
 		1395 = 100 #Hanoi
+		1392 = 100 #Haiphong
 		1399 = 100 #Saigon
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2624 = 100
-		2523 = 100
-		#
-		2522 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2624 = 100
+		# 2523 = 100
+		# #
+		# 2522 = 100
+	# }
+# }

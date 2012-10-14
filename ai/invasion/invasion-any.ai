@@ -21,10 +21,3 @@ invasion = {
         staging_province = { }
 	target = { } 
 }
-
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { }
-}

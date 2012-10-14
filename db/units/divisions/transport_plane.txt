@@ -1,123 +1,134 @@
-#allowed_brigades =  escort
-#max_allowed_brigades = 1
+# MODEL_18_
 
-# 0 - Basic
+allowed_brigades =  escort
+max_allowed_brigades = 1
+
+# 0 - Basic 1936
 model = {
-	cost 						= 33 #30
-	buildtime					= 270 #150
+	cost 						= 30
+	buildtime					= 200
 	defaultorganisation 		= 20
 	morale						= 30
-	manpower					= 1.6
+	manpower					= 2.1
 	maxspeed					= 250
 	surfacedetectioncapability	= 3
 	airdetectioncapability		= 1
-	surfacedefence				= 5
-	airdefence					= 1
-	airattack					= 0
+	surfacedefence				= 8
+	airdefence					= 30
+	airattack					= 1
 	strategicattack				= 0
 	softattack					= 0
 	hardattack					= 0
 	navalattack					= 0
 	transportcapability			= 1
 	range						= 400
-	supplyconsumption 			= 2
-	fuelconsumption				= 2
+	supplyconsumption 			= 1
+	fuelconsumption				= 1.7
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { transport_plane = 100 manpower = 2100 }
 }
-# 1 - Improved
+
+# 1 - Improved 1940
 model = {
-	cost 						= 27 #25
-	buildtime					= 270 #150
+	cost 						= 25
+	buildtime					= 200
 	defaultorganisation 		= 20
 	morale						= 30
-	manpower					= 1.6
+	manpower					= 2.1
 	maxspeed					= 300
 	surfacedetectioncapability	= 3
 	airdetectioncapability		= 1
-	surfacedefence				= 6
-	airdefence					= 1
-	airattack					= 0
+	surfacedefence				= 8
+	airdefence					= 30
+	airattack					= 1
 	strategicattack				= 0
 	softattack					= 0
 	hardattack					= 0
 	navalattack					= 0
 	transportcapability			= 1
 	range						= 500
-	supplyconsumption 			= 2.4
-	fuelconsumption				= 1.6
+	supplyconsumption 			= 1
+	fuelconsumption				= 1.8
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { transport_plane = 100 manpower = 2100 }
 }
-# 2 - Advanced
+
+# 2 - Advanced 1942
 model = {
-	cost 						= 22 #20
-	buildtime					= 270 #150
+	cost 						= 20
+	buildtime					= 200
 	defaultorganisation 		= 20
 	morale						= 30
-	manpower					= 1.6
+	manpower					= 2.1
 	maxspeed					= 350
 	surfacedetectioncapability	= 3
 	airdetectioncapability		= 1
 	surfacedefence				= 8
-	airdefence					= 2
-	airattack					= 0
+	airdefence					= 30
+	airattack					= 1
 	strategicattack				= 0
 	softattack					= 0
 	hardattack					= 0
 	navalattack					= 0
 	transportcapability			= 1
 	range						= 600
-	supplyconsumption 			= 2.8
-	fuelconsumption				= 1.2
+	supplyconsumption 			= 1
+	fuelconsumption				= 2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { transport_plane = 100 manpower = 2100 }
 }
-# 3 - Semi modern
+
+# 3 - Semi modern 1947
 model = {
-	cost 						= 24 #20
-	buildtime					= 270 #150
-	defaultorganisation 				= 20
+	cost 						= 20
+	buildtime					= 200
+	defaultorganisation 		= 20
 	morale						= 30
-	manpower					= 1.6
+	manpower					= 2.1
 	maxspeed					= 375
-	surfacedetectioncapability			= 3
-	airdetectioncapability				= 1
-	surfacedefence					= 10
-	airdefence					= 4
-	airattack					= 0
-	strategicattack					= 0
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 8
+	airdefence					= 18
+	airattack					= 1
+	strategicattack				= 0
 	softattack					= 0
 	hardattack					= 0
 	navalattack					= 0
-	transportcapability				= 1
+	transportcapability			= 1
 	range						= 800
-	supplyconsumption 				= 3.2
-	fuelconsumption					= 1.6
+	supplyconsumption 			= 1
+	fuelconsumption				= 2.1
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { transport_plane = 100 manpower = 2100 }
 }
-# 4 - Modern
+
+# 4 - Modern 1951
 model = {
-	cost 						= 26 #20
-	buildtime					= 270 #150
-	defaultorganisation 				= 20
+	cost 						= 20
+	buildtime					= 200
+	defaultorganisation 		= 20
 	morale						= 30
-	manpower					= 1.6
+	manpower					= 2.1
 	maxspeed					= 400
-	surfacedetectioncapability			= 3
-	airdetectioncapability				= 1
-	surfacedefence					= 12
-	airdefence					= 5
-	airattack					= 0
-	strategicattack					= 0
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 4
+	airdefence					= 18
+	airattack					= 1
+	strategicattack				= 0
 	softattack					= 0
 	hardattack					= 0
 	navalattack					= 0
-	transportcapability				= 1
+	transportcapability			= 1
 	range						= 1000
-	supplyconsumption 				= 3.6
-	fuelconsumption					= 1.6
+	supplyconsumption 			= 1
+	fuelconsumption				= 2.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	equipment = { transport_plane = 100 manpower = 2100 }
 }

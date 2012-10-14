@@ -1,44 +1,48 @@
-# 0 - small naval AA Brigade 1930 ( CL & DD )
+# BRIG_MODEL_17_
+
+# 0 - small naval AA Brigade (1930) 
 model = {
 	cost 						= 1.0
-	buildtime			= 120
+	buildtime					= 120
 	manpower 					= 0.0
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
-	airdefence			= 1
-	seaattack			= 0
-	convoyattack			= 0
-	subattack			= 0
-	airattack			= 1
-	shorebombardment		= 0
-	distance			= 0
+	airdefence					= -1
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 1
+	shorebombardment			= 0
+	distance					= 0
 	supplyconsumption 			= 0.0
-	fuelconsumption			= 0
+	fuelconsumption				= 0
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
-# 1 - small naval AA Brigade 1938 ( CL & DD )
+
+# 1 - small naval AA Brigade (1938) 
 model = {
 	cost 						= 1.0
-	buildtime			= 120
+	buildtime					= 120
 	manpower 					= 0.0
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
-	airdefence			= 2
-	seaattack			= 0
-	convoyattack			= 0
-	subattack			= 0
-	airattack			= 2
-	shorebombardment		= 0
-	distance			= 0
+	airdefence					= -1
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 2
+	shorebombardment			= 0
+	distance					= 0
 	supplyconsumption 			= 0.0
-	fuelconsumption			= 0
+	fuelconsumption				= 0
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
-# 2 - small naval AA Brigade 1940 ( CL & DD )
+
+# 2 - small naval AA Brigade (1940) 
 model = {
 	cost 						= 1.5
 	buildtime					= 120
@@ -46,7 +50,7 @@ model = {
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
-	airdefence					= 3
+	airdefence					= -2
 	seaattack					= 0
 	convoyattack				= 0
 	subattack					= 0
@@ -58,7 +62,8 @@ model = {
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
-# 3 - small naval AA Brigade 1942 ( CL & DD )
+
+# 3 - small naval AA Brigade (1942) 
 model = {
 	cost 						= 1.5
 	buildtime					= 120
@@ -66,7 +71,7 @@ model = {
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
-	airdefence					= 3
+	airdefence					= -2
 	seaattack					= 0
 	convoyattack				= 0
 	subattack					= 0
@@ -78,7 +83,8 @@ model = {
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
-# 4 - small naval AA Brigade 1945 ( CL & DD )
+
+# 4 - small naval AA Brigade (1945) 
 model = {
 	cost 						= 1.5
 	buildtime					= 120
@@ -86,7 +92,7 @@ model = {
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
-	airdefence					= 4
+	airdefence					= -3
 	seaattack					= 0
 	convoyattack				= 0
 	subattack					= 0
@@ -98,7 +104,8 @@ model = {
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
-# 5 - small naval AA Brigade 1949 ( CL & DD ) rocket guided
+
+# 5 - small naval AA Brigade (1949)  rocket guided
 model = {
 	cost 						= 1.5
 	buildtime					= 120
@@ -106,7 +113,7 @@ model = {
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
 	subdetectioncapability		= 0
-	airdefence					= 5
+	airdefence					= -3
 	seaattack					= 0
 	convoyattack				= 0
 	subattack					= 0
@@ -118,5 +125,3 @@ model = {
 	upgrade_time_factor 		= 0.5
 	upgrade_cost_factor 		= 1.0
 }
-########################################
-

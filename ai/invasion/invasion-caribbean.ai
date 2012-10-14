@@ -18,24 +18,28 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1778 = 100
-		1775 = 100
-		1779 = 100
-		1780 = 100
-		1781 = 100
-		1765 = 100
+		#tarrbitz
+		1778 = 100 #guantanamo bay
+		1775 = 100 #camaguey
+		1779 = 100 #santa clara
+		#mansur
+		1780 = 100 #ciudad trujillo
+		1781 = 100 #port au prince
+		#fabur
+		1765 = 100 #puerto rico
+		1758 = 100 #trinidad
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = {
-		2346 = 100
-		2347 = 100
-		2343 = 100
-		2320 = 100
-		2317 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = {
+		# 2346 = 100
+		# 2347 = 100
+		# 2343 = 100
+		# 2320 = 100
+		# 2317 = 100
+	# }
+# }

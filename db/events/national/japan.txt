@@ -34,8 +34,10 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 15
 		command = { type = domestic which = interventionism value = 2 }
-		command = { type = war which = CHI }
-		command = { type = war which = CYN }
+		command = { trigger = { ai = no } type = war which = CYN }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = CYN }
+		command = { trigger = { ai = no } type = war which = CHI }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = CHI }
 		command = { type = dissent value = -5 }
 		#treaty ports
 		command = { type = addclaim which = 1338 }
@@ -76,8 +78,8 @@ event = {
 		local_flag = JAP_war1_no
 		war = { country = CYN country = CHI }
 		OR = {
-			lost_national = { country = CYN value = 20 }
-			lost_national = { country = CHI value = 10 }
+			lost_national = { country = CYN value = 25 } #20
+			lost_national = { country = CHI value = 15 } #15
 		}
 		NOT = {
 			war = { country = CHI }
@@ -123,8 +125,10 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 95
 		command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = CYN }
-		command = { type = war which = CHI }
+		command = { trigger = { ai = no } type = war which = CYN }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = CYN }
+		command = { trigger = { ai = no } type = war which = CHI }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = CHI }
 		command = { type = dissent value = -5 }
 		command = { type = local_clrflag which = JAP_war1_no }
 		#treaty ports
@@ -145,6 +149,68 @@ event = {
 	}
 }
 
+event = {
+	id = 42002
+	country = JAP
+	
+	trigger = {
+		ai = yes
+		local_flag = JAP_war1_no
+		atwar = no
+		random = 25
+		NOT = {
+			event = 2011018
+		}
+		exists = KOR
+	}
+
+	name = "The Korean Question"
+	desc = "Korea has many natural resources we need, and a successful conquest would give us an ideal jump off point to extend into China proper. The question is whether we are ready to dare engage the League."
+	style = 1
+	picture = "Japan_Invasion"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 60
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 99
+		command = { type = domestic which = interventionism value = 1 }		
+		command = { trigger = { ai = no } type = war which = KOR }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = KOR }
+		#korea
+		command = { type = addcore which = 1228 }
+		command = { type = addcore which = 1229 }
+		command = { type = addcore which = 1233 }
+		command = { type = addcore which = 1232 }
+		command = { type = addcore which = 1231 }
+		command = { type = addcore which = 1230 }
+		command = { type = addcore which = 1223 }
+		command = { type = addcore which = 1221 }
+		command = { type = addcore which = 1222 }
+		command = { type = addcore which = 1226 }
+		command = { type = addcore which = 1227 }
+		command = { type = addcore which = 1224 }
+		command = { type = addcore which = 1225 }
+		#port arthur
+		command = { type = addclaim which = 1219 }
+		#taiwan
+		command = { type = addclaim which = 1361 }
+		command = { type = addclaim which = 1362 }
+		command = { type = addclaim which = 1363 }
+		command = { type = addclaim which = 1364 }
+		#
+		command = { type = ai which = "switch/ferocity_yes.ai" }
+	}
+	action = { trigger = { ai = yes }
+		name = "We do not wish war with the League"
+		ai_chance = 1
+		#command = { trigger = { ai = yes } type = dissent value = 5 }
+		#command = { trigger = { ai = no } type = dissent value = 10 }
+		#command = { type = domestic which = interventionism value = -2 }
+	}
+}
 event = {
 	id = 42003
 	country = JAP
@@ -202,7 +268,8 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }		
-		command = { type = war which = KOR }
+		command = { trigger = { ai = no } type = war which = KOR }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = KOR }
 		#korea
 		command = { type = addcore which = 1228 }
 		command = { type = addcore which = 1229 }
@@ -536,7 +603,8 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 65
 		command = { type = domestic which = interventionism value = 1 }		
-		command = { type = war which = U08 }
+		command = { trigger = { ai = no } type = war which = U08 }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = U08 }
 		#
 		command = { type = addclaim which = 1371 }
 		command = { type = addclaim which = 1432 }

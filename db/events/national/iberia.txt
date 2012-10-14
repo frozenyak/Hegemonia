@@ -39,29 +39,7 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_OK"
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = resource which = supplies value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = resource which = supplies value = -200 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = resource which = supplies value = -200 }
-		command = { type = resource which = supplies value = -500 }
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
-		command = { type = set_domestic which = professional_army value = 7 }
-		command = { trigger = { atwar = no } type = belligerence value = 15 }
-		command = { trigger = { NOT = { local_flag = MOB3 } atwar = no } type = dissent value = 4 }
-		command = { trigger = { NOT = { local_flag = MOB4 } atwar = no } type = dissent value = 4 }
-		command = { trigger = { NOT = { local_flag = MOB5 } atwar = no } type = dissent value = 4 }
-		command = { trigger = { NOT = { local_flag = MOB6 } atwar = no } type = dissent value = 4 }
-		command = { trigger = { atwar = no } type = dissent value = 12 }
-		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
+		command = { type = trigger which = 8300107 }
 	}
 }
 
@@ -452,8 +430,18 @@ event = {
 
 	action = {
 		name = ACTION_NAME_DAMN
+		ai_chance = 99
 		command = { type = domestic which = defense_lobby value = 1 }
 		command = { type = dissent value = 5 }
+	}
+	action = {
+		trigger = { ai = no }
+		name = "Ready our forces for an intervention!"
+		ai_chance = 1
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = setflag which = SPA_intervene_U06 }
+		command = { type = ai_prepare_war which = U06 }
 	}
 }
 

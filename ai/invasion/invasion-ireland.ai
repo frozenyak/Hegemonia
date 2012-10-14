@@ -18,20 +18,20 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		30 = 100
-		32 = 100
-		34 = 100
-		36 = 100
+		30 = 100 #waterford
+		32 = 100 #galway
+		34 = 100 #dublin
+		36 = 100 #belfast
 	} 
 }
 
-admiral = { 
-	ignore = { }
-	base = { }
-	core = {  }
-	target = { 
-		2708 = 100
-		2714 = 100
-		2712 = 100
-	}
-}
+# admiral = { 
+	# ignore = { }
+	# base = { }
+	# core = {  }
+	# target = { 
+		# #2708 = 100 #irish sea
+		# #2714 = 100 #cape clear
+		# #2712 = 100 #north channel
+	# }
+# }

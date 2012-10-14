@@ -1,22 +1,19 @@
-#allowed_brigades = naval_fire_controll_s
-#allowed_brigades = naval_improved_hull_s
-#allowed_brigades = naval_torpedoes_s
-#max_allowed_brigades = 2
+# MODEL_28_
 
-# 0 - Dive Boat
+# 0 - Dive Boat (1896)
 model = {
-	cost						= 4 #2
-	buildtime					= 60 #90
-	defaultorganisation 		= 5 #30
-	morale						= 40
+	cost						= 0.6
+	buildtime					= 270
+	defaultorganisation			= 10
+	morale						= 20
 	manpower					= 0.1
-	maxspeed					= 10
-	surfacedetectioncapability	= 3 #2
+	maxspeed					= 8
+	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
-	subdetectioncapability		= 0 #1
-	visibility					= 6 #4 #5
-	seadefence					= 1
-	airdefence					= 4
+	subdetectioncapability		= 1
+	visibility					= 4
+	seadefence					= 39
+	airdefence					= 26
 	seaattack					= 1
 	convoyattack				= 3
 	subattack					= 1
@@ -24,158 +21,169 @@ model = {
 	shorebombardment			= 0
 	transportcapability			= 0
 	range						= 500
-	supplyconsumption			= 0.05
-	fuelconsumption				= 0.01
+	supplyconsumption			= 0.3
+	fuelconsumption				= 0.5
 	distance					= 0.15
+	equipment = { submarine = 5 manpower = 100 }
 }
-# 1 - Short-Range
+
+# 1 - Diesel Submarine (1912)
 model = {
-	cost						= 4 #2
-	buildtime					= 65 #110
-	defaultorganisation 		= 5 #30
-	morale						= 40
-	manpower					= 0.1
+	cost						= 0.8
+	buildtime					= 300
+	defaultorganisation			= 10
+	morale						= 20
+	manpower					= 0.2
 	maxspeed					= 12
-	surfacedetectioncapability	= 4 #3
+	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
-	subdetectioncapability		= 0 #1
-	visibility					= 5 #3 #4
-	seadefence					= 2
-	airdefence					= 5
+	subdetectioncapability		= 1
+	visibility					= 3
+	seadefence					= 38
+	airdefence					= 25
 	seaattack					= 2
 	convoyattack				= 5
 	subattack					= 2
 	airattack					= 0
 	shorebombardment			= 0
 	transportcapability			= 0
-	range						= 1500 #2500
-	supplyconsumption			= 0.05
-	fuelconsumption				= 0.01
+	range						= 1500
+	supplyconsumption			= 0.4
+	fuelconsumption				= 0.5
 	distance					= 0.16
+	equipment = { submarine = 5 manpower = 200 }
 }
-# 2 - Medium-Range
+
+# 2 - Medium-Range 1915
 model = {
-	cost						= 6 #2
-	buildtime					= 90 #160
-	defaultorganisation 		= 5 #30
-	morale						= 40
-	manpower					= 0.1
-	maxspeed					= 16
-	surfacedetectioncapability	= 5 #4
+	cost						= 1
+	buildtime					= 330
+	defaultorganisation			= 10
+	morale						= 20
+	manpower					= 0.2
+	maxspeed					= 15
+	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
-	subdetectioncapability		= 0 #1
-	visibility					= 4 #1
-	seadefence					= 3
-	airdefence					= 6
+	subdetectioncapability		= 1
+	visibility					= 1
+	seadefence					= 37
+	airdefence					= 24
 	seaattack					= 2
 	convoyattack				= 6
 	subattack					= 2
 	airattack					= 1
 	shorebombardment			= 0
 	transportcapability			= 0
-	range						= 4000 #3000
-	supplyconsumption			= 0.12
-	fuelconsumption				= 0.03
+	range						= 4000
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.7
 	distance					= 0.17
+	equipment = { submarine = 5 manpower = 200 }
 }
-# 3 - Long-Range
+
+# 3 - Long-range Submarine (1937)
 model = {
-	cost						= 8 #3
-	buildtime					= 95 #160
-	defaultorganisation 		= 5 #30
-	morale						= 40
-	manpower					= 0.1
+	cost						= 1.2
+	buildtime					= 360
+	defaultorganisation			= 10
+	morale						= 20
+	manpower					= 0.3
 	maxspeed					= 18
-	surfacedetectioncapability	= 6 #5
+	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
-	subdetectioncapability		= 0 #1
-	visibility					= 3 #1
-	seadefence					= 4
-	airdefence					= 8
+	subdetectioncapability		= 1
+	visibility					= 1
+	seadefence					= 36
+	airdefence					= 22
 	seaattack					= 2
 	convoyattack				= 7
 	subattack					= 2
 	airattack					= 1
 	shorebombardment			= 0
 	transportcapability			= 0
-	range						= 12000 #3500
-	supplyconsumption			= 0.18
-	fuelconsumption				= 0.05
+	range						= 12000
+	supplyconsumption			= 0.6
+	fuelconsumption				= 0.8
 	distance					= 0.18
+	equipment = { submarine = 5 manpower = 300 }
 }
-# 4 - Electro-Submarine
+
+# 4 - Electro-Submarine 1943
 model = {
-	cost						= 9 #4
-	buildtime					= 95 #160
-	defaultorganisation 		= 10 #30
-	morale						= 40
-	manpower					= 0.1
+	cost						= 1.5
+	buildtime					= 420
+	defaultorganisation			= 10
+	morale						= 20
+	manpower					= 0.4
 	maxspeed					= 18
-	surfacedetectioncapability	= 7 #5
+	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
-	subdetectioncapability		= 1 #3
-	visibility					= 2 #0.5 #2
-	seadefence					= 5
-	airdefence					= 9
+	subdetectioncapability		= 1
+	visibility					= 0.5
+	seadefence					= 35
+	airdefence					= 21
 	seaattack					= 4
-	convoyattack					= 9
+	convoyattack				= 9
 	subattack					= 4
 	airattack					= 1
 	shorebombardment			= 0
 	transportcapability			= 0
-	
-	range						= 15000 #3500
-	supplyconsumption			= 0.2
-	fuelconsumption				= 0.06
+	range						= 15000
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
 	distance					= 0.19
+	equipment = { submarine = 5 manpower = 400 }
 }
-# 5 - Semi-Modern
+
+# 5 - Semi-Modern 1950
 model = {
-	cost						= 9 #5
-	buildtime					= 110 #160
-	defaultorganisation 		= 10 #30
-	morale						= 40
-	manpower					= 0.1
+	cost						= 2
+	buildtime					= 450
+	defaultorganisation			= 10
+	morale						= 20
+	manpower					= 0.4
 	maxspeed					= 21
-	surfacedetectioncapability	= 7 #6
+	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
-	subdetectioncapability		= 1 #4
-	visibility					= 2 #0.1 #2
-	seadefence					= 8
-	airdefence					= 11
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 32
+	airdefence					= 19
 	seaattack					= 5
 	convoyattack				= 10
 	subattack					= 5
 	airattack					= 1
 	shorebombardment			= 0
 	transportcapability			= 0
-	range						= 15000 #4000
+	range						= 15000
 	supplyconsumption			= 0.7
-	fuelconsumption				= 0.24
+	fuelconsumption				= 0.5
 	distance					= 0.2
+	equipment = { submarine = 5 manpower = 400 }
 }
-# 6 - Nuclear
+# 6 - Nuclear 1948
 model = {
-	cost						= 8
-	buildtime					= 320
-	defaultorganisation 		= 10 #30
-	morale						= 40
-	manpower					= 0.2
+	cost						= 3.5
+	buildtime					= 1000
+	defaultorganisation			= 10
+	morale						= 20
+	manpower					= 0.55
 	maxspeed					= 25
-	surfacedetectioncapability	= 8 #7
-	airdetectioncapability		= 2 #1
-	subdetectioncapability		= 2 #5
-	visibility					= 1 #0.1 #1
-	seadefence					= 12
-	airdefence					= 14
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 28
+	airdefence					= 16
 	seaattack					= 8
 	convoyattack				= 12
 	subattack					= 8
 	airattack					= 1
 	shorebombardment			= 0
 	transportcapability			= 0
-	range						= 40000 #8000
-	supplyconsumption			= 0.65
+	range						= 40000
+	supplyconsumption			= 1.9
 	fuelconsumption				= 0
 	distance					= 0.2
+	equipment = { submarine = 5 manpower = 550 }
 }
