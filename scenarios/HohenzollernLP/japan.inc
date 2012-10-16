@@ -106,8 +106,6 @@ country =
 	1210 #Basic Cavalry
 	1310 #Rear Area Supply
 
-	1150 #early marine
-
 	##Land Doctrines##
 	14000 #Great War Hospital
 	
