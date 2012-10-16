@@ -266,12 +266,12 @@ construction = {
 
 military = { 
 	relative_build_scheme 	= no
-	max_batch_peace 		= 360 
-	max_batch_war 			= 180 
-	max_batch_home_front 	= 180
+	max_batch_peace 		= 680 
+	max_batch_war 			= 500 
+	max_batch_home_front 	= 500
 
 	#### Divisions etc...
-	infantry 		= 70
+	infantry 		= 50
 	cavalry 		= 0
 	motorized 		= 0
 	mechanized 		= 0
@@ -282,7 +282,7 @@ military = {
 	bergsjaeger 	= 10
 	garrison		= 0
     hq 				= 0
-	militia 		= 20
+	militia 		= 40
 #				100 %
 	interceptor 	= 0
 	multi_role 		= 0

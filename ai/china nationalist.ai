@@ -186,9 +186,6 @@ tech_sharing = {
 		1120 = 100
 		1130 = 100
 		1140 = 100
-
-		# Logistics
-		1310 = 100
 	}
 }
 ###################################
@@ -263,9 +260,9 @@ construction = {
 
 military = { 
 	relative_build_scheme 	= no
-	max_batch_peace 		= 360 
-	max_batch_war 			= 180 
-	max_batch_home_front 	= 180
+	max_batch_peace 		= 1200 
+	max_batch_war 			= 270 
+	max_batch_home_front	= 270
 	extra_convoys_war		= 0
 	extra_convoys_peace		= 0
 

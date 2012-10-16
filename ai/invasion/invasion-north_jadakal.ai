@@ -21,7 +21,7 @@ invasion = {
 		2014 = 100 #trujillo
 		2040 = 100 #santiago de guayaquil
 		1985 = 100 #cali
-		#1986 = 100 #barranquilla
+		1986 = 100 #barranquilla
 	} 
 }
 

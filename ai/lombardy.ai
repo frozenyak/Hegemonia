@@ -175,9 +175,9 @@ construction = {
 }
 military = { 
 	relative_build_scheme 	= no
-	max_batch_peace 	= 360 
-	max_batch_war 		= 180 
-	max_batch_home_front 	= 180
+	max_batch_peace 		= 680 
+	max_batch_war 			= 320 
+	max_batch_home_front	= 180
 
 	#### Divisions etc...
 	infantry 		= 53
@@ -298,7 +298,7 @@ technology = {
 		6150
 
 		# Air Doctrines
-		9040 9050 9060 9060 9080 9100 9110 9120 9130 9190 9200 9210 9220 9230 9240 9250 9260 9290 9310 9320 9330 9340 9350 9360 9370 9380 9390 9400 9410 9420
+		9040 9050 9060 9080 9100 9110 9120 9130 9190 9200 9210 9220 9230 9240 9250 9260 9290 9310 9320 9330 9340 9350 9360 9370 9380 9390 9400 9410 9420
 	} 
 	ignore 	= {
 		# Rocket Assembly

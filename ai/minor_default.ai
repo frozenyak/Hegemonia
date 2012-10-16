@@ -140,8 +140,8 @@ construction = {
 
 military = { 
 	relative_build_scheme 	= no
-	max_batch_peace 		= 360 
-	max_batch_war 			= 180 
+	max_batch_peace 		= 680 
+	max_batch_war 			= 320 
 	max_batch_home_front = 180
 	extra_convoys_war = 0
 	extra_convoys_peace = 0
@@ -200,13 +200,13 @@ military = {
 
 	cag = 100.000
 	escort = 100.0000
-	naval_torpedoes_s = 100
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 
 	naval_radar_s = 10.0000 
 	naval_fire_controll_s = 10.0000 
 	naval_improved_hull_s = 0.0000 
+	naval_torpedoes_s = 0
 	naval_anti_air_l = 0.0000 
 	naval_radar_l = 0.0000 
 	naval_fire_controll_l = 10.0000 
@@ -320,11 +320,11 @@ technology = {
 	armor 		= 1
 	infantry 	= 6
 	industry 	= 3
-	aircraft 	= 0
+	aircraft 	= 1
 	naval 		= 0
 	land_doctrines 	= 8
 	secret_weapons 	= 0
-	air_doctrines 	= 0
+	air_doctrines 	= 1
 	naval_doctrines = 0
 }
 

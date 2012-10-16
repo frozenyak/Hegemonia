@@ -12,7 +12,7 @@ strat_redeploy_threshold = 10
 exp_force_ratio = 0.50
 exp_force_ratios = { }
 no_exp_forces_to = { }
-upgrading = 0.35
+upgrading = 0.20
 reinforcement = 0 #0.10
 
 ###################################
@@ -135,9 +135,9 @@ construction = {
 
 military = {
 	relative_build_scheme 	= no
-	max_batch_peace 		= 360
-	max_batch_war 			= 180
-	max_batch_home_front	= 180
+	max_batch_peace 		= 720
+	max_batch_war 			= 360
+	max_batch_home_front	= 270
 	extra_convoys_war		= 0.05
 	extra_convoys_peace		= 0.05
 
@@ -367,8 +367,8 @@ garrison = {
 	home_multiplier 	= 1.0
 	overseas_multiplier 	= 0.5
 	home_peace_cap 		= 100
-	war_zone_odds 		= 1.001
-	key_point_prio_mult	= 0
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1
 	revolt_risk_mult	= 1.0
 
 	# PRIORITIES:
@@ -444,10 +444,10 @@ air_marshal = {
 	# desirability is a multiplier used when calcualting the mission desirability
 	airsuperioritydesirability 		= 30.0
 	groundattackdesirability 		= 40.0
-	inderdictiondesirability 		= 2.0
+	inderdictiondesirability 		= 20.0
 	logisticalstrikedesirability 	= 2.0
-	runwaycrateringdesirability 	= 1.0
-	strategicstrikedesirability 	= 1.0
+	runwaycrateringdesirability 	= 10.0
+	strategicstrikedesirability 	= 10.0
 	installationstrikedesirability 	= 5.0
 	navalstrikedesirability 		= 15.0
 	portstrikedesirability 			= 9.0
@@ -457,11 +457,11 @@ air_marshal = {
 	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
 	airsuperioritylosstolerance 	= 1.0
 	groundattacklosstolerance 		= 1.0
-	interdictionlosstolerance 		= 0.5
+	interdictionlosstolerance 		= 2.0
 	logisticalstrikelosstolerance 	= 0.5
 	runwaycrateringlosstolerance 	= 1.5
-	strategicstriketolerance 		= 0.5
-	installationstriketolerance 	= 0.5
+	strategicstriketolerance 		= 4.5
+	installationstriketolerance 	= 1.5
 	navalstriketolerance 			= 1.0
 	portstriketolerance 			= 1.0
 	convoyraidtolerance				= 1.0

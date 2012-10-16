@@ -1,5 +1,5 @@
-Hegemonia 1.05, checksum LNXT
-Requires Darkest Hour patch 1.02
+Hegemonia 1.06, checksum XXXX
+Requires Darkest Hour patch 1.03 RC1+hotfix
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
 
@@ -17,7 +17,6 @@ extract into y:\our\path\to\Darkest Hour\mods
 
 Gameplay note: 
 Great War events start in 1939
-Light carriers have small CAGs
 
 hotkey changes:
 SPACE is PAUSE
@@ -56,8 +55,6 @@ changed years
 
 unit changes:
 no battlecruisers
-lowered land unit speeds
-naval ranges from "DH Full"
 cheaper to upgrade but takes longer
 reinforcement costs as much manpower as building new, but cheaper IC
 
@@ -66,6 +63,38 @@ IC, resources, infra
 
 
 (probably incomplete) change list:
+1.06 - NOTE: You have to start a new game
+	1.03 RC1+hotfix patch compatibility
+	new DH combat system
+	
+	fixed revolters
+	ai
+		tweaked countries
+		added scripted invasions
+		
+	events
+		greatly increased chance for Communist Occitania to join France, loses cores on provinces in France on Comintern choice
+		No partition of Greece when allied with India
+		germany
+			no monarchist riots with von epp hog
+			no liberal riots with schuman hog
+		new mazula/american federation surrender events
+		added crude surrender event for the AI union, req control ankara/istanbul/athens, union 75% national lost
+		
+	gfx
+		fixed counters
+		added new picture for Frederick III because the game changed the default
+	
+	units
+		switched to DH Full stats and costs, but infantry will never use fuel
+	
+	map
+		changed various areas and regions
+		
+	scenario
+		replaced Indian AFG/GER core for claims
+		MEX/JAP now have '29 CVL tech
+		AFE -1 free market
 
 1.05 - NOTE: You have to start a new game(?)
 	tech teams
