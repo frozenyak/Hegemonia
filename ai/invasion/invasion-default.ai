@@ -20,15 +20,15 @@ invasion = {
 	target = { }
 }
 
-admiral = {
-	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
-	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
-	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
-	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+# admiral = {
+	# min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	# min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	# return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	# return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
 
-	ignore = { }
-	#Which provinces to use as bases..
-	base = { }
-	target = { }
-	core = { }
-}
+	# ignore = { }
+	# #Which provinces to use as bases..
+	# base = { }
+	# target = { }
+	# core = { }
+# }

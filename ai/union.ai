@@ -305,32 +305,32 @@ construction = {
 
 military = { 
 	relative_build_scheme 	= no
-	max_batch_peace 		= 720 
-	max_batch_war 			= 360 
-	max_batch_home_front	= 270
+	max_batch_peace 		= 680 
+	max_batch_war 			= 320 
+	max_batch_home_front	= 180
 	extra_convoys_war		= 0
 	extra_convoys_peace		= 0
 
 	#### Divisions etc...
-	infantry 	= 44
+	infantry 	= 49
 	cavalry 	= 0
 	motorized 	= 5
 	mechanized 	= 5
-	light_armor = 5
-	armor 		= 5
+	light_armor = 4
+	armor 		= 4
 	paratrooper = 0
-	marine 		= 1
-	bergsjaeger = 7
-	garrison	= 2
+	marine 		= 0
+	bergsjaeger = 10
+	garrison	= 0
     hq 			= 1
 	militia 	= 0
-#				75 %
+#				78 %
 	interceptor 	= 4
 	multi_role 		= 8
 	cas 			= 0
-	strategic_bomber = 0
+	strategic_bomber = 2
 	tactical_bomber = 5
-	naval_bomber 	= 5
+	naval_bomber 	= 3
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
@@ -342,10 +342,10 @@ military = {
 	light_cruiser 	= 0
 	heavy_cruiser 	= 0
 	battlecruiser 	= 0
-	submarine 		= 3
+	submarine 		= 0
 	nuclear_submarine = 0
 	transports 		= 0
-#				3 %
+#				0 %
 
 	#### Brigades
 	artillery 			= 20
@@ -363,7 +363,7 @@ military = {
 	engineer 			= 0 
 
 	cag = 100.000
-	naval_torpedoes_s = 100
+	light_cag = 100
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 
@@ -430,6 +430,9 @@ technology = {
 		
 		# Equipment Sturdy
 		5980 5990
+		
+		# Land Doctrines
+		6090 #combined arms defense
 	} 
 	ignore 		= {
 		# Ship & Rocket Assembly
@@ -767,8 +770,8 @@ admiral = {
 		"Atlantic-Indian Ridge"
 		
 		#East Africa
-		#"Red Sea"
-		#"Horn of Africa"
+		"Red Sea"
+		"Horn of Africa"
 		
 		#Madagascar Coast
 		"South Mozambique Channel"
@@ -887,11 +890,17 @@ admiral = {
 	}
 	target = {
      	2730 = 200 
-     	2731 = 200 
-		2176 = 150
-		2178 = 100
-     	2739 = 50 
-		2175 = 50
+     	2731 = 200
+     	2739 = 50
+		
+     	2738 = 200 
 	} 
-   	core = { 2741 2742 2729 397 }
+   	core = { 
+		2741 
+		2742 
+		2729 
+		397
+		
+		2739
+	}
 }

@@ -142,29 +142,29 @@ military = {
 	extra_convoys_peace		= 0.05
 
 	#### Divisions etc...
-	infantry 		= 28
+	infantry 		= 30
 	cavalry 		= 0
-	motorized 		= 10
-	mechanized 		= 10
-	light_armor 	= 5
+	motorized 		= 9
+	mechanized 		= 9
+	light_armor 	= 4
 	armor 			= 5
 	paratrooper 	= 0
 	marine 			= 0
 	bergsjaeger 	= 0
-	garrison		= 5
+	garrison		= 0
     hq 				= 0
 	militia 		= 0
-#				63 %
-	interceptor 	= 10
+#				58 %
+	interceptor 	= 13
 	multi_role 		= 0
 	cas 			= 7
 	strategic_bomber = 0
-	tactical_bomber = 5
+	tactical_bomber = 10
 	naval_bomber 	= 0
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				22 %
+#				24 %
 	battleship 		= 0
 	carrier 		= 0
 	escort_carrier	= 0
@@ -188,13 +188,13 @@ military = {
 	heavy_armor 		= 0
 	super_heavy_armor 	= 0
 	armored_car 		= 0
-	anti_air 			= 20
+	anti_air 			= 10
 	police 				= 0
 	engineer 			= 10
 
 	cag = 100.000
 	escort = 100.0000
-	naval_torpedoes_s = 100.000
+	light_cag = 100.000
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 

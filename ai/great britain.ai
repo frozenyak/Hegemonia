@@ -297,7 +297,7 @@ military = {
 	engineer 			= 0
 
 	cag = 100.000
-	naval_torpedoes_s = 100
+	light_cag = 100
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 
@@ -357,7 +357,7 @@ technology = {
 		8200 8250 8140 8260
 
 		# Land Doctrines
-		6170
+		6100 #mechanised offensive
 
 		# Air Doctrines
 		9040 9050 9060 9070 9080 9090 9100 9110 9120 9130 9190 9210 9220 9230 9240 9250 9350

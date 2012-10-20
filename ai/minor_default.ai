@@ -143,8 +143,8 @@ military = {
 	max_batch_peace 		= 680 
 	max_batch_war 			= 320 
 	max_batch_home_front = 180
-	extra_convoys_war = 0
-	extra_convoys_peace = 0
+	extra_convoys_war = 0.05
+	extra_convoys_peace = 0.05
 
 
 	#### Divisions etc...
@@ -184,7 +184,7 @@ military = {
 #				0 %
 
 	#### Brigades
-	artillery 			= 20
+	artillery 			= 25
 	sp_artillery 		= 0
 	rocket_artillery	= 0
 	sp_rct_artillery 	= 0
@@ -194,7 +194,7 @@ military = {
 	heavy_armor 		= 0
 	super_heavy_armor 	= 0
 	armored_car 		= 0
-	anti_air 			= 5
+	anti_air 			= 10
 	police 				= 0
 	engineer 			= 0
 

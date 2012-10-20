@@ -18,7 +18,8 @@ invasion = {
       
 	staging_province = { }        
 	target = { 
-		1191 = 100 #vladivostok
+		553 = 100 #odinholm
+		542 = 100 #arkhangelsk
 	} 
 }
 

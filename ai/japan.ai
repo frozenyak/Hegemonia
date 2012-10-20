@@ -354,9 +354,9 @@ construction = {
 }
 military = { 
 	relative_build_scheme 	= no
-	max_batch_peace 		= 1200 
-	max_batch_war 			= 320
-	max_batch_home_front	= 180
+	max_batch_peace 		= 360 
+	max_batch_war 			= 180
+	max_batch_home_front 	= 180
 	extra_convoys_war		= 0.05
 	extra_convoys_peace		= 0.05
 
@@ -413,7 +413,7 @@ military = {
 
 	cag = 100.000
 	escort = 100.0000
-	naval_torpedoes_s = 100
+	light_cag = 100
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 
@@ -429,9 +429,9 @@ military = {
 
 # military = { 
 	# relative_build_scheme 	= yes
-	# max_batch_peace 		= 720 
-	# max_batch_war 			= 360
-	# max_batch_home_front	= 270
+	# max_batch_peace 		= 360 
+	# max_batch_war 			= 180
+	# max_batch_home_front 	= 180
 	# extra_convoys_war		= 0.05
 	# extra_convoys_peace		= 0.05
 
@@ -1073,7 +1073,6 @@ admiral = {
 		"Black Sea"
 		"Aegean Sea"
 		"Egyptian Coast"
-		
 		
 		#North Atlantic
 		"North Atlantic"

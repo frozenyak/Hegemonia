@@ -48,6 +48,6 @@ military = {
 ###################################
 garrison = {
 	defend_overseas_beaches = no
-	home_multiplier 		= 1.5
+	home_multiplier 		= 2.5
 	overseas_multiplier 	= 0.5
 }

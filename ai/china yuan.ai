@@ -13,7 +13,7 @@ exp_force_ratios = { }
 no_exp_forces_to = { FRA BEL HOL NOR DEN POL LUX SPA SPR GRE YUG JAP GER }
 upgrading = 0.1
 reinforcement = 0.10
-use_offensive_supply = yes
+use_offensive_supply = no
 
 ###################################
 # Diplomacy
@@ -334,7 +334,7 @@ military = {
 	engineer 			= 0
 
 	cag = 100.000 
-	naval_torpedoes_s = 100
+	light_cag = 100
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 

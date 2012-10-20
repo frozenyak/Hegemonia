@@ -322,7 +322,7 @@ military = {
 	engineer 			= 10
 
 	cag = 100.000
-	naval_torpedoes_s = 100
+	light_cag = 100
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 
@@ -368,9 +368,9 @@ technology = {
 
 		# Naval Doctrines
 		8200 8250 8140 8260
-
+		
 		# Land Doctrines
-		6100
+		6090 #combined arms defense
 
 		# Carrier
 		3320 3330 3340 3350 3360 3370 3380 3390
