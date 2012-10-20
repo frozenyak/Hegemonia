@@ -135,8 +135,6 @@ USA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 6178;Chief of Navy;Thomas C. Hart;40;ML;Decisive Naval Battle Doctrine;Medium;L60417;x
 6179;Chief of Air Force;Carl A. Spaatz;42;ML;Army Aviation Doctrine;Very High;L60557;x
 6180;Chief of Air Force;Ira C. Eaker;44;SL;Carpet Bombing Doctrine;Very High;L60506;x
-6181;Chief of Staff;Douglas MacArthur;36;ML;School of Psychology;High;L60250;x
-6182;Chief of Army;Douglas MacArthur;36;ML;Elastic Defence Doctrine;High;L60250;x
 6183;Chief of Navy;Robert L. Ghormley;36;ML;Open Seas Doctrine;Very High;L60406;x
 6184;Head of Military Intelligence;Frank B. Rowlett;36;SL;Naval Intelligence Specialist;High;M6184;x
 6024;Minister of Armament;Joseph P. Lash;36;LWR;Resource Industrialist;Very High;M6024;x
@@ -191,7 +189,6 @@ USA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 6233;Chief of Navy;Forrest P. Sherman;49;ML;Indirect Approach Doctrine;High;L60464;x
 6234;Chief of Navy;William R. Fechteler;51;ML;Power Projection Doctrine;High;L60402;x
 6235;Chief of Air Force;Hoyt Vandenberg;48;ML;Vertical Envelopment Doctrine;Medium;M6235;x
-6236;Head of State;Douglas MacArthur;52;SC;Resigned Generalissimo;Medium;L60250;x
 6237;Head of Military Intelligence;Charles Willoughby;52;PA;Dismal Enigma;High;M6237;x
 6238;Minister of Security;Joseph McCarthy;52;ML;Man of the People;High;M6238;x
 6239;Head of Government;Joseph McCarthy;52;ML;Political Protege;High;M6238;x
