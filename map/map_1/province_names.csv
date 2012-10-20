@@ -2339,7 +2339,7 @@ PROV2336;Apalachee Bay;Apalachee Bay;Apalachee Bay;Bahнa de Apalaches;Apalachee 
 PROV2337;Florida Straits;Florida Straits;Florida Straits;Estrecho de Florida;Florida Straits;Florida Straits;Florida Straits;Флоридский пролив;;;X
 PROV2338;Louisiana Coast;Louisiana Coast;Louisiana Coast;Costa de Luisiana;Louisiana Coast;Louisiana Coast;Louisiana Coast;побережье Луизианы;;;X
 PROV2339;Yucatan Coast;Yucatan Coast;Yucatan Coast;Costa de Yucatбn;Yucatan Coast;Yucatan Coast;Yucatan Coast;побережье Юкатана;;;X
-PROV2340;Gulf of Mazula;Gulf of Mexico;Gulf of Mexico;Golfo de Mйxico;Gulf of Mexico;Gulf of Mexico;Gulf of Mexico;Мексиканский залив;;;X
+PROV2340;Gulf of Mexico;Gulf of Mexico;Gulf of Mexico;Golfo de Mйxico;Gulf of Mexico;Gulf of Mexico;Gulf of Mexico;Мексиканский залив;;;X
 PROV2341;Gulf of Campeche;Gulf of Campeche;Gulf of Campeche;Golfo de Campeche;Gulf of Campeche;Gulf of Campeche;Gulf of Campeche;залив Кампече;;;X
 PROV2342;Gulf of Honduras;Gulf of Honduras;Gulf of Honduras;Golfo de Honduras;Gulf of Honduras;Gulf of Honduras;Gulf of Honduras;Гондурасский залив;;;X
 PROV2343;Yucatan Channel;Yucatan Channel;Yucatan Channel;Canal del Yucatбn;Yucatan Channel;Yucatan Channel;Yucatan Channel;Юкатанский пролив;;;X
@@ -2480,13 +2480,13 @@ PROV2477;Izu Islands;Izu Islands;Izu Islands;Islas Izu;Izu Islands;Izu Islands;I
 PROV2478;Yap Islands;Yap Islands;Yap Islands;Islas Yap;Yap Islands;Yap Islands;Yap Islands;острова Яп;;;X
 PROV2479;Peleliu Kyushu Ridge;Peleliu Kyushu Ridge;Peleliu Kyushu Ridge;Peleliu Kyushu Ridge;Peleliu Kyushu Ridge;Peleliu Kyushu Ridge;Peleliu Kyushu Ridge;хребет Пелелиу-Кюсю;;;X
 PROV2480;Daito Islands;Daito Islands;Daito Islands;Islas Daito;Daito Islands;Daito Islands;Daito Islands;острова Дайто;;;X
-PROV2481;East Tagalog Basin;East Philippine Basin;East Philippine Basin;Cuenca del Este de Filipinas;East Philippine Basin;East Philippine Basin;East Philippine Basin;Восток Филиппинского моря;;;X
-PROV2482;Tagalog Sea;Philippine Sea;Philippine Sea;Mar de las Filipinas;Philippine Sea;Philippine Sea;Philippine Sea;Филиппинское море;;;X
+PROV2481;East Philippine Basin;East Philippine Basin;East Philippine Basin;Cuenca del Este de Filipinas;East Philippine Basin;East Philippine Basin;East Philippine Basin;Восток Филиппинского моря;;;X
+PROV2482;Philippine Sea;Philippine Sea;Philippine Sea;Mar de las Filipinas;Philippine Sea;Philippine Sea;Philippine Sea;Филиппинское море;;;X
 PROV2483;Peleliu Islands;Peleliu Islands;Peleliu Islands;Islas Peleliu;Peleliu Islands;Peleliu Islands;Peleliu Islands;остров Пелелиу;;;X
-PROV2484;Tagalog Trench;Philippine Trench;Philippine Trench;Zanja Filipina;Philippine Trench;Philippine Trench;Philippine Trench;Филиппинский желоб;;;X
+PROV2484;Philippine Trench;Philippine Trench;Philippine Trench;Zanja Filipina;Philippine Trench;Philippine Trench;Philippine Trench;Филиппинский желоб;;;X
 PROV2485;Lingayen Gulf;Lingayen Gulf;Lingayen Gulf;Golfo de Lingayen;Lingayen Gulf;Lingayen Gulf;Lingayen Gulf;залив Лингаен;;;X
 PROV2486;Polillo Islands;Polillo Islands;Polillo Islands;Islas Polillo;Polillo Islands;Polillo Islands;Polillo Islands;острова Полилло;;;X
-PROV2487;West Tagalog Basin;West Philippine Basin;West Philippine Basin;Cuenca Oeste Filipino;West Philippine Basin;West Philippine Basin;West Philippine Basin;Запад Филиппинского моря;;;X
+PROV2487;West Philippine Basin;West Philippine Basin;West Philippine Basin;Cuenca Oeste Filipino;West Philippine Basin;West Philippine Basin;West Philippine Basin;Запад Филиппинского моря;;;X
 PROV2488;Osumi Islands;Osumi Islands;Osumi Islands;Islas Osumi;Osumi Islands;Osumi Islands;Osumi Islands;острова Осуми;;;X
 PROV2489;Inland Sea;Inland Sea;Inland Sea;Mar Inland;Inland Sea;Inland Sea;Inland Sea;Внутреннее Японское море;;;X
 PROV2490;Ryuyku Trench;Ryuyku Trench;Ryuyku Trench;Zanja Ryuyku;Ryuyku Trench;Ryuyku Trench;Ryuyku Trench;желоб Рюкю;;;X
@@ -2867,7 +2867,7 @@ AREA_CONNECTICUT_RHODE_ISLAND;Connecticut-Rhode Island;Connecticut-Rhode Island;
 AREA_CONTINENTAL_SPAIN;Continental Iberia;Espagne Continentale;Spagna continentale;Espaсa continental;Kontinental-Spanien;Hiszpania Kontynentalna;;Континентальная Испания;;;X
 AREA_COSTA_DEL_SOL;Costa del Sol;Costa del Sol;Costa del Sol;Costa del Sol;Costa del Sol;Costa del Sol;;Коста дель Соль;;;X
 AREA_CROATIA;Croatia;Croatie;Croazia;Croacia;Kroatien;Chorwacja;;Хорватия;;;X
-AREA_CUBA;Cuba;Cuba;Cuba;Cuba;Kuba;Kuba;;Куба;;;X
+AREA_CUBA;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;;;;;X
 AREA_DANAKIL_PLATEAU;Danakil Plateau;Plateau de Danakil;Altopiano di Danakil;Llanura de Danakil;Danakil-Plateau;Danakil;;плато Данакиль;;;X
 AREA_DARWIN;Darwin;Darwin;Darwin;Darwin;Darwin;Darwin;;Дарвин;;;X
 AREA_DECCAR;Deccar;Deccar;Deccar;Deccar;Dekkan;Deccar;;Деккар;;;X
@@ -2925,7 +2925,7 @@ AREA_HEILONGJIANG;Heilongjiang;Heilongjiang;Heilongjiang;Heilongjiang;Heilongjia
 AREA_HENAN;Henan;Hйnan;Henan;Henan;Henan;Henan;;Хэнань;;;X
 AREA_HESSEN;Hessen;Hesse;Hessen;Hesse;Hessen;Hesja;;Гессен;;;X
 AREA_HIMALAYAS;Himalayas;Himalaya;Himalaya;Himalaya;Himalaya;Himalaje;;Гималаи;;;X
-AREA_HISPANIOLA;Hispaniola;Hispaniola;Hispaniola;La Espaсola;Hispaniola;Haiti;;Гаити;;;X
+AREA_HISPANIOLA;Mansur;Mansur;Mansur;Mansur;Mansur;Mansur;;;;;X
 AREA_HOKKAIDO;Hokkaido;Hokkaido;Hokkaido;Hokkaido;Westl. Aleuten;Hokkaido;;Хоккайдо;;;X
 AREA_HOLSTEIN_MECKLEMBURG;Holstein-Mecklenburg;Holstein-Mecklenburg;Holstein-Mecklenburg;Holstein-Mecklenburgo;Holstein-Mecklenburg;Meklemburgia-Holsztyn;;Мекленбург;;;X
 AREA_HONSHU;Honshu;Honshu;Honshu;Honshu;Honshu;Honsiu;;Хонсю;;;X
@@ -2935,7 +2935,7 @@ AREA_ICELAND;Iceland;Islande;Islanda;Islandia;Island;Islandia;;Исландия;;;X
 AREA_IDAHO;Idaho;Idaho;Idaho;Idaho;Idaho;Idaho;;Айдахо;;;X
 AREA_ILLINOIS;Illinois;Illinois;Illinois;Illinois;Illinois;Ilinois;;Иллинойс;;;X
 AREA_INDIANA;Indiana;Indiana;Indiana;Indiana;Indiana;Indiana;;Индиана;;;X
-AREA_INDOCHINE;Indochine;Indochine;Indocina;Indochina;Indochina;Indochiny;;Индокитай;;;X
+AREA_INDOCHINE;Annam;Annam;Annam;Annam;Annam;Annam;;;;;X
 AREA_INTERIOR_ALGERIA;Interior Algeria;Algйrie Intйrieure;Entroterra dell'Algeria;Argelia interior;Algerisches Hinterland;Algieria Wewnкtrzna;;Внутренний Алжир;;;X
 AREA_INTERIOR_LIBYA;Interior Libya;Libye Intйrieure;Entroterra della Libia;Libia interior;Libyisches Hinterland;Libia Wewnкtrzna;;Внутренняя Ливия;;;X
 AREA_IOWA;Iowa;Iowa;Iowa;Iowa;Iowa;Iowa;;Айова;;;X
@@ -2982,7 +2982,7 @@ AREA_LATVIA;Latvia;Lettonie;Lettonia;Letonia;Lettland;Јotwa;;Латвия;;;X
 AREA_LEBANON_SYRIA;Syria;Syrie;Siria;Siria;Syrien;Syria;;Сирия;;;X
 AREA_LENINGRAD;Odinholm;Odinholm;Odinholm;Odinholm;Odinholm;Odinholm;;Ленинград;;;X
 AREA_LEVANT;Levant;Le Levant;Levante;Levante;Levant;Bliski Wschуd;;Левант;;;X
-AREA_LEYTE_ISLAND_GROUP;Eastern Tagalog;Groupe des Iles Leyte;Gruppo isole di Leyte;Islas de Leyte;Golf von Leyte;Wyspy Leyte;;Восточные Филиппины;;;X
+AREA_LEYTE_ISLAND_GROUP;Visayas;Groupe des Iles Leyte;Gruppo isole di Leyte;Islas de Leyte;Golf von Leyte;Wyspy Leyte;;Восточные Филиппины;;;X
 AREA_LIAONING;Liaoning;Liaoning;Liaoning;Liaoning;Liaoning;Liaoning;;Ляонин;;;X
 AREA_LIGURIAN_ISLANDS;Ligurian Islands;Iles Liguriennes;Isole liguri;Islas de Liguria;Ligurische Inseln;Wyspy na Morzu Liguryjskim;;Лигурийские о-ва;;;X
 AREA_LIMA;Lima;Lima;Lima;Lima;Lima;Lima;;Лима;;;X
@@ -3040,9 +3040,9 @@ AREA_NETHERLANDS;Netherlands;Pays-Bas;Paesi Bassi;Paнses Bajos;Niederlande;Holan
 AREA_NEVADA;Nevada;Nevada;Nevada;Nevada;Nevada;Newada;;Невада;;;X
 AREA_NEW_BRUNSWICK;New Brunswick;Nouveau-Brunswick;New Brunswick;New Brunswick;Neubraunschweig;Nowy Brunszwik;;Нью-Брансуик;;;X
 AREA_NEW_FOUNDLAND;Newfoundland;Terre-Neuve;New Foundland;Terranova y Labrador;Neufundland;Nowa Funlandia;;Ньюфаундленд;;;X
-AREA_NEW_HAMPSHIRE;Burgundy;Burgundy;Burgundy;Burgundy;Burgundy;Burgundy;;Burgundy;;;X
+AREA_NEW_HAMPSHIRE;New Hampshire;New Hampshire;New Hampshire;New Hampshire;New Hampshire;New Hampshire;;Нью-Гемпшир;;;X
 AREA_NEW_JERSEY;Trieste;Trieste;Trieste;Trieste;Triest;Trieste;;Нью-Джерси;;;X
-AREA_NEW_MEXICO;New Mazula;Nouveau Mexique;Nuovo Messico;Nuevo Mйxico;Neu Mexiko;Nowy Meksyk;;Нью-Мексико;;;X
+AREA_NEW_MEXICO;New Mexico;Nouveau Mexique;Nuovo Messico;Nuevo Mйxico;Neu Mexiko;Nowy Meksyk;;Нью-Мексико;;;X
 AREA_NEW_YORK;New York;New York;New York;Nueva York;New York;Nowy Jork;;Нью-Йорк;;;X
 AREA_NEW_ZEALAND;New Zealand;Nouvelle-Zйlande;Nuova Zelanda;Nueva Zelanda;Neuseeland;Nowa Zelandia;;Новая Зеландия;;;X
 AREA_NIASSA;Niassa;Nyassa;Niassa;Niassa;Niassa;Niassa;;Ниас;;;X
@@ -3088,7 +3088,7 @@ AREA_OREGON;Oregon;Oregon;Oregon;Oregуn;Oregon;Oregon;;Орегон;;;X
 AREA_ORENBURG;Orenburg;Orenburg;Orenburg;Oremburgo;Orenburg;Orenburg;;Оренбург;;;X
 AREA_ORISSA;Orissa;Orissa;Orissa;Orissa;Orissa;Oryssa;;Орисса;;;X
 AREA_PAKISTAN;Pakistan;Pakistan;Pakistan;Pakistбn;Pakistan;Pakistan;;Пакистан;;;X
-AREA_PALAWAN_MINDORO;Western Tagalog;Palawan-Mindoro;Palawan-Mindoro;Palawan-Mindoro;Palawan/Mindoro;Palawan-Mindoro;;Западные Филиппины;;;X
+AREA_PALAWAN_MINDORO;Palawan-Mindoro;Palawan-Mindoro;Palawan-Mindoro;Palawan-Mindoro;Palawan/Mindoro;Palawan-Mindoro;;Западные Филиппины;;;X
 AREA_PALESTINE;Palestine;Palestine;Palestina;Palestina;Palдstina;Palestyna;;Палестина;;;X
 AREA_PANAMAN_RIDGE;Panaman Ridge;Chaоne panamйenne;Dorsale di Panama;Sierra de Panamб;Panamesisches Gebirge;Grzbiet Panamski;;Панамский хребет;;;X
 AREA_PARIS;Paris;Paris;Parigi;Parнs;Paris;Paryї;;Париж;;;X
@@ -3146,7 +3146,7 @@ AREA_SICILIAN_GAP;Sicilian Gap;Dйtroit de Sicile;Can. di Sicilia;Estrecho de Mes
 AREA_SIDI_BARRANI;Sidi Barrani;Sidi Barrani;Sidi Barrani;Sпdп Barrani;Sidi Barrani;Sidi Barrani;;Сиди-Баррани;;;X
 AREA_SILESIA;Silesia;Silesie;Silesia;Silesia;Schlesien;Њl№sk;;Силезия;;;X
 AREA_SIRTE;Sirte;Syrte;Sirte;Sirte;Syrte;Sirta;;Сидра;;;X
-AREA_SLAVE_COAST;Slave Coast;Cфte slave;Costa slava;Costa de los Esclavos;Sklavenkьste;Wybrzeїe Niewolnicze;;Невольничий Берег;;;X
+AREA_SLAVE_COAST;Friland;Friland;Friland;Friland;Friland;Friland;;;;;X
 AREA_SLOVAKIA;Slovakia;Slovaquie;Slovacchia;Eslovaquia;Slowakei;Sіowacja;;Словакия;;;X
 AREA_SMOLENSK;Smolensk;Smolensk;Smolensk;Smolensk;Smolensk;Smoleсsk;;Смоленск;;;X
 AREA_SOMALIA;Somalia;Somalie;Somalia;Somalia;Somalia;Somalia;;Сомали;;;X
@@ -3266,7 +3266,7 @@ AREA_CELEBES_SEA;Celebes Sea;Mer des Cйlиbes;Mar di Celebes;Mar de Cйlebes;Celeb
 AREA_CENTRAL_ATLANTIC;Central Atlantic;Atlantique centre;Atlantico centrale;Atlбntico medio;Zentralatlantik;Њrodkowy Atlantyk;;Центральная Атлантика;;;X
 AREA_CENTRAL_CARRIBEAN;Central Carribean;Caraпbes centre ;Caraibi centrali;Caribe central;Mittl. Karibik;Њrodkowe Karaiby;;Центр Карибского моря;;;X
 AREA_CENTRAL_NORTHSEA;Central North Sea;Mer du Nord centre;Mar del Nord centrale;Centro del Mar del Norte;Zentrale Nordsee;Њrodkowe Morze Pуіnocne;;Центр Северного моря;;;X
-AREA_CENTRAL_PHILIPPINE_SEA;Central Tagalog Sea;Mer centrale des Philippines;Mar delle Filippine centrale;Mar de Filipinas central;Mittl. Philippinensee;Њrodkowe Morze Filipiсskie;;Центр Филиппинского моря;;;X
+AREA_CENTRAL_PHILIPPINE_SEA;Central Philippine Sea;Mer centrale des Philippines;Mar delle Filippine centrale;Mar de Filipinas central;Mittl. Philippinensee;Њrodkowe Morze Filipiсskie;;Центр Филиппинского моря;;;X
 AREA_COAST_OF_AFRICA;Coast of Africa;Cфte de l’Afrique;Costa dell'Africa;Costa de Бfrica;Kьste von Afrika;Wybrzeїe Afryki;;побережье Африки;;;X
 AREA_COAST_OF_ANGOLA_NAMIBIA;Coast of Angola-Namibia;Cфte de l’Angola-Namibie;Costa dell'Angola-Namibia;Costa de Angola-Namibia;Kьste von Angola/Namibia;Wybrzeїe Angoli-Namibii;;побережье Анголы-Намибии;;;X
 AREA_COAST_OF_ARGENTINA;Coast of Argentina;Cфte de l’Argentine;Costa dell'Argentina;Costa de Argentina;Kьste von Argentinien;Wybrzeїe Argentyny;;побережье Аргентины;;;X
@@ -3288,7 +3288,7 @@ AREA_EAST_BERING_SEA;East Bering Sea;Mer orientale de Bйring;Mar di Bering orien
 AREA_EAST_CORAL_SEA;East Coral Sea;Mer de Corail orientale;Mar dei Coralli orientale;Mar oriental del Coral;Цstl. Korallenmeer;Wschodnie Morze Koralowe;;Восток Кораллового моря;;;X
 AREA_EAST_COST_OF_NEW_ZEALAND;East Cost of New Zealand;Cфte est de la Nouvelle-Zйlande;Costa della Nuova Zelanda orientale;Costa oriental de Nueva Zelanda;Ostkьste von Neuseeland;Wschodnie Wybrzeїe Nowej Zelandii;;Восток побережья Новой Зеландии;;;X
 AREA_EAST_GREAT_AUSTRALIAN_BIGHT;East Great Australian Bight ;Grande Baie australienne orientale;Grande baia australiana orientale;Gran Bahнa Australiana oriental;Цstl. GroЯe Australische Bucht;Wschodnia Wielka Zatoka Australijska;;Восток Большого Австралийского залива;;;X
-AREA_EAST_GULF_OF_MEXICO;East Gulf of Mazula;Golfe de Mexico Est;Golfo del Messico orientale;Golfo de Mйxico oriental;Цstl. Golf von Mexiko;Wschodnia Zatoka Meksykaсska;;Восток Мексиканского залива;;;X
+AREA_EAST_GULF_OF_MEXICO;East Gulf of Mexico;Golfe de Mexico Est;Golfo del Messico orientale;Golfo de Mйxico oriental;Цstl. Golf von Mexiko;Wschodnia Zatoka Meksykaсska;;Восток Мексиканского залива;;;X
 AREA_EAST_MARIANA_BASIN;East Mariana Basin;Bassin oriental des оles Mariannes;Bacino della Mariana orientale;Cuenca de las Marianas orientales;Цstl. Marianenbecken;Wschodni Basen Mariaсski;;Восток Марианской впадины;;;X
 AREA_EAST_NORTH_SEA;East North Sea;Mer du Nord orientale;Mar del Nord orientale;Este del Mar del Norte;Цstliche Nordsee;Wschodnie Morze Pуіnocne;;Восток Северного моря;;;X
 AREA_EAST_SEA_OF_OKHOTSK;East Sea of Okhotsk;Mer orientale d’Okhotsk ;Mar di Okhotsk orientale;Mar de Ojotsk oriental;Цstl. Ochotskisch. Meer;Wschodnie Morze Ochockie;;Восток Охотского моря;;;X
@@ -3338,7 +3338,7 @@ AREA_NORTHWEST_PACIFIC_BASIN;Northwest Pacific Basin;Bassin du Pacifique Nord-ou
 AREA_NORWEGIAN_SEA;Norwegian Sea;Mer de Norvиge;Mar di Norvegia;Mar de Noruega;Norwegisches Meer;Morze Norweskie;;Норвежское море;;;X
 AREA_PERNANBUCO_PLAIN;Pernambuco Plain;Plaine de Pernambouco;Pianura del Pernambuco;Llanura de Pernambuco;Brasilianisches Becken;Rуwnina Pernambuco;;Равнина Пернамбуко;;;X
 AREA_PERSIAN_GULF;Persian Gulf;Golfe persique;Golfo Persico;Golfo Pйrsico;Persischer Golf;Zatoka Perska;;Персидский залив;;;X
-AREA_PHILIPPINE_TRENCH;Tagalog Trench;Fosse des Philippines;Fossa delle Filippine;Fosa de las Filipinas;Philippinen-Graben;Rуw Filipiсski;;Филиппинский желоб;;;X
+AREA_PHILIPPINE_TRENCH;Philippine Trench;Fosse des Philippines;Fossa delle Filippine;Fosa de las Filipinas;Philippinen-Graben;Rуw Filipiсski;;Филиппинский желоб;;;X
 AREA_PORTUGESE_COAST;Portugese Coast;Cфte portugaise;Costa del Portogallo;Costa de Portugal;Kьste von Portugal;Wybrzeїe Portugalii;;побережье Португалии;;;X
 AREA_RED_SEA;Red Sea;Mer Rouge;Mar Rosso;Mar Rojo;Rotes Meer;Morze Czerwone;;Красное море;;;X
 AREA_RYUKYUS;Ryukyus;Ryukyus;Ryukyus;Ryukyu;Ryukyu-Inseln;Wyspy Riukiu;;о-ва Рюкю (Нансей);;;X
@@ -3368,12 +3368,12 @@ AREA_WEST_BERING_SEA;West Bering Sea;Mer occidentale de Bйring;Mar di Bering occ
 AREA_WEST_COAST_OF_AUSTRALIA;West Coast of Australia;Cфte ouest de l’Australie;Costa occidentale dell'Australia;Costa occidental de Australia;Westkьste von Australien;Zachodnie Wybrzeїe Australii;;Западное побережье Австралии;;;X
 AREA_WEST_COAST_OF_CENTRAL_AMERICA;West Coast of Central America;Cфte ouest d’Amйrique centrale;Costa ovest dell'America centrale;Costa occidental de Amйrica Central;Westkьste von Mittelamerika;Zachodnie Wybrzeїe Ameryki Њrodkowej;;Западное побережье Центральной Америки;;;X
 AREA_WEST_COAST_OF_CHILE;West Coast of Chile;Cфte ouest du Chili;Costa occidentale del Cile;Costa occidental de Chile;Westkьste von Chile;Zachodnie Wybrzeїe Chile;;Западное побережье Чили;;;X
-AREA_WEST_COAST_OF_MEXICO;West Coast of Mazula;Cфte ouest du Mexique;Costa occidentale del Messico;Costa occidental de Mйxico;Westkьste von Mexiko;Zachodnie Wybrzeїe Meksyku;;Запад Мексиканского залива;;;X
+AREA_WEST_COAST_OF_MEXICO;West Coast of Mexico;Cфte ouest du Mexique;Costa occidentale del Messico;Costa occidental de Mйxico;Westkьste von Mexiko;Zachodnie Wybrzeїe Meksyku;;Запад Мексиканского залива;;;X
 AREA_WEST_COAST_OF_PERU;West Coast of Peru;Cфte ouest du Pйrou;Costa occidentale del Perщ;Costa occidental de Perъ;Westkьste von Peru;Zachodnie Wybrzeїe Peru;;Западное побережье Перу;;;X
 AREA_WEST_COAST_OF_THE_UNITED_STATES;West Coast of the United States;Cфte ouest des Йtats-Unis;Costa occidentale USA;Costa occidental de los Estados Unidos;Westkьste der Vereinigten Staaten;Zachodnie Wybrzeїe Stanуw Zjednoczonych;;Западное побережье США;;;X
 AREA_WEST_CORAL_SEA;West Coral Sea;Mer de Corail occidentale;Mar dei Coralli occidentale;Mar occidental del Coral;Westl. Korallenmeer;Zachodnie Morze Koralowe;;Запад Кораллового моря;;;X
 AREA_WEST_GREAT_AUSTRALIAN_BIGHT;West Great Australian Bight;Grande Baie australienne occidentale;Grande baia australiana occidentale;Gran Bahнa Australiana occidental;Westl. GroЯe Australische Bucht;Zachodnia Wielka Zatoka Australijska;;Запад Большого Австралийского залива;;;X
-AREA_WEST_GULF_OF_MEXICO;West Gulf of Mazula;Golfe de Mexico Ouest;Golfo del Messico occidentale;Golfo de Mйxico occidental;Westl. Golf von Mexiko;Zachodnia Zatoka Meksykaсska;;Запад Мексиканского залива;;;X
+AREA_WEST_GULF_OF_MEXICO;West Gulf of Mexico;Golfe de Mexico Ouest;Golfo del Messico occidentale;Golfo de Mйxico occidental;Westl. Golf von Mexiko;Zachodnia Zatoka Meksykaсska;;Запад Мексиканского залива;;;X
 AREA_WEST_NORTHSEA;West North Sea;Ouest de la mer du Nord;Mar del Nord occidentale;Oeste del Mar del Norte;Westliche Nordsee;Zachodnie Morze Pуіnocne;;Запад Северного моря;;;X
 AREA_WEST_SEA_OF_OKHOTSK;West Sea of Okhotsk;Mer occidentale d’Okhotsk;Mar di Okhotsk occidentale;Mar de Ojotsk occidental;Westl. Ochotskisch. Meer;Zachodnie Morze Ochockie;;Запад Охотского моря;;;X
 AREA_WESTERN_APPROACHES;Western Approaches ;Approches occidentales;Approcci occidentali;Aproximaciуn occidental;Westeurop. Becken;Zachodnie Podejњcia;;Западный путь;;;X
@@ -3450,7 +3450,7 @@ REGION_KRASNOYARSK_;Krasnoyarsk;Krasnoпarsk;Krasnoyarsk;Krasnoiarsk;Krasnojarsk;
 REGION_LIBYA;Libya;Libye;Libia;Libia;Libyen;Libia;;Ливия;;;X
 REGION_MADAGASCAR;Madagascar;Madagascar;Madagascar;Madagascar;Madagaskar;Madagaskar;;Мадагаскар;;;X
 REGION_MAGADAN;Magadan;Magadan;Magadan;Magadan;Magadan;Magadan;;Магадан;;;X
-REGION_MEXICO;Mazula;Mexique;Messico;Mйxico;Mexiko;Meksyk;;Мексика;;;X
+REGION_MEXICO;Mexico;Mexique;Messico;Mйxico;Mexiko;Meksyk;;Мексика;;;X
 REGION_MIDDLE_EAST;Near East;Moyen-Orient;Medio Oriente;Oriente Prуximo;Nahe Osten;Bliski Wschуd;;Ближний Восток;;;X
 REGION_MIDWEST_US;Midwest AF;Midwest Йtats-Unis;Stati Uniti centro-occidentali;Medio Oeste de Estados Unidos ;Nцrdl. Mittl. USA;Њrodkowo-zachodnie Stany Zjednoczone;;Средний Запад США;;;X
 REGION_MOROCCO;Morocco;Maroc;Marocco;Marruecos;Marokko;Maroko;;Марокко;;;X
@@ -3467,7 +3467,7 @@ REGION_PATAGONIA;Patagonia;Patagonie;Patagonia;Patagonia;Patagonien;Patagonia;;П
 REGION_PERSIA;Persia;Perse;Persia;Persia;Persien;Persja;;Персия;;;X
 REGION_PHILIPPINES;Tagalog;Philippines;Filippine;Filipinas;Philippinen;Filipiny;;Филиппины;;;X
 REGION_POLAND;Poland;Pologne;Polonia;Polonia;Polen;Polska;;Польша;;;X
-REGION_PORTUGAL;Portugal;Portugal;Portogallo;Portugal;Portugal;Portugalia;;Португалия;;;X
+REGION_PORTUGAL;Occitania;Occitanie;Occitania;Occitania;Okzitanien;Oksytania;;;;;X
 REGION_RIO_DE_LA_PLATA;Rio de la Plata;Rio de la Plata;Rio de la Plata;Rнo de la Plata;Rio de la Plata;Rio de la Plata;;Рио-де-ла-Плата;;;X
 REGION_ROMANIA;Romania;Roumanie;Romania;Rumania;Rumдnien;Rumunia;;Румыния;;;X
 REGION_RUSSIA;Central Russia;Russie centrale;Russia Centrale;Rusia Central;Zentralrussland;Centralnej Rosji;;Центральная Россия;;;X
@@ -3478,7 +3478,7 @@ REGION_SOUTH_SOLOMON_ISLANDS;New Hebrides;Iles Salomon mйridionale;Isole Salomon
 REGION_SOUTHCENTRAL_US;Southcentral Mazula;Йtats-Unis sud-centre ;Stati Uniti sud-centrali;Centro-sur de los Estados Unidos;Sьdl. Mittl. USA;Њrodkowo-poіudniowe Stany Zjednoczone;;Юго-центральная часть США;;;X
 REGION_SOUTHEAST_US;Barasya;Йtats-Unis sud-est ;Stati Uniti sud-orientali;Sureste de los Estados Unidos;Sьdцstl. USA;Poіudniowo-wschodnie Stany Zjednoczone;;Юго-Восток США;;;X
 REGION_SOUTHERN_RUSSIA;Southern Russia;Russie mйridionale;Russia Meridionale;Rusia del Sur;Sьd-Russland;Poіudniowa Rosja;;Южная Россия;;;X
-REGION_SOUTHWEST_AFRICA;Southwest Africa;Afrique sud-ouest;Africa sud-occidentale;Suroeste de Бfrica;Sьdwestafrika;Poіudniowo-zachodnia Afryka;;Юго-Западная Африка;;;X
+REGION_SOUTHWEST_AFRICA;Angola;Afrique sud-ouest;Africa sud-occidentale;Suroeste de Бfrica;Sьdwestafrika;Poіudniowo-zachodnia Afryka;;Юго-Западная Африка;;;X
 REGION_SOUTHWEST_US;Southwest Mazula;Йtats-Unis sud-ouest ;Stati Uniti sud-occidentali;Suroeste de los Estados Unidos;Sьdwestl. USA;Poіudniowo-zachodnie Stany Zjednoczone;;Юго-Запад США;;;X
 REGION_SPAIN;Iberia;Espagne;Spagna;Espaсa;Spanien;Hiszpania;;Испания;;;X
 REGION_SUDAN;Sudan;Soudan;Sudan;Sudбn;Sudan;Sudan;;Судан;;;X
@@ -3530,7 +3530,7 @@ SEAREGION_NORTH_SEA;North Sea;Mer du Nord;Mar del Nord;Mar del Norte;Nordsee;Mor
 SEAREGION_NORTHEAST_ATLANTIC;Northeast Atlantic;Atlantique nord-est;Nord-est Atlantico;Noreste del Atlбntico;Nordцstl. Nordatlantik;Pуіnocno-wschodni Atlantyk;;Северо-восточная Атлантика;;;X
 SEAREGION_NORTHWEST_ATLANTIC;Northwest Atlantic;Atlantique Nord-ouest;Nord-ovest Atlantico;Noroeste del Atlбntico ;Nordwestl. Nordatlantik;Pуіnocno-zachodni Atlantyk;;Северо-западная Атлантика;;;X
 SEAREGION_PACIFIC_ANTARCTIC_RIDGE;Pacific-Antarctic Ridge;Dorsale Pacifique-Antarctique;Dorsale pacifico-antartica;Dorsal Pacнfico-Antбrtica;Pazifisch-Antarktischer Rьcken;Grzbiet Poіudniowopacyficzny;;Тихоокеанско-Антарктический хребет;;;X
-SEAREGION_PHILIPPINE_SEA;Tagalog Sea;Mer des Philippines;Mar delle Filippine;Mar de Filipinas;Philippinisches Meer;Morze Filipiсskie;;Филиппинское море;;;X
+SEAREGION_PHILIPPINE_SEA;Philippine Sea;Mer des Philippines;Mar delle Filippine;Mar de Filipinas;Philippinisches Meer;Morze Filipiсskie;;Филиппинское море;;;X
 SEAREGION_SARGASSOS;Sargassos;Sargasses;Sargassos;Los Sargazos;Sargassosee;Morze Sargassowe;;Саргассово море;;;X
 SEAREGION_SEA_OF_OKHOTSK;Sea of Okhotsk;Mer d’Okhotsk;Mar di Okhotsk;Mar de Ojotsk;Ochotskisches Meer;Morze Ochockie;;Охотское море;;;X
 SEAREGION_SOUTH_CHINA_SEA;South China Sea;Mer de Chine mйridionale ;Mar della Cina meridionale;Mar de la China meridional;Sьdchinesisches Meer;Poіudniowe Morze Chiсskie;;Южно-Китайское море;;;X
