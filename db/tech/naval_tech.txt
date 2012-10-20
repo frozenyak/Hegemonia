@@ -1132,7 +1132,6 @@ technology =
     component = { id = 12135 name = TECH_CMP_NAVAL_113_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
     required  = { 12120 }
     effects =
-    effects =
     { command = { type = new_model which = escort_carrier value = 3 }
    	  command = { type = new_model which = light_carrier value = 1 }
     }

@@ -42,7 +42,7 @@ technology =
     name      = TECH_APP_INDUSTRY_1_NAME
     desc      = TECH_APP_INDUSTRY_1_DESC
     position  = { x = 174 y = 136 }
-    year      = 1936
+    year      = 1922
     # Scientific Plowing Technique
     component = { id = 5011 name = TECH_CMP_INDUSTRY_1_1_NAME type = mechanics difficulty = 5 }
     # Scientific Sowing Technique
@@ -64,7 +64,7 @@ technology =
     name      = TECH_APP_INDUSTRY_2_NAME
     desc      = TECH_APP_INDUSTRY_2_DESC
     position  = { x = 174 y = 153 }
-    year      = 1938
+    year      = 1928
     # Plowing Machine
     component = { id = 5021 name = TECH_CMP_INDUSTRY_2_1_NAME type = mechanics difficulty = 6 }
     # Sowing Machine
@@ -86,7 +86,7 @@ technology =
     name      = TECH_APP_INDUSTRY_3_NAME
     desc      = TECH_APP_INDUSTRY_3_DESC
     position  = { x = 174 y = 170 }
-    year      = 1940
+    year      = 1937
     # Synthetic Fertilizers
     component = { id = 5031 name = TECH_CMP_INDUSTRY_3_1_NAME type = chemistry difficulty = 7 }
     # Synthetic Insecticides
@@ -108,7 +108,7 @@ technology =
     name      = TECH_APP_INDUSTRY_4_NAME
     desc      = TECH_APP_INDUSTRY_4_DESC
     position  = { x = 174 y = 187 }
-    year      = 1942
+    year      = 1945
     # Industrial Pasteurization
     component = { id = 5041 name = TECH_CMP_INDUSTRY_4_1_NAME type = chemistry difficulty = 8 }
     # Large Scale Refrigeration
@@ -130,7 +130,7 @@ technology =
     name      = TECH_APP_INDUSTRY_100_NAME
     desc      = TECH_APP_INDUSTRY_100_DESC
     position  = { x = 174 y = 204 }
-    year      = 1943
+    year      = 1950
     # Industrial Pasteurization
     component = { id = 13001 name = TECH_CMP_INDUSTRY_100_1_NAME type = chemistry difficulty = 8 }
     # Large Scale Refrigeration
@@ -152,7 +152,7 @@ technology =
     name      = TECH_APP_INDUSTRY_101_NAME
     desc      = TECH_APP_INDUSTRY_101_DESC
     position  = { x = 174 y = 221 }
-    year      = 1946
+    year      = 1955
     # Industrial Pasteurization
     component = { id = 13011 name = TECH_CMP_INDUSTRY_101_1_NAME type = chemistry difficulty = 8 }
     # Large Scale Refrigeration
@@ -393,7 +393,7 @@ technology =
     name      = TECH_APP_INDUSTRY_14_NAME
     desc      = TECH_APP_INDUSTRY_14_DESC
     position  = { x = 40 y = 140 }
-    year      = 1941
+    year      = 1940
     # Aircraft Modules
     component = { id = 5141 name = TECH_CMP_INDUSTRY_14_1_NAME type = aeronautics difficulty = 10 }
     # Environmental Tests
@@ -413,7 +413,7 @@ technology =
       command = { type = build_time which = naval_bomber when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = strategic_bomber when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = tactical_bomber when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = transport_plane when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = transport_plane when = on_upgrade where = relative value = -40 }
       command = { type = build_time which = cag when = on_upgrade where = relative value = -20 }
 	  
       command = { type = build_time which = light_cag when = on_upgrade where = relative value = -20 }
@@ -425,7 +425,7 @@ technology =
     name      = TECH_APP_INDUSTRY_15_NAME
     desc      = TECH_APP_INDUSTRY_15_DESC
     position  = { x = 40 y = 160 }
-    year      = 1941
+    year      = 1940
     # Ship Modules
     component = { id = 5151 name = TECH_CMP_INDUSTRY_15_1_NAME type = naval_engineering difficulty = 10 }
     # Environmental Tests
@@ -441,24 +441,15 @@ technology =
     { #command = { type = build_time which = battlecruiser when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = battleship when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = carrier when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = escort_carrier when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = light_carrier when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = destroyer when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = heavy_cruiser when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = light_cruiser when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = submarine when = on_upgrade where = relative value = -20 }
       #command = { type = build_time which = nuclear_submarine when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = transport when = on_upgrade where = relative value = -33 }
+      command = { type = build_time which = transport when = on_upgrade where = relative value = -20 }
       command = { type = convoy_prod_mod which = transports value = 20 }
       command = { type = convoy_prod_mod which = escorts value = 20 }
-
-	#command = { type = activate_unit_type which = naval_improved_hull_l }
-	#command = { type = new_model which = naval_improved_hull_l value = 0 }
-
-	#command = { type = activate_unit_type which = naval_improved_hull_s }
-	#command = { type = new_model which = naval_improved_hull_s value = 0 }
-	#command = { type = activate_unit_type which = naval_torpedoes_l }
-	#command = { type = new_model which = naval_torpedoes_l value = 1 }
- 	#command = { type = scrap_model which = naval_torpedoes_l value = 0 }
     }
   }
   # Vehicle Assembly Line
@@ -467,7 +458,7 @@ technology =
     name      = TECH_APP_INDUSTRY_16_NAME
     desc      = TECH_APP_INDUSTRY_16_DESC
     position  = { x = 40 y = 180 }
-    year      = 1941
+    year      = 1940
     # Vehicle Modules
     component = { id = 5161 name = TECH_CMP_INDUSTRY_16_1_NAME type = mechanics difficulty = 10 }
     # Environmental Tests
@@ -490,7 +481,6 @@ technology =
       command = { type = build_time which = super_heavy_armor when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = tank_destroyer when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = sp_artillery when = on_upgrade where = relative value = -20 }
-      #command = { type = build_time which = sp_rct_artillery when = on_upgrade where = relative value = -20 }
     }
   }
   # Rocket Assembly Line
@@ -546,166 +536,11 @@ technology =
       command = { type = build_time which = engineer when = on_upgrade where = relative value = -10 }
       command = { type = build_time which = mechanized when = on_upgrade where = relative value = -7 }
       command = { type = build_time which = motorized when = on_upgrade where = relative value = -7 }
-      #command = { type = build_time which = anti_tank when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = anti_air when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = artillery when = on_upgrade where = relative value = -20 }
-      #command = { type = build_time which = rocket_artillery when = on_upgrade where = relative value = -20 }
-    }
+   }
   }
-  # Basic Oil Refining
-  application =
-  { id        = 5190
-    name      = TECH_APP_INDUSTRY_19_NAME
-    desc      = TECH_APP_INDUSTRY_19_DESC
-    position  = { x = 308 y = 199 }
-    year      = 1936
-    # Basic Distillation
-    component = { id = 5191 name = TECH_CMP_INDUSTRY_19_1_NAME type = chemistry difficulty = 5 }
-    # Basic Cracker
-    component = { id = 5192 name = TECH_CMP_INDUSTRY_19_2_NAME type = chemistry difficulty = 5 }
-    # Basic Isomerisation
-    component = { id = 5193 name = TECH_CMP_INDUSTRY_19_3_NAME type = chemistry difficulty = 5 }
-    # Basic Hydrogen Treatment
-    component = { id = 5194 name = TECH_CMP_INDUSTRY_19_4_NAME type = chemistry difficulty = 5 }
-    # Basic Test Facility
-    component = { id = 5195 name = TECH_CMP_INDUSTRY_19_5_NAME type = industrial_engineering difficulty = 5 }
-    required  = { }
-    effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.07 } #0.1
-    }
-  }
-  # Improved Oil Refining
-  application =
-  { id        = 5200
-    name      = TECH_APP_INDUSTRY_20_NAME
-    desc      = TECH_APP_INDUSTRY_20_DESC
-    position  = { x = 308 y = 218 }
-    year      = 1938
-    # Improved Distillation
-    component = { id = 5201 name = TECH_CMP_INDUSTRY_20_1_NAME type = chemistry difficulty = 5 }
-    # Improved Cracker
-    component = { id = 5202 name = TECH_CMP_INDUSTRY_20_2_NAME type = chemistry difficulty = 5 }
-    # Improved Isomerisation
-    component = { id = 5203 name = TECH_CMP_INDUSTRY_20_3_NAME type = chemistry difficulty = 5 }
-    # Improved Hydrogen Treatment
-    component = { id = 5204 name = TECH_CMP_INDUSTRY_20_4_NAME type = chemistry difficulty = 5 }
-    # Improved Test Facility
-    component = { id = 5205 name = TECH_CMP_INDUSTRY_20_5_NAME type = industrial_engineering difficulty = 5 }
-    required  = { 5190 }
-    effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.12 } #0.25
-    }
-  }
-  # Advanced Oil Refining
-  application =
-  { id        = 5210
-    name      = TECH_APP_INDUSTRY_21_NAME
-    desc      = TECH_APP_INDUSTRY_21_DESC
-    position  = { x = 308 y = 237 }
-    year      = 1940
-    # Advanced Distillation
-    component = { id = 5211 name = TECH_CMP_INDUSTRY_21_1_NAME type = chemistry difficulty = 6 }
-    # Advanced Cracker
-    component = { id = 5212 name = TECH_CMP_INDUSTRY_21_2_NAME type = chemistry difficulty = 6 }
-    # Advanced Isomerisation
-    component = { id = 5213 name = TECH_CMP_INDUSTRY_21_3_NAME type = chemistry difficulty = 6 }
-    # Advanced Hydrogen Treatment
-    component = { id = 5214 name = TECH_CMP_INDUSTRY_21_4_NAME type = chemistry difficulty = 6 }
-    # Advanced Test Facility
-    component = { id = 5215 name = TECH_CMP_INDUSTRY_21_5_NAME type = industrial_engineering difficulty = 6 }
-    required  = { 5200 }
-    effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.15 } #0.4
-    }
-  }
-  # Basic Synthetic Oil Plant
-  application =
-  { id        = 5220
-    name      = TECH_APP_INDUSTRY_22_NAME
-    desc      = TECH_APP_INDUSTRY_22_DESC
-    position  = { x = 308 y = 256 }
-    year      = 1941
-    # Basic Catalysts
-    component = { id = 5221 name = TECH_CMP_INDUSTRY_22_1_NAME type = chemistry difficulty = 6 }
-    # Basic Reactors
-    component = { id = 5222 name = TECH_CMP_INDUSTRY_22_2_NAME type = chemistry difficulty = 6 }
-    # Basic Product Processing
-    component = { id = 5223 name = TECH_CMP_INDUSTRY_22_3_NAME type = chemistry difficulty = 6 }
-    # Basic Feedstock Preparation
-    component = { id = 5224 name = TECH_CMP_INDUSTRY_22_4_NAME type = chemistry difficulty = 6 }
-    # Basic Oil Plant Prototype Tests
-    component = { id = 5225 name = TECH_CMP_INDUSTRY_22_5_NAME type = industrial_engineering difficulty = 6 }
-    required  = { 5210 }
-    effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.22 } #0.7
-    }
-  }
-  # Improved Synthetic Oil Plant
-  application =
-  { id        = 5230
-    name      = TECH_APP_INDUSTRY_23_NAME
-    desc      = TECH_APP_INDUSTRY_23_DESC
-    position  = { x = 308 y = 275 }
-    year      = 1942
-    # Improved Catalysts
-    component = { id = 5231 name = TECH_CMP_INDUSTRY_23_1_NAME type = chemistry difficulty = 7 }
-    # Improved Reactors
-    component = { id = 5232 name = TECH_CMP_INDUSTRY_23_2_NAME type = chemistry difficulty = 7 }
-    # Improved Product Processing
-    component = { id = 5233 name = TECH_CMP_INDUSTRY_23_3_NAME type = chemistry difficulty = 7 }
-    # Improved Feedstock Preparation
-    component = { id = 5234 name = TECH_CMP_INDUSTRY_23_4_NAME type = chemistry difficulty = 7 }
-    # Improved Oil Plant Prototype Tests
-    component = { id = 5235 name = TECH_CMP_INDUSTRY_23_5_NAME type = industrial_engineering difficulty = 7 }
-    required  = { 5220 }
-    effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.27 } #0.9
-    }
-  }
-  # Advanced Synthetic Oil Plant
-  application =
-  { id        = 5240
-    name      = TECH_APP_INDUSTRY_24_NAME
-    desc      = TECH_APP_INDUSTRY_24_DESC
-    position  = { x = 308 y = 294 }
-    year      = 1944
-    # Advanced Catalysts
-    component = { id = 5241 name = TECH_CMP_INDUSTRY_24_1_NAME type = chemistry difficulty = 7 }
-    # Advanced Reactors
-    component = { id = 5242 name = TECH_CMP_INDUSTRY_24_2_NAME type = chemistry difficulty = 7 }
-    # Advanced Product Processing
-    component = { id = 5243 name = TECH_CMP_INDUSTRY_24_3_NAME type = chemistry difficulty = 7 }
-    # Advanced Feedstock Preparation
-    component = { id = 5244 name = TECH_CMP_INDUSTRY_24_4_NAME type = chemistry difficulty = 7 }
-    # Advanced Oil Plant Prototype Tests
-    component = { id = 5245 name = TECH_CMP_INDUSTRY_24_5_NAME type = industrial_engineering difficulty = 7 }
-    required  = { 5230 }
-    effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.32 } #1.1
-    }
-  }
-  # Modern Synthetic Oil Plant
-  application =
-  { id        = 13020
-    name      = TECH_APP_INDUSTRY_102_NAME
-    desc      = TECH_APP_INDUSTRY_102_DESC
-    position  = { x = 308 y = 313 }
-    year      = 1946
-    # Modern Catalysts
-    component = { id = 13021 name = TECH_CMP_INDUSTRY_102_1_NAME type = chemistry difficulty = 8 }
-    # Modern Reactors
-    component = { id = 13022 name = TECH_CMP_INDUSTRY_102_2_NAME type = chemistry difficulty = 8 }
-    # Modern Product Processing
-    component = { id = 13023 name = TECH_CMP_INDUSTRY_102_3_NAME type = chemistry difficulty = 8 }
-    # Modern Feedstock Preparation
-    component = { id = 13024 name = TECH_CMP_INDUSTRY_102_4_NAME type = chemistry difficulty = 8 }
-    # Modern Oil Plant Prototype Tests
-    component = { id = 13025 name = TECH_CMP_INDUSTRY_102_5_NAME type = industrial_engineering difficulty = 8 }
-    required  = { 5240 }
-    effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.37 } #1.2
-    }
-  }
+
   # Plastics
   application =
   { id        = 13040
@@ -755,6 +590,31 @@ technology =
       command = { type = industrial_multiplier which = energy_to_oil value = 0.47 }
     }
   }
+
+  # Experimental Rocket Engine
+  application =
+  { id        = 7550
+    name      = TECH_APP_INDUSTRY_75_NAME
+
+    position  = { x = 433 y = 380 }
+	picture   = "5560"
+    year      = 1928
+    # Chamber
+    component = { id = 7551 name = TECH_CMP_INDUSTRY_56_1_NAME type = rocketry difficulty = 9 }
+    # Diffuser
+    component = { id = 7552 name = TECH_CMP_INDUSTRY_56_2_NAME type = rocketry difficulty = 9 }
+    # Nozzle
+    component = { id = 7553 name = TECH_CMP_INDUSTRY_56_3_NAME type = rocketry difficulty = 9 }
+    # Fuel injector
+    component = { id = 7554 name = TECH_CMP_INDUSTRY_56_4_NAME type = rocketry difficulty = 9 }
+    # Burner
+    component = { id = 7555 name = TECH_CMP_INDUSTRY_56_5_NAME type = rocketry difficulty = 6 double_time = yes }
+    required  = { }
+    effects =
+    { command = { type = info_may_cause which = 5550 }
+    }
+  }
+    
   # Census Tabulating Machine
   application =
   { id        = 5310
@@ -961,32 +821,6 @@ technology =
       command = { type = army_detection which = us value = 15 }
     }
   }
-  # Advanced Decryption Device
-  application =
-  { id        = 5400
-    name      = TECH_APP_INDUSTRY_40_NAME
-    desc      = TECH_APP_INDUSTRY_40_DESC
-    position  = { x = 433 y = 112 }
-    year      = 1943
-    # Identification of Parallel Texts
-    component = { id = 5401 name = TECH_CMP_INDUSTRY_40_1_NAME type = mathematics difficulty = 8 }
-    # Advanced Reconstruction
-    component = { id = 5402 name = TECH_CMP_INDUSTRY_40_2_NAME type = mathematics difficulty = 8 }
-    # Advanced Prime Number Theory
-    component = { id = 5403 name = TECH_CMP_INDUSTRY_40_3_NAME type = mathematics difficulty = 8 }
-    # Multiple Cooperating Decryption Facilities
-    component = { id = 5404 name = TECH_CMP_INDUSTRY_40_4_NAME type = training difficulty = 8 }
-    # Advanced Computing Machine Support
-    component = { id = 5405 name = TECH_CMP_INDUSTRY_40_5_NAME type = mechanics difficulty = 8 }
-    required  = { 5340 5380 }
-    effects =
-    { command = { type = intelligence which = us value = 25 }
-      command = { type = surprise which = naval value = 15 }
-      command = { type = surprise which = land value = 15 }
-      command = { type = surprise which = air value = 15 }
-      command = { type = army_detection which = us value = 15 }
-    }
-  }
   # Advanced Encryption Devices
   application =
   { id        = 5390
@@ -1011,6 +845,32 @@ technology =
       command = { type = surprise which = land value = 15 }
       command = { type = surprise which = air value = 15 }
       command = { type = army_detection which = them value = -15 }
+    }
+  }
+  # Advanced Decryption Device
+  application =
+  { id        = 5400
+    name      = TECH_APP_INDUSTRY_40_NAME
+    desc      = TECH_APP_INDUSTRY_40_DESC
+    position  = { x = 433 y = 112 }
+    year      = 1943
+    # Identification of Parallel Texts
+    component = { id = 5401 name = TECH_CMP_INDUSTRY_40_1_NAME type = mathematics difficulty = 8 }
+    # Advanced Reconstruction
+    component = { id = 5402 name = TECH_CMP_INDUSTRY_40_2_NAME type = mathematics difficulty = 8 }
+    # Advanced Prime Number Theory
+    component = { id = 5403 name = TECH_CMP_INDUSTRY_40_3_NAME type = mathematics difficulty = 8 }
+    # Multiple Cooperating Decryption Facilities
+    component = { id = 5404 name = TECH_CMP_INDUSTRY_40_4_NAME type = training difficulty = 8 }
+    # Advanced Computing Machine Support
+    component = { id = 5405 name = TECH_CMP_INDUSTRY_40_5_NAME type = mechanics difficulty = 8 }
+    required  = { 5340 5380 }
+    effects =
+    { command = { type = intelligence which = us value = 25 }
+      command = { type = surprise which = naval value = 15 }
+      command = { type = surprise which = land value = 15 }
+      command = { type = surprise which = air value = 15 }
+      command = { type = army_detection which = us value = 15 }
     }
   }
   # Basic information theory
@@ -1039,33 +899,7 @@ technology =
       command = { type = army_detection which = them value = -15 }
     }
   }
-  # # Improved information theory
-  # application =
-  # { id        = 53116
-    # name      = TECH_APP_INDUSTRY_116_NAME
 
-    # position  = { x = 308 y = 152 }
-	# picture   = "DH53116"
-    # year      = 1960
-    # # ?
-    # component = { id = 51161 name = TECH_CMP_INDUSTRY_116_1_NAME type = mathematics difficulty = 7 }
-    # # ?
-    # component = { id = 51162 name = TECH_CMP_INDUSTRY_116_2_NAME type = mathematics difficulty = 7 }
-    # # ?
-    # component = { id = 51163 name = TECH_CMP_INDUSTRY_116_3_NAME type = mathematics difficulty = 7 }
-    # # ?
-    # component = { id = 51164 name = TECH_CMP_INDUSTRY_116_4_NAME type = mathematics difficulty = 7 }
-    # # ?
-    # component = { id = 51165 name = TECH_CMP_INDUSTRY_116_5_NAME type = mathematics difficulty = 7 }
-    # required  = { 13060 }
-    # effects =
-    # { command = { type = intelligence which = them value = -10 }
-      # command = { type = surprise which = naval value = 5 }
-      # command = { type = surprise which = land value = 5 }
-      # command = { type = surprise which = air value = 5 }
-      # command = { type = army_detection which = them value = -10 }
-    # }
-  # }
   # Basic Decimetric Radar Warning Sites
   application =
   { id        = 5410
@@ -1252,6 +1086,16 @@ technology =
 		command = { type = night_attack which = naval_bomber value = 15 }
 		command = { type = task_efficiency which = strategic_bombardment value = 0.15 }
 		command = { type = task_efficiency which = asw value = 0.15 }
+
+	  command = { type = night_attack which = naval_radar_l value = 5 }
+	  command = { type = night_defense which = naval_radar_l value = 5 }	  
+	  command = { type = rain_attack which = naval_radar_l value = 5 }
+	  command = { type = rain_defense which = naval_radar_l value = 5 }	 
+
+	  command = { type = night_attack which = naval_radar_s value = 3 }
+	  command = { type = night_defense which = naval_radar_s value = 3 }
+	  command = { type = rain_attack which = naval_radar_s value = 3 }
+	  command = { type = rain_defense which = naval_radar_s value = 3 }	
     }
   }
   # Modern Centimetric Radar Warning Sites
@@ -1279,6 +1123,162 @@ technology =
 		#command = { type = task_efficiency which = air_scramble value = 0.25 }
     }
   }
+
+  # Basic Oil Refining
+  application =
+  { id        = 5190
+    name      = TECH_APP_INDUSTRY_19_NAME
+    desc      = TECH_APP_INDUSTRY_19_DESC
+    position  = { x = 308 y = 199 }
+    year      = 1914
+    # Basic Distillation
+    component = { id = 5191 name = TECH_CMP_INDUSTRY_19_1_NAME type = chemistry difficulty = 5 }
+    # Basic Cracker
+    component = { id = 5192 name = TECH_CMP_INDUSTRY_19_2_NAME type = chemistry difficulty = 5 }
+    # Basic Isomerisation
+    component = { id = 5193 name = TECH_CMP_INDUSTRY_19_3_NAME type = chemistry difficulty = 5 }
+    # Basic Hydrogen Treatment
+    component = { id = 5194 name = TECH_CMP_INDUSTRY_19_4_NAME type = chemistry difficulty = 5 }
+    # Basic Test Facility
+    component = { id = 5195 name = TECH_CMP_INDUSTRY_19_5_NAME type = industrial_engineering difficulty = 5 }
+    required  = { }
+    effects =
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.07 } #0.1
+    }
+  }
+  # Improved Oil Refining
+  application =
+  { id        = 5200
+    name      = TECH_APP_INDUSTRY_20_NAME
+    desc      = TECH_APP_INDUSTRY_20_DESC
+    position  = { x = 308 y = 218 }
+    year      = 1938
+    # Improved Distillation
+    component = { id = 5201 name = TECH_CMP_INDUSTRY_20_1_NAME type = chemistry difficulty = 5 }
+    # Improved Cracker
+    component = { id = 5202 name = TECH_CMP_INDUSTRY_20_2_NAME type = chemistry difficulty = 5 }
+    # Improved Isomerisation
+    component = { id = 5203 name = TECH_CMP_INDUSTRY_20_3_NAME type = chemistry difficulty = 5 }
+    # Improved Hydrogen Treatment
+    component = { id = 5204 name = TECH_CMP_INDUSTRY_20_4_NAME type = chemistry difficulty = 5 }
+    # Improved Test Facility
+    component = { id = 5205 name = TECH_CMP_INDUSTRY_20_5_NAME type = industrial_engineering difficulty = 5 }
+    required  = { 5190 }
+    effects =
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.12 } #0.25
+    }
+  }
+  # Advanced Oil Refining
+  application =
+  { id        = 5210
+    name      = TECH_APP_INDUSTRY_21_NAME
+    desc      = TECH_APP_INDUSTRY_21_DESC
+    position  = { x = 308 y = 237 }
+    year      = 1940
+    # Advanced Distillation
+    component = { id = 5211 name = TECH_CMP_INDUSTRY_21_1_NAME type = chemistry difficulty = 6 }
+    # Advanced Cracker
+    component = { id = 5212 name = TECH_CMP_INDUSTRY_21_2_NAME type = chemistry difficulty = 6 }
+    # Advanced Isomerisation
+    component = { id = 5213 name = TECH_CMP_INDUSTRY_21_3_NAME type = chemistry difficulty = 6 }
+    # Advanced Hydrogen Treatment
+    component = { id = 5214 name = TECH_CMP_INDUSTRY_21_4_NAME type = chemistry difficulty = 6 }
+    # Advanced Test Facility
+    component = { id = 5215 name = TECH_CMP_INDUSTRY_21_5_NAME type = industrial_engineering difficulty = 6 }
+    required  = { 5200 }
+    effects =
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.15 } #0.4
+    }
+  }
+  # Basic Synthetic Oil Plant
+  application =
+  { id        = 5220
+    name      = TECH_APP_INDUSTRY_22_NAME
+    desc      = TECH_APP_INDUSTRY_22_DESC
+    position  = { x = 308 y = 256 }
+    year      = 1941
+    # Basic Catalysts
+    component = { id = 5221 name = TECH_CMP_INDUSTRY_22_1_NAME type = chemistry difficulty = 6 }
+    # Basic Reactors
+    component = { id = 5222 name = TECH_CMP_INDUSTRY_22_2_NAME type = chemistry difficulty = 6 }
+    # Basic Product Processing
+    component = { id = 5223 name = TECH_CMP_INDUSTRY_22_3_NAME type = chemistry difficulty = 6 }
+    # Basic Feedstock Preparation
+    component = { id = 5224 name = TECH_CMP_INDUSTRY_22_4_NAME type = chemistry difficulty = 6 }
+    # Basic Oil Plant Prototype Tests
+    component = { id = 5225 name = TECH_CMP_INDUSTRY_22_5_NAME type = industrial_engineering difficulty = 6 }
+    required  = { 5210 }
+    effects =
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.22 } #0.7
+    }
+  }
+  # Improved Synthetic Oil Plant
+  application =
+  { id        = 5230
+    name      = TECH_APP_INDUSTRY_23_NAME
+    desc      = TECH_APP_INDUSTRY_23_DESC
+    position  = { x = 308 y = 275 }
+    year      = 1942
+    # Improved Catalysts
+    component = { id = 5231 name = TECH_CMP_INDUSTRY_23_1_NAME type = chemistry difficulty = 7 }
+    # Improved Reactors
+    component = { id = 5232 name = TECH_CMP_INDUSTRY_23_2_NAME type = chemistry difficulty = 7 }
+    # Improved Product Processing
+    component = { id = 5233 name = TECH_CMP_INDUSTRY_23_3_NAME type = chemistry difficulty = 7 }
+    # Improved Feedstock Preparation
+    component = { id = 5234 name = TECH_CMP_INDUSTRY_23_4_NAME type = chemistry difficulty = 7 }
+    # Improved Oil Plant Prototype Tests
+    component = { id = 5235 name = TECH_CMP_INDUSTRY_23_5_NAME type = industrial_engineering difficulty = 7 }
+    required  = { 5220 }
+    effects =
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.27 } #0.9
+    }
+  }
+  # Advanced Synthetic Oil Plant
+  application =
+  { id        = 5240
+    name      = TECH_APP_INDUSTRY_24_NAME
+    desc      = TECH_APP_INDUSTRY_24_DESC
+    position  = { x = 308 y = 294 }
+    year      = 1943
+    # Advanced Catalysts
+    component = { id = 5241 name = TECH_CMP_INDUSTRY_24_1_NAME type = chemistry difficulty = 7 }
+    # Advanced Reactors
+    component = { id = 5242 name = TECH_CMP_INDUSTRY_24_2_NAME type = chemistry difficulty = 7 }
+    # Advanced Product Processing
+    component = { id = 5243 name = TECH_CMP_INDUSTRY_24_3_NAME type = chemistry difficulty = 7 }
+    # Advanced Feedstock Preparation
+    component = { id = 5244 name = TECH_CMP_INDUSTRY_24_4_NAME type = chemistry difficulty = 7 }
+    # Advanced Oil Plant Prototype Tests
+    component = { id = 5245 name = TECH_CMP_INDUSTRY_24_5_NAME type = industrial_engineering difficulty = 7 }
+    required  = { 5230 }
+    effects =
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.32 } #1.1
+    }
+  }
+  # Modern Synthetic Oil Plant
+  application =
+  { id        = 13020
+    name      = TECH_APP_INDUSTRY_102_NAME
+    desc      = TECH_APP_INDUSTRY_102_DESC
+    position  = { x = 308 y = 313 }
+    year      = 1945
+    # Modern Catalysts
+    component = { id = 13021 name = TECH_CMP_INDUSTRY_102_1_NAME type = chemistry difficulty = 8 }
+    # Modern Reactors
+    component = { id = 13022 name = TECH_CMP_INDUSTRY_102_2_NAME type = chemistry difficulty = 8 }
+    # Modern Product Processing
+    component = { id = 13023 name = TECH_CMP_INDUSTRY_102_3_NAME type = chemistry difficulty = 8 }
+    # Modern Feedstock Preparation
+    component = { id = 13024 name = TECH_CMP_INDUSTRY_102_4_NAME type = chemistry difficulty = 8 }
+    # Modern Oil Plant Prototype Tests
+    component = { id = 13025 name = TECH_CMP_INDUSTRY_102_5_NAME type = industrial_engineering difficulty = 8 }
+    required  = { 5240 }
+    effects =
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.37 } #1.2
+    }
+  }
+
   # Faculty of Atomic Research
   application =
   { id        = 5470
@@ -1454,7 +1454,7 @@ technology =
     required  = { 5530 }
     effects =
     { command = { type = max_reactor_size value = 5 }
-      command = { type = add_prov_resource which = -4 value = 50 where = energy }
+      #command = { type = add_prov_resource which = -4 value = 50 where = energy }
       command = { type = info_may_cause which = 7170 }
       command = { type = info_may_cause which = 7200 }
       command = { type = info_may_cause which = 7210 }
@@ -1462,30 +1462,7 @@ technology =
       command = { type = info_may_cause which = 7230 }
     }
   }
-  # Experimental Rocket Engine
-  application =
-  { id        = 7550
-    name      = TECH_APP_INDUSTRY_75_NAME
 
-    position  = { x = 433 y = 380 }
-	picture   = "5560"
-    year      = 1928
-    # Chamber
-    component = { id = 7551 name = TECH_CMP_INDUSTRY_56_1_NAME type = rocketry difficulty = 9 }
-    # Diffuser
-    component = { id = 7552 name = TECH_CMP_INDUSTRY_56_2_NAME type = rocketry difficulty = 9 }
-    # Nozzle
-    component = { id = 7553 name = TECH_CMP_INDUSTRY_56_3_NAME type = rocketry difficulty = 9 }
-    # Fuel injector
-    component = { id = 7554 name = TECH_CMP_INDUSTRY_56_4_NAME type = rocketry difficulty = 9 }
-    # Burner
-    component = { id = 7555 name = TECH_CMP_INDUSTRY_56_5_NAME type = rocketry difficulty = 6 double_time = yes }
-    required  = { }
-    effects =
-    { command = { type = info_may_cause which = 5550 }
-    }
-  }
-    
   # Specialised Equipment
   label =
   { tag      = TECH_CAT_EQUIPMENT
@@ -1513,12 +1490,11 @@ technology =
     required  = { 5050 }
     effects =
     { 
-	  command = { type = frozen_move which = infantry value = 2 }
-      command = { type = frozen_move which = militia value = 2 }
-      command = { type = frozen_move which = bergsjaeger value = 2 }
-	  command = { type = frozen_move which = marine value = 2 }
-	  command = { type = frozen_move which = paratrooper value = 2 }
-	  command = { type = frozen_move which = motorized value = 1 }
+	  command = { type = frozen_move which = infantry value = 3 }
+      command = { type = frozen_move which = militia value = 3 }
+      command = { type = frozen_move which = bergsjaeger value = 3 }
+	  command = { type = frozen_move which = marine value = 3 }
+	  command = { type = frozen_move which = paratrooper value = 3 }
 	  
       command = { type = frozen_attack which = infantry value = 2 }
       command = { type = frozen_attack which = militia value = 2 }
@@ -1534,26 +1510,19 @@ technology =
       command = { type = frozen_defense which = paratrooper value = 2 }
 	  command = { type = frozen_defense which = motorized value = 1 }
 	  
-	  command = { type = snow_move which = infantry value = 2 }
-      command = { type = snow_move which = militia value = 2 }
-      command = { type = snow_move which = bergsjaeger value = 2 }
-	  command = { type = snow_move which = marine value = 2 }
-	  command = { type = snow_move which = paratrooper value = 2 }
-	  command = { type = snow_move which = motorized value = 1 }
+      command = { type = snow_attack which = infantry value = 3 }
+      command = { type = snow_attack which = militia value = 3 }
+      command = { type = snow_attack which = bergsjaeger value = 3 }
+	  command = { type = snow_attack which = marine value = 3 }
+      command = { type = snow_attack which = paratrooper value = 3 }
+      command = { type = snow_attack which = motorized value = 2 }
 	  
-      command = { type = snow_attack which = infantry value = 2 }
-      command = { type = snow_attack which = militia value = 2 }
-      command = { type = snow_attack which = bergsjaeger value = 2 }
-	  command = { type = snow_attack which = marine value = 2 }
-      command = { type = snow_attack which = paratrooper value = 2 }
-      command = { type = snow_attack which = motorized value = 1 }
-	  
-      command = { type = snow_defense which = infantry value = 2 }
-      command = { type = snow_defense which = militia value = 2 }
-      command = { type = snow_defense which = bergsjaeger value = 2 }
-	  command = { type = snow_defense which = marine value = 2 }
-      command = { type = snow_defense which = paratrooper value = 2 }
-	  command = { type = snow_defense which = motorized value = 1 }
+      command = { type = snow_defense which = infantry value = 3 }
+      command = { type = snow_defense which = militia value = 3 }
+      command = { type = snow_defense which = bergsjaeger value = 3 }
+	  command = { type = snow_defense which = marine value = 3 }
+      command = { type = snow_defense which = paratrooper value = 3 }
+	  command = { type = snow_defense which = motorized value = 2 }
 
     }
   }   
@@ -1583,7 +1552,7 @@ technology =
       command = { type = frozen_move which = mechanized value = 2 }
 	  command = { type = frozen_move which = hq value = 2 }
 	  command = { type = frozen_move which = cavalry value = 2 }
-	  command = { type = frozen_move which = motorized value = 1 }
+	  command = { type = frozen_move which = motorized value = 2 }
 	  
       command = { type = frozen_attack which = light_armor value = 2 }
       command = { type = frozen_attack which = armor value = 2 }
@@ -1606,19 +1575,19 @@ technology =
 	  command = { type = snow_move which = cavalry value = 2 }
 	  command = { type = snow_move which = motorized value = 1 }
 	  
-      command = { type = snow_attack which = light_armor value = 2 }
-      command = { type = snow_attack which = armor value = 2 }
-      command = { type = snow_attack which = mechanized value = 2 }
-	  command = { type = snow_attack which = hq value = 2 }
-      command = { type = snow_attack which = cavalry value = 2 }
-      command = { type = snow_attack which = motorized value = 1 }
+      command = { type = snow_attack which = light_armor value = 3 }
+      command = { type = snow_attack which = armor value = 3 }
+      command = { type = snow_attack which = mechanized value = 3 }
+	  command = { type = snow_attack which = hq value = 3 }
+      command = { type = snow_attack which = cavalry value = 3 }
+      command = { type = snow_attack which = motorized value = 2 }
 	  
-      command = { type = snow_defense which = light_armor value = 2 }
-      command = { type = snow_defense which = armor value = 2 }
-      command = { type = snow_defense which = mechanized value = 2 }
-	  command = { type = snow_defense which = hq value = 2 }
-      command = { type = snow_defense which = cavalry value = 2 }
-	  command = { type = snow_defense which = motorized value = 1 }
+      command = { type = snow_defense which = light_armor value = 3}
+      command = { type = snow_defense which = armor value = 3 }
+      command = { type = snow_defense which = mechanized value = 3 }
+	  command = { type = snow_defense which = hq value = 3}
+      command = { type = snow_defense which = cavalry value = 3 }
+	  command = { type = snow_defense which = motorized value = 2 }
 
     }
   }    
@@ -1645,47 +1614,46 @@ technology =
     required  = { 5050 }
     effects =
     { 
-	  command = { type = jungle_move which = infantry value = 2 }
-      command = { type = jungle_move which = militia value = 2 }
-      command = { type = jungle_move which = bergsjaeger value = 2 }
-	  command = { type = jungle_move which = marine value = 2 }
-	  command = { type = jungle_move which = paratrooper value = 2 }
-	  command = { type = jungle_move which = motorized value = 1 }
+	  command = { type = jungle_move which = infantry value = 1 }
+      command = { type = jungle_move which = militia value = 1 }
+      command = { type = jungle_move which = bergsjaeger value = 1 }
+	  command = { type = jungle_move which = marine value = 1 }
+	  command = { type = jungle_move which = paratrooper value = 1 }
 	  
-      command = { type = jungle_attack which = infantry value = 2 }
-      command = { type = jungle_attack which = militia value = 2 }
-      command = { type = jungle_attack which = bergsjaeger value = 2 }
-	  command = { type = jungle_attack which = marine value = 2 }
-      command = { type = jungle_attack which = paratrooper value = 2 }
+      command = { type = jungle_attack which = infantry value = 1 }
+      command = { type = jungle_attack which = militia value = 1 }
+      command = { type = jungle_attack which = bergsjaeger value = 1 }
+	  command = { type = jungle_attack which = marine value = 1 }
+      command = { type = jungle_attack which = paratrooper value = 1 }
       command = { type = jungle_attack which = motorized value = 1 }
 	  
-      command = { type = jungle_defense which = infantry value = 2 }
-      command = { type = jungle_defense which = militia value = 2 }
-      command = { type = jungle_defense which = bergsjaeger value = 2 }
-	  command = { type = jungle_defense which = marine value = 2 }
-      command = { type = jungle_defense which = paratrooper value = 2 }
+      command = { type = jungle_defense which = infantry value = 1 }
+      command = { type = jungle_defense which = militia value = 1 }
+      command = { type = jungle_defense which = bergsjaeger value = 1 }
+	  command = { type = jungle_defense which = marine value = 1 }
+      command = { type = jungle_defense which = paratrooper value = 1 }
 	  command = { type = jungle_defense which = motorized value = 1 }
 	  
-	  command = { type = forest_move which = infantry value = 2 }
-      command = { type = forest_move which = militia value = 2 }
-      command = { type = forest_move which = bergsjaeger value = 2 }
-	  command = { type = forest_move which = marine value = 2 }
-	  command = { type = forest_move which = paratrooper value = 2 }
-	  command = { type = forest_move which = motorized value = 1 }
+	  command = { type = forest_move which = infantry value = 3 }
+      command = { type = forest_move which = militia value = 3 }
+      command = { type = forest_move which = bergsjaeger value = 3 }
+	  command = { type = forest_move which = marine value = 3 }
+	  command = { type = forest_move which = paratrooper value = 3 }
+	  command = { type = forest_move which = motorized value = 2 }
 	  
-      command = { type = forest_attack which = infantry value = 2 }
-      command = { type = forest_attack which = militia value = 2 }
-      command = { type = forest_attack which = bergsjaeger value = 2 }
-	  command = { type = forest_attack which = marine value = 2 }
-      command = { type = forest_attack which = paratrooper value = 2 }
-      command = { type = forest_attack which = motorized value = 1 }
+      command = { type = forest_attack which = infantry value = 3 }
+      command = { type = forest_attack which = militia value = 3 }
+      command = { type = forest_attack which = bergsjaeger value = 3 }
+	  command = { type = forest_attack which = marine value = 3 }
+      command = { type = forest_attack which = paratrooper value = 3 }
+      command = { type = forest_attack which = motorized value = 2 }
 	  
-      command = { type = forest_defense which = infantry value = 2 }
-      command = { type = forest_defense which = militia value = 2 }
-      command = { type = forest_defense which = bergsjaeger value = 2 }
-	  command = { type = forest_defense which = marine value = 2 }
-      command = { type = forest_defense which = paratrooper value = 2 }
-	  command = { type = forest_defense which = motorized value = 1 }
+      command = { type = forest_defense which = infantry value = 3 }
+      command = { type = forest_defense which = militia value = 3 }
+      command = { type = forest_defense which = bergsjaeger value = 3 }
+	  command = { type = forest_defense which = marine value = 3 }
+      command = { type = forest_defense which = paratrooper value = 3 }
+	  command = { type = forest_defense which = motorized value = 2 }
 
     }
   }   
@@ -1715,20 +1683,20 @@ technology =
       command = { type = jungle_move which = mechanized value = 2 }
 	  command = { type = jungle_move which = hq value = 2 }
 	  command = { type = jungle_move which = cavalry value = 2 }
-	  command = { type = jungle_move which = motorized value = 1 }
+	  command = { type = jungle_move which = motorized value = 2 }
 	  
-      command = { type = jungle_attack which = light_armor value = 2 }
-      command = { type = jungle_attack which = armor value = 2 }
-      command = { type = jungle_attack which = mechanized value = 2 }
-	  command = { type = jungle_attack which = hq value = 2 }
-      command = { type = jungle_attack which = cavalry value = 2 }
+      command = { type = jungle_attack which = light_armor value = 1 }
+      command = { type = jungle_attack which = armor value = 1 }
+      command = { type = jungle_attack which = mechanized value = 1 }
+	  command = { type = jungle_attack which = hq value = 1 }
+      command = { type = jungle_attack which = cavalry value = 1 }
       command = { type = jungle_attack which = motorized value = 1 }
 	  
-      command = { type = jungle_defense which = light_armor value = 2 }
-      command = { type = jungle_defense which = armor value = 2 }
-      command = { type = jungle_defense which = mechanized value = 2 }
-	  command = { type = jungle_defense which = hq value = 2 }
-      command = { type = jungle_defense which = cavalry value = 2 }
+      command = { type = jungle_defense which = light_armor value = 1 }
+      command = { type = jungle_defense which = armor value = 1 }
+      command = { type = jungle_defense which = mechanized value = 1 }
+	  command = { type = jungle_defense which = hq value = 1 }
+      command = { type = jungle_defense which = cavalry value = 1 }
 	  command = { type = jungle_defense which = motorized value = 1 }
 	  
 	  command = { type = forest_move which = light_armor value = 2 }
@@ -1777,26 +1745,23 @@ technology =
     required  = { 5050 }
     effects =
     { 
-	  command = { type = desert_move which = infantry value = 3 }
-      command = { type = desert_move which = militia value = 3 }
-      command = { type = desert_move which = bergsjaeger value = 3 }
-	  command = { type = desert_move which = marine value = 3 }
-	  command = { type = desert_move which = paratrooper value = 3 }
-	  command = { type = desert_move which = motorized value = 2 }
+	  command = { type = desert_move which = infantry value = 1 }
+      command = { type = desert_move which = militia value = 1 }
+      command = { type = desert_move which = bergsjaeger value = 1 }
+	  command = { type = desert_move which = marine value = 1 }
+	  command = { type = desert_move which = paratrooper value = 1 }
 	  
-      command = { type = desert_attack which = infantry value = 3 }
-      command = { type = desert_attack which = militia value = 3 }
-      command = { type = desert_attack which = bergsjaeger value = 3 }
-	  command = { type = desert_attack which = marine value = 3 }
-      command = { type = desert_attack which = paratrooper value = 3 }
-      command = { type = desert_attack which = motorized value = 2 }
+      command = { type = desert_attack which = infantry value = 1 }
+      command = { type = desert_attack which = militia value = 1 }
+      command = { type = desert_attack which = bergsjaeger value = 1 }
+	  command = { type = desert_attack which = marine value = 1 }
+      command = { type = desert_attack which = paratrooper value = 1 }
 	  
-      command = { type = desert_defense which = infantry value = 3 }
-      command = { type = desert_defense which = militia value = 3 }
-      command = { type = desert_defense which = bergsjaeger value = 3 }
-	  command = { type = desert_defense which = marine value = 3 }
-      command = { type = desert_defense which = paratrooper value = 3 }
-	  command = { type = desert_defense which = motorized value = 1 }
+      command = { type = desert_defense which = infantry value = 1 }
+      command = { type = desert_defense which = militia value = 1 }
+      command = { type = desert_defense which = bergsjaeger value = 1 }
+	  command = { type = desert_defense which = marine value = 1 }
+      command = { type = desert_defense which = paratrooper value = 1 }
     }
   }   
   # Machinery adaption - Desert
@@ -1825,21 +1790,21 @@ technology =
       command = { type = desert_move which = mechanized value = 3 }
 	  command = { type = desert_move which = hq value = 3 }
 	  command = { type = desert_move which = cavalry value = 3 }
-	  command = { type = desert_move which = motorized value = 2 }
+	  command = { type = desert_move which = motorized value = 3 }
 	  
       command = { type = desert_attack which = light_armor value = 3 }
       command = { type = desert_attack which = armor value = 3 }
       command = { type = desert_attack which = mechanized value = 3 }
 	  command = { type = desert_attack which = hq value = 3 }
       command = { type = desert_attack which = cavalry value = 3 }
-      command = { type = desert_attack which = motorized value = 2 }
+      command = { type = desert_attack which = motorized value = 3 }
 	  
       command = { type = desert_defense which = light_armor value = 3 }
       command = { type = desert_defense which = armor value = 3 }
       command = { type = desert_defense which = mechanized value = 3 }
 	  command = { type = desert_defense which = hq value = 3 }
       command = { type = desert_defense which = cavalry value = 3 }
-	  command = { type = desert_defense which = motorized value = 2 }
+	  command = { type = desert_defense which = motorized value = 3 }
 
     }
   }  
