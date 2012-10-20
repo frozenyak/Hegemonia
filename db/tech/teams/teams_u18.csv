@@ -1,0 +1,16 @@
+U18;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+905000;Ministry of Agriculture;T15200;3;1930;1970;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905001;Ministry of Air Transport;nieuport;4;1930;1970;aeronautics;bomber_design;aircraft_testing;fighter_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905002;Ministry of Chemical Industry;T10510;6;1930;1970;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905003;Ministry of Construction;T13502;5;1930;1970;industrial_engineering;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905004;Ministry of Electronic Industry;T13507;4;1930;1970;industrial_engineering;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905005;Ministry of Extractive Industries;T10509;6;1930;1970;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905006;Ministry of Land & Marine Transport;T10300;4;1930;1970;mechanics;naval_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905007;Ministry of Metal & Machine Building Factories;T10504;5;1930;1970;mechanics;artillery;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905008;Ministry of Power & Coal Industries;T11000;6;1930;1970;industrial_engineering;mechanics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905009;Ministry of Railways;T11200;5;1930;1970;mechanics;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905010;Ministry of Shipping;T11001;4;1930;1970;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905011;National Military Academy;T10401;3;1930;1970;centralized_execution;decentralized_execution;large_unit_tactics;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905013;Calcutta Harbour Commision ;KRTeamCalc;3;1930;1970;naval_training;seamanship;large_taskforce_tactics;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+905014;Anushilan Samiti Air Command;KRTeamAnushilan;3;1930;1970;piloting;fighter_tactics;artillery;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+905015;Calcutta Naval College ;KRTeamCalc;5;1965;1970;naval_training;seamanship;large_taskforce_tactics;naval_artillery
