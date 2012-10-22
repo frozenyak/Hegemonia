@@ -12,7 +12,7 @@ allowed_brigades =  anti_air
 #allowed_brigades =  super_heavy_armor
 #allowed_brigades =  armored_car
 #allowed_brigades =  engineer			
-#allowed_brigades =  police
+allowed_brigades =  police
 
 upgrade = { type = garrison upgrade_time_factor = 1 upgrade_cost_factor = 0.46 }
 upgrade = { type = infantry upgrade_time_factor = 1 upgrade_cost_factor = 1.41 }

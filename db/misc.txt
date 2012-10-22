@@ -16,9 +16,9 @@ economy = {
 # Modifier on dissent reduction - higher this modifier is, longer it will take to reduce dissent.
 	10.0 #4.0
 # Max Gearing Bonus ( never lower than value * build time )
-	0.75 #0.65
+	0.65
 # Gearing Bonus Increment ( lessening of build time per successive build, down to Max Gearing Bonus )
-	0.04 #0.05
+	0.05
 # IC Non-National Province Multiplier
 	0.2 #0.3333
 # IC Non-Owned (i.e. occupied) Province Multiplier (overrides Non-National where applicable)
@@ -50,9 +50,9 @@ economy = {
 # TC Load from province dev
 	50 #5.0
 # TC Load from bases in queue
-	900 #100.0
+	100.0
 # National Province Manpower Multiplier (income per day)
-	0.0075
+	0.02 #0.0075
 # Non-National Province Manpower Multiplier (income per day.) Note: Some types of ministers can affect this value.
 	0.0003 #0.001
 # Colonial Province Manpower Multiplier (multiplied on the other)
@@ -62,9 +62,9 @@ economy = {
 # Wartime oversea provinces Manpower Multiplier (multiplied on the other)
 	0.33 #0.0
 # Peacetime Manpower Multiplier (multiplied on the other)
-	0.0015 #1.0
+	0.01 #0.0015 #1.0
 # Wartime Manpower Multiplier (multiplied on the other)
-	0.033 #1.0
+	0.30 #0.033 #1.0
 # Daily retired Manpower - percentage of the current MP pool
 	0.0#0.000015 #0.0
 # Trickle-back factor for manpower from losses in battle. (ie, how many are just wounded.)
@@ -173,7 +173,7 @@ economy = {
 #	2 - Convoys can use allied provinces as start/end destinations as long as the country controls at least one province in the allied area
 #	Note 1: Convoys can start from oversea puppet provinces regardless of this setting (required to transport puppet's resources to master's capital)
 #	Note 2: Options 1 and 2 work best if "Merge and relocate provincial depots to the best province in the area." option is enabled too.
-	2 #1
+	2 #1 #0
 # Resource convoys can ship back to capital unneeded supplies (and oil) from oversea depots. 
 #	-1.0 - Disabled (only oil is shipped back)
 #	>= 0.0 - Percentage of the current needs that should be left in the province. 
@@ -222,7 +222,7 @@ diplomacy = {
 # Days between policy slider moves
 	720 #360
 # Requirement for "Influence Nation" to affect domestic sliders: Our IC >= Target IC * X
-	2 #1.6 # 2.0
+	1.6 # 2.0
 # Use minister personality value when replacing ministers: 0 = disabled; 1 = enabled
 	1 #0
 # Relationship hit for cancel of a trade deal. This penalty is not used for trades between allies, puppet<->master, inactive trades or trades with efficiency less then 45%.
@@ -242,7 +242,7 @@ diplomacy = {
 # Should not aligned countries join automatically Allies/Axis when DoW by Axis/Allies and both alliances are at war? 1 = Yes, 0 = No
 	0 #1
 # Allow change by players of HoS or HoG. 0 - not allowed, 1 - HoG can be changed, 2 - HoS can be changed, 3 - both HoG and HoS can be changed
-	0
+	0 #0
 # Used change TAG on coup logic. 0 - Compatibility mode (check only for regular_ID match), 1 - Darkest Hour mode (using coup = { } list in revolt.txt and apply extra validation checks)
 	0 #0
 # Filter used on available for release countries list based on regular_id and intrinsic_gov_type set in revolt.txt (applied to both players and AI). 
@@ -287,7 +287,7 @@ combat = {
 # Combat Modifier: Envelopment Mod (for each attack direction above one)
 	-0.15 #-0.1
 # Combat Modifier: Encircled Mod (for completely surrounded units)
-	-0.15 #-0.1
+	0.25 #-0.15 #-0.1 # Based on Liddle Hart theories, surrounded units fight even harder for their life
 # Combat Modifier: Land Fort Multiplier ( value * fort level)
 	-0.09 #-0.08
 # Combat Modifier: Coastal Fort Multiplier ( value * fort level)
@@ -355,7 +355,7 @@ combat = {
 # Duration in hours of Naval and Port bombing
 	5 #5
 # Duration in hours of Strategic bombing
-	5 #5
+	3 #5
 # Duration in hours of Ground attack bombing
 	4 #4 
 # Effect of experience on combat
@@ -385,19 +385,19 @@ combat = {
 # Base chance of Naval units to avoid hit if defences left
 	0.9 #0.6
 # Base chance of Land units to avoid hit if no defences left.
-	0.9
+	0.7 #0.9
 # Base chance of Air units to avoid hit if no defences left.
-	0.9
+	0.7 #0.9
 # Base chance of Naval units to avoid hit if no defences left.
-	0.9
+	0.7 #0.9
 # CHANCE TO GET TERRAIN TRAIT 
-	3600 #1200
+	3600 #2400 #1200
 # CHANCE TO GET EVENT TRAIT 
-	3600 #1000
+	3600 #2000 #1000
 # BONUS ON TERRAIN TRAIT
-	0.1
+	0.1 #0.05
 # Combat bonus for terrain trait on similar terrain (Ranger in Jungles for example)
-	0.05 #0.0
+	0.03 #0.05 #0.0
 # Combat bonus per leader skill point - Land commanders.
 	0.03 #0.05
 # Combat bonus per leader skill point - Air commanders.
@@ -461,7 +461,7 @@ combat = {
 # Air vs. Land - Org dmg - Increasing this will increase ORG damage land unit takes from air units [multiplier]
 	0.30 # 0.25
 # Air vs. Land - Str dmg - Increasing this will increase STR damage land unit takes from air units [multiplier]
-	0.1 #0.20 # 0.25
+	0.08 #0.20 # 0.25
 # Air vs Navy - Org dmg - Increasing this will increase ORG damage naval unit takes from air units [multiplier]
 	1.5
 # Air vs. Navy - Str dmg - Increasing this will increase STR damage naval unit takes from air units [multiplier]
@@ -541,7 +541,7 @@ combat = {
 # Movement time modifier for fuel consuming land and air units when out of fuel (ignored for retreating and AI controlled units!). Higher THIS value is, longer the arrival time will be. Use 1.0 to disable this.
 	1.0 #3.0
 # Default speed for fuel consuming land units when out of fuel. This value can be overridden for each unit type and model by setting out_of_fuel_speed modifier in unit files. -1 - Disable this functionality, else Default out of fuel speed = THIS
-	4 #-1
+	9 #4 #-1
 # Fleet size range penalty - Percentage loss for every ship above the max threshold (see below). 0.0 (0%) to 1.0 (100%)
 	0.1 #0.025 #0.0
 # Fleet size range penalty - apply for every ship in the fleet above this. -1 = Disabled 
@@ -553,7 +553,7 @@ combat = {
 # Radar bonus on detection - used to guide friendly air units on Air Superiority and Scramble missions (This * Radar level * Radar efficiency). Added to misison and friendly province bonuses (see below). Higher the better
 	5.0 #0.0
 # Bonus on detection of enemy air units when they are over a friendly province (added to radar and mission bonuses). Used to guide friendly air units on Air Superiority and Scramble missions. Higher the better
-	10 # 0.0
+	10 #0.0
 # Screens to Capital ratio modifier. Fleet composition = (Screens * THIS) / Capitals; 1.0 = No change/Disabled
 	1.0 #1.0 
 # Chance to target divisions with no ORG left in land combats. Valid values: 0 (0%) to 100 (100%)
@@ -800,7 +800,7 @@ country = {
 # Coastal Fort Efficiency
 	1.0 #1.0
 # Ground Defense Efficiency
-	0.8 #0.75 #0.8
+	0.8 #1.0 #0.8
 # Convoy Defense Efficiency
 	0.0 #0.0
 # MP boost
@@ -818,7 +818,7 @@ country = {
 # Repair modifier
 	1.0 #1.0
 # Research modifier
-	0.65 #1.0
+	0.65 #0.4 #1.0
 # Radar efficiency
 	1.0 #1.0
 # HQ Supply efficiency bonus
@@ -952,9 +952,9 @@ trade = {
 # Puppets max pool for oil, energy, metal and rare materials - give all above this value to the master. Use negative number to set max pool as a percentage of the critical stockpile (for example -1.2 sets the max pool to 1.2 * critical stockpile)
 	-1.2 #1000
 # New trade deals min effectiveness threshold - do not make new trades if effectiveness is below this value (0..100). Used by auto-trade
-	45
+	45 #45
 # Cancel trade deals if effectiveness is below this value (0..100). Used by auto-trade
-	33
+	33 #33
 # Auto-trade (and AI) single resource trade deals (only at war when an ally badly needs a resource/oil/supplies and trade effectiveness is high enough). 0 - Disabled, 1…100 – Trade deal effectiveness threshold.
 	75 #0
 }
@@ -1034,9 +1034,9 @@ mod = {
 # AI spy (LogSpyAI.csv) and diplomatic (LogDiploAI.csv) mission loggers: 0 - Disabled, 1 - Enabled.
 	0 #0
 # Country logger (LogCountry.csv): 0 = Disabled, >0 = Enabled, days between logs, -1 = log only player's country.
-	0
+	0 #0
 # Switched AI files logger (SwitchAI.txt): 0 - Disabled, 1 - Enabled.
-	0
+	0 #0
 # Use new auto-save file format: AutoSave_Country_Year_Month_Day.eug. 1 - Enabled, 0 – Disabled.
 	0 #0 
 # Load new AI settings on AI file switching to all clients in MP games. 1 - Enabled, 0 - Disabled.
@@ -1045,8 +1045,8 @@ mod = {
 	7 #0
 # Merge and relocate provincial depots to the best province in the area. This is new and more intelligent but CPU demanding system. 0 - Disabled (use the old system).  Any positive integer is the number of days between areas analyzing using the new system.
 	1 #0
-# In-game losses logging (statistics). 0 - Disabled, 1 - Enabled
-	1 #0
+# In-game losses logging (statistics). 0 - Disabled, 1 - Enabled (ships and convoys only), 2 - Log equipment losses too, 3 – Log equipment of captured units too, 4 – Log attrition losses too
+	4 #1 #0
 # Allow brigade attaching as long as the unit is in supply no matter on whom territory it is. 1 - Enabled, 0 - Disabled (default)
 	1 #0
 # Multiple deployment - prefered unit size for armies. This could be overridden in-game by holding SHIFT (deploy all in a single group) or CONTROL (deploy each in own group) keys.
