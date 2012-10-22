@@ -28,9 +28,9 @@ BUR;Burma;Birmanie;Birmania;Birmania;Burma;Birma;;Бирма;;;X
 CAL;California;Californie;California;California;Kalifornien;Kalifornia;;Калифорния;;;X
 CAM;Cameroon;Cameroun;Camerun;Camerъn;Kamerun;Kamerun;;Камерун;;;X
 CAN;Vinland;Vinland;Vinland;Vinland;Vinland;Winlandia;;;;;X
-CGX;Guangxi Clique;Clan Guangxi;Guangxi Clique;Camarilla de Guangxi;Guangxi;Kwang-Si;;Клика Гуанси;;;X
+CGX;Guangxi Clique;Clan Guangxi;Clicca Guangxi;Camarilla de Guangxi;Guangxi Clique;Kliknij Guangxi;;Клика Гуанси;;;X
 CHC;Communist China;Chine Communiste;Cina comunista;China Comunista;Rotchina;Kom. Chiny;;Коммун. Китай;;;X
-CHI;Nationalist China;Chine nationaliste;Cina nazionalista;China Nacionalista;Republik China;Nacj. Chiny;;Нац. Китай;;;X
+CHI;Nationalist China;Chine Nationaliste;Cina Nazionalista;China Nacionalista;Nationalchina;Nacj. Chiny;;Нац. Китай;;;X
 CHL;Asmunakal;Asmunakal;Asmunakal;Asmunakal;Asmunakal;Asmunakal;;;;;X
 CMB;Cambodia;Cambodge;Cambogia;Camboya;Kambodscha;Kambodїa;;Камбоджа;;;X
 COL;Colombia;Colombie;Colombia;Colombia;Kolumbien;Kolumbia;;Колумбия;;;X
@@ -38,9 +38,9 @@ CON;Congo;Congo;Congo;El Congo;Kongo;Kongo;;Конго;;;X
 COS;Costa Rica;Costa Rica;Costa Rica;Costa Rica;Costa Rica;Kostaryka;;Коста-Рика;;;X
 CRO;Croatia;Croatie;Croazia;Croacia;Kroatien;Chorwacja;;Хорватия;;;X
 CSA;Confederate States;Etats confйdйrйs;Stati Confederati;Estados Confederados;Konfцderierte Staaten;Konfederacja;;Конфедеративные штаты;;;X
-CSX;Shanxi;Shanxi;Shanxi;Shansi;Shanxi;Szansi;;Шаньси;;;X
+CSX;Shanxi Clique;Clan Shanxi;Clicca Shanxi;Camarilla de Shanxi;Shanxi Clique;Kliknij Shanxi;;Шаньси;;;X
 CUB;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;;;;;X
-CXB;Xibei San Ma;Xibei San Ma;Xibei San Ma;Xibei San Ma;Xibei San Ma;Xibei San Ma;;Северозап. земли Ма;;;X
+CXB;San Ma Clique;Clan San Ma;Clicca San Ma;Camarilla de San Ma;San Ma Clique;Kliknij San Ma;;Северозап. земли Ма;;;X
 CYN;Yuan China;Chine Yuan;Cina Yuan;China Yuan;Yuan China;Yuan Chiny;;;;;X
 CYP;Cyprus;Chypre;Cipro;Chipre;Zypern;Cypr;;Кипр;;;X
 CZE;Bohemia;Bohкme;Boemia;Bohemia;Bцhmen;Czechy;;;;;X
@@ -62,7 +62,7 @@ FRA;France;France;Francia;Francia;Frankreich;Francja;;Франция;;;X
 GAB;Gabon;Gabon;Gabon;Gabуn;Gabun;Gabon;;Габон;;;X
 GEO;Georgia;Gйorgie;Georgia;Georgia;Georgien;Gruzja;;Грузия;;;X
 GER;Germany;Allemagne;Germania;Alemania;Deutsches Reich;Niemcy;;Германия;;;X
-GLD;Ghana;Ghana;Ghana;Ghana;Ghana;Ghana;Gana;Гана;;;X
+GLD;Ghana;Ghana;Ghana;Ghana;Ghana;Ghana;;Гана;;;X
 GRE;Greece;Grиce;Grecia;Grecia;Griechenland;Grecja;;Греция;;;X
 GUA;Guatemala;Guatemala;Guatemala;Guatemala;Guatemala;Gwatemala;;Гватемала;;;X
 GUI;Guinea;Guinйe;Guinea;Guinea;Guinea;Gwinea;;Гвинея;;;X
@@ -139,7 +139,7 @@ SIA;Thailand;Thailande;Tailandia;Thailand;Thailand;Tajlandia;;Таиланд;;;X
 SIA36;Siam;Siam;Siam;Siam;Siam;Syjam;;Сиам;;;X
 SIB;Siberia;Sibйrie;Siberia;Siberia;Sibirien;Syberia;;Сибирь;;;X
 SIE;Sierra Leone;Sierra Lйone;Sierra Leone;Sierra Leona;Sierra Leone;Sierra Leone;;Сьерра-Леоне;;;X
-SIK;Sinkiang;Xinjiang;Sinkiang;Xinjiang;Xinjiang;Sinkiang;;Синьцзян;;;X
+SIK;Xinjiang;Xinjiang;Xinjiang;Xinjiang;Xinjiang;Xinjiang;;Синьцзян;;;X
 SLO;Slovakia;Slovaquie;Slovacchia;Eslovaquia;Slowakei;Sіowacja;;Словакия;;;X
 SLV;Slovenia;Slovйnie;Slovenia;Eslovenia;Slowenien;Sіowenia;;Словения;;;X
 SOM;Somalia;Somalie;Somalia;Somalia;Somalia;Somalia;;Сомали;;;X
@@ -171,7 +171,7 @@ U00;Union of Rome;Union romain;Unione romano;Uniуn Romano;Rцmische Union;Zwiazek
 U01;Crete;Crиte;Creta;Creta;Kreta;Kreta;;;;;X
 U02;Imperial India;Imperial India;Imperial India;Imperial India;Imperial India;Imperial India;;;;;X
 U03;Gotland;Gotland;Gotland;Gotland;Gotland;Gotlandia;;;;;X
-U04;User Defined;Paramйtrable;Definito dall'utente;Def. por usuario;Benutzerdefiniert;Zdefiniowane przez uїytkownika;;;;;X
+U04;Brittany;Bretagne;Bretagna;Bretaсa;Bretagne;Bretania;;;;;X
 U05;Jadakal Empire;Jadakal;Jadakal;Jadakal;Jadakal;Jadakal;;;;;X
 U06;Occitania;Occitanie;Occitania;Occitania;Okzitanien;Oksytania;;;;;X
 U07;African Union;Union africaine;Unione Africana;Uniуn Africana;Afrikanische Union;Unia Afrykanska;;;;;X
@@ -180,7 +180,7 @@ U09;Roman Empire;Empire romain;Impero romano;Imperio Romano;Rцmisches Reich;Cesa
 U10;Batavian Socialist Republic;Rйpublique socialiste batave;Republicca Socialista Batava;Repъblica Socialista Bбtava;Sozialistische Batavische Republik;Socjalistyczna Republika Batawska;;;;;X
 U11;Awadh;Paramйtrable;Definito dall'utente;Def. por usuario;Benutzerdefiniert;Zdefiniowane przez uїytkownika;;;;;X
 U12;Free City of Danzig;Ville Libre de Dantzig;Cittа Libera di Danzica;Ciudad Libre de Danzig;Freie Stadt Danzig;Wolne Miasto Gdaсsk;;Вольный город Данциг;;;X
-U13;Brittany;Bretagne;Bretagna;Bretaсa;Bretagne;Bretania;;;;;X
+U13;Hungarian Socialist Republic;Rйpublique Socialiste de Hongrie;Repubblica Socialista d'Ungheria;Repъblica Socialista de Hungrнa;Ungarische Sozialistische Republik;Wкgierska Republika Socjalistyczna;;Венгерская Народная Республика;;;X
 U14;Lombard League;Ligue Lombarde;Lega Lombarda;Liga Lombarda;Lombardenbund;Liga Lombardzka;;;;;X
 U15;Hawaii;Hawaii;Hawaii;Hawaii;Hawaii;Hawaii;Hawaii;Hawaii;;;X
 U16;Silesia;Silйsie;Slesia;Silesia;Schlesien;Slask;;;;;X
@@ -203,7 +203,8 @@ U32;People's Republic of Poland;Rйpublique Populaire de Pologne;Repubblica Popol
 U33;Democratic Republic of Greece;Rйpublique Dйmocratique de Grиce;Repubblica Democratica di Grecia;Repъblica Democrбtica de Grecia;Demokratische Republik Griechenland;Grecka Republika Demokratyczna;;Демократическая Республика Греция;;;X
 U34;Socialist Republic of Turkey;Rйpublique Socialiste de Turquie;Repubblica Socialista di Turchia;Repъblica Socialista de Turquнa;Sozialistische Republik Tьrkei;Turecka Republika Socjalistyczna;;Социалистическая Республика Турция;;;X
 U35;Communist Iberia;Iberia Communiste;Iberia Comunista;Iberia Comunista;Kommunistisches Iberia;Komunistyczna Iberia;;;;;X
-U39;Hatay State;Hatay State;Hatay State;Hatay State;Hatay State;Paсstwo Hatay;Hatay State;Государство Хатай;;;X
+U36;Zhili Clique;Clan Zhili;Clicca Zhili;Camarilla de Zhili;Zhili Clique;Kliknij Zhili;;Чжилийская клика;;;X
+U39;Hatay State;Etat de Hatay;Hatay State;Hatay State;Staat Hatay;Paсstwo Hatay;;Государство Хатай;;;X
 U40;Reichskommissariat Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Komisariat Rzeszy Wschуd;;Рейхскомиссариат Остланд;;;X
 U41;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Komisariat Rzeszy Ukraina;;Рейхскомиссариат Украина;;;X
 U42;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Komisariat Rzeszy Kaukaz;;Рейхскомиссариат Кавказ;;;X
@@ -218,85 +219,69 @@ U50;Hejaz;Hedjaz;Hejaz;Hejaz;Hedschas;Hidїaz;;Хиджаз;;;X
 U51;Qatar;Qatar;Qatar;Qatar;Katar;Katar;;Катар;;;X
 U52;Jebel Shammar;Jebel Shammar;Jebel Shammar;Jebel Shammar;Jebel Shammar;Dїebel Szammar;;Джебель-Шаммар;;;X
 U53;Trucial States;Etats de la Trкve;gli Stati della tregua;Trucial States;Trucial States;Oman Traktatowy;;Оман договорный;;;X
-U54;WUPR;Ukraine Occidentale;WUPR ;WUPR;WUPR;Wschodnia Ukraina;;Восточно-Украинская народная республика;;;X
-U55;Republic of Tarnobrzeg;Rйpublique de Tarnobrzeg;Repubblica di Tarnobrzeg ;Republica de Tarnobrzeg;Die Republik von Tarnobrzeg;Republika Tarnobrzeska;;Тарнобжегская республика;;;X
-U56;Makhnovschina;Makhnovschina;Makhnovschina ;Makhnovschina;Makhnovschina;Machnowszczyzna;;Махновщина;;;X
+U54;West Ukrainian People's Republic;Ukraine Occidentale;WUPR ;WUPR;Westukrainische Volksrepublik;Wschodnia Ukraina;;Восточно-Украинская народная республика;;;X
+U55;Mountain Republic;Rйpublique Montagnarde;Repubblica delle montagne;Repъblica Montaсesa;Bergrepublik;Republika Tarnobrzeska;;Тарнобжегская республика;;;X
+U56;Free Territory;Ukraine libertaire;Territorio Libero;Territorio Libre;Makhnovschina;Wolne Terytorium;;Махновщина;;;X
 U57;Constitucionalistas;Constitutionnalistes;Constituzionalisti;Constitucionalistas;Konstitutionalisten;Konstytucjonaliњci;;Конституциалисты;;;X
 U58;Villistas;Villistas;Villisti;Villistas;Villisten;Villiњci;;Вильисты;;;X
 U59;Zapatistas;Zapatistes;Zapatisti;Zapatistas;Zapatisten;Zapatiњci;;Сапатисты;;;X
 U60;Newfoundland;Terre-Neuve;Terranova;Terranova;Neufundland;Nowa Fundlandia;;Ньюфаундленд;;;X
-U66;Principality of the Pindus;Principautй de Pindus;Principato del Pindo;Principado de Pindo;Fьrstentum Pindus;Ksiкstwo Pindosu;;Княжество Пиндос;;;X
+U61;Don Republic;Rйpublique du Don;Repubblica del Don;Repъblica del Don;Don-Republik;Republika Doсska;;Донская республика;;;X
+U62;Far Eastern Host;Hфte d'Extrкme-Orient;Cosacchi dell'Estremo Oriente;Ejйrcito del Lejano Este;Fernцstlicher Host;Oddziaіy Dalekowschodnie;;Дальневосточные казаки;;;X
+U63;Czechoslovak Legion;Lйgion tchйque;Legione cecoslovacca;Legiуn checa;Tschechoslowakische Legion;Legion Czechosіowacki;;Чехословацкий легион;;;X
+U64;Chinese Eastern Railway Zone;Chemin de fer de l'Est chinois;Zona ferroviaria cinese orientale;Transmanchuriano;Chinesische Osteisenbahn-Zone;Strefa Kolei Wschodniochiсskiej;;КВЖД;;;X
+U65;Crimea;Crimйe;Crimea;Crimea;Krim;Krym;;Крым;;;X
+U66;Principality of the Pindus;Principautй de Pindus;Principato del Pindo;Principado de Pindo;Fьrstentum Pindus;Ksiкstwo Pindosu;;Пиндское княжество;;;X
 U67;Fengtian Clique;Clan Fengtian;Fengtian Clique;Camarilla de Fengtian;Fengtian Clique;Klika Fengtiaсska;;Фэнтяньская клика;;;X
+U68;Khiva;Khiva;Khiva;Jiva;Khiva;Chiwa;;Хива;;;X
 U69;Revolutionary Mazula;Mazula Rйvolutionaire;Mazula Rivoluzionario;Mazula Revolucionario;Republik Mazula;Rewolucyjny Mazula;;;;;X
-USN;USNA;EUAN;Stati Uniti del Nord America;EE.UU.;USNA;USNA;EUAN;САСШ;;;X
-UAU;Australasia;Australasie;Australasia;Australasia;Australasiat. Staatenbund;Australazja;Australбsia;Австралазия;;;X
-UCH;China;Rйpublique de Chine;Repubblica Cinese;Repъblica de China;Chinesische Republik;Republika Chiсska;Repъblica da China;Китайская Республика;;;X
-UBO;Bourbon;Les Bourbons;Regno Borbonico;Borbones;Bourbonisches Kцnigreich;Paсstwo Burbonуw;Bourbon;Бурбоны;;;X
-UTC;The Volunteers Army;L'Armйe des Volontaires;Unione Cosacca;Los cosacos;Kosakenunion;Hetmanat Kozacki;Cossacos;Казаки;;;X
-UGS;Archangelsk Government;Gouvernement d'Arkhangelsk;Governo di Archangelsk;Primorsk;Primorsk;Rz№d Archangielski;;Приморье;;;X
-UCS;The Confederates;Les Confйdйrйs;Stati Confederati;Los confederados;Konfцderierte Staaten;Konfederaci;Confederados;Конфедераты;;;X
-UIC;Indo China;Indo-Chine;Indocina;Indochina;Indochina;Indochiny;Indochina;Индокитай;;;X
-UPR;Prussia;Prusse;Prussia;Prusia;PreuЯisches Kцnigreich;Prusy;Prъssia;Пруссия;;;X
-UER;Ufa Directory;Directoire d'Oufa;Direttorato d'Ufa;Imperio de Rusia;Russisches Reich;Imperium Rosyjskie;Impйrio Russo;Уфимская директория;;;X
-UTO;The Ottomans;Les Ottomans;Impero Ottomano;Los otomanos;Osmanisches Reich;Imperium Osmaсskie;Otomanos;Османская империя;;;X
-UIR;Indian Republic;Rйpublique Indienne;Repubblica Indiana;Repъblica India;Indische Republik;Republika Indyjska;Repъblica da Нndia;Республика Индия;;;X
-UTL;The Libertadores;Les Libertadores;I Libertadores;Los Libertadores;Sьdamerikan. Gemeinschaft;Libertadores;Libertadores;Освободители;;;X
-UPS;PRRS;RPSL;Repubblica Popolare del Sol Levante;PRRS;VR der aufgehenden Sonne;PRRS;RPSN;НРВС;;;X
-UES;European Soviets;Soviets europйens;Soviet europei;Soviets Europeos;Europдische Rдterepublik;Europa Sowiecka;Sovietes Europeus;Европейские Советы;;;X
-URO;Roma;Rome;Repubblica Socialista Romana;Roma;Rцmische Sozialrepublik;Paсstwo Rzymskie;Roma;Рим;;;X
-UAP;APR;RPA;Repubblica Popolare Africana;CNA;Afrikanische Volksrepublik;Afrykaсska Republika Ludowa;RPA;АНР;;;X
-UPE;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;Туркестан;;;X
-U70;Uganda;Ouganda;Uganda;Uganda;Uganda;Uganda;Uganda;Уганда;;;X
-U71;Northern Ireland;Irlande du Nord;Irlanda del Nord;Irlanda del Norte;Nordirland;Irlandia Pуlnocna;Irlanda do Norte;Северная Ирландия;;;X
-U72;Democratic Republic of Vietnam;Rйpublique Dйmocratique du Vietnam;Vietnam comunista;Vietnam comunista;Kommunistisches Vietnam;Komunistyczny Wietnam;Vietnг comunista;Коммунистический Вьетнам;;;X
-U73;England;Angleterre;Inghilterra;Inglaterra;England;Anglia;Inglaterra;Англия;;;X
-U74;Northern China;Chine du Nord;Cina del nord;China del Norte;Nordchina;Pуіnocne Chiny;China do Norte;Северный Китай;;;X
-U75;Singapore;Singapour;Singapore;Singapur;Singapur;Singapur;Cingapura;Сингапур;;;X
-U76;Wales;Pays de Galles;Galles;Gales;Wales;Walia;Paнs de Gales;Уэльс;;;X
-U77;Greater Colombia;Grande Colombie;Gran Colombia;Gran Colombia;GroЯkolumbien;Wielka Kolumbia;Grг-Colфmbia;Великая Колумбия;;;X
-U78;Central America;Amйrique Centrale;America Centrale;Centroamйrica;Zentralamerika;Ameryka Њrodkowa;Amйrica Central;Центральная Америка;;;X
-U79;West Indies;Indes Occidentales;Indie Occidentali;Indias Occidentales;West-Indien;Indie Zachodnie;Нndias Ocidentais;Западная Индия;;;X
-U80;Kashmir;Cachemire;Kashmir;Cachemira;Kaschmir;Kaszmir;Caxemira;Кашмир;;;X
-U81;Upper Volta;Haute-Volta;Alto Volta;Alto Volta;Obervolta;Gуrna Wolta;Alto Volta;Верхняя Вольта;;;X
-U82;Central Africa;Centrafrique;Centrafrica;Бfrica Central;Zentralafrika;Afryka Њrodkowa;Бfrica Central;Центральная Африка;;;X
-U83;Ceylon;Ceylan;Ceylon;Ceilбn;Ceylon;Cejlon;Ceilгo;Цейлон;;;X
-U84;Chad;Tchad;Ciad;Chad;Tschad;Czad;Chade;Чад;;;X
-U85;Congo-Brazzaville;Congo-Brazzaville;Congo-Brazzaville;Congo-Brazzaville;Kongo-Brazzaville;Kongo-Brazzaville;Congo-Brazzaville;Конго-Браззавиль;;;X
-U86;Gambia;Gambie;Gambia;Gambia;Gambia;Gambia;Gвmbia;Гамбия;;;X
+U70;Uganda;Ouganda;Uganda;Uganda;Uganda;Uganda;;Уганда;;;X
+U71;Northern Ireland;Irlande du Nord;Irlanda del Nord;Irlanda del Norte;Nordirland;Irlandia Pуlnocna;;Северная Ирландия;;;X
+U72;Democratic Republic of Vietnam;Rйpublique Dйmocratique du Vietnam;Repubblica Democratica del Vietnam;Repъblica Democrбtica de Vietnam;Demokratische Republik Vietnam;Demokratyczna Republika Wietnamu;;Демократическая Республика Вьетнам;;;X
+U73;England;Angleterre;Inghilterra;Inglaterra;England;Anglia;;Англия;;;X
+U74;Imperial China;Chine Impйriale;Cina imperiale;China Imperial;Imperiales China;Cesarstwo Chiсskie;;Имперский Китай;;;X
+U75;Singapore;Singapour;Singapore;Singapur;Singapur;Singapur;;Сингапур;;;X
+U76;Wales;Pays de Galles;Galles;Gales;Wales;Walia;;Уэльс;;;X
+U77;Greater Colombia;Grande Colombie;Gran Colombia;Gran Colombia;GroЯkolumbien;Wielka Kolumbia;;Великая Колумбия;;;X
+U78;Central America;Amйrique Centrale;America Centrale;Centroamйrica;Zentralamerika;Ameryka Њrodkowa;;Центральная Америка;;;X
+U79;West Indies;Indes Occidentales;Indie Occidentali;Indias Occidentales;West-Indien;Indie Zachodnie;;Западная Индия;;;X
+U80;Kashmir;Cachemire;Kashmir;Cachemira;Kaschmir;Kaszmir;;Кашмир;;;X
+U81;Upper Volta;Haute-Volta;Alto Volta;Alto Volta;Obervolta;Gуrna Wolta;;Верхняя Вольта;;;X
+U82;Central Africa;Centrafrique;Centrafrica;Бfrica Central;Zentralafrika;Afryka Њrodkowa;;Центральная Африка;;;X
+U83;Ceylon;Ceylan;Ceylon;Ceilбn;Ceylon;Cejlon;;Цейлон;;;X
+U84;Chad;Tchad;Ciad;Chad;Tschad;Czad;;Чад;;;X
+U85;Congo-Brazzaville;Congo-Brazzaville;Congo-Brazzaville;Congo-Brazzaville;Kongo-Brazzaville;Kongo-Brazzaville;;Конго-Браззавиль;;;X
+U86;Gambia;Gambie;Gambia;Gambia;Gambia;Gambia;;Гамбия;;;X
 U87;Republic of China;Rйpublique de Chine;Repubblica Cinese;Repъblica de China;Chinesische Republik;Republika Chiсska;Repъblica da China;Китайская Республика;;;X
-U88;Ivory Coast;Cфte d'Ivoire;Costa d'Avorio;Costa de Marfil;Elfenbeinkьste;Wybrzeїe Koњci Sіoniowej;Costa do Marfim;Берег Слоновой Кости;;;X
-U89;Jamaica;Jamaпque;Giamaica;Jamaica;Jamaika;Jamajka;Jamaica;Ямайка;;;X
-U90;Kenya;Kenya;Kenya;Kenia;Kenia;Kenia;Quкnia;Кения;;;X
-U91;Kuwait;Koweпt;Kuwait;Kuwait;Kuwait;Kuwejt;Kuwait;Кувейт;;;X
-U92;Malta;Malte;Malta;Malta;Malta;Malta;Malta;Мальта;;;X
-U93;Mauritania;Mauritanie;Mauritania;Mauritania;Mauretanien;Mauretania;Mauritвnia;Мавритания;;;X
-U94;Niger;Niger;Niger;Nнger;Niger;Niger;Nнger;Нигерия;;;X
-U95;Rwanda;Rwanda;Ruanda;Ruanda;Ruanda;Rwanda;Ruanda;Руанда;;;X
-U96;Senegal;Sйnйgal;Senegal;Senegal;Senegal;Senegal;Senegal;Сенегал;;;X
-U97;Tanganyika;Tanganyika;Tanganika;Tanganica;Tanganjika;Tanganika;Tanganica;Танганьика;;;X
-U98;Trinidad and Tobago;Trinitй-et-Tobago;Trinidad e Tobago;Trinidad y Tobago;Trinidad und Tobago;Trynidad i Tobago;Trinidade e Tobago;Трининдад-и-Тобаго;;;X
-U99;Togo;Togo;Togo;Togo;Togo;Togo;Togo;Того;;;X
-##;;;;;;;;;;;X
-NHEMIS;Northern Hemisphere;Hйmisphиre nord;Emisfero settentrionale;Hemisferio norte;Nцrdliche Hemisphдre;Pуіkula Pуіnocna;;Северное полушарие;;;X
-SHEMIS;Southern Hemisphere;Hйmisphиre sud;Emisfero meridionale;Hemisferio sur;Sьdliche Hemisphдre;Pуіkula Poіudniowa;;Южное полушарие;;;X
-##;;;;;;;;;;;X
-WEATHER_CLEAR;Clear;Clair;Sereno;Despejado;Klar;Pogodnie;;Ясно;;;X
-WEATHER_FROZEN;Frozen;Gelй;Ghiacciato;Helado;Frost;Mrуz;;Мороз;;;X
-WEATHER_RAINING;Raining;Pluvieux;Pioggia;Lluvioso;Regen;Deszcz;;Дождь;;;X
-WEATHER_SNOWING;Snowing;Neigeux;Neve;Nevado;Schnee;Њnieg;;Снег;;;X
-WEATHER_STORM;Storm;Tempкte;Tempesta;Tormenta;Sturm;Burza;;Гроза;;;X
-WEATHER_BLIZZARD;Blizzard;Tempкte de neige;Bufera;Ventisca;Schneesturm;Њnieїyca;;Снежная буря;;;X
-WEATHER_MUDDY;Muddy;Boueux;Fangoso;Embarrado;Schlamm;Bіota;;Грязь;;;X
-##;;;;;;;;;;;X
-CLIMATE;Climate;Climat;Clima;Clima;Klima;Klimat;;Климат;;;X
-CLIMATE_-;No Climate Specified;Aucun climat prйcisй;Nessun clima specificato;Ningъn clima especificado;Kein Klima angegeben;Brak okreњlonego klimatu;;Климат не определен;;;X
-CLIMATE_ARCTIC;Arctic;Arctique;Artico;Бrtico;Arktisch;Arktyczny;;Арктический;;;X
-CLIMATE_SUBARCTIC;Subarctic;Sub-arctique;Subartico;Subбrtico;Subarktisch;Subarktyczny;;Субарктический;;;X
-CLIMATE_TEMPERATE;Temperate;Tempйrй;Temperato;Templado;GemдЯigt;Umiarkowany;;Умеренный;;;X
-CLIMATE_MUDDY;Temperate/Muddy;Tempйrй/Boueux;Temperato/coperto;Templado/Embarrado;GemдЯigt/Schlammig;Umiarkowany/Wilgotny;;Умеренный/Влажный;;;X
-CLIMATE_MEDITERRANEAN;Mediterranean;Mйditerranйen;Mediterraneo;Mediterrбneo;Mediterran;Њrуdziemnomorski;;Средиземноморский;;;X
-CLIMATE_SUBTROPICAL;Subtropical;Sub-tropical;Subtropicale;Subtropical;Subtropisch;Subtropikalny;;Субтропический;;;X
-CLIMATE_TROPICAL;Tropical;Tropical;Tropicale;Tropical;Tropisch;Tropikalny;;Тропический;;;X
-CLIMATE_ARID;Arid;Aride;Arido;Бrido;Trocken;Suchy;;Сухой;;;X
+U88;Ivory Coast;Cфte d'Ivoire;Costa d'Avorio;Costa de Marfil;Elfenbeinkьste;Wybrzeїe Koњci Sіoniowej;;Берег Слоновой Кости;;;X
+U89;Jamaica;Jamaпque;Giamaica;Jamaica;Jamaika;Jamajka;;Ямайка;;;X
+U90;Kenya;Kenya;Kenya;Kenia;Kenia;Kenia;;Кения;;;X
+U91;Kuwait;Koweпt;Kuwait;Kuwait;Kuwait;Kuwejt;;Кувейт;;;X
+U92;Malta;Malte;Malta;Malta;Malta;Malta;;Мальта;;;X
+U93;Mauritania;Mauritanie;Mauritania;Mauritania;Mauretanien;Mauretania;;Мавритания;;;X
+U94;Niger;Niger;Niger;Nнger;Niger;Niger;;Нигерия;;;X
+U95;Rwanda;Rwanda;Ruanda;Ruanda;Ruanda;Rwanda;;Руанда;;;X
+U96;Senegal;Sйnйgal;Senegal;Senegal;Senegal;Senegal;;Сенегал;;;X
+U97;Tanganyika;Tanganyika;Tanganika;Tanganica;Tanganjika;Tanganika;;Танганьика;;;X
+U98;Trinidad and Tobago;Trinitй-et-Tobago;Trinidad e Tobago;Trinidad y Tobago;Trinidad und Tobago;Trynidad i Tobago;;Трининдад-и-Тобаго;;;X
+U99;Togo;Togo;Togo;Togo;Togo;Togo;;Того;;;X
+UAP;APR;RPA;Repubblica Popolare Africana;CNA;Afrikanische Volksrepublik;Afrykaсska Republika Ludowa;;АНР;;;X
+UAU;Australasia;Australasie;Australasia;Australasia;Australasiat. Staatenbund;Australazja;;Австралазия;;;X
+UBO;Bourbon;Les Bourbons;Regno Borbonico;Borbones;Bourbonisches Kцnigreich;Paсstwo Burbonуw;;Бурбоны;;;X
+UCH;China;Rйpublique de Chine;Repubblica Cinese;Repъblica de China;Chinesische Republik;Republika Chiсska;;Китайская Республика;;;X
+UCS;The Confederates;Les Confйdйrйs;Stati Confederati;Los confederados;Konfцderierte Staaten;Konfederaci;;Конфедераты;;;X
+UER;Ufa Directory;Directoire d'Oufa;Direttorato d'Ufa;Imperio de Rusia;Russisches Reich;Imperium Rosyjskie;;Уфимская директория;;;X
+UES;European Soviets;Soviets europйens;Soviet europei;Soviets Europeos;Europдische Rдterepublik;Europa Sowiecka;;Европейские Советы;;;X
+UGS;Archangelsk Government;Gouvernement d'Arkhangelsk;Governo di Archangelsk;Primorsk;Primorsk;Rz№d Archangielski;;Приморье;;;X
+UIC;Indo China;Indo-Chine;Indocina;Indochina;Indochina;Indochiny;;Индокитай;;;X
+UIR;Indian Republic;Rйpublique Indienne;Repubblica Indiana;Repъblica India;Indische Republik;Republika Indyjska;;Республика Индия;;;X
+UPE;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;;Туркестан;;;X
+UPR;Prussia;Prusse;Prussia;Prusia;PreuЯisches Kцnigreich;Prusy;;Пруссия;;;X
+UPS;PRRS;RPSL;Repubblica Popolare del Sol Levante;PRRS;VR der aufgehenden Sonne;PRRS;;НРВС;;;X
+URO;Roma;Rome;Repubblica Socialista Romana;Roma;Rцmische Sozialrepublik;Paсstwo Rzymskie;;Рим;;;X
+USN;USNA;EUAN;Stati Uniti del Nord America;EE.UU.;USNA;USNA;;САСШ;;;X
+UTC;Volunteer Army;Armйe des volontaires;Armata dei Volontari;Ejйrcito de Voluntarios;Freiwilligenarmee;Armia Ochotnicza;;Добровольческая армия;;;X
+UTL;The Libertadores;Les Libertadores;I Libertadores;Los Libertadores;Sьdamerikan. Gemeinschaft;Libertadores;;Либертадорес;;;X
+UTO;The Ottomans;Les Ottomans;Impero Ottomano;Los otomanos;Osmanisches Reich;Imperium Osmaсskie;;Османская империя;;;X
 #EOF;;;;;;;;;;;x
 #EOF;;;;;;;;;;;x
