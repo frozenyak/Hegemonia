@@ -18,7 +18,7 @@
 	oil                    = 500 
 	supplies               = 500 
 	money                  = 40 
-	manpower               = 9
+	manpower               = 14
 	transports             = 10 
 	escorts                = 0 
    peacetime_ic_mod = 0.6

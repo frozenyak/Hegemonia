@@ -13,7 +13,7 @@ country = {
 	oil                    = 500 
 	supplies               = 500 
 	money                  = 10 
-	manpower               = 44 
+	manpower               = 43 
       
 	capital                = 2171 
 	policy = {

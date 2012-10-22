@@ -14,7 +14,7 @@ country =
   oil                    = 200
   supplies               = 200
   money                  = 50
-  manpower               = 60
+  manpower               = 83
   transports             = 20
   escorts                = 0
   capital                = 370
@@ -29,7 +29,7 @@ country =
   }
 	nationalprovinces = {
 		430 431 425 422 424 421 420 416 423 415 414 419 410 412 411 393 408 396 398 407 401 400 434
-		413 417 435 432 94 399 429 394 395 418 426 427 428 433
+		413 417 435 432 94 399 429 395 418 426 427 428 433
 		#swiss
 		#390
 		#france
@@ -37,7 +37,7 @@ country =
 		#germany
 		#402
 		#austria
-		405 #403 404 406
+		#405 403 404 406 394
 		#union
 		#343 350 371
 	}

@@ -618,6 +618,40 @@ province =
 }            # Vienna
 
 province =
+{ id       = 346
+  landfort = 3
+} # maribor
+province =
+{ id       = 347
+  landfort = 1
+} # karlovac
+province =
+{ id       = 352
+  landfort = 1
+} # zagreb
+province =
+{ id       = 344
+  landfort = 2
+} # osijek
+province =
+{ id       = 345
+  landfort = 1
+} # bjelovar
+province =
+{ id       = 341
+  landfort = 1
+} # novi sad
+province =
+{ id       = 336
+  landfort = 1
+} # petrovgrad
+province =
+{ id       = 295
+  landfort = 1
+} # resita
+
+
+province =
 { id         = 1328
   naval_base = { size = 10 current_size = 10 }
 }              # Qingdao
@@ -726,9 +760,9 @@ province =
   air_base = { size = 10 current_size = 10 }
 }            # Auxerre
 province =
-{ id       = 121
-  landfort = 2 #3
-}  #maastricht
+{ id       = 118
+  landfort = 2
+}  #eindhoven
 province =
 { id       = 119
   landfort = 2 #3
@@ -765,9 +799,9 @@ id = 109
 anti_air = 2 
 landfort = 4 #5 
 } # luxembourg
-province = { id = 108 landfort = 3 } # #liege
+province = { id = 108 landfort = 2 } # #liege
 province = { id = 107 landfort = 1 } # Strassburg
-province = { id = 106 landfort = 4 } # Nancy
+province = { id = 106 landfort = 5 } # Nancy
 province = { id = 105 anti_air = 2 landfort = 3 } # Colmar
 province =
 { id       = 104
@@ -775,11 +809,11 @@ province =
   landfort = 3
   anti_air = 2
 }            # Metz
-province = { id = 100 landfort = 3 } # Verdun
+province = { id = 100 landfort = 2 } # Verdun
 #province = { id = 98 landfort = 1 } # Pontarlier
-province = { id = 97 landfort = 3 } # Belfort
-province = { id = 96 landfort = 3 } # Longwy
-province = { id = 95 landfort = 3 } # Chaumont
+province = { id = 97 landfort = 2 } # Belfort
+province = { id = 96 landfort = 2 } # Longwy
+province = { id = 95 landfort = 2 } # Chaumont
 province = { id = 74 anti_air = 1 } # Vichy
 province =
 { id         = 68
@@ -1404,7 +1438,7 @@ province =
 province =
 { id         = 307
   anti_air   = 2
-  landfort = 2
+  landfort = 3
   coastalfort = 1
 }              # Dobrich
 province =
@@ -2127,11 +2161,11 @@ province = {
 } #lerida
 province = {
 	id = 443
-	landfort = 2
+	landfort = 3
 } #bilbao
 province = {
 	id = 446
-	landfort = 2
+	landfort = 3
 } #pamplona
 
 province = {
@@ -2197,11 +2231,21 @@ province =
 { id       = 409
   anti_air = 5
   ic = 6
-  landfort = 3
+  landfort = 5
   coastalfort = 3
   air_base   = { size = 10 current_size = 10 }
   naval_base = { size = 10 current_size = 10 }
 }  #constantinople/istanbul
+
+province =
+{ id       = 385
+  landfort = 1
+}  #adrianople
+province =
+{ id       = 384
+  landfort = 1
+  coastalfort = 1
+}  #gallipoli
 
 province = { id = 1172 anti_air = 1 } # Jerusalem
 
@@ -2221,6 +2265,7 @@ province =
   anti_air   = 2 #4
   #air_base   = { size = 6 current_size = 6 }
   #naval_base = { size = 10 current_size = 10 }
+  coastalfort = 1
 }              # Izmit
 province =
 { id       = 1075
@@ -2279,6 +2324,7 @@ province = {
 	id =	1078	
 	naval_base = { size =	2	current_size = 	2	}
 	air_base = { size =	2	current_size = 	2	} 
+	coastalfort = 1
 } #Bursa
 
 ### France

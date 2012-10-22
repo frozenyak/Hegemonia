@@ -18,7 +18,7 @@
 	supplies               = 500 
 	money                  = 10 
 	capital                = 1401 
-	manpower               = 27 
+	manpower               = 31 
       
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 

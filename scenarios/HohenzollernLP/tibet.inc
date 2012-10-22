@@ -13,7 +13,7 @@
    supplies               = 500 
    money                  = 10 
    capital                = 1289 
-   manpower               = 4
+   manpower               = 3
    peacetime_ic_mod = 0.6
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 

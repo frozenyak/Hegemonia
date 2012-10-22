@@ -14,7 +14,7 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 100
-  manpower               = 281
+  manpower               = 415
   transports             = 80
   escorts                = 0
   SpyInfo                = { country = "RUS" NumberOfSpies = 6 }
@@ -154,7 +154,7 @@ country =
 		#274 270 
 		275 271 272 273
 		#manchuko
-		1202 1204 1212 1205 1199 1203 1200 1206 1213 1207 1201 1208 1209 1210 1197 1198
+		#1202 1204 1212 1205 1199 1203 1200 1206 1213 1207 1201 1208 1209 1210 1197 1198
 	}
  techapps = {
 	##Air Doctrines##

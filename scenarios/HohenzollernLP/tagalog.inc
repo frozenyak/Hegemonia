@@ -13,7 +13,7 @@ country =
   oil                    = 100
   supplies               = 100
   money                  = 20
-  manpower               = 2
+  manpower               = 8
   transports             = 20
   escorts                = 0  
   capital                = 1565
@@ -78,7 +78,7 @@ country =
   armamentminister       = { type = 9 id = 215004 }
   ministerofsecurity     = { type = 9 id = 215005 }
   ministerofintelligence = { type = 9 id = 215006 }
-  chiefofstaff           = { type = 9 id = 215007 }
+  chiefofstaff           = { type = 9 id = 6181 }
   chiefofarmy            = { type = 9 id = 215008 }
   chiefofnavy            = { type = 9 id = 215009 }
   chiefofair             = { type = 9 id = 215010 }

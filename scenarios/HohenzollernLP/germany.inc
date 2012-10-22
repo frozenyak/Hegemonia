@@ -13,7 +13,7 @@ country =
   oil                    = 1000
   supplies               = 1000
   money                  = 100
-  manpower               = 91
+  manpower               = 184
   transports             = 300
   escorts                = 40
   SpyInfo                = { country = "GER" NumberOfSpies = 5 }
