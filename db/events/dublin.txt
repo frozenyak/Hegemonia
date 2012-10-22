@@ -1358,7 +1358,7 @@ event = {
 	deathdate = { day = 1 month = january year = 1937 }
 
 	action = {
-		name = "We will not ally ourselves with liberals and reactionaries!"
+		name = "We will not ally ourselves with capitalists and reactionaries!"
 		ai_chance = 85
 		command = { type = relation which = VIC value = 25 }
 	}

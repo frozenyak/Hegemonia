@@ -16,6 +16,7 @@
 #7116	Invasion of Austria
 #7117	Lithuanian opportunism
 #7119	SPA took Italy, U00 responds
+#7120	Iberian opportunism VIC
 
 #Set the great war flag
 event = {
@@ -28,6 +29,7 @@ event = {
 			war = { country = SPA country = U00 }
 			war = { country = SPA country = GER }
 		}
+		NOT = { flag = great_war_by_event }
 	}
 
 	name = "The Great War Begins"
@@ -69,7 +71,7 @@ event = {
 	trigger = {
 		NOT = { flag = peace_in_our_time }
 		#OR = {
-			random = 5
+			random = 10
 		#	flag = great_war_by_event
 		#}
 		exists = RUS
@@ -101,10 +103,9 @@ event = {
 	action = {
 		name = "To Moscow!"
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = RUS }
-		command = { type = ai_prepare_war which = RUS }
+		command = { type = war which = RUS }
+		#command = { type = ai_prepare_war which = RUS }
 		#command = { type = dissent value = -5 }
-		command = { type = setflag which = great_war_by_event }
 	}
 	# action = { trigger = { ai = yes }
 		# name = "Perhaps this is a bad idea"
@@ -149,7 +150,7 @@ event = {
 		NOT = { flag = MEX_USA_pact }
 		NOT = { flag = peace_in_our_time }
 		OR = {
-			random = 3
+			random = 6
 			flag = great_war_by_event
 		}
 		NOT = { war = { country = MEX country = USA } }
@@ -182,9 +183,8 @@ event = {
 		name = "We go to war!"
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = MEX }
-		command = { type = ai_prepare_war which = MEX }
-		#command = { type = setflag which = great_war_by_event }
+		command = { type = war which = MEX }
+		#command = { type = ai_prepare_war which = MEX }
 	}
 	action = { trigger = { ai = yes }
 		name = "No, we do not wish war"
@@ -229,7 +229,7 @@ event = {
 		NOT = { flag = MEX_USA_pact }
 		NOT = { flag = peace_in_our_time }
 		OR = {
-			random = 6 #3
+			random = 6
 			flag = great_war_by_event
 		}
 		NOT = { war = { country = MEX country = USA } }
@@ -262,9 +262,8 @@ event = {
 		name = "We go to war!"
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = USA 
-		command = { type = ai_prepare_war which = USA }
-		#command = { type = setflag which = great_war_by_event }
+		command = { type = war which = USA }
+		#command = { type = ai_prepare_war which = USA }
 		command = { trigger = { ai = yes } type = dissent value = -10 }
 	}
 	action = { trigger = { ai = yes }
@@ -312,9 +311,9 @@ event = {
 		NOT = { flag = U00_socialist_peace }
 		NOT = { flag = peace_in_our_time }
 		OR = {
-			random = 2
+			random = 6
 			AND = {
-				year = 1941
+				year = 1940
 				random = 25
 			}
 		}
@@ -346,8 +345,8 @@ event = {
 		name = "We will reclaim what is ours!"
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = U01 }
-		command = { type = ai_prepare_war which = U01 }
+		command = { type = war which = U01 }
+		#command = { type = ai_prepare_war which = U01 }
 	}
 	action = { trigger = { ai = yes }
 		name = "We're not interested in Crete"
@@ -385,7 +384,6 @@ event = {
 		ai_chance = 75
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = alliance which = U01 }
-		command = { type = setflag which = great_war_by_event }
 	}
 	action = {
 		name = "Do nothing"
@@ -402,7 +400,10 @@ event = {
 
 	decision = {
 		exists = U06
-		flag = SPA_intervene_U06
+		OR = {
+			flag = SPA_intervene_U06
+			war = { country = U06 country = VIC }
+		}
 		NOT = { flag = peace_in_our_time }
 		NOT = { war = { country = U06 } }
 		NOT = { alliance = { country = U06 } }
@@ -423,10 +424,13 @@ event = {
 	}
 
 	trigger = {
-		random = 15 #3
+		random = 15 #9
 		exists = U06
 		#local_flag = MOB7
-		flag = SPA_intervene_U06
+		OR = {
+			flag = SPA_intervene_U06
+			war = { country = U06 country = VIC }
+		}
 		NOT = { flag = peace_in_our_time }
 		NOT = { war = { country = U06 } }
 		NOT = { alliance = { country = U06 } }
@@ -445,12 +449,12 @@ event = {
 				NOT = { flag = comintern_league_pact }
 			}
 		}
-		NOT = { dissent = 5 }
+		#NOT = { dissent = 5 }
 		atwar = no
 	}
 
 	name = "Intervention in Occitania"
-	desc = "Occitania's government has been overthrown by communists in a violent coup! To save the Occitanian people from brutal oppression the government has proposed a military intervention."
+	desc = "Occitania's government has been overthrown by communists in a violent coup! To save the Occitanian people, members of the government have proposed a military intervention."
 	style = 1
 	picture = war
 
@@ -462,11 +466,11 @@ event = {
 		name = "Yes, to war!"
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = U06 }
-		command = { type = ai_prepare_war which = U06 }
-		command = { type = setflag which = great_war_by_event }
+		command = { type = war which = U06 }
+		#command = { type = ai_prepare_war which = U06 }
 	}
-	action = { trigger = { ai = yes }
+	action = { 
+		trigger = { ai = yes }
 		name = "No, we do not wish war"
 		ai_chance = 1
 		command = { type = dissent value = 5 } #10
@@ -484,7 +488,7 @@ event = {
 		ai = yes
 		exists = GER
 		NOT = { exists = DFR }
-		random = 5
+		random = 10
 		local_flag = MOB7
 		NOT = { flag = FRA_isolationist }
 		NOT = { flag = peace_in_our_time }
@@ -514,8 +518,8 @@ event = {
 	action = {
 		name = "We will crush them!"
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = GER }
-		command = { type = ai_prepare_war which = GER }
+		command = { type = war which = GER }
+		#command = { type = ai_prepare_war which = GER }
 	}
 }
 
@@ -528,7 +532,7 @@ event = {
 		ai = yes
 		exists = DFR
 		NOT = { exists = GER }
-		random = 5
+		random = 10
 		local_flag = MOB7
 		NOT = { flag = FRA_isolationist }
 		NOT = { flag = peace_in_our_time }
@@ -559,8 +563,8 @@ event = {
 	action = {
 		name = "We will crush them!"
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = DFR }
-		command = { type = ai_prepare_war which = DFR }
+		command = { type = war which = DFR }
+		#command = { type = ai_prepare_war which = DFR }
 	}
 }
 
@@ -571,26 +575,35 @@ event = {
 
 	trigger = {
 		ai = yes
-		atwar = no
+		#atwar = no
 		atwar = LIT
 		exists = LIT
-		random = 5
+		random = 10
 		#local_flag = MOB7
 		OR = {
 			flag = RUS_claim_border
 			flag = RUS_belligerent_LIT
 		}
+		NOT = { flag = RUS_western_peace }
+		NOT = { flag = LIT_peace_east }
 		NOT = { flag = peace_in_our_time }
 		#war = { country = U00 country = LIT }
-		NOT = { war = { country = U00 } }
 		NOT = { war = { country = LIT } }
 		NOT = { alliance = { country = LIT } }
 		NOT = { non_aggression = { country = LIT } }
-		NOT = { puppet = { country = LIT country = RUS } }
+		
+		OR = {
+			NOT = { war = { country = U00 } }
+			AND = { 
+				war = { country = U00 }
+				lost_national = { country = U00 value = 50 }
+			}
+		}
+		
 		NOT = { war = { country = GEO country = U00 } }
+		
 		NOT = { ispuppet = yes }
-		NOT = { flag = RUS_western_peace }
-		NOT = { flag = LIT_peace_east }
+		NOT = { puppet = { country = LIT country = RUS } }
 		# OR = {
 			# NOT = { participant = { country = LIT value = 4 } }
 			# AND = {
@@ -625,7 +638,7 @@ event = {
 			}
 		}
 		month = 3 #4
-		NOT = { month = 7 }
+		NOT = { month = 8 } #7
 		#NOT = { government = democratic }
 		NOT = { dissent = 5 }
 		domestic = { type = interventionism value = 5 }
@@ -643,8 +656,8 @@ event = {
 	action = {
 		name = "We will crush them!"
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = LIT }
-		command = { type = ai_prepare_war which = LIT }
+		command = { type = war which = LIT }
+		#command = { type = ai_prepare_war which = LIT }
 	}
 }
 
@@ -659,9 +672,9 @@ event = {
 		#atwar = no
 		atwar = VIC
 		OR = {
-			random = 5
+			random = 10
 			NOT = { control = { province = 460 data = SPA } }  #Madrid
-			lost_national = { country = SPA value = 25 }
+			lost_national = { country = SPA value = 15 }
 		}
 		NOT = { flag = peace_in_our_time }
 		NOT = { flag = HRE_comintern_pact }
@@ -673,12 +686,18 @@ event = {
 		NOT = { ispuppet = yes }
 		month = 2 #3
 		NOT = { month = 8 }
-		lost_national = { country = SPA value = 5 }
 		NOT = { 
 			control = { province = 440 data = SPA } #Barcelona
 			control = { province = 443 data = SPA } #Bilbao
 		}
 		#government = fascist
+		OR = {
+			NOT = { alliance = { country = LIT } }
+			AND = {
+				NOT = { war = { country = RUS } }
+				alliance = { country = LIT }
+			}
+		}
 	}
 
 	name = AI_EVENT #"France at War"
@@ -691,8 +710,8 @@ event = {
 
 	action = {
 		name = "We will crush them!"
-		command = { type = ai_prepare_war which = VIC }
-		#command = { type = war which = VIC }
+		#command = { type = ai_prepare_war which = VIC }
+		command = { type = war which = VIC }
 	}
 }
 
@@ -716,7 +735,7 @@ event = {
 	}
 
 	trigger = {
-		random = 3
+		random = 9
 		exists = EGY
 		#local_flag = MOB7
 		NOT = { flag = peace_in_our_time }
@@ -742,9 +761,8 @@ event = {
 		name = "We must secure control of Suez by any means!"
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = EGY }
-		command = { type = ai_prepare_war which = EGY }
-		command = { type = setflag which = great_war_by_event }
+		command = { type = war which = EGY }
+		#command = { type = ai_prepare_war which = EGY }
 	}
 	# action = { trigger = { ai = yes }
 		# name = "No, we do not wish war"
@@ -776,7 +794,7 @@ event = {
 	}
 
 	trigger = {
-		random = 10
+		random = 30
 		exists = EGY
 		OR = {
 			war = { country = GER }
@@ -809,9 +827,8 @@ event = {
 		name = "We must secure control of Suez by any means!"
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = EGY }
-		command = { type = ai_prepare_war which = EGY }
-		command = { type = setflag which = great_war_by_event }
+		command = { type = war which = EGY }
+		#command = { type = ai_prepare_war which = EGY 
 	}
 	#action = { trigger = { ai = yes }
 	#	name = "No, we do not wish war"
@@ -852,8 +869,8 @@ event = {
 	action = {
 		name = "We will reclaim what is ours!"
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = U01 }
-		command = { type = ai_prepare_war which = U01 }
+		command = { type = war which = U01 }
+		#command = { type = ai_prepare_war which = U01 }
 	}
 }
 
@@ -880,7 +897,7 @@ event = {
 			flag = RUS_western_peace
 		}
 		OR = {
-			lost_national = { country = SPA value = 20 }
+			lost_national = { country = SPA value = 15 } #20
 			lost_national = { country = U00 value = 15 } #20
 		}
 	}
@@ -901,17 +918,18 @@ event = {
 		lost_national = { country = SPA value = 5 }
 		lost_national = { country = U00 value = 5 }
 		OR = {
-			lost_national = { country = SPA value = 20 }
+			lost_national = { country = SPA value = 15 } #20
 			lost_national = { country = U00 value = 15 } #20
 		}
 	}
 
 	name = "Peace with the League?"
 	desc = "Both us and the League are being hard pressed by Germany. Since we currently lack any active fronts against the League, some of our advisors have suggested approaching them for a ceasefire, so that we can better concentrate our resources against the HRE."
-	style = 1
+	style = 2
+	picture = news_paper
 
 	date = { day = 1 month = january year = 1936 }
-	offset = 20
+	offset = 15 #30
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
@@ -932,7 +950,8 @@ event = {
 
 	name = "Peace with the Union?"
 	desc = "The Union has suggested a ceasefire so that both sides can concentrate their resources against Germany."
-	style = 1
+	style = 2
+	picture = news_paper
 
 	action = {
 		name = "Agree to a ceasefire"
@@ -1005,40 +1024,17 @@ event = {
 		OR = {
 			AND = {
 				NOT = { atwar = U00 }
-				random = 2
+				random = 5
 			}
 			AND = {
 				atwar = U00
-				random = 15
+				random = 30
 			}
 		}
 		OR = {
-			AND = {
-				exists = RSI
-				NOT = { war = { country = RSI } }
-			}
-			AND = {
-				exists = U00
-				owned = { province = 419 data = U00 }
-				NOT = { war = { country = U00 } }
-			}
+			owned = { province = 419 data = RSI }
+			owned = { province = 419 data = U00 }
 		}
-		#OR = {
-		#	NOT = { flag = GER_renounce_ITA }
-		#	participant = { value = 1 }
-		#}
-		OR = {
-			alliance = { country = GER }
-			participant = { value = 1 }
-			participant = { value = 2 }
-		}
-		#NOT = { participant = {value = 3 } }
-		#NOT = { war = { country = U00 } }
-		#NOT = { non_aggression = { country = RSI } }
-		#NOT = { puppet = { country = RSI country = U14 } }
-		NOT = { ispuppet = yes }
-		atwar = no
-		
 		OR = {
 			AND = {
 				participant = { value = 1 }
@@ -1046,11 +1042,21 @@ event = {
 			}
 			AND = {
 				participant = { value = 2 }
+				NOT = { flag = GER_renounce_ITA }
 				NOT = { flag = HRE_comintern_pact }
 			}
 		}
+		#NOT = { participant = {value = 3 } }
+		#NOT = { war = { country = U00 } }
+		#NOT = { non_aggression = { country = RSI } }
+		#NOT = { puppet = { country = RSI country = U14 } }
+		OR = {
+			NOT = { ispuppet = yes }
+			puppet = { country = U14 country = GER }
+		}
+		atwar = no
 		local_flag = MOB7
-		NOT = { dissent = 5 }
+		#NOT = { dissent = 5 }
 	}
 
 	name = "The Italian Liberation War"
@@ -1065,12 +1071,12 @@ event = {
 	action = {
 		name = "To Rome! Attack!"
 		ai_chance = 100
+		command = { trigger = { ai = yes } type = dissent value = -5 }
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { trigger = { exists = RSI } type = war which = RSI }
-		#command = { trigger = { NOT = { exists = RSI } } type = war which = U00 }
-		command = { trigger = { exists = RSI } type = ai_prepare_war which = RSI }
-		command = { trigger = { NOT = { exists = RSI } } type = ai_prepare_war which = U00 }
-		command = { type = setflag which = great_war_by_event }
+		command = { trigger = { exists = RSI } type = war which = RSI }
+		command = { trigger = { NOT = { exists = RSI } } type = war which = U00 }
+		#command = { trigger = { exists = RSI } type = ai_prepare_war which = RSI }
+		#command = { trigger = { NOT = { exists = RSI } } type = ai_prepare_war which = U00 }
 	}
 	action = { trigger = { ai = yes }
 		name = "We don't want war"
@@ -1104,7 +1110,7 @@ event = {
 	}
 	
 	trigger = {
-		random = 5
+		random = 10
 		exists = AUS
 		#local_flag = MOB7
 		#flag = U00_claim_croatia
@@ -1153,8 +1159,8 @@ event = {
 		name = "The reactionaries will fall, to war!"
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = AUS }
-		command = { type = ai_prepare_war which = AUS }
+		command = { type = war which = AUS }
+		#command = { type = ai_prepare_war which = AUS }
 	}
 	# action = { trigger = { ai = yes }
 		# name = "We don't want war"
@@ -1172,21 +1178,30 @@ event = {
 	country = LIT
 
 	trigger = {
-		atwar = no
+		#atwar = no
 		ai = yes
 		exists = RUS
-		random = 5
+		random = 10
+		NOT = { flag = LIT_leaves_HRE }
 		NOT = { flag = peace_in_our_time }
 		#war = { country = U00 country = RUS }
 		#NOT = { war = { country = LIT country = U00 } }
-		NOT = { war = { country = U00 } }
+		
+		OR = {
+			NOT = { war = { country = U00 } }
+			AND = { 
+				war = { country = U00 }
+				lost_national = { country = U00 value = 50 }
+			}
+		}
+		
 		NOT = { war = { country = RUS } }
 		NOT = { alliance = { country = RUS } }
 		NOT = { non_aggression = { country = RUS } }
+		
 		NOT = { puppet = { country = RUS country = LIT } }
-		#domestic = { type = interventionism value = 5 }
 		NOT = { ispuppet = yes }
-		NOT = { flag = LIT_leaves_HRE }
+		
 		OR = {
 			AND = {
 				participant = { value = 2 }
@@ -1200,7 +1215,7 @@ event = {
 			}
 		}
 		month = 3 #4
-		NOT = { month = 7 }
+		NOT = { month = 8 } #7
 		
 		NOT = { flag = RUS_western_peace }
 		NOT = { flag = LIT_peace_east }
@@ -1220,8 +1235,8 @@ event = {
 	action = {
 		name = "We will crush them!"
 		command = { type = domestic which = interventionism value = 1 }
-		#command = { type = war which = RUS }
-		command = { type = ai_prepare_war which = RUS }
+		command = { type = war which = RUS }
+		#command = { type = ai_prepare_war which = RUS }
 	}
 }
 
@@ -1267,7 +1282,43 @@ event = {
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
-		#command = { type = war which = SPA }
-		command = { type = ai_prepare_war which = SPA }
+		command = { type = war which = SPA }
+		#command = { type = ai_prepare_war which = SPA }
+	}
+}
+
+
+#Iberian opportunism VIC
+event = {
+	id = 7120
+	country = SPA
+
+	trigger = {
+		ai = yes
+		exists = VIC
+		war = { country = GER country = VIC }
+		lost_national = { country = GER value = 25 }
+		NOT = { control = { province = 138 data = GER } }  #Frankfurt
+		NOT = { flag = peace_in_our_time }
+		NOT = { flag = comintern_league_pact }
+		NOT = { war = { country = VIC } }
+		NOT = { alliance = { country = VIC } }
+		NOT = { non_aggression = { country = VIC } }
+		NOT = { ispuppet = yes }
+		atwar = no
+	}
+
+	name = AI_EVENT
+	style = 1
+	picture = war
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "We will crush them!"
+		command = { trigger = { ai = yes } type = dissent value = -5 }
+		command = { type = war which = VIC }
 	}
 }

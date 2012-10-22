@@ -1,9 +1,9 @@
-###56000-56999###
+###56000-56899###
 #56024 elections
 #56070 Fate of Ukraine
 #56075 partition of georgia
 #56085 diplomatic offensive
-#
+
 event = {
 	id = 56008
 	country = RUS
@@ -978,289 +978,6 @@ event = {
 	}
 }
 
-event = {
-	id = 56033
-	country = RUS
-
-	trigger = {
-		#war = { country = GER }
-		war = { country = LIT }
-		# OR = {
-			# control = { province = 572 data = LIT }
-			# AND = {
-				# control = { province = 572 data = FIN }
-				# alliance = { country = FIN }
-			# }
-			# AND = {
-				# control = { province = 572 data = GER }
-				# alliance = { country = LIT }
-			# }
-			# AND = {
-				# control = { province = 572 data = SCA }
-				# alliance = { country = SCA }
-			# }
-		# }
-		NOT = { control = { province = 572 } } #Moscow
-		NOT = { control = { province = 576 } } #Kaluga
-		#NOT = { control = { province = 676 } } #Rybnsk
-		#NOT = { control = { province = 542 } } #arkangelsk
-		OR = {
-			NOT = { control = { province = 663 } } #Stalingrad
-			NOT = { control = { province = 668 } } #Kujbysev
-		}
-		NOT = { control = { province = 553 } }
-	}
-
-	name = "Peace in the West"
-	desc = "Our western front has collapsed and the Lithuanians have seized control of all our major industrial centers in the region. Perhaps it would be best to cut our losses and sue for peace? The Lithuanian Czar has suggested they would accept peace in exchange for regions of Western and Southern Russia."
-	style = 2
-	picture = "news_paper"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 30
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		name = "Very well, sue for peace"
-		ai_chance = 95
-		command = { type = trigger which = 44015 }
-	}
-	action = {
-		name = "No peace with the Lithuanians!"
-		ai_chance = 5
-		command = { type = dissent value = 5 }
-	}
-}
-
-event = {
-	id = 56035
-	country = RUS
-
-	name = "Peace with Lithuania"
-	desc = "Lithuania has agreed to our peace offer and we must now cede the territories agreed on."
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "ACTION_NAME_OK"
-		command = { trigger = { alliance = { country = GER country = LIT } } type = peace which = GER value = 1 }
-		command = { trigger = { alliance = { country = GER country = LIT } } type = non_aggression which = GER where = RUS }
-		command = { trigger = { NOT = { alliance = { country = GER country = LIT } } } type = peace which = LIT value = 1 }
-		command = { trigger = { NOT = { alliance = { country = GER country = LIT } } } type = non_aggression which = LIT where = RUS }
-
-		command = { type = secederegion which = LIT value = "Western Russia" when = 1 }
-		command = { type = secederegion which = LIT value = "Southern Russia" when = 1 }
-		command = { trigger = {exists = GEO } type = secederegion which = GEO value = "Kaukasus" when = 1 }
-		command = { trigger = { NOT = { exists = GEO } } type = secederegion which = LIT value = "Kaukasus" when = 1 }
-		command = { type = construct which = land_fort where = 553 value = -10 }
-		command = { trigger = { alliance = { country = FIN country = LIT } } type = secedeprovince which = FIN value = 553 }
-		command = { trigger = { alliance = { country = FIN country = GER } } type = secedeprovince which = FIN value = 553 }
-		command = { type = secedearea which = LIT value = "Estonia" when = 1 }
-
-		command = { type = relation which = SPA value = -200 }
-		command = { type = relation which = ENG value = -200 }
-		command = { type = leave_alliance }
-		command = { type = setflag which = RUS_western_peace }
-	}
-}
-
-event = {
-	id = 56037
-	country = RUS
-	persistent = yes
-
-	trigger = {
-		flag = RUS_western_peace
-		#NOT = { flag = RUS_way_forward }
-		OR = {
-			war = { country = JAP }
-			war = { country = U00 }
-		}
-		NOT = { local_flag = RUS_way_forward_japan }
-		NOT = { local_flag = RUS_way_forward_union }
-	}
-
-	name = "The Way Forward"
-	desc = "With our defeat in the west we have lost both much in terms of industry and national spirit. Perhaps it would be best to seek peace with our other enemies and let the nation rebuild?"
-	style = 2
-	picture = "news_paper"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 30
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		trigger = {
-			war = { country = JAP }
-			war = { country = U00 }
-		}
-		name = "Seek peace with Japan and the Union"
-		ai_chance = 50
-		command = { type = trigger which = 42015 }
-		command = { type = trigger which = 55039 }
-		command = { type = setflag which = RUS_way_forward }
-		command = { type = local_setflag which = RUS_way_forward_japan }
-		command = { type = local_setflag which = RUS_way_forward_union }
-	}
-	action = { trigger = { war = { country = U00 } }
-		name = "Seek peace with the Union"
-		ai_chance = 35
-		command = { type = trigger which = 55039 }
-		command = { type = setflag which = RUS_way_forward }
-		command = { type = local_setflag which = RUS_way_forward_union }
-	}
-	action = { trigger = { war = { country = JAP } }
-		name = "Seek peace with Japan"
-		ai_chance = 10
-		command = { type = trigger which = 42015 }
-		command = { type = setflag which = RUS_way_forward }
-		command = { type = local_setflag which = RUS_way_forward_japan }
-	}
-	action = {
-		name = "No peace!"
-		ai_chance = 5
-		command = { type = dissent value = 2 }
-		command = { type = setflag which = RUS_way_forward }
-		command = { type = local_setflag which = RUS_way_forward_union }
-		command = { type = local_setflag which = RUS_way_forward_japan }
-	}
-}
-
-event = {
-	id = 56038
-	country = RUS
-
-	name = "Peace with Japan"
-	desc = "Japan has agreed to our offer of separate peace."
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "ACTION_NAME_OK"
-		command = { type = peace which = JAP value = 1 }
-		command = { type = non_aggression which = JAP where = RUS }
-		command = { type = dissent value = -5 }
-	}
-}
-
-event = {
-	id = 56039
-	country = RUS
-
-	name = "Japan Refuses Peace"
-	desc = "Japan has refused our offer of separate peace."
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "Drat!"
-		#command = { type = dissent value = 5 }
-	}
-}
-
-event = {
-	id = 56040
-	country = RUS
-
-	name = "Peace with the Union"
-	desc = "The Union has agreed to our offer of separate peace."
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "ACTION_NAME_OK"
-		command = { type = peace which = U00 value = 1 }
-		command = { type = non_aggression which = U00 where = RUS }
-		command = { type = dissent value = -5 }
-	}
-}
-
-event = {
-	id = 56041
-	country = RUS
-
-	name = "The Union Refuses Peace"
-	desc = "The Union has refused our offer of separate peace."
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "Drat!"
-		command = { type = dissent value = 1 }
-	}
-}
-
-event = {
-	id = 56044
-	country = RUS
-
-	name = "Peace with Japan?"
-	desc = "Japan has defeated us soundly in Manchuria and now demands our Chinese possessons. The pacific coast with Vladivostok would still say with us. The territory is mostly useless to us and would be no great loss."
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "Very well, accept the offer"
-		ai_chance = 95
-		command = { type = peace which = JAP value = 1 }
-		command = { type = non_aggression which = JAP where = RUS }
-		command = { type = secederegion which = JAP value = "China" when = 1 }
-		command = { type = secederegion which = JAP value = "Korea" when = 1 }
-		command = { type = trigger which = 42021 }
-		command = { type = setflag which = RUS_eastern_peace }
-	}
-	action = {
-		name = "No peace with the Japanese"
-		ai_chance = 5
-		command = { type = dissent value = 5 }
-	}
-}
-
-event = {
-	id = 56045
-	country = RUS
-
-	name = "Peace with Japan"
-	desc = "Japan has defeated us soundly in the far east and asks for our Chinese possessons and the pacific coast with Vladivostok."
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "ACTION_NAME_OK"
-		command = { type = peace which = JAP value = 1 }
-		command = { type = non_aggression which = JAP where = RUS }
-		command = { type = secedearea which = JAP value = "Khabarovsk" when = 1 }
-		command = { type = secedearea which = JAP value = "Kamchatka" when = 1 }
-		command = { type = secedearea which = JAP value = "Primorski" when = 1 }
-		command = { type = secederegion which = JAP value = "China" when = 1 }
-		command = { type = secederegion which = JAP value = "Korea" when = 1 }
-		command = { type = secedeprovince which = JAP value = 1190 }
-		command = { type = secedeprovince which = JAP value = 1185 }
-		command = { type = setflag which = RUS_eastern_peace }
-	}
-}
-
-event = {
-	id = 56046
-	country = RUS
-
-	name = "Peace with Japan?"
-	desc = "Japan has approached us about suing for peace, offering up Korea and Sakhalin."
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "Accept the peace offer"
-		ai_chance = 75
-		command = { type = relation which = JAP value = 200 }
-		command = { type = trigger which = 42019 }
-	}
-	action = {
-		name = "No peace with the Japanese!"
-		ai_chance = 25
-		command = { type = relation which = JAP value = -100 }
-	}
-}
 
 # event = {
 	# id = 56050
@@ -1311,96 +1028,6 @@ event = {
 		# #command = { type = dissent value = 10 }
 	# }
 # }
-
-event = {
-	id = 56051
-	country = RUS
-
-	name = "Peace with Lithuania"
-	desc = "The Czar has offered peace; offering to withdraw from the HRE and give in to our territorial claims."
-	style = 2
-	picture = "news_paper"
-
-	action = { trigger = { NOT = { flag = RUS_belligerent_LIT } }
-		name = "Agree to the peace offer"
-		ai_chance = 95
-		command = { type = relation which = LIT value = 200 }
-		command = { type = trigger which = 44021 }
-	}
-	action = { trigger = { NOT = { flag = RUS_belligerent_LIT } }
-		name = "No peace with the Lithuanians!"
-		ai_chance = 5
-		command = { type = dissent value = 5 }
-	}
-	
-	action = { trigger = { flag = RUS_belligerent_LIT }
-		name = "No peace with the Lithuanians!"
-		ai_chance = 70
-		command = { type = dissent value = 5 }
-	}
-	action = { trigger = { flag = RUS_belligerent_LIT }
-		name = "Agree to the peace offer"
-		ai_chance = 30
-		command = { type = relation which = LIT value = 200 }
-		command = { type = trigger which = 44021 }
-	}
-}
-
-event = {
-	id = 56052
-	country = RUS
-
-	name = "Peace with Lithuania"
-	desc = "The Czar has offered peace; offering to withdraw from the HRE, give in to our territorial claims, and free the Ukraine."
-	style = 2
-	picture = "news_paper"
-
-	action = { trigger = { NOT = { flag = RUS_belligerent_LIT } }
-		name = "Agree to the peace offer"
-		ai_chance = 90
-		command = { type = relation which = LIT value = 200 }
-		command = { type = trigger which = 44022 }
-	}
-	action = { trigger = { NOT = { flag = RUS_belligerent_LIT } }
-		name = "No peace with the Lithuanians!"
-		ai_chance = 10
-		command = { type = dissent value = 5 }
-	}
-	
-	action = { trigger = { flag = RUS_belligerent_LIT }
-		name = "No peace with the Lithuanians!"
-		ai_chance = 50
-		command = { type = dissent value = 5 }
-	}
-	action = { trigger = { flag = RUS_belligerent_LIT }
-		name = "Agree to the peace offer"
-		ai_chance = 50
-		command = { type = relation which = LIT value = 200 }
-		command = { type = trigger which = 44022 }
-	}
-}
-
-event = {
-	id = 56054
-	country = RUS
-
-	name = "Peace with Lithuania"
-	desc = "The Czar has offered peace; offering to withdraw from the HRE, give in to our territorial claims free the Ukraine, and even abdicate!"
-	style = 2
-	picture = "news_paper"
-
-	action = {
-		name = "Agree to the peace offer"
-		ai_chance = 99
-		command = { type = relation which = LIT value = 200 }
-		command = { type = trigger which = 44022 }
-	}
-	action = {
-		name = "No peace with the Lithuanians!"
-		ai_chance = 1
-		command = { type = dissent value = 5 }
-	}
-}
 
 event = {
 	id = 56055
@@ -1462,8 +1089,8 @@ event = {
 
 	decision_trigger = {
 		region = { region = "Ukraine" data = 2 }
-		NOT = { war = { country = LIT } }
-		NOT = { war = { country = ROM } }
+		#NOT = { war = { country = LIT } }
+		#NOT = { war = { country = ROM } }
 		#atwar = no
 	}
 	
@@ -1472,9 +1099,14 @@ event = {
 		region = { region = "Ukraine" data = 2 }
 		NOT = { war = { country = LIT } }
 		NOT = { war = { country = ROM } }
-		NOT = { war = { country = U00 } }
-		#atwar = no
-		NOT = { war = { country = U00 } }
+		OR = {
+			NOT = { war = { country = U00 } }
+			region = { region = "Balkan" country = -3 }
+		}
+		OR = {
+			NOT = { war = { country = GEO } }
+			region = { region = "Kaukasus" country = -3 value = 70 }
+		}
 	}
 
 	name = "The Fate of the Ukraine"
@@ -1513,8 +1145,8 @@ event = {
 	decision_trigger = {
 		area = { area = "Warsaw" data = 2 }
 		area = { area = "Krakow" data = 2 }
-		NOT = { war = { country = LIT } }
-		NOT = { war = { country = AUS } }
+		#NOT = { war = { country = LIT } }
+		#NOT = { war = { country = AUS } }
 		#atwar = no
 	}
 	

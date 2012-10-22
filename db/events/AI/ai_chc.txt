@@ -18,13 +18,13 @@ event = {
 
 	trigger = {
 		ai = yes
-		war = { country = CHC country = JAP }
-		alliance = { country = CHI country = CHC }
+		war = { country = JAP }
+		alliance = { country = CHC }
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 2
 	deathdate = { day = 29 month = december year = 1963 }
 
 	name = "AI_EVENT"
@@ -50,8 +50,8 @@ event = {
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 6
 	deathdate = { day = 29 month = december year = 1963 }
 
 	name = "AI_EVENT"
@@ -74,8 +74,8 @@ event = {
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 6
 	deathdate = { day = 29 month = december year = 1963 }
 
 	name = "AI_EVENT"
@@ -98,7 +98,7 @@ event = {
 	trigger = {
 		ai = yes
 		NOT = { local_flag = CHCAttackJAP }
-		war = { country = JAP country = CHC }
+		war = { country = JAP }
 		OR = {
 			war = { country = JAP country = SOV }
 			lost_national = { country = CHI value = 40 }
@@ -107,7 +107,7 @@ event = {
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -127,14 +127,14 @@ event = {
 	trigger = {
 		ai = yes
 		local_flag = CHCAttackJAP
-		NOT = { war = { country = JAP country = CHC } }
+		NOT = { war = { country = JAP } }
 		NOT = { war = { country = JAP country = SOV } }
 		NOT = { lost_national = { country = CHI value = 40 } }
 		NOT = { lost_national = { country = CHC value = 1 } }
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -155,11 +155,11 @@ event = {
 
 	trigger = {
 		ai = yes
-		war = { country = JAP country = CHC }
+		war = { country = JAP }
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 3
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -180,17 +180,17 @@ event = {
 	trigger = {
 		ai = yes		
 		OR = {
-			war = { country = MAN country = CHC }
-			war = { country = MEN country = CHC }
-			war = { country = CGX country = CHC }
-			war = { country = U87 country = CHC }
-			war = { country = VIE country = CHC }
+			war = { country = MAN }
+			war = { country = MEN }
+			war = { country = CGX }
+			war = { country = U87 }
+			war = { country = VIE }
 		}
-		NOT = { war = { country = JAP country = CHC } }
+		NOT = { war = { country = JAP } }
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1970 }
 

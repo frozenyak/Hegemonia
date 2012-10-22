@@ -1,11 +1,58 @@
-#############################################
-# Regular AI Events
-#############################################
-# Behavior Flags
 
-# Invade Flags
-#	CGXInvadeCHI		= Invade China
-#	CGXAttackJAP		= Flag turned on means they are free to attack at will
+################
+# Concentrate on upgrading while at peace
+#############################################
+event = {
+	id = 3118009
+	random = no
+	country = CGX
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { local_flag = UPGPeace }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_Peace.ai" }
+		command = { type = local_setflag which = UPGPeace }
+	}
+}
+event = {
+	id = 3118010
+	random = no
+	country = CGX
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = UPGPeace
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_War.ai" }
+		command = { type = local_clrflag which = UPGPeace }
+	}
+}
+################
 # Guangxi Clique allies with China AI vs Japan
 #############################################
 event = {
@@ -21,7 +68,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -45,7 +92,7 @@ event = {
 	trigger = {
 		ai = yes
 		NOT = { local_flag = CGXAttackJAP }
-		war = { country = JAP country = CGX }
+		war = { country = JAP }
 		OR = {
 			lost_national = { country = CHI value = 50 }
 			lost_national = { country = CGX value = 1 }
@@ -53,7 +100,7 @@ event = {
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -73,13 +120,13 @@ event = {
 	trigger = {
 		ai = yes
 		local_flag = CGXAttackJAP
-		NOT = { war = { country = JAP country = CGX } }
+		NOT = { war = { country = JAP } }
 		NOT = { lost_national = { country = CHI value = 50 } }
 		NOT = { lost_national = { country = CGX value = 1 } }
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -100,7 +147,7 @@ event = {
 	
 	trigger = {
 		ai = yes
-		war = { country = CGX country = JAP }
+		war = { country = JAP }
 		OR = {
 			event = 3011002
 			event = 2011025
@@ -111,7 +158,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -129,18 +176,18 @@ event = {
 	
 	trigger = {
 		ai = yes
-		war = { country = JAP country = CGX }
-		alliance = { country = CHI country = CGX }
+		war = { country = JAP }
+		alliance = { country = CHI }
 	}
 
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		#command = { type = ai which = "switch/Ferocity_Yes.ai" }
+		command = { type = ai which = "switch/Ferocity_Yes.ai" }
 	}
 }

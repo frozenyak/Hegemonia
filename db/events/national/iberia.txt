@@ -1,4 +1,4 @@
-###38000-38999###
+###38000-38899###
 #38022 suez
 #38028 OLF coup
 #38035 lombard proposal
@@ -383,7 +383,7 @@ event = {
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = domestic which = defense_lobby value = 1 }
 		command = { type = setflag which = SPA_intervene_U06 }
-		command = { type = ai_prepare_war which = U06 }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = U06 }
 	}
 	action = {
 		name = "It's best not to provoke France"
@@ -415,7 +415,7 @@ event = {
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = domestic which = defense_lobby value = 1 }
 		command = { type = setflag which = SPA_intervene_U06 }
-		command = { type = ai_prepare_war which = U06 }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = U06 }
 	}
 }
 
@@ -441,7 +441,7 @@ event = {
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = domestic which = defense_lobby value = 1 }
 		command = { type = setflag which = SPA_intervene_U06 }
-		command = { type = ai_prepare_war which = U06 }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = U06 }
 	}
 }
 
@@ -601,8 +601,6 @@ event = {
 	}
 
 	decision_trigger = {
-		NOT = { war = { country = VIC } }
-		NOT = { war = { country = GER } }
 		area = { area = "Netherlands" }
 	}
 
@@ -650,30 +648,19 @@ event = {
 	}
 
 	decision_trigger = {
-		OR = {
-			AND = {
-				NOT = { war = { country = GER } }
-				owned = { province = 55 data = SPA }
-			}
-			AND = {
-				area = { area = "Loire" }
-				area = { area = "Brittany" }
-				area = { area = "Normandy" }
-				area = { area = "Pas de Calais" }
-				area = { area = "Bourgogne_Champagne" }
-				area = { area = "Paris" }
-			}
-		}
+		area = { area = "Loire" }
+		area = { area = "Brittany" }
+		area = { area = "Normandy" }
+		area = { area = "Pas de Calais" }
+		area = { area = "Bourgogne_Champagne" }
+		area = { area = "Paris" }
 	}
 
 	trigger = {
 		NOT = { exists = FRA }
 		NOT = { exists = VIC }
 		OR = {
-			AND = {
-				NOT = { war = { country = GER } }
-				owned = { province = 55 data = SPA }
-			}
+			owned = { province = 55 data = -3 } #SPA
 			AND = {
 				area = { area = "Loire" }
 				area = { area = "Brittany" }
@@ -683,6 +670,8 @@ event = {
 				area = { area = "Paris" }
 			}
 		}
+		NOT = { war = { country = GER } }
+		NOT = { war = { country = DFR } }
 	}
 
 	name = "The Fate of France"
@@ -711,33 +700,20 @@ event = {
 
 	decision = {
 		NOT = { exists = U06 }
-		control = { province = 68 data = -1 }
+		control = { province = 68 data = -3 }
 	}
 
 	decision_trigger = {
-		OR = {
-			AND = {
-				NOT = { war = { country = GER } }
-				NOT = { war = { country = VIC } }
-				owned = { province = 68 data = SPA }
-			}
-			AND = {
-				area = { area = "Pyrenees_Languedoc" value = 80 }
-				area = { area = "Limousin_Auvergne" value = 60 }
-				area = { area = "Alpes_Provence" value = 80}
-				area = { area = "Aquitaine" }
-			}
-		}
+		area = { area = "Pyrenees_Languedoc" value = 80 }
+		area = { area = "Limousin_Auvergne" value = 60 }
+		area = { area = "Alpes_Provence" value = 80}
+		area = { area = "Aquitaine" }
 	}
 
 	trigger = {
 		NOT = { exists = U06 }
 		OR = {
-			AND = {
-				NOT = { war = { country = GER } }
-				NOT = { war = { country = VIC } }
-				owned = { province = 68 data = SPA }
-			}
+			owned = { province = 68 data = -3 } #SPA
 			AND = {
 				area = { area = "Pyrenees_Languedoc" value = 80 }
 				area = { area = "Limousin_Auvergne" value = 60 }
@@ -745,6 +721,10 @@ event = {
 				area = { area = "Aquitaine" }
 			}
 		}
+		NOT = { war = { country = GER } }
+		NOT = { war = { country = DFR } }
+		NOT = { war = { country = VIC } }
+		NOT = { war = { country = FRA } }
 	}
 
 	name = "The Fate of Occitania"

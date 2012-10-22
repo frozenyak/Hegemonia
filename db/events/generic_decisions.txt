@@ -1,7 +1,7 @@
 #9000000-3	start/stop/apply winter equip
 #9000004-6	start/stop/apply jungle equip
 #9000007-9	start/stop/apply desert equip
-#90000010-12	start/stop/apply sturdy equip
+#9000010-12	start/stop/apply sturdy equip
 #9000021	public works
 #9000040	public works pt II
 #9000022	issue currency
@@ -228,6 +228,7 @@ event = { #start jungleequip production
 				#country = PAR
 				country = CON
 				country = U08
+				country = PHI
 			}
 		NOT = {
 			OR = {
@@ -293,6 +294,7 @@ event = { #stop jungleequip production
 				#country = PAR
 				country = CON
 				country = U08
+				country = PHI
 			}
 		OR = {
 			resource_shortage = supplies
@@ -386,6 +388,7 @@ event = { #start desertequip production
 				#country = U00
 				country = ARA
 				#country = U07
+				#country = TUR
 			}
 		NOT = {
 			OR = {
@@ -446,7 +449,8 @@ event = { #stop desertequip production
 				country = EGY
 				#country = U00
 				country = ARA
-				country = U07
+				#country = U07
+				#country = TUR
 			}
 		OR = {
 			resource_shortage = supplies

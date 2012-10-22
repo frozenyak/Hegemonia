@@ -1,0 +1,86 @@
+###54900-54999###
+#switching sides
+
+event = {
+	id = 54900
+	country = ROM
+
+	name = EVT_60_NAME
+	desc = "The Union has taken most of our territory!"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = U00 }
+		#war = { country = U00 country = GER }
+		OR = {
+			AND = {
+				control = { province = 291 data = U00 } #sibiu
+				#control = { province = 309 data = U00 } #braila
+				control = { province = 311 data = U00 } #Ploesti
+				control = { province = 316 data = U00 } #bucharest
+				control = { province = 307 data = U00 } #dobrich
+			}
+			lost_national = { country = ROM value = 40 }
+		}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action = {
+		name = "Surrender!"
+		ai_chance = 95
+		command = { type = end_puppet }
+		command = { type = set_relation which = U00 value = 50 }
+		#command = { type = set_relation which = GER value = -50 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = trigger which = 54901 }
+		command = { type = headofstate which = 110077 }
+		command = { type = headofgovernment which = 110028 }
+		command = { type = foreignminister which = 110046 }
+		command = { type = armamentminister which = 110062 }
+		command = { type = ministerofsecurity which = 110076 }
+		command = { type = ministerofintelligence which = 110085 }
+		command = { type = chiefofstaff which = 110095 }
+		command = { type = chiefofarmy which = 110105 }
+		command = { type = chiefofnavy which = 110111 }
+		command = { type = chiefofair which = 110116 }
+	}
+	action = {
+		name = "Keep Fighting!"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 54901
+	country = U00
+
+	name = EVT_63_NAME
+	desc = "Roumania is ready to surrender and become our client state!"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_63_ACTA
+		#command = { type = addcore which = 307 }
+		#command = { type = addcore which = 310 }
+		command = { type = make_puppet which = ROM }
+		command = { type = coup_nation which = ROM }
+		command = { type = alliance which = ROM }
+		command = { type = money value = 500 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Destroy them"
+		command = { type = dissent value = 1 }
+	}
+}
+

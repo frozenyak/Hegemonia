@@ -1,0 +1,161 @@
+##62900-62999
+#62900 peace jap
+
+event = {
+	id = 62900
+	country = ENG
+	
+	decision = {
+		war = { country = JAP }
+		OR = {
+			NOT = { war = { country = JAP country = CHI } }
+			NOT = { war = { country = JAP country = CYN } }
+		}
+		OR = {
+			NOT = { alliance = { country = ENG country = RUS } }
+			#NOT = { alliance = { country = ENG country = UAU } }
+			flag = RUS_eastern_peace
+		}
+		#NOT = { flag = great_war_by_event }
+		NOT = { war = { country = JAP country = MEX } }
+	}
+	decision_trigger = {
+		NOT = { region = { region = "China" country = ENG } }
+		NOT = { exists = KOR }
+	}
+	
+	trigger = {
+		war = { country = JAP }
+		OR = {
+			NOT = { war = { country = JAP country = CHI } }
+			NOT = { war = { country = JAP country = CYN } }
+		}
+		OR = {
+			NOT = { alliance = { country = ENG country = RUS } }
+			#NOT = { alliance = { country = ENG country = UAU } }
+			flag = RUS_eastern_peace
+		}
+		NOT = { region = { region = "China" country = ENG } }
+		NOT = { exists = KOR }
+		random = 25
+		#NOT = { flag = great_war_by_event }
+		NOT = { war = { country = JAP country = MEX } }
+		NOT = { participant = { country = JAP value = 4 } }
+	}
+	
+	name = "Peace with Japan?"
+	desc = "Japan taken all of our posessions in China. Without Russian aid it is unlikely they will be able to retake them. It might be best to just let them go and concentrate on more important areas."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }	
+
+	action = {
+		name = "Send the peace offer"
+		ai_chance = 95
+		command = { type = relation which = JAP value = 200 }
+		command = { type = trigger which = 62901 }
+	}
+	action = { trigger = { ai = yes }
+		name = "No peace with the Japanese!"
+		ai_chance = 5
+		command = { type = relation which = JAP value = -100 }
+	}
+}
+
+event = {
+	id = 62901
+	country = JAP
+	
+	name = "Peace with Great Britain?"
+	desc = "Great Britain sued for peace, offering up all their Chinese posessions and Korea."
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "Accept the peace offer"
+		command = { type = trigger which = 62902 }
+	}
+	action = {
+		name = "No peace with the British!"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 62902
+	country = ENG
+
+	name = "Peace with Japan!"
+	desc = "Japan has has agreed to our peace offer and we must now cede the territories agreed on."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		#liaoning
+		command = { type = removeclaim which = 1214 }
+		command = { type = removeclaim which = 1215 }
+		command = { type = removeclaim which = 1216 }
+		command = { type = removeclaim which = 1217 }
+		command = { type = removeclaim which = 1218 }
+		command = { type = removeclaim which = 1219 }
+		command = { type = removeclaim which = 1220 }
+		#taiwan
+		command = { type = removeclaim which = 1361 }
+		command = { type = removeclaim which = 1362 }
+		command = { type = removeclaim which = 1363 }
+		command = { type = removeclaim which = 1364 }
+		#jilin
+		command = { type = removeclaim which = 1211 }
+		#
+		command = { type = secederegion which = JAP value = "China" when = 1 }
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		
+		command = { type = peace which = JAP value = 0 }
+		command = { type = non_aggression which = JAP where = ENG }
+		#
+		command = { type = trigger which = 62903 }
+	}
+}
+
+event = {
+	id = 62903
+	country = JAP
+
+	name = "Victory over Great Britain!"
+	desc = "It is time to celebrate!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		ai_chance = 100
+		command = { type = belligerence which = JAP value = -10 }
+		command = { type = dissent value = -5 }
+		#korea
+		command = { type = addcore which = 1228 }
+		command = { type = addcore which = 1229 }
+		command = { type = addcore which = 1233 }
+		command = { type = addcore which = 1232 }
+		command = { type = addcore which = 1231 }
+		command = { type = addcore which = 1230 }
+		command = { type = addcore which = 1223 }
+		command = { type = addcore which = 1221 }
+		command = { type = addcore which = 1222 }
+		command = { type = addcore which = 1226 }
+		command = { type = addcore which = 1227 }
+		command = { type = addcore which = 1224 }
+		command = { type = addcore which = 1225 }
+		#port arthur
+		command = { type = addclaim which = 1219 }
+		#taiwan
+		command = { type = addclaim which = 1361 }
+		command = { type = addclaim which = 1362 }
+		command = { type = addclaim which = 1363 }
+		command = { type = addclaim which = 1364 }
+	}
+}

@@ -1,4 +1,4 @@
-###30000-30999###
+###30000-30899###
 
 event = {
 	id = 30001
@@ -467,49 +467,5 @@ event = {
 		command = { type = dissent value = 5 }
 		command = { type = domestic which = interventionism value = -2 }
 		command = { type = relation which = SOM value = 50 }
-	}
-}
-
-event = {
-	id = 30013
-	country = EGY
-	trigger = {
-		event = 30012
-		war = { country = EGY country = SOM }
-		lost_national = { country = EGY value = 50 }
-		control = { province = 810 data = SOM }
-	}
-
-	name = "The Ulema Revolt is Victorious"
-	desc = "We have been unable to defeat the rebellious armies of Somalia and they now control much of our country, including the southern capital of Khartoum. There is little will among our people to continue the fight - perhaps we should sue for peace?"
-	style = 1
-
-	date = { day = 8 month = august year = 1937 }
-	offset = 3
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		name = "Sue for peace"
-		ai_chance = 95
-		command = { type = trigger which = 58002 }
-	}
-	action = {
-		name = ACTION_NAME_NEVER
-		ai_chance = 5
-		command = { type = dissent value = 10 }
-	}
-}
-
-event = {
-	id = 30014
-	country = EGY
-
-	name = "Peace with Somalia"
-	desc = "We have signed peace with Somalia, recognizing their independence and ceding lands along our border."
-	style = 1
-	action = {
-		name = "How humiliating!"
-		command = { type = peace which = SOM }
-		command = { type = secederegion which = SOM value = "Ethiopia" }
 	}
 }

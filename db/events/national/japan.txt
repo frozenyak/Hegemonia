@@ -34,10 +34,8 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 15
 		command = { type = domestic which = interventionism value = 2 }
-		command = { trigger = { ai = no } type = war which = CYN }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = CYN }
-		command = { trigger = { ai = no } type = war which = CHI }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = CHI }
+		command = { type = war which = CYN }
+		command = { type = war which = CHI }
 		command = { type = dissent value = -5 }
 		#treaty ports
 		command = { type = addclaim which = 1338 }
@@ -118,17 +116,15 @@ event = {
 	picture = "Japan_Invasion"
 	
 	date = { day = 1 month = january year = 1936 }
-	offset = 13
+	offset = 39 #13
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = ACTION_NAME_FIGHT
-		ai_chance = 95
+		ai_chance = 94
 		command = { type = domestic which = interventionism value = 1 }
-		command = { trigger = { ai = no } type = war which = CYN }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = CYN }
-		command = { trigger = { ai = no } type = war which = CHI }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = CHI }
+		command = { type = war which = CYN }
+		command = { type = war which = CHI }
 		command = { type = dissent value = -5 }
 		command = { type = local_clrflag which = JAP_war1_no }
 		#treaty ports
@@ -147,38 +143,12 @@ event = {
 		#command = { type = domestic which = interventionism value = -1 }
 		command = { type = local_clrflag which = JAP_war1_no }
 	}
-}
-
-event = {
-	id = 42002
-	country = JAP
-	
-	trigger = {
-		ai = yes
-		local_flag = JAP_war1_no
-		atwar = no
-		random = 25
-		NOT = {
-			event = 2011018
-		}
-		exists = KOR
-	}
-
-	name = "The Korean Question"
-	desc = "Korea has many natural resources we need, and a successful conquest would give us an ideal jump off point to extend into China proper. The question is whether we are ready to dare engage the League."
-	style = 1
-	picture = "Japan_Invasion"
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		name = ACTION_NAME_FIGHT
-		ai_chance = 99
+	action = { trigger = { ai = yes }
+		name = "Attack Korea instead"
+		ai_chance = 1
+		command = { type = local_clrflag which = JAP_war1_no }
 		command = { type = domestic which = interventionism value = 1 }		
-		command = { trigger = { ai = no } type = war which = KOR }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = KOR }
+		command = { type = war which = KOR }
 		#korea
 		command = { type = addcore which = 1228 }
 		command = { type = addcore which = 1229 }
@@ -203,14 +173,8 @@ event = {
 		#
 		command = { type = ai which = "switch/ferocity_yes.ai" }
 	}
-	action = { trigger = { ai = yes }
-		name = "We do not wish war with the League"
-		ai_chance = 1
-		#command = { trigger = { ai = yes } type = dissent value = 5 }
-		#command = { trigger = { ai = no } type = dissent value = 10 }
-		#command = { type = domestic which = interventionism value = -2 }
-	}
 }
+
 event = {
 	id = 42003
 	country = JAP
@@ -261,15 +225,14 @@ event = {
 	picture = "Japan_Invasion"
 	
 	date = { day = 1 month = january year = 1936 }
-	offset = 60
+	offset = 30
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }		
-		command = { trigger = { ai = no } type = war which = KOR }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = KOR }
+		command = { type = war which = KOR }
 		#korea
 		command = { type = addcore which = 1228 }
 		command = { type = addcore which = 1229 }
@@ -406,7 +369,7 @@ event = {
 			AND = {
 				owned = { province = 1395 data = JAP }
 				owned = { province = 1399 data = JAP }
-				owned = { province = 1400 data = JAP }
+				#owned = { province = 1400 data = JAP }
 			}
 			area = { area = "Indochine" }
 		}
@@ -429,7 +392,7 @@ event = {
 		command = { type = make_puppet which = VIE }
 		command = { type = trigger which = 68000 }
 	}
-	action = {
+	action = { #trigger = { ai = yes }
 		name = "Rule them directly"
 		ai_chance = 0
 		command = { type = dissent value = 5 }
@@ -498,7 +461,8 @@ event = {
 	
 	name = "Alliance with Imperial India?"
 	desc = "Imperial India has offered us an alliance, vowing to support us in coming wars in exchange for our help to reclaim their homeland in Greece."
-	style = 1
+	style = 2
+	picture = "news_paper"
 
 	action = {
 		trigger = {
@@ -526,27 +490,6 @@ event = {
 	}
 }
 
-event = {
-	id = 42015
-	country = JAP
-	
-	name = "Russia Offers Separate Peace"
-	desc = "Russia has offered us a separate peace, leaving us free to do as we wish with Korea and the East Indies."
-	style = 1
-
-	action = {
-		name = ACTION_NAME_ACCEPT
-		ai_chance = 50
-		command = { type = relation which = RUS value = 200 }
-		command = { type = trigger which = 56038 }
-	}
-	action = {
-		name = "ACTION_NAME_REFUSE"
-		ai_chance = 50
-		command = { type = relation which = RUS value = -100 }
-		command = { type = trigger which = 56039 }
-	}
-}
 
 event = {
 	id = 42016
@@ -603,8 +546,7 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 65
 		command = { type = domestic which = interventionism value = 1 }		
-		command = { trigger = { ai = no } type = war which = U08 }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = U08 }
+		command = { type = war which = U08 }
 		#
 		command = { type = addclaim which = 1371 }
 		command = { type = addclaim which = 1432 }
@@ -619,135 +561,13 @@ event = {
 }
 
 event = {
-	id = 42017
-	country = JAP
-	
-	decision = {
-		war = { country = RUS }
-		OR = {
-			war = { country = LIT country = RUS }
-			war = { country = GER country = RUS }
-			war = { country = U00 country = RUS }
-		}
-		OR = {
-			flag = RUS_western_peace
-			NOT = { flag = great_war_by_event }
-		}
-	}
-	decision_trigger = {
-		control = { province = 1191 data = -3 } #Vladivostok
-		area = { area = "Heilongjiang" country = -3 value = 60 }
-	}
-	
-	trigger = {
-		war = { country = RUS }
-		OR = {
-			war = { country = LIT country = RUS }
-			war = { country = GER country = RUS }
-			war = { country = U00 country = RUS }
-		}
-		control = { province = 1191 data = -3 } #Vladivostok
-		area = { area = "Heilongjiang" country = -3 value = 60 }
-		OR = {
-			flag = RUS_western_peace
-			NOT = { flag = great_war_by_event }
-		}
-	}
-	
-	name = "Peace with Russia?"
-	desc = "Now that we have soundly defeated Russia in Manchuria it's a good moment to send Russia a demand for all their Chinese Possessions."
-	style = 1
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 30
-	deathdate = { day = 1 month = january year = 1963 }	
-
-	action = {
-		name = "Send the peace offer"
-		ai_chance = 95
-		command = { type = relation which = RUS value = 200 }
-		command = { type = trigger which = 56044 }
-	}
-	action = { trigger = { ai = yes }
-		name = ACTION_NAME_NEVER
-		ai_chance = 5
-		command = { type = relation which = RUS value = -100 }
-	}
-}
-
-event = {
-	id = 42018
-	country = JAP
-	
-	trigger = {
-		war = { country = RUS }
-		owned = { province = 1228 data = JAP }
-		NOT = { control = { province = 1228 data = -3 } }
-		NOT = { puppet = { country = MON country = JAP } }
-		NOT = { puppet = { country = MEN country = JAP } }
-		NOT = { puppet = { country = VIE country = JAP } }
-	}
-	
-	name = "The Loss of Seoul"
-	desc = "Our army is in shambles and the Russians are advancing into Korea. They have occupied Seoul - perhaps it would be best to cut our losses and offer Korea and Sakhalin in exchange for peace with the League?"
-	style = 1
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 30
-	deathdate = { day = 1 month = january year = 1963 }	
-
-	action = {
-		name = "Very well, sue for peace"
-		ai_chance = 75
-		command = { type = trigger which = 42017 }
-	}
-	action = {
-		name = ACTION_NAME_NEVER
-		ai_chance = 25
-		command = { type = dissent value = 5 }
-	}
-}
-
-
-event = {
-	id = 42019
-	country = JAP
-
-	name = "Peace with Russia"
-	desc = "Russia has agreed to our peace offer and we must now cede the territories agreed on."
-	style = 1
-
-	action = {
-		name = ACTION_NAME_OK
-		command = { type = peace which = RUS value = 0 }
-		command = { type = non_aggression which = JAP where = RUS }
-		#korea
-		command = { type = removecore which = 1228 }
-		command = { type = removecore which = 1229 }
-		command = { type = removecore which = 1233 }
-		command = { type = removecore which = 1232 }
-		command = { type = removecore which = 1231 }
-		command = { type = removecore which = 1230 }
-		command = { type = removecore which = 1223 }
-		command = { type = removecore which = 1221 }
-		command = { type = removecore which = 1222 }
-		command = { type = removecore which = 1226 }
-		command = { type = removecore which = 1227 }
-		command = { type = removecore which = 1224 }
-		command = { type = removecore which = 1225 }
-		
-		command = { type = secederegion which = RUS value = "Korea" when = 1 }
-		#command = { type = secedearea which = RUS value = "Sakhalin_Kuriles" when = 1 }
-	}
-}
-
-event = {
 	id = 42020
 	country = JAP
 	
 	name = "Peace with the Union?"
 	desc = "With the fall of our ally in India, China is now wide open to the Union. Union diplomats have approached us with an offer for a ceasefire, undoubtedly so that they can concentrate their forces against Germany. What should we say?"
-	style = 1
+	style = 2
+	picture = "news_paper"
 
 	action = {
 		name = ACTION_NAME_AGREE
@@ -763,102 +583,6 @@ event = {
 }
 
 event = {
-	id = 42021
-	country = JAP
-	
-	name = "Peace with Russia!"
-	desc = "Russia has agreed to our peace offer!"
-	style = 1
-	
-	action = {
-		name = ACTION_NAME_OK
-		command = { type = peace which = RUS value = 1 }
-		command = { type = dissent value = -5 }
-		command = { type = non_aggression which = JAP where = RUS }
-	}
-}
-
-
-event = {
-	id = 42025
-	country = JAP
-	
-	decision = {
-		war = { country = ENG }
-		OR = {
-			NOT = { war = { country = CHI } }
-			NOT = { war = { country = CYN } }
-		}
-		OR = {
-			NOT = { alliance = { country = ENG country = RUS } }
-			#NOT = { alliance = { country = ENG country = UAU } }
-			flag = RUS_eastern_peace
-		}
-		#NOT = { flag = great_war_by_event }
-		NOT = { war = { country = MEX } }
-	}
-	decision_trigger = {
-		NOT = { region = { region = "China" country = ENG } }
-		NOT = { exists = KOR }
-	}
-	
-	trigger = {
-		war = { country = ENG }
-		OR = {
-			NOT = { war = { country = CHI } }
-			NOT = { war = { country = CYN } }
-		}
-		OR = {
-			NOT = { alliance = { country = ENG country = RUS } }
-			#NOT = { alliance = { country = ENG country = UAU } }
-			flag = RUS_eastern_peace
-		}
-		NOT = { region = { region = "China" country = ENG } }
-		NOT = { exists = KOR }
-		#random = 25
-		#NOT = { flag = great_war_by_event }
-		NOT = { war = { country = MEX } }
-	}
-	
-	name = "Peace with Great Britain?"
-	desc = "We have taken all of Great Britains in China. Without Russias aid it is unlikely they will be able to retake them. Surely they will see reason and part with their Chinese Possessions."
-	style = 1
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 30
-	deathdate = { day = 1 month = january year = 1963 }	
-
-	action = {
-		name = "Send the peace offer"
-		ai_chance = 95
-		command = { type = relation which = ENG value = 200 }
-		command = { type = trigger which = 62020 }
-	}
-	action = { trigger = { ai = yes }
-		name = "No peace with the British!"
-		ai_chance = 5
-		command = { type = relation which = ENG value = -100 }
-	}
-}
-
-event = {
-	id = 42026
-	country = JAP
-	
-	name = "Peace with Great Britain!"
-	desc = "Great Britain has agreed to our peace offer!"
-	style = 1
-	
-	action = {
-		name = ACTION_NAME_OK
-		#command = { type = peace which = JAP value = 1 }
-		command = { type = dissent value = -5 }
-		#command = { type = non_aggression which = JAP where = ENG }
-	}
-}
-
-
-event = {
 	id = 42030
 	country = JAP
 
@@ -872,6 +596,7 @@ event = {
 				NOT = { exists = CHI }
 				exists = U87
 			}
+			owned = { province = 1228 } #seoul
 		}
 	}
 	decision_trigger = {
@@ -887,6 +612,7 @@ event = {
 				NOT = { exists = CHI }
 				exists = U87
 			}
+			owned = { province = 1228 } #seoul
 		}
 		#money = 500
 	}

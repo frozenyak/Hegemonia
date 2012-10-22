@@ -1,0 +1,181 @@
+#48900-48999
+event = {
+	id = 48900
+	country = MEX
+	
+	trigger = {
+		war = { country = USA }
+		NOT = { ispuppet = USA }
+		NOT = { ispuppet = MEX }
+		lost_national = { value = 60 }
+		OR = {
+			NOT = { control = { province = 1878 } } #portland
+			NOT = { control = { province = 1889 } } #san francisco
+		}
+		NOT = { control = { province = 1922 } } #corpus christi
+		control = { province = 1789 data = USA }  #boston
+	}	
+
+	name = "Peace with America"
+	desc = "Once again we have been beaten by our hereditary enemy, the American Federation. It is hard to face the truth, but we have no choice but sue for peace. We will have to give up the whole Northwest, Alaska and Western Vinland."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = march year = 1936 }
+	offset = 30 
+	deathdate = { day = 1 month = january year = 1964 }	
+
+	action = {
+		name = "ACTIONNAME2624A" #let us keep what we still have
+		command = { type = dissent value = 20 }
+		#
+		command = { type = removecore which = 1916 }
+		command = { type = removecore which = 1914 }
+		command = { type = removecore which = 1913 }
+		command = { type = removecore which = 1912 }
+		command = { type = removecore which = 1911 }
+		command = { type = removecore which = 1910 }
+		command = { type = removecore which = 1909 }
+		command = { type = removecore which = 1908 }
+		command = { type = removecore which = 1907 }
+		command = { type = removecore which = 1859 }
+		#
+		command = { type = trigger which = 48901 } # USA
+	}
+}
+
+event = {
+	id = 48901
+	country = USA
+
+	name = "Peace with Mazula"
+	desc = "Joyous news, the Mazulans have sued for peace! We will gain the whole Northwest, Alaska, and Western Vinland!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTIONNAME2024A" # Accept the conditions
+		ai_chance = 100
+		command = { type = dissent value = -10 }
+		command = { type = event which = 48902 where = MEX when = 1 }
+	}
+	action = {
+		name = "No peace with the Mazulans!"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 48902
+	country = MEX
+
+	name = "Surrender to American Federation"
+	desc = "The Americans have agreed to our generous offer and now insist we uphold our end."
+	style = 2
+	picture = "news_paper"
+
+    action = {
+        name = ACTION_NAME_OK
+		#alaska
+		command = { type = removecore which = 2094 }
+		command = { type = removecore which = 2139 }
+		command = { type = removecore which = 2140 }
+		command = { type = removecore which = 2141 }
+		command = { type = removecore which = 2142 }
+		command = { type = removecore which = 2143 }
+		command = { type = removecore which = 2144 }
+		command = { type = removecore which = 2145 }
+		command = { type = removecore which = 2146 }
+		command = { type = removecore which = 2147 }
+		command = { type = removecore which = 2149 }
+		command = { type = removecore which = 2150 }
+		command = { type = removecore which = 2151 }
+		command = { type = removecore which = 2174 }
+		#northwest
+		command = { type = removecore which = 1861 }
+		command = { type = removecore which = 1862 }
+		command = { type = removecore which = 1863 }
+		command = { type = removecore which = 1864 }
+		command = { type = removecore which = 1865 }
+		command = { type = removecore which = 1866 }
+		command = { type = removecore which = 1867 }
+		command = { type = removecore which = 1868 }
+		command = { type = removecore which = 1869 }
+		command = { type = removecore which = 1870 }
+		command = { type = removecore which = 1871 }
+		command = { type = removecore which = 1872 }
+		command = { type = removecore which = 1873 }
+		command = { type = removecore which = 1874 }
+		command = { type = removecore which = 1875 }
+		command = { type = removecore which = 1876 }
+		command = { type = removecore which = 1877 }
+		command = { type = removecore which = 1878 }
+		command = { type = removecore which = 1879 }
+		command = { type = removecore which = 1880 }
+		command = { type = removecore which = 1881 }
+		command = { type = removecore which = 1882 }
+		#western vinland
+		command = { type = removecore which = 2089 }
+		command = { type = removecore which = 2090 }
+		command = { type = removecore which = 2091 }
+		command = { type = removecore which = 2092 }
+		command = { type = removecore which = 2093 }
+		command = { type = removecore which = 2099 }
+		command = { type = removecore which = 2103 }
+		command = { type = removecore which = 2104 }
+		command = { type = removecore which = 2105 }
+		command = { type = removecore which = 2148 }
+		#northern vinland
+		command = { type = removecore which = 2095 }
+		#
+		command = { type = removecore which = 1921 }
+		command = { type = removecore which = 1898 }
+		command = { type = removecore which = 1896 }
+		#
+		command = { type = secederegion which = USA value = "Northwest US" }
+		command = { type = secederegion which = USA value = "Western Canada" }
+		command = { type = secederegion which = USA value = "Alaska" }
+		command = { type = secedeprovince which = USA value = 2095 }
+		
+		command = { type = secedeprovince which = USA value = 1921 } #amarillo
+		command = { type = secedeprovince which = USA value = 1898 } #rock springs
+		command = { type = secedeprovince which = USA value = 1896 } #saltlake city
+		#
+        command = { type = peace which = USA }
+        command = { type = peace which = CAN }
+		#
+        command = { type = domestic which = interventionism value = -2 }
+        command = { type = belligerence which = USA value = -50 }
+		#
+        command = { type = set_relation which = USA value = 0 }
+        command = { type = non_aggression which = USA where = MEX }
+		#
+		command = { type = sleepevent which = 48015 } #masters of america
+		command = { type = sleepevent which = 48018 } #liberation of barasya
+		command = { type = sleepevent which = 48020 } #supporting the league
+		command = { type = sleepevent which = 21900 } #peace with mazula
+		#
+		command = { type = trigger which = 48903 } #Victory over Mazula
+	}
+}
+
+event = {
+	id = 48903
+	country = USA
+
+	name = "Victory over Mazula"
+	desc = "It is time to celebrate! We have achieved Victory over Mazula!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		ai_chance = 100
+		command = { type = belligerence which = USA value = -50 }
+		command = { trigger = { alliance = { country = CAN country = USA } } type = secederegion which = CAN value = "Western Canada" }
+		#command = { trigger = { alliance = { country = CAN country = USA } } type = secederegion which = CAN value = "Alaska" }
+		command = { trigger = { alliance = { country = CAN country = USA } } type = secedeprovince which = CAN value = 2095 }
+		command = { type = setflag which = usa_victory_mex }
+	}
+}

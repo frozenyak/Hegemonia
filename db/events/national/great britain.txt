@@ -1,4 +1,4 @@
-###62000-62999###
+###62000-62899###
 
 event = {
 	id = 62009
@@ -123,41 +123,3 @@ event = {
 	}
 }
 
-event = {
-	id = 62020
-	country = ENG
-
-	name = "Peace with Japan?"
-	desc = "Japan has defeated us in the far east and now demands our Chinese possessons. Without Russias support it is unlikely we will be able to retake them. It might be best to just give them up."
-	style = 1
-
-	action = {
-		name = "Very well, accept the offer"
-		ai_chance = 95
-		command = { type = peace which = JAP value = 0 }
-		command = { type = non_aggression which = JAP where = ENG }
-		command = { type = secederegion which = JAP value = "China" when = 1 }
-		command = { type = secederegion which = JAP value = "Korea" when = 1 }
-		command = { type = trigger which = 42026 }
-		#liaoning
-		command = { type = removeclaim which = 1214 }
-		command = { type = removeclaim which = 1215 }
-		command = { type = removeclaim which = 1216 }
-		command = { type = removeclaim which = 1217 }
-		command = { type = removeclaim which = 1218 }
-		command = { type = removeclaim which = 1219 }
-		command = { type = removeclaim which = 1220 }
-		#taiwan
-		command = { type = removeclaim which = 1361 }
-		command = { type = removeclaim which = 1362 }
-		command = { type = removeclaim which = 1363 }
-		command = { type = removeclaim which = 1364 }
-		#jilin
-		command = { type = removeclaim which = 1211 }
-	}
-	action = {
-		name = ACTION_NAME_NEVER
-		ai_chance = 5
-		command = { type = dissent value = 5 }
-	}
-}

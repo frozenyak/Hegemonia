@@ -1,4 +1,4 @@
-###55000-55999###
+###55000-55899###
 ##55016-18 elections
 ##55019-22 divided governments
 ##55023 old guard government
@@ -978,27 +978,6 @@ event = {
 	}
 }
 
-event = {
-	id = 55039
-	country = U00
-
-	name = "Russia Offers Separate Peace"
-	desc = "Russia has offered us a separate peace, leaving us free to do as we wish with the rest of the League."
-	style = 1
-
-	action = {
-		name = ACTION_NAME_ACCEPT
-		ai_chance = 75
-		command = { type = relation which = RUS value = 200 }
-		command = { type = trigger which = 56040 }
-	}
-	action = {
-		name = "ACTION_NAME_REFUSE"
-		ai_chance = 25
-		command = { type = relation which = RUS value = -100 }
-		command = { type = trigger which = 56041 }
-	}
-}
 
 event = {
 	id = 55040
@@ -1015,7 +994,8 @@ event = {
 
 	name = "The Fall of Imperial India"
 	desc = "We have defeated the reactionary regime in India and captured their so-called Emperor. Some of our advisors have suggested that Japan might be amenable to peace now that we stand at the doorstep to China. This would allow us to turn back and concentrate our forces on the real enemy in Japan. Any peace with Japan would be contingent of our treatment of their allied monarch, however..."
-	style = 1
+	style = 2
+	picture = "news_paper"
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -1042,7 +1022,7 @@ event = {
 	trigger = {
 		NOT = { exists = U02 }
 		owned = { province = 1517 data = U00 }
-		NOT = { event = 55039 }
+		NOT = { event = 56912 } #separate peace RUS
 		OR = {
 			NOT = { war = { country = JAP country = U00 } }
 			NOT = { war = { country = GER country = U00 } }
@@ -1052,7 +1032,8 @@ event = {
 
 	name = "The Fall of Imperial India"
 	desc = "We have defeated the reactionary regime in India and captured their so-called Emperor. The people want a public execution of the false Emperor, but this of course would hurt our international reputation - though at this point that may not matter much!"
-	style = 1
+	style = 2
+	picture = "news_paper"
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -1370,11 +1351,11 @@ event = {
 
 	decision = {
 		exists = RSI
-		NOT = { ispuppet = U00 }
+		ai = RSI
+		NOT = { ispuppet = yes }
 	}
 	decision_trigger = {
 		puppet = { country = RSI country = U00 }
-		ai = RSI
 	}
 
 	trigger = {
@@ -1400,6 +1381,7 @@ event = {
 		control = { province = 355 } #Sarajevo
 		control = { province = 321 } #Sofia
 		control = { province = 1075 } #Ankara
+		atwar = no
 	}
 
 	name = "Roman Unification"
@@ -1474,6 +1456,8 @@ event = {
 		#
 		command = { trigger = { ai = no } type = supplies value = -500 }
 		command = { trigger = { ai = no } type = supplies value = 500 where = 422 } #taranto
+		#
+		command = { type = sleepevent which = 55062 }
 	}
 }
 
@@ -1549,5 +1533,93 @@ event = {
 		#
 		command = { trigger = { ai = no NOT = { event = 55060 } } type = supplies value = -500 }
 		command = { trigger = { ai = no NOT = { event = 55060 } } type = supplies value = 500 where = 422 } #taranto
+	}
+}
+
+event = {
+	id = 55062
+	country = U00
+
+	trigger = {
+		exists = RSI
+		ai = RSI
+		puppet = { country = RSI country = U00 }
+		#lost_national = { country = RSI value = 66 }
+		#enemy controls central italy
+		area = { area = "Central Italy" country = -2  }
+		area = { area = "Appennine Ridge" country = -2 }
+		control = { province = 409 } #constantinople
+		NOT = { lost_national = { value = 30 } }
+	}
+	
+	name = "Italy in trouble"
+	desc = "The Italian Commune is in dire straits and might not be able to save itself. It is obvious we must step in and seize control."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		#AUS
+		command = { type = addcore which = 405 }
+		command = { type = addcore which = 404 }
+		command = { type = addcore which = 403 }
+		command = { type = addcore which = 349 }
+		#GER
+		command = { type = addcore which = 402 }
+		#ITA
+		command = { type = addcore which = 400 }
+		command = { type = addcore which = 411 }
+		command = { type = addcore which = 430 }
+		command = { type = addcore which = 431 }
+		command = { type = addcore which = 425 }
+		command = { type = addcore which = 422 }
+		command = { type = addcore which = 424 }
+		command = { type = addcore which = 421 }
+		command = { type = addcore which = 420 }
+		command = { type = addcore which = 416 }
+		command = { type = addcore which = 423 }
+		command = { type = addcore which = 415 }
+		command = { type = addcore which = 414 }
+		command = { type = addcore which = 419 }
+		command = { type = addcore which = 410 }
+		command = { type = addcore which = 412 }
+		command = { type = addcore which = 413 }
+		command = { type = addcore which = 393 }
+		command = { type = addcore which = 408 }
+		command = { type = addcore which = 396 }
+		command = { type = addcore which = 398 }
+		command = { type = addcore which = 407 }
+		command = { type = addcore which = 401 }
+		command = { type = addcore which = 434 }
+		command = { type = addcore which = 350 }
+		command = { type = addcore which = 343 }
+		command = { type = addcore which = 413 }
+		command = { type = addcore which = 417 }
+		command = { type = addcore which = 435 }
+		command = { type = addcore which = 432 }
+		command = { type = addcore which = 94 }
+		command = { type = addcore which = 399 }
+		command = { type = addcore which = 371 }
+		command = { type = addcore which = 429 }
+		command = { type = addcore which = 394 }
+		command = { type = addcore which = 395 }
+		command = { type = addcore which = 418 }
+		command = { type = addcore which = 426 }
+		command = { type = addcore which = 427 }
+		command = { type = addcore which = 428 }
+		command = { type = addcore which = 433 }
+		#FRA
+		command = { type = addcore which = 91 }
+		command = { trigger = { NOT = { exists = VIC } } type = addcore which = 87 }
+		command = { trigger = { NOT = { exists = VIC } } type = addcore which = 90 }
+		#
+		command = { type = inherit which = RSI value = 1 }
+		#
+		command = { trigger = { ai = yes control = { province = 430 } } type = supplies value = 2500 where = 430 } #palermo
+		command = { trigger = { ai = yes control = { province = 430 } } type = oilpool value = 500 where = 430 } #palermo
 	}
 }

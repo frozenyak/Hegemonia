@@ -62,7 +62,7 @@ event = {
 
 event = {
 	id = 79002
-	country = U13
+	country = U04
 	persistent = yes 
 	
 	name = "The Grand Duchy of Brittany"
@@ -74,13 +74,13 @@ event = {
 		command = { type = add_division value = infantry when = 1 }
 		command = { type = add_division value = militia when = 1 }
 		command = { type = add_division value = militia when = 1 }
-		command = { type = name where = U13 which = "u13_roy" }
+		command = { type = name where = U04 which = "u04_roy" }
 	}
 }
 
 event = {
 	id = 79003
-	country = U13
+	country = U04
 	persistent = yes 
 	
 	name = "The Republic of Brittany"
@@ -92,7 +92,7 @@ event = {
 		command = { type = add_division value = infantry when = 1 }
 		command = { type = add_division value = militia when = 1 }
 		command = { type = add_division value = militia when = 1 }
-		command = { type = name where = U13 which = "" }
+		command = { type = name where = U04 which = "" }
 	}
 }
 

@@ -1,8 +1,9 @@
-#2012004
+#2012004 Japan surrenders to China
 #2011018
 #2011019
 #2012005
-
+#42900-42999
+#42900 RUS/Seoul
 #########################################################################
 #  Surrender events - Japan surrenders to China
 #########################################################################
@@ -220,5 +221,116 @@ event = {
 		command = { trigger = { puppet = { country = VIE country = CYN } } type = secederegion which = VIE value = Indochine } 
 		command = { trigger = { puppet = { country = VIE country = CHC } } type = secederegion which = VIE value = Indochine } 
 		#command = { trigger = { ai = yes } type = ai which = "switch/CHI_Wins_JAP.ai" }
+	}
+}
+
+###################
+
+event = {
+	id = 42900
+	country = JAP
+	
+	trigger = {
+		war = { country = RUS }
+		owned = { province = 1228 data = JAP }
+		NOT = { control = { province = 1228 data = -3 } }
+		NOT = { puppet = { country = MON country = JAP } }
+		NOT = { puppet = { country = MEN country = JAP } }
+		NOT = { puppet = { country = VIE country = JAP } }
+		random = 25
+	}
+	
+	name = "The Loss of Seoul"
+	desc = "Our army is in shambles and the Russians are advancing into Korea. They have occupied Seoul - perhaps it would be best to cut our losses ask for peace with the League?"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1963 }	
+
+	action = {
+		name = "Very well, sue for peace"
+		ai_chance = 75
+		command = { type = trigger which = 42901 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 25
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 42901
+	country = RUS
+
+	name = "Peace with Japan?"
+	desc = "Japan has approached for peace, offering up Korea."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Accept the peace offer"
+		ai_chance = 75
+		command = { type = relation which = JAP value = 200 }
+		command = { type = trigger which = 42902 }
+	}
+	action = {
+		name = "No peace with the Japanese!"
+		ai_chance = 25
+		command = { type = relation which = JAP value = -100 }
+	}
+}
+
+event = {
+	id = 42902
+	country = JAP
+
+	name = "Peace with Russia"
+	desc = "Russia has agreed to our peace offer and we must now cede the territories agreed on."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		#korea
+		command = { type = removecore which = 1228 }
+		command = { type = removecore which = 1229 }
+		command = { type = removecore which = 1233 }
+		command = { type = removecore which = 1232 }
+		command = { type = removecore which = 1231 }
+		command = { type = removecore which = 1230 }
+		command = { type = removecore which = 1223 }
+		command = { type = removecore which = 1221 }
+		command = { type = removecore which = 1222 }
+		command = { type = removecore which = 1226 }
+		command = { type = removecore which = 1227 }
+		command = { type = removecore which = 1224 }
+		command = { type = removecore which = 1225 }
+		
+		command = { type = secederegion which = RUS value = "Korea" when = 1 }
+		#command = { type = secedearea which = RUS value = "Sakhalin_Kuriles" when = 1 }
+		#
+		command = { type = peace which = RUS value = 0 }
+		command = { type = non_aggression which = JAP where = RUS }
+		command = { type = trigger which = 42903 }
+	}
+}
+
+event = {
+	id = 42903
+	country = RUS
+
+	name = "Victory over Japan!"
+	desc = "It is time to celebrate!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		ai_chance = 100
+		command = { type = belligerence which = RUS value = -10 }
+		command = { type = dissent value = -5 }
 	}
 }

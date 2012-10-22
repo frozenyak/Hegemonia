@@ -18,7 +18,7 @@ event = {
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -42,7 +42,7 @@ event = {
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -63,14 +63,14 @@ event = {
 	
 	trigger = {
 		ai = yes
-		war = { country = JAP country = CXB }
-		alliance = { country = CHI country = CXB }
+		war = { country = JAP }
+		alliance = { country = CHI }
 	}
 
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 3
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -87,7 +87,7 @@ event = {
 	
 	trigger = {
 		ai = yes
-		war = { country = CXB country = JAP }
+		war = { country = JAP }
 		OR = {
 			event = 3011002
 			event = 2011025
@@ -98,7 +98,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 

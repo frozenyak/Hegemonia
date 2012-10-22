@@ -1,4 +1,5 @@
 ###39000-39999###
+##39017 union at war
 ##39025 turkestan obstacle
 
 event = {
@@ -442,7 +443,6 @@ event = {
 		exists = U00
 		flag = great_war_by_event
 		NOT = { war = { country = U00 } }
-		NOT = { alliance = { country = U00 } }
 	}
 	decision_trigger = {
 		NOT = { alliance = { country = U00 } }
@@ -454,18 +454,19 @@ event = {
 		NOT = { war = { country = U00 } }
 		NOT = { alliance = { country = U00 } }
 		NOT = { non_aggression = { country = U00 } }
-		# OR = {
-			# alliance = { country = RUS }
-			# alliance = { country = GER }
-			# alliance = { country = SPA }
-			# lost_national = { country = U00 value = 10 }
-			# #AND = {
-			# #	year = 1942
-			# #	atwar = no
-			# #}
-		# }
+		OR = {
+			alliance = { country = RUS }
+			alliance = { country = GER }
+			alliance = { country = SPA }
+			lost_national = { country = U00 value = 10 }
+			#AND = {
+			#	year = 1942
+			#	atwar = no
+			#}
+		}
 		exists = U00
-		random = 50
+		random = 25 #50
+		NOT = { government = communist }
 	}
 
 	name = "The Union at War"
@@ -501,7 +502,9 @@ event = {
 	action = {
 		name = "ACTION_NAME_HURRAH"
 		#command = { type = inherit which = U09 }
-		command = { }
+		command = { type = belligerence value = -30 }
+		command = { type = relation which = GER value = 200 }
+		command = { type = non_aggression which = GER }
 	}
 }
 
@@ -517,7 +520,7 @@ event = {
 		name = ACTION_NAME_AGREE
 		ai_chance = 60
 		command = { type = relation which = GER value = 25 }
-		command = { type = end_mastery which = U17 }
+		command = { trigger = { exists = U17 } type = end_mastery which = U17 }
 		command = { type = trigger which = 35092 }
 	}
 	action = {
@@ -624,6 +627,7 @@ event = {
 		NOT = { alliance = { country = TUR } }
 		NOT = { access = { country = TUR } }
 		NOT = { war = { country = TUR } }
+		random = 25
 	}
 
 	name = "The Turkestan Obstacle"

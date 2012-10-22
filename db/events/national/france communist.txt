@@ -74,6 +74,7 @@ event = {
 		name = ACTION_NAME_HURRAH
 		command = { type = dissent value = -1 }
 		command = { type = alliance which = U06 }
+		command = { trigger = { ai = U06 } type = make_puppet which = U06 }
 	}
 }
 
@@ -90,7 +91,7 @@ event = {
 		name = ACTION_NAME_DAMN
 		#command = { type = relation which = U06 value = 100 }
 		command = { type = dissent value = 5 }
-		command = { type = ai_prepare_war which = U06 }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = U06 }
 	}
 }
 
@@ -222,6 +223,7 @@ event = {
 			}
 			region = { region = "Germany" value = 60 }
 		}
+		NOT = { war = { country = RUS } }
 	}
 
 	name = "The Fate of Germany"

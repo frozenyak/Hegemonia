@@ -1,4 +1,4 @@
-###48000-48999###
+###48000-48899###
 
 event = {
 	id = 48004
@@ -195,16 +195,27 @@ event = {
 	country = MEX
 
 	trigger = {
-		NOT = { exists = USA }
-		NOT = { exists = CAN }
-		owned = { province = 1789 data = MEX }
-		owned = { province = 2108 data = MEX }
+		OR = {
+			AND = {
+				NOT = { exists = USA }
+				owned = { province = 1789 data = MEX }
+			}
+			puppet = { country = USA country = MEX }
+		}
+		OR = {
+			AND = {
+				NOT = { exists = CAN }
+				owned = { province = 2108 data = MEX }
+			}
+			puppet = { country = CAN country = MEX }
+		}
 		event = 48018
 	}
 
 	name = "Masters of America"
 	desc = "We have defeated our ancient enemies in America and Vinland. Victory celebrations can be heard across the country, and now all that is left is to decide what to do with our defeated foes."
-	style = 1
+	style = 2
+	picture = "news_paper"
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 15
@@ -213,18 +224,18 @@ event = {
 	action = {
 		name = "Restore autonomy of both"
 		ai_chance = 50
-		command = { type = independence which = CAN }
-		#command = { type = make_puppet which = CAN }
+		command = { trigger = { NOT = { exists = CAN } } type = independence which = CAN }
+		command = { trigger = { puppet = { country = CAN country = MEX } } type = end_puppet which = CAN }
 		command = { type = alliance which = CAN }
-		command = { type = independence which = USA }
-		command = { type = make_puppet which = USA }
+		command = { trigger = { NOT = { exists = USA } } type = independence which = USA }
+		command = { trigger = { puppet = { country = USA country = MEX } } type = end_puppet which = USA }
 		command = { type = alliance which = USA }
 	}
 	action = {
-		name = "Restore only Vinland"
+		name = "Autonomy only for Vinland"
 		ai_chance = 48
-		command = { type = independence which = CAN }
-		#command = { type = make_puppet which = CAN }
+		command = { trigger = { NOT = { exists = CAN } } type = independence which = CAN }
+		command = { trigger = { puppet = { country = CAN country = MEX } } type = end_puppet which = CAN }
 		command = { type = alliance which = CAN }
 	}
 	action = {
@@ -246,21 +257,27 @@ event = {
 	country = MEX
 
 	trigger = {
-		NOT = { exists = USA }
+		OR = {
+			NOT = { exists = USA }
+			flag = mex_victory_usa #victory over america
+		}
 		owned = { province = 1931 data = MEX }
 	}
 
 	name = "The Liberation of Barasya"
 	desc = "Barasya is the bitterly contested Berber-speaking southeastern part of America. With our victory, this once-independent region is now entirely under our control, and we must now decide what to do with it."
-
+	style = 2
+	picture = "news_paper"
+	
 	date = { day = 1 month = january year = 1936 }
 	offset = 15
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "Barasya is an integral part of Mazula"
-		ai_chance = 65
+		ai_chance = 50
 		command = { type = dissent value = 5 }
+		#
 		command = { type = addcore which = 1929 }
 		command = { type = addcore which = 1930 }
 		command = { type = addcore which = 1931 }
@@ -302,7 +319,7 @@ event = {
 	}
 	action = {
 		name = "Give them autonomy"
-		ai_chance = 30
+		ai_chance = 40
 		command = { type = removecore which = 1930 }
 		command = { type = removecore which = 1932 }
 		command = { type = removecore which = 1934 }
@@ -312,7 +329,7 @@ event = {
 	}
 	action = {
 		name = "Grant them full independence"
-		ai_chance = 5
+		ai_chance = 10
 		command = { type = dissent value = -5 }
 		command = { type = belligerence value = -10 }
 		command = { type = removecore which = 1930 }
@@ -329,7 +346,7 @@ event = {
 	country = MEX
 
 	trigger = {
-		event = 48015
+		flag = mex_victory_usa
 		NOT = { event = 38016 }
 		atwar = no
 		NOT = { participant = { value = 1 } }
@@ -354,8 +371,9 @@ event = {
 
 	name = "Supporting the League"
 	desc = "With the defeat of America, our hegemony over our continent is now uncontested. In Europe, however, the war is not going well for the League, and Iberian diplomats have come to us asking for military or material support."
-	style = 1
-
+	style = 2
+	picture = "news_paper"
+	
 	date = { day = 1 month = january year = 1936 }
 	offset = 60
 	deathdate = { day = 1 month = january year = 1963 }
@@ -385,44 +403,3 @@ event = {
 		command = { type = domestic which = interventionism value = -1 }
 	}
 }
-
-# event = {
-	# id = 48021
-	# country = MEX
-
-	# trigger = {
-		# local_flag = MOB8
-		# NOT = { flag = MEX_USA_pact }
-	# }
-
-	# name = "Volunteer Troops"
-	# desc = "The news of our mobilization against America has stirred patriotic sentiment, and large numbers of volunteers are flooding to the recruitment offices. Should we equip these volunteers and form new infantry divisions?"
-	# style = 1
-	# picture = "reinforcements"
-
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 10
-	# deathdate = { day = 1 month = january year = 1963 }
-
-	# action = {
-		# name = "Put them under arms!"
-		# ai_chance = 100
-		# command = { type = money value = -200 }
-		# command = { type = supplies value = -2000 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-		# command = { type = add_division value = infantry when = 1 }
-	# }
-	# action = {
-		# name = "We don't need them!"
-		# ai_chance = 0
-		# command = { type = dissent value = 2 }
-	# }
-# }

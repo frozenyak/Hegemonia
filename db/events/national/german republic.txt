@@ -18,6 +18,8 @@ event = {
 			event = 66006 #elections
 			event = 66010 #coup
 		}
+		NOT = { alliance = { country = SPA } }
+		NOT = { war = { country = SPA } }
 	}
 
 	name = "The Road Ahead"
@@ -32,12 +34,14 @@ event = {
 	action = {
 		name = "Seek membership in the League"
 		ai_chance = 75
+		command = { type = leave_alliance }
 		command = { type = trigger which = 38041 }
 		command = { type = setflag which = HRE_crisis }
 	}
 	action = {
 		name = "We will go our own path"
 		ai_chance = 25
+		command = { type = leave_alliance }
 		command = { type = dissent value = -10 }
 		command = { type = relation which = SPA value = -100 }
 		command = { type = relation which = ENG value = -100 }
@@ -57,8 +61,9 @@ event = {
 		OR = {
 			event = 66005 #elections
 			event = 66010 #coup
-			event = 66011 #coup
 		}
+		NOT = { alliance = { country = U00 } }
+		NOT = { war = { country = U00 } }
 	}
 
 	name = "The Road Ahead"
@@ -74,12 +79,14 @@ event = {
 	action = {
 		name = "Seek an alliance with the Comintern"
 		ai_chance = 75
+		command = { type = leave_alliance }
 		command = { type = trigger which = 55051 }
 		command = { type = setflag which = HRE_crisis }
 	}
 	action = {
 		name = "Focus on socialism at home"
 		ai_chance = 25
+		command = { type = leave_alliance }
 		command = { type = dissent value = -10 }
 		command = { type = relation which = U00 value = -100 }
 		command = { type = relation which = VIC value = -100 }
@@ -166,8 +173,9 @@ event = {
 	
 	trigger = {
 		event = 2052010
-		NOT = { event = 66010 } #coup
 		NOT = { event = 66006 } #elections
+		NOT = { event = 66010 } #coup
+		NOT = { flag = gcw_comintern_intervention }
 		atwar = no
 	}
 
@@ -258,6 +266,7 @@ event = {
 		event = 2052010
 		NOT = { event = 66005 }
 		event = 66010 #coup
+		flag = gcw_comintern_intervention
 		atwar = no
 		government = democratic
 	}
@@ -325,9 +334,13 @@ event = {
 
 	trigger = {
 		#random = 10
-		NOT = {	government = communist }
 		event = 2052010 # dfr victory
 		flag = gcw_comintern_intervention
+		NOT = {
+			government = communist 
+			event = 66005 #elections
+		}
+		#atwar = no
 	}
 
 	name = "The Communist Coup"
@@ -336,7 +349,7 @@ event = {
 	picture = "SPR_Communist Coup"
 
 	date = { day = 1 month = january year = 1936 }
-	offset = 15
+	offset = 30
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
@@ -350,14 +363,14 @@ event = {
 		command = { type = set_domestic which = defense_lobby value = 6 }
 		command = { type = set_domestic which = interventionism value = 6 }
 		#
-		#command = { type = headofstate which = 507001 }
+		command = { type = headofstate which = 507001 }
 		command = { type = headofgovernment which = 507002 }
 		command = { type = foreignminister which = 507003 }
 		command = { type = armamentminister which = 507004 }
-		#command = { type = ministerofsecurity which = 507005 }
+		command = { type = ministerofsecurity which = 507005 }
 		command = { type = ministerofintelligence which = 507006 }
 		command = { type = chiefofstaff which = 507007 }
-		#command = { type = chiefofarmy which = 507008 }
+		command = { type = chiefofarmy which = 507008 }
 		command = { type = chiefofnavy which = 507009 }
 		command = { type = chiefofair which = 507010 }
 		#
@@ -378,7 +391,6 @@ event = {
 		command = { type = sleepevent which = 66000 } #league membership
 		command = { type = sleepevent which = 66005 } #elections
 		command = { type = sleepevent which = 66006 } #elections
-		command = { type = sleepevent which = 66011 } #coup
 	}
 	action = {
 		name = ACTION_NAME_THE_COUP_HAS_FAILED
@@ -396,7 +408,6 @@ event = {
 		#
 		command = { type = sleepevent which = 66002 } #comintern membership
 		command = { type = sleepevent which = 66005 } #elections
-		command = { type = sleepevent which = 66011 } #coup
 	}
 }
 ######
@@ -474,6 +485,7 @@ event = {
 		NOT = { control = { province = 178 } }
 		NOT = { control = { province = 179 } }
 		ai = yes
+		control = { province = 163 }
 	}
 
 	name = "AI_EVENT"

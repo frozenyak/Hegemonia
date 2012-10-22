@@ -1,6 +1,6 @@
-####################################
+###################################
 # Minor invasion shut down events
-####################################
+###################################
 
 event = {
 	id = 2400000 
@@ -41,7 +41,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 5
 	deathdate = { day = 29 month = december year = 1963 }
 

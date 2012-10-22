@@ -18,7 +18,7 @@ event = {
 	trigger = {
 		ai = yes
 		NOT = { local_flag = CYNAttackJAP }
-		war = { country = JAP country = CYN }
+		war = { country = JAP }
 		OR = {
 			lost_national = { country = CHI value = 50 }
 			lost_national = { country = CYN value = 1 }
@@ -26,7 +26,7 @@ event = {
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -46,13 +46,13 @@ event = {
 	trigger = {
 		ai = yes
 		local_flag = CGXAttackJAP
-		NOT = { war = { country = JAP country = CYN } }
+		NOT = { war = { country = JAP } }
 		NOT = { lost_national = { country = CHI value = 50 } }
 		NOT = { lost_national = { country = CYN value = 1 } }
 	}
 
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -64,35 +64,7 @@ event = {
 		command = { type = local_clrflag which = CYNAttackJAP }
 	}
 }
-################
-# Yunnan  Backs off from Japan AI
-#############################################
-event = {
-	id = 3124014 
-	country = CYN
-	
-	trigger = {
-		ai = yes
-		war = { country = CYN country = JAP }
-		OR = {
-			event = 3011002
-			event = 2011025
-			lost_national = { country = CHI value = 35 }
-		}
-	}
 
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/WAR_Backoff.ai" }
-		command = { type = ai which = "switch/Air_Ground.ai" }
-	}
-}
 ################
 # Yunnan changes to defensive AI vs Japan
 #############################################
@@ -102,14 +74,14 @@ event = {
 	
 	trigger = {
 		ai = yes
-		war = { country = JAP country = CYN }
+		war = { country = JAP }
 	}
 
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 4
+	date = { day = 1 month = january year = 1933 }
+	offset = 5
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {

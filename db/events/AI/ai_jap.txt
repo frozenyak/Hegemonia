@@ -53,8 +53,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -86,8 +86,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -138,8 +138,8 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0	
 	
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
+	# date = { day = 1 month = january year = 1933 }
+	# offset = 4
 	# deathdate = { day = 29 month = december year = 1963 }
 
 	# action = {
@@ -220,8 +220,8 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0	
 	
-	# date = { day = 0 month = january year = 1936 }
-	# offset = 1
+	# date = { day = 0 month = january year = 1933 }
+	# offset = 4
 	# deathdate = { day = 29 month = december year = 1963 }
 
 	# action = {
@@ -304,8 +304,8 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0	
 	
-	# date = { day = 0 month = january year = 1936 }
-	# offset = 1
+	# date = { day = 0 month = january year = 1933 }
+	# offset = 4
 	# deathdate = { day = 29 month = december year = 1963 }
 
 	# action = {
@@ -385,7 +385,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -472,7 +472,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -508,7 +508,7 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0	
 	
-	# date = { day = 1 month = january year = 1936 }
+	# date = { day = 1 month = january year = 1933 }
 	# offset = 4
 	# deathdate = { day = 29 month = december year = 1963 }
 
@@ -553,7 +553,7 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0	
 	
-	# date = { day = 1 month = january year = 1936 }
+	# date = { day = 1 month = january year = 1933 }
 	# offset = 4
 	# deathdate = { day = 29 month = december year = 1963 }
 
@@ -586,7 +586,7 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0	
 	
-	# date = { day = 1 month = january year = 1936 }
+	# date = { day = 1 month = january year = 1933 }
 	# offset = 4
 	# deathdate = { day = 29 month = december year = 1963 }
 
@@ -622,8 +622,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -664,8 +664,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -741,8 +741,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -830,8 +830,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -949,8 +949,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -1092,8 +1092,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -1241,8 +1241,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -1300,7 +1300,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1356,7 +1356,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1428,8 +1428,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -1503,8 +1503,8 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
@@ -1542,8 +1542,8 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0	
 	
-	# date = { day = 0 month = january year = 1936 }
-	# offset = 1
+	# date = { day = 0 month = january year = 1933 }
+	# offset = 4
 	# deathdate = { day = 29 month = december year = 1963 }
 
 	# action = {
@@ -1581,8 +1581,8 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0	
 	
-	# date = { day = 0 month = january year = 1936 }
-	# offset = 1
+	# date = { day = 0 month = january year = 1933 }
+	# offset = 4
 	# deathdate = { day = 29 month = december year = 1963 }
 
 	# action = {
@@ -1608,7 +1608,7 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0
 
-	# date = { day = 1 month = january year = 1936 }
+	# date = { day = 1 month = january year = 1933 }
 	# offset = 7
 	# deathdate = { day = 29 month = december year = 1939 }
 
@@ -1638,7 +1638,7 @@ event = {
 	# name = "AI_EVENT"
 	# style = 0
 
-	# date = { day = 1 month = january year = 1936 }
+	# date = { day = 1 month = january year = 1933 }
 	# offset = 7
 	# deathdate = { day = 29 month = december year = 1939 }
 
@@ -1666,7 +1666,7 @@ event = { # Free Market
 	name = "AI_EVENT"
 	style = 0
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1691,7 +1691,7 @@ event = { # Free Market
 	name = "AI_EVENT"
 	style = 0
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1723,7 +1723,7 @@ event = { # Open Society
 	name = "AI_EVENT"
 	style = 0
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1749,7 +1749,7 @@ event = { # Open Society
 	name = "AI_EVENT"
 	style = 0
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1784,7 +1784,7 @@ event = { # Hawk Lobby
 	name = "AI_EVENT"
 	style = 0
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1819,7 +1819,7 @@ event = { # Interventionism
 	name = "AI_EVENT"
 	style = 0
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1865,7 +1865,7 @@ event = { # Ushio Shigenosuke takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1907,7 +1907,7 @@ event = { # Goto Fumio takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1931,7 +1931,7 @@ event = { # Kawarada Kakichi takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1963,7 +1963,7 @@ event = { # Tojo Hideki takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1996,7 +1996,7 @@ event = { # Fujie Keisuke takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2023,7 +2023,7 @@ event = { # Kanichiro Tashiro takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2048,7 +2048,7 @@ event = { # Sugiyama Hajime takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2072,7 +2072,7 @@ event = { # Hirotsugu Hayashida takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2098,7 +2098,7 @@ event = { # Takasu Shiro takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2125,7 +2125,7 @@ event = { # Sugiyama Hajime takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2149,7 +2149,7 @@ event = { # Inanba Satoru takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2179,7 +2179,7 @@ event = { # Fujiwara Ginjiro takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2210,7 +2210,7 @@ event = { # Hatta Yoshiaki takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2245,7 +2245,7 @@ event = { # Shoda Kazue takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2275,7 +2275,7 @@ event = { # Yamamoto Isoroku takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2300,7 +2300,7 @@ event = { # Inoue Shigeyoshi takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2324,7 +2324,7 @@ event = { # Tojo Hideki takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2349,7 +2349,7 @@ event = { # Tsukahara Nishizou takes power
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -2372,7 +2372,7 @@ event = {
 
 	name = "AI_EVENT"
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1933 }
 
 	action = {
 		command = { type = build_division which = destroyer when = 100 cost = 0.1 where = 200 }

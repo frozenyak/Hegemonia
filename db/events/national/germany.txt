@@ -1168,7 +1168,7 @@ event = {
 		command = { trigger = { NOT = { dissent = 30 } } type = dissent value = -15 }
 		command = { trigger = { dissent = 30 } type = dissent value = -20 }
 		command = { type = industrial_modifier which = total value = -5 } #-20
-		command = { type = relative_manpower value = -10 } #-20
+		#command = { type = relative_manpower value = -10 } #-20
 		command = { type = set_domestic which = political_left value = 3 }
 		command = { type = set_domestic which = freedom value = 3 }
 		command = { type = set_domestic which = democratic value = 3 }
@@ -1192,41 +1192,6 @@ event = {
 		command = { type = local_setflag which = communists_minus_2 }
 	}
 }
-
-# event = {
-	# id = 35044
-	# #random = no
-	# country = GER
-	# trigger = {
-		# NOT = { exists = U10 }
-		# flag = german_civil_war
-		# NOT = { government = fascist }
-		# headofstate = 36
-		# NOT = {
-			# AND = {
-				# local_flag = reactionaries_minus_1
-				# local_flag = reactionaries_minus_2
-				# NOT = { local_flag = reactionaries_plus_1 }
-				# NOT = { local_flag = reactionaries_plus_2 }
-			# }
-		# }
-	# }
-
-	# name = "Royalist Germany"
-	# desc = "The German Monarchists have risen up in Stuttgart in support of the 'rightful' King, Waldemar VII. They seek to oust Frederick from the throne and return Germany to conservative royalist rule."
-	# style = 1
-	# picture = "Warsaw_Uprising"
-
-	# date = { day = 1 month = march year = 1936 }
-	# offset = 2
-	# deathdate = { day = 1 month = january year = 1938 }
-
-	# action = {
-		# name = "We will crush them!"
-		# command = { type = independence which = U10 value = 1 }
-		# command = { type = trigger which = 67000 }
-	# }
-# }
 
 event = {
 	id = 35045
@@ -1934,7 +1899,7 @@ event = {
 
 event = {
 	id = 35078
-	country = GER
+	TAG = { GER DFR }
 
 	decision = {
 		NOT = { exists = HOL }
@@ -1944,17 +1909,7 @@ event = {
 	}
 
 	decision_trigger = {
-		#NOT = { war = { country = VIC } }
-		#NOT = { war = { country = SPA } }
-		#area = { area = "Netherlands" }
-		#region = { region = "Benelux" country = -3 }
-		OR = {
-			AND = {
-				NOT = { war = { country = VIC } }
-				owned = { province = 122 data = GER }
-			}
-			region = { region = "Benelux" }
-		}
+		region = { region = "Benelux" }
 	}
 
 	trigger = {
@@ -1968,7 +1923,7 @@ event = {
 		OR = {
 			AND = {
 				NOT = { war = { country = VIC } }
-				owned = { province = 122 data = GER }
+				owned = { province = 122 }
 			}
 			region = { region = "Benelux" }
 		}
@@ -2003,7 +1958,7 @@ event = {
 
 event = {
 	id = 35080
-	country = GER
+	TAG = { GER DFR }
 
 	decision = {
 		NOT = { exists = FRA }
@@ -2013,32 +1968,19 @@ event = {
 	}
 
 	decision_trigger = {
-		OR = {
-			AND = {
-				NOT = { war = { country = SPA } }
-				owned = { province = 55 data = GER }
-				#owned = { province = 39 data = GER }
-			}
-			AND = {
-				area = { area = "Loire" }
-				area = { area = "Brittany" }
-				area = { area = "Normandy" }
-				area = { area = "Pas de Calais" }
-				area = { area = "Bourgogne_Champagne" }
-				area = { area = "Paris" }
-			}
-		}
+		area = { area = "Loire" }
+		area = { area = "Brittany" }
+		area = { area = "Normandy" }
+		area = { area = "Pas de Calais" }
+		area = { area = "Bourgogne_Champagne" }
+		area = { area = "Paris" }
 	}
 
 	trigger = {
 		NOT = { exists = FRA }
 		NOT = { exists = VIC }
 		OR = {
-			AND = {
-				NOT = { war = { country = SPA } }
-				owned = { province = 55 data = GER }
-				#owned = { province = 39 data = GER }
-			}
+			owned = { province = 55 }
 			AND = {
 				area = { area = "Loire" }
 				area = { area = "Brittany" }
@@ -2048,6 +1990,7 @@ event = {
 				area = { area = "Paris" }
 			}
 		}
+		NOT = { war = { country = SPA } }
 	}
 
 	name = "The Fate of France"
@@ -2081,13 +2024,13 @@ event = {
 				headofstate = 1
 				headofstate = 37
 			}
-			owned = { province = 39 data = GER }
+			owned = { province = 39 }
 		}
 		name = "Partition them" #into France and Brittany"
 		ai_chance = 50
-		command = { type = independence which = U13 value = 1 }
-		command = { type = make_puppet which = U13 }
-		command = { type = alliance which = U13 }
+		command = { type = independence which = U04 value = 1 }
+		command = { type = make_puppet which = U04 }
+		command = { type = alliance which = U04 }
 		command = { trigger = { government = fascist } type = trigger which = 79002 }
 		command = { trigger = { NOT = { government = fascist } } type = trigger which = 79003 }
 		command = { trigger = { government = fascist } type = addclaim which = 96 } #longwy
@@ -2110,7 +2053,7 @@ event = {
 
 event = {
 	id = 35082
-	country = GER
+	TAG = { GER DFR }
 
 	decision = {
 		NOT = { exists = ENG }
@@ -2121,13 +2064,13 @@ event = {
 	}
 
 	decision_trigger = {
-		owned = { province = 29 data = GER }
-		owned = { province = 10 data = GER }
+		owned = { province = 29 }
+		owned = { province = 10 }
 	}
 
 	trigger = {
-		owned = { province = 29 data = GER }
-		owned = { province = 10 data = GER }
+		owned = { province = 29 }
+		owned = { province = 10 }
 		NOT = { exists = ENG }
 		NOT = { exists = U73 }
 		NOT = { exists = SCO }
@@ -2177,36 +2120,24 @@ event = {
 
 event = {
 	id = 35085
-	country = GER
+	TAG = { GER DFR }
 
 	decision = {
 		NOT = { exists = U06 }
-		control = { province = 68 data = -1 }
+		control = { province = 68 }
 	}
 
 	decision_trigger = {
-		OR = {
-			AND = {
-				NOT = { war = { country = SPA } }
-				owned = { province = 68 data = GER }
-			}
-			AND = {
-				area = { area = "Pyrenees_Languedoc" value = 80 }
-				area = { area = "Limousin_Auvergne" value = 60 }
-				area = { area = "Alpes_Provence" value = 80}
-				area = { area = "Aquitaine" }
-				area = { area = "New Hampshire" }
-			}
-		}
+		area = { area = "Pyrenees_Languedoc" value = 80 }
+		area = { area = "Limousin_Auvergne" value = 60 }
+		area = { area = "Alpes_Provence" value = 80}
+		area = { area = "Aquitaine" }
 	}
 
 	trigger = {
 		NOT = { exists = U06 }
 		OR = {
-			AND = {
-				NOT = { war = { country = SPA } }
-				owned = { province = 68 data = GER }
-			}
+			owned = { province = 68 }
 			AND = {
 				area = { area = "Pyrenees_Languedoc" value = 80 }
 				area = { area = "Limousin_Auvergne" value = 60 }
@@ -2215,6 +2146,9 @@ event = {
 				area = { area = "New Hampshire" }
 			}
 		}
+		NOT = { war = { country = SPA } }
+		NOT = { war = { country = FRA } }
+		NOT = { war = { country = VIC } }
 	}
 
 	name = "The Fate of Occitania"
@@ -2247,7 +2181,8 @@ event = {
 				}
 				government = fascist
 			}
-			puppet = { country = FRA country = GER }
+			puppet = { country = FRA }
+			NOT = { government = communist }
 		}
 		name = "Give it to France"
 		ai_chance = 10
@@ -2262,6 +2197,27 @@ event = {
 		command = { type = secedearea which = FRA value = Limousin_Auvergne when = 1 }
 		command = { type = secedearea which = FRA value = Pyrenees_Languedoc when = 1 }
 		command = { type = secedearea which = FRA value = "New Hampshire" when = 1 }
+	}
+	action = {
+		trigger = {
+			OR = {
+				puppet = { country = VIC }
+				alliance = { country = VIC }
+			}
+			government = communist
+		}
+		name = "Give it to France"
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+		#italian cores
+		command = { trigger = { exists = RSI alliance = { country = RSI } } type = secederegion which = RSI value = Italy }
+		command = { trigger = { exists = U00 alliance = { country = U00 } } type = secederegion which = U00 value = Italy }
+		#
+		command = { type = secedearea which = VIC value = Aquitaine when = 1 }
+		command = { type = secedearea which = VIC value = Alpes_Provence when = 1 }
+		command = { type = secedearea which = VIC value = Limousin_Auvergne when = 1 }
+		command = { type = secedearea which = VIC value = Pyrenees_Languedoc when = 1 }
+		command = { type = secedearea which = VIC value = "New Hampshire" when = 1 }
 	}
 	action = { trigger = { ai = yes }
 		name = "Rule it directly"
@@ -2319,14 +2275,17 @@ event = {
 		name = "Restore Rome to Manuel"
 		ai_chance = 40
 		command = { type = belligerence value = -30 }
-		command = { type = relation which = U02 value = 400 }
-		command = { type = non_aggression which = U02 }
+		command = { type = relation which = U02 value = 200 }
+		#command = { type = non_aggression which = U02 }
 		#command = { type = independence which = U09 value = 1 }
 		command = { type = secederegion which = U02 value = "Anatolia" when = 0 }
 		command = { type = secedearea which = U02 value = "Thrace" when = 0 }
 		command = { type = secedearea which = U02 value = "Palestine" when = 1 }
 		command = { type = secedearea which = U02 value = "Lebanon_Syria" when = 1 }
 		command = { type = secedearea which = U02 value = "Greek Island" when = 1 }
+		command = { type = secedearea which = U02 value = "Albania" when = 1 }
+		command = { type = secedearea which = U02 value = "Bulgaria" when = 1 }
+		command = { type = secedearea which = U02 value = "East Serbia" when = 1 }
 		command = { type = trigger which = 39020 }
 		command = { type = setflag which = GER_east_roman_empire }
 	}
@@ -2335,8 +2294,11 @@ event = {
 			exists = U02
 			NOT = { war = { country = U02 } }
 			NOT = { alliance = { country = U02 } }
-			#NOT = { exists = U17 }
-			control = { province = 1500 data = U02 }
+			#OR = {
+				exists = U17
+				NOT = { puppet = { country = U17 country = U02 } }
+			#	control = { province = 1500 data = U02 }
+			#}
 			#control = { province = 1497 data = U02 }
 			OR = {
 				headofstate = 1
@@ -2357,6 +2319,7 @@ event = {
 				war = { country = U02 }
 				NOT = { alliance = { country = U02 } }
 			}
+			NOT = { exists = GRE }
 		}
 		name = "Create a Greek client state"
 		ai_chance = 20
@@ -2406,7 +2369,10 @@ event = {
 		command = { type = secedearea which = U02 value = "Lebanon_Syria" when = 0 }
 		command = { type = secedearea which = U02 value = "Thrace" when = 0 }
 		command = { type = secedearea which = U02 value = "Greek Island" when = 0 }
-		command = { type = make_puppet which = U17 }
+		command = { type = secedearea which = U02 value = "Albania" when = 1 }
+		command = { type = secedearea which = U02 value = "Bulgaria" when = 1 }
+		command = { type = secedearea which = U02 value = "East Serbia" when = 1 }
+		command = { trigger = { exists = U17 } type = make_puppet which = U17 }
 		command = { type = trigger which = 39023 }
 	}
 }

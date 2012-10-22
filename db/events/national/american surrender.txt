@@ -1,0 +1,179 @@
+#21900-21999
+event = {
+	id = 21900
+	country = USA
+	
+	trigger = {
+		war = { country = MEX }
+		NOT = { ispuppet = MEX }
+		NOT = { ispuppet = USA }
+		lost_national = { value = 60 }
+		NOT = { control = { province = 1812 } } #norfolk
+		NOT = { control = { province = 1806 } } #pittsburgh
+		control = { province = 1974 data = MEX }  #mexico city
+	}	
+
+	name = "Peace with Mazula"
+	desc = "Once again we have been beaten by our hereditary enemy, Mazula. It is hard to face the truth, but we have no choice but sue for peace. We will have to give up not only territories they have claims on but also Barasya."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = march year = 1936 }
+	offset = 30 
+	deathdate = { day = 1 month = january year = 1964 }	
+
+	action = {
+		name = "ACTIONNAME2624A" #let us keep what we still have
+		command = { type = dissent value = 20 }
+		#
+		command = { type = removecore which = 1916 }
+		command = { type = removecore which = 1914 }
+		command = { type = removecore which = 1913 }
+		command = { type = removecore which = 1912 }
+		command = { type = removecore which = 1911 }
+		command = { type = removecore which = 1910 }
+		command = { type = removecore which = 1909 }
+		command = { type = removecore which = 1908 }
+		command = { type = removecore which = 1907 }
+		command = { type = removecore which = 1859 }
+		#
+		command = { type = headofstate which = 3039 } #Fritz Kuhn
+		command = { type = headofgovernment which = 6185 }
+		command = { type = ministerofsecurity which = 6202 } #Burton K. Wheeler
+		command = { type = sleepminister which = 6005 } #Hoover
+		command = { type = sleepminister which = 6125 }
+		command = { type = sleepminister which = 6272 }
+		command = { type = sleepminister which = 6190 } #Robert E. Wood
+		command = { type = sleepminister which = 6192 }
+		command = { type = trigger which = 21901 } # MEX
+	}
+}
+
+event = {
+	id = 21901
+	country = MEX
+
+	name = "Peace with America"
+	desc = "Joyous news, the Americans have sued for peace! They offer to not only restore our territory, but also all of Barasya!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTIONNAME2024A" # Accept the conditions
+		ai_chance = 100
+		command = { type = dissent value = -10 }
+		#command = { trigger = { exists = TEX alliance = { country = TEX } } type = trigger which = } #restore Barasya
+		command = { type = event which = 21902 where = USA when = 1 }
+		command = { type = sleepevent which = 48015 } #masters of america
+	}
+	action = {
+		name = "No peace with the Americans!"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 21902
+	country = USA
+
+	name = "Surrender to Mazula"
+	desc = "The Mazulans have agreed to our generous offer and now insist we uphold our end."
+	style = 2
+	picture = "news_paper"
+
+    action = {
+        name = ACTION_NAME_OK
+		#
+		command = { type = removecore which = 1929 }
+		command = { type = removecore which = 1930 }
+		command = { type = removecore which = 1931 }
+		command = { type = removecore which = 1932 }
+		command = { type = removecore which = 1934 }
+		command = { type = removecore which = 1937 }
+		#arkansas
+		command = { type = removecore which = 1933 }
+		#mississippi
+		command = { type = removecore which = 1935 }
+		command = { type = removecore which = 1938 }
+		command = { type = removecore which = 1939 }
+		#alabama
+		command = { type = removecore which = 1936 }
+		command = { type = removecore which = 1944 }
+		command = { type = removecore which = 1945 }
+		command = { type = removecore which = 1946 }
+		command = { type = removecore which = 1947 }
+		#florida
+		command = { type = removecore which = 1948 }
+		command = { type = removecore which = 1949 }
+		command = { type = removecore which = 1950 }
+		command = { type = removecore which = 1951 }
+		command = { type = removecore which = 1952 }
+		command = { type = removecore which = 1953 }
+		#georgia
+		command = { type = removecore which = 1954 }
+		command = { type = removecore which = 1955 }
+		command = { type = removecore which = 1956 }
+		command = { type = removecore which = 1959 }
+		#S carolina
+		command = { type = removecore which = 1957 }
+		command = { type = removecore which = 1958 }
+		command = { type = removecore which = 1960 }
+		#N carolina
+		command = { type = removecore which = 1961 }
+		command = { type = removecore which = 1962 }
+		command = { type = removecore which = 1963 }
+		command = { type = removecore which = 1964 }
+		#nebraska
+		command = { type = removecore which = 1860 }
+		#wyoming
+		command = { type = removecore which = 1858 }
+		command = { type = removecore which = 1866 }
+		#
+		command = { type = secedearea which = MEX value = Colorado }
+		command = { type = secedearea which = MEX value = Oklahoma }
+		command = { type = secedearea which = MEX value = Kansas }
+		command = { type = secedearea which = MEX value = Nebraska }
+		command = { type = secedearea which = MEX value = Wyoming }
+		command = { type = secedeprovince which = MEX value = 1933 }
+		command = { type = secederegion which = MEX value = "Southeast US" }
+		#
+		command = { trigger = { NOT = { exists = PAN } } type = secederegion which = MEX value = "Central America" when = 1 }
+		#
+        command = { type = peace which = MEX }
+        command = { type = peace which = PAN }
+		#
+        command = { type = domestic which = interventionism value = -2 }
+        command = { type = belligerence which = USA value = -50 }
+		#
+        command = { type = set_relation which = MEX value = 0 }
+        command = { type = non_aggression which = MEX where = USA }
+		#
+		command = { type = sleepevent which = 48900 } #peace with america
+		#
+		command = { type = trigger which = 21903 } #Victory over America
+	}
+}
+
+event = {
+	id = 21903
+	country = MEX
+
+	name = "Victory over America"
+	desc = "It is time to celebrate! We have achieved Victory over the American Federation!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		ai_chance = 100
+		command = { type = belligerence which = MEX value = -50 }
+		command = { trigger = { ai = USA } type = coup_nation which = USA }
+		#nebraska
+		command = { type = addclaim which = 1860 }
+		#wyoming
+		command = { type = addclaim which = 1858 }
+		command = { type = addclaim which = 1866 }
+		command = { type = setflag which = mex_victory_usa }
+	}
+}

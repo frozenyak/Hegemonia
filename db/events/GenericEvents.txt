@@ -886,6 +886,7 @@ event = {
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
 		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Balkan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -930,7 +931,7 @@ event = {
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
-		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Balkan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -938,7 +939,6 @@ event = {
 		command = { type = dissent value = 5 }
 		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
 		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
-		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
 	}
 }
 
@@ -979,6 +979,7 @@ event = {
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
 		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Balkan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -1027,6 +1028,7 @@ event = {
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
 		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Balkan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
