@@ -10,7 +10,7 @@ war = 0
 strat_redeploy_threshold = 5
 exp_force_ratio = 0.10 #0.15
 exp_force_ratios = { } 
-no_exp_forces_to = { SCA FRA U06 U13 U14 ITA SCH U02 RUS JAP VIE CHI CYN U87 MEN MAN UAU U08 CON U01 GER AUS }
+no_exp_forces_to = { SCA FRA U06 U13 U14 ITA SCH U02 RUS JAP VIE CHI CYN U87 MEN MAN UAU U08 CON U01 } #GER AUS
 upgrading = 0.35
 reinforcement = 0 #0.10
 use_offensive_supply = yes
@@ -20,7 +20,7 @@ use_offensive_supply = yes
 ###################################
 claim_acceptance = -49
 
-combat = { RUS = 100 U00 = 30 }
+combat = { RUS = 200 U00 = 30 }
 befriend = { GER = 200 AUS = 75 U14 = 25 SCA = 25 GEO = 50 ROM = 50 U02 = 25 }
 protect = { GEO = 10 ROM = 10 AUS = 5 GER = 5 SCA = 5 USA = 5 CAN = 5 U02 = 5 }
 target = { 
@@ -399,7 +399,8 @@ garrison = {
 		AUS = 10
 	}
 	ignore = {
-		268 # Mazirbe (German Border easy surround hex)
+		268 #liepaja
+		275 #kuressaare
 	}
 	province_priorities = { }
 	area_multiplier = { }

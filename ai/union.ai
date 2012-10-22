@@ -11,7 +11,7 @@ strat_redeploy_threshold = 5
 max_redeploying = 0.05
 exp_force_ratio = 0.10
 exp_force_ratios = { } 
-no_exp_forces_to = { VIC U07 }
+no_exp_forces_to = { VIC U07 RSI ARA }
 upgrading = 0.35
 reinforcement = 0 #0.10
 
@@ -20,7 +20,7 @@ reinforcement = 0 #0.10
 ###################################
 claim_acceptance = -49
 
-combat = { U02 = 50 AUS = 70 LIT = 80 ROM = 40 }
+combat = { U02 = 70 AUS = 50 LIT = 70 ROM = 40 GER = 50 }
 befriend = { RSI = 100 VIC = 200 U07 = 100 ARA = 100 RUS = 50 UAU = 50 AUS = 50 EGY = 50 }
 protect = { RUS = 25 }
 target = { 
@@ -526,9 +526,9 @@ garrison = {
 		LIT = 80
 		AUS = 70
 		GER = 70
-		GEO = 50
+		GEO = 25
 		TUR = 50
-		EGY = 50
+		EGY = 25
 		ARA = -1
 		U07 = -1
 		VIC = -1

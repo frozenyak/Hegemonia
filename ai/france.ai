@@ -5,8 +5,8 @@ flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
 max_front_ratio = 1.2
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
-neutrality = 90.000
-war = 6
+neutrality = 100 #90.000
+war = 0 #6
 strat_redeploy_threshold = 5
 max_redeploying = 0.05
 exp_force_ratio = 0.05
@@ -20,7 +20,7 @@ reinforcement = 0 #0.10
 ###################################
 claim_acceptance = -49
 
-combat = { }
+combat = { GER = 100 SPA = 50}
 befriend = { RSI = 75 U00 = 100 U07 = 100 ARA = 25 U10 = 25 }
 protect = { U10 = 50 }
 target = { 
@@ -245,19 +245,19 @@ military = {
 	extra_convoys_peace		= 0.05
 
 	#### Divisions etc...
-	infantry 		= 35
+	infantry 		= 40
 	cavalry 		= 0
 	motorized 		= 8
-	mechanized 		= 8
-	light_armor 	= 6
-	armor 			= 6
+	mechanized 		= 10
+	light_armor 	= 5
+	armor 			= 5
 	paratrooper 	= 0
 	marine 			= 0
 	bergsjaeger 	= 1
 	garrison		= 0
     hq 				= 1
 	militia 		= 0
-#				65 %
+#				70 %
 	interceptor 	= 5
 	multi_role 		= 10
 	cas 			= 7
@@ -275,10 +275,10 @@ military = {
 	light_cruiser 	= 0
 	heavy_cruiser 	= 0
 	battlecruiser 	= 0
-	submarine 		= 10
+	submarine 		= 5
 	nuclear_submarine = 0
 	transports 		= 0
-#				10 %
+#				5 %
 
 	#### Brigades
 	artillery 			= 20
