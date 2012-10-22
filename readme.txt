@@ -1,4 +1,4 @@
-Hegemonia 1.06, checksum XXXX
+Hegemonia 1.06, checksum OHTW
 Requires Darkest Hour patch 1.03 RC1+hotfix
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
@@ -8,7 +8,6 @@ Wiz & LP participants for creating and shaping the World
 Multiplayer Enhancement Mod and Total Realism Project for combat tweaks
 Kaiserreich Mod for various graphics and ministers
 Peter Wiegel's Koch Fette Deutsche Schrift
-israelien for his initial work on LCAGs
 Akira for tech pictures, flags
 RRT877 flags
 
@@ -32,7 +31,6 @@ Gotland
 Korea
 Ljansitar
 Romania
-Somalia
 Morocco
 
 combat changes:
@@ -69,17 +67,27 @@ IC, resources, infra
 	
 	fixed revolters
 	ai
-		tweaked countries
+		various tweaks
 		added scripted invasions
 		
 	events
-		greatly increased chance for Communist Occitania to join France, loses cores on provinces in France on Comintern choice
-		No partition of Greece when allied with India
+		occitania
+			greatly increased chance for Communist Occitania to join France
+			loses cores on provinces in France on Comintern choice, AI is puppeted
 		germany
 			no monarchist riots with von epp hog
 			no liberal riots with schuman hog
+			No partition of Greece when allied with India, or Greece exists
 		new mazula/american federation surrender events
 		added crude surrender event for the AI union, req control ankara/istanbul/athens, union 75% national lost
+		tweaks to various events
+		renumbered/ordered/rewritten several surrender events
+		
+	ministers
+		macarthur is now tagalogian, starts as chief of staff
+		
+	tech teams
+		madurai, bengal added
 		
 	gfx
 		fixed counters
@@ -88,13 +96,17 @@ IC, resources, infra
 	units
 		switched to DH Full stats and costs, but infantry will never use fuel
 	
+	technology
+		DH Full tree effects land doctrines
+	
 	map
-		changed various areas and regions
+		changed and renamed various areas and regions
 		
 	scenario
 		replaced Indian AFG/GER core for claims
 		MEX/JAP now have '29 CVL tech
 		AFE -1 free market
+		added forts in the balkans, changed others
 
 1.05 - NOTE: You have to start a new game(?)
 	tech teams
