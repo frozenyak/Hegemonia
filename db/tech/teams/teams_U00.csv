@@ -5,8 +5,8 @@ U00;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 3703;Guido Fubini;T1809;4;1930;1940;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3704;Enrico Fermi;T1807;7;1930;1950;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3705;Alexandros Papagos;T1504;3;1930;1955;small_unit_tactics;centralized_execution;infantry_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-3706;Fevzi Cakmak;T3508;5;1930;1945;large_unit_tactics;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-3707;Alexander Vasilevsky;T3707;7;1940;1970;combined_arms_focus;large_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3706;Fevzi Cakmak;T3508;5;1930;1941;large_unit_tactics;centralized_execution;training;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3707;Alexander Vasilevsky;T3707;7;1940;1970;combined_arms_focus;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3708;Grabin Design Bureau;T3708;5;1930;1970;mechanics;artillery;technical_efficiency;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3709;Cantieri Aeronautici e Navali Triestini;T3709;4;1930;1970;aeronautics;electronics;technical_efficiency;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3710;People's Railway Services;T1503;5;1930;1970;industrial_engineering;mechanics;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

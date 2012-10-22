@@ -6,7 +6,7 @@ SPA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 3104;GAIR;T3104;7;1930;1970;mechanics;artillery;general_equipment;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3105;Iberian Artillery Works;T3105;9;1930;1970;mechanics;artillery;chemistry;training;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3108;Sa'id Wafai;T3108;6;1930;1970;infantry_focus;large_unit_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-3109;Sameer Mufaddal;T3109;8;1930;1970;decentralized_execution;small_unit_tactics;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3109;Sameer Mufaddal;T3109;8;1940;1970;decentralized_execution;small_unit_tactics;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3110;Institute of Physics Research;T3110;7;1930;1970;chemistry;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3111;Gamil Dawud;T3111;7;1930;1939;aircraft_testing;fighter_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 3112;Cordoban Air Works;T3112;7;1937;1970;aeronautics;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

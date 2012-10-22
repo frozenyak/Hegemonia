@@ -143,8 +143,6 @@ teams_tib.csv
 #teams_trk.csv
 teams_tun.csv
 teams_tur.csv
-# teams_U17.csv
-# teams_U18.csv
 # teams_U19.csv
 # teams_U20.csv
 # teams_U21.csv
@@ -252,3 +250,5 @@ teams_u13.csv
 teams_U14.csv
 teams_U15.csv
 teams_U16.csv
+teams_U17.csv
+teams_U18.csv

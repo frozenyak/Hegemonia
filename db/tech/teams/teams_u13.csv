@@ -1,7 +1,13 @@
 U13;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
-4900;�cole Militaire de Saint-Cyr;T4900;8;1930;1970;large_unit_tactics;large_unit_tactics;individual_courage;infantry_focus;large_unit_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-4901;Louis Coatalen;T4901;5;1930;1970;aeronautics;mechanics;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-4902;Bollor�;T4902;1;1930;1970;mechanics;management;industrial_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-4903;Yves Rocher;T4903;2;1930;1970;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-4904;R�seau Breton;T4904;3;1930;1970;mechanics;industrial_engineering;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-4905;Henri Rol-Tanguy;T4905;2;1938;1970;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880001;Munkas Egyьttmukцdes reszere Benzin;T1600;5;1900;1970;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880002;Munkas Egyьttmukцdes reszere Mernцk-tudomany;T1601;4;1900;1970;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880003;Munkas Egyьttmukцdes reszere Fegyverzet;T1602;3;1900;1970;mechanics;artillery;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880004;Munkas Egyьttmukцdes reszere Repьlestan;T1604;5;1900;1970;aeronautics;industrial_engineering;technical_efficiency;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880005;Magyar Hozzatartozok Legiero;T1602;5;1900;1970;aeronautics;technical_efficiency;electronics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880006;Munkas Egyesьles MOLAJ;T1606;6;1944;1970;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880007;Ferenc Szombathelyi;T1607;4;1930;1960;small_unit_tactics;decentralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880008;Gyorgy de Brody;T1608;5;1940;1960;fighter_tactics;piloting;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880009;Roland Eцtvцs University;T1610;4;1900;1970;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880010;Janos Vцrцs;T1611;4;1930;1960;combined_arms_focus;centralized_execution;large_unit_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880011;Zoltan Bay;T1614;5;1930;1970;electronics;management;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+880012;Munkas Army;100494;3;1900;1970;infantry_focus;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
