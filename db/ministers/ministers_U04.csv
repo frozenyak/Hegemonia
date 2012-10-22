@@ -1,0 +1,56 @@
+U04;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+8501;Head of Government;François Debauvais;36;FA;Ambitious Union Boss;Medium;M8501;x
+8502;Foreign Minister;François Taldir-Jaffrenou;36;SL;Ideological Crusader;Medium;M8502;x
+8503;Minister of Armament;Camille Le Mercier d’Erm;36;PA;Theoretical Scientist;Medium;M8503;x
+8504;Minister of Security;Loeiz Andouard;36;FA;Prince of Terror;Medium;M8504;x
+8505;Head of Military Intelligence;Roparz Hemon;36;FA;Political Specialist;Medium;M8505;x
+8506;Chief of Staff;Yves Creston;36;FA;School of Mass Combat;Medium;M8506;x
+8507;Chief of Army;Yves Creston;36;FA;Decisive Battle Doctrine;Medium;M8506;x
+8508;Chief of Navy;Loeiz Andouard;36;FA;Power Projection Doctrine;Medium;M8504;x
+8509;Chief of Air Force;Olier Mordrel;36;FA;Air Superiority Doctrine;Medium;M8500;x
+;Replacements;;;;;;;x
+8510;Head of State;Hervé I;36;PA;Resigned Generalissimo;Medium;M8510;x
+8511;Head of Government;Yann Brekilien;48;LWR;Undistinguished Suit;Medium;M8511;x
+8512;Foreign Minister;Pierre-Henri Teitgen;38;LWR;Great Compromiser;Medium;M8512;x
+8513;Minister of Armament;Pierre-Henri Teitgen;38;LWR;Infantry Proponent;Medium;M8512;x
+8514;Minister of Armament;Henri Rol-Tanguy;38;LE;Infantry Proponent;Medium;M8514;x
+8515;Head of Military Intelligence;Alan Heusaff;48;LWR;Political Specialist;Medium;M8515;x
+8516;Chief of Staff;Hervé Budes de Guébriant;36;PA;School of Manoeuvre;Medium;M8510;x
+8517;Chief of Army;André Colin;36;SL;elastic defence doctrine;Medium;M8517;x
+8518;Chief of Navy;André Colin;36;SL;Base Control Doctrine;Medium;M8517;x
+8519;Head of State;Marcel Cachin;36;LE;Die-hard Reformer;Medium;M8519;x
+8520;Head of Government;Armand Kéravel;40;LE;Corporate Suit;Medium;M8520;x
+8521;Foreign Minister;François Tanguy-Prigent;39;LWR;Apologetic Clerk;Medium;M8521;x
+8522;Minister of Armament;Victor Le Gorgeu;36;LWR;Infantry Proponent;Medium;M8522;x
+8523;Head of Military Intelligence;Jacques Desoubrie;36;FA;Dismal Enigma;Medium;M8523;x
+8524;Foreign Minister;Jean Simon;42;SC;General Staffer;Medium;M8524;x
+8525;Chief of Staff;Jean Simon;42;SC;school of defence;Medium;M8524;x
+8526;Chief of Army;Jean Simon;42;SC;static defence doctrine;Medium;M8524;x
+8527;Head of State;René Pleven;36;SD;Benevolent Gentleman;Medium;M8527;x
+8528;Foreign Minister;Pierre Deshayes;36;SD;Undistinguished Suit;Medium;M8528;x
+8529;Minister of Security;Nöel Riou;36;SD;Crime Fighter;Medium;M8529;x
+8530;Head of Military Intelligence;Pierre Deshayes;36;SD;Dismal Enigma;Medium;M8528;x
+8531;Chief of Army;Charles Le Cocq;36;SD;Guns and Butter Doctrine;Medium;M8531;x
+8532;Chief of Navy;René Pleven;36;SD;Base Control Doctrine;Medium;M8527;x
+8533;Chief of Air Force;Jean-François Demozay;45;SD;Air Superiority Doctrine;Medium;M8533;x
+8534;Head of Military Intelligence;Nöel Riou;36;SD;Political Specialist;Medium;M8529;x
+8535;Minister of Security;Gwilherm Berthou;36;FA;Prince of Terror;Medium;M8535;x
+8536;Minister of Armament;Gwilherm Berthou;36;FA;Theoretical Scientist;Medium;M8535;x
+8537;Foreign Minister;James Bouillé;36;FA;Ideological Crusader;Medium;M8537;x
+8538;Foreign Minister;Youenn Drezen;36;FA;Biased Intellectual;Medium;M8538;x
+8539;Minister of Security;Youenn Drezen;36;FA;Silent Lawyer;Medium;M8538;x
+8540;Minister of Armament;Youenn Drezen;36;FA;Infantry Proponent;Medium;M8538;x
+8541;Head of State;Maurice Duhamel;36;FA;Die-hard Reformer;Medium;M8541;x
+8542;Head of Government;Maurice Duhamel;36;FA;Backroom Backstabber;Medium;M8541;x
+8543;Head of Government;Yann Fouéré;36;ML;Silent Workhorse;Medium;M8543;x
+8544;Head of State;Yann Goulet;36;NS;Powerhungry Demagogue;Medium;M8544;x
+8545;Minister of Armament;Yann Goulet;36;NS;Military Entrepreneur;Medium;M8544;x
+8546;Chief of Staff;Yann Goulet;36;NS;School of Psychology;Medium;M8544;x
+8547;Foreign Minister;François Taldir-Jaffrennou;36;PA;Biased Intellectual;Medium;M8547;x
+8548;Head of Government;François Taldir-Jaffrennou;36;PA;Happy Amateur;Medium;M8547;x
+8549;Chief of Army;Célestin Lainé;36;FA;Armoured Spearhead Doctrine;Medium;M8549;x
+8550;Chief of Staff;Célestin Lainé;36;FA;School of Manoeuvre;Medium;M8549;x
+8551;Foreign Minister;Morvan Lebesque;39;PA;Great Compromiser;Medium;M8551;x
+8552;Head of State;Morvan Marchal;36;SC;Die-hard Reformer;Medium;M8552;x
+8553;Head of State;Jean-Marie Perrot;36;PA;Pig-headed Isolationist;Medium;M8553;x
+8554;Foreign Minister;Jean-Marie Perrot;36;PA;Ideological Crusader;Medium;M8553;x

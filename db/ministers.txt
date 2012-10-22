@@ -243,7 +243,7 @@ ministers_U00.csv
 ministers_U01.csv
 ministers_U02.csv
 ministers_U03.csv
-#ministers_U04.csv
+ministers_U04.csv
 ministers_U05.csv
 ministers_U06.csv
 ministers_U07.csv
@@ -252,7 +252,7 @@ ministers_U09.csv
 ministers_U10.csv
 #ministers_U11.csv
 #ministers_U12.csv
-ministers_U13.csv
+#ministers_U13.csv
 ministers_u14.csv
 ministers_u15.csv
 ministers_u16.csv

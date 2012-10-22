@@ -80,8 +80,6 @@ tibet.csv
 tunis.csv
 turkey.csv
 # U15.csv
-# U16.csv
-# U17.csv
 # U18.csv
 # U19.csv
 # U20.csv
@@ -124,7 +122,9 @@ dfr-republicangermany.csv
 spa-iberia.csv
 usa-afe.csv
 vietnam.csv
-u13-brittany.csv
+u17-madras.csv
+u16-silesia.csv
+u04-brittany.csv
 u09-byzantium.csv
 u01-crete.csv
 u03-gotland.csv
@@ -142,7 +142,6 @@ vic-prf.csv
 par-novaaquitania.csv
 hawaii.csv
 u73-england.csv
-u16-silesia.csv
 #
 pan-qtizi.csv
 pru-Tarwajal.csv
