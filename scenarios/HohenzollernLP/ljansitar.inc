@@ -5,6 +5,7 @@
 country =
 { tag                    = SAF
   #puppet		 = SPA
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes } }
 #Medium Power
   energy                 = 500
   metal                  = 500

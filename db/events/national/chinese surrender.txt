@@ -1,0 +1,176 @@
+#27900-27999
+#64900-64999
+#29900-29999
+
+event = {
+	id = 27006
+	country = CHI
+	
+	trigger = {
+		OR = {
+			event = 27005
+			event = 64003
+		}
+		NOT = { event = 64004 }
+		NOT = { event = 42004 }
+		owned = { province = 1337 data = -1 }
+		owned = { province = 1369 data = -1 }
+		NOT = { exists = U74 }
+		NOT = { war = { country = JAP } }
+	}
+
+	name = "Victory Celebrations in Nanjing"
+	desc = "The Chinese people are celebrating our victory over the Mongol heathens in Yuan. At long last, the bloody civil war is over."
+	style = 1
+	picture = "China_Rally"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = dissent value = -20 }
+		command = { type = capital which = 1337 }
+	}
+}
+
+event = {
+	id = 64004
+	country = U74
+	
+	trigger = {
+		OR = {
+			event = 27005
+			event = 64003
+		}
+		NOT = { event = 27006 }
+		NOT = { event = 42004 }
+		owned = { province = 1337 data = -1 }
+		owned = { province = 1369 data = -1 }
+		NOT = { exists = CHI }
+		NOT = { war = { country = JAP } }
+	}
+
+	name = "Victory Celebrations in Nanjing"
+	desc = "The Chinese people are celebrating our victory over the Nationalist upstarts. At long last, the bloody civil war is over."
+	style = 1
+	picture = "China_Rally"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		command = { type = dissent value = -5 }
+
+	}
+}
+
+event = {
+	id = 27009
+	country = CHI
+	
+	trigger = {
+		war = { country = JAP }
+		war = { country = U74 }
+		exists = U74
+		lost_national = { value = 60 }
+		NOT = { control = { province = 1337 } }
+		NOT = { control = { province = 1247 } }
+		NOT = { control = { province = 1369 } }
+		ai = yes
+	}
+
+	name = "The Fall of the Nationalists"
+	desc = "We have lost control of most of our country and the government has fled. Yet the will of our people to resist the Japanese invader is high as ever. Perhaps it would be best to join forces with the Nationalists?"
+	style = 1
+	picture = "Japan_Invasion"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 13
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_AGREE"
+		ai_chance = 99
+		command = { type = secedearea which = JAP value = "Indochine" when = 1 }
+		command = { type = trigger which = 64008 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 20 }
+	}
+}
+
+event = {
+	id = 64006
+	country = U74
+	
+	trigger = {
+		war = { country = JAP }
+		war = { country = CHI }
+		exists = CHI
+		lost_national = { value = 60 }
+		NOT = { control = { province = 1337 } }
+		NOT = { control = { province = 1247 } }
+		NOT = { control = { province = 1369 } }
+		ai = yes
+	}
+
+	name = "The Fall of the Yuan"
+	desc = "We have lost control of most of our country and the Emperor has fled to Russia. Yet the will of our people to resist the Japanese invader is high as ever. Perhaps it would be best to join forces with the Nationalists?"
+	style = 1
+	picture = "Japan_Invasion"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 13
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_AGREE"
+		ai_chance = 99
+		#command = { type = independence which = CHC }
+		#command = { type = trigger which = 29000 }
+		command = { type = trigger which = 27008 }
+	}
+	action = {
+		name = ACTION_NAME_NEVER
+		ai_chance = 1
+		command = { type = dissent value = 20 }
+	}
+}
+
+event = {
+	id = 27008
+	country = CHI
+
+	name = "Yuan China Surrenders"
+	desc = "The Yuan were unable to resist both the Japanese and us at the same time. The Emperor has fled the country. What is left of their government offered to join forces to defeat the Japanese invader."
+	style = 1
+	picture = "japan_celebrating"
+
+	action = {
+		name = "ACTION_NAME_EXCELLENT"
+		command = { type = inherit which = U74 } # value = 1
+		command = { trigger = { exists = CHC } type = alliance which = CHC }
+	}
+}
+
+event = {
+	id = 64008
+	country = U74
+
+	name = "Nationalist China Surrenders"
+	desc = "The Nationalists were unable to resist both the Japanese and us at the same time. Most of their government has fled the country. What is left offered to join forces to defeat the Japanese invader."
+	style = 1
+	picture = "japan_celebrating"
+
+	action = {
+		name = "ACTION_NAME_EXCELLENT"
+		command = { type = inherit which = CHI } # value = 1
+		command = { trigger = { exists = CHC } type = alliance which = CHC }
+	}
+}

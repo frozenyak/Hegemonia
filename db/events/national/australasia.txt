@@ -20,13 +20,13 @@ event = {
 
 	action = { trigger = { NOT = { war = { country = PHI } } }
 		name = "Offer an alliance to Tagalog"
-		ai_chance = 60
+		ai_chance = 45
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = trigger which = 52000 }
 	}
 	action = { trigger = { NOT = { war = { country = SPA } } }
 		name = "Seek League membership"
-		ai_chance = 10
+		ai_chance = 35
 		command = { type = dissent value = 3 }
 		command = { type = domestic which = interventionism value = 2 }
 		command = { type = trigger which = 38021 }
@@ -55,7 +55,7 @@ event = {
 	# }
 	action = { trigger = { atwar = no }
 		name = "Neutrality is still best!"
-		ai_chance = 25
+		ai_chance = 15
 		command = { type = dissent value = -2 }
 		command = { type = domestic which = interventionism value = -2 }
 	}

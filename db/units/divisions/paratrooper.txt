@@ -15,7 +15,7 @@ allowed_brigades =  anti_air
 allowed_brigades =  engineer			
 #allowed_brigades =  police
 
-#upgrade = { type = infantry upgrade_time_factor = 1 upgrade_cost_factor = 0.46 }
+#upgrade = { type = infantry		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.28 }
 
 # 0 - 1938 Early Airborne Division - 0
 model = {

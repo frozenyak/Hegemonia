@@ -9,6 +9,7 @@
   
  country = 
  {  tag                    = CMB 
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
    # Resource Reserves 
 	energy                 = 540
 	metal                  = 270

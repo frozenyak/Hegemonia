@@ -1,9 +1,9 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes reinf = yes }
 neutrality = 150.000 
 war = 0
+strat_redeploy_threshold = 50
 reinforcement = 0.10
 
 ###################################

@@ -5,6 +5,7 @@
 country =
 { tag                    = ROM
   puppet		 = LIT
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
   #industrial_modifier	 = 1.00
   #relative_manpower	 = 2.00
   capital                = 316

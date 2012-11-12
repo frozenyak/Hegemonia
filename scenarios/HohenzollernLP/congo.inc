@@ -5,6 +5,7 @@
 country =
 { tag                    = CON
   puppet		 = GER
+	ai_settings = { flags = { MOB2 = yes reinf = yes } }
   #industrial_modifier	 = 1.00
   #relative_manpower	 = 2.00
 #Minor Power

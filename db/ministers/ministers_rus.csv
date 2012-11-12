@@ -65,7 +65,7 @@ RUS;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 515064;Head of Military Intelligence;Felix F. Yusupov;36;PA;Political Specialist;Very High;kaiserreich felixyusopov;x
 515065;Head of Government;Felix F. Yusupov;36;PA;Happy Amateur;High;kaiserreich felixyusopov;x
 515066;Chief of Staff;Fyodor Trikhin;36;NS;School of Mass Combat;High;M4125;x
-515067;Minister of Security;Genrikh Yagoda;36;ST;Back Stabber;Medium;M4005;x
+515067;Minister of Security;Genrikh Yagoda;36;ST;Purged Purger;Medium;M4005;x
 515068;Foreign Minister;George Vernadsky;36;SL;Great Compromiser;Medium;M4292;x
 515069;Foreign Minister;Georgi Brassov;36;FA;The Cloak N Dagger Schemer;Medium;M4098;x
 515070;Minister of Armament;Georgi Brassov;36;FA;Resource Industrialist;High;M4098;x
@@ -105,7 +105,7 @@ RUS;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 515104;Chief of Staff;Lavr Kornilov;36;SC;School of Mass Combat;Very high;MRUS Kornilov;x
 515105;Chief of Army;Lavr Kornilov;36;SC;Decisive Battle Doctrine;Medium;MRUS Kornilov;x
 515106;Chief of Army;Lavrentij Kornilov;60;FA;Guns and Butter Doctrine;Very High;M4087;x
-515107;Minister of Armament;Lazer M. Kaganovich;36;LWR;Resource Industrialist;High;M4004;x
+515107;Minister of Armament;Lazer M. Kaganovich;36;LWR;Iron Lazar;High;M4004;x
 515108;Head of Government;Lazer M. Kaganovich;44;LWR;Flamboyant Tough Guy;Very High;M4004;x
 515110;Minister of Armament;Lev B. Kamenev;36;SD;Administrative Genius;High;MRUS Kamenev;x
 515111;Foreign Minister;Lev N. Gumilov;38;FA;Iron Fisted Brute;High;Lev_Gumilov;x
@@ -113,7 +113,7 @@ RUS;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 515113;Minister of Security;Maria A. Spiridonova;36;LWR;Prince of Terror;Very High;Mrus spiridanova;x
 515114;Head of Military Intelligence;Maria A. Spiridonova;36;LWR;Political Specialist;High;Mrus spiridanova;x
 515115;Minister of Armament;Matvey Skobelev;36;LWR;Administrative Genius;High;MRUS Skobelev;x
-515116;Foreign Minister;Maxim M. Litvinov;36;ST;Biased Intellectual;High;M4003;x
+515116;Foreign Minister;Maxim M. Litvinov;36;ST;Persuader of Democracies;High;M4003;x
 515117;Head of Military Intelligence;Mikhail A. Meandrov;36;FA;Dismal Enigma;Very High;M4085;x
 515118;Chief of Staff;Mikhail Drozdovsky;36;FA;School of Psychology;Medium;M4294;x
 515119;Chief of Army;Mikhail Drozdovsky;36;FA;Armoured Spearhead Doctrine;Medium;M4294;x
@@ -121,8 +121,8 @@ RUS;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 515121;Foreign Minister;Mikhail I. Tereshchenko;36;SL;Ideological Crusader;High;MRUS Tereshchenko;x
 515122;Head of Government;Mikhail Smirnov;38;ML;Corporate Suit;Medium;MRUS Smirnov;x
 515123;Foreign Minister;Mikhail Smirnov;36;ML;Great Compromiser;High;MRUS Smirnov;x
-515124;Chief of Staff;Mikhail Tukachevsky;40;PA;School of Manoeuvre;High;M4128;x
-515125;Minister of Security;Mikhail Tukachevsky;36;PA;Silent Lawyer;Very High;M4128;x
+515124;Chief of Staff;Mikhail N. Tukhachevsky;40;PA;Deep Battle Proponent;High;M4128;x
+515125;Minister of Security;Mikhail N. Tukhachevsky;36;PA;Silent Lawyer;Very High;M4128;x
 515126;Minister of Armament;Mikhail V. Bernacki;36;ML;Administrative Genius;Medium;M4293;x
 515127;Minister of Armament;Nikolai A. Maklakov;36;FA;Military Entrepreneur;High;M4083;x
 515128;Head of Military Intelligence;Nikolai Berdyaev;36;LWR;Logistics Specialist;Medium;M4297;x
@@ -135,7 +135,7 @@ RUS;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 515135;Minister of Security;Nikolai Gredeskul;36;SC;Efficient Sociopath;High;MRUS Gredeskul;x
 515136;Minister of Armament;Nikolai I. Bukharin;36;LE;Resource Industrialist;High;BukharinRUS;x
 515137;Head of Government;Nikolai I. Yezhov;40;NS;Backroom Backstabber;High;M4093;x
-515138;Minister of Security;Nikolai I. Yezhov;36;PA;Back Stabber;Undying;M4093;x
+515138;Minister of Security;Nikolai I. Yezhov;36;PA;Secret police chief;Medium;M4093;x
 515139;Chief of Air Force;Nikolai M. Kharlamov;36;PA;Army Aviation Doctrine;High;L10472;x
 515140;Head of Military Intelligence;Nikolai M. Kharlamov;36;PA;Technical Specialist;High;L10472;x
 515141;Minister of Armament;Nikolai P. Krasnov;36;NS;Administrative Genius;High;M4104;x
@@ -196,7 +196,7 @@ RUS;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 515196;Minister of Armament;Vladimir N. Kokovtsov;36;PA;Infantry Proponent;High;kaiserreich VladimirKokovtsov;x
 515197;Foreign Minister;Vladimir P. Paley;36;SC;Apologetic Clerk;Very high;MRUS Paley;x
 515198;Minister of Security;Vladimir Skobelev;36;SC;Prince of Terror;Very High;M4115;x
-515199;Head of Government;Vyacheslav M. Molotov;45;LE;Silent Workhorse;High;M4034;x
+515199;Head of Government;Vyacheslav M. Molotov;45;LE;collectivizer;High;M4034;x
 515200;Foreign Minister;Vyacheslav M. Molotov;39;LE;Iron Fisted Brute;High;M4034;x
 515201;Minister of Armament;Wassily Leontief;36;ML;laissez-faire capitalist;Medium;M4298;x
 515202;Head of Military Intelligence;Yan K. Berzin;36;ST;Technical Specialist;High;M4006;x

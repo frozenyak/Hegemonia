@@ -1,24 +1,23 @@
 # Default AI File by Lothos
 
 switch = no # [yes/no]
-flags = { }
 max_front_ratio = 1.2
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 neutrality = 80.000
 war = 0
-desperation = 1.0
-strat_redeploy_threshold = 10
+reinforcement = 0 #0.10
+upgrading = 0.20
+strat_redeploy_threshold = 25
 exp_force_ratio = 0.50
 exp_force_ratios = { }
 no_exp_forces_to = { }
-upgrading = 0.20
-reinforcement = 0 #0.10
+desperation = 1.0
 
 ###################################
 # Diplomacy
 ###################################
-claim_acceptance = -49
+claim_acceptance = -59
 
 combat = { }
 befriend = { }
@@ -142,11 +141,11 @@ military = {
 	extra_convoys_peace		= 0.05
 
 	#### Divisions etc...
-	infantry 		= 30
+	infantry 		= 34
 	cavalry 		= 0
-	motorized 		= 9
-	mechanized 		= 9
-	light_armor 	= 4
+	motorized 		= 8
+	mechanized 		= 8
+	light_armor 	= 0
 	armor 			= 5
 	paratrooper 	= 0
 	marine 			= 0
@@ -154,7 +153,7 @@ military = {
 	garrison		= 0
     hq 				= 0
 	militia 		= 0
-#				58 %
+#				55 %
 	interceptor 	= 13
 	multi_role 		= 0
 	cas 			= 7
@@ -164,7 +163,7 @@ military = {
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				24 %
+#				30 %
 	battleship 		= 0
 	carrier 		= 0
 	escort_carrier	= 0
@@ -196,21 +195,30 @@ military = {
 	escort = 100.0000
 	light_cag = 100.000
 
-	naval_asw = 10.0000 
-	naval_anti_air_s = 10.0000 
-	naval_radar_s = 10.0000 
-	naval_fire_controll_s = 10.0000 
+	naval_asw = 20.0000 
+	naval_anti_air_s = 20.0000 
+	naval_radar_s = 20.0000 
+	naval_fire_controll_s = 20.0000 
 	naval_improved_hull_s = 0.0000 
-	naval_anti_air_l = 10.0000 
-	naval_radar_l = 10.0000 
-	naval_fire_controll_l = 10.0000 
+	naval_torpedoes_s = 0.0000 
+	naval_anti_air_l = 0.0000 
+	naval_radar_l = 0.0000 
+	naval_fire_controll_l = 0.0000 
 	naval_improved_hull_l = 0.0000 
-	naval_torpedoes_l = 0.0000
 }
 
 technology = {
 	endgoal 	= { }
 	preference 	= {
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060
+
+		# Field Artillery Support
+		2290 2300 2310 2320 2330 2340 2350 2360
+
+		# Interceptors
+		4010 4020 4030 4060 4090 15000 15010 15020
+
 		# Tools
 		5050 5060 5070
 
@@ -221,146 +229,98 @@ technology = {
 		5110 5120
 
 		# Assembly Line
-		5130 5140 5160 5180
+		#5130 5140 5160 5180
 
-		#Infantry
-		1010 1020 1030 1040 1050 1060
+		# Computers
+		5310 5320 5330 5340
 
 		# Land Doctrines
 		6030 6560 6150
 
 		# Air Doctrines
-		9040 9050 9060 9080 9100 9110 9120 9130 9140 9190 9200 9210 9220 9230 9240 9250 9260 9270 9280 9290 9300 9310 9320 9330 9340 9350 9360 9370 9380 9390 9400 9410 9420
+		#9040 9050 9060 9080 9100 9110 9120 9130 9140 9190 9200 9210 9220 9230 9240 9250 9260 9270 9280 9290 9300 9310 9320 9330 9340 9350 9360 9370 9380 9390 9400 9410 9420
 
 		# CAS
 		#4170 4280 4180
 	}
 	ignore 		= {
-		# Assembly Line
-		5150 5170
-
-		# Airborne
-		1070 1080 1090 1100
-
-		# Mountain Unit techs
-		#1110 1120 1130 1140
-
-		# Motorized
-		#1230 1240 1250
+		# Cavalry
+		1190 1200 1210 1220
 
 		# Marines
 		1150 1160 1170 1180
 
-		# Cavalry
-		1190 1200 1210 1220
+		# Airborne Infantry
+		1070 1080 1090 1100
 
-		# Mechanized
-		#1260 1270 1280 1290
-
-		# Air Transports
-		4250 4260 4270
-
-		# Multirole Fighters
-		#4040 4070 4100
-
-		# Naval Bomber
-		#4190 4200 4210
-
-		# Strategic Bomber
-		4220 4230 4240
-
-		# Rocketry
-		7550 5550 5560 5570 5580 5590
-
-		# Atomic Research
-		5470 5480 5490 5500 5510 5520 5530 5540
-
-		# Bas Decimetric
-		5410 5420 5430 5440 5450 5460
-
-		# Light tanks
-		#2020 2030 2040 2050 2060
-
-		# Medium tanks
-		#2010 2070 2080 2090
-
-		# Tank destroyers
+		#Tank destroyer
 		2170 2180 2190 2200 2210
 
-		# SP guns
-		2220 2230 2240 2250
+		#Super heavy armor brigade (Model 0 in SW tech)
+		2130
 
-		# SP Rocket Artillery
-		2260 2270 2280
+		#Heavy armor brigades
+		2100 2110 2120
 
-		# Static Anti-Air
-		2450 2460 2470 2480 2490 2500
+		# Anti-Air Brigades
+		2510 2520 2530 2540
 
-		# Anti Air Brigade
-		#2510 2520 2530 2540
+		# Battleship Super heavy Battleship
+		3250 3260 3270 3280 3290 3300 3310 12050
 
-		# Rocket Artillery
-		2370 2380 2390
-
-		# Armoured Cars
-		2150 2160
-
-		# Heavy Cruiser
-		3130 3140 3150 3160 3170 3180 3190
-
-		# Battleship
-		3250 3260 3270 3280 3290 3300 3310
-
-		# Carrier
+		# Aircraft Carriers
 		3320 3330 3340 3350 3360 3370 3380 3390
 
 		# Light Carrier
 		12100 12110 12120 12130 12140 12150
 
+		# Strategic Bombers
+		4220 4230 4240 15160 15170
+
+		# Naval Bombers
+		4190 4200 4210 15140 15150
+
+		# Air Transports
+		4250 4260 4270 15180 15190
+
 		# Carrier Air Group
 		4900 4910 4920 4930 4940 4950 4960 7050 7280
-		
-		# Submarines
-		3400 3410 3420 3430 3440 3450
 
-		# Land Doctrines
-		#14080 14090
+		# Multi role
+		4040 4070 4100 15030 15040 15050
 
-		# Strategic Air Doctrines 9140
-		9150 9160 9170 9180 9430 9440 9450 9460
-		
-		# Amphibious Warfare
-		82320 82330 #82300 82310 
-		
-		#EQUIPMENT Jungle / Desert
-		5940 5950 5960 5970
+		# Escort Fighters
+		4050 4080 4110 15060 15070 15080
+
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
 	}
 
 	armor 		= 3
-	infantry 	= 2
-	industry 	= 2
+	infantry 	= 5
+	industry 	= 4
 	aircraft 	= 1
-	naval 		= 0
-	land_doctrines 	= 1
+	naval 		= 2
+	land_doctrines 	= 2
 	secret_weapons 	= 0
-	air_doctrines 	= 2
-	naval_doctrines = 0
+	air_doctrines 	= 1
+	naval_doctrines = 1
 }
 ###################################
 # Ground Combat, Leaders and Garrisons
 ###################################
 leader_ratio = {
-	land_field_marshal 	=0.051
-	land_general 		=0.101
-	land_lt_general 	=0.201
+	land_field_marshal 	=0.02
+	land_general 		=0.031
+	land_lt_general 	=0.41
 
-	sea_grand_admiral 	=0.041
-	sea_admiral 		=0.101
-	sea_vice_admiral 	=0.101
+	sea_grand_admiral 	=0.02
+	sea_admiral 		=0.061
+	sea_vice_admiral 	=0.401
 
-	air_marshal 		= 0.151
-	air_general 		= 0.28
-	air_lt_General 		= 0.4
+	air_marshal 		=0.02
+	air_general 		=0.091
+	air_lt_General 		=0.11
 }
 garrison = {
 	defend_overseas_beaches = yes
@@ -501,6 +461,7 @@ invasion = {
 
 	target = { }
 }
+
 admiral = {
 	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
 	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port

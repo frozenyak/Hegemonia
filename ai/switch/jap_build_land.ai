@@ -31,7 +31,8 @@ military = {
 	flying_rocket 	= 0
  #        35 % 
 	battleship 		= 0
-   	carrier     	= 11 
+   	carrier     	= 9 
+	light_carrier	= 2
 	escort_carrier	= 0
    	destroyer     	= 2
    	light_cruiser   = 3 

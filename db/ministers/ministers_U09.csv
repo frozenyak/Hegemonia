@@ -1,120 +1,115 @@
-U09;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
-110001;Head of State;Manuel XXVI;36;PA;Ruthless Powermonger;High;M18001;x
-110002;Head of Government;Constantinos Demertzis;36;PA;Naive Optimist;NA;M18002;x
-110003;Foreign Minister;Constantinos Demertzis;36;PA;Biased Intellectual;Very High;M18002;x
-110004;Minister of Armament;Georgios Mantzavinos;36;PA;Military Entrepreneur;Medium;M18004;x
-110005;Minister of Security;Georgios Logothetis;36;PA;Crime Fighter;Medium;M18005;x
-110006;Head of Military Intelligence;Georgios Logothetis;36;PA;Dismal Enigma;Medium;M18005;x
-110007;Chief of Staff;Theodor Pangalos;36;PA;School of Defence;Low;M18007;x
-110008;Chief of Army;Alexandros Papagos;36;PA;Elastic Defence Doctrine;Low;M18008;x
-110009;Chief of Navy;Anastassio Sakellariou;36;PA;Open Seas Doctrine;Medium;M18009;x
-110010;Chief of Air Force;Panagotis Papanikolaou;36;SC;Carpet Bombing Doctrine;Medium;M18042;x
-110040;Head of State;Grigoriev Murnov;41;NS;Weary Stiffneck;High;M18040;x
-110041;Head of State;Mario Vercellino;42;NS;Resigned Generalissimo;High;M18041;x
-110042;Head of State;Reinhard Altenburg;43;NS;Autocratic Charmer;High;M18042;x
-110046;Head of Government;Themistocles Sophoulis;36;SL;Flamboyant Tough Guy;High;M18014;x
-110047;Head of Government;Georgios Papandreou;44;SL;Silent Workhorse;High;M18015;x
-110048;Head of Government;Panagiolis Poulitsas;46;SL;Smiling Oilman;High;M18048;x
-110049;Head of Government;Ioannis Metaxas;36;SC;Old General;High;M18049;x
-110050;Head of Government;Alexandros Korizis;41;SC;Political Protege;High;M18050;x
-110051;Head of Government;Emmanouel Tsouderos;41;SC;Happy Amateur;High;M18051;x
-110052;Head of Government;Sophocles Venizelos;44;SC;Naive Optimist;High;M18012;x
-110053;Head of Government;Konstantinos Tsaldaris;46;SC;Old General;High;M18053;x
-110054;Head of Government;Dimitrios Maximos;47;SC;Political Protege;High;M18054;x
-110055;Head of Government;Panagis Tsaldaris;36;FA;Flamboyant Tough Guy;High;M18055;x
-110056;Head of Government;Georgias Tsolakoglou;41;NS;Old General;High;M18056;x
-110057;Head of Government;Konstantinos Logothetopoulos;42;NS;Corporate Suit;High;M18057;x
-110058;Head of Government;Ioannis Rallis;43;NS;Naive Optimist;High;M18058;x
-110060;Head of Government;Nikolaos Plastiras;45;PA;Old General;High;M18060;x
-110061;Head of Government;Petros Voulgaris;45;PA;Naive Optimist;High;M18061;x
-110062;Head of Government;Panagiotis Kanellopoulos;45;PA;Smiling Oilman;High;M18062;x
-110067;Foreign Minister;Georgios Papandreou;44;SL;Biased Intellectual;Very High;M18015;x
-110068;Foreign Minister;Ioannis Safianopoulos;45;SL;Great Compromiser;Medium;M18068;x
-110069;Foreign Minister;Constantinos Rentis;46;SL;Apologetic Clerk;Medium;M18069;x
-110070;Foreign Minister;Ioannis Metaxas;36;SC;General Staffer;Very High;M18049;x
-110071;Foreign Minister;Alexandros Korizis;41;SC;Great Compromiser;Medium;M18050;x
-110072;Foreign Minister;Emmanouel Tsouderos;41;SC;Apologetic Clerk;Medium;M18051;x
-110075;Foreign Minister;Demosthenes Nicoladis;36;FA;Ideological Crusader;Very High;M18075;x
-110076;Foreign Minister;Georgias Tsolakoglou;41;NS;General Staffer;Very High;M18056;x
-110077;Foreign Minister;Konstantinos Logothetopoulos;42;NS;Biased Intellectual;High;M18057;x
-110078;Foreign Minister;Ioannis Rallis;43;NS;The Cloak N Dagger Schemer;Very High;M18058;x
-110079;Foreign Minister;Georgios Papandreou;45;PA;Biased Intellectual;Very High;M18015;x
-110080;Foreign Minister;Ioannes Socrates Politis;45;PA;Apologetic Clerk;Very High;M18080;x
-110081;Foreign Minister;Panagiotis Kanellopoulos;45;PA;Great Compromiser;Medium;M18062;x
-110082;Foreign Minister;Panagiotios Demestichas;46;PA;General Staffer;Very High;M18082;x
-110087;Minister of Armament;Theodoros Marsal;37;SL;Resource Industrialist;Medium;M18087;x
-110088;Minister of Armament;Themistocles Sophoulis;41;SL;Administrative Genius;High;M18014;x
-110089;Minister of Armament;Alexandros Svolos;44;SL;Resource Industrialist;High;M18089;x
-110090;Minister of Armament;Demetrios Gousis;45;SL;Battle Fleet Proponent;High;M18090;x
-110092;Minister of Armament;Antoine Frangulis;38;SC;Air Superiority Proponent;Medium;M18092;x
-110093;Minister of Armament;Thanassos Exaharis;39;SC;laissez-faire capitalist;Medium;M18093;x
-110094;Minister of Armament;Takis Pipenelis;40;SC;Theoretical Scientist;Medium;M18094;x
-110095;Minister of Armament;Eleftherios Venizelos;41;SC;Air to Ground Proponent;Medium;M18010;x
-110096;Minister of Armament;Gaecia Geanados;42;SC;Strategic Air Proponent;Medium;M18096;x
-110097;Minister of Armament;Anastassios Bardivilias;43;SC;Air to Sea Proponent;Medium;M18097;x
-110098;Minister of Armament;Anatasios Kanellopoulos;44;SC;Administrative Genius;Very High;M18098;x
-110099;Minister of Armament;Giorgios Lavdas;45;SC;Tank Proponent;Very High;M18099;x
-110100;Minister of Armament;Alchibiades Stephanopoulos;46;SC;laissez-faire capitalist;Medium;M18100;x
-110102;Minister of Armament;Panagis Tsaldaris;38;FA;Air to Sea Proponent;High;M18055;x
-110103;Minister of Armament;Pavlos Milziadis;41;NS;Resource Industrialist;Medium;M18103;x
-110104;Minister of Armament;Christos Tsigantes;42;NS;Resource Industrialist;Medium;M18104;x
-110105;Minister of Armament;Nicholaos Voutsinaris;43;NS;Theoretical Scientist;High;M18105;x
-110106;Minister of Armament;Ioannis Venizelos;44;PA;Military Entrepreneur;Medium;M18106;x
-110107;Minister of Armament;Nikolaos Plastiras;45;PA;Infantry Proponent;Very High;M18060;x
-110109;Minister of Security;Georgios Papandreou;36;SL;Efficient Sociopath;High;M18015;x
-110111;Minister of Security;Elias Panakilis;44;SL;Crime Fighter;Medium;M18111;x
-110112;Minister of Security;Evangelos Papanoutsos;45;SL;Compassionate Gentleman;Medium;M18112;x
-110113;Minister of Security;Panagiolis Poulitsas;46;SL;Prince of Terror;High;M18048;x
-110114;Minister of Security;Giorgios Nicolaidis;36;SC;Back Stabber;Medium;M18114;x
-110115;Minister of Security;Raul Bibica Rosetti;41;SC;Compassionate Gentleman;Medium;M18115;x
-110116;Minister of Security;Dimitrios Maximos;44;SC;Crime Fighter;High;M18054;x
-110117;Minister of Security;Konstantinos Tsaldaris;44;SC;Man of the People;Medium;M18117;x
-110118;Minister of Security;Thanassis Aghnides;45;SC;Efficient Sociopath;Medium;M18118;x
-110119;Minister of Security;Panagiotis Kafantaris;46;SC;Silent Lawyer;Medium;M18119;x
-110120;Minister of Security;Stephanos Lakiantos;47;SC;Crooked Kleptocrat;Medium;M18120;x
-110122;Minister of Security;Christos Tsigantes;38;FA;Prince of Terror;Medium;M18104;x
-110123;Minister of Security;Grigoriev Murnov;41;NS;Crime Fighter;Low;M18040;x
-110124;Minister of Security;Mario Vercellino;42;NS;Back Stabber;Low;M18041;x
-110125;Minister of Security;Reinhard Altenburg;43;NS;Crooked Kleptocrat;High;M18042;x
-110127;Minister of Security;Alchibiades Stephanopoulos;44;PA;Compassionate Gentleman;Medium;M18100;x
-110128;Minister of Security;Christos Triantafyllidis;46;PA;Man of the People;Medium;M18128;x
-110132;Head of Military Intelligence;Georgios Papandreou;36;SL;Political Specialist;High;M18015;x
-110135;Head of Military Intelligence;Georgios Drossopoulos;41;SC;Technical Specialist;High;M18135;x
-110136;Head of Military Intelligence;Georgios Streit;44;SC;Industrial Specialist;High;M18136;x
-110137;Head of Military Intelligence;Anatasios Kanellopoulos;46;SC;Dismal Enigma;Very High;M18098;x
-110138;Head of Military Intelligence;Alexandros Propanis;47;SC;Logistics Specialist;Medium;M18138;x
-110139;Head of Military Intelligence;Christos Triantafyllidis;36;FA;Dismal Enigma;Medium;M18128;x
-110140;Head of Military Intelligence;Alchibiades Stephanopoulos;37;FA;Industrial Specialist;Medium;M18100;x
-110141;Head of Military Intelligence;Christos Tsigantes;41;NS;Industrial Specialist;Medium;M18104;x
-110142;Head of Military Intelligence;Sevastianos Foulidis;42;NS;Logistics Specialist;High;M18142;x
-110143;Head of Military Intelligence;Napoleon Zervas;44;PA;Logistics Specialist;Low;M18143;x
-110150;Chief of Staff;Alexandros Papagos;36;SC;School of Defence;Medium;M18007;x
-110151;Chief of Staff;Giorgios Lavdas;39;SC;School of Manoeuvre;Medium;M18099;x
-110152;Chief of Staff;Paraskos Melissinos;40;SC;School of Mass Combat;Medium;M18152;x
-110155;Chief of Staff;Giorgios Kondylis;36;FA;School of Manoeuvre;Medium;M18155;x
-110157;Chief of Staff;Georgias Tsolakoglou;41;NS;School of Manoeuvre;Very High;M18056;x
-110158;Chief of Staff;Nikolaos Plastiras;44;PA;School of Psychology;Very High;M18060;x
-110159;Chief of Staff;Leonidas Paraskevopoulos;46;PA;School of Mass Combat;Medium;M18159;x
-110162;Chief of Army;Giorgios Roussoupoulos;36;SL;Elastic Defence Doctrine;Low;M18162;x
-110165;Chief of Army;Vassilios Tsounoukas;41;SC;Decisive Battle Doctrine;Low;M18153;x
-110167;Chief of Army;Giorgios Lavdas;45;SC;Armoured Spearhead Doctrine;Low;M18099;x
-110170;Chief of Army;Georgias Tsolakoglou;41;NS;Decisive Battle Doctrine;Very High;M18056;x
-110171;Chief of Army;Nikolaos Plastiras;44;PA;Guns and Butter Doctrine;Very High;M18060;x
-110173;Chief of Navy;Nikolaos Votsis;36;SL;Base Control Doctrine;High;M18019;x
-110174;Chief of Navy;Demetrios Gousis;41;SL;Decisive Naval Battle Doctrine;High;M18090;x
-110176;Chief of Navy;Alexiou Tsamotos;41;SC;Decisive Naval Battle Doctrine;High;M18091;x
-110179;Chief of Navy;Alexandros Oikonomou;41;NS;Open Seas Doctrine;Very Low;M18179;x
-110183;Chief of Air Force;Gaecia Geanados;41;SL;Carpet Bombing Doctrine;Medium;M18096;x
-110084;Chief of Air Force;Euthanassos Perrikos;44;SL;Vertical Envelopment Doctrine;Medium;M18184;x
-110186;Chief of Air Force;Antoine Frangulis;41;SC;Air Superiority Doctrine;Medium;M18092;x
-110192;Foreign Minister;Themistocles Sophoulis;36;SL;The Cloak N Dagger Schemer;high;M18014;x
-110198;Head of Government;Themistocles Sophoulis;46;SL;Flamboyant Tough Guy;High;M18014;x
-110199;Head of Government;Konstantinos Tsaldaris;47;SC;Corporate Suit;NA;M18053;x
-110200;Foreign Minister;Ioannis Safianopoulos;45;PA;The Cloak N Dagger Schemer;Medium;M18068;x
-110201;Foreign Minister;Petros Voulgaris;45;PA;Biased Intellectual;High;M18061;x
-110202;Head of Government;Alexandros Diomidis;49;SL;Political Protege;High;M18202;x
-110204;Head of Government;Dimitrios Kiousopoulos;52;SC;Smiling Oilman;High;M18204;x
-110205;Head of Government;Alexandros Papagos;52;SC;Old General;High;M18007;x
-110206;Foreign Minister;Panaiotis Pipenelis;50;SC;Apologetic Clerk;Very High;M18206;x
-110207;Foreign Minister;Stephanos Stephanopoulos;52;SC;Biased Intellectual;Very High;M18207;x
-EOF;x
+U09;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;Country
+;Replacements;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+86001;Head of State;Wilhelm Miklas;36;FA;Weary Stiffneck;High;M23001;x
+86002;Head of Government;Kurt Schuschnigg;36;FA;Silent Workhorse;High;M23002;x
+86003;Foreign Minister;Egon Berger-Waldenegg;36;FA;Apologetic Clerk;High;M23003;x
+86004;Minister of Armament;Julius Raab;36;FA;Resource Industrialist;Medium;M23004;x
+86005;Minister of Security;Eduard Baar-Baarenfels;36;FA;Man of the People;High;M23005;x
+86006;Head of Military Intelligence;Wilhelm Gebauer;36;FA;Logistics Specialist;Medium;M23006;x
+86007;Chief of Staff;Alfred von Jansa;36;FA;School of Defence;Medium;M23007;x
+86008;Chief of Army;Wilhelm Zehner;36;FA;Elastic Defence Doctrine;High;M23008;x
+86009;Chief of Navy;Paul von Hegedüs;36;FA;Decisive Naval Battle Doctrine;High;M23009;x
+86010;Chief of Air Force;Alexander Löhr;36;NS;Army Aviation Doctrine;Medium;M23010;x
+86041;Head of State;Otto I;36;PA;Autocratic Charmer;High;M23041;x
+86042;Head of State;Josef Bürckel;38;FA;Insignificant Layman;High;M23042;x
+86043;Head of State;Arthur Seyss-Inquart;38;NS;Die-hard Reformer;High;M23011;x
+86044;Head of State;Karl Renner;38;SD;Benevolent Gentleman;High;M23021;x
+86045;Head of State;Leopold Figl;45;SC;Pig-headed Isolationist;High;M23045;x
+86046;Head of State;Otto Bauer;38;LE;Insignificant Layman;High;M23031;x
+86047;Head of State;Josef Teufl;45;ST;Barking Buffoon;High;M23047;x
+86048;Head of Government;O. Löwenfels-Aarengau;45;PA;Smiling Oilman;High;M23048;x
+86049;Head of Government;Albert Mendsdorff-Pouilly;38;FA;Happy Amateur;High;M23049;x
+86050;Head of Government;Edmund Glaise-Horstenau;38;NS;Old General;High;M23050;x
+86051;Head of Government;Wilhelm Wolff;42;NS;Flamboyant Tough Guy;High;M23013;x
+86052;Head of Government;Ludwig Hülgerth;38;SC;Corporate Suit;High;M23052;x
+86053;Head of Government;Adolf Schärf;45;SD;Naive Optimist;High;M23022;x
+86054;Head of Government;Willi Frank;38;LE;Happy Amateur;High;M23035;x
+86055;Head of Government;Josef Teufl;45;ST;Backroom Backstabber;High;M23047;x
+86056;Foreign Minister;O. Löwenfels-Aarengau;45;PA;General Staffer;High;M23048;x
+86057;Foreign Minister;Guido Schmidt;36;FA;The Cloak N Dagger Schemer;High;M23057;x
+86058;Foreign Minister;Eduard Baar-Baarenfels;38;FA;Iron Fisted Brute;High;M23005;x
+86059;Foreign Minister;Albert Mendsdorff-Pouilly;39;FA;Apologetic Clerk;Medium;M23049;x
+86060;Foreign Minister;Wilhelm Wolff;38;NS;Ideological Crusader;High;M23013;x
+86061;Foreign Minister;Edmund Glaise-Horstenau;42;NS;General Staffer;Medium;M23061;x
+86062;Foreign Minister;Karl Gruber;38;SC;Biased Intellectual;Low;M23086;x
+86063;Foreign Minister;Leopold Figl;45;ML;Great Compromiser;Medium;M23045;x
+86064;Foreign Minister;Adolf Schärf;45;ML;Biased Intellectual;Medium;M23022;x
+86065;Foreign Minister;Alfred Klahr;38;LE;Ideological Crusader;High;M23033;x
+86066;Foreign Minister;Willi Frank;45;ST;Iron Fisted Brute;Medium;M23035;x
+86067;Minister of Armament;T. Winkler-Kreuth-Mautner;45;PA;laissez-faire capitalist;High;M23067;x
+86068;Minister of Armament;Albert Mendsdorff-Pouilly;46;PA;Administrative Genius;Medium;M23049;x
+86069;Minister of Armament;Josef Dobretsberger;36;FA;laissez-faire capitalist;High;M23069;x
+86070;Minister of Armament;Paul von Hegedüs;38;FA;Battle Fleet Proponent;High;M23009;x
+86071;Minister of Armament;Rudolf Neumayr;38;NS;Resource Industrialist;Medium;M23014;x
+86072;Minister of Armament;Hans Fischböck;42;NS;Military Entrepreneur;High;M23072;x
+86073;Minister of Armament;Alfred Maleta;44;NS;Tank Proponent;Medium;M23073;x
+86074;Minister of Armament;Eduard Heinl;38;ML;Theoretical Scientist;Medium;M23024;x
+86075;Minister of Armament;Karl Gruber;42;ML;Air Superiority Proponent;Low;M23086;x
+86076;Minister of Armament;Karl Renner;45;SC;Strategic Air Proponent;Low;M23021;x
+86077;Minister of Armament;Karl Tuppy;45;SD;Corrupt Kleptocrat;Low;M23077;x
+86078;Minister of Armament;Fritz Stöckinger;46;SD;Air to Ground Proponent;High;M23078;x
+86079;Minister of Armament;Ludwig Huelgerth;46;SD;Air to Sea Proponent;Medium;M23052;x
+86080;Minister of Armament;Robert Winterstein;38;LE;Submarine Proponent;Medium;M23025;x
+86081;Minister of Armament;Erwin Puschmann;45;ST;Infantry Proponent;Medium;M23034;x
+86082;Minister of Security;W. Ehrenburg von Lüttitz;45;PA;Efficient Sociopath;High;M23082;x
+86083;Minister of Security;Kurt Schuschnigg;37;FA;Compassionate Gentleman;High;M23002;x
+86084;Minister of Security;Constantin Dumba;38;FA;Man of the People;Medium;M23084;x
+86085;Minister of Security;Arthur Seyss-Inquart;38;NS;Silent Lawyer;High;M23011;x
+86086;Minister of Security;Hanns Rauter;42;NS;Man of the People;High;M23086;x
+86087;Minister of Security;Edmund Glaise-Horstenau;44;NS;Prince of Terror;Medium;M23050;x
+86088;Minister of Security;Robert Winterstein;38;SC;Crooked Kleptocrat;Medium;M23025;x
+86089;Minister of Security;Karl Tuppy;45;SC;Efficient Sociopath;Low;M23077;x
+86090;Minister of Security;Franz Sebek;45;SD;Compassionate Gentleman;High;M23036;x
+86091;Minister of Security;Otto Bauer;38;LE;Back Stabber;Very Low;M23031;x
+86092;Minister of Security;Willi Frank;45;ST;Crime Fighter;Medium;M23035;x
+86093;Head of Military Intelligence;Kalmán Szell;45;PA;Political Specialist;Medium;M23093;x
+86094;Head of Military Intelligence;Constantin Dumba;36;FA;Naval Intelligence Specialist;Medium;M23084;x
+86095;Head of Military Intelligence;Karl Eglseer;38;FA;Logistics Specialist;High;M23095;x
+86096;Head of Military Intelligence;Wilhelm Wolff;38;NS;Technical Specialist;High;M23013;x
+86097;Head of Military Intelligence;Alexander Löhr;42;NS;Dismal Enigma;Medium;M23010;x
+86098;Head of Military Intelligence;Robert Winterstein;38;SC;Technical Specialist;High;M23025;x
+86099;Head of Military Intelligence;Julius Raab;45;SC;Industrial Specialist;Medium;M23004;x
+86100;Head of Military Intelligence;Franz Sebek;45;SD;Political Specialist;High;M23036;x
+86102;Head of Military Intelligence;Richard Bernaschek;45;ST;Technical Specialist;High;M23038;x
+86103;Chief of Staff;O. Meixner von Zweienstamm;45;PA;School of Defence;Medium;M23103;x
+86104;Chief of Staff;Walter Ernst;36;FA;School of Defence;High;M23104;x
+86105;Chief of Staff;Rudolf von Brudermann;41;FA;School of Manoeuvre;High;M23105;x
+86106;Chief of Staff;Emil Hickmann;38;NS;School of Manoeuvre;High;M23017;x
+86107;Chief of Staff;Alfred Hubicki;40;NS;School of Psychology;Medium;M23107;x
+86108;Chief of Staff;Eugen Beyer;42;NS;School of Fire Support;Medium;M23018;x
+86109;Chief of Staff;Wilhelm Zehner;38;SC;School of Mass Combat;High;M23008;x
+86110;Chief of Staff;Eric von Klopfenburg;45;SC;School of Defence;High;M23039;x
+86111;Chief of Staff;Adolf Schärf;45;SD;School of Fire Support;Medium;M23022;x
+86112;Chief of Staff;Ferdinand Strasser;38;LE;School of Manoeuvre;High;M23037;x
+86114;Chief of Army;Eric von Klopfenburg;45;PA;Static Defence Doctrine;High;M23039;x
+86115;Chief of Army;O. Meixner von Zweienstamm;38;FA;Guns and Butter Doctrine;Medium;M23103;x
+86116;Chief of Army;Richard Martinek;41;FA;Elastic Defence Doctrine;Medium;M23116;x
+86117;Chief of Army;Eugen Beyer;38;NS;Elastic Defence Doctrine;High;M23018;x
+86118;Chief of Army;Lothar Rendulic;42;NS;Armoured Spearhead Doctrine;Medium;M23118;x
+86119;Chief of Army;Heinrich Gleissner;38;SC;Decisive Battle Doctrine;Very Low;M23028;x
+86121;Chief of Army;Richard Bernaschek;38;LE;Static Defence Doctrine;Medium;M23038;x
+86186;Chief of Navy;Otto I von Habsburg;45;PA;Indirect Approach Doctrine;Very High;M23041;x
+86124;Chief of Navy;Ignaz Seipel;38;FA;Power Projection Doctrine;High;M23124;x
+86125;Chief of Navy;Emil Hickmann;38;NS;Open Seas Doctrine;Low;M23017;x
+86126;Chief of Navy;Robert Winterstein;38;SC;Indirect Approach Doctrine;Medium;M23025;x
+86128;Chief of Navy;Eric von Klopfenburg;38;LE;Open Seas Doctrine;High;M23039;x
+86129;Chief of Navy;Josef Teufl;45;ST;Base Control Doctrine;Medium;M23047;x
+86130;Chief of Air Force;W. Ehrenburg von Lüttitz;45;PA;Army Aviation Doctrine;High;M23082;x
+86131;Chief of Air Force;Otto Schöbel;38;FA;Vertical Envelopment Doctrine;High;M23030;x
+86133;Chief of Air Force;Josef Bürckel;42;NS;Carpet Bombing Doctrine;High;M23042;x
+86134;Chief of Air Force;Julius Yllam;38;SC;Air Superiority Doctrine;Low;M23040;x
+86135;Chief of Air Force;Egon Berger-Waldenegg;42;SC;Carpet Bombing Doctrine;High;M23003;x
+86139;Head of Military Intelligence;Kurt Schuschnigg;37;FA;Political Specialist;Undying;M23002;x
+86140;Chief of Staff;Kurt Schuschnigg;36;FA;School of Fire Support;Undying;M23002;x
+86141;Head of State;Alfred Hubicki;45;NS;Stern Imperialist;High;M23107;x
+86142;Chief of Air Force;Artur Breycha-Vauthier;42;LE;Naval Aviation Doctrine;Low;M23136;x
+86143;Head of State;Karl Renner;38;SC;Benevolent Gentleman;High;M23021;x
+86144;Head of State;Theodor Körner;51;SC;Weary Stiffneck;High;M23144;x
+86145;Head of State;Theodor Körner;51;SD;Weary Stiffneck;High;M23144;x
+86146;Head of Government;Leopold Figl;45;SC;Happy Amateur;High;M23045;x
+86147;Head of Government;Julius Raab;51;SC;Corporate Suit;Medium;M23004;x
+86148;Minister of Armament;Ferdinand Graf;45;SC;laissez-faire capitalist;Medium;M23148;x
+86149;Minister of Security;Josef Gerö;45;SC;Silent Lawyer;Low;M23149;x
+86150;Minister of Security;Otto Tschabeck;49;SC;Man of the People;Low;M23150;x
+86151;Head of Military Intelligence;Oskar Helmer;45;ML;Dismal Enigma;High;M23151;x
+86152;Foreign Minister;Adolf Schärf;45;SD;Biased Intellectual;Very High;M23022;x

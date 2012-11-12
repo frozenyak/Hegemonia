@@ -1,9 +1,9 @@
 VIC;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 870001;Minister of Armament;Vincent Auriol;33;LWR;Administrative Genius;High;M2004;X
-870002;Minister of Security;Marx Dormoy;33;LWR;Compassionate Gentleman;Medium;M2005;X
+870002;Minister of Security;Marx Dormoy;33;LWR;Opposer of the far right;Medium;M2005;X
 870003;Head of Military Intelligence;Joseph Paganon;33;LWR;Political Specialist;Medium;M2006;X
 870004;Chief of Staff;Maurice Gamelin;33;LWR;School of Fire Support;Very High;M2007;X
-870005;Chief of Army;Maurice Gamelin;33;LWR;Static Defence Doctrine;Very High;M2007;X
+870005;Chief of Army;Maurice Gamelin;33;LWR;Static Defense Supporter;Very High;M2007;X
 870006;Chief of Air Force;Victor Denain;33;LWR;Carpet Bombing Doctrine;Medium;M2010;X
 870007;Head of State;Vincent Auriol;33;LWR;Autocratic Charmer;High;M2004;X
 870008;Head of State;Daniel Mayer;33;LWR;Weary Stiffneck;High;M2023;X
@@ -17,7 +17,7 @@ VIC;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 870016;Foreign Minister;Joseph Paul Boncour;33;LWR;Ideological Crusader;Medium;M2049;X
 870017;Foreign Minister;Pierre Comert;33;LWR;The Cloak N Dagger Schemer;Medium;M2050;X
 870018;Foreign Minister;Leon Blum;33;LWR;Apologetic Clerk;Very High;M2033;X
-870019;Foreign Minister;Yvon Delbos;33;LWR;Biased Intellectual;Medium;M2048;X
+870019;Foreign Minister;Yvon Delbos;33;LWR;Supporter of friendly relations;Medium;M2048;X
 870020;Foreign Minister;Georges Bonnet;33;LWR;Iron Fisted Brute;Medium;M2053;X
 870021;Foreign Minister;Paul Reynaud;33;LWR;Ideological Crusader;Undying;M2038;X
 870022;Foreign Minister;Marcel Cachin;33;ST;Biased Intellectual;Very High;M2017;X
@@ -26,12 +26,12 @@ VIC;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 870025;Foreign Minister;Jacques Duclos;33;ST;Ideological Crusader;Very High;M2012;X
 870026;Minister of Armament;Jean Louis Barthou;33;LWR;Military Entrepreneur;Medium;M2069;X
 870027;Minister of Armament;Leon Jouhaux;33;LWR;Strategic Air Proponent;Medium;M2070;X
-870028;Minister of Armament;Guy Mollet;33;LWR;Theoretical Scientist;Medium;M2071;X
+870028;Minister of Armament;Guy Mollet;33;LWR;Keynesian economy;Medium;M2071;X
 870029;Minister of Armament;André Le Troquer;33;LWR;Resource Industrialist;Medium;M2072;X
 870030;Minister of Armament;Raoul Dautry;33;LWR;Theoretical Scientist;High;M2073;X
-870031;Minister of Armament;Louis Loucheur;33;LWR;Air to Ground Proponent;Medium;M2074;X
+870031;Minister of Armament;Louis Loucheur;33;LWR;Construction magnate;Medium;M2074;X
 870032;Minister of Armament;Marcel Hoden;33;LWR;Air Superiority Proponent;Medium;M2076;X
-870033;Minister of Armament;Georges Bonnet;33;LWR;Resource Industrialist;Medium;M2053;X
+870033;Minister of Armament;Georges Bonnet;33;LWR;Opposer to military spending;Medium;M2053;X
 870034;Minister of Armament;George Levy;33;ST;Administrative Genius;Medium;M2014;X
 870035;Minister of Armament;Laurent Casenove;33;ST;Theoretical Scientist;Medium;M2064;X
 870036;Minister of Armament;Jean Jerome;33;ST;laissez-faire capitalist;Medium;M2093;X
@@ -40,7 +40,7 @@ VIC;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 870039;Minister of Armament;Daniel Renoult;33;ST;Theoretical Scientist;Medium;M2096;X
 870040;Minister of Security;Pierre Auguste Chardigny;33;LWR;Prince of Terror;Low;M2098;X
 870041;Minister of Security;Julien Luchaire;33;LWR;Efficient Sociopath;Medium;M2099;X
-870042;Minister of Security;Adrien Tixier;33;LWR;Compassionate Gentleman;Very High;M2100;X
+870042;Minister of Security;Adrien Tixier;33;LWR;Health and safety;Very High;M2100;X
 870043;Minister of Security;Henri Bonnet;33;LWR;Back Stabber;Medium;M2101;X
 870044;Minister of Security;Paul Ramadier;33;LWR;Crime Fighter;High;M2035;X
 870045;Minister of Security;Jules Moch;33;LWR;Man of the People;High;M2104;X

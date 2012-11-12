@@ -14,9 +14,9 @@ allowed_brigades =  anti_air
 #allowed_brigades =  engineer			
 allowed_brigades =  police
 
-upgrade = { type = garrison upgrade_time_factor = 1 upgrade_cost_factor = 0.46 }
-upgrade = { type = infantry upgrade_time_factor = 1 upgrade_cost_factor = 1.41 }
-#upgrade = { type = cavalry upgrade_time_factor = 1 upgrade_cost_factor = 1.89 }
+upgrade = { type = garrison		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.28 }
+upgrade = { type = infantry		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.81 }
+#upgrade = { type = cavalry		upgrade_time_factor = 0.80	upgrade_cost_factor = 1.11 }
 
 #0 - Regular Militia
 model = {

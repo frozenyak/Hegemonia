@@ -9,7 +9,7 @@ event = {
 	persistent = yes
 	
 	trigger = {
-		#flag = great_war_by_event
+		flag = great_war_by_event
 		ai = yes
 		OR = {
 			war = { country = SPA country = U00 }
@@ -32,6 +32,7 @@ event = {
 		government = democratic
 		NOT = { ispuppet = yes }
 		NOT = { local_flag = ai_alliance }
+		exists = SPA
 	}
 	
 	date = { day = 1 month = january year = 1936 }
@@ -53,7 +54,7 @@ event = {
 	persistent = yes
 	
 	trigger = {
-		#flag = great_war_by_event
+		flag = great_war_by_event
 		ai = yes
 		OR = {
 			war = { country = SPA }
@@ -79,6 +80,10 @@ event = {
 		government = fascist
 		NOT = { ispuppet = yes }
 		NOT = { local_flag = ai_alliance }
+		OR = { 
+			exists = GER
+			exists = AUS
+		}
 	}
 	
 	date = { day = 1 month = january year = 1936 }
@@ -88,10 +93,10 @@ event = {
 	name = "AI_EVENT"
 	
 	action = {
-		command = {	trigger = { exists = GER } type = set_relation which = GER	value = 200 }
-		command = {	trigger = { exists = GER } type = alliance which = GER	}
-		command = {	trigger = { NOT = { exists = GER } } type = set_relation which = AUS value = 200 }
-		command = {	trigger = { NOT = { exists = GER } } type = alliance which = AUS }
+		command = {	trigger = { exists = GER NOT = { flag = german_civil_war } } type = set_relation which = GER value = 200 }
+		command = {	trigger = { exists = GER NOT = { flag = german_civil_war } } type = alliance which = GER }
+		command = {	trigger = { exists = AUS flag = german_civil_war } type = set_relation which = AUS value = 200 }
+		command = {	trigger = { exists = AUS flag = german_civil_war } type = alliance which = AUS }
 		command = {	type = local_setflag which = ai_alliance }
 	}
 }
@@ -102,7 +107,7 @@ event = {
 	persistent = yes
 	
 	trigger = {
-		#flag = great_war_by_event
+		flag = great_war_by_event
 		ai = yes
 		OR = {
 			war = { country = U00 country = GER }
@@ -125,6 +130,7 @@ event = {
 		government = communist
 		NOT = { ispuppet = yes }
 		NOT = { local_flag = ai_alliance }
+		exists = U00
 	}
 	
 	date = { day = 1 month = january year = 1936 }

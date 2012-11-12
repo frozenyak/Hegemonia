@@ -16,8 +16,9 @@ province = { id = 1466 ic = 1 } #Arrah
 
 country =
 { tag                    = U02
-	regular_id = U09
-	ai = "default.ai"
+	regular_id = URO
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes reinf = yes ai_set = yes } }
+	ai = "imperial india.ai"
   capital                = 1517
   dissent		 = 10
 #Large Power
@@ -98,7 +99,8 @@ country =
 		1467 1461 1466 1468 1483 1479
 	}
    claimedprovinces 	  = { 
-		1537 #Peshawar
+		#Peshawar
+		#1537
 		#ceylon
 		1509 1510 1511
 	}

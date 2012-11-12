@@ -6,6 +6,7 @@ country =
 { tag                    = U14
   regular_id = ITA
 	intrinsic_gov_type = fascist
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes ai_set = yes } }
   #puppet = GER
 #Medium Power
   energy                 = 500

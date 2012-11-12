@@ -1,7 +1,6 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
 max_front_ratio = 1.2 
 max_garrison_prop = 0.15
 min_garrison_prop = 0.05
@@ -9,7 +8,7 @@ neutrality = 100
 war = 0
 upgrading = 0.2
 reinforcement = 0 #0.1
-strat_redeploy_threshold = 2
+strat_redeploy_threshold = 25
 exp_force_ratio = 0.0
 exp_force_ratios = { } 
 no_exp_forces_to = { JAP SOV SIA MAN GER HUN ROM ITA BUL SLO YUG VIC CRO }
@@ -18,11 +17,19 @@ use_offensive_supply = no
 ###################################
 # Diplomacy
 ###################################
-claim_acceptance = -49
+claim_acceptance = -69
 
 combat = { }
-befriend = { GER = 25 RUS = 50 SPA = 50 SCA = 75 ENG = 50 }
-protect = { RUS = 15 }
+befriend = { 
+	GER = 25 
+	RUS = 50 
+	SPA = 50 
+	SCA = 75 
+	ENG = 50
+}
+protect = { 
+	#RUS = 15
+}
 target = { } 
 demand_claims = { }
 liberate = { }
@@ -45,9 +52,10 @@ trade = {
 ###################################
 spyprefs =
 {
-	percentage_on_spies = 0.3
-	percentage_foreign_mission = 0
+	percentage_on_spies 		= 0.2
+	percentage_foreign_mission 	= 0.6
 	
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
 	spyprefsdata = 
 	{
 		#Domestic
@@ -62,12 +70,12 @@ spyprefs =
 ###################################
 #Default values
 construction = { 
-	max_factor = 0.000 
+	max_factor = 0.050 
 
-	AA_batteries = no
+	AA_batteries = atwar
 	max_AA_level = 4
 	AA_provs = {
-		142 # Helsinki
+		525 # Helsinki
 	} 
 
 	coastal_fort = no
@@ -94,7 +102,7 @@ construction = {
 	force_ic_until = 1935
 	ic_end_year = 1940
 	IC_provs = {
-		142 # Helsinki
+		525 # Helsinki
 	} 
 }
 
@@ -103,31 +111,34 @@ military = {
 	max_batch_peace 		= 680 
 	max_batch_war 			= 320 
 	max_batch_home_front	= 180
+	extra_convoys_war = 0.0000 
+	extra_convoys_peace = 0.0000 
+
 
 	#### Divisions etc...
-	infantry 		= 10
+	infantry 		= 65
 	cavalry 		= 0
-	motorized 		= 10
-	mechanized 		= 10
-	light_armor 	= 10
+	motorized 		= 0
+	mechanized 		= 0
+	light_armor 	= 0
 	armor 			= 0
 	paratrooper 	= 0
 	marine 			= 0
-	bergsjaeger 	= 0
-	garrison		= 30
-    hq 				= 0
+	bergsjaeger 	= 20
+	garrison		= 0
+    hq 				= 3
 	militia 		= 0
-#				70 %
-	interceptor 	= 0
-	multi_role 		= 30
-	cas 			= 0
+#				88 %
+	interceptor 	= 6
+	multi_role 		= 0
+	cas 			= 6
 	strategic_bomber = 0
 	tactical_bomber = 0
 	naval_bomber 	= 0
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				20 %
+#				12 %
 	battleship 		= 0
 	carrier 		= 0
 	escort_carrier	= 0
@@ -141,7 +152,7 @@ military = {
 #				0 %
 
 	#### Brigades
-	artillery 			= 30
+	artillery 			= 25
 	sp_artillery 		= 0
 	rocket_artillery	= 0
 	sp_rct_artillery 	= 0
@@ -153,21 +164,21 @@ military = {
 	armored_car 		= 0
 	anti_air 			= 5
 	police 				= 0
-	engineer 			= 0 
+	engineer 			= 10
 
 	cag = 100.000 
-	light_cag = 100
+	escort = 0.000
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 
 	naval_radar_s = 10.0000 
 	naval_fire_controll_s = 10.0000 
 	naval_improved_hull_s = 0.0000 
+	naval_torpedoes_s = 0.0000
 	naval_anti_air_l = 0.0000 
 	naval_radar_l = 0.0000 
-	naval_fire_controll_l = 10.0000 
+            naval_fire_controll_l = 0.0000 
 	naval_improved_hull_l = 0.0000 
-	naval_torpedoes_l = 0.0000
 }
 
 technology = { 
@@ -184,34 +195,17 @@ technology = {
 		
 		# Assembly Line
 		5130 5140 5180
-		
-		# Cryptography
-		5310 5320 5330 5340
-
-		# Multirole Fighters
-		4040 4070 4100
-
-		# Light tanks
-		2020 2030 2040 2050 2060
-
-		# Medium tanks
-		2010 2070 2080 2090
-
-		# motorized
-		1230 1240 1250
-
-		# Mechanized
-		1260 1270 1280 1290
 
 		# Infantry
 		1010 1020 1030 1040 1050 1060
 
-		
-		# Agriculture
-		5010 5020 5030 5040
+		# Artillery
+		2290 2300 2310 2320 2330 2340 2350 2360
 
 	} 
 	ignore 	= {
+		#EQUIPMENT Jungle / Desert / Sturdy
+		5940 5950 5960 5970 5980 5990
 
 		# Airborne
 		1070 1080 1090 1100
@@ -225,7 +219,7 @@ technology = {
 		# Rocketry
 		7550 5550 5560 5570 5580 5590
 
-		# Atomic Research
+		# Nuclear
 		5470 5480 5490 5500 5510 5520 5530 5540
 
 		# Bas Decimetric
@@ -274,14 +268,14 @@ technology = {
 		9090 9100 9110 9120 9130 9350 9360 9370 9380
 	}
  
-	armor 			= 1
-	infantry 		= 1
-	industry 		= 1
+	armor 			= 2
+	infantry 		= 4
+	industry 		= 3
 	aircraft 		= 1
 	naval 			= 0
-	land_doctrines 	= 1
+	land_doctrines 	= 5
 	secret_weapons 	= 0
-	air_doctrines 	= 3
+	air_doctrines 	= 1
 	naval_doctrines = 0
 } 
 

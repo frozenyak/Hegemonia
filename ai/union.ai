@@ -1,28 +1,43 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
 max_front_ratio = 1.2 
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 neutrality = 100
 war = 0
-strat_redeploy_threshold = 5
+upgrading = 0.35
+reinforcement = 0 #0.10
+strat_redeploy_threshold = 25
 max_redeploying = 0.05
 exp_force_ratio = 0.10
 exp_force_ratios = { } 
 no_exp_forces_to = { VIC U07 RSI ARA }
-upgrading = 0.35
-reinforcement = 0 #0.10
 
 ###################################
 # Diplomacy
 ###################################
-claim_acceptance = -49
+claim_acceptance = -69
 
 combat = { U02 = 70 AUS = 50 LIT = 70 ROM = 40 GER = 50 }
-befriend = { RSI = 100 VIC = 200 U07 = 100 ARA = 100 RUS = 50 UAU = 50 AUS = 50 EGY = 50 }
-protect = { RUS = 25 }
+# Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
+resistance = { 
+	GER = 5 
+	SPA = 5
+}
+befriend = { 
+	RSI = 100 
+	VIC = 200 
+	U07 = 100
+	ARA = 100 
+	RUS = 50 
+	UAU = 50 
+	AUS = 50 
+	EGY = 50
+}
+protect = { 
+	RUS = 25
+}
 target = { 
 	#347 = 5 #karlovac
 	349 = 5 #lubljana
@@ -33,8 +48,7 @@ target = {
 	382 = 10 #irakleio
 } 
 demand_claims = { }
-liberate = { VIC SOV U10 DFR HUN CZE UKR SCH SPA ENG IRE ROM LIT AUS } #POL
-resistance = { GER = 5 SPA = 5 }
+liberate = { VIC SOV U10 DFR HUN CZE UKR SCH SPA ENG IRE ROM LIT U09 } #POL
 
 trade = {
 	cancel_deal_threshold = 2
@@ -79,7 +93,7 @@ tech_sharing = {
 		5150 = 100
 		5180 = 100
 
-		# Mountain Unit techs
+		# Light / Mountain
 		1110 = 100
 		1120 = 100
 		1130 = 100
@@ -122,6 +136,8 @@ spyprefs =
 {
 	percentage_on_spies 		= 0.2
 	percentage_foreign_mission 	= 0.6
+
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
 	spyprefsdata = 
 	{
 		#Domestic
@@ -250,7 +266,7 @@ construction = {
 	max_factor = 0.00
 
 	AA_batteries = no
-	max_AA_level = 3
+	max_AA_level = 4
 	AA_provs = {
 		352 # Zagreb
 		355 # Sarajevo
@@ -265,7 +281,7 @@ construction = {
 	} 
 
 	coastal_fort = no
-	max_coastal_level = 3
+	max_coastal_level = 2
 	coastal_fort_provs = {
 		409 # Istanbul
 	} 
@@ -279,7 +295,7 @@ construction = {
 	air_base_provs = { }
 
 	naval_base = no 
-	max_naval_base = 5 
+	max_naval_base = 3
 	naval_base_provs = { } 
 
 	land_fort = no
@@ -288,13 +304,13 @@ construction = {
 
 	ic_at_war = no
 	force_ic_until = 1935
-	ic_end_year = 1936
+	ic_end_year = 1935
 	IC_provs = {
 		352 # Zagreb
 		355 # Sarajevo
 		338 # Belgrade
 		
-		#409 # Istanbul
+		409 # Istanbul
      	1075 # Ankara
 		
 		377 # Athens
@@ -312,25 +328,25 @@ military = {
 	extra_convoys_peace		= 0
 
 	#### Divisions etc...
-	infantry 	= 49
+	infantry 	= 50
 	cavalry 	= 0
 	motorized 	= 5
 	mechanized 	= 5
-	light_armor = 4
-	armor 		= 4
+	light_armor = 0
+	armor 		= 5
 	paratrooper = 0
 	marine 		= 0
 	bergsjaeger = 10
 	garrison	= 0
-    hq 			= 1
+    hq 			= 3
 	militia 	= 0
 #				78 %
-	interceptor 	= 4
-	multi_role 		= 8
+	interceptor 	= 9
+	multi_role 		= 5
 	cas 			= 0
-	strategic_bomber = 2
-	tactical_bomber = 5
-	naval_bomber 	= 3
+	strategic_bomber = 0
+	tactical_bomber = 8
+	naval_bomber 	= 0
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
@@ -349,32 +365,32 @@ military = {
 
 	#### Brigades
 	artillery 			= 20
-	sp_artillery 		= 5
+	sp_artillery 		= 0
 	rocket_artillery	= 0
 	sp_rct_artillery 	= 0
-	anti_tank 			= 0
+	anti_tank 			= 5
 	tank_destroyer 		= 5
 	light_armor_brigade = 0
-	heavy_armor 		= 6
+	heavy_armor 		= 0
 	super_heavy_armor 	= 0
 	armored_car 		= 0
-	anti_air 			= 10
+	anti_air 			= 5
 	police 				= 0
-	engineer 			= 0 
+	engineer 			= 5 
 
 	cag = 100.000
-	light_cag = 100
+	escort = 100.000
 
 	naval_asw = 10.0000 
 	naval_anti_air_s = 10.0000 
 	naval_radar_s = 10.0000 
 	naval_fire_controll_s = 10.0000 
 	naval_improved_hull_s = 0.0000 
+	naval_torpedoes_s = 0.0000
 	naval_anti_air_l = 0.0000 
 	naval_radar_l = 0.0000 
-	naval_fire_controll_l = 10.0000 
+	naval_fire_controll_l = 0.0000 
 	naval_improved_hull_l = 0.0000 
-	naval_torpedoes_l = 0.0000
 }
 
 technology = { 
@@ -388,70 +404,85 @@ technology = {
 		
 		# Production Control
 		5110 5120
+
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060
+
+		# Light / Mountain
+		1110 1120 1130 1140 10040 10050
 		
 		# Assembly Line
 		5130 5140 5160 5180
-		
-		# Cryptography
+
+		# Computers
 		5310 5320 5330 5340
 		
-		# Special Weapons
-		7140 7150 7160
+		# Electronic Computers
+		7140 7150 7160 16000 16040
 
-		#Infantry
-		1010 1020 1030 1040 1050 1060
-
-		# Agriculture
-		5020 5030 5040
-
-		# Inf support
-		1310 1320 1330 1340 1350 1360
-
-		# Motorized
-		1230 1240 1250
-
-		# Fighter
-		4040 4070 4100
-
-		# Medium tanks
-		2070 2080 2090
-
-		# Light tanks
-		2020 2030 2040 2050 2060
-
-		# Air Doctrines
-		9090 9050 9060 9100 9110 9120 9140 9070 9080 9130 9150 9190 9200 9210 9220 9240 9260 9270 9280 9310 9320 9330 9350
-		
-		# Mountain Unit techs
-		1110 1120 1130 1140
-		
-		# Mechanized
-		1260 1270 1280 1290
+		# Cryptography
+		5350 5360 5370 5380 5390 5400 13060
 		
 		# Equipment Sturdy
 		5980 5990
 		
 		# Land Doctrines
 		6090 #combined arms defense
+
+		# Agriculture
+		5020 5030 5040
 	} 
 	ignore 		= {
-		# Ship & Rocket Assembly
+		# Custom Equipment
+		5920 5930 5940 5950 5960 5970
+		# Applied Assembly lines 
 		5150 5170
+
+		# Airborne Infantry
+
+		1070 1080 1090 1100
+
+		# Motorized Infantry
+		#1230 1240 1250 10080 10090 10150
 		
 		# Marines
 		1150 1160 1170 1180
 
-		# Airborne
-		1070 1080 1090 1100
+		# Cavalry
+		1190 1200 1210 1220
+
+		# Mechanized Infantry
+		#1260 1270 1280 1290 10100 10110
 
 		# Air Transports 
 		4250 4260 4270
-
-		# Strategic bombers
-		4220 4230 4240
 		
 		# Naval Bomber
 		4190 4200 4210
+
+		# Strategic Bomber
+		4220 4230 4240 15160 15170
+
+		# Synthetic Oil
+		5190 5200 5210 5220 5230 5240 13020
+
+		# Rocketry
+		7550 5550 5560 5570 5580 5590
+
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
+		
+		# Armoured Cars
+		2150 2160 11110
+
+		# Strategic Destruction - Flying Armada
+		9140 9150 9160 9170 9180 9430 9440 9450 9460
+
+		# Heavy Cruiser
+		3130 3140 3150 3160 3170 3180 3190
+
+		# Battleship
+		3250 3310
 
 		# Carrier 
 		3320 3330 3340 3350 3360 3370 3380 3390
@@ -461,26 +492,17 @@ technology = {
 		
 		# Carrier Air Group
 		4900 4910 4920 4930 4940 4950 4960 7050 7280
-
-		# Armoured Cars
-		2150 2160
-		
-		# Strategic Air Doctrines 9140
-		9150 9160 9170 9180 9430 9440 9450 9460
-		
-		#EQUIPMENT Jungle / Desert
-		5940 5950 #5960 5970
 	}
  
 	armor 		= 3
-	infantry 	= 2
-	industry 	= 4
-	aircraft 	= 2
-	naval 		= 0
+	infantry 	= 5
+	industry 	= 6
+	aircraft 	= 5
+	naval 		= 1
 	land_doctrines 	= 4
 	secret_weapons 	= 1
-	air_doctrines 	= 2
-	naval_doctrines = 0
+	air_doctrines 	= 4
+	naval_doctrines = 1
 }
 
 ###################################
@@ -509,11 +531,11 @@ garrison = {
 	revolt_risk_mult	= 1.0
 
 	# PRIORITIES:
-	beach			= 0	# Beach level 2
+	beach			= 20	# Beach level 2
 	capital			= 40	# Our capital
 	human_border	= 0	# Ignored for allied human players
 	war_target		= 50	# The next country targeted for attack by this AI
-	reserves 		= 40
+	#reserves 		= 40
 	
 	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
 	claim_threat		= 0	# If we are neutral, countries with claims on us get this
@@ -522,18 +544,18 @@ garrison = {
 	# Borders with specific countries
 	country_priorities = {
 		U02 = 100
-		ROM = 80
-		LIT = 80
+		ROM = 70
+		LIT = 70
 		AUS = 70
 		GER = 70
-		GEO = 25
+		GEO = 50
 		TUR = 50
 		EGY = 25
 		ARA = -1
 		U07 = -1
 		VIC = -1
 		RSI = -1
-		U14 = 50
+		U14 = 25
 	}
 	province_priorities = {	}
 	ignore = { }
@@ -551,7 +573,7 @@ front = {
 	base_attack_odds	= 1.3
 	min_attack_odds		= 1.1
 	max_attack_odds		= 3.0
-	reinforce_odds		= 1.3
+	reinforce_odds		= 1.2
 	withdraw_odds		= 0.6
 
 	strength 	= 1.0
@@ -582,10 +604,10 @@ front = {
 		#ROM = 20
 	} 
     passivity = {
-		ROM = 70
+		#ROM = 70
 	}
 	province_priorities = {
-		409  = 9.0 # Constantinople
+		#409  = 9.0 # Constantinople
 	}
 }
 ###################################
@@ -647,7 +669,7 @@ invasion = {
 	random		= 8.0	#How big a random range.  (1.0 = 1%)
 	coastal		= 0.1	#increase to avoid coastal forts more.
 	beach		= 0.1	#higher, avoid worst beaches.
-	distance	= 0.1	#higher = avoid long distance.
+	distance	= 20.0	#higher = avoid long distance.
 	pocket		= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island		= 0.1	#prioritise taking pure islands.
 	enemy		= 2.0	#higher = much more vary of troops in province.
@@ -655,7 +677,7 @@ invasion = {
 	air_base	= 1.5 
     naval_base 	= 0.1 
     air_support 	= 3.0 
-    redirect 	= priority
+      	redirect 	= nearest
 	ignore		= no
       
 	target = { 
@@ -721,6 +743,11 @@ admiral = {
 		"Hudson Bay"
 		"Grand Banks"
 		"Canadian Maritimes"
+		
+		#Western Mediterranean
+		"Costa del Sol"
+		"Gulf of Lyon"
+		"Algerian Coast"
 		
 		#North Atlantic
 		"North Atlantic"

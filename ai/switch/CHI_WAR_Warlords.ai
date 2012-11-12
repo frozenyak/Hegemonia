@@ -124,7 +124,7 @@ tech_sharing = {
 		FRA = 50
 		USA = 100
 	}
-	embargo = { JAP MAN }
+	embargo = { }
 	not = { }
 	prioritized = {	}
 }

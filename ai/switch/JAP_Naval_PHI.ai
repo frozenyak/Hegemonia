@@ -8,24 +8,22 @@ max_front_ratios = {
 	MEX = 2.0
 }
 target = { 
-     #1432 = 30 # Singapour 
-     #1647 = 25 # Batavia 
-     #1726 = 20 # Rabaul 
-     #1590 = 15 # Guadalcanal 
-     #1705 = 20 # Sydney 
      1673  = 30 # Wake 
      1739  = 30 # Midway 
      1565  = 90 # Manilla 
      1683  = 30 # Guam 
-     #1734 = 20 # Pearl Harbor 
+	 #Germany
+	 1371  = 2250  #Hong Kong
 } 
-combat = { PHI = 100 }
+combat = { 
+	PHI = 100 
+} 
 ###################################
 # Ground Combat, Leaders and Garrisons
 ###################################
 garrison = {
 	defend_overseas_beaches = yes
-	home_multiplier 		= 0.5
+	home_multiplier 		= 3.5
 	overseas_multiplier 	= 1.0
 	home_peace_cap 			= 10
 	war_zone_odds 			= 2.0
@@ -33,10 +31,10 @@ garrison = {
 	revolt_risk_mult		= 0.5
 
 	# PRIORITIES:
-	beach			= 30	# Beach level 2
-	capital			= 30	# Our capital
+	beach			= 100	# Beach level 2
+	capital			= 50	# Our capital
 	human_border	= 0		# Ignored for allied human players
-	war_target		= 50	# The next country targeted for attack by this AI
+	war_target		= 20	# The next country targeted for attack by this AI
 	
 	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
 	claim_threat		= 0	# If we are neutral, countries with claims on us get this
@@ -64,24 +62,14 @@ garrison = {
 		UAU = 10
 	}
 	province_priorities = {
-		1399  = 75  #Saigon
-		1393  = 75  #Hanoi
-		1361  = 75  #Kaohsung
-		1647  = 75  #Truk
-		1675  = 75  #Eniwetok
-		1681  = 75  #Kwajelin
-		1726  = 75  #Rabaul
+	#Germany 
+     1371  = 100  #Hong Kong 
 	}
 	area_multiplier = {
-		1672  = 1.5  #Marcus Island
-		1684  = 1.5  #Rota
-		1562  = 1.5  #Anami
-		1234  = 1.5  #Jeju
-		1662  = 1.5  #Bonin Island
 	}
 }
 front = { 
-	recklessness 		= 3 # 0-3
+	recklessness 		= 1 # 0-3
 	distrib_vs_ai 		= offensive
 	distrib_vs_human 	= offensive
 	base_attack_odds	= 1.0
@@ -99,7 +87,7 @@ invasion = {
 	random				= 8.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.1	#higher, avoid worst beaches.
-	max_distance   		= 250.0  #About the distance from Japan to Batavia
+	max_distance   		= 40.0  #About the distance from Japan to Batavia
 	max_staging_distance = 15	# How far should the staging area be from the target invasion point
 	distance			= 10.0	#higher = avoid long distance.
 	pocket				= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
@@ -158,6 +146,9 @@ invasion = {
 		1683  = 3250  #Guam
 		1670  = 3250  #Palau
 		1672  = 3250  #Marcus Island
+		
+		#Germany
+		1371  = 2250  #Hong Kong
 	} 
 } 
 admiral = { 
@@ -209,7 +200,7 @@ admiral = {
 		"Grand Banks"
 		"Canadian Maritimes"
 
-		#MEX East Coast
+		#USA East Coast
 		"US Maritimes"
 		
 		#Western Mediterranean
@@ -349,7 +340,7 @@ admiral = {
 		"South Southeast Pacific Ocean"
 		"North Southeast Pacific Ocean"
 		
-		# MEX West Coast
+		# USA West Coast
 		"Gulf of Alaska"
 		"West Coast of the United States"
 		

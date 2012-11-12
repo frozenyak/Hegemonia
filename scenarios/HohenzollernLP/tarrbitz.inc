@@ -4,6 +4,7 @@
 
 country =
 { tag                    = CUB
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
 #Minor Power
   energy                 = 200
   metal                  = 200

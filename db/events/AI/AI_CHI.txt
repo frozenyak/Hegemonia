@@ -30,7 +30,7 @@ event = {
 				NOT = { exists = CHC }
 				NOT = { exists = CSX }
 				NOT = { exists = U87 }
-				NOT = { exists = CYN }
+				NOT = { exists = U74 }
 				NOT = { exists = CGX }
 				NOT = { exists = TIB }
 			}
@@ -121,7 +121,7 @@ event = {
 		NOT = { exists = CHC }
 		NOT = { exists = CSX }
 		NOT = { exists = U87 }
-		NOT = { exists = CYN }
+		NOT = { exists = U74 }
 		NOT = { exists = CGX }
 		NOT = { exists = TIB }
 		OR = {
@@ -156,7 +156,7 @@ event = {
 		NOT = { exists = CHC }
 		NOT = { exists = CSX }
 		NOT = { exists = U87 }
-		NOT = { exists = CYN }
+		NOT = { exists = U74 }
 		NOT = { exists = CGX }
 		NOT = { exists = TIB }
 		AND = {
@@ -213,7 +213,7 @@ event = {
 		war = { country = JAP }
 		NOT = { war = { country = CHC } }
 		NOT = { war = { country = CGX } }
-		NOT = { war = { country = CYN } }
+		NOT = { war = { country = U74 } }
 		NOT = { war = { country = CSX } }
 	}
 
@@ -404,7 +404,7 @@ event = {
 #############################################
 event = {
 	id = 3124001 
-	country = CYN
+	country = U74
 	
 	trigger = {
 		ai = yes

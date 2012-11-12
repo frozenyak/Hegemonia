@@ -1,13 +1,12 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
 max_front_ratio = 1.2
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 neutrality = 100 #90.000
 war = 0 #6
-strat_redeploy_threshold = 5
+strat_redeploy_threshold = 50
 max_redeploying = 0.05
 exp_force_ratio = 0.05
 exp_force_ratios = { }
@@ -27,7 +26,7 @@ target = {
 	138 = 10 #Frankfurt/Main
 }
 demand_claims = { }
-liberate = { U00 SOV U10 HUN CZE POL UKR SCH SPA ENG IRE AUS } #DFR
+liberate = { U00 SOV U10 HUN CZE POL UKR SCH SPA ENG IRE U09 } #DFR
 resistance = { GER = 10 SPA = 10 ENG = 6 }
 
 trade = {

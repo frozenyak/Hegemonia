@@ -1,8 +1,8 @@
 # MODEL_12_
 
-upgrade = { type = cas upgrade_time_factor = 0.52 upgrade_cost_factor = 2.32 }
-upgrade = { type = interceptor upgrade_time_factor = 0.52 upgrade_cost_factor = 2.32 }
-#upgrade = { type = multi_role upgrade_time_factor = 0.52 upgrade_cost_factor = 2.32 }
+upgrade = { type = cas					upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
+upgrade = { type = interceptor			upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
+upgrade = { type = rocket_interceptor	upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
 
 model = { # Early Fighter - 0 1930
 	cost 						= 18

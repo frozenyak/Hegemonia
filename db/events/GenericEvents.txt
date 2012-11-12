@@ -17,11 +17,16 @@
 ### 2000525  RUS  The iron road is cut off (or the Baltic sea is not free)
 ### 2000526  RUS  The Baltic is under soviet control
 ### 2000527  RUS  The Baltic sea is no longer under Soviet control
-### 2022023  GER  The partitioning of Greece
-### 2022024  AUS  The partitioning of Greece
-### 2022025  LIT  The partitioning of Greece
-### 2022026  RUS  The partitioning of Greece
-### 2022027  SCA  The partitioning of Greece
+### 2022023  GER  The partitioning of Greece - HRE
+### 2022024  AUS  The partitioning of Greece - HRE
+### 2022025  LIT  The partitioning of Greece - HRE
+### 2022026  RUS  The partitioning of Greece - HRE
+### 2022027  SCA  The partitioning of Greece - HRE
+### 2022028  GEO  The partitioning of Greece - HRE
+### 2022040  RUS  The partitioning of Greece - League
+### 2022041  YUG  The partitioning of Greece - League
+### 2022042  ENG  The partitioning of Greece - League
+### 2022043  GEO  The partitioning of Greece - League
 
 event = {
 	id = 2000500	# Mutinies !
@@ -148,7 +153,7 @@ event = {
 event = {
 	id = 2000503 #War weariness (20% Territory Lost) - VIC, ENG, GER, AUS, U00, RUS, SPA, ITA, MEX, USA
 	persistent = yes
-	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA }
+	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA U02 U05 RSI }
 
 	trigger = {
 		or = {
@@ -168,7 +173,7 @@ event = {
 				region = { region = "Germany" country = -2 data = 1 value = 19 }
 			}
 			and = {
-				country = AUS
+				country = AUS #U09
 				lost_national = { value = 19 }
 			}
 			and = {
@@ -188,11 +193,23 @@ event = {
 				region = { region = "Italy" country = -2 data = 1 value = 21 } # AUS starts off with some territory
 			}
 			and = {
+				country = RSI
+				region = { region = "Italy" country = -2 data = 1 value = 21 } # AUS starts off with some territory
+			}
+			and = {
 				country = MEX
 				lost_national = { value = 20 }
 			}
 			and = {
 				country = USA
+				lost_national = { value = 20 }
+			}
+			and = {
+				country = U02
+				lost_national = { value = 20 }
+			}
+			and = {
+				country = U05
 				lost_national = { value = 20 }
 			}
 		}
@@ -214,7 +231,7 @@ event = {
 	action = {
 		name = "ACTION_NAME_DAMN" # Damn !
 		command = { type = dissent value = 1 }
-		command = { trigger = { country = RUS } type = dissent value = 1 }
+		#command = { trigger = { country = RUS } type = dissent value = 1 }
 		command = { type = local_setflag which = lost_20 }
 	}
 }
@@ -222,7 +239,7 @@ event = {
 event = {
 	id = 2000504 #War weariness (30% Territory Lost) - VIC, ENG, GER, AUS, U00, RUS, SPA, ITA, MEX, USA
 	persistent = yes
-	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA }
+	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA U02 U05 RSI }
 
 	trigger = {
 		or = {
@@ -242,7 +259,7 @@ event = {
 				region = { region = "Germany" country = -2 data = 1 value = 29 }
 			}
 			and = {
-				country = AUS
+				country = AUS #U09
 				lost_national = { value = 29 }
 			}
 			and = {
@@ -262,11 +279,23 @@ event = {
 				region = { region = "Italy" country = -2 data = 1 value = 31 }
 			}
 			and = {
+				country = RSI
+				region = { region = "Italy" country = -2 data = 1 value = 31 }
+			}
+			and = {
 				country = MEX
 				lost_national = { value = 30 }
 			}
 			and = {
 				country = USA
+				lost_national = { value = 30 }
+			}
+			and = {
+				country = U02
+				lost_national = { value = 30 }
+			}
+			and = {
+				country = U05
 				lost_national = { value = 30 }
 			}
 		}
@@ -288,7 +317,7 @@ event = {
 	action = {
 		name = "ACTION_NAME_DAMN" # Damn !
 		command = { type = dissent value = 2 }
-		command = { trigger = { country = RUS } type = dissent value = 1 }
+		#command = { trigger = { country = RUS } type = dissent value = 1 }
 		command = { type = local_setflag which = lost_30 }
 		command = { type = local_setflag which = lost_20 }
 	}
@@ -297,7 +326,7 @@ event = {
 event = {
 	id = 2000505 #War weariness (40% Territory Lost) - VIC, ENG, GER, AUS, U00, RUS, SPA, ITA, SER, BUL, ROM, GRE, MEX, USA
 	persistent = yes
-	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA SER BUL ROM GRE MEX USA }
+	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA SER BUL ROM GRE MEX USA U02 U05 RSI }
 
 	trigger = {
 		or = {
@@ -317,7 +346,7 @@ event = {
 				region = { region = "Germany" country = -2 data = 1 value = 39 }
 			}
 			and = {
-				country = AUS
+				country = AUS #U09
 				lost_national = { value = 39 }
 			}
 			and = {
@@ -334,6 +363,10 @@ event = {
 			}
 			and = {
 				country = ITA
+				region = { region = "Italy" country = -2 data = 1 value = 41 }
+			}
+			and = {
+				country = RSI
 				region = { region = "Italy" country = -2 data = 1 value = 41 }
 			}
 			and = {
@@ -360,6 +393,14 @@ event = {
 				country = USA
 				lost_national = { value = 40 }
 			}
+			and = {
+				country = U02
+				lost_national = { value = 40 }
+			}
+			and = {
+				country = U05
+				lost_national = { value = 40 }
+			}
 		}
 		atwar = yes
 		NOT = { local_flag = lost_40 }
@@ -378,8 +419,7 @@ event = {
 	action = {
 		name = "ACTION_NAME_DAMN" # Damn !
 		command = { type = dissent value = 2 }
-		command = { trigger = { country = RUS } type = dissent value = 1 }
-		command = { trigger = { country = ENG } type = dissent value = 1 }
+		command = { trigger = { government = democratic } type = dissent value = 1 }
 		command = { type = local_setflag which = lost_40 }
 		command = { type = local_setflag which = lost_30 }
 		command = { type = local_setflag which = lost_20 }
@@ -389,7 +429,7 @@ event = {
 event = {
 	id = 2000506 #War weariness (50% Territory Lost) - VIC, ENG, GER, AUS, U00, RUS, SPA, ITA, MEX, USA
 	persistent = yes
-	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA }
+	TAG =  { VIC ENG GER AUS U00 RUS SPA ITA MEX USA U02 U05 RSI }
 
 	trigger = {
 		or = {
@@ -429,11 +469,23 @@ event = {
 				region = { region = "Italy" country = -2 data = 1 value = 51 }
 			}
 			and = {
+				country = RSI
+				region = { region = "Italy" country = -2 data = 1 value = 51 }
+			}
+			and = {
 				country = MEX
 				lost_national = { value = 50 }
 			}
 			and = {
 				country = USA
+				lost_national = { value = 50 }
+			}
+			and = {
+				country = U02
+				lost_national = { value = 50 }
+			}
+			and = {
+				country = U05
 				lost_national = { value = 50 }
 			}
 		}
@@ -828,8 +880,9 @@ event = {
 		OR = {
 			alliance = { country = AUS }
 			alliance = { country = LIT }
+			alliance = { country = GEO }
 		}
-		NOT = { alliance = { country = U02 } }
+		#NOT = { alliance = { country = U02 } }
 	}
 
     date = { day = 1 month = january year = 1936 }
@@ -842,7 +895,9 @@ event = {
 		command = { type = dissent value = -1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
 		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
 		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -850,6 +905,7 @@ event = {
 		command = { type = dissent value = 5 }
 		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
 		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
 	}
 }
 event = {
@@ -868,8 +924,9 @@ event = {
 		OR = {
 			alliance = { country = GER }
 			alliance = { country = LIT }
+			alliance = { country = GEO }
 		}
-		NOT = { alliance = { country = U02 } }
+		#NOT = { alliance = { country = U02 } }
 	}
 
 
@@ -885,15 +942,18 @@ event = {
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
 		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Bulgaria" when = 1 }
+		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
 		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
 		command = { type = dissent value = 5 }
 		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
-		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+		command = { trigger = { alliance = { country = ROM } } type = relation which = ROM value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
 	}
 }
 event = {
@@ -912,8 +972,9 @@ event = {
 		OR = {
 			alliance = { country = AUS }
 			alliance = { country = GER }
+			alliance = { country = GEO }
 		}
-		NOT = { alliance = { country = U02 } }
+		#NOT = { alliance = { country = U02 } }
 	}
 
 
@@ -928,10 +989,9 @@ event = {
 		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Bulgaria" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secederegion which = AUS value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -939,6 +999,7 @@ event = {
 		command = { type = dissent value = 5 }
 		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
 		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
 	}
 }
 
@@ -959,8 +1020,9 @@ event = {
 			alliance = { country = AUS }
 			alliance = { country = GER }
 			alliance = { country = LIT }
+			alliance = { country = GEO }
 		}
-		NOT = { alliance = { country = U02 } }
+		#NOT = { alliance = { country = U02 } }
 	}
 
 
@@ -975,11 +1037,11 @@ event = {
 		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Bulgaria" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
 		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secederegion which = AUS value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -988,6 +1050,7 @@ event = {
 		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
 		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
 		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
 	}
 }
 
@@ -1003,13 +1066,14 @@ event = {
 	trigger = {
 		NOT = { exists = U00 }
 		control = { province = 409 data = -3 } #Constantinople is allied-controlled
-		participant = { country = RUS value = 2 } #is member of Axis
+		participant = { country = SCA value = 2 } #is member of Axis
 		OR = {
 			alliance = { country = AUS }
 			alliance = { country = GER }
 			alliance = { country = LIT }
+			alliance = { country = GEO }
 		}
-		NOT = { alliance = { country = U02 } }
+		#NOT = { alliance = { country = U02 } }
 	}
 
 
@@ -1024,11 +1088,11 @@ event = {
 		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
 		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Croatia" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Bosnia" when = 1 }
-		command = { trigger = { alliance = { country = AUS } } type = secedearea which = AUS value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Bulgaria" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
 		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
-		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secederegion which = AUS value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -1037,5 +1101,266 @@ event = {
 		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
 		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
 		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
+	}
+}
+
+event = {
+	id = 2022028
+	country = GEO
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = GEO value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = AUS }
+			alliance = { country = GER }
+			alliance = { country = LIT }
+		}
+		#NOT = { alliance = { country = U02 } }
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = GER } } type = secederegion which = GER value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = GER } } type = secedearea which = GER value = "Bulgaria" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
+		command = { trigger = { alliance = { country = LIT } } type = secederegion which = LIT value = "Romania" when = 1 }
+		command = { trigger = { alliance = { country = AUS } } type = secederegion which = AUS value = "Balkan" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = AUS } } type = relation which = AUS value = -25 }
+		command = { trigger = { alliance = { country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = LIT } } type = relation which = LIT value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
+	}
+}
+
+event = {
+	id = 2022040
+	country = RUS
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = RUS value = 1 } #is member of league
+		OR = {
+			alliance = { country = SPA }
+			alliance = { country = U02 }
+			alliance = { country = YUG }
+			alliance = { country = GEO }
+		}
+		#NOT = { alliance = { country = U02 } }
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = U02 } } type = secederegion which = U02 value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secedearea which = U02 value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secedearea which = U02 value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Croatia" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Bosnia" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
+		#command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = SPA } } type = relation which = SPA value = -25 }
+		command = { trigger = { alliance = { country = U02 } } type = relation which = U02 value = -25 }
+		command = { trigger = { alliance = { country = YUG } } type = relation which = YUG value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
+	}
+}
+
+event = {
+	id = 2022041
+	country = YUG
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = YUG value = 1 } #is member of league
+		OR = {
+			alliance = { country = SPA }
+			alliance = { country = U02 }
+			alliance = { country = GEO }
+		}
+		#NOT = { alliance = { country = U02 } }
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = U02 } } type = secederegion which = U02 value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secedearea which = U02 value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secedearea which = U02 value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
+		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = SPA } } type = relation which = SPA value = -25 }
+		command = { trigger = { alliance = { country = U02 } } type = relation which = U02 value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
+	}
+}
+
+event = {
+	id = 2022042
+	country = ENG
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = ENG value = 1 } #is member of league
+		OR = {
+			alliance = { country = SPA }
+			alliance = { country = U02 }
+			alliance = { country = YUG }
+			alliance = { country = GEO }
+		}
+		#NOT = { alliance = { country = U02 } }
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = U02 } } type = secederegion which = U02 value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secedearea which = U02 value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secedearea which = U02 value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Croatia" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Bosnia" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
+		#command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Balkan" when = 1 }
+		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = SPA } } type = relation which = SPA value = -25 }
+		command = { trigger = { alliance = { country = U02 } } type = relation which = U02 value = -25 }
+		command = { trigger = { alliance = { country = YUG } } type = relation which = YUG value = -25 }
+		command = { trigger = { alliance = { country = GEO } } type = relation which = GEO value = -25 }
+	}
+}
+
+event = {
+	id = 2022043
+	country = GEO
+
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U00 }
+		control = { province = 409 data = -3 } #Constantinople is allied-controlled
+		participant = { country = GEO value = 1 } #is member of League
+		OR = {
+			alliance = { country = SPA }
+			alliance = { country = U02 }
+			alliance = { country = YUG }
+		}
+		#NOT = { alliance = { country = U02 } }
+	}
+
+
+    date = { day = 1 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = U02 } } type = secederegion which = U02 value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secedearea which = U02 value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Palestine" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secedearea which = U02 value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Lebanon_Syria" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Croatia" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Bosnia" when = 1 }
+		command = { trigger = { alliance = { country = YUG } } type = secedearea which = YUG value = "Central Serbia" when = 1 }
+		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
+		#command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Balkan" when = 1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = SPA } } type = relation which = SPA value = -25 }
+		command = { trigger = { alliance = { country = U02 } } type = relation which = U02 value = -25 }
+		command = { trigger = { alliance = { country = YUG } } type = relation which = YUG value = -25 }
 	}
 }

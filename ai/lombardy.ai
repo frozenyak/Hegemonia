@@ -1,29 +1,50 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
+max_front_ratio = 1.2 
+max_garrison_prop = 0.30
+min_garrison_prop = 0.20
 neutrality = 100.000 
 war = 0
+reinforcement = 0.000 
+upgrading = 0.2500 
+strat_redeploy_threshold = 50
+max_redeploying = 0.05
 exp_force_ratio = 0.0
 exp_force_ratios = { } 
-no_exp_forces_to = { }
+no_exp_forces_to = { GER AUS LIT ROM FRA HOL JAP CON U08 }
 
 ###################################
 # Diplomacy
 ###################################
-claim_acceptance = -49
+claim_acceptance = -69
 
 combat = { RSI = 100 U00 = 60 }
-befriend = { GER = 200 SCH = 25 AUS = 100 LIT = 75 }
-protect = { GER = 50 SPA = 50 AUS = 25 LIT = 25 RUS = 25 }
+liberate = { }
+demand_claims = { }
+# Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
+resistance = { 
+	U00 = 1 
+	RSI = 4 
+	VIC = 2
+}
+befriend = { 
+	GER = 200 
+	SCH = 25 
+	AUS = 100 
+	LIT = 75
+}
+protect = { 
+	GER = 50 
+	SPA = 50 
+	AUS = 25 
+	LIT = 25 
+	RUS = 25
+}
 target = { 
 	419 = 10 #Rome
 	422 = 5 #Taranto
-} 
-demand_claims = { }
-liberate = { }
-resistance = { U00 = 1 RSI = 4 VIC = 2 }
-
+}
 trade = {
 	cancel_deal_threshold = 2
 	energy 		= -1
@@ -42,8 +63,7 @@ tech_sharing = {
 		AUS = 8
 		GER = 15
 	}
-	embargo = {
-	}
+	embargo = {	}
 	not = { }
 	prioritized = {
 		# Agriculture
@@ -72,7 +92,7 @@ tech_sharing = {
 		5150 = 100
 		5180 = 100
 
-		# Mountain Unit techs
+		# Light / Mountain
 		1110 = 100
 		1120 = 100
 		1130 = 100
@@ -83,7 +103,7 @@ tech_sharing = {
 		4200 = 100
 		4210 = 100
 
-		# Motorized
+		# Motorized Infantry
 		1230 = 100
 		1240 = 100
 		1250 = 100
@@ -97,28 +117,88 @@ spyprefs =
 {
 	percentage_on_spies = 0.2
 	percentage_foreign_mission = 0.6
+
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
 	spyprefsdata = 
 	{
-		#Domestic
-		country 			= U14	
-		NumberOfSpies 			= 10
-		min_number_of_spies 		= 2
-	}	
+		NumberOfSpies = 10
+		min_number_of_spies = 3
+		steal_blueprint = 10
+		minister_assassination = 5
+		smear_campaign 	= 10
+		coup = 3
+		sabotage_industry = 10
+		nuclear_sabotage = 5
+		found_partisans	= 10
+		massmedia = 10
+		disrupt_techteam = 10
+		country 		= U14
+	}
 	spyprefsdata = {
-		#Nation
-		country 			= RSI
-		country_priorities		= 5
-		#Missions
-		steal_blueprint 		= 3
-		minister_assassination 		= 1
-		smear_campaign 			= 1
-		coup 				= 0
-		sabotage_industry 		= 3
-		nuclear_sabotage 		= 0
-		found_partisans 		= 5
-		massmedia 			= 2
-		disrupt_techteam		= 3
-	}	
+		country_priorities	= 4
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= ENG
+	}
+	spyprefsdata = {
+		country_priorities	= 4
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 0
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= VIC
+	}
+	spyprefsdata = {
+		country_priorities	= 8
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 0
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= ITA
+	}
+	spyprefsdata = {
+		country_priorities	= 5
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 1
+		disrupt_techteam 	= 4
+		country 			= U00
+	}
+	spyprefsdata = {
+		country_priorities	= 4
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= SPA
+	}
 }
 ###################################
 # Construction and Tech Research
@@ -182,20 +262,19 @@ military = {
 	#### Divisions etc...
 	infantry 		= 53
 	cavalry 		= 0
-	motorized 		= 3
-	mechanized 		= 3
-	light_armor 	= 10
-	armor 			= 0
+	motorized 		= 5
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 7
 	paratrooper 	= 0
 	marine 			= 0
-	bergsjaeger 	= 3
+	bergsjaeger 	= 5
 	garrison		= 0
-    hq 				= 1
+    hq 				= 3
 	militia 		= 0
 #				73 %
 	interceptor 	= 8
 	multi_role 		= 5
-	escort 			= 0
 	cas 			= 10
 	strategic_bomber = 0
 	tactical_bomber = 0
@@ -218,7 +297,7 @@ military = {
 
 	#### Brigades
 	artillery 			= 10
-	sp_artillery 		= 10
+	sp_artillery 		= 4
 	rocket_artillery	= 0 
 	sp_rct_artillery 	= 0
 	anti_tank 			= 10
@@ -227,30 +306,30 @@ military = {
 	heavy_armor 		= 4
 	super_heavy_armor 	= 0
 	armored_car 		= 0
-	anti_air 			= 10
+	anti_air 			= 4
 	police 				= 0
-	engineer 			= 0 
+	engineer 			= 4 
 
 	cag = 100.000 
-	light_cag = 100
+	escort = 100.0000
 
-	naval_asw = 10.0000 
-	naval_anti_air_s = 10.0000 
-	naval_radar_s = 10.0000 
-	naval_fire_controll_s = 10.0000 
+	naval_asw = 20.0000 
+	naval_anti_air_s = 20.0000 
+	naval_radar_s = 20.0000 
+	naval_fire_controll_s = 20.0000 
 	naval_improved_hull_s = 0.0000 
+	naval_torpedoes_s = 0.0000 
 	naval_anti_air_l = 0.0000 
 	naval_radar_l = 0.0000 
-	naval_fire_controll_l = 10.0000 
+	naval_fire_controll_l = 0.0000 
 	naval_improved_hull_l = 0.0000 
-	naval_torpedoes_l = 0.0000
 }
 
 technology = { 
 	endgoal 	= { } 
 	preference = {
 		# CAS
-		4170 4280 4180
+		#4170 4280 4180
 		
 		# Tools
 		5050 5060 5070
@@ -260,36 +339,39 @@ technology = {
 		
 		# Production Control
 		5110 5120
-		
-		# Assembly Line
-		5130 5140 5150 5160 5180
-		
-		# Cryptography
+
+		# Computers
 		5310 5320 5330 5340
 		
+		# Assembly Line
+		#5130 5140 5150 5160 5180
+		
+		# Cryptography
+		#5310 5320 5330 5340
+		
 		# Special Weapons
-		7140 7150 7160
+		#7140 7150 7160
 
-		#Infantry
+		# Regular Infantry
 		1010 1020 1030 1040 1050 1060
 
 		# Inf support
 		1310 1320 1330 1340 1350 1360
 
-		# Mountain Unit techs
+		# Light / Mountain
 		1110 1120 1130 1140
 
 		# Naval Bomber
-		4190 4200 4210
+		#4190 4200 4210
 
-		# Motorized
+		# Motorized Infantry
 		1230 1240 1250
 
 		# Airborned
-		1070
+		#1070
 
 		# SP guns
-		2220 2230 2240 2250
+		#2220 2230 2240 2250
 
 		# Naval Doctrines
 		8120 8130 8310 8190 8090 8330 8200
@@ -301,7 +383,10 @@ technology = {
 		9040 9050 9060 9080 9100 9110 9120 9130 9190 9200 9210 9220 9230 9240 9250 9260 9290 9310 9320 9330 9340 9350 9360 9370 9380 9390 9400 9410 9420
 	} 
 	ignore 	= {
-		# Rocket Assembly
+		# Custom Equipment
+		5920 5930 5940 5950 5960 5970 5980 5990
+		
+		# Rocket Assembly Line
 		5170
 
 		# Airborne
@@ -313,11 +398,11 @@ technology = {
 		# Air Transports
 		4250 4260 4270
 
-		# Atomic Research
-		5470 5480 5490 5500 5510 5520 5530 5540
+		# Rocketry
+		7550 5550 5560 5570 5580 5590
 
-		# Test and Research
-		5550 5560 5570 5580 5590
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
 
 		# Bas Decimetric
 		5410 5420 5430 5440 5450 5460
@@ -336,9 +421,9 @@ technology = {
 
 		# Light Carrier
 		12100 12110 12120 12130 12140 12150
-		
-		# Carrier Air Group
-		4900 4910 4920 4930 4940 4950 4960 7050 7280
+
+		# Mechanized Infantry
+		1260 1270 1280 1290 10100 10110
 
 		# Armoured Cars
 		2150 2160
@@ -347,15 +432,15 @@ technology = {
 		9150 9160 9170 9180 9430 9440 9450 9460
 	}
  
-	armor 		= 3
-	infantry 	= 2
+	armor 		= 2
+	infantry 	= 5
 	industry 	= 4
 	aircraft 	= 2
 	naval 		= 1
 	land_doctrines 	= 1
 	secret_weapons 	= 0
 	air_doctrines 	= 2
-	naval_doctrines = 2
+	naval_doctrines = 1
 }
 
 ###################################
@@ -386,7 +471,7 @@ garrison = {
 	# PRIORITIES:
 	beach			= 30	# Beach level 2
 	capital			= 40	# Our capital
-	human_border	= 10		# Ignored for allied human players
+	human_border	= 0		# Ignored for allied human players
 	war_target		= 50	# The next country targeted for attack by this AI
 	
 	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
@@ -404,11 +489,14 @@ garrison = {
 		VIC = 75
 	}
 	province_priorities = {
-		531 = 50 #Turin
-		368 = 50 #Genoa
-		916 = 50 #Bardia
-		917 = 50 #Forte Capuzzo
-		523 = 50 # Taranto
+		398 = 50 #Turin 
+		396 = 50 #Genoa 
+		769 = 50 #Bardia 
+		770 = 50 #Forte Capuzzo 
+		422 = 50 # Taranto 
+	}
+	area_multiplier = {
+		#422 = 2.0 # Taranto 
 	}
 }
 front = { 
@@ -426,31 +514,8 @@ front = {
 	reinforce_odds		= 1.2
 	withdraw_odds		= 0.6
 
-	strength 	= 1.0
-	organisation 	= 1.0
-	soft_attack 	= 1.0
-	hard_attack 	= 1.0
-	ground_defense 	= 1.0
-	dig_in 		= 1.0 # Against defender
-
-	frozen_attack 	= 1.0
-	snow_attack 	= 1.0
-	blizzard_attack = 1.0
-	storm_attack 	= 1.0
-	muddy_attack 	= 1.0
-
-	
-	
 	occupied 	= 0.7
 	owned 		= 0.7
-
-	jungle_attack 	= 1.0
-	mountain_attack = 1.0
-	swamp_attack 	= 1.0
-	forest_attack 	= 1.0
-	hill_attack 	= 1.0
-	urban_attack 	= 1.0
-	river 		= 1.0
 
     enemy_handicap = { 
 		U06 = 20
@@ -478,12 +543,12 @@ air_marshal = {
 	# desirability is a multiplier used when calcualting the mission desirability
 	airsuperioritydesirability 		= 30.0
 	groundattackdesirability 		= 40.0
-	inderdictiondesirability 		= 2.0
+	inderdictiondesirability 		= 20.0
 	logisticalstrikedesirability 	= 2.0
-	runwaycrateringdesirability 	= 1.0
-	strategicstrikedesirability 	= 1.0
+	runwaycrateringdesirability 	= 10.0
+	strategicstrikedesirability 	= 10.0
 	installationstrikedesirability 	= 5.0
-	navalstrikedesirability 		= 55.0
+	navalstrikedesirability 		= 15.0
 	portstrikedesirability 			= 9.0
 	convoyraiddesirability			= 9.0
 
@@ -494,7 +559,7 @@ air_marshal = {
 	interdictionlosstolerance 		= 2.0
 	logisticalstrikelosstolerance 	= 0.5
 	runwaycrateringlosstolerance 	= 1.5
-	strategicstriketolerance 		= 0.5
+	strategicstriketolerance 		= 4.5
 	installationstriketolerance 	= 1.5
 	navalstriketolerance 			= 1.0
 	portstriketolerance 			= 1.0
@@ -537,7 +602,7 @@ invasion = {
 	invasion	= no
       
 	staging_province = {
-		422 # Taranto
+		#422 # Taranto
 	}
 	target = { }
 }
@@ -551,19 +616,19 @@ admiral = {
 	base = {
 		400 # Venice 
 		396 # Genoa 
-		422 # Taranto 
+		#422 # Taranto 
 	}
 	target = { } 
 	core = {
-		2184 
-		2192
-		2182
-		2180
-     	2734 
+		#2184 
+		#2192
+		#2182
+		#2180
+     	#2734 
      	2735 
 		##Africa
-		2183
-		2175
-		2177
+		#2183
+		#2175
+		#2177
 	}
 }

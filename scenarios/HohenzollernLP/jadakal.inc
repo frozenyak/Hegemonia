@@ -4,7 +4,8 @@
 
 country =
 { tag                    = U05
-  ai = "default.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "default.ai"
 #Large Power
   energy                 = 800
   metal                  = 800

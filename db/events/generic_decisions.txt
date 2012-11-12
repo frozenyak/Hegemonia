@@ -543,6 +543,7 @@ event = { #start sturdyequip production
 				#country = U05
 				country = GRE
 				country = MEX
+				country = CHC
 			}
 		NOT = {
 			OR = {
@@ -610,6 +611,7 @@ event = { #stop sturdyequip production
 				country = U00
 				country = U05
 				country = MEX
+				country = CHC
 			}
 		OR = {
 			resource_shortage = supplies
@@ -1194,7 +1196,7 @@ event = {
 
 	action = {
 		name = "9000027text"
-		command = { type = domestic which = democratic value = -1 }
+		command = { trigger = { domestic = { type = democratic value = 3 } } type = domestic which = democratic value = -1 }
 		command = { type = dissent value = -3 }
 		#command = { type = dissent value = -0.1000 } # Should be 10%
 		command = { trigger = { IC = 80 } type = money value = -500 }
@@ -1257,7 +1259,7 @@ event = {
 
 	action = {
 		name = "9000028text"
-		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { domestic = { type = freedom value = 3 } } type = domestic which = freedom value = -1 }
 		command = { type = dissent value = -3 }
 		command = { type = manpowerpool value = 0.1 when = 1 }
 		command = { trigger = { IC = 80 } type = money value = -500 }
@@ -1274,7 +1276,6 @@ event = {
 	tag = { GER ITA JAP U14 LIT RSI AUS FRA VIC U00 DFR }
 
 	decision = {
-		#money = 100
 		energy = 5000
 		NOT = { rare_materials = 10000 }
 		NOT = { local_flag = ersatz_conversion }
@@ -1290,7 +1291,7 @@ event = {
 		#NOT = { dissent = 5 }
 		NOT = { rare_materials = 200 }
 		NOT = { local_flag = ersatz_conversion }
-		energy = 20000
+		energy = 21000
 	}
 
 	name = "9000029name"
@@ -1306,7 +1307,8 @@ event = {
 	action = {
 		name = "9000029text"
 		#command = { type = dissent value = 2 }
-		#command = { type = money value = -100 }
+		#command = { trigger = { ai = no } type = money value = -500 }
+		command = { type = energypool value = -20000 }
 		command = { type = event which = 9000052 where = -1 when = 15 }
 		command = { type = local_setflag which = ersatz_conversion }
 	}
@@ -1324,7 +1326,6 @@ event = {
 
 	action = {
 		name = ACTION_NAME_EXCELLENT
-		command = { type = energypool value = -20000 }
 		command = { type = rarematerialspool value = 2500 }
 		command = { type = local_clrflag which = ersatz_conversion }
 	}
@@ -1400,6 +1401,7 @@ event = {
 		ai_chance = 30
 		name = "9000030a"
 		command = { type = dissent value = -0.5 }
+		command = { type = tc_mod value = 0.5 }		
 		command = { trigger = { IC = 80 money = 1000 } type = money value = -1000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 800 } type = money value = -800 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 600 } type = money value = -600 }
@@ -1412,6 +1414,7 @@ event = {
 		ai_chance = 30
 		name = "9000030b"
 		command = { type = dissent value = -1 }
+		command = { type = tc_mod value = 1 }		
 		command = { trigger = { IC = 80 money = 2000 } type = money value = -2000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 1600 } type = money value = -1600 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 1200 } type = money value = -1200 }
@@ -1424,11 +1427,12 @@ event = {
 		ai_chance = 40
 		name = "9000030c"
 		command = { type = dissent value = -2 }
+		command = { type = tc_mod value = 2.5 }		
 		command = { trigger = { IC = 80 money = 4000 } type = money value = -4000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 3200 } type = money value = -3200 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 2400 } type = money value = -2400 }
 		command = { trigger = { NOT = { IC = 15 } money = 1200 } type = money value = -1200 }
-		command = { trigger = { domestic = { type = free_market value = 5 } } type = domestic which = free_market value = -1 }
+		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
 		command = { type = event which = 9000053 where = -1 when = 30 }
 		command = { type = local_setflag which = infra_investment_3 }
 	}
@@ -1447,14 +1451,11 @@ event = {
 	action = {
 		name = ACTION_NAME_EXCELLENT
 		command = { }
-		command = { trigger = { local_flag = infra_investment_1 } type = tc_mod value = 0.5 }
 		command = { trigger = { local_flag = infra_investment_1 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_1 } type = local_clrflag which = infra_investment_1 }
-		command = { trigger = { local_flag = infra_investment_2 } type = tc_mod value = 1 }
 		command = { trigger = { local_flag = infra_investment_2 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_2 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_2 } type = local_clrflag which = infra_investment_2 }
-		command = { trigger = { local_flag = infra_investment_3 } type = tc_mod value = 2.5 }
 		command = { trigger = { local_flag = infra_investment_3 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_3 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_3 } type = construct which = infrastructure where = -1 value = 10 }
@@ -1532,6 +1533,9 @@ event = {
 		ai_chance = 30
 		name = "9000031a"
 		command = { type = dissent value = -0.5 }
+		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 0.5 }
+		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.3 }
+		command = { trigger = { research_mod = 120 } type = research_mod value = 0.1 }		
 		command = { trigger = { IC = 80 money = 1000 } type = money value = -1000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 800 } type = money value = -800 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 600 } type = money value = -600 }
@@ -1544,6 +1548,9 @@ event = {
 		ai_chance = 30
 		name = "9000031b"
 		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 1 }
+		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.6 }
+		command = { trigger = { research_mod = 120 } type = research_mod value = 0.2 }		
 		command = { trigger = { IC = 80 money = 2000 } type = money value = -2000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 1600 } type = money value = -1600 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 1200 } type = money value = -1200 }
@@ -1556,11 +1563,14 @@ event = {
 		ai_chance = 40
 		name = "9000031c"
 		command = { type = dissent value = -2 }
+		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 2.5 }
+		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 1.6 }
+		command = { trigger = { research_mod = 120 } type = research_mod value = 0.8 }		
 		command = { trigger = { IC = 80 money = 4000 } type = money value = -4000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 3200 } type = money value = -3200 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 2400 } type = money value = -2400 }
 		command = { trigger = { NOT = { IC = 15 } money = 1200 } type = money value = -1200 }
-		command = { trigger = { domestic = { type = free_market value = 5 } } type = domestic which = free_market value = -1 }
+		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
 		command = { type = event which = 9000054 where = -1 when = 30 }
 		command = { type = local_setflag which = research_investment_3 }				
 	}
@@ -1579,18 +1589,10 @@ event = {
 	action = {
 		name = ACTION_NAME_EXCELLENT
 		command = { }
-		command = { trigger = { local_flag = research_investment_1 NOT = { research_mod = 100 } } type = research_mod value = 0.5 }
-		command = { trigger = { local_flag = research_investment_1 research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.3 }
-		command = { trigger = { local_flag = research_investment_1 research_mod = 120 } type = research_mod value = 0.1 }
+		command = { trigger = { local_flag = research_investment_1 } type = gain_tech which = -1 }		
 		command = { trigger = { local_flag = research_investment_1 } type = local_clrflag which = research_investment_1 }
-		command = { trigger = { local_flag = research_investment_2 NOT = { research_mod = 100 } } type = research_mod value = 1 }
-		command = { trigger = { local_flag = research_investment_2 research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.6 }
-		command = { trigger = { local_flag = research_investment_2 research_mod = 120 } type = research_mod value = 0.2 }		
 		command = { trigger = { local_flag = research_investment_2 } type = gain_tech which = -2 }
 		command = { trigger = { local_flag = research_investment_2 } type = local_clrflag which = research_investment_2 }
-		command = { trigger = { local_flag = research_investment_3 NOT = { research_mod = 100 } } type = research_mod value = 2.5 }
-		command = { trigger = { local_flag = research_investment_3 research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 1.6 }
-		command = { trigger = { local_flag = research_investment_3 research_mod = 120 } type = research_mod value = 0.8 }
 		command = { trigger = { local_flag = research_investment_3 } type = gain_tech which = -1 }
 		command = { trigger = { local_flag = research_investment_3 } type = gain_tech which = -2 }
 		command = { trigger = { local_flag = research_investment_3 } type = local_clrflag which = research_investment_3 }

@@ -4,7 +4,7 @@ invasion = {
 	coastal		= 2.0	#increase to avoid coastal forts more.
 	beach		= 2.0	#higher, avoid worst beaches.
 	distance	= 0.5	#higher = avoid long distance.
-	max_distance	= 500.0 #max distance, 1=100km
+	max_distance	= 200.0 #max distance, 1=100km
 	max_staging_distance = 500.0  #max distance, 1=100km
 	pocket		= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island		= 1.0	#prioritise taking pure islands.

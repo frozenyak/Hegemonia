@@ -4,6 +4,7 @@
 
 country =
 { tag                    = PRU
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
   energy                 = 400
   metal                  = 400
   rare_materials         = 200

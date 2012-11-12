@@ -6,7 +6,7 @@ UCH;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 1325005;Head of Military Intelligence;Dalerim Khan;36;PA;Political Specialist;Medium;M72016;x
 1325006;Minister of Security;Dai Li;36;SC;Crime Fighter;Very High;M52063;x
 1325007;Chief of Staff;Yan Xishan;36;PA;School of Defence;Medium;L50348;x
-1325008;Chief of Army;Jiang Baili;36;SC;Guns and Butter Doctrine;High;M52089;x
+1325008;Chief of Army;Jiang Baili;36;SC;Doctrine of autonomy;High;M52089;x
 1325009;Chief of Navy;Sa Zhenbing;36;PA;Indirect Approach Doctrine;Medium;M72009;x
 1325010;Chief of Air Force;Zhou Zhirou;36;SC;Army Aviation Doctrine;Very High;M52010;x
 1325011;Chief of Air Force;Lu Han;36;SC;Carpet Bombing Doctrine;Medium;M501009;x
@@ -54,7 +54,7 @@ UCH;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 1325053;Chief of Staff;Chiang Kai-shek;36;SC;School of Manoeuvre;Undying;M52002;x
 1325054;Chief of Staff;Jiang Baili;39;SC;School of Psychology;High;M52089;x
 1325055;Chief of Staff;Lin Wei;43;SC;School of Manoeuvre;High;M52035;x
-1325056;Chief of Staff;Qi Xieyuan;39;PA;School of Fire Support;Low;M52017;x
+1325056;Chief of Staff;Qi Xieyuan;39;PA;commando doctrine staff;Low;M52017;x
 1325057;Chief of Staff;Xiao Yishu;45;SC;School of Fire Support;High;M52092;x
 1325058;Chief of Staff;Xu Zuyi;39;SL;School of Defence;High;M52093;x
 1325059;Foreign Minister;Chen Guofu;41;SC;Great Compromiser;Low;M52005;x
@@ -92,8 +92,8 @@ UCH;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 1325091;Minister of Armament;Bai Chongxi;36;SC;Resource Industrialist;Low;M52045;x
 1325092;Minister of Armament;Cai Wenzhi;41;SC;Tank Proponent;High;M52050;x
 1325093;Minister of Armament;Chan Chak;43;PA;Submarine Proponent;High;M52061;x
-1325094;Minister of Armament;Chen Gongbo;39;PA;laissez-faire capitalist;Medium;M52014;x
-1325095;Minister of Armament;Chen Guofu;40;SC;laissez-faire capitalist;Low;M52005;x
+1325094;Minister of Armament;Chen Gongbo;39;PA;Keynesian economy;Medium;M52014;x
+1325095;Minister of Armament;Chen Guofu;40;SC;Mixed economy;Low;M52005;x
 1325096;Minister of Armament;Du Jianshi;46;SC;Strategic Air Proponent;High;M52056;x
 1325097;Minister of Armament;He Guoguang;42;SC;Air to Ground Proponent;High;M52051;x
 1325098;Minister of Armament;He Yingqin;43;SL;Infantry Proponent;Medium;M52058;x
@@ -101,7 +101,7 @@ UCH;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 1325100;Minister of Armament;Jiang Jingguo;45;SC;Administrative Genius;High;M52055;x
 1325101;Minister of Armament;Wang Shuming;43;SC;Air to Sea Proponent;High;M52054;x
 1325102;Minister of Armament;Weng Wenhao;39;SL;laissez-faire capitalist;Medium;M52057;x
-1325103;Minister of Armament;Xu Yongchang;38;SC;Theoretical Scientist;High;M52046;x
+1325103;Minister of Armament;Xu Yongchang;38;SC;Reformer;High;M52046;x
 1325104;Minister of Armament;Yang Luchang;41;PA;Resource Industrialist;Medium;M52043;x
 1325105;Minister of Armament;Yu Feipeng;42;SC;Infantry Proponent;High;M52053;x
 1325106;Minister of Security;Cai Yuanpei;45;SL;Compassionate Gentleman;Medium;M52073;x

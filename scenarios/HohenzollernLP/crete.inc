@@ -4,6 +4,7 @@
 
 country =
 { tag                    = U01
+	ai_settings = { flags = { MOB2 = yes reinf = yes } }
   #industrial_modifier	 = 0.85
   #relative_manpower	 = 1.50
 #Minor Power

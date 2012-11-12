@@ -1,11 +1,11 @@
 SOV;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 30001;Head of State;Mikhail I. Kalinin;33;ST;Weary Stiffneck;High;3176;X
 30002;Head of State;Iosif V. Stalin;33;ST;Paranoid megalomaniac2;High;3177;X
-30003;Foreign Minister;Maksim M. Litvinov;33;ST;Biased Intellectual;Medium;3178;X
-30004;Minister of Armament;Lazar M. Kaganovich;33;ST;Resource Industrialist;High;3179;X
-30005;Minister of Security;Genrikh G. Yagoda;33;ST;Back Stabber;Low;3180;X
+30003;Foreign Minister;Maksim M. Litvinov;33;ST;Persuader of Democracies;Medium;3178;X
+30004;Minister of Armament;Lazar M. Kaganovich;33;ST;Iron Lazar;High;3179;X
+30005;Minister of Security;Genrikh G. Yagoda;33;ST;Purged Purger;Low;3180;X
 30006;Head of Military Intelligence;Yan K. Berzin;33;ST;Technical Specialist;Medium;3181;X
-30007;Chief of Staff;Michail N. Tuchatchevskiy;33;LE;School of Manoeuvre;Low;3182;X
+30007;Chief of Staff;Mikhail N. Tukhachevsky;33;LE;Deep Battle Proponent;Low;3182;X
 30008;Chief of Army;Kliment Y. Voroshilov;33;ST;Guns and Butter Doctrine;Very High;3183;X
 30009;Chief of Navy;Vladimir M. Orlov;33;LE;Indirect Approach Doctrine;Very Low;M4009;X
 30010;Chief of Air Force;Yakov I. Alksnis;33;LE;Air Superiority Doctrine;High;3184;X
@@ -14,7 +14,7 @@ SOV;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 30013;Head of State;Nikolay M. Shvernik;46;ST;Insignificant Layman;High;3186;X
 30014;Head of State;Alexander F. Kerensky;33;SL;Die-hard Reformer;High;3187;X
 30015;Head of State;Nikolai I. Yezhov;33;PA;Barking Buffoon;High;3188;X
-30016;Head of Government;Vyacheslav M. Molotov;33;ST;Silent Workhorse;High;3185;X
+30016;Head of Government;Vyacheslav M. Molotov;33;ST;collectivizer;High;3185;X
 30017;Head of Government;Lavrentiy P. Beria;38;ST;Backroom Backstabber;High;3189;X
 30018;Head of Government;Alexander F. Kerensky;33;SL;Happy Amateur;High;3187;X
 30019;Head of Government;Nikolai I. Yezhov;33;PA;Corporate Suit;High;3188;X
@@ -24,9 +24,9 @@ SOV;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 30023;Minister of Armament;Georgiy D. Bazilevich;38;ST;Infantry Proponent;High;M4036;X
 30024;Minister of Armament;Dimitry F. Ustinov;41;ST;Theoretical Scientist;High;3192;X
 30025;Minister of Armament;Boris L. Vannikov;42;ST;Military Entrepreneur;Very High;M4038;X
-30026;Minister of Security;Nikolai I. Yezhov;33;ST;Back Stabber;Medium;3188;X
+30026;Minister of Security;Nikolai I. Yezhov;33;ST;Secret police chief;Medium;3188;X
 30027;Minister of Security;Sergej Uritskiy;37;ST;Crime Fighter;Medium;M4040;X
-30028;Minister of Security;Lavrentiy P. Beria;38;ST;Prince of Terror;Very High;3189;X
+30028;Minister of Security;Lavrentiy P. Beria;38;ST;Secret police chief;Very High;3189;X
 30029;Minister of Security;Andriy G. Orlov;38;ST;Silent Lawyer;Medium;M4042;X
 30030;Minister of Security;Sergiy G. Gendin;38;ST;Efficient Sociopath;Medium;M4043;X
 30031;Minister of Security;Andriy P. Panfilov;41;ST;Man of the People;Medium;M4044;X
@@ -73,12 +73,12 @@ SOV;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 30072;Chief of Army;Georgiy K. Zhukov;33;PA;Decisive Battle Doctrine;Medium;3197;X
 30073;Chief of Navy;Nikolay G. Kuznetsov;33;PA;Decisive Naval Battle Doctrine;Medium;3202;X
 30074;Chief of Air Force;Pavel V. Rychagov;33;PA;Army Aviation Doctrine;Medium;3205;X
-30075;Minister of Armament;Nikolay A. Bulganin;53;ST;Resource Industrialist;High;3212;X
-30076;Minister of Armament;Iosif V. Stalin;33;ST;Military Entrepreneur;Very High;3177;X
+30075;Minister of Armament;Nikolay A. Bulganin;53;ST;Planned economy proponent;High;3212;X
+30076;Minister of Armament;Iosif V. Stalin;33;ST;Planned economy proponent;Very High;3177;X
 30077;Head of State;Kliment Y. Voroshilov;53;ST;Resigned Generalissimo;High;3183;X
 30078;Head of Government;Nikita S. Khrushchev;58;ST;Flamboyant Tough Guy;High;3213;X
 30079;Minister of Armament;Aleksandr Vasilevsky;49;ST;Infantry Proponent;High;3214;X
-30080;Minister of Security;Sergey N. Kruglov;53;ST;Back Stabber;Very High;3215;X
+30080;Minister of Security;Sergey N. Kruglov;53;ST;Secret police chief;Very High;3215;X
 30081;Head of Military Intelligence;Viktor S. Abakumov;46;ST;Logistics Specialist;Very High;3216;X
 30082;Head of Military Intelligence;Semyon D. Ignatyev;51;ST;Political Specialist;Very High;M4079;X
 30083;Head of Military Intelligence;Ivan A. Serov;53;ST;Technical Specialist;Very High;3025;X

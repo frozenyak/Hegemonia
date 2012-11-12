@@ -4,6 +4,7 @@
 
 country =
 { tag                    = PAN
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
   #industrial_modifier	 = 0.75
 #Medium Power
   energy                 = 500

@@ -1,11 +1,4 @@
 
-#############################################
-# Regular AI Events
-#############################################
-# Behavior Flags
-# Attack flags
-#	CYNAttackJAP		= Flag turned on means they are free to attack at will
-################
 ################
 # Attack Japan controls
 #	CYNAttackJAP		= Flag turned on means they are free to attack at will

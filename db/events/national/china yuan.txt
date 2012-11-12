@@ -1,8 +1,8 @@
-###64000-64999###
+###64000-64899###
 
 event = {
 	id = 64000
-	country = CYN
+	country = U74
 
 	name = "Nationalist Troops Cross the Border"
 	desc = "Troops from Nationalist China have crossed our border, claiming to be chasing raiders that recently hit Kungming. Whatever their justification, this is a violation of our national sovereignty and the court is demanding action!"
@@ -36,7 +36,7 @@ event = {
 
 event = {
 	id = 64001
-	country = CYN
+	country = U74
 
 	name = "Nationalist Demands"
 	desc = "A delegation from Nationalist China has arrived demanding compensation for recent raids in the Kungming province. As the raiders are simple bandits acting outside of our authority, the demand is widely seen as an insult in our court."
@@ -69,7 +69,7 @@ event = {
 
 event = {
 	id = 64002
-	country = CYN
+	country = U74
 
 	name = "Nationalist China Mobilizes"
 	desc = "The Nationalists have fully mobilized their forces and increased their deployment along the border. The situation is very tense and the slighest spark could ignite war."
@@ -84,7 +84,7 @@ event = {
 
 event = {
 	id = 64003
-	country = CYN
+	country = U74
 	
 	trigger = {
 		local_flag = MOB7
@@ -111,45 +111,12 @@ event = {
 }
 
 event = {
-	id = 64004
-	country = CYN
-	
-	trigger = {
-		OR = {
-			event = 27005
-			event = 64003
-		}
-		NOT = { event = 27006 }
-		NOT = { event = 42004 }
-		owned = { province = 1337 data = -1 }
-		owned = { province = 1369 data = -1 }
-		NOT = { exists = CHI }
-		NOT = { war = { country = JAP } }
-	}
-
-	name = "Victory Celebrations in Nanjing"
-	desc = "The Chinese people are celebrating our victory over the Nationalist upstarts. At long last, the bloody civil war is over."
-	style = 1
-	picture = "China_Rally"
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 3
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		name = "ACTION_NAME_HURRAH"
-		command = { type = dissent value = -5 }
-
-	}
-}
-
-event = {
 	id = 64005
-	country = CYN
+	country = U74
 	
 	trigger = {
 		NOT = { exists = JAP }
-		owned = { province = 1552 data = CYN }
+		owned = { province = 1552 data = U74 }
 	}
 
 	name = "Victory over Japan"
@@ -175,48 +142,10 @@ event = {
 	}
 }
 
-event = {
-	id = 64006
-	country = CYN
-	
-	trigger = {
-		war = { country = JAP }
-		war = { country = CHI }
-		exists = CHI
-		lost_national = { value = 66 }
-		NOT = { control = { province = 1337 } }
-		NOT = { control = { province = 1247 } }
-		NOT = { control = { province = 1369 } }
-		ai = yes
-	}
-
-	name = "The Fall of the Yuan"
-	desc = "We have lost control of most of our country and the Emperor has fled to Russia. Yet the will of our people to resist the Japanese invader is high as ever. Perhaps it would be best to join forces with the Nationalists?"
-	style = 1
-	picture = "Japan_Invasion"
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 13
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		name = "ACTION_NAME_AGREE"
-		ai_chance = 95
-		command = { type = independence which = CHC }
-		command = { type = trigger which = 29000 }
-		command = { type = trigger which = 27008 }
-	}
-	action = {
-		name = ACTION_NAME_NEVER
-		ai_chance = 5
-		command = { type = dissent value = 20 }
-	}
-}
-
 # event = {
 	# id = 64007
 	# #random = no
-	# country = CYN
+	# country = U74
 
 	# name = "Japanese Puppet"
 	# desc = "We have secured control over our new puppet in Japan."
@@ -230,17 +159,3 @@ event = {
 # }
 
 
-event = {
-	id = 64008
-	country = CYN
-
-	name = "Nationalist China Surrenders"
-	desc = "The Nationalists were unable to resist both the Japanese and us at the same time. Most of their government has fled the country. What is left offered to join forces to defeat the Japanese invader."
-	style = 1
-	picture = "japan_celebrating"
-
-	action = {
-		name = "ACTION_NAME_EXCELLENT"
-		command = { type = inherit which = CHI } # value = 1
-	}
-}

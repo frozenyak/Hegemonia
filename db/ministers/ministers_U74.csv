@@ -1,0 +1,60 @@
+U74;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+700401;Head of State;Long Yun;36;SC;Die-hard Reformer;High;M501001;x
+700402;Head of Government;Long Yun;36;SC;Political Protege;High;M501001;x
+700403;Foreign Minister;Zhou Zhirou;36;SC;Apologetic Clerk;High;M501003;x
+700404;Minister of Armament;Liu Wenhui;36;SC;Battle Fleet Proponent;Medium;M501004;x
+700405;Minister of Security;Ding Zhipan;36;SC;Crime Fighter;Medium;M501005;x
+700406;Head of Military Intelligence;Mi Zaiming;36;PA;Political Specialist;Medium;M501006;x
+700407;Chief of Staff;Long Yun;36;SC;School of Psychology;Medium;M501001;x
+700408;Chief of Army;Long Yun;36;SC;Guns and Butter Doctrine;Medium;M501001;x
+700409;Chief of Navy;Lu Han;36;SC;Open Seas Doctrine;Medium;M501009;x
+700410;Chief of Air Force;Lu Han;36;SC;Carpet Bombing Doctrine;Medium;M501009;x
+700412;Head of Government;Yan Xishan;36;PA;Smiling Oilman;High;L50348;x
+700413;Foreign Minister;Wang Zuanxu;36;PA;Iron Fisted Brute;High;L50323;x
+700414;Minister of Armament;Fu Zuoyi;36;PA;Air to Ground Proponent;Medium;L50085;x
+700415;Minister of Security;Qu Yangke;36;PA;Prince of Terror;Medium;M503005;x
+700416;Head of Military Intelligence;Shang Zhen;36;PA;Naval Intelligence Specialist;Medium;M503006;x
+700417;Chief of Staff;Yan Xishan;36;PA;School of Defence;Medium;L50348;x
+700418;Chief of Army;Yan Xishan;36;PA;Armoured Spearhead Doctrine;Medium;L50348;x
+700419;Chief of Navy;Dmitrij Krolcheff;36;PA;Base Control Doctrine;Medium;M503009;x
+700420;Chief of Air Force;Yan Xishan;36;PA;Carpet Bombing Doctrine;Medium;L50348;x
+700421;Head of State;Amir II Yuan;36;FA;Despotic Autocrat;High;M501021;x
+700432;Head of Government;Ma Bufang;36;PA;old airmarshal;High;M504009;x
+700433;Foreign Minister;Fang Jing;36;PA;Great Compromiser;High;L50075;x
+700434;Minister of Armament;Zi Shen;36;PA;Corrupt Kleptocrat;Medium;M504004;x
+700435;Minister of Security;Li Shiqun;36;PA;Prince of Terror;Medium;M504005;x
+700436;Head of Military Intelligence;Ma Hongbin;36;PA;Political Specialist;Medium;M504006;x
+700437;Chief of Staff;Ma Buqing;36;PA;School of Defence;Medium;M504007;x
+700438;Chief of Army;Ma Buqing;36;PA;Guns and Butter Doctrine;Medium;M504007;x
+700439;Chief of Navy;Ma Bufang;36;PA;Indirect Approach Doctrine;Medium;M504009;x
+700440;Chief of Air Force;Ma Bufang;36;PA;Army Aviation Doctrine;Medium;M504009;x
+700441;Head of State;Sheng Shicai;36;PA;Resigned Generalissimo;High;M72001;x
+700442;Head of Government;Khoja Neyaze;36;PA;Naive Optimist;High;M72002;x
+700443;Foreign Minister;Sheng Shicai;36;PA;Great Compromiser;Very High;M72001;x
+700444;Minister of Armament;Habibullah Huseinov;36;PA;Infantry Proponent;Medium;M72004;x
+700445;Minister of Security;Zhang Xiliang;36;PA;Crooked Kleptocrat;Medium;M72005;x
+700446;Head of Military Intelligence;Viktor A.F. Polinov;36;PA;Industrial Specialist;Medium;M72006;x
+700447;Chief of Staff;Sheng Shicai;36;PA;School of Psychology;Very High;M72001;x
+700448;Chief of Army;Sheng Shicai;36;PA;Guns and Butter doctrine;Very High;M72001;x
+700449;Chief of Navy;Sa Zhenbing;36;PA;Indirect Approach Doctrine;Medium;M72009;x
+700450;Chief of Air Force;Piotr Orlov;36;PA;Army Aviation Doctrine;Medium;M72010;x
+700451;Foreign Minister;Isa Yusuf Alptekin;36;SC;Apologetic Clerk;Low;M72012;x
+700452;Minister of Armament;A.V. Fedyunskij;36;PA;Infantry Proponent;Medium;M72024;x
+700453;Minister of Armament;Isa Yusuf Alptekin;36;SC;Infantry Proponent;Medium;M72012;x
+700454;Minister of Security;Kunimu Khan;36;SC;Compassionate Gentleman;Very High;M72014;x
+700455;Minister of Security;Ishakjan Monhakiyev;36;SC;Man of the People;Medium;M72025;x
+700456;Head of Military Intelligence;Zhang Xiliang;36;PA;Dismal Enigma;Medium;M72005;x
+700457;Head of Military Intelligence;Dalerim Khan;36;PA;Political Specialist;Medium;M72016;x
+700458;Head of Military Intelligence;Liu Ben;39;PA;Technical Specialist;Medium;M72026;x
+700459;Chief of Staff;Yol Bars;41;PA;School of Mass Combat;Very Low;M72017;x
+700460;Chief of Army;Yol Bars;42;PA;Elastic Defence Doctrine;Very Low;M72017;x
+700461;Head of State;Makhmudsabri;36;SL;Insignificant Layman;High;M72011;x
+700462;Head of Government;Isa Yusuf Alptekin;36;SL;Corporate Suit;High;M72012;x
+700464;Minister of Armament;Kunimu Khan;36;SL;Military Entrepreneur;Very High;M72014;x
+700465;Head of State;Sheng Shicai;36;LWR;Resigned Generalissimo;High;M72001;x
+700466;Head of Government;Sheng Shicai;36;LWR;Old General;High;M72001;x
+700467;Foreign Minister;Sheng Shicai;36;LWR;Great Compromiser;Very High;M72001;x
+700468;Chief of Staff;Sheng Shicai;36;LWR;School of Psychology;Very High;M72001;x
+700469;Chief of Army;Sheng Shicai;36;LWR;Guns and Butter doctrine;Undying;M72001;x
+700470;Chief of Navy;Sa Zhenbing;36;LE;Indirect Approach Doctrine;Medium;M72009;x
+EOF;x

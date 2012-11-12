@@ -7,6 +7,7 @@ country =
   puppet	= SPA
   name		= U06_SPA
   #regular_id = VIC #similar to AUS/GER hack
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
   capital	= 68
 #Medium Power
   energy                 = 500

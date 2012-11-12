@@ -4,6 +4,7 @@
 
 country =
 { tag                    = SCH
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
   capital                = 392
   #industrial_modifier	 = 0.75
 #Medium Power

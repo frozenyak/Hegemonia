@@ -6,7 +6,8 @@ country =
 { tag                    = VIC
   regular_id = FRA
   intrinsic_gov_type     = stalinist
-  ai = "france.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes ai_set = yes } }
+	ai = "france.ai"
   capital                = 55
   dissent		 = 7 #10
 #Large Power

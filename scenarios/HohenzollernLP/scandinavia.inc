@@ -4,6 +4,8 @@
 
 country =
 { tag                    = SCA
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "scandinavia.ai"
 #Large Power
   energy                 = 800
   metal                  = 800
@@ -132,6 +134,7 @@ country =
 	6030 #Grand Battleplan
 	6560 #defensive focus
 	#6120 #Trench Warfare
+	14000 #Great War Hospital
 
 	##Naval Doctrines##
 	8010 #Decisive Battle

@@ -2149,15 +2149,15 @@ province = {
 } #huelva
 province = {
 	id = 437
-	landfort = 1
+	landfort = 3 #1
 } #gerona
 province = {
 	id = 438
-	landfort = 1
+	landfort = 2 #1
 } #huesca
 province = {
 	id = 439
-	landfort = 1
+	landfort = 2 #1
 } #lerida
 province = {
 	id = 443

@@ -5,6 +5,7 @@
 country =
 { tag                    = U07
   #puppet		 = VIC #U00
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
 #Medium Power
   energy                 = 500
   metal                  = 500

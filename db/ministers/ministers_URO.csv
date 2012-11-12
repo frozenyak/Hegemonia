@@ -1,0 +1,120 @@
+URO;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
+110001;Head of State;Manuel XXVI;36;PA;Ruthless Powermonger;High;M18001;x
+110002;Head of Government;Constantinos Demertzis;36;PA;Naive Optimist;NA;M18002;x
+110003;Foreign Minister;Constantinos Demertzis;36;PA;Biased Intellectual;Very High;M18002;x
+110004;Minister of Armament;Georgios Mantzavinos;36;PA;Military Entrepreneur;Medium;M18004;x
+110005;Minister of Security;Georgios Logothetis;36;PA;Crime Fighter;Medium;M18005;x
+110006;Head of Military Intelligence;Georgios Logothetis;36;PA;Dismal Enigma;Medium;M18005;x
+110007;Chief of Staff;Theodor Pangalos;36;PA;School of Defence;Low;M18007;x
+110008;Chief of Army;Alexandros Papagos;36;PA;Elastic Defence Doctrine;Low;M18008;x
+110009;Chief of Navy;Anastassio Sakellariou;36;PA;Open Seas Doctrine;Medium;M18009;x
+110010;Chief of Air Force;Panagotis Papanikolaou;36;SC;Carpet Bombing Doctrine;Medium;M18042;x
+110040;Head of State;Grigoriev Murnov;41;NS;Weary Stiffneck;High;M18040;x
+110041;Head of State;Mario Vercellino;42;NS;Resigned Generalissimo;High;M18041;x
+110042;Head of State;Reinhard Altenburg;43;NS;Autocratic Charmer;High;M18042;x
+110046;Head of Government;Themistocles Sophoulis;36;SL;Flamboyant Tough Guy;High;M18014;x
+110047;Head of Government;Georgios Papandreou;44;SL;Silent Workhorse;High;M18015;x
+110048;Head of Government;Panagiolis Poulitsas;46;SL;Smiling Oilman;High;M18048;x
+110049;Head of Government;Ioannis Metaxas;36;SC;Old General;High;M18049;x
+110050;Head of Government;Alexandros Korizis;41;SC;Political Protege;High;M18050;x
+110051;Head of Government;Emmanouel Tsouderos;41;SC;Happy Amateur;High;M18051;x
+110052;Head of Government;Sophocles Venizelos;44;SC;Naive Optimist;High;M18012;x
+110053;Head of Government;Konstantinos Tsaldaris;46;SC;Old General;High;M18053;x
+110054;Head of Government;Dimitrios Maximos;47;SC;Political Protege;High;M18054;x
+110055;Head of Government;Panagis Tsaldaris;36;FA;Flamboyant Tough Guy;High;M18055;x
+110056;Head of Government;Georgias Tsolakoglou;41;NS;Old General;High;M18056;x
+110057;Head of Government;Konstantinos Logothetopoulos;42;NS;Corporate Suit;High;M18057;x
+110058;Head of Government;Ioannis Rallis;43;NS;Naive Optimist;High;M18058;x
+110060;Head of Government;Nikolaos Plastiras;45;PA;Old General;High;M18060;x
+110061;Head of Government;Petros Voulgaris;45;PA;Naive Optimist;High;M18061;x
+110062;Head of Government;Panagiotis Kanellopoulos;45;PA;Smiling Oilman;High;M18062;x
+110067;Foreign Minister;Georgios Papandreou;44;SL;Biased Intellectual;Very High;M18015;x
+110068;Foreign Minister;Ioannis Safianopoulos;45;SL;Great Compromiser;Medium;M18068;x
+110069;Foreign Minister;Constantinos Rentis;46;SL;Apologetic Clerk;Medium;M18069;x
+110070;Foreign Minister;Ioannis Metaxas;36;SC;General Staffer;Very High;M18049;x
+110071;Foreign Minister;Alexandros Korizis;41;SC;Great Compromiser;Medium;M18050;x
+110072;Foreign Minister;Emmanouel Tsouderos;41;SC;Apologetic Clerk;Medium;M18051;x
+110075;Foreign Minister;Demosthenes Nicoladis;36;FA;Ideological Crusader;Very High;M18075;x
+110076;Foreign Minister;Georgias Tsolakoglou;41;NS;General Staffer;Very High;M18056;x
+110077;Foreign Minister;Konstantinos Logothetopoulos;42;NS;Biased Intellectual;High;M18057;x
+110078;Foreign Minister;Ioannis Rallis;43;NS;The Cloak N Dagger Schemer;Very High;M18058;x
+110079;Foreign Minister;Georgios Papandreou;45;PA;Biased Intellectual;Very High;M18015;x
+110080;Foreign Minister;Ioannes Socrates Politis;45;PA;Apologetic Clerk;Very High;M18080;x
+110081;Foreign Minister;Panagiotis Kanellopoulos;45;PA;Great Compromiser;Medium;M18062;x
+110082;Foreign Minister;Panagiotios Demestichas;46;PA;General Staffer;Very High;M18082;x
+110087;Minister of Armament;Theodoros Marsal;37;SL;Resource Industrialist;Medium;M18087;x
+110088;Minister of Armament;Themistocles Sophoulis;41;SL;Administrative Genius;High;M18014;x
+110089;Minister of Armament;Alexandros Svolos;44;SL;Resource Industrialist;High;M18089;x
+110090;Minister of Armament;Demetrios Gousis;45;SL;Battle Fleet Proponent;High;M18090;x
+110092;Minister of Armament;Antoine Frangulis;38;SC;Air Superiority Proponent;Medium;M18092;x
+110093;Minister of Armament;Thanassos Exaharis;39;SC;laissez-faire capitalist;Medium;M18093;x
+110094;Minister of Armament;Takis Pipenelis;40;SC;Theoretical Scientist;Medium;M18094;x
+110095;Minister of Armament;Eleftherios Venizelos;41;SC;Air to Ground Proponent;Medium;M18010;x
+110096;Minister of Armament;Gaecia Geanados;42;SC;Strategic Air Proponent;Medium;M18096;x
+110097;Minister of Armament;Anastassios Bardivilias;43;SC;Air to Sea Proponent;Medium;M18097;x
+110098;Minister of Armament;Anatasios Kanellopoulos;44;SC;Administrative Genius;Very High;M18098;x
+110099;Minister of Armament;Giorgios Lavdas;45;SC;Tank Proponent;Very High;M18099;x
+110100;Minister of Armament;Alchibiades Stephanopoulos;46;SC;laissez-faire capitalist;Medium;M18100;x
+110102;Minister of Armament;Panagis Tsaldaris;38;FA;Air to Sea Proponent;High;M18055;x
+110103;Minister of Armament;Pavlos Milziadis;41;NS;Resource Industrialist;Medium;M18103;x
+110104;Minister of Armament;Christos Tsigantes;42;NS;Resource Industrialist;Medium;M18104;x
+110105;Minister of Armament;Nicholaos Voutsinaris;43;NS;Theoretical Scientist;High;M18105;x
+110106;Minister of Armament;Ioannis Venizelos;44;PA;Military Entrepreneur;Medium;M18106;x
+110107;Minister of Armament;Nikolaos Plastiras;45;PA;Infantry Proponent;Very High;M18060;x
+110109;Minister of Security;Georgios Papandreou;36;SL;Efficient Sociopath;High;M18015;x
+110111;Minister of Security;Elias Panakilis;44;SL;Crime Fighter;Medium;M18111;x
+110112;Minister of Security;Evangelos Papanoutsos;45;SL;Compassionate Gentleman;Medium;M18112;x
+110113;Minister of Security;Panagiolis Poulitsas;46;SL;Prince of Terror;High;M18048;x
+110114;Minister of Security;Giorgios Nicolaidis;36;SC;Back Stabber;Medium;M18114;x
+110115;Minister of Security;Raul Bibica Rosetti;41;SC;Compassionate Gentleman;Medium;M18115;x
+110116;Minister of Security;Dimitrios Maximos;44;SC;Crime Fighter;High;M18054;x
+110117;Minister of Security;Konstantinos Tsaldaris;44;SC;Man of the People;Medium;M18117;x
+110118;Minister of Security;Thanassis Aghnides;45;SC;Efficient Sociopath;Medium;M18118;x
+110119;Minister of Security;Panagiotis Kafantaris;46;SC;Silent Lawyer;Medium;M18119;x
+110120;Minister of Security;Stephanos Lakiantos;47;SC;Crooked Kleptocrat;Medium;M18120;x
+110122;Minister of Security;Christos Tsigantes;38;FA;Prince of Terror;Medium;M18104;x
+110123;Minister of Security;Grigoriev Murnov;41;NS;Crime Fighter;Low;M18040;x
+110124;Minister of Security;Mario Vercellino;42;NS;Back Stabber;Low;M18041;x
+110125;Minister of Security;Reinhard Altenburg;43;NS;Crooked Kleptocrat;High;M18042;x
+110127;Minister of Security;Alchibiades Stephanopoulos;44;PA;Compassionate Gentleman;Medium;M18100;x
+110128;Minister of Security;Christos Triantafyllidis;46;PA;Man of the People;Medium;M18128;x
+110132;Head of Military Intelligence;Georgios Papandreou;36;SL;Political Specialist;High;M18015;x
+110135;Head of Military Intelligence;Georgios Drossopoulos;41;SC;Technical Specialist;High;M18135;x
+110136;Head of Military Intelligence;Georgios Streit;44;SC;Industrial Specialist;High;M18136;x
+110137;Head of Military Intelligence;Anatasios Kanellopoulos;46;SC;Dismal Enigma;Very High;M18098;x
+110138;Head of Military Intelligence;Alexandros Propanis;47;SC;Logistics Specialist;Medium;M18138;x
+110139;Head of Military Intelligence;Christos Triantafyllidis;36;FA;Dismal Enigma;Medium;M18128;x
+110140;Head of Military Intelligence;Alchibiades Stephanopoulos;37;FA;Industrial Specialist;Medium;M18100;x
+110141;Head of Military Intelligence;Christos Tsigantes;41;NS;Industrial Specialist;Medium;M18104;x
+110142;Head of Military Intelligence;Sevastianos Foulidis;42;NS;Logistics Specialist;High;M18142;x
+110143;Head of Military Intelligence;Napoleon Zervas;44;PA;Logistics Specialist;Low;M18143;x
+110150;Chief of Staff;Alexandros Papagos;36;SC;School of Defence;Medium;M18007;x
+110151;Chief of Staff;Giorgios Lavdas;39;SC;School of Manoeuvre;Medium;M18099;x
+110152;Chief of Staff;Paraskos Melissinos;40;SC;School of Mass Combat;Medium;M18152;x
+110155;Chief of Staff;Giorgios Kondylis;36;FA;School of Manoeuvre;Medium;M18155;x
+110157;Chief of Staff;Georgias Tsolakoglou;41;NS;School of Manoeuvre;Very High;M18056;x
+110158;Chief of Staff;Nikolaos Plastiras;44;PA;School of Psychology;Very High;M18060;x
+110159;Chief of Staff;Leonidas Paraskevopoulos;46;PA;School of Mass Combat;Medium;M18159;x
+110162;Chief of Army;Giorgios Roussoupoulos;36;SL;Elastic Defence Doctrine;Low;M18162;x
+110165;Chief of Army;Vassilios Tsounoukas;41;SC;Decisive Battle Doctrine;Low;M18153;x
+110167;Chief of Army;Giorgios Lavdas;45;SC;Armoured Spearhead Doctrine;Low;M18099;x
+110170;Chief of Army;Georgias Tsolakoglou;41;NS;Decisive Battle Doctrine;Very High;M18056;x
+110171;Chief of Army;Nikolaos Plastiras;44;PA;Guns and Butter Doctrine;Very High;M18060;x
+110173;Chief of Navy;Nikolaos Votsis;36;SL;Base Control Doctrine;High;M18019;x
+110174;Chief of Navy;Demetrios Gousis;41;SL;Decisive Naval Battle Doctrine;High;M18090;x
+110176;Chief of Navy;Alexiou Tsamotos;41;SC;Decisive Naval Battle Doctrine;High;M18091;x
+110179;Chief of Navy;Alexandros Oikonomou;41;NS;Open Seas Doctrine;Very Low;M18179;x
+110183;Chief of Air Force;Gaecia Geanados;41;SL;Carpet Bombing Doctrine;Medium;M18096;x
+110084;Chief of Air Force;Euthanassos Perrikos;44;SL;Vertical Envelopment Doctrine;Medium;M18184;x
+110186;Chief of Air Force;Antoine Frangulis;41;SC;Air Superiority Doctrine;Medium;M18092;x
+110192;Foreign Minister;Themistocles Sophoulis;36;SL;The Cloak N Dagger Schemer;high;M18014;x
+110198;Head of Government;Themistocles Sophoulis;46;SL;Flamboyant Tough Guy;High;M18014;x
+110199;Head of Government;Konstantinos Tsaldaris;47;SC;Corporate Suit;NA;M18053;x
+110200;Foreign Minister;Ioannis Safianopoulos;45;PA;The Cloak N Dagger Schemer;Medium;M18068;x
+110201;Foreign Minister;Petros Voulgaris;45;PA;Biased Intellectual;High;M18061;x
+110202;Head of Government;Alexandros Diomidis;49;SL;Political Protege;High;M18202;x
+110204;Head of Government;Dimitrios Kiousopoulos;52;SC;Smiling Oilman;High;M18204;x
+110205;Head of Government;Alexandros Papagos;52;SC;Old General;High;M18007;x
+110206;Foreign Minister;Panaiotis Pipenelis;50;SC;Apologetic Clerk;Very High;M18206;x
+110207;Foreign Minister;Stephanos Stephanopoulos;52;SC;Biased Intellectual;Very High;M18207;x
+EOF;x

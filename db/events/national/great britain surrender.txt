@@ -9,7 +9,7 @@ event = {
 		war = { country = JAP }
 		OR = {
 			NOT = { war = { country = JAP country = CHI } }
-			NOT = { war = { country = JAP country = CYN } }
+			NOT = { war = { country = JAP country = U74 } }
 		}
 		OR = {
 			NOT = { alliance = { country = ENG country = RUS } }
@@ -28,7 +28,7 @@ event = {
 		war = { country = JAP }
 		OR = {
 			NOT = { war = { country = JAP country = CHI } }
-			NOT = { war = { country = JAP country = CYN } }
+			NOT = { war = { country = JAP country = U74 } }
 		}
 		OR = {
 			NOT = { alliance = { country = ENG country = RUS } }

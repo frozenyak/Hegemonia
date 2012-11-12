@@ -6,7 +6,7 @@ event = {
 	
 	trigger = {
 		atwar = no
-		war = { country = CYN country = CHI }
+		war = { country = U74 country = CHI }
 	}
 
 	name = "China in Flames"
@@ -34,9 +34,12 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 15
 		command = { type = domestic which = interventionism value = 2 }
-		command = { type = war which = CYN }
+		command = { type = war which = U74 }
 		command = { type = war which = CHI }
 		command = { type = dissent value = -5 }
+		#
+		command = { type = addclaim which = 1247 }
+		command = { type = addclaim which = 1245 }
 		#treaty ports
 		command = { type = addclaim which = 1338 }
 		command = { type = addclaim which = 1358 }
@@ -44,6 +47,8 @@ event = {
 		command = { type = addclaim which = 1371 }
 		command = { type = addclaim which = 1372 }
 		command = { type = addclaim which = 1241 }
+		command = { type = addclaim which = 1328 }
+		command = { type = addclaim which = 1365 }
 		#
 		command = { type = ai which = "switch/ferocity_yes.ai" }
 	}
@@ -55,18 +60,18 @@ event = {
 
 	decision = {
 		local_flag = JAP_war1_no
-		war = { country = CYN country = CHI }
+		war = { country = U74 country = CHI }
 		NOT = {
 			war = { country = CHI }
-            war = { country = CYN }
+            war = { country = U74 }
 			puppet = { country = JAP country = CHI }
-            puppet = { country = JAP country = CYN }
+            puppet = { country = JAP country = U74 }
 			ispuppet = JAP
 		}
 	}
 	decision_trigger = {
 		OR = {
-			lost_national = { country = CYN value = 20 }
+			lost_national = { country = U74 value = 20 }
 			lost_national = { country = CHI value = 10 }
 		}
 	}
@@ -74,29 +79,29 @@ event = {
 	trigger = {
 		#atwar = no
 		local_flag = JAP_war1_no
-		war = { country = CYN country = CHI }
+		war = { country = U74 country = CHI }
 		OR = {
-			lost_national = { country = CYN value = 25 } #20
+			lost_national = { country = U74 value = 25 } #20
 			lost_national = { country = CHI value = 15 } #15
 		}
 		NOT = {
 			war = { country = CHI }
-            war = { country = CYN }
+            war = { country = U74 }
 			ispuppet = JAP
             puppet = { country = JAP country = CHI }
-            puppet = { country = JAP country = CYN }
+            puppet = { country = JAP country = U74 }
 			alliance = { country = CHI }
-            alliance = { country = CYN }
+            alliance = { country = U74 }
 			alliance = { country = CHI country = RUS }
-			alliance = { country = CYN country = RUS }
+			alliance = { country = U74 country = RUS }
 			alliance = { country = CHI country = MEX }
-			alliance = { country = CYN country = MEX }
+			alliance = { country = U74 country = MEX }
 			alliance = { country = CHI country = ENG }
-			alliance = { country = CYN country = ENG }
+			alliance = { country = U74 country = ENG }
 			alliance = { country = CHI country = SPA }
-			alliance = { country = CYN country = SPA }
+			alliance = { country = U74 country = SPA }
 			alliance = { country = CHI country = GER }
-			alliance = { country = CYN country = GER }
+			alliance = { country = U74 country = GER }
 			#control = { province = 1247 data = -3 }  #JAP
 			OR = {
 				war = { country = RUS }
@@ -123,10 +128,13 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 94
 		command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = CYN }
+		command = { type = war which = U74 }
 		command = { type = war which = CHI }
 		command = { type = dissent value = -5 }
 		command = { type = local_clrflag which = JAP_war1_no }
+		#
+		command = { type = addclaim which = 1247 }
+		command = { type = addclaim which = 1245 }
 		#treaty ports
 		command = { type = addclaim which = 1338 }
 		command = { type = addclaim which = 1358 }
@@ -134,6 +142,8 @@ event = {
 		command = { type = addclaim which = 1371 }
 		command = { type = addclaim which = 1372 }
 		command = { type = addclaim which = 1241 }
+		command = { type = addclaim which = 1328 }
+		command = { type = addclaim which = 1365 }
 		#
 		command = { type = ai which = "switch/ferocity_yes.ai" }
 	}
@@ -206,7 +216,7 @@ event = {
 		}
 		NOT = {
 			OR = {
-				war = { country = CYN }
+				war = { country = U74 }
 				war = { country = CHI }
 			}
 			event = 2011018
@@ -276,7 +286,7 @@ event = {
 			NOT = { exists = CGX }
 		}
 		NOT = { exists = CHI }
-		NOT = { exists = CYN }
+		NOT = { exists = U74 }
 		owned = { province = 1337 data = -1 }
 		owned = { province = 1369 data = -1 }
 		#ai = yes
@@ -292,25 +302,77 @@ event = {
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
-		name = "Create Chinese puppet states"
-		ai_chance = 100
+		name = "Divide et Impera"
+		ai_chance = 95
+		#
+		command = { type = addclaim which = 1247 }
+		command = { type = addclaim which = 1245 }
+		#treaty ports
+		command = { type = addclaim which = 1338 }
+		command = { type = addclaim which = 1358 }
+		command = { type = addclaim which = 1346 }
+		command = { type = addclaim which = 1371 }
+		command = { type = addclaim which = 1372 }
+		command = { type = addclaim which = 1241 }
+		command = { type = addclaim which = 1328 }
+		command = { type = addclaim which = 1365 }
+		#
 		command = { trigger = { NOT = { exists = MEN } } type = independence which = MEN value = 1 }
 		command = { type = make_puppet which = MEN }
-		command = { trigger = { NOT = { exists = CGX } } type = independence which = CGX value = 1 }
-		command = { type = make_puppet which = CGX }
+		command = { trigger = { NOT = { exists = CSX } } type = independence which = CSX value = 1 }
+		command = { type = make_puppet which = CSX }
 		command = { trigger = { NOT = { exists = U87 } } type = independence which = U87 value = 1 }
 		command = { type = make_puppet which = U87 }
+		
+		command = { trigger = { NOT = { exists = CXB } } type = independence which = CXB value = 1 }
+		command = { type = make_puppet which = CXB }
+		command = { trigger = { NOT = { exists = CYN } } type = independence which = CYN value = 1 }
+		command = { type = make_puppet which = CYN }
+		command = { trigger = { NOT = { exists = CGX } } type = independence which = CGX value = 1 }
+		command = { type = make_puppet which = CGX }
+		
 		#command = { type = trigger which = 70000 }
 		#
-		command = { type = ai which = "switch/ferocity_no.ai" }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_no.ai" }
 	}
+	#action = {
+	#	name = "Create a single Chinese state"
+	#	ai_chance = 5
+	#	#treaty ports
+	#	command = { type = addclaim which = 1338 }
+	#	command = { type = addclaim which = 1358 }
+	#	command = { type = addclaim which = 1346 }
+	#	command = { type = addclaim which = 1371 }
+	#	command = { type = addclaim which = 1372 }
+	#	command = { type = addclaim which = 1241 }
+	#	command = { type = addclaim which = 1328 }
+	#	command = { type = addclaim which = 1365 }
+	#	#
+	#	command = { trigger = { NOT = { exists = U87 } } type = independence which = U87 value = 1 }
+	#	command = { type = make_puppet which = U87 }
+	#	#
+	#	command = { trigger = { ai = yes } type = ai which = "switch/ferocity_no.ai" }
+	#}
 	action = { trigger = { ai = no }
 		name = "We will rule them directly"
 		ai_chance = 0
+		#
+		command = { type = addclaim which = 1247 }
+		command = { type = addclaim which = 1245 }
+		#treaty ports
+		command = { type = addclaim which = 1338 }
+		command = { type = addclaim which = 1358 }
+		command = { type = addclaim which = 1346 }
+		command = { type = addclaim which = 1371 }
+		command = { type = addclaim which = 1372 }
+		command = { type = addclaim which = 1241 }
+		command = { type = addclaim which = 1328 }
+		command = { type = addclaim which = 1365 }
+		#
 		command = { trigger = { ai = yes } type = dissent value = 5 }
 		command = { trigger = { ai = no } type = dissent value = 10 }
 		#
-		command = { type = ai which = "switch/ferocity_no.ai" }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_no.ai" }
 	}
 }
 
@@ -321,7 +383,7 @@ event = {
 	
 	# trigger = {
 		# NOT = { exists = U87 }
-		# NOT = { exists = CYN }
+		# NOT = { exists = U74 }
 		# owned = { province = 1337 data = -1 }
 		# owned = { province = 1247 data = -1 }
 	# }
@@ -343,6 +405,8 @@ event = {
 		# command = { type = addclaim which = 1358 }
 		# command = { type = addclaim which = 1346 }
 		# #command = { type = addclaim which = 1371 }
+		# command = { type = addclaim which = 1328 }
+		# command = { type = addclaim which = 1365 }
 		# #
 		# command = { trigger = { NOT = { exists = MEN } } type = independence which = MEN value = 1 }
 		# command = { type = make_puppet which = MEN }
@@ -399,60 +463,60 @@ event = {
 	}
 }
 
-event = {
-	id = 42012
-	country = JAP
+# event = {
+	# id = 42012
+	# country = JAP
 	
-	trigger = {
-		ai = yes
-		atwar = yes
-		manpower = 150
-	}
+	# trigger = {
+		# ai = yes
+		# atwar = yes
+		# manpower = 150
+	# }
 
-	name = AI_EVENT #"The Imperial Garrisons"
-	desc = "With plans for our invasion of China underway, the Chief of Staff has suggested that we create a garrison corps to protect the homeland while our armies are away."
-	style = 1
-	picture = "Japan_Formation"
+	# name = AI_EVENT #"The Imperial Garrisons"
+	# desc = "With plans for our invasion of China underway, the Chief of Staff has suggested that we create a garrison corps to protect the homeland while our armies are away."
+	# style = 1
+	# picture = "Japan_Formation"
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 30
-	deathdate = { day = 1 month = january year = 1963 }
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 30
+	# deathdate = { day = 1 month = january year = 1963 }
 
-	action = {
-		#name = "Create the Imperial Garrisons"
-		ai_chance = 100
-		command = { trigger = { ai = no } type = money value = -300 }
-		command = { type = manpowerpool value = -150 }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }		
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }	
-	}
-	action = { trigger = { ai = no }
-		name = "We don't need them"
-		ai_chance = 0
-		command = { type = dissent value = 1 }
-	}
-}
+	# action = {
+		# #name = "Create the Imperial Garrisons"
+		# ai_chance = 100
+		# command = { trigger = { ai = no } type = money value = -300 }
+		# command = { type = manpowerpool value = -150 }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }		
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }
+		# command = { type = add_division value = garrison }	
+	# }
+	# action = { trigger = { ai = no }
+		# name = "We don't need them"
+		# ai_chance = 0
+		# command = { type = dissent value = 1 }
+	# }
+# }
 
 
 event = {
@@ -497,7 +561,7 @@ event = {
 	
 	decision = {
 		NOT = { exists = CHI }
-		NOT = { exists = CYN }
+		NOT = { exists = U74 }
 		NOT = { exists = KOR }
 		owned = { province = 1228 data = JAP }
 		exists = U08
@@ -519,7 +583,7 @@ event = {
 		#event = 42006
 		#event = 42007
 		NOT = { exists = CHI }
-		NOT = { exists = CYN }
+		NOT = { exists = U74 }
 		NOT = { exists = KOR }
 		owned = { province = 1228 data = JAP }
 		exists = U08
@@ -592,7 +656,7 @@ event = {
 		OR = {
 			event = 42026
 			AND = {
-				NOT = { exists = CYN }
+				NOT = { exists = U74 }
 				NOT = { exists = CHI }
 				exists = U87
 			}
@@ -608,7 +672,7 @@ event = {
 		OR = {
 			event = 42026
 			AND = {
-				NOT = { exists = CYN }
+				NOT = { exists = U74 }
 				NOT = { exists = CHI }
 				exists = U87
 			}

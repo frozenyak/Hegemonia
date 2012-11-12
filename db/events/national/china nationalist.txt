@@ -1,10 +1,10 @@
-###27000-27999###
+###27000-27899###
 
 event = {
 	id = 27000
 	country = CHI
 	trigger = {
-		NOT = { war = { country = CYN } }
+		NOT = { war = { country = U74 } }
 		owned = { province = 1375 data = CHI }
 	}
 
@@ -21,22 +21,22 @@ event = {
 		command = { type = domestic which = interventionism value = 2 }
 		command = { type = construct which = ic value = -1 where = 1375 }
 		command = { type = manpowerpool value = -2 }
-		command = { type = event which = 64000 where = CYN when = 5 }
+		command = { type = event which = 64000 where = U74 when = 5 }
 	}
 	action = {
 		name = "Demand compensation from the Yuan"
 		ai_chance = 25
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = construct which = ic value = -1 where = 1375 }
-		command = { type = relation which = CYN value = -50 }
-		command = { type = event which = 64001 where = CYN when = 5 }
+		command = { type = relation which = U74 value = -50 }
+		command = { type = event which = 64001 where = U74 when = 5 }
 	}
 	action = {
 		name = "This problem is beneath our notice"
 		ai_chance = 5
 		command = { type = domestic which = interventionism value = -1 }
 		command = { type = construct which = ic value = -1 where = 1375 }
-		command = { type = relation which = CYN value = 25 }
+		command = { type = relation which = U74 value = 25 }
 		command = { type = dissent value = 3 }
 	}
 }
@@ -54,7 +54,7 @@ event = {
 		name = "Escalate our own mobilization!"
 		ai_chance = 95
 		command = { type = domestic which = interventionism value = 1 }
-		command = { type = relation which = CYN value = -100 }
+		command = { type = relation which = U74 value = -100 }
 		command = { type = trigger which = 64002 }
 		
 		command = { type = trigger which = 8300108 }
@@ -62,7 +62,7 @@ event = {
 	action = {
 		name = "Call back our troops from their territory"
 		ai_chance = 5
-		command = { type = relation which = CYN value = 25 }
+		command = { type = relation which = U74 value = 25 }
 		command = { type = dissent value = 5 }
 	}
 }
@@ -79,7 +79,7 @@ event = {
 		name = "Escalate our mobilization along the Yuan border"
 		ai_chance = 95
 		command = { type = domestic which = interventionism value = 1 }
-		command = { type = relation which = CYN value = -100 }
+		command = { type = relation which = U74 value = -100 }
 		command = { type = trigger which = 64002 }
 		
 		command = { type = trigger which = 8300108 }
@@ -87,7 +87,7 @@ event = {
 	action = {
 		name = "Let's not escalate this further"
 		ai_chance = 5
-		command = { type = relation which = CYN value = 25 }
+		command = { type = relation which = U74 value = 25 }
 		command = { trigger = { ai = yes } type = dissent value = 5 }
 		command = { trigger = { ai = no } type = dissent value = 10 }
 	}
@@ -104,13 +104,13 @@ event = {
 	action = {
 		name = "Declare war!"
 		ai_chance = 99
-		command = { type = war which = CYN }
+		command = { type = war which = U74 }
 		command = { type = setflag which = chinese_war }		
 	}
 	action = {
 		name = "Let's not escalate this further"
 		ai_chance = 1
-		command = { type = relation which = CYN value = 25 }
+		command = { type = relation which = U74 value = 25 }
 		command = { type = dissent value = 20 }
 	}
 }
@@ -137,7 +137,7 @@ event = {
 	
 	trigger = {
 		local_flag = MOB7
-		NOT = { war = { country = CYN } }
+		NOT = { war = { country = U74 } }
 		#random = 10
 		event = 27000
 		NOT = { event = 64003 }
@@ -154,41 +154,8 @@ event = {
 
 	action = {
 		name = ACTION_NAME_FIGHT
-		command = { type = war which = CYN }
+		command = { type = war which = U74 }
 		command = { type = sleepevent which = 64003 }
-	}
-}
-
-event = {
-	id = 27006
-	country = CHI
-	
-	trigger = {
-		OR = {
-			event = 27005
-			event = 64003
-		}
-		NOT = { event = 64004 }
-		NOT = { event = 42004 }
-		owned = { province = 1337 data = -1 }
-		owned = { province = 1369 data = -1 }
-		NOT = { exists = CYN }
-		NOT = { war = { country = JAP } }
-	}
-
-	name = "Victory Celebrations in Nanjing"
-	desc = "The Chinese people are celebrating our victory over the Mongol heathens in Yuan. At long last, the bloody civil war is over."
-	style = 1
-	picture = "China_Rally"
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 3
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		name = "ACTION_NAME_HURRAH"
-		command = { type = dissent value = -20 }
-		command = { type = capital which = 1337 }
 	}
 }
 
@@ -224,59 +191,6 @@ event = {
 	# }
 # }
 
-event = {
-	id = 27008
-	country = CHI
-
-	name = "Yuan China Surrenders"
-	desc = "The Yuan were unable to resist both the Japanese and us at the same time. The Emperor has fled the country. What is left of their government offered to join forces to defeat the Japanese invader."
-	style = 1
-	picture = "japan_celebrating"
-
-	action = {
-		name = "ACTION_NAME_EXCELLENT"
-		command = { type = inherit which = CYN } # value = 1
-		command = { type = alliance which = CHC }
-	}
-}
-
-
-event = {
-	id = 27009
-	country = CHI
-	
-	trigger = {
-		war = { country = JAP }
-		war = { country = CYN }
-		exists = CYN
-		lost_national = { value = 66 }
-		NOT = { control = { province = 1337 } }
-		NOT = { control = { province = 1247 } }
-		NOT = { control = { province = 1369 } }
-		ai = yes
-	}
-
-	name = "The Fall of the Nationalists"
-	desc = "We have lost control of most of our country and the government has fled. Yet the will of our people to resist the Japanese invader is high as ever. Perhaps it would be best to join forces with the Nationalists?"
-	style = 1
-	picture = "Japan_Invasion"
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 13
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		name = "ACTION_NAME_AGREE"
-		ai_chance = 95
-		command = { type = secedearea which = JAP value = "Indochine" when = 1 }
-		command = { type = trigger which = 64008 }
-	}
-	action = {
-		name = ACTION_NAME_NEVER
-		ai_chance = 5
-		command = { type = dissent value = 20 }
-	}
-}
 
 event = {
 	id = 27010

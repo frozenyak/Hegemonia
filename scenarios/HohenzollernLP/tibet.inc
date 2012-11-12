@@ -5,6 +5,7 @@
   
  country = 
  {  tag                    = TIB 
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
    # Resource Reserves 
    energy                 = 300
    metal                  = 150

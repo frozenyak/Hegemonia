@@ -1,13 +1,12 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 neutrality = 100
 war = 0
 desperation = 1.0
-strat_redeploy_threshold = 10
+strat_redeploy_threshold = 50
 max_redeploying = 0.10
 exp_force_ratio = 0.00
 exp_force_ratios = { } 
@@ -23,7 +22,7 @@ befriend = { PAN = 50 HAI = 10 CUB = 10 DOM = 10 U05 = 40 SPA = 100 ENG = 50 RUS
 protect = { HAI = 25 DOM = 25 CUB = 25 PAN = 50 TEX = 25 SPA = 50 ENG = 25 RUS = 25 }
 target = { 1789 = 100 } 
 demand_claims = { }
-liberate = { PAN SPA HAI DOM CUB ENG HOL U06 FRA SCA HUN CZE AUS ITA SCH DFR }
+liberate = { PAN SPA HAI DOM CUB ENG HOL U06 FRA SCA HUN CZE U09 ITA SCH DFR }
 resistance = { }
 
 trade = {

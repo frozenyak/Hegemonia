@@ -11,7 +11,7 @@
 event = {
 	id = 2012004
 	#country = CHI
-	tag = { CHI CYN CHC }
+	tag = { CHI U74 CHC }
 
 	name = "EVT_3823_NAME"
 	desc = "EVT_3823_DESC"
@@ -38,7 +38,7 @@ event = {
 		NOT = { exists = MAN }
 		OR = {
 			NOT = { exists = CHI }
-			NOT = { exists = CYN }
+			NOT = { exists = U74 }
 		}
 	}
 	trigger = {
@@ -58,7 +58,7 @@ event = {
 		NOT = { exists = MAN }
 		OR = {
 			NOT = { exists = CHI }
-			NOT = { exists = CYN }
+			NOT = { exists = U74 }
 		}
 		#war = { country = CHI country = JAP }
 		war = { country = JAP }
@@ -106,7 +106,7 @@ event = {
 		command = { type = peace which = CGX value = 1 }
 		command = { type = peace which = SIK value = 1 }
 		command = { type = peace which = CXB value = 1 }
-		command = { type = peace which = CYN value = 1 }
+		command = { type = peace which = U74 value = 1 }
 		command = { type = peace which = TIB value = 1 }
 		command = { type = dissent value = 10 }
 
@@ -118,7 +118,7 @@ event = {
 		command = { type = domestic which = defense_lobby value = -3 }
 		command = { type = domestic which = interventionism value = -3 }
 
-		command = { trigger = { exists = CYN } type = secederegion which = CYN value = "China" }
+		command = { trigger = { exists = U74 } type = secederegion which = U74 value = "China" }
 		command = { trigger = { exists = CHI } type = secederegion which = CHI value = "China" }
 		command = { trigger = { exists = CHC } type = secederegion which = CHC value = "China" }
 
@@ -157,7 +157,7 @@ event = {
 		command = { type = removeclaim which = 1372 }
 		
 		command = { trigger = { exists = CHI } type = non_aggression which = JAP where = CHI }
-		command = { trigger = { exists = CYN } type = non_aggression which = JAP where = CYN }
+		command = { trigger = { exists = U74 } type = non_aggression which = JAP where = U74 }
 		command = { trigger = { exists = CHC } type = non_aggression which = JAP where = CHC }
 
 		command = { trigger = { ai = yes } type = ai which = "switch/Combat_off.ai" }
@@ -190,7 +190,7 @@ event = {
 		command = { trigger = { NOT = { exists = KOR } } type = independence which = KOR value = 1 when = 0 }
 		#command = { type = trigger which = 2012005 }
 		command = { trigger = { exists = CHI } type = event which = 2012005 where = CHI }
-		command = { trigger = { exists = CYN } type = event which = 2012005 where = CYN }
+		command = { trigger = { exists = U74 } type = event which = 2012005 where = U74 }
 		command = { trigger = { exists = CHC } type = event which = 2012005 where = CHC }
 	}
 }
@@ -201,7 +201,7 @@ event = {
 event = {
 	id = 2012005
 	#country = CHI
-	tag = { CHI CYN CHC }
+	tag = { CHI U74 CHC }
 
 	name = "EVT_3825_NAME"
 	desc = "EVT_3825_DESC"
@@ -218,7 +218,7 @@ event = {
 		command = { type = secederegion which = KOR value = "Korea" }
 		command = { trigger = { puppet = { country = VIE country = JAP } } type = make_puppet which = VIE }
 		command = { trigger = { puppet = { country = VIE country = CHI } } type = secederegion which = VIE value = Indochine } 
-		command = { trigger = { puppet = { country = VIE country = CYN } } type = secederegion which = VIE value = Indochine } 
+		command = { trigger = { puppet = { country = VIE country = U74 } } type = secederegion which = VIE value = Indochine } 
 		command = { trigger = { puppet = { country = VIE country = CHC } } type = secederegion which = VIE value = Indochine } 
 		#command = { trigger = { ai = yes } type = ai which = "switch/CHI_Wins_JAP.ai" }
 	}

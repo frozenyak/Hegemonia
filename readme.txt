@@ -1,5 +1,5 @@
-Hegemonia 1.06, checksum OHTW
-Requires Darkest Hour patch 1.03 RC1+hotfix
+Hegemonia 1.07, checksum XXXX
+Requires Darkest Hour patch 1.03 RC2
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
 
@@ -59,8 +59,55 @@ reinforcement costs as much manpower as building new, but cheaper IC
 map changes:
 IC, resources, infra
 
-
 (probably incomplete) change list:
+1.07
+	1.03 RC2 patch compatibility
+	ai
+		tweaks, rewritten several
+	
+	localisation
+		added text
+		
+	db
+		fix/change/add revolters
+		can't partition AUS until annex
+		BUL reqs Union to be gone
+		central planning greater gearing bonus
+		fix attack/redeploy efficiencies
+	
+	leaders
+		added to AUS
+		
+	ministers
+		added 1.03 personalities
+		
+	units
+		updated DH Full cross-grade costs
+		defensiveness for pre-1936 units not better
+		
+	events
+		fix USA/MEX
+		redone post-war china
+		LIT less likely to help GEO vs LIT if at war with Russia
+		LIT ai will also peace out with Union on Russian treaty if Union has not lost 10% national territory
+		various tweaks
+		new events to join a GRE republic
+		new events to deal with League taking Greece
+		
+	tech
+		fix earliest CVE not obsoleted
+		ASM req flying bomb not turbojet cas
+		
+	gfx
+		picture for CVL
+		added counter for Yuan
+		
+	map/scenario
+		redistributed some CHI IC
+		better forts at spanish border
+		changed colour of India/crete
+		improved PHI techs
+	
 1.06 - NOTE: You have to start a new game
 	1.03 RC1+hotfix patch compatibility
 	new DH combat system

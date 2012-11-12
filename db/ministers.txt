@@ -31,9 +31,9 @@ ministers_con.csv
 #ministers_cos.csv
 #ministers_cro.csv
 #ministers_csa.csv
-#ministers_csx.csv
+ministers_csx.csv
 ministers_cub.csv
-#ministers_cxb.csv
+ministers_cxb.csv
 ministers_cyn.csv
 ministers_cyp.csv
 ministers_cze.csv
@@ -185,7 +185,7 @@ ministers_U70.csv
 #ministers_U71.csv
 ministers_U72.csv
 ministers_U73.csv
-#ministers_U74.csv
+ministers_U74.csv
 ministers_U75.csv
 ministers_U76.csv
 #ministers_U77.csv
@@ -236,7 +236,7 @@ ministers_uzb.csv
 ministers_ven.csv
 ministers_vic.csv
 ministers_vie.csv
-#ministers_wll.csv
+ministers_wll.csv
 #ministers_yem.csv
 ministers_yug.csv
 ministers_U00.csv

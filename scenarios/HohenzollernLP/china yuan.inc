@@ -3,9 +3,10 @@
 #####################
 
 country =
-{ tag                    = CYN
+{ tag                    = U74
   regular_id             = UCH
-  ai = "china yuan.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes reinf = yes ai_set = yes } }
+	ai = "china yuan.ai"
   capital                = 1337
 #Large Power
   energy                 = 800
@@ -150,16 +151,16 @@ country =
     relation = { tag = TUR value = 125 }
     relation = { tag = CHI value = -200 }
   }
-  headofstate            = { type = 9 id = 501021 }
-  headofgovernment       = { type = 9 id = 501032 }
-  foreignminister        = { type = 9 id = 501013 }
-  armamentminister       = { type = 9 id = 501034 }
-  ministerofsecurity     = { type = 9 id = 501015 }
-  ministerofintelligence = { type = 9 id = 501057 }
-  chiefofstaff           = { type = 9 id = 501017 }
-  chiefofarmy            = { type = 9 id = 501038 }
-  chiefofnavy            = { type = 9 id = 501009 }
-  chiefofair             = { type = 9 id = 501050 }
+  headofstate            = { type = 9 id = 700421 }
+  headofgovernment       = { type = 9 id = 700432 }
+  foreignminister        = { type = 9 id = 700413 }
+  armamentminister       = { type = 9 id = 700434 }
+  ministerofsecurity     = { type = 9 id = 700415 }
+  ministerofintelligence = { type = 9 id = 700457 }
+  chiefofstaff           = { type = 9 id = 700417 }
+  chiefofarmy            = { type = 9 id = 700438 }
+  chiefofnavy            = { type = 9 id = 700409 }
+  chiefofair             = { type = 9 id = 700440 }
   #Army
   landunit =
   { id       = { type = 10001 id = 762 }

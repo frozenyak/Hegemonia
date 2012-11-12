@@ -7,6 +7,8 @@ country =
 	regular_id = ITA
 	intrinsic_gov_type = leninist
   #regular_id = U00 #similar to AUS/GER hack
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes ai_set = yes } }
+	ai = "italy.ai"
   dissent		 = 5
   puppet		 = U00
 #Major Power

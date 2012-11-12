@@ -1,4 +1,4 @@
-###29000-29999###
+###29000-28999###
 # 29020 guerilla warfare tech
 
 event = {
@@ -6,9 +6,15 @@ event = {
 	country = CHC
 	persistent = yes 
 	
-	name = "Birth of a Nation"
-	desc = "Our glorious nation has been born."
+	trigger = { NOT = { local_flag = revolter_set } }
+	
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
 	style = 1
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = "ACTION_NAME_HURRAH"
@@ -46,6 +52,8 @@ event = {
 		#
 		#command = { type = alliance which = CHI }
 		#command = { trigger = { exists = U87 NOT = { war = { country = U87 } } } type = trigger which = 29011 }
+		#
+		command = { type = local_setflag which = revolter_set }
 	}
 }
 
@@ -76,10 +84,13 @@ event = {
 			war = { country = SPA }
 			war = { country = JAP }
 		}
+		local_flag = revolter_set
+		IC = 30
+		army = 10
 	}
 
 	date = { day = 1 month = january year = 1940 }
-	offset = 5
+	offset = 30
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action_a = {
@@ -101,35 +112,41 @@ event = {
 	}
 }
 
-event = {
-	id = 29011
-	country = CHC
+# event = {
+	# id = 29011
+	# country = CHC
 
-	trigger = {
-		#event = 29000
-		#event = 70005
-		exists = U87
-		NOT = { war = { country = U87 } }
-	}
+	# trigger = {
+		# #event = 29000
+		# #event = 70005
+		# exists = U87
+		# NOT = { war = { country = U87 } }
+		# local_flag = revolter_set
+		# IC = 30
+		# army = 10
+	# }
 	
-	name = "Chinese War of Liberation"
-	desc = "Let's bring the fight to the Japanese invaders and their lackeys!"
-	style = 2
-	picture = "news_paper"
+	# name = "Chinese War of Liberation"
+	# desc = "Let's bring the fight to the Japanese invaders and their lackeys!"
+	# style = 2
+	# picture = "news_paper"
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 10
-	deathdate = { day = 1 month = january year = 1963 }
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 1963 }
 
-	action = {
-		name = ACTION_NAME_FIGHT
-		command = { type = war which = U87 }
-		command = { type = war which = CGX }
-		command = { type = war which = MEN }
-		command = { type = war which = MAN }
-		command = { type = war which = JAP }
-	}
-}
+	# action = {
+		# name = ACTION_NAME_FIGHT
+		# command = { type = war which = U87 }
+		# command = { type = war which = CGX }
+		# command = { type = war which = CSX }
+		# command = { type = war which = CXB }
+		# command = { type = war which = CYN }
+		# command = { type = war which = MEN }
+		# command = { type = war which = MAN }
+		# #command = { type = war which = JAP }
+	# }
+# }
 
 # event = {
 	# id = 29020

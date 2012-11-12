@@ -4,6 +4,8 @@
 
 country =
 { tag                    = SPA
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "iberia.ai"
   dissent		 = 5
 #Great Power
   energy                 = 1000

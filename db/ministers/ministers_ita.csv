@@ -1,12 +1,12 @@
 ITA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 25001;Head of State;Guiseppe III Tittoni;1933;FA;Stern Imperialist;High;M508001;X
 25002;Head of Government;Achille Starace;36;PA;Political Protege;High;M3126;x
-25003;Foreign Minister;Gian Galeazzo Ciano;1933;FA;Ideological Crusader;Very High;M3003;X
+25003;Foreign Minister;Gian Galeazzo Ciano;1933;FA;Fascist Crusader;Very High;M3003;X
 25005;Minister of Security;Guido Buffarini-Guidi;1933;FA;Man of the People;Very High;M3005;X
 25006;Head of Military Intelligence;Cesare Amé;1933;FA;Industrial Specialist;Very High;M3006;X
 25007;Chief of Staff;Francesco Grazioli;1933;FA;School of Mass Combat;Medium;M3007;X
-25008;Chief of Army;Alberto Pariani;1933;FA;Guns and Butter Doctrine;Medium;M3008;X
-25009;Chief of Navy;Domenico Cavagnari;1933;FA;Decisive Naval Battle Doctrine;Medium;M3009;X
+25008;Chief of Army;Alberto Pariani;1933;FA;Undersecretary of War;Medium;M3008;X
+25009;Chief of Navy;Domenico Cavagnari;1933;FA;Old School Admiral;Medium;M3009;X
 25010;Chief of Air Force;Giuseppe Valle;1933;FA;Army Aviation Doctrine;Medium;M3010;X
 25011;Minister of Armament;A. de Marinis de Ricia;1933;SL;Administrative Genius;High;M3014;X
 25012;Head of Military Intelligence;Umberto Ricci;1933;SC;Industrial Specialist;High;M3015;X
@@ -37,7 +37,7 @@ ITA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 25041;Foreign Minister;Ivanoe Bonomi;1933;SL;Apologetic Clerk;High;M3048;X
 25042;Foreign Minister;Pietro Nenni;1933;SL;The Cloak N Dagger Schemer;High;M3062;X
 25044;Chief of Army;Federico Baistrocchi;1933;FA;Decisive Battle Doctrine;High;M3064;X
-25045;Minister of Armament;Alberto Pariani;1933;FA;Air Superiority Proponent;High;M3008;X
+25045;Minister of Armament;Alberto Pariani;1933;FA;Reformer;High;M3008;X
 25046;Minister of Armament;Ubaldo Soddu;1939;FA;Military Entrepreneur;Medium;M3066;X
 25047;Minister of Armament;Alfredo Guzzoni;1933;FA;Submarine Proponent;Low;M3067;X
 25048;Minister of Armament;Antonio Sorice;1933;FA;Corrupt Kleptocrat;High;M3068;X
@@ -67,7 +67,7 @@ ITA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 25073;Minister of Security;Robert Farinacci;1933;PA;Back Stabber;High;M3096;X
 25074;Minister of Security;Enrico de Nicola;1933;SC;Man of the People;High;M3039;X
 25075;Minister of Security;Conde Stefano Jacini;1939;SC;Silent Lawyer;High;M3046;X
-25076;Minister of Security;Alcide de Gasperi;1933;SC;Compassionate Gentleman;High;M3038;X
+25076;Minister of Security;Alcide de Gasperi;1933;SC;Health and safety;High;M3038;X
 25077;Minister of Security;Vito Reale;1941;SC;Crime Fighter;High;M3100;X
 25078;Minister of Security;Mario Scelba;1941;SC;Back Stabber;High;M3101;X
 25079;Minister of Security;Salvatore Aldisio;1941;SL;Prince of Terror;High;M3102;X
@@ -100,7 +100,7 @@ ITA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 25108;Chief of Staff;Luigi Longo;1933;LWR;School of Mass Combat;High;M3022;X
 25109;Chief of Army;Rodolfo Graziani;1933;FA;Decisive Battle Doctrine;Medium;M3139;X
 25110;Chief of Army;Mario Roatta;1933;FA;Armoured Spearhead Doctrine;High;M3140;X
-25111;Chief of Army;Junio Borghese;1943;NS;Decisive Battle Doctrine;High;M3044;X
+25111;Chief of Army;Junio Borghese;1943;NS;commando doctrine army;High;M3044;X
 25112;Chief of Army;Vittorio Ambrosio;1933;SC;Static Defence Doctrine;Low;M3128;X
 25113;Chief of Army;Dionisio Ancelotti;1941;SC;Guns and Butter Doctrine;High;M3144;X
 25114;Chief of Army;Enrico Mattei;1943;SC;Decisive Battle Doctrine;High;M3018;X

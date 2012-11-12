@@ -5,7 +5,8 @@
 country =
 { tag                    = CHI
   regular_id		 = UCH
-  ai = "china nationalist.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes reinf = yes ai_set = yes } }
+	ai = "china nationalist.ai"
   capital                = 1369
 #Medium Power
   energy                 = 500
@@ -20,7 +21,7 @@ country =
   SpyInfo                = { country = "CHI" NumberOfSpies = 4 }
   peacetime_ic_mod = 0.8
 	diplomacy =
-  { relation = { tag = CYN value = -200 }
+  { relation = { tag = U74 value = -200 }
     relation = { tag = U08 value = -100 }
     relation = { tag = GER value = -100 }
     relation = { tag = JAP value = 50 }

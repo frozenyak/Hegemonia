@@ -505,7 +505,7 @@ event = {
 
 	name = "The German Civil War - Intervention" 
 	desc = "The German Republic is fighting to depose the reactionary monarchy. There is much popular support among our people for their cause, and though we bound by treaty not to intervene directly, we could intervene indirectly by sending supplies and able volunteers through a neutral party..."
-	style = 30
+	style = 2
 	picture = "Corpo_truppe_Volontarie"
 
 	date = { day = 1 month = january year = 1936 }

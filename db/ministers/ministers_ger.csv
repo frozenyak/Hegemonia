@@ -1,10 +1,10 @@
 GER;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;Country
 1;Head of State;Waldemar VII;34;SC;Autocratic Charmer;Very High;M36;x
 2;Head of Government;Robert Schuman;36;SL;Silent Workhorse;High;M2;x
-3;Foreign Minister;Constantin von Neurath;36;SC;Great Compromiser;High;M3;x
+3;Foreign Minister;Constantin von Neurath;36;SC;respectable compromiser;High;M3;x
 4;Minister of Armament;Werner von Blomberg;36;PA;Infantry Proponent;High;M4;x
-5;Minister of Security;Wilhelm Frick;36;PA;Prince of Terror;High;M5;x
-6;Head of Military Intelligence;Wilhelm Canaris;36;PA;Dismal Enigma;Medium;M6;x
+5;Minister of Security;Wilhelm Frick;36;PA;Ruthless Organizer;High;M5;x
+6;Head of Military Intelligence;Wilhelm Canaris;36;PA;Brilliant Spymaster;Medium;M6;x
 7;Chief of Staff;Ludwig Beck;36;SC;School of Manoeuvre;High;M7;x
 8;Chief of Army;Werner von Fritsch;36;SC;Armoured Spearhead Doctrine;High;M8;x
 9;Chief of Navy;Erich Raeder;36;PA;Decisive Naval Battle Doctrine;High;M9;x
@@ -51,30 +51,30 @@ GER;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;Co
 86;Minister of Armament;Albert Speer;42;FA;Genius organizer;High;M43;x
 87;Minister of Armament;Oswald Pohl;43;PA;Military Entrepreneur;High;M87;x
 88;Minister of Armament;Robert Ley;36;NS;Corrupt Kleptocrat;Very High;M88;x
-89;Minister of Armament;Karl Otto Saur;45;PA;Military Entrepreneur;High;M89;x
+89;Minister of Armament;Karl Otto Saur;45;PA;Planned economy proponent;High;M89;x
 90;Minister of Armament;Fritz Thyssen;36;PA;Steel magnate;Medium;M90;x
 91;Minister of Armament;Fritz Todt;38;FA;Resource Industrialist;High;M91;x
 93;Minister of Armament;Hans-Georg von Friedeburg;42;PA;Submarine Proponent;Very High;M93;x
 94;Minister of Armament;Fritz Tornow;44;PA;Military Entrepreneur;Medium;M94;x
 95;Minister of Armament;Julius Curtius;36;SL;Resource Industrialist;Medium;M95;x
-96;Minister of Armament;Paul Lejeune-Jung;38;SC;Tank Proponent;Medium;M96;x
+96;Minister of Armament;Paul Lejeune-Jung;38;SC;Mixed economy;Medium;M96;x
 97;Minister of Armament;Alfried Krupp;39;PA;Steel magnate;Medium;M97;x
-98;Minister of Armament;Georg Thomas;40;SC;Theoretical Scientist;Low;M98;x
+98;Minister of Armament;Georg Thomas;40;SC;Reformer;Low;M98;x
 99;Minister of Armament;Carl Friedrich Goerdeler;40;SC;Military Entrepreneur;High;M12;x
 100;Minister of Armament;Albert Speer;42;SC;Genius organizer;High;M43;x
 101;Minister of Armament;Johannes Popitz;43;SC;Resource Industrialist;Very High;M101;x
 102;Minister of Armament;Claus von Stauffenberg;44;SC;Infantry Proponent;High;M102;x
 103;Minister of Armament;Fritz Schäffer;46;SC;Resource Industrialist;Very High;M103;x
-104;Minister of Armament;Ludwig Erhard;47;SC;Administrative Genius;Very High;M104;x
+104;Minister of Armament;Ludwig Erhard;47;SC;Mixed economy;Very High;M104;x
 105;Minister of Armament;Albert Kuntz;36;ST;Resource Industrialist;High;M105;x
 106;Minister of Armament;Willie Munzenberg;42;ST;Administrative Genius;High;M24;x
 109;Minister of Security;Viktor Lutze;39;PA;Compassionate Gentleman;Very High;M109;x
 110;Minister of Security;Frederick III;36;SL;Man of the People;Very High;M37;x
-111;Minister of Security;Heinrich Müller;43;PA;Prince of Terror;Very Low;M26;x
+111;Minister of Security;Heinrich Müller;43;PA;Secret police chief;Very Low;M26;x
 114;Minister of Security;Otto Georg Thierack;42;PA;Crime Fighter;Very High;M114;x
 116;Minister of Security;Ernst Trendelenburg;36;SL;Compassionate Gentleman;Medium;M116;x
 117;Minister of Security;Alfred Hugenberg;36;SL;Compassionate Gentleman;Medium;M117;x
-118;Minister of Security;Heinrich Müller;39;SC;Efficient Sociopath;Very Low;M26;x
+118;Minister of Security;Heinrich Müller;39;SC;Secret police chief;Very Low;M26;x
 119;Minister of Security;Arthur Nebe;42;PA;Crime Fighter;Low;M119;x
 120;Minister of Security;Arthur Axmann;45;PA;Man of the People;Low;M120;x
 121;Minister of Security;Johann von Bernstorff;36;SC;Back Stabber;Medium;M121;x
@@ -148,7 +148,7 @@ GER;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;Co
 219;Minister of Armament;Franz Xaver Ritter von Epp;36;PA;Infantry Proponent;Very High;M214;x
 220;Minister of Armament;Franz Seldte;36;PA;Military Entrepreneur;Very High;M220;x
 221;Minister of Armament;Konstantin Hierl;36;PA;Resource Industrialist;Very High;M221;x
-222;Minister of Armament;Xaver Dorsch;44;PA;Air Superiority Proponent;Very High;M222;x
+222;Minister of Armament;Xaver Dorsch;44;PA;Construction magnate;Very High;M222;x
 223;Minister of Security;Franz Gürtner;36;PA;Silent Lawyer;Medium;M223;x
 224;Minister of Security;Kurt Daluege;36;PA;Prince of Terror;Very High;M82;x
 226;Minister of Security;Walter Buch;37;PA;Man of the People;High;M226;x

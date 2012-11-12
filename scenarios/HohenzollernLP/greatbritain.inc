@@ -4,7 +4,8 @@
 
 country =
 { tag                    = ENG
-  ai = "great britain.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes ai_set = yes } }
+	ai = "great britain.ai"
   capital                = 29
   dissent				 = 5
 #Large Power
@@ -929,4 +930,23 @@ country =
       model  = 1
     }
   }
+  
+landdivision = { dormant = yes id = { type = 12700 id = 10001 }  name = "1. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10002 }  name = "2. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10003 }  name = "3. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10004 }  name = "4. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10005 }  name = "5. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10006 }  name = "6. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10007 }  name = "7. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10008 }  name = "8. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10009 }  name = "9. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10010 }  name = "10. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10011 }  name = "11. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10012 }  name = "12. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10013 }  name = "13. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10014 }  name = "14. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10015 }  name = "15. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10016 }  name = "16. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10017 }  name = "17. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
+landdivision = { dormant = yes id = { type = 12700 id = 10018 }  name = "18. Home Guard"  type = garrison model = 1 extra = artillery brigade_model = 4 locked  = yes }
 }

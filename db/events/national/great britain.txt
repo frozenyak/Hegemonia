@@ -5,7 +5,7 @@ event = {
 	country = ENG
 	trigger = {
 		OR = {
-			war = { country = JAP country = CYN }
+			war = { country = JAP country = U74 }
 			war = { country = JAP country = CHI }
 		}
 	}
@@ -24,7 +24,7 @@ event = {
 		ai_chance = 24
 		command = { type = relation which = JAP value = 25 }
 		command = { type = relation which = CHI value = -50 }
-		command = { type = relation which = CYN value = -50 }
+		command = { type = relation which = U74 value = -50 }
 		command = { type = domestic which = interventionism value = -1 }
 	}
 	action_b = {
@@ -32,7 +32,7 @@ event = {
 		ai_chance = 75
 		command = { type = relation which = JAP value = -100 }
 		command = { type = relation which = CHI value = 50 }
-		command = { type = relation which = CYN value = 50 }
+		command = { type = relation which = U74 value = 50 }
 		command = { type = domestic which = interventionism value = 1 }
 	}
 	action_c = { 
@@ -41,85 +41,7 @@ event = {
 		ai_chance = 1
 		command = { type = war which = JAP }
 		command = { type = relation which = CHI value = 100 }
-		command = { type = relation which = CYN value = 100 }
+		command = { type = relation which = U74 value = 100 }
 		command = { type = domestic which = interventionism value = 2 }
 	}
 }
-
-event = {
-	id = 62010
-	country = ENG
-	
-	trigger = {
-		OR = {
-			atwar = yes
-			local_flag = MOB7
-		}
-		ai = yes
-		manpower = 200
-	}
-
-	name = AI_EVENT #"The British National Guard"
-	#desc = "While our troops ready themselves to fight in foreign theaters, we will need men to defend the shores of Britain from invasion. Parliament has suggested the creation of a National Guard for this purpose."
-	style = 1
-	
-	date = { day = 1 month = january year = 1936 }
-	offset = 30
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {
-		#name = "Create the National Guard"
-		ai_chance = 100
-		command = { trigger = { ai = no } type = money value = -300 }
-		command = { type = manpowerpool value = -156 }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }		
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }		
-	}
-	action = { trigger = { ai = no }
-		name = "We don't need them"
-		ai_chance = 0
-		command = { type = dissent value = 1 }
-	}
-}
-
-event = {
-	id = 62011
-	country = ENG
-	
-	name = "Great Britain"
-	desc = "Our glorious nation has been reborn."
-	style = 1
-
-	action = {
-		name = "ACTION_NAME_HURRAH"
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }		
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-	}
-}
-

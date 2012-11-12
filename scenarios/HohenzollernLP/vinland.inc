@@ -4,6 +4,8 @@
 
 country =
 { tag                    = CAN
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "vinland.ai"
 #Medium Power
   energy                 = 500
   metal                  = 500

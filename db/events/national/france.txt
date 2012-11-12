@@ -11,14 +11,14 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_HURRAH"
-		command = { type = add_division value = cavalry when = 2 }
-		command = { type = add_division value = cavalry when = 2 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = cavalry when = 2 }
+		#command = { type = add_division value = cavalry when = 2 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
 		command = { trigger = { NOT = { OR = { headofstate = 70103 headofstate = 70114 headofstate = 70011 } } } type = headofstate which = 70103 }
 		#command = { type = flag_ext where = HOL which = "_ger" }
 		command = { type = name where = FRA which = "fra_roy" }
@@ -42,14 +42,14 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_HURRAH"
-		command = { type = add_division value = cavalry when = 2 }
-		command = { type = add_division value = cavalry when = 2 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
-		command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = cavalry when = 2 }
+		#command = { type = add_division value = cavalry when = 2 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
+		#command = { type = add_division value = infantry when = 1 }
 		command = { type = name where = FRA which = "" }
 		#alsace
 		command = { trigger = { puppet = { country = FRA country = GER } } type = removecore which = 104 }
@@ -125,7 +125,7 @@ event = {
 
 	name = "The Unification of France"
 	desc = "For the first time in centuries, France is one again!"
-	style = 13	
+	style = 2	
 	picture = "news_paper"
 	
 	date = { day = 1 month = january year = 1936 }

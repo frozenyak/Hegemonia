@@ -14,10 +14,10 @@ allowed_brigades =  armored_car
 allowed_brigades =  engineer
 #allowed_brigades =  police
 
-upgrade = { type = infantry upgrade_time_factor = 0.24 upgrade_cost_factor = 0.46 }
-upgrade = { type = mechanized upgrade_time_factor = 1 upgrade_cost_factor = 0.50 }
-upgrade = { type = light_armor upgrade_time_factor = 1 upgrade_cost_factor = 0.95 }
-upgrade = { type = armor upgrade_time_factor = 1 upgrade_cost_factor = 1.42 }
+upgrade = { type = infantry		upgrade_time_factor = 0.19	upgrade_cost_factor = 1.16 }
+upgrade = { type = mechanized	upgrade_time_factor = 0.80	upgrade_cost_factor = 0.32 }
+upgrade = { type = light_armor	upgrade_time_factor = 0.80	upgrade_cost_factor = 0.49 }
+upgrade = { type = armor		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.73 }
 
 # 0 - Early Motorized Division (1935)
 model = {
@@ -38,7 +38,7 @@ model = {
 	transportweight			= 30
 	supplyconsumption 		= 1.6
 	fuelconsumption			= 6.5
-	upgrade_time_factor = 1
+	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
 	equipment = { manpower = 13000 trucks = 2860 horses = 1860 artillery = 66 heavy_artillery = 8 anti_tank = 32 anti_air = 54 armored_car = 32 }
 }

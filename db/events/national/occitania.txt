@@ -290,7 +290,7 @@ event = {
 event = {
 	id = 50006
 	country = U06
-	persistent = yes 
+	#persistent = yes 
 	
 	name = "Occitania"
 	desc = "Our glorious nation has been reborn."

@@ -1,17 +1,16 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
 max_front_ratio = 1.2 
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
+neutrality = 100 
+war = 0
 upgrading = 0.35
 reinforcement = 0 #0.10
-neutrality = 100 #80.000 
-war = 0 #10
-strat_redeploy_threshold = 5
+strat_redeploy_threshold = 50
 max_redeploying = 0.05
-exp_force_ratio = 0.0
+exp_force_ratio = 0.10
 exp_force_ratios = { } 
 no_exp_forces_to = { JAP U00 RSI VIC U10 U02 MAN MEN MON VIE CMB UAU MEX USA TIB U87 CGX KOR SPA } #ENG
 use_offensive_supply = yes
@@ -19,11 +18,34 @@ use_offensive_supply = yes
 ###################################
 # Diplomacy
 ###################################
-claim_acceptance = -49
+claim_acceptance = -69
 
 combat = { }
-befriend = { FIN = 75 GEO = 50 SPA = 100 ENG = 100 SCH = 25 U14 = 25 MEX = 75 PAN = 50 }
-protect = { FIN = 25 GEO = 25 SPA = 100 ENG = 100 SCH = 25 U14 = 25 MEX = 50 PAN = 50 }
+liberate = { CZE KOR UCH ITA FIN DFR SCH PER SPA ENG IRE ROM HOL HUN U09 YUG } #UKR POL GEO
+resistance = { 
+	LIT = 10 
+	GER = 6
+}
+befriend = { 
+	FIN = 75 
+	GEO = 50 
+	SPA = 100 
+	ENG = 100 
+	SCH = 25 
+	U14 = 25 
+	MEX = 75 
+	PAN = 50
+}
+protect = { 
+	FIN = 25 
+	GEO = 25 
+	SPA = 100 
+	ENG = 100 
+	SCH = 25 
+	U14 = 25 
+	MEX = 50 
+	PAN = 50
+}
 target = {
 	#Finland
 	#553 = 100
@@ -39,9 +61,6 @@ target = {
 	617 = 10 #Kiev
 	599 = 10 #Minsk
 } 
-demand_claims = { }
-liberate = { CZE KOR CHI ITA FIN DFR SCH PER SPA ENG IRE ROM HOL HUN AUS } #UKR POL GEO
-resistance = { LIT = 10 GER = 6 }
 
 trade = {
 	cancel_deal_threshold = 2
@@ -85,12 +104,12 @@ tech_sharing = {
 		5150 = 100
 		5180 = 100
 
-		# Motorized
+		# Motorized Infantry
 		1230 = 100
 		1240 = 100
 		1250 = 100
 
-		# CAS
+		# Close Air Support
 		4170 = 100
 		4280 = 100
 		4180 = 100
@@ -107,7 +126,7 @@ tech_sharing = {
 		2050 = 100
 		2060 = 100
 
-		# Mechanized
+		# Mechanized Infantry
 		1260 = 100
 		1270 = 100
 		1280 = 100
@@ -122,6 +141,8 @@ spyprefs =
 {
 	percentage_on_spies 		= 0.2
 	percentage_foreign_mission 	= 0.6
+
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
 	spyprefsdata = 
 	{
 		#Domestic
@@ -239,6 +260,9 @@ construction = {
 		666 # Novouzensk
 		639 # Naberezhnye Chelny
 	}
+
+	nuclear_reactor = yes	
+	max_nuclear = 10
 }
 
 military = { 
@@ -246,11 +270,11 @@ military = {
 	max_batch_peace 		= 680 
 	max_batch_war 			= 320 
 	max_batch_home_front	= 180
-	extra_convoys_war		= 0
-	extra_convoys_peace		= 0
+	extra_convoys_war		= 0.0
+	extra_convoys_peace		= 0.0
 
 	#### Divisions etc...
-	infantry 	= 44
+	infantry 	= 42
 	cavalry 	= 0
 	motorized 	= 10
 	mechanized 	= 10
@@ -260,13 +284,13 @@ military = {
 	marine 		= 0
 	bergsjaeger = 0
 	garrison	= 0
-    hq 			= 1
+    hq 			= 3
 	militia 	= 0
 #				75 %
-	interceptor 	= 7
+	interceptor 	= 11
 	multi_role 		= 9
 	cas 			= 0
-	strategic_bomber = 4
+	strategic_bomber = 0
 	tactical_bomber = 5
 	naval_bomber 	= 0
 	transport_plane = 0
@@ -286,139 +310,145 @@ military = {
 #				0 %
 
 	#### Brigades
-	artillery 			= 20
-	sp_artillery 		= 0
+	artillery 			= 25
+	sp_artillery 		= 5
 	rocket_artillery	= 0
 	sp_rct_artillery 	= 0
-	anti_tank 			= 10
+	anti_tank 			= 2
 	tank_destroyer 		= 5
 	light_armor_brigade = 0
-	heavy_armor 		= 6
+	heavy_armor 		= 0
 	super_heavy_armor 	= 0
 	armored_car 		= 0
-	anti_air 			= 5
+	anti_air 			= 2
 	police 				= 0
-	engineer 			= 0 
+	engineer 			= 4
 
 	cag = 100.000
-	light_cag = 100
+	escort = 100.000
 
-	naval_asw = 10.0000 
-	naval_anti_air_s = 10.0000 
-	naval_radar_s = 10.0000 
-	naval_fire_controll_s = 10.0000 
+	naval_asw = 20.0000 
+	naval_anti_air_s = 20.0000 
+	naval_radar_s = 20.0000 
+	naval_fire_controll_s = 20.0000 
 	naval_improved_hull_s = 0.0000 
+	naval_torpedoes_s = 0.0000
 	naval_anti_air_l = 0.0000 
 	naval_radar_l = 0.0000 
-	naval_fire_controll_l = 10.0000 
+	naval_fire_controll_l = 0.0000 
 	naval_improved_hull_l = 0.0000 
-	naval_torpedoes_l = 0.0000
 }
 
 technology = { 
 	endgoal 	= { } 
 	preference 	= {
-		# Tools
-		5050 5060 5070
-
-		# Engineering
-		5080 5090 5100
-		
-		# Production Control
-		5110 5120
-		
-		# Assembly Line
-		5130 5140 5160 5180
-		
-		# Cryptography
-		5310 5320 5330 5340
-		
-		# Special Weapons
-		7140 7150 7160
-
-		#Infantry
+		# Regular Infantry
 		1010 1020 1030 1040 1050 1060
 
 		# Agriculture
 		5020 5030 5040
 
-		# Inf support
-		1310 1320 1330 1340 1350 1360
+		# Motorized Infantry
+		1230 1240 1250 10080 10090 10150
 
-		# Motorized
-		1230 1240 1250
-
-		# Mechanized
-		1260 1270 1280 1290
-		
-		# Fighter
-		4040 4070 4100
-
-		# Medium tanks
-		2070 2080 2090
-		
 		# Light tanks
 		2020 2030 2040 2050 2060
 
-		# Air Doctrines
-		9090 9050 9060 9100 9110 9120 9140 9070 9080 9130 9150 9190 9200 9210 9220 9240 9260 9270 9280 9310 9320 9330 9350
+		# Medium tanks
+		2010 2070 2080 2090 11000 11010
+
+		# Interceptors
+		4010 4020 4030 4060 4090 15000 15010 15020
+
+		# Tools
+		5050 5060 5070
+
+		# Engineering
+		5080 5090 5100
+
+		# Production Control
+		5110 5120
+
+		# Applied Assembly lines
+		5140 5150 5160 5170 5180
+
+		# Computers
+		5310 5320 5330 5340
 
 		#EQUIPMENT Winter
 		5920 5930
+
+		# Air Doctrines
+		9070 9080 9090 9100 9110 9130 9140 9190 9200 9220 9240 9260 9270 9280 9310 9320 9330 9350
 	} 
 	ignore 		= {
-		# Ship & Rocket Assembly
-		5150 5170
-		
+		# Light / Mountain
+		1110 1120 1130 1140 10040 10050
+
 		# Marines
 		1150 1160 1170 1180
 
-		# Airborne
+		# Airborne Infantry
 		1070 1080 1090 1100
 
-		# Air Transports 
-		4250 4260 4270
-
-		# Strategic bombers
-		4220 4230 4240
-
-		# Mountain Unit techs
-		1130 1140 #1110 1120
+		# Mechanized Infantry
+		1260 1270 1280 1290 10100 10110
 		
-		# Naval Bomber
-		4190 4200 4210
-
-		# Carrier 
-		3320 3330 3340 3350 3360 3370 3380 3390
-
-		# Light Carrier
-		12100 12110 12120 12130 12140 12150
-		
-		# Carrier Air Group
-		4900 4910 4920 4930 4940 4950 4960 7050 7280
-
 		# Armoured Cars
-		2150 2160
-
-		# Strategic Air Doctrines 9140
-		9150 9160 9170 9180 9430 9440 9450 9460
+		2150 2160 11110
 		
-		# Land Doctrines
-		14080 # Guerilla Warfare
+		# Static Anti-Air
+		2470 2480 2490
+		
+		# Destroyers 
+		3080
+
+		# Light Cruiser
+		3170
+
+		# Battleship & *Super heavy Battleship
+		3250 3310
+		
+		# Carrier
+		3320 3330
+		
+		# Light Carrier
+		12100
+
+		# Air Transports
+		4250 4260 4270 15180 15190
+
+		# Strategic Bombers
+		4220 4230
+
+		# Naval Bomber
+		4190 4200
+
+		# Ship & Rocket Assembly
+		5150 5170
+
+		# Synthetic Oil
+		5190 5200
+
+		# Nuclear
+		5470 5480 5490
 		
 		#EQUIPMENT Jungle / Desert
 		5940 5950 5960 5970
+
+		# Strategic Destruction - Flying Armada
+		9140 9150 9160 9170 9180 9430 9440 9450 9460
 	}
  
-	armor 		= 4
-	infantry 	= 2
-	industry 	= 4
-	aircraft 	= 1
-	naval 		= 0
+	armor 		= 7
+	infantry 	= 5
+	industry 	= 6
+	aircraft 	= 6
+	naval 		= 1
 	land_doctrines 	= 4
 	secret_weapons 	= 1
-	air_doctrines 	= 2
-	naval_doctrines = 0
+	air_doctrines 	= 4
+	naval_doctrines = 1
 }
 
 ###################################
@@ -440,7 +470,7 @@ leader_ratio = {
 garrison = {
 	defend_overseas_beaches = no
 	home_multiplier 	= 1.0
-	overseas_multiplier 	= 0.05
+	overseas_multiplier 	= 0.5
 	home_peace_cap 		= 20
 	war_zone_odds 		= 2.0
 	key_point_prio_mult	= 1.0
@@ -455,7 +485,7 @@ garrison = {
 	
 	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
 	claim_threat		= 0	# If we are neutral, countries with claims on us get this
-	unstable_border		= 10	# Bordering countries at war with someone else get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
 
 	# Borders with specific countries
 	country_priorities = {
@@ -482,8 +512,8 @@ garrison = {
 	}
 	ignore = {
 		268 # Mazirbe (German Border easy surround hex)
-		1194 # Ocha (Bordering Japan, unimportant)
-		1184 # Petrothingie (USSR putting units here, don't know why, far east mountain)
+		#1194 # Ocha (Bordering Japan, unimportant)
+		1184 # Petropavlovsk (USSR putting units here, don't know why, far east mountain)
 	}
 	area_multiplier = {
 		#535 = 1.2 # Murmansk
@@ -529,9 +559,11 @@ front = {
 	river 		= 1.0
 
     enemy_handicap = {
+		JAP = 20
 		MAN = 20
 	} 
     passivity = {
+		JAP = 70
 		MAN = 70
 	}
 	province_priorities = {
@@ -671,7 +703,7 @@ admiral = {
 	target = {
     	2677 = 200 
      	2698 = 200 
-     	#512 = 150 
+     	#2728 = 150 
      	2674 = 150 
      	2723 = 200 
      	2724 = 200 

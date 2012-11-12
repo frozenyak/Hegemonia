@@ -5,6 +5,7 @@
 country =
 { tag                    = U18
   puppet                 = U02
+	ai_settings = { flags = { MOB2 = yes reinf = yes } }
   #
   energy                 = 200
   metal                  = 200

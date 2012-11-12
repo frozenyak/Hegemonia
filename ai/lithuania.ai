@@ -1,13 +1,12 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
 max_front_ratio = 1.2
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 neutrality = 100
 war = 0
-strat_redeploy_threshold = 5
+strat_redeploy_threshold = 50
 exp_force_ratio = 0.10 #0.15
 exp_force_ratios = { } 
 no_exp_forces_to = { SCA FRA U06 U13 U14 ITA SCH U02 RUS JAP VIE CHI CYN U87 MEN MAN UAU U08 CON U01 } #GER AUS

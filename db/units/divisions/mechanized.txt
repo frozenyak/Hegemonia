@@ -14,10 +14,10 @@ allowed_brigades =  armored_car
 allowed_brigades =  engineer
 allowed_brigades =  police
 
-upgrade = { type = infantry upgrade_time_factor = 0.24 upgrade_cost_factor = 0.46 }
-upgrade = { type = motorized upgrade_time_factor = 0.34 upgrade_cost_factor = 0.66 }
-upgrade = { type = light_armor upgrade_time_factor = 1.0 upgrade_cost_factor = 0.57 }
-upgrade = { type = armor upgrade_time_factor = 1.0 upgrade_cost_factor = 1.18 }
+upgrade = { type = infantry		upgrade_time_factor = 0.19	upgrade_cost_factor = 1.16 }
+upgrade = { type = motorized	upgrade_time_factor = 0.27	upgrade_cost_factor = 0.81 }
+upgrade = { type = light_armor	upgrade_time_factor = 0.80	upgrade_cost_factor = 0.28 }
+upgrade = { type = armor		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.53 }
 
 # Early Mechanized Division - 0 1939
 model = {

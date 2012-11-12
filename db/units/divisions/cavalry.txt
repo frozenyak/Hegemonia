@@ -14,11 +14,11 @@ allowed_brigades =  armored_car
 allowed_brigades =  engineer
 allowed_brigades =  police
 
-#upgrade = { type = infantry upgrade_time_factor = 1 upgrade_cost_factor = 0.46 }
-upgrade = { type = motorized upgrade_time_factor = 1 upgrade_cost_factor = 0.47 }
-upgrade = { type = mechanized upgrade_time_factor = 1 upgrade_cost_factor = 0.86 }
-upgrade = { type = light_armor upgrade_time_factor = 1 upgrade_cost_factor = 1.22 }
-upgrade = { type = armor upgrade_time_factor = 1 upgrade_cost_factor = 1.6 }
+#upgrade = { type = infantry		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.28 }
+upgrade = { type = motorized	upgrade_time_factor = 0.80	upgrade_cost_factor = 0.30 }
+upgrade = { type = mechanized	upgrade_time_factor = 0.80	upgrade_cost_factor = 0.55 }
+upgrade = { type = light_armor	upgrade_time_factor = 0.80	upgrade_cost_factor = 0.69 }
+upgrade = { type = armor		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.87 }
 
 # Great War Cavalry Division - 0 1918
 model = {
@@ -28,8 +28,8 @@ model = {
 	maxspeed 				= 12
 	defaultorganisation 	= 30
 	morale					= 30
-	defensiveness 			= 16
-	toughness				= 19
+	defensiveness 			= 22 #16
+	toughness				= 28 #19
 	softness				= 70
 	suppression				= 4
 	airdefence				= 7
@@ -52,8 +52,8 @@ model = {
 	maxspeed 				= 16
 	defaultorganisation 	= 30
 	morale					= 30
-	defensiveness 			= 16
-	toughness				= 19
+	defensiveness 			= 22 #16
+	toughness				= 28 #19
 	softness				= 70
 	suppression				= 5
 	airdefence				= 7

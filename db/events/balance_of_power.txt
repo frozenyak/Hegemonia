@@ -353,9 +353,9 @@ event = {
 				NOT = { belligerence = { country = CHI value = 5 } }
 			}
 			AND = {
-				war = { country = GER country = CYN }
-				NOT = { war = { country = CYN } }
-				NOT = { belligerence = { country = CYN value = 5 } }
+				war = { country = GER country = U74 }
+				NOT = { war = { country = U74 } }
+				NOT = { belligerence = { country = U74 value = 5 } }
 			}
 			AND = {
 				war = { country = GER country = U02 }
@@ -455,9 +455,9 @@ event = {
 				NOT = { belligerence = { country = CHI value = 5 } }
 			}
 			AND = {
-				war = { country = GER country = CYN }
-				NOT = { war = { country = U00 country = CYN } }
-				NOT = { belligerence = { country = CYN value = 5 } }
+				war = { country = GER country = U74 }
+				NOT = { war = { country = U00 country = U74 } }
+				NOT = { belligerence = { country = U74 value = 5 } }
 			}
 			AND = {
 				war = { country = GER country = U02 }
@@ -561,9 +561,9 @@ event = {
 				NOT = { belligerence = { country = CHI value = 5 } }
 			}
 			AND = {
-				war = { country = SPA country = CYN }
-				NOT = { war = { country = U00 country = CYN } }
-				NOT = { belligerence = { country = CYN value = 5 } }
+				war = { country = SPA country = U74 }
+				NOT = { war = { country = U00 country = U74 } }
+				NOT = { belligerence = { country = U74 value = 5 } }
 			}
 			AND = {
 				war = { country = SPA country = U02 }
@@ -663,9 +663,9 @@ event = {
 				NOT = { belligerence = { country = CHI value = 5 } }
 			}
 			AND = {
-				war = { country = SPA country = CYN }
-				NOT = { war = { country = GER country = CYN } }
-				NOT = { belligerence = { country = CYN value = 5 } }
+				war = { country = SPA country = U74 }
+				NOT = { war = { country = GER country = U74 } }
+				NOT = { belligerence = { country = U74 value = 5 } }
 			}
 			AND = {
 				war = { country = SPA country = U02 }
@@ -772,9 +772,9 @@ event = {
 				NOT = { belligerence = { country = CHI value = 5 } }
 			}
 			AND = {
-				war = { country = U00 country = CYN }
-				NOT = { war = { country = GER country = CYN } }
-				NOT = { belligerence = { country = CYN value = 5 } }
+				war = { country = U00 country = U74 }
+				NOT = { war = { country = GER country = U74 } }
+				NOT = { belligerence = { country = U74 value = 5 } }
 			}
 			AND = {
 				war = { country = U00 country = U02 }
@@ -875,9 +875,9 @@ event = {
 				NOT = { belligerence = { country = CHI value = 5 } }
 			}
 			AND = {
-				war = { country = U00 country = CYN }
-				NOT = { war = { country = SPA country = CYN } }
-				NOT = { belligerence = { country = CYN value = 5 } }
+				war = { country = U00 country = U74 }
+				NOT = { war = { country = SPA country = U74 } }
+				NOT = { belligerence = { country = U74 value = 5 } }
 			}
 			AND = {
 				war = { country = U00 country = U02 }

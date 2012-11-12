@@ -11,9 +11,11 @@
 event = {
 	id = 2000
 	country = AFG
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -23,13 +25,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {			
+	action = {
 		command = { type = ai which = "afghanistan.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land	
+		#command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being	
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -39,9 +43,11 @@ event = {
 event = {
 	id = 2010
 	country = ANG
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -51,13 +57,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {			
+	action = {
 		command = { type = ai which = "angola.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being	
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -67,9 +75,11 @@ event = {
 event = {
 	id = 2050
 	country = UAU
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -79,44 +89,50 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "australasia.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-naval-major.ai" } #Major Nation - Favors Naval			
+		#Modules
+		#command = { type = ai which = "modules/tech-naval-major.ai" } #Major Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-island.ai" } #Island Nation
-		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
-		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy	
+		#command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
+		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  austria
 #########################################################################
-# event = {
-	# id = 2060
-	# #random = no
-	# country = AUS
+event = {
+	id = 2060
+	#random = no
+	country = AUS
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "austria.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-land-major.ai" } #Major Nation - Favors Land	
-		# ##command = { type = ai which = "modules/construction-major.ai" } #Major Nation
-		# #command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being		
-		# ##command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
-	# }
-# }
+	action = {
+		command = { type = ai which = "austria.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-land-major.ai" } #Major Nation - Favors Land
+		##command = { type = ai which = "modules/construction-major.ai" } #Major Nation
+		#command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		##command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 #########################################################################
 #  vinland
@@ -124,9 +140,11 @@ event = {
 event = {
 	id = 2130
 	country = CAN
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -136,13 +154,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "vinland.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land	
+		#command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -152,9 +172,11 @@ event = {
 event = {
 	id = 2160
 	country = CMB
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -164,13 +186,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "cambodia.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-balanced-minor.ai" } #Minor Nation - Balanced	
+		command = { type = ai which = "modules/tech-balanced-minor.ai" } #Minor Nation - Balanced
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
-		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy			
+		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -180,9 +204,11 @@ event = {
 event = {
 	id = 2170
 	country = CON
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -192,13 +218,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "congo.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
-		command = { type = ai which = "modules/military-sf-si.ai" } #Firepower/Sealane Interdiction		
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		command = { type = ai which = "modules/military-sf-si.ai" } #Firepower/Sealane Interdiction
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -208,9 +236,11 @@ event = {
 event = {
 	id = 2190
 	country = CUB
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -220,13 +250,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "tarrbitz.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval			
+		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-island.ai" } #Island Nation
 		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
-		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy	
+		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -236,10 +268,12 @@ event = {
 event = {
 	id = 2220
 	country = DFR
+	persistent = yes
 
 	trigger = {
 		ai = yes
 		NOT = { government = communist }
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -249,25 +283,29 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "germany.ai" }
 		command = { type = ai which = "german republic.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-great.ai" } #Great Power - Favors Land
+		#command = { type = ai which = "modules/tech-land-great.ai" } #Great Power - Favors Land
 		#command = { type = ai which = "modules/construction-great.ai" } #Great Power
 		#command = { type = ai which = "modules/military-as-fib.ai" }  #Spearhead/Fleet in Being
 		#command = { type = ai which = "modules/strategy-balanced.ai" }
 		command = { type = local_setflag which = GER_baltic_beaches }
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 event = {
 	id = 2221
 	country = DFR
+	persistent = yes
 
 	trigger = {
 		ai = yes
 		government = communist
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -277,15 +315,17 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "germany.ai" }
 		command = { type = ai which = "german republic.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-great.ai" } #Great Power - Favors Land
+		#command = { type = ai which = "modules/tech-land-great.ai" } #Great Power - Favors Land
 		#command = { type = ai which = "modules/construction-great.ai" } #Great Power
 		#command = { type = ai which = "modules/military-as-si.ai" }  #Spearhead/Sealane Interdiction
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
 		command = { type = local_setflag which = GER_baltic_beaches }
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -306,7 +346,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/DFR_CivilWar.ai" }
 		command = { type = local_setflag which = GER_baltic_beaches }
 	}
@@ -329,10 +369,10 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "germany.ai" }
 		command = { type = ai which = "german republic.ai" }
-		command = { type = ai which = "modules/tech-land-great.ai" } #Great Power - Favors Land
+		#command = { type = ai which = "modules/tech-land-great.ai" } #Great Power - Favors Land
 		#command = { type = ai which = "modules/construction-great.ai" } #Great Power
 		#command = { type = ai which = "modules/military-as-fib.ai" }  #Spearhead/Fleet in Being
 		#command = { type = ai which = "modules/strategy-balanced.ai" }
@@ -346,9 +386,11 @@ event = {
 event = {
 	id = 2240
 	country = DOM
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -358,13 +400,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "fabur.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval			
+		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-island.ai" } #Island Nation
 		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
-		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy		
+		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -374,9 +418,11 @@ event = {
 event = {
 	id = 2260
 	country = EGY
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -386,43 +432,49 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "egypt.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land	
+		#Modules
+		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
 		command = { type = ai which = "modules/military-as-si.ai" }  #Spearhead/Sealane Interdiction
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  great britain
 #########################################################################
-# event = {
-	# id = 2270
-	# country = ENG
+event = {
+	id = 2270
+	country = ENG
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "great britain.ai" }
-		# #Modules
-		# command = { type = ai which = "modules/tech-naval-great.ai" } #Great Power - Favors Naval		
-		# #command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		# command = { type = ai which = "modules/military-do-bc.ai" } #DeepOps/Base Control
-		# #command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
-	# }
-# }
+	action = {
+		command = { type = ai which = "great britain.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-naval-great.ai" } #Great Power - Favors Naval
+		#command = { type = ai which = "modules/construction-great.ai" } #Great Power
+		#command = { type = ai which = "modules/military-do-bc.ai" } #DeepOps/Base Control
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 #########################################################################
 #  finland
@@ -430,9 +482,11 @@ event = {
 event = {
 	id = 2310
 	country = FIN
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -442,13 +496,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "finland.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -458,9 +514,11 @@ event = {
 event = {
 	id = 2340
 	country = GEO
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -470,44 +528,49 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "georgia.ai" }
-		#Modules	
+		#Modules
 		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  GER
 #########################################################################
-# event = {
-	# id = 2350
-	# #random = no
-	# country = GER
+event = {
+	id = 2350
+	country = GER
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "germany.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
-		# ##command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		# #command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
-		# ##command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
-	# }
-# }
+	action = {
+		command = { type = ai which = "germany.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
+		##command = { type = ai which = "modules/construction-great.ai" } #Great Power
+		#command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		##command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 event = {
 	id = 2351
@@ -525,7 +588,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/GER_CivilWar.ai" }
 		command = { type = local_setflag which = GER_baltic_beaches }
 	}
@@ -548,7 +611,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "germany.ai" }
 		command = { type = local_clrflag which = GER_baltic_beaches }
 	}
@@ -559,7 +622,7 @@ event = {
 	#country = GER
 	TAG = { GER DFR }
 	persistent = yes
-	
+
 	trigger = {
 		ai = yes
 		NOT = { alliance = { country = SCA } }
@@ -574,7 +637,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/GER_baltic_beaches.ai" }
 		command = { type = local_setflag which = GER_baltic_beaches }
 	}
@@ -585,7 +648,7 @@ event = {
 	#country = GER
 	TAG = { GER DFR }
 	persistent = yes
-	
+
 	trigger = {
 		ai = yes
 		local_flag = GER_baltic_beaches
@@ -600,7 +663,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/GER_baltic_beaches_ignore.ai" }
 		command = { type = local_clrflag which = GER_baltic_beaches }
 	}
@@ -612,9 +675,11 @@ event = {
 event = {
 	id = 2390
 	country = HAI
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -624,13 +689,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "mansur.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval		
+		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-island.ai" } #Island Nation
 		command = { type = ai which = "modules/military-gp-bc.ai" } #GrandPlan/Base Control
-		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy		
+		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -640,9 +707,11 @@ event = {
 event = {
 	id = 2400
 	country = HOL
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -652,22 +721,26 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "netherlands.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 event = {
 	id = 2401
 	country = U10
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -677,13 +750,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "batavia.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-gp-si.ai" } #Grand Battleplan / Sealane Interdiction
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/military-gp-si.ai" } #Grand Battleplan / Sealane Interdiction
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -693,9 +768,11 @@ event = {
 event = {
 	id = 2450
 	country = IRE
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -705,13 +782,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "ireland.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-naval-medium.ai" } #Medium Nation - Favors Naval			
+		#Modules
+		command = { type = ai which = "modules/tech-naval-medium.ai" } #Medium Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-island.ai" } #Island Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy	
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -721,9 +800,11 @@ event = {
 event = {
 	id = 2470
 	country = ITA
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -733,22 +814,26 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "italy.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-major.ai" } #Major Nation - Balanced	
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-major.ai" } #Major Nation - Balanced
 		#command = { type = ai which = "modules/construction-major.ai" } #Major Nation
-		command = { type = ai which = "modules/military-do-fib.ai" } #DeepOps/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/military-do-fib.ai" } #DeepOps/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 event = {
 	id = 2471
 	country = RSI
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -758,44 +843,49 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "italy.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-major.ai" } #Major Nation - Balanced	
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-major.ai" } #Major Nation - Balanced
 		#command = { type = ai which = "modules/construction-major.ai" } #Major Nation
-		command = { type = ai which = "modules/military-do-fib.ai" } #DeepOps/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/military-do-fib.ai" } #DeepOps/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  japan
 #########################################################################
-# event = {
-	# id = 2480
-	# #random = no
-	# country = JAP
+event = {
+	id = 2480
+	country = JAP
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "japan.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-naval-great.ai" } #Great Power - Favors Naval		
-		# ##command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		# #command = { type = ai which = "modules/military-gp-bc.ai" } #GrandPlan/Base Control
-		# ##command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
-	# }
-# }
+	action = {
+		command = { type = ai which = "japan.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-naval-great.ai" } #Great Power - Favors Naval
+		##command = { type = ai which = "modules/construction-great.ai" } #Great Power
+		#command = { type = ai which = "modules/military-gp-bc.ai" } #GrandPlan/Base Control
+		##command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 event = {
 	id = 2481
@@ -818,8 +908,8 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
-		command = { type = ai which = "switch/JAP-ger_friendly.ai" }		
+	action = {
+		command = { type = ai which = "switch/JAP-ger_friendly.ai" }
 	}
 }
 
@@ -839,8 +929,8 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
-		command = { type = ai which = "switch/JAP-ger_unfriendly.ai" }		
+	action = {
+		command = { type = ai which = "switch/JAP-ger_unfriendly.ai" }
 	}
 }
 
@@ -850,9 +940,11 @@ event = {
 event = {
 	id = 2490
 	country = KOR
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -862,13 +954,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "korea.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#Modules
+		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -878,9 +972,11 @@ event = {
 event = {
 	id = 2540
 	country = LIB
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -890,44 +986,49 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "friland.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-balanced-minor.ai" } #Minor Nation - Balanced	
+		command = { type = ai which = "modules/tech-balanced-minor.ai" } #Minor Nation - Balanced
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  lithuania
 #########################################################################
-# event = {
-	# id = 2550
-	# #random = no
-	# country = LIT
+event = {
+	id = 2550
+	country = LIT
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "lithuania.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-balanced-major.ai" } #Major Nation - Balanced
-		# ##command = { type = ai which = "modules/construction-major.ai" } #Major Nation
-		# #command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
-		# ##command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
-	# }
-# }
+	action = {
+		command = { type = ai which = "lithuania.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-major.ai" } #Major Nation - Balanced
+		##command = { type = ai which = "modules/construction-major.ai" } #Major Nation
+		#command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		##command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 event = {
 	id = 2551
@@ -945,7 +1046,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/LIT-rus_friendly.ai" }
 	}
 }
@@ -956,9 +1057,11 @@ event = {
 event = {
 	id = 2580
 	country = MEN
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -968,13 +1071,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "menjiang.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-balanced-minor.ai" } #Minor Nation - Balanced	
+		command = { type = ai which = "modules/tech-balanced-minor.ai" } #Minor Nation - Balanced
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
 		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -985,7 +1090,7 @@ event = {
 event = {
 	id = 2140
 	#country = CHI
-	TAG = { CHI CYN }
+	TAG = { CHI U74 }
 	persistent = yes
 
 	trigger = {
@@ -993,20 +1098,20 @@ event = {
 		war = { country = JAP }
 		OR = {
 			lost_national = { country = CHI value = 20 }
-			lost_national = { country = CYN value = 20 }
+			lost_national = { country = U74 value = 20 }
 		}
 		NOT = { local_flag = jap_war }
 	}
 
 	name = "AI_EVENT"
-	
+
 	date = { day = 1 month = january year = 1936 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		command = { trigger = { country = CHI } type = ai which = "switch/CHI_Japan.ai" }
-		command = { trigger = { country = CYN } type = ai which = "switch/CYN_Japan.ai" }
+		command = { trigger = { country = U74 } type = ai which = "switch/CYN_Japan.ai" }
 		command = { type = ai which = "switch/Air_Ground.ai" }
 		command = { type = ai which = "switch/ferocity_yes.ai" }
 		command = { type = dissent value = -50 }
@@ -1019,8 +1124,8 @@ event = {
 #########################################################################
 event = {
 	id = 3150
-	#country = CYN
-	TAG = { CHI CYN }
+	#country = U74
+	TAG = { CHI U74 }
 	persistent = yes
 
 	trigger = {
@@ -1033,14 +1138,14 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	
+
 	date = { day = 1 month = january year = 1936 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		command = { trigger = { country = CHI } type = ai which = "china nationalist.ai" }
-		command = { trigger = { country = CYN } type = ai which = "china yuan.ai" }
+		command = { trigger = { country = U74 } type = ai which = "china yuan.ai" }
 		command = { type = local_clrflag which = jap_war }
 	}
 }
@@ -1050,9 +1155,11 @@ event = {
 event = {
 	id = 3200
 	country = CHC
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1062,8 +1169,10 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "china communist.ai" }
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1072,10 +1181,12 @@ event = {
 #########################################################################
 event = {
 	id = 2585
-	country = U87
+	TAG = { U87 CSX CGX CXB CYN }
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1085,48 +1196,21 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "china u87.ai" }
 		#Modules
-		#command = { type = ai which = "modules/tech-land-major.ai" } #Major Nation - Favors Land	
+		#command = { type = ai which = "modules/tech-land-major.ai" } #Major Nation - Favors Land
 		#command = { type = ai which = "modules/construction-major.ai" } #Major Nation
-		#command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
-event = {
-	id = 2586
-	country = CGX
-
-	trigger = {
-		ai = yes
-	}
-
-	name = "AI_EVENT"
-	style = 0
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 1
-	deathdate = { day = 1 month = january year = 1963 }
-
-	action = {	
-		command = { type = ai which = "china u87.ai" }
-		#Modules
-		#command = { type = ai which = "modules/tech-land-major.ai" } #Major Nation - Favors Land	
-		#command = { type = ai which = "modules/construction-major.ai" } #Major Nation
-		#command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
-	}
-}
-
-#########################################################################
-#  mazula
-#########################################################################
 # event = {
-	# id = 2590
-	# #random = no
-	# country = MEX
+	# id = 2586
+	# country = CGX
 
 	# trigger = {
 		# ai = yes
@@ -1139,25 +1223,28 @@ event = {
 	# offset = 1
 	# deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "mazula.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-naval-great.ai" } #Great Power - Favors Naval		
-		# ##command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		# #command = { type = ai which = "modules/military-do-bc.ai" } #DeepOps/Base Control
-		# ##command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+	# action = {
+		# command = { type = ai which = "china u87.ai" }
+		# Modules
+		# command = { type = ai which = "modules/tech-land-major.ai" } #Major Nation - Favors Land
+		# command = { type = ai which = "modules/construction-major.ai" } #Major Nation
+		# command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		# command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
 	# }
 # }
 
 #########################################################################
-#  mongolia
+#  mazula
 #########################################################################
 event = {
-	id = 2610
-	country = MON
+	id = 2590
+	#random = no
+	country = MEX
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1167,13 +1254,47 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
+		command = { type = ai which = "mazula.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-naval-great.ai" } #Great Power - Favors Naval
+		##command = { type = ai which = "modules/construction-great.ai" } #Great Power
+		#command = { type = ai which = "modules/military-do-bc.ai" } #DeepOps/Base Control
+		##command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
+
+#########################################################################
+#  mongolia
+#########################################################################
+event = {
+	id = 2610
+	country = MON
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
 		command = { type = ai which = "mongolia.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
 		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1183,9 +1304,11 @@ event = {
 event = {
 	id = 2620
 	country = MOR
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1195,13 +1318,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "morocco.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy	
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1211,9 +1336,11 @@ event = {
 event = {
 	id = 2700
 	country = PAN
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1223,13 +1350,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "qtizi.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-naval-medium.ai" } #Medium Nation - Favors Naval	
+		#Modules
+		command = { type = ai which = "modules/tech-naval-medium.ai" } #Medium Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control		
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1239,9 +1368,11 @@ event = {
 event = {
 	id = 2740
 	country = PHI
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1251,13 +1382,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "tagalog.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval			
+		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-island.ai" } #Island Nation
 		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
-		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy		
+		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1267,9 +1400,11 @@ event = {
 event = {
 	id = 2780
 	country = ROM
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1279,44 +1414,49 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "roumania.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-gp-si.ai" } #GrandPlan/Sealane Interdiction	
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-gp-si.ai" } #GrandPlan/Sealane Interdiction
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  russia
 #########################################################################
-# event = {
-	# id = 2790
-	# #random = no
-	# country = RUS
+event = {
+	id = 2790
+	country = RUS
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "russia.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
-		# ##command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		# #command = { type = ai which = "modules/military-do-fib.ai" } #DeepOps/Fleet-in-Being
-		# ##command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
-	# }
-# }
+	action = {
+		command = { type = ai which = "russia.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
+		##command = { type = ai which = "modules/construction-great.ai" } #Great Power
+		#command = { type = ai which = "modules/military-do-fib.ai" } #DeepOps/Fleet-in-Being
+		##command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 event = {
 	id = 2791
@@ -1334,7 +1474,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/RUS-nationalist.ai" }
 	}
 }
@@ -1355,7 +1495,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/RUS-ger_friendly.ai" }
 	}
 }
@@ -1376,7 +1516,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/RUS-com_friendly.ai" }
 	}
 }
@@ -1397,7 +1537,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/RUS-nationalist.ai" }
 	}
 }
@@ -1409,9 +1549,11 @@ event = {
 event = {
 	id = 2800
 	country = SAF
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1421,13 +1563,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "ljansitar.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#Modules
+		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
 		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1437,9 +1581,11 @@ event = {
 event = {
 	id = 2820
 	country = SCH
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1449,13 +1595,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switzerland.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1465,9 +1613,11 @@ event = {
 event = {
 	id = 2890
 	country = SOM
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1477,13 +1627,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "somalia.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
 		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1493,9 +1645,11 @@ event = {
 event = {
 	id = 2900
 	country = SPA
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1505,13 +1659,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "iberia.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
 		#command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		command = { type = ai which = "modules/military-as-bc.ai" } #Spearhead/Base Control
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/military-as-bc.ai" } #Spearhead/Base Control
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1521,9 +1677,11 @@ event = {
 event = {
 	id = 2940
 	country = TIB
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1533,13 +1691,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "tibet.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being	
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1549,9 +1709,11 @@ event = {
 event = {
 	id = 2960
 	country = TUR
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1561,44 +1723,49 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "turkestan.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#Modules
+		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
 		command = { type = ai which = "modules/military-gp-si.ai" } #GrandPlan/Sealane Interdiction
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  american federation
 #########################################################################
-# event = {
-	# id = 2980
-	# #random = no
-	# country = USA
+event = {
+	id = 2980
+	country = USA
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "american federation.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
-		# ##command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		# #command = { type = ai which = "modules/military-as-bc.ai" } #Spearhead/Base Control
-		# ##command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
-	# }
-# }
+	action = {
+		command = { type = ai which = "american federation.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
+		##command = { type = ai which = "modules/construction-great.ai" } #Great Power
+		#command = { type = ai which = "modules/military-as-bc.ai" } #Spearhead/Base Control
+		##command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 #########################################################################
 #  Gustavia
@@ -1606,9 +1773,11 @@ event = {
 event = {
 	id = 2990
 	country = VEN
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1618,13 +1787,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "gustavia.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#Modules
+		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-si.ai" } #Firepower/Sealane Interdiction		
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-sf-si.ai" } #Firepower/Sealane Interdiction
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1634,9 +1805,11 @@ event = {
 event = {
 	id = 3010
 	country = VIE
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1646,13 +1819,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "annam.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-balanced-minor.ai" } #Minor Nation - Balanced	
+		command = { type = ai which = "modules/tech-balanced-minor.ai" } #Minor Nation - Balanced
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
 		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1662,9 +1837,11 @@ event = {
 event = {
 	id = 3050
 	country = U01
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1674,13 +1851,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "crete.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval			
+		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-island.ai" } #Island Nation
-		command = { type = ai which = "modules/military-gp-si.ai" } #GrandPlan/Sealane Interdiction		
-		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy		
+		command = { type = ai which = "modules/military-gp-si.ai" } #GrandPlan/Sealane Interdiction
+		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1690,9 +1869,11 @@ event = {
 event = {
 	id = 3060
 	country = U02
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1702,13 +1883,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "imperial india.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-major.ai" } #Major Nation - Favors Land	
+		#command = { type = ai which = "modules/tech-land-major.ai" } #Major Nation - Favors Land
 		#command = { type = ai which = "modules/construction-major.ai" } #Major Nation
-		command = { type = ai which = "modules/military-gp-bc.ai" } #GrandPlan/Base Control
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/military-gp-bc.ai" } #GrandPlan/Base Control
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1718,9 +1901,11 @@ event = {
 event = {
 	id = 3070
 	country = U03
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1730,13 +1915,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "gotland.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval			
+		command = { type = ai which = "modules/tech-naval-minor.ai" } #Minor Nation - Favors Naval
 		#command = { type = ai which = "modules/construction-island.ai" } #Island Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being		
-		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy	
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-naval.ai" } #Naval War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1746,9 +1933,11 @@ event = {
 event = {
 	id = 3090
 	country = U05
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1758,14 +1947,16 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "jadakal.ai" }
-		#Modules	
+		#Modules
 		command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
 		#command = { type = ai which = "modules/construction-great.ai" } #Great Power
 		#command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
 		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1775,9 +1966,11 @@ event = {
 event = {
 	id = 3100
 	country = U06
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1787,13 +1980,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "occitania.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land	
+		command = { type = ai which = "modules/tech-land-medium.ai" } #Medium Nation - Favors Land
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being	
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1814,8 +2009,8 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
-		command = { type = ai which = "switch/U06-commie.ai" }	
+	action = {
+		command = { type = ai which = "switch/U06-commie.ai" }
 	}
 }
 
@@ -1826,9 +2021,11 @@ event = {
 event = {
 	id = 3110
 	country = U07
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1838,13 +2035,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "africa.ai" }
 		#Modules
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
 		command = { type = ai which = "modules/military-gp-si.ai" } #GrandPlan/Sealane Interdiction
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -1854,9 +2053,11 @@ event = {
 event = {
 	id = 3120
 	country = U08
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1866,44 +2067,49 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "ostasien.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#Modules
+		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
 		command = { type = ai which = "modules/military-gp-bc.ai" } #GrandPlan/Base Control
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  prf
 #########################################################################
-# event = {
-	# id = 3130
-	# #random = no
-	# country = VIC
+event = {
+	id = 3130
+	country = VIC
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "france.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
-		# ##command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		# #command = { type = ai which = "modules/military-as-fib.ai" } #Spearhead/Fleet-in-Being
-		# ##command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
-	# }
-# }
+	action = {
+		command = { type = ai which = "france.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
+		##command = { type = ai which = "modules/construction-great.ai" } #Great Power
+		#command = { type = ai which = "modules/military-as-fib.ai" } #Spearhead/Fleet-in-Being
+		##command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 event = {
 	id = 3131
@@ -1921,7 +2127,7 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "switch/VIC-U06-commie.ai" }
 	}
 }
@@ -1932,9 +2138,11 @@ event = {
 event = {
 	id = 3140
 	country = ARA
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -1944,44 +2152,49 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "arabia.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#Modules
+		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-gp-bc.ai" } #GrandPlan/Base Control		
-		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy		
+		command = { type = ai which = "modules/military-gp-bc.ai" } #GrandPlan/Base Control
+		#command = { type = ai which = "modules/strategy-defensive.ai" } #Defensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
 #########################################################################
 #  union
 #########################################################################
-# event = {
-	# id = 3160
-	# #random = no
-	# country = U00
+event = {
+	id = 3160
+	country = U00
+	persistent = yes
 
-	# trigger = {
-		# ai = yes
-	# }
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ai_set }
+	}
 
-	# name = "AI_EVENT"
-	# style = 0
+	name = "AI_EVENT"
+	style = 0
 
-	# date = { day = 1 month = january year = 1936 }
-	# offset = 1
-	# deathdate = { day = 1 month = january year = 1963 }
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1963 }
 
-	# action = {	
-		# command = { type = ai which = "union.ai" }
-		# #Modules	
-		# #command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
-		# ##command = { type = ai which = "modules/construction-great.ai" } #Great Power
-		# #command = { type = ai which = "modules/military-do-bc.ai" } #DeepOps/Base Control
-		# ##command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
-	# }
-# }
+	action = {
+		command = { type = ai which = "union.ai" }
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-great.ai" } #Great Power - Balanced
+		##command = { type = ai which = "modules/construction-great.ai" } #Great Power
+		#command = { type = ai which = "modules/military-do-bc.ai" } #DeepOps/Base Control
+		##command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
+	}
+}
 
 #########################################################################
 #  bhutan
@@ -1989,9 +2202,11 @@ event = {
 event = {
 	id = 3170
 	country = BHU
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -2001,13 +2216,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "bhutan.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land	
+		#Modules
+		command = { type = ai which = "modules/tech-land-minor.ai" } #Minor Nation - Favors Land
 		#command = { type = ai which = "modules/construction-minor.ai" } #Minor Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being	
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy		
+		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -2017,9 +2234,11 @@ event = {
 event = {
 	id = 3180
 	country = U14
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -2029,13 +2248,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "lombardy.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced	
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-medium.ai" } #Medium Nation - Balanced
 		#command = { type = ai which = "modules/construction-medium.ai" } #Medium Nation
-		command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
-		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy			
+		#command = { type = ai which = "modules/military-sf-fib.ai" } #Firepower/Fleet-in-Being
+		#command = { type = ai which = "modules/strategy-balanced.ai" } #Balanced War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -2056,8 +2277,8 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
-		command = { type = ai which = "switch/RSI-ger_unfriendly.ai" }	
+	action = {
+		command = { type = ai which = "switch/RSI-ger_unfriendly.ai" }
 	}
 }
 
@@ -2077,8 +2298,8 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
-		command = { type = ai which = "switch/RSI-spa_friendly.ai" }	
+	action = {
+		command = { type = ai which = "switch/RSI-spa_friendly.ai" }
 	}
 }
 
@@ -2088,9 +2309,11 @@ event = {
 event = {
 	id = 3190
 	country = SCA
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -2100,13 +2323,15 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "scandinavia.ai" }
-		#Modules	
-		command = { type = ai which = "modules/tech-balanced-major.ai" } #Major Nation - Balanced	
+		#Modules
+		#command = { type = ai which = "modules/tech-balanced-major.ai" } #Major Nation - Balanced
 		#command = { type = ai which = "modules/construction-major.ai" } #Major Nation
-		command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
-		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy		
+		#command = { type = ai which = "modules/military-sf-bc.ai" } #Firepower/Base Control
+		#command = { type = ai which = "modules/strategy-offensive.ai" } #Offensive War Strategy
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -2116,9 +2341,11 @@ event = {
 event = {
 	id = 3210
 	country = PRU
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -2128,9 +2355,11 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "tarwajal.ai" }
 		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -2140,9 +2369,11 @@ event = {
 event = {
 	id = 3220
 	country = PRU
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -2152,9 +2383,11 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "muhajedz.ai" }
 		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }
 
@@ -2164,9 +2397,11 @@ event = {
 event = {
 	id = 3230
 	country = U18
+	persistent = yes
 
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ai_set }
 	}
 
 	name = "AI_EVENT"
@@ -2176,8 +2411,10 @@ event = {
 	offset = 1
 	deathdate = { day = 1 month = january year = 1963 }
 
-	action = {	
+	action = {
 		command = { type = ai which = "bengal.ai" }
 		command = { type = ai which = "modules/military-gp-fib.ai" } #GrandPlan/Fleet-in-Being
+		#
+		command = { type = local_setflag which = ai_set }
 	}
 }

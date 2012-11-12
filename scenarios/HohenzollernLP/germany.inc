@@ -3,7 +3,8 @@
 #####################
 country =
 { tag                    = GER
-  ai = "germany.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "germany.ai"
   capital                = 138
   dissent		 = 10 #20
 #Great Power

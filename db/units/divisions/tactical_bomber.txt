@@ -2,9 +2,8 @@
 
 allowed_brigades =  escort
 
-upgrade = { type = naval_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
-upgrade = { type = strategic_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
-#upgrade = { type = tactical_bomber upgrade_time_factor = 0.67 upgrade_cost_factor = 2.32 }
+upgrade = { type = naval_bomber			upgrade_time_factor = 0.54	upgrade_cost_factor	= 1.40 }
+upgrade = { type = strategic_bomber		upgrade_time_factor = 0.54	upgrade_cost_factor = 1.40 }
 
 # 0 - Interwar Bomber 1924
 model = {

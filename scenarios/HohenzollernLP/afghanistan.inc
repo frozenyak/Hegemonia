@@ -6,6 +6,8 @@
 country = {
 	tag                    = AFG 
 	puppet                 = TUR
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } } 
+	ai = "afghanistan.ai"
 	# Resource Reserves 
 	energy                 = 360
 	metal                  = 180

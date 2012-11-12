@@ -4,6 +4,7 @@
 
 country =
 { tag                    = EGY
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
   #industrial_modifier	 = 0.85
   #relative_manpower	 = 1.50
 #Medium Power
@@ -131,6 +132,7 @@ country =
 	##Land Doctrines - Sup Firepower##
 	6030 #Grand Battleplan
 	6560 #defensive focus
+	14000 #Great War Hospital
 
 	##Naval Doctrines##
 	8010 #Decisive Battle

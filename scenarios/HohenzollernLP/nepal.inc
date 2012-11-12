@@ -45,7 +45,7 @@
      relation = {  tag = TIB value = 200  }
      relation = {  tag = CMB value = 150  }
      relation = {  tag = CHI value = 100  }
-     relation = {  tag = CYN value = 100  }
+     relation = {  tag = U74 value = 100  }
     }
 	SpyInfo = {  country = "NEP" NumberOfSpies = 2  }
 

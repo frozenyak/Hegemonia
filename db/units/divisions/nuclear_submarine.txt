@@ -3,7 +3,9 @@
 #allowed_brigades = naval_torpedoes_l
 #allowed_brigades = naval_improved_hull_s
 #allowed_brigades = naval_torpedoes_s
+
 #max_allowed_brigades = 3
+
 # 0 - Nuclear
 model = {
 	cost						= 8

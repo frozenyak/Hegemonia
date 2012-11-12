@@ -1,7 +1,6 @@
-#Base country AI file
+# China-Nanjing 1936 AI File
 
 switch = no # [yes/no]
-flags = { reinf = yes }
 max_front_ratio = 1.2
 max_front_ratios = {
 	CHC = 1.0
@@ -16,8 +15,8 @@ reinforcement = 0.15
 desperation = 0.5
 strat_redeploy_threshold = 90
 max_redeploying = 0.02
-exp_force_ratio = 0.25
-exp_force_ratios = { }
+exp_force_ratio = 0.0
+exp_force_ratios = { JAP = 1.0 }
 no_exp_forces_to = { }
 use_offensive_supply = no
 
@@ -86,13 +85,15 @@ trade = {
 }
 tech_sharing = {
 	favored = {
-		JAP = 100
+		JAP = 150
 		MAN = 70
 		MEN = 70
 		VIE = 70
 		CGX = 70
 		U87 = 70
 	}
+	embargo = { }
+	not = { }
 	prioritized = {
 		# Agriculture
 		5020 = 100
@@ -112,7 +113,7 @@ tech_sharing = {
 		5150 = 100
 		5180 = 100
 
-		# Mountain Unit techs
+		# Light / Mountain
 		1110 = 100
 		1120 = 100
 		1130 = 100
@@ -137,12 +138,22 @@ spyprefs =
 {
 	percentage_on_spies = 0.2
 	percentage_foreign_mission = 0.6
+
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
 	spyprefsdata = 
 	{
-		#Domestic	
 		NumberOfSpies 		= 10
 		min_number_of_spies = 3
-		home_defence  = yes
+		steal_blueprint = 10
+		minister_assassination = 5
+		smear_campaign 	= 10
+		coup = 3
+		sabotage_industry = 10
+		nuclear_sabotage = 5
+		found_partisans	= 10
+		massmedia = 10
+		disrupt_techteam = 10
+		country = U87
 	}
 	spyprefsdata = {
 		country_priorities	= 5
@@ -212,7 +223,7 @@ military = {
 
 
 	#### Divisions etc...
-	infantry 		= 28		#30
+	infantry 		= 20		#30
 	cavalry 		= 7		#5
 	motorized 		= 0
 	mechanized 		= 0
@@ -223,11 +234,10 @@ military = {
 	bergsjaeger 	= 10 	#10
 	garrison		= 0
     hq 				= 3 	#3
-	militia 		= 45	#37
+	militia 		= 50	#37
 #			90 %
 	interceptor 	= 5	#10
 	multi_role 		= 0
-	escort 			= 0
 	cas 			= 0
 	strategic_bomber = 0
 	tactical_bomber = 5	#5
@@ -247,7 +257,7 @@ military = {
 #				0 %
 
 	#### Brigades
-	artillery 			= 2 #10
+	artillery 			= 4 #10
 	sp_artillery 		= 0
 	rocket_artillery	= 0
 	sp_rct_artillery 	= 0
@@ -262,128 +272,113 @@ military = {
 	engineer 			= 1	#5
 
 	cag 				= 100.000
-	light_cag = 100
+	escort 				= 100.0000
 
-	naval_asw = 10.0000 
-	naval_anti_air_s = 10.0000 
-	naval_radar_s = 10.0000 
-	naval_fire_controll_s = 10.0000 
+	naval_asw			= 0.0000 
+	naval_anti_air_s	= 0.0000 
+	naval_radar_s		= 0.0000 
+	naval_fire_controll_s = 0.0000 
 	naval_improved_hull_s = 0.0000 
+	naval_torpedoes_s 	= 0.0000 
 	naval_anti_air_l = 0.0000 
 	naval_radar_l = 0.0000 
-	naval_fire_controll_l = 10.0000 
-	naval_improved_hull_l = 0.0000 
-	naval_torpedoes_l = 0.0000
+	naval_fire_controll_l = 0.0000 
+	naval_improved_hull_l = 0.0000
 }
 
 technology = { 
 	endgoal = { } 
 	preference = {
-		#Infantry
-		1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060
 
 		# Field Artillery
-		2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+		2290 2300 2310 2320 2330 2340 2350 2360
 
 		# Manpower Focus Human Wave Path (SOV)
-		6570 6300 6310 6320 6330 6340 6350 6360 6370 14060
+		6300 6310 6320 6330 6340 6350 6360 6370 14060
 	} 
 	ignore = {
-		# motorized
-		1396 1400 1410 1420 1430 1440 1450 1460
+		# motorized Infantry
+		1230 1240 1250 10080 10090 10150
 		
-		# Airborne
-		1670 1680 1690 1700 1710 1720 1730 1740
+		# Airborne Infantry
+		1070 1080 1090 1100
 
 		# Marines
-		1560 1570 1580 1590 1600 1610 1620 1630 1640 1650 1660
+		1150 1160 1170 1180
 
-		# Mechanized
-		1470 1480 1490 1510 1520
-		
-		#Light armor brigades only techs / advanced Light armor
-		2010 2630 2640 2646 2650 2060
+		# Mechanized Infantry
+		1260 1270 1280 1290 10100 10110
 
-		#Light armor brigades & Divisions techs
-		2030 2040 2050 
+		# Light tanks
+		2020 2030 2040 2050 2060
 
-		#Medium armor brigades & Divisions techs
-		2070 2080 2090 2140 11000 2660 11010 2670
+		# Medium tanks
+		2010 2070 2080 2090 11000 11010
 
-		#Heavy armor brigades
-		2620 2100 2110 2120 2126 2127
+		# Heavy Tanks and Semi-Modern Tank
+		2100 2110 2120
 
-		#Super heavy armor brigade
-		2130
-
-		#Tank Destroyer
-		2170 2180 2850 2190 2200 2210 11020 11026
+		#Tank destroyer
+		2170 2180 2190 2200 2210
 
 		#Self-Propelled Artillery
-		2220 2230 2240 2250 11030 11040 2960 2966
+		2220 2230 2240 2250 11030 11040
 
 		#Static Anti-Air Artillery
-		2800 2450 2460 2470 2480 2490 2500 11080
-
-		#Anti-Air Artillery
-		2810 2820 2510 2520 2530 2540 11090 
-
-		#Anti tank
-		2400 2410 2420 2430 
-
-		# Rocket
-		2970 2370 2380 2390 
+		2450 2460 2470 2480 2490 2500
+		
+		# Anti-Air Brigades
+		2510 2520 2530 2540
 
 		# SP-Rocket
-		2980 2260 2270 2280 11050 11060 2990
+		2260 2270 2280 11050 11060
 
-		#SP Anti-Air Artillery
-		22910 22920 22930 22940 22950 22960 
-
-		#EQUIPMENT Winter / Jungle / Desert / Sturdy
+		# Custom Equipment
 		5920 5930 5940 5950 5960 5970 5980 5990
 		
-		#Assembly lines
+		# Applied Assembly lines
 		5150 5160 5170
 
 		# Agriculture
-		5700 5710 5010 5020 5030 5040 5720 53000 53010
+		5010 5020 5030 5040
 
 		# Rocketry
 		7550 5550 5560 5570 5580 5590
 
-		# Atomic Research
+		# Nuclear
 		5470 5480 5490 5500 5510 5520 5530 5540
 
-		# Bas Decimetric
-		5410 5420 5430 5440 5450 5460
-		
-		# COMPUTERS
-		5310 54010 54020 54030 5320 5330 5340
+		# Radar Warning
+		5410 5420 5430 5440 5450 5460 13030 53070
 
-		# CRYPTOGRAPHY
-		5316 5326 5327 5350 5360 5370 5380 5390 5400 53060 53116
+		# Computers
+		5310 5320 5330 5340
 
-		# Escort/Multirole Fighters
-		4040 4050 4070 4080 4100 4110
+		# Cryptography
+		5350 5360 5370 5380 5390 5400 13060
+
+		# Multi role
+		4040 4070 4100 15030 15040 15050
+
+		# Escort Fighters
+		4050 4080 4110 15060 15070 15080
 		
-		# CAS
-		4400 4170 4280 4450 4180 15120 15130 
+		# Close Air Support
+		4170 4280 4180
 
 		# Naval Bomber
-		4700 4710 4190 4200 4210 15140 15150
+		4190 4200 4210 15140 15150
 
 		# Strategic Bomber
-		4220 4230 4240
+		4220 4230 4240 15160 15170
 
 		# Air Transports
-		4290 4250 4260 4270 15180 15190
-
-		#SEAPLANES
-		4740 4750 4760 4770 4780 4790 4850 4860
+		4250 4260 4270 15180 15190
 
 		# Land Doctrines
-		6900 6570
+		6390
 
 		# Strategic Air Doctrines
 		9150 9160 9170 9180 9430 9440 9450 9460
@@ -450,7 +445,8 @@ garrison = {
 		MAN = -1
 		MEN = -1
 		CGX = -1
-		U87 = -1
+		CXB = -1
+		CSX = -1
 	}
 	province_priorities = {	
 	#1241 = 250 1328 = 250 1333 = 250 1334 = 250 1338 = 250 1358 = 250 1367 = 250 1369 = 250 

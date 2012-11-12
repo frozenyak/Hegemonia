@@ -4,6 +4,8 @@
 
 country =
 { tag                    = UAU
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "australasia.ai"
   #industrial_modifier	 = 0.75
 #Large Power
   energy                 = 800
@@ -93,6 +95,7 @@ country =
 	##Land Doctrines - Sup Firepower##
 	6030 #Grand Battleplan
 	6560 #defensive focus
+	14000 #Great War Hospital
 
 	##Naval Doctrines##
 	8010 #Decisive Battle

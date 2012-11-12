@@ -4,6 +4,7 @@
 
 country =
 { tag                    = HAI
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
   #industrial_modifier	 = 0.85
   #relative_manpower	 = 1.50
 #Minor Power

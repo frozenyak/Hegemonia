@@ -5,7 +5,8 @@
 country =
 { tag                    = AUS
   #puppet		 = GER
-  ai = "austria.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes ai_set = yes } }
+	ai = "austria.ai"
   capital                = 195
 #Large Power
   energy                 = 800

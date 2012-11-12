@@ -50,12 +50,12 @@ FIN;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 29080;Foreign Minister;Otto Ville Kuusinen;39;ST;Apologetic Clerk;Low;M29021;x
 29081;Foreign Minister;Hella Wuolijoki;42;ST;Great Compromiser;Low;M29081;x
 29082;Minister of Armament;Viljam Sinisalo;36;SD;Strategic Air Proponent;Medium;M29082;x
-29083;Minister of Armament;Karl A. Fagerholm;43;SD;laissez-faire capitalist;Medium;M29083;x
+29083;Minister of Armament;Karl A. Fagerholm;43;SD;Keynesian economy;Medium;M29083;x
 29084;Minister of Armament;Mauno Pekkala;44;SD;Theoretical Scientist;Medium;M29052;x
 29085;Minister of Armament;Otto Toivonen;46;SD;Military Entrepreneur;Medium;M29085;x
 29086;Minister of Armament;Juho Niukkanen;36;ML;Administrative Genius;Medium;M29014;x
 29087;Minister of Armament;Aimo Cajander;39;ML;Resource Industrialist;Medium;M29054;x
-29088;Minister of Armament;Kyösti Kallio;41;ML;laissez-faire capitalist;High;M29032;x
+29088;Minister of Armament;Kyösti Kallio;41;ML;Balanced budget economy;High;M29032;x
 29089;Minister of Armament;Väinö L. Valve;44;ML;Military Entrepreneur;Medium;M29009;x
 29090;Minister of Armament;Jarl Lundqvist;46;ML;Air to Sea Proponent;Very High;M29010;x
 29091;Minister of Armament;Antti V. Hackzell;36;SC;Battle Fleet Proponent;Medium;M29003;x
@@ -68,7 +68,7 @@ FIN;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 29098;Minister of Armament;Karl R. Waldén;44;PA;Resource Industrialist;Medium;M29098;x
 29099;Minister of Armament;Juho Niukkanen;36;FA;Tank Proponent;Medium;M29014;x
 29100;Minister of Armament;Vihtori Kosola;41;FA;Infantry Proponent;Low;M29012;x
-29101;Minister of Armament;Mauritz Rosenberg;39;ST;Resource Industrialist;Low;M29024;x
+29101;Minister of Armament;Mauritz Rosenberg;39;ST;Planned economy proponent;Low;M29024;x
 29102;Minister of Security;Urho K. Kekkonen;36;ML;Compassionate Gentleman;Medium;M29051;x
 29103;Minister of Security;Hugo Emil Aattela;43;SD;Prince of Terror;Medium;M29103;x
 29104;Minister of Security;Valfrid Eskola;44;SD;Back Stabber;Medium;M29104;x
@@ -77,7 +77,7 @@ FIN;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 29107;Minister of Security;Ernst V.L. von Born;41;ML;Silent Lawyer;Medium;M29107;x
 29108;Minister of Security;Väinö L. Valve;43;ML;Compassionate Gentleman;Medium;M29009;x
 29109;Minister of Security;Leo R. Ehrnrooth;44;ML;Man of the People;Medium;M29109;x
-29110;Minister of Security;Yrjö K. Leino;45;ML;Efficient Sociopath;Medium;M29025;x
+29110;Minister of Security;Yrjö K. Leino;45;ML;Secret police chief;Medium;M29025;x
 29111;Minister of Security;Kaarlo H. Hillilä;46;ML;Prince of Terror;Medium;M29111;x
 29112;Minister of Security;Toivo J. Horelli;36;SC;Compassionate Gentleman;Medium;M29112;x
 29113;Minister of Security;Esko Riekki;37;SC;Crime Fighter;High;M29006;x
@@ -86,7 +86,7 @@ FIN;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 29116;Minister of Security;Risto Ryti;46;SC;Back Stabber;High;M29033;x
 29117;Minister of Security;Jouko Itälä;36;FA;Prince of Terror;Low;M29015;x
 29118;Minister of Security;Bruno Salmiala;43;FA;Back Stabber;Medium;M29011;x
-29119;Minister of Security;Yrjö Leino;39;ST;Man of the People;Low;M29025;x
+29119;Minister of Security;Yrjö K. Leino;39;ST;Secret police chief;Low;M29025;x
 29120;Head of Military Intelligence;Edvard Kajala;36;SD;Naval Intelligence Specialist;High;M29120;x
 29121;Head of Military Intelligence;Bruno Suviranta;44;SD;Dismal Enigma;High;M29121;x
 29123;Head of Military Intelligence;Hjalmar F. Procope;41;ML;Political Specialist;High;M29123;x

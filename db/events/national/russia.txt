@@ -320,7 +320,7 @@ event = {
 	
 	trigger = {
 		OR = {
-			war = { country = JAP country = CYN }
+			war = { country = JAP country = U74 }
 			war = { country = JAP country = CHI }
 		}
 	}
@@ -339,7 +339,7 @@ event = {
 		ai_chance = 85
 		command = { type = relation which = JAP value = -100 }
 		command = { type = relation which = CHI value = 50 }
-		command = { type = relation which = CYN value = 50 }
+		command = { type = relation which = U74 value = 50 }
 		command = { type = domestic which = interventionism value = 1 }
 	}
 	action = {
@@ -347,7 +347,7 @@ event = {
 		ai_chance = 10
 		command = { type = relation which = JAP value = 25 }
 		command = { type = relation which = CHI value = -50 }
-		command = { type = relation which = CYN value = -50 }
+		command = { type = relation which = U74 value = -50 }
 		command = { type = domestic which = interventionism value = -1 }
 	}
 	action = {
@@ -356,7 +356,7 @@ event = {
 		ai_chance = 5
 		command = { type = war which = JAP }
 		command = { type = relation which = CHI value = 100 }
-		command = { type = relation which = CYN value = 100 }
+		command = { type = relation which = U74 value = 100 }
 		command = { type = domestic which = interventionism value = 2 }
 	}
 }
@@ -1088,7 +1088,7 @@ event = {
 	}
 
 	decision_trigger = {
-		region = { region = "Ukraine" data = 2 }
+		region = { region = "Ukraine" data = 2 value = 50 }
 		#NOT = { war = { country = LIT } }
 		#NOT = { war = { country = ROM } }
 		#atwar = no
@@ -1096,7 +1096,7 @@ event = {
 	
 	trigger = {
 		NOT = { exists = UKR }
-		region = { region = "Ukraine" data = 2 }
+		region = { region = "Ukraine" data = 2 value = 50 }
 		NOT = { war = { country = LIT } }
 		NOT = { war = { country = ROM } }
 		OR = {
@@ -1107,6 +1107,8 @@ event = {
 			NOT = { war = { country = GEO } }
 			region = { region = "Kaukasus" country = -3 value = 70 }
 		}
+		NOT = { war = { country = U00 } }
+		NOT = { war = { country = AUS } }
 	}
 
 	name = "The Fate of the Ukraine"
@@ -1143,19 +1145,15 @@ event = {
 	}
 
 	decision_trigger = {
-		area = { area = "Warsaw" data = 2 }
-		area = { area = "Krakow" data = 2 }
-		#NOT = { war = { country = LIT } }
-		#NOT = { war = { country = AUS } }
-		#atwar = no
+		region = { region = "Poland" data = 2 value = 50 }
 	}
 	
 	trigger = {
 		NOT = { exists = POL }
-		area = { area = "Warsaw" data = 2 }
-		area = { area = "Krakow" data = 2 }
+		region = { region = "Poland" data = 2 value = 50 }
 		NOT = { war = { country = LIT } }
 		NOT = { war = { country = AUS } }
+		NOT = { war = { country = GER } }
 		#atwar = no
 	}
 
@@ -1206,7 +1204,7 @@ event = {
 	decision_trigger = {
 		OR = {
 			flag = RUS_com_friendly
-			event = 44031
+			flag = lit_diplomatic_success
 			alliance = { country = U00 }
 		}
 	}
@@ -1216,7 +1214,7 @@ event = {
 		exists = GEO
 		OR = {
 			flag = RUS_com_friendly
-			event = 44031
+			flag = lit_diplomatic_success
 			alliance = { country = U00 }
 		}
 		NOT = {
@@ -1443,6 +1441,7 @@ event = {
 		ai_chance = 85
 		command = { type = trigger which = 44031 }
 		command = { type = dissent value = -5 }
+		command = { type = setflag which = lit_diplomatic_success }
 		#
 		command = { type = removecore which = 274 }
 		command = { type = removecore which = 270 }
@@ -1487,6 +1486,7 @@ event = {
 		ai_chance = 40
 		command = { type = trigger which = 44031 }
 		command = { type = dissent value = -5 }
+		command = { type = setflag which = lit_diplomatic_success }
 		#
 		command = { type = removecore which = 274 }
 		command = { type = removecore which = 270 }

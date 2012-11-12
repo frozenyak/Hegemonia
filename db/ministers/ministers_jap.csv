@@ -20,7 +20,7 @@ JAP;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 50019;Head of Government;Terauchi Hisaichi;46;PA;Naive Optimist;High;M5039;X
 50020;Head of Government;Hirota Koki;33;FA;Happy Amateur;High;M5003;X
 50021;Head of Government;Hiranuma Kiichiro;39;FA;Old Admiral;High;M5041;X
-50022;Head of Government;Tojo Hideki;41;FA;Old General;High;M5042;X
+50022;Head of Government;Tojo Hideki;41;FA;Razor;High;M5042;X
 50023;Head of Government;Koiso Kuniaki;44;FA;Corporate Suit;High;M5043;X
 50024;Head of Government;Goto Fumio;37;SD;Naive Optimist;High;M5005;X
 50025;Head of Government;Katayama Tetsu;45;SD;Political Protege;High;M5027;X
@@ -55,7 +55,7 @@ JAP;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 50054;Minister of Armament;Hoshijima Jiro;47;SD;Administrative Genius;Medium;M5071;X
 50055;Minister of Armament;Ogawa Gotaro;33;SC;Resource Industrialist;Medium;M5072;X
 50056;Minister of Armament;Godo Takuo;37;SC;Battle Fleet Proponent;Medium;M5073;X
-50057;Minister of Armament;Yoshida Shigeru;41;SC;Strategic Air Proponent;Medium;M5031;X
+50057;Minister of Armament;Yoshida Shigeru;41;SC;Balanced budget economy;Medium;M5031;X
 50058;Minister of Armament;Shidehara Kijuro;43;SC;Tank Proponent;High;M5030;X
 50059;Minister of Armament;Hatoyama Ichiro;44;SC;Administrative Genius;High;M5032;X
 50060;Minister of Armament;Hoshijima Jiro;45;SC;Military Entrepreneur;Very High;M5071;X
@@ -101,7 +101,7 @@ JAP;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 50100;Minister of Security;Teshima Fusataro;40;FA;Crime Fighter;Medium;M5120;X
 50101;Minister of Security;Kodama Hideo;41;FA;Silent Lawyer;Low;M5109;X
 50102;Minister of Security;Nakamura Aketo;41;FA;Crime Fighter;Medium;M5122;X
-50103;Minister of Security;Tojo Hideki;42;FA;Prince of Terror;Medium;M5042;X
+50103;Minister of Security;Tojo Hideki;42;FA;Secret police chief;Medium;M5042;X
 50104;Minister of Security;Kato Hakujiro;43;FA;Man of the People;Medium;M5124;X
 50105;Minister of Security;Odachi Shigeo;44;FA;Man of the People;Medium;M5125;X
 50106;Minister of Security;Iimura Jo;45;FA;Crime Fighter;Medium;M5126;X
@@ -127,7 +127,7 @@ JAP;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 50126;Chief of Staff;Tasuku Nakazawa;37;SD;School of Psychology;Very Low;M5147;X
 50127;Chief of Staff;Osamura Kajika;47;SD;School of Fire Support;Very Low;M5148;X
 50128;Chief of Staff;Hirotsugu Hayashida;33;SC;School of Fire Support;Very Low;M5149;X
-50129;Chief of Staff;Kanichiro Tashiro;33;SC;School of Psychology;Very Low;M5150;X
+50129;Chief of Staff;Kanichiro Tashiro;33;SC;commando doctrine staff;Very Low;M5150;X
 50130;Chief of Staff;Kazuo Tanigawa;45;SC;School of Mass Combat;Very Low;M5151;X
 50131;Chief of Staff;Abe Nobuyuki;41;PA;School of Fire Support;Medium;M5035;X
 50132;Chief of Staff;Mikawa Gunichi;45;PA;School of Psychology;Medium;M5154;X
@@ -139,7 +139,7 @@ JAP;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 50138;Chief of Army;Inanba Satoru;33;SC;Guns and Butter Doctrine;Medium;M5160;X
 50139;Chief of Army;Tsuchihashi Yuitsu;45;SC;Decisive Battle Doctrine;Medium;M5144;X
 50140;Chief of Army;Fujioka Takeo;41;PA;Elastic Defence Doctrine;Very Low;M5163;X
-50141;Chief of Army;Aotsu Kikutara;45;PA;Guns and Butter Doctrine;Very Low;M5164;X
+50141;Chief of Army;Aotsu Kikutara;45;PA;Doctrine of autonomy;Very Low;M5164;X
 50142;Chief of Army;Sugiyama Hajime;33;FA;Decisive Battle Doctrine;Medium;M5155;X
 50143;Chief of Army;Tojo Hideki;41;FA;Elastic Defence Doctrine;Medium;M5042;X
 50144;Chief of Army;Umezu Yoshijiro;44;FA;Guns and Butter Doctrine;Medium;M5157;X

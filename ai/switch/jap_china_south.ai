@@ -9,7 +9,7 @@ invasion = {
 	random				= 8.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.1	#higher, avoid worst beaches.
-	max_distance   		= 250.0  #About the distance from Japan to Batavia
+	max_distance   		= 40.0  #About the distance from Japan to Batavia
 	max_staging_distance = 15	# How far should the staging area be from the target invasion point
 	distance			= 20.0	#higher = avoid long distance.
 	pocket				= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
@@ -31,22 +31,16 @@ invasion = {
 		1560  #Fukuoka
 	}
 	target = {
-		#1231  = 2000  #Busan
-		#1228  = 2000  #Seoul
-		#1221  = 2000  #Pyongyang
-		#1219  = 2000  #Dailian
+		1228  = 2000  #Seoul
+		1221  = 2000  #Pyongyang
+		1217  = 2000  #Anshan
 		1241  = 2000  #Tianjin
-		#1331  = 2000  #Yantal
-		#1332  = 2000  #Qingdao
+		1328  = 2000  #Qingdao
 		1338  = 2000  #Shanghai
 		1333  = 2000  #Nanton
 		1334  = 2000  #Lianyuang
-     	#2680  = 1700  #Hainan 
 		1367  = 1500  #Zhanjiang
 		1358  = -1  #Fuzhou
-		#1360  = -1  #Xizmen
-		#1375  = -1  #Shantou
-		#1370  = -1  #Bao'an
 		1369  = -1  #Guangzhou
 	} 
 } 

@@ -1,162 +1,171 @@
 ###70000-70999###
 
-event = {
-	id = 70000
-	country = U87
+# event = {
+	# id = 70000
+	# country = U87
 
-	name = "China-Nanking Government"
-	desc = "Our glorious state has achieved independence!"
-	style = 1
+	# name = "Government Formation"
+	# desc = "Our glorious state has achieved independence!"
+	# style = 1
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 13
-	deathdate = { day = 1 month = january year = 1963 }
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 13
+	# deathdate = { day = 1 month = january year = 1963 }
 
-	action = {
-		name = "ACTION_NAME_HURRAH"
-		#command = { type = set_domestic which = democratic value = 3 }
-		#command = { type = set_domestic which = political_left value = 3 }
-		#command = { type = set_domestic which = freedom value = 1 }
-		#command = { type = set_domestic which = free_market value = 5 }
-		#command = { type = set_domestic which = interventionism value = 3 }
-		#
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }		
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = cavalry }
-		command = { type = add_division value = cavalry }
-		command = { type = add_division value = cavalry }
-		command = { type = add_division value = cavalry }
-		#port arthur
-		command = { type = secedeprovince which = JAP value = 1219 when = 1 }
-		#treaty ports
-		command = { type = secedeprovince which = JAP value = 1338 when = 1 }
-		command = { type = secedeprovince which = JAP value = 1358 when = 1 }
-		command = { type = secedeprovince which = JAP value = 1346 when = 1 }
-		command = { type = secedeprovince which = JAP value = 1371 when = 1 }
-		command = { type = secedeprovince which = JAP value = 1372 when = 1 }
-		#manchuko
-		command = { type = secedearea which = JAP value = "Rehe" when = 1 }
-		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
-		command = { type = secedearea which = JAP value = "Jilin" when = 1 }
-		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
-		#
-		command = { type = secedearea which = JAP value = "Taiwan" when = 1 }
-		command = { type = secederegion which = JAP value = "Korea" when = 1 }
-		#
-		command = { trigger = { ai = yes } type = ai which = "china u87.ai" }
-	}
-}
+	# action = {
+		# name = "ACTION_NAME_HURRAH"
+		# #command = { type = set_domestic which = democratic value = 3 }
+		# #command = { type = set_domestic which = political_left value = 3 }
+		# #command = { type = set_domestic which = freedom value = 1 }
+		# #command = { type = set_domestic which = free_market value = 5 }
+		# #command = { type = set_domestic which = interventionism value = 3 }
+		# #
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }		
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = cavalry }
+		# # command = { type = add_division value = cavalry }
+		# # command = { type = add_division value = cavalry }
+		# # command = { type = add_division value = cavalry }
+		# #port arthur
+		# command = { type = secedeprovince which = JAP value = 1219 when = 1 }
+		# #treaty ports
+		# command = { type = secedeprovince which = JAP value = 1338 when = 1 }
+		# command = { type = secedeprovince which = JAP value = 1358 when = 1 }
+		# command = { type = secedeprovince which = JAP value = 1346 when = 1 }
+		# command = { type = secedeprovince which = JAP value = 1371 when = 1 }
+		# command = { type = secedeprovince which = JAP value = 1372 when = 1 }
+		# #manchuko
+		# command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		# command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+		# command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		# command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+		# #
+		# command = { type = secedearea which = JAP value = "Taiwan" when = 1 }
+		# command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		# #
+		# command = { trigger = { ai = yes } type = ai which = "china u87.ai" }
+	# }
+# }
 
-event = {
-	id = 70001
-	country = CGX
+# event = {
+	# id = 70001
+	# country = CGX
 
-	name = "Guangxi Government"
-	desc = "Our glorious state has achieved independence!"
-	style = 1
+	# name = "Government Formation"
+	# desc = "Our glorious state has achieved independence!"
+	# style = 1
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 13
-	deathdate = { day = 1 month = january year = 1963 }
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 13
+	# deathdate = { day = 1 month = january year = 1963 }
 
-	action = {
-		name = "ACTION_NAME_HURRAH"
-		#command = { type = set_domestic which = democratic value = 3 }
-		#command = { type = set_domestic which = political_left value = 3 }
-		#command = { type = set_domestic which = freedom value = 1 }
-		#command = { type = set_domestic which = free_market value = 5 }
-		#command = { type = set_domestic which = interventionism value = 3 }
-		#
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }		
-		#command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }
-		command = { type = add_division value = cavalry }
-		#command = { type = add_division value = cavalry }
-		#command = { type = add_division value = cavalry }
-		#command = { type = add_division value = cavalry }
-		#port arthur
-		command = { type = secedeprovince which = JAP value = 1219 when = 1 }
-		#treaty ports
-		command = { type = secedeprovince which = JAP value = 1338 when = 1 }
-		command = { type = secedeprovince which = JAP value = 1358 when = 1 }
-		command = { type = secedeprovince which = JAP value = 1346 when = 1 }
-		command = { type = secedeprovince which = JAP value = 1371 when = 1 }
-		command = { type = secedeprovince which = JAP value = 1372 when = 1 }
-		#manchuko
-		command = { type = secedearea which = JAP value = "Rehe" when = 1 }
-		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
-		command = { type = secedearea which = JAP value = "Jilin" when = 1 }
-		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
-		#
-		command = { type = secedearea which = JAP value = "Taiwan" when = 1 }
-		command = { type = secederegion which = JAP value = "Korea" when = 1 }
-		#
-		command = { trigger = { ai = yes } type = ai which = "china u87.ai" }
-	}
-}
+	# action = {
+		# name = "ACTION_NAME_HURRAH"
+		# #command = { type = set_domestic which = democratic value = 3 }
+		# #command = { type = set_domestic which = political_left value = 3 }
+		# #command = { type = set_domestic which = freedom value = 1 }
+		# #command = { type = set_domestic which = free_market value = 5 }
+		# #command = { type = set_domestic which = interventionism value = 3 }
+		# #
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }		
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = cavalry }
+		# #command = { type = add_division value = cavalry }
+		# #command = { type = add_division value = cavalry }
+		# #command = { type = add_division value = cavalry }
+		# #port arthur
+		# command = { type = secedeprovince which = JAP value = 1219 when = 1 }
+		# #treaty ports
+		# command = { type = secedeprovince which = JAP value = 1338 when = 1 }
+		# command = { type = secedeprovince which = JAP value = 1358 when = 1 }
+		# command = { type = secedeprovince which = JAP value = 1346 when = 1 }
+		# command = { type = secedeprovince which = JAP value = 1371 when = 1 }
+		# command = { type = secedeprovince which = JAP value = 1372 when = 1 }
+		# #manchuko
+		# command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		# command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+		# command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		# command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+		# #
+		# command = { type = secedearea which = JAP value = "Taiwan" when = 1 }
+		# command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		# #
+		# command = { trigger = { ai = yes } type = ai which = "china u87.ai" }
+	# }
+# }
 
-event = {
-	id = 70002
-	country = MAN
+# event = {
+	# id = 70002
+	# country = MAN
 
-	name = "Manchuko Government"
-	desc = "Our glorious state has achieved independence!"
-	style = 1
+	# name = "Government Formation"
+	# desc = "Our glorious state has achieved independence!"
+	# style = 1
 	
-	date = { day = 1 month = january year = 1936 }
-	offset = 13
-	deathdate = { day = 1 month = january year = 1963 }
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 13
+	# deathdate = { day = 1 month = january year = 1963 }
 
-	action = {
-		name = "ACTION_NAME_HURRAH"
-		command = { type = set_domestic which = democratic value = 1 }
-		command = { type = set_domestic which = political_left value = 4 }
-		command = { type = set_domestic which = freedom value = 3 }
-		command = { type = set_domestic which = free_market value = 3 }
-		command = { type = set_domestic which = defense_lobby value = 8 }
-		command = { type = set_domestic which = interventionism value = 8 }
-		#
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }		
-		#command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }
-		#command = { type = add_division value = militia }
-		command = { type = add_division value = cavalry }
-		#command = { type = add_division value = cavalry }
-		#command = { type = add_division value = cavalry }
-		#command = { type = add_division value = cavalry }
-		#
-		command = { trigger = { ai = yes } type = ai which = "china manchuko.ai" }
-	}
-}
+	# action = {
+		# name = "ACTION_NAME_HURRAH"
+		# command = { type = set_domestic which = democratic value = 1 }
+		# command = { type = set_domestic which = political_left value = 4 }
+		# command = { type = set_domestic which = freedom value = 3 }
+		# command = { type = set_domestic which = free_market value = 3 }
+		# command = { type = set_domestic which = defense_lobby value = 8 }
+		# command = { type = set_domestic which = interventionism value = 8 }
+		# #
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# # command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }		
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = militia }
+		# #command = { type = add_division value = cavalry }
+		# #command = { type = add_division value = cavalry }
+		# #command = { type = add_division value = cavalry }
+		# #command = { type = add_division value = cavalry }
+		# #
+		# command = { trigger = { ai = yes } type = ai which = "china manchuko.ai" }
+	# }
+# }
 
 event = {
 	id = 70005
-	country = U87
+	country = CSX
 
 	trigger = {
 		NOT = { exists = CHC }
-		NOT = { exists = CYN }
-		NOT = { exists = CHI }
-		random = 25
-		ispuppet = yes
+		OR = {
+			AND = {
+				random = 25
+				NOT = { atwar = JAP }
+			}
+			AND = {
+				random = 50
+				atwar = JAP
+			}
+		}
+		puppet = { country = -1 country = JAP }
+		NOT = { government = communist }
+		NOT = { local_flag = communist_rebels }
 	}
 
 	name = "Communists Rebels!"
@@ -165,26 +174,69 @@ event = {
 	picture = "news_paper"
 	
 	date = { day = 0 month = january year = 1936 }
-	offset = 60
+	offset = 30
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "ACTION_NAME_DAMN"
 		command = { type = independence which = CHC }
-		command = { type = trigger which = 29000 }
+		#
+		command = { type = local_setflag which = communist_rebels }
+		#
+		command = { trigger = { army = 4 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 8 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 12 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 16 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 20 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 24 } type = switch_allegiance which = -1 where = CHC }
+		#
+		command = { trigger = { NOT = { war = { country = CHC } } } type = war which = CHC }
 	}
 }
 
 event = {
 	id = 70006
-	country = CGX
+	#country = CYN
+	tag = { CYN CGX U87 CXB MEN CSX }
+	persistent = yes
 
 	trigger = {
 		exists = CHC
-		random = 25
-		ispuppet = yes
-		NOT = { puppet = { country = CGX country = CHC } }
+		OR = {
+			AND = {
+				random = 25
+				NOT = { war = { country = CHC country = JAP } }
+			}
+			AND = {
+				random = 50
+				war = { country = CHC country = JAP }
+			}
+			AND = {
+				random = 50
+				NOT = { exists = CSX }
+			}
+			AND = {
+				random = 50
+				NOT = { exists = MEN }
+			}
+			AND = {
+				random = 50
+				NOT = { exists = CYN }
+			}
+			AND = {
+				random = 50
+				NOT = { exists = CGX }
+			}
+			AND = {
+				random = 50
+				NOT = { exists = CXB }
+			}
+		}
+		#NOT = { puppet = { country = -1 country = CHC } }
 		NOT = { ispuppet = CHC }
+		puppet = { country = -1 country = JAP }
+		NOT = { local_flag = communist_rebels }
+		NOT = { government = communist }
 	}
 
 	name = "Communists Rebels!"
@@ -193,15 +245,117 @@ event = {
 	picture = "news_paper"
 	
 	date = { day = 0 month = january year = 1936 }
-	offset = 60
+	offset = 30
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "ACTION_NAME_DAMN"
+		#qinghai
+		command = { type = secedeprovince which = CHC value = 1262 }
+		command = { type = secedeprovince which = CHC value = 1264 }
+		#yunnan
 		command = { type = secedearea which = CHC value = "Sichuan" when = 1 }
 		command = { type = secedearea which = CHC value = "Xikang" when = 1 }
-		command = { type = secedearea which = CHC value = "Hunan" when = 1 }
-		#command = { type = secedearea which = CHC value = "Yunnan" when = 1 }
+		#Guangxi
 		command = { type = secedearea which = CHC value = "Guizhou" when = 1 }
+		command = { type = secedearea which = CHC value = "Hunan" when = 1 }
+		command = { type = secedeprovince which = CHC value = 1355 }
+		#shanxi
+		command = { type = secedearea which = CHC value = "Henan" when = 1 }
+		command = { type = secedearea which = CHC value = "Hubei" when = 1 }
+		command = { type = secedearea which = CHC value = "Shaanxi" when = 1 }
+		command = { trigger = { NOT = { country = CXB } } type = secedearea which = CHC value = "Gansu" when = 1 }
+		#u87
+		command = { type = secedeprovince which = CHC value = 1353 }
+		#menjiang
+		command = { type = secedeprovince which = CHC value = 1269 }
+		command = { type = secedeprovince which = CHC value = 1271 }
+		#
+		command = { type = local_setflag which = communist_rebels }
+		#
+		command = { trigger = { army = 4 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 8 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 12 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 16 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 20 } type = switch_allegiance which = -1 where = CHC }
+		command = { trigger = { army = 24 } type = switch_allegiance which = -1 where = CHC }
+		#
+		command = { trigger = { NOT = { war = { country = CHC } } } type = war which = CHC }
+	}
+}
+
+event = {
+	id = 70010
+	country = JAP
+
+	trigger = {
+		exists = CHC
+		NOT = { war = { country = CHC } }
+		
+		# OR = {
+			# NOT = { exists = CSX }
+			# war = { country = CHC country = CSX }
+		# }
+		# OR = {
+			# NOT = { exists = U87 }
+			# war = { country = CHC country = U87 }
+		# }
+		# OR = {
+			# NOT = { exists = CYN }
+			# war = { country = CHC country = CYN }
+		# }
+		# OR = {
+			# NOT = { exists = CGX }
+			# war = { country = CHC country = CGX }
+		# }
+		# OR = {
+			# NOT = { exists = CXB }
+			# war = { country = CHC country = CXB }
+		# }
+		# OR = {
+			# NOT = { exists = MEN }
+			# war = { country = CHC country = MEN }
+		# }
+		
+		NOT = { ispuppet = CHC }
+		NOT = { puppet = { country = CHC country = JAP } }
+		NOT = { government = communist }
+		
+		OR = {
+			random = 50
+			control = { province = 1369 data = CHC } #guangzhou
+			control = { province = 1337 data = CHC } #nanjing
+		}
+		control = { province = 1252 data = CHC } #taiyuan
+		control = { province = 1310 data = CHC } #changde
+		control = { province = 1297 data = CHC } #chengdu
+		# OR = {
+			# lost_national = { country = U87 value = 10 }
+			# NOT = { exists = U87 }
+		# }
+		# OR = {
+			# lost_national = { country = CGX value = 10 }
+			# NOT = { exists = CGX }
+		# }
+		atwar = CHC
+	}
+
+	name = "Communists Rebels in China!"
+	desc = "Communist Rebels have risen up in the China. Our client states might not be able to survive without our help."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = war which = CHC }
+		command = { type = alliance which = CGX }
+		command = { type = alliance which = CSX }
+		command = { type = alliance which = MEN }
+		command = { type = alliance which = CXB }
+		command = { type = alliance which = U87 }
 	}
 }

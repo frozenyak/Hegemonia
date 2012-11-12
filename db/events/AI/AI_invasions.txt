@@ -2,7 +2,7 @@
 #140001	reset
 #140002	generic invasion
 #140100	jap chi
-#140101	jap cyn
+#140101	jap U74
 #140102	jap phi
 #140103	jap rus
 #140104	jap kor
@@ -169,7 +169,7 @@ event = {
 
 	trigger = {
 		ai = yes
-		war = { country = CYN }
+		war = { country = U74 }
 		NOT = { local_flag = AI_invasion_war }
 		random = 10
 	}

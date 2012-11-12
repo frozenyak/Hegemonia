@@ -31,12 +31,13 @@ event = "db\events\AI\AI_MinorShutInvasion.txt"
 #event = "db\events\AI\ai_jap.txt"
 event = "db\events\AI\ai_ministers.txt"
 event = "db\events\AI\ai_alliances.txt"
+event = "db\events\AI\ai_revolters.txt"
 
 # national events
 
 #europe
 event = "db\events\national\austria.txt"
-#event = "db\events\national\crete.txt"
+event = "db\events\national\crete.txt"
 event = "db\events\national\finland.txt"
 event = "db\events\national\finnish surrender.txt"
 event = "db\events\national\iberia.txt"
@@ -95,6 +96,7 @@ event = "db\events\national\china yuan.txt"
 event = "db\events\national\china nationalist.txt"
 event = "db\events\national\china puppets.txt"
 event = "db\events\national\china communist.txt"
+event = "db\events\national\chinese surrender.txt"
 
 #america/caribbean
 event = "db\events\national\america.txt"

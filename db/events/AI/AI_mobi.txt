@@ -1072,7 +1072,7 @@ event = { #CHI ai - mobilisation path
 	id = 130120
 	
 	#country = CHI
-	TAG = { CHI CYN }
+	TAG = { CHI U74 }
 	persistent = yes
 
 	trigger = {

@@ -1,16 +1,21 @@
 # China 1936 AI File by Lothos
 
 max_front_ratios = { 	
-	# JAP = 1.0 
+	JAP = 1.0 
 }
 ###################################
 # Ground Combat, Leaders and Garrisons
 ###################################
 front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 		= reactive
       	enemy_handicap = {
-		
+		CMB = 300
+		#JAP = 20
 	} 
       	passivity = {
-		
+		CMB = 100
+		#JAP = 80
 	} 
 }

@@ -16,13 +16,13 @@ allowed_brigades =  police
 
 max_allowed_brigades = 2
 
-#upgrade = { type = garrison upgrade_time_factor = 0.40 upgrade_cost_factor = 0.48 }
-upgrade = { type = bergsjaeger upgrade_time_factor = 0.62 upgrade_cost_factor = 1.29 }
-upgrade = { type = paratrooper upgrade_time_factor = 0.62 upgrade_cost_factor = 1.97 }
-upgrade = { type = marine upgrade_time_factor = 0.62 upgrade_cost_factor = 1.85 }
-upgrade = { type = cavalry upgrade_time_factor = 0.9 upgrade_cost_factor = 0.65 }
-upgrade = { type = motorized upgrade_time_factor = 0.65 upgrade_cost_factor = 1.72 }
-upgrade = { type = mechanized upgrade_time_factor = 1 upgrade_cost_factor = 1.57 }
+#upgrade = { type = garrison		upgrade_time_factor = 0.32	upgrade_cost_factor = 0.69 }
+upgrade = { type = bergsjaeger	upgrade_time_factor = 0.50	upgrade_cost_factor = 0.93 }
+upgrade = { type = paratrooper	upgrade_time_factor = 0.50	upgrade_cost_factor = 1.42 }
+upgrade = { type = marine		upgrade_time_factor = 0.50	upgrade_cost_factor = 1.30 }
+upgrade = { type = cavalry		upgrade_time_factor = 0.72	upgrade_cost_factor = 0.81 }
+upgrade = { type = motorized	upgrade_time_factor = 0.52	upgrade_cost_factor = 1.34 }
+upgrade = { type = mechanized	upgrade_time_factor = 0.80	upgrade_cost_factor = 0.99 }
 
 # Great War Infantry Division (1918) - 1
 model = {
@@ -32,8 +32,8 @@ model = {
 	maxspeed 				= 5
 	defaultorganisation 	= 30
 	morale					= 30
-	defensiveness 			= 24
-	toughness				= 28
+	defensiveness 			= 35 #24
+	toughness				= 40 #28
 	softness				= 100
 	suppression				= 2
 	airdefence				= 14

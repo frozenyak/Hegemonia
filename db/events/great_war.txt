@@ -72,7 +72,7 @@ event = {
 		NOT = { flag = peace_in_our_time }
 		#OR = {
 			random = 10
-		#	flag = great_war_by_event
+		#	NOT = { flag = great_war_by_event }
 		#}
 		exists = RUS
 		headofstate = 102188
@@ -330,6 +330,15 @@ event = {
 		#domestic = { type = interventionism value = 5 }
 		NOT = { ispuppet = yes }
 		NOT = { dissent = 5 }
+		OR = {
+			atwar = no
+			AND = {
+				NOT = { exists = AUS }
+				NOT = { exists = U14 }
+				NOT = { exists = ITA }
+				lost_national = { country = GER value = 50 }
+			}
+		}
 	}
 
 	name = "The Question of Crete"

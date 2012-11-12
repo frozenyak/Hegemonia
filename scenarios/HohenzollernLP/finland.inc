@@ -4,6 +4,8 @@
 
 country =
 { tag                    = FIN
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "finland.ai"
   #industrial_modifier	 = 0.75
 #Medium Power
   energy                 = 500

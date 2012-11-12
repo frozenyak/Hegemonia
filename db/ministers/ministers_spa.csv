@@ -91,7 +91,7 @@ SPA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;Co
 11135;Minister of Armament;Rauf Naveed;38;SD;Resource Industrialist;High;M11135;x
 11136;Minister of Armament;Rasheed Nail;38;SD;Infantry Proponent;High;M11095;x
 11137;Minister of Armament;Mis'id Hisham;39;SD;Submarine Proponent;High;M11137;x
-11139;Minister of Armament;Mas'ud Gamal;41;SD;Tank Proponent;High;M11139;x
+11139;Minister of Armament;Mas'ud Gamal;41;SD;Keynesian economy;High;M11139;x
 11140;Minister of Armament;Rashid Ebrahim;42;SD;laissez-faire capitalist;High;M11140;x
 11142;Minister of Armament;Rahat Ghufran;45;SD;Administrative Genius;High;M11142;x
 11143;Minister of Armament;Zayn Iqbal;36;ML;Air to Sea Proponent;Medium;M11143;x
@@ -103,7 +103,7 @@ SPA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;Co
 11152;Minister of Armament;Amal Gabir;38;SL;laissez-faire capitalist;High;M11152;x
 11153;Minister of Armament;Ata Wassim;39;SL;Military Entrepreneur;High;M11101;x
 11154;Minister of Armament;Nasir Baki;41;SL;Theoretical Scientist;High;M11105;x
-11155;Minister of Armament;Sabri Ibraheem;45;SL;Resource Industrialist;High;M11155;x
+11155;Minister of Armament;Sabri Ibraheem;45;SL;Balanced budget economy;High;M11155;x
 11156;Minister of Armament;Sajjad Hussein;36;SC;laissez-faire capitalist;Very High;M11014;x
 11157;Minister of Armament;Tahir Ghufran;37;SC;Resource Industrialist;Low;M11113;x
 11158;Minister of Armament;Abdul-Rahman Mahir;37;SC;Military Entrepreneur;Medium;M11012;x

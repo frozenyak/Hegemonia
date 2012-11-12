@@ -20,7 +20,7 @@ event = {
 			#
 			alliance = { country = JAP }
 			alliance = { country = CHI }
-			alliance = { country = CYN }
+			alliance = { country = U74 }
 			#
 			alliance = { country = ENG }
 			alliance = { country = RUS }

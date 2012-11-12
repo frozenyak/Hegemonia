@@ -6,13 +6,13 @@ event = {
 
 	trigger = {
 		war = { country = RUS }
-		OR = {
-			NOT = { war = { country = U00 } }
-			AND = {
-				region = { region = Balkan country = -3 }
-				NOT = { puppet = { country = ROM country = LIT } } #u00
-			}
-		}
+		# OR = {
+			# NOT = { war = { country = U00 } }
+			# AND = {
+				# region = { region = Balkan country = -3 }
+				# NOT = { puppet = { country = ROM country = LIT } } #u00
+			# }
+		# }
 		NOT = { control = { province = 264 } } #Riga
 		NOT = { control = { province = 599 } } #Minsk
 		NOT = { control = { province = 617 } } #Kiev
@@ -24,6 +24,7 @@ event = {
 			AND = { 
 				participant = { value = 2 }
 				lost_national = { country = GER value = 40 }
+				NOT = { control = { province = 138 } } #frankfurt
 			}
 			lost_national = { country = LIT value = 75 }
 			#NOT = { control = { province = 232 } } #Warsaw
@@ -95,6 +96,8 @@ event = { #soft
 		name = ACTION_NAME_OK
 		command = { type = peace which = RUS value = 1 }
 		command = { type = non_aggression which = LIT where = RUS }
+		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = non_aggression which = LIT where = U00 }
 		#command = { type = access which = RUS }
 		command = { type = leave_alliance }
 		#command = { trigger = { OR = { flag = RUS_claim_border flag = RUS_belligerent_LIT } } type = secedearea which = RUS value = "Estonia" when = 1 }
@@ -127,6 +130,8 @@ event = { #mild
 		name = ACTION_NAME_OK
 		command = { type = peace which = RUS value = 1 }
 		command = { type = non_aggression which = LIT where = RUS }
+		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = non_aggression which = LIT where = U00 }
 		#command = { type = access which = RUS }
 		command = { type = leave_alliance }
 		command = { type = secedearea which = RUS value = "Estonia" when = 1 }
@@ -154,6 +159,8 @@ event = { #harsh
 		name = ACTION_NAME_OK
 		command = { type = peace which = RUS value = 1 }
 		command = { type = non_aggression which = LIT where = RUS }
+		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = non_aggression which = LIT where = U00 }
 		#command = { type = access which = RUS }
 		command = { type = leave_alliance }
 		command = { type = secedearea which = RUS value = "Estonia" when = 1 }

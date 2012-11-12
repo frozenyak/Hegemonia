@@ -5,6 +5,7 @@
 country =
 { tag                    = U08
   puppet		 = GER
+	ai_settings = { flags = { MOB2 = yes reinf = yes } }
   capital                = 1415
 #Medium Power
   energy                 = 500

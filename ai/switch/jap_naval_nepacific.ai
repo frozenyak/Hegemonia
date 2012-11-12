@@ -87,7 +87,7 @@ invasion = {
 	random				= 8.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.1	#higher, avoid worst beaches.
-	max_distance   		= 250.0  #About the distance from Japan to Batavia
+	max_distance   		= 40.0  #About the distance from Japan to Batavia
 	max_staging_distance = 15	# How far should the staging area be from the target invasion point
 	distance			= 10.0	#higher = avoid long distance.
 	pocket				= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
@@ -398,7 +398,7 @@ admiral = {
 		"South Southeast Pacific Ocean"
 		"North Southeast Pacific Ocean"
 		
-		# MEX West Coast
+		# USA West Coast
 		"Gulf of Alaska"
 		"West Coast of the United States"
 		

@@ -133,6 +133,11 @@ event = {
 		command = { type = removecore which = 1898 }
 		command = { type = removecore which = 1896 }
 		#
+		command = { trigger = { NOT = { exists = CAN } } type = secederegion which = USA value = "Canada" }
+		command = { trigger = { NOT = { exists = CAN } } type = secederegion which = USA value = "Eastern Canada" }
+		command = { trigger = { NOT = { exists = CAN } } type = secederegion which = USA value = "Northern Canada" }
+		command = { trigger = { NOT = { exists = CAN } } type = secederegion which = USA value = "Midwest US" }
+		#
 		command = { type = secederegion which = USA value = "Northwest US" }
 		command = { type = secederegion which = USA value = "Western Canada" }
 		command = { type = secederegion which = USA value = "Alaska" }
@@ -174,6 +179,10 @@ event = {
 		ai_chance = 100
 		command = { type = belligerence which = USA value = -50 }
 		command = { trigger = { alliance = { country = CAN country = USA } } type = secederegion which = CAN value = "Western Canada" }
+		#
+		command = { trigger = { alliance = { country = CAN country = USA } } type = secederegion which = CAN value = "Eastern Canada" }
+		command = { trigger = { alliance = { country = CAN country = USA } } type = secederegion which = CAN value = "Northern Canada" }
+		command = { trigger = { alliance = { country = CAN country = USA } } type = secederegion which = CAN value = "Canada" }
 		#command = { trigger = { alliance = { country = CAN country = USA } } type = secederegion which = CAN value = "Alaska" }
 		command = { trigger = { alliance = { country = CAN country = USA } } type = secedeprovince which = CAN value = 2095 }
 		command = { type = setflag which = usa_victory_mex }

@@ -245,7 +245,7 @@ event = {
 
 	action = {
 		name = "Grant them access"
-		ai_chance = 90
+		ai_chance = 70
 		command = { type = access which = U02 }
 		command = { trigger = { ai = yes } type = secedeprovince which = U02 value = 1095 when = 1 } #birjand
 		command = { trigger = { ai = yes } type = secedeprovince which = U02 value = 1094 when = 1 } #kerman
@@ -255,7 +255,7 @@ event = {
 	}
 	action = {
 		name = ACTION_NAME_NEVER
-		ai_chance = 10
+		ai_chance = 30
 		command = { type = domestic which = defense_lobby value = 1 }
 		command = { type = relation which = U00 value = 50 }
 		command = { type = trigger which = 39027 }

@@ -14,7 +14,7 @@ allowed_brigades =  anti_air
 allowed_brigades =  engineer
 allowed_brigades =  police
 
-#upgrade = { type = infantry upgrade_time_factor = 0.3 upgrade_cost_factor = 0.46 }
+#upgrade = { type = infantry		upgrade_time_factor = 0.25	upgrade_cost_factor = 0.88 }
 
 # Early Mountain Division - 0 1918
 model = {
@@ -24,8 +24,8 @@ model = {
 	maxspeed 				= 6
 	defaultorganisation 	= 35
 	morale					= 40
-	defensiveness 			= 24
-	toughness				= 28
+	defensiveness 			= 35 #24
+	toughness				= 40 #28
 	softness				= 100
 	suppression				= 3
 	airdefence				= 14

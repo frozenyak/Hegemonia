@@ -2,7 +2,7 @@
 
 upgrade = { type = interceptor			upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
 upgrade = { type = multi_role			upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
-upgrade = { type = cas					upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
+#upgrade = { type = cas					upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
 
 # 0 - Basic Rocket Interceptor (1941)
 model = { 

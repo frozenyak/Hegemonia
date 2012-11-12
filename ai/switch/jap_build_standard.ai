@@ -19,7 +19,7 @@ military = {
    	garrison    	= 2 
     hq 				= 1
 	militia 		= 0
-#				33 %
+#				39 %
 	interceptor 	= 0
 	multi_role 		= 5
    	cas       		= 0 
@@ -29,17 +29,18 @@ military = {
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				17 %
+#				16 %
    	battleship     	= 3 
-   	carrier     	= 16 
-   	escort_carrier  = 5 
+   	carrier     	= 13
+	light_carrier  = 5
+   	escort_carrier  = 2 
    	destroyer     	= 8 
-   	light_cruiser   = 10 
+   	light_cruiser   = 8 
    	heavy_cruiser   = 0 
 	battlecruiser 	= 0
 	submarine 		= 0
 	nuclear_submarine = 0
-	transports 		= 3
-#				50 %
+	transports 		= 6
+#				45 %
 
 }

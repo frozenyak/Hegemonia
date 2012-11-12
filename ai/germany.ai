@@ -1,36 +1,60 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
 max_front_ratio = 1.2
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
-neutrality = 100.000
+neutrality = 140 # 90.000 
 war = 0
-desperation = 1.0
-strat_redeploy_threshold = 5
-exp_force_ratio = 0.15 #0.25
-exp_force_ratios = { }
-no_exp_forces_to = { SCA JAP VIE CHI CYN U87 MEN MAN UAU U08 CON U01 RUS U02 }
+desperation = 0.5
 upgrading = 0.35
 reinforcement = 0 #0.10
+strat_redeploy_threshold = 50
+max_redeploying = 0.05
+exp_force_ratio = 0.0
+exp_force_ratios = { }
+no_exp_forces_to = { SCA JAP CMB VIE CHI CYN U87 MEN MAN UAU U08 CON U01 RUS U02 }
 evac_islands = no
 
 ###################################
 # Diplomacy
 ###################################
-claim_acceptance = -49
-
 combat = { }
-befriend = { AUS = 100 LIT = 100 USA = 50 U14 = 100 EGY = 100 SCA = 25 } # U08 = 15 CON = 15 SCH = 25 FIN = 15 JAP = 25
-protect = { U14 = 10 LIT = 50 AUS = 50 EGY = 25 USA = 25 CAN = 10 U02 = 50 SCA = 25 }
+
+liberate = { U06 SCH LIT ROM SCA FIN SPA IRE U07 ITA } #AUS
+resistance = { VIC = 6 U00 = 6 U10 = 2 }
+
+claim_acceptance = -69
+
+demand_claims = {
+}
+befriend = { 
+	AUS = 100 
+	LIT = 100 
+	USA = 50 
+	U14 = 100 
+	EGY = 100 
+	SCA = 25 
+	#U08 = 15
+	#CON = 15
+	#SCH = 25
+	#FIN = 15
+	#JAP = 25
+}
+protect = { 
+	U14 = 10 
+	LIT = 50 
+	AUS = 50 
+	EGY = 25 
+	USA = 25 
+	CAN = 10 
+	U02 = 50 
+	SCA = 25
+}
 target = {
 	109 = 5 #Lux
 	55 = 20 #Paris
 }
-demand_claims = { }
-liberate = { U06 SCH LIT AUS ROM SCA FIN SPA IRE U07 } #ITA
-resistance = { VIC = 6 U00 = 6 U10 = 2 }
 
 trade = {
 	cancel_deal_threshold = 2
@@ -40,11 +64,18 @@ trade = {
 	oil 		= -1
 	supplies 	= -1
 	money 		= -1
-	favored = { }
+
+	favored = { 
+	}
 	embargo = { VIC U00 RSI }
 }
 tech_sharing = {
-	favored = { AUS = 10 LIT = 10 U14 = 5 SCA = 5 }
+	favored = { 
+		AUS = 10 
+		LIT = 10 
+		U14 = 5 
+		SCA = 5
+	}
 	embargo = { }
 	not = { }
 	prioritized = {
@@ -52,14 +83,6 @@ tech_sharing = {
 		5020 = 100
 		5030 = 100
 		5040 = 100
-
-		# Inf support
-		1310 = 100
-		1320 = 100
-		1330 = 100
-		1340 = 100
-		1350 = 100
-		1360 = 100
 
 		# Production
 		5050 = 100
@@ -74,12 +97,20 @@ tech_sharing = {
 		5150 = 100
 		5180 = 100
 
-		# Motorized
+		# Inf support
+		1310 = 100
+		1320 = 100
+		1330 = 100
+		1340 = 100
+		1350 = 100
+		1360 = 100
+
+		# Motorized Infantry
 		1230 = 100
 		1240 = 100
 		1250 = 100
 
-		# CAS
+		# Close Air Support
 		4170 = 100
 		4280 = 100
 		4180 = 100
@@ -96,15 +127,7 @@ tech_sharing = {
 		2050 = 100
 		2060 = 100
 
-		# Submarines
-		3400 = 100
-		3410 = 100
-		3420 = 100
-		3430 = 100
-		3440 = 100
-		3450 = 100
-
-		# Mechanized
+		# Mechanized Infantry
 		1260 = 100
 		1270 = 100
 		1280 = 100
@@ -117,17 +140,25 @@ tech_sharing = {
 ###################################
 spyprefs =
 {
-	percentage_on_spies 		= 0.4
-	percentage_foreign_mission 	= 0.2
+	percentage_on_spies 		= 0.2
+	percentage_foreign_mission 	= 0.6
 
-	# Used for Homeland Defense Spying
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
 	spyprefsdata =
 	{
 		NumberOfSpies = 10
-		counter_espionage =  10
+		min_number_of_spies = 3
+		steal_blueprint = 10
+		minister_assassination = 5
+		smear_campaign 	= 10
+		coup = 3
+		sabotage_industry = 10
+		nuclear_sabotage = 5
+		found_partisans	= 10
+		massmedia = 10
+		disrupt_techteam = 10
 		country = GER
 	}
-	# Defaul Spy parms used for countries the AI is atwar with but has no specific entry
 	spyprefsdata = {
 		country_priorities	= 10
 		steal_blueprint 	= 2 # 6
@@ -172,18 +203,23 @@ spyprefs =
 # Construction and Tech Research
 ###################################
 construction = {
-	max_factor = 0.100
+	max_factor = 0.10
 
 	AA_batteries = atwar
-	max_AA_level = 4
+	max_AA_level = 6
 	AA_provs = {
+		141 # Muenster
+		145 # Essen
 		131  # Cologne
-		127  # Saarbruken
-		134 # Stuttgart
-		146  # Hannover
+		127 # Saarbrucken
+		138 # Frankfurt
+		177 # Nuremberg
+		134 # Suttgart
+		179 # Munich
 		173 # Dresden
-		138 # Frankfurt/Main
-		179 # Munchen
+		163 # Berlin
+		152 # Kiel
+		146  # Hannover
 	}
 
 	coastal_fort = no
@@ -192,7 +228,7 @@ construction = {
 		152 # Kiel
 	}
 
-	radar_station = no
+	radar_station = atwar
 	max_radar = 2
 	radar_provs = {
 		145 # Essen
@@ -201,24 +237,28 @@ construction = {
 		163 # Berlin
 		134 # Stuttgart
 		116 # Brussels
-		107 # Strasburg
-		109 # Luxemburg
-		127 # Saarbrucken
-		138 # Frankfurt/Main
+		122 # Amsterdam
+		#107 # Strasburg
+		#109 # Luxemburg
+		#127 # Saarbrucken
+		#138 # Frankfurt/Main
 	}
 
-	air_base = yes
+	air_base = atwar
 	max_air_base = 3
 	air_base_provs = {
+		126 # Aachen
 		145 # Essen
+		130 # Mainz
 	}
 
 	naval_base = no
 	max_naval_base = 5
 	naval_base_provs = { }
 
-	land_fort = yes
-	max_land_level = 2
+	land_fort = no #yes
+	max_land_level = 6
+
 	fort_provs	= {
 		#74  # Saarburken
 		#314 # Stuttgart
@@ -232,15 +272,17 @@ construction = {
 	IC_provs = {
 		127  # Saarburken
 		179 # Munchen
-		138 # Frankfurt/Main
+		163 # Berlin
 		131  # Cologne
 		134 # Stuttgart
 		146  # Hannover
 		173 # Dresden
-		163 # Berlin
+		138 # Frankfurt/Main
 	}
 
+	nuclear_reactor = yes
 	nuclear_reactor_prov = 172
+	max_nuclear = 10
 	rocket_test_prov = 162
 }
 
@@ -253,17 +295,17 @@ military = {
 	extra_convoys_peace		= 0.05
 
 	#### Divisions etc...
-	infantry 		= 37
+	infantry 		= 38
 	cavalry 		= 0
-	motorized 		= 9
-	mechanized 		= 8
+	motorized 		= 7
+	mechanized 		= 7
 	light_armor 	= 5
 	armor 			= 5
 	paratrooper 	= 0
 	marine 			= 0
 	bergsjaeger 	= 1
 	garrison		= 0
-    hq 				= 1
+    hq 				= 3
 	militia 		= 0
 #				66 %
 	interceptor 	= 10
@@ -278,8 +320,8 @@ military = {
 #				24 %
 	battleship 		= 0
 	carrier 		= 0
-	escort_carrier	= 0
-	destroyer 		= 5
+	escort_carrier	= 1
+	destroyer 		= 4
 	light_cruiser 	= 0
 	heavy_cruiser 	= 0
 	battlecruiser 	= 0
@@ -289,38 +331,65 @@ military = {
 #				10 %
 
 	#### Brigades
-	artillery 			= 20
-	sp_artillery 		= 8
+	artillery 			= 30
+	sp_artillery 		= 6
 	rocket_artillery	= 0
 	sp_rct_artillery 	= 0
-	anti_tank 			= 0
-	tank_destroyer 		= 5
+	anti_tank 			= 5
+	tank_destroyer 		= 2
 	light_armor_brigade = 2
-	heavy_armor 		= 5
+	heavy_armor 		= 0
 	super_heavy_armor 	= 0
 	armored_car 		= 0
-	anti_air 			= 7
-	police 				= 1
-	engineer 			= 0
+	anti_air 			= 5
+	police 				= 0
+	engineer 			= 5
 
-	cag = 100.000
-	light_cag = 100
+	cag 	= 100
+	escort	= 100
 
-	naval_asw = 10.0000 
-	naval_anti_air_s = 10.0000 
-	naval_radar_s = 10.0000 
-	naval_fire_controll_s = 10.0000 
-	naval_improved_hull_s = 0.0000 
-	naval_anti_air_l = 10.0000 
-	naval_radar_l = 10.0000 
-	naval_fire_controll_l = 10.0000 
-	naval_improved_hull_l = 0.0000 
-	naval_torpedoes_l = 0.0000
+	naval_asw				= 10	#20
+	naval_anti_air_s 		= 10	#20 
+	naval_radar_s 			= 10	#20 
+	naval_fire_controll_s 	= 20
+	naval_improved_hull_s 	= 0
+	naval_torpedoes_s 		= 0
+	naval_anti_air_l 		= 5		#0 
+	naval_radar_l 			= 5		#0
+	naval_fire_controll_l 	= 10	#0
+	naval_improved_hull_l 	= 0
 }
 
 technology = {
 	endgoal 	= { }
 	preference 	= {
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060
+
+		# Inf support
+		1310 1320 1330 1340 1350 1360
+
+		# Motorized Infantry
+		1230 1240 1250 10080 10090 10150
+
+		# Mechanized Infantry
+		1260 1270 1280 1290 10100 10110
+
+		# Light tanks
+		2020 2030 2040 2050 2060
+
+		# Medium tanks
+		2010 2070 2080 2090 11000 11010
+
+		# Field Artillery Support
+		2290 2300 2310 2320 2330 2340 2350 2360
+
+		# Interceptors
+		4010 4020 4030 4060 4090 15000 15010 15020
+		
+		# Tactical bombers 
+	    4120 4130 4140 4150 4160 15100 15110
+
 		# Tools
 		5050 5060 5070
 
@@ -330,115 +399,112 @@ technology = {
 		# Production Control
 		5110 5120
 
-		# Assembly Line
-		5130 5140 5160 5180
+		# Applied Assembly lines
+		5140 5150 5160 5170 5180
 
-		# Cryptography
+		# Computers
 		5310 5320 5330 5340
 
-		# Special Weapons
-		7140 7150 7160
-
-		#Infantry
-		1010 1020 1030 1040 1050 1060
-
-		# Inf support
-		1310 1320 1330 1340 1350 1360
-
-		# CAS
-		4170 4280 4180
-
-		# Medium tanks
-		2070 2080 2090
-
-		# Light tanks
-		2020 2030 2040 2050 2060
+		# Cryptography
+		5350 5360 5370 5380 5390 5400 13060
+		
+		# Radar
+		5410 5420
+		
+		# Electronic Computers
+		7140 7150 7160 16000 16040
+		
+		# Land Doctrines
+		6170 6200
 
 		# Submarines
 		#3400 3410 3420 3430 3440 3450
-
-		# Motorized
-		1230 1240 1250
-
-		# Mechanized
-		1260 1270 1280 1290
 
 		# Naval Doctrines
 		8210 8280 8290 8300
 
 		# Air Doctrines
 		9060 9080 9100 9110 9120 9130 9190 9200 9210 9220 9230 9240 9250 9260 9270 9280 9290 9300 9310 9320 9330 9340 9350 9360 9370 9380 9390 9400 9410 9420
-		
-		# Land Doctrines
-		6170 6200
 	}
 	ignore 		= {
-		# Assembly Line
-		5150 5170
-		
-		#EQUIPMENT Jungle/Desert
-		5940 5950 5960 5970
-		
-		# Strategic bombers
-		4220 4230 4240
-
-		# Battleship
-		3250 3260 3270 3280 3290 3300 3310
-		
-		# Carrier
-		#3320 3330 3340 3350 3360 3370 3380 3390
-
-		# Light Carrier
-		#12100 12110 12120 12130 12140 12150
-		
-		# Amphibious Warfare
-		82320 82330 #82300 82310
+		# Mountain
+		1140 10040 10050
 
 		# Marines
 		1150 1160 1170 1180
 
-		# Airborne 1070 1080
+		# Airborne Infantry
 		1090 1100
-
-		# Air Transports 4250
-		4260 4270
-
-		# SP Rocket Artillery
-		2260 2270 2280
-
-		# Rocket Artillery
-		2370 2380 2390
-
+		
 		# Armoured Cars
-		2150 2160
+		2150 2160 11110
 
-		# Strategic Air Doctrines 9140
-		9150 9160 9170 9180 9430 9440 9450 9460
+		# Air Transports
+		4250 4260 4270
+
+		# Strategic Bombers
+		4220 4230 4240 15160 15170
+
+		# Carrier Air Group
+		4900 4910 4920 4930
+		
+		# Destroyers 
+		3080
+
+		# Light Cruiser
+		3170
+
+		# Heavy Cruiser
+		3270
+
+		# Battleship
+		3250 3310
+		
+		# Carrier
+		3320 3330
+		
+		# Transport
+		3820 3830 3840
+		
+		# Light Carrier
+		12100
+
+		# Escort Fighters
+		4080 4110
+
+		# Nuclear
+		5490 5500 5510
+		
+		#EQUIPMENT Winter Jungle Desert Sturdy
+		5940 5950 5960 5970
+
+		# Strategic Destruction - Flying Armada
+		9140 9150 9160 9170 9180 9430 9440 9450 9460
 	}
 	
-	armor 		= 4 
-	infantry 	= 3
-	industry 	= 4
-	aircraft 	= 4
+	armor 		= 7
+	infantry 	= 5
+	industry 	= 6
+	aircraft 	= 6
 	naval 		= 3
-	land_doctrines 	= 2
-	secret_weapons 	= 1
-	air_doctrines 	= 4
+	land_doctrines 	= 7
+	secret_weapons 	= 2
+	air_doctrines 	= 5
 	naval_doctrines = 2
 }
 ###################################
 # Ground Combat, Leaders and Garrisons
 ###################################
 leader_ratio = {
-	land_field_marshal 	=0.02
-	land_general 		=0.031
-	land_lt_general 	=0.41
+	land_field_marshal 	= 0.04 # 0.02
+	land_general 		= 0.11 # 0.031
+	land_lt_general 	= 0.33 # 0.41
 
 	sea_grand_admiral 	=0.02
 	sea_admiral 		=0.061
 	sea_vice_admiral 	=0.401
 
-	air_marshal 		=0.02
+	air_marshal 		=0.05 # 0.02
 	air_general 		=0.091
 	air_lt_General 		=0.11
 }
@@ -446,16 +512,16 @@ garrison = {
 	defend_overseas_beaches = yes
 	home_multiplier 	= 1.0
 	overseas_multiplier 	= 1.0
-	home_peace_cap 		= 30
+	home_peace_cap 		= 20
 	war_zone_odds 		= 2.0
 	key_point_prio_mult	= 0.5
 	revolt_risk_mult	= 0.3
 
 	# PRIORITIES:
-	beach			= 0	# Beach level 2
+	beach			= 20	# Beach level 2
 	capital			= 40	# Our capital
 	human_border		= 0	# Ignored for allied human players
-	war_target		= 90	# The next country targeted for attack by this AI
+	war_target		= 50	# The next country targeted for attack by this AI
 
 	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
 	claim_threat		= 0	# If we are neutral, countries with claims on us get this
@@ -463,8 +529,8 @@ garrison = {
 
 	# Borders with specific countries
 	country_priorities = {
-		VIC = 70
-		U00 = 100
+		VIC = 100
+		U00 = 70
 		LIT = 10
 		SCA = 10
 		AUS = 10
@@ -473,7 +539,7 @@ garrison = {
 		RSI = 70
 		U10 = 50
 		SPA = 70
-		RUS = 100
+		RUS = 80
 		U06 = 60
 	}
 	ignore = {
@@ -561,10 +627,10 @@ air_marshal = {
 	groundattackdesirability 		= 40.0
 	inderdictiondesirability 		= 20.0
 	logisticalstrikedesirability 	= 2.0
-	runwaycrateringdesirability 	= 1.0
-	strategicstrikedesirability 	= 1.0
+	runwaycrateringdesirability 	= 10.0
+	strategicstrikedesirability 	= 10.0
 	installationstrikedesirability 	= 5.0
-	navalstrikedesirability 		= 55.0
+	navalstrikedesirability 		= 15.0
 	portstrikedesirability 			= 9.0
 	convoyraiddesirability			= 9.0
 
@@ -572,12 +638,12 @@ air_marshal = {
 	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
 	airsuperioritylosstolerance 	= 1.0
 	groundattacklosstolerance 		= 1.0
-	interdictionlosstolerance 		= 1.0
+	interdictionlosstolerance 		= 2.0
 	logisticalstrikelosstolerance 	= 0.5
 	runwaycrateringlosstolerance 	= 1.5
-	strategicstriketolerance 		= 0.5
+	strategicstriketolerance 		= 4.5
 	installationstriketolerance 	= 1.5
-	navalstriketolerance 			= 3.0
+	navalstriketolerance 			= 1.0
 	portstriketolerance 			= 1.0
 	convoyraidtolerance				= 1.0
 
@@ -600,19 +666,20 @@ air_marshal = {
 ###################################
 invasion = {
  	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
-	random		= 8.0	#How big a random range.  (1.0 = 1%)
-	coastal		= 0.1	#increase to avoid coastal forts more.
+	random		= 1.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.2	#increase to avoid coastal forts more.
 	beach		= 0.1	#higher, avoid worst beaches.
 	distance	= 0.1	#higher = avoid long distance.
-	max_distance    = 20.0  #About the distance from Rostock to Narvik
+	max_distance    = 100.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 100.0	# How far should the staging area be from the target invasion point	
 	pocket		= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island		= 0.1	#prioritise taking pure islands.
-	enemy		= 2.0	#higher = much more vary of troops in province.
-	adjacentenemy 	= 2.0	#higher = much more vary of troops nearby
+	enemy		= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 0.5	#higher = much more vary of troops nearby
 	air_base	= 1.5
-	naval_base 	= 0.1
-	air_support 	= 3.0
-	redirect 	= priority
+	naval_base 	= 1.0 
+	#air_support 	= 3.0 
+	#redirect 	= priority
 	ignore		= no
 	help_allies 	= no
 
@@ -625,7 +692,7 @@ invasion = {
 	}
 }
 admiral = {
-	min_org		= 90	# NEW: Percent of org gained back before the unit can leave port
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
 	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
 	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
 	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships

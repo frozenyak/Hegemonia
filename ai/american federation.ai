@@ -1,13 +1,12 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 neutrality = 100.000 
 war = 0
 desperation = 1.0
-strat_redeploy_threshold = 10
+strat_redeploy_threshold = 50
 max_redeploying = 0.10
 exp_force_ratio = 0.00
 exp_force_ratios = { }  

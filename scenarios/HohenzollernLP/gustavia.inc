@@ -4,6 +4,7 @@
 
 country =
 { tag                    = VEN
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
 #Medium Power
   energy                 = 500
   metal                  = 500
@@ -78,6 +79,7 @@ country =
 
 	##Land Doctrines - Grand Battle Plan##
 	6010 #Firepower Focus
+	14000 #Great War Hospital
 
 	##Naval Doctrines##
 	8010 #Decisive Battle

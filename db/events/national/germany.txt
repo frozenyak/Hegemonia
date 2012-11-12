@@ -23,6 +23,7 @@
 #35078 fate of netherlands
 #35080 fate of france
 #35082 fate of britain
+#35089 east roman empire
 #35102 hre restoration fails
 #35105 gcw colony support
 #
@@ -1323,7 +1324,7 @@ event = {
 	trigger = {
 		NOT = { flag = german_civil_war }
 		OR = {
-			war = { country = JAP country = CYN }
+			war = { country = JAP country = U74 }
 			war = { country = JAP country = CHI }
 		}
 	}
@@ -1342,7 +1343,7 @@ event = {
 		ai_chance = 25
 		command = { type = relation which = JAP value = 25 }
 		command = { type = relation which = CHI value = -50 }
-		command = { type = relation which = CYN value = -50 }
+		command = { type = relation which = U74 value = -50 }
 		command = { type = domestic which = interventionism value = -1 }
 	}
 	action = {
@@ -1352,7 +1353,7 @@ event = {
 		command = { type = dissent value = 2 }
 		command = { type = relation which = JAP value = 100 }
 		command = { type = relation which = CHI value = -200 }
-		command = { type = relation which = CYN value = -200 }
+		command = { type = relation which = U74 value = -200 }
 		command = { type = domestic which = interventionism value = 1 }
 	}
 	action = {
@@ -1360,7 +1361,7 @@ event = {
 		ai_chance = 50
 		command = { type = relation which = JAP value = -100 }
 		command = { type = relation which = CHI value = 50 }
-		command = { type = relation which = CYN value = 50 }
+		command = { type = relation which = U74 value = 50 }
 		command = { type = setflag which = GER_condemn_JAP }
 	}
 }
@@ -1925,7 +1926,10 @@ event = {
 				NOT = { war = { country = VIC } }
 				owned = { province = 122 }
 			}
-			region = { region = "Benelux" }
+			AND = {
+				region = { region = "Benelux" }
+				control = { province = 52 } #lille
+			}
 		}
 	}
 
@@ -1990,7 +1994,7 @@ event = {
 				area = { area = "Paris" }
 			}
 		}
-		NOT = { war = { country = SPA } }
+		atwar = no
 	}
 
 	name = "The Fate of France"
@@ -2006,8 +2010,8 @@ event = {
 		name = "Create a new French State"
 		ai_chance = 40
 		command = { trigger = { government = fascist } type = addclaim which = 96 } #longwy
-		command = { trigger = { government = fascist } type = addclaim which = 108 } #liege
-		command = { trigger = { government = fascist } type = addclaim which = 111 } #arlon
+		#command = { trigger = { government = fascist } type = addclaim which = 108 } #liege
+		#command = { trigger = { government = fascist } type = addclaim which = 111 } #arlon
 		command = { trigger = { NOT = { government = fascist } } type = removeclaim which = 106 }
 		command = { type = independence which = FRA value = 1 }
 		command = { type = make_puppet which = FRA }
@@ -2031,17 +2035,24 @@ event = {
 		command = { type = independence which = U04 value = 1 }
 		command = { type = make_puppet which = U04 }
 		command = { type = alliance which = U04 }
-		command = { trigger = { government = fascist } type = trigger which = 79002 }
-		command = { trigger = { NOT = { government = fascist } } type = trigger which = 79003 }
+		#command = { trigger = { government = fascist } type = trigger which = 79002 }
+		#command = { trigger = { NOT = { government = fascist } } type = trigger which = 79003 }
+		command = { trigger = { government = fascist } type = name where = U04 which = "u04_roy" }
+		#
+		command = { type = independence which = WLL value = 1 }
+		command = { type = make_puppet which = WLL }
+		command = { type = alliance which = WLL }
+		#
 		command = { trigger = { government = fascist } type = addclaim which = 96 } #longwy
-		command = { trigger = { government = fascist } type = addclaim which = 108 } #liege
-		command = { trigger = { government = fascist } type = addclaim which = 111 } #arlon
+		#command = { trigger = { government = fascist } type = addclaim which = 108 } #liege
+		#command = { trigger = { government = fascist } type = addclaim which = 111 } #arlon
 		command = { trigger = { NOT = { government = fascist } } type = removeclaim which = 106 }
+		#
 		command = { type = independence which = FRA value = 1 }
 		command = { type = make_puppet which = FRA }
 		command = { type = alliance which = FRA }
-		command = { trigger = { government = fascist } type = trigger which = 79000 }
-		command = { trigger = { NOT = { government = fascist } } type = trigger which = 79001 }
+		#command = { trigger = { government = fascist } type = trigger which = 79000 }
+		#command = { trigger = { NOT = { government = fascist } } type = trigger which = 79001 }
 		command = { trigger = { government = fascist } type = flag_ext where = FRA which = "_ger" }
 	}
 	action = { trigger = { ai = yes }
@@ -2252,10 +2263,42 @@ event = {
 			flag = U00_retreat
 			NOT = { exists = U00 }
 		}
-		control = { province = 377 data = -1 } #Athens
+		#control = { province = 377 data = -1 } #Athens
 		control = { province = 409 data = -1 } #Istanbul
-		control = { province = 1075 data = -1 } #Ankara
+		#control = { province = 1075 data = -1 } #Ankara
+		region = { region = "Anatolia" value = 50 }
 		NOT = { flag = GER_east_roman_empire }
+		#
+		#wait until partition events are done
+		#event = 2022023
+		OR = {
+			AND = {
+				alliance = { country = AUS }
+				event = 2022024
+			}
+			NOT = { alliance = { country = AUS } }
+		}
+		OR = {
+			AND = {
+				alliance = { country = LIT }
+				event = 2022025
+			}
+			NOT = { alliance = { country = LIT } }
+		}
+		OR = {
+			AND = {
+				alliance = { country = RUS }
+				event = 2022026
+			}
+			NOT = { alliance = { country = RUS } }
+		}
+		OR = {
+			AND = {
+				alliance = { country = SCA }
+				event = 2022027
+			}
+			NOT = { alliance = { country = SCA } }
+		}
 	}
 
 	name = "The East Roman Empire"
@@ -2277,7 +2320,7 @@ event = {
 		command = { type = belligerence value = -30 }
 		command = { type = relation which = U02 value = 200 }
 		#command = { type = non_aggression which = U02 }
-		#command = { type = independence which = U09 value = 1 }
+		#command = { type = independence which = URO value = 1 }
 		command = { type = secederegion which = U02 value = "Anatolia" when = 0 }
 		command = { type = secedearea which = U02 value = "Thrace" when = 0 }
 		command = { type = secedearea which = U02 value = "Palestine" when = 1 }
@@ -2363,7 +2406,7 @@ event = {
 
 	action = {
 		name = ACTION_NAME_GREAT
-		#command = { type = independence which = U09 value = 1 }
+		#command = { type = independence which = URO value = 1 }
 		command = { type = secederegion which = U02 value = "Anatolia" when = 0 }
 		command = { type = secedearea which = U02 value = "Palestine" when = 0 }
 		command = { type = secedearea which = U02 value = "Lebanon_Syria" when = 0 }

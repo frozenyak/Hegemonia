@@ -31,9 +31,9 @@ teams_con.csv
 #teams_cos.csv
 teams_cro.csv
 #teams_csa.csv
-#teams_csx.csv
+teams_csx.csv
 teams_cub.csv
-#teams_cxb.csv
+teams_cxb.csv
 teams_cyn.csv
 teams_cyp.csv
 teams_cze.csv
@@ -179,7 +179,7 @@ teams_U70.csv
 #teams_U71.csv
 teams_U72.csv
 teams_U73.csv
-#teams_U74.csv
+teams_U74.csv
 teams_U75.csv
 teams_U76.csv
 #teams_U77.csv
@@ -230,7 +230,7 @@ teams_uzb.csv
 teams_ven.csv
 teams_vic.csv
 teams_vie.csv
-#teams_wll.csv
+teams_wll.csv
 #teams_yem.csv
 teams_yug.csv
 teams_U00.csv
@@ -242,7 +242,7 @@ teams_U05.csv
 teams_U06.csv
 teams_U07.csv
 teams_U08.csv
-#teams_U09.csv
+teams_U09.csv
 teams_U10.csv
 #teams_U11.csv
 #teams_U12.csv

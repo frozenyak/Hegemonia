@@ -1,7 +1,6 @@
 # Communist China 1936 AI File by Lothos
 
 switch = no # [yes/no]
-flags = { RES = yes MOB2 = yes reinf = yes }
 max_front_ratio = 1.2 
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
@@ -27,21 +26,20 @@ liberate = { }
 # Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
 resistance = {  
 	CHI = 6
-	CYN = 6
-	U00 = 2
+	U74 = 6
+	RUS = 5
 	JAP = 6
 	ENG = 6
-	RUS = 6
-	VIC = 1
 	USA = 6
 	MEX = 6
 	ITA = 5
 	U14 = 5
+	GER = 6
 }
 befriend = {
-	}
+}
 protect = {
-	}
+}
 target = {
 	#Japan 
 	1552 = 100
@@ -180,7 +178,7 @@ tech_sharing = {
 		5150 = 100
 		5180 = 100
 
-		# Mountain Unit techs
+		# Light / Mountain
 		1110 = 100
 		1120 = 100
 		1130 = 100
@@ -222,7 +220,7 @@ spyprefs =
 		found_partisans 	= 2
 		massmedia 			= 1
 		disrupt_techteam	= 5
-		country 			= U87
+		country 			= CHI
 	}
 	spyprefsdata = {
 		country_priorities	= 7
@@ -236,6 +234,19 @@ spyprefs =
 		massmedia 			= 0
 		disrupt_techteam	= 0
 		country 			= JAP
+	}
+	spyprefsdata = {
+		country_priorities	= 3
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans 	= 2
+		massmedia 			= 1
+		disrupt_techteam	= 5
+		country 			= U74
 	}
 }
 ###################################
@@ -286,9 +297,12 @@ military = {
 	max_batch_peace 		= 680 
 	max_batch_war 			= 500 
 	max_batch_home_front 	= 500
+        extra_convoys_war = 0.0000 
+        extra_convoys_peace = 0.0000 
+
 
 	#### Divisions etc...
-	infantry 		= 20
+	infantry 		= 10
 	cavalry 		= 0
 	motorized 		= 0
 	mechanized 		= 0
@@ -299,7 +313,7 @@ military = {
 	bergsjaeger 	= 10
 	garrison		= 0
     hq 				= 0
-	militia 		= 70
+	militia 		= 80
 #				100 %
 	interceptor 	= 0
 	multi_role 		= 0
@@ -324,7 +338,7 @@ military = {
 #				0 %
 
 	#### Brigades
-	artillery 			= 20
+	artillery 			= 35
 	sp_artillery 		= 0
 	rocket_artillery	= 0
 	sp_rct_artillery 	= 0
@@ -334,22 +348,23 @@ military = {
 	heavy_armor 		= 0
 	super_heavy_armor 	= 0
 	armored_car 		= 0
-	anti_air 			= 10
+	anti_air 			= 0
 	police 				= 0
 	engineer 			= 10
 
 	cag = 100.000 
+	    escort = 0.0000
 
-	naval_asw = 10.0000 
-	naval_anti_air_s = 10.0000 
-	naval_radar_s = 10.0000 
-	naval_fire_controll_s = 10.0000 
-	naval_improved_hull_s = 0.0000 
-	naval_anti_air_l = 0.0000 
-	naval_radar_l = 0.0000 
-	naval_fire_controll_l = 10.0000 
-	naval_improved_hull_l = 0.0000 
-	naval_torpedoes_l = 0.0000
+            naval_asw = 0.0000 
+            naval_anti_air_s = 0.0000 
+            naval_radar_s = 0.0000 
+            naval_fire_controll_s = 0.0000 
+			naval_improved_hull_s = 0.0000 
+            naval_torpedoes_s = 0.0000 
+			naval_anti_air_l = 0.0000 
+			naval_radar_l = 0.0000 
+            naval_fire_controll_l = 0.0000 
+			naval_improved_hull_l = 0.0000 
 }
 
 technology = { 
@@ -494,22 +509,24 @@ garrison = {
 		SOV = -1
 		U00 = -1
 		VIC = -1
-		FRA = -1
 		MON = -1
 		TIB = -1
 		NEP = -1
 		AFG = -1
+		FRA = -1
 		ENG = -1
 		POR = -1
-		JAP = 50
-		CHI = -1
-		MAN = 20
-		CSX = -1
-		SIK = -1
-		CXB = -1
-		CYN = -1
-		CGX = -1
-		TUR = -1
+		JAP = 150
+		CHI = 50
+		MAN = 70
+		CSX = 10
+		CXB = 10
+		CYN = 10
+		CGX = 10
+		TUR = 10
+		U74 = 50
+		GER = -1
+		RUS = -1
 	}
 	province_priorities = {
 		1259 = 30 #Yan'an

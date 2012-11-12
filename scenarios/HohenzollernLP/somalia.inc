@@ -5,6 +5,7 @@
 country =
 { tag                    = SOM
   #puppet		 = EGY
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
   #industrial_modifier	 = 1.00
   #relative_manpower	 = 2.00
 #Minor Power

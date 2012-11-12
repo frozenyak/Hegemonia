@@ -5,6 +5,8 @@
 #38050 fate of netherlands
 #38051 fate of france
 #38052 fate of occitania
+#38060 fate of greece
+#38061 greek plebiscite
 
 event = {
 	id = 38014
@@ -589,7 +591,6 @@ event = {
 	}
 }
 
-
 event = {
 	id = 38050
 	country = SPA
@@ -610,6 +611,7 @@ event = {
 		area = { area = "Netherlands" }
 		NOT = { war = { country = VIC } }
 		NOT = { war = { country = GER } }
+		atwar = no
 	}
 
 	name = "The Fate of the Netherlands"
@@ -670,8 +672,7 @@ event = {
 				area = { area = "Paris" }
 			}
 		}
-		NOT = { war = { country = GER } }
-		NOT = { war = { country = DFR } }
+		atwar = no
 	}
 
 	name = "The Fate of France"
@@ -765,5 +766,92 @@ event = {
 		command = { type = secedearea which = FRA value = Alpes_Provence when = 1 }
 		command = { type = secedearea which = FRA value = Limousin_Auvergne when = 1 }
 		command = { type = secedearea which = FRA value = Pyrenees_Languedoc when = 1 }
+	}
+}
+
+event = {
+	id = 38060
+	country = SPA
+	
+	trigger = {
+		NOT = { exists = U00 }
+		owned = { province = 409 }
+		NOT = { war = { country = U02 } }
+		NOT = { alliance = { country = U02 } }
+		region = { region = "Anatolia" value = 50 }
+	}
+
+	name = "The Fate of Greece"
+	desc = "The Union of Rome has been defeated and we are now in control of Constantinople and most of the country. The cabinet has presented several options to deal with our defeated enemy."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		trigger = { government = democratic }
+		name = "Hold a plebiscite in Greece"
+		ai_chance = 50
+		command = { type = setflag which = GRE_plebiscite }
+	}
+	action = { 
+		trigger = { 
+			exists = U02
+		}
+		name = "Restore Greece to the Emperor"
+		ai_chance = 20
+		command = { type = secederegion which = U02 value = "Anatolia" when = 1 }
+		command = { type = sleepevent which = 38061 }
+		command = { type = relation which = U02 value = 150 }
+	}
+	action = {
+		name = "Create a Greek Republic"
+		ai_chance = 30
+		command = { type = independence which = GRE value = 1 }
+		command = { type = alliance which = GRE }
+		command = { type = sleepevent which = 38061 }
+		command = { type = relation which = GRE value = 50 }
+		command = { trigger = { alliance = { country = ARA } } type = secederegion which = ARA value = "Middle East" when = 1 }
+		command = { type = secederegion which = GRE value = "Middle East" when = 1 }
+	}
+}
+
+event = {
+	id = 38061
+	country = SPA
+	one_action = yes
+	
+	trigger = {
+		flag = GRE_plebiscite
+	}
+
+	name = "Plebiscite in Greece"
+	desc = "The Greek people have been asked to decide on their future: A free Republic, or the restoration of the Emperor. The polls predict a close race; the outcome can go either way. The results are coming in and.."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Greeks voted for a Republic"
+		ai_chance = 50
+		command = { type = independence which = GRE value = 1 }
+		command = { type = alliance which = GRE }
+		command = { type = relation which = GRE value = 100 }
+		command = { trigger = { alliance = { country = ARA } } type = secederegion which = ARA value = "Middle East" when = 1 }
+		command = { type = secederegion which = GRE value = "Middle East" when = 1 }
+	}
+	action = { 
+		trigger = { exists = U02 }
+		name = "Greeks voted for the Emperor"
+		ai_chance = 50
+		command = { type = secederegion which = U02 value = "Anatolia" when = 1 }
+		command = { type = relation which = U02 value = 100 }
+		command = { trigger = { alliance = { country = ARA } } type = secederegion which = ARA value = "Middle East" when = 1 }
+		command = { type = secederegion which = U02 value = "Middle East" when = 1 }
 	}
 }

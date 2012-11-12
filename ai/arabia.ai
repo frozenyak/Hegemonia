@@ -1,13 +1,13 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes }
+neutrality = 150.000 
+war = 0
+strat_redeploy_threshold = 50
 
 ###################################
 # Diplomacy
 ###################################
-war = 0
-neutrality = 150.000 
 claim_acceptance = -49
 
 combat = {

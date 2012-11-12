@@ -501,7 +501,7 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_HURRAH"
-		#command = { type = inherit which = U09 }
+		#command = { type = inherit which = URO }
 		command = { type = belligerence value = -30 }
 		command = { type = relation which = GER value = 200 }
 		command = { type = non_aggression which = GER }
@@ -566,7 +566,7 @@ event = {
 
 	action = {
 		name = "A high price..."
-		#command = { type = inherit which = U09 }
+		#command = { type = inherit which = URO }
 		command = { type = secedearea which = GER value = "Western Ghat" when = 1}
 	}
 }

@@ -53,7 +53,7 @@ ROM;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 22084;Foreign Minister;Iuliu Hossu;38;SD;Great Compromiser;Medium;M22084;x
 22085;Foreign Minister;Ion Antonescu;40;NS;General Staffer;Medium;M22012;x
 22086;Foreign Minister;Georges Oprescu;38;SD;Biased Intellectual;Medium;M22086;x
-22087;Minister of Armament;Virgil Madgearu;38;SL;Administrative Genius;Medium;M22087;x
+22087;Minister of Armament;Virgil Madgearu;38;SL;Balanced budget economy;Medium;M22087;x
 22088;Minister of Armament;Caius Brediceanu;38;PA;laissez-faire capitalist;High;M22088;x
 22089;Minister of Armament;Constantin Bratianu;39;SL;Resource Industrialist;High;M22004;x
 22091;Minister of Armament;Iuliu Maniu;39;SC;Administrative Genius;Medium;M22055;x
@@ -63,7 +63,7 @@ ROM;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 22095;Minister of Armament;Nicolae Stoenescu;44;PA;Tank Proponent;Medium;M22095;x
 22096;Minister of Armament;Mihail Racovitza;44;SC;Infantry Proponent;High;M22096;x
 22097;Minister of Armament;Constantin Papanace;43;NS;Administrative Genius;Low;M22014;x
-22098;Minister of Armament;Vasile Luca;45;ST;Administrative Genius;High;M22024;x
+22098;Minister of Armament;Vasile Luca;45;ST;Planned economy proponent;High;M22024;x
 22099;Minister of Security;Armand Calinescu;38;SL;Prince of Terror;High;M22043;x
 22100;Minister of Security;Cesare Vaida-Voievod;36;PA;Crime Fighter;Medium;M22100;x
 22101;Minister of Security;Ion Mihalache;39;SL;Man of the People;Low;M22101;x

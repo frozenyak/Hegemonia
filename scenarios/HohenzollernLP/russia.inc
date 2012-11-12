@@ -4,7 +4,8 @@
 
 country =
 { tag                    = RUS
-  ai = "russia.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "russia.ai"
   capital                = 572
   dissent		 = 5
 #Great Power
@@ -22,7 +23,7 @@ country =
   peacetime_ic_mod = 0.6
 	diplomacy =
   {
-    relation = { tag = CYN value = 25 }
+    relation = { tag = U74 value = 25 }
     relation = { tag = U03 value = 75 guaranteed = { day = 4 month = december year = 1933 } }
     relation = { tag = TUR value = 25 guaranteed = { day = 4 month = december year = 1933 } }
     relation = { tag = FIN value = 50 }
@@ -75,7 +76,7 @@ country =
 		#rostov
 		#644
 		#
-		1113 #710 696
+		588 1113 #710 696
 	}
 	ownedprovinces = {  
 		1191 1193 1192 1196 1195 1190 1187 1188 1175 1174  1189 1176 1180     1181 1182 1183 1184

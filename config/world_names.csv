@@ -28,7 +28,7 @@ BUR;Burma;Birmanie;Birmania;Birmania;Burma;Birma;;Áèğìà;;;X
 CAL;California;Californie;California;California;Kalifornien;Kalifornia;;Êàëèôîğíèÿ;;;X
 CAM;Cameroon;Cameroun;Camerun;Camerún;Kamerun;Kamerun;;Êàìåğóí;;;X
 CAN;Vinland;Vinland;Vinland;Vinland;Vinland;Winlandia;;;;;X
-CGX;Guangxi Clique;Clan Guangxi;Clicca Guangxi;Camarilla de Guangxi;Guangxi Clique;Kliknij Guangxi;;Êëèêà Ãóàíñè;;;X
+CGX;Guangxi;Clan Guangxi;Clicca Guangxi;Camarilla de Guangxi;Guangxi Clique;Kliknij Guangxi;;Êëèêà Ãóàíñè;;;X
 CHC;Communist China;Chine Communiste;Cina comunista;China Comunista;Rotchina;Kom. Chiny;;Êîììóí. Êèòàé;;;X
 CHI;Nationalist China;Chine Nationaliste;Cina Nazionalista;China Nacionalista;Nationalchina;Nacj. Chiny;;Íàö. Êèòàé;;;X
 CHL;Asmunakal;Asmunakal;Asmunakal;Asmunakal;Asmunakal;Asmunakal;;;;;X
@@ -38,10 +38,10 @@ CON;Congo;Congo;Congo;El Congo;Kongo;Kongo;;Êîíãî;;;X
 COS;Costa Rica;Costa Rica;Costa Rica;Costa Rica;Costa Rica;Kostaryka;;Êîñòà-Ğèêà;;;X
 CRO;Croatia;Croatie;Croazia;Croacia;Kroatien;Chorwacja;;Õîğâàòèÿ;;;X
 CSA;Confederate States;Etats confédérés;Stati Confederati;Estados Confederados;Konföderierte Staaten;Konfederacja;;Êîíôåäåğàòèâíûå øòàòû;;;X
-CSX;Shanxi Clique;Clan Shanxi;Clicca Shanxi;Camarilla de Shanxi;Shanxi Clique;Kliknij Shanxi;;Øàíüñè;;;X
+CSX;Shanxi;Clan Shanxi;Clicca Shanxi;Camarilla de Shanxi;Shanxi Clique;Kliknij Shanxi;;Øàíüñè;;;X
 CUB;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;Tarrbitz;;;;;X
-CXB;San Ma Clique;Clan San Ma;Clicca San Ma;Camarilla de San Ma;San Ma Clique;Kliknij San Ma;;Ñåâåğîçàï. çåìëè Ìà;;;X
-CYN;Yuan China;Chine Yuan;Cina Yuan;China Yuan;Yuan China;Yuan Chiny;;;;;X
+CXB;Qinghai;Clan San Ma;Clicca San Ma;Camarilla de San Ma;San Ma Clique;Kliknij San Ma;;Ñåâåğîçàï. çåìëè Ìà;;;X
+CYN;Yunnan;Clan Yunnan;Cricca Yunnan;Camarilla de Yunnan;Yunnan Clique;Kliknij Yunnan;;Şíüíàíü;;;X
 CYP;Cyprus;Chypre;Cipro;Chipre;Zypern;Cypr;;Êèïğ;;;X
 CZE;Bohemia;Bohême;Boemia;Bohemia;Böhmen;Czechy;;;;;X
 DDR;Worker's Union of Germany;RDA;DDR;RDA;DDR;NRD;;;;;X
@@ -176,7 +176,7 @@ U05;Jadakal Empire;Jadakal;Jadakal;Jadakal;Jadakal;Jadakal;;;;;X
 U06;Occitania;Occitanie;Occitania;Occitania;Okzitanien;Oksytania;;;;;X
 U07;African Union;Union africaine;Unione Africana;Unión Africana;Afrikanische Union;Unia Afrykanska;;;;;X
 U08;Südostasien;Südostasien;Südostasien;Südostasien;Südostasien;Südostasien;;;;;X
-U09;Roman Empire;Empire romain;Impero romano;Imperio Romano;Römisches Reich;Cesarstwo rzymskie;;;;;X
+U09;German-Austria;Autriche allemande;Austria tedesca;Austria Alemana;Deutsch-Österreich;Niemieckiej Austrii;;Àâñòğèÿ;;;X
 U10;Batavian Socialist Republic;République socialiste batave;Republicca Socialista Batava;República Socialista Bátava;Sozialistische Batavische Republik;Socjalistyczna Republika Batawska;;;;;X
 U11;Awadh;Paramétrable;Definito dall'utente;Def. por usuario;Benutzerdefiniert;Zdefiniowane przez u¿ytkownika;;;;;X
 U12;Free City of Danzig;Ville Libre de Dantzig;Città Libera di Danzica;Ciudad Libre de Danzig;Freie Stadt Danzig;Wolne Miasto Gdañsk;;Âîëüíûé ãîğîä Äàíöèã;;;X
@@ -239,7 +239,7 @@ U70;Uganda;Ouganda;Uganda;Uganda;Uganda;Uganda;;Óãàíäà;;;X
 U71;Northern Ireland;Irlande du Nord;Irlanda del Nord;Irlanda del Norte;Nordirland;Irlandia Pólnocna;;Ñåâåğíàÿ Èğëàíäèÿ;;;X
 U72;Democratic Republic of Vietnam;République Démocratique du Vietnam;Repubblica Democratica del Vietnam;República Democrática de Vietnam;Demokratische Republik Vietnam;Demokratyczna Republika Wietnamu;;Äåìîêğàòè÷åñêàÿ Ğåñïóáëèêà Âüåòíàì;;;X
 U73;England;Angleterre;Inghilterra;Inglaterra;England;Anglia;;Àíãëèÿ;;;X
-U74;Imperial China;Chine Impériale;Cina imperiale;China Imperial;Imperiales China;Cesarstwo Chiñskie;;Èìïåğñêèé Êèòàé;;;X
+U74;Imperial Yuan China;Chine Impériale Yuan;Cina imperiale Yuan;China Imperial Yuan;Imperiales Yuan China;Cesarstwo Yuan Chiñskie;;Èìïåğñêèé Êèòàé;;;X
 U75;Singapore;Singapour;Singapore;Singapur;Singapur;Singapur;;Ñèíãàïóğ;;;X
 U76;Wales;Pays de Galles;Galles;Gales;Wales;Walia;;Óıëüñ;;;X
 U77;Greater Colombia;Grande Colombie;Gran Colombia;Gran Colombia;Großkolumbien;Wielka Kolumbia;;Âåëèêàÿ Êîëóìáèÿ;;;X
@@ -278,7 +278,7 @@ UIR;Indian Republic;République Indienne;Repubblica Indiana;República India;Indis
 UPE;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;;Òóğêåñòàí;;;X
 UPR;Prussia;Prusse;Prussia;Prusia;Preußisches Königreich;Prusy;;Ïğóññèÿ;;;X
 UPS;PRRS;RPSL;Repubblica Popolare del Sol Levante;PRRS;VR der aufgehenden Sonne;PRRS;;ÍĞÂÑ;;;X
-URO;Roma;Rome;Repubblica Socialista Romana;Roma;Römische Sozialrepublik;Pañstwo Rzymskie;;Ğèì;;;X
+URO;Roman Empire;Empire romain;Impero romano;Imperio Romano;Römisches Reich;Cesarstwo rzymskie;;;;;X
 USN;USNA;EUAN;Stati Uniti del Nord America;EE.UU.;USNA;USNA;;ÑÀÑØ;;;X
 UTC;Volunteer Army;Armée des volontaires;Armata dei Volontari;Ejército de Voluntarios;Freiwilligenarmee;Armia Ochotnicza;;Äîáğîâîëü÷åñêàÿ àğìèÿ;;;X
 UTL;The Libertadores;Les Libertadores;I Libertadores;Los Libertadores;Südamerikan. Gemeinschaft;Libertadores;;Ëèáåğòàäîğåñ;;;X

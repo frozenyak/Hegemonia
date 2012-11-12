@@ -4,6 +4,63 @@ combat = {
 	TIB = 100
 }
 
+military = { 
+	relative_build_scheme 	= yes 
+	max_batch_peace 	= 360 
+	max_batch_war 		= 180 
+	max_batch_home_front 	= 180
+
+	#### Divisions etc...
+	infantry 	= 30
+	cavalry 		= 0
+	motorized 	= 5
+	mechanized 	= 4
+	light_armor 		= 0
+	armor 		= 6
+	paratrooper 		= 0
+	marine 		= 2
+	bergsjaeger 	= 2
+	garrison	= 5
+      	hq 		= 3
+	militia 		= 0
+#				57 %
+	interceptor 	= 4
+	multi_role 	= 3
+	cas 		= 3
+	strategic_bomber = 2
+	tactical_bomber = 7
+	naval_bomber 	= 2
+	transport_plane 	= 0
+	flying_bomb 		= 0
+	flying_rocket 		= 0
+#				18 %
+	battleship 		= 0
+	carrier 	= 0
+	destroyer 	= 8
+	light_cruiser 	= 4
+	heavy_cruiser 	= 3
+	battlecruiser 		= 0
+	submarine 	= 4
+	transports 	= 3
+#				22 %
+
+	#### Brigades
+	artillery 		= 20
+	sp_artillery 		= 5
+	cavalry_brigade	= 5 
+	sp_anti_air 	= 5
+	medium_armor 		= 8
+	tank_destroyer 		= 8
+	light_armor_brigade 	= 6
+	heavy_armor 		= 5
+	super_heavy_armor 	= 3
+	armored_car 		= 15
+	anti_air 		= 5
+	police 			= 10	
+	engineer 		= 5 
+
+	cag = 100.000 
+}
 technology = { 
 	endgoal = { } 
 	preference = {

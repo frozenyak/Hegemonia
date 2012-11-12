@@ -14,10 +14,10 @@ allowed_brigades =  super_heavy_armor
 allowed_brigades =  engineer
 #allowed_brigades =  police
 
-upgrade = { type = infantry upgrade_time_factor = 0.24 upgrade_cost_factor = 0.46 }
-upgrade = { type = motorized upgrade_time_factor = 0.29 upgrade_cost_factor = 0.66 }
-upgrade = { type = mechanized upgrade_time_factor = 0.7 upgrade_cost_factor = 0.66 }
-#upgrade = { type = armor upgrade_time_factor = 1 upgrade_cost_factor = 0.81 }
+upgrade = { type = infantry		upgrade_time_factor = 0.19	upgrade_cost_factor = 1.16 }
+upgrade = { type = motorized	upgrade_time_factor = 0.23	upgrade_cost_factor = 0.96 }
+upgrade = { type = mechanized	upgrade_time_factor = 0.56	upgrade_cost_factor = 0.39 }
+#upgrade = { type = armor		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.36 }
 
 # 0 - Early Light Armored Division (1936)
 model = {

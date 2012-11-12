@@ -6,6 +6,7 @@ country =
 { tag                    = ARA
 	flag_ext = _com
   puppet		 = U00
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
   #industrial_modifier	 = 0.85
   #relative_manpower	 = 1.50
 #Medium Power

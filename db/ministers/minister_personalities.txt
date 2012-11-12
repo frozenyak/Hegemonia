@@ -1514,7 +1514,7 @@
 	}
 
 	minister =  {
-		trait		= "Despotic Autocrat" # Amir II (CYN)
+		trait		= "Despotic Autocrat" # Amir II (U74)
 		id			= 99
 		name		= NPERSONALITY_DESPOTIC_AUTOCRAT
 		desc		= DPERSONALITY_DESPOTIC_AUTOCRAT
@@ -1919,6 +1919,19 @@
 	}
 	
 	minister =  { 
+		trait		= "Quex"	#Hugh Sinclair
+		id			= 141
+		name		= NPERSONALITY_SINCLAIR
+		desc		= DPERSONALITY_SINCLAIR
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = detection which = navy value = 0.1500 }
+		command		= { type = detection which = land value = 15 }
+		command		= { type = intelligence_report which = navy value = 1 }
+		command		= { type = intelligence_report which = land value = 1 }
+	}	
+	
+	minister =  { 
 		trait		= "The Pacifier"	#Arthur Neville Chamberlain prime minister
 		id			= 143
 		name		= NPERSONALITY_CHAMBERLAIN
@@ -2073,7 +2086,7 @@
 		command		= { type = production which = consumer value = 0.0250 }		
 	}
 
-	minister =  { 				#"Michail N. Tukhachevsky"
+	minister =  { 				#Mikhail N. Tukhachevsky
 		trait		= "Deep Battle Proponent"
 		id			= 153
 		name		= NPERSONALITY_DEEPBATTLEDOCTRINE
@@ -2259,7 +2272,7 @@
 	# UCH - CGX
 	minister =  {
 		trait		= "Cen Chenxuan" #Cen Chenxuan
-		id			= 13311202
+		id			= 171
 		name		= NPERSONALITY_CEN_CHENXUAN
 		desc		= DPERSONALITY_CEN_CHENXUAN
 		position	= HeadOfState
@@ -2272,7 +2285,7 @@
 	# CHI - NPA
 	minister =  {
 		trait		= "Cai E" #Cai E
-		id			= 13311100
+		id			= 172
 		name		= NPERSONALITY_CAI_E
 		desc		= DPERSONALITY_CAI_E
 		position	= HeadOfState
@@ -2292,7 +2305,7 @@
 	# CHI - CPM
 	minister =  {
 		trait		= "Sun Zhongshan_1" #Sun Zhongshan
-		id			= 13311101
+		id			= 173
 		name		= NPERSONALITY_SUN_ZHONGSHAN
 		desc		= DPERSONALITY_SUN_ZHONGSHAN
 		position	= HeadOfState
@@ -2307,7 +2320,7 @@
 	
 	minister =  {
 		trait		= "Sun Zhongshan_2" #Sun Zhongshan
-		id			= 13311102
+		id			= 174
 		name		= NPERSONALITY_SUN_ZHONGSHAN
 		desc		= DPERSONALITY_SUN_ZHONGSHAN
 		position	= HeadOfGovernment
@@ -2324,7 +2337,7 @@
 	# UCH - CFT Fengtian Clique
 	minister = {
 		trait		= "Wu_Peifu" #Wu Peifu
-		id			= 13311300
+		id			= 175
 		name		= NPERSONALITY_WU_PEIFU
 		desc		= DPERSONALITY_WU_PEIFU
 		position	= ChiefofArmy
@@ -2344,7 +2357,7 @@
 
 	minister = {
 		trait		= "Cao_Kun" #Cao_Kun
-		id			= 13311301
+		id			= 176
 		name		= NPERSONALITY_CAO_KUN
 		desc		= DPERSONALITY_CAO_KUN
 		position	= HeadOfState
@@ -2364,7 +2377,7 @@
 
 	minister =  {
 		trait		= "mad baron" #Ungern von Sternberg (MON)
-		id			= 1106
+		id			= 1181
 		name		= NPERSONALITY_MAD_BARON
 		desc		= DPERSONALITY_MAD_BARON
 		position	= headofstate
@@ -2388,7 +2401,7 @@
 
 	minister =  {
 		trait		= "radical demagogue" #Togliatti (RSI/U00), Faure (FRA/VIC)
-		id			= 1108
+		id			= 1183
 		name		= NPERSONALITY_RADICAL_DEMAGOGUE
 		desc		= DPERSONALITY_RADICAL_DEMAGOGUE
 		position	= headofstate
@@ -2403,7 +2416,7 @@
 
 	minister =  {
 		trait		= "communist president" #
-		id			= 1109
+		id			= 1184
 		name		= NPERSONALITY_COMMUNIST_PRESIDENT
 		desc		= DPERSONALITY_COMMUNIST_PRESIDENT
 		position	= headofstate
@@ -2420,7 +2433,7 @@
 
 	minister =  {
 		trait		= "communist chairman" #Bukharin (RUS/SOV), Foster (USA), Ulbricht DFR
-		id			= 1110
+		id			= 1185
 		name		= NPERSONALITY_COMMUNIST_CHAIRMAN
 		desc		= DPERSONALITY_COMMUNIST_CHAIRMAN
 		position	= headofgovernment
@@ -2436,7 +2449,7 @@
 
 	minister =  {
 		trait		= "unpopular president" #
-		id			= 1111
+		id			= 1186
 		name		= NPERSONALITY_UNPOPULAR_PRESIDENT
 		desc		= DPERSONALITY_UNPOPULAR_PRESIDENT
 		position	= headofstate
@@ -2456,7 +2469,7 @@
 
 	minister =  {
 		trait		= "ruthless dictator" #Wrangel (RUS)
-		id			= 1112
+		id			= 1187
 		name		= NPERSONALITY_RUTHLESS_DICTATOR
 		desc		= DPERSONALITY_RUTHLESS_DICTATOR
 		position	= headofstate
@@ -2475,7 +2488,7 @@
 
 	minister =  {
 		trait		= "german aristocrat" # Otto (HOL), Philip V (FRA)
-		id			= 1114
+		id			= 1189
 		name		= NPERSONALITY_GERMAN_ARISTOCRAT
 		desc		= DPERSONALITY_GERMAN_ARISTOCRAT
 		position	= headofstate
@@ -2494,7 +2507,7 @@
 
 	minister =  {
 		trait		= "lithuanian aristocrat" #
-		id			= 1115
+		id			= 1190
 		name		= NPERSONALITY_LIT_ARISTOCRAT
 		desc		= DPERSONALITY_LIT_ARISTOCRAT
 		position	= headofstate
@@ -2509,10 +2522,140 @@
 		#command		= { type = unit which = infantry value = -0.0500 }
 		command		= { type = intelligence_chances which = coup when = national value = 2 } #15
 	}
+
+        minister =  { 
+		trait		= "son of heaven pretender" #Zhu Rong Ji (CHC) 
+		id			= 1192
+		name		= NPERSONALITY_SONOFHEAVEN_PRETENDER
+		desc		= DPERSONALITY_SONOFHEAVEN_PRETENDER
+		position	= headofstate
+		value		= 0
+		command		= { type = dissent value = 0.1000 }
+		command		= { type = production which = consumer value = -0.1000 } 
+		command		= { type = belligerence which = declare_war value = 0.1000 } 
+		command		= { type = resource which = money value = 0.0500 }
+		}	
+
+	minister =  { 
+		trait		= "pragmatic statesman" #Zhou En Lai (CHC) 
+		id			= 1193
+		name		= NPERSONALITY_PRAGMATIC_STATESMAN
+		desc		= DPERSONALITY_PRAGMATIC_STATESMAN
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = production which = consumer value = -0.1000 } 		
+		}
+
+        minister =  { 
+		trait		= "reformist soldierHoG" #Generic trait by Straczynski
+		id			= 1196
+		name		= NPERSONALITY_REFORMIST_SOLDIERHOG
+		desc		= DPERSONALITY_REFORMIST_SOLDIERHOG
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = dissent value = -0.0500 }
+		command 	= { type = resource which = money value = -0.1000 }
+		command 	= { type = unit when = morale value = 0.0500 }
+		command		= { type = unit which = all value = -0.0500 }
+		}
+
+	minister =  { 
+		trait		= "reformist soldierHoS" #Generic trait by Straczynski
+		id			= 1197
+		name		= NPERSONALITY_REFORMIST_SOLDIERHOS
+		desc		= DPERSONALITY_REFORMIST_SOLDIERHOS
+		position	= HeadOfState
+		value		= 0
+		command 	= { type = resource which = money value = -0.1000 }
+		command 	= { type = diplomacy_chances which = alliance when = close_government_type value = 50 }
+		command 	= { type = unit when = morale value = 0.0500 }
+		command		= { type = unit which = infantry value = -0.1000 }
+		command		= { type = unit which = militia value = -0.1000 }
+		}
+
+### Minister of Armament section
+	minister =  { 
+		trait		= "carrier proponent"
+		id		= 1198
+		name		= NPERSONALITY_CARRIER_PROPONENT
+		desc		= DPERSONALITY_CARRIER_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = research which = naval value = -0.1000 }
+		command		= { type = unit which = carrier value = -0.0300 } 
+		command		= { type = unit which = escort_carrier value = -0.0300 }
+	}	
+
+	minister =  { 
+		trait		= "industrialiser"
+		id		= 1199
+		name		= NPERSONALITY_INDUSTRIALISER
+		desc		= DPERSONALITY_INDUSTRIALISER
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = province which = ic value = -0.0500 } 
+		command		= { type = province which = infra value = -0.1000 } 
+		command		= { type = resource which = energy value = 0.0200 }
+		command		= { type = resource which = metal value = 0.0200 }
+		command		= { type = resource which = rare_materials value = 0.0200 }
+		command		= { type = resource which = oil value = 0.0200 }
+		command		= { type = extra which = engineer value = -0.0200 }
+		command		= { type = dissent value = 0.1500 }
+		command		= { type = populationgrowth when = national value = -0.1500 }
+		command		= { type = production which = consumer value = 0.2000 } 
+		command		= { type = tc_mod value = -0.1000 }
+	}
+
+	minister =  { 
+		trait		= "bank president"
+		id			= 1200
+		name		= NPERSONALITY_BANK_PRESIDENT
+		desc		= DPERSONALITY_BANK_PRESIDENT
+		position	= ArmamentMinister
+		value		= 0
+		command 	= { type = resource which = money value = 0.3500 }
+		command		= { type = production which = consumer value = -0.0500 } 
+		command		= { type = production which = supplies value = -0.1000 } 
+		command		= { type = production which = upgrading value = 0.0500 } 
+		}
+
+### Emperor Hirohito
+	minister =  { 
+		trait		= "hirohito"
+		id			= 1211
+		name		= NPERSONALITY_SHOWA_EMPEROR
+		desc		= DPERSONALITY_SHOWA_EMPEROR
+		position	= HeadOfState
+		value		= 0
+		command		= { type = diplomacy_cost value = 0.1000 }
+		command		= { type = dissent value = -0.1500 } 
+		command		= { type = production which = consumer value = -0.0500 }
+		command 	= { type = resource which = money value = -0.0800 }
+		command 	= { type = unit when = morale value = 0.1200 }
+		}
+		
+### Respected War Hero
+	minister =  { 
+		trait		= "respected war hero"
+		id			= 1213
+		name		= NPERSONALITY_RESPECTED_WAR_HERO
+		desc		= DPERSONALITY_RESPECTED_WAR_HERO
+		position	= headofgovernment
+		value		= 0
+		command		= { type = dissent value = 0.1000 } 
+		command		= { type = resource which = money value = -0.1000 }
+		command		= { type = unit value = -0.0300 }
+		command 	= { type = production which = supplies value = 0.0800 }
+		command 	= { type = production which = upgrading value = -0.0600 }
+		command		= { type = unit which = land when = morale value = 0.0600 }
+		command		= { type = research which = land_doctrines value = 0.0300 }
+		}
 	
+	#hegemonia
 	minister =  {
 		trait		= "railroad baron" # Bergström, CAN
-		id			= 1116
+		id			= 2000
 		name		= NPERSONALITY_RAILROAD
 		desc		= DPERSONALITY_RAILROAD
 		position	= ArmamentMinister

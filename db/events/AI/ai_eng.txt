@@ -43,14 +43,14 @@ event = {
 	trigger = {
 		ai = yes
 		war = { country = GER }
-		NOT = { war = { country = GER country = SOV } }
+		NOT = { war = { country = GER country = RUS } }
 		OR = {
 			control = { province = 55 data = GER } # Paris
 			AND = {
 				area = { area = "Flanders" country = GER }
 				area = { area = "Wallonia" country = GER }
 			}
-			event = 2002004 # It Is Done - FRA
+			#event = 2002004 # It Is Done - FRA
 		}
 	}
 
@@ -76,7 +76,7 @@ event = {
 	trigger = {
 		ai = yes
 		random = 30
-		war = { country = ITA country = GRE }
+		war = { country = AUS country = GRE }
 		alliance = { country = GRE }
 	}
 
@@ -91,216 +91,6 @@ event = {
 		command = { type = ai which = "switch/ENG_Balkans.ai" }
 	}
 }
-
-################
-# England release troops from England to attack with
-#############################################
-event = {
-	id = 3001003
-	random = no 
-	country = ENG
-	
-	trigger = {
-		ai = yes
-		OR = {
-			random = 30
-			alliance = { country = USA }
-		}
-		war = { country = GER }
-		OR = {
-			war = { country = GER country = USA }
-			war = { country = GER country = SOV }
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 4
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/ENG_Attack.ai" }
-	}
-}
-################
-# England sends more troops to France since they are allive still
-#############################################
-event = {
-	id = 3001004
-	random = no 
-	country = ENG
-	
-	trigger = {
-		ai = yes
-		exists = FRA
-		control = { province = 55 data = -3 } # Paris
-		NOT = { event = 2002004 }
-		war = { country = FRA country = GER }
-		alliance = { country = FRA }
-		NOT = { lost_national = { country = FRA value = 35 } }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1941 }
-	offset = 4
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/ENG_EXP_France.ai" }
-	}
-}
-################
-# England changes production prios
-#############################################
-event = {
-	id = 3001005
-	random = no 
-	country = ENG
-	
-	trigger = {
-		ai = yes
-		atwar = yes
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 4
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/ENG_Atwar.ai" }
-	}
-}
-
-################
-# England updates Protection list
-#############################################
-event = {
-	id = 3001006
-	random = no 
-	country = ENG
-	
-	trigger = {
-		ai = yes
-		war = { country = GER country = SOV }
-		war = { country = GER }
-		NOT = { war = { country = SOV } }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 4
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/ENG_SOV_Protect.ai" }
-	}
-}
-################
-# England loads EXP Force Ratio for war with SOV
-#############################################
-event = {
-	id = 3001007
-	random = no 
-	country = ENG
-	
-	trigger = {
-		ai = yes
-		war = { country = USA country = SOV }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 4
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/EXP_ALIvsSOV2.ai" }
-	}
-}
-################
-# England Load D-Day AI
-#############################################
-event = {
-	id = 3001008
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		NOT = { local_flag = ENGDDay }
-		alliance = { country = USA }
-		OR = {
-			AND = {
-				ai = USA
-				flag = DDay
-			}
-			region = { region = "Germany" country = -3 value = 1 }
-			region = { region = "Benelux" country = -3 value = 1 }
-			region = { region = "Denmark" country = -3 value = 1 }
-			region = { region = "France" country = -3 value = 1 }
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 4
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/ENG_Dday.ai" }
-		command = { type = local_setflag which = ENGDDay }
-	}
-}
-event = {
-	id = 3001009
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		local_flag = ENGDDay
-		alliance = { country = USA }
-		NOT = {
-			AND = {
-				ai = USA
-				flag = DDay
-			}
-			
-			region = { region = "Germany" country = -3 value = 1 }
-			region = { region = "Benelux" country = -3 value = 1 }
-			region = { region = "Denmark" country = -3 value = 1 }
-			region = { region = "France" country = -3 value = 1 }
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 4
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/ENG_Attack.ai" }
-		command = { type = local_clrflag which = ENGDDay }
-	}
-}
-
 ################
 # England Air AI Naval portion
 #############################################
@@ -330,7 +120,7 @@ event = {
 				war = { country = ITA }
 				war = { country = SPA }
 				war = { country = USA }
-				war = { country = SOV }
+				war = { country = RUS }
 				     }
 				OR = {
 					# North Sea
@@ -416,7 +206,7 @@ event = {
 				war = { country = ITA }
 				war = { country = SPA }
 				war = { country = USA }
-				war = { country = SOV }
+				war = { country = RUS }
 				     }
 				NOT = { lost_national = { country = ENG value = 2 } }
 				OR = {
@@ -503,7 +293,7 @@ event = {
 				war = { country = ITA }
 				war = { country = SPA }
 				war = { country = USA }
-				war = { country = SOV }
+				war = { country = RUS }
 				     }
 				OR = {
 					# North Sea
@@ -577,8 +367,8 @@ event = {
 				NOT = { land_percentage = { country = ITA value = 0.95 } }
 			}
 			AND = {
-				war = { country = SOV }
-				NOT = { land_percentage = { country = SOV value = 0.25 } }
+				war = { country = RUS }
+				NOT = { land_percentage = { country = RUS value = 0.25 } }
 			}
 			AND = {
 				war = { country = USA }
@@ -623,8 +413,8 @@ event = {
 				NOT = { land_percentage = { country = ITA value = 0.9 } }
 			}
 			AND = {
-				war = { country = SOV }
-				NOT = { land_percentage = { country = SOV value = 0.2 } }
+				war = { country = RUS }
+				NOT = { land_percentage = { country = RUS value = 0.2 } }
 			}
 			AND = {
 				war = { country = USA }
@@ -664,11 +454,11 @@ event = {
 		NOT = { lost_national = { country = ENG value = 2 } }
 		NOT = { local_flag = ENGInvadeNorway }
 		OR = {
-			NOT = { exists = NOR }
-			puppet = { country = NOR country = GER }
+			NOT = { exists = SCA }
+			puppet = { country = SCA country = GER }
 		}
 		OR = {
-			war = { country = GER country = SOV }
+			war = { country = GER country = RUS }
 			war = { country = GER country = USA }
 		}
 			region = { region = "Norway" value = 1 }
@@ -771,10 +561,10 @@ event = { #Protect the English Channel
 				OR = {
 				war = { country = GER }
 				war = { country = ITA }
-				war = { country = SOV }
+				war = { country = RUS }
 				war = { country = SPA }
 				war = { country = SPR }
-				war = { country = SWE }
+				war = { country = SCA }
 				}
 				OR = {
 					# Schelde, Dogger & English channel
@@ -844,10 +634,10 @@ event = {
 				OR = {
 				war = { country = GER }
 				war = { country = ITA }
-				war = { country = SOV }
+				war = { country = RUS }
 				war = { country = SPA }
 				war = { country = SPR }
-				war = { country = SWE }
+				war = { country = SCA }
 				}
 				OR = {
 					# Schelde, Dogger & English channel
@@ -909,10 +699,10 @@ event = {
 				OR = {
 				war = { country = GER }
 				war = { country = ITA }
-				war = { country = SOV }
+				war = { country = RUS }
 				war = { country = SPA }
 				war = { country = SPR }
-				war = { country = SWE }
+				war = { country = SCA }
 				}
 				OR = {
 					# Schelde, Dogger & English channel
@@ -1442,624 +1232,6 @@ event = {
 		command = { type = local_setflag which = ENGNavalNorwayPacificMed }
 	}
 }
-################
-# England AI Slider manipulation
-#
-#	Free Market
-#############################################
-event = { # Free Market
-	id = 3001035
-	random = no
-	country = ENG
-	persistent = yes
-
-	trigger = {
-		ai = yes
-		can_change_policy = { type = free_market value = 1 }
-		government = democratic
-	}
-
-	name = "AI_EVENT"
-	style = 0
-
-	date = { day = 1 month = january year = 1933 }
-	offset = 7
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = change_policy which = free_market value = 1 }
-	}
-}
-event = { # Free Market
-	id = 3001036
-	random = no
-	country = ENG
-	persistent = yes
-
-	trigger = {
-		ai = yes
-		can_change_policy = { type = free_market value = -1 }
-		OR = {
-			government = fascist
-			government = communist
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0
-
-	date = { day = 1 month = january year = 1933 }
-	offset = 7
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = change_policy which = free_market value = -1 }
-	}
-}
-################
-#	Standing Army
-#############################################
-#event = { # Standing Army
-#	id = 3001037
-#	random = no
-#	country = ENG
-#	persistent = yes
-#
-#	trigger = {
-#		ai = yes
-#		can_change_policy = { type = professional_army value = 1 }
-#		NOT = { domestic = { type = professional_army value = 10 } }
-#	}
-#
-##	name = "AI_EVENT"
-#	##style = 0
-#
-#	date = { day = 1 month = january year = 1933 }
-#	offset = 7
-#	deathdate = { day = 29 month = december year = 1963 }
-#
-#	action_a = {
-#		command = { type = change_policy which = professional_army value = 1 }
-#	}
-#}#
-################
-#	Hawk Lobby
-#############################################
-event = { # Hawk Lobby
-	id = 3001038
-	random = no
-	country = ENG
-	persistent = yes
-
-	trigger = {
-		ai = yes
-		can_change_policy = { type = defense_lobby value = 1 }
-		OR = { 
-			atwar = yes
-			AND = {
-				NOT = { domestic = { type = defense_lobby value = 10 } }
-				OR = {
-					ideology = nazi
-					ideology = fascist
-					ideology = leninist
-					ideology = stalinist
-					}
-				}
-			}
-		}
-
-	name = "AI_EVENT"
-	style = 0
-
-	date = { day = 1 month = january year = 1933 }
-	offset = 7
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = change_policy which = defense_lobby value = 1 }
-	}
-}
-
-#event = { # Hawk Lobby
-#	id = 3001039
-#	random = no
-#	country = ENG
-#	persistent = yes
-#	trigger = {
-#		ai = yes
-#		can_change_policy = { type = defense_lobby value = -1 }
-#		AND = {
-#			domestic = { type = defense_lobby value = 0 }
-#			NOT = {
-#				ideology = nazi
-#				ideology = fascist
-#				ideology = leninist
-#				ideology = stalinist
-#			}
-#		}
-#	}
-#	name = "AI_EVENT"
-#	style = 0
-#	date = { day = 1 month = january year = 1933 }
-#	offset = 7
-#	deathdate = { day = 29 month = december year = 1963 }
-#	action_a = {
-#		command = { type = change_policy which = defense_lobby value = -1 }
-#	}
-#}
-
-################
-#	Interventionism
-#############################################
-event = { # Interventionism
-	id = 3001040
-	random = no
-	country = ENG
-	persistent = yes
-
-	trigger = {
-		ai = yes
-		can_change_policy = { type = interventionism value = 1 }
-		OR = {
-			atwar = yes
-			AND = {
-				NOT = { domestic = { type = interventionism value = 9 } }
-				OR = {
-					ideology = nazi
-					ideology = fascist
-					ideology = leninist
-					ideology = stalinist
-				}
-			}
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0
-
-	date = { day = 1 month = january year = 1933 }
-	offset = 7
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = change_policy which = interventionism value = 1 }
-	}
-}
-
-################
-# Minister of Security Section 
-#############################################
-event = { # Sir John Simon takes power
-	id = 3001041
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		minister = 10005 # Sir John Simon
-		NOT = { InCabinet = 10005 }
-		OR = {
-			manpower = 200
-			NOT = { minister = 10060 } # Viscount Templewood
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ministerofsecurity which = 10005 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # Viscount Templewood takes power
-	id = 3001042
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		NOT = { manpower = 200 }
-		minister = 10060 # Viscount Templewood
-		NOT = { InCabinet = 10060 }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ministerofsecurity which = 10060 }
-		command = { type = dissent value = -1 }
-	}
-}
-################
-# Chief of Staff Section
-#############################################
-event = { # Sir Alan Brooke takes power
-	id = 3001043
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		atwar = yes
-		minister = 10094 # Sir Alan Brooke
-		NOT = { InCabinet = 10094 }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = chiefofstaff which = 10094 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # Archibald Nye takes power
-	id = 3001044
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		atwar = yes
-		minister = 10096 # Archibald Nye
-		NOT = { InCabinet = 10096 }
-		NOT = { minister = 10094 } # Sir Alan Brooke
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = chiefofstaff which = 10096 }
-		command = { type = dissent value = -1 }
-	}
-}
-
-################
-# Head of Intelligence Section
-#############################################
-event = { # S.P. James takes power
-	id = 3001045
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		minister = 10081 # S.P. James
-		NOT = { InCabinet = 10081 }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ministerofintelligence which = 10081 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # Lord Cecil of Chelwood takes power
-	id = 3001046
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		minister = 10077 # Lord Cecil of Chelwood
-		NOT = { InCabinet = 10077 }
-		NOT = { minister = 10081 } # S.P. James
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ministerofintelligence which = 10077 }
-		command = { type = dissent value = -1 }
-	}
-}
-################
-# Chief of the Army Section
-#############################################
-event = { # Sir Cyril Deverell takes power
-	id = 3001047
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		minister = 10101 # Sir Cyril Deverell
-		NOT = { InCabinet = 10101 }
-		OR = {
-			atwar = no
-			NOT = { minister = 10104 } # Sir Alan Brooke
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = chiefofarmy which = 10101 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # Sir Alan Brooke takes power
-	id = 3001048
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		minister = 10104 # Sir Alan Brooke
-		NOT = { InCabinet = 10104 }
-		OR = {
-			atwar = yes
-			NOT = { minister = 10101 } # Sir Cyril Deverell
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = chiefofarmy which = 10104 }
-		command = { type = dissent value = -1 }
-	}
-}
-
-################
-# Armament Minister Section
-#############################################
-event = { # Lord Beaverbrook takes power
-	id = 3001049
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		minister = 10040 # Lord Beaverbrook
-		NOT = { InCabinet = 10040 }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = armamentminister which = 10040 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # Sir John Simon takes power
-	id = 3001050
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		minister = 10037 # Sir John Simon
-		NOT = { InCabinet = 10037 }
-		NOT = { minister = 10040 } # Lord Beaverbrook
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = armamentminister which = 10037 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # Hugh Dalton takes power
-	id = 3001051
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		minister = 10042 # Hugh Dalton
-		NOT = { InCabinet = 10042 }
-		NOT = { minister = 10040 } # Lord Beaverbrook
-		NOT = { minister = 10037 } # Sir John Simon
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = armamentminister which = 10042 }
-		command = { type = dissent value = -1 }
-	}
-}
-################
-# Chief of Air Minister Section
-# Air AI Flags
-#	ENGAirAINaval		= Air vs Naval priority
-#	ENGAirAIStrategic	= Strategic Bombing has priority
-#	ENGAirAIGround		= Ground Support has priority
-#############################################
-event = { # Railton Freeman takes power
-	id = 3001052
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		local_flag = ENGAirAINaval
-		minister = 10123 # Railton Freeman
-		NOT = { InCabinet = 10123 }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = chiefofair which = 10123 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # Sir Hugh Dowding takes power
-	id = 3001053
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		local_flag = ENGAirAINaval
-		minister = 10136 # Sir Hugh Dowding
-		NOT = { InCabinet = 10136 }
-		NOT = { minister = 10123 }  # Railton Freeman
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = chiefofair which = 10136 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # John Strachey takes power
-	id = 3001054
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		local_flag = ENGAirAIStrategic
-		minister = 10124 # John Strachey
-		NOT = { InCabinet = 10124 }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = chiefofair which = 10124 }
-		command = { type = dissent value = -1 }
-	}
-}
-event = { # Sir Owen Boyd takes power
-	id = 3001055
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		local_flag = ENGAirAIGround
-		minister = 10010 # Sir Owen Boyd
-		NOT = { InCabinet = 10010 }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 180
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = chiefofair which = 10010 }
-		command = { type = dissent value = -1 }
-	}
-}
-##################################################
-# Ethiopia under control
-##################################################
-event = { 
-	id = 3001056
-	random = no 
-	country = ENG
-	
-	trigger = {
-		ai = yes
-		NOT = { region = { region = "Ethiopia" country = -2 value = 5 } }
-                war = { country = ITA }
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 7
-	deathdate = { day = 29 month = december year = 1948 }
-
-	action_a = {
-		command = { type = ai which = "switch/ENG_ApresETH.ai" }
-	}
-}
 ##################################################
 # Egypt on the move
 ##################################################
@@ -2119,8 +1291,10 @@ event = {
 	
 	trigger = {
 		ai = yes
-               OR = { war = { country = ITA }
-                war = { country = GER } }
+        OR = { 
+			war = { country = U00 }
+            war = { country = GER } 
+		}
 	}
 
 	name = "AI_EVENT"
@@ -2136,5 +1310,21 @@ event = {
 		command = { type = build_division which = transport_plane when = 5 cost = 0.1 where = 40 }
 		command = { type = manpowerpool value = 50 }
 		command = { type = build_division which = paratrooper when = 5 cost = 0.1 where = 40 }
+        	command = { trigger = { control = { province = 23 data = ENG } } type = activate_division which = 12700 value = 10001 where = 23 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 23 data = ENG } } type = activate_division which = 12700 value = 10002 where = 23 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 27 data = ENG } } type = activate_division which = 12700 value = 10003 where = 27 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 27 data = ENG } } type = activate_division which = 12700 value = 10004 where = 27 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 26 data = ENG } } type = activate_division which = 12700 value = 10005 where = 26 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 26 data = ENG } } type = activate_division which = 12700 value = 10006 where = 26 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 29 data = ENG } } type = activate_division which = 12700 value = 10007 where = 29 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 22 data = ENG } } type = activate_division which = 12700 value = 10008 where = 22 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 22 data = ENG } } type = activate_division which = 12700 value = 10009 where = 25 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 17 data = ENG } } type = activate_division which = 12700 value = 10012 where = 17 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 17 data = ENG } } type = activate_division which = 12700 value = 10013 where = 17 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 11 data = ENG } } type = activate_division which = 12700 value = 10014 where = 11 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 11 data = ENG } } type = activate_division which = 12700 value = 10015 where = 11 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 12 data = ENG } } type = activate_division which = 12700 value = 10016 where = 12 when = 0 } # Homeland
+        	command = { trigger = { control = { province = 12 data = ENG } } type = activate_division which = 12700 value = 10017 where = 12 when = 0 } # Homeland        	
+		command = { trigger = { control = { province = 9 data = ENG } } type = activate_division which = 12700 value = 10018 where = 9 when = 0 } # Homeland
 	}
 }

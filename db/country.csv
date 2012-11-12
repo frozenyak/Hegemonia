@@ -109,7 +109,7 @@ PAK;DarkBrown;PAK;MIN;X
 PAL;LightOrange;EGY;ENG;X
 PAN;DarkBrown;ALG;USA;X
 PAR;Blue;ALG;USA;X
-PER;DarkGray;PER;ITA;X
+PER;DarkBrown;PER;ITA;X
 PHI;DarkBrown;ENG;USA;X
 POL;DarkGray;POL;GER;X
 POR;DarkGreen;ALG;ENG;X
@@ -165,15 +165,15 @@ ALS;DarkGreen;ENG;USA;X
 AXI;Gray;GER;GER;X
 ALI;DarkGray;ALI;ALI;X
 U00;DarkRed;GRE;SOV;X
-U01;LightBlue;GRE;MIN;X
-U02;DarkYellow;GRE;FRA;X
+U01;LightBrown;GRE;MIN;X
+U02;DarkGray;GRE;FRA;X
 U03;LightOrange;SWE;MIN;X
 U04;Red;ENG;ENG;X
 U05;DarkOrange;ALG;BUL;X
 U06;Yellow;FRA;FRA;X
 U07;LightRed;FRA;SOV;X
 U08;UserColor1;GER;MIN;X
-U09;DarkBlue;GRE;SOV;X
+U09;LightGray;ENG;MIN;X
 U10;DarkGreen;HOL;SOV;X
 U11;LightGreen;VIE;JAP;X
 U12;DarkBlue;ENG;MIN;X
@@ -238,7 +238,7 @@ U70;DarkGreen;ENG;ENG;X
 U71;LightBlue;ENG;ENG;X
 U72;DarkRed;CHI;SOV;X
 U73;DarkBlue;ENG;MIN;X
-U74;DarkRed;ENG;MIN;X
+U74;DarkBrown;CHI;MIN;X
 U75;Gray;ENG;MIN;X
 U76;Green;ENG;MIN;X
 U77;LightRed;ENG;MIN;X
@@ -279,7 +279,7 @@ UIR;DarkYellow;ENG;ENG;X
 UTL;LightBrown;POR;USA;X
 UPS;LightOrange;JAP;JAP;X
 UES;LightRed;ENG;ENG;X
-URO;DarkGreen;ITA;ITA;X
+URO;DarkBlue;GRE;SOV;X
 UAP;LightYellow;ENG;ENG;X
 UPE;Green;ENG;ENG;X
 END;DarkRed;ENG;ENG;X

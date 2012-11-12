@@ -1,11 +1,11 @@
 U73;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 ;Replacements;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 1180001;Head of State;James VI;36;SC;Weary Stiffneck;High;M1001;x
-1180002;Head of Government;Stanley Baldwin;36;SC;Backroom Backstabber;High;M1002;x
+1180002;Head of Government;Stanley Baldwin;36;SC;Guilty Man;High;M1002;x
 1180003;Foreign Minister;Anthony Eden;36;SC;Ideological Crusader;Medium;M1003;x
 1180004;Minister of Armament;Neville Chamberlain;36;SC;laissez-faire capitalist;High;M1004;x
 1180005;Minister of Security;Sir John Simon;36;SC;Crime Fighter;High;M1005;x
-1180006;Head of Military Intelligence;Sir Hugh Sinclair;36;SC;Logistics Specialist;Very High;M1006;x
+1180006;Head of Military Intelligence;Sir Hugh Sinclair;36;SC;Quex;Very High;M1006;x
 1180007;Chief of Staff;Sir A. Montgomery-Massingberd;36;ML;School of Fire Support;Very High;M1007;x
 1180008;Chief of Army;Sir A. Montgomery-Massingberd;36;ML;Static Defence Doctrine;Very High;M1007;x
 1180009;Chief of Navy;Sir Ernle Chatfield;36;ML;Decisive Naval Battle Doctrine;High;M1009;x
@@ -16,12 +16,12 @@ U73;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 1180014;Head of State;George VI;36;SC;Benevolent Gentleman;High;M1033;x
 1180015;Head of State;George VI;36;SD;Benevolent Gentleman;High;M1033;x
 1180016;Head of State;Aneurin Bevan;36;LWR;Pig-headed Isolationist;High;M1021;x
-1180017;Head of Government;Neville Chamberlain;36;SC;Naive Optimist;High;M1004;x
+1180017;Head of Government;Neville Chamberlain;36;SC;The Pacifier;High;M1004;x
 1180018;Head of Government;Winston Churchill;36;SC;Bulldog;High;M1038;x
 1180019;Head of Government;Clement Attlee;37;SD;Silent Workhorse;High;M1040;x
 1180020;Head of Government;Oswald Mosley;36;FA;Flamboyant Tough Guy;High;M1012;x
 1180021;Head of Government;Harry Pollitt;36;LWR;Ambitious Union Boss;High;M1022;x
-1180022;Foreign Minister;Lord Halifax;38;SC;Apologetic Clerk;Very High;M1045;x
+1180022;Foreign Minister;Lord Halifax;38;SC;The Appeaser;Very High;M1045;x
 1180023;Foreign Minister;John Selwyn Lloyd;44;SC;Biased Intellectual;High;M1046;x
 1180024;Foreign Minister;Ernest Bevin;37;SD;The Cloak N Dagger Schemer;High;M1047;x
 1180025;Foreign Minister;Herbert Morrison;40;SD;Biased Intellectual;High;M1048;x
@@ -37,20 +37,20 @@ U73;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 1180035;Foreign Minister;Dave Springhall;44;LWR;Iron Fisted Brute;Medium;M1058;x
 1180036;Foreign Minister;Ian Mikardo;45;LWR;Ideological Crusader;Medium;M1059;x
 1180037;Minister of Armament;Sir John Simon;37;SC;Resource Industrialist;High;M1005;x
-1180038;Minister of Armament;Sir John Anderson;39;SC;laissez-faire capitalist;High;M1061;x
-1180039;Minister of Armament;Sir Kingsley Wood;40;SC;Resource Industrialist;High;M1062;x
+1180038;Minister of Armament;Sir John Anderson;39;SC;Balanced budget economy;High;M1061;x
+1180039;Minister of Armament;Sir Kingsley Wood;40;SC;Keynesian economy;High;M1062;x
 1180040;Minister of Armament;Lord Beaverbrook;40;SC;Administrative Genius;Very High;M1063;x
 1180041;Minister of Armament;Richard A. Butler;45;SC;Theoretical Scientist;Very High;M1064;x
 1180042;Minister of Armament;Hugh Dalton;37;SD;Resource Industrialist;Medium;M1065;x
-1180043;Minister of Armament;Clement Attlee;41;SD;Air to Ground Proponent;Medium;M1040;x
-1180044;Minister of Armament;Stafford Cripps;42;SD;Air to Ground Proponent;Medium;M1024;x
-1180045;Minister of Armament;Oswald Mosley;36;FA;Resource Industrialist;Undying;M1012;x
+1180043;Minister of Armament;Clement Attlee;41;SD;Keynesian economy;Medium;M1040;x
+1180044;Minister of Armament;Stafford Cripps;42;SD;Mixed economy;Medium;M1024;x
+1180045;Minister of Armament;Oswald Mosley;36;FA;Planned economy proponent;Undying;M1012;x
 1180046;Minister of Armament;Alliott Vernon-Roe;38;FA;Air to Ground Proponent;High;M1069;x
 1180047;Minister of Armament;Neil Francis-Hawkins;39;FA;Submarine Proponent;High;M1070;x
 1180048;Minister of Armament;Alexander Raven-Thomson;41;FA;Strategic Air Proponent;High;M1071;x
 1180049;Minister of Armament;Jorian Jenks;42;FA;Battle Fleet Proponent;High;M1072;x
 1180050;Minister of Armament;A.J.P. Taylor;44;FA;laissez-faire capitalist;High;M1073;x
-1180051;Minister of Armament;Stafford Cripps;36;LWR;Theoretical Scientist;Medium;M1024;x
+1180051;Minister of Armament;Stafford Cripps;36;LWR;Mixed economy;Medium;M1024;x
 1180052;Minister of Armament;Leslie Solley;38;ST;Resource Industrialist;Medium;M1075;x
 1180053;Minister of Armament;Arthur Horner;40;ST;Administrative Genius;Medium;M1076;x
 1180054;Minister of Armament;Jack Gaster;41;ST;Submarine Proponent;Medium;M1077;x
@@ -69,13 +69,13 @@ U73;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 1180067;Minister of Security;John Beckett;40;FA;Compassionate Gentleman;Medium;M1091;x
 1180068;Minister of Security;Arthur Chesterton;41;FA;Back Stabber;Medium;M1092;x
 1180069;Minister of Security;Jeffrey Hamm;42;FA;Crime Fighter;Medium;M1093;x
-1180070;Minister of Security;Maxwell Knight;43;FA;Man of the People;Medium;M1094;x
+1180070;Minister of Security;Maxwell Knight;43;FA;Secret police chief;Medium;M1094;x
 1180071;Minister of Security;Violet Lansbury;36;ST;Prince of Terror;Medium;M1095;x
 1180072;Minister of Security;Lester Hutchinson;38;ST;Back Stabber;Medium;M1096;x
 1180073;Minister of Security;John Platts-Mills;36;LWR;Silent Lawyer;Medium;M1097;x
 1180074;Minister of Security;Sydney Silvermann;41;ST;Man of the People;Medium;M1098;x
 1180075;Minister of Security;Barbara Castle;45;LWR;Crime Fighter;Medium;M1099;x
-1180076;Minister of Security;Kim Philby;46;ST;Compassionate Gentleman;Very High;M1025;x
+1180076;Minister of Security;Kim Philby;46;ST;Secret police chief;Very High;M1025;x
 1180077;Head of Military Intelligence;Lord Cecil of Chelwood;36;SC;Industrial Specialist;Very High;M1102;x
 1180078;Head of Military Intelligence;Sir Robert Menzies;40;SC;Dismal Enigma;Very High;M1103;x
 1180079;Head of Military Intelligence;Kim Philby;46;SC;Technical Specialist;Very Low;M1105;x
@@ -98,7 +98,7 @@ U73;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 1180096;Chief of Staff;Archibald Nye;41;SD;School of Mass Combat;Very High;M1122;x
 1180097;Chief of Staff;Sir Bernard Montgomery;45;SL;School of Manoeuvre;Medium;M1123;x
 1180098;Chief of Staff;J.F.C. Fuller;36;NS;School of Manoeuvre;Medium;M1017;x
-1180099;Chief of Staff;Sir Barry E. Domvile;39;FA;School of Psychology;High;M1019;x
+1180099;Chief of Staff;Sir Barry E. Domvile;39;FA;commando doctrine staff;High;M1019;x
 1180100;Chief of Staff;Tom Wintringham;36;ST;School of Mass Combat;High;M1027;x
 1180101;Chief of Army;Sir Cyril Deverell;36;ML;Guns and Butter Doctrine;Very High;M1116;x
 1180102;Chief of Army;Lord John Gort;37;ML;Armoured Spearhead Doctrine;Very High;M1117;x
@@ -130,7 +130,7 @@ U73;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 1180128;Head of Government;David Lloyd George;40;SD;Naive Optimist;Very High;M1160;x
 1180129;Foreign Minister;Sir Archibald Sinclair;40;SD;Great Compromiser;High;M1161;x
 1180130;Minister of Security;Leo Amery;40;SD;Crime Fighter;High;M1162;x
-1180131;Minister of Armament;Leslie Hore-Belisha;37;SC;Infantry Proponent;Low;M1163;x
+1180131;Minister of Armament;Leslie Hore-Belisha;37;SC;Reformer;Low;M1163;x
 1180132;Chief of Army;Sir Harold Alexander;44;ML;Decisive Battle Doctrine;High;L1006;x
 1180133;Chief of Army;Miles Dempsey;44;ML;Armoured Spearhead Doctrine;High;L1099;x
 1180134;Chief of Staff;Hastings Ismay;45;ML;School of Defence;High;L1176;x
@@ -153,7 +153,7 @@ U73;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 1180151;Head of State;Elisabeth II;52;SD;Popular Figurehead;High;M1182;x
 1180152;Minister of Armament;Albert V. Alexander;46;SD;Resource Industrialist;Medium;M1184;x
 1180153;Minister of Armament;Emanuel Shinwell;50;SD;Theoretical Scientist;Medium;M1185;x
-1180154;Minister of Armament;Winston Churchill;51;SC;Theoretical Scientist;Medium;M1038;x
+1180154;Minister of Armament;Winston Churchill;51;SC;Reformer;Medium;M1038;x
 1180155;Minister of Armament;Sir Harold Alexander;52;SC;Tank Proponent;Medium;L1006;x
 1180156;Chief of Air Force;Sir Frederick Bowhill;36;ML;Naval Aviation Doctrine;High;L1417;x
 1180157;Head of State;George VI;36;SD;Benevolent Gentleman;High;M1033;x

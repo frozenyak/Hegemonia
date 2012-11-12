@@ -1,7 +1,6 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { }
 neutrality = 100.000 
 war = 0
 exp_force_ratio = 0.0

@@ -1,7 +1,6 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
 neutrality = 80.000 
 war = 0
 exp_force_ratio = 0

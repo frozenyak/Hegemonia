@@ -195,6 +195,7 @@ event = {
 	trigger = {
 		NOT = { exists = TRA }
 		flag = RUS_western_peace
+		region = { region = "Southern Russia" }
 	}
 
 	name = "The Conquest of Don-Volga"
@@ -211,7 +212,7 @@ event = {
 		ai_chance = 85
 		command = { type = independence which = TRA }
 		command = { type = make_puppet which = TRA }
-		command = { type = trigger which = 77000 }
+		#command = { type = trigger which = 77000 }
 		command = { type = relation which = GER value = 25 }
 	}
 	action = {
@@ -292,19 +293,38 @@ event = {
 	picture = "war"
 
 	action = {
+		trigger = { NOT = { war = { country = RUS } } }
 		name = "We will defend Georgia!"
 		ai_chance = 90
 		command = { type = relation which = GEO value = 200 }
 		command = { type = relation which = U00 value = -200 }
-		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = domestic which = interventionism value = 1 }
 		command = { type = alliance which = GEO }
 	}
 	action = {
+		trigger = { NOT = { war = { country = RUS } } }
 		name = "This is not our concern"
 		ai_chance = 10
 		command = { type = relation which = U00 value = 50 }
 		command = { type = relation which = GEO value = -200 }
-		command = { type = domestic which = interventionism value = -1 }
+		#command = { type = domestic which = interventionism value = -1 }
+	}
+	action = {
+		trigger = { war = { country = RUS } }
+		name = "We will defend Georgia!"
+		ai_chance = 10
+		command = { type = relation which = GEO value = 200 }
+		command = { type = relation which = U00 value = -200 }
+		#command = { type = domestic which = interventionism value = 1 }
+		command = { type = alliance which = GEO }
+	}
+	action = {
+		trigger = { war = { country = RUS } }
+		name = "This is not our concern"
+		ai_chance = 90
+		command = { type = relation which = U00 value = 50 }
+		command = { type = relation which = GEO value = -200 }
+		#command = { type = domestic which = interventionism value = -1 }
 	}
 }
 
@@ -373,6 +393,7 @@ event = {
 
 	action = {
 		name = ACTION_NAME_GOOD
+		#
 		command = { type = domestic which = interventionism value = -1 }
 		command = { type = relation which = RUS value = 100 }
 		command = { type = relation which = GEO value = -50 }

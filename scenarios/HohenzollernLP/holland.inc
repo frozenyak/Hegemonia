@@ -11,6 +11,8 @@
  {  tag                    = U10 
 	capital                = 122 
 	puppet = VIC
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "batavia.ai"
 	# Resource Reserves 
 	energy                 = 1740
 	metal                  = 870

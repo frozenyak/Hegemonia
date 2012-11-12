@@ -1,23 +1,22 @@
 # Minor 1936 AI File by Lothos
 
 switch = no # [yes/no]
-flags = { }
 max_front_ratio = 1.2 
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 neutrality = 95
 war = 1
-strat_redeploy_threshold = 10
+upgrading = 0.30
+reinforcement = 0 #0.2
+strat_redeploy_threshold = 25
 exp_force_ratio = 0.750
 exp_force_ratios = { } 
 no_exp_forces_to = { }
-upgrading = 0.30
-reinforcement = 0 #0.2
 
 ###################################
 # Diplomacy
 ###################################
-claim_acceptance = -49
+claim_acceptance = -59
 
 combat = { }
 befriend = { }
@@ -201,53 +200,59 @@ military = {
 	cag = 100.000
 	escort = 100.0000
 
-	naval_asw = 10.0000 
-	naval_anti_air_s = 10.0000 
-	naval_radar_s = 10.0000 
-	naval_fire_controll_s = 10.0000 
+	naval_asw = 20.0000 
+	naval_anti_air_s = 20.0000 
+	naval_radar_s = 20.0000 
+	naval_fire_controll_s = 20.0000 
 	naval_improved_hull_s = 0.0000 
 	naval_torpedoes_s = 0
 	naval_anti_air_l = 0.0000 
 	naval_radar_l = 0.0000 
-	naval_fire_controll_l = 10.0000 
+	naval_fire_controll_l = 0.0000 
 	naval_improved_hull_l = 0.0000 
 	naval_torpedoes_l = 0.0000
 }
 technology = { 
 	endgoal 	= { } 
 	preference 	= {
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060
+
+		# Field Artillery Support
+		2290 2300 2310 2320 2330 2340 2350 2360
+
 		# Tools
 		5050 5060 5070
 
 		# Engineering
 		5080 5090 5100
-		
+
 		# Production Control
-		5110 #5120
+		5110 5120
 
 		# Assembly Line
-		#5130 5180
+		#5130 5140 5160 5180
 
-		#Infantry
-		1010 1020 1030 1040 1050 1060
+		# Computers
+		5310 5320 5330 5340
+
+		# Interceptors
+		4010 4020 4030 4060 4090 15000 15010 15020
 
 		# Land Doctrines
 		6030 6560 6150
 	} 
 	ignore 	= {
-		# Assembly Line
-		5140 5150 5160 5170
+		# Light / Mountain
+		1110 1120 1130 1140 10040 10050
 
-		# Agriculture
-		5010 5020 5030 5040
+		# Motorized Infantry
+		1230 1240 1250 10080 10090 10150
 
-		# Oil Refining
-		5190 5200 5210 5220 5230 5240
+		# Mechanized Infantry
+		1260 1270 1280 1290 10100 10110
 
-		# Mountain Unit techs
-		1110 1120 1130 1140
-
-		# Airborne
+		# Airborne Infantry
 		1070 1080 1090 1100
 
 		# Marines
@@ -256,65 +261,77 @@ technology = {
 		# Cavalry
 		1190 1200 1210 1220
 
-		# Air Transports
-		4250 4260 4270
-
-		# Rocketry
-		7550 5550 5560 5570 5580 5590
-
-		# Atomic Research
-		5470 5480 5490 5500 5510 5520 5530 5540
-
-		# Bas Decimetric
-		5410 5420 5430 5440 5450 5460
-
-		# motorized
-		1230 1240 1250
-
-		# Mechanized
-		1260 1270 1280 1290
-
-		# Land Doctrines
-		6210 14080 14090 
-
 		# Light tanks
 		2020 2030 2040 2050 2060
 
 		# Medium tanks
-		2010 2070 2080 2090
+		2010 2070 2080 2090 11000 11010
 
 		# Heavy Tanks and Semi-Modern Tank
-		2100 2110 2120 2140
+		2100 2110 2120
 
-		# Tank destroyers
+		#Tank destroyers
 		2170 2180 2190 2200 2210
 
-		# SP guns
-		2220 2230 2240 2250
+		# Self-Propelled Artillery
+		2220 2230 2240 2250 11030 11040
 
 		# SP Rocket Artillery
-		2260 2270 2280 
+		2260 2270 2280 11050 11060
 		
 		# Static Anti-Air
 		2450 2460 2470 2480 2490 2500
 		
 		# Anti Air Brigade
 		2510 2520 2530 2540
-		
-		# Carrier
-		3320 3330 3340 3350 3360 3370 3380 3390
 
-		# Light Carrier
-		12100 12110 12120 12130 12140 12150
-		
+		### Multi role ### 
+		4040 4070 4100
+
+		# Escort Fighters
+		4050 4080 4110 15060 15070 15080
+
+		# Close Air support #
+		4170 4180 4280 15120 15130
+
+		# Tactical bombers 
+		4130 4140 4150 4160
+
+		# Strategic Bombers
+		4220 4230 4240 15160 15170
+
+		# Naval Bombers
+		4190 4200 4210 15140 15150
+
+		# Air Transports
+		4250 4260 4270 15180 15190
+
 		# Carrier Air Group
 		4900 4910 4920 4930 4940 4950 4960 7050 7280
-		
-		# Amphibious Warfare
-		82310 82320 82330 #82300
+
+		# Rocketry
+		7550 5550 5560 5570 5580 5590
+
+		# Assembly Lines
+		5140 5150 5160 5170
+
+		# Synthetic Oil
+		5190 5200 5210 5220 5230 5240 13020
+
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
+
+		# Radar Warning
+		5410 5420 5430 5440 5450 5460 13030 53070
 		
 		#EQUIPMENT Winter / Jungle / Desert
-		5920 5930 5940 5950 5960 5970
+		5920 5930 5940 5950 5960 5970 #5980 5990
+
+		# Battlefield Destruction branch./ Combat Unit Destruction
+		9050 9060 9070 9080 9270 9280 9290 9300
+		
+		# Strategic Destruction branch. / Mass Destruction
+		9140 9150 9160 9170 9180 9430 9440 9450 9460 
 	}
  
 	armor 		= 1

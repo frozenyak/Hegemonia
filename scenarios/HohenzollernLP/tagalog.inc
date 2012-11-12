@@ -6,6 +6,7 @@ country =
 { tag                    = PHI
 	flag_ext = _com
 	name = phi_com
+	ai_settings = { flags = { MOB2 = yes reinf = yes } }
 #Minor Power
   energy                 = 200
   metal                  = 200
@@ -41,6 +42,7 @@ country =
 	4010 #Interwar Fighter
 	4020 #Early Fighter
 	4120 #Interwar Bomber
+	4130 #Early Bomber
 
 	##Armor##
 	2290 #GW Light Artillery
@@ -50,21 +52,36 @@ country =
 
 	##Industry##
 	5010 #Modern Agriculture
+	5020 #Mech Agriculture
+	5050 #Basic Machine Tools
 	5080 #Basic Construction
+	5310 #Census Tabulating
 
 	##Infantry##
 	1010 #Great War Infantry
 	1190 #Great War Cavalry
+	1310 #Rear Area Supply
+
+	##Land Doctrines - Sup Firepower##
+	6030 #Grand Battleplan
+	6390 #Light infantry
+	14000 #Great War Hospital
 
 	##Naval Doctrines##
 	8010 #Decisive Battle
+	8020 #Naval Firepower
+	8040 #Fleet Aux Sub
+	8050 #Convoy Sailing
 
 	##Naval Tech##
 	3010 #GW Destroyer
 	3020 #Early Destroyer
 	3070 #GW Light Cruiser
 	3080 #Early Light Cruiser
+	3130 #GW Heavy Cruiser
+	3250 #GW Battleship
 	3400 #Dive Boat
+	3410 #Short Range Sub
 	
 	3810 #Troopship
   }

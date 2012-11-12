@@ -28,7 +28,7 @@ target = {
      1432  = 25  #Singapore 
   
      #Germany 
-     1371  = 22  #Hong Kong 
+     1371  = 100  #Hong Kong 
   
      #Indonesia 
      1659  = 20  #Menado 
@@ -39,18 +39,18 @@ target = {
 ###################################
 garrison = {
 	defend_overseas_beaches = yes
-	home_multiplier 		= 0.5
+	home_multiplier 		= 7.0
 	overseas_multiplier 	= 1.0
 	home_peace_cap 			= 10
-	war_zone_odds 			= 2.0
+	war_zone_odds 			= 1.5
 	key_point_prio_mult		= 0.5
 	revolt_risk_mult		= 0.5
 
 	# PRIORITIES:
-	beach			= 30	# Beach level 2
-	capital			= 30	# Our capital
+	beach			= 150	# Beach level 2
+	capital			= 75	# Our capital
 	human_border	= 0		# Ignored for allied human players
-	war_target		= 50	# The next country targeted for attack by this AI
+	war_target		= 30	# The next country targeted for attack by this AI
 	
 	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
 	claim_threat		= 0	# If we are neutral, countries with claims on us get this
@@ -395,7 +395,7 @@ admiral = {
 		"South Southeast Pacific Ocean"
 		"North Southeast Pacific Ocean"
 		
-		# MEX West Coast
+		# USA West Coast
 		"Gulf of Alaska"
 		"West Coast of the United States"
 		

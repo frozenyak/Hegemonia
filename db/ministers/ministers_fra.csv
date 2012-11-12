@@ -1,7 +1,7 @@
 FRA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 5002;Head of Government;Albert Sarraut;33;SL;Happy Amateur;High;M2002;X
 5003;Foreign Minister;Pierre Etienne Flandin;33;SL;Ideological Crusader;Low;M2003;X
-5005;Minister of Security;Marx Dormoy;33;SL;Compassionate Gentleman;Medium;M2005;X
+5005;Minister of Security;Marx Dormoy;33;SL;Opposer of the far right;Medium;M2005;X
 5010;Chief of Air Force;Victor Denain;33;SL;Carpet Bombing Doctrine;Medium;M2010;X
 5012;Head of State;Daniel Mayer;44;SD;Weary Stiffneck;High;M2023;X
 5013;Head of State;Maurice Thorez;33;ST;Powerhungry Demagogue;High;M2011;X
@@ -21,7 +21,7 @@ FRA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 5031;Foreign Minister;Joseph Paul Boncour;33;SD;Ideological Crusader;Medium;M2049;X
 5032;Foreign Minister;Pierre Comert;41;SD;The Cloak N Dagger Schemer;Medium;M2050;X
 5033;Foreign Minister;Léon Blum;47;SD;Apologetic Clerk;Very High;M2033;X
-5034;Foreign Minister;Yvon Delbos;33;SL;Biased Intellectual;Medium;M2048;X
+5034;Foreign Minister;Yvon Delbos;33;SL;Supporter of friendly relations;Medium;M2048;X
 5035;Foreign Minister;Georges Bonnet;38;SL;Iron Fisted Brute;Medium;M2053;X
 5036;Foreign Minister;Edouard Daladier;39;SD;Great Compromiser;High;M2037;X
 5041;Foreign Minister;René Charron;44;SC;Apologetic Clerk;Medium;M2059;X
@@ -35,15 +35,15 @@ FRA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 5049;Minister of Armament;Edouard Daladier;37;SD;laissez-faire capitalist;Low;M2037;X
 5050;Minister of Armament;Jean Louis Barthou;38;SD;Military Entrepreneur;Medium;M2069;X
 5051;Minister of Armament;Leon Jouhaux;41;SD;Strategic Air Proponent;Medium;M2070;X
-5052;Minister of Armament;Guy Mollet;46;SD;Theoretical Scientist;Medium;M2071;X
+5052;Minister of Armament;Guy Mollet;46;SD;Keynesian economy;Medium;M2071;X
 5053;Minister of Armament;André Le Troquer;47;SD;Resource Industrialist;Medium;M2072;X
 5054;Minister of Armament;Raoul Dautry;33;SL;Theoretical Scientist;High;M2073;X
-5055;Minister of Armament;Louis Loucheur;37;SL;Air to Ground Proponent;Medium;M2074;X
+5055;Minister of Armament;Louis Loucheur;37;SL;Construction magnate;Medium;M2074;X
 5057;Minister of Armament;Marcel Hoden;39;SL;Air Superiority Proponent;Medium;M2076;X
 5058;Minister of Armament;Charles de Gaulle;40;SC;Tank Proponent;High;M2027;X
-5059;Minister of Armament;Georges Bonnet;33;SL;Resource Industrialist;Medium;M2053;X
+5059;Minister of Armament;Georges Bonnet;33;SL;Opposer to military spending;Medium;M2053;X
 5061;Minister of Armament;Joseph Louis Avenol;37;SC;Battle Fleet Proponent;Medium;M2080;X
-5062;Minister of Armament;Marie Emile Fayolle;38;SC;Infantry Proponent;Medium;M2081;X
+5062;Minister of Armament;Marie Emile Fayolle;38;SC;Reformer;Medium;M2081;X
 5065;Minister of Armament;André Marie;41;ML;Air Superiority Proponent;Medium;M2041;X
 5067;Minister of Armament;Louis Armand;44;SC;Tank Proponent;Medium;M2086;X
 5068;Minister of Armament;Jules Romains;47;SC;Submarine Proponent;Medium;M2087;X
@@ -53,7 +53,7 @@ FRA;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;X
 5076;Minister of Armament;Auguste Lecoeur;44;ST;Military Entrepreneur;Medium;M2095;X
 5077;Minister of Armament;Daniel Renoult;47;ST;Theoretical Scientist;Medium;M2096;X
 5078;Minister of Armament;Jacques de Guillebon;38;PA;Resource Industrialist;Medium;M2097;X
-5081;Minister of Security;Adrien Tixier;38;SD;Compassionate Gentleman;Very High;M2100;X
+5081;Minister of Security;Adrien Tixier;38;SD;Health and safety;Very High;M2100;X
 5082;Minister of Security;Henri Bonnet;38;SD;Back Stabber;Medium;M2101;X
 5083;Minister of Security;Paul Ramadier;41;SD;Crime Fighter;High;M2035;X
 5087;Minister of Security;Arthur Fontaine;37;SL;Efficient Sociopath;Medium;M2106;X

@@ -1133,6 +1133,7 @@ technology =
     required  = { 12120 }
     effects =
     { command = { type = new_model which = escort_carrier value = 3 }
+		command = { type = scrap_model which = escort_carrier value = 1 }
    	  command = { type = new_model which = light_carrier value = 1 }
     }
   }

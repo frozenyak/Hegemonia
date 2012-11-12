@@ -5,12 +5,12 @@ event = {
 	country = BHU
 	
 	decision = {
-		war = { country = CYN country = JAP }
+		war = { country = U74 country = JAP }
 	}
 	decision_trigger = { }
 	
 	trigger = {
-		war = { country = CYN country = JAP }
+		war = { country = U74 country = JAP }
 		#random = 25
 	}
 
@@ -27,7 +27,7 @@ event = {
 		name = ACTION_NAME_FIGHT
 		ai_chance = 1
 		command = { type = domestic which = interventionism value = 3 }
-		command = { type = war which = CYN }
+		command = { type = war which = U74 }
 	}
 	action = { trigger = { ai = yes }
 		name = ACTION_NAME_DECLINE

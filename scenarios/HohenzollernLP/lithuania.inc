@@ -4,7 +4,8 @@
 
 country =
 { tag                    = LIT
-  ai = "lithuania.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "lithuania.ai"
   capital                = 599
 #Large Power
   energy                 = 800

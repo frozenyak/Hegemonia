@@ -1133,7 +1133,7 @@ technology =
       command = { type = attrition_mod value = 15 }
       command = { type = supply_dist_mod value = 10 }
       command = { type = enable_task which = strat_redeploy }
-      command = { type = task_efficiency which = strat_redeploy value = 0.20 }
+      command = { type = task_efficiency which = strat_redeploy value = 0.5 }
       command = { type = activate_unit_type which = engineer }
     }
   }

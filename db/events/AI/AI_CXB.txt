@@ -1,8 +1,4 @@
-#############################################
-# Regular AI Events
-#############################################
-# Behavior Flags
-#	UPGPeace			= Upgrading of existing units flag
+
 ################
 # Concetrate on upgrading while at peace
 #############################################

@@ -4,6 +4,7 @@
 
 country =
 { tag                    = TUR
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
 #Medium Power
   energy                 = 500
   metal                  = 500
@@ -28,7 +29,7 @@ country =
   }
   peacetime_ic_mod = 0.8
 	diplomacy =
-  { relation = { tag = CYN value = 125 }
+  { relation = { tag = U74 value = 125 }
     #relation = { tag = IND value = -150 }
     relation = { tag = AFG value = 150 access = yes }
   }

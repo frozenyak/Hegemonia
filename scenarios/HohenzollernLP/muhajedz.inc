@@ -4,6 +4,7 @@
 
 country =
 { tag                    = BRA
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
   energy                 = 400
   metal                  = 400
   rare_materials         = 200

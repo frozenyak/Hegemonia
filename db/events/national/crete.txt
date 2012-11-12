@@ -1,0 +1,50 @@
+###23000-23999###
+
+event = {
+	id = 23000
+	random = no
+	country = U01
+	
+	trigger = {
+		exists = GRE
+		OR = {
+			alliance = { country = GRE }
+			puppet = { country = -1 country = GRE }
+		}
+		ai = yes
+	}
+	
+	name = "Greek Unification"
+	#desc = "AI_EVENT"
+	style = 2
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = march year = 2000 }
+
+	action = {
+		name = "Join Greece (Game Over)"
+		ai_chance = 90
+		command = { type = trigger which = 23001 }
+	}
+	action = {
+		name = "Stay Independent"
+		ai_chance = 10
+		command = { type = relation which = GRE value = -25 }
+	}
+}
+
+event = {
+	id = 23001
+	country = GRE
+	
+	name = "Greek Unification"
+	desc = "Crete has decided to join us!"
+	style = 2
+
+	action = {
+		name = "ACTION_NAME_HURRAH"
+		ai_chance = 80
+		command = { type = inherit which = U01 }
+	}
+}

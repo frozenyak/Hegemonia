@@ -9,7 +9,8 @@
   
  country = 
  {  tag                    = MON
-	puppet		 = CYN
+	puppet		 = U74	
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
    # Resource Reserves 
 	energy                 = 300
 	metal                  = 150
@@ -22,7 +23,7 @@
    peacetime_ic_mod = 0.6
 	diplomacy = 
    {
-     relation = {  tag = CYN value = 150  } 
+     relation = {  tag = U74 value = 150  } 
      relation = {  tag = RUS value = 150  } 
     } 
    SpyInfo                = {  country = "MON" NumberOfSpies = 3  } 

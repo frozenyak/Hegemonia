@@ -4,7 +4,8 @@
 
 country =
 { tag                    = USA
-  ai = "american federation.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes ai_set = yes } }
+	ai = "american federation.ai"
   dissent		 = 5
   #Great Power
   energy                 = 5000

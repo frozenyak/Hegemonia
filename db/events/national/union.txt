@@ -671,11 +671,11 @@ event = {
 	country = U00
 
 	trigger = {
+		ai = yes
+		exists = GEO
 		war = { country = RUS }
 		NOT = { war = { country = GEO } }
-		NOT = { alliance = { country = U00 country = GEO } }
-		exists = GEO
-		random = 30
+		NOT = { alliance = { country = GEO } }
 		OR ={
 			NOT = { war = { country = TUR } }
 			NOT = { war = { country = U02 } }
@@ -684,13 +684,15 @@ event = {
 		NOT = { flag = RUS_com_friendly }
 		#month = 4
 		#NOT = { month = 8 }
-		ai = yes
-		control = { province = 380 }
+		#control = { province = 380 }
 		NOT = { war = { country = AUS } }
 		OR = {
 			NOT = { guarantee = { country = LIT country = GEO } }
 			war = { country = LIT }
 		}
+		random = 30
+		NOT = { war = { country = GER } }
+		NOT = { lost_national = { value = 20 } }
 	}
 
 	name = "The Georgian Obstacle"
@@ -1059,7 +1061,7 @@ event = {
 
 	trigger = {
 		#50% of national territory and all viable capitals lost
-		lost_national = { country = U00 value = 75 }
+		lost_national = { country = U00 value = 50 } #75
 		NOT = { control = { province = 409 } } #Constantinople
 		NOT = { control = { province = 377 } } #Athens
 		NOT = { control = { province = 1075 } } #Ankara

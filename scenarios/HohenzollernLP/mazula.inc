@@ -4,7 +4,8 @@
 
 country =
 { tag                    = MEX
-  ai = "mazula.ai"
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes ai_set = yes } }
+	ai = "mazula.ai"
   dissent		 = 5
 #Great Power
   energy                 = 5000

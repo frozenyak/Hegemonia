@@ -309,15 +309,23 @@ event = {
 	decision = {
 		war = { country = JAP }
 		OR = {
-			war = { country = LIT }
-			war = { country = GER }
-			war = { country = U00 }
+			AND = {
+				war = { country = LIT }
+				NOT = { alliance = { country = LIT country = JAP } }
+			}
+			AND = {
+				war = { country = GER }
+				NOT = { alliance = { country = GER country = JAP } }
+			}
+			AND = {
+				war = { country = U00 }
+				NOT = { alliance = { country = U00 country = JAP } }
+			}
 		}
 		NOT = { war = { country = JAP country = CHI } }
-		NOT = { war = { country = JAP country = CYN } }
+		NOT = { war = { country = JAP country = U74 } }
 		NOT = { flag = RUS_eastern_peace }
 		NOT = { control = { province = 1191 } } #Vladivostok
-		NOT = { participant = { country = JAP value = 4 } }
 	}
 	decision_trigger = {
 		area = { area = "Primorski" country = JAP value = 50 }
@@ -344,9 +352,18 @@ event = {
 	trigger = {
 		war = { country = JAP }
 		OR = {
-			war = { country = LIT }
-			war = { country = GER }
-			war = { country = U00 }
+			AND = {
+				war = { country = LIT }
+				NOT = { alliance = { country = LIT country = JAP } }
+			}
+			AND = {
+				war = { country = GER }
+				NOT = { alliance = { country = GER country = JAP } }
+			}
+			AND = {
+				war = { country = U00 }
+				NOT = { alliance = { country = U00 country = JAP } }
+			}
 		}
 		NOT = { control = { province = 1191 } } #Vladivostok
 		area = { area = "Primorski" country = JAP value = 50 }
@@ -368,9 +385,8 @@ event = {
 			}
 		}
 		NOT = { war = { country = JAP country = CHI } }
-		NOT = { war = { country = JAP country = CYN } }
-		NOT = { participant = { country = JAP value = 4 } }
-		random = 25
+		NOT = { war = { country = JAP country = U74 } }
+		random = 33
 		NOT = { flag = RUS_eastern_peace }
 	}
 	

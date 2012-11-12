@@ -1,10 +1,9 @@
 #Base country AI file
 
 switch = no # [yes/no]
-flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes }
 neutrality = 100
 war = 25
-strat_redeploy_threshold = 5
+strat_redeploy_threshold = 50
 max_redeploying = 0.05
 exp_force_ratio = 0.10
 exp_force_ratios = { } 

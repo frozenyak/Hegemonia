@@ -5,8 +5,9 @@
 country =
 { 
 	tag                    = U00
-	regular_id = U09
+	regular_id = URO
 	intrinsic_gov_type     = leninist
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes ai_set = yes } }
 	ai = "union.ai"
   dissent		 = 10
 #Great Power

@@ -1,0 +1,204 @@
+##########################
+### REVOLTERS SET FREE ###
+###     AI EVENTS      ###
+##########################
+event = {
+	id = 3300000
+	
+	random = no
+	persistent = yes
+	tag = { ALG ANG ARM AZB BEN BLR BOS BRU BUR CAM CMB CON CRO CYP EAF EQA EUS FLA GAB GEO GLD GUY ICL IDC INO ISR JOR KAZ KOR KUR KYG LAO LBY LEB MAD MAL MEN MLY MOR MOZ MTN NAM NIG PAK PAL PRI PRK QUE RHO SAR SCA SER SIB SIE SLV SOM SUD SYR TAJ TRA TRK TUN U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UKR UZB VIE WLL USA TEX POL CSA } #U87 CSX CGX CXB CYN
+	
+	trigger = { NOT = { local_flag = revolter_set } }
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+	
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 10 }
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300002
+	country = EGY
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	trigger = { NOT = { local_flag = revolter_set } }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 2 } #  Egypt was actually a puppet of the UK in the HOI2 era
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300004
+	trigger = { NOT = { local_flag = revolter_set } }
+	random = no
+	persistent = yes
+
+	country = CAL
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = sleepteam which = 240004 } # USA's Douglas Aircraft Company
+		command = { type = sleepteam which = 240018 } # USA's Standard Oil of California
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300007
+	trigger = {  
+		NOT = { local_flag = revolter_set }		
+		ispuppet = CAN 
+		}
+
+	random = no
+	persistent = yes
+
+	country = CAN
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 4 } #  The resistance
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300008
+	trigger = {  
+		NOT = { local_flag = revolter_set }		
+		puppet = { country = -1 country = JAP }
+		}
+
+	random = no
+	persistent = yes
+
+	country = PHI
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 5 } #  The resistance
+		command = { type = sleepteam which = 325005 } #Douglas MacArthur
+		command = { type = sleepleader which = 325044 } # MacArthur
+		command = { type = sleepleader which = 325045 } # Wainwright
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+	
+event = {
+	id = 330020
+	random = no
+	persistent = yes
+
+	TAG = { U87 CSX CGX CXB CYN }
+	
+	trigger = { 
+		NOT = { local_flag = revolter_set } 
+		puppet = { country = -1 country = JAP }
+	}
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 5 } # Occupied country
+		#guangxi
+		command = { type = removeclaim which = 1308 }
+		command = { type = removeclaim which = 1305 }
+		command = { type = removeclaim which = 1306 }
+		command = { type = removeclaim which = 1309 }
+		command = { type = removeclaim which = 1312 }
+		command = { type = removeclaim which = 1307 }
+		command = { type = removeclaim which = 1310 }
+		command = { type = removeclaim which = 1355 }
+		#shanxi
+		command = { type = removeclaim which = 1260 }
+		command = { type = removeclaim which = 1259 }
+		command = { type = removeclaim which = 1258 }
+		command = { type = removeclaim which = 1257 }
+		command = { type = removeclaim which = 1256 }
+		command = { type = removeclaim which = 1255 }
+		command = { type = removeclaim which = 1263 }
+		command = { type = removeclaim which = 1267 }
+		command = { type = removeclaim which = 1313 }
+		command = { type = removeclaim which = 1314 }
+		command = { type = removeclaim which = 1315 }
+		command = { type = removeclaim which = 1316 }
+		command = { type = removeclaim which = 1317 }
+		command = { type = removeclaim which = 1319 }
+		command = { type = removeclaim which = 1320 }
+		command = { type = removeclaim which = 1322 }
+		command = { type = removeclaim which = 1324 }
+		command = { type = removeclaim which = 1325 }
+		command = { type = removeclaim which = 1326 }
+		command = { type = removeclaim which = 1341 }
+		#qinghai
+		command = { type = removeclaim which = 1262 }
+		#yunnan
+		command = { type = removeclaim which = 1296 }
+		command = { type = removeclaim which = 1297 }
+		command = { type = removeclaim which = 1298 }
+		command = { type = removeclaim which = 1299 }
+		command = { type = removeclaim which = 1300 }
+		command = { type = removeclaim which = 1301 }
+		command = { type = removeclaim which = 1302 }
+		command = { type = removeclaim which = 1303 }
+		command = { type = removeclaim which = 1304 }
+		command = { type = removeclaim which = 1261 }
+		#nanjing
+		command = { type = removeclaim which = 1318 }
+		command = { type = removeclaim which = 1353 }
+		#
+		command = { type = local_setflag which = revolter_set }
+	}
+}

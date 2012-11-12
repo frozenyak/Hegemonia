@@ -1,7 +1,7 @@
 # Manchuria 1936 AI File by Lothos
 
 switch = no # [yes/no]
-flags = { reinf = yes }
+#flags = { reinf = yes }
 max_front_ratio = 1.2 
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
@@ -9,7 +9,7 @@ neutrality = 150
 war = 0
 upgrading = 0.3
 reinforcement = 0.05
-strat_redeploy_threshold = 2
+strat_redeploy_threshold = 25
 exp_force_ratio = 0.0
 exp_force_ratios = { } 
 no_exp_forces_to = { GER ROM HUN SLO BUL ITA VIC YUG FIN CRO AUS LIT U00 U02 TIB MON CGX U87 }

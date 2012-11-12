@@ -5,6 +5,7 @@
 country =
 { tag                    = KOR
   puppet		 = ENG
+	ai_settings = { flags = { MOB2 = yes MOB3 = yes MOB4 = yes } }
   capital                = 1228
   #industrial_modifier	 = 0.85
   #relative_manpower	 = 1.50
