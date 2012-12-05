@@ -31,6 +31,8 @@ model = {
 	supplyconsumption			= 0.5
 	fuelconsumption				= 0.5
 	distance					= 0.24
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { heavy_cruiser = 1 manpower = 750 }
 }
 
@@ -58,6 +60,8 @@ model = {
 	supplyconsumption			= 0.5
 	fuelconsumption				= 0.5
 	distance					= 0.26
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { heavy_cruiser = 1 manpower = 800 }
 }
 
@@ -85,6 +89,8 @@ model = {
 	supplyconsumption			= 0.6
 	fuelconsumption				= 0.6
 	distance					= 0.26
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { heavy_cruiser = 1 manpower = 850 }
 }
 
@@ -112,6 +118,8 @@ model = {
 	supplyconsumption			= 0.6
 	fuelconsumption				= 0.6
 	distance					= 0.28
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { heavy_cruiser = 1 manpower = 900 }
 }
 
@@ -139,6 +147,8 @@ model = {
 	supplyconsumption			= 0.7
 	fuelconsumption				= 0.6
 	distance					= 0.28
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { heavy_cruiser = 1 manpower = 1100 }
 }
 
@@ -166,6 +176,8 @@ model = {
 	supplyconsumption			= 0.7
 	fuelconsumption				= 0.6
 	distance					= 0.30
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { heavy_cruiser = 1 manpower = 1800 }
 }
 
@@ -193,6 +205,8 @@ model = {
 	supplyconsumption			= 1.6
 	fuelconsumption				= 0
 	distance					= 0.32
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { heavy_cruiser = 1 manpower = 2000 }
 }
 
@@ -220,5 +234,7 @@ model = {
 	supplyconsumption			= 0.7
 	fuelconsumption				= 0.6
 	distance					= 0.32
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { heavy_cruiser = 1 manpower = 1300 }
 }

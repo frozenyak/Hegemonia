@@ -25,6 +25,8 @@ model = {
 	fuelconsumption			= 2.3
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
 	equipment = { bomber = 100 manpower = 1500 }
 }
 # 1 - Basic Close Air Support Aircraft 1937
@@ -44,8 +46,10 @@ model = {
 	supplyconsumption 		= 0.8
 	range					= 500
 	fuelconsumption			= 1.6
-	upgrade_time_factor 	= 0.60 
-	upgrade_cost_factor 	= 0.50
+	upgrade_time_factor 	= 0.5
+	upgrade_cost_factor 	= 1.0
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
 	equipment = { bomber = 100 manpower = 1500 }
 }
 # 2 - Improved Close Air Support Aircraft 1940
@@ -67,6 +71,8 @@ model = {
 	fuelconsumption			= 1.7
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
 	equipment = { bomber = 100 manpower = 1500 }
 }
 # 3 - Advanced Close Air Support Aircraft 1945
@@ -88,6 +94,8 @@ model = {
 	fuelconsumption			= 1.9
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
 	equipment = { bomber = 100 manpower = 1500 }
 }
 # 4 - Turbojet Close Air Support Aircraft 1948
@@ -109,6 +117,8 @@ model = {
 	fuelconsumption			= 2.1
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 0.25
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
 	equipment = { bomber = 100 manpower = 1500 }
 }
 # 5 - Improved Turbojet Close Air Support Aircraft 1954
@@ -130,6 +140,8 @@ model = {
 	fuelconsumption			= 2.3
 	upgrade_time_factor 	= 0.5
 	upgrade_cost_factor 	= 1.0
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
 	equipment = { bomber = 100 manpower = 1500 }
 }
 # 6 - Turbojet Close Air Support Aircraft - Naval Version
@@ -152,5 +164,7 @@ model = {
 	fuelconsumption			= 3 #3.3
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
 	equipment = { bomber = 100 manpower = 1500 }
 }

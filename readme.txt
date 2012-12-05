@@ -1,4 +1,4 @@
-Hegemonia 1.07, checksum XXXX
+Hegemonia 1.07, checksum VUEK
 Requires Darkest Hour patch 1.03 RC2
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
@@ -23,15 +23,18 @@ SPACE is PAUSE
 countries without any non-random events:
 Annam
 Bhutan
-Crete
 Friland
 Angola
 Arabia
 Gotland
 Korea
 Ljansitar
-Romania
 Morocco
+Bohemia
+German-Austria
+Hungary
+Netherlands
+Qtizi
 
 combat changes:
 higher chance for leaders to die
@@ -40,7 +43,7 @@ bigger stacking/terrain penalties
 attrition more severe
 higher manpower trickleback
 leader limits:
-	land	2/4/8/12
+	land	3/6/9/12
 	air		2/4/6/8
 	naval	6/12/18/24
 
@@ -63,7 +66,7 @@ IC, resources, infra
 1.07
 	1.03 RC2 patch compatibility
 	ai
-		tweaks, rewritten several
+		rewrote and tweaked
 	
 	localisation
 		added text
@@ -71,9 +74,11 @@ IC, resources, infra
 	db
 		fix/change/add revolters
 		can't partition AUS until annex
-		BUL reqs Union to be gone
+		BUL req Union gone
 		central planning greater gearing bonus
 		fix attack/redeploy efficiencies
+		changed various colours
+		land leaders 3/6/9/12
 	
 	leaders
 		added to AUS
@@ -84,15 +89,16 @@ IC, resources, infra
 	units
 		updated DH Full cross-grade costs
 		defensiveness for pre-1936 units not better
+		added reinforce cost/times
 		
 	events
+		various tweaks
 		fix USA/MEX
 		redone post-war china
-		LIT less likely to help GEO vs LIT if at war with Russia
+		LIT less likely to help GEO vs Union if at war with Russia
 		LIT ai will also peace out with Union on Russian treaty if Union has not lost 10% national territory
-		various tweaks
-		new events to join a GRE republic
 		new events to deal with League taking Greece
+		CRE new events to join a GRE republic
 		
 	tech
 		fix earliest CVE not obsoleted

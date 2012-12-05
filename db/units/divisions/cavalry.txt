@@ -41,6 +41,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 6000 horses = 6000 artillery = 21 heavy_artillery = 6 }
 }
 
@@ -65,6 +67,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 11000 horses = 10246 artillery = 32 heavy_artillery = 12 anti_tank = 2 }
 }
 
@@ -89,6 +93,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 11000 trucks = 600 horses = 9000 artillery = 42 anti_tank = 6 anti_air = 3 }
 }
 
@@ -114,6 +120,8 @@ model = {
 	no_fuel_combat_mod 		= -0.15
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.8
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.66
 	equipment = { manpower = 11000 trucks = 1100 horses = 8080 artillery = 58 anti_tank = 12 anti_air = 9 armored_car = 52 }
 }
 
@@ -139,6 +147,8 @@ model = {
 	no_fuel_combat_mod 		= -0.3
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.9
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
 	equipment = { manpower = 11000 trucks = 2386 horses = 1600 artillery = 76 heavy_artillery = 12 anti_tank = 42 anti_air = 12 armored_car = 83 halftracks = 386  medium_armor = 117 }
 }
 
@@ -164,5 +174,7 @@ model = {
 	fuelconsumption			= 6
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 1.1
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
 	equipment = { manpower = 5000 trucks = 600 horses = 150 artillery = 86 heavy_artillery = 24 anti_tank = 32 anti_air = 14 armored_car = 74 halftracks = 426 medium_armor = 66 fighter = 100 }
 }

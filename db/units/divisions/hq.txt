@@ -35,6 +35,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 5000 }
 }
 
@@ -59,6 +61,8 @@ model = {
 	fuelconsumption			= 4.5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.66
 	equipment = { manpower = 5000 trucks = 250 halftracks = 250 }
 }
 
@@ -83,6 +87,8 @@ model = {
 	fuelconsumption			= 5 
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
 	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 }
 }
 
@@ -114,5 +120,7 @@ model = {
 	fuelconsumption			= 5 
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
 	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 }
 }

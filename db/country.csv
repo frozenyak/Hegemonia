@@ -17,7 +17,7 @@ BOL;LightGray;ALG;USA;X
 BOS;DarkGreen;YUG;FRA;X
 BRA;LightGreen;ALG;USA;X
 BRU;White;ALG;ENG;X
-BUL;LightBrown;BUL;BUL;X
+BUL;LightGreen;BUL;BUL;X
 BUR;DarkGreen;BUR;MIN;X
 CAL;Green;USA;USA;X
 CAM;LightBlue;FRA;MIN;X
@@ -119,7 +119,7 @@ PRU;Yellow;ALG;GER;X
 QUE;LightBlue;FRA;MIN;X
 REB;Black;ENG;MIN;X
 RHO;DarkBrown;GER;GER;X
-ROM;LightOrange;ROM;ROM;X
+ROM;DarkOrange;ROM;ROM;X
 RSI;DarkGray;ITA;ITA;X
 RUS;DarkGreen;SOV;SOV;X
 SAF;DarkGray;ALG;FRA;X
@@ -160,7 +160,7 @@ VIC;Blue;FRA;FRA;X
 VIE;DarkBlue;CHI;USA;X
 WLL;LightBrown;FRA;GER;X
 YEM;Green;EGY;MIN;X
-YUG;LightYellow;YUG;FRA;X
+YUG;Brown;YUG;FRA;X
 ALS;DarkGreen;ENG;USA;X
 AXI;Gray;GER;GER;X
 ALI;DarkGray;ALI;ALI;X

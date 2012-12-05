@@ -319,11 +319,11 @@ combat = {
 # Land Leader Command Limit (nr of divisions), Rank 0 (highest)
 	12
 # Land Leader Command Limit (nr of divisions), Rank 1
-	8 #9
+	9
 # Land Leader Command Limit (nr of divisions), Rank 2
-	4 #6
+	6
 # Land Leader Command Limit (nr of divisions), Rank 3 (lowest)
-	2 #3
+	3
 # Air Leader Command Limit (nr of divisions), Rank 0 (highest)
 	8 #24
 # Air Leader Command Limit (nr of divisions), Rank 1

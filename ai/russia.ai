@@ -21,7 +21,7 @@ use_offensive_supply = yes
 claim_acceptance = -69
 
 combat = { }
-liberate = { CZE KOR UCH ITA FIN DFR SCH PER SPA ENG IRE ROM HOL HUN U09 YUG } #UKR POL GEO
+liberate = { CZE KOR UCH ITA FIN DFR SCH PER SPA ENG IRE ROM HOL HUN U09 YUG BUL } #UKR POL GEO
 resistance = { 
 	LIT = 10 
 	GER = 6

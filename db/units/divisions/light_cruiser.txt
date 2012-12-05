@@ -30,6 +30,8 @@ model = {
 	supplyconsumption			= 0.36
 	fuelconsumption				= 0.38
 	distance					= 0.16
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { light_cruiser = 1 manpower = 300 }
 }
 
@@ -57,6 +59,8 @@ model = {
 	supplyconsumption			= 0.36
 	fuelconsumption				= 0.38
 	distance					= 0.18
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { light_cruiser = 1 manpower = 400 }
 }
 
@@ -84,6 +88,8 @@ model = {
 	supplyconsumption			= 0.38
 	fuelconsumption				= 0.38
 	distance					= 0.20
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { light_cruiser = 1 manpower = 550 }
 }
 
@@ -111,6 +117,8 @@ model = {
 	supplyconsumption			= 0.38
 	fuelconsumption				= 0.4
 	distance					= 0.22
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { light_cruiser = 1 manpower = 575 }
 }
 
@@ -138,6 +146,8 @@ model = {
 	supplyconsumption			= 0.4
 	fuelconsumption				= 0.4
 	distance					= 0.23
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { light_cruiser = 1 manpower = 750 }
 }
 
@@ -165,6 +175,8 @@ model = {
 	supplyconsumption			= 0.4
 	fuelconsumption				= 0.4
 	distance					= 0.24
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { light_cruiser = 1 manpower = 850 }
 }
 
@@ -192,6 +204,8 @@ model = {
 	supplyconsumption			= 0.4
 	fuelconsumption				= 0.4
 	distance					= 0.24
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { light_cruiser = 1 manpower = 850 }
 }
 # 7 - Nuclear 1948
@@ -218,5 +232,7 @@ model = {
 	supplyconsumption			= 0.8
 	fuelconsumption				= 0.0
 	distance					= 0.26
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { light_cruiser = 1 manpower = 850 }
 }

@@ -1994,7 +1994,11 @@ event = {
 				area = { area = "Paris" }
 			}
 		}
-		atwar = no
+		OR = {
+			atwar = no
+			alliance = { country = SPA }
+			region = { region = "Spain" country = -3 value = 90 }
+		}
 	}
 
 	name = "The Fate of France"

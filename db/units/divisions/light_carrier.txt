@@ -31,6 +31,8 @@ model = {
 	supplyconsumption			= 0.75
 	fuelconsumption				= 0.75
 	distance					= 0.05
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { carrier = 1 manpower = 1000 }
 }
 
@@ -58,6 +60,8 @@ model = {
 	supplyconsumption			= 0.85
 	fuelconsumption				= 0.5
 	distance					= 0.05
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { carrier = 1 manpower = 1400 }
 }
 
@@ -85,6 +89,8 @@ model = {
 	supplyconsumption			= 1.2
 	fuelconsumption				= 1.25
 	distance					= 0.05
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { carrier = 1 manpower = 1600 }
 }
 
@@ -112,5 +118,7 @@ model = {
 	supplyconsumption			= 1.75
 	fuelconsumption				= 1.25
 	distance					= 0.05
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { carrier = 1 manpower = 1800 }
 }

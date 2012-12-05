@@ -94,6 +94,7 @@ garrison = {
 		ETH = 10
 	}
 	province_priorities = {
-		900 = 100
+		790 = 30 # Alexandria 
+     	900 = 30 # Suez
 	}	
 }

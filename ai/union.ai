@@ -557,7 +557,10 @@ garrison = {
 		RSI = -1
 		U14 = 25
 	}
-	province_priorities = {	}
+	province_priorities = {	
+		429  = 30 # Malta
+		382 = 30 # Iraklion
+	}
 	ignore = { }
 	area_multiplier = { }
 }

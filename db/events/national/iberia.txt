@@ -672,7 +672,12 @@ event = {
 				area = { area = "Paris" }
 			}
 		}
-		atwar = no
+		OR = {
+			atwar = no
+			alliance = { country = DFR }
+			alliance = { country = GER }
+			region = { region = "Germany" country = -3 value = 90 }
+		}
 	}
 
 	name = "The Fate of France"
@@ -787,11 +792,13 @@ event = {
 	picture = "news_paper"
 
 	date = { day = 1 month = january year = 1936 }
-	offset = 20
+	offset = 30
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
-		trigger = { government = democratic }
+		trigger = { 
+			government = democratic 
+		}
 		name = "Hold a plebiscite in Greece"
 		ai_chance = 50
 		command = { type = setflag which = GRE_plebiscite }
@@ -801,18 +808,22 @@ event = {
 			exists = U02
 		}
 		name = "Restore Greece to the Emperor"
-		ai_chance = 20
+		ai_chance = 25
 		command = { type = secederegion which = U02 value = "Anatolia" when = 1 }
+		command = { trigger = { alliance = { country = U02 } } type = secederegion which = ARA value = "Middle East" when = 1 }
 		command = { type = sleepevent which = 38061 }
-		command = { type = relation which = U02 value = 150 }
+		command = { type = relation which = U02 value = 200 }
 	}
 	action = {
+		trigger = {
+			NOT = { alliance = { country = U02 } }
+		}
 		name = "Create a Greek Republic"
-		ai_chance = 30
+		ai_chance = 25
 		command = { type = independence which = GRE value = 1 }
 		command = { type = alliance which = GRE }
 		command = { type = sleepevent which = 38061 }
-		command = { type = relation which = GRE value = 50 }
+		command = { type = relation which = GRE value = 200 }
 		command = { trigger = { alliance = { country = ARA } } type = secederegion which = ARA value = "Middle East" when = 1 }
 		command = { type = secederegion which = GRE value = "Middle East" when = 1 }
 	}
@@ -833,24 +844,24 @@ event = {
 	picture = "news_paper"
 
 	date = { day = 1 month = january year = 1936 }
-	offset = 20
+	offset = 30
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "Greeks voted for a Republic"
-		ai_chance = 50
+		ai_chance = 60
 		command = { type = independence which = GRE value = 1 }
 		command = { type = alliance which = GRE }
-		command = { type = relation which = GRE value = 100 }
+		command = { type = relation which = GRE value = 150 }
 		command = { trigger = { alliance = { country = ARA } } type = secederegion which = ARA value = "Middle East" when = 1 }
 		command = { type = secederegion which = GRE value = "Middle East" when = 1 }
 	}
 	action = { 
 		trigger = { exists = U02 }
 		name = "Greeks voted for the Emperor"
-		ai_chance = 50
+		ai_chance = 40
 		command = { type = secederegion which = U02 value = "Anatolia" when = 1 }
-		command = { type = relation which = U02 value = 100 }
+		command = { type = relation which = U02 value = 150 }
 		command = { trigger = { alliance = { country = ARA } } type = secederegion which = ARA value = "Middle East" when = 1 }
 		command = { type = secederegion which = U02 value = "Middle East" when = 1 }
 	}

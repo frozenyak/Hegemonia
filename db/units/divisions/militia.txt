@@ -39,6 +39,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
 	equipment = { manpower = 10000 }
 }
 
@@ -63,6 +65,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
 	equipment = { manpower = 10000 trucks = 32 artillery = 4 anti_tank = 26 }
 }
 
@@ -87,6 +91,8 @@ model = {
 	fuelconsumption 		= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
 	equipment = { manpower = 10000 trucks = 46 artillery = 8 anti_tank = 28 }
 }
 
@@ -111,5 +117,7 @@ model = {
 	fuelconsumption 		= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
 	equipment = { manpower = 10000 trucks = 260 artillery = 8 anti_tank = 12 }
 }

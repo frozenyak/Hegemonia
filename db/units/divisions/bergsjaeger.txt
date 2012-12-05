@@ -37,6 +37,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 87 horses = 5842 artillery = 36 heavy_artillery = 8 anti_tank = 6  }
 }
 # Basic Mountain Division - 1 1935
@@ -60,6 +62,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 680 horses = 5230 artillery = 48 heavy_artillery = 12 anti_tank = 12 anti_air = 8 }
 }
 # Improved Mountain Division - 2 1939
@@ -83,6 +87,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 700 horses = 4687 artillery = 54 heavy_artillery = 12 anti_tank = 27 anti_air = 12 }
 }
 
@@ -107,6 +113,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 726 horses = 4678 artillery = 62 heavy_artillery = 18 anti_tank = 32 anti_air = 18 }
 }
 
@@ -131,6 +139,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 746 horses = 4860 artillery = 72 heavy_artillery = 34 anti_tank = 36 anti_air = 18 }
 }
 # Modern Mountain Division - 5 1951
@@ -154,6 +164,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 1867 horses = 2486 artillery = 80 heavy_artillery = 44 anti_tank = 38 anti_air = 24  }
 }
 # 1955 Elite Mountain Division - 6
@@ -177,5 +189,7 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 2684 horses = 684 artillery = 120 heavy_artillery = 48 anti_tank = 36 anti_air = 24 }
 }

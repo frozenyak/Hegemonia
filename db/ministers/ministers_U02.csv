@@ -1,5 +1,5 @@
 U02;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
-104001;Head of State;Manuel XXVI;36;PA;Ruthless Powermonger;High;M18001;x
+104001;Head of State;Manuel XXVI;36;PA;stern imperialist;High;M18001;x
 104002;Head of Government;Constantinos Demertzis;36;PA;Naive Optimist;NA;M18002;x
 104003;Foreign Minister;Constantinos Demertzis;36;PA;Biased Intellectual;Very High;M18002;x
 104004;Minister of Armament;Georgios Mantzavinos;36;PA;Military Entrepreneur;Medium;M18004;x
@@ -185,3 +185,6 @@ U02;Ruling Cabinet - Start;Name;Pool;Ideology;Personality;Loyalty;Picturename;x
 250067;Chief of Staff;Mohan Singh;1949;PA;School of Mass Combat;High;6089;x
 250068;Chief of Staff;Mohan Singh;1949;SC;School of Mass Combat;High;6089;x
 250069;Minister of Security;Vinayak Damodar Savarkar;1947;SD;Silent Lawyer;High;6090;x
+250070;Head of State;Manuel XXVI;36;FA;stern imperialist;High;M18001;x
+250071;Head of State;Manuel XXVI;36;SC;stern imperialist;High;M18001;x
+250072;Head of State;Manuel XXVI;36;SL;stern imperialist;High;M18001;x

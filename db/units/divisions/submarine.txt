@@ -24,6 +24,8 @@ model = {
 	supplyconsumption			= 0.3
 	fuelconsumption				= 0.5
 	distance					= 0.15
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { submarine = 5 manpower = 100 }
 }
 
@@ -51,6 +53,8 @@ model = {
 	supplyconsumption			= 0.4
 	fuelconsumption				= 0.5
 	distance					= 0.16
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { submarine = 5 manpower = 200 }
 }
 
@@ -78,6 +82,8 @@ model = {
 	supplyconsumption			= 0.5
 	fuelconsumption				= 0.7
 	distance					= 0.17
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { submarine = 5 manpower = 200 }
 }
 
@@ -105,6 +111,8 @@ model = {
 	supplyconsumption			= 0.6
 	fuelconsumption				= 0.8
 	distance					= 0.18
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { submarine = 5 manpower = 300 }
 }
 
@@ -132,6 +140,8 @@ model = {
 	supplyconsumption			= 0.7
 	fuelconsumption				= 0.5
 	distance					= 0.19
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { submarine = 5 manpower = 400 }
 }
 
@@ -159,6 +169,8 @@ model = {
 	supplyconsumption			= 0.7
 	fuelconsumption				= 0.5
 	distance					= 0.2
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { submarine = 5 manpower = 400 }
 }
 # 6 - Nuclear 1948
@@ -185,5 +197,7 @@ model = {
 	supplyconsumption			= 1.9
 	fuelconsumption				= 0
 	distance					= 0.2
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { submarine = 5 manpower = 550 }
 }

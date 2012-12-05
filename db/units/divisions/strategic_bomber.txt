@@ -27,6 +27,8 @@ model = {
 	fuelconsumption				= 3.0
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 3000 }
 }
 
@@ -52,6 +54,8 @@ model = {
 	fuelconsumption				= 3.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 3000 }
 }
 
@@ -77,6 +81,8 @@ model = {
 	fuelconsumption				= 3.5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 3000 }
 }
 
@@ -102,6 +108,8 @@ model = {
 	fuelconsumption				= 4.0
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 3000 }
 }
 
@@ -127,6 +135,8 @@ model = {
 	fuelconsumption				= 4.0
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 3500 }
 }
 
@@ -152,5 +162,7 @@ model = {
 	fuelconsumption				= 5.0
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 3500 }
 }

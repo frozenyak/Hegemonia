@@ -26,6 +26,8 @@ model = {
 	fuelconsumption				= 1.7
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { transport_plane = 100 manpower = 2100 }
 }
 
@@ -52,6 +54,8 @@ model = {
 	fuelconsumption				= 1.8
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { transport_plane = 100 manpower = 2100 }
 }
 
@@ -78,6 +82,8 @@ model = {
 	fuelconsumption				= 2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { transport_plane = 100 manpower = 2100 }
 }
 
@@ -104,6 +110,8 @@ model = {
 	fuelconsumption				= 2.1
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { transport_plane = 100 manpower = 2100 }
 }
 
@@ -130,5 +138,7 @@ model = {
 	fuelconsumption				= 2.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { transport_plane = 100 manpower = 2100 }
 }

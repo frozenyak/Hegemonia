@@ -37,6 +37,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 15000 trucks = 8  }
 }
 
@@ -61,6 +63,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 15000 trucks = 88 artillery = 42 heavy_artillery = 8 anti_tank = 32 anti_air = 12  }
 }
 
@@ -85,6 +89,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 15000 trucks = 156 artillery = 56 heavy_artillery = 12 anti_tank = 60 anti_air = 48 armored_car = 36 medium_armor = 6 }
 }
 
@@ -109,6 +115,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 15000 trucks = 280 artillery = 52 heavy_artillery = 9 anti_tank = 62 anti_air = 51 armored_car = 40 medium_armor = 48  }
 }
 
@@ -133,6 +141,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 15000 trucks = 320 artillery = 52 heavy_artillery = 8 anti_tank = 63 anti_air = 52 armored_car = 42 halftracks = 60 medium_armor = 44  }
 }
 
@@ -157,6 +167,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 15000 trucks = 400 artillery = 48 anti_tank = 48 anti_air = 48 armored_car = 56 halftracks = 120 medium_armor = 36  }
 }
 
@@ -181,5 +193,7 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 15000 trucks = 425 artillery = 56 anti_tank = 32 anti_air = 56 armored_car = 52 halftracks = 140 medium_armor = 36   }
 }

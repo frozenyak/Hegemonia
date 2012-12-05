@@ -45,6 +45,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33	
 	equipment = { manpower = 13000 trucks = 79 horses = 3838 artillery = 84 heavy_artillery = 4  }
 }
 
@@ -69,6 +71,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33	
 	equipment = { manpower = 13000 trucks = 200 horses = 5000 artillery = 165 heavy_artillery = 12 anti_tank = 40 anti_air = 10 }
 }
 
@@ -93,6 +97,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 1137 horses = 4842 artillery = 194 heavy_artillery = 18 anti_tank = 75 anti_air = 12 }
 }
 
@@ -117,6 +123,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = {  manpower = 13000 trucks = 1053 horses = 4640 artillery = 204 heavy_artillery = 24 anti_tank = 45 anti_air = 13 }
 }
 
@@ -141,6 +149,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = {  manpower = 13000 trucks = 736 horses = 4032 artillery = 82 heavy_artillery = 60 anti_tank = 45 anti_air = 15 }
 }
 
@@ -165,6 +175,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 2000 horses = 2500 artillery = 210 heavy_artillery = 60 anti_tank = 50 anti_air = 25  }
 }
 
@@ -189,6 +201,8 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 2600 horses = 2000 artillery = 300 heavy_artillery = 100 anti_tank = 60 anti_air = 40 }
 }
 
@@ -213,5 +227,7 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.5
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
 	equipment = {  manpower = 13000 trucks = 3000 horses = 500 artillery = 280 heavy_artillery = 90 anti_tank = 50 anti_air = 40 }
 }

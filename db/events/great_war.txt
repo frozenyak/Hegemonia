@@ -53,8 +53,10 @@ event = {
 	decision = {
 		exists = RUS
 		NOT = { flag = peace_in_our_time }
-		#NOT = { flag = RUS_com_friendly }
-		NOT = { event = 56029 }
+		OR = {
+			NOT = { flag = RUS_com_friendly }
+			NOT = { event = 56029 }
+		}
 		NOT = { war = { country = RUS } }
 		NOT = { alliance = { country = RUS } }
 		NOT = { puppet = { country = RUS country = U00 } }
@@ -70,15 +72,20 @@ event = {
 
 	trigger = {
 		NOT = { flag = peace_in_our_time }
-		#OR = {
+		OR = {
 			random = 10
-		#	NOT = { flag = great_war_by_event }
-		#}
+			AND = {
+				NOT = { flag = great_war_by_event }
+				year = 1941
+			}
+		}
 		exists = RUS
 		headofstate = 102188
 		#local_flag = MOB7
-		#NOT = { flag = RUS_com_friendly }
-		NOT = { event = 56029 }
+		OR = {
+			NOT = { flag = RUS_com_friendly }
+			NOT = { event = 56029 }
+		}
 		NOT = { war = { country = RUS } }
 		NOT = { alliance = { country = RUS } }
 		#NOT = { non_aggression = { country = RUS } }

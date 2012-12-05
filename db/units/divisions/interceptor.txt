@@ -25,6 +25,8 @@ model = { # Interwar Fighter - 0 1924
 	fuelconsumption				= 1.5
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Early Fighter - 1 1930
@@ -48,6 +50,8 @@ model = { # Early Fighter - 1 1930
 	fuelconsumption				= 1.6
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 750 }
 }
 model = { # Basic Interceptor - 2 1937
@@ -71,6 +75,8 @@ model = { # Basic Interceptor - 2 1937
 	fuelconsumption				= 1.7
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 750 }
 }
 model = { # Improved Interceptor - 3 1940
@@ -94,6 +100,8 @@ model = { # Improved Interceptor - 3 1940
 	fuelconsumption				= 1.8
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 750 }
 }
 model = { # Advanced Interceptor - 4 1942
@@ -117,6 +125,8 @@ model = { # Advanced Interceptor - 4 1942
 	fuelconsumption				= 1.9
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	interceptor = 7
 	equipment = { fighter = 100 manpower = 750 }
 }
@@ -141,6 +151,8 @@ model = { # Basic Rocket Interceptor - 5 1941
 	fuelconsumption				= 2.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	interceptor = 6
 	upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
 	equipment = { fighter = 100 manpower = 750 }
@@ -166,6 +178,8 @@ model = { # Improved Rocket Interceptor - 6 1943
 	fuelconsumption				= 2.5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	interceptor = 8
 	equipment = { fighter = 100 manpower = 750 }
 }
@@ -190,6 +204,8 @@ model = { # Basic Turbojet Interceptor - 7 1944
 	fuelconsumption				= 2.1
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	interceptor = 8
 	equipment = { fighter = 100 manpower = 750 }
 }
@@ -214,6 +230,8 @@ model = { # Improved Turbojet Interceptor - 8 1947
 	fuelconsumption				= 2.3
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 750 }
 }
 model = { # Supersonic Interceptor - 9 1950
@@ -237,5 +255,7 @@ model = { # Supersonic Interceptor - 9 1950
 	fuelconsumption				= 2.5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 750 }
 }

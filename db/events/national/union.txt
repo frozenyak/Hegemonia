@@ -1209,6 +1209,49 @@ event = {
 		command = { type = relation which = RUS value = -50 }
 		command = { type = dissent value = 5 }
 	}
+	action = {
+		trigger = {
+			headofgovernment = 102187
+		}
+		name = "ACTION_NAME_NO"
+		ai_chance = 0
+		command = { type = relation which = RUS value = -50 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 55053
+	country = U00
+
+	name = "Alliance with Russia?"
+	desc = "The Communists in Russia are now in control of the government and decided to align themselves with us. Should we accept Russia as member in the Comintern?"
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_OF_COURSE"
+		ai_chance = 90
+		command = { type = alliance which = RUS }
+		command = { type = relation which = RUS value = 50 }
+	}
+	action = {
+		trigger = {
+			NOT = { headofgovernment = 102187 }
+		}
+		name = "ACTION_NAME_NO"
+		ai_chance = 10
+		command = { type = relation which = RUS value = -50 }
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		trigger = {
+			headofgovernment = 102187
+		}
+		name = "ACTION_NAME_NO"
+		ai_chance = 0
+		command = { type = relation which = RUS value = -50 }
+		command = { type = dissent value = 5 }
+	}
 }
 
 event = {

@@ -27,7 +27,7 @@ target = {
 	663 = 10 #Stalingrad
 } 
 demand_claims = { }
-liberate = { GEO ROM ANG }
+liberate = { GEO ROM ANG BUL }
 resistance = {  
 	SPA = 1
 	U00 = 1

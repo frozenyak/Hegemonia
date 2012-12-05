@@ -33,7 +33,6 @@
 
 event = {
 	id = 140000
-	random = no
 	persistent = yes
 
 	trigger = {
@@ -42,7 +41,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 3
@@ -61,7 +59,6 @@ event = {
 
 event = {
 	id = 140001
-	random = no
 	persistent = yes
 
 	trigger = {
@@ -86,7 +83,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -106,7 +102,6 @@ event = {
 
 event = {
 	id = 140002
-	random = no
 	persistent = yes
 
 	trigger = {
@@ -117,7 +112,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -136,7 +130,6 @@ event = {
 
 event = {
 	id = 140100
-	random = no
 	persistent = yes
 	TAG = { JAP UAU }
 
@@ -144,11 +137,10 @@ event = {
 		ai = yes
 		war = { country = CHI }
 		NOT = { local_flag = AI_invasion_war }
-		random = 10
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -163,7 +155,6 @@ event = {
 
 event = {
 	id = 140101
-	random = no
 	persistent = yes
 	TAG = { JAP UAU }
 
@@ -171,11 +162,10 @@ event = {
 		ai = yes
 		war = { country = U74 }
 		NOT = { local_flag = AI_invasion_war }
-		random = 10
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -190,9 +180,8 @@ event = {
 
 event = {
 	id = 140102
-	random = no
 	persistent = yes
-	TAG = { JAP U08 RUS UAU }
+	TAG = { JAP U08 UAU }
 
 	trigger = {
 		ai = yes
@@ -202,7 +191,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -216,19 +204,17 @@ event = {
 
 event = {
 	id = 140103
-	random = no
 	persistent = yes
-	TAG = { JAP MEX USA UAU }
+	TAG = { JAP UAU }
 
 	trigger = {
 		ai = yes
 		war = { country = RUS }
 		NOT = { local_flag = AI_invasion_war }
-		random = 10
+		random = 25
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -242,7 +228,6 @@ event = {
 
 event = {
 	id = 140104
-	random = no
 	persistent = yes
 	TAG = { JAP UAU }
 
@@ -250,11 +235,10 @@ event = {
 		ai = yes
 		war = { country = KOR }
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -268,9 +252,8 @@ event = {
 
 event = {
 	id = 140105
-	random = no
 	persistent = yes
-	TAG = { JAP U08 UAU }
+	TAG = { JAP UAU }
 
 	trigger = {
 		ai = yes
@@ -278,11 +261,10 @@ event = {
 		control = { province = 1361 data = ENG }
 		control = { province = 1362 data = ENG }
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -297,9 +279,8 @@ event = {
 
 event = {
 	id = 140106
-	random = no
 	persistent = yes
-	TAG = { JAP MEX USA UAU }
+	TAG = { JAP MEX UAU }
 
 	trigger = {
 		ai = yes
@@ -309,7 +290,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -324,9 +304,8 @@ event = {
 
 event = {
 	id = 140108
-	random = no
 	persistent = yes
-	TAG = { JAP RUS MEX USA U05 }
+	country = JAP
 
 	trigger = {
 		ai = yes
@@ -336,7 +315,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -351,7 +329,6 @@ event = {
 
 event = {
 	id = 140109
-	random = no
 	persistent = yes
 	TAG = { JAP UAU }
 
@@ -366,7 +343,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -379,41 +355,39 @@ event = {
 	}
 }
 
-event = {
-	id = 140110
-	random = no
-	persistent = yes
-	TAG = { JAP RUS UAU }
+# event = {
+	# id = 140110
+	# persistent = yes
+	# TAG = { JAP UAU }
 
-	trigger = {
-		ai = yes
-		OR = {
-			war = { country = MEX }
-			war = { country = USA }
-		}
-		NOT = { local_flag = AI_invasion_war }
-		random = 10
-	}
+	# trigger = {
+		# ai = yes
+		# OR = {
+			# war = { country = MEX }
+			# war = { country = USA }
+		# }
+		# NOT = { local_flag = AI_invasion_war }
+		# random = 25
+		# NOT = { war = { country = ENG } }
+	# }
 
-	name = "AI_EVENT"
-	style = 0
+	# name = "AI_EVENT"
 
-	date = { day = 1 month = january year = 1936 }
-	offset = 10
-	deathdate = { day = 1 month = january year = 2000 }
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 2000 }
 
-	action_a = {
-		command = { type = local_setflag which = AI_invasion_war }
-		command = { type = local_setflag which = AI_invasion_major }	
-		command = { type = ai which = "invasion/invasion-mazula.ai" }
-	}
-}
+	# action_a = {
+		# command = { type = local_setflag which = AI_invasion_war }
+		# command = { type = local_setflag which = AI_invasion_major }	
+		# command = { type = ai which = "invasion/invasion-mazula.ai" }
+	# }
+# }
 
 event = {
 	id = 140111
-	random = no
 	persistent = yes
-	TAG = { JAP U05 UAU VEN }
+	TAG = { JAP UAU VEN }
 
 	trigger = {
 		ai = yes
@@ -426,7 +400,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -441,9 +414,8 @@ event = {
 
 event = {
 	id = 140112
-	random = no
 	persistent = yes
-	TAG = { JAP MEX UAU }
+	TAG = { JAP UAU }
 
 	trigger = {
 		ai = yes
@@ -453,7 +425,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -468,7 +439,6 @@ event = {
 
 event = {
 	id = 140113
-	random = no
 	persistent = yes
 	TAG = { JAP UAU U02 IND }
 
@@ -481,7 +451,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -496,7 +465,6 @@ event = {
 
 event = {
 	id = 140114
-	random = no
 	persistent = yes
 	TAG = { JAP UAU U02 IND SAF }
 
@@ -508,7 +476,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -523,9 +490,8 @@ event = {
 
 event = {
 	id = 140115
-	random = no
 	persistent = yes
-	TAG = { JAP U08 UAU PHI }
+	TAG = { JAP UAU PHI }
 
 	trigger = {
 		ai = yes
@@ -536,7 +502,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -551,27 +516,75 @@ event = {
 ##############
 ## Ostasien ##
 ##############
-#140200
 
+event = {
+	id = 140200
+	persistent = yes
+	country = U08
+
+	trigger = {
+		ai = yes
+		war = { country = ENG }
+		control = { province = 1361 data = ENG }
+		control = { province = 1362 data = ENG }
+		NOT = { local_flag = AI_invasion_war }
+		random = 25
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }	
+		command = { type = local_setflag which = AI_invasion_minor }
+		command = { type = ai which = "invasion/invasion-taiwan.ai" }
+	}
+}
+
+event = {
+	id = 140201
+	persistent = yes
+	country = U08
+
+	trigger = {
+		ai = yes
+		war = { country = ENG }
+		NOT = { local_flag = AI_invasion_war }
+		control = { province = 1624 data = ENG }
+		random = 50
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = ai which = "invasion/invasion-brunei.ai" }
+	}
+}
 ############
 ## Russia ##
 ############
 
 event = {
 	id = 140300
-	random = no
 	persistent = yes
-	TAG = { RUS MEX USA UAU ENG GER DFR } #U00
+	country = RUS
 
 	trigger = {
 		ai = yes
 		war = { country = JAP }
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -586,9 +599,8 @@ event = {
 
 event = {
 	id = 140301
-	random = no
 	persistent = yes
-	TAG = { RUS MEX USA SCA IRE GER DFR }
+	TAG = { RUS SCA GER DFR }
 
 	trigger = {
 		ai = yes
@@ -598,7 +610,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -611,15 +622,91 @@ event = {
 	}
 }
 
+event = {
+	id = 140302
+	persistent = yes
+	country = RUS
+
+	trigger = {
+		ai = yes
+		war = { country = PHI }
+		NOT = { local_flag = AI_invasion_war }
+		random = 15
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }	
+		command = { type = ai which = "invasion/invasion-philippines.ai" }
+	}
+}
+
+event = {
+	id = 140303
+	persistent = yes
+	TAG = { RUS MEX USA U05 }
+
+	trigger = {
+		ai = yes
+		war = { country = UAU }
+		NOT = { local_flag = AI_invasion_war }
+		random = 15
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }	
+		command = { type = ai which = "invasion/invasion-australasia.ai" }
+	}
+}
+
+# event = {
+	# id = 140304
+	# persistent = yes
+	# country = RUS
+
+	# trigger = {
+		# ai = yes
+		# OR = {
+			# war = { country = MEX }
+			# war = { country = USA }
+		# }
+		# NOT = { local_flag = AI_invasion_war }
+		# random = 15
+		# NOT = { war = { country = ENG } }
+	# }
+
+	# name = "AI_EVENT"
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 2000 }
+
+	# action_a = {
+		# command = { type = local_setflag which = AI_invasion_war }
+		# command = { type = local_setflag which = AI_invasion_major }	
+		# command = { type = ai which = "invasion/invasion-mazula.ai" }
+	# }
+# }
 ##############
 ## Tarrbitz ##
 ##############
 
 event = {
 	id = 140400
-	random = no
 	persistent = yes
-	TAG = { CUB HAI DOM U05 MEX USA }
+	TAG = { CUB HAI DOM }
 
 	trigger = {
 		ai = yes
@@ -629,11 +716,10 @@ event = {
 			war = { country = CUB }
 		}
 		NOT = { local_flag = AI_invasion_war }
-		random = 15
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -662,23 +748,77 @@ event = {
 ## Jadakal ##
 #############
 
-#140430
 
 event = {
-	id = 140432
-	random = no
+	id = 140430
 	persistent = yes
-	TAG = { U05 SPA ENG GER DFR }
+	country = U05
 
 	trigger = {
 		ai = yes
-		war = { country = USA }
+		OR = {
+			war = { country = MEX }
+			war = { country = PAN }
+		}
 		NOT = { local_flag = AI_invasion_war }
 		random = 25
 	}
 
 	name = "AI_EVENT"
-	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }	
+		command = { type = ai which = "invasion/invasion-central_america.ai" }
+	}
+}
+
+event = {
+	id = 140431
+	persistent = yes
+	TAG = { U05 MEX USA }
+
+	trigger = {
+		ai = yes
+		OR = {
+			war = { country = HAI }
+			war = { country = DOM }
+			war = { country = CUB }
+		}
+		NOT = { local_flag = AI_invasion_war }
+		random = 15
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }
+		command = { type = ai which = "invasion/invasion-caribbean.ai" }
+	}
+}
+
+event = {
+	id = 140432
+	persistent = yes
+	TAG = { U05 GER DFR }
+
+	trigger = {
+		ai = yes
+		war = { country = USA }
+		NOT = { local_flag = AI_invasion_war }
+		random = 10
+	}
+
+	name = "AI_EVENT"
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -697,7 +837,6 @@ event = {
 
 event = {
 	id = 140440
-	random = no
 	persistent = yes
 	TAG = { MEX USA }
 
@@ -705,11 +844,10 @@ event = {
 		ai = yes
 		war = { country = U05 }
 		NOT = { local_flag = AI_invasion_war }
-		random = 15
+		random = 25
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -723,10 +861,107 @@ event = {
 }
 
 event = {
-	id = 140445
-	random = no
+	id = 140441
 	persistent = yes
-	TAG = { MEX USA ENG IRE }
+	TAG = { MEX USA IRE }
+
+	trigger = {
+		ai = yes
+		war = { country = ENG }
+		NOT = { local_flag = AI_invasion_war }
+		random = 10
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }
+		command = { type = ai which = "invasion/invasion-britain.ai" }
+	}
+}
+
+event = {
+	id = 140442
+	persistent = yes
+	TAG = { MEX USA }
+
+	trigger = {
+		ai = yes
+		war = { country = RUS }
+		NOT = { local_flag = AI_invasion_war }
+		random = 15
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }	
+		command = { type = ai which = "invasion/invasion-russia_east.ai" }
+	}
+}
+
+event = {
+	id = 140443
+	persistent = yes
+	country = MEX
+
+	trigger = {
+		ai = yes
+		war = { country = U05 }
+		NOT = { local_flag = AI_invasion_war }
+		random = 15
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }	
+		command = { type = ai which = "invasion/invasion-west_jadakal.ai" }
+	}
+}
+
+event = {
+	id = 140444
+	persistent = yes
+	TAG = { MEX USA UAU ENG GER DFR } #U00
+
+	trigger = {
+		ai = yes
+		war = { country = JAP }
+		NOT = { local_flag = AI_invasion_war }
+		random = 15
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }
+		command = { type = ai which = "invasion/invasion-japan.ai" }
+	}
+}
+event = {
+	id = 140445
+	persistent = yes
+	TAG = { MEX USA }
 
 	trigger = {
 		ai = yes
@@ -739,11 +974,10 @@ event = {
 			}
 		}
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 10
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -758,7 +992,6 @@ event = {
 
 event = {
 	id = 140449
-	random = no
 	persistent = yes
 	country = MEX
 
@@ -767,11 +1000,10 @@ event = {
 		war = { country = GER }
 		NOT = { control = { province = 55 data = GER } }
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 10
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -789,11 +1021,32 @@ event = {
 ## America ##
 #############
 
-#140500
+event = {
+	id = 140500
+	persistent = yes
+	country = USA
 
+	trigger = {
+		ai = yes
+		war = { country = U08 }
+		NOT = { local_flag = AI_invasion_war }
+		random = 10
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }	
+		command = { type = ai which = "invasion/invasion-ostasien.ai" }
+	}
+}
 event = {
 	id = 140501
-	random = no
 	persistent = yes
 	country = USA
 
@@ -801,11 +1054,10 @@ event = {
 		ai = yes
 		war = { country = SPA country = U05 }
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 15
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -834,11 +1086,33 @@ event = {
 ## Great Britain ##
 #############
 
-#140700
+event = {
+	id = 140700
+	persistent = yes
+	country = ENG
+
+	trigger = {
+		ai = yes
+		war = { country = USA }
+		NOT = { local_flag = AI_invasion_war }
+		random = 5
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }
+		command = { type = ai which = "invasion/invasion-america.ai" }
+	}
+}
 
 event = {
 	id = 140701
-	random = no
 	persistent = yes
 	country = ENG
 
@@ -850,7 +1124,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -865,7 +1138,6 @@ event = {
 
 event = {
 	id = 140702
-	random = no
 	persistent = yes
 	TAG = { ENG GER DFR }
 
@@ -877,7 +1149,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -892,19 +1163,17 @@ event = {
 
 event = {
 	id = 140703
-	random = no
 	persistent = yes
-	TAG = { ENG SCA GER DFR }
+	country = ENG
 
 	trigger = {
 		ai = yes
 		war = { country = IRE }
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -917,20 +1186,25 @@ event = {
 }
 
 event = {
-	id = 140705
-	random = no
+	id = 140704
 	persistent = yes
-	TAG = { ENG GER DFR SPA }
+	country = ENG
 
 	trigger = {
 		ai = yes
-		war = { country = CAN }
+		OR = {
+			war = { country = VIC }
+			war = { country = FRA }
+			AND = {
+				war = { country = GER }
+				control = { province = 55 data = GER } #paris
+			}
+		}
 		NOT = { local_flag = AI_invasion_war }
-		random = 5
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -939,7 +1213,58 @@ event = {
 	action_a = {
 		command = { type = local_setflag which = AI_invasion_war }
 		command = { type = local_setflag which = AI_invasion_major }
-		command = { type = ai which = "invasion/invasion-vinland.ai" }
+		command = { type = ai which = "invasion/invasion-france.ai" }
+	}
+}
+
+# event = {
+	# id = 140705
+	# random = no
+	# persistent = yes
+	# country = ENG
+
+	# trigger = {
+		# ai = yes
+		# war = { country = CAN }
+		# NOT = { local_flag = AI_invasion_war }
+		# random = 5
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 2000 }
+
+	# action_a = {
+		# command = { type = local_setflag which = AI_invasion_war }
+		# command = { type = local_setflag which = AI_invasion_major }
+		# command = { type = ai which = "invasion/invasion-vinland.ai" }
+	# }
+# }
+
+event = {
+	id = 140706
+	persistent = yes
+	country = ENG
+
+	trigger = {
+		ai = yes
+		war = { country = U07 }
+		NOT = { local_flag = AI_invasion_war }
+		random = 10
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = ai which = "invasion/invasion-north_africa.ai" }
 	}
 }
 
@@ -976,7 +1301,6 @@ event = {
 
 event = {
 	id = 140801
-	random = no
 	persistent = yes
 	country = U00
 
@@ -984,11 +1308,10 @@ event = {
 		ai = yes
 		war = { country = U01 }
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -1005,11 +1328,32 @@ event = {
 ## Scandinavia ##
 #################
 
-#140900
+event = {
+	id = 140900
+	persistent = yes
+	TAG = { SCA GER DFR }
+
+	trigger = {
+		ai = yes
+		war = { country = IRE }
+		NOT = { local_flag = AI_invasion_war }
+		random = 10
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = ai which = "invasion/invasion-ireland.ai" }
+	}
+}
 
 event = {
 	id = 140901
-	random = no
 	persistent = yes
 	country = SCA
 
@@ -1022,7 +1366,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -1039,7 +1382,32 @@ event = {
 ## Germany ##
 #############
 
-#140950
+# event = {
+	# id = 140950
+	# random = no
+	# persistent = yes
+	# TAG = { GER DFR }
+
+	# trigger = {
+		# ai = yes
+		# war = { country = CAN }
+		# NOT = { local_flag = AI_invasion_war }
+		# random = 10
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 2000 }
+
+	# action_a = {
+		# command = { type = local_setflag which = AI_invasion_war }
+		# command = { type = local_setflag which = AI_invasion_major }
+		# command = { type = ai which = "invasion/invasion-vinland.ai" }
+	# }
+# }
 
 ############
 ## Iberia ##
@@ -1047,7 +1415,6 @@ event = {
 
 event = {
 	id = 141000
-	random = no
 	persistent = yes
 	country = SPA
 
@@ -1056,11 +1423,10 @@ event = {
 		war = { country = GER }
 		control = { province = 475 data = GER }
 		NOT = { local_flag = AI_invasion_war }
-		random = 25
+		random = 50
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -1074,20 +1440,43 @@ event = {
 }
 
 event = {
-	id = 141003
-	random = no
+	id = 141002
 	persistent = yes
-	TAG = { SPA ENG }
+	country = SPA
 
 	trigger = {
 		ai = yes
-		war = { country = U07 }
+		war = { country = USA }
 		NOT = { local_flag = AI_invasion_war }
 		random = 15
 	}
 
 	name = "AI_EVENT"
-	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }
+		command = { type = ai which = "invasion/invasion-america.ai" }
+	}
+}
+
+event = {
+	id = 141003
+	persistent = yes
+	country = SPA
+
+	trigger = {
+		ai = yes
+		war = { country = U07 }
+		NOT = { local_flag = AI_invasion_war }
+		random = 25
+	}
+
+	name = "AI_EVENT"
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -1099,13 +1488,39 @@ event = {
 	}
 }
 
+# event = {
+	# id = 141004
+	# random = no
+	# persistent = yes
+	# country = SPA
+
+	# trigger = {
+		# ai = yes
+		# war = { country = CAN }
+		# NOT = { local_flag = AI_invasion_war }
+		# random = 15
+	# }
+
+	# name = "AI_EVENT"
+	# style = 0
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 10
+	# deathdate = { day = 1 month = january year = 2000 }
+
+	# action_a = {
+		# command = { type = local_setflag which = AI_invasion_war }
+		# command = { type = local_setflag which = AI_invasion_major }
+		# command = { type = ai which = "invasion/invasion-vinland.ai" }
+	# }
+# }
+
 ##############
 ## Gustavia ##
 ##############
 
 event = {
 	id = 141100
-	random = no
 	persistent = yes
 	TAG = { VEN PAN }
 
@@ -1122,7 +1537,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -1139,7 +1553,37 @@ event = {
 ## Ireland ##
 #############
 
-#141200
+event = {
+	id = 141200
+	persistent = yes
+	country = IRE
+	
+	trigger = {
+		ai = yes
+		OR = {
+			war = { country = VIC }
+			war = { country = FRA }
+			AND = {
+				war = { country = GER }
+				control = { province = 55 data = GER } #paris
+			}
+		}
+		NOT = { local_flag = AI_invasion_war }
+		random = 5
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 2000 }
+
+	action_a = {
+		command = { type = local_setflag which = AI_invasion_war }
+		command = { type = local_setflag which = AI_invasion_major }
+		command = { type = ai which = "invasion/invasion-france.ai" }
+	}
+}
 
 ####################
 ## Lombard League ##
@@ -1147,7 +1591,6 @@ event = {
 
 event = {
 	id = 141300
-	random = no
 	persistent = yes
 	TAG = { U14 ITA }
 
@@ -1161,7 +1604,6 @@ event = {
 	}
 
 	name = "AI_EVENT"
-	style = 0
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 10
@@ -1173,6 +1615,13 @@ event = {
 		command = { type = ai which = "invasion/invasion-north_africa.ai" }
 	}
 }
+
+##################
+## Germany alts ##
+##################
+
+#141400 U10
+#141500 DDR
 
 ##################
 ## German Republic ##

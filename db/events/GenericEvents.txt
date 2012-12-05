@@ -1197,6 +1197,7 @@ event = {
 		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
 		#command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Balkan" when = 1 }
 		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
+		command = { trigger = { alliance = { country = RUS } NOT = { exists = GEO } } type = secederegion which = RUS value = "Kaukasus" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -1247,6 +1248,7 @@ event = {
 		command = { trigger = { alliance = { country = SPA } } type = secedearea which = SPA value = "Lebanon_Syria" when = 1 }
 		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
 		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
+		command = { trigger = { alliance = { country = RUS } NOT = { exists = GEO } } type = secederegion which = RUS value = "Kaukasus" when = 1 }
 	}
 	action = {
 		ai_chance = 0
@@ -1301,6 +1303,7 @@ event = {
 		command = { trigger = { alliance = { country = ROM } } type = secederegion which = ROM value = "Romania" when = 1 }
 		#command = { trigger = { alliance = { country = SPA } } type = secederegion which = SPA value = "Balkan" when = 1 }
 		command = { trigger = { alliance = { country = GEO } } type = secedearea which = GEO value = "Armenia_Azerbaijan" when = 1 }
+		command = { trigger = { alliance = { country = RUS } NOT = { exists = GEO } } type = secederegion which = RUS value = "Kaukasus" when = 1 }
 	}
 	action = {
 		ai_chance = 0

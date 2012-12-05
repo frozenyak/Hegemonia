@@ -1053,6 +1053,53 @@ event = {
 }
 
 event = {
+	id = 56056
+	country = RUS
+
+	trigger = {
+		NOT = { flag = RUS_com_friendly }
+
+		NOT = { participant = { value = 4 } }
+		NOT = { alliance = { country = U00 } }
+
+		NOT = { ispuppet = RUS }
+		NOT = { ispuppet = U00 }
+		
+		government = communist
+		OR = {
+			atwar = no
+			AND = {
+				war = { country = LIT }
+				war = { country = LIT country = U00 }
+			}
+		}
+		control = { province = 409 data = U00 }
+		NOT = { flag = RUS_western_peace }
+	}
+
+	name = "Alliance with the Union?"
+	desc = "Should we ask for membership in the Comintern?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1938 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_OF_COURSE"
+		ai_chance = 90
+		command = { type = trigger which = 55053 }
+	}
+	action = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 10
+		command = { type = relation which = U00 value = -50 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
 	id = 56060
 	country = RUS
 

@@ -21,7 +21,7 @@ evac_islands = no
 ###################################
 combat = { }
 
-liberate = { U06 SCH LIT ROM SCA FIN SPA IRE U07 ITA } #AUS
+liberate = { U06 SCH LIT ROM SCA FIN SPA IRE U07 ITA BUL } #AUS
 resistance = { VIC = 6 U00 = 6 U10 = 2 }
 
 claim_acceptance = -69
@@ -198,6 +198,32 @@ spyprefs =
 		disrupt_techteam	= 8 # 5
 		country 			= VIC
 	}
+	spyprefsdata = {
+		country_priorities	= 2
+		steal_blueprint 	= 1
+		minister_assassination 		= 1
+		smear_campaign 		= 4
+		coup 				= 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans 	= 0
+		massmedia 			= 1
+		disrupt_techteam	= 5
+		country 			= RUS
+	}
+	spyprefsdata = {
+		country_priorities	= 2
+		steal_blueprint 	= 1
+		minister_assassination 		= 1
+		smear_campaign 		= 4
+		coup 				= 5 # 1
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans 	= 0
+		massmedia 			= 1
+		disrupt_techteam	= 1 # 5
+		country 			= SPA
+	}
 }
 ###################################
 # Construction and Tech Research
@@ -295,12 +321,12 @@ military = {
 	extra_convoys_peace		= 0.05
 
 	#### Divisions etc...
-	infantry 		= 38
+	infantry 		= 40
 	cavalry 		= 0
-	motorized 		= 7
-	mechanized 		= 7
-	light_armor 	= 5
-	armor 			= 5
+	motorized 		= 6
+	mechanized 		= 6
+	light_armor 	= 0
+	armor 			= 10
 	paratrooper 	= 0
 	marine 			= 0
 	bergsjaeger 	= 1

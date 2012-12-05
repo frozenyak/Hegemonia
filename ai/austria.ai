@@ -54,7 +54,7 @@ target = {
 	409 = 10 #Constantinople
 } 
 demand_claims = { }
-liberate = { } #GER
+liberate = { BUL } #GER
 
 trade = {
 	cancel_deal_threshold = 2

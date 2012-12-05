@@ -31,4 +31,6 @@ model = {
 	supplyconsumption				= 0.65
 	fuelconsumption					= 0
 	distance					= 0.2
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 }

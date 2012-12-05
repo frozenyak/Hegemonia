@@ -41,6 +41,8 @@ model = {
 	no_fuel_combat_mod 		= -0.3
 	upgrade_time_factor = 2.0
 	upgrade_cost_factor = 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
 	equipment = { manpower = 8000 trucks = 680 horses = 1860 artillery = 28 anti_tank = 12 anti_air = 8 armored_car = 28 medium_armor = 324 }
 }
 
@@ -66,6 +68,8 @@ model = {
 	no_fuel_combat_mod 		= -0.3
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
 	equipment = { manpower = 8000 trucks = 480 horses = 624 artillery = 43 heavy_artillery = 8 anti_tank = 16 anti_air = 12 armored_car = 32 medium_armor = 218   }
 }
 
@@ -91,6 +95,8 @@ model = {
 	no_fuel_combat_mod 		= -0.3
 	upgrade_time_factor = 1.0
 	upgrade_cost_factor = 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
 	armor				= 0		# Upgrade to 1939 Basic Medium Armored Division
 	upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
 	equipment = {  manpower = 8000 trucks = 658 artillery = 50 heavy_artillery = 8 anti_tank = 18 anti_air = 12 armored_car = 48 medium_armor = 302   }

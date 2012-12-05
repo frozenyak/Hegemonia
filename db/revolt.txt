@@ -89,6 +89,8 @@ ALB = { # Albania
 	minimum = { 359 360 361 362 }
 	#extra = { 329 334 }
 	capital = 359
+	revolt = no
+	liberate = no
 }
 
 ALG = { # Algeria
@@ -183,6 +185,8 @@ ARM = { # Armenia
 	}
 	capital = 711
 	no = { U00 GEO }
+	revolt = no
+	liberate = no
 }
 
 AZB = { #Azerbaijan
@@ -195,6 +199,8 @@ AZB = { #Azerbaijan
 	}
 	capital = 713
 	no = { U00 GEO }
+	revolt = no
+	liberate = no
 }
 
 AST = { # Australia
@@ -210,6 +216,7 @@ AST = { # Australia
 	revolt = no
 	liberate = no
 }
+
 AUS = { # Austro-Hungary
 	date = { day = 1 month = january year = 1914 }
 	expirydate = { day = 30 month = december year = 1999 }
@@ -359,6 +366,7 @@ BLR = { # Byleo Russia/Belarus
 	capital = 599
 	no = { RUS LIT }
 	revolt = no
+	liberate = no
 }
 
 CAL = { # California
@@ -665,15 +673,16 @@ CZE = { # Bohemia
  capital = 1776
  }
 
- CYP = { # Cyprus
- date = { day = 1 month = january year = 1914 }
- expirydate = { day = 30 month = december year = 1999 }
- minimum = {
- 388 387
- }
- extra = { }
- capital = 388
- }
+CYP = { # Cyprus
+	date = { day = 1 month = january year = 1914 }
+	expirydate = { day = 30 month = december year = 1999 }
+	minimum = {
+		388 387
+	}
+	extra = { }
+	no = { U00 URO }
+	capital = 388
+}
 
 DEN = { # Denmark
 	date = { day = 1 month = january year = 1914 }
@@ -1047,6 +1056,7 @@ HUN = { # Hungary
  }
  extra = { 2 }
  capital = 1
+ no = { SCA }
  }
 
 IND = { # India
@@ -1094,11 +1104,12 @@ PER = {
 	date = { day = 1 month = january year = 1914 }
 	expirydate = { day = 30 month = december year = 1999 }
 	minimum = {
-		1080 1085 1089 1090 1088 1086 1092
+		1080 1085 1089 1090 1088 1086
 	}
 	extra = {
 		1083 1084 1087 1082 1081
 		1091 1093 1094 1095
+		1092
 	}
 	capital = 1085
 	no = { U00 }
@@ -1110,6 +1121,8 @@ PER = {
  minimum = { 1034 1035 1037 1028 1032 1031 1030 }
  extra = { 1033 1036 1027 1029 }
  capital = 1034
+ revolt = no
+ liberate = no
  }
 
  IRE = { # Ireland
@@ -1287,7 +1300,7 @@ LIT = { # Lithuania
  } 
  extra = { } 
  capital = 109 
- no = { GER VIC FRA }
+ no = { GER VIC FRA DFR }
  }
 
 MAD = { # Madagaskar
@@ -1310,13 +1323,14 @@ MLY = { # Malaysia
 	extra = { 1432 1431 1430 }
 	capital = 1438
 }
+
  MAL = { # Mali
  date = { day = 1 month = january year = 1914 }
  expirydate = { day = 30 month = december year = 1999 }
  minimum = {
    975 972 971 973 985
  }
- extra = {      984 974 976 }
+ extra = { 984 974 976 }
  capital = 978
  }
 
@@ -1437,6 +1451,7 @@ MOR = { # Moroccoa
  } 
  extra = { } 
  capital = 1721 
+ no = { UAU }
  } 
 
  NIG = { # Nigeria
@@ -1488,6 +1503,7 @@ MOR = { # Moroccoa
  extra = { 1011 1010 1008 1009 1013 } 
  capital = 1172 
  }
+ 
 PAN = { # panama/qtizi
 	date = { day = 1 month = january year = 1914 }
 	expirydate = { day = 30 month = december year = 1999 }
@@ -1509,6 +1525,7 @@ PAN = { # panama/qtizi
 	extra = { 1986 889 2078 }
 	capital = 2079
 }
+
 PAR = { #nova aquitania
 	date = { day = 1 month = january year = 1914 }
 	expirydate = { day = 30 month = december year = 1999 }
@@ -1963,23 +1980,26 @@ UKR = { # Ukraine
 		617 608 613 610 612 611 606 605
 	}
 	extra = {
-		245 242 240 244
-		241 637 640 641
+		637 640 641
 		619 620 626 622 616 635
 		627 628 609
 		629 636 630 623 624 607
-		638 639 631 632 615 625 618 614 238 249
+		638 639 631 632 615 625 618 614
 		621 633 634
 		#1401
 		604 602
 		#rostov
 		644
-		#chust
-		213
+		#slovakia
+		#213 #chust
 		#belgorod
 		603 647 646
-		#
-		300 #302
+		#bessarabian
+		#302 #hoti
+		#brest litovsk
+		#249 245 244
+		#lvov
+		#240 300 238 241 242
 	}
 	claims = {
 		#krasnodar
@@ -2200,7 +2220,7 @@ YUG = { # Yugoslavia
 		#slovenia
 		349 #346 403 404
 		#albania
-		361
+		361 359 360 362
 	}
 	revolt = no
 	capital = 338

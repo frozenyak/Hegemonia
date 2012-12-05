@@ -31,6 +31,8 @@ model = {
 	supplyconsumption			= 0.7
 	fuelconsumption				= 1
 	distance					= 0.32
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 1100 }
 }
 
@@ -58,6 +60,8 @@ model = {
 	supplyconsumption			= 0.7
 	fuelconsumption				= 1
 	distance					= 0.34
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 1300 }
 }
 
@@ -85,6 +89,8 @@ model = {
 	supplyconsumption			= 0.8
 	fuelconsumption				= 1
 	distance					= 0.34
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 1500 }
 }
 
@@ -112,6 +118,8 @@ model = {
 	supplyconsumption			= 0.8
 	fuelconsumption				= 1
 	distance					= 0.35
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 1300 }
 }
 
@@ -139,6 +147,8 @@ model = {
 	supplyconsumption			= 0.8
 	fuelconsumption				= 1
 	distance					= 0.36
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 1800 }
 }
 
@@ -166,6 +176,8 @@ model = {
 	supplyconsumption			= 1
 	fuelconsumption				= 1
 	distance					= 0.38
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 2000 }
 }
 
@@ -193,6 +205,8 @@ model = {
 	supplyconsumption			= 1
 	fuelconsumption				= 1.5
 	distance					= 0.38
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 2800 }
 }
 
@@ -220,6 +234,8 @@ model = {
 	supplyconsumption			= 2.5
 	fuelconsumption				= 0
 	distance					= 0.40
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 2200 }
 }
 
@@ -247,6 +263,8 @@ model = {
 	supplyconsumption			= 1.2
 	fuelconsumption				= 1.5
 	distance					= 0.40
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 3000 }
 }
 
@@ -274,5 +292,7 @@ model = {
 	supplyconsumption			= 1
 	fuelconsumption				= 1
 	distance					= 0.38
+	reinforce_time					=  0.4
+	reinforce_cost					=  0.6
 	equipment = { battleship = 1 manpower = 2200 }
 }

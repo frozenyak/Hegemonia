@@ -25,6 +25,8 @@ model = { # Early Fighter - 0 1930
 	fuelconsumption				= 1.8
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 1000 }
 }
 
@@ -49,6 +51,8 @@ model = { # Basic Multi-Role Fighter - 1 1938
 	fuelconsumption				= 1.8
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 1000 }
 }
 
@@ -73,6 +77,8 @@ model = { # Improved Multi-Role Fighter - 2 1940
 	fuelconsumption				= 1.9
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 1000 }
 }
 
@@ -97,6 +103,8 @@ model = { # Advanced Multi-Role Fighter - 3 1945
 	fuelconsumption				= 2.0
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 1000 }
 }
 
@@ -121,6 +129,8 @@ model = { # Basic Turbojet Multi-Role Fighter - 4 1948
 	fuelconsumption				= 2.3
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 1000 }
 }
 
@@ -145,6 +155,8 @@ model = { # Improved Turbojet Multi-Role Fighter - 5 1950
 	fuelconsumption				= 2.3
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 1000 }
 }
 
@@ -169,5 +181,7 @@ model = { # Supersonic Turbojet Multi-Role Fighter - 6 1954
 	fuelconsumption				= 2.8
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 1000 }
 }
