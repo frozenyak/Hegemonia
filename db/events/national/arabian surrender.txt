@@ -1,0 +1,60 @@
+###23900-23999###
+
+event = {
+	id = 23900
+	country = ARA
+
+	name = EVT_60_NAME #switching sides
+	desc = "Imperial India has taken most of our territory!"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		#war = { country = GER country = U02 }
+		war = { country = U02 }
+		control = { province = 1034 data = U02 } #Baghdad
+		lost_national = { country = ARA value = 40 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 97
+		name = "Surrender!"
+		command = { type = end_puppet }
+		command = { type = set_relation which = U02 value = 0 }
+		command = { type = trigger which = 23901 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Keep Fighting!"
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 23901
+	country = U02
+
+	name = "New Allies - Arab Federation"
+	desc = "The Arab Federation is ready to surrender and become our client state!"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_64_ACTA
+		command = { type = make_puppet which = ARA }
+		#command = { type = coup_nation which = ARA }
+		command = { type = money value = 500 }
+		command = { type = flag_ext where = ARA which = "" }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Destroy them"
+		command = { type = dissent value = 1 }
+	}
+}

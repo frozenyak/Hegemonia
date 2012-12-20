@@ -1,0 +1,66 @@
+###57900-57999###
+#switching sides
+
+event = {
+	id = 57900
+	country = SCA
+
+	name = EVT_60_NAME
+	desc = "Great Britain has taken most of our territory!"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = ENG }
+		control = { province = 2159 data = ENG } #Stockholm
+		OR = {
+			control = { province = 483 data = ENG } #Oslo
+			control = { province = 294 data = ENG } #Copenhagen
+		}
+		lost_national = { country = SCA value = 50 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action = {
+		name = "Surrender!"
+		ai_chance = 95
+		command = { type = end_puppet }
+		command = { type = set_relation which = ENG value = 0 }
+		#command = { type = set_relation which = GER value = -50 }
+		command = { type = trigger which = 57901 }
+	}
+	action = {
+		name = "Keep Fighting!"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 57901
+	country = 
+
+	name = "New Allies - Scandinavia!"
+	desc = "Scandinavia is ready to surrender and switch sides!"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_63_ACTA
+		#command = { type = make_puppet which = SCA }
+		#command = { type = coup_nation which = SCA }
+		command = { type = alliance which = SCA }
+		command = { type = money value = 500 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Destroy them"
+		command = { type = dissent value = 1 }
+	}
+}
+

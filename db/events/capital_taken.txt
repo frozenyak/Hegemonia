@@ -1,0 +1,727 @@
+###7200-7299###
+#
+###league 7200
+#cordoba
+#london
+#moscow
+#mexico city
+#
+###hre 7220
+#frankfurt
+#minsk
+#vienna
+#boston
+#stockholm
+#alexandria
+#rome
+#
+###comintern 7240
+#constantinople
+#paris
+#tunis
+#manila
+#
+###misc 7260
+#tokyo
+#bombay
+#sydney
+#Santiago de Chile
+#warsaw
+#kiev
+
+### league
+
+event = {
+	id = 7200
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = SPA }
+		NOT = { ispuppet = SPA }
+		control = { province = 467 }
+		NOT = { owned = { province = 467 } }
+		NOT = { flag = HRE_capital_spa }
+		NOT = { flag = comintern_capital_spa }
+		NOT = { event = 11072 }
+	}
+
+	name = "Capital Captured - Cordoba!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_spa }
+		command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_spa }
+	}
+}
+
+event = {
+	id = 7201
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = ENG }
+		NOT = { ispuppet = ENG }
+		control = { province = 29 }
+		NOT = { owned = { province = 29 } }
+		NOT = { flag = HRE_capital_eng }
+		NOT = { flag = comintern_capital_eng }
+		NOT = { event = 11062 }
+	}
+
+	name = "Capital Captured - London!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_eng }
+		command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_eng }
+	}
+}
+
+event = {
+	id = 7202
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = RUS }
+		NOT = { ispuppet = RUS }
+		control = { province = 572 }
+		NOT = { owned = { province = 572 } }
+		NOT = { flag = HRE_capital_rus }
+		NOT = { flag = comintern_capital_rus }
+		NOT = { event = 11058 }
+	}
+
+	name = "Capital Captured - Moscow!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_rus }
+		command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_rus }
+	}
+}
+
+event = {
+	id = 7203
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = MEX }
+		NOT = { ispuppet = MEX }
+		control = { province = 1974 }
+		NOT = { owned = { province = 1974 } }
+		#NOT = { flag = HRE_capital_mex }
+		#NOT = { flag = comintern_capital_mex }
+		NOT = { event = 11070 }
+	}
+
+	name = "Capital Captured - Mexico City!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_mex }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_mex }
+	}
+}
+
+### hre
+
+event = {
+	id = 7220
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = GER }
+		NOT = { ispuppet = GER }
+		control = { province = 138 }
+		NOT = { owned = { province = 138 } }
+		NOT = { flag = league_capital_ger }
+		NOT = { flag = comintern_capital_ger }
+		NOT = { flag = german_civil_war }
+		NOT = { event = 11052 }
+	}
+
+	name = "Capital Captured - Frankfurt!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_ger }
+		command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_ger }
+	}
+}
+
+event = {
+	id = 7221
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = LIT }
+		NOT = { ispuppet = LIT }
+		control = { province = 599 }
+		NOT = { owned = { province = 599 } }
+		#NOT = { flag = league_capital_lit }
+		#NOT = { flag = comintern_capital_lit }
+		NOT = { event = 11074 }
+	}
+
+	name = "Capital Captured - Minsk!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_lit }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_lit }
+	}
+}
+
+event = {
+	id = 7222
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = AUS }
+		NOT = { ispuppet = AUS }
+		control = { province = 195 }
+		NOT = { owned = { province = 195 } }
+		#NOT = { flag = league_capital_aus }
+		#NOT = { flag = comintern_capital_aus }
+		NOT = { event = 11076 }
+	}
+
+	name = "Capital Captured - Vienna!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_aus }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_aus }
+	}
+}
+
+event = {
+	id = 7223
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = USA }
+		NOT = { ispuppet = USA }
+		control = { province = 1789 }
+		NOT = { owned = { province = 1789 } }
+		#NOT = { flag = league_capital_usa }
+		#NOT = { flag = comintern_capital_usa }
+		NOT = { event = 11050 }
+	}
+
+	name = "Capital Captured - Boston!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_usa }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_usa }
+	}
+}
+
+event = {
+	id = 7224
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = SCA }
+		NOT = { ispuppet = SCA }
+		control = { province = 2159 }
+		NOT = { owned = { province = 2159 } }
+		#NOT = { flag = league_capital_sca }
+		#NOT = { flag = comintern_capital_sca }
+		NOT = { event = 11078 }
+	}
+
+	name = "Capital Captured - Stockholm!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_sca }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_sca }
+	}
+}
+
+event = {
+	id = 7225
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = EGY }
+		NOT = { ispuppet = EGY }
+		control = { province = 789 }
+		NOT = { owned = { province = 789 } }
+		#NOT = { flag = league_capital_egy }
+		#NOT = { flag = comintern_capital_egy }
+	}
+
+	name = "Capital Captured - Alexandria!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_egy }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_egy }
+	}
+}
+
+event = {
+	id = 7226
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = ITA }
+		NOT = { ispuppet = ITA }
+		control = { province = 419 }
+		NOT = { owned = { province = 419 } }
+		#NOT = { flag = league_capital_ita }
+		#NOT = { flag = comintern_capital_ita }
+	}
+
+	name = "Capital Captured - Rome!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_ita }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_ita }
+	}
+}
+
+### comintern
+
+event = {
+	id = 7240
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = U00 }
+		NOT = { ispuppet = U00 }
+		control = { province = 409 }
+		NOT = { owned = { province = 409 } }
+		NOT = { flag = HRE_capital_u00 }
+		NOT = { flag = league_capital_u00 }
+		NOT = { flag = u02_capital_u00 }
+		NOT = { event = 11068 }
+	}
+
+	name = "Capital Captured - Constantinople!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		command = { trigger = { country = U02 } type = dissent value = -2 }
+		command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_u00 }
+		command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_u00 }
+		command = {
+			trigger = {
+				OR = {
+					country = U02
+					alliance = { country = U02 }
+				}
+			}
+			type = setflag which = u02_capital_u00
+		}
+	}
+}
+
+event = {
+	id = 7241
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = VIC }
+		NOT = { ispuppet = VIC }
+		control = { province = 55 }
+		NOT = { owned = { province = 55 } }
+		#NOT = { flag = HRE_capital_vic }
+		#NOT = { flag = league_capital_vic }
+		NOT = { event = 11054 }
+		NOT = { event = 11080 }
+	}
+
+	name = "Capital Captured - Paris!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_vic }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_vic }
+	}
+}
+
+event = {
+	id = 7242
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = U07 }
+		NOT = { ispuppet = U07 }
+		control = { province = 747 }
+		NOT = { owned = { province = 747 } }
+		#NOT = { flag = HRE_capital_u07 }
+		#NOT = { flag = league_capital_u07 }
+	}
+
+	name = "Capital Captured - Tunis!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_u07 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_u07 }
+	}
+}
+
+event = {
+	id = 7243
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = PHI }
+		NOT = { ispuppet = PHI }
+		control = { province = 1565 }
+		NOT = { owned = { province = 1565 } }
+		#NOT = { flag = HRE_capital_phi }
+		#NOT = { flag = league_capital_phi }
+	}
+
+	name = "Capital Captured - Manila!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_phi }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_phi }
+	}
+}
+
+### misc
+
+event = {
+	id = 7260
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = JAP }
+		NOT = { ispuppet = JAP }
+		control = { province = 1552 }
+		NOT = { owned = { province = 1552 } }
+		#NOT = { flag = comintern_capital_jap }
+		#NOT = { flag = HRE_capital_jap }
+		#NOT = { flag = league_capital_jap }
+		NOT = { event = 11060 }
+	}
+
+	name = "Capital Captured - Tokyo!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_jap }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_jap }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_jap }
+	}
+}
+
+event = {
+	id = 7261
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = U02 }
+		NOT = { ispuppet = U02 }
+		control = { province = 1517 }
+		NOT = { owned = { province = 1517 } }
+		#NOT = { flag = comintern_capital_u02 }
+		#NOT = { flag = HRE_capital_u02 }
+		#NOT = { flag = league_capital_u02 }
+		NOT = { event = 11082 }
+	}
+
+	name = "Capital Captured - Bombay!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_u02 }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_u02 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_u02 }
+	}
+}
+
+event = {
+	id = 7262
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = UAU }
+		NOT = { ispuppet = UAU }
+		control = { province = 1705 }
+		NOT = { owned = { province = 1705 } }
+		#NOT = { flag = comintern_capital_uau }
+		#NOT = { flag = HRE_capital_uau }
+		#NOT = { flag = league_capital_uau }
+	}
+
+	name = "Capital Captured - Sydney!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_uau }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_uau }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_uau }
+	}
+}
+
+event = {
+	id = 7263
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = U05 }
+		NOT = { ispuppet = U05 }
+		control = { province = 2023 }
+		NOT = { owned = { province = 2023 } }
+		#NOT = { flag = comintern_capital_u05 }
+		#NOT = { flag = HRE_capital_u05 }
+		#NOT = { flag = league_capital_u05 }
+	}
+
+	name = "Capital Captured - Santiago de Chile!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_u05 }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_u05 }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_u05 }
+	}
+}
+
+event = {
+	id = 7264
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = POL }
+		NOT = { ispuppet = POL }
+		control = { province = 232 }
+		NOT = { owned = { province = 232 } }
+		#NOT = { flag = comintern_capital_pol }
+		#NOT = { flag = HRE_capital_pol }
+		#NOT = { flag = league_capital_pol }
+	}
+
+	name = "Capital Captured - Warsaw!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_pol }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_pol }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_pol }
+	}
+}
+
+event = {
+	id = 7265
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		#flag = great_war_by_event
+		war = { country = UKR }
+		NOT = { ispuppet = UKR }
+		control = { province = 617 }
+		NOT = { owned = { province = 617 } }
+		#NOT = { flag = comintern_capital_ukr }
+		#NOT = { flag = HRE_capital_ukr }
+		#NOT = { flag = league_capital_ukr }
+	}
+
+	name = "Capital Captured - Kiev!"
+	desc = "We have captured the enemy capital!"
+	style = 1
+	picture = "military_parade"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		command = { type = dissent value = -1 }
+		#command = { trigger = { participant = { value = 3 } } type = setflag which = comintern_capital_ukr }
+		#command = { trigger = { participant = { value = 2 } } type = setflag which = HRE_capital_ukr }
+		#command = { trigger = { participant = { value = 1 } } type = setflag which = league_capital_ukr }
+	}
+}
