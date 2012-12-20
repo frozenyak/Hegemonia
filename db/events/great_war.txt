@@ -17,6 +17,7 @@
 #7117	Lithuanian opportunism
 #7119	SPA took Italy, U00 responds
 #7120	Iberian opportunism VIC
+#7121	imperial india: union at war
 
 #Set the great war flag
 event = {
@@ -28,6 +29,10 @@ event = {
 			war = { country = GER country = U00 }
 			war = { country = SPA country = U00 }
 			war = { country = SPA country = GER }
+			AND = {
+				NOT = { exists = GER }
+				war = { country = SPA country = GER }
+			}
 		}
 		NOT = { flag = great_war_by_event }
 	}
@@ -52,7 +57,7 @@ event = {
 
 	decision = {
 		exists = RUS
-		NOT = { flag = peace_in_our_time }
+		#NOT = { flag = peace_in_our_time }
 		OR = {
 			NOT = { flag = RUS_com_friendly }
 			NOT = { event = 56029 }
@@ -71,7 +76,7 @@ event = {
 	}
 
 	trigger = {
-		NOT = { flag = peace_in_our_time }
+		#NOT = { flag = peace_in_our_time }
 		OR = {
 			random = 10
 			AND = {
@@ -99,7 +104,7 @@ event = {
 	}
 
 	name = "The Liberation of Russia"
-	desc = "Consul Dimitrov held a speech in front of the party today explaining the necessity of taking to arms to continue the revolution and liberate the masses of his homeland Russia. The news that we are at war with Russia was met with widespread enthusiasm among the masses, who look forward to the glorious liberation of the Russian workers."
+	desc = "Consul Dimitrov held a speech in front of the party today explaining the necessity of taking to arms to continue the revolution and liberate the masses of his homeland Russia. The news that we are invading Russia was met with widespread enthusiasm among the masses, who look forward to the glorious liberation of the Russian workers."
 	style = 1
 	picture = war
 
@@ -110,9 +115,10 @@ event = {
 	action = {
 		name = "To Moscow!"
 		command = { type = domestic which = interventionism value = 1 }
+		command = { trigger = { flag = peace_in_our_time } type = dissent value = 10 }
+		command = { trigger = { flag = comintern_league_pact ai = no } type = dissent value = 10 }
 		command = { type = war which = RUS }
 		#command = { type = ai_prepare_war which = RUS }
-		#command = { type = dissent value = -5 }
 	}
 	# action = { trigger = { ai = yes }
 		# name = "Perhaps this is a bad idea"
@@ -142,13 +148,14 @@ event = {
 		NOT = { war = { country = MEX } }
 		NOT = { alliance = { country = MEX } }
 		NOT = { non_aggression = { country = MEX } }
-		OR = {
-			event = { id = 21012 days = 30 }
-			AND = {
-				NOT = { event = 21012 }
-				local_flag = MOB7
-			}
-		}
+		# OR = {
+			# event = { id = 21012 days = 30 }
+			# AND = {
+				# NOT = { event = 21012 }
+				# local_flag = MOB7
+			# }
+		# }
+		event = 8300107
 	}
 
 	trigger = {
@@ -220,13 +227,14 @@ event = {
 		NOT = { war = { country = USA } }
 		NOT = { alliance = { country = USA } }
 		NOT = { non_aggression = { country = USA } }
-		OR = {
-			event = { id = 48014 days = 30 }
-			AND = {
-				NOT = { event = 48014 }
-				local_flag = MOB7
-			}
-		}
+		# OR = {
+			# event = { id = 48014 days = 30 }
+			# AND = {
+				# NOT = { event = 48014 }
+				# local_flag = MOB7
+			# }
+		# }
+		event = 8300107
 	}
 
 	trigger = {
@@ -589,12 +597,40 @@ event = {
 	id = 7108
 	country = RUS
 
+
+	# decision = {
+		# exists = LIT
+		# OR = {
+			# flag = RUS_claim_border
+			# flag = RUS_belligerent_LIT
+		# }
+		# NOT = { flag = RUS_western_peace }
+		# NOT = { flag = LIT_peace_east }
+		# NOT = { flag = lit_diplomatic_success }
+		# NOT = { flag = peace_in_our_time }
+		# NOT = { war = { country = LIT } }
+		# NOT = { alliance = { country = LIT } }
+		# NOT = { puppet = { country = LIT country = RUS } }
+	# }
+
+	# decision_trigger = {
+		# NOT = { war = { country = LIT } }
+		# NOT = { alliance = { country = LIT } }
+		# NOT = { ispuppet = yes }
+	# }
+	
 	trigger = {
 		ai = yes
 		#atwar = no
-		atwar = LIT
+		OR = {
+			atwar = LIT
+			NOT = { participant = { country = LIT value = 4 } }
+		}
 		exists = LIT
-		random = 10
+		OR = {
+			random = 10
+			war = { country = GER }
+		}
 		#local_flag = MOB7
 		OR = {
 			flag = RUS_claim_border
@@ -602,8 +638,8 @@ event = {
 		}
 		NOT = { flag = RUS_western_peace }
 		NOT = { flag = LIT_peace_east }
+		NOT = { flag = lit_diplomatic_success }
 		NOT = { flag = peace_in_our_time }
-		#war = { country = U00 country = LIT }
 		NOT = { war = { country = LIT } }
 		NOT = { alliance = { country = LIT } }
 		NOT = { non_aggression = { country = LIT } }
@@ -613,6 +649,7 @@ event = {
 			AND = { 
 				war = { country = U00 }
 				lost_national = { country = U00 value = 50 }
+				NOT = { control = { province = 409 data = U00 } }
 			}
 		}
 		
@@ -643,6 +680,7 @@ event = {
 				participant = { country = LIT value = 2 }
 				NOT = { flag = HRE_comintern_pact }
 			}
+			NOT = { participant = { country = LIT value = 4 } }
 		}
 		OR = {
 			#NOT = { flag = RUS_com_friendly }
@@ -657,11 +695,18 @@ event = {
 		NOT = { month = 8 } #7
 		#NOT = { government = democratic }
 		NOT = { dissent = 5 }
-		domestic = { type = interventionism value = 5 }
-		domestic = { type = defense_lobby value = 5 }
+		#domestic = { type = interventionism value = 5 }
+		#domestic = { type = defense_lobby value = 5 }
+		# OR = {
+			# AND = {
+				# war = { country = U00 country = LIT }
+				# lost_national = { country = U00 value = 20 }
+			# }
+			# NOT = { atwar = LIT }
+		# }
 	}
 
-	name = "Lithuania at War"
+	name = AI_EVENT #"Lithuania at War"
 	style = 1
 	picture = war
 
@@ -674,6 +719,8 @@ event = {
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = war which = LIT }
 		#command = { type = ai_prepare_war which = LIT }
+		#command = { trigger = { flag = HRE_league_pact } type = dissent value = 10 }
+		#command = { trigger = { flag = HRE_comintern_pact } type = dissent value = 10 }
 	}
 }
 
@@ -687,31 +734,31 @@ event = {
 		exists = VIC
 		#atwar = no
 		atwar = VIC
-		OR = {
-			random = 10
-			NOT = { control = { province = 460 data = SPA } }  #Madrid
-			lost_national = { country = SPA value = 15 }
-		}
+		war = { country = SPA country = VIC }
 		NOT = { flag = peace_in_our_time }
 		NOT = { flag = HRE_comintern_pact }
-		war = { country = SPA country = VIC }
 		#NOT = { war = { country = SPA } }
 		NOT = { war = { country = VIC } }
 		NOT = { alliance = { country = VIC } }
-		NOT = { non_aggression = { country = VIC } }
+		#NOT = { non_aggression = { country = VIC } }
 		NOT = { ispuppet = yes }
 		month = 2 #3
-		NOT = { month = 8 }
+		NOT = { month = 9 } #8
 		NOT = { 
 			control = { province = 440 data = SPA } #Barcelona
 			control = { province = 443 data = SPA } #Bilbao
+		}
+		OR = {
+			NOT = { control = { province = 460 data = SPA } }  #Madrid
+			lost_national = { country = SPA value = 30 }
 		}
 		#government = fascist
 		OR = {
 			NOT = { alliance = { country = LIT } }
 			AND = {
-				NOT = { war = { country = RUS } }
+				#NOT = { war = { country = RUS } }
 				alliance = { country = LIT }
+				NOT = { lost_national = { country = LIT value = 45 } }
 			}
 		}
 	}
@@ -1200,6 +1247,7 @@ event = {
 		random = 10
 		NOT = { flag = LIT_leaves_HRE }
 		NOT = { flag = peace_in_our_time }
+		NOT = { flag = lit_diplomatic_success }
 		#war = { country = U00 country = RUS }
 		#NOT = { war = { country = LIT country = U00 } }
 		
@@ -1236,8 +1284,8 @@ event = {
 		NOT = { flag = RUS_western_peace }
 		NOT = { flag = LIT_peace_east }
 		NOT = { dissent = 5 }
-		domestic = { type = interventionism value = 5 }
-		domestic = { type = defense_lobby value = 5 }
+		#domestic = { type = interventionism value = 5 }
+		#domestic = { type = defense_lobby value = 5 }
 	}
 
 	name = "Russia at War"
@@ -1321,7 +1369,8 @@ event = {
 		NOT = { alliance = { country = VIC } }
 		NOT = { non_aggression = { country = VIC } }
 		NOT = { ispuppet = yes }
-		atwar = no
+		#atwar = no
+		NOT = { government = communist }
 	}
 
 	name = AI_EVENT
@@ -1336,5 +1385,61 @@ event = {
 		name = "We will crush them!"
 		command = { trigger = { ai = yes } type = dissent value = -5 }
 		command = { type = war which = VIC }
+	}
+}
+
+event = {
+	id = 7121
+	country = U02
+
+	decision = {
+		exists = U00
+		flag = great_war_by_event
+		NOT = { war = { country = U00 } }
+	}
+	decision_trigger = {
+		NOT = { alliance = { country = U00 } }
+		#NOT = { non_aggression = { country = U00 } }
+	}
+	
+	trigger = {
+		flag = great_war_by_event
+		NOT = { war = { country = U00 } }
+		NOT = { alliance = { country = U00 } }
+		NOT = { non_aggression = { country = U00 } }
+		OR = {
+			alliance = { country = RUS }
+			alliance = { country = GER }
+			alliance = { country = SPA }
+			lost_national = { country = U00 value = 10 }
+			#AND = {
+			#	year = 1942
+			#	atwar = no
+			#}
+		}
+		exists = U00
+		random = 25 #50
+		NOT = { government = communist }
+	}
+
+	name = "The Union at War"
+	desc = "The Union of Rome is embroiled in war with one of the other alliance blocks. This is our chance to attack and retake our homeland!"
+	style = 1
+	picture = "war"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 1 month = january year = 1945 }
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 100
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = U00 }
+		#command = { type = setflag which = great_war_by_event }
+	}
+	action = { trigger = { ai = yes }
+		name = "We do not wish war"
+		ai_chance = 0
 	}
 }

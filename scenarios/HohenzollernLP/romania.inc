@@ -100,10 +100,10 @@ country =
     democratic        = 2 #4
     political_left    = 3
     freedom           = 2
-    free_market       = 4
+    free_market       = 5 #4
     professional_army = 5
     defense_lobby     = 7
-    interventionism   = 2
+    interventionism   = 3 #2
   }
   headofstate            = { type = 9 id = 22042 }
   headofgovernment       = { type = 9 id = 22049 }

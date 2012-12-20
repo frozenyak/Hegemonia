@@ -256,9 +256,9 @@ event = {
 
 	action = {
 		name = "Join the Comintern"
-		ai_chance = 59
+		ai_chance = 68
 		command = { type = set_domestic which = interventionism value = 7 }
-		#
+		#italy
 		command = { type = removecore which = 71 }
 		command = { type = removecore which = 78 }
 		command = { type = removecore which = 92 }
@@ -279,7 +279,7 @@ event = {
 			exists = VIC
 		}
 		name = "Join France (Game Over)"
-		ai_chance = 39
+		ai_chance = 30
 		#
 		command = { type = trigger which = 33011 } #vic
 		command = { type = trigger which = 38030 } #spa

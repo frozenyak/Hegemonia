@@ -384,15 +384,15 @@ military = {
 	flying_rocket 	= 0
 #				15 %
    	battleship     	= 0 
-   	carrier     	= 10 #15
-   	escort_carrier  = 10 #5
+   	carrier     	= 9 #15
+   	escort_carrier  = 9 #5
    	destroyer     	= 8 
    	light_cruiser   = 10 
    	heavy_cruiser   = 0 
 	battlecruiser 	= 0
 	submarine 		= 3
 	nuclear_submarine = 0
-	transports 		= 3
+	transports 		= 5
 #				44 %
 
 	#### Brigades

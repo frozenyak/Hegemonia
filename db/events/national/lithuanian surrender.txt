@@ -1,5 +1,7 @@
 #44900-49999
 ##44900 peace with russia
+##44910 german intervention
+
 event = {
 	id = 44900
 	country = LIT
@@ -13,22 +15,26 @@ event = {
 				# NOT = { puppet = { country = ROM country = LIT } } #u00
 			# }
 		# }
-		NOT = { control = { province = 264 } } #Riga
+		OR = {
+			NOT = { control = { province = 264 } } #Riga
+			NOT = { control = { province = 232 } } #Warsaw
+		}
 		NOT = { control = { province = 599 } } #Minsk
 		NOT = { control = { province = 617 } } #Kiev
 		lost_national = { country = LIT value = 50 }
 		#NOT = { flag = RUS_western_peace }
-		OR = {
-			NOT = { participant = { value = 2 } }
-			NOT = { war = { country = GER country = RUS } }
-			AND = { 
-				participant = { value = 2 }
-				lost_national = { country = GER value = 40 }
-				NOT = { control = { province = 138 } } #frankfurt
-			}
-			lost_national = { country = LIT value = 75 }
-			#NOT = { control = { province = 232 } } #Warsaw
-		}
+		# OR = {
+			# NOT = { participant = { value = 2 } }
+			# #NOT = { war = { country = GER country = RUS } }
+			# AND = { 
+				# participant = { value = 2 }
+				# #alliance = { country = GER }
+				# lost_national = { country = GER value = 40 }
+				# NOT = { control = { province = 138 } } #frankfurt
+			# }
+			# lost_national = { country = LIT value = 75 }
+			# #NOT = { control = { province = 232 } } #Warsaw
+		# }
 		# OR = {
 			# NOT = { war = { country = GER } }
 			# AND = {
@@ -36,6 +42,8 @@ event = {
 				# area = { area = "East Prussia" }
 			# }
 		# }
+		random = 50
+		NOT = { ispuppet = yes }
 	}
 	
 	name = "Peace in the East"
@@ -48,14 +56,19 @@ event = {
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
-		name = "Very well, sue for peace"
+		name = "ACTIONNAME2624A" #let us keep what we still have
 		ai_chance = 95
-		command = { type = trigger which = 44901 }
+		command = { type = dissent value = 10 }
+		
+		#command = { type = trigger which = 44901 }
+		command = { trigger = { NOT = { alliance = { country = GER } } } type = trigger which = 44901 }
+		command = { trigger = { alliance = { country = GER } } type = trigger which = 44910 }
 	}
 	action = {
 		name = "No peace with the Russans!"
 		ai_chance = 5
-		command = { type = dissent value = 5 }
+		command = { trigger = { NOT = { flag = RUS_belligerent_LIT } } type = dissent value = 5 }
+		command = { trigger = { flag = RUS_belligerent_LIT } type = dissent value = -5 }
 	}
 }
 
@@ -69,17 +82,21 @@ event = {
 	picture = "news_paper"
 
 	action = {
-		name = "Agree to the peace offer"
+		name = "ACTIONNAME2024A" # Accept the conditions
 		ai_chance = 95
 		command = { type = relation which = LIT value = 200 }
-		#command = { type = trigger which = 44902 }
-		command = { trigger = { NOT = { flag = RUS_belligerent_LIT } } type = trigger which = 44904 }
-		command = { trigger = { flag = RUS_belligerent_LIT } type = trigger which = 44906 }
+		#command = { type = trigger which = 44902 } #soft
+		command = { trigger = { NOT = { flag = RUS_belligerent_LIT } } type = trigger which = 44904 } #mild
+		command = { trigger = { flag = RUS_belligerent_LIT } type = trigger which = 44906 } #harsh
 	}
 	action = {
 		name = "No peace with the Lithuanians!"
+		trigger = {
+			NOT = { event = 44911 }
+		}
 		ai_chance = 5
-		command = { type = dissent value = 5 }
+		command = { trigger = { NOT = { flag = RUS_belligerent_LIT } } type = dissent value = 5 }
+		command = { trigger = { flag = RUS_belligerent_LIT } type = dissent value = -5 }
 	}
 }
 
@@ -96,8 +113,11 @@ event = { #soft
 		name = ACTION_NAME_OK
 		command = { type = peace which = RUS value = 1 }
 		command = { type = non_aggression which = LIT where = RUS }
-		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = peace which = U00 value = 1 }
-		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = non_aggression which = LIT where = U00 }
+		
+		command = { trigger = { alliance = { country = SPA country = RUS } } type = peace which = SPA value = 1 }
+		command = { trigger = { alliance = { country = U00 country = RUS } } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } ai = yes } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } ai = yes } type = non_aggression which = LIT where = U00 }
 		#command = { type = access which = RUS }
 		command = { type = leave_alliance }
 		#command = { trigger = { OR = { flag = RUS_claim_border flag = RUS_belligerent_LIT } } type = secedearea which = RUS value = "Estonia" when = 1 }
@@ -130,8 +150,11 @@ event = { #mild
 		name = ACTION_NAME_OK
 		command = { type = peace which = RUS value = 1 }
 		command = { type = non_aggression which = LIT where = RUS }
-		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = peace which = U00 value = 1 }
-		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = non_aggression which = LIT where = U00 }
+		
+		command = { trigger = { alliance = { country = SPA country = RUS } } type = peace which = SPA value = 1 }
+		command = { trigger = { alliance = { country = U00 country = RUS } } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } ai = yes } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } ai = yes } type = non_aggression which = LIT where = U00 }
 		#command = { type = access which = RUS }
 		command = { type = leave_alliance }
 		command = { type = secedearea which = RUS value = "Estonia" when = 1 }
@@ -143,6 +166,7 @@ event = { #mild
 		#command = { type = secederegion which = RUS value = "Poland" when = 1 }
 		#
 		command = { type = trigger which = 44907 }
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
 	}
 }
 
@@ -159,8 +183,11 @@ event = { #harsh
 		name = ACTION_NAME_OK
 		command = { type = peace which = RUS value = 1 }
 		command = { type = non_aggression which = LIT where = RUS }
-		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = peace which = U00 value = 1 }
-		command = { trigger = { war = { country = U00 } NOT = { lost_national = { country = U00 value = 10 } } ai = yes } type = non_aggression which = LIT where = U00 }
+		
+		command = { trigger = { alliance = { country = SPA country = RUS } } type = peace which = SPA value = 1 }
+		command = { trigger = { alliance = { country = U00 country = RUS } } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } ai = yes } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = U00 } ai = yes } type = non_aggression which = LIT where = U00 }
 		#command = { type = access which = RUS }
 		command = { type = leave_alliance }
 		command = { type = secedearea which = RUS value = "Estonia" when = 1 }
@@ -181,6 +208,7 @@ event = { #harsh
 		command = { type = sleepminister which = 28031 }
 		#
 		command = { type = trigger which = 44907 }
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
 	}
 }
 
@@ -198,5 +226,116 @@ event = {
 		ai_chance = 100
 		command = { type = belligerence which = RUS value = -10 }
 		command = { type = dissent value = -5 }
+	}
+}
+
+event = {
+	id = 44910
+	country = GER
+
+	name = "Lithuania and Russia negotiate!"
+	desc = "The Lithuanians have gone behind our backs to negotiate "
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = 15
+		command = { type = relation which = LIT value = -100 }
+		command = { type = trigger which = 44901 } #LIT proceed peace as normal
+		command = { type = dissent value = 2 }
+	}
+	action = {
+		name = "Seize their government!"
+		trigger = {
+			OR = {
+				government = fascist
+				headofstate = 37
+			}
+			control = { province = 138 } #frankfurt
+		}
+		ai_chance = 85
+		command = { type = relation which = LIT value = -200 }
+		command = { type = trigger which = 44911 }
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 44911
+	country = LIT
+	one_action = yes
+
+	name = "German Intervention!"
+	desc = "The Germans, hearing of our negotiations with Russia, have sent special forces to stop us!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "Intervention Fails!"
+		ai_chance = 50
+		command = { type = set_relation which = GER value = -200 }
+		command = { type = trigger which = 44912 }
+		command = { type = dissent value = 3 }
+	}
+	action = {
+		name = "Intervention Succeeds"
+		ai_chance = 50
+		command = { type = set_relation which = GER value = 200 }
+		command = { type = trigger which = 44913 }
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 44912
+	country = GER
+
+	name = "Intervention Fails!"
+	desc = "Our military intervention in Lithuania has failed, they are proceeding with the negotiations!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = 50
+		command = { type = trigger which = 44901 } #LIT proceed peace as normal
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 44913
+	country = GER
+
+	name = "Intervention Succeeds!"
+	desc = "Our military intervention in Lithuania was a resounding success! We have managed to take control of their government!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 50
+		command = { type = dissent value = -3 }
+		command = { trigger = { ai = no } type = coup_nation which = LIT }
+		command = { trigger = { ai = yes } type = make_puppet which = LIT }
+		command = { type = trigger which = 44914 }
+	}
+}
+
+event = {
+	id = 44914
+	country = RUS
+
+	name = "Peace with Lithuania - Failed!"
+	desc = "The Germans, having heard of our negotiations with Lithuania have taken over their government. A settled peace become impossible."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = relation which = GER value = -100 }
+		command = { trigger = { NOT = { flag = RUS_belligerent_LIT } } type = dissent value = 3 }
+		command = { trigger = { flag = RUS_belligerent_LIT } type = dissent value = 1 }
 	}
 }

@@ -5,63 +5,102 @@
 
 event = {
 	id = 55900
-	country = GER
-	
-	trigger = {
-		ai = U00
-		NOT = { ispuppet = U00 }
-		lost_national = { country = U00 value = 50 } #75
-		control = { province = 409 data = -3 } #Constantinople
-		random = 25
-		NOT = { ispuppet = yes }
-		control = { province = 138 data = GER }  #frankfurt
-		
-		NOT = { alliance = { country = U02 } }
-	}	
+	country = U00
 
-	name = "Demand Surrender of the Union of Rome"
-	desc = "Their country is in tatters, they have no choice but to surrender."
+	trigger = {
+		exists = GER
+		war = { country = GER }
+		NOT = { ispuppet = yes }
+		lost_national = { value = 60 }
+		NOT = { control = { province = 409 } } #Constantinople
+		NOT = { control = { province = 1075 } } #Ankara
+		#OR = {
+			#NOT = { control = { province = 338 } } #Belgrade
+			#NOT = { control = { province = 377 } } #Athens
+		#}
+		#OR = {
+			#NOT = { control = { province = 713 } } #Baku
+			#NOT = { control = { province = 1021 } } #Aleppo
+		#}
+		flag = HRE_capital_u00
+		NOT = { flag = u02_capital_u00 }
+		#ai = yes
+		random = 50
+	}
+
+	name = "Peace with Germany"
+	desc = "Our front has collapsed, our armies shattered, and we lost over half the country. It is hard to face the truth, but we have no choice but sue for peace."
 	style = 2
 	picture = "news_paper"
-	
+
 	date = { day = 1 month = march year = 1936 }
-	offset = 30 
-	deathdate = { day = 1 month = january year = 1964 }	
+	offset = 30
+	deathdate = { day = 1 month = january year = 1964 }
 
 	action = {
-		name = "Demand surrender"
-		command = { type = trigger which = 55901 }
-		command = { type = sleepevent which = 55905 } #spa
-		command = { type = sleepevent which = 55910 } #u02
+		name = "Unconditional Surrender"
+		command = { type = dissent value = 20 }
+		#
+		command = { type = trigger which = 55901 } # GER
 	}
 }
 
 event = {
 	id = 55901
-	country = U00
+	country = GER
 
-	name = "Surrender to Germany"
-	desc = "We have been defeated."
+	name = "Peace with the Union of Rome"
+	desc = "Joyous news, the socialists have sued for peace!"
 	style = 2
 	picture = "news_paper"
 
 	action = {
 		name = "ACTIONNAME2024A" # Accept the conditions
-		ai_chance = 99
-		command = { type = trigger which = 55902 }
+		ai_chance = 100
+		command = { type = dissent value = -10 }
+		command = { trigger = { NOT = { ai = U00 } } type = event which = 55902 where = U00 when = 1 }
+		command = { trigger = { ai = U00 } type = event which = 55903 where = GER when = 1 } #Victory over the Union
 	}
 	action = {
-		name = "No peace with the reactionaries!"
-		ai_chance = 1
-		command = { type = dissent value = -10 }
+		name = "No peace with the socialists!"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
 	}
 }
 
 event = {
 	id = 55902
+	country = U00
+
+	name = "Surrender to Germany"
+	desc = "The Germans have agreed to our generous offer and now insist we uphold our end."
+	style = 2
+	picture = "news_paper"
+
+    action = {
+        name = ACTION_NAME_OK
+		command = { type = secederegion which = GER value = "Middle East" when = 1 }
+		command = { type = secederegion which = GER value = "Persia" when = 1 }
+		command = { type = secederegion which = GER value = "Kaukasus" when = 1 }
+		command = { type = secedeprovince which = GER value = 429 } #Malta
+		#
+        command = { type = peace which = GER }
+		#
+        command = { type = domestic which = interventionism value = -2 }
+        command = { type = belligerence which = GER value = -50 }
+		#
+        command = { type = set_relation which = GER value = 0 }
+        command = { type = non_aggression which = GER where = U00 }
+		#
+		command = { type = trigger which = 55903 } #Victory over the Union
+	}
+}
+
+event = {
+	id = 55903
 	country = GER
 
-	name = "Surrender of the Union of Rome"
+	name = "Victory over the Union of Rome"
 	desc = "Celebrations are in order, they have finally surrendered!"
 	style = 2
 	picture = "news_paper"
@@ -69,148 +108,211 @@ event = {
 	action = {
 		name = "ACTION_NAME_HURRAH"
 		ai_chance = 100
+		command = { type = belligerence which = GER value = -15 }
 		command = { type = dissent value = -10 }
-		command = { type = inherit which = U00 }
+		command = { trigger = { NOT = { ai = U00 } } type = make_puppet which = U00 }
+		command = { trigger = { ai = U00 } type = inherit which = U00 }
 	}
 }
 
 event = {
 	id = 55905
-	country = SPA
-	
-	trigger = {
-		ai = U00
-		NOT = { ispuppet = U00 }
-		lost_national = { country = U00 value = 50 } #75
-		control = { province = 409 data = -3 } #Constantinople
-		random = 25
-		NOT = { ispuppet = yes }
-		control = { province = 467 data = SPA } #cordoba
-		
-		NOT = { alliance = { country = U02 } }
-	}	
+	country = U00
 
-	name = "Demand Surrender of the Union of Rome"
-	desc = "Their country is in tatters, they have no choice but to surrender."
+	trigger = {
+		exists = SPA
+		war = { country = SPA }
+		NOT = { ispuppet = yes }
+		lost_national = { value = 60 }
+		NOT = { control = { province = 409 } } #Constantinople
+		NOT = { control = { province = 1075 } } #Ankara
+		flag = league_capital_u00
+		NOT = { flag = u02_capital_u00 }
+		#ai = yes
+		random = 50
+	}
+
+	name = "Peace with Iberia"
+	desc = "Our front has collapsed, our armies shattered, and we lost over half the country. It is hard to face the truth, but we have no choice but sue for peace."
 	style = 2
 	picture = "news_paper"
-	
+
 	date = { day = 1 month = march year = 1936 }
-	offset = 30 
-	deathdate = { day = 1 month = january year = 1964 }	
+	offset = 30
+	deathdate = { day = 1 month = january year = 1964 }
 
 	action = {
-		name = "Demand surrender"
-		command = { type = trigger which = 55906 }
-		command = { type = sleepevent which = 55900 } #ger
-		command = { type = sleepevent which = 55910 } #u02
+		name = "Unconditional Surrender"
+		command = { type = dissent value = 20 }
+		#
+		command = { type = trigger which = 55906 } # SPA
 	}
 }
 
 event = {
 	id = 55906
-	country = U00
+	country = SPA
 
-	name = "Surrender to Iberia"
-	desc = "We have been defeated."
+	name = "Peace with the Union of Rome"
+	desc = "Joyous news, the socialists have sued for peace!"
 	style = 2
 	picture = "news_paper"
 
 	action = {
 		name = "ACTIONNAME2024A" # Accept the conditions
-		ai_chance = 99
-		command = { type = trigger which = 55907 }
+		ai_chance = 100
+		command = { type = dissent value = -10 }
+		command = { trigger = { NOT = { ai = U00 } } type = event which = 55907 where = U00 when = 1 }
+		command = { trigger = { ai = U00 } type = event which = 55908 where = SPA when = 1 } #Victory over the Union
 	}
 	action = {
-		name = "No peace with the capitalists!"
-		ai_chance = 1
-		command = { type = dissent value = -10 }
+		name = "No peace with the socialists!"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
 	}
 }
 
 event = {
 	id = 55907
+	country = U00
+
+	name = "Surrender to Iberia"
+	desc = "The Iberians have agreed to our generous offer and now insist we uphold our end."
+	style = 2
+	picture = "news_paper"
+
+    action = {
+        name = ACTION_NAME_OK
+		command = { type = secederegion which = SPA value = "Middle East" when = 1 }
+		command = { type = secederegion which = SPA value = "Persia" when = 1 }
+		command = { type = secederegion which = SPA value = "Kaukasus" when = 1 }
+		command = { type = secedeprovince which = SPA value = 429 } #Malta
+		#
+        command = { type = peace which = SPA }
+		#
+        command = { type = domestic which = interventionism value = -2 }
+        command = { type = belligerence which = SPA value = -50 }
+		#
+        command = { type = set_relation which = SPA value = 0 }
+        command = { type = non_aggression which = SPA where = U00 }
+		#
+		command = { type = trigger which = 55908 } #Victory over the Union
+	}
+}
+
+event = {
+	id = 55908
 	country = SPA
 
-	name = "Surrender of the Union of Rome"
-	desc = "Celebrations are in order, they have finally surrendered!"
+	name = "Victory over the Union of Rome"
+	desc = "It is time to celebrate! We have achieved Victory over the Union of Rome!"
 	style = 2
 	picture = "news_paper"
 
 	action = {
 		name = "ACTION_NAME_HURRAH"
 		ai_chance = 100
+		command = { type = belligerence which = SPA value = -15 }
 		command = { type = dissent value = -10 }
-		command = { type = inherit which = U00 }
+		command = { trigger = { NOT = { ai = U00 } } type = make_puppet which = U00 }
+		command = { trigger = { ai = U00 } type = inherit which = U00 }
 	}
 }
 
-
 event = {
 	id = 55910
-	country = U02
-	
-	trigger = {
-		ai = U00
-		NOT = { ispuppet = U00 }
-		lost_national = { country = U00 value = 50 } #75
-		control = { province = 409 data = -3 } #Constantinople
-		random = 25
-		NOT = { ispuppet = yes }
-		control = { province = 1517 data = U02 } #bombay
-	}	
+	country = U00
 
-	name = "Demand Surrender of the Union of Rome"
-	desc = "The socialists are defeated, they have no choice but to surrender."
+	trigger = {
+		exists = U02
+		war = { country = U02 }
+		NOT = { ispuppet = yes }
+		lost_national = { value = 60 }
+		NOT = { control = { province = 409 } } #Constantinople
+		NOT = { control = { province = 1075 } } #Ankara
+		flag = u02_capital_u00
+		ai = yes
+		random = 50
+	}
+
+	name = "Peace with Imperial India"
+	desc = "Our front has collapsed, our armies shattered, and we lost over half the country. It is hard to face the truth, but we have no choice but sue for peace."
 	style = 2
 	picture = "news_paper"
-	
+
 	date = { day = 1 month = march year = 1936 }
-	offset = 30 
-	deathdate = { day = 1 month = january year = 1964 }	
+	offset = 30
+	deathdate = { day = 1 month = january year = 1964 }
 
 	action = {
-		name = "Demand surrender"
-		command = { type = trigger which = 55911 }
-		command = { type = sleepevent which = 55900 } #ger
-		command = { type = sleepevent which = 55905 } #spa
+		name = "Unconditional Surrender"
+		command = { type = dissent value = 20 }
+		#
+		command = { type = trigger which = 55911 } # U02
 	}
 }
 
 event = {
 	id = 55911
-	country = U00
+	country = U02
 
-	name = "Surrender to the Emperor"
-	desc = "We have been defeated."
+	name = "Peace with the Union of Rome"
+	desc = "Joyous news, the socialists have sued for peace!"
 	style = 2
 	picture = "news_paper"
 
 	action = {
 		name = "ACTIONNAME2024A" # Accept the conditions
-		ai_chance = 90
-		command = { type = trigger which = 55912 }
+		ai_chance = 100
+		command = { type = dissent value = -10 }
+		command = { trigger = { NOT = { ai = U00 } } type = event which = 55912 where = U00 when = 1 }
+		command = { trigger = { ai = U00 } type = event which = 55913 where = U02 when = 1 } #Victory over the Union
 	}
 	action = {
-		name = "No peace with the reactionaries!"
-		ai_chance = 10
-		command = { type = dissent value = -10 }
+		name = "No peace with the socialists!"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
 	}
 }
 
 event = {
 	id = 55912
+	country = U00
+
+	name = "Surrender to Imperial India"
+	desc = "The Imperials have agreed to our generous offer and now insist we uphold our end."
+	style = 2
+	picture = "news_paper"
+
+    action = {
+        name = ACTION_NAME_OK
+        command = { type = peace which = U02 }
+		#
+        command = { type = domestic which = interventionism value = -2 }
+        command = { type = belligerence which = U02 value = -50 }
+		#
+        command = { type = set_relation which = U02 value = 0 }
+        command = { type = non_aggression which = U02 where = U00 }
+		#
+		command = { type = trigger which = 55913 } #Victory over the Union
+	}
+}
+
+event = {
+	id = 55913
 	country = U02
 
-	name = "Surrender of the Union of Rome"
-	desc = "Celebrations are in order, they have finally surrendered!"
+	name = "Victory over the Union of Rome"
+	desc = "It is time to celebrate! We have achieved Victory over the Union of Rome!"
 	style = 2
 	picture = "news_paper"
 
 	action = {
 		name = "ACTION_NAME_HURRAH"
 		ai_chance = 100
+		command = { type = belligerence which = U02 value = -15 }
 		command = { type = dissent value = -10 }
-		command = { type = inherit which = U00 }
+		command = { trigger = { NOT = { ai = U00 } } type = make_puppet which = U00 }
+		command = { trigger = { ai = U00 } type = inherit which = U00 }
 	}
 }

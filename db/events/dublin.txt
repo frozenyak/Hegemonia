@@ -331,6 +331,7 @@ event = {
 		#command = { type = addclaim which = 408 }
 		#command = { type = addclaim which = 395 }
 		#command = { type = addclaim which = 407 }
+		command = { trigger = { ai = U14 NOT = { ispuppet = U14 } } type = make_puppet which = U14 }
 	}
 	action = {
 		name = "Italy is rightfully ours but make no mention of it"
@@ -338,6 +339,7 @@ event = {
 		command = { type = relation which = U00 value = 25 }
 		command = { type = relation which = U14 value = -25 }
 		command = { type = dissent value = 2 }
+		command = { trigger = { ai = U14 NOT = { ispuppet = U14 } } type = make_puppet which = U14 }
 	}
 	action = {
 		name = "Renounce our claims on Italy"
@@ -349,6 +351,7 @@ event = {
 		command = { type = relation which = RSI value = 100 }
 		command = { type = dissent value = 10 }
 		command = { type = peacetime_ic_mod value = 0.7 }
+		command = { trigger = { ai = U14 NOT = { ispuppet = U14 } } type = make_puppet which = U14 }
 	}
 }
 
@@ -1240,7 +1243,7 @@ event = {
 
 	action = {
 		name = "Peace in our time!"
-		command = { type = domestic which = interventionism value = -2 }
+		command = { type = set_domestic which = interventionism value = 2 } #dom, -2
 		command = { type = local_setflag which = dublin_md }
 		command = { type = sleepevent which = 33005 }
 	}

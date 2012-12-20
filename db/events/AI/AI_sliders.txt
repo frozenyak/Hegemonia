@@ -43,6 +43,7 @@ event = {
 
 	action = {
 		name = "Political Policy"
+		trigger = { year = 1937 }
 		ai_chance = 40
 		command = { type = trigger which = 12102 }
 	}
@@ -199,6 +200,7 @@ event = {
 
 	action = {
 		name = "Political Policy"
+		trigger = { year = 1937 }
 		ai_chance = 20
 		command = { type = trigger which = 12102 }
 	}
@@ -355,6 +357,7 @@ event = {
 
 	action = {
 		name = "Political Policy"
+		trigger = { year = 1937 }
 		ai_chance = 25
 		command = { type = trigger which = 12102 }
 	}

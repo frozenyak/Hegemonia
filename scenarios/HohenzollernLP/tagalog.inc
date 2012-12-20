@@ -26,7 +26,7 @@ country =
     free_market       = 5 #3
     professional_army = 2
     defense_lobby     = 3
-    interventionism   = 1
+    interventionism   = 3 #1
   }
    nationalprovinces      = {  1572 1571 1565 1569 1566 1567 1570 1568 1577 1575 1573 1576 1574 1580 1578 1579  } 
    ownedprovinces         = {  1572 1571 1565 1569 1566 1567 1570 1568 1577 1575 1573 1576 1574 1580 1578 1579  } 

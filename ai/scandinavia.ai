@@ -190,9 +190,9 @@ construction = {
 	max_land_level = 2
 	fort_borders = { } 
 
-	ic_at_war = yes 
-	force_ic_until = 1945
-	ic_end_year = 1945
+	ic_at_war = no #yes 
+	force_ic_until = 1935
+	ic_end_year = 1935
 	IC_provs = {
      	2159 # Stockholm 
      	2152  # Malmo 
@@ -202,7 +202,7 @@ construction = {
 		294 # Copenhagen
 		483 # Oslo
 		497 # Narvik
-		493 # Trondhein
+		493 # Trondheim
 	} 
 }
 

@@ -71,7 +71,7 @@ event = {
 		command = { type = leave_alliance }
 		command = { trigger = { puppet = { country = CON country = GER } } type = end_mastery which = CON }
 		command = { trigger = { puppet = { country = U08 country = GER } } type = end_mastery which = U08 }
-		#command = { trigger = { puppet = { country = U14 country = GER } } type = end_mastery which = U14 }
+		command = { trigger = { puppet = { country = U14 country = GER } } type = end_mastery which = U14 }
 		#
 		command = { type = set_domestic which = democratic value = 3 }
 		command = { type = set_domestic which = political_left value = 3 }

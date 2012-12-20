@@ -5,7 +5,7 @@ event = {
 	id = 3999001
 	random = no 
 	persistent = yes
-	TAG = { ENG FRA GER JAP USA ITA CHI SOV VIC MEX AUS U74 RUS U00 URO U05 }
+	TAG = { ENG FRA GER JAP USA ITA CHI SOV VIC MEX AUS U74 RUS U00 URO U05 UCH }
 	
 	trigger = {
 		ai = yes

@@ -238,10 +238,11 @@ event = {
 		NOT = { puppet = { country = MEN country = JAP } }
 		NOT = { puppet = { country = VIE country = JAP } }
 		random = 25
+		NOT = { war = { country = RUS country = U00 } }
 	}
 	
 	name = "The Loss of Seoul"
-	desc = "Our army is in shambles and the Russians are advancing into Korea. They have occupied Seoul - perhaps it would be best to cut our losses ask for peace with the League?"
+	desc = "Our continental army is in shambles and the Russians are advancing into Korea. They have occupied Seoul - perhaps it would be best to cut our losses ask for peace with the League?"
 	style = 2
 	picture = "news_paper"
 	

@@ -24,15 +24,15 @@ liberate = { }
 demand_claims = { }
 # Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
 resistance = { 
-	U00 = 1 
-	RSI = 4 
-	VIC = 2
+	U00 = 7 
+	RSI = 8 
+	VIC = 5
 }
 befriend = { 
 	GER = 200 
 	SCH = 25 
-	AUS = 100 
-	LIT = 75
+	AUS = 75 
+	LIT = 50
 }
 protect = { 
 	GER = 50 

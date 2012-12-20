@@ -1,4 +1,13 @@
 ###42000-42999###
+#42000 china in flames
+#42001 wounded dragon
+#42003 invasion korea
+#42004 conquest of china
+#42006 fate indochina
+#42014 alliance india
+#42016 ambition
+#42030 purchase manchuria
+#42035 fate manchuria
 
 event = {
 	id = 42000

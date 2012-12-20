@@ -1,4 +1,6 @@
 ###52000-52999###
+#52000 alliance australasia
+#52001 alliance comintern
 
 event = {
 	id = 52000
@@ -22,3 +24,36 @@ event = {
 		command = { type = domestic which = interventionism value = -1 }
 	}
 }
+
+# event = {
+	# id = 52001
+	# country = PHI
+	
+	# trigger = {
+		# ai = yes
+		# atwar = no
+		# alliance = { country = U00 country = RUS }
+		# NOT = { alliance = { country = UAU } }
+	# }
+	
+	# name = AI_EVENT "Join the Comintern?"
+	# desc = "Should we join?"
+	# style = 1
+
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 30 
+	# deathdate = { day = 1 month = january year = 1964 }	
+
+	# action = {
+		# name = "ACTION_NAME_OF_COURSE"
+		# ai_chance = 99
+		# command = { type = relation which = U00 value = 100 }
+		# command = { type = domestic which = interventionism value = 1 }
+		# command = { type = trigger which = 55054 }
+	# }
+	# action = {
+		# name = "ACTION_NAME_NO"
+		# ai_chance = 1
+		# command = { type = relation which = U00 value = -25 }
+	# }
+# }

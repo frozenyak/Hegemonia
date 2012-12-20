@@ -1,7 +1,7 @@
-###35000-35999###
+###35000-35899###
 #list is incomplete and not completely accurate because the grouping and numbering is an unordered mess. 
 #thanks a lot wiz.
-#35000 dublin
+#35000-04,9-10,13-18 dublin
 #35022 riots commie
 #35023 riots liberal
 #35024 riots monarchist
@@ -677,8 +677,10 @@ event = {
 	id = 35033
 	country = GER
 	save_date = yes
+	
 	trigger = {
-		government = fascist
+		#government = fascist
+		NOT = { government = communist }
 		local_flag = dublin_conference_end
 		#NOT = { domestic = { type = democratic value = 5 } }
 		#NOT = { domestic = { type = freedom value = 5 } }
@@ -1355,6 +1357,7 @@ event = {
 		command = { type = relation which = CHI value = -200 }
 		command = { type = relation which = U74 value = -200 }
 		command = { type = domestic which = interventionism value = 1 }
+		command = { type = setflag which = GER_support_JAP }
 	}
 	action = {
 		name = "Publically condemn Japan"
@@ -2596,6 +2599,23 @@ event = {
 
 	name = "Scandinavia Leaves the HRE"
 	desc = "Citing a loss of focus of the alliance after the recent inclusion of Japan, Scandinavia has decided to leave and proclaim its neutrality."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}
+
+event = {
+	id = 35113
+	country = GER
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "Citing a loss of focus of the alliance after the recent inclusion of the American Federation, Scandinavia has decided to leave and proclaim its neutrality."
 	style = 2
 	picture = "news_paper"
 

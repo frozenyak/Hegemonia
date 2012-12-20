@@ -32,6 +32,7 @@ event = {
 		name = "ACTION_NAME_HURRAH"
 		command = { type = dissent value = -20 }
 		command = { type = capital which = 1337 }
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
 	}
 }
 
@@ -64,6 +65,7 @@ event = {
 	action = {
 		name = "ACTION_NAME_HURRAH"
 		command = { type = dissent value = -5 }
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
 
 	}
 }

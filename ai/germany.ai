@@ -19,7 +19,8 @@ evac_islands = no
 ###################################
 # Diplomacy
 ###################################
-combat = { }
+
+combat = { VIC = 80 }
 
 liberate = { U06 SCH LIT ROM SCA FIN SPA IRE U07 ITA BUL } #AUS
 resistance = { VIC = 6 U00 = 6 U10 = 2 }
@@ -294,7 +295,7 @@ construction = {
 
 	ic_at_war = no
 	force_ic_until = 1935
-	ic_end_year = 1936
+	ic_end_year = 1935
 	IC_provs = {
 		127  # Saarburken
 		179 # Munchen
@@ -321,7 +322,7 @@ military = {
 	extra_convoys_peace		= 0.05
 
 	#### Divisions etc...
-	infantry 		= 40
+	infantry 		= 41
 	cavalry 		= 0
 	motorized 		= 6
 	mechanized 		= 6
@@ -331,7 +332,7 @@ military = {
 	marine 			= 0
 	bergsjaeger 	= 1
 	garrison		= 0
-    hq 				= 3
+    hq 				= 2
 	militia 		= 0
 #				66 %
 	interceptor 	= 10

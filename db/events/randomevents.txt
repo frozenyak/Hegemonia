@@ -291,7 +291,7 @@ event = {
 
 	action = {
 		name = "ACTIONNAME1003A"
-		command = { type = manpowerpool value = 17 } #100
+		command = { type = manpowerpool value = 13 } #17 100
 	}
 }
 #########################################################################
@@ -313,7 +313,7 @@ event = {
 
 	action = {
 		name = "ACTIONNAME1004A"
-		command = { type = manpowerpool value = 17 } #100
+		command = { type = manpowerpool value = 13 } #17 100
 	}
 }
 #########################################################################
@@ -345,6 +345,7 @@ event = {
 		NOT = {
 			government = democratic
 		}
+		NOT = { policy = { type = free_market value = 0 } }
 	}
 	
 	name = "EVT_1006R_NAME"
@@ -355,6 +356,7 @@ event = {
 	action = {
 		name = "ACTIONNAME1006A"
 		command = { type = industrial_modifier which = total value = 1 }
+		#command = { type = domestic which = free_market value = -1 }
 		command = { type = dissent value = 1 }
 	}
 }
@@ -376,7 +378,7 @@ event = {
 
 	action = {
 		name = "ACTIONNAME1007A"
-		command = { type = manpowerpool value = 17 } #30
+		command = { type = manpowerpool value = 13 } #17 30
 	}
 }
 #########################################################################
@@ -472,7 +474,7 @@ event = {
 	random = yes
 	trigger = {
 		NOT = { government = communist }
-		#domestic = { type = free_market value = 4 }
+		#domestic = { type = free_market value = 5 }
 	}
 	name = "EVT_1013R_NAME"
 	desc = "EVT_1013R_DESC"

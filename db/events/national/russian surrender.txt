@@ -33,7 +33,7 @@ event = {
 			NOT = { control = { province = 663 } } #Stalingrad
 			NOT = { control = { province = 668 } } #Kujbysev
 		}
-		NOT = { control = { province = 553 } }
+		NOT = { control = { province = 553 } } #Odinholm
 	}
 
 	name = "Peace in the West"
@@ -46,14 +46,15 @@ event = {
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
-		name = "Very well, sue for peace"
+		name = "ACTIONNAME2624A" #let us keep what we still have
 		ai_chance = 95
 		command = { type = trigger which = 56901 }
 	}
 	action = {
 		name = "No peace with the Lithuanians!"
 		ai_chance = 5
-		command = { type = dissent value = 5 }
+		command = { trigger = { NOT = { flag = RUS_belligerent_LIT } } type = dissent value = 5 }
+		command = { trigger = { flag = RUS_belligerent_LIT } type = dissent value = -5 }
 	}
 }
 
@@ -67,7 +68,7 @@ event = {
 	picture = "news_paper"
 
 	action = {
-		name = "Agree to the peace offer"
+		name = "ACTIONNAME2024A" # Accept the conditions
 		ai_chance = 95
 		command = { type = relation which = RUS value = 200 }
 		command = { type = trigger which = 56902 }
@@ -75,7 +76,8 @@ event = {
 	action = {
 		name = ACTION_NAME_NEVER
 		ai_chance = 5
-		command = { type = dissent value = 5 }
+		command = { trigger = { NOT = { flag = RUS_belligerent_LIT } } type = dissent value = 5 }
+		command = { trigger = { flag = RUS_belligerent_LIT } type = dissent value = -5 }
 	}
 }
 
@@ -90,10 +92,15 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_OK"
+		command = { type = peace which = LIT value = 1 }
+		command = { type = non_aggression which = LIT where = RUS }
+	
 		command = { trigger = { alliance = { country = GER country = LIT } } type = peace which = GER value = 1 }
-		command = { trigger = { alliance = { country = GER country = LIT } } type = non_aggression which = GER where = RUS }
-		command = { trigger = { NOT = { alliance = { country = GER country = LIT } } } type = peace which = LIT value = 1 }
-		command = { trigger = { NOT = { alliance = { country = GER country = LIT } } } type = non_aggression which = LIT where = RUS }
+		command = { trigger = { alliance = { country = AUS country = LIT } } type = peace which = AUS value = 1 }
+
+		command = { trigger = { war = { country = U00 } ai = yes } type = peace which = U00 value = 1 }
+		command = { trigger = { war = { country = JAP } ai = yes } type = peace which = JAP value = 1 }
+		command = { trigger = { war = { country = U02 } ai = yes } type = peace which = U02 value = 1 }
 
 		command = { type = secederegion which = LIT value = "Western Russia" when = 1 }
 		command = { type = secederegion which = LIT value = "Southern Russia" when = 1 }
@@ -110,6 +117,7 @@ event = {
 		command = { type = setflag which = RUS_western_peace }
 		#
 		command = { type = trigger which = 56903 }
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
 	}
 }
 

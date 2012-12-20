@@ -1,5 +1,7 @@
-###57000-57999###
+###57000-57899###
 ##57010 india in the hre
+##57011 japan in the hre
+##57012 america in the hre
 
 event = {
 	id = 57001
@@ -224,6 +226,7 @@ event = {
 		participant = { value = 2 }
 		participant = { country = U02 value = 2 }
 		atwar = no
+		#government = democratic
 	}
 
 	name = "Imperial India joins the HRE"
@@ -231,7 +234,7 @@ event = {
 	style = 1
 
 	date = { day = 1 month = january year = 1936 }
-	offset = 3
+	offset = 13
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
@@ -260,6 +263,7 @@ event = {
 		participant = { value = 2 }
 		participant = { country = JAP value = 2 }
 		atwar = no
+		#government = democratic
 	}
 
 	name = "Japan joins the HRE"
@@ -267,12 +271,12 @@ event = {
 	style = 1
 
 	date = { day = 1 month = january year = 1936 }
-	offset = 3
+	offset = 13
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
 		name = "Leave the HRE"
-		ai_chance = 85
+		ai_chance = 75
 		command = { type = leave_alliance }
 		command = { trigger = { exists = GER } type = end_access which = GER }
 		command = { trigger = { exists = GER } type = trigger which = 35112 }
@@ -283,7 +287,44 @@ event = {
 	}
 	action = {
 		name = "Stay in"
-		ai_chance = 15
+		ai_chance = 25
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 57011
+	country = SCA
+
+	trigger = {
+		participant = { value = 2 }
+		participant = { country = USA value = 2 }
+		atwar = no
+		#government = democratic
+	}
+
+	name = "American Federation joins the HRE"
+	desc = "With the recent addition of the Americans to the HRE, many in parliament feel the alliance as lost its focus. They call for us to leave and adopt strict neutrality."
+	style = 1
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 13
+	deathdate = { day = 1 month = january year = 1963 }
+
+	action = {
+		name = "Leave the HRE"
+		ai_chance = 75
+		command = { type = leave_alliance }
+		command = { trigger = { exists = GER } type = end_access which = GER }
+		command = { trigger = { exists = GER } type = trigger which = 35113 }
+		command = { trigger = { NOT = { exists = GER } } type = end_access which = AUS }
+		command = { trigger = { NOT = { exists = GER } } type = trigger which = 25014 }
+		command = { type = setflag which = SCA_leaves_HRE }
+		command = { type = ai which = "switch/Neutrality_Change_up.ai" }
+	}
+	action = {
+		name = "Stay in"
+		ai_chance = 25
 		command = { type = dissent value = 5 }
 	}
 }

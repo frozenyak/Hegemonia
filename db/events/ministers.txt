@@ -130,6 +130,7 @@ event = {
 		NOT = { government = fascist }
 		random = 25
 		incabinet = 61
+		NOT = { incabinet = 214 }
 		local_flag = dublin_conference_end
 	}
 

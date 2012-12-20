@@ -6,10 +6,13 @@ event = {
 	
 	name = "The Italian Nation"
 	desc = "Our glorious nation has been born."
-	style = 1
+	style = 2
+	picture = "news_paper"
 
 	action = {
 		name = "ACTION_NAME_HURRAH"
+		command = { type = end_puppet }
+		
 		command = { type = capital which = 419 }
 		#
 		command = { type = headofstate which = 25014 }

@@ -310,3 +310,20 @@ event = {
 		command = { type = setflag which = SCA_leaves_HRE }
 	}
 }
+
+event = {
+	id = 25014
+	country = AUS
+
+	name = "Scandinavia Leaves the HRE"
+	desc = "Citing a loss of focus of the alliance after the recent inclusion of the American Federation, Scandinavia has decided to leave and proclaim its neutrality."
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = SCA value = -100 }
+		command = { type = dissent value = 2 }
+		command = { type = setflag which = SCA_leaves_HRE }
+	}
+}

@@ -14,6 +14,9 @@
 ##55045 exile in algeria
 ##55046 fall of constantinople
 ##55051 alliance dfr
+##55052 alliance russia
+##55053 alliance russia
+##55054 alliance PHI
 ##55055 partition of georgia
 ##55058 russia invades without blessing
 ##55060 RSI/U00 unification
@@ -1108,35 +1111,35 @@ event = {
 	}
 }
 
-event = {
-	id = 55046
-	country = U00
+# event = {
+	# id = 55046
+	# country = U00
 
-	trigger = {
-		atwar = yes
-		NOT = { control = { province = 409 } }
-		#OR = {
-		#	control = { province = 1075 }
-		#	control = { province = 377 }
-		#}
-		ai = yes
-	}
+	# trigger = {
+		# atwar = yes
+		# NOT = { control = { province = 409 } }
+		# #OR = {
+		# #	control = { province = 1075 }
+		# #	control = { province = 377 }
+		# #}
+		# ai = yes
+	# }
 
-	name = "The Fall of Constantinople"
-	desc = "Our capital city is in the hands of our enemies. The government has been relocated to continue the fight."
-	style = 1
+	# name = "The Fall of Constantinople"
+	# desc = "Our capital city is in the hands of our enemies. The government has been relocated to continue the fight."
+	# style = 1
 
-	date = { day = 1 month = january year = 1936 }
-	offset = 30
-	deathdate = { day = 1 month = january year = 1963 }
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 30
+	# deathdate = { day = 1 month = january year = 1963 }
 
-	action = {
-		name = ACTION_NAME_NO
-		command = { type = dissent value = 5 }
-		#command = { trigger = { control = { province = 1075 } NOT = { control = { province = 377 } } } type = capital which = 1075 }
-		#command = { trigger = { control = { province = 377 } control = { province = 1075 } } type = capital which = 377 }
-	}
-}
+	# action = {
+		# name = ACTION_NAME_NO
+		# command = { type = dissent value = 5 }
+		# #command = { trigger = { control = { province = 1075 } NOT = { control = { province = 377 } } } type = capital which = 1075 }
+		# #command = { trigger = { control = { province = 377 } control = { province = 1075 } } type = capital which = 377 }
+	# }
+# }
 
 event = {
 	id = 55051
@@ -1175,9 +1178,10 @@ event = {
 
 	trigger = {
 		flag = RUS_com_friendly
-
-		NOT = { participant = { country = RUS value = 1 } }
-		NOT = { participant = { country = RUS value = 2 } }
+		
+		#NOT = { participant = { country = RUS value = 1 } }
+		#NOT = { participant = { country = RUS value = 2 } }
+		NOT = { participant = { country = RUS value = 4 } }
 
 		NOT = { alliance = { country = RUS } }
 		NOT = { war = { country = RUS } }
@@ -1251,6 +1255,28 @@ event = {
 		ai_chance = 0
 		command = { type = relation which = RUS value = -50 }
 		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 55054
+	country = U00
+
+	name = "Alliance with Tagalog?"
+	desc = "The socialists in Tagalog have requested membership in the Comintern. Should we accept them?"
+	style = 1
+
+	action = {
+		name = "ACTION_NAME_OF_COURSE"
+		ai_chance = 90
+		command = { type = alliance which = PHI }
+		command = { type = relation which = PHI value = 50 }
+	}
+	action = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 10
+		command = { type = relation which = PHI value = -50 }
+		command = { type = dissent value = 1 }
 	}
 }
 

@@ -147,8 +147,9 @@ event = {
 		command = { type = secedeprovince which = USA value = 1898 } #rock springs
 		command = { type = secedeprovince which = USA value = 1896 } #saltlake city
 		#
-        command = { type = peace which = USA }
-        command = { type = peace which = CAN }
+        command = { type = peace which = USA value = 1  }
+        command = { type = peace which = CAN value = 1  }
+        command = { trigger = { participant = { country = USA value = 2 } participant = { country = GER value = 2 } } type = peace which = GER value = 1  }
 		#
         command = { type = domestic which = interventionism value = -2 }
         command = { type = belligerence which = USA value = -50 }
@@ -162,6 +163,7 @@ event = {
 		command = { type = sleepevent which = 21900 } #peace with mazula
 		#
 		command = { type = trigger which = 48903 } #Victory over Mazula
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
 	}
 }
 

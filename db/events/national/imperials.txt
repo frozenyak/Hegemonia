@@ -1,6 +1,11 @@
 ###39000-39999###
-##39017 union at war
+#39008 claim ceylon
+#39011 union attacks turkestan
+#39012 russia attacks turkestan
+##39013 need for allies
 ##39025 turkestan obstacle
+#39024 return constantinople
+#39028 ai alliance rus
 
 event = {
 	id = 39008
@@ -436,62 +441,6 @@ event = {
 }
 
 event = {
-	id = 39017
-	country = U02
-
-	decision = {
-		exists = U00
-		flag = great_war_by_event
-		NOT = { war = { country = U00 } }
-	}
-	decision_trigger = {
-		NOT = { alliance = { country = U00 } }
-		#NOT = { non_aggression = { country = U00 } }
-	}
-	
-	trigger = {
-		flag = great_war_by_event
-		NOT = { war = { country = U00 } }
-		NOT = { alliance = { country = U00 } }
-		NOT = { non_aggression = { country = U00 } }
-		OR = {
-			alliance = { country = RUS }
-			alliance = { country = GER }
-			alliance = { country = SPA }
-			lost_national = { country = U00 value = 10 }
-			#AND = {
-			#	year = 1942
-			#	atwar = no
-			#}
-		}
-		exists = U00
-		random = 25 #50
-		NOT = { government = communist }
-	}
-
-	name = "The Union at War"
-	desc = "The Union of Rome is embroiled in war with one of the other alliance blocks. This is our chance to attack and retake our homeland!"
-	style = 1
-	picture = "war"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 15
-	deathdate = { day = 1 month = january year = 1945 }
-
-	action = {
-		name = ACTION_NAME_FIGHT
-		ai_chance = 100
-		command = { type = domestic which = interventionism value = 1 }
-		command = { type = war which = U00 }
-		#command = { type = setflag which = great_war_by_event }
-	}
-	action = { trigger = { ai = yes }
-		name = "We do not wish war"
-		ai_chance = 0
-	}
-}
-
-event = {
 	id = 39020
 	country = U02
 
@@ -588,6 +537,7 @@ event = {
 		owned = { province = 409 data = U02 }
 		NOT = { capital = { province = 409 } }
 		area = { area = "Bosporus" value = 60 data = 2 }
+		atwar = no
 	}
 
 	name = "The Return to Constantinople"
@@ -723,7 +673,7 @@ event = {
 	style = 2
 
 	date = { day = 1 month = january year = 1936 }
-	offset = 3
+	offset = 13
 	deathdate = { day = 1 month = january year = 1963 }
 	
 	action = {

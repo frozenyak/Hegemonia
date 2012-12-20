@@ -1,5 +1,7 @@
 ###56000-56899###
+#56008 access baltic
 #56024 elections
+#56028 conservative policy
 #56070 Fate of Ukraine
 #56075 partition of georgia
 #56085 diplomatic offensive
@@ -1143,7 +1145,7 @@ event = {
 	
 	trigger = {
 		NOT = { exists = UKR }
-		region = { region = "Ukraine" data = 2 value = 50 }
+		region = { region = "Ukraine" data = 2 } # value = 50
 		NOT = { war = { country = LIT } }
 		NOT = { war = { country = ROM } }
 		OR = {
@@ -1154,7 +1156,11 @@ event = {
 			NOT = { war = { country = GEO } }
 			region = { region = "Kaukasus" country = -3 value = 70 }
 		}
-		NOT = { war = { country = U00 } }
+		#NOT = { war = { country = U00 } }
+		OR = {
+			NOT = { exists = U00 }
+			NOT = { atwar = U00 }
+		}
 		NOT = { war = { country = AUS } }
 	}
 

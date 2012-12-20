@@ -434,18 +434,21 @@ country =
     { id     = { type = 9000 id = 894 }
       name   = "1. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 1 }
       name   = "91. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 2 }
       name   = "92. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -459,18 +462,21 @@ country =
     { id     = { type = 9000 id = 896 }
       name   = "2. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 3 }
       name   = "93. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 4 }
       name   = "94. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -484,18 +490,21 @@ country =
     { id     = { type = 9000 id = 898 }
       name   = "3. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 5 }
       name   = "95. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 6 }
       name   = "96. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -509,18 +518,21 @@ country =
     { id     = { type = 9000 id = 900 }
       name   = "4. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 7 }
       name   = "97. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 8 }
       name   = "98. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -534,18 +546,21 @@ country =
     { id     = { type = 9000 id = 902 }
       name   = "5. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 9 }
       name   = "99. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 10 }
       name   = "100. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -559,18 +574,21 @@ country =
     { id     = { type = 9000 id = 904 }
       name   = "6. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 11 }
       name   = "101. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 12 }
       name   = "102. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -584,18 +602,21 @@ country =
     { id     = { type = 9000 id = 906 }
       name   = "7. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 13 }
       name   = "103. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 14 }
       name   = "104. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -609,18 +630,21 @@ country =
     { id     = { type = 9000 id = 908 }
       name   = "8. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 15 }
       name   = "105. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 16 }
       name   = "106. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -634,18 +658,21 @@ country =
     { id     = { type = 9000 id = 910 }
       name   = "9. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 17 }
       name   = "107. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 18 }
       name   = "108. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -659,18 +686,21 @@ country =
     { id     = { type = 9000 id = 912 }
       name   = "10. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 19 }
       name   = "109. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 20 }
       name   = "110. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -684,18 +714,21 @@ country =
     { id     = { type = 9000 id = 914 }
       name   = "11. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 21 }
       name   = "111. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 22 }
       name   = "112. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -709,18 +742,21 @@ country =
     { id     = { type = 9000 id = 916 }
       name   = "12. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 42 }
       name   = "132. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 23 }
       name   = "113. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -734,18 +770,21 @@ country =
     { id     = { type = 9000 id = 918 }
       name   = "13. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 24 }
       name   = "114. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 25 }
       name   = "115. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -759,18 +798,21 @@ country =
     { id     = { type = 9000 id = 920 }
       name   = "14. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 26 }
       name   = "116. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 27 }
       name   = "117. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -784,18 +826,21 @@ country =
     { id     = { type = 9000 id = 922 }
       name   = "15. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 28 }
       name   = "118. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 29 }
       name   = "119. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -809,18 +854,21 @@ country =
     { id     = { type = 9000 id = 924 }
       name   = "16. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 30 }
       name   = "120. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 31 }
       name   = "121. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -834,18 +882,21 @@ country =
     { id     = { type = 9000 id = 926 }
       name   = "17. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 32 }
       name   = "122. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 33 }
       name   = "123. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -859,18 +910,21 @@ country =
     { id     = { type = 9000 id = 928 }
       name   = "18. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 34 }
       name   = "124. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 35 }
       name   = "125. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -884,18 +938,21 @@ country =
     { id     = { type = 9000 id = 930 }
       name   = "19. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 36 }
       name   = "126. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 43 }
       name   = "133. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2
@@ -909,18 +966,21 @@ country =
     { id     = { type = 9000 id = 932 }
       name   = "20. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 37 }
       name   = "127. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 10
     }
     division =
     { id     = { type = 9000 id = 38 }
       name   = "128. Diviziya Opolcheniya"
       type = infantry
+      model  = 0
 	  strength = 30
       extra  = artillery
       brigade_model = 2

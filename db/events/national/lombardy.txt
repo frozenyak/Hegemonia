@@ -26,6 +26,7 @@ event = {
 	action = {
 		name = "Withdraw from the HRE in protest"
 		ai_chance = 99
+		command = { type = end_puppet }
 		command = { type = leave_alliance }
 		command = { type = end_access which = GER }
 		command = { type = relation which = GER value = -200 }
@@ -258,8 +259,8 @@ event = {
 
 	action = {
 		name = ACTION_NAME_HURRAH
+		command = { type = end_puppet }
 		command = { type = dissent value = -5 }
-		command = { trigger = { ispuppet = U14 } type = end_puppet }
 		command = { trigger = { exists = RSI ai = RSI } type = inherit which = RSI value = 1 }
 		command = { type = capital which = 419 }
 		command = { type = country which = ITA }

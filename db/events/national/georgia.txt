@@ -37,7 +37,7 @@ event = {
 			NOT = { alliance = { country = RUS } }
 		}
 		name = "Ask Russia for assistance"
-		ai_chance = 65
+		ai_chance = 64
 		command = { type = trigger which = 56030 }
 	}
 	action = {
@@ -53,7 +53,7 @@ event = {
 	}
 	action = {
 		name = "We will win this ourselves!"
-		ai_chance = 0
+		ai_chance = 1
 		command = { }
 	}
 }

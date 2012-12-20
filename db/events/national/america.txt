@@ -112,6 +112,7 @@ event = {
 		}
 		NOT = { local_flag = MOB7 }
 		atwar = no
+		NOT = { event = 7102 }
 	}	
 
 	name = "Mobilization Orders"

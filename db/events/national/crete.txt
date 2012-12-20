@@ -1,7 +1,7 @@
-###23000-23999###
+###20000-20999###
 
 event = {
-	id = 23000
+	id = 20000
 	random = no
 	country = U01
 	
@@ -25,7 +25,7 @@ event = {
 	action = {
 		name = "Join Greece (Game Over)"
 		ai_chance = 90
-		command = { type = trigger which = 23001 }
+		command = { type = trigger which = 20001 }
 	}
 	action = {
 		name = "Stay Independent"
@@ -35,7 +35,7 @@ event = {
 }
 
 event = {
-	id = 23001
+	id = 20001
 	country = GRE
 	
 	name = "Greek Unification"

@@ -11,6 +11,7 @@ max_redeploying = 0.10
 exp_force_ratio = 0.00
 exp_force_ratios = { }  
 no_exp_forces_to = { GER U08 CON U14 LIT ROM SCA LIB SCH U02 JAP MEN MAN U87 CGX VIE TIB MON }
+ferocity = yes
 
 ###################################
 # Diplomacy

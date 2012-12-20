@@ -1,1 +1,204 @@
 #38900-38999
+#38905 to U00
+
+event = {
+	id = 38900
+	country = SPA
+
+	trigger = {
+		exists = GER
+		war = { country = GER }
+		NOT = { ispuppet = yes }
+		lost_national = { value = 60 }
+		NOT = { control = { province = 467 } } #cordoba
+		flag = HRE_capital_spa
+	}
+
+	name = "Peace with Germany"
+	desc = "Our front has collapsed, our armies shattered, and we lost over half the country. It is hard to face the truth, but we have no choice but sue for peace. We will have to give up Gibraltar."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = march year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTIONNAME2624A" #let us keep what we still have
+		command = { type = dissent value = 20 }
+		#
+		command = { type = trigger which = 38901 } # GER
+	}
+}
+
+event = {
+	id = 38901
+	country = GER
+
+	name = "Peace with Iberia"
+	desc = "Joyous news, the Iberians have sued for peace! Gibraltar and with it the control of the Mediterranean is ours!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTIONNAME2024A" # Accept the conditions
+		ai_chance = 100
+		command = { type = dissent value = -10 }
+		command = { type = event which = 38902 where = SPA when = 1 }
+	}
+	action = {
+		name = "No peace with the Iberians!"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 38902
+	country = SPA
+
+	name = "Surrender to Germany"
+	desc = "The Germans have agreed to our generous offer and now insist we uphold our end."
+	style = 2
+	picture = "news_paper"
+
+    action = {
+        name = ACTION_NAME_OK
+		command = { type = secedeprovince which = GER value = 348 } #Gibraltar
+		#
+        command = { type = peace which = GER value = 1 }
+        command = { trigger = { war = { country = U00 } ai = yes } type = peace which = U00 value = 1 }
+        command = { trigger = { war = { country = JAP } ai = yes } type = peace which = JAP value = 1 }
+		command = { trigger = { war = { country = U02 } ai = yes } type = peace which = U02 value = 1 }
+		#
+		command = { type = leave_alliance }
+		#
+        command = { type = domestic which = interventionism value = -2 }
+        command = { type = belligerence which = GER value = -50 }
+		#
+        command = { type = set_relation which = GER value = 0 }
+        command = { type = non_aggression which = GER where = SPA }
+		#
+		command = { type = trigger which = 38903 } #Victory over Iberia
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
+	}
+}
+
+event = {
+	id = 38903
+	country = GER
+
+	name = "Victory over Iberia"
+	desc = "It is time to celebrate! We have achieved Victory over Iberia!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		ai_chance = 100
+		command = { type = belligerence which = GER value = -10 }
+		command = { type = dissent value = -5 }
+		command = { type = coup_nation which = SPA }
+	}
+}
+
+event = {
+	id = 38905
+	country = SPA
+
+	trigger = {
+		exists = U00
+		war = { country = U00 }
+		NOT = { ispuppet = yes }
+		lost_national = { value = 60 }
+		NOT = { control = { province = 467 } } #cordoba
+		flag = comintern_capital_spa
+	}
+
+	name = "Peace with Union of Rome"
+	desc = "Our front has collapsed, our armies shattered, and we lost over half the country. It is hard to face the truth, but we have no choice but sue for peace. We will have to give up Gibraltar."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = march year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "ACTIONNAME2624A" #let us keep what we still have
+		command = { type = dissent value = 20 }
+		#
+		command = { type = trigger which = 38906 } # U00
+	}
+}
+
+event = {
+	id = 38906
+	country = U00
+
+	name = "Peace with Iberia"
+	desc = "Joyous news, the Iberians have sued for peace! Gibraltar and with it the control of the Mediterranean is ours!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTIONNAME2024A" # Accept the conditions
+		ai_chance = 100
+		command = { type = dissent value = -10 }
+		command = { type = event which = 38907 where = SPA when = 1 }
+	}
+	action = {
+		name = "No peace with the Iberians!"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 38907
+	country = SPA
+
+	name = "Surrender to Union of Rome"
+	desc = "The Romans have agreed to our generous offer and now insist we uphold our end."
+	style = 2
+	picture = "news_paper"
+
+    action = {
+        name = ACTION_NAME_OK
+		command = { type = secedeprovince which = U00 value = 348 } #Gibraltar
+		#
+        command = { type = peace which = U00 value = 1 }
+        command = { trigger = { war = { country = GER } ai = yes } type = peace which = GER value = 1 }
+        command = { trigger = { war = { country = JAP } ai = yes } type = peace which = JAP value = 1 }
+		command = { trigger = { war = { country = U02 } ai = yes } type = peace which = U02 value = 1 }
+		#
+		command = { type = leave_alliance }
+		#
+        command = { type = domestic which = interventionism value = -2 }
+        command = { type = belligerence which = U00 value = -50 }
+		#
+        command = { type = set_relation which = U00 value = 0 }
+        command = { type = non_aggression which = U00 where = SPA }
+		#
+		command = { type = trigger which = 38908 } #Victory over Iberia
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
+	}
+}
+
+event = {
+	id = 38908
+	country = U00
+
+	name = "Victory over Iberia"
+	desc = "It is time to celebrate! We have achieved Victory over Iberia!"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT" # Great!
+		ai_chance = 100
+		command = { type = belligerence which = U00 value = -10 }
+		command = { type = dissent value = -5 }
+		command = { type = coup_nation which = SPA }
+	}
+}

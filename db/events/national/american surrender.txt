@@ -8,8 +8,10 @@ event = {
 		NOT = { ispuppet = MEX }
 		NOT = { ispuppet = USA }
 		lost_national = { value = 60 }
-		NOT = { control = { province = 1812 } } #norfolk
-		NOT = { control = { province = 1806 } } #pittsburgh
+		OR = {
+			NOT = { control = { province = 1812 } } #norfolk
+			NOT = { control = { province = 1806 } } #pittsburgh
+		}
 		control = { province = 1974 data = MEX }  #mexico city
 	}	
 
@@ -140,8 +142,9 @@ event = {
 		#
 		command = { trigger = { NOT = { exists = PAN } } type = secederegion which = MEX value = "Central America" when = 1 }
 		#
-        command = { type = peace which = MEX }
-        command = { type = peace which = PAN }
+        command = { type = peace which = MEX value = 1 }
+        command = { type = peace which = PAN value = 1  }
+        command = { trigger = { participant = { country = MEX value = 1 } participant = { country = SPA value = 1 } } type = peace which = SPA value = 1  }
 		#
         command = { type = domestic which = interventionism value = -2 }
         command = { type = belligerence which = USA value = -50 }
@@ -152,6 +155,7 @@ event = {
 		command = { type = sleepevent which = 48900 } #peace with america
 		#
 		command = { type = trigger which = 21903 } #Victory over America
+		command = { trigger = { atwar = no } type = peacetime_ic_mod value = 0.7 }
 	}
 }
 

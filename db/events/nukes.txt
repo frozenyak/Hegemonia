@@ -13,6 +13,10 @@
 ##11070- MEX
 ##11072- SPA
 ##11074- LIT
+##11076- AUS
+##11078- SCA
+##11080- VIC
+##11082- U02
 
 event = {
 	id = 11000
@@ -1103,6 +1107,132 @@ event = {
 	action = {
 		name = "Cnuke_act"
 		command = { type = capital which = 258 } # Wilno
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11076
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = AUS
+
+	trigger = {
+		nuked = { country = AUS data = -1 where = 195 } # Vienna
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 207 } #prague
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11078
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = SCA
+
+	trigger = {
+		nuked = { country = SCA data = -1 where = 2159 } # Stockholm
+	}
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 483 } #oslo
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11080
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = VIC
+
+	trigger = {
+		nuked = { country = VIC data = -1 where = 55 } # Paris - France
+	}
+
+	date = { day = 3 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 58 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11081
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = VIC
+
+	trigger = {
+		event = 11080
+		nuked = { country = VIC data = -1 where = 58 } #Le Mans
+	}
+
+	date = { day = 3 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 85 }
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 11082
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+	 
+	country = U02
+
+	trigger = {
+		nuked = { country = U02 data = -1 where = 1517 } # Bombay
+	}
+
+	date = { day = 3 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 30 month = december year = 1963 }
+   
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1459 } #delhi
 		command = { type = dissent value = -1 }
 	}   
 }

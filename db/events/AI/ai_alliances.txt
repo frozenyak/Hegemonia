@@ -1,9 +1,9 @@
-#56007	join SPA
-#30000	join GER/AUS
-#57006	join U00
+#37000	join SPA
+#37001	join GER/AUS
+#37002	join U00
 
 event = {
-	id = 56007
+	id = 12000
 	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHL CMB COL CON COS CRO CSA CSX CUB CXB CYP CZE DDR DEN EAF ECU EQA EST ETH EUS FIN FLA GAB GLD GUA GUI GUY HON HUN ICL IDC IND INO IRE IRQ ISR JOR KAZ KOR KUR KYG LAO LAT LBY LEB LUX MAD MAL MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO SAL SAR SAU SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN UKR URU UZB VEN VIE WLL YEM YUG U01 U03 U04 U06 U07 U08 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }   
 	#AUS DFR ENG EGY CHC CHI CYN FRA GEO GER GRE HOL ITA JAP LIT MAN MEN MEX ROM RSI RUS SAF SCA SCH SPA TUR VIC USA U00 u02 U05 u09 UAU PHI
 	persistent = yes
@@ -12,20 +12,20 @@ event = {
 		flag = great_war_by_event
 		ai = yes
 		OR = {
-			war = { country = SPA country = U00 }
-			war = { country = SPA country = GER }
-			war = { country = SPA country = AUS }
-		}
-		OR = {
 			AND = {
 				war = { country = AUS }
 				NOT = { exists = GER }
+				NOT = { flag = HRE_league_pact }
 			}
 			AND = {
 				war = { country = GER }
 				NOT = { country = DFR }
+				NOT = { flag = HRE_league_pact }
 			}
-			war = { country = U00 }
+			AND = {
+				war = { country = U00 }
+				NOT = { flag = comintern_league_pact }
+			}
 		}
 		NOT = { participant = { value = 1 } }
 		NOT = { war = { country = SPA } }
@@ -49,7 +49,7 @@ event = {
 }
 
 event = {
-	id = 30000
+	id = 12001
 	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHL CMB COL CON COS CRO CSA CSX CUB CXB CYP CZE DDR DEN EAF ECU EQA EST ETH EUS FIN FLA GAB GLD GUA GUI GUY HON HUN ICL IDC IND INO IRE IRQ ISR JOR KAZ KOR KUR KYG LAO LAT LBY LEB LUX MAD MAL MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO SAL SAR SAU SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN UKR URU UZB VEN VIE WLL YEM YUG U01 U03 U04 U06 U07 U08 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	persistent = yes
 	
@@ -57,14 +57,14 @@ event = {
 		flag = great_war_by_event
 		ai = yes
 		OR = {
-			war = { country = SPA }
-			war = { country = U00 }
-		}
-		OR = {
-			war = { country = U00 country = GER }
-			war = { country = U00 country = AUS }
-			war = { country = SPA country = GER }
-			war = { country = SPA country = AUS }
+			AND = {
+				war = { country = SPA }
+				NOT = { flag = HRE_league_pact }
+			}
+			AND = {
+				war = { country = U00 }
+				NOT = { flag = HRE_comintern_pact }
+			}
 		}
 		NOT = { participant = { value = 2 } }
 		OR = {
@@ -102,7 +102,7 @@ event = {
 }
 
 event = {
-	id = 57006
+	id = 12002
 	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHL CMB COL CON COS CRO CSA CSX CUB CXB CYP CZE DDR DEN EAF ECU EQA EST ETH EUS FIN FLA GAB GLD GUA GUI GUY HON HUN ICL IDC IND INO IRE IRQ ISR JOR KAZ KOR KUR KYG LAO LAT LBY LEB LUX MAD MAL MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO SAL SAR SAU SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN UKR URU UZB VEN VIE WLL YEM YUG U01 U03 U04 U06 U07 U08 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	persistent = yes
 	
@@ -110,20 +110,20 @@ event = {
 		flag = great_war_by_event
 		ai = yes
 		OR = {
-			war = { country = U00 country = GER }
-			war = { country = U00 country = AUS }
-			war = { country = U00 country = SPA }
-		}
-		OR = {
 			AND = {
 				war = { country = AUS }
 				NOT = { exists = GER }
+				NOT = { flag = HRE_comintern_pact }
 			}
 			AND = {
 				war = { country = GER }
 				NOT = { country = DFR }
+				NOT = { flag = HRE_comintern_pact }
 			}
-			war = { country = SPA }
+			AND = {
+				war = { country = SPA }
+				NOT = { flag = comintern_league_pact }
+			}
 		}
 		NOT = { participant = { value = 3 } }
 		NOT = { war = { country = U00 } }
@@ -145,3 +145,72 @@ event = {
 		command = {	type = local_setflag which = ai_alliance }
 	}
 }
+
+event = {
+	id = 12003
+	country = JAP
+	
+	trigger = {
+		flag = great_war_by_event
+		ai = yes
+		ai = GER
+		exists = GER
+		OR = {
+			AND = {
+				war = { country = ENG }
+				war = { country = ENG country = GER }
+			}
+			AND = {
+				war = { country = RUS }
+				war = { country = RUS country = GER }
+			}
+		}
+		government = fascist
+		NOT = { ispuppet = yes }
+		NOT = { local_flag = ai_alliance }
+		NOT = { alliance = { country = U02 } }
+		NOT = { participant = { value = 4 } }
+	}
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1946 }
+
+	name = "AI_EVENT"
+	
+	action = {
+		command = {	type = alliance which = GER }
+		command = {	type = local_setflag which = ai_alliance }
+	}
+}
+
+# event = {
+	# id = 12004
+	# country = JAP
+	
+	# trigger = {
+		# flag = great_war_by_event
+		# ai = yes
+		# ai = ENG
+		# exists = ENG
+		# war = { country = RUS }
+		# war = { country = RUS country = ENG }
+		
+		# government = democratic
+		# NOT = { ispuppet = yes }
+		# NOT = { local_flag = ai_alliance }
+		# NOT = { alliance = { country = U02 } }
+		# NOT = { participant = { value = 4 } }
+	# }
+	
+	# date = { day = 1 month = january year = 1936 }
+	# offset = 30
+	# deathdate = { day = 1 month = january year = 1946 }
+
+	# name = "AI_EVENT"
+	
+	# action = {
+		# command = {	type = alliance which = ENG }
+		# command = {	type = local_setflag which = ai_alliance }
+	# }
+# }
