@@ -1246,6 +1246,7 @@ event = {
 				war = { country = GEO }
 				war = { country = LIT }
 				alliance = { country = GEO }
+				alliance = { country = GEO country = U00 }
 				alliance = { country = SPA }
 				ispuppet = RUS
 				ispuppet = U00
@@ -1276,6 +1277,7 @@ event = {
 				war = { country = GEO }
 				war = { country = LIT }
 				alliance = { country = GEO }
+				alliance = { country = GEO country = U00 }
 				alliance = { country = SPA }
 				ispuppet = RUS
 				ispuppet = U00

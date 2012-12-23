@@ -1,0 +1,59 @@
+###50900-50999###
+
+event = {
+	id = 50900
+	country = U06
+
+	name = EVT_60_NAME #switching sides
+	desc = "Iberia has taken most of our territory!"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		ai = no
+		war = { country = SPA }
+		control = { province = 68 data = SPA } #Bordeaux
+		lost_national = { country = U06 value = 50 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 97
+		name = "Surrender!"
+		command = { type = end_puppet }
+		command = { type = set_relation which = SPA value = 0 }
+		command = { type = trigger which = 50901 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Keep Fighting!"
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 50901
+	country = SPA
+
+	name = "New Allies - Occitania"
+	desc = "Occitania is ready to surrender and become our client state!"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_64_ACTA
+		command = { type = make_puppet which = U06 }
+		#command = { type = coup_nation which = U06 }
+		command = { type = money value = 500 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Destroy them"
+		command = { type = dissent value = 1 }
+	}
+}

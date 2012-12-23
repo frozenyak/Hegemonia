@@ -1,4 +1,4 @@
-###52000-52999###
+###52000-52899###
 #52000 alliance australasia
 #52001 alliance comintern
 

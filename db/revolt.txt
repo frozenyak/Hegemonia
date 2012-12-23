@@ -248,7 +248,7 @@ AUS = { # Austro-Hungary
 	liberate = no
 }
 
-U09 = { # Austria
+U09 = { # German-Austria
 	date = { day = 1 month = january year = 1914 }
 	expirydate = { day = 30 month = december year = 1999 }
 	minimum = { 190 191 192 195 194 186 187 193 188 }
@@ -2218,7 +2218,7 @@ YUG = { # Yugoslavia
 		#
 		337
 		#slovenia
-		349 #346 403 404
+		349 346 #403 404
 		#albania
 		361 359 360 362
 	}

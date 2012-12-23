@@ -4,6 +4,8 @@ switch = no # [yes/no]
 neutrality = 100
 war = 0
 strat_redeploy_threshold = 50
+exp_force_ratios = { } 
+no_exp_forces_to = { U00 VIC U07 ARA }
 
 ###################################
 # Diplomacy
@@ -24,8 +26,6 @@ target = {
 demand_claims = { }
 liberate = { VIC }
 resistance = { GER = 5 SPA = 5 U14 = 10 }
-exp_force_ratios = { } 
-no_exp_forces_to = { U00 VIC U07 ARA }
 
 trade = {
 	cancel_deal_threshold = 2

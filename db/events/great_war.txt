@@ -22,6 +22,7 @@
 #Set the great war flag
 event = {
 	id = 7100
+	TAG = { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 USN UAU UCH UBO UTC UGS UCS UIC UPR UER UTO UIR UTL UPS UES URO UAP UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	trigger = {
 		ai = yes
@@ -31,7 +32,7 @@ event = {
 			war = { country = SPA country = GER }
 			AND = {
 				NOT = { exists = GER }
-				war = { country = SPA country = GER }
+				war = { country = SPA country = DFR }
 			}
 		}
 		NOT = { flag = great_war_by_event }
@@ -42,7 +43,7 @@ event = {
 
 	date = { day = 1 month = january year = 1936 }
 	offset = 5
-	deathdate = { day = 1 month = january year = 1940 }
+	deathdate = { day = 1 month = january year = 1964 }
 
 	action = {
 		name = "Dire news..."
@@ -524,11 +525,11 @@ event = {
 		NOT = { puppet = { country = GER country = VIC } }
 		NOT = { flag = HRE_comintern_pact }
 		NOT = { ispuppet = yes }
-		month = 2 #3
-		NOT = { month = 8 }
+		#month = 2 #3
+		#NOT = { month = 8 }
 		NOT = { dissent = 5 }
-		domestic = { type = interventionism value = 5 }
-		domestic = { type = defense_lobby value = 5 }
+		#domestic = { type = interventionism value = 5 }
+		#domestic = { type = defense_lobby value = 5 }
 	}
 
 	name = "Germany at War"
@@ -569,11 +570,11 @@ event = {
 		#NOT = { flag = comintern_league_pact }
 		NOT = { event = 2052003 }
 		NOT = { ispuppet = yes }
-		month = 2 #3
-		NOT = { month = 8 }
+		#month = 2 #3
+		#NOT = { month = 8 }
 		NOT = { dissent = 5 }
-		domestic = { type = interventionism value = 5 }
-		domestic = { type = defense_lobby value = 5 }
+		#domestic = { type = interventionism value = 5 }
+		#domestic = { type = defense_lobby value = 5 }
 	}
 
 	name = "Germany at War"
@@ -742,15 +743,15 @@ event = {
 		NOT = { alliance = { country = VIC } }
 		#NOT = { non_aggression = { country = VIC } }
 		NOT = { ispuppet = yes }
-		month = 2 #3
-		NOT = { month = 9 } #8
-		NOT = { 
-			control = { province = 440 data = SPA } #Barcelona
-			control = { province = 443 data = SPA } #Bilbao
+		#month = 2 #3
+		#NOT = { month = 9 } #8
+		OR = { 
+			NOT = { control = { province = 440 data = SPA } } #Barcelona
+			NOT = { control = { province = 443 data = SPA } } #Bilbao
 		}
 		OR = {
 			NOT = { control = { province = 460 data = SPA } }  #Madrid
-			lost_national = { country = SPA value = 30 }
+			lost_national = { country = SPA value = 25 } #30
 		}
 		#government = fascist
 		OR = {
@@ -1091,7 +1092,8 @@ event = {
 			}
 			AND = {
 				atwar = U00
-				random = 30
+				#random = 30
+				lost_national = { country = U00 value = 10 }
 			}
 		}
 		OR = {
@@ -1244,6 +1246,8 @@ event = {
 		#atwar = no
 		ai = yes
 		exists = RUS
+		atwar = RUS
+		lost_national = { country = RUS value = 10 }
 		random = 10
 		NOT = { flag = LIT_leaves_HRE }
 		NOT = { flag = peace_in_our_time }
@@ -1253,10 +1257,12 @@ event = {
 		
 		OR = {
 			NOT = { war = { country = U00 } }
-			AND = { 
-				war = { country = U00 }
-				lost_national = { country = U00 value = 50 }
-			}
+			# AND = { 
+				# war = { country = U00 }
+				# lost_national = { country = U00 value = 50 }
+			# }
+			NOT = { exists = U00 }
+			puppet = { country = U00 country = GER }
 		}
 		
 		NOT = { war = { country = RUS } }
@@ -1277,6 +1283,7 @@ event = {
 				participant = { country = RUS value = 3 }
 				NOT = { flag = HRE_comintern_pact }
 			}
+			NOT = { participant = { country = RUS value = 4 } }
 		}
 		month = 3 #4
 		NOT = { month = 8 } #7
@@ -1288,7 +1295,7 @@ event = {
 		#domestic = { type = defense_lobby value = 5 }
 	}
 
-	name = "Russia at War"
+	name = AI_EVENT #"Russia at War"
 	style = 1
 	picture = war
 
@@ -1335,6 +1342,7 @@ event = {
 		NOT = { dissent = 5 }
 		
 		NOT = { war = { country = AUS } }
+		atwar = no
 	}
 
 	name = AI_EVENT
@@ -1350,7 +1358,6 @@ event = {
 		#command = { type = ai_prepare_war which = SPA }
 	}
 }
-
 
 #Iberian opportunism VIC
 event = {
@@ -1403,10 +1410,11 @@ event = {
 	}
 	
 	trigger = {
+		exists = U00
 		flag = great_war_by_event
 		NOT = { war = { country = U00 } }
 		NOT = { alliance = { country = U00 } }
-		NOT = { non_aggression = { country = U00 } }
+		#NOT = { non_aggression = { country = U00 } }
 		OR = {
 			alliance = { country = RUS }
 			alliance = { country = GER }
@@ -1417,7 +1425,6 @@ event = {
 			#	atwar = no
 			#}
 		}
-		exists = U00
 		random = 25 #50
 		NOT = { government = communist }
 	}

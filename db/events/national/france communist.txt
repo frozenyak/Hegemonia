@@ -194,7 +194,8 @@ event = {
 
 event = {
 	id = 33015
-	country = VIC
+	#country = VIC
+	TAG = { VIC FRA }
 
 	decision = {
 		NOT = { exists = GER }
@@ -240,7 +241,6 @@ event = {
 		command = { type = make_puppet which = DFR }
 		command = { type = alliance which = DFR }
 		command = { type = trigger which = 78000 }
-		command = { trigger = { government = fascist } type = flag_ext where = HOL which = "_ger" }
 	}
 	action = { trigger = { ai = yes }
 		name = "Rule them directly"
@@ -254,7 +254,8 @@ event = {
 #########################################################################
 event = { 
 	id = 33020
-	country = VIC
+	#country = VIC
+	TAG = { VIC FRA }
 
 	trigger = {
 		area = { area = "Lorraine_Alsace" }

@@ -23,6 +23,8 @@
 #35078 fate of netherlands
 #35080 fate of france
 #35082 fate of britain
+#35085 fate of occitania
+#35086 fate of austria
 #35089 east roman empire
 #35102 hre restoration fails
 #35105 gcw colony support
@@ -1927,12 +1929,10 @@ event = {
 		OR = {
 			AND = {
 				NOT = { war = { country = VIC } }
+				NOT = { war = { country = FRA } }
 				owned = { province = 122 }
 			}
-			AND = {
-				region = { region = "Benelux" }
-				control = { province = 52 } #lille
-			}
+			NOT = { control = { province = 55 data = VIC } }
 		}
 	}
 
@@ -1951,14 +1951,24 @@ event = {
 		command = { type = make_puppet which = HOL }
 		command = { type = alliance which = HOL }
 		command = { type = trigger which = 78000 }
-		command = { trigger = { government = fascist } type = flag_ext where = HOL which = "_ger" }
+		command = { 
+			trigger = { 
+				OR = {
+					government = fascist
+					headofstate = 1
+					headofstate = 37
+				}
+			} 
+			type = flag_ext where = HOL which = "_ger" 
+		}
 	}
 	action = {
 		name = "Rule it ourselves"
 		trigger = {
-			headofstate = 37
+			government = fascist
 		}
 		ai_chance = 1
+		command = { type = belligerence value = 5 }
 		command = { type = dissent value = 5 }
 	}
 }
@@ -1970,7 +1980,7 @@ event = {
 	decision = {
 		NOT = { exists = FRA }
 		NOT = { exists = VIC }
-		control = { province = 55 data = -3 }
+		control = { province = 55 } #data = -3 }
 		#government = fascist
 	}
 
@@ -2000,7 +2010,7 @@ event = {
 		OR = {
 			atwar = no
 			alliance = { country = SPA }
-			region = { region = "Spain" country = -3 value = 90 }
+			region = { region = "Spain" country = -3 value = 50 } #90
 		}
 	}
 
@@ -2026,41 +2036,88 @@ event = {
 		command = { type = trigger which = 79000 }
 		#command = { trigger = { government = fascist } type = trigger which = 79000 }
 		#command = { trigger = { NOT = { government = fascist } } type = trigger which = 79001 }
-		command = { trigger = { government = fascist } type = flag_ext where = FRA which = "_ger" }
+		command = { 
+			trigger = { 
+				OR = {
+					government = fascist
+					headofstate = 1
+					headofstate = 37
+				}
+			} 
+			type = flag_ext where = FRA which = "_ger" 
+		}
 	}
 	action = {
 		trigger = {
-			#government = fascist
 			OR = {
 				headofstate = 1
 				headofstate = 37
+				AND = {
+					NOT = { headofstate = 36 }
+					government = fascist
+				}
 			}
-			owned = { province = 39 }
+			control = { province = 39 }
 		}
 		name = "Partition them" #into France and Brittany"
 		ai_chance = 50
+		command = { type = belligerence value = 2 }
 		command = { type = independence which = U04 value = 1 }
 		command = { type = make_puppet which = U04 }
 		command = { type = alliance which = U04 }
 		#command = { trigger = { government = fascist } type = trigger which = 79002 }
 		#command = { trigger = { NOT = { government = fascist } } type = trigger which = 79003 }
-		command = { trigger = { government = fascist } type = name where = U04 which = "u04_roy" }
+		command = { 
+			trigger = { 
+				OR = {
+					government = fascist
+					headofstate = 1
+					headofstate = 37
+				}
+			} 
+			type = name where = U04 which = "u04_roy"
+		}
 		#
 		command = { type = independence which = WLL value = 1 }
 		command = { type = make_puppet which = WLL }
 		command = { type = alliance which = WLL }
 		#
-		command = { trigger = { government = fascist } type = addclaim which = 96 } #longwy
+		command = { 
+			trigger = { 
+				OR = {
+					government = fascist
+					#headofstate = 1
+					headofstate = 37
+				}
+			}
+			type = addclaim which = 96 
+		} #longwy
 		#command = { trigger = { government = fascist } type = addclaim which = 108 } #liege
 		#command = { trigger = { government = fascist } type = addclaim which = 111 } #arlon
-		command = { trigger = { NOT = { government = fascist } } type = removeclaim which = 106 }
+		command = { 
+			trigger = { 
+				NOT = { government = fascist } 
+				NOT = { headofstate = 1 } 
+				NOT = { headofstate = 37 } 
+			} 
+			type = removeclaim which = 106 
+		}
 		#
 		command = { type = independence which = FRA value = 1 }
 		command = { type = make_puppet which = FRA }
 		command = { type = alliance which = FRA }
 		#command = { trigger = { government = fascist } type = trigger which = 79000 }
 		#command = { trigger = { NOT = { government = fascist } } type = trigger which = 79001 }
-		command = { trigger = { government = fascist } type = flag_ext where = FRA which = "_ger" }
+		command = { 
+			trigger = { 
+				OR = {
+					government = fascist
+					headofstate = 1
+					headofstate = 37
+				}
+			} 
+			type = flag_ext where = FRA which = "_ger" 
+		}
 	}
 	action = { trigger = { ai = yes }
 		name = "Rule it directly"
@@ -2105,18 +2162,23 @@ event = {
 
 	action = {
 		trigger = {
-			#government = fascist
 			OR = {
 				headofstate = 1
 				headofstate = 37
+				AND = {
+					NOT = { government = democratic }
+					NOT = { headofstate = 36 }
+				}
 			}
 		}
 		name = "Partition them" #into England and Scotland"
 		ai_chance = 70
+		command = { type = belligerence value = 2 }
 		command = { type = independence which = U73 value = 1 }
 		command = { type = make_puppet which = U73 }
 		command = { type = alliance which = U73 }
 		command = { type = trigger which = 80000 }
+		#
 		command = { type = independence which = SCO value = 1 }
 		command = { type = make_puppet which = SCO }
 		command = { type = alliance which = SCO }
@@ -2161,7 +2223,7 @@ event = {
 				area = { area = "Limousin_Auvergne" value = 60 }
 				area = { area = "Alpes_Provence" value = 80}
 				area = { area = "Aquitaine" }
-				area = { area = "New Hampshire" }
+				#area = { area = "New Hampshire" }
 			}
 		}
 		NOT = { war = { country = SPA } }
@@ -2175,7 +2237,7 @@ event = {
 	picture = "news_paper"
 
 	date = { day = 1 month = january year = 1936 }
-	offset = 3
+	offset = 30 #3
 	deathdate = { day = 1 month = january year = 1963 }
 
 	action = {
@@ -2214,7 +2276,7 @@ event = {
 		command = { type = secedearea which = FRA value = Alpes_Provence when = 1 }
 		command = { type = secedearea which = FRA value = Limousin_Auvergne when = 1 }
 		command = { type = secedearea which = FRA value = Pyrenees_Languedoc when = 1 }
-		command = { type = secedearea which = FRA value = "New Hampshire" when = 1 }
+		#command = { type = secedearea which = FRA value = "New Hampshire" when = 1 }
 	}
 	action = {
 		trigger = {
@@ -2235,12 +2297,150 @@ event = {
 		command = { type = secedearea which = VIC value = Alpes_Provence when = 1 }
 		command = { type = secedearea which = VIC value = Limousin_Auvergne when = 1 }
 		command = { type = secedearea which = VIC value = Pyrenees_Languedoc when = 1 }
-		command = { type = secedearea which = VIC value = "New Hampshire" when = 1 }
+		#command = { type = secedearea which = VIC value = "New Hampshire" when = 1 }
 	}
 	action = { trigger = { ai = yes }
 		name = "Rule it directly"
 		ai_chance = 5
 		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 35086
+	TAG = { GER DFR }
+
+	decision = {
+		NOT = { exists = AUS }
+		NOT = { exists = U09 }
+		OR = {
+			control = { province = 195 } #vienna
+			control = { province = 207 } #prague
+		}
+		#government = fascist
+	}
+
+	decision_trigger = {
+		region = { region = "Austria" }
+	}
+
+	trigger = {
+		NOT = { exists = AUS }
+		NOT = { exists = U09 }
+		region = { region = "Austria" }
+		NOT = { war = { country = U00 } }
+	}
+
+	name = "The Fate of Austria"
+	desc = "After the fall of the Austrians many arguments in the government have revolved around the future of the region. Many plans have been proposed but so far the only agreement is that the multi-ethnic Austrian state will not come back."
+	style = 1
+	picture = "anschluss"
+	decision_picture = "decision_anschluss"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30 #15
+	deathdate = { day = 1 month = january year = 1963 }
+	
+	action = {
+		name = "Integrate all German areas"
+		trigger = { 
+			NOT = { country = DFR } 
+		}
+		ai_chance = 25
+		command = { type = belligerence value = 5 }
+		#Austria
+		command = { type = addcore which = 190 }
+		command = { type = addcore which = 191 }
+		command = { type = addcore which = 192 }
+		command = { type = addcore which = 195 }
+		command = { type = addcore which = 194 }
+		command = { type = addcore which = 186 }
+		command = { type = addcore which = 187 }
+		command = { type = addcore which = 193 }
+		command = { type = addcore which = 188 }
+		#silesia
+		command = { type = addcore which = 164 }
+		command = { type = addcore which = 165 }
+		command = { type = addcore which = 166 }
+		command = { type = addcore which = 167 }
+		command = { type = addcore which = 168 }
+		command = { type = addcore which = 221 }
+		#
+		command = { trigger = { NOT = { exists = CZE } } type = independence which = CZE value = 1 }
+		command = { trigger = { NOT = { ispuppet = CZE } } type = make_puppet which = CZE }
+		command = { trigger = { NOT = { war = { country = CZE } } } type = alliance which = CZE }
+	}
+	
+	action = {
+		trigger = {
+			OR = {
+				headofstate = 37
+				AND = {
+					NOT = { headofstate = 36 }
+					government = fascist
+				}
+			}
+		}
+		name = "Rule the whole region"
+		ai_chance = 50
+		command = { type = belligerence value = 10 }
+		#Austria
+		command = { type = addcore which = 190 }
+		command = { type = addcore which = 191 }
+		command = { type = addcore which = 192 }
+		command = { type = addcore which = 195 }
+		command = { type = addcore which = 194 }
+		command = { type = addcore which = 186 }
+		command = { type = addcore which = 187 }
+		command = { type = addcore which = 193 }
+		command = { type = addcore which = 188 }
+		#silesia
+		command = { type = addcore which = 164 }
+		command = { type = addcore which = 165 }
+		command = { type = addcore which = 166 }
+		command = { type = addcore which = 167 }
+		command = { type = addcore which = 168 }
+		command = { type = addcore which = 221 }
+		#bohemia
+		command = { type = addcore which = 197 } # Znojmo - Czechoslovakia # 5 Sudetenland provinces
+		command = { type = addcore which = 205 } # Karlovy Vary - Czechoslovakia
+		command = { type = addcore which = 200 } # Liberec - Czechoslovakia
+		command = { type = addcore which = 206 } # Opava - Czechoslovakia
+		command = { type = addcore which = 203 } # Tesín - Czechoslovakia
+		command = { type = addcore which = 204 } # Prachatice - Czechoslovakia
+		command = { type = addcore which = 199 } # Plzen - Czechoslovakia
+		command = { type = addcore which = 198 } # Hradec Králové - Czechoslovakia
+		command = { type = addcore which = 207 } # Praha - Czechoslovakia
+		command = { type = addcore which = 196 } # Brno - Czechoslovakia
+		command = { type = addcore which = 202 } # Ceské Budejovice - Czechoslovakia
+		command = { type = addcore which = 201 } # Ostrava - Czechoslovakia
+	}
+	
+	action = {
+		trigger = {
+			OR = {
+				headofstate = 36
+				government = democratic
+			}
+		}
+		name = "Integrate Silesia, create client states"
+		ai_chance = 25
+		command = { type = belligerence value = 1 }
+		#silesia
+		command = { type = addcore which = 164 }
+		command = { type = addcore which = 165 }
+		command = { type = addcore which = 166 }
+		command = { type = addcore which = 167 }
+		command = { type = addcore which = 168 }
+		command = { type = addcore which = 221 }
+		#
+		command = { trigger = { NOT = { exists = CZE } } type = independence which = CZE value = 1 }
+		command = { trigger = { NOT = { ispuppet = CZE } } type = make_puppet which = CZE }
+		command = { trigger = { NOT = { war = { country = CZE } } } type = alliance which = CZE }
+		#
+		command = { trigger = { NOT = { exists = U09 } } type = independence which = U09 value = 1 }
+		command = { trigger = { NOT = { ispuppet = U09 } } type = make_puppet which = U09 }
+		command = { trigger = { NOT = { war = { country = U09 } } } type = alliance which = U09 }
 	}
 }
 

@@ -379,17 +379,17 @@ combat = {
 # Damage factor versus resources from bombing
 	3.0 #1.0
 # Base chance of Land units to avoid hit if defences left, gets multiplied with Ground Defense Efficiency.
-	0.9 #0.6
+	0.7 #0.6
 # Base chance of Air units to avoid hit if defences left
-	0.9 #0.6
+	0.7 #0.6
 # Base chance of Naval units to avoid hit if defences left
-	0.9 #0.6
+	0.7 #0.6
 # Base chance of Land units to avoid hit if no defences left.
-	0.7 #0.9
+	0.9
 # Base chance of Air units to avoid hit if no defences left.
-	0.7 #0.9
+	0.9
 # Base chance of Naval units to avoid hit if no defences left.
-	0.7 #0.9
+	0.9
 # CHANCE TO GET TERRAIN TRAIT 
 	3600 #2400 #1200
 # CHANCE TO GET EVENT TRAIT 

@@ -1,6 +1,8 @@
-#37000	join SPA
-#37001	join GER/AUS
-#37002	join U00
+#12000	join SPA
+#12001	join GER/AUS
+#12002	join U00
+#12003	jap join HRE
+#12005	GEO join comintern
 
 event = {
 	id = 12000
@@ -167,7 +169,7 @@ event = {
 		}
 		government = fascist
 		NOT = { ispuppet = yes }
-		NOT = { local_flag = ai_alliance }
+		#NOT = { local_flag = ai_alliance }
 		NOT = { alliance = { country = U02 } }
 		NOT = { participant = { value = 4 } }
 	}
@@ -180,7 +182,7 @@ event = {
 	
 	action = {
 		command = {	type = alliance which = GER }
-		command = {	type = local_setflag which = ai_alliance }
+		#command = {	type = local_setflag which = ai_alliance }
 	}
 }
 
@@ -214,3 +216,33 @@ event = {
 		# command = {	type = local_setflag which = ai_alliance }
 	# }
 # }
+
+event = {
+	id = 12005
+	country = U00
+	
+	trigger = {
+		ai = yes
+		exists = GEO
+		ai = GEO
+		
+		government = communist
+		government = { type = communist country = GEO }
+		
+		NOT = { ispuppet = yes }
+		NOT = { alliance = { country = GEO } }
+		NOT = { alliance = { country = GEO country = U02 } }
+		NOT = { participant = { value = 4 country = GEO } }
+	}
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1946 }
+
+	name = "AI_EVENT"
+	
+	action = {
+		command = {	type = alliance which = GEO }
+		#command = {	type = make_puppet which = GEO }
+	}
+}

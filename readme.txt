@@ -1,4 +1,4 @@
-Hegemonia 1.08, checksum KVPP
+Hegemonia 1.08, checksum HYDS
 Requires Darkest Hour patch 1.03 RC2
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
@@ -70,11 +70,12 @@ IC, resources, infra
 	
 	ai
 		switched LIT/AUS to defensive AI
-		mazula/america won't accept peace treaties
 		fix SCA building no thing but factories
+		jap builds more transports
+		ger builds more infantry
 		
 	events
-		added switching sides for Arabs to India
+		added switching sides for Arabs to India, Tagalog to Jap, (human) Occitania to SPA
 		AI auto-alliance events now consider pacts
 		taking various capitals -1 dissent, can also affect surrender
 		added Iberia surrender
@@ -83,12 +84,14 @@ IC, resources, infra
 		player is now notified if major country has nukes
 		Lithuanian surrender now has option for Germany to intervene/coup, less stringent requirements
 		reduced chance for Occitania to join France to 30%
-		von Papen will not resign with Ritter HOG
+		von Papen will not always resign
 		AI will not change democratic/freedom slider in first year
 		AI lombardy puppeted in dublin for gameplay reasons (they tend to leave the alliance)
 		surrenders will now add peacetime ic modifier
 		fix Maz/America surrenders not being seperate peaces
 		SCA event to leave HRE on America join
+		new event for germany to deal with austria if it falls and they retake the region
+		renumbered crete
 		various tweaks
 		
 	tech
@@ -100,7 +103,8 @@ IC, resources, infra
 		tagalog not completely isolationist
 		lombardy/romania more free market
 		germany more dem
-		-6 SPA ic
+		-6 SPA ic to 131
+		-7 RUS ic to 121
 		
 1.07a
 	combat hotfix, swapped values

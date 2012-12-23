@@ -1243,7 +1243,7 @@ event = {
 
 	action = {
 		name = "Peace in our time!"
-		command = { type = set_domestic which = interventionism value = 2 } #dom, -2
+		command = { type = domestic which = interventionism value = -2 }
 		command = { type = local_setflag which = dublin_md }
 		command = { type = sleepevent which = 33005 }
 	}

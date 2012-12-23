@@ -20,7 +20,7 @@ no_exp_forces_to = { RUS U13 }
 claim_acceptance = -69
 
 combat = { }
-liberate = { U06 HOL FRA SPA ITA KOR SCH PER } #U13 NOR
+liberate = { SPA ITA KOR SCH PER } #U06 HOL FRA U13 NOR
 befriend = { 
 	IRE = 10 
 	KOR = 25 

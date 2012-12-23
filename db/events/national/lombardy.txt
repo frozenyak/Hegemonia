@@ -263,6 +263,13 @@ event = {
 		command = { type = dissent value = -5 }
 		command = { trigger = { exists = RSI ai = RSI } type = inherit which = RSI value = 1 }
 		command = { type = capital which = 419 }
+		#
+		command = { trigger = { NOT = { alliance = { country = AUS } } } type = addcore which = 394 }
+		command = { trigger = { NOT = { alliance = { country = AUS } } } type = addcore which = 405 }
+		command = { trigger = { NOT = { alliance = { country = AUS } } } type = addcore which = 404 }
+		command = { trigger = { NOT = { alliance = { country = AUS } } } type = addcore which = 403 }
+		command = { trigger = { NOT = { alliance = { country = AUS } } } type = addcore which = 406 }
+		#
 		command = { type = country which = ITA }
 		#command = { type = trigger which = 46400 }
 	}

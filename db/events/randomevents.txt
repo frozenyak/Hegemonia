@@ -297,25 +297,25 @@ event = {
 #########################################################################
 #  Women labour force tapped for factories.
 #########################################################################
-event = {
-	id = 1004
-	random = yes
+# event = {
+	# id = 1004
+	# random = yes
 	
-	trigger = {
-		atwar = yes
-		government = democratic
-	}
+	# trigger = {
+		# atwar = yes
+		# government = democratic
+	# }
 
-	name = "EVT_1004R_NAME"
-	desc = "EVT_1004R_DESC"
-	picture = "women_labour"
-	style = 1
+	# name = "EVT_1004R_NAME"
+	# desc = "EVT_1004R_DESC"
+	# picture = "women_labour"
+	# style = 1
 
-	action = {
-		name = "ACTIONNAME1004A"
-		command = { type = manpowerpool value = 13 } #17 100
-	}
-}
+	# action = {
+		# name = "ACTIONNAME1004A"
+		# command = { type = manpowerpool value = 13 } #17 100
+	# }
+# }
 #########################################################################
 #  Great Military Parade held in Capital
 #########################################################################

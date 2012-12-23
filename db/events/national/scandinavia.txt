@@ -293,14 +293,14 @@ event = {
 }
 
 event = {
-	id = 57011
+	id = 57012
 	country = SCA
 
 	trigger = {
 		participant = { value = 2 }
 		participant = { country = USA value = 2 }
 		atwar = no
-		#government = democratic
+		NOT = { government = fascist }
 	}
 
 	name = "American Federation joins the HRE"

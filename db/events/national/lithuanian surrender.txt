@@ -21,7 +21,8 @@ event = {
 		}
 		NOT = { control = { province = 599 } } #Minsk
 		NOT = { control = { province = 617 } } #Kiev
-		lost_national = { country = LIT value = 50 }
+		NOT = { control = { province = 641 } } #Sevastopol
+		lost_national = { country = LIT value = 60 } #50
 		#NOT = { flag = RUS_western_peace }
 		# OR = {
 			# NOT = { participant = { value = 2 } }
@@ -240,21 +241,25 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_DAMN"
-		ai_chance = 15
+		ai_chance = 25
 		command = { type = relation which = LIT value = -100 }
 		command = { type = trigger which = 44901 } #LIT proceed peace as normal
-		command = { type = dissent value = 2 }
+		#command = { type = dissent value = 2 }
 	}
 	action = {
-		name = "Seize their government!"
+		name = "Stop them!"
 		trigger = {
 			OR = {
-				government = fascist
+				NOT = { government = democratic }
 				headofstate = 37
 			}
 			control = { province = 138 } #frankfurt
+			#control = { province = 232 data = LIT } #warsaw
+			region = { region = "Poland" country = LIT value = 60 }
 		}
-		ai_chance = 85
+		ai_chance = 75
+		command = { type = supplies value = -1000 }
+		command = { type = money value = -500 }
 		command = { type = relation which = LIT value = -200 }
 		command = { type = trigger which = 44911 }
 		command = { type = dissent value = 1 }
@@ -283,7 +288,12 @@ event = {
 		ai_chance = 50
 		command = { type = set_relation which = GER value = 200 }
 		command = { type = trigger which = 44913 }
-		command = { type = dissent value = 6 }
+		command = { type = dissent value = 5 }
+		#
+		command = { type = headofgovernment which = 28044 }
+		command = { type = ministerofsecurity which = 28005 }
+		command = { type = chiefofstaff which = 28115 }
+		command = { type = chiefofnavy which = 28132 }
 	}
 }
 

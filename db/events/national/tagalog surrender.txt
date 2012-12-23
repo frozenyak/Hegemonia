@@ -1,0 +1,79 @@
+#52900-52999
+#switching sides
+
+event = {
+	id = 52900
+	random = no
+	country = PHI
+
+	name = EVT_61_NAME
+	desc = "Japan has taken most of our territory!"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = JAP }
+		control = { province = 1571 data = JAP } #Mindoro
+		lost_national = { value = 50 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 97
+		name = "Surrender!"
+		command = { type = end_puppet }
+		command = { type = set_relation which = JAP value = 0 }
+		# command = { type = set_relation which = JAP value = -50 }
+		# command = { type = set_domestic which = democratic value = 8 }
+		# command = { type = set_domestic which = political_left value = 2 }
+		# command = { type = set_domestic which = defense_lobby value = 3 }
+		# command = { type = set_domestic which = interventionism value = 2 }
+		command = { type = trigger which = 52901 }
+		command = { trigger = { minister = 215032 } type = headofstate which = 215032 }
+		# command = { type = headofgovernment which = 145031 }
+		# command = { type = foreignminister which = 145046 }
+		# command = { type = armamentminister which = 145065 }
+		# command = { type = ministerofsecurity which = 145084 }
+		# command = { type = ministerofintelligence which = 145096 }
+		# command = { type = chiefofstaff which = 145102 }
+		# command = { type = chiefofarmy which = 145107 }
+		# command = { type = chiefofnavy which = 145111 }
+		# command = { type = chiefofair which = 145115 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Keep Fighting!"
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 52901
+	random = no
+	country = JAP
+
+	name = "New Allies - Tagalog"
+	desc = "The Tagalog Republic is ready to surrender and become our client state!"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_64_ACTA
+		command = { type = addclaim which = 1569 } # Olongapo
+		command = { type = make_puppet which = PHI }
+		#command = { type = coup_nation which = PHI }
+		command = { type = money value = 500 }
+		command = { type = flag_ext where = PHI which = "" }
+		command = { type = name where = PHI which = "" }
+	}
+	action_b = {
+		ai_chance = 3
+		name = "Destroy them"
+		command = { type = dissent value = 1 }
+	}
+}

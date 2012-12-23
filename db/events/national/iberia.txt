@@ -593,7 +593,8 @@ event = {
 
 event = {
 	id = 38050
-	country = SPA
+	#country = SPA
+	TAG = { SPA ENG }
 
 	decision = {
 		NOT = { exists = HOL }
@@ -640,12 +641,13 @@ event = {
 
 event = {
 	id = 38051
-	country = SPA
+	#country = SPA
+	TAG = { SPA ENG }
 
 	decision = {
 		NOT = { exists = FRA }
 		NOT = { exists = VIC }
-		control = { province = 55 data = -3 }
+		control = { province = 55 } #data = -3
 		#government = fascist
 	}
 
@@ -702,11 +704,12 @@ event = {
 
 event = {
 	id = 38052
-	country = SPA
+	#country = SPA
+	TAG = { SPA ENG }
 
 	decision = {
 		NOT = { exists = U06 }
-		control = { province = 68 data = -3 }
+		control = { province = 68 } #data = -3
 	}
 
 	decision_trigger = {
@@ -757,7 +760,7 @@ event = {
 	action = {
 		trigger = {
 			exists = FRA
-			puppet = { country = FRA country = SPA }
+			puppet = { country = FRA }
 		}
 		name = "Give it to France"
 		ai_chance = 15

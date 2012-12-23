@@ -130,7 +130,10 @@ event = {
 		NOT = { government = fascist }
 		random = 25
 		incabinet = 61
-		NOT = { incabinet = 214 }
+		OR = {
+			NOT = { incabinet = 214 }
+			flag = GER_renounce_ITA
+		}
 		local_flag = dublin_conference_end
 	}
 

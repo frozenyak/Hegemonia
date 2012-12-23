@@ -696,6 +696,7 @@ event = {
 		random = 30
 		NOT = { war = { country = GER } }
 		NOT = { lost_national = { value = 20 } }
+		#NOT = { government = { type = communist country = GEO } }
 	}
 
 	name = "The Georgian Obstacle"
