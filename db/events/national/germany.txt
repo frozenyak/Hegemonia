@@ -248,6 +248,8 @@ event = {
 		atwar = no
 		NOT = { dissent = 35 }
 		event = { id = 35033 days = 30 }
+		
+		NOT = { flag = great_war_by_event }
 	}
 
 	name = "Communist Riots!"
@@ -341,6 +343,8 @@ event = {
 		atwar = no
 		NOT = { dissent = 35 }
 		event = { id = 35033 days = 30 }
+		
+		NOT = { flag = great_war_by_event }
 	}
 
 	name = "Anarchist Riots!"
@@ -431,6 +435,8 @@ event = {
 		atwar = no
 		NOT = { dissent = 35 }
 		event = { id = 35033 days = 30 }
+		
+		NOT = { flag = great_war_by_event }
 	}
 
 	name = "Monarchist Riots!"
@@ -1966,6 +1972,7 @@ event = {
 		name = "Rule it ourselves"
 		trigger = {
 			government = fascist
+			ai = yes
 		}
 		ai_chance = 1
 		command = { type = belligerence value = 5 }

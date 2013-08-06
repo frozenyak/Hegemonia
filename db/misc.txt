@@ -85,9 +85,9 @@ economy = {
 	15 #5 #15
 # Nationalism per MP (added to stating value)
 	1.0 # 0.0
-# Max unmodified nationalism = starting + MP*mod + added by events or prtissan funds
+# Max unmodified nationalism = starting + MP*mod + added by events or partisan funds
 	20 # 30
-# Max final province revolt risk = THIS + current country dissent
+# Max base province revolt risk (before applying suppression bonus)
 	35 # 100
 # Monthly Nationalism reduction
 	0.1250
@@ -1013,7 +1013,7 @@ ai = {
 # -3 : Forced historical - First valid action is always selected if there is no AI chances set for a valid action, else - (first) valid action with the highest AI chance set is selected
     85 #85
 # Force strategic redeployment if movement time is longer then X hours. Overrides default AI settings! -1 – Disable, Else time in hours
-	720 #1440 #-1
+	1440 #720 #-1
 # Max. redeployment days for AI controlled units cheat. 0 or less - disable cheat, else - max. days that AI units will redeploy to any valid redeployment location
 	14 #10 #0	
 # Use quick area check (Garrison AI) - could be inaccurate in some rare cases. 1 - Enabled, 0 - Disabled
@@ -1068,7 +1068,7 @@ mod = {
 # Rebels army tech level (based on the available model in the country that controls the province). -1 - Only model 1, 0 - Only the Latest model, else random model in the range from (latest model - THIS) to (latest model).
 	3 #-1
 # Rebels army min. STR on creation: 1-100
-	100 #100
+	20 #100
 # Rebels army max. STR on creation: 1-100
 	100 #100
 # Rebels ORG regain (including when in combat)

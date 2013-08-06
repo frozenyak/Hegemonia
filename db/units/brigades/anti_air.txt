@@ -13,7 +13,7 @@ model = {
 	supplyconsumption 	= 0.12
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 16
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 680 anti_air = 64 }
 }
 
@@ -30,7 +30,7 @@ model = {
 	supplyconsumption 	= 0.14
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 16
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 680 anti_air = 64 }
 }
 
@@ -47,7 +47,7 @@ model = {
 	supplyconsumption 	= 0.26
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 horses = 680 anti_air = 64 }
 }
 
@@ -64,7 +64,7 @@ model = {
 	supplyconsumption 	= 0.18
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 34
+	speed_cap			= 20
 	equipment = { manpower = 3000 horses = 680 anti_air = 64 }
 }
 
@@ -81,6 +81,6 @@ model = {
 	supplyconsumption 	= 0.18
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 38
+	speed_cap			= 22
 	equipment = { manpower = 3000 horses = 680 anti_air = 64 }
 }

@@ -74,7 +74,7 @@ event = {
 		command = { type = add_division value = infantry when = 1 }
 		command = { type = add_division value = militia when = 1 }
 		command = { type = add_division value = militia when = 1 }
-		command = { type = name where = U04 which = "u04_roy" }
+		command = { type = name where = U04 which = "U04_ROY" }
 	}
 }
 

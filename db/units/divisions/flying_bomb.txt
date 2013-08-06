@@ -16,4 +16,5 @@ model = {
 	range						= 250
 	supplyconsumption 			= 0.5
 	fuelconsumption				= 1.5
+	equipment = { rocket = 5 }
 }

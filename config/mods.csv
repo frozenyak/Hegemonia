@@ -1041,6 +1041,7 @@ MODEL_RSI_27_5;Esfahan-class;Esfahan-class;Esfahan-class;Esfahan-class;Isfahan-K
 ##;###############################################################################################################################################################################################################################################################;;;;;;;;;;X
 ##COUNTRY NAMES;;;;;;;;;;;X;;;
 FRA_ROY;Kingdom of France;Royaume de France;Kingdom of France;Kingdom of France;Regno di Francia;Reino de Francia;Königreich Frankreich;Królestwo Francji;;;x
+U04_ROY;Grand Duchy of Brittany;Grand-duché de Bretagne;Granducato di Bretagna;Gran ducado de Bretaña;Großherzogtum Bretagne;Wielkie Ksiestwo Bretania;;;;;X
 U13_ROY;Grand Duchy of Brittany;Grand-duché de Bretagne;Granducato di Bretagna;Gran ducado de Bretaña;Großherzogtum Bretagne;Wielkie Ksiestwo Bretania;;;;;X
 HOL_ROY;Kingdom of the Netherlands;Roayume des Pays-Bas;Regno dei Paesi Bassi;Reino de los Países Bajos;Königreich der Niederlande;Królestwo Niderlandów;;;;;x
 DFR_COM;Worker's Union of Germany;Union des Travailleurs d’Allemagne;Union Germania;Unión di Alemania;Deutsche Arbeiterunion;Unia Niemiec;;;;;x
@@ -1181,4 +1182,132 @@ EVT1914_2049501_NAME;Lusitania was carrying weapons!;Le Lusitania transportait d
 EVT1914_2049502_ACTIONA;We are upset!;Nos sommes déçus !;Siamo sconvolti!;Estamos molestos, no, furiosos !;Das kann ja wohl nicht wahr sein !;Jesteœmy wœciekli!;;Ìû íåäîâîëüíû ýòèì ðåøåíèåì !;;;X
 EVT1914_2049502_DESC;The Kaiser stated today that his submarines will attack any ship heading towards or coming from England, event those from neutral nations. Our trade may suffer a lot from such a decision.;Le Kaiser annonce aujourd'hui que tout convoir provenant ou se rendant en Angleterre sera attaqué, y compris ceux des nations neutres. Nos lignes commerciales vont beaucoup souffrir d'une telle décision.;Oggi il Kaiser ha dichiarato che i suoi sottomarini attaccheranno qualsiasi nave che stia andando o ritornando dall'Inghilterra, anche quelle provenienti da nazioni neutrali. Il nostro commercio potrebbe soffrire molto da tale decisione.;El Káiser ha dado la orden para que sus submarinos ataquen cualquier barco que salga o se dirija hacia las Islas Británicas, aun si son de naciones neutrales. Esta decisión puede que nos afecte mucho.;Der Kaiser hat heute verlauten lassen, das Seine U-Boote jedes Schiff, daß von oder nach Großbritannien unterwegs ist, angreifen werden. Dies betrifft auch Schiffe neutraler Staaten.;Cesarz niemiecki og³osi³ dziœ, ¿e okrêty podwodne bêd¹ atakowaæ ka¿dy statek kieruj¹cy siê do lub z Wielkiej Brytanii, nawet jeœli bêdzie to statek kraju neutralnego. Nasz handel powa¿nie na tym ucierpi;;Ñåãîäíÿ Êàéçåð Âèëüãåëüì çàÿâèë î òîì, ÷òî ãåðìàíñêèå ïîäâîäíûå ëîäêè áóäóò àòàêîâàòü ëþáûå êîðàáëè, èäóùèõ â íàïðàâëåíèè Áðèòàíñêèõ îñòðîâîâ, â òîì ÷èñëå è ïðèíàäëåæàùèå íåéòðàëüíûì ñòðàíàì. Íàøà ñòðàíà ìîæåò ñóùåñòâåííî ïîñòðàäàòü îò ýòîãî ðåøåíèÿ.;;;X
 EVT1914_2049502_NAME;Germany's unrestricted warfare;La guerre illimitée allemande;La guerra senza restrizioni della Germania;Alemania declara la Guerra Submarina Total;Uneingeschränkter U-Bootkrieg;Niemiecka nieograniczona wojna podwodna;;Ãåðìàíèÿ íà÷àëà íåîãðàíè÷åííóþ ïîäâîäíóþ âîéíó ;;;X
+##space race;;;;;;;;;;;X;;;
+#EVT_9000100_Name;Theoretical Breakthrough - Artificial Satellites;;;;;….;;;;;;X
+EVT_9000100_Desc;A secret project has borne fruit. Aircraft contractors, chemists and rocket engineers have joined forces, and the project manager has presented the theoretical results to the Government. It is believed that further empirical research can lead to a series of Artificial Satellites. The project manager ended his presentation by quoting Konstantin Tsiolkovsky. ‘Man will not always stay on Earth... the pursuit of light and space will lead him to penetrate the bounds of the atmosphere, timidly at first, but in the end to conquer the whole of solar space.’;;;;;….;;;;;;X
+#EVT_9000100_Text;Humanity’s future is in the Stars!;Humanity’s future is in the Stars!;Humanity’s future is in the Stars!;Humanity’s future is in the Stars!;Humanity’s future is in the Stars!;Humanity’s future is in the Stars!;;;;;X
+9000101name;Establish a National Space Agency;...;...;...;...;...;;;;;;X
+9000101desc;The creation of a single Governmental agency devoted solely to the study of space is essential if this nation is to preserve its role as a leader in aeronautical and space science and technology and in the application thereof to the conduct of peaceful activities within and outside the atmosphere.  Such an agency could greatly expand human knowledge of the Earth and of phenomena in the atmosphere and space. Furthermore, it would be essentially for the development and operation of vehicles capable of carrying instruments, equipment, supplies, and living organisms through space. Frankly, humanity's future depends on getting off this rock.;;;;;….;;;;;;X
+9000101text;Let our government lead the way!;;;;;;;;;;X
+9000102desc;We have the unique opportunity to help a friendly country with its Space program. The costs of this endeavor will be somewhat high, but we shouldn’t pass on this chance to strengthen the cause of socialism.;;;;;….;;;;;;X
+9000102text;We shall explore the cosmos together!;;;;;….;;;;;;X
+9000206desc;The Soviet Government released the following statement regarding the successful launch of Sputnik: "For several years research and experimental designing work has been under way in the Soviet Union to create artificial satellites of the earth. As a result of the intensive work by research institutes and designing bureaus the Soviet Union’s first artificial satellite has now been created. The successful launching of this man-made earth satellite makes a tremendous contribution to the treasure house of world science and culture. The scientific experiment staged at such a great height is of great importance for fathoming the properties of cosmic space and for studying earth as part of our solar system. Artificial earth satellites will pave the way for space travel and it seems that the present generation will witness how the freed and conscious labor of the people of the new socialist society turns even the most daring of man’s dreams into a reality." ;;;;;….;;;;;;X
+9000208desc;The German Government released the following statement regarding the successful launch of Begleiter: "The nation rejoiced early this morning as the news spread that Germany launched its first artificial satellite. The satellite, called "Begleiter,"or companion, is circling the planet at an altitude of up to 9000 kilometers above the earth's surface. Dr. Hermann Oberth, the director of the nation's Long-Range Weapons Commission, said that the Army had accomplished in a short time rather extensive modifications of its Aggregat-12 missile to launch Begleiter."This is the beginning in the long-range program to conquer outer space," Dr. Oberth said. "Satellites have many uses of great value in scientific, military and communications fields. We will move onwards to more challenging missions as fast as our Fatherland's resources permit." ;;;;;….;;;;;;X
+9000210desc;The Government of the United States of America released the following statement regarding the successful launch of Explorer 1: "The nation rejoiced early this morning as the news spread that the United States now had an artificial satellite, "The Explorer," circling the earth. The Vice President, handed the news while at a party in his home, said that the launching of the satellite " demonstrates to the world that there’s no monopoly on scientific capability." The Vice President continued: "The achievements with the Jupiter-C rocket emphasizes the wisdom of the President’s proposal for the development of space exploration in the cause of peace rather than in the wastage of war." In Huntsville, Alabama, where the Jupiter-C was born, thousands of residents poured into the streets within minutes of the rocket’s launching in Florida. The people waved placards saying, "Our Missiles Never Miss." In Washington, Lieut. Gen. James M. Gavin, Chief of Research and Development of the Army, sent his congratulations to all those participating in the successful launch. He said that the satellite gave clear evidence that free men had started their exploration of space and that "we will continue to move forward in this exploration with the object of improving the lot of humankind everywhere." ;;;;;….;;;;;;X
+9000212desc;The French Government released the following statement regarding the successful launch of Astérix: "At 21:47 Paris time the first French satellite, Astérix, was successfully launched by a rocket of type Diamant A from Hammaguir in Algeria. 620 seconds later, France became a space power. The satellite was originally designated A-1 (or Army 1) but journalists were quick to name the Satellite "Zebulon" in reference to its resemblance to television’s famous wizard puppet with a spring for legs. Unfortunately, for fans of TV's "The Magic Roundabout," the government deemed Zebulon to be too close to the Arab Maghreb word "Zebbi" which is a rather impolite term for a certain part of the male anatomy. Preferring a name change over a diplomatic incident, the government sought an emergency substitute name. The solution was to name it for the Gaul Astérix, the hero of a popular comic strip. " ;;;;;….;;;;;;X
+9000214desc;The Government of the People's Republic of China released the following statement regarding the successful launch of Dong Fang Hong: "The great helmsman of the People's Republic of China, Chairman Mao, has stated, that the Chinese people should produce man-made satellites. We are happy to announce that the energies of the Chinese masses has enabled our scientists to turn this calling bequeathed upon them by our beloved Chairman into a reality. Our first satellite is named "Dong Fang Hong" or "The East is Red," and broadcasts that popular song as it soars above our world still divided between the old order of exploitation and misery and the glorious communist future. Those listening to the heavens will hear our satellite thunder the immortal lyrics of that revolutionary anthem of the oppressed: "The East is Red, the sun rises, Mao Tse-tung comes out in the East . . .." Additionally, this artificial satellite demonstrates that the People's Republic of China has joined the ranks of the great powers in developing both rocketry and electronic gear capable of such a feat.  " ;;;;;….;;;;;;X
+9000216desc;The Japanese Government has issued the following statement about the successful launch of its first satellite, Ohsumi: "The Nation's first artificial satellite was successfully launched from Uchinoura  at 13:25 yesterday. The launch was done to study the capabilities of the new Mu class of rockets and to perform an engineering experiment on satellites. From 15:56:10 to 16:06:54, about two and a half hours after the launch, a radio signal from Ohsumi was received at Uchinoura to confirm its first revolution around the earth. The radio signal level gradually fell and today, during its 6th revolution, it became very faint. The signal could no longer be detected during the 7th revolution. It is believed that the signal of OHSUMI was lost 14 to 15 hours after launch, probably caused by rapid reduction of power capacity because of higher than expected temperatures. Despite these setbacks, scientists and the whole of the nation view the launch as a successful endeavor. While Japan is known  as the "Land of the rising Sun," the scientists at Uchinoura hope that our nation will eventually be known for exploring the most distant reaches of our solar system, and eventually exploring worlds beyond our beloved sun's orbit. " ;;;;;….;;;;;;X
+9000218desc;The Government of the United Kingdom has issued the following statement about the successful launch of its first satellite, Prospero: "It is our pleasure to announce the launch of the Prospero X-3 Satellite. This magnificent device was designed to test equipment, particularly solar cells, for future satellites, and to conduct a scientific experiment to measure the incidence of micrometeoroids. Scientists at our satellite tracking station at Lasham, Hampshire have confirmed that they have been able to receive transmissions from Prospero. The satellite is named for the protagonist of William Shakespeare's The Tempest. Just as the fictional Prospero eventually renounced magic, the Satellite will help usher in a new age of scientific enlightenment. It is only fitting that the nation that gave the world Sir Issac Newton shall be at the forefront of humanity's exploration of the cosmos. " ;;;;;….;;;;;;X
+9000220desc;The Government of the Republic of China has issued the following statement about the successful launch of its first satellite, Sun Yat-sen: "It is the honor of our government to announce the successful launch of the Sun Yat-sen satellite. Dr. Sun Yat-sen was the founder of the Republic of China, and this scientific achievement fits with his "Three Principles of the People." First, it embraces the concept of nationalism. No longer will China be considered a second rate power. Furthermore, the launch conforms to his vision of a government by and for the people, as its construction was only made possible through the support of the Chinese masses. Finally, this satellite represents the concept of state support for the people's welfare. The scientific advances made by this satellite will help enrich our scientific knowledge and, eventually, provide direct benefits to the Chinese people. The satellite had been fitted with experimental solar cells which may one day be used to provide the nation with cheap energy. All in all, this was a marvelous achievement that shows what great feats the Chinese nation is capable of." ;;;;;….;;;;;;X
+9000222desc;The Indian Government has issued the following statement about the successful launch of its first satellite, Rohini: "India's scientists, working under the guidance of  renowned engineer Avul Pakir Jainulabdeen Abdul Kalam, have launched Rohini, our country's first artificial satellite. The Satellite's name is a reference to the Vedanga Jyotisha, an astronomical text that lists the Nakshatra, or lunar mansions in Hindu mythology. Rohini, or the "Red One," is an ancient name for the red giant star Aldebaran which is linked with Brahma, the god of creation. As this mission is a peaceful one focused on creating a more prosperous and scientific India it seemed fitting to name our Satellite after a heavenly body associated with creation." ;;;;;….;;;;;;X
+9000224desc;The Israeli Government has issued the following statement about the successful launch of its first satellite, Ofeq: "The Israeli nation rejoices at the news that our country has launched its first satellite, Ofeq, or "Horizon." Ofeq was launched from Palmachim Airbase on the Mediterranean cost. While it would make technical sense to launch Ofeq eastwards to gain a boost from the Earth's rotational speed, the decision was made to launch it westward  over the Mediterranean to avoid flying over, and dropping spent rocket stages over, populated areas in Israel and neighboring Arab countries.  Ofeq was able to complete one Earth orbit in about 90 minutes and provided useful for solar cell and radio transmission tests. The Prime Minister declared "let it be known to all the enemies of Israel, and the Jewish people, that we are watching them." Pundits were quick to declare that the future satellites would soon give Israel the capability to "read license plates in Baghdad." ;;;;;….;;;;;;X
+9000226desc;The Russian Government released the following statement regarding the successful launch of Kosmos: "For several years research and experimental designing work has been under way in Russia to create artificial satellites of the earth. As a result of the intensive work by research institutes and designing bureaus Russia’s first artificial satellite has now been created. The successful launching of this man-made earth satellite makes a tremendous contribution to the treasure house of world science and culture. The scientific experiment staged at such a great height is of great importance for fathoming the properties of cosmic space and for studying earth as part of our solar system. Artificial earth satellites will pave the way for space travel, and it seems that the present generation will witness Konstantin Tsiolkovsky's visions come to life. Today, all Russians know that even the most daring of man’s dreams can become reality." ;;;;;….;;;;;;X
+9000228desc;The Ukrainian Government released the following statement regarding the successful launch of Strela: "For several years research and experimental designing work has been under way in Ukraine to create artificial satellites of the earth. As a result of the intensive work by research institutes and designing bureaus Ukraine’s first artificial satellite has now been created. The successful launching of this man-made earth satellite makes a tremendous contribution to the treasure house of world science and culture. The scientific experiment staged at such a great height is of great importance for fathoming the properties of cosmic space and for studying earth as part of our solar system. Future iterations of this satellite will have a wide range of military and scientific applications. For instance, they will allow for component proving tests, and act as radar and ABM targets. More importantly, Artificial Earth satellites will pave the way for space travel, and it seems that the present generation will witness Konstantin Tsiolkovsky's visions come to life.  Today, all Ukrainians know that even the most daring of man’s dreams can become reality." ;;;;;….;;;;;;X
+9000230desc;The Iranian Government released the following statement regarding the successful launch of Omid: "We are pleased to announced the successful launch of Omid, or "Hope." This satellite was designed for entirely peaceful purposes, and we hope that it will do much to spread peace and justice in the world. Eventually, we hope to put satellites into orbit to monitor natural disasters in our earthquake-prone country as well as improve our telecommunications. Omid carried only a store and forward telecommunication capability. However, future satellites will be much more advanced. " ;;;;;….;;;;;;X
+##;;;;;;;;;;;X;;;
+SHORT_TECH_APP_SW_300_NAME;Artificial Satellites;;;;;;;;;;X
+TECH_APP_SW_300_NAME;Artificial Satellites;;;;;;;;;;X
+TECH_CMP_SW_300_1_NAME;Launch Vehicle Preparations;;;;;;;;;;X
+TECH_CMP_SW_300_2_NAME;Payload Fairing;;;;;;;;;;X
+TECH_CMP_SW_300_3_NAME;Temperature regulation system;;;;;;;;;;X
+TECH_CMP_SW_300_4_NAME;Transponder;;;;;;;;;;X
+TECH_CMP_SW_300_5_NAME;Trajectory Calculations;;;;;;;;;;X
+SHORT_TECH_APP_SW_301_NAME;Early Spy Satellites;;;;;;;;;;X
+TECH_APP_SW_301_NAME;First Generation Reconnaissance Satellites;;;;;;;;;;X
+TECH_CMP_SW_301_1_NAME;Reentry Capsule;;;;;;;;;;X
+TECH_CMP_SW_301_2_NAME;Mid-Air Retrieval;;;;;;;;;;X
+TECH_CMP_SW_301_3_NAME;IMINT;;;;;;;;;;X
+TECH_CMP_SW_301_4_NAME;Specialized Focal Length Cameras;;;;;;;;;;X
+TECH_CMP_SW_301_5_NAME;Trajectory Calculations;;;;;;;;;;X
+SHORT_TECH_APP_SW_302_NAME;1974 Spy Satellites;;;;;;;;;;X
+TECH_APP_SW_302_NAME;Second Generation Reconnaissance Satellites;;;;;;;;;;X
+TECH_CMP_SW_302_1_NAME;Satellite Design;;;;;;;;;;X
+TECH_CMP_SW_302_2_NAME;Satellite Data Relay  Network;;;;;;;;;;X
+TECH_CMP_SW_302_3_NAME;IMINT;;;;;;;;;;X
+TECH_CMP_SW_302_4_NAME;Digital Imaging;;;;;;;;;;X
+TECH_CMP_SW_302_5_NAME;Sun-synchronous Orbits;;;;;;;;;;X
+SHORT_TECH_APP_SW_303_NAME;Sat. Navigation;;;;;;;;;;X
+TECH_APP_SW_303_NAME;Global Navigational Satellite Systems;;;;;;;;;;X
+TECH_CMP_SW_303_1_NAME;Navigational Satellites;;;;;;;;;;X
+TECH_CMP_SW_303_2_NAME;Target Tracking;;;;;;;;;;X
+TECH_CMP_SW_303_3_NAME;IMINT;;;;;;;;;;X
+TECH_CMP_SW_303_4_NAME;Monitor Stations;;;;;;;;;;X
+TECH_CMP_SW_303_5_NAME;Satellite Constellation;;;;;;;;;;X
+SHORT_TECH_APP_SW_304_NAME;Manned Spaceflights;;;;;;;;;;X
+TECH_APP_SW_304_NAME;Manned Spaceflights;;;;;;;;;;X
+TECH_CMP_SW_304_1_NAME;Animal Flight Tests;;;;;;;;;;X
+TECH_CMP_SW_304_2_NAME;Reentry Module;;;;;;;;;;X
+TECH_CMP_SW_304_3_NAME;Launch Vehicle;;;;;;;;;;X
+TECH_CMP_SW_304_4_NAME;Preparatory Flights;;;;;;;;;;X
+TECH_CMP_SW_304_5_NAME;Intensive Spaceflight Training;;;;;;;;;;X
+SHORT_TECH_APP_SW_305_NAME;Moon Race;;;;;;;;;;X
+TECH_APP_SW_305_NAME;Race to the Moon;;;;;;;;;;X
+TECH_CMP_SW_305_1_NAME;Manned Spaceflight Experience;;;;;;;;;;X
+TECH_CMP_SW_305_2_NAME;Hard Lunar Landing;;;;;;;;;;X
+TECH_CMP_SW_305_3_NAME;Space Program Public Outreach/Propaganda;;;;;;;;;;X
+TECH_CMP_SW_305_4_NAME;Orbital Space Observatories;;;;;;;;;;X
+TECH_CMP_SW_305_5_NAME;Reusable Spacecraft;;;;;;;;;;X
+SHORT_TECH_APP_SW_306_NAME;Lunar Landing;;;;;;;;;;X
+TECH_APP_SW_306_NAME;Lunar Landing Preparations;;;;;;;;;;X
+TECH_CMP_SW_306_1_NAME;Lunar Module;;;;;;;;;;X
+TECH_CMP_SW_306_2_NAME;Command/Service Module;;;;;;;;;;X
+TECH_CMP_SW_306_3_NAME;Booster Rockets;;;;;;;;;;X
+TECH_CMP_SW_306_4_NAME;Guidance and Navigation Computer;;;;;;;;;;X
+TECH_CMP_SW_306_5_NAME;Moonwalk Training;;;;;;;;;;X
+SHORT_TECH_APP_SW_307_NAME;Moon Base;;;;;;;;;;X
+TECH_APP_SW_307_NAME;Permanent Lunar Presence;;;;;;;;;;X
+TECH_CMP_SW_307_1_NAME;Lunar Base Concept;;;;;;;;;;X
+TECH_CMP_SW_307_2_NAME;Lunar Orbital Survey Missions;;;;;;;;;;X
+TECH_CMP_SW_307_3_NAME;Lunar Surface Rendezvous and Exploration Missions;;;;;;;;;;X
+TECH_CMP_SW_307_4_NAME;Advanced Lunar Rover;;;;;;;;;;X
+TECH_CMP_SW_307_5_NAME;Lunar Landing and Return Vehicles;;;;;;;;;;X
+SHORT_TECH_APP_SW_308_NAME;Space Stations;;;;;;;;;;X
+TECH_APP_SW_308_NAME;Space Stations;;;;;;;;;;X
+TECH_CMP_SW_308_1_NAME;Docking Ports;;;;;;;;;;X
+TECH_CMP_SW_308_2_NAME;Space Ferries;;;;;;;;;;X
+TECH_CMP_SW_308_3_NAME;Manned Flight Experience;;;;;;;;;;X
+TECH_CMP_SW_308_4_NAME;Space Medicine;;;;;;;;;;X
+TECH_CMP_SW_308_5_NAME;Research Equipment;;;;;;;;;;X
+SHORT_TECH_APP_SW_309_NAME;Surface Missions;;;;;;;;;;X
+TECH_APP_SW_309_NAME;Interplanetary Surface Missions;;;;;;;;;;X
+TECH_CMP_SW_309_1_NAME;Lander Robot;;;;;;;;;;X
+TECH_CMP_SW_309_2_NAME;Orbiter;;;;;;;;;;X
+TECH_CMP_SW_309_3_NAME;Soil Analysis Experiments;;;;;;;;;;X
+TECH_CMP_SW_309_4_NAME;Transmitter;;;;;;;;;;X
+TECH_CMP_SW_309_5_NAME;Orbiter Propulsion System;;;;;;;;;;X
+SHORT_TECH_APP_SW_310_NAME;Interstellar Probe;;;;;;;;;;X
+TECH_APP_SW_310_NAME;Interstellar Space Probe;;;;;;;;;;X
+TECH_CMP_SW_310_1_NAME;Unmanned Mission Experience;;;;;;;;;;X
+TECH_CMP_SW_310_2_NAME;Radio Astronomy Equipment;;;;;;;;;;X
+TECH_CMP_SW_310_3_NAME;Radioisotope Thermoelectric Generator;;;;;;;;;;X
+TECH_CMP_SW_310_4_NAME;Probe Prototype Development;;;;;;;;;;X
+TECH_CMP_SW_310_5_NAME;Trajectory Calculations;;;;;;;;;;X
+SHORT_TECH_APP_SW_311_NAME;Space Shuttle;;;;;;;;;;X
+TECH_APP_SW_311_NAME;Orbital Spaceplane;;;;;;;;;;X
+TECH_CMP_SW_311_1_NAME;Space Shuttle Concept;;;;;;;;;;X
+TECH_CMP_SW_311_2_NAME;Space Shuttle Orbiter;;;;;;;;;;X
+TECH_CMP_SW_311_3_NAME;Orbital Manuvering System;;;;;;;;;;X
+TECH_CMP_SW_311_4_NAME;Shuttle Crew Training;;;;;;;;;;X
+TECH_CMP_SW_311_5_NAME;Digital Flight Control Systems;;;;;;;;;;X
+SHORT_TECH_APP_SW_312_NAME;Mars Landing;;;;;;;;;;X
+TECH_APP_SW_312_NAME;Manned Mission to Mars;;;;;;;;;;X
+TECH_CMP_SW_312_1_NAME;Heavy Interplanetary Spacecraft;;;;;;;;;;X
+TECH_CMP_SW_312_2_NAME;Mars Fly-by Trajectory Calculations;;;;;;;;;;X
+TECH_CMP_SW_312_3_NAME;15MW Nuclear Reactor Propulsions System;;;;;;;;;;X
+TECH_CMP_SW_312_4_NAME;Experimental Closed Loop Life Support System;;;;;;;;;;X
+TECH_CMP_SW_312_5_NAME;Mars Isolation Testing;;;;;;;;;;X
+SHORT_TECH_APP_SW_313_NAME;Civil Benefits;;;;;;;;;;X
+TECH_APP_SW_313_NAME;Civilian Benefits From The Space Program;;;;;;;;;;X
+TECH_CMP_SW_313_1_NAME;Artificial Hearts And Limbs;;;;;;;;;;X
+TECH_CMP_SW_313_2_NAME;Faster Diagnostics;;;;;;;;;;X
+TECH_CMP_SW_313_3_NAME;Image-processing Technology;;;;;;;;;;X
+TECH_CMP_SW_313_4_NAME;Gas Detection;;;;;;;;;;X
+TECH_CMP_SW_313_5_NAME;Civilian Telecommunications;;;;;;;;;;X
+SHORT_TECH_APP_SW_314_NAME;Anti-Sat Weapon;;;;;;;;;;X
+TECH_APP_SW_314_NAME;Anti Satellite Weapon Systems and Tactics;;;;;;;;;;X
+TECH_CMP_SW_314_1_NAME;Anti-Satellite multistage missile;;;;;;;;;;X
+TECH_CMP_SW_314_2_NAME;Electro Magnetic Pulse Research;;;;;;;;;;X
+TECH_CMP_SW_314_3_NAME;X-Ray Laser System Research;;;;;;;;;;X
+TECH_CMP_SW_314_4_NAME;Fighter Satellite Prototypes;;;;;;;;;;X
+TECH_CMP_SW_314_5_NAME;Sucessful Anti Satellite Missile Tests;;;;;;;;;;X
 #EOF;;;;;;;;;;;X

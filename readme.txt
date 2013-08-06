@@ -1,5 +1,5 @@
-Hegemonia 1.08, checksum HYDS
-Requires Darkest Hour patch 1.03 RC2
+Hegemonia 1.09, checksum HAQW
+Requires Darkest Hour patch 1.03
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
 
@@ -63,6 +63,30 @@ map changes:
 IC, resources, infra
 
 (probably incomplete) change list:
+1.09
+	1.03 final update
+	units
+		match 1.03 values
+	
+	events
+		riots in germany disabled latest with the great war
+		increased costs of finnish ports 
+		coup d'etat requirement now 60 dissent
+		
+	ministers
+		added various space teams
+		renamed Vinland, Union teams
+		
+	technology
+		added space techs
+		tweaked land doctrine values
+		
+	localisation
+		fix brittany name
+		
+	scenario
+		fix ENG escort carriers with lcags, are now light carriers
+		
 1.08
 	sliders
 		government slider now unaffected by influence

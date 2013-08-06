@@ -16,7 +16,7 @@ model = {
 	fuelconsumption		= 3.0
 	upgrade_time_factor = 0.95
 	upgrade_cost_factor = 0.95
-	speed_cap			= 32
+	speed_cap			= 20
 	equipment = { manpower = 2500 medium_armor = 86 }
 }
 
@@ -36,6 +36,6 @@ model = {
 	fuelconsumption		= 2.0
 	upgrade_time_factor = 0.95
 	upgrade_cost_factor = 0.95
-	speed_cap			= 32
+	speed_cap			= 20
 	equipment = { manpower = 2500 medium_armor = 94 }
 }

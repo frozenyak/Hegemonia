@@ -6,15 +6,15 @@ model = {
 	buildtime	 		= 140
 	manpower 			= 3
 	defensiveness 		= -5
-	toughness 			= 0
-	softness			= 0
+	toughness 			= -3
+	softness			= -2
 	softattack			= 4
 	hardattack			= 2
 	supplyconsumption 	= 0.42
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60 }
 }
 
@@ -24,15 +24,15 @@ model = {
 	buildtime	 		= 140
 	manpower 			= 3
 	defensiveness 		= -5
-	toughness 			= 0
-	softness			= 0
+	toughness 			= -3
+	softness			= -2
 	softattack			= 5
 	hardattack			= 2
 	supplyconsumption 	= 0.46
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 32
+	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -42,15 +42,15 @@ model = {
 	buildtime	 		= 140
 	manpower 			= 3
 	defensiveness 		= -5
-	toughness 			= 0
-	softness			= 0
+	toughness 			= -3
+	softness			= -2
 	softattack			= 6
 	hardattack			= 2
 	supplyconsumption 	= 0.5
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 32
+	speed_cap			= 19
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -60,15 +60,15 @@ model = {
 	buildtime	 		= 140
 	manpower 			= 3
 	defensiveness 		= -5
-	toughness 			= 0
-	softness			= 0
+	toughness 			= -3
+	softness			= -2
 	softattack			= 6
 	hardattack			= 3
 	supplyconsumption 	= 0.5
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 28
+	speed_cap			= 17
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -78,15 +78,15 @@ model = {
 	buildtime	 		= 140
 	manpower 			= 3
 	defensiveness 		= -7
-	toughness 			= 0
-	softness			= 0
+	toughness 			= -4
+	softness			= -2
 	softattack			= 6
 	hardattack			= 3
 	supplyconsumption 	= 0.54
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -96,14 +96,14 @@ model = {
 	buildtime	 		= 140
 	manpower 			= 3
 	defensiveness 		= -7
-	toughness 			= 0
-	softness			= 0
+	toughness 			= -4
+	softness			= -2
 	softattack			= 7
 	hardattack			= 3
 	supplyconsumption 	= 0.56
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }

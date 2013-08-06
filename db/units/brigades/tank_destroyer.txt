@@ -14,7 +14,7 @@ model = {
 	fuelconsumption		= 1.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 medium_armor = 116 }
 }
 
@@ -32,7 +32,7 @@ model = {
 	fuelconsumption		= 1.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 31
+	speed_cap			= 19
 	equipment = { manpower = 3000 medium_armor = 116 }
 }
 
@@ -50,7 +50,7 @@ model = {
 	fuelconsumption		= 1.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 34
+	speed_cap			= 20
 	equipment = { manpower = 3000 medium_armor = 116 }
 }
 
@@ -68,7 +68,7 @@ model = {
 	fuelconsumption		= 0.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 26
+	speed_cap			= 16
 	equipment = { manpower = 3000 medium_armor = 116 }
 }
 
@@ -86,7 +86,7 @@ model = {
 	fuelconsumption		= 1.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 medium_armor = 116 }
 }
 
@@ -104,6 +104,6 @@ model = {
 	fuelconsumption		= 1.4
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 32
+	speed_cap			= 19
 	equipment = { manpower = 3000 medium_armor = 116 }
 }

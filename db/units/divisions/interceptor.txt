@@ -52,7 +52,7 @@ model = { # Early Fighter - 1 1930
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Basic Interceptor - 2 1937
 	cost 						= 18
@@ -77,7 +77,7 @@ model = { # Basic Interceptor - 2 1937
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Improved Interceptor - 3 1940
 	cost 						= 19
@@ -102,7 +102,7 @@ model = { # Improved Interceptor - 3 1940
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Advanced Interceptor - 4 1942
 	cost 						= 20
@@ -128,7 +128,7 @@ model = { # Advanced Interceptor - 4 1942
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	interceptor = 7
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Basic Rocket Interceptor - 5 1941
 	cost 						= 20
@@ -155,7 +155,7 @@ model = { # Basic Rocket Interceptor - 5 1941
 	reinforce_cost 				= 0.50
 	interceptor = 6
 	upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Improved Rocket Interceptor - 6 1943
 	cost 						= 20
@@ -181,7 +181,7 @@ model = { # Improved Rocket Interceptor - 6 1943
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	interceptor = 8
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Basic Turbojet Interceptor - 7 1944
 	cost 						= 23
@@ -207,7 +207,7 @@ model = { # Basic Turbojet Interceptor - 7 1944
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	interceptor = 8
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Improved Turbojet Interceptor - 8 1947
 	cost 						= 24
@@ -232,7 +232,7 @@ model = { # Improved Turbojet Interceptor - 8 1947
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 model = { # Supersonic Interceptor - 9 1950
 	cost 						= 25
@@ -257,5 +257,5 @@ model = { # Supersonic Interceptor - 9 1950
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 750 }
+	equipment = { fighter = 100 manpower = 100 }
 }

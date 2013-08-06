@@ -25,9 +25,9 @@ technology =
     component = { id = 6015 name = TECH_CMP_LD_1_5_NAME type = training difficulty = 9 }
     required  = { }
     effects =
-    {  command = { type = ground_def_eff value = 0.95 } #0.77
+    {  command = { type = ground_def_eff value = 0.8 } #0.77
 	   command = { type = max_organization which = land value = 10 }
-	   command = { type = morale which = land value = 8 } #~31/38
+	   command = { type = morale which = land value = -0.74 } #~31/38
 
       command = { type = activate_unit_type which = hq }
       command = { type = new_model which = hq value = 0 }
@@ -60,6 +60,8 @@ technology =
     { 
 	  command = { type = soft_attack which = artillery value = 1 }
 	  command = { type = soft_attack which = sp_artillery value = 1 }	  
+      command = { type = morale which = land value = 1.54 }
+      command = { type = max_organization which = land value = 5 }	  
 	  command = { type = assault value = 2 }
       command = { type = hq_supply_eff value = 1 }
     }
@@ -84,6 +86,8 @@ technology =
     required  = { 6040 }
     effects =
     { 
+      #command = { type = ground_def_eff value = 0.77 }
+	  command = { type = max_organization which = land value = 3 }
       command = { type = muddy_defense which = land value = 2.5 }
 	  command = { type = plain_defense which = land value = 2.5 }
 	  command = { type = desert_defense which = land value = 0.75 }
@@ -291,7 +295,8 @@ technology =
     required  = { 6080 }
     effects =
     { command = { type = deactivate which = 6090 }
-      command = { type = morale which = land value = 5 }
+	  command = { type = ground_def_eff value = 0.85 } #0.8
+      command = { type = morale which = land value = 9.2}
       command = { type = max_organization which = land value = 5 }
 	  
 	  command = { type = muddy_attack which = mechanized value = 4 }
@@ -332,8 +337,8 @@ technology =
     required  = { 6080 }
     effects =
     { command = { type = deactivate which = 6100 }
-	  #command = { type = ground_def_eff value = 0.80 }
-      command = { type = morale which = land value = 5 }
+	  command = { type = ground_def_eff value = 0.85 } #0.8
+      command = { type = morale which = land value = 9.2}
       command = { type = max_organization which = land value = 5 }
 	  
 	  command = { type = muddy_defense which = land value = 2.5 }
@@ -407,8 +412,9 @@ technology =
 	OR_required = { 14050 14070 }
     effects =
     { 
-	  #command = { type = ground_def_eff value = 0.9 }
-      command = { type = morale which = land value = 5 }
+	  command = { type = ground_def_eff value = 0.9 }
+      command = { trigger = { technology = 14050 } type = morale which = land value = 9.5 }
+      command = { trigger = { technology = 14070 } type = morale which = land value = 11.7 }
 	  command = { type = tactical_withdrawal value = 3 }
       command = { type = delay value = 3 }
       command = { type = breakthrough value = 1 }
@@ -416,6 +422,9 @@ technology =
       command = { type = assault value = 1 }
 	  }
   } 
+########
+# NATO #
+########
         # Military Projection
   application =
   { id        = 6800
@@ -437,12 +446,14 @@ technology =
     required  = { 6790 6730 }
     effects =
     { 
-	  command = { type = max_organization which = land value = 2 }
+	  command = { type = max_organization which = land value = 3 }
+	  command = { trigger = { technology = 6490 } type = max_organization which = land value = -1 }
+	  command = { trigger = { not = { technology = 6490 } } type = morale which = land value = 1.8 }
 	  command = { type = max_organization which = paratrooper value = 5 }
 	  command = { type = morale which = paratrooper value = 5 }
 	  command = { type = max_organization which = marine value = 5 }
 	  command = { type = morale which = marine value = 5 }	
-	  command = { type = task_efficiency which = amphibious_assault value = 0.25 }
+	  command = { trigger = { not = { technology = 6490 } } type = task_efficiency which = amphibious_assault value = 0.25 }
     }
   }
       # Assault Breaker Doctrine
@@ -467,8 +478,10 @@ technology =
     effects =
     { 
 
-	  command = { type = max_organization which = land value = 5 }
-	  
+	  command = { type = max_organization which = land value = 4 }
+	  command = { trigger = { technology = 6490 } type = max_organization which = land value = -2 }
+	  command = { type = morale which = land value = 1.8 }
+	  command = { trigger = { technology = 6490 } type = morale which = land value = 0.2 }
 	  command = { type = muddy_defense which = land value = 3.5 }
 	  command = { type = plain_defense which = land value = 3.5 }
 	  command = { type = desert_defense which = land value = 0.75 }
@@ -484,7 +497,7 @@ technology =
     }
   }
 
-        # Nuclear Focus Doctrine
+  # Nuclear Focus Doctrine
   application =
   { id        = 6890
     name      = TECH_APP_LD_159_NAME
@@ -505,7 +518,10 @@ technology =
     required  = { 6880 6760 16010 }
     effects =
     { 
-		command = { type = nuke_damage value = 30 }
+		command = { type = max_organization which = land value = 2 }
+		command = { type = morale which = land value = 1.8 }
+		command = { trigger = { technology = 6490 } type = morale which = land value = -0.8 }
+		command = { trigger = { not = { technology = 6490 } } type = nuke_damage value = 30 }
     }
   }
         # Night Vision Tactics
@@ -569,16 +585,17 @@ technology =
       command = { type = night_defense which = light_armor value = 10 }
       command = { type = night_defense which = mechanized value = 10 }
 	  #
-      command = { type = night_move which = air value = 10 }
-      command = { type = night_attack which = air value = 10 }
-      command = { type = night_defense which = air value = 10 }
-	  command = { type = suppression which = air value = 15 }
+      command = { type = night_move which = air value = 10 } #15
+      command = { type = night_attack which = air value = 10 } #15
+      command = { type = night_defense which = air value = 10 } #15
+	  command = { type = suppression which = air value = 15 } #20
 	  #
 	  command = { type = tactical_withdrawal value = 2 }
       command = { type = ambush value = 2 }
 
     }
-  }    # Air cavalry Doctrine
+  }    
+  # Air cavalry Doctrine
   application =
   { id        = 6750
     name      = TECH_APP_LD_145_NAME
@@ -611,7 +628,7 @@ technology =
     }
   } 
 
-        # Special Forces Focus
+  # Special Forces Focus
   application =
   { id        = 6760
     name      = TECH_APP_LD_146_NAME
@@ -662,10 +679,9 @@ technology =
     component = { id = 6035 name = TECH_CMP_LD_3_5_NAME type = training difficulty = 9 }
     required  = { }
     effects =
-    { command = { type = ground_def_eff value = 0.85 } #0.71
+    { command = { type = ground_def_eff value = 0.8 } #0.71
 
 	  command = { type = max_organization which = land value = 25 }
-	  command = { type = morale which = land value = 13 }
 	  
       command = { type = activate_unit_type which = hq }
       command = { type = new_model which = hq value = 0 }
@@ -695,7 +711,7 @@ technology =
     component = { id = 6565 name = TECH_CMP_LD_126_1_NAME type = training difficulty = 9 }
     required  = { 6030 }
     effects =
-    { command = { type = delay value = 2 }
+    {
 	
       command = { type = softness which = artillery value = -5 }
 	  command = { type = softness which = sp_artillery value = -5 }
@@ -721,11 +737,12 @@ technology =
 	  command = { type = urban_attack which = land value = -3.5 }
 	  command = { type = fort_attack which = land value = -2 }
 		  
+	  command = { type = delay value = 2 }
       command = { type = assault value = 1 }
       command = { type = hq_supply_eff value = 1 }
       command = { type = sce_frequency value = 0.2 }
 	  
-	  command = { type = max_organization which = land value = 2 }
+	  command = { type = morale which = land value = 1 } #0.53
 	  
 	  command = { type = soft_attack which = tactical_bomber value = 1 }
 	  command = { type = hard_attack which = tactical_bomber value = 1 }
@@ -737,7 +754,8 @@ technology =
 		command = { type = deactivate which = 6450 }
     }
   }
-  application = { # Light infantry
+# Light infantry
+  application = { 
 	id = 6390
 	name = TECH_APP_LD_39_NAME
 	position  = { x = 419 y = 31 }
@@ -755,7 +773,7 @@ technology =
 	component = { id = 6394 name = TECH_CMP_LD_21_4_NAME type = training difficulty = 9 }
 	component = { id = 6395 name = TECH_CMP_LD_21_5_NAME type = training difficulty = 9 }
 	required = { 6030 }
-	effects = { command = { type = delay value = 2 }
+	effects = {
 	
       command = { type = softness which = artillery value = -5 }
 	  command = { type = softness which = sp_artillery value = -5 }
@@ -780,8 +798,7 @@ technology =
 	  command = { type = jungle_attack which = land value = 1.25 }
 	  command = { type = swamp_attack which = land value = 2 }
 	  command = { type = urban_attack which = land value = 4.5 }
-	  command = { type = fort_attack which = land value = -2 }
-	  
+	  command = { type = fort_attack which = land value = -2 }	  
 	  
 	  command = { type = muddy_move which = land value = 15 }
 	  command = { type = mountain_move which = land value = 10 }
@@ -789,11 +806,14 @@ technology =
 	  command = { type = jungle_move which = land value = 15 }
 	  command = { type = swamp_move which = land value = 20 }
 	  command = { type = urban_move which = land value = 15 }
-		  
+
+	  command = { type = delay value = 2 }
       command = { type = assault value = 1 }
       command = { type = hq_supply_eff value = 1 }
       command = { type = sce_frequency value = 0.3 }
-	  command = { type = morale which = land value = 17 } #~39/42
+
+	  command = { type = max_organization which = land value = 5 }
+	  command = { type = morale which = land value = 13 } #12.6 ~39/42
 		#
 		command = { type = deactivate which = 6560 }
 		command = { type = deactivate which = 6150 }
@@ -820,6 +840,9 @@ technology =
     or_required  = { 6560 6390 }
     effects =
     { 
+	  #command = { type = ground_def_eff value = -0.04 when = 1 } #-0.04
+	  command = { type = morale which = land value = -2} #-1.72 ~39/42
+
 	  command = { type = muddy_attack which = land value = 4 }
 	  command = { type = plain_attack which = land value = 5 }
 	  command = { type = desert_attack which = land value = 1.25 }
@@ -832,9 +855,7 @@ technology =
 	  command = { trigger = { technology = 6560 } type = urban_attack which = land value = 3.5 }
 	  command = { trigger = { technology = 6390 } type = urban_attack which = land value = 4.5 }
 	  command = { type = fort_attack which = land value = 2 }
-	  command = { trigger = { technology = 6390 } type = frozen_defense which = land value = 4 }
-	  
-	  #command = { type = ground_def_eff value = -0.04 when = 1 }
+	  command = { trigger = { technology = 6390 } type = frozen_defense which = land value = 4.25 }
 	
       command = { type = counterattack value = 4 }
       command = { type = breakthrough value = 1 }
@@ -864,7 +885,11 @@ technology =
     component = { id = 6125 name = TECH_CMP_LD_12_5_NAME type = training difficulty = 9 }
     or_required  = { 6560 6390 }
     effects =
-    { command = { type = delay value = 4 }
+    { 
+	  #command = { type = ground_def_eff value = -0.05 when = 1 }
+	  command = { type = morale which = land value = -2} #-2.15
+
+	  command = { type = delay value = 4 }
 	  
 	  command = { type = muddy_defense which = land value = 2.5 }
 	  command = { type = plain_defense which = land value = 2.5 }
@@ -877,9 +902,7 @@ technology =
 	  command = { trigger = { technology = 6560 } type = swamp_defense which = land value = 1.25 }
 	  command = { trigger = { technology = 6390 } type = swamp_defense which = land value = 3.25 }
 	  command = { type = urban_defense which = land value = 2.5 }	
-	  command = { trigger = { technology = 6390 } type = frozen_defense which = land value = 3 }
-	  
-      #command = { type = ground_def_eff value = -0.04 when = 1 }
+	  command = { trigger = { technology = 6390 } type = frozen_defense which = land value = 4.25 }
 
       command = { type = hq_supply_eff value = 1 }
     }
@@ -903,7 +926,10 @@ technology =
     component = { id = 6135 name = TECH_CMP_LD_13_5_NAME type = training difficulty = 9 }
     required  = { 6110 6120 }
     effects =
-    { command = { type = delay value = 4 }
+    { 
+  	  #command = { type = ground_def_eff value = 0.05 when = 1 }
+	  command = { type = max_organization which = land value = 6 }
+      command = { type = morale which = land value = 2} #2.15
 
 	  command = { trigger = { technology = 6560 } type = muddy_defense which = land value = 2.5 }
 	  command = { trigger = { technology = 6390 } type = muddy_defense which = land value = 4.5 }
@@ -920,8 +946,7 @@ technology =
 	  command = { type = urban_defense which = land value = 2.5 }	
       command = { trigger = { technology = 6390 } type = frozen_defense which = land value = 4.25 }
 	  
-	  #command = { type = ground_def_eff value = 0.05 when = 1 }
-	  command = { type = max_organization which = land value = 6 }
+	  command = { type = delay value = 4 }
 
       command = { type = tactical_withdrawal value = 5 }
       command = { type = hq_supply_eff value = 1 }
@@ -947,7 +972,8 @@ technology =
     component = { id = 6145 name = TECH_CMP_LD_14_5_NAME type = training difficulty = 9 }
     required  = { 6130 }
     effects =
-    { command = { type = muddy_attack which = land value = 4 }
+    { 
+	  command = { type = muddy_attack which = land value = 4 }
 	  command = { type = plain_attack which = land value = 5 }
 	  command = { type = desert_attack which = land value = 1.25 }
 	  command = { type = mountain_attack which = land value = 3 }
@@ -958,7 +984,7 @@ technology =
 	  command = { type = urban_attack which = land value = 3.5 }
 	  command = { type = fort_attack which = land value = 2 }
 	  
-	  command = { type = max_organization which = land value = 2 } #~43/40
+	  command = { type = max_organization which = land value = 4 } #~43/40
 	
       command = { type = counterattack value = 2 }
       command = { type = hq_supply_eff value = 1 }
@@ -986,8 +1012,8 @@ technology =
     effects =
     { command = { type = deactivate which = 6450 }
 	  command = { type = ground_def_eff value = 0.95 } #1
-	  command = { type = max_organization which = land value = -18 }
-	  command = { type = morale which = land value = -5 }
+	  command = { type = max_organization which = land value = -20 }
+	  command = { type = morale which = land value = -11 } #-11.6
 	  
 	  command = { type = muddy_attack which = land value = 4 }
 	  command = { type = plain_attack which = land value = 5 }
@@ -1074,7 +1100,8 @@ technology =
       command = { type = sce_frequency value = 0.3 }
     }
   }
-application = { # Improved Light Infantry
+  # Improved Light Infantry
+  application = { 
 	id = 6490
 	name = TECH_APP_LD_49_NAME
 
@@ -1100,7 +1127,8 @@ application = { # Improved Light Infantry
 		command = { type = task_efficiency which = amphibious_assault value = 0.25 }
 		}
 	}
-application = { # Light Mobility
+  # Light Mobility
+  application = { 
 	id = 6450
 	name = TECH_APP_LD_45_NAME
 
@@ -1122,8 +1150,8 @@ application = { # Light Mobility
 	effects =
 	{ command = { type = deactivate which = 6160 }
 	  command = { type = ground_def_eff value = 0.95 } #1
-	  command = { type = max_organization which = land value = -18 }
-	  command = { type = morale which = land value = -5 }
+	  command = { type = max_organization which = land value = -20 }
+	  command = { type = morale which = land value = -11 } #-11.6
 
 	  command = { type = muddy_attack which = mechanized value = 4 }
 	  command = { type = plain_attack which = mechanized value = 5 }
@@ -1143,7 +1171,8 @@ application = { # Light Mobility
 	  command = { type = night_defense which = motorized value = 10 }
 		}
 	}
- application = { # Combined Arms
+  # Combined Arms
+  application = { 
 	id = 6460
 	name = TECH_APP_LD_46_NAME
 	
@@ -1206,8 +1235,8 @@ application = { # Light Mobility
     required  = { 6140 }
     effects =
     { command = { type = deactivate which = 6170 }
-      command = { type = ground_def_eff value = 0.95 } #0.75 #~49/45
-
+      #command = { type = ground_def_eff value = 0.75 } #~49/45
+      command = { type = morale which = land value = 3.5} #3.44
       command = { type = ambush value = 1 }
       command = { type = hq_supply_eff value = 1 }
       command = { type = sce_frequency value = 0.3 }
@@ -1233,6 +1262,7 @@ application = { # Light Mobility
     required  = { 6150 }
     effects =
    { 
+	  command = { type = morale which = land value = 3.5 } #3.75
 	  command = { type = muddy_attack which = land value = 4 }
 	  command = { type = plain_attack which = land value = 5 }
 	  command = { type = desert_attack which = land value = 1.25 }
@@ -1251,7 +1281,7 @@ application = { # Light Mobility
       command = { type = scrap_model which = hq value = 1 }
       command = { type = hq_supply_eff value = 1 }
       command = { type = sce_frequency value = 0.3 }
-	  command = { type = morale which = land value = 5 }
+	  
     }
   }
   # Assault Concentration Doctrine
@@ -1287,7 +1317,7 @@ application = { # Light Mobility
 	  
       command = { type = new_model which = hq value = 3 }
       command = { type = scrap_model which = hq value = 2 }
-	  command = { type = ground_def_eff value = 0.95 } #0.75
+	  command = { type = ground_def_eff value = 0.85 } #0.75
     }
   }
   # Branch Interoperability
@@ -1310,7 +1340,7 @@ application = { # Light Mobility
     required  = { 6170 }
     effects =
     { 
-	  command = { type = morale which = land value = 5 } #~49/49
+	  command = { type = morale which = land value = 7 } #7.14 ~49/49
 	  
 	  command = { type = tactical_withdrawal value = 4 }
       command = { type = breakthrough value = 2 }
@@ -1321,7 +1351,7 @@ application = { # Light Mobility
       command = { type = scrap_model which = hq value = 1 }
       command = { type = hq_supply_eff value = 2 }
       command = { type = sce_frequency value = 0.3 }
-	  command = { type = ground_def_eff value = 0.95 } #0.75
+	  #command = { type = ground_def_eff value = 0.75 }
     }
   }
   # Operational Stages Doctrine
@@ -1375,8 +1405,8 @@ application = { # Light Mobility
     effects =
     { 
 	  command = { type = ground_def_eff value = 0.95 } #1
-	  command = { type = max_organization which = land value = 8 }
-	  command = { type = morale which = land value = 15 } #~38/45
+	  command = { type = max_organization which = land value = 10 }
+	  command = { type = morale which = land value = 10 } #~38/45
 	  
       command = { type = activate_unit_type which = hq }
       command = { type = new_model which = hq value = 0 }
@@ -1407,7 +1437,9 @@ application = { # Light Mobility
     component = { id = 6225 name = TECH_CMP_LD_22_5_NAME type = training difficulty = 10 }
     required  = { 6210 }
     effects =
-    { command = { type = muddy_attack which = land value = 4 }
+    { 
+	  command = { type = max_organization which = land value = 5 }
+	  command = { type = muddy_attack which = land value = 4 }
 	  command = { type = plain_attack which = land value = 5 }
 	  command = { type = desert_attack which = land value = 1.25 }
 	  command = { type = mountain_attack which = land value = 3 }
@@ -1469,14 +1501,14 @@ application = { # Light Mobility
 	  command = { type = urban_attack which = armor value = 3.5 }
 	  command = { type = fort_attack which = armor value = 2 }
 
-	  command = { type = soft_attack which = light_armor value = 2 }
-	  command = { type = hard_attack which = light_armor value = 3 }
-	  command = { type = soft_attack which = armor value = 3 }
-	  command = { type = hard_attack which = armor value = 5 }
+#	  command = { type = soft_attack which = light_armor value = 2 }
+#	  command = { type = hard_attack which = light_armor value = 3 }
+#	  command = { type = soft_attack which = armor value = 2 }
+#	  command = { type = hard_attack which = armor value = 3 }
 	  command = { type = supply_consumption which = light_armor value = 0.5 }
-	  command = { type = build_cost which = light_armor when = on_upgrade where = relative value = 10 }
+	  command = { type = build_cost which = light_armor when = on_upgrade where = relative value = 5 }
+	  command = { type = build_cost which = armor when = on_upgrade where = relative value = 5 }
 	  command = { type = supply_consumption which = armor value = 0.5 }
-	  command = { type = hard_attack which = armor value = 10 where = relative }
 	  
 	  command = { type = breakthrough value = 2 }
       command = { type = encirclement value = 2 }
@@ -1705,6 +1737,7 @@ application = { # Light Mobility
     effects =
     { 
       command = { type = max_organization which = land value = 3 }
+	  command = { type = morale which = land value = 5 }
       command = { type = breakthrough value = 5 }
       command = { type = new_model which = hq value = 3 }
       command = { type = scrap_model which = hq value = 2 }
@@ -1742,7 +1775,7 @@ application = { # Light Mobility
     required  = { 14100 }
     effects =
     { 
-      command = { type = morale which = land value = 10 }
+      command = { type = morale which = land value = 5 }
 	  command = { type = suppression which = land value = 20 }
 	  command = { type = encirclement value = 2 }
       command = { type = assault value = 2 }
@@ -1833,7 +1866,7 @@ application = { # Light Mobility
     { 
 	  command = { type = nuke_damage value = 10 }
 	  command = { type = max_organization which = land value = 2 }
-	  command = { type = morale which = land value = 5 }
+	  command = { type = morale which = land value = 1 }
       command = { type = breakthrough value = 15 }
       command = { type = assault value = 15 }
     }
@@ -1860,7 +1893,8 @@ application = { # Light Mobility
     required  = { 6810 6760 }
     effects =
     { 
-	  command = { type = morale which = land value = 15 }
+	  command = { type = max_organization which = land value = 2 }
+	  command = { type = morale which = land value = 9 }
 	  command = { type = tactical_withdrawal value = 3 }
       command = { type = encirclement value = 10 }
       command = { type = assault value = 5 }
@@ -1896,7 +1930,7 @@ application = { # Light Mobility
       command = { type = new_model which = hq value = 0 }
       command = { type = sce_frequency value = 0.1 }
 	  
-      command = { type = ground_def_eff value = 0.85 } #0.5
+      command = { type = ground_def_eff value = 0.8 } #0.5
 	  command = { type = max_organization which = land value = 30 }		
 
     }
@@ -1924,7 +1958,6 @@ application = { # Light Mobility
     {
 	  #command = { type = ground_def_eff value = 0.4 }
 	  command = { type = max_organization which = land value = 10 }				
-	  command = { type = morale which = land value = 5 }				  
 	  command = { type = morale which = militia value = 5 }			  
     }
   }
@@ -1949,7 +1982,7 @@ application = { # Light Mobility
     effects =
     { 
 	  #command = { type = ground_def_eff value = 0.43 }
-	  command = { type = morale which = land value = 2 } # ~35 mor
+	  command = { type = morale which = land value = 5.8 }
 	  command = { type = max_organization which = land value = 3 }
 	  
       command = { type = tactical_withdrawal value = 2 }
@@ -1991,7 +2024,7 @@ application = { # Light Mobility
       command = { type = sce_frequency value = 0.1 }
 	  
 	  #command = { type = ground_def_eff value = 0.04 when = 1 }
-	  command = { type = morale which = land value = 12 } #~45
+	  command = { type = morale which = land value = 8.4 } #~45
 	  
 	  command = { type = build_time which = land when = on_upgrade where = relative value = -5 }
     }
@@ -2018,6 +2051,7 @@ application = { # Light Mobility
     { 
 	  #command = { type = ground_def_eff value = 0.03 when = 1 }
 	  command = { type = max_organization which = land value = 5 }	#~36		
+	  command = { type = morale which = land value = 1.8 }
 	  
       command = { type = breakthrough value = 2 }
       command = { type = encirclement value = 2 }
@@ -2028,8 +2062,8 @@ application = { # Light Mobility
       command = { type = sce_frequency value = 0.2 }
       command = { type = task_efficiency which = airborne_assault value = 0.2 }
 	  
-	  command = { type = hard_attack which = light_armor value = -1 }
-	  command = { type = hard_attack which = armor value = -3 }
+#	  command = { type = hard_attack which = light_armor value = -1 }
+#	  command = { type = hard_attack which = armor value = -3 }
 	  command = { type = build_time which = land when = on_upgrade where = relative value = -10 }
 
 	  command = { type = muddy_defense which = land value = 5 }
@@ -2064,6 +2098,7 @@ application = { # Light Mobility
     effects =
     { 
 	  #command = { type = ground_def_eff value = 0.03 when = 1 }
+	  command = { type = morale which = land value = 4.81 } # Target 35
       command = { type = tactical_withdrawal value = 3 }
       command = { type = counterattack value = 2 }
       command = { type = delay value = 3 }
@@ -2101,6 +2136,7 @@ application = { # Light Mobility
     required  = { 6330 6340 }
     effects =
     { 
+	  command = { type = morale which = land value = 1.54 }
 	  #command = { type = ground_def_eff value = 0.02 when = 1 } # 41/50
 	  command = { type = build_time which = infantry when = on_upgrade where = relative value = -10 }
 	  command = { type = hard_attack which = infantry value = -2 }
@@ -2128,7 +2164,7 @@ application = { # Light Mobility
     effects =
     { 
 	  #command = { type = ground_def_eff value = 0.07 when = 1 }
-	  
+	  command = { type = morale which = land value = 6.63 }	  
       command = { type = max_organization which = land value = -7 } # 42/56
       command = { type = encirclement value = 2 }
       command = { type = hq_supply_eff value = 2 }
@@ -2197,7 +2233,7 @@ application = { # Light Mobility
     { command = { type = morale which = armor value = 5 }
 	  command = { type = morale which = light_armor value = 5 }
       command = { type = morale which = mechanized value = 5 }
-	  
+	  command = { type = morale which = land value = 1.12 }
 	  command = { type = muddy_attack which = mechanized value = 4 }
 	  command = { type = plain_attack which = mechanized value = 5 }
 	  command = { type = desert_attack which = mechanized value = 1.25 }
@@ -2234,7 +2270,8 @@ application = { # Light Mobility
     required  = { 14060 }
     effects =
     { 
-      command = { type = ground_def_eff value = 0.90 } #0.72
+      command = { type = ground_def_eff value = 0.85 } #0.72
+	  command = { type = morale which = land value = 8.1 }
 	  
 	  command = { type = muddy_attack which = land value = 4 }
 	  command = { type = plain_attack which = land value = 5 }
@@ -2270,7 +2307,7 @@ application = { # Light Mobility
     required  = { 6770 6730 }
     effects =
     { 
-      command = { type = morale which = land value = 7 }
+      command = { type = morale which = land value = 5.04 }
 	  command = { type = tactical_withdrawal value = 4 }
       command = { type = delay value = 4 }
       command = { type = encirclement value = 2 }
@@ -2298,7 +2335,7 @@ application = { # Light Mobility
     effects =
     { 
       command = { type = nuke_damage value = 20 }
-
+	  command = { type = max_organization which = land value = 1 }
       command = { type = breakthrough value = 2 }
       command = { type = encirclement value = 7 }
       command = { type = assault value = 3 }
@@ -2327,7 +2364,8 @@ application = { # Light Mobility
     effects =
     { 
 	  #command = { type = ground_def_eff value = 0.75 }
-	  
+	  command = { type = max_organization which = land value = 2 }
+	  command = { type = morale which = land value = 2.64 }
 	  command = { type = tactical_withdrawal value = 2 }
       command = { type = delay value = 2 }
     }

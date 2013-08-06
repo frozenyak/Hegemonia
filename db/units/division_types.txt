@@ -29,8 +29,9 @@
 #	value		= X.X(Number)			# Unit military value. Used in military power and other calculations.
 #	list_prio	= X(Number)				# Priority in lists (tech overview and production pages).
 #										# Units are sorted by groups (land/air/naval).
-#										# -1 - do not list that type, 0+ - priority in lists (lowest are first)
+#										# -1 - do not list that type, 0+ - priority in lists (lowest first)
 #	### OPTIONAL PARAMETERS ###
+#	ui_prio		= Number				# Sort priority for divisions in unit UI (highest first)
 #	RealUnitType= yes					# Sets this UnitType as default RealUnitType. There can be only one definition for every RealUnitType. 
 #										# 	Used by production AI (militia, infantry), rebels (militia, infantry) 
 #										#	and aliens (infantry, armor, strategic_bomber, interceptor, destroyer, carrier)

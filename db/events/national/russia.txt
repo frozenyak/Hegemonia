@@ -20,7 +20,7 @@ event = {
 			NOT = { war = { country = FIN } }
 			NOT = { war = { country = LIT } }
 		}
-		money = 500
+		money = 1000
 	}
 	trigger = {
 		NOT = { owned = { province = 553 data = RUS } }
@@ -85,14 +85,14 @@ event = {
 	country = RUS
 
 	name = "The Lease of Odinholm - Guarantees"
-	desc = "Finland has demanded diplomatic guarantees and the sum of $500 in exchange for a ten-year lease of Odinholm."
+	desc = "Finland has demanded diplomatic guarantees and the sum of $1500 in exchange for a ten-year lease of Odinholm."
 	style = 2
 	picture = "american_ships_in_dock"
 
 	action = {
 		name = ACTION_NAME_AGREE
 		ai_chance = 95
-		command = { type = money value = -500 }
+		command = { type = money value = -1500 }
 		command = { type = non_aggression which = RUS where = FIN }
 		command = { type = guarantee which = RUS where = FIN }
 		command = { type = addcore which = 553 }
@@ -111,14 +111,14 @@ event = {
 	country = RUS
 
 	name = "The Lease of Odinholm - Guarantees"
-	desc = "Finland has demanded diplomatic guarantees and the sum of $300 in exchange for a ten-year lease of Odinholm."
+	desc = "Finland has demanded diplomatic guarantees and the sum of $800 in exchange for a ten-year lease of Odinholm."
 	style = 2
 	picture = "american_ships_in_dock"
 
 	action = {
 		name = ACTION_NAME_AGREE
 		ai_chance = 99
-		command = { type = money value = -300 }
+		command = { type = money value = -800 }
 		command = { type = non_aggression which = RUS where = FIN }
 		command = { type = guarantee which = RUS where = FIN }
 		command = { type = addcore which = 553 }

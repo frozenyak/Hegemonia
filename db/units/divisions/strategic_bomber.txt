@@ -29,7 +29,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 3000 }
+	equipment = { heavy_bomber = 100 manpower = 1000 }
 }
 
 # 1 - Improved Strategic Bomber 1940
@@ -56,7 +56,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 3000 }
+	equipment = { heavy_bomber = 100 manpower = 1000 }
 }
 
 # 2 - Advanced Strategic Bomber 1943
@@ -83,7 +83,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 3000 }
+	equipment = { heavy_bomber = 100 manpower = 1000 }
 }
 
 # 3 - Turbojet Strategic Bomber 1945
@@ -110,7 +110,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 3000 }
+	equipment = { heavy_bomber = 100 manpower = 1000 }
 }
 
 # 4 - Improved Turbojet Strategic Bomber 1949
@@ -137,7 +137,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 3500 }
+	equipment = { heavy_bomber = 100 manpower = 1000 }
 }
 
 # 5 - Intercontinental Strategic Bomber 1950
@@ -164,5 +164,5 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 3500 }
+	equipment = { heavy_bomber = 100 manpower = 1000 }
 }

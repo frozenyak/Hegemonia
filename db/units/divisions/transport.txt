@@ -5,8 +5,8 @@ model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
-	morale						= 20
-	manpower					= 0.1
+	morale						= 30
+	manpower					= 0.5
 	maxspeed					= 12
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
@@ -26,7 +26,7 @@ model = {
 	distance					= 0.1
 	reinforce_time					=  0.4
 	reinforce_cost					=  0.6
-	equipment = { transport = 1 manpower = 100 }
+	equipment = { transport = 5 manpower = 500 }
 }
 
 # 1 - Troopship (1925)
@@ -34,8 +34,8 @@ model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
-	morale						= 20
-	manpower					= 0.1
+	morale						= 30
+	manpower					= 0.5
 	maxspeed					= 15
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
@@ -55,7 +55,7 @@ model = {
 	distance					= 0.1
 	reinforce_time					=  0.4
 	reinforce_cost					=  0.6
-	equipment = { transport = 1 manpower = 100 }
+	equipment = { transport = 5 manpower = 500 }
 }
 
 # 2 - Troopship (1936)
@@ -63,8 +63,8 @@ model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
-	morale						= 20
-	manpower					= 0.1
+	morale						= 30
+	manpower					= 0.5
 	maxspeed					= 18
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
@@ -84,7 +84,7 @@ model = {
 	distance					= 0.1
 	reinforce_time					=  0.4
 	reinforce_cost					=  0.6
-	equipment = { transport = 1 manpower = 100 }
+	equipment = { transport = 5 manpower = 500 }
 }
 
 # 3 - Troopship (1941)
@@ -92,8 +92,8 @@ model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
-	morale						= 20
-	manpower					= 0.1
+	morale						= 30
+	manpower					= 0.5
 	maxspeed					= 20
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
@@ -113,7 +113,7 @@ model = {
 	distance					= 0.1
 	reinforce_time					=  0.4
 	reinforce_cost					=  0.6
-	equipment = { transport = 1 manpower = 100 }
+	equipment = { transport = 5 manpower = 500 }
 }
 
 # 4 - Troopship (1949)
@@ -121,8 +121,8 @@ model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
-	morale						= 20
-	manpower					= 0.1
+	morale						= 30
+	manpower					= 0.5
 	maxspeed					= 21
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
@@ -142,7 +142,7 @@ model = {
 	distance					= 0.1
 	reinforce_time					=  0.4
 	reinforce_cost					=  0.6
-	equipment = { transport = 1 manpower = 100 }
+	equipment = { transport = 5 manpower = 500 }
 }
 
 # 5 - Troopship (1955)
@@ -150,8 +150,8 @@ model = {
 	cost						= 3
 	buildtime 					= 150
 	defaultorganisation 		= 20
-	morale						= 20
-	manpower					= 0.1
+	morale						= 30
+	manpower					= 0.5
 	maxspeed					= 22
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
@@ -171,5 +171,5 @@ model = {
 	distance					= 0.1
 	reinforce_time					=  0.4
 	reinforce_cost					=  0.6
-	equipment = { transport = 1 manpower = 100 }
+	equipment = { transport = 5 manpower = 500 }
 }

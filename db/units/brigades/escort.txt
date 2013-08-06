@@ -24,7 +24,7 @@ model = {
 	upgrade_cost_factor 		= 0.5
 	equipment = {
 		fighter = 100
-		manpower = 330
+		manpower = 100
 	}
 }
 
@@ -52,7 +52,7 @@ model = {
 	upgrade_cost_factor 		= 0.5
 	equipment = {
 		fighter = 100
-		manpower = 330
+		manpower = 100
 	}
 }
 
@@ -80,7 +80,7 @@ model = {
 	upgrade_cost_factor 		= 0.5
 	equipment = {
 		fighter = 100
-		manpower = 330
+		manpower = 100
 	}
 }
 
@@ -108,7 +108,7 @@ model = {
 	upgrade_cost_factor 		= 0.5
 	equipment = {
 		fighter = 100
-		manpower = 330
+		manpower = 100
 	}
 }
 
@@ -136,7 +136,7 @@ model = {
 	upgrade_cost_factor 		= 0.5
 	equipment = {
 		fighter = 100
-		manpower = 330
+		manpower = 100
 	}
 }
 
@@ -164,6 +164,6 @@ model = {
 	upgrade_cost_factor 		= 0.5
 	equipment = {
 		fighter = 100
-		manpower = 330
+		manpower = 100
 	}
 }

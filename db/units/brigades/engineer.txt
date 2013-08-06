@@ -13,7 +13,7 @@ model = {
 	fuelconsumption		= 0.09
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	equipment = { manpower = 3500 horses = 368}
+	equipment = { manpower = 3500 horses = 128 trucks = 60}
 }
 
 ### 1 - Engineer '43
@@ -31,5 +31,5 @@ model = {
 	fuelconsumption		= 0.1
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	equipment = { manpower = 3500 trucks = 368}
+	equipment = { manpower = 3500 trucks = 92}
 }

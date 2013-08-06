@@ -25,3 +25,4 @@ GER;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 28;Generalstab;kaiserreich_T13;5;1930;1970;training;large_unit_tactics;centralized_execution;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 32;Alfred Saalwächter;Kaiserreich Saalwächter;6;1938;1960;naval_training;large_taskforce_tactics;centralized_execution;seamanship;carrier_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 33;Werner Heisenberg;T16;6;1927;1976;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+53;Agentur für Luft und Raumfahrt;AgenturfürLuftundRaumfahrt;8;1958;1976;rocketry;aeronautics;technical_efficiency;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -1,0 +1,24 @@
+SOV;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+3700;61 Kommunara Nikolayev Shipyards;T3700;4;1930;1970;naval_engineering;electronics;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3701;Barrikada Factory Design Bureau;T3701;5;1930;1970;artillery;mechanics;general_equipment;training;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3702;Charkov Factory Design Bureau;T3702;7;1930;1970;mechanics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3703;RNII;T3703;5;1930;1970;rocketry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3704;Igor Kurchatov;T3704;4;1930;1960;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3705;Boris Shaposhnikov;T3705;4;1930;1945;large_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3706;Mikhail Tukhachevsky;T3706;5;1930;1970;combined_arms_focus;large_unit_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3707;Alexander Vasilevsky;T3707;7;1940;1970;combined_arms_focus;large_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3708;Grabin Design Bureau;T3708;5;1930;1970;mechanics;artillery;technical_efficiency;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3709;Ilyushin Design Bureau;T3709;6;1930;1970;aeronautics;electronics;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3710;Kirov Factory Design Bureau;T3710;6;1930;1970;mechanics;artillery;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3711;Nevskoye Design Bureau;T3711;4;1930;1970;naval_engineering;technical_efficiency;naval_artillery;general_equipment;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3712;Nizny Tagil Factories;T3712;6;1930;1970;mechanics;chemistry;technical_efficiency;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3713;STZ Factory Design Bureau;T3713;5;1930;1970;mechanics;general_equipment;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3714;Tupolev Design Bureau;T3714;5;1930;1970;aeronautics;electronics;chemistry;rocketry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3715;Nikolai G. Kuznetsov;T3715;6;1930;1970;naval_artillery;small_taskforce_tactics;submarine_tactics;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3716;J.I. Alksnis;T3716;6;1930;1970;aircraft_testing;piloting;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3717;Alexander A. Novikov;T3717;6;1940;1970;aircraft_testing;bomber_tactics;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3718;A.S. Yakovlev Design Bureau;T3718;8;1930;1970;aeronautics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3719;Igor Tamm;T3719;6;1945;1970;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3720;Sergei Korolev;T3720;7;1946;1966;rocketry;aeronautics;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3721;Vozdushno-Desantnye Voyska;T3721;5;1930;1941;artillery;general_equipment;training;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+3722;Vladimir Komarov;team_noimage;5;1959;1967;rocketry;aeronautics;piloting;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

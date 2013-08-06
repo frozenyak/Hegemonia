@@ -630,7 +630,7 @@ country =
     division =
     { id     = { type = 10500 id = 953 }
       name   = "HMS Hermes"
-      type   = escort_carrier
+      type   = light_carrier #escort_carrier
       model  = 0
       extra  = light_cag
       brigade_model = 2
@@ -846,7 +846,7 @@ country =
     division =
     { id     = { type = 10501 id = 962 }
       name   = "HMS Eagle"
-      type   = escort_carrier
+      type   = light_carrier #escort_carrier
       model  = 2
       extra  = light_cag
       brigade_model = 2

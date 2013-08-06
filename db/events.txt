@@ -21,6 +21,8 @@ event = "db\events\ministers.txt"
 event = "db\events\nukes.txt"
 event = "db\events\dublin.txt"
 event = "db\events\capital_taken.txt"
+#event = "db\events\space_race.txt"
+#event = "db\events\sports.txt"
 
 # AI Events
 event = "db\events\AI\AI_sliders.txt"

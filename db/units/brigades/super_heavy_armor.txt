@@ -16,6 +16,6 @@ model = {
 	fuelconsumption		= 5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 17
+	speed_cap			= 9
 	equipment = { manpower = 2500 medium_armor = 84 heavy_armor = 4 }
 }

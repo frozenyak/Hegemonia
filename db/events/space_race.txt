@@ -1,0 +1,1933 @@
+### 9000100 and UP
+### 9000100 Secret Weapons Tech
+### 9000101 to 9000159 space agencies
+### 9000202 to X Artificial Satellite events
+### 9900212 minor's satellites
+###	9900214 First Man on Moon Announcement
+#########################################################################
+event = { # SpaceRace
+	id = 9000100
+	random = no
+	invention = yes
+
+	trigger = {
+		technology = 7130
+		NOT = {
+			is_tech_active = 7640
+		}
+	}
+
+	name = "EVT_8000_NAME"
+	desc = "EVT_9000100_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = "ACTION_NAME_OK" # OK
+		command = {  type = activate which = 7640 }# Artificial Satellites
+		#command = {  type = activate which = 7650 }# Early Recon Satellites
+		#command = {  type = activate which = 7670 }# 1974 Recon Satellites
+		#command = {  type = activate which = 7680 }# GPS
+		command = {  type = activate which = 7690 }# Manned Space Flights
+		command = {  type = activate which = 7700 }# race to the moon
+		command = {  type = activate which = 7710 }# Lunar Landing
+		#command = {  type = activate which = 7720 }# Moon base
+		#command = {  type = activate which = 7730 }# Space Station
+		#command = {  type = activate which = 7740 }# Surface Missions
+		#command = {  type = activate which = 7750 }# 77 space probe
+		#command = {  type = activate which = 7760 }# Shuttle
+		#command = {  type = activate which = 7770 }# Mars Mission
+		#command = {  type = activate which = 7780 }# Civie Benefits
+		#command = {  type = activate which = 7790 }# Sat Weapons
+	}
+}
+#################################
+# National Space Agency
+#################################
+event = { #start Space Program
+	id = 9000101
+	random = no
+	persistent = no
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+	
+	decision = {
+		NOT = { local_flag = spaceagency }
+		technology = 7120
+		IC = 50
+		NOT = { ispuppet = yes }
+	}
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 2000
+		money = 2000
+		atwar = no
+	}
+
+	trigger = {
+		technology = 7130
+		supplies = 2000
+		money = 2000
+		atwar = no
+		IC = 50
+    }
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "9000101text"
+		command = { type = money value = -2000 }
+		command = { type = supplies value = -2000 }
+	    command = { type = gain_tech which = 7640 }
+
+		command = { trigger = { country = SOV } type = waketeam which = 3720 }
+		command = { trigger = { country = SOV } type = waketeam which = 3722 }
+		command = { trigger = { country = RUS } type = waketeam which = 7251 }
+
+		command = { trigger = { country = SCA } type = waketeam which = 32031 }
+
+		# command = { trigger = { country = CHC } type = waketeam which = 340013 }
+		# command = { trigger = { country = CHI } type = waketeam which = 340013 }
+		# command = { trigger = { country = MON } type = waketeam which = 300004 }
+		command = { trigger = { country = JAP } type = waketeam which = 1926 }
+
+		command = { trigger = { country = GER } type = waketeam which = 53 }
+		command = { trigger = { country = DFR } type = waketeam which = 630027 }
+		#command = { trigger = { country = DDR } type = waketeam which = 625012 }
+
+		command = { trigger = { country = CAN } type = waketeam which = 919 }
+		command = { trigger = { country = MEX } type = waketeam which = 2220 }
+		command = { trigger = { country = USA } type = waketeam which = 133 }
+
+		command = { trigger = { country = KOR } type = waketeam which = 265011 }
+		command = { trigger = { country = PRK } type = waketeam which = 735013 }
+
+		command = { trigger = { country = ENG } type = waketeam which = 332 }
+		command = { trigger = { country = U73 } type = waketeam which = 1180016 }
+
+		command = { trigger = { country = FRA } type = waketeam which = 5045 }
+		command = { trigger = { country = VIC } type = waketeam which = 870027 }
+
+		command = { trigger = { country = UAU } type = waketeam which = 586 }
+
+		command = { trigger = { country = EGY } type = waketeam which = 10810 }
+
+		# command = { trigger = { country = ARG } type = waketeam which = 165030 }
+		# command = { trigger = { country = BRA } type = waketeam which = 160026 }
+		# command = { trigger = { country = COL } type = waketeam which = 175015 }
+		# command = { trigger = { country = ECU } type = waketeam which = 190010 }
+		# command = { trigger = { country = PRU } type = waketeam which = 185016 }
+		# command = { trigger = { country = URU } type = waketeam which = 195011 }
+		# command = { trigger = { country = VEN } type = waketeam which = 180013 }
+
+		# command = { trigger = { country = ALG } type = waketeam which = 450009 }
+		# command = { trigger = { country = MOR } type = waketeam which = 505008 }
+		# command = { trigger = { country = NIG } type = waketeam which = 715007 }
+		# command = { trigger = { country = TUN } type = waketeam which = 535009 }
+		# command = { trigger = { country = INO } type = waketeam which = 270008 }
+		# command = { trigger = { country = KAZ } type = waketeam which = 485007 }
+		# command = { trigger = { country = MLY } type = waketeam which = 500004 }
+		# command = { trigger = { country = PAK } type = waketeam which = 725016 }
+		# command = { trigger = { country = PER } type = waketeam which = 150011 }
+		# command = { trigger = { country = SIA } type = waketeam which = 290013 }
+		command = { trigger = { country = TUR } type = waketeam which = 45021 }
+		# command = { trigger = { country = U72 } type = waketeam which = 1175038 }
+		# command = { trigger = { country = U75 } type = waketeam which = 1190004 }
+
+		# command = { trigger = { country = BUL } type = waketeam which = 95019 }
+		# command = { trigger = { country = CRO } type = waketeam which = 275013 }
+		command = { trigger = { country = ROM } type = waketeam which = 2916 }
+
+		command = { trigger = { country = AUS } type = waketeam which = 860040 }
+		command = { trigger = { country = U09 } type = waketeam which = 622 }
+		
+		command = { trigger = { country = CZE } type = waketeam which = 1113 }
+		
+		command = { trigger = { country = HUN } type = waketeam which = 1615 }
+		command = { trigger = { country = U13 } type = waketeam which = 880013 }
+		
+		#command = { trigger = { country = SCH } type = waketeam which = 80026 }
+		#command = { trigger = { country = AZB } type = waketeam which = 460008 }
+		#command = { trigger = { country = BEL } type = waketeam which = 70018 }
+
+		command = { trigger = { country = IND } type = waketeam which = 23023 }
+		command = { trigger = { country = U02 } type = waketeam which = 93023 }
+		command = { trigger = { country = GRE } type = waketeam which = 1507 }
+		command = { trigger = { country = U00 } type = waketeam which = 3723 }
+		
+		command = { trigger = { country = HOL } type = waketeam which = 2317 }
+		command = { trigger = { country = U10 } type = waketeam which = 865018 }
+
+		command = { trigger = { country = ISR } type = waketeam which = 675011 }
+		command = { trigger = { country = ARA } type = waketeam which = 560010 }
+
+		command = { trigger = { country = ITA } type = waketeam which = 1822 }
+
+		command = { trigger = { country = LIT } type = waketeam which = 2124 }
+		command = { trigger = { country = POL } type = waketeam which = 2714 }
+		command = { trigger = { country = UKR } type = waketeam which = 14013 }
+
+		#command = { trigger = { country = POR } type = waketeam which = 20018 }
+		command = { trigger = { country = SPA } type = waketeam which = 3119 }
+		#command = { trigger = { country = SPR } type = waketeam which = 255036 }
+
+		#command = { type = construct which = ic where = 2159 value = 5 }
+		#command = { type = province_keypoints which = 2159 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+	}
+}
+#########################################################################
+#  First Satellite Launch
+#########################################################################
+#########################################################################
+#  Currently apparently working. Test and See. Anyone with some working ideas on how to make an event for everyone to launch a satellite please let me #know
+#########################################################################
+event = {
+	id = 9000202
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+
+
+	decision = {
+		technology = 7640
+		NOT = { local_flag = 1stsatlaunched }
+		local_flag = spaceagency
+	}
+
+	decision_trigger = {
+		supplies = 1000
+		money = 1000
+		atwar = no
+	}
+
+	trigger = {
+		technology = 7640 # the event fire for ai nations when they have finished researching tech 7130
+		local_flag = spaceagency
+		atwar = no
+	}
+
+	name = "Launch our first Artificial Satellite"
+	desc = "We shall soon be able to launch an artificial satellite into orbit."
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = march year = 1936 }
+	offset = 15
+	deathdate = { day = 12 month = march year = 2020 }
+	action = {
+		name = "Launch our First Satellite!"
+ 		command = { type = money value = -1000 }
+ 		command = { type = supplies value = -1000 }
+		command = { type = trigger which = 9000203 } #result of scheduled launch
+	}
+}
+event = {
+	id =  9000203
+	random = no
+	persistent = yes
+	one_action = yes
+	name = "The results are in"
+	desc = "The scientists would like to speak to you..."
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		ai_chance = 25
+		name = "Hopefully, they have good news."
+		command = { type = trigger which = 9000204 }
+		command = { }
+	}
+	action = {
+		ai_chance = 75
+		name = "Hopefully, they have good news."
+		command = { type = trigger which = 9000205 }
+		command = { }
+	}
+}
+#########################################################################
+#  First Satellite Launch Failure
+#########################################################################
+
+event = {
+	id =   9000204
+	random = no
+	persistent = yes
+
+	name = "The launch was a colossal failure"
+	desc = "The scientists regret to inform you of an unfortunate mishap during our attempt to get our first satellite up. The rocket which was to carry the Satellite only reached an altitude of 1.2 meters (4 ft), before it fell and exploded. The satellite was thrown clear, bleeping pathetically as it rolled away into a nearby culvert."
+	style = 2
+	picture = "launchfailure"
+
+
+	# Triggered by 9000202
+	action = {
+		name = "Heads will roll for this!"
+		command = { type = dissent value = 2 }
+
+	}
+
+}
+#########################################################################
+#  First Satellite Launch Success
+#########################################################################
+
+event = {
+	id =   9000205
+	random = no
+	persistent = yes
+
+	name = "The launch was a success!"
+	desc = "The scientists are pleased to inform you that our nation's first artificial satellite is now in orbit. We should make a statement to world about our great achievement as soon as possible!"
+	style = 2
+	picture = "rocketlaunch"
+
+
+	# Triggered by 9000202
+	action = {
+		name = "Break out the champagne and prepare my speech!"
+		command = { type = local_setflag which = 1stsatlaunched }
+		command = { type = dissent value = -5 }
+		#command = { type = research_mod value = 5 }
+	}
+}
+#########################################################################
+#  Announcement and Reaction Events  9000206 to 9000232 (includes missed Israeli Space Agency Event)
+#########################################################################
+#################################
+# Sputnik Announcement
+#################################
+event = { # Sputnik
+	id = 9000206
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Sputnik Launch"
+	desc = 9000206desc
+	style = 2
+	picture = "sputnik"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 572 value = 5 }
+		#command = { type = province_keypoints which = 572 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000207 }
+	}
+}
+event = {
+	id = 9000207
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Soviets have launched Sputnik!"
+	desc = 9000206desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = SOV value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = SOV value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = SOV value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = SOV value = 50 } }
+		}
+		command = { type = relation which = SOV value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Begleiter Announcement
+#################################
+event = { # Begleiter
+	id = 9000208
+	random = no
+	persistent = no
+	country = GER
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Begleiter Launch"
+	desc = 9000208desc
+	style = 2
+	picture = "begleiter"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 163 value = 5 }
+		#command = { type = province_keypoints which = 163 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000209 }
+	}
+}
+event = {
+	id = 9000209
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Germans have launched Begleiter!"
+	desc = 9000208desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = GER value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = GER value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = GER value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = GER value = 50 } }
+		}
+		command = { type = relation which = GER value = -15 }
+		command = { type = dissent value = 5 }
+}
+}
+#################################
+# Explorer Announcement
+#################################
+event = { # Explorer
+	id = 9000210
+	random = no
+	persistent = no
+	country = USA
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Explorer Launch"
+	desc = 9000210desc
+	style = 2
+	picture = "explorer1"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 1809 value = 5 }
+		#command = { type = province_keypoints which = 1809 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000211 }
+	}
+}
+event = {
+	id = 9000211
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Americans have launched Explorer!"
+	desc = 9000210desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = USA value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = USA value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = USA value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = USA value = 50 } }
+		}
+		command = { type = relation which = USA value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Astérix Announcement
+#################################
+event = { # Astérix
+	id = 9000212
+	random = no
+	persistent = no
+	country = FRA
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Astérix Launch"
+	desc = 9000212desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 55 value = 5 }
+		#command = { type = province_keypoints which = 55 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000213 }
+	}
+}
+event = {
+	id = 9000213
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The French have launched Astérix!"
+	desc = 9000212desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = FRA value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = FRA value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = FRA value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = FRA value = 50 } }
+		}
+		command = { type = relation which = FRA value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Dong Fang Hong Announcement
+#################################
+event = { # Dong Fang Hong
+	id = 9000214
+	random = no
+	persistent = no
+	country = CHC
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Dong Fang Hong Launch"
+	desc = 9000214desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 1247 value = 5 }
+		#command = { type = province_keypoints which = 1247 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000215 }
+	}
+}
+event = {
+	id = 9000215
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Chinese have launched Dong Fang Hong!"
+	desc = 9000214desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = CHC value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = CHC value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = CHC value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = CHC value = 50 } }
+		}
+		command = { type = relation which = CHC value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Ohsumi  Announcement
+#################################
+event = { # Ohsumi
+	id = 9000216
+	random = no
+	persistent = no
+	country = JAP
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Ohsumi Launch"
+	desc = 9000216desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 1552 value = 5 }
+		#command = { type = province_keypoints which = 1552 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000217 }
+	}
+}
+event = {
+	id = 9000217
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Japanese have launched Ohsumi!"
+	desc = 9000216desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = JAP value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = JAP value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = JAP value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = JAP value = 50 } }
+		}
+		command = { type = relation which = JAP value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Prospero  Announcement
+#################################
+event = { # Prospero
+	id = 9000218
+	random = no
+	persistent = no
+	country = ENG
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Prospero Launch"
+	desc = 9000218desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 29 value = 5 }
+		#command = { type = province_keypoints which = 29 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000219 }
+	}
+}
+event = {
+	id = 9000219
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The British have launched Prospero!"
+	desc = 9000218desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = ENG value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = ENG value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = ENG value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = ENG value = 50 } }
+		}
+		command = { type = relation which = ENG value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# New As of 25 Feburary 2012
+#################################
+#################################
+# Sun Yat-sen  Announcement
+#################################
+event = { #  Sun Yat-sen
+	id = 9000220
+	random = no
+	persistent = no
+	country = CHI
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Sun Yat-sen Launch"
+	desc = 9000220desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 1247 value = 5 }
+		#command = { type = province_keypoints which = 1247 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000221 }
+	}
+}
+event = {
+	id = 9000221
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Chinese have launched Sun Yat-sen!"
+	desc = 9000220desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = CHI value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = CHI value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = CHI value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = CHI value = 50 } }
+		}
+		command = { type = relation which = CHI value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Rohini   Announcement (IND)
+#################################
+event = { #  Rohini
+	id = 9000222
+	random = no
+	persistent = no
+	country = IND
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Rohini Launch"
+	desc = 9000222desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 1459 value = 5 }
+		#command = { type = province_keypoints which = 1459 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000223 }
+	}
+}
+event = {
+	id = 9000223
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Indians have launched Rohini!"
+	desc = 9000222desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = IND value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = IND value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = IND value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = IND value = 50 } }
+		}
+		command = { type = relation which = IND value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Ofeq   Announcement (ISR)
+#################################
+event = { #  Ofeq
+	id = 9000224
+	random = no
+	persistent = no
+	country = ISR
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Ofeq Launch"
+	desc = 9000224desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 1008 value = 5 }
+		#command = { type = province_keypoints which = 1008 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000225 }
+	}
+}
+event = {
+	id = 9000225
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Israelis have launched Ofeq!"
+	desc = 9000224desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = ISR value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = ISR value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = ISR value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = ISR value = 50 } }
+		}
+		command = { type = relation which = ISR value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Kosmos 2175   Announcement RUS
+#################################
+event = { #   Kosmos 2175
+	id = 9000226
+	random = no
+	persistent = no
+	country = RUS
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Kosmos Launch"
+	desc = 9000226desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 572 value = 5 }
+		#command = { type = province_keypoints which = 572 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000227 }
+	}
+}
+event = {
+	id = 9000227
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Russians have launched Kosmos!"
+	desc = 9000226desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = RUS value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = RUS value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+	}
+		command = { type = relation which = RUS value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = RUS value = 50 } }
+		}
+		command = { type = relation which = RUS value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Strela   Announcement UKR
+#################################
+event = { #   Strela
+	id = 9000228
+	random = no
+	persistent = no
+	country = UKR
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Strela Launch"
+	desc = 9000228desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 617 value = 5 }
+		#command = { type = province_keypoints which = 617 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000229 }
+	}
+}
+event = {
+	id = 9000229
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Ukrainians have launched Strela!"
+	desc = 9000228desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = UKR value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = UKR value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = UKR value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = UKR value = 50 } }
+		}
+		command = { type = relation which = UKR value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+#################################
+# Omid   Announcement PER
+#################################
+event = { #   Omid
+	id = 9000230
+	random = no
+	persistent = no
+	country = PER
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+	}
+
+
+	decision_trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	trigger = {
+		local_flag = 1stsatlaunched
+	}
+
+	name = "Confirm Omid Launch"
+	desc = 9000230desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = {
+		name = "Let the whole World know!"
+		command = { type = local_setflag which = sputnik }
+		#command = { type = construct which = ic where = 1085 value = 5 }
+		#command = { type = province_keypoints which = 1085 value = 5 }
+		#command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000231 }
+	}
+}
+event = {
+	id = 9000231
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U07 U08 U09 U10 U11 U12 U13 U14 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE VIC UAU URO }
+
+	name = "The Iranians have launched Omid!"
+	desc = 9000230desc
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		name = "What a remarkable achievement!"
+		trigger = {
+			relation = { which = PER value = 50 }
+			NOT = { local_flag = 1stsatlaunched	}
+		}
+		command = { type = relation which = PER value = 15 }
+	}
+
+	action = {
+		name = "Welcome them to the Space Club."
+		trigger = {
+	        local_flag = 1stsatlaunched
+		}
+		command = { type = relation which = PER value = 15 }
+	}
+	action = {
+		name = "They could drop bombs on us with that thing!"
+		trigger = {
+			NOT = { local_flag = 1stsatlaunched
+			relation = { which = PER value = 50 } }
+		}
+		command = { type = relation which = PER value = -15 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+#################################
+# Minors Announcement
+#################################
+event = { # Minors
+	id = 9900212
+	random = no
+	all = yes
+	persistent = no
+	TAG = { AFG UPR U00 USN U37 U38 ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
+
+	decision = { local_flag = 1stsatlaunched }
+
+	decision_trigger = { local_flag = 1stsatlaunched }
+
+	trigger = { local_flag = 1stsatlaunched }   
+	
+    name = "Confirm Satellite Launch"
+	desc = 9900212desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = { 
+		name = 9900206first
+		trigger = { NOT = { local_flag = sputnik } }
+		command = { type = local_setflag which = sputnik }
+		command = { type = dissent value = -5 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900213 }
+	}		
+	action = { 
+		name = 9900206know
+		trigger = { local_flag = sputnik }
+		command = { type = local_setflag which = sputnik }
+		command = { type = dissent value = -3 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900213 }
+	}		
+}
+event = {
+	id = 9900213
+	random = no
+    persistent = yes
+    all = yes
+	TAG = { AFG UPR U00 USN U37 U38 ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
+
+    name = "A new satellite in orbit"
+	desc = 9900212desc
+	style = 2
+	picture = "spacerace"
+	
+	action = { 
+		name = 9900207good
+		trigger = { 
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+		command = { type = local_setflag which = sputnik }
+	}
+	action = { 
+		name = 9900207late
+		trigger = { 
+			local_flag = 1stsatlaunched
+			local_flag = sputnik	
+		}
+		command = { type = local_setflag which = sputnik }
+	}
+}
+
+#################################
+# First Man on Moon Announcement
+#################################
+event = {
+	id = 9900214
+	random = no
+	persistent = yes
+	TAG =  { AFG UPR U00 USN U37 U38 ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DFR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+		
+	trigger = {
+		technology = 7710
+		NOT = { local_flag = 1stmanonmoon }
+		local_flag = 1stsatlaunched
+		local_flag = spaceagency
+	}
+	
+	name = "Successfull Lunar Landing"
+	desc = "This day will forever be remembered in the history of our country, for we managed to successfully land on the Moon!"
+	style = 2
+	picture = "minmoon"
+
+	date = { day = 1 month = march year = 1936 }
+	offset = 15
+	deathdate = { day = 12 month = march year = 2020 }
+
+	action = { 
+		name = 9900206cham
+		command = { type = local_setflag which = 1stmanonmoon }
+		command = { type = dissent value = -15 }
+	}
+}
+
+#################################
+# Announcement SOV
+#################################
+event = { # 
+	id = 9900215
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = { local_flag = 1stmanonmoon }
+	
+	decision_trigger = { local_flag = 1stmanonmoon }
+
+	trigger = { local_flag = 1stmanonmoon }   
+	
+    name = 999060name
+	desc = 999060desc
+	style = 2
+	picture = "sovmoon"
+	decision_picture = "decision_minmoon"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = { 
+		name = 9900206first
+		trigger = {
+			NOT = { local_flag = lunar }
+		}
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -5 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900216 }
+	}		
+	action = { 
+		name = 9900206know
+		trigger = { local_flag = lunar }
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -3 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900216 }
+
+	}		
+}
+event = {
+	id = 9900216 
+	random = no
+	persistent = yes
+	all = yes
+	TAG =  { AFG UPR U00 USN U37 U38 ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DFR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+    name = "The Soviets have landed on the Moon!"
+	desc = 999060desc
+	style = 2
+	picture = "sovmoon"
+	
+	action = { 
+		name = 9900207good
+		trigger = { 
+			relation = { which = SOV value = 50 }	
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = relation which = SOV value = 20 }		
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207bad2
+		trigger = { 
+			NOT = { relation = { which = SOV value = 50 } }	
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = relation which = SOV value = -20 }		
+		command = { type = dissent value = 5 }
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207well2
+		trigger = { 
+			relation = { which = SOV value = 50 }	
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = relation which = SOV value = 15 }		
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207late
+		trigger = { 
+			NOT = { relation = { which = SOV value = 50 } }	
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = relation which = SOV value = -15 }		
+		command = { type = local_setflag which = lunar }
+	}
+}
+
+#################################
+# Announcement USA
+#################################
+event = { # 
+	id = 9900217 
+	random = no
+	persistent = no
+	country = USA
+
+
+	decision = { local_flag = 1stmanonmoon }
+	
+	decision_trigger = { local_flag = 1stmanonmoon }
+
+	trigger = { local_flag = 1stmanonmoon }   
+	
+    name = 999060name
+	desc = 999062desc
+	style = 2
+	picture = "usamoon"
+	decision_picture = "decision_minmoon"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = { 
+		name = 9900206first
+		trigger = {
+			NOT = { local_flag = lunar }
+		}
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -5 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900218 }
+	}		
+	action = { 
+		name = 9900206know
+		trigger = { local_flag = lunar }
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -3 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900218 }
+
+	}		
+}
+event = {
+	id = 9900218 
+	random = no
+	persistent = yes
+	all = yes
+	TAG = { AFG U00 USN U36 UPR U37 U38 U61 U62 U63 U64 U65 U69 ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DFR DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GER GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG SOV U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+    name = "The Americans have landed on the Moon!"
+	desc = 999062desc
+	style = 2
+	picture = "usamoon"
+	
+	action = { 
+		name = 9900207good
+		trigger = { 
+			relation = { which = USA value = 50 }	
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = relation which = USA value = 20 }		
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207bad2
+		trigger = { 
+			NOT = { relation = { which = USA value = 50 } }	
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = relation which = USA value = -20 }		
+		command = { type = dissent value = 5 }
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207well2
+		trigger = { 
+			relation = { which = USA value = 50 }	
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = relation which = USA value = 15 }		
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207late
+		trigger = { 
+			NOT = { relation = { which = USA value = 50 } }	
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = relation which = USA value = -15 }		
+		command = { type = local_setflag which = lunar }
+	}
+}
+
+#################################
+# Announcement GER
+#################################
+event = { # 
+	id = 9900219 
+	random = no
+	persistent = no
+	country = GER
+
+
+	decision = { local_flag = 1stmanonmoon }
+	
+	decision_trigger = { local_flag = 1stmanonmoon }
+
+	trigger = { local_flag = 1stmanonmoon }   
+	
+	name = 999060name
+	desc = 999064desc
+	style = 2
+	picture = "germoon"
+	decision_picture = "decision_minmoon"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = { 
+		name = 9900206first
+		trigger = {
+			NOT = { local_flag = lunar }
+		}
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -5 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900220 }
+	}		
+	action = { 
+		name = 9900206know
+		trigger = { local_flag = lunar }
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -3 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900220 }
+
+	}		
+}
+event = {
+	id = 9900220 
+	random = no
+	persistent = yes
+	all = yes
+	TAG = { AFG U00 USN U36 UPR U37 U38 U61 U62 U63 U64 U65 U69 ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DFR DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO USA GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG SOV U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+    name = "The Germans have landed on the Moon!"
+	desc = 999064desc
+	style = 2
+	picture = "germoon"
+	
+	action = { 
+		name = 9900207good
+		trigger = { 
+			relation = { which = GER value = 50 }	
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = relation which = GER value = 20 }		
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207bad2
+		trigger = { 
+			NOT = { relation = { which = GER value = 50 } }	
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = relation which = GER value = -20 }		
+		command = { type = dissent value = 5 }
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207well2
+		trigger = { 
+			relation = { which = GER value = 50 }	
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = relation which = GER value = 15 }		
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207late
+		trigger = { 
+			NOT = { relation = { which = GER value = 50 } }	
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = relation which = GER value = -15 }		
+		command = { type = local_setflag which = lunar }
+	}
+}
+
+#################################
+# Announcement DFR
+#################################
+event = { # 
+	id = 9900221 
+	random = no
+	persistent = no
+	country = DFR
+
+
+	decision = { local_flag = 1stmanonmoon }
+	
+	decision_trigger = { local_flag = 1stmanonmoon }
+
+	trigger = { local_flag = 1stmanonmoon }   
+	
+	name = 999060name
+	desc = 999064desc
+	style = 2
+	picture = "germoon"
+	decision_picture = "decision_minmoon"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = { 
+		name = 9900206first
+		trigger = {
+			NOT = { local_flag = lunar }
+		}
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -5 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900226 }
+	}		
+	action = { 
+		name = 9900206know
+		trigger = { local_flag = lunar }
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -3 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900226 }
+
+	}		
+}
+event = {
+	id = 9900226 
+	random = no
+	persistent = yes
+	all = yes
+	TAG = { AFG U00 USN U36 UPR U37 U38 U61 U62 U63 U64 U65 U69 ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE GER DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO USA GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG SOV U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+    name = "The Germans have landed on the Moon!"
+	desc = 999064desc
+	style = 2
+	picture = "germoon"
+	
+	action = { 
+		name = 9900207good
+		trigger = { 
+			relation = { which = DFR value = 50 }	
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = relation which = DFR value = 20 }		
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207bad2
+		trigger = { 
+			NOT = { relation = { which = DFR value = 50 } }	
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = relation which = DFR value = -20 }		
+		command = { type = dissent value = 5 }
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207well2
+		trigger = { 
+			relation = { which = DFR value = 50 }	
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = relation which = DFR value = 15 }		
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207late
+		trigger = { 
+			NOT = { relation = { which = DFR value = 50 } }	
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = relation which = DFR value = -15 }		
+		command = { type = local_setflag which = lunar }
+	}
+}
+
+#################################
+# Announcement Minor
+#################################
+event = { # 
+	id = 9900225 
+	random = no
+	all = yes
+	persistent = no
+	TAG = { AFG UPR U00 USN U37 U38 ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
+
+
+	decision = { local_flag = 1stmanonmoon }
+	
+	decision_trigger = { local_flag = 1stmanonmoon }
+
+	trigger = { local_flag = 1stmanonmoon }   
+	
+    name = 999060name
+	desc = 9900223desc
+	style = 2
+	picture = "minmoon"
+	decision_picture = "decision_minmoon"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 2020 }
+
+	action = { 
+		name = 9900206first
+		trigger = {
+			NOT = { local_flag = lunar }
+		}
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -5 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900224 }
+	}		
+	action = { 
+		name = 9900206know
+		trigger = { local_flag = lunar }
+		command = { type = local_setflag which = lunar }
+		command = { type = dissent value = -3 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9900224 }
+
+	}		
+}
+event = {
+	id = 9900224 
+	random = no
+	persistent = yes
+	all = yes
+	TAG = { AFG UPR U00 USN U37 U38 ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
+
+    name = "Successfull Moon landing!"
+	desc = 9900223desc
+	style = 2
+	picture = "minmoon"
+	
+	action = { 
+		name = 9900207good
+		trigger = { 
+			NOT = { local_flag = 1stmanonmoon
+			}
+		}
+		command = { type = local_setflag which = lunar }
+	}
+	action = { 
+		name = 9900207late
+		trigger = { 
+			local_flag = 1stmanonmoon 
+			local_flag = lunar
+		}
+		command = { type = local_setflag which = lunar }
+	}
+}
