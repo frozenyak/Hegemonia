@@ -1,4 +1,4 @@
-Hegemonia 1.09, checksum HAQW
+Hegemonia 1.10, checksum XXXX
 Requires Darkest Hour patch 1.03
 Forum Thread http://forum.paradoxplaza.com/forum/showthread.php?565808-Hegemonia-An-Alternate-History-Mod
 Github https://github.com/frozenyak/Hegemonia
