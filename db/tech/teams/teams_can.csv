@@ -1,0 +1,20 @@
+CAN;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+900;Vinland Enfield Arsenal;T900;7;1930;1970;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+901;Vinland Pacific Railway;T901;6;1930;1970;mechanics;general_equipment;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+903;de Havilland;T903;7;1930;1970;aeronautics;chemistry;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+904;Kingston Shipbuilding Co.;T904;5;1930;1943;naval_engineering;technical_efficiency;electronics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+905;Leyland;T311;8;1930;1970;mechanics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+906;Montreal Locomotive Works;T906;4;1940;1970;mechanics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+907;Vickers-Armstrong;T907;8;1930;1970;mechanics;aeronautics;technical_efficiency;artillery;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+908;Finn Ström;T908;6;1939;1945;infantry_focus;large_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+909;Karl Sundberg;T909;6;1930;1970;fighter_tactics;aircraft_testing;decentralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+910;David Henriksson;T910;6;1942;1970;bomber_tactics;fighter_tactics;aircraft_testing;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+911;Dennis Berglund;T911;4;1930;1944;bomber_tactics;aircraft_testing;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+912;Patrik Lundin;T912;5;1938;1946;naval_training;small_taskforce_tactics;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+913;Tim Abrahamsson;T913;5;1940;1960;infantry_focus;large_unit_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+914;Gordon Ekström;T914;6;1930;1945;naval_training;large_taskforce_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+915;Avro Vinland;T302;6;1945;1970;aeronautics;electronics;technical_efficiency;chemistry;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+916;University of Toronto;T916;4;1930;1970;mathematics;mechanics;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+917;Chalk River Laboratories;T917;5;1943;1970;mathematics;nuclear_physics;nuclear_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+918;Sigge Nyberg;T918;5;1947;1964;naval_training;small_taskforce_tactics;carrier_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+919;Vinland Space Agency;spacecan;5;1989;2020;management;technical_efficiency;electronics;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

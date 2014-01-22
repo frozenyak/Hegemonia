@@ -3,7 +3,7 @@
 # 0 - Cavalry Brigade (1870)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 1
@@ -13,14 +13,14 @@ model = {
 	supplyconsumption 		= 0.6
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 }
 }
 
 # 1 - Cavalry Brigade (1897)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 2
@@ -29,14 +29,14 @@ model = {
 	supplyconsumption 		= 0.6
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 }
 }
 
 # 2 - Cavalry Brigade (1907)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 2
@@ -45,14 +45,14 @@ model = {
 	supplyconsumption 		= 0.6
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 }
 }
 
 # 3 - Cavalry Brigade (1914)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 3
@@ -62,14 +62,14 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 artillery = 12 }
 }
 
 # 4 - Cavalry Brigade (1916)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 3
@@ -78,14 +78,14 @@ model = {
 	supplyconsumption 		= 0.6
 	upgrade_time_factor 	= 0.4
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 artillery = 12 }
 }
 
 # 5 - Cavalry Brigade (1918)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 4
@@ -95,14 +95,14 @@ model = {
 	supplyconsumption 		= 0.6
 	upgrade_time_factor 	= 0.4
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 artillery = 14 }
 }
 
 # 6 - Great War Cavalry Brigade (1921)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 4
@@ -112,14 +112,14 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor 	= 0.4
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 artillery = 18 }
 }
 
 # 7 - Early Cavalry Brigade (1924)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 5
@@ -128,14 +128,14 @@ model = {
 	supplyconsumption 		= 0.6
 	upgrade_time_factor 	= 0.4
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 artillery = 18 }
 }
 
 # 8 - Early Cavalry Brigade (1928)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 5
@@ -145,14 +145,14 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor 	= 0.4
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 artillery = 18 }
 }
 
 # 9 - Basic Cavalry Brigade (1932)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 5
@@ -161,14 +161,14 @@ model = {
 	supplyconsumption 		= 0.6
 	upgrade_time_factor 	= 0.4
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 artillery = 18 }
 }
 
 # 10 - Basic Cavalry Brigade (1936)
 model = {
 	cost 					= 3
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation 	= 0
 	suppression				= 5
@@ -177,17 +177,16 @@ model = {
 	supplyconsumption 		= 0.6
 	upgrade_time_factor 	= 0.4
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 16
+	speed_cap				= 8
 	equipment = { manpower = 4000 horses = 4000 artillery = 24 }
 }
 
 # 11 - Semi-Motorized Cavalry Brigade (1939)
 model = {
 	cost 					= 3.5
-	buildtime	 			= 330
+	buildtime	 			= 180
 	manpower 				= 4
 	defaultorganisation = 1
-	softness				= 0
 	suppression				= 5
 	softattack				= 3
 	transportweight			= 10
@@ -195,7 +194,7 @@ model = {
 	fuelconsumption			= 0.6
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 20
+	speed_cap				= 10
 	equipment = { manpower = 4000 trucks = 346 horses = 1300 artillery = 28}
 }
 
@@ -207,7 +206,7 @@ model = {
 	defaultorganisation = 2
 	defensiveness 			= 4
 	toughness				= 4
-	softness				= 0
+	softness				= -5
 	softattack				= 6
 	hardattack           	= 2
 	transportweight			= 15
@@ -215,7 +214,7 @@ model = {
 	fuelconsumption			= 2.0
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 38
+	speed_cap				= 22
 	equipment = { manpower = 4000 trucks = 264 artillery = 30 halftracks = 126 medium_armor = 26 }
 }
 
@@ -226,7 +225,7 @@ model = {
 	manpower 				= 4
 	defensiveness 			= 4
 	toughness				= 4
-	softness				= -10
+	softness				= -5
 	softattack				= 6
 	hardattack           	= 5
 	transportweight			= 15
@@ -234,7 +233,7 @@ model = {
 	fuelconsumption			= 2
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 36
+	speed_cap				= 21
 	equipment = { manpower = 4000 trucks = 164 artillery = 30 halftracks = 226 medium_armor = 60 }
 }
 
@@ -251,6 +250,6 @@ model = {
 	fuelconsumption			= 1.5
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 80
-	equipment = { manpower = 4000 fighter = 48 }
+	speed_cap				= 50
+	equipment = { manpower = 1000 helicopter = 48 }
 }

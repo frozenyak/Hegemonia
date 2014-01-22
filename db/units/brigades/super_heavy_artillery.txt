@@ -6,14 +6,14 @@ model = {
 	buildtime	 		= 180
 	manpower 			= 3
 	defensiveness 		= -1
+	toughness 			= -5
 	maxspeed 			= -2
-	softness			= 0
 	softattack			= 1
 	hardattack			= 1
 	supplyconsumption 	= 0.44
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 14
+	speed_cap			= 5
 	equipment = { manpower = 3000 heavy_artillery = 34 }
 }
 
@@ -23,14 +23,14 @@ model = {
 	buildtime	 		= 200
 	manpower 			= 3
 	defensiveness 		= -1
+	toughness 			= -5
 	maxspeed 			= -2
-	softness			= 0
 	softattack			= 1
 	hardattack			= 2
 	supplyconsumption 	= 0.52
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 14
+	speed_cap			= 5
 	equipment = { manpower = 3000 heavy_artillery = 34 }
 }
 
@@ -40,14 +40,14 @@ model = {
 	buildtime	 		= 200
 	manpower 			= 3
 	defensiveness 		= -1
+	toughness 			= -5	
 	maxspeed 			= -2
-	softness			= 0
 	softattack			= 2
 	hardattack			= 2
 	supplyconsumption 	= 0.7
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 14
+	speed_cap			= 5
 	equipment = { manpower = 3000 heavy_artillery = 34 }
 }
 
@@ -57,14 +57,14 @@ model = {
 	buildtime	 		= 200
 	manpower 			= 3
 	defensiveness 		= -1
+	toughness 			= -5	
 	maxspeed 			= -2
-	softness			= -5
 	softattack			= 2
 	hardattack			= 3
 	supplyconsumption 	= 0.85
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 14
+	speed_cap			= 5
 	equipment = { manpower = 3000 heavy_artillery = 34 }
 }
 
@@ -74,14 +74,14 @@ model = {
 	buildtime	 		= 200
 	manpower 			= 3
 	defensiveness 		= -1
+	toughness 			= -5	
 	maxspeed 			= -2
-	softness			= -5
 	softattack			= 3
 	hardattack			= 3
 	supplyconsumption	= 0.85
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 26
+	speed_cap			= 16
 	equipment = { manpower = 3000 heavy_artillery = 34 }
 }
 
@@ -91,13 +91,13 @@ model = {
 	buildtime	 		= 200
 	manpower 			= 3
 	defensiveness 		= -1
+	toughness 			= -5	
 	maxspeed 			= -2
-	softness			= -5
 	softattack			= 3
 	hardattack			= 4
 	supplyconsumption 	= 0.80
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 26
+	speed_cap			= 16
 	equipment = { manpower = 3000 heavy_artillery = 34 }
 }

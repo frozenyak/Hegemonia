@@ -17,6 +17,7 @@ model = {
 	supplyconsumption 			= 0.5
 	fuelconsumption				= 2
 	flying_rocket				= -2
+	equipment = { rocket = 5 }
 }
 
 # 1 - Ballistic Missile V2A9 (1944)
@@ -36,6 +37,7 @@ model = {
 	supplyconsumption 			= 1
 	fuelconsumption				= 2.5
 	flying_rocket				= -2
+	equipment = { rocket = 5 }	
 }
 
 # 2 - Inter Continental Ballistic Missile V2A10 (1956)
@@ -55,4 +57,5 @@ model = {
 	supplyconsumption 			= 2
 	fuelconsumption				= 5
 	flying_rocket				= -2
+	equipment = { rocket = 5 }	
 }

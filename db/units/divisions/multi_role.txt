@@ -27,7 +27,7 @@ model = { # Early Fighter - 0 1930
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 1000 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 
 model = { # Basic Multi-Role Fighter - 1 1938
@@ -53,7 +53,7 @@ model = { # Basic Multi-Role Fighter - 1 1938
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 1000 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 
 model = { # Improved Multi-Role Fighter - 2 1940
@@ -79,7 +79,7 @@ model = { # Improved Multi-Role Fighter - 2 1940
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 1000 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 
 model = { # Advanced Multi-Role Fighter - 3 1945
@@ -105,7 +105,7 @@ model = { # Advanced Multi-Role Fighter - 3 1945
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 1000 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 
 model = { # Basic Turbojet Multi-Role Fighter - 4 1948
@@ -131,7 +131,7 @@ model = { # Basic Turbojet Multi-Role Fighter - 4 1948
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 1000 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 
 model = { # Improved Turbojet Multi-Role Fighter - 5 1950
@@ -157,7 +157,7 @@ model = { # Improved Turbojet Multi-Role Fighter - 5 1950
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 1000 }
+	equipment = { fighter = 100 manpower = 100 }
 }
 
 model = { # Supersonic Turbojet Multi-Role Fighter - 6 1954
@@ -183,5 +183,5 @@ model = { # Supersonic Turbojet Multi-Role Fighter - 6 1954
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 1000 }
+	equipment = { fighter = 100 manpower = 100 }
 }

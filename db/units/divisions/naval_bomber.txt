@@ -29,7 +29,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 2200 }
+	equipment = { bomber = 100 manpower = 600 }
 }
 
 # 1 - Improved Naval Bomber 1940
@@ -56,7 +56,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 2200 }
+	equipment = { bomber = 100 manpower = 600 }
 }
 
 # 2 - Advanced Naval Bomber 1943
@@ -83,7 +83,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 2200 }
+	equipment = { bomber = 100 manpower = 600 }
 }
 
 # 3 - Turbojet Naval Bomber 1945
@@ -110,7 +110,7 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 2200 }
+	equipment = { bomber = 100 manpower = 600 }
 }
 
 # 4 - Improved Turbojet Naval Bomber 1949
@@ -137,5 +137,5 @@ model = {
 	upgrade_cost_factor = 1.0
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 2200 }
+	equipment = { bomber = 100 manpower = 600 }
 }

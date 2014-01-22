@@ -44,15 +44,18 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 				
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
-		command = { type = resource which = supplies value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { type = set_domestic which = professional_army value = 2 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { type = dissent value = -2 }
 		command = { type = local_setflag which = MOB2 }
 	}
@@ -60,14 +63,14 @@ event = {
 	action = { #Establish a professional military (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 		
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
-		command = { type = resource which = supplies value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 1.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 2 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 1.5 when = 1 }
 		command = { type = dissent value = -2 }
 		command = { type = local_setflag which = MOB2 }
 
@@ -98,31 +101,38 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 				
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
-		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		command = { type = local_setflag which = MOB3 }
 	}
 		
 	action = { #Enact Selective Conscription (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 			
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
-		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
 		command = { type = set_domestic which = professional_army value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 1.5 when = 1 }
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		command = { type = local_setflag which = MOB3 }
 	}
 
@@ -151,19 +161,24 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 					
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
-		command = { type = set_domestic which = professional_army value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }
 	}
@@ -171,18 +186,20 @@ event = {
 	action = { #Enact One Year Conscription (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 			
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 1.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }
-		command = { type = set_domestic which = professional_army value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }
 	}
@@ -212,22 +229,27 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 				
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 5 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }		
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
-		command = { type = set_domestic which = professional_army value = 5 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }		
 		command = { type = local_setflag which = MOB5 }
@@ -236,21 +258,23 @@ event = {
 	action = { #Enact Two Year Conscription (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 							
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 5 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 1.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }		
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 3.375 when = 1 }
-		command = { type = set_domestic which = professional_army value = 5 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }		
 		command = { type = local_setflag which = MOB5 }
@@ -281,25 +305,30 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 			
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } ai = no } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }		
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }		
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
-		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB6 } ai = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }		
 		command = { type = local_setflag which = MOB5 }		
@@ -309,24 +338,26 @@ event = {
 	action = { #Enact Three Year Conscription (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 				
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } ai = no } type = resource which = supplies value = -200 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 1.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }		
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 3.375 when = 1 }		
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 3.75 when = 1 }
-		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = dissent value = 3 }
 		command = { trigger = { NOT = { local_flag = MOB6 } ai = no } type = dissent value = 3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }		
 		command = { type = local_setflag which = MOB5 }		
@@ -358,68 +389,77 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 				
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 7 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } ai = no } type = resource which = supplies value = -200 }
-		command = { type = resource which = supplies value = -500 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -500 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
-		command = { type = set_domestic which = professional_army value = 7 }
 		command = { trigger = { atwar = no } type = belligerence value = 15 }
 		command = { trigger = { NOT = { local_flag = MOB3 } atwar = no ai = no } type = dissent value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB4 } atwar = no ai = no } type = dissent value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB5 } atwar = no ai = no } type = dissent value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB6 } atwar = no ai = no } type = dissent value = 4 }
 		command = { trigger = { atwar = no ai = no } type = dissent value = 12 }
-		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
+		command = { trigger = { NOT = { local_flag = RES } year = 1922 }  type = trigger which = 1350002 }
+		command = { trigger = { NOT = { local_flag = RES } NOT = { year = 1922 } }  type = trigger which = 1350008 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = local_setflag which = MOB7 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = local_setflag which = MOB6 }		
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = local_setflag which = MOB5 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = local_setflag which = MOB4 }		
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = local_setflag which = MOB3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 	}
 		
 	action = { #Enact Partial Mobilisation (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 					
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 7 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } ai = no } type = resource which = supplies value = -200 }
-		command = { type = resource which = supplies value = -500 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -500 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 1.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 3.375 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 3.75 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 11.25 when = 1 }
-		command = { type = set_domestic which = professional_army value = 7 }
 		command = { trigger = { atwar = no } type = belligerence value = 15 }
 		command = { trigger = { NOT = { local_flag = MOB3 } atwar = no ai = no } type = dissent value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB4 } atwar = no ai = no } type = dissent value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB5 } atwar = no ai = no } type = dissent value = 4 }
 		command = { trigger = { NOT = { local_flag = MOB6 } atwar = no ai = no } type = dissent value = 4 }
 		command = { trigger = { atwar = no ai = no } type = dissent value = 12 }
-		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
+		command = { trigger = { NOT = { local_flag = RES } year = 1922 }  type = trigger which = 1350002 }
+		command = { trigger = { NOT = { local_flag = RES } NOT = { year = 1922 } }  type = trigger which = 1350008 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = local_setflag which = MOB7 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = local_setflag which = MOB6 }		
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = local_setflag which = MOB5 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = local_setflag which = MOB4 }		
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = local_setflag which = MOB3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 		}
 
 	action = { #Cancel
@@ -447,64 +487,73 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 				
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 8 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB7 } ai = no } type = resource which = supplies value = -500 }
-		command = { type = resource which = supplies value = -700 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -700 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
-		command = { type = set_domestic which = professional_army value = 8 }
 		command = { type = dissent value = 5 }
-		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
-		command = { type = local_setflag which = MOB8 }
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
+		command = { trigger = { NOT = { local_flag = RES } year = 1922 }  type = trigger which = 1350002 }
+		command = { trigger = { NOT = { local_flag = RES } NOT = { year = 1922 } }  type = trigger which = 1350008 }
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = local_setflag which = MOB8 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = local_setflag which = MOB7 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = local_setflag which = MOB6 }		
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = local_setflag which = MOB5 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = local_setflag which = MOB4 }		
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = local_setflag which = MOB3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 	}	
 	
 	action = { #Enact General Mobilisation (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 					
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
+		command = { type = set_domestic which = professional_army value = 8 }
 		command = { trigger = { NOT = { local_flag = MOB3 } ai = no } type = resource which = supplies value = -100 }
 		command = { trigger = { NOT = { local_flag = MOB4 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB6 } ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB7 } ai = no } type = resource which = supplies value = -500 }
-		command = { type = resource which = supplies value = -700 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -700 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 1.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 1.875 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 3 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 3.375 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 3.75 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 11.25 when = 1 }		
 		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 60 when = 1 }
-		command = { type = set_domestic which = professional_army value = 8 }
 		command = { type = dissent value = 5 }
-		command = { trigger = { NOT = { local_flag = RES } }  type = trigger which = 1350002}
-		command = { type = local_setflag which = MOB8 }
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
+		command = { trigger = { NOT = { local_flag = RES } year = 1922 }  type = trigger which = 1350002 }
+		command = { trigger = { NOT = { local_flag = RES } NOT = { year = 1922 } }  type = trigger which = 1350008 }
+		command = { trigger = { NOT = { local_flag = MOB8 } } type = local_setflag which = MOB8 }
+		command = { trigger = { NOT = { local_flag = MOB7 } } type = local_setflag which = MOB7 }
+		command = { trigger = { NOT = { local_flag = MOB6 } } type = local_setflag which = MOB6 }		
+		command = { trigger = { NOT = { local_flag = MOB5 } } type = local_setflag which = MOB5 }		
+		command = { trigger = { NOT = { local_flag = MOB4 } } type = local_setflag which = MOB4 }		
+		command = { trigger = { NOT = { local_flag = MOB3 } } type = local_setflag which = MOB3 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
 	}
 
 	action = { #Cancel
@@ -532,13 +581,16 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 				
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
-		command = { type = resource which = supplies value = -500 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -500 }
 		command = { trigger = { NOT = { local_flag = MOB9 } } type = manpowerpool value = 25 when = 1 }
 		command = { type = set_domestic which = professional_army value = 9 }
 		command = { type = belligerence value = 10 }
@@ -549,12 +601,12 @@ event = {
 	action = { #Enact Extended Mobilisation (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 					
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
-		command = { type = resource which = supplies value = -500 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -500 }
 		command = { trigger = { NOT = { local_flag = MOB9 } } type = manpowerpool value = 18.75 when = 1 }
 		command = { type = set_domestic which = professional_army value = 9 }
 		command = { type = belligerence value = 10 }
@@ -587,13 +639,16 @@ event = {
 		trigger = {	
 			OR = {
 				NOT = { country = JAP }
-				NOT = { region = { region = Korea country = JAP data = 2 value = 50 } }
+				AND = {
+					country = JAP
+					NOT = { region = { region = Korea country = JAP data = 1 value = 50 } }
 				}
 			}
+		}
 		
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
-		command = { type = resource which = supplies value = -300 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -300 }
 		command = { trigger = { NOT = { local_flag = MOB10 } } type = manpowerpool value = 15 when = 1 }
 		command = { type = set_domestic which = professional_army value = 10 }
 		command = { type = 	belligerence value = 10 }
@@ -611,12 +666,12 @@ event = {
 	action = { #Enact Total Mobilisation (japan)
 		trigger = {	
 			country = JAP 
-			region = { region = Korea country = JAP data = 2 value = 50 } 
+			region = { region = Korea country = JAP data = 1 value = 50 } 
 			}
 					
 		name = "ACTION_NAME_ACCEPT"
 		ai_chance = 100
-		command = { type = resource which = supplies value = -300 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -300 }
 		command = { trigger = { NOT = { local_flag = MOB10 } } type = manpowerpool value = 11.25 when = 1 }
 		command = { type = set_domestic which = professional_army value = 10 }
 		command = { type = 	belligerence value = 10 }
@@ -653,39 +708,20 @@ event = { # Mobilize?
 	style = 2
 	picture = "Wehrmacht"
 	
-	action = { #Enact Partial Mobilisation
-		name = "MOB7name"
-		ai_chance = 100
-		command = { type = resource which = supplies value = -500 }
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
-		command = { type = set_domestic which = professional_army value = 7 }
-		command = { type = belligerence value = 5 }
-		command = { type = dissent value = 3 }
-		command = { type = trigger which = 1350008 } #Reserves arrive
-		command = { type = local_setflag which = MOB7 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB3 }
-	}
 	action = { #Enact General Mobilisation
-		trigger = { atwar = yes }
 		name = "MOB8name"
-		ai_chance = 0
-		command = { type = resource which = supplies value = -700 }
+		ai_chance = 100
+		command = { type = belligerence value = 5 }
+		command = { type = set_domestic which = professional_army value = 8 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -700 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 15 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB8 } } type = manpowerpool value = 80 when = 1 }
-		command = { type = set_domestic which = professional_army value = 8 }
-		command = { type = belligerence value = 5 }
-		command = { type = dissent value = 3 }
+		command = { trigger = { ai = no } type = dissent value = 3 }
 		command = { type = trigger which = 1350008 } #Reserves arrive
 		command = { type = local_setflag which = MOB8 }
 		command = { type = local_setflag which = MOB7 }
@@ -693,6 +729,7 @@ event = { # Mobilize?
 		command = { type = local_setflag which = MOB5 }
 		command = { type = local_setflag which = MOB4 }
 		command = { type = local_setflag which = MOB3 }      
+		command = { type = local_setflag which = MOB2 }      
 	}
 	action = {
 		name = "ACTINUTILE"
@@ -727,11 +764,13 @@ event = { #Enact Selective Conscription
 		
 		name = "8300053a"
 		ai_chance = 65
-		command = { type = resource which = supplies value = -100 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 3 }
 		command = { type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB2 }
 		command = { type = local_clrflag which = incon1 }
 
 	}
@@ -745,11 +784,13 @@ event = { #Enact Selective Conscription
 		
 		name = "8300053a"
 		ai_chance = 75
-		command = { type = resource which = supplies value = -100 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 3 }
 		command = { type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB2 }
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon1 }
 
@@ -772,11 +813,13 @@ event = { #Enact Selective Conscription
 		
 		name = "8300053a"
 		ai_chance = 35
-		command = { type = resource which = supplies value = -100 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 3 }
 		command = { type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB2 }
 		command = { type = local_clrflag which = incon1 }
 	}
 	
@@ -797,11 +840,13 @@ event = { #Enact Selective Conscription
 		
 		name = "8300053a"
 		ai_chance = 45
-		command = { type = resource which = supplies value = -100 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 3 }
 		command = { type = dissent value = 3 }
 		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB2 }
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon1 }
 
@@ -821,11 +866,13 @@ event = { #Enact Selective Conscription
 		
 		name = "8300053a"
 		ai_chance = 15
-		command = { type = resource which = supplies value = -100 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 3 }
 		command = { type = dissent value = 10 }
 		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB2 }
 		command = { type = trigger which = 8300055 }
 		command = { type = local_clrflag which = incon1 }
 	}
@@ -838,11 +885,13 @@ event = { #Enact Selective Conscription
 		
 		name = "8300053a"
 		ai_chance = 10
-		command = { type = resource which = supplies value = -100 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -100 }
+		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 2 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 2.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 3 }
 		command = { type = dissent value = 10 }
 		command = { type = local_setflag which = MOB3 }
+		command = { type = local_setflag which = MOB2 }
 		command = { type = local_clrflag which = incon1 }
 
 	}
@@ -901,7 +950,7 @@ event = { #Call in more conscripts
 		
 		name = "MOB4name"
 		ai_chance = 60
-		command = { type = resource which = supplies value = -200 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { type = set_domestic which = professional_army value = 4 }
 		command = { type = dissent value = 3 }
@@ -918,7 +967,7 @@ event = { #Call in more conscripts
 		
 		name = "MOB4name"
 		ai_chance = 85
-		command = { type = resource which = supplies value = -200 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { type = set_domestic which = professional_army value = 4 }
 		command = { type = dissent value = 3 }
@@ -936,7 +985,7 @@ event = { #Call in more conscripts
 		
 		name = "MOB4name"
 		ai_chance = 35
-		command = { type = resource which = supplies value = -200 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 4 when = 1 }
 		command = { type = set_domestic which = professional_army value = 4 }
 		command = { type = dissent value = 3 }
@@ -1003,7 +1052,7 @@ event = { #Call in more conscripts
 		
 		name = "MOB5name"
 		ai_chance = 45
-		command = { type = resource which = supplies value = -200 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 5 }
 		command = { type = dissent value = 4 }
@@ -1020,7 +1069,7 @@ event = { #Call in more conscripts
 		
 		name = "MOB5name"
 		ai_chance = 75
-		command = { type = resource which = supplies value = -200 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 5 }
 		command = { type = dissent value = 4 }
@@ -1038,7 +1087,7 @@ event = { #Call in more conscripts
 		
 		name = "MOB5name"
 		ai_chance = 45
-		command = { type = resource which = supplies value = -200 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -200 }
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 5 }
 		command = { type = dissent value = 4 }
@@ -1106,7 +1155,7 @@ event = { #Call in more conscripts
 	
 		name = "MOB6name"
 		ai_chance = 35
-		command = { type = resource which = supplies value = -250 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -250 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 6 }
 		command = { type = dissent value = 6 }
@@ -1123,7 +1172,7 @@ event = { #Call in more conscripts
 	
 		name = "MOB6name"
 		ai_chance = 45
-		command = { type = resource which = supplies value = -250 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -250 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 6 }
 		command = { type = dissent value = 5 }
@@ -1141,7 +1190,7 @@ event = { #Call in more conscripts
 	
 		name = "MOB6name"
 		ai_chance = 12
-		command = { type = resource which = supplies value = -250 }
+		command = { trigger = { ai = no } type = resource which = supplies value = -250 }
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { type = set_domestic which = professional_army value = 6 }
 		command = { type = dissent value = 7 }
@@ -1837,7 +1886,6 @@ event = {
 		ai_chance = 100
 		
 		command = { type = strength which = land when = 0 where = 0 value = 0.33 }
-		#command = { trigger = { local_flag = MOB6 country = USA } type = manpowerpool value = -5 when = 1 }		
 		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }		
 		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
 		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
@@ -1849,8 +1897,6 @@ event = {
 		command = { trigger = { local_flag = MOB10 } type = air_defense which = militia value = 1 }
 		command = { trigger = { local_flag = MOB10 } type = max_organization which = militia value = 5 }	
 		command = { type = event which = 13500054 where = -1 when = 90 }
-		#command = { trigger = { NOT = { country = USA } } type = set_domestic which = professional_army value = 6 }
-		#command = { trigger = { country = USA } type = set_domestic which = professional_army value = 5 }
 		command = { type = set_domestic which = professional_army value = 6 }
 		command = { trigger = { local_flag = do_not_demob } type = local_clrflag which = do_not_demob } #reset flags for AI countries
 		command = { type = local_setflag which = demob }
@@ -1859,7 +1905,7 @@ event = {
 	action = { #Cancel
 		
 		name = "ACTION_NAME_DECLINE"
-		ai_chance = 100
+		ai_chance = 0
 		
 		command = { }
 	}	
@@ -1905,7 +1951,7 @@ event = {
 	action = { #Cancel
 		
 		name = "ACTION_NAME_DECLINE"
-		ai_chance = 100
+		ai_chance = 0
 		
 		command = { }
 	}	

@@ -207,7 +207,7 @@ event = {
 	random = yes
 	
 	trigger = {
-		dissent = 80 #60 # >= 60
+		dissent = 60 # >= 60
 		NOT = {
 			OR = {
 				country = GER

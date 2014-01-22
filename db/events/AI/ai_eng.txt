@@ -1304,12 +1304,12 @@ event = {
 	deathdate = { day = 29 month = december year = 1964 }
 
 	action = {
-		command = { type = build_division which = destroyer when = 100 cost = 0.1 where = 20 }
-		command = { type = build_division which = transport when = 40 cost = 0.1 where = 20 }
-		command = { type = build_division which = transport when = 40 cost = 0.1 where = 20 }
-		command = { type = build_division which = transport_plane when = 5 cost = 0.1 where = 40 }
 		command = { type = manpowerpool value = 50 }
-		command = { type = build_division which = paratrooper when = 5 cost = 0.1 where = 40 }
+		command = { type = build_division which = destroyer when = 100 cost = -0.1 where = 20 }
+		command = { type = build_division which = transport when = 40 cost = -0.1 where = 20 }
+		command = { type = build_division which = transport when = 40 cost = -0.1 where = 20 }
+		command = { type = build_division which = transport_plane when = 5 cost = -0.1 where = 40 }
+		command = { type = build_division which = paratrooper when = 5 cost = -0.1 where = 40 }
         	command = { trigger = { control = { province = 23 data = ENG } } type = activate_division which = 12700 value = 10001 where = 23 when = 0 } # Homeland
         	command = { trigger = { control = { province = 23 data = ENG } } type = activate_division which = 12700 value = 10002 where = 23 when = 0 } # Homeland
         	command = { trigger = { control = { province = 27 data = ENG } } type = activate_division which = 12700 value = 10003 where = 27 when = 0 } # Homeland
@@ -1319,6 +1319,8 @@ event = {
         	command = { trigger = { control = { province = 29 data = ENG } } type = activate_division which = 12700 value = 10007 where = 29 when = 0 } # Homeland
         	command = { trigger = { control = { province = 22 data = ENG } } type = activate_division which = 12700 value = 10008 where = 22 when = 0 } # Homeland
         	command = { trigger = { control = { province = 22 data = ENG } } type = activate_division which = 12700 value = 10009 where = 25 when = 0 } # Homeland
+		#command = { trigger = { control = { province = 36 data = ENG } } type = activate_division which = 12700 value = 10010 where = 36 when = 0 } # Homeland
+		#command = { trigger = { control = { province = 36 data = ENG } } type = activate_division which = 12700 value = 10011 where = 36 when = 0 } # Homeland
         	command = { trigger = { control = { province = 17 data = ENG } } type = activate_division which = 12700 value = 10012 where = 17 when = 0 } # Homeland
         	command = { trigger = { control = { province = 17 data = ENG } } type = activate_division which = 12700 value = 10013 where = 17 when = 0 } # Homeland
         	command = { trigger = { control = { province = 11 data = ENG } } type = activate_division which = 12700 value = 10014 where = 11 when = 0 } # Homeland

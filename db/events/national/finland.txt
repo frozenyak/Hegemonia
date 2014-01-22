@@ -10,13 +10,13 @@ event = {
 	picture = "american_ships_in_dock"
 
 	action = {
-		name = "Diplomatic guarantees and $300"
+		name = "Diplomatic guarantees and $800"
 		ai_chance = 20
 		command = { type = relation which = RUS value = 100 }
 		command = { type = trigger which = 56010 }
 	}
 	action = {
-		name = "Diplomatic guarantees and $500"
+		name = "Diplomatic guarantees and $1500"
 		ai_chance = 20
 		command = { type = relation which = RUS value = 25 }
 		command = { type = trigger which = 56009 }
@@ -46,13 +46,13 @@ event = {
 	country = FIN
 
 	name = "The Lease of Odinholm - Payment"
-	desc = "The Russians have agreed to our terms of $500 and diplomatic guarantees in exchange for a 10-year lease of Odinholm."
+	desc = "The Russians have agreed to our terms of $1500 and diplomatic guarantees in exchange for a 10-year lease of Odinholm."
 	style = 1
 	picture = "american_ships_in_dock"
 
 	action = {
 		name = ACTION_NAME_GREAT
-		command = { type = money value = 500 }
+		command = { type = money value = 1500 }
 		command = { type = construct which = land_fort where = 553 value = -10 }
 		command = { type = secedeprovince which = RUS value = 553 }
 	}
@@ -63,13 +63,13 @@ event = {
 	country = FIN
 
 	name = "The Lease of Odinholm - Payment"
-	desc = "The Russians have agreed to our terms of $300 and diplomatic guarantees in exchange for a 10-year lease of Odinholm."
+	desc = "The Russians have agreed to our terms of $800 and diplomatic guarantees in exchange for a 10-year lease of Odinholm."
 	style = 1
 	picture = "american_ships_in_dock"
 
 	action = {
 		name = ACTION_NAME_GREAT
-		command = { type = money value = 300 }
+		command = { type = money value = 800 }
 		command = { type = construct which = land_fort where = 553 value = -10 }
 		command = { type = secedeprovince which = RUS value = 553 }
 	}

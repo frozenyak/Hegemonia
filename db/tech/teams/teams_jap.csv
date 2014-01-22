@@ -1,0 +1,28 @@
+JAP;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+1900;Aichi;T1900;7;1930;1970;aeronautics;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1901;Hino Automobile;T1901;5;1930;1970;mechanics;artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1902;Kawasaki Heavy Industry;T1902;8;1930;1970;naval_engineering;industrial_engineering;aeronautics;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1903;Kure Naval Yard;T1903;7;1930;1970;naval_engineering;electronics;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1904;Mitsubishi Hikoki;T1904;8;1930;1970;aeronautics;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1905;Mitsubishi Jukogyo;T1905;5;1930;1970;technical_efficiency;artillery;management;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1906;Mitsubishi Zousensho;T1906;7;1930;1970;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1907;Mitsui;T1907;6;1930;1970;electronics;chemistry;general_equipment;industrial_engineering;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1908;Nakajima;T1908;6;1930;1970;aeronautics;technical_efficiency;artillery;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1909;Nissan;T1909;6;1930;1970;electronics;industrial_engineering;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1910;Sumitomo;T1910;6;1930;1970;electronics;chemistry;general_equipment;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1911;Teiji Takagi;T1911;6;1930;1960;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1912;Tokyo Arsenal;T1912;5;1930;1970;artillery;training;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1913;Yoshio Nishina;T1913;4;1930;1951;nuclear_physics;mathematics;chemistry;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1914;Hideki Tojo;T1914;5;1930;1954;large_unit_tactics;individual_courage;centralized_execution;aircraft_testing;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1915;Hisaichi Terauchi;T1915;6;1930;1949;large_unit_tactics;combined_arms_focus;training;individual_courage;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1916;Isoroku Yamamoto;T1916;9;1930;1954;large_taskforce_tactics;centralized_execution;carrier_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1917;Osami Nagano;T1917;5;1930;1947;naval_training;large_taskforce_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1918;Shunroku Hata;T1918;6;1930;1962;bomber_tactics;centralized_execution;piloting;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1919;Tomoyuki Yamashita;T1919;7;1930;1953;small_unit_tactics;centralized_execution;combined_arms_focus;aircraft_testing;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1920;Sin-Itiro Tomonaga;T1920;5;1941;1970;nuclear_physics;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1921;Shigetaro Shimada;T1921;6;1942;1970;large_taskforce_tactics;centralized_execution;carrier_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1922;Ground Self-Defence Force;T1922;5;1954;1970;small_unit_tactics;combined_arms_focus;individual_courage;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1923;Maritime Self-Defence Force;T1923;5;1954;1970;small_taskforce_tactics;centralized_execution;naval_training;seamanship;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1924;Air Self-Defence Force;T1924;5;1954;1970;fighter_tactics;centralized_execution;piloting;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1925;Nippon Electric Company;T1925;6;1950;1970;chemistry;electronics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1926;National Space Development Agency;NationalSpaceDevelopmentAgency;6;1969;2000;rocketry;technical_efficiency;electronics;mathematics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -14,7 +14,7 @@ model = {
 	fuelconsumption		= 1.1
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 36
+	speed_cap			= 21
 	equipment = { manpower = 3000 trucks = 468 anti_air = 64 }
 }
 
@@ -32,7 +32,7 @@ model = {
 	fuelconsumption		= 1.12
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 36
+	speed_cap			= 21
 	equipment = { manpower = 3000 trucks = 468 anti_air = 64 }
 }
 
@@ -50,7 +50,7 @@ model = {
 	fuelconsumption		= 1.14
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 28
+	speed_cap			= 17
 	equipment = { manpower = 3000 trucks = 468 artillery = 12 anti_air = 52 }
 }
 
@@ -68,7 +68,7 @@ model = {
 	fuelconsumption		= 1.14
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 28
+	speed_cap			= 17
 	equipment = { manpower = 3000 trucks = 468 artillery = 12 anti_air = 52 }
 }
 
@@ -78,7 +78,7 @@ model = {
 	buildtime	 		= 90
 	manpower 			= 3
 	defensiveness 		= 0
-	hardattack			= 21
+	hardattack			= 2
 	softattack			= 3
 	airattack			= 5
 	airdefence			= -5
@@ -86,7 +86,7 @@ model = {
 	fuelconsumption		= 1.14
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 468 artillery = 12 anti_air = 52 }
 }
 
@@ -104,6 +104,6 @@ model = {
 	fuelconsumption		= 1.14
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 34
+	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 468 artillery = 12 anti_air = 52 }
 }

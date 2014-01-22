@@ -9,14 +9,14 @@ model = {
 	defensiveness 		= -2
 	toughness 			= -2
 	defaultorganisation = 2
-	softness			= -2
+	softness			= -3
 	hardattack			= 1
 	softattack			= 3 # 4
 	supplyconsumption 	= 0.7
 	fuelconsumption		= 3.0
 	upgrade_time_factor = 0.95
 	upgrade_cost_factor = 0.95
-	speed_cap			= 32
+	speed_cap			= 19
 	equipment = { manpower = 2500 medium_armor = 86 }
 }
 
@@ -29,13 +29,13 @@ model = {
 	defensiveness 		= -2
 	toughness 			= -2
 	defaultorganisation = 2
-	softness			= -2
+	softness			= -3
 	hardattack			= 2
 	softattack			= 4 # 5
 	supplyconsumption 	= 0.8
 	fuelconsumption		= 2.0
 	upgrade_time_factor = 0.95
 	upgrade_cost_factor = 0.95
-	speed_cap			= 32
+	speed_cap			= 19
 	equipment = { manpower = 2500 medium_armor = 94 }
 }

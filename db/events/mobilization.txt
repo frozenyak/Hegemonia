@@ -7,6 +7,11 @@
 ### 1350005 --- End Mobilization (triggers 8300111, 8300112)
 ### 13500052 SCH End Mobilization (triggers 8300112)
 ##############################################  
+### When you add a new TAG, you should add it to the following events: 8300060 8300061 8300062 8300063 8300064 1350005
+### Also, you should add it to the following events of DHFull\db\events\AI\AI_mobi.txt: 
+### - 150000 150001 150004 1303111 130003 150024 150025
+### - one between 150002 and 150003 (NOT BOTH!)
+##############################################  
 event = {  #Establish a professional military
  
 	id = 8300060
@@ -463,8 +468,9 @@ event = { #general demob
 	}
 
 	trigger = {
-		local_flag = MOB7
 		atwar = no
+		local_flag = MOB7
+		NOT = { local_flag = demob }
 		NOT = { local_flag = do_not_demob } #for AI countries only
 		}
 
@@ -480,18 +486,16 @@ event = { #general demob
 
 
 	action = {
-		name = "1350000text8"
-		trigger = { local_flag = MOB8 }
-		ai_chance = 100
-
-		command = { type = trigger which = 8300112}
-	}
-	action = {
-		name = "1350000text7"
+		name = "1350000text7" #End Partial Mobilisation -> go to 3 Years Conscr
 		trigger = { local_flag = MOB7 }
 		ai_chance = 100
-
 		command = { type = trigger which = 8300111}
+	}
+	action = {
+		name = "1350000text8" #End General Mobilisation -> go to Partial Mob
+		trigger = { local_flag = MOB8 }
+		ai_chance = 0	
+		command = { type = trigger which = 8300112 }
 	}
 }
 

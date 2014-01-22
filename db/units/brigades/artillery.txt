@@ -6,13 +6,14 @@ model = {
 	buildtime	 		= 110
 	manpower 			= 3
 	defensiveness 		= -3
+	toughness 			= -3
 	maxspeed 			= -1
 	softattack			= 1
 	hardattack			= 0
 	supplyconsumption 	= 0.24
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 16
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 22 }
 }
 
@@ -22,14 +23,14 @@ model = {
 	buildtime	 		= 120
 	manpower 			= 3
 	defensiveness 		= -3
+	toughness 			= -3	
 	maxspeed 			= -1
-	softness			= -5
 	softattack			= 1
 	hardattack			= 0
 	supplyconsumption 	= 0.32
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 16
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 42 }
 }
 
@@ -39,14 +40,14 @@ model = {
 	buildtime	 		= 140
 	manpower 			= 3
 	defensiveness 		= -3
+	toughness 			= -3	
 	maxspeed 			= -1
-	softness			= -5
 	softattack			= 2
 	hardattack			= 0
 	supplyconsumption 	= 0.44
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 16
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 }
 }
 # 3 - Early Field Artillery  (1936)
@@ -55,14 +56,14 @@ model = {
 	buildtime	 		= 120
 	manpower 			= 3
 	defensiveness 		= -3
+	toughness 			= -3	
 	maxspeed 			= -1
-	softness			= -10
 	softattack			= 4
 	hardattack			= 2
 	supplyconsumption 	= 0.55
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 16
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 # 4 - Basic Field Artillery 1938
@@ -71,14 +72,14 @@ model = {
 	buildtime	 		= 120
 	manpower 			= 3
 	defensiveness 		= -3
+	toughness 			= -3	
 	maxspeed 			= -1
-	softness			= -10
 	softattack			= 5
 	hardattack			= 2
 	supplyconsumption 	= 0.55
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 16
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -88,14 +89,14 @@ model = {
 	buildtime	 		= 120
 	manpower 			= 3
 	defensiveness 		= -3
+	toughness 			= -3	
 	maxspeed 			= -1
-	softness			= -10
 	softattack			= 6
 	hardattack			= 2
 	supplyconsumption 	= 0.60
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 16
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -105,14 +106,14 @@ model = {
 	buildtime	 		= 120
 	manpower 			= 3
 	defensiveness 		= -3
+	toughness 			= -3	
 	maxspeed 			= -1
-	softness			= -10
 	softattack			= 7
 	hardattack			= 2
 	supplyconsumption	= 0.65
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 668 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -122,13 +123,13 @@ model = {
 	buildtime	 		= 120
 	manpower 			= 3
 	defensiveness 		= -3
+	toughness 			= -3	
 	maxspeed 			= 0
-	softness			= -10
 	softattack			= 7
 	hardattack			= 3
 	supplyconsumption 	= 0.65
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	speed_cap			= 30
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 680 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
