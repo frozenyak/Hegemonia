@@ -63,6 +63,9 @@ map changes:
 IC, resources, infra
 
 (probably incomplete) change list:
+1.10
+	fix not being able to play Yuan
+	
 1.09
 	1.03 final update
 	units

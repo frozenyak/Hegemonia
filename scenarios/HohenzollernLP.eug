@@ -3,7 +3,7 @@ panel      = "scenarios/data/scenario_hegemonia.bmp"
 header =
 { name       = "HohenzollernLP"
   startdate  = { year = 1936 }
-  selectable = { BRA U17 U18 U03 PRU PAR U14 UAU CMB ETH MOR U10 U08 LIB ANG ARA U06 U07 KOR SOM CON ROM SAF HAI IRE AUS VIC ENG GER SPA EGY RSI SCH TUR CYN CHI JAP PHI RUS SCA FIN LIT BHU GEO VEN USA CAN MEX CUB DOM PAN U00 U01 U02 U05 }
+  selectable = { BRA U17 U18 U03 PRU PAR U14 UAU CMB ETH MOR U10 U08 LIB ANG ARA U06 U07 KOR SOM CON ROM SAF HAI IRE AUS VIC ENG GER SPA EGY RSI SCH TUR U74 CHI JAP PHI RUS SCA FIN LIT BHU GEO VEN USA CAN MEX CUB DOM PAN U00 U01 U02 U05 }
   GER	     = { }
   LIT	     = { }
   ENG	     = { }
@@ -121,7 +121,7 @@ globaldata =
   { id         = { type = 16384 id = 10 }
     type       = non_aggression
     country    = "RUS"
-    country    = "CYN"
+    country    = "U74"
     startdate  = { year = 1935 month = december day = 30 }
     expirydate = { year = 1945 month = december day = 30 }
   }
