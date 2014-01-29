@@ -1,0 +1,173 @@
+event ids
+resources
+ic
+balance german civil war
+capital captured, coup?
+"peace with honour"
+
+scenario notes: 
+	pope in vienna because of socialists
+	poland 1/2 russian in victoria
+	democracies peacetime_ic_mod 0.6, non-dems 0.7/0.8
+
+
+control paris, france lost 60% national -> coup/puppet
+
+tagalog foreign policy debate/join comintern
+no GEO split if communist
+dfr-> vic seizes alsace?
+
+units in muhajedz/madura/bengal
+
+germany clears dissent too fast/order restored event
+!!!!!!!!!!!!!rewrite german chain!!!!!!!!!!
+
+AF/Maz events for reconciliation, territory
+jadakal dublin claims
+kaiserreich olympic/stanley cup/world encyclopedia/chinese new year flavour events?
+            romania/germany oil shipments?
+
+RUS order ships in ENG/naval construction program
+create a suez company country?
+redo manpower
+urban:	http://en.wikipedia.org/wiki/List_of_urban_agglomerations_by_population_(United_Nations)
+		
+redo minister traits
+hoover coup when losing
+jap/ger alliance
+lean on cambodia
+chi/cyn lose 50% territory or coasts each to jap, propose formation of UCH, constitutional monarchy
+surrender events GER/AUS/VIC/U02
+revolts/plebiscite in bohemia for silesia to stay/go to ger/dfr
+revolts/plebiscite in hungary for slovakian independence
+lit surrenders, chance of german coup to continue war, new capital warsaw
+
+purchase old/licensed units. instead of USA tech, year of tech +1
+
+india takes istanbul: union defections, new tech teams?
+
+
+request:
+victory events: both sides have nukes, depending on province peace
+as the roman commies, i decide to try to annex Egypt. Germany therefore declares war on me. Fine, i understand their reasons. But wouldn't it be cool if they send me an ultimatum instead ? "Stop your senseless warmongering in the land of Pharaoh now, else German troops shall parade in the Colosseum soon !
+
+I needed to use that ability because after I gave Indian back to Byzantium, Lithuania and I (Germany) still held most/all of the Middle east, and I couldn't figure out a way to give it back to India, thereby creating a land-bridge. 
+It'd be helpful to have for them, 'cause I'm pretty sure that's also what happened in the AAR.
+
+
+roman/indian civil war
+
+manuel restored in constantinople, parades,..
+tagalog joins comintern
+fin join war vs rus on military loss of odinholm
+lean on cambodia
+grand prix races
+half China IC
+
+regions renamed/reused
+New Jersey - Triest
+portugal - occitania
+indochine - annam
+spain - iberia
+north italy - lombardy
+lebanon_syria - Syria
+transjordan - jordan
+iraq - mesopotamia
+southeast us - barasya
+south africa - ljansitar
+mexico - mazula
+southwest africa - angola
+hispaniola - mansur
+cuba - tarrbitz
+stalingrad - volgograd
+leningrad - odinholm
+anatolia - greece
+slave coast - friland
+middle east - near east
+benelux - netherlands
+
+unused:
+Connecticut_Rhode Island
+Czechoslovakia
+New Hampshire
+North Ireland
+
+ids used
+
+1000 random event
+5000 politics
+6100 balance of power
+7100 great war
+7200 capital taken
+8000 secret weap
+11000 nukes
+12000 ai alliances
+20000 crete
+21000 america
+22000 angola
+23000 arabia
+24000 australasia
+25000 austria
+26000 bhutan
+27000 china nationalist
+28000 congo
+29000 china communist
+30000 egypt 30
+31000 fabur 31
+32000 finland 32
+33000 france communist 33
+34000 georgia 34
+35000 germany 35
+*36000 gotland
+37000 gustavia
+38000 iberia 38
+39000 imperials 39
+40000 ireland 40
+41000 jadakal 41
+42000 japan 42
+*43000 korea
+44000 lithuania 44
+45000 ljansitar
+46000 lombardy 46
+47000 haiti 47
+48000 mazula 48
+49000 africa
+50000 occitania 50
+51000 sudostasien 51
+52000 tagalog 52
+53000 qtizi 53
+54000 romania 54
+55000 union 55
+56000 russia 56
+57000 scand 57
+58000 somalia 58
+59000 swiss 59
+60000 tarrbitz 60
+61000 turkestan 61
+62000 great britain 62
+63000 vinland
+64000 china yuan 64
+*65000 german commie
+66000 german rep 66
+*67000 german royalist
+*68000 annam
+69000 mongolia 69
+70000 china puppets 70
+*71000
+72000 tarwajal 72
+73000 jidligrib 73
+74000 muhajedz 74
+75000 alusal
+76000 nova aquitania 76
+77000 don volga 77
+78000 netherlands 78
+79000 france 79
+80000 england
+81000 scot
+82000 italian commune
+83000 friland
+135000 end mobilisation
+830000 mobilisation
+900000 generic desc
+2001000 german civil war intervention
+2052000 german civil war
